@@ -1,0 +1,182 @@
+stages:
+  solve_sqa:
+    foreach:
+      - claude-3.7
+      - gemini-2.5-pro
+    do:
+      # run the solver then rename the resulting file to have a nice name:
+      cmd:
+        INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_${item}
+        uv run --extra sqa
+        inspect eval astabench/evals/sqa/task.py@sqa --display none
+        --log-dir dvc_logs/solver_outputs/
+        --solver astabench/evals/sqa/solvers/sqa.py@sqa_solver
+        -T scorer_model=${scorer_model}
+        -S completion_model=${item}
+        --limit=${limit}
+        --retry-on-error=10
+        --log-shared
+        --no-score;
+        mv "$(ls -t dvc_logs/solver_outputs/*${item}.eval 2>/dev/null | head -n1)" "dvc_logs/solver_outputs/task_sqa_solver_sqa_${item}.eval"
+      params:
+        - limit
+        - scorer_model
+        - sqa_solver_version
+      outs:
+        - dvc_logs/solver_outputs/task_sqa_solver_sqa_${item}.eval
+
+  solve_elicit:
+    # run the solver then rename the resulting file to have a nice name:
+    cmd:
+      INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_elicit
+      uv run --extra sqa
+      inspect eval astabench/evals/sqa/task.py@sqa --display none
+      --log-dir dvc_logs/solver_outputs/
+      --solver astabench/evals/sqa/solvers/elicit/memorized_solver.py@elicit_solver
+      -T scorer_model=${scorer_model}
+      --limit=${limit}
+      --log-shared
+      --no-score;
+      mv "$(ls -t dvc_logs/solver_outputs/*task_sqa_solver_elicit.eval 2>/dev/null | head -n1)" "dvc_logs/solver_outputs/task_sqa_solver_elicit.eval"
+    params:
+      - scorer_model
+      - limit
+    outs:
+      - dvc_logs/solver_outputs/task_sqa_solver_elicit.eval
+
+  solve_storm:
+    # run the solver then rename the resulting file to have a nice name:
+    cmd:
+      INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_storm
+      uv run --extra storm --python 3.11
+      inspect eval astabench/evals/sqa/task.py@sqa --display none
+      --log-dir dvc_logs/solver_outputs/
+      --solver astabench/evals/sqa/solvers/storm_solver.py@storm_solver
+      -T scorer_model=${scorer_model}
+      --limit=${limit}
+      --log-shared
+      --no-score;
+      mv "$(ls -t dvc_logs/solver_outputs/*task_sqa_solver_storm.eval 2>/dev/null | head -n1)" "dvc_logs/solver_outputs/task_sqa_solver_storm.eval"
+    params:
+      - scorer_model
+      - limit
+    outs:
+      - dvc_logs/solver_outputs/task_sqa_solver_storm.eval
+
+  score_sqa:
+    foreach:
+      - claude-3.7
+      - gemini-2.5-pro
+    do:
+      # copy the solver output, then score it
+      cmd:
+        cp dvc_logs/solver_outputs/task_sqa_solver_sqa_${item}.eval dvc_logs/scored/task_sqa_solver_sqa_${item}.eval;
+        uv run
+        inspect score
+        --overwrite
+        --display none
+        --scorer astabench/evals/sqa/task.py@score_all
+        -S scorer_model=${scorer_model}
+        dvc_logs/scored/task_sqa_solver_sqa_${item}.eval
+      params:
+        - sqa_scorer_version
+        - scorer_model
+      deps:
+        - dvc_logs/solver_outputs/task_sqa_solver_sqa_${item}.eval
+      outs:
+        - dvc_logs/scored/task_sqa_solver_sqa_${item}.eval:
+            persist: true
+
+  score_elicit:
+    # copy the solver output, then score it
+    cmd:
+      cp dvc_logs/solver_outputs/task_sqa_solver_elicit.eval dvc_logs/scored/task_sqa_solver_elicit.eval;
+      uv run
+      inspect score
+      --overwrite
+      --display none
+      --scorer astabench/evals/sqa/task.py@score_all
+      -S simplified_eval=True
+      -S assess_jointly=True
+      -S scorer_model=${scorer_model}
+      dvc_logs/scored/task_sqa_solver_elicit.eval
+    params:
+      - sqa_scorer_version
+      - scorer_model
+    deps:
+      - dvc_logs/solver_outputs/task_sqa_solver_elicit.eval
+    outs:
+      - dvc_logs/scored/task_sqa_solver_elicit.eval:
+          persist: true
+
+  score_storm:
+    # copy the solver output, then score it
+    cmd:
+      cp dvc_logs/solver_outputs/task_sqa_solver_storm.eval dvc_logs/scored/task_sqa_solver_storm.eval;
+      uv run
+      inspect score
+      --overwrite
+      --display none
+      --scorer astabench/evals/sqa/task.py@score_all
+      -S simplified_eval=True
+      -S assess_jointly=True
+      -S scorer_model=${scorer_model}
+      dvc_logs/scored/task_sqa_solver_storm.eval
+    params:
+      - sqa_scorer_version
+      - scorer_model
+    deps:
+      - dvc_logs/solver_outputs/task_sqa_solver_storm.eval
+    outs:
+      - dvc_logs/scored/task_sqa_solver_storm.eval:
+          persist: true
+
+  log_any_remaining_errors:
+    foreach:
+      - sqa_claude-3.7
+      - sqa_gemini-2.5-pro
+      - elicit
+      - storm
+    do:
+      cmd: uv run scripts/log_errors.py
+        dvc_logs/scored/task_sqa_solver_${item}.eval
+        dvc_logs/errors/task_sqa_solver_${item}.json
+        dvc_logs/errors/task_sqa_solver_${item}.md
+      deps:
+        - dvc_logs/scored/task_sqa_solver_${item}.eval
+      outs:
+        - dvc_logs/errors/task_sqa_solver_${item}.json
+        - dvc_logs/errors/task_sqa_solver_${item}.md
+
+  create_nice_logs:
+    foreach:
+      - sqa_claude-3.7
+      - sqa_gemini-2.5-pro
+      - elicit
+      - storm
+    do:
+      cmd: uv run scripts/create_debug_logs.py
+        dvc_logs/scored/task_sqa_solver_${item}.eval
+        dvc_logs/debug_logs/
+      deps:
+        - dvc_logs/scored/task_sqa_solver_${item}.eval
+      outs:
+        - dvc_logs/debug_logs/task_sqa_solver_${item}_rubric_eval.csv
+        - dvc_logs/debug_logs/task_sqa_solver_${item}_citation_eval.csv
+        - dvc_logs/debug_logs/task_sqa_solver_${item}_answer_precision_eval.csv
+
+  summarize_scores:
+    cmd: uv run scripts/summarize_scores.py
+      dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
+      dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
+      dvc_logs/scored/task_sqa_solver_elicit.eval
+      dvc_logs/scored/task_sqa_solver_storm.eval
+      -o dvc_logs/eval_comparison.md
+    deps:
+      - dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
+      - dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
+      - dvc_logs/scored/task_sqa_solver_elicit.eval
+      - dvc_logs/scored/task_sqa_solver_storm.eval
+    outs:
+      - dvc_logs/eval_comparison.md:
+          cache: false

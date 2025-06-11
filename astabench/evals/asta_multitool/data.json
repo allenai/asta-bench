@@ -1,0 +1,888 @@
+[
+    {
+        "note": "All questions in this file, including this one, are ones that Asta initially failed on during manual testing.  this one hallucinated a corpus_id in a call to get_papers_metadata",
+        "initial_prompt": "what's the last word in the abstract of the bert paper",
+        "output_metric_configs": [
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Says the last word in the abstract is 'improvement'",
+                    "task_input": "what's the last word in the abstract of the bert paper"
+                }
+            },
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Does not claim the last word in the abstract is anything other than 'improvement' and does not discuss papers other than the bert paper (saying it doesn't know or doesn't have enough information is fine)",
+                    "task_input": "what's the last word in the abstract of the bert paper"
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "50a3723f-400e-4883-b517-b28f4044791f"
+    },
+    {
+        "note": "Original failure: Did not output JSON; also failed to find the codeact url (that was a paperqa error though)",
+        "initial_prompt": "for the bert, roberta, and codeact (wang et al) papers, find the url in the paper for the github repository and return them to me as JSON (paper -> url).  E.g. {\"bert\": \"http...\", \"roberta\": \"http...\", \"codeact\": \"http...\"}  Give the links verbatim as they appear in the paper; you can clean up whitespace but don't add slashes or change the protocol.",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "bert": {
+                            "value": "https://github.com/google-research/bert"
+                        },
+                        "roberta": {
+                            "value": "https://github.com/pytorch/fairseq"
+                        },
+                        "codeact": {
+                            "value": "https://github.com/xingyaoww/code-act"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Does not give values for any papers other than bert, roberta, and codeact (saying it doesn't know or doesn't have enough information is fine)",
+                    "task_input": "for the bert, roberta, and codeact papers, find the url in the paper for the github repository"
+                }
+            }
+        ],
+        "tool_metric_configs": [
+            {
+                "name": "tool_call_match",
+                "config": {
+                    "name": "paper_qa",
+                    "parameters": {
+                        "corpus_id": 52967399
+                    },
+                    "allow_extra_parameters": true
+                }
+            },
+            {
+                "name": "tool_call_match",
+                "config": {
+                    "name": "paper_qa",
+                    "parameters": {
+                        "corpus_id": 198953378
+                    },
+                    "allow_extra_parameters": true
+                }
+            },
+            {
+                "name": "tool_call_match",
+                "config": {
+                    "name": "paper_qa",
+                    "parameters": {
+                        "corpus_id": 267406155
+                    },
+                    "allow_extra_parameters": true
+                }
+            }
+        ],
+        "fake_user_prompt": null,
+        "case_id": "4a18a110-088f-4d77-a025-603efe682d9e"
+    },
+    {
+        "note": "Original failure: Did not output JSON; failed to get the counts in the dataset because it tried to fetch from google drive with file id '20231012'.  Consider replacing with something smaller-scale; the repo is quite large and takes time to download.",
+        "initial_prompt": "for https://www.semanticscholar.org/paper/An-Empirical-Study-on-Developers-Shared-with-in-and-Hao-Hasan/012f065d7623f391dad00b44f63b32112062344a, what is the name of the main dataset they used, and in the 20231012 snapshot of that dataset, how many discussion, hn, pr, and commit sharings are there?  Answer as JSON with the name of the dataset written in all lowercase with no spaces or dashes, and the counts as integers.  E.g. {\"datasetname\": \"name\", \"discussion\": 1, \"hn\": 2, \"pr\": 3, \"commit\": 4}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "datasetname": {
+                            "value": "devgpt"
+                        },
+                        "discussion": {
+                            "value": 61
+                        },
+                        "hn": {
+                            "value": 187
+                        },
+                        "pr": {
+                            "value": 267
+                        },
+                        "commit": {
+                            "value": 694
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "947316fb-d32e-4a30-b16e-161c5283a5bb"
+    },
+    {
+        "note": "Original failure: Search gave wrong paper and model just went with it; it wasn't even by the right author",
+        "initial_prompt": "in song et al 2023 (positional encoding identification), how many folds of cross-validation were used in the main experiment, and what were the train/test split percentages?  Answer as JSON with all values as integers (percentages should be on a 1-100 scale).  E.g. {\"folds\": 3, \"train\": 50, \"test\": 50}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "folds": {
+                            "value": 10
+                        },
+                        "train": {
+                            "value": 75
+                        },
+                        "test": {
+                            "value": 25
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "5d0fac1d-6a4c-4ff0-9deb-02c35349d7f4"
+    },
+    {
+        "note": "Original failure: Really strange logic failure: 'The effect of this parameter on privacy is negative, meaning that as the value of lambda approaches 0.5 (indicating a more balanced mix), privacy is enhanced'",
+        "initial_prompt": "in the Mix2FLD paper (2020), what is the name of the lambda parameter (e.g., just as one might say 'the temperature T', where 'temperature' is the name for T, the paper refers to lambda in a particular way), and how does it affect privacy?  Write your answer as a JSON object with the name of lambda as a (lowercase) string and the effect as either 'positive' or 'negative' depending on whether there is a positive or negative correlation between the value of lambda and the sample privacy.  E.g. {\"lambda_name\": \"name\", \"effect\": \"positive | negative\"}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "lambda_name": {
+                            "value": "mixing ratio"
+                        },
+                        "effect": {
+                            "value": "positive"
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "6f20ab10-aedc-458f-8510-241cd552c65d"
+    },
+    {
+        "note": "Original failure: Did not find the DEAR paper, gave up after one query attempt, and didn't try to use paper finder",
+        "initial_prompt": "in the DEAR paper (pore et al), what is the name of the baseline that is most similar to DEAR, and how many different environments and robots was that baseline evaluated on in the paper that proposed it?  Write your answer as a JSON object with the name of the baseline as a (lowercase) string and the number of environments and robots as integers.  E.g. {\"baseline\": \"name\", \"environments\": 1, \"robots\": 2}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "baseline": {
+                            "value": "sear"
+                        },
+                        "environments": {
+                            "value": 18
+                        },
+                        "robots": {
+                            "value": 5
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "15b16af5-f5c4-493f-bae8-4d29d6a9baed"
+    },
+    {
+        "note": "Original failure: Seemingly stuck in a loop, and hit a recursion failure.  It was also passing the wrong corpus ids, so seems to have failed search too",
+        "initial_prompt": "for each of socialiqa, commonsenseqa, and hellaswag, find the bert-large performance and the human performance based on the reported numbers from the original papers.  Use the test set or 'overall' numbers if multiple splits are reported.  If there are multiple variants of mdoels or human performance, pick the best-performing one.  Do a related-sample t-test and tell me the natural log of the (two-sided) p-value.  Write your answer as a JSON object with the bert-large and human performance as floats (on a 1-100 scale) and the natural log of the p-value as a float.  E.g. {\"socialiqa_bert\": 1.2, \"socialiqa_human\": 2.3, \"commonsenseqa_bert\": 3.4, \"commonsenseqa_human\": 4.5, \"hellaswag_bert\": 5.6, \"hellaswag_human\": 6.7, \"log_p_value\": -7.8}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "socialiqa_bert": {
+                            "value": 64.5,
+                            "tolerance": 0.1
+                        },
+                        "socialiqa_human": {
+                            "value": 84.4,
+                            "tolerance": 0.1
+                        },
+                        "commonsenseqa_bert": {
+                            "value": 55.9,
+                            "tolerance": 0.1
+                        },
+                        "commonsenseqa_human": {
+                            "value": 88.9,
+                            "tolerance": 0.1
+                        },
+                        "hellaswag_bert": {
+                            "value": 47.3,
+                            "tolerance": 0.1
+                        },
+                        "hellaswag_human": {
+                            "value": 95.6,
+                            "tolerance": 0.1
+                        },
+                        "log_p_value": {
+                            "value": -2.91,
+                            "tolerance": 0.1
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "4668e469-f8a8-4d8e-abb0-90d7b97d368a"
+    },
+    {
+        "note": "Original failure: Hallucinated the llama numbers and called execution agent right away rather than looking the numbers up",
+        "initial_prompt": "If you fit a parabola to the llamav1, llamav2, llamav3 performance on gsm8k (using version numbers as x vals), what is the predicted performance of llamav4?  It is fine if the predicted value is out of bounds (e.g. if it is greater than 100 or less than 0).  Write the raw values and the predicted value as floats in JSON, e.g. {\"llamav1\": 1.2, \"llamav2\": 3.4, \"llamav3\": 5.6, \"llamav4\": 7.8}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "llamav1": {
+                            "value": 50.9,
+                            "tolerance": 0.1
+                        },
+                        "llamav2": {
+                            "value": 56.8,
+                            "tolerance": 0.1
+                        },
+                        "llamav3": {
+                            "value": 79.6,
+                            "tolerance": 0.1
+                        },
+                        "llamav4": {
+                            "value": 119.3,
+                            "tolerance": 1.0
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "c7ad810b-cb22-4199-b3ee-b6805346dff9"
+    },
+    {
+        "note": "Original failure: Did a paper_relevance_search rather than using exec agent to scrape the page at the link, and got the wrong paper.  TODO: consider adding a constraint to penalize a wrong answer more than an 'i dont know' answer",
+        "initial_prompt": "Who are the first and last authors of the paper that won the social impact award at https://2023.aclweb.org/program/best_papers/?  Write your answer as JSON with the full names as strings.  E.g. {\"first_author\": \"John Smith\", \"last_author\": \"Jane Doe\"}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "first_author": {
+                            "value": "Myra Cheng"
+                        },
+                        "last_author": {
+                            "value": "Dan Jurafsky"
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "8ffff22e-1a80-4bd9-baa9-19a66b597707"
+    },
+    {
+        "note": "Original failure: Tried to use google drive file retriever to look up the url",
+        "initial_prompt": "Who is the first outstanding senior area chair listed here https://2023.aclweb.org/program/best_reviewers/ and what paper did they co-author with Laura Jehl in 2019?  Write your answer as JSON with the full name of the senior area chair as a string (just first and last name) and the semantic scholar corpusid of the paper as an integer.  E.g. {\"senior_area_chair\": \"John Smith\", \"paper_corpus_id\": 1234}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "senior_area_chair": {
+                            "value": "Carolin Lawrence"
+                        },
+                        "paper_corpus_id": {
+                            "value": 160019345
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "53eeb30f-453d-4d15-bddf-b9deaa31701e"
+    },
+    {
+        "note": "(Intentionally omitted the institution name from the metric, since it could be 'PARC' or 'XEROX PARC' or 'Palo Alto Research Center') Original failure: Found the wrong paper from the wrong year (2020) and thus got the current affiliation rather than the 2002 affiliation",
+        "initial_prompt": "I remember reading some good work from Dick Crouch about detecting redundancies in document collections in 2002.  Where did he work at the time?  Give me a JSON object with the institution, and the city, two-letter state abbreviation, and zip code of the institution.  E.g. {\"institution\": \"name\", \"city\": \"City\", \"state\": \"XX\", \"zip\": 12345}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "city": {
+                            "value": "Palo Alto"
+                        },
+                        "state": {
+                            "value": "CA"
+                        },
+                        "zip": {
+                            "value": 94304
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "73fc1685-6a90-400a-b81f-f468b404ffed"
+    },
+    {
+        "note": "(Allowed some tolerance in case there are spurious reference-parsing issues) Original failure: tries to use paper_citations instead of paper_references, and fails since some of those don't have authors listed",
+        "initial_prompt": "How many self-citations are in the EMTerms 1.0 paper (ignoring duplicates)?  Answer as JSON, e.g. {\"n_self_citations\": 1}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "n_self_citations": {
+                            "value": 11,
+                            "tolerance": 1.1
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "dd163530-5620-450d-b0b1-65ef2ff1ebaf"
+    },
+    {
+        "note": "Original failure: Used execution agent only, which failed to find the link.  Should have tried looking up the paper, since the link is in there.",
+        "initial_prompt": "Give me a direct link to download the EMTerms 1.0 dataset as a zip, and show me the first five terms listed in the dataset.  Answer as JSON: {\"link\": \"http...\", \"term_1\": \"first term\", \"term_2\": \"second term\", \"term_3\": \"third term\", \"term_4\": \"fourth term\", \"term_5\": \"fifth term\"}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "link": {
+                            "value": "http://crisislex.org/emterms/EMTerms-v1.0.zip"
+                        },
+                        "term_1": {
+                            "value": "{Number} child"
+                        },
+                        "term_2": {
+                            "value": "{Number} families"
+                        },
+                        "term_3": {
+                            "value": "{Number} million children effected"
+                        },
+                        "term_4": {
+                            "value": "{Number} schools next to fertilizer plant"
+                        },
+                        "term_5": {
+                            "value": "@savethechildren"
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "3c29edb9-3b8a-4344-87af-e63d71d55068"
+    },
+    {
+        "note": "Original failure: Just tries to ask paper_qa for the answer, but the answer isn't in the paper (should have given raw data to exec agent to compute corr)",
+        "initial_prompt": "what's the (pearson) correlation between wikitext ppl and lambada-openai ppl across all models in table 2 of https://arxiv.org/pdf/2407.05591?  Answer as JSON, e.g. {\"correlation\": 0.1}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "correlation": {
+                            "value": 0.856,
+                            "tolerance": 0.01
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "1bf37812-3c72-4d54-a321-a459c8a6fcf2"
+    },
+    {
+        "note": "Original failure: It completely hallucinated without even trying to look it up",
+        "initial_prompt": "I'm using the SVAMP math dataset but I forgot: what does the acronym stand for?  Give me JSON e.g. {\"SVAMP\": \"the expansion of the acronym, capitalizing just the acronym-letter words\"}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "SVAMP": {
+                            "value": "Simple Variations on Arithmetic Math word Problems"
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "cbbd1475-e4ae-43f1-880c-a59113e39c73"
+    },
+    {
+        "note": "Original failure: Kept hitting internal recursion limits; seemed to try the same query over and over.  Part of the problem is that paper_finder fails locally, but it hit recursion errors even on the web demo so it seems like there's some deeper issue.",
+        "initial_prompt": "There was a dataset from AI2 a few years back (around the bert era, maybe 2020) for train/testing of reading comprehension *metrics* as opposed to models, I think the acronym was 'cocoa' or 'latte' or something similar, but I don't quite remember.  Please find it and remind me what the name is, and also whether the dataset has weird tokenization artifacts.  I have seen some datasets that split punctuation from text like 'hello , world !' and I'm wondering if this is one of those. Give me a JSON like {\"name\": \"LATTE\", \"splits_punctuation\": false}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "name": {
+                            "value": "MOCHA"
+                        },
+                        "splits_punctuation": {
+                            "value": true
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "fee5ee2a-01a5-4ee1-9f48-292b93cd7892"
+    },
+    {
+        "note": "Original failure: Hallucinated tensorflow",
+        "initial_prompt": "What deep learning framework was used to implement experiments for https://arxiv.org/pdf/1711.11575?  Answer as JSON with the name of the framework in lowercase, e.g. {\"name\": \"pytorch\"}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "name": {
+                            "value": "mxnet"
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "999dfeb8-dffd-40ab-8278-a9536dbd0aa1"
+    },
+    {
+        "note": "Original failure: Didn't return JSON, and used paper_references instead of paper_qa, so got NaturalQuestions and TriviaQA in addition to HotpotQA",
+        "initial_prompt": "Which datasets are used by both of the following papers? https://arxiv.org/pdf/2407.09014 and https://arxiv.org/pdf/2407.10930\nAnswer as JSON and sort the list alphabetically: {\"common_datasets\": [\"AppleDataset\", \"BananaDataset\", ...]}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "common_datasets": {
+                            "value": [
+                                "HotpotQA"
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "cea28eed-7250-4d15-983d-948db6561a33"
+    },
+    {
+        "note": "Original failure: Hallucinated corpusid (paperweaver's id from prompt examples), didn't attempt to look up repo using execution agent",
+        "initial_prompt": "What datasets were used for experiments in the paper for this research repo: https://github.com/shunsukesaito/PIFu\nAnswer in JSON in the same order that the datasets are listed at the start of the paper's Experiments section: {\"datasets\": [\"Dataset1\", \"Dataset2\"]}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "datasets": {
+                            "value": [
+                                "RenderPeople",
+                                "BUFF"
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "197dafa2-e666-4be3-9794-fcc238d89459"
+    },
+    {
+        "note": "Original failure: Got the objective name by searching the name BitDistiller from the link (it didn't look up the actual repo), but failed to extract the right baseline name and didn't try to look up the baseline paper at all (even for the baseline name it did extract)",
+        "initial_prompt": "I have a few questions about the paper for this repo: https://github.com/DD-DuDa/BitDistiller\nWhat is the name (acronym) of the novel objective they propose?  What is the name of the strongest baseline in the paper's main experiments (other than the proposed method itself), and which Llama model sizes (in billions) were evaluated in the paper that proposed that baseline?\nAnswer as JSON, e.g. {\"objective_name\": \"ABCD\", \"baseline_name\": \"BaselineName\", \"baseline_model_sizes\": [1, 7]}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "objective_name": {
+                            "value": "CAKLD"
+                        },
+                        "baseline_name": {
+                            "value": "LLM-QAT"
+                        },
+                        "baseline_model_sizes": {
+                            "value": [
+                                7,
+                                13,
+                                30
+                            ]
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "159ac299-71b5-498f-9aa9-53d367b15073"
+    },
+    {
+        "note": "didn't call metadata tool --> years are wrong for papers retrieved",
+        "initial_prompt": "Find the papers authored by Yann LeCun on 'Deep Learning' published between 2016 and 2018. What are the institutions where he was affiliated during these years?",
+        "output_metric_configs": [
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Returns a list of papers authored by Yann LeCun on 'Deep Learning' between 2016-2018",
+                    "task_input": "Find the papers authored by Yann LeCun on 'Deep Learning' published between 2016 and 2018. What are the institutions where he was affiliated during these years?"
+                }
+            },
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Does not include papers published outside of 2016-2018 or by authors other than Yann LeCun",
+                    "task_input": "Find the papers authored by Yann LeCun on 'Deep Learning' published between 2016 and 2018. What are the institutions where he was affiliated during these years?"
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "f3aaf9ca-214e-46d5-9a55-cf47d5149c3e"
+    },
+    {
+        "note": "only calls paper_authors tool; lists all 3 co-authors of the mentioned BERT paper (who have lower co-authored papers than several other of his co-authors). expected also paper_relevance_search and metadata calls\n\n\nsecond call: it hallucinated the number of co-authored papers and listed Jacob Delvin himself as a co-author, twice:\n\n",
+        "initial_prompt": "who are the top 5 co-authors of the lead author on the 'BERT' paper based on number of co-authored papers?",
+        "output_metric_configs": [
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Claims the co-authors are: 'Pushmeet Kohli, N. Mostafazadeh, P. Natarajan, Lucy Vanderwende, Michel Galley'",
+                    "task_input": "who are the top 5 co-authors of the lead author on the 'BERT' paper based on number of co-authored papers?"
+                }
+            },
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Does not include authors that have never co-authored a paper with Jacob Devlin",
+                    "task_input": "who are the top 5 co-authors of the lead author on the 'BERT' paper based on number of co-authored papers?"
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "b37cdde5-491a-4c62-befd-3c8a9ee8eecb"
+    },
+    {
+        "note": "couldn't find the paper but only used paper finder when i provided author names?",
+        "initial_prompt": "can you find me the paper about a new, open LLM that got released in 2024? some of the authors are kyle lo, rodney kinney, and i think pete walsh",
+        "output_metric_configs": [
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Identifies the paper 'OLMo: Accelerating the Science of Language Models'",
+                    "task_input": "can you find me the paper about a new, open LLM that got released earlier this year? some of the authors are kyle lo, rodney kinney, and i think pete walsh"
+                }
+            },
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Does not claim the paper is anything other than 'OLMo: Accelerating the Science of Language Models'",
+                    "task_input": "can you find me the paper about a new, open LLM that got released earlier this year? some of the authors are kyle lo, rodney kinney, and i think pete walsh"
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "bb6e33e0-07dc-4031-b7b9-de735cc39700"
+    },
+    {
+        "note": "only used paper_finder -- did NOT use paper_qa. pulled wrong section. should have pulled from 3.2 Which few-shot examples to use?\n\nhallucinated that it doesn't specify an exact number and asserts that the approach should be flexible",
+        "initial_prompt": "does OLMES recommend a number of in-context examples to use for llm evaluations? if so, how many is it",
+        "output_metric_configs": [
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Answers that 'yes', OLMES does recommend a number of in-context examples to use for llm evaluations",
+                    "task_input": "does OLMES recommend a number of in-context examples to use for llm evaluations? if so, how many is it"
+                }
+            },
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Identifies '5' as the number of in-context examples OLMES recommends to use for llm evaluations",
+                    "task_input": "does OLMES recommend a number of in-context examples to use for llm evaluations? if so, how many is it"
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "1c13faea-d201-4a8b-99dc-f1bb29c5bf6f"
+    },
+    {
+        "note": "used get_papers_metadata instead of author_papers + paper_citations",
+        "initial_prompt": "do any of david wadden's papers have more than 2000 citations? if so, which ones",
+        "output_metric_configs": [
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Answers that 'yes', david wadden's paper titled 'A Next Generation Connectivity Map: L1000 Platform and the First 1,000,000 Profiles' has more than 2000 citations",
+                    "task_input": "do any of david wadden's papers have more than 2000 citations? if so, which ones"
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "d139e61a-0b82-4f14-a3b9-21e66e718a59"
+    },
+    {
+        "note": "called paper_finder only. didn't check get_papers_metadata -- only one of these papers is associated with meta ai",
+        "initial_prompt": "what are the titles of the llama papers meta ai had published up through 2024?",
+        "output_metric_configs": [
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Lists the papers as 'LLaMA: Open and Efficient Foundation Language Models',\n'Llama 2: Open Foundation and Fine-Tuned Chat Models'",
+                    "task_input": "what are the titles of the llama papers meta ai has published?"
+                }
+            },
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Does not list any papers other than 'LLaMA: Open and Efficient Foundation Language Models',\n'Llama 2: Open Foundation and Fine-Tuned Chat Models",
+                    "task_input": "what are the titles of the llama papers meta ai has published?"
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "b76fa608-04c7-4db8-b365-09d741a1d5b6"
+    },
+    {
+        "note": "called paper_finder only and failed to return a link and the llama2 paper",
+        "initial_prompt": "can you give me the arxiv links and titles of the two llama papers by meta ai? give it to me as json, e.g. {\"title_1\": \"first llama paper title\", \"arxiv link\": \"link\", \"title_2\": \"second llama paper title\", \"link_2\": \"arxiv link\"}",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "title_1": {
+                            "value": "LLaMA: Open and Efficient Foundation Language Models"
+                        },
+                        "link_1": {
+                            "value": "https://arxiv.org/abs/2302.13971"
+                        },
+                        "title_2": {
+                            "value": "LLaMA 2: Open Foundation and Fine-Tuned Chat Models"
+                        },
+                        "link_2": {
+                            "value": "https://arxiv.org/abs/2307.09288"
+                        }
+                    }
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "2c286b89-e27c-4dbb-ab88-fc56328e5bb3"
+    },
+    {
+        "note": "called paper_qa and chose some random corpus ID? also defined the wrong acronym",
+        "initial_prompt": "i'm comparing 70B LLMs. what does the acronym LLaMA stand for again? ",
+        "output_metric_configs": [
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Claims the acronym LLaMA stands for 'Large Language Model Meta AI'",
+                    "task_input": "i'm comparing 70B LLMs. what does the acronym LLaMA stand for again? "
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "9ad75f7d-5d11-4b31-881c-7a5bc8413e24"
+    },
+    {
+        "note": "should have used data voyager",
+        "initial_prompt": "which of the models in this sheet performed better overall? https://docs.google.com/spreadsheets/d/1hTeZKb0tLnZfZ26XW_ZnIQ45sK9fQ2s7hOA1Kd54gMQ/edit?gid=0#gid=0",
+        "output_metric_configs": [
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Reports Llama2-13B as the better performing model",
+                    "task_input": "which of the models in this sheet performed better overall? https://docs.google.com/spreadsheets/d/1hTeZKb0tLnZfZ26XW_ZnIQ45sK9fQ2s7hOA1Kd54gMQ/edit?gid=0#gid=0"
+                }
+            },
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Does not report Llama2-7B or any other model as the better performing model",
+                    "task_input": "which of the models in this sheet performed better overall? https://docs.google.com/spreadsheets/d/1hTeZKb0tLnZfZ26XW_ZnIQ45sK9fQ2s7hOA1Kd54gMQ/edit?gid=0#gid=0"
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "549c302e-d0e4-4e06-894b-42c76a891487"
+    },
+    {
+        "note": "worked fine",
+        "initial_prompt": "What accuracy on MetaQA is reported in 'Knowledge Authoring and Question Answering with KALM'?",
+        "output_metric_configs": [
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Reports the accuracy of KALM on MetaQA as '100%'",
+                    "task_input": "What accuracy on MetaQA is reported in 'Knowledge Authoring and Question Answering with KALM'?"
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "0d84a724-037a-4d3b-bffd-a11b85d30d04"
+    },
+    {
+        "note": "only used paper_finder. links weren't in paper but it still returned some and they weren't right. should have maybe tried paper_qa or something else?",
+        "initial_prompt": "what datasets were used for testing in this paper https://arxiv.org/abs/1907.05338? can you give me the links to each dataset and its name as a json, e.g. {\"datasets\": [\"DatasetName1\", ...], \"links\": [\"https://example.com\", ...]}",
+        "output_metric_configs": [
+            {
+                "name": "json_recall",
+                "config": {
+                    "list_key": "datasets",
+                    "expected_values": [
+                        "GLUE",
+                        "SQuAD",
+                        "CoNLL-2003",
+                        "STSB",
+                        "MRPC",
+                        "MultiNLI",
+                        "SICK"
+                    ],
+                    "allow_extra_keys": false,
+                    "ignore_case": true
+                }
+            },
+            {
+                "name": "json_recall",
+                "config": {
+                    "list_key": "links",
+                    "expected_values": [
+                        "https://gluebenchmark.com/",
+                        "https://rajpurkar.github.io/SQuAD-explorer/",
+                        "https://github.com/CoNLL-2003/NER",
+                        "https://stsb.aclweb.org/",
+                        "https://github.com/Maluuba/nlp-datasets/tree/master/MRPC",
+                        "https://cims.nyu.edu/~sbowman/multinli/",
+                        "http://clic.cimec.unitn.it/~elia/SICK/"
+                    ],
+                    "allow_extra_keys": false,
+                    "ignore_case": true
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "58242049-498c-47b5-8c4a-321bfc18bd37"
+    },
+    {
+        "note": "[mike] no clear strategy for summary judgement; only including title for now",
+        "initial_prompt": "which of these papers, if any, would be most relevant to my work on analyzing LLM generated text? https://2024.aclweb.org/program/demo_papers/\n\ngive me the paper title and a summary as json",
+        "output_metric_configs": [
+            {
+                "name": "json_close_values",
+                "config": {
+                    "expected_values": {
+                        "title": {
+                            "value": "Analyzing LLM Generated Text: A Comprehensive Study"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Does not provide summaries or titles for any papers other than the relevant ones listed at https://2024.aclweb.org/program/demo_papers/",
+                    "task_input": "which of these papers, if any, would be most relevant to my work on analyzing LLM generated text? https://2024.aclweb.org/program/demo_papers/\n\ngive me the paper title and a summary as json"
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "1d079b9a-1c47-41c0-b797-f28af1545f10"
+    },
+    {
+        "note": "only called ui_reader_open_paper and didn't return anything ",
+        "initial_prompt": "what are the nlp tasks that get reviewed in this paper? can you give me a dictionary where the keys are the tasks and the values are the papers that evaluated on them in table 2? https://dl.acm.org/doi/pdf/10.1145/3641289",
+        "output_metric_configs": [
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Claims the tasks include NLU, Reasoning, NLG, and Multilingual tasks",
+                    "task_input": "what are the nlp tasks that get reviewed in this paper? can you give me a dictionary where the keys are the tasks and the values are the papers that evaluated on them in table 2? https://dl.acm.org/doi/pdf/10.1145/3641289"
+                }
+            },
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Provides a valid dictionary where keys are tasks and values are the papers that evaluated them",
+                    "task_input": "what are the nlp tasks that get reviewed in this paper? can you give me a dictionary where the keys are the tasks and the values are the papers that evaluated on them in table 2? https://dl.acm.org/doi/pdf/10.1145/3641289"
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "0a62e1a9-a1cf-45dc-8c3b-b46296d76a52"
+    },
+    {
+        "note": "only called paper_finder. came back with some random paper by Apple. should have called metadata or something else to find papers",
+        "initial_prompt": "Could you provide a brief summary of the latest paper by OpenAI on multimodal models?",
+        "output_metric_configs": [
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Summarizes only the paper GPT-4V(ision) System Card",
+                    "task_input": "Could you provide a brief summary of the latest paper by OpenAI on multimodal models?"
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "4e27a9f0-bdf6-40d3-a065-69c186a2ce32"
+    },
+    {
+        "note": "ran 2 instances of execution agent for a single comparison of two repositories. both notebooks are identical",
+        "initial_prompt": "Can you tell me the difference between these two baseline implementations? Original code for the baselines is available at https://github.com/nyu-mll/GLUE-baselines and a newer version is available at https://github.com/jsalt18-sentence-repl/jiant.",
+        "output_metric_configs": [
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Explains the difference between the two baseline implementations based on the provided GitHub links",
+                    "task_input": "Can you tell me the difference between these two baseline implementations? Original code for the baselines is available at https://github.com/nyu-mll/GLUE-baselines and a newer version is available at https://github.com/jsalt18-sentence-repl/jiant."
+                }
+            },
+            {
+                "name": "llm_output_constraint",
+                "config": {
+                    "constraint": "Does not refer to any other repositories aside from https://github.com/nyu-mll/GLUE-baselines and https://github.com/jsalt18-sentence-repl/jiant",
+                    "task_input": "Can you tell me the difference between these two baseline implementations? Original code for the baselines is available at https://github.com/nyu-mll/GLUE-baselines and a newer version is available at https://github.com/jsalt18-sentence-repl/jiant."
+                }
+            }
+        ],
+        "tool_metric_configs": [],
+        "fake_user_prompt": null,
+        "case_id": "a7203220-49ea-4a55-b6f9-188e8a077a18"
+    }
+]
+

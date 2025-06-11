@@ -1,0 +1,15 @@
+name: CI_formatting
+
+on:
+  pull_request:
+    branches: ['main']
+
+jobs:
+  ci_format:
+    runs-on: ubuntu-latest
+    env: {}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: psf/black@stable
+        with:
+          version: '~= 24.2'

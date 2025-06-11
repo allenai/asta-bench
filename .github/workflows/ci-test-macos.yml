@@ -1,0 +1,32 @@
+name: CI_tests_macOS
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ['ci-macos-no-docker']
+
+jobs:
+  run_script:
+    runs-on: macos-latest
+    env:
+      IS_CI: true
+      OPENAI_API_KEY: "Fake key, but the var needs to be set or else Inspect will complain at import time"
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      IGNORE_DOCKER_TESTS: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.7.11"
+      - name: Check space
+        run: |
+          # This step will help us keep an eye on whether we're pushing the
+          # limit of our available space
+          echo "Disk space after building images:"
+          df -h
+      - name: Run tests
+        run: |
+          # Generate '-e VAR' for all env vars except '_*'
+          ENV_ARGS=$(env | grep -vE '^_' | awk '{print "-e " $1}')
+          uv run --extra dev --extra inspect_evals --extra smolagents -m pytest -vv tests
