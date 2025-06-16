@@ -68,11 +68,19 @@ def parse_super_output(output: str) -> tuple[str, int, List[dict]]:
 
     """
     try:
-        json_out = json.loads(output)
+
+        # Agents may return either:
+        # - a full JSON object containing both the answer and a full history of
+        #   intermediate steps
+        # - just the answer (to be judged on the primary/outcome-based metric)
+        json_resp = json.loads(output[output.index("{") : output.rindex("}") + 1])
+        if "exec_result" not in json_resp:
+            json_out = {"exec_result": json_resp}
+
         exec_res = json_out.get("exec_result", "ERROR")
         history = json_out.get("history", [])
         submitted = json_out.get("submitted", 0)
-    except JSONDecodeError:
+    except (JSONDecodeError, ValueError):
         raise ValueError(f"Unable to parse agent output: {output}")
 
     return exec_res, submitted, history
@@ -221,7 +229,7 @@ def check_super_execution() -> Scorer:
     async def score(state: TaskState, target: Target) -> Score:
         try:
             submission, submitted, trajectory = parse_super_output(
-                state.output.completion
+                state.output.completion,
             )
         except Exception as e:
             return Score(
