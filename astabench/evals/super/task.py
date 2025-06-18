@@ -18,7 +18,7 @@ from inspect_ai.util import sandbox, span
 
 from astabench.evals.utils import extract_json_from_response, not_implemented_solver
 from astabench.solvers.sandbox_util.static.sandbox_types import CellHistoryItem
-from astabench.tools import python_session
+from astabench.tools import continue_wait, python_session
 
 logger = logging.getLogger(__name__)
 
@@ -367,7 +367,7 @@ def super(split: str = "Expert", sample_limit: int | None = None) -> Task:
     return Task(
         dataset=load_super_hf(split, sample_limit=sample_limit),
         scorer=scorer,
-        setup=[use_tools(python_session())],
+        setup=[use_tools(python_session(), continue_wait())],
         solver=not_implemented_solver(),
         sandbox=(
             "docker",
