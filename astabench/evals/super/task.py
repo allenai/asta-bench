@@ -12,11 +12,12 @@ from datasets import Dataset, DatasetDict, IterableDatasetDict, load_dataset
 from inspect_ai import Task, task
 from inspect_ai.dataset import MemoryDataset, Sample
 from inspect_ai.scorer import Metric, SampleScore, Score, Scorer, Target, metric, scorer
-from inspect_ai.solver import TaskState
+from inspect_ai.solver import TaskState, use_tools
 from inspect_ai.util import sandbox
 
 from astabench.evals.utils import extract_json_from_response, not_implemented_solver
 from astabench.solvers.sandbox_util.static.sandbox_types import CellHistoryItem
+from astabench.tools import python_session
 
 logger = logging.getLogger(__name__)
 
@@ -57,7 +58,7 @@ def json_to_sample(obj: dict[str, str], split: str) -> Sample:
 
 async def load_trajectory_from_sandbox(
     filename: str = "jupyter_cell_history.json",
-) -> list[dict[str, str]] | None:
+) -> list[dict[str, dict[str, str] | str | None]] | None:
     """Loads the trajectory from the sandbox cell history file.
 
     Arguments:
@@ -70,7 +71,7 @@ async def load_trajectory_from_sandbox(
     """
     try:
         raw_history = json.loads(await sandbox().read_file(filename))
-        cell_history = [CellHistoryItem(**item).dict() for item in raw_history]
+        cell_history = [CellHistoryItem(**item) for item in raw_history]
     except FileNotFoundError:
         logger.warning(f"Missing {filename} in sandbox; can't score trajectory metrics")
         return None
@@ -78,7 +79,7 @@ async def load_trajectory_from_sandbox(
     # Do some simple transformation to match up the keys
     def cellhist_to_super(item: CellHistoryItem) -> dict[str, str]:
         return {
-            "action": {"content": item.code},
+            "action": {"content": item.action_content, "type": item.action_type},
             "observation": item.output,
             "execution_start_time": item.start_timestamp_rfc3339,
             "execution_end_time": item.end_timestamp_rfc3339,
@@ -133,7 +134,7 @@ async def parse_super_output(output: str) -> tuple[str, int, List[dict]]:
     except (JSONDecodeError, ValueError):
         raise ValueError(f"Unable to parse agent output: {output}")
 
-    return exec_res, submitted, history
+    return exec_res, submitted, (history or [])
 
 
 def evaluate(predicted, gold, float_epsilon: float = 1e-2) -> float:
@@ -354,6 +355,7 @@ def super(split: str = "Expert", sample_limit: int | None = None) -> Task:
     return Task(
         dataset=load_super_hf(split, sample_limit=sample_limit),
         scorer=scorer,
+        setup=[use_tools(python_session())],
         solver=not_implemented_solver(),
         sandbox=(
             "docker",

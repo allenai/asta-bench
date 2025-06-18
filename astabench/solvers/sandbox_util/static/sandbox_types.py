@@ -9,21 +9,29 @@ using a shared library installed in the sandbox.
 
 from dataclasses import dataclass
 from datetime import datetime
+from typing import Literal
 
 
 @dataclass
 class CellHistoryItem:
-    """A single code cell in the Jupyter history."""
-
-    code: str
-
-    output: str | None = None
+    """A single code cell execution in the Jupyter history (note: there may be
+    multiple items corresponding to the same "cell" if multiple actions were
+    taken on it, e.g. running and then interrupting)."""
 
     # For reliable elapsed measurements we really should be using
     # `perf_counter`; could do it with some fancy transformations but for
     # simplicity we just trust that clocks don't sync while running
     start_timestamp_rfc3339: str
+
+    action_type: Literal["execute", "interrupt", "continue_wait"]
+    """Type of action performed on the cell."""
+
+    action_content: str | None = None
+    """code, if the action_type is 'execute'"""
+
     end_timestamp_rfc3339: str | None = None
+
+    output: str | None = None
 
     was_interrupted: bool = False
     """Whether the cell execution was interrupted by the user or timed out."""
@@ -33,10 +41,11 @@ class CellHistoryItem:
         """Get the current time in RFC3339 format."""
         return datetime.now().isoformat()
 
-    def end(self, was_interrupted: bool = False) -> None:
+    def end(self, output: str, was_interrupted: bool = False) -> None:
         """End the cell execution and set the end timestamp."""
         if self.end_timestamp_rfc3339 is not None:
             raise ValueError("Cell execution already finalized.")
+        self.output = output
         self.end_timestamp_rfc3339 = self.get_rfc3339_timestamp()
         self.was_interrupted = was_interrupted
 

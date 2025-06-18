@@ -11,7 +11,6 @@ import signal
 import subprocess
 import time
 import uuid
-from datetime import datetime
 from typing import Any, Callable, Dict, Optional
 
 import requests
@@ -141,8 +140,9 @@ class JupyterEnv:
         self._intermediate_output: list[str] = []
 
         self.cell_history_file = cell_history_file
+        self.cell_history: list[CellHistoryItem]
         try:
-            self.cell_history: list[CellHistoryItem] = self.read_cell_history()
+            self.read_cell_history()
         except FileNotFoundError:
             self.cell_history = []
 
@@ -176,10 +176,6 @@ class JupyterEnv:
 
     def _clear_active_exec(self, was_interrupted: bool = False):
         self._active_exec_state = None
-
-        if self.cell_history and not self.cell_history[-1].is_finalized():
-            self.cell_history[-1].end(was_interrupted=was_interrupted)
-            self.write_cell_history()
 
     def is_timed_out(self) -> bool:
         return self._active_exec_state and self._active_exec_state.is_timed_out
@@ -293,7 +289,22 @@ class JupyterEnv:
                 raise ValueError(f"Failed to interrupt the kernel: {response}")
         self._create_connection()
 
-        self._clear_active_exec(was_interrupted=True)
+        if self.cell_history and not self.cell_history[-1].is_finalized():
+            # If the last cell is not finalized, we mark it as interrupted
+            self.cell_history[-1].end(
+                output="".join(self._intermediate_output), was_interrupted=True
+            )
+
+        interrupt_cell = CellHistoryItem(
+            action_type="interrupt",
+            action_content=None,
+            start_timestamp_rfc3339=CellHistoryItem.get_rfc3339_timestamp(),
+        )
+        interrupt_cell.end(output="")
+        self.cell_history.append(interrupt_cell)
+        self.write_cell_history()
+
+        self._clear_active_exec()
         self.run_command("pass")
 
     def _get_ws(self) -> WebSocket:
@@ -314,6 +325,13 @@ class JupyterEnv:
     def continue_after_timeout(self):
         if not self.is_timed_out():
             raise ValueError("Cannot continue waiting; there is nothing to wait for.")
+        self.cell_history.append(
+            CellHistoryItem(
+                action_type="continue_wait",
+                action_content=None,
+                start_timestamp_rfc3339=CellHistoryItem.get_rfc3339_timestamp(),
+            )
+        )
         return self.run_command(continue_after_timeout=True)
 
     def run_command(
@@ -363,7 +381,8 @@ class JupyterEnv:
 
         self.cell_history.append(
             CellHistoryItem(
-                code=command,
+                action_type="execute",
+                action_content=command,
                 start_timestamp_rfc3339=CellHistoryItem.get_rfc3339_timestamp(),
             )
         )
@@ -425,7 +444,8 @@ class JupyterEnv:
                             "Unexpectedly received idle status before execute_reply."
                         )
                     logger.info("Received idle status message. Execution finished.")
-                    self._clear_active_exec(was_interrupted=False)
+
+                    self._clear_active_exec()
                     break
                 elif rsp["content"]["execution_state"] == "starting":
                     # Sent once at startup but we don't care about it
@@ -450,7 +470,9 @@ class JupyterEnv:
             elif msg_type == "execute_reply":
                 self._active_exec_state.has_reply = True
 
-        self.cell_history[-1].output = "".join(self._intermediate_output)
+        self.cell_history[-1].end(output="".join(self._intermediate_output))
+        self.write_cell_history()
+
         return self.cell_history[-1].output
 
 
