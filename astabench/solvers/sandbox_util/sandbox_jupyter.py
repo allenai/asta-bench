@@ -152,6 +152,8 @@ class SandboxJupyter:
 
         with open(Path(__file__).parent / "static/jupyter_interface.py", "r") as f:
             await self.sandbox.write_file("jupyter_interface.py", f.read())
+        with open(Path(__file__).parent / "static/sandbox_types.py", "r") as f:
+            await self.sandbox.write_file("sandbox_types.py", f.read())
 
         self._toolsource = mcp_server_sandbox(
             command="python3",
@@ -254,3 +256,13 @@ class SandboxJupyter:
         assert self._continue_after_timeout_tool is not None
 
         return await self._extract_mcp_result(await self._continue_after_timeout_tool())
+
+    async def get_history(self) -> list[str]:
+        """Get the history of executed code cells."""
+        if not self._is_setup:
+            await self.setup()
+        assert self._toolsource is not None
+
+        history_tool = ToolDef(self._toolsource.get_tool("get_history"))
+        result = await history_tool()
+        return await self._extract_mcp_result(result)

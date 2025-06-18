@@ -11,14 +11,17 @@ import signal
 import subprocess
 import time
 import uuid
+from datetime import datetime
 from typing import Any, Callable, Dict, Optional
 
 import requests
 from mcp.server import FastMCP
+from sandbox_types import CellHistoryItem
 from websocket import WebSocket, WebSocketTimeoutException, create_connection
 
 logger = logging.getLogger(__name__)
 
+JUPYTER_HISTORY_FILE = "jupyter_cell_history.json"
 JUPYTER_STATE_FILE = "jupyter_env_state.json"
 DEFAULT_TIMEOUT = 60 * 5
 
@@ -118,6 +121,7 @@ class JupyterEnv:
         token: str = "password",
         use_secure: bool = False,
         timeout_per_command: int = DEFAULT_TIMEOUT,
+        cell_history_file: str = JUPYTER_HISTORY_FILE,
     ):
         self.server_pid = server_pid
         self.server_port = server_port
@@ -136,6 +140,12 @@ class JupyterEnv:
         # returned, so may be only a partial cell output if there are timeouts)
         self._intermediate_output: list[str] = []
 
+        self.cell_history_file = cell_history_file
+        try:
+            self.cell_history: list[CellHistoryItem] = self.read_cell_history()
+        except FileNotFoundError:
+            self.cell_history = []
+
         http_protocol = "https" if self.use_secure else "http"
         self.base_http_url = f"{http_protocol}://{self.host}:{self.server_port}"
         ws_protocol = "wss" if self.use_secure else "ws"
@@ -149,13 +159,27 @@ class JupyterEnv:
         if not self.kernel_id:
             self.init_container_notebook()
 
-    def _init_active_exec(self, msg_id: str):
-        if self._active_exec_state:
-            raise ValueError("Active request already set.  It must be cleared first.")
-        self._active_exec_state = ExecutionState(request_id=msg_id)
+    def write_cell_history(self, cell_history_file: str | None = None) -> None:
+        """Write the cell history to a file."""
+        cell_history_file = cell_history_file or self.cell_history_file
+        with open(cell_history_file, "w") as f:
+            json.dump(
+                [dataclasses.asdict(item) for item in self.cell_history], f, indent=2
+            )
 
-    def _clear_active_exec(self):
+    def read_cell_history(self, cell_history_file: str | None = None) -> None:
+        """Read the cell history from a file."""
+        cell_history_file = cell_history_file or self.cell_history_file
+
+        with open(cell_history_file, "r") as f:
+            self.cell_history = [CellHistoryItem(**item) for item in json.load(f)]
+
+    def _clear_active_exec(self, was_interrupted: bool = False):
         self._active_exec_state = None
+
+        if self.cell_history and not self.cell_history[-1].is_finalized():
+            self.cell_history[-1].end(was_interrupted=was_interrupted)
+            self.write_cell_history()
 
     def is_timed_out(self) -> bool:
         return self._active_exec_state and self._active_exec_state.is_timed_out
@@ -174,6 +198,7 @@ class JupyterEnv:
                 "token": self.token,
                 "use_secure": self.use_secure,
                 "timeout_per_command": self._timeout_per_command,
+                "cell_history_file": self.cell_history_file,
                 "_active_exec_state": (
                     dataclasses.asdict(self._active_exec_state)
                     if self._active_exec_state
@@ -193,6 +218,7 @@ class JupyterEnv:
             token=data["token"],
             use_secure=data["use_secure"],
             timeout_per_command=data["timeout_per_command"],
+            cell_history_file=data["cell_history_file"],
         )
         if data["_active_exec_state"]:
             obj._active_exec_state = ExecutionState(**data["_active_exec_state"])
@@ -266,7 +292,8 @@ class JupyterEnv:
             if response.status_code != 204:
                 raise ValueError(f"Failed to interrupt the kernel: {response}")
         self._create_connection()
-        self._clear_active_exec()
+
+        self._clear_active_exec(was_interrupted=True)
         self.run_command("pass")
 
     def _get_ws(self) -> WebSocket:
@@ -323,16 +350,28 @@ class JupyterEnv:
     def _initiate_exec(self, command: str) -> str:
         """Initiate websocket connection to Jupyter kernel.  Returns the
         message ID of the command."""
+        if self._active_exec_state:
+            raise ValueError("Active request already set.  It must be cleared first.")
+
         msg = prepare_execute_message(command)
         try:
             self._get_ws().send(json.dumps(msg))
         except BrokenPipeError:
             self._get_ws().send(json.dumps(msg))
 
-        self._init_active_exec(msg["header"]["msg_id"])
+        self._active_exec_state = ExecutionState(request_id=msg["header"]["msg_id"])
+
+        self.cell_history.append(
+            CellHistoryItem(
+                code=command,
+                start_timestamp_rfc3339=CellHistoryItem.get_rfc3339_timestamp(),
+            )
+        )
 
     def retrieve_output(self) -> str:
         """Retrieve output from Jupyter kernel."""
+        if not self.cell_history or self.cell_history[-1].is_finalized():
+            raise RuntimeError("No active cell to retrieve output for.")
         if not self._active_exec_state:
             raise RuntimeError("Trying to wait when there is no active request.")
         self._active_exec_state.is_timed_out = False
@@ -386,7 +425,7 @@ class JupyterEnv:
                             "Unexpectedly received idle status before execute_reply."
                         )
                     logger.info("Received idle status message. Execution finished.")
-                    self._clear_active_exec()
+                    self._clear_active_exec(was_interrupted=False)
                     break
                 elif rsp["content"]["execution_state"] == "starting":
                     # Sent once at startup but we don't care about it
@@ -410,7 +449,9 @@ class JupyterEnv:
                 self._intermediate_output.append(rsp["content"]["data"]["text/plain"])
             elif msg_type == "execute_reply":
                 self._active_exec_state.has_reply = True
-        return "".join(self._intermediate_output)
+
+        self.cell_history[-1].output = "".join(self._intermediate_output)
+        return self.cell_history[-1].output
 
 
 async def make_mcp_app(jupyter_env):
