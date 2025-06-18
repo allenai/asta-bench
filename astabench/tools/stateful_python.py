@@ -1,8 +1,17 @@
+import json
+import logging
 from contextvars import ContextVar
 
 from inspect_ai.tool import tool
+from inspect_ai.util import sandbox
 
 from astabench.solvers.sandbox_util import SandboxJupyter
+from astabench.solvers.sandbox_util.static.sandbox_types import (
+    JUPYTER_HISTORY_FILE,
+    CellHistoryItem,
+)
+
+logger = logging.getLogger(__name__)
 
 sandbox_jupyter = ContextVar[SandboxJupyter]("sandbox_jupyter")
 
@@ -88,3 +97,16 @@ async def interrupt_kernel_impl():
 @tool
 def interrupt_kernel():
     return interrupt_kernel_impl
+
+
+async def get_cell_history(
+    filename: str = JUPYTER_HISTORY_FILE,
+) -> list[CellHistoryItem] | None:
+    """Get the history of code cells executed in the Jupyter environment."""
+
+    try:
+        raw_history = json.loads(await sandbox().read_file(filename))
+        return [CellHistoryItem(**item) for item in raw_history]
+    except FileNotFoundError:
+        logger.warning(f"Missing {filename} in sandbox; can't score trajectory metrics")
+    return None

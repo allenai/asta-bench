@@ -14,11 +14,11 @@ from inspect_ai.dataset import MemoryDataset, Sample
 from inspect_ai.log import transcript
 from inspect_ai.scorer import Metric, SampleScore, Score, Scorer, Target, metric, scorer
 from inspect_ai.solver import TaskState, use_tools
-from inspect_ai.util import sandbox, span
+from inspect_ai.util import span
 
 from astabench.evals.utils import extract_json_from_response, not_implemented_solver
 from astabench.solvers.sandbox_util.static.sandbox_types import CellHistoryItem
-from astabench.tools import continue_wait, python_session
+from astabench.tools import continue_wait, get_cell_history, python_session
 
 logger = logging.getLogger(__name__)
 
@@ -70,11 +70,9 @@ async def load_trajectory_from_sandbox(
         ..., "observation": ..., "execution_start_time": ...,
         "execution_end_time": ...}).
     """
-    try:
-        raw_history = json.loads(await sandbox().read_file(filename))
-        cell_history = [CellHistoryItem(**item) for item in raw_history]
-    except FileNotFoundError:
-        logger.warning(f"Missing {filename} in sandbox; can't score trajectory metrics")
+
+    cell_history = await get_cell_history(filename)
+    if cell_history is None:
         return None
 
     # Do some simple transformation to match up the keys

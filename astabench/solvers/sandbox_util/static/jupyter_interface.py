@@ -15,12 +15,11 @@ from typing import Any, Callable, Dict, Optional
 
 import requests
 from mcp.server import FastMCP
-from sandbox_types import CellHistoryItem
+from sandbox_types import JUPYTER_HISTORY_FILE, CellHistoryItem
 from websocket import WebSocket, WebSocketTimeoutException, create_connection
 
 logger = logging.getLogger(__name__)
 
-JUPYTER_HISTORY_FILE = "jupyter_cell_history.json"
 JUPYTER_STATE_FILE = "jupyter_env_state.json"
 DEFAULT_TIMEOUT = 60 * 5
 

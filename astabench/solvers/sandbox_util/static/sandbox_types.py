@@ -11,6 +11,8 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Literal
 
+JUPYTER_HISTORY_FILE = "jupyter_cell_history.json"
+
 
 @dataclass
 class CellHistoryItem:
