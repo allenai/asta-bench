@@ -115,7 +115,7 @@ def test_paper_finder_litqa2() -> None:
     assert log[0].results is not None
 
     recall_results = dict()
-    output_path = Path("recall_metrics.jsonl")
+    output_path = Path("recall_metrics.json")
 
     for sample in log[0].reductions[0].samples:
         recall_results[sample.sample_id] = sample.metadata
