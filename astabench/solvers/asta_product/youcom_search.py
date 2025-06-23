@@ -62,7 +62,7 @@ def youcom_solver() -> Solver:
                         res = r.json()
                         docs.append(
                             {
-                                "paper_id": res["data"][0]["corpusId"],
+                                "paper_id": str(res["data"][0]["corpusId"]),
                                 "markdown_evidence": "",
                             }
                         )
