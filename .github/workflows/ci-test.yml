@@ -50,10 +50,6 @@ jobs:
           echo "Disk space after cleanup:"
           df -h
       - uses: actions/checkout@v4
-      - name: Set up SSH deploy key
-        uses: webfactory/ssh-agent@v0.5.4
-        with:
-          ssh-private-key: ${{ secrets.AGENTEVAL_DEPLOY_KEY }}
 
       # Set up Docker Buildx for caching
       - name: Set up Docker Buildx
@@ -65,7 +61,6 @@ jobs:
         with:
           context: .
           file: ./docker/Dockerfile
-          ssh: default
           tags: astabench:latest
           cache-from: type=gha,scope=astabench  # Use GitHub Actions cache
           cache-to: type=gha,mode=max,scope=astabench
