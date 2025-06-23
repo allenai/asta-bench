@@ -36,7 +36,8 @@ COPY pyproject.toml /astabench/
 RUN mkdir -p /astabench/astabench
 
 RUN uv sync --extra litqa2
-RUN uv sync --inexact --extra dev --extra inspect_evals --extra anthropic --extra smolagents --extra e2e_discovery
+RUN uv sync --inexact --extra sqa --extra super
+RUN uv sync --inexact --extra dev --extra inspect_evals --extra anthropic --extra smolagents --extra e2e_discovery --extra azure
 
 COPY . /astabench
 
