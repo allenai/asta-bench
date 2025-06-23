@@ -135,3 +135,27 @@ def test_paper_finder_litqa2() -> None:
     # Write results to file
     with output_path.open("w", encoding="utf-8") as f:
         json.dump(recall_results, f, indent=4)
+
+
+@pytest.mark.skipif(
+    not os.getenv("S2_API_KEY") or not os.getenv("YOUCOM_API_KEY"),
+    reason="S2_API_KEY or YOUCOM_API_KEY is missing.",
+)
+@pytest.mark.asyncio
+def test_youcom_search() -> None:
+    log = inspect_ai_eval(
+        str(
+            Path(__file__).parent.parent.parent
+            / "astabench/evals/paper_finder/task.py@paper_finder_test"
+        ),
+        model="openai/gpt-4o-mini",
+        task_args={"chosen_split": "test"},
+        solver=SolverSpec(
+            str(
+                Path(__file__).parent.parent.parent
+                / "astabench/solvers/asta_product/youcom_search.py@youcom_solver"
+            ),
+        ),
+    )
+
+    assert log[0].results is not None
