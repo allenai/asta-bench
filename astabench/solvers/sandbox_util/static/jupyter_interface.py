@@ -22,7 +22,7 @@ from websocket import WebSocket, WebSocketTimeoutException, create_connection
 
 logger = logging.getLogger(__name__)
 
-MCP_RESPONSE_BUFFER_DIR = "/tmp/mcp_response_buffer/"
+MCP_RESPONSE_BUFFER_DIR = os.getenv("MCP_RESPONSE_BUFFER_DIR", "/tmp/mcp_response_buffer/")
 
 # 65536 bytes is the actual maximum that can be sent (pipe capacity), and we
 # conservatively allow 8192 bytes for header/encoding overhead
