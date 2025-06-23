@@ -157,6 +157,8 @@ class SandboxJupyter:
 
         with open(Path(__file__).parent / "static/jupyter_interface.py", "r") as f:
             await self.sandbox.write_file("jupyter_interface.py", f.read())
+        with open(Path(__file__).parent / "static/sandbox_types.py", "r") as f:
+            await self.sandbox.write_file("sandbox_types.py", f.read())
 
         self._toolsource = mcp_server_sandbox(
             command="/opt/inspect_tool_support/bin/python",
