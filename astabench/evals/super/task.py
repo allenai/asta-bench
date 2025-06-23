@@ -113,9 +113,13 @@ async def parse_super_output(output: str) -> tuple[str, int, List[dict]]:
         # Case 1
         exec_res = extract_json_from_response(output)
         if exec_res is not None and all(
-            k in exec_res for k in ["exec_result", "history", "submitted"]
+            k in exec_res for k in ["history", "submitted"]
         ):
-            return exec_res["exec_result"], exec_res["submitted"], exec_res["history"]
+            return (
+                exec_res.get("exec_result", "ERROR"),
+                exec_res["submitted"],
+                exec_res["history"],
+            )
 
         history = await load_trajectory_from_sandbox()
 
@@ -129,7 +133,9 @@ async def parse_super_output(output: str) -> tuple[str, int, List[dict]]:
                 logger.info(
                     "Getting exec_res from trajectory history since it wasn't submitted"
                 )
-                exec_res = history[-1]["observation"]
+                exec_res = (
+                    extract_json_from_response(history[-1]["observation"]) or "ERROR"
+                )
     except (JSONDecodeError, ValueError):
         raise ValueError(f"Unable to parse agent output: {output}")
 
@@ -302,7 +308,8 @@ def check_super_execution() -> Scorer:
         landmarks = evaluate_checkpoints(state.metadata["landmarks"], trajectory)
 
         return Score(
-            value={"output_match": em, "submitted": submitted, "landmarks": landmarks}
+            value={"output_match": em, "submitted": submitted, "landmarks": landmarks},
+            answer=str(submission),
         )
 
     return score
@@ -325,7 +332,10 @@ def check_super_auto() -> Scorer:
             )
         entrypoint = evaluate_entrypoints(state.metadata["entrypoint"], trajectory)
 
-        return Score(value={"submitted": submitted, "entrypoint": entrypoint})
+        return Score(
+            value={"submitted": submitted, "entrypoint": entrypoint},
+            answer=str(submission),
+        )
 
     return score
 
