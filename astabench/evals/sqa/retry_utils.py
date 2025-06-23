@@ -18,6 +18,7 @@ async def generate_with_retry(
     config: GenerateConfig,
     max_retries: int = 20,
     base_delay: float = 2.0,
+    desired_schema=None,
 ) -> Any:
     """
     Generate response with retry logic and optional JSON parsing.
@@ -53,6 +54,9 @@ async def generate_with_retry(
             if json_start != -1 and json_end > json_start:
                 json_str = completion[json_start:json_end]
                 parsed = json.loads(json_str)
+                if desired_schema:
+                    parsed = desired_schema(**parsed)
+                    parsed = parsed.model_dump(mode="json")
 
                 return result, parsed, attempt
             else:

@@ -735,22 +735,22 @@ stages:
       test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
       test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval;
       uv run inspect score --overwrite --display none --scorer astabench/evals/sqa/task.py@score_all
-      -S scorer_model=google/gemini-2.5-pro-preview-03-25 test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
+      -S scorer_model=google/gemini-2.5-pro test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
     deps:
     - path: 
         test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
       hash: md5
-      md5: 2f65178e3325593b7cdd3fe065fccf3c
-      size: 1622818
+      md5: c509c6bcdd7f0692029d00e3f6187139
+      size: 8161774
     params:
       params.yaml:
-        scorer_model: google/gemini-2.5-pro-preview-03-25
+        scorer_model: google/gemini-2.5-pro
         sqa_scorer_version: may-23-2025
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
       hash: md5
-      md5: 1b21f9310f6e143d98d5e08744ac92e8
-      size: 3311388
+      md5: af8ab108b7a0f322a63ef680207b46de
+      size: 9593341
   score_all_solvers@google/gemini-2.5-pro-preview-03-25-test:
     cmd: echo "Scoring";[[ "google/gemini-2.5-pro-preview-03-25" == */* ]] && mkdir
       -p test_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25;
@@ -758,22 +758,22 @@ stages:
       test_dvc_logs/solver_outputs/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
       test_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval;
       uv run inspect score --overwrite --display none --scorer astabench/evals/sqa/task.py@score_all
-      -S scorer_model=google/gemini-2.5-pro-preview-03-25 test_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
+      -S scorer_model=google/gemini-2.5-pro test_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
     deps:
     - path: 
         test_dvc_logs/solver_outputs/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
       hash: md5
-      md5: 84fa3badc944a79eacbbba6e57706b2e
-      size: 2280121
+      md5: 8ab9ea1ffa6fc82f71e82a796fae1ab1
+      size: 2603396
     params:
       params.yaml:
-        scorer_model: google/gemini-2.5-pro-preview-03-25
+        scorer_model: google/gemini-2.5-pro
         sqa_scorer_version: may-23-2025
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
       hash: md5
-      md5: 1e9782d20c1390aa4ebabd62a7cb14d6
-      size: 3966677
+      md5: c32f37832577a7343721a4dc45269dca
+      size: 3463118
   score_all_solvers@openai/o4-mini-test:
     cmd: echo "Scoring";[[ "openai/o4-mini" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_openai/o4-mini;
       cp test_dvc_logs/solver_outputs/task_sqa_solver_openai/o4-mini.eval test_dvc_logs/scored/task_sqa_solver_openai/o4-mini.eval;
@@ -862,9 +862,9 @@ stages:
       size: 1923240
   solve_llm@model3-test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_anthropic/claude-sonnet-4-20250514
-      uv run --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display none
+      uv run --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain
       --log-dir test_dvc_logs/solver_outputs/ --solver astabench/solvers/sqa/formatted_llm.py@formatted_solver
-      --model anthropic/claude-sonnet-4-20250514  -T split=test -T scorer_model=google/gemini-2.5-pro-preview-03-25
+      --model anthropic/claude-sonnet-4-20250514  -T split=test -T scorer_model=google/gemini-2.5-pro
       -T excerpt_prompt=False --limit=1000 --retry-on-error=10 --log-shared --no-score;
       [[ "anthropic/claude-sonnet-4-20250514" == */* ]] && mkdir -p test_dvc_logs/solver_outputs/task_sqa_solver_$(dirname
       "anthropic/claude-sonnet-4-20250514"); mv "$(ls -t test_dvc_logs/solver_outputs/*anthropic/claude-sonnet-4-20250514.eval
@@ -873,56 +873,56 @@ stages:
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-pro-preview-03-25
+        scorer_model: google/gemini-2.5-pro
         sqa_solver_version: may-23-2025
     outs:
     - path: 
         test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
       hash: md5
-      md5: 2f65178e3325593b7cdd3fe065fccf3c
-      size: 1622818
+      md5: c509c6bcdd7f0692029d00e3f6187139
+      size: 8161774
   solve_memorized@model0-test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_fhouse_crow uv run --extra
-      sqa inspect eval astabench/evals/sqa/task.py@sqa --display none --log-dir dvc_logs/solver_outputs/
+      sqa inspect eval astabench/evals/sqa/task.py@sqa --display none --log-dir test_dvc_logs/solver_outputs/
       --solver astabench/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
-      -T scorer_model=google/gemini-2.5-pro-preview-03-25 -T split=test -S sys_name_or_path=fhouse_crow
+      -T scorer_model=google/gemini-2.5-pro -T split=test -S sys_name_or_path=fhouse_crow
       -S require_snippets=false --limit=1000 --retry-on-error=10 --log-shared --no-score;
       mv "$(ls -t test_dvc_logs/solver_outputs/*fhouse_crow.eval 2>/dev/null | head
       -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-pro-preview-03-25
+        scorer_model: google/gemini-2.5-pro
         sqa_solver_version: may-23-2025
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval
       hash: md5
-      md5: 47dd97a393abc12b649c2e33e78b5b8b
-      size: 1240685
+      md5: 7ce6ee5a36b336b15929a5e35fc3e795
+      size: 1443466
   solve_memorized@model1-test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_fhouse_falcon uv run --extra
-      sqa inspect eval astabench/evals/sqa/task.py@sqa --display none --log-dir dvc_logs/solver_outputs/
+      sqa inspect eval astabench/evals/sqa/task.py@sqa --display none --log-dir test_dvc_logs/solver_outputs/
       --solver astabench/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
-      -T scorer_model=google/gemini-2.5-pro-preview-03-25 -T split=test -S sys_name_or_path=fhouse_falcon
+      -T scorer_model=google/gemini-2.5-pro -T split=test -S sys_name_or_path=fhouse_falcon
       -S require_snippets=false --limit=1000 --retry-on-error=10 --log-shared --no-score;
       mv "$(ls -t test_dvc_logs/solver_outputs/*fhouse_falcon.eval 2>/dev/null | head
       -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-pro-preview-03-25
+        scorer_model: google/gemini-2.5-pro
         sqa_solver_version: may-23-2025
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval
       hash: md5
-      md5: 1bd08926424c455c8c41ec34d9be9088
-      size: 6745250
+      md5: 1444e580204b243a0ca753f3c13bb97e
+      size: 8435874
   solve_llm@model2-test:
     cmd: 
       INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_google/gemini-2.5-pro-preview-03-25
-      uv run --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display none
+      uv run --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain
       --log-dir test_dvc_logs/solver_outputs/ --solver astabench/solvers/sqa/formatted_llm.py@formatted_solver
-      --model google/gemini-2.5-pro-preview-03-25  -T split=test -T scorer_model=google/gemini-2.5-pro-preview-03-25
+      --model google/gemini-2.5-pro-preview-03-25  -T split=test -T scorer_model=google/gemini-2.5-pro
       -T excerpt_prompt=False --limit=1000 --retry-on-error=10 --log-shared --no-score;
       [[ "google/gemini-2.5-pro-preview-03-25" == */* ]] && mkdir -p test_dvc_logs/solver_outputs/task_sqa_solver_$(dirname
       "google/gemini-2.5-pro-preview-03-25"); mv "$(ls -t test_dvc_logs/solver_outputs/*google/gemini-2.5-pro-preview-03-25.eval
@@ -931,14 +931,14 @@ stages:
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-pro-preview-03-25
+        scorer_model: google/gemini-2.5-pro
         sqa_solver_version: may-23-2025
     outs:
     - path: 
         test_dvc_logs/solver_outputs/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
       hash: md5
-      md5: 84fa3badc944a79eacbbba6e57706b2e
-      size: 2280121
+      md5: 8ab9ea1ffa6fc82f71e82a796fae1ab1
+      size: 2603396
   solve_llm@model0-test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openai/o4-mini uv run --extra
       sqa inspect eval astabench/evals/sqa/task.py@sqa --display none --log-dir test_dvc_logs/solver_outputs/
@@ -962,58 +962,58 @@ stages:
   solve_memorized@model2-test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openai_deep_research uv run
       --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display none --log-dir
-      dvc_logs/solver_outputs/ --solver astabench/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
-      -T scorer_model=google/gemini-2.5-pro-preview-03-25 -T split=test -S sys_name_or_path=openai_deep_research  --limit=1000
+      test_dvc_logs/solver_outputs/ --solver astabench/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
+      -T scorer_model=google/gemini-2.5-pro -T split=test -S sys_name_or_path=openai_deep_research  --limit=1000
       --retry-on-error=10 --log-shared --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*openai_deep_research.eval
       2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-pro-preview-03-25
+        scorer_model: google/gemini-2.5-pro
         sqa_solver_version: may-23-2025
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval
       hash: md5
-      md5: 1774dabe7d8b39ab9e6b29f25285ee72
-      size: 14667189
+      md5: 0ca0403d04913c8d05c012bb013ed19e
+      size: 23480196
   score_all_solvers@fhouse_crow-test:
     cmd: echo "Scoring";[[ "fhouse_crow" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_fhouse_crow;
       cp test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval;
       uv run inspect score --overwrite --display none --scorer astabench/evals/sqa/task.py@score_all
-      -S scorer_model=google/gemini-2.5-pro-preview-03-25 test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
+      -S scorer_model=google/gemini-2.5-pro test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
     deps:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval
       hash: md5
-      md5: 47dd97a393abc12b649c2e33e78b5b8b
-      size: 1240685
+      md5: 7ce6ee5a36b336b15929a5e35fc3e795
+      size: 1443466
     params:
       params.yaml:
-        scorer_model: google/gemini-2.5-pro-preview-03-25
+        scorer_model: google/gemini-2.5-pro
         sqa_scorer_version: may-23-2025
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
       hash: md5
-      md5: 49cc2367297a869479ce1f4e0b3052b4
-      size: 2295279
+      md5: b9b7e447e71285332ed30851cfe35401
+      size: 2557166
   score_all_solvers@fhouse_falcon-test:
     cmd: echo "Scoring";[[ "fhouse_falcon" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_fhouse_falcon;
       cp test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval;
       uv run inspect score --overwrite --display none --scorer astabench/evals/sqa/task.py@score_all
-      -S scorer_model=google/gemini-2.5-pro-preview-03-25 test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
+      -S scorer_model=google/gemini-2.5-pro test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
     deps:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval
       hash: md5
-      md5: 1bd08926424c455c8c41ec34d9be9088
-      size: 6745250
+      md5: 1444e580204b243a0ca753f3c13bb97e
+      size: 8435874
     params:
       params.yaml:
-        scorer_model: google/gemini-2.5-pro-preview-03-25
+        scorer_model: google/gemini-2.5-pro
         sqa_scorer_version: may-23-2025
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
       hash: md5
-      md5: 07c41601ae636e5792a414d10c87761a
-      size: 11941651
+      md5: 1fad1002690d62533553d4c2bbe9d82f
+      size: 13573521
   solve_elicit@test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_elicit uv run --extra sqa inspect
       eval astabench/evals/sqa/task.py@sqa --display none --log-dir test_dvc_logs/solver_outputs/
@@ -1170,3 +1170,1248 @@ stages:
       hash: md5
       md5: 2a0394c744c40542c863c47830cec0e4
       size: 18867247
+  solve_memorized@model1-dev:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_fhouse_falcon uv run --extra
+      sqa inspect eval astabench/evals/sqa/task.py@sqa --display none --log-dir dev_dvc_logs/solver_outputs/
+      --solver astabench/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
+      -T scorer_model=google/gemini-2.5-pro -T split=dev -S sys_name_or_path=fhouse_falcon
+      -S require_snippets=false --limit=1000 --retry-on-error=10 --log-shared --no-score;
+      mv "$(ls -t dev_dvc_logs/solver_outputs/*fhouse_falcon.eval 2>/dev/null | head
+      -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval"
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-2.5-pro
+        sqa_solver_version: may-23-2025
+    outs:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval
+      hash: md5
+      md5: 2e13a36648af258fdb5bc75d71b00742
+      size: 1195707
+  score_all_solvers@fhouse_falcon-dev:
+    cmd: echo "Scoring";[[ "fhouse_falcon" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_fhouse_falcon;
+      cp dev_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval dev_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval;
+      uv run inspect score --overwrite --display none --scorer astabench/evals/sqa/task.py@score_all
+      -S scorer_model=google/gemini-2.5-pro dev_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval
+      hash: md5
+      md5: 2e13a36648af258fdb5bc75d71b00742
+      size: 1195707
+    params:
+      params.yaml:
+        scorer_model: google/gemini-2.5-pro
+        sqa_scorer_version: may-23-2025
+    outs:
+    - path: dev_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
+      hash: md5
+      md5: 3f8dc30c3952e687a76b2a1a10306b50
+      size: 1171464
+  solve_memorized@model0-dev:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_fhouse_crow uv run --extra
+      sqa inspect eval astabench/evals/sqa/task.py@sqa --display none --log-dir dev_dvc_logs/solver_outputs/
+      --solver astabench/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
+      -T scorer_model=google/gemini-2.5-pro -T split=dev -S sys_name_or_path=fhouse_crow
+      -S require_snippets=false --limit=1000 --retry-on-error=10 --log-shared --no-score;
+      mv "$(ls -t dev_dvc_logs/solver_outputs/*fhouse_crow.eval 2>/dev/null | head
+      -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval"
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-2.5-pro
+        sqa_solver_version: may-23-2025
+    outs:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval
+      hash: md5
+      md5: 4ff53a9992d562521979130e3bb36fcf
+      size: 1195651
+  solve_perplexity_dr@test:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_perplexity_dr uv run --extra
+      sqa inspect eval astabench/evals/sqa/task.py@sqa --display none --log-dir test_dvc_logs/solver_outputs/
+      --model 'perplexity/sonar-deep-research' --solver astabench/solvers/sqa/formatted_perplexity.py@formatted_solver
+      -T split=test -T scorer_model=google/gemini-2.5-pro --limit=1000 --log-shared
+      --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*task_sqa_solver_perplexity_dr.eval
+      2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval"
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-2.5-pro
+    outs:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval
+      hash: md5
+      md5: c1ba04199b4b8b0b3adefccb02e22956
+      size: 2027391
+  solve_perplexity_dr@dev:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_perplexity_dr uv run --extra
+      sqa inspect eval astabench/evals/sqa/task.py@sqa --display none --log-dir dev_dvc_logs/solver_outputs/
+      --solver astabench/evals/sqa/solvers/formatted_perplexity.py@formatted_solver
+      -S model='sonar-deep-research' -T split=dev -T scorer_model=google/gemini-2.5-pro
+      --limit=1000 --log-shared --no-score; mv "$(ls -t dev_dvc_logs/solver_outputs/*task_sqa_solver_perplexity_dr.eval
+      2>/dev/null | head -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval"
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-2.5-pro
+    outs:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval
+      hash: md5
+      md5: d7678fcfd337d480aa085a079e996135
+      size: 1832542
+  solve_memorized@model2-dev:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openai_deep_research uv run
+      --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display none --log-dir
+      dev_dvc_logs/solver_outputs/ --solver astabench/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
+      -T scorer_model=google/gemini-2.5-pro -T split=dev -S sys_name_or_path=openai_deep_research  --limit=1000
+      --retry-on-error=10 --log-shared --no-score; mv "$(ls -t dev_dvc_logs/solver_outputs/*openai_deep_research.eval
+      2>/dev/null | head -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval"
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-2.5-pro
+        sqa_solver_version: may-23-2025
+    outs:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval
+      hash: md5
+      md5: b201f2f7bd9c83f6e3c901805f385d44
+      size: 1195688
+  score_all_solvers@openai_deep_research-dev:
+    cmd: echo "Scoring";[[ "openai_deep_research" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_openai_deep_research;
+      cp dev_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval dev_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval;
+      uv run inspect score --overwrite --display none --scorer astabench/evals/sqa/task.py@score_all
+      -S scorer_model=google/gemini-2.5-pro dev_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval
+      hash: md5
+      md5: b201f2f7bd9c83f6e3c901805f385d44
+      size: 1195688
+    params:
+      params.yaml:
+        scorer_model: google/gemini-2.5-pro
+        sqa_scorer_version: may-23-2025
+    outs:
+    - path: dev_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
+      hash: md5
+      md5: a08a65bc955c04591dd059f106ada75f
+      size: 1171467
+  score_all_solvers@perplexity_dr-test:
+    cmd: echo "Scoring";[[ "perplexity_dr" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_perplexity_dr;
+      cp test_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval test_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval;
+      uv run inspect score --overwrite --display none --scorer astabench/evals/sqa/task.py@score_all
+      -S scorer_model=google/gemini-2.5-pro test_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval
+      hash: md5
+      md5: c1ba04199b4b8b0b3adefccb02e22956
+      size: 2027391
+    params:
+      params.yaml:
+        scorer_model: google/gemini-2.5-pro
+        sqa_scorer_version: may-23-2025
+    outs:
+    - path: test_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval
+      hash: md5
+      md5: 22e74c1e554d4581ec144659d703f3e6
+      size: 2950218
+  score_all_solvers@openai_deep_research-test:
+    cmd: echo "Scoring";[[ "openai_deep_research" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_openai_deep_research;
+      cp test_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval;
+      uv run inspect score --overwrite --display none --scorer astabench/evals/sqa/task.py@score_all
+      -S scorer_model=google/gemini-2.5-pro test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval
+      hash: md5
+      md5: 0ca0403d04913c8d05c012bb013ed19e
+      size: 23480196
+    params:
+      params.yaml:
+        scorer_model: google/gemini-2.5-pro
+        sqa_scorer_version: may-23-2025
+    outs:
+    - path: test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
+      hash: md5
+      md5: 66cce88008537ad9e17dabe69fc99ecb
+      size: 39255869
+  log_any_remaining_errors_and_record_scores@anthropic/claude-sonnet-4-20250514-thinking-test:
+    cmd: echo "Collecting errors";[[ "--model anthropic/claude-sonnet-4-20250514-thinking
+      --split test" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
+      "anthropic/claude-sonnet-4-20250514-thinking"); uv run scripts/log_errors.py
+      test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
+      test_dvc_logs/errors/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.json
+      test_dvc_logs/errors/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.md
+      test_dvc_logs/scores/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.md
+    deps:
+    - path: 
+        test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
+      hash: md5
+      md5: 95c16c8138961faf80cf8f3a2ffbbced
+      size: 3388636
+    outs:
+    - path: 
+        test_dvc_logs/errors/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: 
+        test_dvc_logs/errors/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: 
+        test_dvc_logs/scores/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.md
+      hash: md5
+      md5: 694ed27f361f2a8f02ef0313884c8719
+      size: 279
+  log_any_remaining_errors_and_record_scores@openai/o4-mini-test:
+    cmd: echo "Collecting errors";[[ "--model openai/o4-mini --split test" == */*
+      ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname "openai/o4-mini");
+      uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_openai/o4-mini.eval
+      test_dvc_logs/errors/task_sqa_solver_openai/o4-mini.json test_dvc_logs/errors/task_sqa_solver_openai/o4-mini.md
+      test_dvc_logs/scores/task_sqa_solver_openai/o4-mini.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_openai/o4-mini.eval
+      hash: md5
+      md5: 0c209d93fc3d097fa6e97163500fe7b4
+      size: 2216974
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_openai/o4-mini.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: test_dvc_logs/errors/task_sqa_solver_openai/o4-mini.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: test_dvc_logs/scores/task_sqa_solver_openai/o4-mini.md
+      hash: md5
+      md5: ff00b4ca086710e68cdd91ac4b8d62f3
+      size: 255
+  log_any_remaining_errors_and_record_scores@google/gemini-2.5-pro-preview-03-25-test:
+    cmd: echo "Collecting errors";[[ "google/gemini-2.5-pro-preview-03-25" == */*
+      ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname "google/gemini-2.5-pro-preview-03-25");
+      uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
+      test_dvc_logs/errors/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.json
+      test_dvc_logs/errors/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.md
+      test_dvc_logs/scores/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
+      hash: md5
+      md5: c32f37832577a7343721a4dc45269dca
+      size: 3463118
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: test_dvc_logs/errors/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: test_dvc_logs/scores/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.md
+      hash: md5
+      md5: 4a02b08c6acb59cd8fb510a5f5652e59
+      size: 255
+  log_any_remaining_errors_and_record_scores@anthropic/claude-sonnet-4-20250514-test:
+    cmd: echo "Collecting errors";[[ "--model anthropic/claude-sonnet-4-20250514 --split
+      test" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname "anthropic/claude-sonnet-4-20250514");
+      uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
+      test_dvc_logs/errors/task_sqa_solver_anthropic/claude-sonnet-4-20250514.json
+      test_dvc_logs/errors/task_sqa_solver_anthropic/claude-sonnet-4-20250514.md test_dvc_logs/scores/task_sqa_solver_anthropic/claude-sonnet-4-20250514.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
+      hash: md5
+      md5: af8ab108b7a0f322a63ef680207b46de
+      size: 9593341
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_anthropic/claude-sonnet-4-20250514.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: test_dvc_logs/errors/task_sqa_solver_anthropic/claude-sonnet-4-20250514.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: test_dvc_logs/scores/task_sqa_solver_anthropic/claude-sonnet-4-20250514.md
+      hash: md5
+      md5: 4a4799acb8e428392710888e2dd12abb
+      size: 255
+  log_any_remaining_errors_and_record_scores@anthropic/claude-3-7-sonnet-20250219-test:
+    cmd: echo "Collecting errors";[[ "--model anthropic/claude-3-7-sonnet-20250219
+      --split test" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
+      "anthropic/claude-3-7-sonnet-20250219"); uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.eval
+      test_dvc_logs/errors/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.json
+      test_dvc_logs/errors/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.md
+      test_dvc_logs/scores/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.eval
+      hash: md5
+      md5: 72e06a18887cb81b9de56374c0ac0258
+      size: 3734637
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: test_dvc_logs/errors/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: test_dvc_logs/scores/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.md
+      hash: md5
+      md5: 2d5d0ab4ffd12f360564d5a3cea20d96
+      size: 273
+  log_any_remaining_errors_and_record_scores@anthropic/claude-3-5-sonnet-20240620-test:
+    cmd: echo "Collecting errors";[[ "--model anthropic/claude-3-5-sonnet-20240620
+      --split test" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
+      "anthropic/claude-3-5-sonnet-20240620"); uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.eval
+      test_dvc_logs/errors/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.json
+      test_dvc_logs/errors/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.md
+      test_dvc_logs/scores/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.eval
+      hash: md5
+      md5: 7505022a14f77170858e515d3027eb17
+      size: 2103444
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: test_dvc_logs/errors/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: test_dvc_logs/scores/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.md
+      hash: md5
+      md5: 38c2ceaf72b9a494c8ec76ff681a9df4
+      size: 273
+  log_any_remaining_errors_and_record_scores@sqa_claude-3.7-dev:
+    cmd: echo "Collecting errors";[[ "--model sqa_claude-3.7 --split dev" == */* ]]
+      && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname "sqa_claude-3.7");
+      uv run scripts/log_errors.py dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
+      dev_dvc_logs/errors/task_sqa_solver_sqa_claude-3.7.json dev_dvc_logs/errors/task_sqa_solver_sqa_claude-3.7.md
+      dev_dvc_logs/scores/task_sqa_solver_sqa_claude-3.7.md
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
+      hash: md5
+      md5: 3c721079ddc6d5c5608183e5076feef9
+      size: 17946159
+    outs:
+    - path: dev_dvc_logs/errors/task_sqa_solver_sqa_claude-3.7.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: dev_dvc_logs/errors/task_sqa_solver_sqa_claude-3.7.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: dev_dvc_logs/scores/task_sqa_solver_sqa_claude-3.7.md
+      hash: md5
+      md5: a1762a246fef88f2e7d12fe60d958a6b
+      size: 269
+  log_any_remaining_errors_and_record_scores@sqa_claude-4.0-test:
+    cmd: echo "Collecting errors";[[ "--model sqa_claude-4.0 --split test" == */*
+      ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname "sqa_claude-4.0");
+      uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
+      test_dvc_logs/errors/task_sqa_solver_sqa_claude-4.0.json test_dvc_logs/errors/task_sqa_solver_sqa_claude-4.0.md
+      test_dvc_logs/scores/task_sqa_solver_sqa_claude-4.0.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
+      hash: md5
+      md5: 2a0394c744c40542c863c47830cec0e4
+      size: 18867247
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_sqa_claude-4.0.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: test_dvc_logs/errors/task_sqa_solver_sqa_claude-4.0.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: test_dvc_logs/scores/task_sqa_solver_sqa_claude-4.0.md
+      hash: md5
+      md5: 82f64a9390614b950f94b5ca07640be9
+      size: 269
+  log_any_remaining_errors_and_record_scores@sqa_gemini-2.5-pro-dev:
+    cmd: echo "Collecting errors";[[ "--model sqa_gemini-2.5-pro --split dev" == */*
+      ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname "sqa_gemini-2.5-pro");
+      uv run scripts/log_errors.py dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
+      dev_dvc_logs/errors/task_sqa_solver_sqa_gemini-2.5-pro.json dev_dvc_logs/errors/task_sqa_solver_sqa_gemini-2.5-pro.md
+      dev_dvc_logs/scores/task_sqa_solver_sqa_gemini-2.5-pro.md
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
+      hash: md5
+      md5: 1fd5fe5d1da6370be81265acf2ac6ac1
+      size: 12528643
+    outs:
+    - path: dev_dvc_logs/errors/task_sqa_solver_sqa_gemini-2.5-pro.json
+      hash: md5
+      md5: ee6275f343799f55926ad4b6e55ef78a
+      size: 3629
+    - path: dev_dvc_logs/errors/task_sqa_solver_sqa_gemini-2.5-pro.md
+      hash: md5
+      md5: 8aea18732de36406b4418887bfcdaa66
+      size: 3531
+    - path: dev_dvc_logs/scores/task_sqa_solver_sqa_gemini-2.5-pro.md
+      hash: md5
+      md5: cde79b525841d6d542465d7101273e95
+      size: 271
+  log_any_remaining_errors_and_record_scores@elicit-dev:
+    cmd: echo "Collecting errors";[[ "--model elicit --split dev" == */* ]] && mkdir
+      -p dev_dvc_logs/errors/task_sqa_solver_$(dirname "elicit"); uv run scripts/log_errors.py
+      dev_dvc_logs/scored/task_sqa_solver_elicit.eval dev_dvc_logs/errors/task_sqa_solver_elicit.json
+      dev_dvc_logs/errors/task_sqa_solver_elicit.md dev_dvc_logs/scores/task_sqa_solver_elicit.md
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_elicit.eval
+      hash: md5
+      md5: f4dd2123b778462930dd5a7da65749eb
+      size: 15423419
+    outs:
+    - path: dev_dvc_logs/errors/task_sqa_solver_elicit.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: dev_dvc_logs/errors/task_sqa_solver_elicit.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: dev_dvc_logs/scores/task_sqa_solver_elicit.md
+      hash: md5
+      md5: 72e01f523e894ea8ab45163b049b14af
+      size: 260
+  log_any_remaining_errors_and_record_scores@elicit-test:
+    cmd: echo "Collecting errors";[[ "--model elicit --split test" == */* ]] && mkdir
+      -p test_dvc_logs/errors/task_sqa_solver_$(dirname "elicit"); uv run scripts/log_errors.py
+      test_dvc_logs/scored/task_sqa_solver_elicit.eval test_dvc_logs/errors/task_sqa_solver_elicit.json
+      test_dvc_logs/errors/task_sqa_solver_elicit.md test_dvc_logs/scores/task_sqa_solver_elicit.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_elicit.eval
+      hash: md5
+      md5: 9375caa604a2eb2f0edc91f73cec4ba8
+      size: 13789651
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_elicit.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: test_dvc_logs/errors/task_sqa_solver_elicit.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: test_dvc_logs/scores/task_sqa_solver_elicit.md
+      hash: md5
+      md5: d48406803bd029c7af7146a5153acdea
+      size: 259
+  log_any_remaining_errors_and_record_scores@storm-dev:
+    cmd: echo "Collecting errors";[[ "--model storm --split dev" == */* ]] && mkdir
+      -p dev_dvc_logs/errors/task_sqa_solver_$(dirname "storm"); uv run scripts/log_errors.py
+      dev_dvc_logs/scored/task_sqa_solver_storm.eval dev_dvc_logs/errors/task_sqa_solver_storm.json
+      dev_dvc_logs/errors/task_sqa_solver_storm.md dev_dvc_logs/scores/task_sqa_solver_storm.md
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_storm.eval
+      hash: md5
+      md5: 0f75d60dca70191d1208977883b13b4a
+      size: 11861670
+    outs:
+    - path: dev_dvc_logs/errors/task_sqa_solver_storm.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: dev_dvc_logs/errors/task_sqa_solver_storm.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: dev_dvc_logs/scores/task_sqa_solver_storm.md
+      hash: md5
+      md5: 6bcfb746307ee52d52144168414981af
+      size: 259
+  log_any_remaining_errors_and_record_scores@scispace-test:
+    cmd: echo "Collecting errors";[[ "--model scispace --split test" == */* ]] &&
+      mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname "scispace"); uv run
+      scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_scispace.eval test_dvc_logs/errors/task_sqa_solver_scispace.json
+      test_dvc_logs/errors/task_sqa_solver_scispace.md test_dvc_logs/scores/task_sqa_solver_scispace.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_scispace.eval
+      hash: md5
+      md5: e517fa1055570efb347dd6a924e478ae
+      size: 46039197
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_scispace.json
+      hash: md5
+      md5: c9006eeea4c10033fc8f6c2bfe7f54cf
+      size: 3450
+    - path: test_dvc_logs/errors/task_sqa_solver_scispace.md
+      hash: md5
+      md5: a33f67c943a924724d941a852ea4ea5c
+      size: 3366
+    - path: test_dvc_logs/scores/task_sqa_solver_scispace.md
+      hash: md5
+      md5: 478bfaed313225044e509c386a1eea4e
+      size: 259
+  log_any_remaining_errors_and_record_scores@fhouse_crow-test:
+    cmd: echo "Collecting errors";[[ "--model fhouse_crow --split test" == */* ]]
+      && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname "fhouse_crow"); uv
+      run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
+      test_dvc_logs/errors/task_sqa_solver_fhouse_crow.json test_dvc_logs/errors/task_sqa_solver_fhouse_crow.md
+      test_dvc_logs/scores/task_sqa_solver_fhouse_crow.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
+      hash: md5
+      md5: b9b7e447e71285332ed30851cfe35401
+      size: 2557166
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_fhouse_crow.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: test_dvc_logs/errors/task_sqa_solver_fhouse_crow.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: test_dvc_logs/scores/task_sqa_solver_fhouse_crow.md
+      hash: md5
+      md5: 38999fe65b55807322108483b453a9d5
+      size: 263
+  log_any_remaining_errors_and_record_scores@fhouse_falcon-dev:
+    cmd: echo "Collecting errors";[[ "--model fhouse_falcon --split dev" == */* ]]
+      && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname "fhouse_falcon");
+      uv run scripts/log_errors.py dev_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
+      dev_dvc_logs/errors/task_sqa_solver_fhouse_falcon.json dev_dvc_logs/errors/task_sqa_solver_fhouse_falcon.md
+      dev_dvc_logs/scores/task_sqa_solver_fhouse_falcon.md
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
+      hash: md5
+      md5: 3f8dc30c3952e687a76b2a1a10306b50
+      size: 1171464
+    outs:
+    - path: dev_dvc_logs/errors/task_sqa_solver_fhouse_falcon.json
+      hash: md5
+      md5: 1042ac28c49fed53aac5bcb0123be0e0
+      size: 218146
+    - path: dev_dvc_logs/errors/task_sqa_solver_fhouse_falcon.md
+      hash: md5
+      md5: b9586504a2899c49879162e9aee89e70
+      size: 211780
+    - path: dev_dvc_logs/scores/task_sqa_solver_fhouse_falcon.md
+      hash: md5
+      md5: aaf96729f64c77598dcbdf429bebfd8c
+      size: 247
+  log_any_remaining_errors_and_record_scores@fhouse_falcon-test:
+    cmd: echo "Collecting errors";[[ "--model fhouse_falcon --split test" == */* ]]
+      && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname "fhouse_falcon");
+      uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
+      test_dvc_logs/errors/task_sqa_solver_fhouse_falcon.json test_dvc_logs/errors/task_sqa_solver_fhouse_falcon.md
+      test_dvc_logs/scores/task_sqa_solver_fhouse_falcon.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
+      hash: md5
+      md5: 1fad1002690d62533553d4c2bbe9d82f
+      size: 13573521
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_fhouse_falcon.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: test_dvc_logs/errors/task_sqa_solver_fhouse_falcon.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: test_dvc_logs/scores/task_sqa_solver_fhouse_falcon.md
+      hash: md5
+      md5: 514c0eb05b39c3bc1feeb45ccb7704a2
+      size: 263
+  log_any_remaining_errors_and_record_scores@openai_deep_research-dev:
+    cmd: echo "Collecting errors";[[ "--model openai_deep_research --split dev" ==
+      */* ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname "openai_deep_research");
+      uv run scripts/log_errors.py dev_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
+      dev_dvc_logs/errors/task_sqa_solver_openai_deep_research.json dev_dvc_logs/errors/task_sqa_solver_openai_deep_research.md
+      dev_dvc_logs/scores/task_sqa_solver_openai_deep_research.md
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
+      hash: md5
+      md5: a08a65bc955c04591dd059f106ada75f
+      size: 1171467
+    outs:
+    - path: dev_dvc_logs/errors/task_sqa_solver_openai_deep_research.json
+      hash: md5
+      md5: 1042ac28c49fed53aac5bcb0123be0e0
+      size: 218146
+    - path: dev_dvc_logs/errors/task_sqa_solver_openai_deep_research.md
+      hash: md5
+      md5: b9586504a2899c49879162e9aee89e70
+      size: 211780
+    - path: dev_dvc_logs/scores/task_sqa_solver_openai_deep_research.md
+      hash: md5
+      md5: aaf96729f64c77598dcbdf429bebfd8c
+      size: 247
+  log_any_remaining_errors_and_record_scores@openai_deep_research-test:
+    cmd: echo "Collecting errors";[[ "--model openai_deep_research --split test" ==
+      */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname "openai_deep_research");
+      uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
+      test_dvc_logs/errors/task_sqa_solver_openai_deep_research.json test_dvc_logs/errors/task_sqa_solver_openai_deep_research.md
+      test_dvc_logs/scores/task_sqa_solver_openai_deep_research.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
+      hash: md5
+      md5: 66cce88008537ad9e17dabe69fc99ecb
+      size: 39255869
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_openai_deep_research.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: test_dvc_logs/errors/task_sqa_solver_openai_deep_research.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: test_dvc_logs/scores/task_sqa_solver_openai_deep_research.md
+      hash: md5
+      md5: de7f3b30228966063204d2a6fd06cab5
+      size: 262
+  log_any_remaining_errors_and_record_scores@perplexity_dr-test:
+    cmd: echo "Collecting errors";[[ "perplexity_dr" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
+      "perplexity_dr"); uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval
+      test_dvc_logs/errors/task_sqa_solver_perplexity_dr.json test_dvc_logs/errors/task_sqa_solver_perplexity_dr.md
+      test_dvc_logs/scores/task_sqa_solver_perplexity_dr.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval
+      hash: md5
+      md5: 22e74c1e554d4581ec144659d703f3e6
+      size: 2950218
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_perplexity_dr.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: test_dvc_logs/errors/task_sqa_solver_perplexity_dr.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: test_dvc_logs/scores/task_sqa_solver_perplexity_dr.md
+      hash: md5
+      md5: 680e69e59fa781cc063d799c131b054b
+      size: 255
+  extract_model_responses@sqa_claude-3.7-dev:
+    cmd: uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-3.7.eval
+      dev_dvc_logs/model_responses/
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-3.7.eval
+      hash: md5
+      md5: f7d2bdc765e3dfdac4098687a48acdb2
+      size: 6977126
+    outs:
+    - path: dev_dvc_logs/model_responses/task_sqa_solver_sqa_claude-3.7_responses.csv
+      hash: md5
+      md5: 384756dc5b31470a8a2a47eb0af92940
+      size: 11862430
+  extract_model_responses@sqa_claude-4.0-test:
+    cmd: uv run scripts/extract_model_responses.py test_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.0.eval
+      test_dvc_logs/model_responses/
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.0.eval
+      hash: md5
+      md5: 2a0394c744c40542c863c47830cec0e4
+      size: 18867247
+    outs:
+    - path: test_dvc_logs/model_responses/task_sqa_solver_sqa_claude-4.0_responses.csv
+      hash: md5
+      md5: 905fdeffa2c5e331b557c966aa7a10a4
+      size: 12000012
+  extract_model_responses@sqa_gemini-2.5-pro-dev:
+    cmd: uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-2.5-pro.eval
+      dev_dvc_logs/model_responses/
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-2.5-pro.eval
+      hash: md5
+      md5: 11b8e76f15e637144dc78cec93abbb35
+      size: 5207201
+    outs:
+    - path: dev_dvc_logs/model_responses/task_sqa_solver_sqa_gemini-2.5-pro_responses.csv
+      hash: md5
+      md5: c00b3946250d26cf83fbe0af26e50386
+      size: 8466875
+  extract_model_responses@sqa_gemini-2.5-pro-test:
+    cmd: uv run scripts/extract_model_responses.py test_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-2.5-pro.eval
+      test_dvc_logs/model_responses/
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-2.5-pro.eval
+      hash: md5
+      md5: aad729fd32cf3382bb8e2056732eb602
+      size: 9813349
+    outs:
+    - path: test_dvc_logs/model_responses/task_sqa_solver_sqa_gemini-2.5-pro_responses.csv
+      hash: md5
+      md5: 68f315cae15891b12c157f97207c1cd0
+      size: 15354139
+  extract_model_responses@elicit-dev:
+    cmd: uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_elicit.eval
+      dev_dvc_logs/model_responses/
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_elicit.eval
+      hash: md5
+      md5: 4b26338b1b2dbd4e9885cba75caafacf
+      size: 4164001
+    outs:
+    - path: dev_dvc_logs/model_responses/task_sqa_solver_elicit_responses.csv
+      hash: md5
+      md5: 8ea8c930fd12d1de48d021262c2c6472
+      size: 17195211
+  extract_model_responses@storm-dev:
+    cmd: uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_storm.eval
+      dev_dvc_logs/model_responses/
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_storm.eval
+      hash: md5
+      md5: dfa20f6b2a17384ca2180549fcb80b83
+      size: 4813268
+    outs:
+    - path: dev_dvc_logs/model_responses/task_sqa_solver_storm_responses.csv
+      hash: md5
+      md5: e2afa4c6d9588fd75f6f44b6f36e4a11
+      size: 12243008
+  extract_model_responses@scispace-test:
+    cmd: uv run scripts/extract_model_responses.py test_dvc_logs/solver_outputs/task_sqa_solver_scispace.eval
+      test_dvc_logs/model_responses/
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_scispace.eval
+      hash: md5
+      md5: e517fa1055570efb347dd6a924e478ae
+      size: 46039197
+    outs:
+    - path: test_dvc_logs/model_responses/task_sqa_solver_scispace_responses.csv
+      hash: md5
+      md5: 7c98f466024e9fbcf8f38dcd9eda07da
+      size: 20701114
+  extract_model_responses@fhouse_crow-dev:
+    cmd: uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval
+      dev_dvc_logs/model_responses/
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval
+      hash: md5
+      md5: 4ff53a9992d562521979130e3bb36fcf
+      size: 1195651
+    outs:
+    - path: dev_dvc_logs/model_responses/task_sqa_solver_fhouse_crow_responses.csv
+      hash: md5
+      md5: 68b329da9893e34099c7d8ad5cb9c940
+      size: 1
+  extract_model_responses@fhouse_crow-test:
+    cmd: uv run scripts/extract_model_responses.py test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval
+      test_dvc_logs/model_responses/
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval
+      hash: md5
+      md5: 7ce6ee5a36b336b15929a5e35fc3e795
+      size: 1443466
+    outs:
+    - path: test_dvc_logs/model_responses/task_sqa_solver_fhouse_crow_responses.csv
+      hash: md5
+      md5: 80fca8cf20cd3cbc10e6768a6bdd5592
+      size: 2009849
+  extract_model_responses@fhouse_falcon-dev:
+    cmd: uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval
+      dev_dvc_logs/model_responses/
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval
+      hash: md5
+      md5: 2e13a36648af258fdb5bc75d71b00742
+      size: 1195707
+    outs:
+    - path: dev_dvc_logs/model_responses/task_sqa_solver_fhouse_falcon_responses.csv
+      hash: md5
+      md5: 68b329da9893e34099c7d8ad5cb9c940
+      size: 1
+  extract_model_responses@fhouse_falcon-test:
+    cmd: uv run scripts/extract_model_responses.py test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval
+      test_dvc_logs/model_responses/
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval
+      hash: md5
+      md5: 1444e580204b243a0ca753f3c13bb97e
+      size: 8435874
+    outs:
+    - path: test_dvc_logs/model_responses/task_sqa_solver_fhouse_falcon_responses.csv
+      hash: md5
+      md5: 0415ef3db4d0a37d516c855a8bf158ef
+      size: 8789617
+  extract_model_responses@openai_deep_research-dev:
+    cmd: uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval
+      dev_dvc_logs/model_responses/
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval
+      hash: md5
+      md5: b201f2f7bd9c83f6e3c901805f385d44
+      size: 1195688
+    outs:
+    - path: dev_dvc_logs/model_responses/task_sqa_solver_openai_deep_research_responses.csv
+      hash: md5
+      md5: 68b329da9893e34099c7d8ad5cb9c940
+      size: 1
+  extract_model_responses@openai_deep_research-test:
+    cmd: uv run scripts/extract_model_responses.py test_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval
+      test_dvc_logs/model_responses/
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval
+      hash: md5
+      md5: 0ca0403d04913c8d05c012bb013ed19e
+      size: 23480196
+    outs:
+    - path: test_dvc_logs/model_responses/task_sqa_solver_openai_deep_research_responses.csv
+      hash: md5
+      md5: c13af5e81017223059573f852111f400
+      size: 16915400
+  extract_model_responses@perplexity_dr-dev:
+    cmd: uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval
+      dev_dvc_logs/model_responses/
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval
+      hash: md5
+      md5: d7678fcfd337d480aa085a079e996135
+      size: 1832542
+    outs:
+    - path: dev_dvc_logs/model_responses/task_sqa_solver_perplexity_dr_responses.csv
+      hash: md5
+      md5: a4f0a0f2a3e9986ff6769dfb5a2b62f0
+      size: 1496650
+  extract_model_responses@perplexity_dr-test:
+    cmd: echo "Extracting responses"; [[ "perplexity_dr" == */* ]] && mkdir -p test_dvc_logs/model_responses/task_sqa_solver_$(dirname
+      "perplexity_dr"); uv run scripts/extract_model_responses.py test_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval
+      test_dvc_logs/model_responses/
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval
+      hash: md5
+      md5: c1ba04199b4b8b0b3adefccb02e22956
+      size: 2027391
+    outs:
+    - path: test_dvc_logs/model_responses/task_sqa_solver_perplexity_dr_responses.csv
+      hash: md5
+      md5: 1650b2a64ac85d79d3a174ad3b1c5757
+      size: 1520537
+  create_nice_logs@sqa_claude-3.7-dev:
+    cmd: uv run scripts/create_debug_logs.py dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
+      dev_dvc_logs/debug_logs/
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
+      hash: md5
+      md5: 3c721079ddc6d5c5608183e5076feef9
+      size: 17946159
+    outs:
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-3.7_answer_precision_eval.csv
+      hash: md5
+      md5: 95620531be75eda46598c04e162873a9
+      size: 17386845
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-3.7_citation_eval.csv
+      hash: md5
+      md5: 89e00d75425666317931d0a8498c8c41
+      size: 92462935
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-3.7_rubric_eval.csv
+      hash: md5
+      md5: ecb3ba563d425ca0af4fe5fc8a8f7e04
+      size: 14608595
+  create_nice_logs@sqa_claude-4.0-test:
+    cmd: uv run scripts/create_debug_logs.py test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
+      test_dvc_logs/debug_logs/
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
+      hash: md5
+      md5: 2a0394c744c40542c863c47830cec0e4
+      size: 18867247
+    outs:
+    - path: 
+        test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.0_answer_precision_eval.csv
+      hash: md5
+      md5: e384babfc00a88f056e7ca4b459fe460
+      size: 16678602
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.0_citation_eval.csv
+      hash: md5
+      md5: 77b84af15d4fa6cbef4f9602be218985
+      size: 92787561
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.0_rubric_eval.csv
+      hash: md5
+      md5: ec9bbe024a4c3b62a20e92d932a22770
+      size: 14648624
+  create_nice_logs@sqa_gemini-2.5-pro-dev:
+    cmd: uv run scripts/create_debug_logs.py dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
+      dev_dvc_logs/debug_logs/
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
+      hash: md5
+      md5: 1fd5fe5d1da6370be81265acf2ac6ac1
+      size: 12528643
+    outs:
+    - path: 
+        dev_dvc_logs/debug_logs/task_sqa_solver_sqa_gemini-2.5-pro_answer_precision_eval.csv
+      hash: md5
+      md5: 2441ec86241adcb3992b65f9ee44f0d9
+      size: 11636132
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_gemini-2.5-pro_citation_eval.csv
+      hash: md5
+      md5: d2107dab816391bb03e493af91cb04df
+      size: 58926189
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_gemini-2.5-pro_rubric_eval.csv
+      hash: md5
+      md5: a8d79bbe8534b32ac2c706a6b8b76515
+      size: 10384184
+  create_nice_logs@elicit-dev:
+    cmd: uv run scripts/create_debug_logs.py dev_dvc_logs/scored/task_sqa_solver_elicit.eval
+      dev_dvc_logs/debug_logs/
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_elicit.eval
+      hash: md5
+      md5: f4dd2123b778462930dd5a7da65749eb
+      size: 15423419
+    outs:
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_elicit_answer_precision_eval.csv
+      hash: md5
+      md5: 10a51403bb1ecf751eb946332ef455c6
+      size: 32309757
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_elicit_citation_eval.csv
+      hash: md5
+      md5: e6f55dd62ceafc3d8c4e921806cdf82d
+      size: 112832767
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_elicit_rubric_eval.csv
+      hash: md5
+      md5: 1c85b05463925942470f52a22cbf4dfb
+      size: 23389472
+  create_nice_logs@elicit-test:
+    cmd: uv run scripts/create_debug_logs.py test_dvc_logs/scored/task_sqa_solver_elicit.eval
+      test_dvc_logs/debug_logs/
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_elicit.eval
+      hash: md5
+      md5: 9375caa604a2eb2f0edc91f73cec4ba8
+      size: 13789651
+    outs:
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_elicit_answer_precision_eval.csv
+      hash: md5
+      md5: ebd162a6c63b71f6eb386e2545d15720
+      size: 27454384
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_elicit_citation_eval.csv
+      hash: md5
+      md5: 1defed33fe981e9f99cb01fa8be453a8
+      size: 101013275
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_elicit_rubric_eval.csv
+      hash: md5
+      md5: b9169a6817dd1f7cded72aaf121de0ff
+      size: 20689127
+  create_nice_logs@storm-dev:
+    cmd: uv run scripts/create_debug_logs.py dev_dvc_logs/scored/task_sqa_solver_storm.eval
+      dev_dvc_logs/debug_logs/
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_storm.eval
+      hash: md5
+      md5: 0f75d60dca70191d1208977883b13b4a
+      size: 11861670
+    outs:
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_storm_answer_precision_eval.csv
+      hash: md5
+      md5: c0c459c473d06d6ea34639f96c7cbd33
+      size: 16555337
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_storm_citation_eval.csv
+      hash: md5
+      md5: de970d60bc907c4e8b7f577abb7e5504
+      size: 111175938
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_storm_rubric_eval.csv
+      hash: md5
+      md5: f44e2ca8fc7ef0f4a0852239526907e7
+      size: 14538513
+  create_nice_logs@fhouse_crow-test:
+    cmd: uv run scripts/create_debug_logs.py test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
+      test_dvc_logs/debug_logs/
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
+      hash: md5
+      md5: b9b7e447e71285332ed30851cfe35401
+      size: 2557166
+    outs:
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_fhouse_crow_answer_precision_eval.csv
+      hash: md5
+      md5: cd7a23dcb43f13c48797a49f4554e35f
+      size: 3135387
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_fhouse_crow_citation_eval.csv
+      hash: md5
+      md5: 09ba1098b91ad9941ffa3d8984bf1995
+      size: 10152386
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_fhouse_crow_rubric_eval.csv
+      hash: md5
+      md5: 3312116bb68231b4caff7e8fdccf468d
+      size: 2971389
+  create_nice_logs@fhouse_falcon-test:
+    cmd: uv run scripts/create_debug_logs.py test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
+      test_dvc_logs/debug_logs/
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
+      hash: md5
+      md5: 1fad1002690d62533553d4c2bbe9d82f
+      size: 13573521
+    outs:
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_fhouse_falcon_answer_precision_eval.csv
+      hash: md5
+      md5: cda94e91d132b34d9c25b40fef6dd5a7
+      size: 13456929
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_fhouse_falcon_citation_eval.csv
+      hash: md5
+      md5: 4a76553a11973bff1ecceae5a29f5be3
+      size: 108118167
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_fhouse_falcon_rubric_eval.csv
+      hash: md5
+      md5: 7d172b7092aa5d05b7c908ba2e25780f
+      size: 11384808
+  create_nice_logs@openai_deep_research-test:
+    cmd: uv run scripts/create_debug_logs.py test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
+      test_dvc_logs/debug_logs/
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
+      hash: md5
+      md5: 66cce88008537ad9e17dabe69fc99ecb
+      size: 39255869
+    outs:
+    - path: 
+        test_dvc_logs/debug_logs/task_sqa_solver_openai_deep_research_answer_precision_eval.csv
+      hash: md5
+      md5: d07d421126816f862bcb5d1a047e564f
+      size: 24269989
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_openai_deep_research_citation_eval.csv
+      hash: md5
+      md5: f1561269902959c54682f147d2750818
+      size: 125274599
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_openai_deep_research_rubric_eval.csv
+      hash: md5
+      md5: 2b69adb3d8fd4a6ecb5f8721e99d6699
+      size: 20732204
+  create_nice_logs@perplexity_dr-test:
+    cmd: echo "Creating logs"; [[ "perplexity_dr" == */* ]] && mkdir -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname
+      "perplexity_dr"); uv run scripts/create_debug_logs.py test_dvc_logs/scored/
+      task_sqa_solver_perplexity_dr.eval test_dvc_logs/debug_logs/
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval
+      hash: md5
+      md5: 22e74c1e554d4581ec144659d703f3e6
+      size: 2950218
+    outs:
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_perplexity_dr_answer_precision_eval.csv
+      hash: md5
+      md5: 841b43fbe863f75df328dbfd96c410ca
+      size: 2342817
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_perplexity_dr_citation_eval.csv
+      hash: md5
+      md5: 6a3f399c5af9bb83eda12fdaa9fe73fc
+      size: 6806116
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_perplexity_dr_rubric_eval.csv
+      hash: md5
+      md5: 1a2f3ae6c889535243e10aea77ed4460
+      size: 2296657
+  solve_you@test:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_you uv run --extra sqa inspect
+      eval astabench/evals/sqa/task.py@sqa --display none --log-dir test_dvc_logs/solver_outputs/
+      --solver astabench/solvers/sqa/formatted_youcom.py@formatted_solver -S api_type='research'
+      -T split=test -T scorer_model=google/gemini-2.5-pro --limit=1000 --log-shared
+      --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*task_sqa_solver_you.eval
+      2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_you.eval"
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-2.5-pro
+    outs:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_you.eval
+      hash: md5
+      md5: d3d528dd45b27e5b9508a0087d978d87
+      size: 1626349
+  create_nice_logs@google/gemini-2.5-pro-preview-03-25-test:
+    cmd: echo "Creating logs"; [[ "google/gemini-2.5-pro-preview-03-25" == */* ]]
+      && mkdir -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname "google/gemini-2.5-pro-preview-03-25");
+      uv run scripts/create_debug_logs.py test_dvc_logs/scored/ task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
+      test_dvc_logs/debug_logs/
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
+      hash: md5
+      md5: c32f37832577a7343721a4dc45269dca
+      size: 3463118
+    outs:
+    - path: 
+        test_dvc_logs/debug_logs/task_sqa_solver_google/gemini-2.5-pro-preview-03-25_answer_precision_eval.csv
+      hash: md5
+      md5: 3ff316d4624946c426273c62bf9d0c9f
+      size: 2083385
+    - path: 
+        test_dvc_logs/debug_logs/task_sqa_solver_google/gemini-2.5-pro-preview-03-25_citation_eval.csv
+      hash: md5
+      md5: dbc8d16f4171949ae21dfde2da088b8f
+      size: 4338170
+    - path: 
+        test_dvc_logs/debug_logs/task_sqa_solver_google/gemini-2.5-pro-preview-03-25_rubric_eval.csv
+      hash: md5
+      md5: 3d6f3444815cd1acc202e426428f2d71
+      size: 1965817
+  score_all_solvers@you-test:
+    cmd: echo "Scoring";[[ "you" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_you;
+      cp test_dvc_logs/solver_outputs/task_sqa_solver_you.eval test_dvc_logs/scored/task_sqa_solver_you.eval;
+      uv run inspect score --overwrite --display none --scorer astabench/evals/sqa/task.py@score_all
+      -S scorer_model=google/gemini-2.5-pro test_dvc_logs/scored/task_sqa_solver_you.eval
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_you.eval
+      hash: md5
+      md5: d3d528dd45b27e5b9508a0087d978d87
+      size: 1626349
+    params:
+      params.yaml:
+        scorer_model: google/gemini-2.5-pro
+        sqa_scorer_version: may-23-2025
+    outs:
+    - path: test_dvc_logs/scored/task_sqa_solver_you.eval
+      hash: md5
+      md5: 7b8e139c723e9e282db6d1d9b1e62528
+      size: 2757422
+  create_nice_logs@you-test:
+    cmd: echo "Creating logs"; [[ "you" == */* ]] && mkdir -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname
+      "you"); uv run scripts/create_debug_logs.py test_dvc_logs/scored/ task_sqa_solver_you.eval
+      test_dvc_logs/debug_logs/
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_you.eval
+      hash: md5
+      md5: 7b8e139c723e9e282db6d1d9b1e62528
+      size: 2757422
+    outs:
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_you_answer_precision_eval.csv
+      hash: md5
+      md5: 7fc6022ef7f42d2e4a1217ba57e7a652
+      size: 3665336
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_you_citation_eval.csv
+      hash: md5
+      md5: b6af8dbbb4ceeff552124b3bd5bb993e
+      size: 11136022
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_you_rubric_eval.csv
+      hash: md5
+      md5: 5093c65b4b69b1e8445bb0515733660d
+      size: 3166752
+  solve_you@dev:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_you uv run --extra sqa inspect
+      eval astabench/evals/sqa/task.py@sqa --display none --log-dir dev_dvc_logs/solver_outputs/
+      --solver astabench/solvers/sqa/formatted_youcom.py@formatted_solver -S api_type='research'
+      -T split=dev -T scorer_model=google/gemini-2.5-pro --limit=1000 --log-shared
+      --no-score; mv "$(ls -t dev_dvc_logs/solver_outputs/*task_sqa_solver_you.eval
+      2>/dev/null | head -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_you.eval"
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-2.5-pro
+    outs:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_you.eval
+      hash: md5
+      md5: 192472f7eb929b7482f41291f018c775
+      size: 3266161
+  score_all_solvers@you-dev:
+    cmd: echo "Scoring";[[ "you" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_you;
+      cp dev_dvc_logs/solver_outputs/task_sqa_solver_you.eval dev_dvc_logs/scored/task_sqa_solver_you.eval;
+      uv run inspect score --overwrite --display none --scorer astabench/evals/sqa/task.py@score_all
+      -S scorer_model=google/gemini-2.5-pro dev_dvc_logs/scored/task_sqa_solver_you.eval
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_you.eval
+      hash: md5
+      md5: 192472f7eb929b7482f41291f018c775
+      size: 3266161
+    params:
+      params.yaml:
+        scorer_model: google/gemini-2.5-pro
+        sqa_scorer_version: may-23-2025
+    outs:
+    - path: dev_dvc_logs/scored/task_sqa_solver_you.eval
+      hash: md5
+      md5: 9ffd02271e3e292642a74f24f1177162
+      size: 3851750
+  create_nice_logs@you-dev:
+    cmd: echo "Creating logs"; [[ "you" == */* ]] && mkdir -p dev_dvc_logs/debug_logs/task_sqa_solver_$(dirname
+      "you"); uv run scripts/create_debug_logs.py dev_dvc_logs/scored/ task_sqa_solver_you.eval
+      dev_dvc_logs/debug_logs/
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_you.eval
+      hash: md5
+      md5: 9ffd02271e3e292642a74f24f1177162
+      size: 3851750
+    outs:
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_you_answer_precision_eval.csv
+      hash: md5
+      md5: 1d55efa2456c8e91ea3b23b30fca2aa4
+      size: 3690806
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_you_citation_eval.csv
+      hash: md5
+      md5: 3f705fd9c55a5d8156630fabc2b76e01
+      size: 10786058
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_you_rubric_eval.csv
+      hash: md5
+      md5: 28e1a35f60cfb85c45c554726652c842
+      size: 3156932
+  extract_model_responses@you-test:
+    cmd: echo "Extracting responses"; [[ "you" == */* ]] && mkdir -p test_dvc_logs/model_responses/task_sqa_solver_$(dirname
+      "you"); uv run scripts/extract_model_responses.py test_dvc_logs/solver_outputs/task_sqa_solver_you.eval
+      test_dvc_logs/model_responses/
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_you.eval
+      hash: md5
+      md5: d3d528dd45b27e5b9508a0087d978d87
+      size: 1626349
+    outs:
+    - path: test_dvc_logs/model_responses/task_sqa_solver_you_responses.csv
+      hash: md5
+      md5: e5f75c5326b39fb07053e4f760f2a76d
+      size: 2172414
+  extract_model_responses@you-dev:
+    cmd: echo "Extracting responses"; [[ "you" == */* ]] && mkdir -p dev_dvc_logs/model_responses/task_sqa_solver_$(dirname
+      "you"); uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_you.eval
+      dev_dvc_logs/model_responses/
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_you.eval
+      hash: md5
+      md5: 192472f7eb929b7482f41291f018c775
+      size: 3266161
+    outs:
+    - path: dev_dvc_logs/model_responses/task_sqa_solver_you_responses.csv
+      hash: md5
+      md5: d7a7ba162af7320494b69516e50b1598
+      size: 2194274
+  log_any_remaining_errors_and_record_scores@you-test:
+    cmd: echo "Collecting errors";[[ "you" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
+      "you"); uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_you.eval
+      test_dvc_logs/errors/task_sqa_solver_you.json test_dvc_logs/errors/task_sqa_solver_you.md
+      test_dvc_logs/scores/task_sqa_solver_you.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_you.eval
+      hash: md5
+      md5: 7b8e139c723e9e282db6d1d9b1e62528
+      size: 2757422
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_you.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: test_dvc_logs/errors/task_sqa_solver_you.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: test_dvc_logs/scores/task_sqa_solver_you.md
+      hash: md5
+      md5: f095b59bb83804f3556daa4a0a9664ff
+      size: 255
+  log_any_remaining_errors_and_record_scores@you-dev:
+    cmd: echo "Collecting errors";[[ "you" == */* ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname
+      "you"); uv run scripts/log_errors.py dev_dvc_logs/scored/task_sqa_solver_you.eval
+      dev_dvc_logs/errors/task_sqa_solver_you.json dev_dvc_logs/errors/task_sqa_solver_you.md
+      dev_dvc_logs/scores/task_sqa_solver_you.md
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_you.eval
+      hash: md5
+      md5: 9ffd02271e3e292642a74f24f1177162
+      size: 3851750
+    outs:
+    - path: dev_dvc_logs/errors/task_sqa_solver_you.json
+      hash: md5
+      md5: d751713988987e9331980363e24189ce
+      size: 2
+    - path: dev_dvc_logs/errors/task_sqa_solver_you.md
+      hash: md5
+      md5: 6d95852409fdf58bc185c4132410f2fe
+      size: 33
+    - path: dev_dvc_logs/scores/task_sqa_solver_you.md
+      hash: md5
+      md5: 6652f2745e5d0094c4fdde55184d6a16
+      size: 255

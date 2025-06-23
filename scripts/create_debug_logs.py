@@ -30,6 +30,9 @@ def build_df_for_logs(paths):
                 df = build_df_from_prompt_logs(
                     PromptLogs(**s.scores["score_all"].metadata["score_meta"][i])
                 )
+                if df is None:
+                    print("No prompt logs for score component:", score_name)
+                    df = pd.DataFrame()
                 df["eval_component"] = score_name
                 df["question"] = s.metadata["initial_prompt"]
                 df["case_id"] = s.metadata["case_id"]

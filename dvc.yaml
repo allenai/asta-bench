@@ -66,6 +66,55 @@ stages:
       outs:
         - ${item}_dvc_logs/solver_outputs/task_sqa_solver_elicit.eval
 
+  solve_you:
+    # run the solver then rename the resulting file to have a nice name:
+    foreach:
+      - dev
+      - test
+    do:
+      cmd:
+        INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_you
+        uv run --extra sqa
+        inspect eval astabench/evals/sqa/task.py@sqa --display none
+        --log-dir ${item}_dvc_logs/solver_outputs/
+        --solver astabench/solvers/sqa/formatted_youcom.py@formatted_solver -S api_type='research'
+        -T split=${item}
+        -T scorer_model=${scorer_model}
+        --limit=${limit}
+        --log-shared
+        --no-score;
+        mv "$(ls -t ${item}_dvc_logs/solver_outputs/*task_sqa_solver_you.eval 2>/dev/null | head -n1)" "${item}_dvc_logs/solver_outputs/task_sqa_solver_you.eval"
+      params:
+        - scorer_model
+        - limit
+      outs:
+        - ${item}_dvc_logs/solver_outputs/task_sqa_solver_you.eval
+
+  solve_perplexity_dr:
+    # run the solver then rename the resulting file to have a nice name:
+    foreach:
+      - dev
+      - test
+    do:
+      cmd:
+        INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_perplexity_dr
+        uv run --extra sqa
+        inspect eval astabench/evals/sqa/task.py@sqa --display none
+        --log-dir ${item}_dvc_logs/solver_outputs/
+        --model 'perplexity/sonar-deep-research'
+        --solver astabench/solvers/sqa/formatted_perplexity.py@formatted_solver
+        -T split=${item}
+        -T scorer_model=${scorer_model}
+        --limit=${limit}
+        --log-shared
+        --no-score;
+        mv "$(ls -t ${item}_dvc_logs/solver_outputs/*task_sqa_solver_perplexity_dr.eval 2>/dev/null | head -n1)" "${item}_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval"
+      params:
+        - scorer_model
+        - limit
+      outs:
+        - ${item}_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval
+
   solve_storm:
     # run the solver then rename the resulting file to have a nice name:
     foreach:
@@ -103,7 +152,7 @@ stages:
       INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_${item.model.name}
       uv run --extra sqa
       inspect eval astabench/evals/sqa/task.py@sqa --display none
-      --log-dir dvc_logs/solver_outputs/
+      --log-dir ${item.split}_dvc_logs/solver_outputs/
       --solver astabench/solvers/sqa/debug/cached_solver.py@cache_solver
       -T scorer_model=${scorer_model}
       -T split=${item.split}
@@ -184,7 +233,7 @@ stages:
       INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_${item.model.name}
       uv run --extra sqa
       inspect eval astabench/evals/sqa/task.py@sqa --display none
-      --log-dir dvc_logs/solver_outputs/
+      --log-dir ${item.split}_dvc_logs/solver_outputs/
       --solver astabench/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
       -T scorer_model=${scorer_model}
       -T split=${item.split}
@@ -222,6 +271,8 @@ stages:
         - fhouse_crow
         - fhouse_falcon
         - openai_deep_research
+        - you
+        - perplexity_dr
       split:
         - test
         - dev
@@ -245,7 +296,7 @@ stages:
       - ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval:
           persist: true
 
-  log_any_remaining_errors:
+  log_any_remaining_errors_and_record_scores:
     matrix:
       model:
         - openai/o4-mini
@@ -263,19 +314,23 @@ stages:
         - fhouse_crow
         - fhouse_falcon
         - openai_deep_research
+        - you
+        - perplexity_dr
       split:
         - dev
         - test
-    cmd: echo "Collecting errors";[[ "${item}" == */* ]] && mkdir -p dvc_logs/errors/task_sqa_solver_$(dirname "${item}");
+    cmd: echo "Collecting errors";[[ "${item.model}" == */* ]] && mkdir -p ${item.split}_dvc_logs/errors/task_sqa_solver_$(dirname "${item.model}");
       uv run scripts/log_errors.py
       ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval
       ${item.split}_dvc_logs/errors/task_sqa_solver_${item.model}.json
       ${item.split}_dvc_logs/errors/task_sqa_solver_${item.model}.md
+      ${item.split}_dvc_logs/scores/task_sqa_solver_${item.model}.md
     deps:
       - ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval
     outs:
       - ${item.split}_dvc_logs/errors/task_sqa_solver_${item.model}.json
       - ${item.split}_dvc_logs/errors/task_sqa_solver_${item.model}.md
+      - ${item.split}_dvc_logs/scores/task_sqa_solver_${item.model}.md
 
   extract_model_responses:
     matrix:
@@ -295,10 +350,13 @@ stages:
         - fhouse_crow
         - fhouse_falcon
         - openai_deep_research
+        - you
+        - perplexity_dr
       split:
         - dev
         - test
-    cmd: uv run scripts/extract_model_responses.py
+    cmd: echo "Extracting responses"; [[ "${item.model}" == */* ]] && mkdir -p ${item.split}_dvc_logs/model_responses/task_sqa_solver_$(dirname "${item.model}");
+      uv run scripts/extract_model_responses.py
       ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model}.eval
       ${item.split}_dvc_logs/model_responses/
     deps:
@@ -324,11 +382,15 @@ stages:
         - fhouse_crow
         - fhouse_falcon
         - openai_deep_research
+        - you
+        - perplexity_dr
       split:
         - dev
         - test
-    cmd: uv run scripts/create_debug_logs.py
-      ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval
+    cmd: echo "Creating logs"; [[ "${item.model}" == */* ]] && mkdir -p ${item.split}_dvc_logs/debug_logs/task_sqa_solver_$(dirname "${item.model}");
+      uv run scripts/create_debug_logs.py
+      ${item.split}_dvc_logs/scored/
+      task_sqa_solver_${item.model}.eval
       ${item.split}_dvc_logs/debug_logs/
     deps:
       - ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval
@@ -353,6 +415,8 @@ stages:
       test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
       test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
       test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
+      test_dvc_logs/scored/task_sqa_solver_you.eval
+      test_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval
       -o test_dvc_logs/eval_comparison.md
     deps:
       - test_dvc_logs/scored/task_sqa_solver_openai/o4-mini.eval
@@ -369,6 +433,8 @@ stages:
       - test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
       - test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
       - test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
+      - test_dvc_logs/scored/task_sqa_solver_you.eval
+      - test_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval
     outs:
       - test_dvc_logs/eval_comparison.md:
           cache: false
@@ -386,6 +452,8 @@ stages:
       dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
       dev_dvc_logs/scored/task_sqa_solver_elicit.eval
       dev_dvc_logs/scored/task_sqa_solver_storm.eval
+      dev_dvc_logs/scored/task_sqa_solver_you.eval
+      dev_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval
       -o dev_dvc_logs/eval_comparison.md
     deps:
       - dev_dvc_logs/scored/task_sqa_solver_openai/o4-mini.eval
@@ -399,6 +467,8 @@ stages:
       - dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
       - dev_dvc_logs/scored/task_sqa_solver_elicit.eval
       - dev_dvc_logs/scored/task_sqa_solver_storm.eval
+      - dev_dvc_logs/scored/task_sqa_solver_you.eval
+      - dev_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval
     outs:
       - dev_dvc_logs/eval_comparison.md:
           cache: false

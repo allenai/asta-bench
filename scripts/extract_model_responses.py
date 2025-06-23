@@ -16,6 +16,9 @@ def main():
         df["case_id"] = s.metadata["case_id"]
         df["solver"] = l.plan.steps[0].solver
         df["log_file"] = p
+        if not s.output.completion:
+            print(f"No completion for sample: {s.metadata['case_id']}")
+            continue
         answer = json.loads(s.output.completion)["response"]
         df["answer"] = format_report(answer)
         df["response"] = s.output.completion
