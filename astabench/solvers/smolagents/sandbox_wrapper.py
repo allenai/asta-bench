@@ -106,7 +106,7 @@ class InspectAiSandboxExecutor:
 
             # Warn if attempting to execute code after final answer has been submitted
             if self.final_answer:
-                self.logger.warning(
+                logger.warning(
                     "Executing code after final_answer has already been called. This may lead to unexpected behavior."
                 )
 

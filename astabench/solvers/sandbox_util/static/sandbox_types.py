@@ -53,3 +53,25 @@ class CellHistoryItem:
 
     def is_finalized(self) -> bool:
         return self.end_timestamp_rfc3339 is not None
+
+
+@dataclass
+class ChunkedResponse:
+
+    response_id: str
+    """ID of the full response"""
+
+    sha256_sum: str
+    """SHA256 checksum of `full_response.encode('utf-8')`, to verify correct
+    reassembly"""
+
+    range_start: int
+    """Start position of this chunk within the full response"""
+    range_end: int
+    """End position of this chunk within the full response"""
+
+    has_next: bool
+    """Whether there are more chunks after this one"""
+
+    content: str
+    """Chunk content"""

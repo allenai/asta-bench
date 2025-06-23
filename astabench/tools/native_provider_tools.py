@@ -67,6 +67,15 @@ def make_native_search_tools(inserted_before: str | None = None) -> list[Tool]:
         tool_info = parse_tool_info_with_options(tool)
         if model.api.chat_tools([tool_info]) is not None:
             return [tool]
+    elif isinstance(model.api, PerplexityAPI):
+        perplexity_options = {
+            "search_mode": "academic",
+            "web_search_options": {"search_context_size": "high"},
+        }
+        if inserted_before:
+            perplexity_options["search_before_date_filter"] = inserted_before
+        tool = web_search({"perplexity": perplexity_options})
+        return [tool]
 
     raise RuntimeError(
         f"No native search tools defined for {model.api.__class__.__name__} ({model.name})"
