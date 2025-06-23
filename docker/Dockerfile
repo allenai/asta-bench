@@ -50,7 +50,8 @@ RUN --mount=type=secret,id=github_token,required=false \
     git config --global url."https://$TOKEN@github.com/".insteadOf "https://github.com/"; \
     fi; \
     uv sync --extra litqa2; \
-    uv sync --extra dev --extra inspect_evals --extra anthropic --extra smolagents --extra e2e_discovery --inexact;'
+    uv sync --extra sqa --extra super --inexact; \
+    uv sync --extra dev --extra inspect_evals --extra anthropic --extra smolagents --extra e2e_discovery --extra azure --inexact;'
 
 COPY . /astabench
 
