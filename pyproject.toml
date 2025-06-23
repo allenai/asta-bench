@@ -41,6 +41,9 @@ dev = [
 anthropic = [
     "anthropic>=0.52.0"
 ]
+azure = [
+    "azure-ai-inference"
+]
 litqa2 = [
     "datasets==3.2.0",
     "pandas",
