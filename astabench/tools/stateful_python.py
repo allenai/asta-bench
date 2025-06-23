@@ -40,11 +40,6 @@ async def exec_python_session(code: str):
     """
 
     # sandbox_jupyter contextvar to have a different SandboxJupyter per sample
-    if not sandbox_jupyter.get(None):
-        sj = SandboxJupyter("default")
-        await sj.setup()
-        sandbox_jupyter.set(sj)
-
     res = await (await get_sandbox_jupyter()).run_code(code=code)
 
     return res
@@ -66,11 +61,9 @@ async def continue_wait_impl():
     (not interrupted).
     """
 
-    # sandbox_jupyter contextvar to have a different SandboxJupyter per sample
-    if not sandbox_jupyter.get(None):
-        sj = SandboxJupyter("default")
-        await sj.setup()
-        sandbox_jupyter.set(sj)
+    raise NotImplementedError(
+        "continue_wait can't currently be used as a standalone tool, because the jupyter contextvar is not in a session"
+    )
 
     res = await (await get_sandbox_jupyter()).continue_after_timeout()
 
