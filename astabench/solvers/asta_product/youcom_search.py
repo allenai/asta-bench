@@ -1,11 +1,8 @@
-from pathlib import Path
 import aiohttp
 import requests
 from inspect_ai.solver import Solver, solver, TaskState, Generate
-from inspect_ai.model import ChatMessageAssistant
 import json
 import os
-from uuid import uuid4
 import logging
 
 logger = logging.getLogger(__name__)
