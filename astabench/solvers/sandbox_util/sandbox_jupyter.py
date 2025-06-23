@@ -154,7 +154,7 @@ class SandboxJupyter:
             await self.sandbox.write_file("jupyter_interface.py", f.read())
 
         self._toolsource = mcp_server_sandbox(
-            command="python3",
+            command="/opt/inspect_tool_support/bin/python",
             args=["jupyter_interface.py", "--cell-timeout", str(self._cell_timeout)],
             sandbox=self.sandbox_name,
             # Allow a few extra seconds for mcp overhead
