@@ -13,6 +13,10 @@ YOUCOM_API_KEY = os.environ["YOUCOM_API_KEY"]
 S2_API_KEY = os.environ["S2_API_KEY"]
 
 
+def remove_suffix_after_dash(title: str) -> str:
+    return title.split(" - ")[0]
+
+
 async def query_youcom_search(
     question: str,
     api_key: str,
@@ -46,7 +50,7 @@ def youcom_solver() -> Solver:
                 question,
                 YOUCOM_API_KEY,
             )
-            titles = [res["title"] for res in search_results if "title" in res and res["title"]]
+            titles = [remove_suffix_after_dash(res["title"]) for res in search_results if "title" in res and res["title"]]
 
             # call s2 api to get corpus ids from titles
             for title in titles:
