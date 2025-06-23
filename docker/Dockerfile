@@ -35,22 +35,8 @@ COPY pyproject.toml /astabench/
 # Create a basic directory structure for the package
 RUN mkdir -p /astabench/astabench
 
-# use BuildKit secret and optional SSH agent to auth private Git deps (token preferred)
-RUN --mount=type=secret,id=github_token,required=false \
-    --mount=type=ssh,required=false \
-    bash -euxo pipefail -c '\
-    # prefer GitHub token from secret, then ARG; fallback to SSH\n\
-    if [ -f /run/secrets/github_token ]; then \
-    TOKEN="$(cat /run/secrets/github_token)"; \
-    elif [ -n "${SSH_AUTH_SOCK:-}" ]; then \
-    git config --global url."git@github.com:".insteadOf "https://github.com/"; \
-    export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"; \
-    fi; \
-    if [ -n "${TOKEN:-}" ]; then \
-    git config --global url."https://$TOKEN@github.com/".insteadOf "https://github.com/"; \
-    fi; \
-    uv sync --extra litqa2; \
-    uv sync --extra dev --extra inspect_evals --extra anthropic --extra smolagents --extra e2e_discovery --inexact;'
+RUN uv sync --extra litqa2
+RUN uv sync --inexact --extra dev --extra inspect_evals --extra anthropic --extra smolagents --extra e2e_discovery
 
 COPY . /astabench
 
