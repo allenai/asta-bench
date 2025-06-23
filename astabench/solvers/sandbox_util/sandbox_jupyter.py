@@ -158,7 +158,7 @@ class SandboxJupyter:
             args=["jupyter_interface.py", "--cell-timeout", str(self._cell_timeout)],
             sandbox=self.sandbox_name,
             # Allow a few extra seconds for mcp overhead
-            timeout=self._cell_timeout + 15,
+            timeout=self._cell_timeout + 30,
         )
 
         jupyter_tools = await self._toolsource.tools()
