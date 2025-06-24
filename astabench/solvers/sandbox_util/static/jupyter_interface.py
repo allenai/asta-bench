@@ -2,8 +2,10 @@
 
 import argparse
 import asyncio
+import base64
 import dataclasses
 import datetime
+import hashlib
 import json
 import logging
 import os
@@ -15,9 +17,19 @@ from typing import Any, Callable, Dict, Optional
 
 import requests
 from mcp.server import FastMCP
+from sandbox_types import JUPYTER_HISTORY_FILE, CellHistoryItem, ChunkedResponse
 from websocket import WebSocket, WebSocketTimeoutException, create_connection
 
 logger = logging.getLogger(__name__)
+
+MCP_RESPONSE_BUFFER_DIR = os.getenv(
+    "MCP_RESPONSE_BUFFER_DIR", "/tmp/mcp_response_buffer/"
+)
+
+# 65536 bytes is the actual maximum that can be sent (pipe capacity), and we
+# conservatively allow 8192 bytes for header/encoding overhead
+# TODO: determine pipe capacity dynamically
+MCP_RESPONSE_CHUNK_SIZE = 65536 - 8192
 
 JUPYTER_STATE_FILE = "jupyter_env_state.json"
 DEFAULT_TIMEOUT = 60 * 5
@@ -31,6 +43,25 @@ class ExecutionState:
 
     # Theoretically unnecessary, but useful for clarity
     is_timed_out: bool = False
+
+
+@dataclasses.dataclass
+class BufferedResponseData:
+    response_id: str
+
+    sha256_sum: str
+    """Checksum of the base64-encoded full response data"""
+
+    full_response_data: str
+    """Full response data, base64-encoded.  The base64 encoding matters because
+    otherwise bytes_returned may not be bytes (if the response contains
+    multibyte unicode chars).  The field is a string type because MCP and JSON
+    expect to manipulate strings, not bytes."""
+
+    bytes_returned: int
+    """How many bytes of the response have already been returned to the client.
+    That is, `full_response_data[:bytes_returned]` is the content that has been
+    returned."""
 
 
 def timeout_call(
@@ -413,22 +444,120 @@ class JupyterEnv:
         return "".join(self._intermediate_output)
 
 
+def return_from_buffer(response_id: str) -> str:
+    buffer_path = os.path.join(MCP_RESPONSE_BUFFER_DIR, response_id + ".json")
+    with open(buffer_path, "r") as f:
+        response_data = BufferedResponseData(**json.load(f))
+
+    next_chunk_end = min(
+        response_data.bytes_returned + MCP_RESPONSE_CHUNK_SIZE,
+        len(response_data.full_response_data),
+    )
+    next_chunk = response_data.full_response_data[
+        response_data.bytes_returned : next_chunk_end
+    ]
+
+    chunk_response = ChunkedResponse(
+        response_id=response_id,
+        sha256_sum=response_data.sha256_sum,
+        range_start=response_data.bytes_returned,
+        range_end=next_chunk_end,
+        has_next=(next_chunk_end < len(response_data.full_response_data)),
+        content=next_chunk,
+    )
+
+    response_data.bytes_returned = next_chunk_end
+
+    if not chunk_response.has_next:
+        os.remove(buffer_path)
+    else:
+        with open(buffer_path, "w") as f:
+            f.write(json.dumps(dataclasses.asdict(response_data)))
+
+    return json.dumps(dataclasses.asdict(chunk_response))
+
+
+def make_chunked_response(response_data: dict | list | str | int | float | bool) -> str:
+    """Produces a response to return to the client, given the raw
+    `response_data`.
+
+    To overcome limitations of the Inspect/MCP framework (not sure exactly
+    where the bug is), this returns data in a chunked format that the client
+    must post-process to get the real response:
+    - The true response is always JSON-encoded to ensure that it is a string
+    - that string is UTF-8-encoded to bytes and then base64-encoded to ensure
+      a consistent size in case of multibyte unicode characters
+    - the base64 string is nested within a JSON object that contains various
+      metadata (see `sandbox_types.ChunkedResponse`).
+    - If the base64 is too long to fit within the chunk size limit, the initial
+      response will contain only the first chunk, and
+      `get_next_chunk(response_id)` can be used to fetch subsequent chunks.
+      This function may create a buffer to hold the response data until all
+      chunks are fetched.
+
+    The MCP framework itself may also wrap the whole thing as ContextText;
+    there isn't much we can do about that.
+
+    Much of this complexity could likely be removed if we could modify
+    Inspect/MCP to handle responses longer than the pipe capacity (64 KiB on
+    linux); unfortunately, the current behavior is that the whole MCP pipeline
+    blocks indefinitely when that limit is exceeded, so it is not even possible
+    to gracefully handle the error.
+    """
+
+    response_id = str(uuid.uuid4())
+    json_data: str = json.dumps(response_data)
+    b64_data: bytes = base64.b64encode(json_data.encode("utf-8"))
+    sha256_sum = hashlib.sha256(b64_data).hexdigest()
+
+    # There is some overhead to writing/reading the buffer, but not that high
+    # compared to other latencies, and it's simpler to always return the same
+    # way rather than branching based on size
+    buf = BufferedResponseData(
+        response_id=response_id,
+        sha256_sum=sha256_sum,
+        full_response_data=b64_data.decode("utf-8"),
+        bytes_returned=0,
+    )
+    with open(os.path.join(MCP_RESPONSE_BUFFER_DIR, response_id + ".json"), "w") as f:
+        f.write(json.dumps(dataclasses.asdict(buf)))
+
+    return return_from_buffer(response_id)
+
+
 async def make_mcp_app(jupyter_env):
+    """Make an MCP app.  Note: to overcome limitations in Inspect/MCP, the
+    response format of the provided tools is not suitable for directly feeding
+    to an LLM, and client-side post-processing is required to decode the
+    responses.  See `make_chunked_response` for details.
+    """
     mcp = FastMCP("jupyter-exec")
 
+    os.makedirs(MCP_RESPONSE_BUFFER_DIR, exist_ok=True)
+
     @mcp.tool()
-    async def run_code(
-        code: str,
-    ) -> str:
+    async def get_next_chunk(response_id: str) -> str:
+        """Get the next chunk of a multipart response"""
+        try:
+            return return_from_buffer(response_id)
+        except FileNotFoundError:
+            return json.dumps(
+                {
+                    "error": f"Response {response_id} does not exist or has already been fully returned"
+                }
+            )
+
+    @mcp.tool()
+    async def run_code(code: str) -> str:
         """Run a python code block"""
         result = jupyter_env.run_command(code)
-        return json.dumps(result)
+        return make_chunked_response(result)
 
     @mcp.tool()
     async def interrupt_kernel() -> str:
         """Interrupt the kernel"""
         jupyter_env.interrupt_kernel()
-        return "Kernel interrupted."
+        return make_chunked_response("Kernel interrupted.")
 
     @mcp.tool()
     async def continue_after_timeout() -> str:
@@ -438,7 +567,7 @@ async def make_mcp_app(jupyter_env):
         # doesn't maintain it by default, and mcp_connection doesn't seem to
         # work with sandbox MCP.
         result = jupyter_env.continue_after_timeout()
-        return json.dumps(result)
+        return make_chunked_response(result)
 
     @mcp.tool()
     async def shutdown() -> str:
@@ -446,7 +575,7 @@ async def make_mcp_app(jupyter_env):
         jupyter_env.shutdown_container_notebook()
         with open(JUPYTER_STATE_FILE, "w") as f:
             f.write(jupyter_env.to_json())
-        return "Kernel shutdown."
+        return make_chunked_response("Kernel shutdown.")
 
     return mcp
 
