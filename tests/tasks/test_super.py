@@ -131,10 +131,13 @@ def test_super_scoring():
 
     sandbox_spec = SandboxToolManager.make_docker_sandbox_spec()
 
+    max_samples = 3
     if os.getenv("IS_CI", "false") == "true":
         sandbox_spec = SandboxEnvironmentSpec(
             type="docker",
-            config=(Path(__file__).parent / "ci_sandbox_compose.yaml").as_posix(),
+            config=(
+                Path(__file__).parent.parent / "solvers" / "ci_sandbox_compose.yaml"
+            ).as_posix(),
         )
 
     result = inspect_ai.eval(
@@ -143,9 +146,9 @@ def test_super_scoring():
         solver=custom_code_solver(),
         display="plain",
         sandbox=sandbox_spec,
-        max_samples=3,
-        max_sandboxes=3,
-        max_subprocesses=6,
+        max_samples=max_samples,
+        max_sandboxes=max_samples,
+        max_subprocesses=max_samples * 2,
         log_level="info",
     )
 
