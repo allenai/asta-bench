@@ -61,17 +61,21 @@ async def continue_wait_impl():
     (not interrupted).
     """
 
+    # TODO
     raise NotImplementedError(
         "continue_wait can't currently be used as a standalone tool, because the jupyter contextvar is not in a session"
     )
 
-    res = await (await get_sandbox_jupyter()).continue_after_timeout()
+    # res = await (await get_sandbox_jupyter()).continue_after_timeout()
 
-    return res
+    # return res
 
 
 @tool
 def continue_wait():
+    raise NotImplementedError(
+        "continue_wait can't currently be used as a standalone tool, because the jupyter contextvar is not in a session"
+    )
     return continue_wait_impl
 
 
