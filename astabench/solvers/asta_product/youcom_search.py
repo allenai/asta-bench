@@ -1,3 +1,4 @@
+from pathlib import Path
 import aiohttp
 import requests
 from inspect_ai.solver import Solver, solver, TaskState, Generate
@@ -40,6 +41,7 @@ def youcom_solver() -> Solver:
             )
 
         question = state.metadata["raw_query"]
+        sample_id = state.sample_id
         docs = []
 
         try:
@@ -47,6 +49,13 @@ def youcom_solver() -> Solver:
                 question,
                 YOUCOM_API_KEY,
             )
+
+            # log youcom results
+            Path("youcom_search_results").mkdir(exist_ok=True)
+            output_path = Path(f"youcom_search_results/youcom_{sample_id}.json")
+            with output_path.open("w", encoding="utf-8") as f:
+                json.dump(search_results, f, indent=2)
+
             titles = [remove_suffix_after_dash(res["title"]) for res in search_results if "title" in res and res["title"]]
 
             # call s2 api to get corpus ids from titles
