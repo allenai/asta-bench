@@ -12,7 +12,6 @@ from typing import Any, Tuple
 from huggingface_hub import hf_hub_download
 from huggingface_hub.utils import HfHubHTTPError
 from inspect_ai import Task, task
-from inspect_ai.dataset import Sample, json_dataset
 from inspect_ai.dataset import MemoryDataset, Sample
 
 # For recording token counts...
@@ -1237,9 +1236,7 @@ async def _getLLMResponseJSON(
             cls = (
                 ChatMessageAssistant
                 if msg["role"] == "assistant"
-                else ChatMessageSystem
-                if msg["role"] == "system"
-                else ChatMessageUser
+                else ChatMessageSystem if msg["role"] == "system" else ChatMessageUser
             )
             inspect_messages.append(cls(content=msg["content"]))
         # Not using max_tokens or temperature; they weren't used in the
