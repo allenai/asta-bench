@@ -168,11 +168,11 @@ def check_result() -> Scorer:
             for x in cell_history
             if not (x.action_type == "execute" and x.action_content == "pass")
         ]
-        if len(cell_history) != 5:
+        if len(cell_history) != 6:
             return Score(
                 value=INCORRECT,
                 answer=f"Cell history: {cell_history}",
-                explanation=f"Expected 5 cells in history, got {len(cell_history)}",
+                explanation=f"Expected 6 cells in history, got {len(cell_history)}",
             )
 
         first_cell = cell_history[0]
@@ -268,6 +268,8 @@ def test_jupyter_stateful_code():
         log_level="info",
     )
 
+    print("Reached eval end")
+
     assert len(result) > 0
     eval_log = result[0]
 
@@ -278,6 +280,16 @@ def test_jupyter_stateful_code():
     sample = eval_log.samples[0]
     score = sample.scores["check_result"]
 
-    assert json.loads(sample.target) == json.loads(score.answer)
-
     assert score.value == 1.0, f"Score is not 1.0.  Explanation: {score.explanation}"
+
+    try:
+        json.loads(score.answer)
+    except json.JSONDecodeError:
+        raise AssertionError(f"Score answer is not valid JSON: {score.answer}")
+
+    try:
+        json.loads(sample.target)
+    except json.JSONDecodeError:
+        raise AssertionError(f"Sample target is not valid JSON: {sample.target}")
+
+    assert json.loads(sample.target) == json.loads(score.answer)
