@@ -49,6 +49,11 @@ splits:
         primary_metric: 'score_rubric/accuracy'
         tags:
           - discovery
+      - name: e2e_discovery_hard_validation
+        path: astabench/e2e_discovery_hard_validation
+        primary_metric: 'score_rubric/accuracy'
+        tags:
+          - discovery
       - name: super_validation
         path: astabench/super_validation
         primary_metric: 'check_super_auto/astabench/entrypoints'
@@ -111,6 +116,11 @@ splits:
           - code
       - name: e2e_discovery_test
         path: astabench/e2e_discovery_test
+        primary_metric: 'score_rubric/accuracy'
+        tags:
+          - discovery
+      - name: e2e_discovery_hard_test
+        path: astabench/e2e_discovery_hard_test
         primary_metric: 'score_rubric/accuracy'
         tags:
           - discovery
