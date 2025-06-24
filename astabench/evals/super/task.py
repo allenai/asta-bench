@@ -131,11 +131,17 @@ async def parse_super_output(output: str) -> tuple[str, int, List[dict]]:
             submitted = 0
             if history:
                 logger.info(
-                    "Getting exec_res from trajectory history since it wasn't submitted"
+                    "Getting exec_res from trajectory history since it wasn't submitted: %s",
+                    history[-1]["observation"],
                 )
-                exec_res = (
-                    extract_json_from_response(history[-1]["observation"]) or "ERROR"
-                )
+                exec_res = extract_json_from_response(history[-1]["observation"])
+                if exec_res is None:
+                    # {'key': 'value'} is how python prints dicts
+                    exec_res = extract_json_from_response(
+                        history[-1]["observation"].replace("'", '"')
+                    )
+                if exec_res is None:
+                    exec_res = "ERROR"
     except (JSONDecodeError, ValueError):
         raise ValueError(f"Unable to parse agent output: {output}")
 
@@ -304,7 +310,7 @@ def check_super_execution() -> Scorer:
                 answer=state.output.completion,
                 explanation=f"Error parsing output: {e}",
             )
-        em = evaluate(submission, target)
+        em = evaluate(submission, json.loads(target.text))
         landmarks = evaluate_checkpoints(state.metadata["landmarks"], trajectory)
 
         return Score(
