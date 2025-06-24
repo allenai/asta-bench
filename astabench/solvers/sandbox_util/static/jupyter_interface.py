@@ -449,6 +449,8 @@ class JupyterEnv:
             msgs_history.append(rsp)
 
             msg_type = rsp["msg_type"]
+            if "msg_id" not in rsp["parent_header"]:
+                raise ValueError(f"Got rsp with no parent msg_id: {rsp}")
             parent_msg_id = rsp["parent_header"]["msg_id"]
             if parent_msg_id != self._active_exec_state.request_id:
                 if self._active_exec_state.has_busy_status:
