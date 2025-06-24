@@ -268,8 +268,6 @@ def test_jupyter_stateful_code():
         log_level="info",
     )
 
-    print("Reached eval end")
-
     assert len(result) > 0
     eval_log = result[0]
 
