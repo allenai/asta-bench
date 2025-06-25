@@ -319,16 +319,14 @@ stages:
       split:
         - dev
         - test
-    cmd: echo "Collecting errors";[[ "${item.model}" == */* ]] && mkdir -p ${item.split}_dvc_logs/errors/task_sqa_solver_$(dirname "${item.model}");
+    cmd: echo "Collecting errors";[[ "${item.model}" == */* ]] && mkdir -p ${item.split}_dvc_logs/errors/task_sqa_solver_$(dirname "${item.model}"); mkdir -p ${item.split}_dvc_logs/scores/task_sqa_solver_$(dirname "${item.model}");
       uv run scripts/log_errors.py
       ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval
-      ${item.split}_dvc_logs/errors/task_sqa_solver_${item.model}.json
       ${item.split}_dvc_logs/errors/task_sqa_solver_${item.model}.md
       ${item.split}_dvc_logs/scores/task_sqa_solver_${item.model}.md
     deps:
       - ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval
     outs:
-      - ${item.split}_dvc_logs/errors/task_sqa_solver_${item.model}.json
       - ${item.split}_dvc_logs/errors/task_sqa_solver_${item.model}.md
       - ${item.split}_dvc_logs/scores/task_sqa_solver_${item.model}.md
 
@@ -358,7 +356,7 @@ stages:
     cmd: echo "Extracting responses"; [[ "${item.model}" == */* ]] && mkdir -p ${item.split}_dvc_logs/model_responses/task_sqa_solver_$(dirname "${item.model}");
       uv run scripts/extract_model_responses.py
       ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model}.eval
-      ${item.split}_dvc_logs/model_responses/
+      ${item.split}_dvc_logs/model_responses/task_sqa_solver_${item.model}_responses.csv
     deps:
       - ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model}.eval
     outs:
