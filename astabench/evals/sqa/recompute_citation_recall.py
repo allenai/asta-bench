@@ -3,6 +3,8 @@ import os
 import glob
 from inspect_ai.log import read_eval_log, write_eval_log
 from astabench.helpers.prompt_logs import PromptLogs, build_df_from_prompt_logs
+from astabench.evals.sqa.citation_eval import citation_intersection
+import sys
 
 def recompute_citation_recall_for_sample(sample):
     """
@@ -40,16 +42,14 @@ def recompute_citation_recall_for_sample(sample):
             
         claims = row['claims']
         half_credit_citations = row.get('half_credit', [])
-        
         for claim in claims:
-            if claim.get('is_fully_supported') is None or claim.get('supporting') is None:
-                continue
-            supported = claim['is_fully_supported'] and claim['supporting']
+            is_fully_supported = claim.get('is_fully_supported', False)
+            supporting = claim.get('supporting', [])
+            supported = is_fully_supported and supporting
             if supported:
                 n_attributable += 1
                 # Check if this claim only has half-credit citations
-                supporting_citations = claim.get('supporting', [])
-                if supporting_citations and all(cit in half_credit_citations for cit in supporting_citations):
+                if supporting and (len(citation_intersection(half_credit_citations, supporting)) == len(supporting)):
                     n_half_credit += 1
             else:
                 n_extrapolatory += 1
@@ -182,7 +182,11 @@ def main():
     Main function to iterate through all .eval files and recompute citation_recall
     """
     # Find all .eval files in test_dvc_logs/scored/ recursively
-    eval_files = glob.glob("/data/new_astabench/dev_dvc_logs/scored/**/*.eval", recursive=True)
+    if len(sys.argv) > 1:
+        split = sys.argv[1]
+    else:
+        split = 'test'
+    eval_files = glob.glob(f"/data/new_astabench/{split}_dvc_logs/scored/**/*.eval", recursive=True)
     
     print(f"Found {len(eval_files)} .eval files to process")
     
