@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}Citation Evaluation UI - File Selection{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <h1>Citation Evaluation Files</h1>
+        <p class="text-muted">Select a citation evaluation CSV file to start reviewing and labeling assessments.</p>
+        
+        {% if error %}
+        <div class="alert alert-danger" role="alert">
+            <strong>Error:</strong> {{ error }}
+        </div>
+        {% endif %}
+        
+        {% if files %}
+        <div class="row">
+            {% for file in files %}
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">{{ file.filename }}</h5>
+                    </div>
+                    <div class="card-body">
+                        {% if file.error %}
+                        <div class="alert alert-warning">
+                            <small>Error: {{ file.error }}</small>
+                        </div>
+                        {% else %}
+                        <div class="row">
+                            <div class="col-6">
+                                <small class="text-muted">Rows:</small><br>
+                                <strong>{{ file.total_rows }}</strong>
+                            </div>
+                            <div class="col-6">
+                                <small class="text-muted">Claims:</small><br>
+                                <strong>{{ file.total_claims }}</strong>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-6">
+                                <small class="text-muted">Citations:</small><br>
+                                <strong>{{ file.total_citations }}</strong>
+                            </div>
+                            <div class="col-6">
+                                <small class="text-muted">Avg Claims/Row:</small><br>
+                                <strong>{{ "%.1f"|format(file.avg_claims_per_row) }}</strong>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="card-footer">
+                        {% if not file.error %}
+                        <a href="/annotate/{{ file.filename }}" class="btn btn-primary">
+                            Start Annotation
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="alert alert-info" role="alert">
+            <h4 class="alert-heading">No Files Found</h4>
+            <p>No citation evaluation CSV files were found in the data directory.</p>
+            <hr>
+            <p class="mb-0">Make sure CSV files ending with <code>*citation_eval.csv</code> are present in <code>test_dvc_logs/debug_logs/</code>.</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

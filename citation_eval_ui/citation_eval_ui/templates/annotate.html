@@ -1,0 +1,424 @@
+{% extends "base.html" %}
+
+{% block title %}Annotate - {{ filename }}{% endblock %}
+
+{% block extra_head %}
+<style>
+.claim-highlight {
+    background-color: #fff3cd;
+    border: 1px solid #f5c6cb;
+    padding: 2px 4px;
+    border-radius: 3px;
+    margin: 0 1px;
+}
+
+.citation-supporting {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 1px 3px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.citation-non-supporting {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1px 3px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.citation-neutral {
+    background-color: #e2e3e5;
+    color: #383d41;
+    padding: 1px 3px;
+    border-radius: 3px;
+}
+
+.text-content {
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.citation-label-section {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.citation-snippet {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.progress-info {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <!-- Progress Info -->
+        <div class="progress-info">
+            <div class="row">
+                <div class="col-md-4">
+                    <strong>File:</strong> {{ filename }}<br>
+                    <strong>Row:</strong> {{ row + 1 }} of {{ total_rows }}
+                </div>
+                <div class="col-md-4">
+                    <strong>Claim:</strong> {{ claim + 1 }} of {{ total_claims }}
+                </div>
+                <div class="col-md-4">
+                    <strong>LLM Assessment - Fully Supported:</strong><br>
+                    {% if current_claim.is_fully_supported %}
+                        <span class="badge bg-success fs-6">✓ YES</span>
+                    {% else %}
+                        <span class="badge bg-danger fs-6">✗ NO</span>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="mb-3">
+            <div class="btn-group" role="group">
+                {% if has_prev_row %}
+                <a href="/annotate/{{ filename }}?row={{ row - 1 }}&claim=0" class="btn btn-outline-secondary">← Prev Row</a>
+                {% endif %}
+                {% if has_prev_claim %}
+                <a href="/annotate/{{ filename }}?row={{ row }}&claim={{ claim - 1 }}" class="btn btn-outline-primary">← Prev Claim</a>
+                {% endif %}
+                {% if has_next_claim %}
+                <a href="/annotate/{{ filename }}?row={{ row }}&claim={{ claim + 1 }}" class="btn btn-outline-primary">Next Claim →</a>
+                {% endif %}
+                {% if has_next_row %}
+                <a href="/annotate/{{ filename }}?row={{ row + 1 }}&claim=0" class="btn btn-outline-secondary">Next Row →</a>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Question -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5>Question</h5>
+            </div>
+            <div class="card-body">
+                <p>{{ current_row.question }}</p>
+            </div>
+        </div>
+
+        <!-- Current Claim -->
+        <div class="card mb-4 fixed-claim" id="current-claim">
+            <div class="card-header">
+                <h5>Current Claim ({{ claim + 1 }}/{{ total_claims }})</h5>
+            </div>
+            <div class="card-body">
+                <div class="claim-highlight">
+                    {{ current_claim.text }}
+                </div>
+                <div class="mt-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <strong>Supporting Citations:</strong>
+                            {% if current_claim.supporting %}
+                                {% for cit in current_claim.supporting %}
+                                    <span class="citation-supporting">{{ cit }}</span>
+                                {% endfor %}
+                            {% else %}
+                                <em>None</em>
+                            {% endif %}
+                        </div>
+                        <div class="col-md-6">
+                            <strong>Non-Supporting Citations:</strong>
+                            {% if current_claim.non_supporting %}
+                                {% for cit in current_claim.non_supporting %}
+                                    <span class="citation-non-supporting">{{ cit }}</span>
+                                {% endfor %}
+                            {% else %}
+                                <em>None</em>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Placeholder for when claim becomes fixed -->
+        <div class="claim-placeholder" id="claim-placeholder"></div>
+
+        <!-- Text with Highlighted Claim -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5>Generated Text (with claim highlighted)</h5>
+            </div>
+            <div class="card-body">
+                <div class="text-content" id="text-content">
+                    {{ current_row.text | markdown | safe }}
+                </div>
+            </div>
+        </div>
+
+        <!-- Annotation Form -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Your Annotations</h5>
+            </div>
+            <div class="card-body">
+                <form id="annotation-form">
+                    <input type="hidden" name="filename" value="{{ filename }}">
+                    <input type="hidden" name="row" value="{{ row }}">
+                    <input type="hidden" name="claim" value="{{ claim }}">
+
+                    <!-- Citation Labels -->
+                    <h6>Label Each Citation:</h6>
+                    {% for citation in current_row.citations %}
+                    <div class="citation-label-section">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <strong>{{ citation.id }}</strong>
+                                {% set normalized_citation_id = normalize_citation_id(citation.id) %}
+                                {% set is_supporting = current_claim.supporting | map('normalize_citation_id') | list | select('equalto', normalized_citation_id) | list | length > 0 %}
+                                {% set is_non_supporting = current_claim.non_supporting | map('normalize_citation_id') | list | select('equalto', normalized_citation_id) | list | length > 0 %}
+                                {% if is_supporting %}
+                                    <span class="badge bg-success ms-2">Currently Supporting</span>
+                                {% elif is_non_supporting %}
+                                    <span class="badge bg-danger ms-2">Currently Non-Supporting</span>
+                                {% else %}
+                                    <span class="badge bg-secondary ms-2">Not Listed</span>
+                                {% endif %}
+                            </div>
+                            <div class="col-md-9">
+                                <div class="citation-snippet">
+                                    {{ citation.snippets[:300] }}{% if citation.snippets|length > 300 %}...{% endif %}
+                                </div>
+                                
+                                <div class="btn-group" role="group" data-citation="{{ citation.id }}">
+                                    {% set current_annotation = none %}
+                                    {% if claim_annotation and claim_annotation.citation_annotations %}
+                                        {% for ann in claim_annotation.citation_annotations %}
+                                            {% if citation_ids_match(ann.citation_id, citation.id) %}
+                                                {% set current_annotation = ann %}
+                                            {% endif %}
+                                        {% endfor %}
+                                    {% endif %}
+
+                                    <input type="radio" class="btn-check" name="citation_{{ loop.index0 }}" id="supporting_{{ loop.index0 }}" value="supporting"
+                                           {% if current_annotation and current_annotation.label == "supporting" %}checked{% endif %}>
+                                    <label class="btn btn-outline-success" for="supporting_{{ loop.index0 }}">Supporting</label>
+
+                                    <input type="radio" class="btn-check" name="citation_{{ loop.index0 }}" id="non_supporting_{{ loop.index0 }}" value="non_supporting"
+                                           {% if current_annotation and current_annotation.label == "non_supporting" %}checked{% endif %}>
+                                    <label class="btn btn-outline-danger" for="non_supporting_{{ loop.index0 }}">Non-Supporting</label>
+
+                                    <input type="radio" class="btn-check" name="citation_{{ loop.index0 }}" id="irrelevant_{{ loop.index0 }}" value="irrelevant"
+                                           {% if current_annotation and current_annotation.label == "irrelevant" %}checked{% endif %}>
+                                    <label class="btn btn-outline-secondary" for="irrelevant_{{ loop.index0 }}">Irrelevant</label>
+
+                                    <input type="radio" class="btn-check" name="citation_{{ loop.index0 }}" id="unset_{{ loop.index0 }}" value=""
+                                           {% if not current_annotation %}checked{% endif %}>
+                                    <label class="btn btn-outline-light" for="unset_{{ loop.index0 }}">Unset</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                    <!-- Missing Citations -->
+                    <div class="mt-4">
+                        <label for="missing_citations" class="form-label">
+                            <strong>Missing Citations</strong> (optional - citations that should have been listed as supporting or non-supporting):
+                        </label>
+                        <textarea class="form-control" id="missing_citations" name="missing_citations" rows="2" 
+                                  placeholder="Enter any citations that should have been included...">{% if claim_annotation and claim_annotation.missing_citations %}{{ claim_annotation.missing_citations }}{% endif %}</textarea>
+                    </div>
+
+                    <!-- Is Fully Supported Assessment -->
+                    <div class="mt-4">
+                        <label class="form-label">
+                            <strong>Your Assessment: Do you agree this claim is fully supported?</strong>
+                        </label>
+                        <div class="card p-3" style="background-color: #f8f9fa;">
+                            <div class="mb-2">
+                                <strong>LLM says:</strong> 
+                                {% if current_claim.is_fully_supported %}
+                                    <span class="badge bg-success">✓ Fully Supported</span>
+                                {% else %}
+                                    <span class="badge bg-danger">✗ Not Fully Supported</span>
+                                {% endif %}
+                            </div>
+                            <div class="btn-group" role="group" aria-label="Fully supported assessment">
+                                <input type="radio" class="btn-check" name="is_fully_supported_annotation" id="agree_supported" value="agree"
+                                       {% if claim_annotation and claim_annotation.is_fully_supported_annotation == "agree" %}checked{% endif %}>
+                                <label class="btn btn-outline-success" for="agree_supported">
+                                    <i class="bi bi-check-circle"></i> Agree
+                                </label>
+
+                                <input type="radio" class="btn-check" name="is_fully_supported_annotation" id="disagree_supported" value="disagree"
+                                       {% if claim_annotation and claim_annotation.is_fully_supported_annotation == "disagree" %}checked{% endif %}>
+                                <label class="btn btn-outline-danger" for="disagree_supported">
+                                    <i class="bi bi-x-circle"></i> Disagree
+                                </label>
+
+                                <input type="radio" class="btn-check" name="is_fully_supported_annotation" id="unset_supported" value=""
+                                       {% if not claim_annotation or not claim_annotation.is_fully_supported_annotation %}checked{% endif %}>
+                                <label class="btn btn-outline-secondary" for="unset_supported">
+                                    <i class="bi bi-dash-circle"></i> No Opinion
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notes -->
+                    <div class="mt-3">
+                        <label for="notes" class="form-label"><strong>Notes</strong> (optional):</label>
+                        <textarea class="form-control" id="notes" name="notes" rows="2" 
+                                  placeholder="Any additional notes or observations...">{% if claim_annotation and claim_annotation.notes %}{{ claim_annotation.notes }}{% endif %}</textarea>
+                    </div>
+
+                    <!-- Save Button -->
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-primary btn-lg">Save Annotation</button>
+                        <div id="save-status" class="mt-2"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// Set global variables for JavaScript
+window.currentClaimText = {{ current_claim.text | tojson }};
+window.currentSupportingCitations = {{ current_claim.supporting | tojson }};
+window.currentNonSupportingCitations = {{ current_claim.non_supporting | tojson }};
+window.currentCitations = {{ current_row.citations | map(attribute='id') | list | tojson }};
+window.currentClaim = {{ claim }};
+window.currentRow = {{ row }};
+window.totalClaims = {{ total_claims }};
+
+// Highlight claim text in the content
+document.addEventListener('DOMContentLoaded', function() {
+    const textContent = document.getElementById('text-content');
+    const claimText = window.currentClaimText;
+    
+    if (textContent && claimText) {
+        // For markdown content, we need to search within text nodes to avoid breaking HTML
+        function highlightTextInElement(element, searchText) {
+            const walker = document.createTreeWalker(
+                element,
+                NodeFilter.SHOW_TEXT,
+                null,
+                false
+            );
+            
+            const textNodes = [];
+            let node;
+            while (node = walker.nextNode()) {
+                textNodes.push(node);
+            }
+            
+            textNodes.forEach(textNode => {
+                const text = textNode.textContent;
+                if (text.includes(searchText)) {
+                    const highlightedHTML = text.replace(
+                        new RegExp(searchText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'),
+                        '<span class="claim-highlight">$&</span>'
+                    );
+                    
+                    const wrapper = document.createElement('div');
+                    wrapper.innerHTML = highlightedHTML;
+                    
+                    while (wrapper.firstChild) {
+                        textNode.parentNode.insertBefore(wrapper.firstChild, textNode);
+                    }
+                    textNode.parentNode.removeChild(textNode);
+                }
+            });
+        }
+        
+        highlightTextInElement(textContent, claimText);
+    }
+
+    // Handle form submission
+    const form = document.getElementById('annotation-form');
+    const status = document.getElementById('save-status');
+    
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        status.innerHTML = '<div class="alert alert-info">Saving...</div>';
+        
+        try {
+            // Collect citation labels
+            const citationLabels = {};
+            const citations = {{ current_row.citations | map(attribute='id') | list | tojson }};
+            
+            citations.forEach((citationId, index) => {
+                const radios = document.getElementsByName(`citation_${index}`);
+                for (const radio of radios) {
+                    if (radio.checked) {
+                        // Normalize citation ID by removing surrounding parentheses/brackets
+                        let normalizedId = citationId.trim();
+                        if ((normalizedId.startsWith('(') && normalizedId.endsWith(')')) ||
+                            (normalizedId.startsWith('[') && normalizedId.endsWith(']'))) {
+                            normalizedId = normalizedId.slice(1, -1).trim();
+                        }
+                        citationLabels[normalizedId] = radio.value;
+                        break;
+                    }
+                }
+            });
+            
+            const formData = new FormData();
+            formData.append('filename', form.filename.value);
+            formData.append('row', form.row.value);
+            formData.append('claim', form.claim.value);
+            formData.append('citation_labels', JSON.stringify(citationLabels));
+            formData.append('missing_citations', form.missing_citations.value);
+            formData.append('notes', form.notes.value);
+            
+            // Get is_fully_supported_annotation
+            const supportedRadios = document.getElementsByName('is_fully_supported_annotation');
+            let supportedAnnotation = '';
+            for (const radio of supportedRadios) {
+                if (radio.checked) {
+                    supportedAnnotation = radio.value;
+                    break;
+                }
+            }
+            formData.append('is_fully_supported_annotation', supportedAnnotation);
+            
+            const response = await fetch('/api/save-annotation', {
+                method: 'POST',
+                body: formData
+            });
+            
+            const result = await response.json();
+            
+            if (result.status === 'success') {
+                status.innerHTML = '<div class="alert alert-success">Annotation saved successfully!</div>';
+                setTimeout(() => {
+                    status.innerHTML = '';
+                }, 3000);
+            } else {
+                status.innerHTML = '<div class="alert alert-danger">Error: ' + (result.message || 'Unknown error') + '</div>';
+            }
+            
+        } catch (error) {
+            status.innerHTML = '<div class="alert alert-danger">Error: ' + error.message + '</div>';
+        }
+    });
+});
+</script>
+{% endblock %}
