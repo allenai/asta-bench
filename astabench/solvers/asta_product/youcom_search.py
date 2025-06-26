@@ -1,5 +1,7 @@
+import asyncio
 from pathlib import Path
 import aiohttp
+import httpx
 import requests
 from inspect_ai.solver import Solver, solver, TaskState, Generate
 import json
@@ -19,6 +21,35 @@ def get_pmc_id(url: str) -> str | None:
     if "PMC" in url:
         return "PMCID:" + url.rstrip("/").split("/")[-1].replace("PMC", "")
     return None
+
+
+async def fetch_s2_data(client, title, pmc_id):
+    headers = {"X-API-Key": S2_API_KEY}
+    match_url = "https://api.semanticscholar.org/graph/v1/paper/search/match"
+    pmc_url = f"https://api.semanticscholar.org/graph/v1/paper/{pmc_id}" if pmc_id else None
+
+    match_task = client.get(
+        match_url,
+        params={"query": title, "fields": "title,corpusId"},
+        headers=headers,
+        timeout=60,
+    )
+
+    pmc_task = None
+    if pmc_id:
+        pmc_task = client.get(
+            pmc_url,
+            params={"fields": "corpusId"},
+            headers=headers,
+            timeout=60,
+        )
+
+    responses = await asyncio.gather(
+        match_task,
+        pmc_task if pmc_task else asyncio.sleep(0),  # dummy awaitable if no pmc_id
+        return_exceptions=True,
+    )
+    return responses
 
 
 async def query_youcom_search(
@@ -63,51 +94,41 @@ def youcom_solver() -> Solver:
                 json.dump(search_results, f, indent=2)
 
             # call s2 api to get corpus ids from titles
-            for sr in search_results:
-                title = clean_title(sr["title"])
-                try:
-                    r = requests.get(
-                        'https://api.semanticscholar.org/graph/v1/paper/search/match',
-                        params={"query": title, "fields": 'title,corpusId'},
-                        headers={"X-API-Key": S2_API_KEY},
-                        timeout=60,
-                    )
-
+            async with httpx.AsyncClient() as client:
+                tasks = []
+                for sr in search_results:
+                    title = clean_title(sr["title"])
                     pmc_id = get_pmc_id(sr["url"])
-                    if pmc_id:
-                        r_pmc = requests.get(
-                            f'https://api.semanticscholar.org/graph/v1/paper/{pmc_id}',
-                            params={"fields": 'corpusId'},
-                            headers={"X-API-Key": S2_API_KEY},
-                            timeout=60,
-                        )
+                    tasks.append(fetch_s2_data(client, title, pmc_id))
 
-                    if r.status_code == 200:
-                        res = r.json()
-                        docs.append(
-                            {
-                                "paper_id": str(res["data"][0]["corpusId"]),
+                results = await asyncio.gather(*tasks)
+
+                for i, (match_res, pmc_res) in enumerate(results):
+                    title = clean_title(search_results[i]["title"])
+
+                    try:
+                        if isinstance(match_res, httpx.Response) and match_res.status_code == 200:
+                            res_json = match_res.json()
+                            docs.append({
+                                "paper_id": str(res_json["data"][0]["corpusId"]),
                                 "markdown_evidence": "",
-                            }
-                        )
-                    elif pmc_id and r_pmc.status_code == 200:
-                        res = r_pmc.json()
-                        docs.append(
-                            {
-                                "paper_id": str(res["corpusId"]),
+                            })
+                        elif isinstance(pmc_res, httpx.Response) and pmc_res.status_code == 200:
+                            res_json = pmc_res.json()
+                            docs.append({
+                                "paper_id": str(res_json["corpusId"]),
                                 "markdown_evidence": "",
-                            }
-                        )
-                    else:
-                        logging.error(f"Title match not found {r.status_code}: {r.text}. Title: {title}")
-                except Exception as err:
-                    logging.exception(f"Request failed for title: {title}: {err}")
+                            })
+                        else:
+                            logging.error(f"Failed to find match for: {title}")
+                    except Exception as err:
+                        logging.exception(f"Request failed for title: {title}: {err}")
 
         except Exception as e:
             logger.exception(f"Error: {e}")
             return state
 
-        logging.info(f"Found {len(docs)} titles out of {len(search_results)} titles returned by You.com")
+        logging.warning(f"Found {len(docs)} titles out of {len(search_results)} titles returned by You.com")
 
         realres = {"output": {"query_id": state.sample_id, "results": docs}}
 
