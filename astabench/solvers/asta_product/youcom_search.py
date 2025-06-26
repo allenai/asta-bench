@@ -7,12 +7,18 @@ import os
 import logging
 
 logger = logging.getLogger(__name__)
-YOUCOM_API_KEY = os.environ["YOUCOM_API_KEY"]
+YOUCOM_SEARCH_API_KEY = os.environ["YOUCOM_SEARCH_API_KEY"]
 S2_API_KEY = os.environ["S2_API_KEY"]
 
 
 def remove_suffix_after_dash(title: str) -> str:
     return title.split(" - ")[0]
+
+
+def get_pmc_id(url: str) -> str | None:
+    if "PMC" in url:
+        return url.rstrip("/").split("/")[-1].replace("PMC", "")
+    return None
 
 
 async def query_youcom_search(
@@ -47,7 +53,7 @@ def youcom_solver() -> Solver:
         try:
             search_results = await query_youcom_search(
                 question,
-                YOUCOM_API_KEY,
+                YOUCOM_SEARCH_API_KEY,
             )
 
             # log youcom results
@@ -56,10 +62,9 @@ def youcom_solver() -> Solver:
             with output_path.open("w", encoding="utf-8") as f:
                 json.dump(search_results, f, indent=2)
 
-            titles = [remove_suffix_after_dash(res["title"]) for res in search_results if "title" in res and res["title"]]
-
             # call s2 api to get corpus ids from titles
-            for title in titles:
+            for sr in search_results:
+                title = remove_suffix_after_dash(sr["title"])
                 try:
                     r = requests.get(
                         'https://api.semanticscholar.org/graph/v1/paper/search/match',
@@ -68,11 +73,28 @@ def youcom_solver() -> Solver:
                         timeout=60,
                     )
 
+                    pmc_id = get_pmc_id(sr["url"])
+                    if pmc_id:
+                        r_pmc = requests.get(
+                            f'https://api.semanticscholar.org/graph/v1/paper/{pmc_id}',
+                            params={"fields": 'corpusId'},
+                            headers={"X-API-Key": S2_API_KEY},
+                            timeout=60,
+                        )
+
                     if r.status_code == 200:
                         res = r.json()
                         docs.append(
                             {
                                 "paper_id": str(res["data"][0]["corpusId"]),
+                                "markdown_evidence": "",
+                            }
+                        )
+                    elif pmc_id and r_pmc.status_code == 200:
+                        res = r_pmc.json()
+                        docs.append(
+                            {
+                                "paper_id": str(res["corpusId"]),
                                 "markdown_evidence": "",
                             }
                         )
