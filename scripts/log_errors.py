@@ -33,8 +33,14 @@ def main():
 
     # Count samples without scores
     samples_without_score = [
-        sample for sample in log.samples
-        if not (hasattr(sample, 'score') and sample.score and hasattr(sample.score, 'value') and sample.score.value)
+        sample
+        for sample in log.samples
+        if not (
+            hasattr(sample, "score")
+            and sample.score
+            and hasattr(sample.score, "value")
+            and sample.score.value
+        )
     ]
 
     # Write Markdown (using code blocks for stacktrace formatting)
