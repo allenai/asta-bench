@@ -1,0 +1,17 @@
+[project]
+name = "citation-eval-ui"
+version = "0.1.0"
+description = "Web UI for assessing LLM-based citation evaluation quality"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.104.0",
+    "uvicorn[standard]>=0.24.0",
+    "jinja2>=3.1.0",
+    "pandas>=2.0.0",
+    "python-multipart>=0.0.6",
+    "markdown>=3.8.2",
+]
+
+[project.scripts]
+citation-eval-ui = "citation_eval_ui.main:main"
