@@ -107,7 +107,7 @@ async def index(request: Request):
         })
 
 
-@app.get("/annotate/{filename}", response_class=HTMLResponse)
+@app.get("/annotate/{filename:path}", response_class=HTMLResponse)
 async def annotate(request: Request, filename: str, row: int = 0, claim: int = 0):
     """Main annotation interface."""
     try:
