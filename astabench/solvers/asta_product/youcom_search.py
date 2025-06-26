@@ -11,13 +11,13 @@ YOUCOM_SEARCH_API_KEY = os.environ["YOUCOM_SEARCH_API_KEY"]
 S2_API_KEY = os.environ["S2_API_KEY"]
 
 
-def remove_suffix_after_dash(title: str) -> str:
-    return title.split(" - ")[0]
+def clean_title(title: str) -> str:
+    return title.split(" - ")[0].replace("...", "")
 
 
 def get_pmc_id(url: str) -> str | None:
     if "PMC" in url:
-        return url.rstrip("/").split("/")[-1].replace("PMC", "")
+        return "PMCID:" + url.rstrip("/").split("/")[-1].replace("PMC", "")
     return None
 
 
@@ -64,7 +64,7 @@ def youcom_solver() -> Solver:
 
             # call s2 api to get corpus ids from titles
             for sr in search_results:
-                title = remove_suffix_after_dash(sr["title"])
+                title = clean_title(sr["title"])
                 try:
                     r = requests.get(
                         'https://api.semanticscholar.org/graph/v1/paper/search/match',
@@ -99,13 +99,15 @@ def youcom_solver() -> Solver:
                             }
                         )
                     else:
-                        logging.error(f"Title match not found {r.status_code}: {r.text}")
+                        logging.error(f"Title match not found {r.status_code}: {r.text}. Title: {title}")
                 except Exception as err:
                     logging.exception(f"Request failed for title: {title}: {err}")
 
         except Exception as e:
             logger.exception(f"Error: {e}")
             return state
+
+        logging.info(f"Found {len(docs)} titles out of {len(search_results)} titles returned by You.com")
 
         realres = {"output": {"query_id": state.sample_id, "results": docs}}
 
