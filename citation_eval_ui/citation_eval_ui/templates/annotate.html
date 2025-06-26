@@ -104,6 +104,10 @@
                 <a href="/annotate/{{ filename }}?row={{ row + 1 }}&claim=0" class="btn btn-outline-secondary">Next Row →</a>
                 {% endif %}
             </div>
+            <div class="btn-group ms-3" role="group">
+                <button type="button" class="btn btn-outline-info" id="random-row-btn">🎲 Random Row</button>
+                <button type="button" class="btn btn-outline-info" id="random-claim-btn">🎲 Random Claim</button>
+            </div>
         </div>
 
         <!-- Question -->
@@ -419,6 +423,29 @@ document.addEventListener('DOMContentLoaded', function() {
             status.innerHTML = '<div class="alert alert-danger">Error: ' + error.message + '</div>';
         }
     });
+
+    // Random navigation functionality
+    const randomRowBtn = document.getElementById('random-row-btn');
+    const randomClaimBtn = document.getElementById('random-claim-btn');
+    
+    if (randomRowBtn) {
+        randomRowBtn.addEventListener('click', function() {
+            const totalRows = {{ total_rows }};
+            const randomRow = Math.floor(Math.random() * totalRows);
+            const currentFilename = '{{ filename }}';
+            window.location.href = `/annotate/${encodeURIComponent(currentFilename)}?row=${randomRow}&claim=0`;
+        });
+    }
+    
+    if (randomClaimBtn) {
+        randomClaimBtn.addEventListener('click', function() {
+            const totalClaims = {{ total_claims }};
+            const currentRow = {{ row }};
+            const randomClaim = Math.floor(Math.random() * totalClaims);
+            const currentFilename = '{{ filename }}';
+            window.location.href = `/annotate/${encodeURIComponent(currentFilename)}?row=${currentRow}&claim=${randomClaim}`;
+        });
+    }
 });
 </script>
 {% endblock %}
