@@ -53,6 +53,9 @@
     padding: 10px;
     margin: 10px 0;
     border-radius: 0 5px 5px 0;
+    max-height: 150px;
+    overflow-y: auto;
+    word-wrap: break-word;
 }
 
 .progress-info {
@@ -202,7 +205,7 @@
                             </div>
                             <div class="col-md-9">
                                 <div class="citation-snippet">
-                                    {{ citation.snippets[:300] }}{% if citation.snippets|length > 300 %}...{% endif %}
+                                    {{ citation.snippets }}
                                 </div>
                                 
                                 <div class="btn-group" role="group" data-citation="{{ citation.id }}">
