@@ -12,6 +12,7 @@ class DataLoader:
     
     def __init__(self, data_dir: str = "../test_dvc_logs/debug_logs"):
         self.data_dir = Path(data_dir)
+        self._cache = {}  # Simple in-memory cache
     
     def list_csv_files(self) -> List[str]:
         """List all citation_eval.csv files in the data directory and subdirectories."""
@@ -25,6 +26,11 @@ class DataLoader:
         file_path = self.data_dir / filename
         if not file_path.exists():
             raise FileNotFoundError(f"File not found: {file_path}")
+        
+        # Check cache first
+        cache_key = f"{filename}_{file_path.stat().st_mtime}"
+        if cache_key in self._cache:
+            return self._cache[cache_key]
         
         df = pd.read_csv(file_path)
         rows = []
@@ -67,6 +73,9 @@ class DataLoader:
             except Exception as e:
                 print(f"Error parsing row {len(rows)}: {e}")
                 continue
+        
+        # Cache the result
+        self._cache[cache_key] = rows
         
         return rows
     

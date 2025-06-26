@@ -72,7 +72,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <strong>File:</strong> {{ filename }}<br>
-                    <strong>Row:</strong> {{ row + 1 }} of {{ total_rows }}
+                    <strong>Section:</strong> {{ row + 1 }} of {{ total_rows }}
                 </div>
                 <div class="col-md-4">
                     <strong>Claim:</strong> {{ claim + 1 }} of {{ total_claims }}
@@ -92,7 +92,7 @@
         <div class="mb-3">
             <div class="btn-group" role="group">
                 {% if has_prev_row %}
-                <a href="/annotate/{{ filename }}?row={{ row - 1 }}&claim=0" class="btn btn-outline-secondary">← Prev Row</a>
+                <a href="/annotate/{{ filename }}?row={{ row - 1 }}&claim=0" class="btn btn-outline-secondary">← Prev Section</a>
                 {% endif %}
                 {% if has_prev_claim %}
                 <a href="/annotate/{{ filename }}?row={{ row }}&claim={{ claim - 1 }}" class="btn btn-outline-primary">← Prev Claim</a>
@@ -101,11 +101,11 @@
                 <a href="/annotate/{{ filename }}?row={{ row }}&claim={{ claim + 1 }}" class="btn btn-outline-primary">Next Claim →</a>
                 {% endif %}
                 {% if has_next_row %}
-                <a href="/annotate/{{ filename }}?row={{ row + 1 }}&claim=0" class="btn btn-outline-secondary">Next Row →</a>
+                <a href="/annotate/{{ filename }}?row={{ row + 1 }}&claim=0" class="btn btn-outline-secondary">Next Section →</a>
                 {% endif %}
             </div>
             <div class="btn-group ms-3" role="group">
-                <button type="button" class="btn btn-outline-info" id="random-row-btn">🎲 Random Row</button>
+                <button type="button" class="btn btn-outline-info" id="random-row-btn">🎲 Random Section</button>
                 <button type="button" class="btn btn-outline-info" id="random-claim-btn">🎲 Random Claim</button>
             </div>
         </div>
