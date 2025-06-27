@@ -1344,8 +1344,8 @@ stages:
     - path: 
         test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
       hash: md5
-      md5: a83e8951ac8f179ec0becd984436583d
-      size: 3388480
+      md5: a851dd82face384dc07e24a7644a7e8f
+      size: 3388253
     outs:
     - path: 
         test_dvc_logs/errors/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.md
@@ -1355,7 +1355,7 @@ stages:
     - path: 
         test_dvc_logs/scores/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.md
       hash: md5
-      md5: b64e7d8d8304e69e15d0afb41e64a334
+      md5: 4a20d016823cabb31a4e73dad7e32e80
       size: 279
   log_any_remaining_errors_and_record_scores@openai/o4-mini-test:
     cmd: echo "Collecting errors";[[ "openai/o4-mini" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
@@ -1365,8 +1365,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_openai/o4-mini.eval
       hash: md5
-      md5: 919c6dbf566c7e02d6b6f8b202e5cce2
-      size: 2218529
+      md5: e8aad06a8584467dfb028e4154506c1c
+      size: 2217797
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_openai/o4-mini.md
       hash: md5
@@ -1374,7 +1374,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_openai/o4-mini.md
       hash: md5
-      md5: 2fe40c9af82b1f65c25811169b1b2820
+      md5: 93351c0f0bdc83f3ffd37836569ccf8a
       size: 254
   log_any_remaining_errors_and_record_scores@google/gemini-2.5-pro-preview-03-25-test:
     cmd: echo "Collecting errors";[[ "google/gemini-2.5-pro-preview-03-25" == */*
@@ -1386,8 +1386,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
       hash: md5
-      md5: 8d11e4035167ef8010822c518b3213bb
-      size: 3462365
+      md5: e63902a40e16045112f797d14b29030e
+      size: 3461724
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.md
       hash: md5
@@ -1395,7 +1395,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.md
       hash: md5
-      md5: a9da96f707bf8d3585ff0ea46d051aa6
+      md5: f068042a8c6112595521d7dc6ccfeb91
       size: 255
   log_any_remaining_errors_and_record_scores@anthropic/claude-sonnet-4-20250514-test:
     cmd: echo "Collecting errors";[[ "anthropic/claude-sonnet-4-20250514" == */* ]]
@@ -1406,8 +1406,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
       hash: md5
-      md5: 1fa6de4286ce74e7366b2b6933d163c4
-      size: 9592218
+      md5: dea3e6cf9c56868fb5cbda9f7eb38dc5
+      size: 9592248
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_anthropic/claude-sonnet-4-20250514.md
       hash: md5
@@ -1415,7 +1415,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_anthropic/claude-sonnet-4-20250514.md
       hash: md5
-      md5: 02c9d658f143df2fcfc66881a35d35bd
+      md5: 7b3f6937fed3efdca3a5a25727dfcebf
       size: 255
   log_any_remaining_errors_and_record_scores@anthropic/claude-3-7-sonnet-20250219-test:
     cmd: echo "Collecting errors";[[ "anthropic/claude-3-7-sonnet-20250219" == */*
@@ -1427,8 +1427,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.eval
       hash: md5
-      md5: 877b87dd58a5389379a26008fde1f7b6
-      size: 3733858
+      md5: 42330938ccf71ab9faa0e717f31ef3d8
+      size: 3734099
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.md
       hash: md5
@@ -1436,7 +1436,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.md
       hash: md5
-      md5: 4407f2fbaa5964c296f330cc01ec287a
+      md5: c7ce9d8c11148480caddc6dc4655f452
       size: 272
   log_any_remaining_errors_and_record_scores@anthropic/claude-3-5-sonnet-20240620-test:
     cmd: echo "Collecting errors";[[ "anthropic/claude-3-5-sonnet-20240620" == */*
@@ -1448,8 +1448,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.eval
       hash: md5
-      md5: 030dc4892bbf182c2acadf8475be3ae4
-      size: 2102383
+      md5: 4bccf5a9c5d885030df382238cdb6993
+      size: 2102491
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.md
       hash: md5
@@ -1457,7 +1457,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.md
       hash: md5
-      md5: 3a063f2c93a0408a3560d549d3b79d79
+      md5: 005d0328420aadd2f7629a51bfac703a
       size: 272
   log_any_remaining_errors_and_record_scores@sqa_claude-3.7-dev:
     cmd: echo "Collecting errors";[[ "sqa_claude-3.7" == */* ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname
@@ -1467,8 +1467,8 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
       hash: md5
-      md5: d0540e3d9c97e8740e4862bd4964a38b
-      size: 17947157
+      md5: 7ad3b589b061a5b22616d409dfad22a0
+      size: 17947390
     outs:
     - path: dev_dvc_logs/errors/task_sqa_solver_sqa_claude-3.7.md
       hash: md5
@@ -1476,7 +1476,7 @@ stages:
       size: 63
     - path: dev_dvc_logs/scores/task_sqa_solver_sqa_claude-3.7.md
       hash: md5
-      md5: 535db6c5ed822cb18bec310f1c36ca68
+      md5: 8f7c8c485c5aad1162082059bfdee807
       size: 268
   log_any_remaining_errors_and_record_scores@sqa_claude-4.0-test:
     cmd: echo "Collecting errors";[[ "sqa_claude-4.0" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
@@ -1486,8 +1486,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
       hash: md5
-      md5: 2a0c85547f2a7436332241168818c21c
-      size: 18867249
+      md5: c12adac8222dffcc030d8d0726df9db5
+      size: 18867420
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_sqa_claude-4.0.md
       hash: md5
@@ -1495,7 +1495,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_sqa_claude-4.0.md
       hash: md5
-      md5: a109dd214f8a394431deb725065e31d5
+      md5: 45a185f2a1cf2d481945abb987d592d9
       size: 267
   log_any_remaining_errors_and_record_scores@sqa_gemini-2.5-pro-dev:
     cmd: echo "Collecting errors";[[ "sqa_gemini-2.5-pro" == */* ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname
@@ -1505,8 +1505,8 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
       hash: md5
-      md5: df29a07feb0f51e34c64b6363cbab511
-      size: 12528655
+      md5: b508a73b3e4460261a9c54ea49eb8bc5
+      size: 12529041
     outs:
     - path: dev_dvc_logs/errors/task_sqa_solver_sqa_gemini-2.5-pro.md
       hash: md5
@@ -1514,7 +1514,7 @@ stages:
       size: 3561
     - path: dev_dvc_logs/scores/task_sqa_solver_sqa_gemini-2.5-pro.md
       hash: md5
-      md5: 4f0b2a02576b4b8400aa46f9d6738e31
+      md5: b55f7ddde639c8206c437d048125af7c
       size: 271
   log_any_remaining_errors_and_record_scores@elicit-dev:
     cmd: echo "Collecting errors";[[ "elicit" == */* ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname
@@ -1524,8 +1524,8 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_elicit.eval
       hash: md5
-      md5: cb2e4ca67fff8c3cf093ae7ddfa1b2ea
-      size: 15422984
+      md5: 2eaaef1939166c917eea591388d68bec
+      size: 15422955
     outs:
     - path: dev_dvc_logs/errors/task_sqa_solver_elicit.md
       hash: md5
@@ -1533,7 +1533,7 @@ stages:
       size: 63
     - path: dev_dvc_logs/scores/task_sqa_solver_elicit.md
       hash: md5
-      md5: 8f08da2eee383bc95f74fc0584707196
+      md5: 143067bd9c516412a834632c4dfd2994
       size: 259
   log_any_remaining_errors_and_record_scores@elicit-test:
     cmd: echo "Collecting errors";[[ "elicit" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
@@ -1543,8 +1543,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_elicit.eval
       hash: md5
-      md5: 87e01e041ce940eacf535db5a62a1b73
-      size: 13789286
+      md5: d50a59ac948c9b940c268e6cd0cb545c
+      size: 13789411
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_elicit.md
       hash: md5
@@ -1552,7 +1552,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_elicit.md
       hash: md5
-      md5: 8ca38c7b41727960c91c1986a6d3d14a
+      md5: b85703a0847b6b213b74b399a86860ee
       size: 259
   log_any_remaining_errors_and_record_scores@storm-dev:
     cmd: echo "Collecting errors";[[ "storm" == */* ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname
@@ -1562,8 +1562,8 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_storm.eval
       hash: md5
-      md5: 5fcb83cdbea9411a2fc9baaea26e920d
-      size: 11863760
+      md5: 29dc58a2355871e766d8223c9d3d1442
+      size: 11864460
     outs:
     - path: dev_dvc_logs/errors/task_sqa_solver_storm.md
       hash: md5
@@ -1571,7 +1571,7 @@ stages:
       size: 63
     - path: dev_dvc_logs/scores/task_sqa_solver_storm.md
       hash: md5
-      md5: 2cf485fadb99dbe23f3b302689ef9bf6
+      md5: b3b9439761b8d6f26f12d7fe9a55d2b2
       size: 258
   log_any_remaining_errors_and_record_scores@scispace-test:
     cmd: echo "Collecting errors";[[ "scispace" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
@@ -1581,8 +1581,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_scispace.eval
       hash: md5
-      md5: bdd329b4275231a2fef3171f851d69c5
-      size: 46025114
+      md5: c7488e4da4441af125b3da70c28171e1
+      size: 46025101
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_scispace.md
       hash: md5
@@ -1590,8 +1590,8 @@ stages:
       size: 3396
     - path: test_dvc_logs/scores/task_sqa_solver_scispace.md
       hash: md5
-      md5: 478bfaed313225044e509c386a1eea4e
-      size: 259
+      md5: 5f75be1d793b3d7c0cb593c9f2db3f73
+      size: 253
   log_any_remaining_errors_and_record_scores@fhouse_crow-test:
     cmd: echo "Collecting errors";[[ "fhouse_crow" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
       "fhouse_crow"); mkdir -p test_dvc_logs/scores/task_sqa_solver_$(dirname "fhouse_crow");
@@ -1600,8 +1600,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
       hash: md5
-      md5: 37c2c90903eb8966baac7a85a5f99259
-      size: 2557535
+      md5: 9d28d708f517d0a05fbd9fdbf9c43e76
+      size: 2557497
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_fhouse_crow.md
       hash: md5
@@ -1609,7 +1609,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_fhouse_crow.md
       hash: md5
-      md5: 01d1e07c406602e5fdbb83c7f1108a4b
+      md5: 7c5f5160e5484d0c84e40a610fc3efc6
       size: 262
   log_any_remaining_errors_and_record_scores@fhouse_falcon-dev:
     cmd: echo "Collecting errors";[[ "fhouse_falcon" == */* ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname
@@ -1619,7 +1619,7 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
       hash: md5
-      md5: 26bbc824e8055613e796a159b16932af
+      md5: 404624644e8f67717f882e2b3f08929d
       size: 1171464
     outs:
     - path: dev_dvc_logs/errors/task_sqa_solver_fhouse_falcon.md
@@ -1638,8 +1638,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
       hash: md5
-      md5: 8e144b969d037a4509f5a8321d5f4092
-      size: 13573997
+      md5: 4820f62478018565b8a15e76337607a6
+      size: 13574201
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_fhouse_falcon.md
       hash: md5
@@ -1647,7 +1647,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_fhouse_falcon.md
       hash: md5
-      md5: 8b2567ddcb513a55d41a1fd116be0fa5
+      md5: 027148224acfd155cb145ed95c5624ba
       size: 262
   log_any_remaining_errors_and_record_scores@openai_deep_research-dev:
     cmd: echo "Collecting errors";[[ "openai_deep_research" == */* ]] && mkdir -p
@@ -1658,7 +1658,7 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
       hash: md5
-      md5: 5057be1f8f1cd79d92f282327536670f
+      md5: 1c37e17dfd94b70ce1ec399271641758
       size: 1171467
     outs:
     - path: dev_dvc_logs/errors/task_sqa_solver_openai_deep_research.md
@@ -1678,8 +1678,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
       hash: md5
-      md5: b2fdc5d9fb0a5f65c5a04d8823b28073
-      size: 39255763
+      md5: a91ebc02a6aa9acad02a6eb48b818c27
+      size: 39256117
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_openai_deep_research.md
       hash: md5
@@ -1687,7 +1687,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_openai_deep_research.md
       hash: md5
-      md5: 32c3f3c80893a3593b667082192710c8
+      md5: eab2a0a4a62470634634ba361a1c0c84
       size: 262
   log_any_remaining_errors_and_record_scores@perplexity_dr-test:
     cmd: echo "Collecting errors";[[ "perplexity_dr" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
@@ -1697,8 +1697,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval
       hash: md5
-      md5: 3a42906829e05425659dab47f1971ee4
-      size: 2949750
+      md5: 70811b2a7625e7efe634c368c6d25993
+      size: 2949851
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_perplexity_dr.md
       hash: md5
@@ -1706,7 +1706,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_perplexity_dr.md
       hash: md5
-      md5: 257b540affbd6783f1f7251bb1253cf0
+      md5: f383f30ae9b99e433833d63d8725c9b7
       size: 255
   extract_model_responses@sqa_claude-3.7-dev:
     cmd: echo "Extracting responses"; [[ "sqa_claude-3.7" == */* ]] && mkdir -p dev_dvc_logs/model_responses/task_sqa_solver_$(dirname
@@ -1801,8 +1801,8 @@ stages:
     deps:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_scispace.eval
       hash: md5
-      md5: 62020d6c3d85b55a28634efd408b9ea4
-      size: 46025114
+      md5: e517fa1055570efb347dd6a924e478ae
+      size: 46039197
     outs:
     - path: test_dvc_logs/model_responses/task_sqa_solver_scispace_responses.csv
       hash: md5
@@ -1929,8 +1929,8 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
       hash: md5
-      md5: d0540e3d9c97e8740e4862bd4964a38b
-      size: 17947157
+      md5: 7ad3b589b061a5b22616d409dfad22a0
+      size: 17947390
     outs:
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-3.7_answer_precision_eval.csv
       hash: md5
@@ -1938,8 +1938,8 @@ stages:
       size: 17386845
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-3.7_citation_eval.csv
       hash: md5
-      md5: 16080aced784108060835319e78c5e3d
-      size: 92468110
+      md5: 423e321100fded504cd53dd3ca2ef0c6
+      size: 92468128
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-3.7_rubric_eval.csv
       hash: md5
       md5: ecb3ba563d425ca0af4fe5fc8a8f7e04
@@ -1951,8 +1951,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
       hash: md5
-      md5: 2a0c85547f2a7436332241168818c21c
-      size: 18867249
+      md5: c12adac8222dffcc030d8d0726df9db5
+      size: 18867420
     outs:
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.0_answer_precision_eval.csv
@@ -1961,8 +1961,8 @@ stages:
       size: 16678602
     - path: test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.0_citation_eval.csv
       hash: md5
-      md5: d940be539723f19006eae148f69b30fa
-      size: 92789681
+      md5: f2f44e393a889e1ecaf7308bc4195094
+      size: 92789688
     - path: test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.0_rubric_eval.csv
       hash: md5
       md5: ec9bbe024a4c3b62a20e92d932a22770
@@ -1974,8 +1974,8 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
       hash: md5
-      md5: df29a07feb0f51e34c64b6363cbab511
-      size: 12528655
+      md5: b508a73b3e4460261a9c54ea49eb8bc5
+      size: 12529041
     outs:
     - path: 
         dev_dvc_logs/debug_logs/task_sqa_solver_sqa_gemini-2.5-pro_answer_precision_eval.csv
@@ -1984,8 +1984,8 @@ stages:
       size: 11636132
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_gemini-2.5-pro_citation_eval.csv
       hash: md5
-      md5: 046fa55861de7ec3b6941213d83349e0
-      size: 58929269
+      md5: a08c18cd77032e8ccc019cc4fa603eb6
+      size: 58929282
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_gemini-2.5-pro_rubric_eval.csv
       hash: md5
       md5: a8d79bbe8534b32ac2c706a6b8b76515
@@ -1997,8 +1997,8 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_elicit.eval
       hash: md5
-      md5: cb2e4ca67fff8c3cf093ae7ddfa1b2ea
-      size: 15422984
+      md5: 2eaaef1939166c917eea591388d68bec
+      size: 15422955
     outs:
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_elicit_answer_precision_eval.csv
       hash: md5
@@ -2006,8 +2006,8 @@ stages:
       size: 32309757
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_elicit_citation_eval.csv
       hash: md5
-      md5: e6a08e3d936158ad813c6362ea52a8c4
-      size: 112832353
+      md5: 961a997d00510ee942783ffc102d0860
+      size: 112832348
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_elicit_rubric_eval.csv
       hash: md5
       md5: 1c85b05463925942470f52a22cbf4dfb
@@ -2019,8 +2019,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_elicit.eval
       hash: md5
-      md5: 87e01e041ce940eacf535db5a62a1b73
-      size: 13789286
+      md5: d50a59ac948c9b940c268e6cd0cb545c
+      size: 13789411
     outs:
     - path: test_dvc_logs/debug_logs/task_sqa_solver_elicit_answer_precision_eval.csv
       hash: md5
@@ -2028,8 +2028,8 @@ stages:
       size: 27454384
     - path: test_dvc_logs/debug_logs/task_sqa_solver_elicit_citation_eval.csv
       hash: md5
-      md5: 4891decf8866e2c60fe83019b5304e49
-      size: 101012986
+      md5: c715d3801d3ee4a1ca4434a383b60e16
+      size: 101012991
     - path: test_dvc_logs/debug_logs/task_sqa_solver_elicit_rubric_eval.csv
       hash: md5
       md5: b9169a6817dd1f7cded72aaf121de0ff
@@ -2041,8 +2041,8 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_storm.eval
       hash: md5
-      md5: 5fcb83cdbea9411a2fc9baaea26e920d
-      size: 11863760
+      md5: 29dc58a2355871e766d8223c9d3d1442
+      size: 11864460
     outs:
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_storm_answer_precision_eval.csv
       hash: md5
@@ -2050,8 +2050,8 @@ stages:
       size: 16555337
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_storm_citation_eval.csv
       hash: md5
-      md5: b70da3dba2e33986e83143d816e8c1c5
-      size: 111184949
+      md5: 063dc20a05864437acb7962c2b1c5cde
+      size: 111184939
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_storm_rubric_eval.csv
       hash: md5
       md5: f44e2ca8fc7ef0f4a0852239526907e7
@@ -2063,8 +2063,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
       hash: md5
-      md5: 37c2c90903eb8966baac7a85a5f99259
-      size: 2557535
+      md5: 9d28d708f517d0a05fbd9fdbf9c43e76
+      size: 2557497
     outs:
     - path: test_dvc_logs/debug_logs/task_sqa_solver_fhouse_crow_answer_precision_eval.csv
       hash: md5
@@ -2085,8 +2085,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
       hash: md5
-      md5: 8e144b969d037a4509f5a8321d5f4092
-      size: 13573997
+      md5: 4820f62478018565b8a15e76337607a6
+      size: 13574201
     outs:
     - path: test_dvc_logs/debug_logs/task_sqa_solver_fhouse_falcon_answer_precision_eval.csv
       hash: md5
@@ -2094,8 +2094,8 @@ stages:
       size: 13456929
     - path: test_dvc_logs/debug_logs/task_sqa_solver_fhouse_falcon_citation_eval.csv
       hash: md5
-      md5: ebe5879ffa66f8dcaf5aade4c244e1e3
-      size: 108124005
+      md5: 3a81cc5f6189f899f2d09f6d40b8ce63
+      size: 108123981
     - path: test_dvc_logs/debug_logs/task_sqa_solver_fhouse_falcon_rubric_eval.csv
       hash: md5
       md5: 7d172b7092aa5d05b7c908ba2e25780f
@@ -2107,8 +2107,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
       hash: md5
-      md5: b2fdc5d9fb0a5f65c5a04d8823b28073
-      size: 39255763
+      md5: a91ebc02a6aa9acad02a6eb48b818c27
+      size: 39256117
     outs:
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_openai_deep_research_answer_precision_eval.csv
@@ -2117,8 +2117,8 @@ stages:
       size: 24269989
     - path: test_dvc_logs/debug_logs/task_sqa_solver_openai_deep_research_citation_eval.csv
       hash: md5
-      md5: e7776bf1fe25e0a5d5bf512d09f2c100
-      size: 125277357
+      md5: 91a96dfa54aac0e665c5b9487d03c27f
+      size: 125277374
     - path: test_dvc_logs/debug_logs/task_sqa_solver_openai_deep_research_rubric_eval.csv
       hash: md5
       md5: 2b69adb3d8fd4a6ecb5f8721e99d6699
@@ -2130,8 +2130,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval
       hash: md5
-      md5: 3a42906829e05425659dab47f1971ee4
-      size: 2949750
+      md5: 70811b2a7625e7efe634c368c6d25993
+      size: 2949851
     outs:
     - path: test_dvc_logs/debug_logs/task_sqa_solver_perplexity_dr_answer_precision_eval.csv
       hash: md5
@@ -2139,8 +2139,8 @@ stages:
       size: 2342817
     - path: test_dvc_logs/debug_logs/task_sqa_solver_perplexity_dr_citation_eval.csv
       hash: md5
-      md5: 3f50bb00c03aa289479fa8a708b71320
-      size: 6806611
+      md5: 0287b2f0073ea814dd08c56d8622a60f
+      size: 6806527
     - path: test_dvc_logs/debug_logs/task_sqa_solver_perplexity_dr_rubric_eval.csv
       hash: md5
       md5: 1a2f3ae6c889535243e10aea77ed4460
@@ -2169,8 +2169,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
       hash: md5
-      md5: 8d11e4035167ef8010822c518b3213bb
-      size: 3462365
+      md5: e63902a40e16045112f797d14b29030e
+      size: 3461724
     outs:
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_google/gemini-2.5-pro-preview-03-25_answer_precision_eval.csv
@@ -2180,8 +2180,8 @@ stages:
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_google/gemini-2.5-pro-preview-03-25_citation_eval.csv
       hash: md5
-      md5: 034de71b716b26cc8f45699b56fb9b5b
-      size: 4340004
+      md5: 2f9000750fea9f265850b13d29d71a74
+      size: 4339373
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_google/gemini-2.5-pro-preview-03-25_rubric_eval.csv
       hash: md5
@@ -2213,8 +2213,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_you.eval
       hash: md5
-      md5: 89c61edb2a9053784554d889550d3047
-      size: 2756727
+      md5: a1e6a4dd71818b318301d97ad31deba5
+      size: 2756843
     outs:
     - path: test_dvc_logs/debug_logs/task_sqa_solver_you_answer_precision_eval.csv
       hash: md5
@@ -2270,8 +2270,8 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_you.eval
       hash: md5
-      md5: e01d6649210bf86fbbac3f181a791b5c
-      size: 3851176
+      md5: e95e0d3e4dd5582dd4677ddf78a6e487
+      size: 3851155
     outs:
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_you_answer_precision_eval.csv
       hash: md5
@@ -2279,8 +2279,8 @@ stages:
       size: 3690806
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_you_citation_eval.csv
       hash: md5
-      md5: 0ad7959cefb198bde686a324ace33a3c
-      size: 10786308
+      md5: 1cc2434ef989df3ab2ebab1f20daf08b
+      size: 10786287
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_you_rubric_eval.csv
       hash: md5
       md5: 28e1a35f60cfb85c45c554726652c842
@@ -2321,8 +2321,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_you.eval
       hash: md5
-      md5: 89c61edb2a9053784554d889550d3047
-      size: 2756727
+      md5: a1e6a4dd71818b318301d97ad31deba5
+      size: 2756843
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_you.md
       hash: md5
@@ -2330,7 +2330,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_you.md
       hash: md5
-      md5: f64e06ede73c281edae7914a99c81535
+      md5: 07ac0142143f1ea9fc927f49b812184f
       size: 255
   log_any_remaining_errors_and_record_scores@you-dev:
     cmd: echo "Collecting errors";[[ "you" == */* ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname
@@ -2340,8 +2340,8 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_you.eval
       hash: md5
-      md5: e01d6649210bf86fbbac3f181a791b5c
-      size: 3851176
+      md5: e95e0d3e4dd5582dd4677ddf78a6e487
+      size: 3851155
     outs:
     - path: dev_dvc_logs/errors/task_sqa_solver_you.md
       hash: md5
@@ -2349,7 +2349,7 @@ stages:
       size: 63
     - path: dev_dvc_logs/scores/task_sqa_solver_you.md
       hash: md5
-      md5: dfe1260173497ae350e90c685a23d540
+      md5: 5f7b4f5eb0fbc1a212b6d0fbe64185f3
       size: 255
   solve_sqa@claude-3.7-test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_claude-3.7 uv run --extra
@@ -2409,8 +2409,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
       hash: md5
-      md5: 1fa6de4286ce74e7366b2b6933d163c4
-      size: 9592218
+      md5: dea3e6cf9c56868fb5cbda9f7eb38dc5
+      size: 9592248
     outs:
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_anthropic/claude-sonnet-4-20250514_answer_precision_eval.csv
@@ -2420,8 +2420,8 @@ stages:
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_anthropic/claude-sonnet-4-20250514_citation_eval.csv
       hash: md5
-      md5: c61074802980df3fd1c39b4e95c64449
-      size: 22044065
+      md5: dfc913e5d2f3b3de377e089d20adf5d8
+      size: 22043931
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_anthropic/claude-sonnet-4-20250514_rubric_eval.csv
       hash: md5
@@ -2435,8 +2435,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.eval
       hash: md5
-      md5: 030dc4892bbf182c2acadf8475be3ae4
-      size: 2102383
+      md5: 4bccf5a9c5d885030df382238cdb6993
+      size: 2102491
     outs:
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620_answer_precision_eval.csv
@@ -2446,8 +2446,8 @@ stages:
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620_citation_eval.csv
       hash: md5
-      md5: 0de43a77fa402764132e1e024e319c0d
-      size: 7857600
+      md5: 1070abfda4486b3efdd1d33a8dffec70
+      size: 7857648
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620_rubric_eval.csv
       hash: md5
@@ -2461,8 +2461,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.eval
       hash: md5
-      md5: 877b87dd58a5389379a26008fde1f7b6
-      size: 3733858
+      md5: 42330938ccf71ab9faa0e717f31ef3d8
+      size: 3734099
     outs:
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219_answer_precision_eval.csv
@@ -2472,8 +2472,8 @@ stages:
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219_citation_eval.csv
       hash: md5
-      md5: d69fb61aaf60b3b23b741da4974df9a9
-      size: 29690704
+      md5: 4c1a0389c26ce70072852606336100f9
+      size: 29690780
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219_rubric_eval.csv
       hash: md5
@@ -2486,8 +2486,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_openai/o4-mini.eval
       hash: md5
-      md5: 919c6dbf566c7e02d6b6f8b202e5cce2
-      size: 2218529
+      md5: e8aad06a8584467dfb028e4154506c1c
+      size: 2217797
     outs:
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_openai/o4-mini_answer_precision_eval.csv
@@ -2496,8 +2496,8 @@ stages:
       size: 2326439
     - path: test_dvc_logs/debug_logs/task_sqa_solver_openai/o4-mini_citation_eval.csv
       hash: md5
-      md5: aeee67cfd131b9d68655e8af0111b8a1
-      size: 9390828
+      md5: d5b1323da5187471effbbb4e12894c1b
+      size: 9389980
     - path: test_dvc_logs/debug_logs/task_sqa_solver_openai/o4-mini_rubric_eval.csv
       hash: md5
       md5: 1e4cdb1d14c54257e589fdd2cba906e0
@@ -2511,8 +2511,8 @@ stages:
     - path: 
         test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
       hash: md5
-      md5: a83e8951ac8f179ec0becd984436583d
-      size: 3388480
+      md5: a851dd82face384dc07e24a7644a7e8f
+      size: 3388253
     outs:
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking_answer_precision_eval.csv
@@ -2522,8 +2522,8 @@ stages:
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking_citation_eval.csv
       hash: md5
-      md5: 3980a8fd5876e460bed21f2e7255aa3c
-      size: 16653262
+      md5: c68f7ef809baa46e0367c4a422337718
+      size: 16652743
     - path: 
         test_dvc_logs/debug_logs/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking_rubric_eval.csv
       hash: md5
@@ -2581,14 +2581,14 @@ stages:
     - path: 
         test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.eval
       hash: md5
-      md5: 8aa34f26c1e93862dee8ad41dbb3249e
-      size: 2102972
+      md5: 10496d398144a7a41e639823823d007f
+      size: 1068696
     outs:
     - path: 
         test_dvc_logs/model_responses/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620_responses.csv
       hash: md5
-      md5: 33d281b405d02466b223b212763953b7
-      size: 1388634
+      md5: 49222381009e954c276d5257973f6d7f
+      size: 1349415
   extract_model_responses@google/gemini-2.5-pro-preview-03-25-test:
     cmd: echo "Extracting responses"; [[ "google/gemini-2.5-pro-preview-03-25" ==
       */* ]] && mkdir -p test_dvc_logs/model_responses/task_sqa_solver_$(dirname "google/gemini-2.5-pro-preview-03-25");
@@ -2617,8 +2617,8 @@ stages:
     - path: 
         test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
       hash: md5
-      md5: da317b361088dd2788a13388c5351c20
-      size: 3388674
+      md5: 16646547ee30427da219b0983ca788de
+      size: 1923240
     outs:
     - path: 
         test_dvc_logs/model_responses/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking_responses.csv
@@ -2635,8 +2635,8 @@ stages:
     - path: 
         test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.eval
       hash: md5
-      md5: 18e106ca4f504e812b6efc7aaf4c7eb6
-      size: 3734381
+      md5: a8fbef7fa3689f6859d79611e64981ed
+      size: 1850390
     outs:
     - path: 
         test_dvc_logs/model_responses/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219_responses.csv
@@ -2668,8 +2668,8 @@ stages:
     deps:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_openai/o4-mini.eval
       hash: md5
-      md5: becd4e21a3a8b8419094bf9f7a9092f0
-      size: 2218225
+      md5: 9f4457bf3d6efe1cfe094e96955ae849
+      size: 1088436
     outs:
     - path: test_dvc_logs/model_responses/task_sqa_solver_openai/o4-mini_responses.csv
       hash: md5
@@ -2721,8 +2721,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_storm.eval
       hash: md5
-      md5: 62135472046399b8d3f478bc4e1d3032
-      size: 11677401
+      md5: 5995848219857fc8f766a6c7dbf69d83
+      size: 11677301
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_storm.md
       hash: md5
@@ -2730,7 +2730,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_storm.md
       hash: md5
-      md5: 694b9ca1ddf5101c219761bf3d462fdf
+      md5: d2e8f6517d8aef00ad5583bdc9539113
       size: 255
   create_nice_logs@storm-test:
     cmd: echo "Creating logs"; [[ "storm" == */* ]] && mkdir -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname
@@ -2739,8 +2739,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_storm.eval
       hash: md5
-      md5: 62135472046399b8d3f478bc4e1d3032
-      size: 11677401
+      md5: 5995848219857fc8f766a6c7dbf69d83
+      size: 11677301
     outs:
     - path: test_dvc_logs/debug_logs/task_sqa_solver_storm_answer_precision_eval.csv
       hash: md5
@@ -2748,8 +2748,8 @@ stages:
       size: 16080979
     - path: test_dvc_logs/debug_logs/task_sqa_solver_storm_citation_eval.csv
       hash: md5
-      md5: 993d1644c33e08ecdb4d12d644577fd0
-      size: 114305478
+      md5: e4fbf3756b6b6e26fef64b3fe6549238
+      size: 114305480
     - path: test_dvc_logs/debug_logs/task_sqa_solver_storm_rubric_eval.csv
       hash: md5
       md5: 7f5ce9d87cebc8b11ed539f793ee9ea8
@@ -3290,3 +3290,41 @@ stages:
       hash: md5
       md5: e63902a40e16045112f797d14b29030e
       size: 3461724
+  log_any_remaining_errors_and_record_scores@sqa_claude-4.0-dev:
+    cmd: echo "Collecting errors";[[ "sqa_claude-4.0" == */* ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname
+      "sqa_claude-4.0"); mkdir -p dev_dvc_logs/scores/task_sqa_solver_$(dirname "sqa_claude-4.0");
+      uv run scripts/log_errors.py dev_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
+      dev_dvc_logs/errors/task_sqa_solver_sqa_claude-4.0.md dev_dvc_logs/scores/task_sqa_solver_sqa_claude-4.0.md
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
+      hash: md5
+      md5: d555c72e642f5446c964ceec9228a4ce
+      size: 7663908
+    outs:
+    - path: dev_dvc_logs/errors/task_sqa_solver_sqa_claude-4.0.md
+      hash: md5
+      md5: c2493ab8948e6d2600141e27a4d35b86
+      size: 65
+    - path: dev_dvc_logs/scores/task_sqa_solver_sqa_claude-4.0.md
+      hash: md5
+      md5: 485aca428d0b477d570d26acf97779f7
+      size: 16
+  log_any_remaining_errors_and_record_scores@sqa_gemini-2.5-pro-test:
+    cmd: echo "Collecting errors";[[ "sqa_gemini-2.5-pro" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
+      "sqa_gemini-2.5-pro"); mkdir -p test_dvc_logs/scores/task_sqa_solver_$(dirname
+      "sqa_gemini-2.5-pro"); uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
+      test_dvc_logs/errors/task_sqa_solver_sqa_gemini-2.5-pro.md test_dvc_logs/scores/task_sqa_solver_sqa_gemini-2.5-pro.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
+      hash: md5
+      md5: 234af1cf9860ac40ac39a95b9f78cc85
+      size: 7303856
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_sqa_gemini-2.5-pro.md
+      hash: md5
+      md5: df62681fb9a71bcd3c2c3a4ee0757fc7
+      size: 1731938
+    - path: test_dvc_logs/scores/task_sqa_solver_sqa_gemini-2.5-pro.md
+      hash: md5
+      md5: 570ffd469741cf26400197baad3f3f47
+      size: 240
