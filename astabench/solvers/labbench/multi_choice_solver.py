@@ -18,9 +18,7 @@ class MCQAnswer(BaseModel):
 
 
 @solver
-def multi_choice_solver(
-        model: str | None = None, mcq_string: bool = True
-) -> Solver:
+def multi_choice_solver(model: str | None = None, mcq_string: bool = True) -> Solver:
     model = get_model(model)
 
     async def solve(state: TaskState, generate: Generate):
@@ -28,7 +26,12 @@ def multi_choice_solver(
         if not isinstance(m, ChatMessageAssistant):
             raise ValueError("The last message must be from the assistant.")
         question = state.input
-        response = state.messages[-1].text.replace(f"Question: {question}", "").split("References")[0].strip()
+        response = (
+            state.messages[-1]
+            .text.replace(f"Question: {question}", "")
+            .split("References")[0]
+            .strip()
+        )
         choices = None
         if not mcq_string:
             mcq_prompt = """You are given a multiple choice question in <question></question> and a system response in <response></response> tags. 
@@ -44,13 +47,15 @@ def multi_choice_solver(
         mcq_prompt += """\nIf you cannot determine the correct choice from the
             question and answer, output the letter choice corresponding to 'Insufficient information'."""
 
-        user_prompt = f"<question>{question}</question>\n\n<response>{response}</response>"
+        user_prompt = (
+            f"<question>{question}</question>\n\n<response>{response}</response>"
+        )
         if choices:
             choices_text = "\n".join(
                 f"{chr(ord('A') + idx)}. {choice.value}"
                 for idx, choice in enumerate(choices)
             )
-            user_prompt += f"\n\n<choices>{choices_text}\n</choices>"
+            user_prompt += f"\n\n<choices>\n{choices_text}\n</choices>"
 
         mcq_messages = [
             ChatMessageSystem(content=mcq_prompt),
