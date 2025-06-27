@@ -3219,31 +3219,24 @@ stages:
       md5: 97325cbec0c7ad97808e8f9d5e250fde
       size: 9593029
   score_all_solvers@model1-test:
-    cmd: echo "Scoring";[[ "anthropic/claude-sonnet-4-20250514-thinking" == */* ]]
-      && mkdir -p 
-      test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking;
-      cp 
-      test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
-      test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval;
+    cmd: echo "Scoring";[[ "openai/o3" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_openai/o3;
+      cp test_dvc_logs/solver_outputs/task_sqa_solver_openai/o3.eval test_dvc_logs/scored/task_sqa_solver_openai/o3.eval;
       uv run inspect score --overwrite --display plain --scorer astabench/evals/sqa/task.py@score_all
-      -S scorer_model=google/gemini-2.5-pro -S is_retrieverless=true 
-      test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
+      -S scorer_model=google/gemini-2.5-pro -S is_retrieverless=true test_dvc_logs/scored/task_sqa_solver_openai/o3.eval
     deps:
-    - path: 
-        test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_openai/o3.eval
       hash: md5
-      md5: 16646547ee30427da219b0983ca788de
-      size: 1923240
+      md5: 9b53b134e0185678f65552a598ed13b9
+      size: 1558577
     params:
       params.yaml:
         scorer_model: google/gemini-2.5-pro
         sqa_scorer_version: may-23-2025
     outs:
-    - path: 
-        test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
+    - path: test_dvc_logs/scored/task_sqa_solver_openai/o3.eval
       hash: md5
-      md5: 7c22045258e39f5d205e2d8f46ad250a
-      size: 3388562
+      md5: b0d3e5bbd718c724c1a7ab4723d299d0
+      size: 2814938
   score_all_solvers@model4-test:
     cmd: echo "Scoring";[[ "anthropic/claude-3-7-sonnet-20250219" == */* ]] && mkdir
       -p test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219;
@@ -3407,3 +3400,44 @@ stages:
       hash: md5
       md5: adf587c10629b20eb0394548d7db5c59
       size: 2120029
+  log_any_remaining_errors_and_record_scores@openai/o3-test:
+    cmd: echo "Collecting errors";[[ "openai/o3" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
+      "openai/o3"); mkdir -p test_dvc_logs/scores/task_sqa_solver_$(dirname "openai/o3");
+      uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_openai/o3.eval
+      test_dvc_logs/errors/task_sqa_solver_openai/o3.md test_dvc_logs/scores/task_sqa_solver_openai/o3.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_openai/o3.eval
+      hash: md5
+      md5: b0d3e5bbd718c724c1a7ab4723d299d0
+      size: 2814938
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_openai/o3.md
+      hash: md5
+      md5: d51d4f783de486edccf22aea1a28d40d
+      size: 63
+    - path: test_dvc_logs/scores/task_sqa_solver_openai/o3.md
+      hash: md5
+      md5: 0499ccb2bc284d1405bba5358160273d
+      size: 248
+  create_nice_logs@openai/o3-test:
+    cmd: echo "Creating logs"; [[ "openai/o3" == */* ]] && mkdir -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname
+      "openai/o3"); uv run scripts/create_debug_logs.py test_dvc_logs/scored/ task_sqa_solver_openai/o3.eval
+      test_dvc_logs/debug_logs/
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_openai/o3.eval
+      hash: md5
+      md5: b0d3e5bbd718c724c1a7ab4723d299d0
+      size: 2814938
+    outs:
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_openai/o3_answer_precision_eval.csv
+      hash: md5
+      md5: 47e5b22b932c3a03095c396c79ccdb0d
+      size: 3323524
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_openai/o3_citation_eval.csv
+      hash: md5
+      md5: 3eaecb67329d213bd144b4adc63717da
+      size: 15836520
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_openai/o3_rubric_eval.csv
+      hash: md5
+      md5: 2d250e65754021575893a5181a52ff8d
+      size: 3124435
