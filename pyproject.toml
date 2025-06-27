@@ -146,6 +146,11 @@ ignore = [
 [tool.uv.sources]
 knowledge-storm = { git = "https://github.com/gituser768/storm", branch = "dh-fix-youcom" }
 
+[tool.uv.workspace]
+members = [
+    "citation_eval_ui",
+]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 # give each async test its own loop

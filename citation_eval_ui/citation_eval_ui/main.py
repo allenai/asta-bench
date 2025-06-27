@@ -246,9 +246,15 @@ async def get_files():
         return JSONResponse({"error": str(e)}, status_code=500)
 
 
+def _escape_filename(filename: str) -> str:
+    """Escape filename by replacing forward slashes with underscores."""
+    return filename.replace('/', '_')
+
+
 def load_annotations(filename: str) -> FileAnnotation:
     """Load annotations for a file."""
-    annotation_file = annotations_dir / f"{filename}.json"
+    escaped_filename = _escape_filename(filename)
+    annotation_file = annotations_dir / f"{escaped_filename}.json"
     
     if annotation_file.exists():
         with open(annotation_file, 'r') as f:
@@ -264,7 +270,8 @@ def load_annotations(filename: str) -> FileAnnotation:
 
 def save_annotations(annotations: FileAnnotation):
     """Save annotations for a file."""
-    annotation_file = annotations_dir / f"{annotations.filename}.json"
+    escaped_filename = _escape_filename(annotations.filename)
+    annotation_file = annotations_dir / f"{escaped_filename}.json"
     
     with open(annotation_file, 'w') as f:
         json.dump(annotations.model_dump(), f, indent=2)
