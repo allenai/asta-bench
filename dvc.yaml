@@ -189,6 +189,9 @@ stages:
           llm_name: anthropic/claude-3-7-sonnet-20250219
         - <<: *llm_defaults
           llm_name: anthropic/claude-3-5-sonnet-20240620
+        - <<: *llm_defaults
+          llm_name: openai/o3
+          llm_args: "--reasoning-effort high --reasoning-tokens 8192 -M responses_store=false --reasoning-history none"
       split:
         - dev
         - test

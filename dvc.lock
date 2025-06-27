@@ -3373,3 +3373,23 @@ stages:
       hash: md5
       md5: ccde9541a950d528712cf127a64908d7
       size: 14277483
+  solve_llm@model6-test:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openai/o3 uv run --extra sqa
+      inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
+      --solver astabench/solvers/sqa/formatted_llm.py@formatted_solver --model openai/o3
+      --reasoning-effort high --reasoning-tokens 8192 -M responses_store=false --reasoning-history
+      none -T split=test -T scorer_model=google/gemini-2.5-pro -T excerpt_prompt=False
+      --limit=1000 --retry-on-error=10 --log-shared --no-score; [[ "openai/o3" ==
+      */* ]] && mkdir -p test_dvc_logs/solver_outputs/task_sqa_solver_$(dirname "openai/o3");
+      mv "$(ls -t test_dvc_logs/solver_outputs/*openai/o3.eval 2>/dev/null | head
+      -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_openai/o3.eval"
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-2.5-pro
+        sqa_solver_version: may-23-2025
+    outs:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_openai/o3.eval
+      hash: md5
+      md5: 9b53b134e0185678f65552a598ed13b9
+      size: 1558577
