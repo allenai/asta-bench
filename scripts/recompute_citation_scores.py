@@ -5,6 +5,13 @@ from inspect_ai.log import read_eval_log, write_eval_log
 from astabench.helpers.prompt_logs import PromptLogs, build_df_from_prompt_logs
 from astabench.evals.sqa.citation_eval import citation_intersection
 import sys
+import nltk
+import json
+nltk.download("punkt_tab", quiet=True)
+
+
+def count_sentences(s):
+    return len(nltk.sent_tokenize(s))
 
 
 def recompute_citation_metrics_for_sample(sample, is_retrieverless):
@@ -23,6 +30,18 @@ def recompute_citation_metrics_for_sample(sample, is_retrieverless):
         print("No citation metadata found for sample, skipping")
         return sample
 
+    d = json.loads(sample.output.completion)
+    no_citation_sections = [s for s in d['response']['sections'] if len(s['citations']) == 0]
+    if no_citation_sections:
+        n_extrapolatory = sum(count_sentences(s['text']) for s in no_citation_sections)
+    else:
+        n_extrapolatory = 0
+    # Extract the claims data from the DataFrame to recompute citation_recall
+    # The claims column should contain the LLM-generated assessment data
+    n_attributable = 0
+    n_half_credit = 0
+    supporting_counts, non_supporting_counts, n_half_credit_citations = [], [], []
+
     # Build DataFrame from prompt logs
     prompt_logs = PromptLogs(**citation_meta)
     df = build_df_from_prompt_logs(prompt_logs)
@@ -30,13 +49,6 @@ def recompute_citation_metrics_for_sample(sample, is_retrieverless):
     if df is None or df.empty:
         print("No prompt logs found for sample, skipping")
         return sample
-
-    # Extract the claims data from the DataFrame to recompute citation_recall
-    # The claims column should contain the LLM-generated assessment data
-    n_attributable = 0
-    n_extrapolatory = 0
-    n_half_credit = 0
-    supporting_counts, non_supporting_counts, n_half_credit_citations = [], [], []
 
     # Process the 'claims' column from df to extract citation metrics
     # Based on the logic in citation_eval.py lines 188-202
@@ -128,7 +140,6 @@ def process_eval_file(file_path, is_retrieverless=False):
 
     # Read the eval log
     eval_log = read_eval_log(file_path)
-
     # Process each sample in the log
     updated_samples = []
     print(len(eval_log.samples))
@@ -228,7 +239,6 @@ def process_eval_file(file_path, is_retrieverless=False):
                 score.metrics["mean"].value = new_lookup[score.name][0]
                 if "stderr" in score.metrics:
                     score.metrics["stderr"].value = new_lookup[score.name][1]
-                break
 
         # Update global_avg score in results
         if global_avgs:
@@ -244,7 +254,6 @@ def process_eval_file(file_path, is_retrieverless=False):
                     score.metrics["mean"].value = new_global_mean
                     if "stderr" in score.metrics:
                         score.metrics["stderr"].value = new_global_stderr
-                    break
 
     # Print updated results after updating
     if eval_log.results and eval_log.results.scores:
@@ -279,7 +288,7 @@ def main():
     else:
         split = "test"
     eval_files = glob.glob(
-        f"/data/new_astabench/{split}_dvc_logs/scored/**/*.eval", recursive=True
+        f"{split}_dvc_logs/scored/**/*.eval", recursive=True
     )
 
     print(f"Found {len(eval_files)} .eval files to process")
