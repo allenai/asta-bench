@@ -7,6 +7,7 @@ from astabench.evals.sqa.citation_eval import citation_intersection
 import sys
 import nltk
 import json
+
 nltk.download("punkt_tab", quiet=True)
 
 
@@ -31,9 +32,11 @@ def recompute_citation_metrics_for_sample(sample, is_retrieverless):
         return sample
 
     d = json.loads(sample.output.completion)
-    no_citation_sections = [s for s in d['response']['sections'] if len(s['citations']) == 0]
+    no_citation_sections = [
+        s for s in d["response"]["sections"] if len(s["citations"]) == 0
+    ]
     if no_citation_sections:
-        n_extrapolatory = sum(count_sentences(s['text']) for s in no_citation_sections)
+        n_extrapolatory = sum(count_sentences(s["text"]) for s in no_citation_sections)
     else:
         n_extrapolatory = 0
     # Extract the claims data from the DataFrame to recompute citation_recall
@@ -287,9 +290,7 @@ def main():
         split = sys.argv[1]
     else:
         split = "test"
-    eval_files = glob.glob(
-        f"{split}_dvc_logs/scored/**/*.eval", recursive=True
-    )
+    eval_files = glob.glob(f"{split}_dvc_logs/scored/**/*.eval", recursive=True)
 
     print(f"Found {len(eval_files)} .eval files to process")
     retrieverless_models = [
@@ -299,6 +300,8 @@ def main():
         "anthropic/claude-sonnet-4-20250514",
         "anthropic/claude-3-7-sonnet-20250219",
         "anthropic/claude-3-5-sonnet-20240620",
+        "fhouse_crow",
+        "fhouse_falcon",
     ]
 
     failed = []

@@ -259,6 +259,8 @@ stages:
         # retrieverless solvers:
         - name: openai/o4-mini
           is_retrieverless: true
+        - name: openai/o3
+          is_retrieverless: true
         - name: anthropic/claude-sonnet-4-20250514-thinking
           is_retrieverless: true
         - name: google/gemini-2.5-pro-preview-03-25
@@ -284,9 +286,9 @@ stages:
         - name: scispace
           is_retrieverless: false
         - name: fhouse_crow
-          is_retrieverless: false
+          is_retrieverless: true
         - name: fhouse_falcon
-          is_retrieverless: false
+          is_retrieverless: true
         - name: openai_deep_research
           is_retrieverless: false
         - name: you
@@ -321,6 +323,7 @@ stages:
     matrix:
       model:
         - openai/o4-mini
+        - openai/o3
         - anthropic/claude-sonnet-4-20250514-thinking
         - google/gemini-2.5-pro-preview-03-25
         - anthropic/claude-sonnet-4-20250514
@@ -355,6 +358,7 @@ stages:
     matrix:
       model:
         - openai/o4-mini
+        - openai/o3
         - anthropic/claude-sonnet-4-20250514-thinking
         - google/gemini-2.5-pro-preview-03-25
         - anthropic/claude-sonnet-4-20250514
@@ -387,6 +391,7 @@ stages:
     matrix:
       model:
         - openai/o4-mini
+        - openai/o3
         - anthropic/claude-sonnet-4-20250514-thinking
         - google/gemini-2.5-pro-preview-03-25
         - anthropic/claude-sonnet-4-20250514
