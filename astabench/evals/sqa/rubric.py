@@ -381,7 +381,8 @@ Split the response into individual claims, citations, and excerpts from the cita
         has_criterion = [p for p in properties if p.criterion]
         has_examples = [p for p in properties if p.examples]
         criteria = "\n".join(
-            f"{i}. {x.criterion}\n<examples>{str(has_examples[i-1])}</examples>" for i, x in enumerate(has_criterion, 1)
+            f"{i}. {x.criterion}\n<examples>{str(has_examples[i-1])}</examples>"
+            for i, x in enumerate(has_criterion, 1)
         )
         info["criteria"] = criteria
         system_prompt = """You will be given a question someone asked (in <question></question> tags) and the corresponding response (in <response></response> tags) given to them by an assistant.

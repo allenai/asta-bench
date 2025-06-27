@@ -446,7 +446,7 @@ def load_rubrics_data(split: str = "dev") -> List[Dict]:
     if split == "test":
         parent = Path(__file__).parent
         local_file_path = parent / "20250624-rubrics_from_10_solvers.json"
-        with open(local_file_path, 'r') as f:
+        with open(local_file_path, "r") as f:
             return json.load(f)
     elif split == "dev":
         version = "v1"
