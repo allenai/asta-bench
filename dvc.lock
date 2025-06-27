@@ -2771,7 +2771,7 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
       hash: md5
-      md5: 3d158186e8eb94f0c2e4945bad1ce6ad
+      md5: 9d28d708f517d0a05fbd9fdbf9c43e76
       size: 2557497
   score_all_solvers@model8-test:
     cmd: echo "Scoring";[[ "sqa_gemini-2.5-pro" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro;
@@ -2828,7 +2828,7 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
       hash: md5
-      md5: 9e8f8fa0cd07386417b8f11ee99269c5
+      md5: 4820f62478018565b8a15e76337607a6
       size: 13574201
   score_all_solvers@model14-test:
     cmd: echo "Scoring";[[ "openai_deep_research" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_openai_deep_research;
@@ -2847,7 +2847,7 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
       hash: md5
-      md5: a7d5f640ccdf88792a4476b32f9024e8
+      md5: a91ebc02a6aa9acad02a6eb48b818c27
       size: 39256117
   score_all_solvers@model6-test:
     cmd: echo "Scoring";[[ "sqa_claude-3.7" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7;
@@ -2885,7 +2885,7 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_storm.eval
       hash: md5
-      md5: ef10a4e3ec6c8cfa4df56a702bbb4379
+      md5: 5995848219857fc8f766a6c7dbf69d83
       size: 11677301
   score_all_solvers@model15-test:
     cmd: echo "Scoring";[[ "you" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_you;
@@ -2904,7 +2904,7 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_you.eval
       hash: md5
-      md5: 3b422034c4ac494788f4bfdd2bd94745
+      md5: a1e6a4dd71818b318301d97ad31deba5
       size: 2756843
   score_all_solvers@model9-test:
     cmd: echo "Scoring";[[ "elicit" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_elicit;
@@ -2923,7 +2923,7 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_elicit.eval
       hash: md5
-      md5: e707ccfa6df0b9c81ce35482a45938bc
+      md5: d50a59ac948c9b940c268e6cd0cb545c
       size: 13789411
   score_all_solvers@model7-test:
     cmd: echo "Scoring";[[ "sqa_claude-4.0" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0;
@@ -2942,7 +2942,7 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
       hash: md5
-      md5: fd26770a8b32d53e75176d16ed6cbcf2
+      md5: c12adac8222dffcc030d8d0726df9db5
       size: 18867420
   score_all_solvers@model16-test:
     cmd: echo "Scoring";[[ "perplexity_dr" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_perplexity_dr;
@@ -2961,7 +2961,7 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval
       hash: md5
-      md5: 09ae4433b48b3582adf2e73b4f4b649e
+      md5: 70811b2a7625e7efe634c368c6d25993
       size: 2949851
   score_all_solvers@model9-dev:
     cmd: echo "Scoring";[[ "elicit" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_elicit;
@@ -2980,7 +2980,7 @@ stages:
     outs:
     - path: dev_dvc_logs/scored/task_sqa_solver_elicit.eval
       hash: md5
-      md5: 41bbf9e997b58af0756c5c95014db657
+      md5: 2eaaef1939166c917eea591388d68bec
       size: 15422955
   score_all_solvers@model10-dev:
     cmd: echo "Scoring";[[ "storm" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_storm;
@@ -2999,7 +2999,7 @@ stages:
     outs:
     - path: dev_dvc_logs/scored/task_sqa_solver_storm.eval
       hash: md5
-      md5: 04e9841eaf6917bd2cdc1a28c79ddb97
+      md5: 29dc58a2355871e766d8223c9d3d1442
       size: 11864460
   score_all_solvers@model7-dev:
     cmd: echo "Scoring";[[ "sqa_claude-4.0" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0;
@@ -3075,7 +3075,7 @@ stages:
     outs:
     - path: dev_dvc_logs/scored/task_sqa_solver_you.eval
       hash: md5
-      md5: c5352728f61a15f9dba256e3a7af657e
+      md5: e95e0d3e4dd5582dd4677ddf78a6e487
       size: 3851155
   score_all_solvers@model13-dev:
     cmd: echo "Scoring";[[ "fhouse_falcon" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_fhouse_falcon;
@@ -3132,7 +3132,7 @@ stages:
     outs:
     - path: dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
       hash: md5
-      md5: 99c5d5c2adc13356c7a06c881499f0e6
+      md5: 7ad3b589b061a5b22616d409dfad22a0
       size: 17947390
   score_all_solvers@model14-dev:
     cmd: echo "Scoring";[[ "openai_deep_research" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_openai_deep_research;
@@ -3170,7 +3170,7 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_openai/o4-mini.eval
       hash: md5
-      md5: a4674cd3a6cc999bf80e4650e7674e5a
+      md5: e8aad06a8584467dfb028e4154506c1c
       size: 2217797
   score_all_solvers@model5-test:
     cmd: echo "Scoring";[[ "anthropic/claude-3-5-sonnet-20240620" == */* ]] && mkdir
@@ -3193,7 +3193,7 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.eval
       hash: md5
-      md5: 1b74a3ab9d0dbf9f478289b39290721b
+      md5: 4bccf5a9c5d885030df382238cdb6993
       size: 2102491
   score_all_solvers@model3-test:
     cmd: echo "Scoring";[[ "anthropic/claude-sonnet-4-20250514" == */* ]] && mkdir
@@ -3216,7 +3216,7 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
       hash: md5
-      md5: 8f57988fa34a8234e7c4428cecff4fbc
+      md5: dea3e6cf9c56868fb5cbda9f7eb38dc5
       size: 9592248
   score_all_solvers@model1-test:
     cmd: echo "Scoring";[[ "anthropic/claude-sonnet-4-20250514-thinking" == */* ]]
@@ -3242,7 +3242,7 @@ stages:
     - path: 
         test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
       hash: md5
-      md5: 268c47982acddfce5296e8f0c358763f
+      md5: a851dd82face384dc07e24a7644a7e8f
       size: 3388253
   score_all_solvers@model4-test:
     cmd: echo "Scoring";[[ "anthropic/claude-3-7-sonnet-20250219" == */* ]] && mkdir
@@ -3265,7 +3265,7 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.eval
       hash: md5
-      md5: cc7c249807224188db45a108bb4ee0e4
+      md5: 42330938ccf71ab9faa0e717f31ef3d8
       size: 3734099
   score_all_solvers@model2-test:
     cmd: echo "Scoring";[[ "google/gemini-2.5-pro-preview-03-25" == */* ]] && mkdir
@@ -3288,5 +3288,5 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
       hash: md5
-      md5: 34fd6cd2b962a6b1ff947a88429522ac
+      md5: e63902a40e16045112f797d14b29030e
       size: 3461724
