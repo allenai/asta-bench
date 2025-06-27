@@ -278,6 +278,8 @@ def score_citation(
             value={"citation_recall": 0.0, "citation_precision": 0.0, "f1": 0.0},
             answer=raw_output,
         )
+        # TODO: REMOVE THIS LINE
+        return default_output
         if not json_output:
             # you get 0 if you cant return proper json
             return default_output
@@ -368,6 +370,8 @@ def score_precision(model: str | Model) -> Scorer:
         raw_output = state.output.completion
         parsed_output = extract_json_from_response(raw_output)
         default_output = Score(value={"answer_precision": 0.0}, answer=raw_output)
+        # TODO: REMOVE THIS LINE
+        return default_output
         if (
             not parsed_output
             or normalize_agent_response_dict(parsed_output).get("sections") is None
