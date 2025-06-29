@@ -24,7 +24,7 @@ stages:
     cmd:
       INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_${item.model}
       uv run --extra sqa
-      inspect eval astabench/evals/sqa/task.py@sqa --display none
+      inspect eval astabench/evals/sqa/task.py@sqa --display plain
       --log-dir ${item.split}_dvc_logs/solver_outputs/
       --solver astabench/solvers/sqa/sqa.py@sqa_solver
       -T split=${item.split}
@@ -51,7 +51,7 @@ stages:
       cmd:
         INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_elicit
         uv run --extra sqa
-        inspect eval astabench/evals/sqa/task.py@sqa --display none
+        inspect eval astabench/evals/sqa/task.py@sqa --display plain
         --log-dir ${item}_dvc_logs/solver_outputs/
         --solver astabench/solvers/sqa/elicit/memorized_solver.py@elicit_solver
         -T split=${item}
@@ -66,6 +66,55 @@ stages:
       outs:
         - ${item}_dvc_logs/solver_outputs/task_sqa_solver_elicit.eval
 
+  solve_you:
+    # run the solver then rename the resulting file to have a nice name:
+    foreach:
+      - dev
+      - test
+    do:
+      cmd:
+        INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_you
+        uv run --extra sqa
+        inspect eval astabench/evals/sqa/task.py@sqa --display plain
+        --log-dir ${item}_dvc_logs/solver_outputs/
+        --solver astabench/solvers/sqa/formatted_youcom.py@formatted_solver -S api_type='research'
+        -T split=${item}
+        -T scorer_model=${scorer_model}
+        --limit=${limit}
+        --log-shared
+        --no-score;
+        mv "$(ls -t ${item}_dvc_logs/solver_outputs/*task_sqa_solver_you.eval 2>/dev/null | head -n1)" "${item}_dvc_logs/solver_outputs/task_sqa_solver_you.eval"
+      params:
+        - scorer_model
+        - limit
+      outs:
+        - ${item}_dvc_logs/solver_outputs/task_sqa_solver_you.eval
+
+  solve_perplexity_dr:
+    # run the solver then rename the resulting file to have a nice name:
+    foreach:
+      - dev
+      - test
+    do:
+      cmd:
+        INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_perplexity_dr
+        uv run --extra sqa
+        inspect eval astabench/evals/sqa/task.py@sqa --display plain
+        --log-dir ${item}_dvc_logs/solver_outputs/
+        --model 'perplexity/sonar-deep-research'
+        --solver astabench/solvers/sqa/formatted_perplexity.py@formatted_solver
+        -T split=${item}
+        -T scorer_model=${scorer_model}
+        --limit=${limit}
+        --log-shared
+        --no-score;
+        mv "$(ls -t ${item}_dvc_logs/solver_outputs/*task_sqa_solver_perplexity_dr.eval 2>/dev/null | head -n1)" "${item}_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval"
+      params:
+        - scorer_model
+        - limit
+      outs:
+        - ${item}_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval
+
   solve_storm:
     # run the solver then rename the resulting file to have a nice name:
     foreach:
@@ -75,7 +124,7 @@ stages:
       cmd:
         INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_storm
         uv run --extra storm --python 3.11
-        inspect eval astabench/evals/sqa/task.py@sqa --display none
+        inspect eval astabench/evals/sqa/task.py@sqa --display plain
         --log-dir ${item}_dvc_logs/solver_outputs/
         --solver astabench/solvers/sqa/storm_solver.py@storm_solver
         -T split=${item}
@@ -102,8 +151,8 @@ stages:
     cmd:
       INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_${item.model.name}
       uv run --extra sqa
-      inspect eval astabench/evals/sqa/task.py@sqa --display none
-      --log-dir dvc_logs/solver_outputs/
+      inspect eval astabench/evals/sqa/task.py@sqa --display plain
+      --log-dir ${item.split}_dvc_logs/solver_outputs/
       --solver astabench/solvers/sqa/debug/cached_solver.py@cache_solver
       -T scorer_model=${scorer_model}
       -T split=${item.split}
@@ -140,6 +189,9 @@ stages:
           llm_name: anthropic/claude-3-7-sonnet-20250219
         - <<: *llm_defaults
           llm_name: anthropic/claude-3-5-sonnet-20240620
+        - <<: *llm_defaults
+          llm_name: openai/o3
+          llm_args: "--reasoning-effort high --reasoning-tokens 8192 -M responses_store=false --reasoning-history none"
       split:
         - dev
         - test
@@ -183,8 +235,8 @@ stages:
     cmd:
       INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_${item.model.name}
       uv run --extra sqa
-      inspect eval astabench/evals/sqa/task.py@sqa --display none
-      --log-dir dvc_logs/solver_outputs/
+      inspect eval astabench/evals/sqa/task.py@sqa --display plain
+      --log-dir ${item.split}_dvc_logs/solver_outputs/
       --solver astabench/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
       -T scorer_model=${scorer_model}
       -T split=${item.split}
@@ -205,50 +257,73 @@ stages:
     matrix:
       model:
         # retrieverless solvers:
-        - openai/o4-mini
-        - anthropic/claude-sonnet-4-20250514-thinking
-        - google/gemini-2.5-pro-preview-03-25
-        - anthropic/claude-sonnet-4-20250514
-        - anthropic/claude-3-7-sonnet-20250219
-        - anthropic/claude-3-5-sonnet-20240620
+        - name: openai/o4-mini
+          is_retrieverless: true
+        - name: openai/o3
+          is_retrieverless: true
+        - name: anthropic/claude-sonnet-4-20250514-thinking
+          is_retrieverless: true
+        - name: google/gemini-2.5-pro-preview-03-25
+          is_retrieverless: true
+        - name: anthropic/claude-sonnet-4-20250514
+          is_retrieverless: true
+        - name: anthropic/claude-3-7-sonnet-20250219
+          is_retrieverless: true
+        - name: anthropic/claude-3-5-sonnet-20240620
+          is_retrieverless: true
         # sqa solvers:
-        - sqa_claude-3.7
-        - sqa_claude-4.0
-        - sqa_gemini-2.5-pro
+        - name: sqa_claude-3.7
+          is_retrieverless: false
+        - name: sqa_claude-4.0
+          is_retrieverless: false
+        - name: sqa_gemini-2.5-pro
+          is_retrieverless: false
         # strong baselines:
-        - elicit
-        - storm
-        - scispace
-        - fhouse_crow
-        - fhouse_falcon
-        - openai_deep_research
+        - name: elicit
+          is_retrieverless: false
+        - name: storm
+          is_retrieverless: false
+        - name: scispace
+          is_retrieverless: false
+        - name: fhouse_crow
+          is_retrieverless: true
+        - name: fhouse_falcon
+          is_retrieverless: true
+        - name: openai_deep_research
+          is_retrieverless: false
+        - name: you
+          is_retrieverless: false
+        - name: perplexity_dr
+          is_retrieverless: false
       split:
         - test
         - dev
     # copy the solver output, then score it
     cmd:
-      echo "Scoring";[[ "${item.model}" == */* ]] && mkdir -p ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model};
-      cp ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model}.eval ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval;
+      echo "Scoring";[[ "${item.model.name}" == */* ]] && mkdir -p ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model.name};
+      cp ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model.name}.eval ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model.name}.eval;
       uv run
       inspect score
       --overwrite
-      --display none
+      --display plain
       --scorer astabench/evals/sqa/task.py@score_all
       -S scorer_model=${scorer_model}
-      ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval
+      -S is_retrieverless=${item.model.is_retrieverless}
+      ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model.name}.eval
     params:
       - sqa_scorer_version
       - scorer_model
     deps:
-      - ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model}.eval
+      - ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model.name}.eval
     outs:
-      - ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval:
+      - ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model.name}.eval:
           persist: true
 
-  log_any_remaining_errors:
+  log_any_remaining_errors_and_record_scores:
     matrix:
       model:
         - openai/o4-mini
+        - openai/o3
         - anthropic/claude-sonnet-4-20250514-thinking
         - google/gemini-2.5-pro-preview-03-25
         - anthropic/claude-sonnet-4-20250514
@@ -263,24 +338,27 @@ stages:
         - fhouse_crow
         - fhouse_falcon
         - openai_deep_research
+        - you
+        - perplexity_dr
       split:
         - dev
         - test
-    cmd: echo "Collecting errors";[[ "${item}" == */* ]] && mkdir -p dvc_logs/errors/task_sqa_solver_$(dirname "${item}");
+    cmd: echo "Collecting errors";[[ "${item.model}" == */* ]] && mkdir -p ${item.split}_dvc_logs/errors/task_sqa_solver_$(dirname "${item.model}"); mkdir -p ${item.split}_dvc_logs/scores/task_sqa_solver_$(dirname "${item.model}");
       uv run scripts/log_errors.py
       ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval
-      ${item.split}_dvc_logs/errors/task_sqa_solver_${item.model}.json
       ${item.split}_dvc_logs/errors/task_sqa_solver_${item.model}.md
+      ${item.split}_dvc_logs/scores/task_sqa_solver_${item.model}.md
     deps:
       - ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval
     outs:
-      - ${item.split}_dvc_logs/errors/task_sqa_solver_${item.model}.json
       - ${item.split}_dvc_logs/errors/task_sqa_solver_${item.model}.md
+      - ${item.split}_dvc_logs/scores/task_sqa_solver_${item.model}.md
 
   extract_model_responses:
     matrix:
       model:
         - openai/o4-mini
+        - openai/o3
         - anthropic/claude-sonnet-4-20250514-thinking
         - google/gemini-2.5-pro-preview-03-25
         - anthropic/claude-sonnet-4-20250514
@@ -295,12 +373,15 @@ stages:
         - fhouse_crow
         - fhouse_falcon
         - openai_deep_research
+        - you
+        - perplexity_dr
       split:
         - dev
         - test
-    cmd: uv run scripts/extract_model_responses.py
+    cmd: echo "Extracting responses"; [[ "${item.model}" == */* ]] && mkdir -p ${item.split}_dvc_logs/model_responses/task_sqa_solver_$(dirname "${item.model}");
+      uv run scripts/extract_model_responses.py
       ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model}.eval
-      ${item.split}_dvc_logs/model_responses/
+      ${item.split}_dvc_logs/model_responses/task_sqa_solver_${item.model}_responses.csv
     deps:
       - ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model}.eval
     outs:
@@ -310,6 +391,7 @@ stages:
     matrix:
       model:
         - openai/o4-mini
+        - openai/o3
         - anthropic/claude-sonnet-4-20250514-thinking
         - google/gemini-2.5-pro-preview-03-25
         - anthropic/claude-sonnet-4-20250514
@@ -324,11 +406,15 @@ stages:
         - fhouse_crow
         - fhouse_falcon
         - openai_deep_research
+        - you
+        - perplexity_dr
       split:
         - dev
         - test
-    cmd: uv run scripts/create_debug_logs.py
-      ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval
+    cmd: echo "Creating logs"; [[ "${item.model}" == */* ]] && mkdir -p ${item.split}_dvc_logs/debug_logs/task_sqa_solver_$(dirname "${item.model}");
+      uv run scripts/create_debug_logs.py
+      ${item.split}_dvc_logs/scored/
+      task_sqa_solver_${item.model}.eval
       ${item.split}_dvc_logs/debug_logs/
     deps:
       - ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval
@@ -336,69 +422,3 @@ stages:
       - ${item.split}_dvc_logs/debug_logs/task_sqa_solver_${item.model}_rubric_eval.csv
       - ${item.split}_dvc_logs/debug_logs/task_sqa_solver_${item.model}_citation_eval.csv
       - ${item.split}_dvc_logs/debug_logs/task_sqa_solver_${item.model}_answer_precision_eval.csv
-
-  summarize_scores_test:
-    cmd: uv run scripts/summarize_scores.py
-      test_dvc_logs/scored/task_sqa_solver_openai/o4-mini.eval
-      test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
-      test_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
-      test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
-      test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.eval
-      test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.eval
-      test_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
-      test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
-      test_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
-      test_dvc_logs/scored/task_sqa_solver_elicit.eval
-      test_dvc_logs/scored/task_sqa_solver_storm.eval
-      test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
-      test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
-      test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
-      -o test_dvc_logs/eval_comparison.md
-    deps:
-      - test_dvc_logs/scored/task_sqa_solver_openai/o4-mini.eval
-      - test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
-      - test_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
-      - test_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
-      - test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.eval
-      - test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.eval
-      - test_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
-      - test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
-      - test_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
-      - test_dvc_logs/scored/task_sqa_solver_elicit.eval
-      - test_dvc_logs/scored/task_sqa_solver_storm.eval
-      - test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
-      - test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
-      - test_dvc_logs/scored/task_sqa_solver_openai_deep_research.eval
-    outs:
-      - test_dvc_logs/eval_comparison.md:
-          cache: false
-
-  summarize_scores_dev:
-    cmd: uv run scripts/summarize_scores.py
-      dev_dvc_logs/scored/task_sqa_solver_openai/o4-mini.eval
-      dev_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
-      dev_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
-      dev_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
-      dev_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.eval
-      dev_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.eval
-      dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
-      dev_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
-      dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
-      dev_dvc_logs/scored/task_sqa_solver_elicit.eval
-      dev_dvc_logs/scored/task_sqa_solver_storm.eval
-      -o dev_dvc_logs/eval_comparison.md
-    deps:
-      - dev_dvc_logs/scored/task_sqa_solver_openai/o4-mini.eval
-      - dev_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
-      - dev_dvc_logs/scored/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
-      - dev_dvc_logs/scored/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
-      - dev_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.eval
-      - dev_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620.eval
-      - dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
-      - dev_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
-      - dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval
-      - dev_dvc_logs/scored/task_sqa_solver_elicit.eval
-      - dev_dvc_logs/scored/task_sqa_solver_storm.eval
-    outs:
-      - dev_dvc_logs/eval_comparison.md:
-          cache: false

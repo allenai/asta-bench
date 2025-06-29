@@ -2,8 +2,10 @@
 
 import argparse
 import asyncio
+import base64
 import dataclasses
 import datetime
+import hashlib
 import json
 import logging
 import os
@@ -15,9 +17,19 @@ from typing import Any, Callable, Dict, Optional
 
 import requests
 from mcp.server import FastMCP
+from sandbox_types import JUPYTER_HISTORY_FILE, CellHistoryItem, ChunkedResponse
 from websocket import WebSocket, WebSocketTimeoutException, create_connection
 
 logger = logging.getLogger(__name__)
+
+MCP_RESPONSE_BUFFER_DIR = os.getenv(
+    "MCP_RESPONSE_BUFFER_DIR", "/tmp/mcp_response_buffer/"
+)
+
+# 65536 bytes is the actual maximum that can be sent (pipe capacity), and we
+# conservatively allow 8192 bytes for header/encoding overhead
+# TODO: determine pipe capacity dynamically
+MCP_RESPONSE_CHUNK_SIZE = 65536 - 8192
 
 JUPYTER_STATE_FILE = "jupyter_env_state.json"
 DEFAULT_TIMEOUT = 60 * 5
@@ -31,6 +43,25 @@ class ExecutionState:
 
     # Theoretically unnecessary, but useful for clarity
     is_timed_out: bool = False
+
+
+@dataclasses.dataclass
+class BufferedResponseData:
+    response_id: str
+
+    sha256_sum: str
+    """Checksum of the base64-encoded full response data"""
+
+    full_response_data: str
+    """Full response data, base64-encoded.  The base64 encoding matters because
+    otherwise bytes_returned may not be bytes (if the response contains
+    multibyte unicode chars).  The field is a string type because MCP and JSON
+    expect to manipulate strings, not bytes."""
+
+    bytes_returned: int
+    """How many bytes of the response have already been returned to the client.
+    That is, `full_response_data[:bytes_returned]` is the content that has been
+    returned."""
 
 
 def timeout_call(
@@ -118,6 +149,7 @@ class JupyterEnv:
         token: str = "password",
         use_secure: bool = False,
         timeout_per_command: int = DEFAULT_TIMEOUT,
+        cell_history_file: str = JUPYTER_HISTORY_FILE,
     ):
         self.server_pid = server_pid
         self.server_port = server_port
@@ -136,6 +168,13 @@ class JupyterEnv:
         # returned, so may be only a partial cell output if there are timeouts)
         self._intermediate_output: list[str] = []
 
+        self.cell_history_file = cell_history_file
+        self.cell_history: list[CellHistoryItem]
+        try:
+            self.read_cell_history()
+        except FileNotFoundError:
+            self.cell_history = []
+
         http_protocol = "https" if self.use_secure else "http"
         self.base_http_url = f"{http_protocol}://{self.host}:{self.server_port}"
         ws_protocol = "wss" if self.use_secure else "ws"
@@ -149,12 +188,22 @@ class JupyterEnv:
         if not self.kernel_id:
             self.init_container_notebook()
 
-    def _init_active_exec(self, msg_id: str):
-        if self._active_exec_state:
-            raise ValueError("Active request already set.  It must be cleared first.")
-        self._active_exec_state = ExecutionState(request_id=msg_id)
+    def write_cell_history(self, cell_history_file: str | None = None) -> None:
+        """Write the cell history to a file."""
+        cell_history_file = cell_history_file or self.cell_history_file
+        with open(cell_history_file, "w") as f:
+            json.dump(
+                [dataclasses.asdict(item) for item in self.cell_history], f, indent=2
+            )
 
-    def _clear_active_exec(self):
+    def read_cell_history(self, cell_history_file: str | None = None) -> None:
+        """Read the cell history from a file."""
+        cell_history_file = cell_history_file or self.cell_history_file
+
+        with open(cell_history_file, "r") as f:
+            self.cell_history = [CellHistoryItem(**item) for item in json.load(f)]
+
+    def _clear_active_exec(self, was_interrupted: bool = False):
         self._active_exec_state = None
 
     def is_timed_out(self) -> bool:
@@ -174,6 +223,7 @@ class JupyterEnv:
                 "token": self.token,
                 "use_secure": self.use_secure,
                 "timeout_per_command": self._timeout_per_command,
+                "cell_history_file": self.cell_history_file,
                 "_active_exec_state": (
                     dataclasses.asdict(self._active_exec_state)
                     if self._active_exec_state
@@ -193,6 +243,7 @@ class JupyterEnv:
             token=data["token"],
             use_secure=data["use_secure"],
             timeout_per_command=data["timeout_per_command"],
+            cell_history_file=data["cell_history_file"],
         )
         if data["_active_exec_state"]:
             obj._active_exec_state = ExecutionState(**data["_active_exec_state"])
@@ -266,6 +317,22 @@ class JupyterEnv:
             if response.status_code != 204:
                 raise ValueError(f"Failed to interrupt the kernel: {response}")
         self._create_connection()
+
+        if self.cell_history and not self.cell_history[-1].is_finalized():
+            # If the last cell is not finalized, we mark it as interrupted
+            self.cell_history[-1].end(
+                output="".join(self._intermediate_output), was_interrupted=True
+            )
+
+        interrupt_cell = CellHistoryItem(
+            action_type="interrupt",
+            action_content=None,
+            start_timestamp_rfc3339=CellHistoryItem.get_rfc3339_timestamp(),
+        )
+        interrupt_cell.end(output="")
+        self.cell_history.append(interrupt_cell)
+        self.write_cell_history()
+
         self._clear_active_exec()
         self.run_command("pass")
 
@@ -287,6 +354,13 @@ class JupyterEnv:
     def continue_after_timeout(self):
         if not self.is_timed_out():
             raise ValueError("Cannot continue waiting; there is nothing to wait for.")
+        self.cell_history.append(
+            CellHistoryItem(
+                action_type="continue_wait",
+                action_content=None,
+                start_timestamp_rfc3339=CellHistoryItem.get_rfc3339_timestamp(),
+            )
+        )
         return self.run_command(continue_after_timeout=True)
 
     def run_command(
@@ -323,16 +397,29 @@ class JupyterEnv:
     def _initiate_exec(self, command: str) -> str:
         """Initiate websocket connection to Jupyter kernel.  Returns the
         message ID of the command."""
+        if self._active_exec_state:
+            raise ValueError("Active request already set.  It must be cleared first.")
+
         msg = prepare_execute_message(command)
         try:
             self._get_ws().send(json.dumps(msg))
         except BrokenPipeError:
             self._get_ws().send(json.dumps(msg))
 
-        self._init_active_exec(msg["header"]["msg_id"])
+        self._active_exec_state = ExecutionState(request_id=msg["header"]["msg_id"])
+
+        self.cell_history.append(
+            CellHistoryItem(
+                action_type="execute",
+                action_content=command,
+                start_timestamp_rfc3339=CellHistoryItem.get_rfc3339_timestamp(),
+            )
+        )
 
     def retrieve_output(self) -> str:
         """Retrieve output from Jupyter kernel."""
+        if not self.cell_history or self.cell_history[-1].is_finalized():
+            raise RuntimeError("No active cell to retrieve output for.")
         if not self._active_exec_state:
             raise RuntimeError("Trying to wait when there is no active request.")
         self._active_exec_state.is_timed_out = False
@@ -362,6 +449,8 @@ class JupyterEnv:
             msgs_history.append(rsp)
 
             msg_type = rsp["msg_type"]
+            if "msg_id" not in rsp["parent_header"]:
+                raise ValueError(f"Got rsp with no parent msg_id: {rsp}")
             parent_msg_id = rsp["parent_header"]["msg_id"]
             if parent_msg_id != self._active_exec_state.request_id:
                 if self._active_exec_state.has_busy_status:
@@ -386,6 +475,7 @@ class JupyterEnv:
                             "Unexpectedly received idle status before execute_reply."
                         )
                     logger.info("Received idle status message. Execution finished.")
+
                     self._clear_active_exec()
                     break
                 elif rsp["content"]["execution_state"] == "starting":
@@ -410,25 +500,127 @@ class JupyterEnv:
                 self._intermediate_output.append(rsp["content"]["data"]["text/plain"])
             elif msg_type == "execute_reply":
                 self._active_exec_state.has_reply = True
-        return "".join(self._intermediate_output)
+
+        self.cell_history[-1].end(output="".join(self._intermediate_output))
+        self.write_cell_history()
+
+        return self.cell_history[-1].output
+
+
+def return_from_buffer(response_id: str) -> str:
+    buffer_path = os.path.join(MCP_RESPONSE_BUFFER_DIR, response_id + ".json")
+    with open(buffer_path, "r") as f:
+        response_data = BufferedResponseData(**json.load(f))
+
+    next_chunk_end = min(
+        response_data.bytes_returned + MCP_RESPONSE_CHUNK_SIZE,
+        len(response_data.full_response_data),
+    )
+    next_chunk = response_data.full_response_data[
+        response_data.bytes_returned : next_chunk_end
+    ]
+
+    chunk_response = ChunkedResponse(
+        response_id=response_id,
+        sha256_sum=response_data.sha256_sum,
+        range_start=response_data.bytes_returned,
+        range_end=next_chunk_end,
+        has_next=(next_chunk_end < len(response_data.full_response_data)),
+        content=next_chunk,
+    )
+
+    response_data.bytes_returned = next_chunk_end
+
+    if not chunk_response.has_next:
+        os.remove(buffer_path)
+    else:
+        with open(buffer_path, "w") as f:
+            f.write(json.dumps(dataclasses.asdict(response_data)))
+
+    return json.dumps(dataclasses.asdict(chunk_response))
+
+
+def make_chunked_response(response_data: dict | list | str | int | float | bool) -> str:
+    """Produces a response to return to the client, given the raw
+    `response_data`.
+
+    To overcome limitations of the Inspect/MCP framework (not sure exactly
+    where the bug is), this returns data in a chunked format that the client
+    must post-process to get the real response:
+    - The true response is always JSON-encoded to ensure that it is a string
+    - that string is UTF-8-encoded to bytes and then base64-encoded to ensure
+      a consistent size in case of multibyte unicode characters
+    - the base64 string is nested within a JSON object that contains various
+      metadata (see `sandbox_types.ChunkedResponse`).
+    - If the base64 is too long to fit within the chunk size limit, the initial
+      response will contain only the first chunk, and
+      `get_next_chunk(response_id)` can be used to fetch subsequent chunks.
+      This function may create a buffer to hold the response data until all
+      chunks are fetched.
+
+    The MCP framework itself may also wrap the whole thing as ContextText;
+    there isn't much we can do about that.
+
+    Much of this complexity could likely be removed if we could modify
+    Inspect/MCP to handle responses longer than the pipe capacity (64 KiB on
+    linux); unfortunately, the current behavior is that the whole MCP pipeline
+    blocks indefinitely when that limit is exceeded, so it is not even possible
+    to gracefully handle the error.
+    """
+
+    response_id = str(uuid.uuid4())
+    json_data: str = json.dumps(response_data)
+    b64_data: bytes = base64.b64encode(json_data.encode("utf-8"))
+    sha256_sum = hashlib.sha256(b64_data).hexdigest()
+
+    # There is some overhead to writing/reading the buffer, but not that high
+    # compared to other latencies, and it's simpler to always return the same
+    # way rather than branching based on size
+    buf = BufferedResponseData(
+        response_id=response_id,
+        sha256_sum=sha256_sum,
+        full_response_data=b64_data.decode("utf-8"),
+        bytes_returned=0,
+    )
+    with open(os.path.join(MCP_RESPONSE_BUFFER_DIR, response_id + ".json"), "w") as f:
+        f.write(json.dumps(dataclasses.asdict(buf)))
+
+    return return_from_buffer(response_id)
 
 
 async def make_mcp_app(jupyter_env):
+    """Make an MCP app.  Note: to overcome limitations in Inspect/MCP, the
+    response format of the provided tools is not suitable for directly feeding
+    to an LLM, and client-side post-processing is required to decode the
+    responses.  See `make_chunked_response` for details.
+    """
     mcp = FastMCP("jupyter-exec")
 
+    os.makedirs(MCP_RESPONSE_BUFFER_DIR, exist_ok=True)
+
     @mcp.tool()
-    async def run_code(
-        code: str,
-    ) -> str:
+    async def get_next_chunk(response_id: str) -> str:
+        """Get the next chunk of a multipart response"""
+        try:
+            return return_from_buffer(response_id)
+        except FileNotFoundError:
+            return json.dumps(
+                {
+                    "error": f"Response {response_id} does not exist or has already been fully returned"
+                }
+            )
+
+    @mcp.tool()
+    async def run_code(code: str) -> str:
         """Run a python code block"""
         result = jupyter_env.run_command(code)
-        return json.dumps(result)
+        return make_chunked_response(result)
 
     @mcp.tool()
     async def interrupt_kernel() -> str:
         """Interrupt the kernel"""
         jupyter_env.interrupt_kernel()
-        return "Kernel interrupted."
+        return make_chunked_response("Kernel interrupted.")
 
     @mcp.tool()
     async def continue_after_timeout() -> str:
@@ -438,7 +630,7 @@ async def make_mcp_app(jupyter_env):
         # doesn't maintain it by default, and mcp_connection doesn't seem to
         # work with sandbox MCP.
         result = jupyter_env.continue_after_timeout()
-        return json.dumps(result)
+        return make_chunked_response(result)
 
     @mcp.tool()
     async def shutdown() -> str:
@@ -446,7 +638,7 @@ async def make_mcp_app(jupyter_env):
         jupyter_env.shutdown_container_notebook()
         with open(JUPYTER_STATE_FILE, "w") as f:
             f.write(jupyter_env.to_json())
-        return "Kernel shutdown."
+        return make_chunked_response("Kernel shutdown.")
 
     return mcp
 

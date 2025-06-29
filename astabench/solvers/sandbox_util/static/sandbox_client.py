@@ -157,15 +157,10 @@ def run_async_thread(coro: Coroutine) -> Any:
     future: Future = Future()
 
     def run_in_thread():
-        loop = asyncio.new_event_loop()
-        asyncio.set_event_loop(loop)
         try:
-            result = loop.run_until_complete(coro)
-            future.set_result(result)
+            future.set_result(asyncio.run(coro))
         except Exception as e:
             future.set_exception(e)
-        finally:
-            loop.close()
 
     threading.Thread(target=run_in_thread, daemon=True).start()
     return future.result()

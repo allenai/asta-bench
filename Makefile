@@ -7,12 +7,32 @@ ASTABENCH_TAG    := astabench
 CONTAINER_NAME   := astabench-container
 DOCKER_SOCKET_PATH ?= $(if $(XDG_RUNTIME_DIR),$(XDG_RUNTIME_DIR)/docker.sock,/var/run/docker.sock)
 
+ENV_ARGS :=
+
+# Add each env var only if it's defined
+ifdef OPENAI_API_KEY
+  ENV_ARGS += -e OPENAI_API_KEY
+endif
+
+ifdef AZUREAI_OPENAI_API_KEY
+  ENV_ARGS += -e AZUREAI_OPENAI_API_KEY
+endif
+
+ifdef HF_TOKEN
+  ENV_ARGS += -e HF_TOKEN
+endif
+
+# Also support .env file if it exists
+ifneq ("$(wildcard .env)","")
+  ENV_ARGS += --env-file .env
+endif
+
 # -----------------------------------------------------------------------------
 # Local vs CI environment vars
 # -----------------------------------------------------------------------------
 ifeq ($(IS_CI),true)
   LOCAL_MOUNTS :=
-  ENV_ARGS := -e OPENAI_API_KEY -e HF_TOKEN -e IS_CI
+  ENV_ARGS += -e IS_CI
   TEST_RUN := docker run --rm $(ENV_ARGS) -v /var/run/docker.sock:/var/run/docker.sock $(ASTABENCH_TAG)
   BUILD_QUIET := --quiet
 else
@@ -23,7 +43,6 @@ else
     -v $$(pwd)/tests:/astabench/tests \
     -v $$(pwd)/logs:/astabench/logs \
     -v astabench-cache:/root/.cache
-  ENV_ARGS := --env-file .env
   TEST_RUN := docker run --rm $(ENV_ARGS) $(LOCAL_MOUNTS) $(ASTABENCH_TAG)
   BUILD_QUIET ?=
 endif
@@ -32,29 +51,7 @@ endif
 # Build the Docker image (primary target)
 # -----------------------------------------------------------------------------
 build-image:
-	@echo "Building astabench image (GitHub token preferred, then SSH)..."
-	@sh -ec ' \
-	  TOKEN="$${GITHUB_TOKEN}"; \
-	  if [ -z "$$TOKEN" ] && command -v gh >/dev/null 2>&1; then \
-	    TOKEN="$$(gh auth token 2>/dev/null)"; \
-	  fi; \
-	  if [ -n "$$TOKEN" ]; then \
-	    echo "Using GitHub token via BuildKit secret"; \
-	    tmp=$$(mktemp); echo "$$TOKEN" > $$tmp; \
-	    DOCKER_BUILDKIT=1 docker build $(BUILD_QUIET) . \
-	      --tag $(ASTABENCH_TAG) \
-	      -f ./docker/Dockerfile \
-	      --secret id=github_token,src=$$tmp; \
-	    rm -f $$tmp; \
-	  elif [ -n "$$SSH_AUTH_SOCK" ]; then \
-	    echo "No GitHub token → falling back to SSH agent"; \
-	    DOCKER_BUILDKIT=1 docker build $(BUILD_QUIET) . \
-	      --tag $(ASTABENCH_TAG) \
-	      -f ./docker/Dockerfile \
-	      --ssh default; \
-	  else \
-	    echo "No GitHub token or SSH agent available → building without authentication"; \
-	  fi'
+	docker build $(BUILD_QUIET) . --tag $(ASTABENCH_TAG) -f ./docker/Dockerfile
 
 # -----------------------------------------------------------------------------
 # Interactive shell in container
