@@ -81,16 +81,22 @@ def youcom_solver() -> Solver:
         docs = []
 
         try:
-            search_results = await query_youcom_search(
-                question,
-                YOUCOM_SEARCH_API_KEY,
-            )
+            youcom_path = Path(f"youcom_search_results/youcom_{sample_id}.json")
 
-            # log youcom results
-            Path("youcom_search_results").mkdir(exist_ok=True)
-            output_path = Path(f"youcom_search_results/youcom_{sample_id}.json")
-            with output_path.open("w", encoding="utf-8") as f:
-                json.dump(search_results, f, indent=2)
+            if not youcom_path.exists():
+                logging.info(f"No file found for sample ID: {sample_id}, running YOU.COM search.")
+                search_results = await query_youcom_search(
+                    question,
+                    YOUCOM_SEARCH_API_KEY,
+                )
+
+                # log youcom results
+                Path("youcom_search_results").mkdir(exist_ok=True)
+                with youcom_path.open("w", encoding="utf-8") as f:
+                    json.dump(search_results, f, indent=2)
+            else:
+                with youcom_path.open("r", encoding="utf-8") as f:
+                    search_results = json.load(f)
 
             # call s2 api to get corpus ids from titles
             async with httpx.AsyncClient() as client:
