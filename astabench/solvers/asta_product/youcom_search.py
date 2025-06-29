@@ -120,7 +120,7 @@ def youcom_solver() -> Solver:
                                 "markdown_evidence": "",
                             })
                         else:
-                            logging.error(f"Failed to find match for: {title}")
+                            logging.error(f"Failed to find match for: {title}, response: {match_res} (for pmc doc: {pmc_res})")
                     except Exception as err:
                         logging.exception(f"Request failed for title: {title}: {err}")
 
