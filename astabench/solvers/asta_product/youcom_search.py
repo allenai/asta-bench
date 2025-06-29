@@ -2,7 +2,6 @@ import asyncio
 from pathlib import Path
 import aiohttp
 import httpx
-import requests
 from inspect_ai.solver import Solver, solver, TaskState, Generate
 import json
 import os
@@ -14,7 +13,7 @@ S2_API_KEY = os.environ["S2_API_KEY"]
 
 
 def clean_title(title: str) -> str:
-    return title.split(" - ")[0].replace("...", "")
+    return title.split(" - ")[0].replace("...", "").replace("(PDF)", "").strip()
 
 
 def get_pmc_id(url: str) -> str | None:
@@ -120,15 +119,15 @@ def youcom_solver() -> Solver:
                                 "markdown_evidence": "",
                             })
                         else:
-                            logging.error(f"Failed to find match for: {title}, response: {match_res} (for pmc doc: {pmc_res})")
+                            logging.error(f"For sample id {sample_id} - Failed to find match for: {title}, response: {match_res} (for pmc doc: {pmc_res})")
                     except Exception as err:
-                        logging.exception(f"Request failed for title: {title}: {err}")
+                        logging.exception(f"For sample id {sample_id} - Request failed for title: {title}: {err}")
 
         except Exception as e:
             logger.exception(f"Error: {e}")
             return state
 
-        logging.warning(f"Found {len(docs)} titles out of {len(search_results)} titles returned by You.com")
+        logging.warning(f"For sample id {sample_id} - Found {len(docs)} titles out of {len(search_results)} titles returned by You.com")
 
         realres = {"output": {"query_id": state.sample_id, "results": docs}}
 

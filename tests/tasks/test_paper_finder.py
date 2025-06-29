@@ -156,6 +156,7 @@ def test_youcom_search() -> None:
                 / "astabench/solvers/asta_product/youcom_search.py@youcom_solver"
             ),
         ),
+        max_samples=3,
     )
 
     assert log[0].results is not None
