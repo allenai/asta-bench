@@ -24,17 +24,30 @@ def get_pmc_id(url: str) -> str | None:
 async def query_youcom_search(
     question: str,
     api_key: str,
+    num_web_results: int = 20,
+    max_offset: int = 9,
 ):
     url = "https://api.ydc-index.io/search"
-    query = {"query": question}
     headers = {"X-API-Key": api_key}
 
+    all_results = []
+
     async with aiohttp.ClientSession() as session:
-        async with session.get(url, headers=headers, params=query) as response:
-            response.raise_for_status()
-            res = await response.json()
-    search_results = res.get("hits", [])
-    return search_results
+        for offset in range(0, max_offset + 1):
+            params = {
+                "query": question,
+                "num_web_results": num_web_results,
+                "offset": offset
+            }
+            async with session.get(url, headers=headers, params=params) as response:
+                response.raise_for_status()
+                res = await response.json()
+                hits = res.get("hits", [])
+                if not hits:
+                    break  # stop if no more results
+                all_results.extend(hits)
+
+    return all_results
 
 
 @solver
