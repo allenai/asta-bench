@@ -22,6 +22,10 @@ ifdef HF_TOKEN
   ENV_ARGS += -e HF_TOKEN
 endif
 
+ifdef IGNORE_DOCKER_TESTS
+  ENV_ARGS += -e IGNORE_DOCKER_TESTS
+endif
+
 # Also support .env file if it exists
 ifneq ("$(wildcard .env)","")
   ENV_ARGS += --env-file .env
@@ -33,6 +37,7 @@ endif
 ifeq ($(IS_CI),true)
   LOCAL_MOUNTS :=
   ENV_ARGS += -e IS_CI
+  ENV_ARGS += -e IGNORE_DOCKER_TESTS
   TEST_RUN := docker run --rm $(ENV_ARGS) -v /var/run/docker.sock:/var/run/docker.sock $(ASTABENCH_TAG)
   BUILD_QUIET := --quiet
 else
