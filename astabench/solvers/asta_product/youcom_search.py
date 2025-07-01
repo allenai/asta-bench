@@ -5,10 +5,12 @@ from inspect_ai.solver import Solver, solver, TaskState, Generate
 import json
 import os
 import logging
+from openai import OpenAI
 
 logger = logging.getLogger(__name__)
 YOUCOM_SEARCH_API_KEY = os.environ["YOUCOM_SEARCH_API_KEY"]
 S2_API_KEY = os.environ["S2_API_KEY"]
+OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
 
 
 def clean_title(title: str) -> str:
@@ -50,6 +52,27 @@ async def query_youcom_search(
     return all_results
 
 
+def fix_titles_with_gpt(titles: list[str]) -> list[str]:
+    client = OpenAI(api_key=OPENAI_API_KEY)
+
+    message = (
+            "Here is a list of noisy paper-related titles. "
+            "Please clean them up to a list of proper, real paper titles, removing source names, tool names, tags like '[PDF]', etc. "
+            "Don't invent or skip any titles, only return the cleaned list, one per line:\n\n" +
+            "\n".join(f"{i + 1}. {title}" for i, title in enumerate(titles))
+    )
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": message}],
+        temperature=0,
+    )
+
+    cleaned_titles = response.choices[0].message.content
+    cleaned_titles_list = [t.strip() for t in cleaned_titles.split("\n")]
+    return cleaned_titles_list
+
+
 @solver
 def youcom_solver() -> Solver:
 
@@ -81,9 +104,11 @@ def youcom_solver() -> Solver:
                 with youcom_path.open("r", encoding="utf-8") as f:
                     search_results = json.load(f)
 
+            titles = [clean_title(sr["title"]) for sr in search_results]
+            gpt_titles = fix_titles_with_gpt(titles)
+
             # call s2 api to get corpus ids from titles
-            for sr in search_results:
-                title = clean_title(sr["title"])
+            for sr, title in zip(search_results, gpt_titles):
                 try:
                     r = requests.get(
                         'https://api.semanticscholar.org/graph/v1/paper/search/match',
