@@ -72,7 +72,6 @@ def custom_code_solver() -> Solver:
             "timeout_result_2": None,
             "timeout_result_3": None,
             "variable_result_2": None,
-            "huge_output_result": None,
         }
 
         try:
