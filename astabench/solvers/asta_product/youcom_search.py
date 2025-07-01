@@ -27,29 +27,20 @@ async def query_youcom_search(
     question: str,
     api_key: str,
     num_web_results: int = 20,
-    max_offset: int = 9,
 ):
     url = "https://api.ydc-index.io/search"
+    params = {
+        "query": question,
+        "num_web_results": num_web_results,
+    }
     headers = {"X-API-Key": api_key}
 
-    all_results = []
-
     async with aiohttp.ClientSession() as session:
-        for offset in range(0, max_offset + 1):
-            params = {
-                "query": question,
-                "num_web_results": num_web_results,
-                "offset": offset,
-            }
-            async with session.get(url, headers=headers, params=params) as response:
-                response.raise_for_status()
-                res = await response.json()
-                hits = res.get("hits", [])
-                if not hits:
-                    break  # stop if no more results
-                all_results.extend(hits)
-
-    return all_results
+        async with session.get(url, headers=headers, params=params) as response:
+            response.raise_for_status()
+            res = await response.json()
+    search_results = res.get("hits", [])
+    return search_results
 
 
 def fix_titles_with_gpt(titles: list[str]) -> list[str]:
