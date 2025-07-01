@@ -1,0 +1,269 @@
+[
+  {
+    "description": "With the multiplication of social media platforms, which offer anonymity, easy access and online community formation and online debate, the issue of h\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "With the multiplication of social media platforms, which offer anonymity, easy access and online community formation and online debate, the issue of hate speech detection and tracking becomes a growing challenge to society, individual, policy-makers and researchers."
+    ],
+    "title": "A systematic review of hate speech automatic detection using natural ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0925231223003557"
+  },
+  {
+    "description": "Online toxic discourses could result in conflicts between groups or harm to online communities. Hate speech is complex and multifaceted harmful or offensive content targeting individuals or groups. Existing literature reviews have generally focused on a particular category of hate speech, and ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "Online toxic discourses could result in conflicts between groups or harm to online communities. Hate speech is complex and multifaceted harmful or offensive content targeting individuals or groups. Existing literature reviews have generally focused on a particular category of hate speech, and to the best of our knowledge, no review has been dedicated to hate speech datasets.",
+      "Many alternative CNN architectures were used for various content languages [49,55]. In the study which used the SemEval-2019 dataset, for example, word embedding was utilized to detect hate speech in Spanish and English tweets [55]. A recurrent neural network (RNN) is a neural network that uses internal memory to recall its input. The algorithm family, for example, is utilized in Apple\u2019s Siri and Google\u2019s voice search. Many algorithms, such as LSTMs and GRUs, are included in RNNs. LSTMs were created to solve the problem of vanishing gradients that can occur while training standard RNNs.",
+      "As a result, hate speech has many meanings, including offensive, abusive, harassing, aggressive, cyberbullying, destructive, and hate speech [136]. However, offensive comments, such as hate speech, are among the most researched NLP topics [129]. According to MacAvaney [10], there is no standard hate speech definition.",
+      "As a result, it is impossible to say whether the objectionable text is hateful or not [8]. Therefore, hate speech is a culturally dependent term with a specific definition [41]. Furthermore, hate speech may be interpreted in various ways depending on the level of democracy or policies enacted in each country, which may or may not correspond to international standards to some extent."
+    ],
+    "title": "A Literature Review of Textual Hate Speech Detection Methods and ...",
+    "url": "https://www.mdpi.com/2078-2489/13/6/273"
+  },
+  {
+    "description": "A corpus of 5,652 hateful tweets and replies is created and fine-grained relationships are analyzed to indicate whether the reply is hate or counter hate speech, providing a justification, and attacks the author of the tweet, and adds additional hate. Recent studies in the hate and counter ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "A corpus of 5,652 hateful tweets and replies is created and fine-grained relationships are analyzed to indicate whether the reply is hate or counter hate speech, providing a justification, and attacks the author of the tweet, and adds additional hate. Recent studies in the hate and counter hate domain have provided the grounds for investigating how to detect this pervasive content in social media.",
+      "This paper reviews state of the art detection models and benchmark training datasets for online abuse to assess their awareness and ability to capture intent and proposes strategic changes to the design and development of automated detection and moderation systems to improve alignment with ethical and policy conceptualizations of abuse.Expand ... The interaction dynamics of the hate and counter users could pave a more effective way for combating hate content on Twitter than just suspending the hate accounts.Expand",
+      "This paper presents the first shared task on irony detection: given a tweet, automatic natural language processing systems should determine whether the tweet is ironic and which type of irony (if any) is expressed (Task B) and demonstrates that fine-grained irony classification is much more challenging than binary irony detection.Expand ... Valerio BasileC. Bosco+5 authors M. Sanguinetti ... The paper describes the organization of the SemEval 2019 Task 5 about the detection of hate speech against immigrants and women in Spanish and English messages extracted from Twitter, and provides an analysis and discussion about the participant systems and the results they achieved in both subtasks.Expand",
+      "Hateful Tweets (opens in a new tab)Counterhate (opens in a new tab)Related Tasks (opens in a new tab)Corpus (opens in a new tab)Hateful (opens in a new tab)Hateful Content (opens in a new tab)Pinpoint (opens in a new tab)"
+    ],
+    "title": "Pinpointing Fine-Grained Relationships between Hateful Tweets and ...",
+    "url": "https://www.semanticscholar.org/paper/Pinpointing-Fine-Grained-Relationships-between-and-Albanyan-Blanco/8a2af9b73e5044f820e45080566be3d258a2554a"
+  },
+  {
+    "description": "The detection of hate speech in social media is a crucial task. The uncontrolled spread of hate has the potential to gravely damage our society, and severely harm marginalized people or groups. A major arena for spreading hate speech online is social media. This significantly contributes to ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The detection of hate speech in social media is a crucial task. The uncontrolled spread of hate has the potential to gravely damage our society, and severely harm marginalized people or groups. A major arena for spreading hate speech online is social media. This significantly contributes to the difficulty of automatic detection, as social media posts include paralinguistic signals (e.g. emoticons, and hashtags), and their linguistic content contains plenty of poorly written text.",
+      "SN Computer Science - The detection of hate speech in social media is a crucial task. The uncontrolled spread of hate has the potential to gravely damage our society, and severely harm marginalized...",
+      "Both the volume of content generated online, particularly in social media, and the psychological burden of manual moderation [33] supports the need for the automatic detection of offensive and hateful content. The Internet enables the access and sharing information at an unprecedented rate. This potential combined with the opportunity to remain anonymous [102] also makes it an effective vehicle for the spread of hateful or offensive content.",
+      "Part of this imbalance manifests in hate speech corpora as well [98]. In the HASOC 2019 training set for example, less than forty percent of tweets was categorized as hateful or offensive [49]. There are, however, standard methods available to tackle this issue [15], and thus we would not discuss it any further."
+    ],
+    "title": "Challenges of Hate Speech Detection in Social Media | SN Computer ...",
+    "url": "https://link.springer.com/article/10.1007/s42979-021-00457-3"
+  },
+  {
+    "description": "As social media platforms evolve, hate speech increasingly manifests across multiple modalities, including text, images, audio, and video, challenging traditional detection systems focused on single modalities. Hence, this research proposes a novel Multi-modal Hate Speech Detection Framework ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "As social media platforms evolve, hate speech increasingly manifests across multiple modalities, including text, images, audio, and video, challenging traditional detection systems focused on single modalities. Hence, this research proposes a novel Multi-modal Hate Speech Detection Framework (MHSDF) that combines Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs) to analyze complex, heterogeneous data streams.",
+      "Scientific Reports - A comprehensive framework for multi-modal hate speech detection in social media using deep learning",
+      "To optimize the detection process, the attention mechanism improves performance by enabling the model to concentrate on crucial intermodal interactions. The framework performs well, suggesting it is prepared for actual use in combating hate speech on various social media sites.",
+      "While recall and F1 scores are very consistent, there is potential for certain models to enhance their accuracy and precision, as seen by the little variation in these metrics among the models. For applications that need a balanced approach across all metrics, realizing that these models prioritize recall in their performance is vital, which might mean sacrificing accuracy. Ablation research was carried out to evaluate CNNs, RNNs, and attention processes\u2019 respective roles in multi-modal hate speech detection."
+    ],
+    "title": "A comprehensive framework for multi-modal hate speech detection ...",
+    "url": "https://www.nature.com/articles/s41598-025-94069-z"
+  },
+  {
+    "description": "As online content continues to grow, so does the spread of hate speech. We identify and examine challenges faced by online automatic approaches for hate speech detection in text. Among these difficulties are subtleties in language, differing definitions on what constitutes hate speech, and ...",
+    "favicon_url": "https://you.com/favicon?domain=journals.plos.org&size=128",
+    "snippets": [
+      "As online content continues to grow, so does the spread of hate speech. We identify and examine challenges faced by online automatic approaches for hate speech detection in text. Among these difficulties are subtleties in language, differing definitions on what constitutes hate speech, and limitations of data availability for training and testing of these systems.",
+      "Some platforms, such as Facebook, recently increased the number of content moderators. Automatic tools and approaches could accelerate the reviewing process or allocate the human resource to the posts that require close human examination. In this section, we overview automatic approaches for hate speech detection from text. A basic approach for identifying hate speech is using a keyword-based approach. By using an ontology or dictionary, text that contain potentially hateful keywords are identified.",
+      "On the TRAC dataset, others reported a weighted F1 performance of 0.6425 using a recurrent neural network, without reporting accuracy or macro-averaged F1 [19, 42]. On HatebaseTweitter, others reported a macro F1 score of 0.94 [33], but this is achieved by combining the hate and offensive categories, greatly simplifying the task. In S1 Table, we observe that for most datasets and approaches, the accuracy is biased towards the majority class in the training data. This suggests the need for datasets that are more representative of real data distributions for future evaluation. Considering the above mixed in terms of dominance evaluation results, given potential ethical concerns related to hate speech detection, we err on the side of caution and opt for interpretability over uncertain improvements on the evaluation metrics.",
+      "For instance, suspects in several recent hate-related terror attacks had an extensive social media history of hate-related posts, suggesting that social media contributes to their radicalization [1, 2]. In some cases, social media can play an even more direct role; video footage from the suspect of the 2019 terror attack in Christchurch, New Zealand, was broadcast live on Facebook [2]. Vast online communication forums, including social media, enable users to express themselves freely, at times, anonymously."
+    ],
+    "title": "Hate speech detection: Challenges and solutions | PLOS One",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0221152"
+  },
+  {
+    "description": "In today's digital era, the rise of hate speech has emerged as a critical concern, driven by the rapid information-sharing capabilities of social medi\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Additionally, we explore the unique challenges faced by these models in accurately identifying and classifying hate speech and sentiment in online text. Finally, we outline areas where more study is needed and suggest potential new avenues for exploration in the field of hate speech identification and sentiment analysis."
+    ],
+    "title": "A survey on hate speech detection and sentiment analysis using ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1110016823007238"
+  },
+  {
+    "description": "Abstract. Social stereotypes negatively impact individuals\u2019 judgments about different groups and may have a critical role in understanding language directed toward marginalized groups. Here, we assess the role of social stereotypes in the automated detection of hate speech in the English ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. Social stereotypes negatively impact individuals\u2019 judgments about different groups and may have a critical role in understanding language directed toward marginalized groups. Here, we assess the role of social stereotypes in the automated detection of hate speech in the English language by examining the impact of social stereotypes on annotation behaviors, annotated datasets, and hate speech classifiers.",
+      "Mitigating biases in hate speech detection, necessary for viable automated content moderation (Davidson et al., 2017; Mozafari et al., 2020), has recently gained momentum (Davidson et al., 2019; Dixon et al., 2018; Sap et al., 2019; Kennedy et al., 2020; Prabhakaran et al., 2019). Most current supervised algorithms for hate speech detection rely on data resources that potentially reflect real-world biases: (1) text representation, which maps textual data to their numeric representations in a semantic space; and (2) human annotations, which represent subjective judgments about the hate speech content of the text, constituting the training dataset.",
+      "In contrast, people tend to express hate toward social groups stereotyped as cold and incompetent and harm them actively (by attacking) and passively (by excluding). Our findings suggest that hate speech classifiers trained on human annotations will acquire particular prediction biases toward historically marginalized groups.",
+      "Aida Mostafazadeh Davani, Mohammad Atari, Brendan Kennedy, Morteza Dehghani; Hate Speech Classifiers Learn Normative Social Stereotypes. Transactions of the Association for Computational Linguistics 2023; 11 300\u2013319."
+    ],
+    "title": "Hate Speech Classifiers Learn Normative Social Stereotypes | ...",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00550/115347/Hate-Speech-Classifiers-Learn-Normative-Social"
+  },
+  {
+    "description": "A considerable body of research deals with the automatic identification of hate speech and related phenomena. However, cross-dataset model generalizat\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "In this context, we address two still open central questions: (i) to what extent does the generalization depend on the model and the composition and annotation of the training data in terms of different categories?, and (ii) do specific features of the datasets or models influence the generalization potential? To answer (i), we experiment with BERT, ALBERT, fastText, and SVM models trained on nine common public English datasets, whose class (or category) labels are standardized (and thus made comparable), in intra- and cross-dataset setups."
+    ],
+    "title": "How well do hate speech, toxicity, abusive and offensive language ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0306457321000339"
+  },
+  {
+    "description": "Analysis of subjective texts like offensive content or hate speech is a great challenge, especially regarding annotation process. Most of current anno\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Analysis of subjective texts like offensive content or hate speech is a great challenge, especially regarding annotation process. Most of current annotation procedures are aimed at achieving a high level of agreement in order to generate a high quality reference source. However, the annotation guidelines for subjective content may restrict the annotators\u2019 freedom of decision making. Motivated by a moderate annotation agreement in offensive content datasets, we hypothesize that personalized approaches to offensive content identification should be in place."
+    ],
+    "title": "Offensive, aggressive, and hate speech analysis: From data-centric ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0306457321001333"
+  },
+  {
+    "description": "Social Media has become a vital component of every individual's life in society opening a preferred spectrum of virtual communication which provides an individual with a freedom to express their views and thoughts. While virtual communication ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Social Media has become a vital component of every individual's life in society opening a preferred spectrum of virtual communication which provides an individual with a freedom to express their views and thoughts. While virtual communication through social media platforms is highly desirable and has become an inevitable component, the dark side of social media is observed in form of detrimental/objectionable content. The reported detrimental contents are fake news, rumors, hate speech, aggressive, and cyberbullying which raise up as a major concern in the society.",
+      "The user profile features, user credibility features and user behavior features are deployed to determine the suspicious users which aid in detection of fake news (Zhang and Ghorbani 2020). Research has reported that the meta-information features are more important and is also exploited in detection of fake news whereas these features are considered not of much importance in hate speech detection.",
+      "ML algorithms for various forms of hate speech detection ... The performance metrics of an ML algorithm are more dependent on the datasets on which it is experimented. The ability to process huge data with automatic extraction of features from the data is unique characteristic of DL neural network models. This characteristic is explored in form of extracting various features like news content features, user responses to news, temporal characteristics using social graph which aid in fake news detection by neural network models.",
+      "Facebook defines Community Standards that include policies on hate speech, targeted violence, bullying, and porn, as well as rules against spam, \u201cfalse news,\u201d and copyright infringement with policy rules made by lawyers, public relations professionals, ex-public policy wonks, and crisis management (Koebler and Cox 2018)."
+    ],
+    "title": "Detection and moderation of detrimental content on social media ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9444091/"
+  },
+  {
+    "description": "The paper addresses the critical challenge of detecting and mitigating hate speech in Hindi across social media platforms, utilizing natural language processing (NLP) techniques. It underscores the complexities associated with the Hindi language, including the prevalence of code-switching, ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The paper addresses the critical challenge of detecting and mitigating hate speech in Hindi across social media platforms, utilizing natural language processing (NLP) techniques. It underscores the complexities associated with the Hindi language, including the prevalence of code-switching, the existence of various dialects, and the inconsistent use of Romanized Hindi.",
+      "Social Network Analysis and Mining - The paper addresses the critical challenge of detecting and mitigating hate speech in Hindi across social media platforms, utilizing natural language processing...",
+      "Since the Hindi language is filled with diversity, idiomatic expressions, and social media users usually respond in code-mixed sentences (Bohra et al. 2018; Jamatia et al., 2020), detecting hate speech in Hindi (Sreelakshmi et al., 2020) becomes a very tedious job. This is even worse with Romanised Hindi that needs more advanced NLP models. Moreover, there are fewer resources and research in Hindi as compared to English (Waseem et al. 2017). The potential of language to incite conflict and the socio-political connotations in India make it all the more important for us to look at building effective detection systems for hate (Sachdeva et al.",
+      "The field of Hate Speech detection in Hindi, not only embodies the potentials of AI creating a safer internet for all, but also shows us the heavy price that comes with it. This will finally be driven by the collective action of researchers, practitioners and policymakers. Using cutting-edge technologies, promoting inter-disciplinary collaboration and dictating high ethical standards makes one have a hope that the entire damaging effect of spreading hate speech can somehow be diminished and more integrated into the trend of dignifying and embracing digital communication."
+    ],
+    "title": "A comprehensive review on detection of hate speech for multi-lingual ...",
+    "url": "https://link.springer.com/article/10.1007/s13278-024-01401-y"
+  },
+  {
+    "description": "Hate Speech in social media is a complex phenomenon, whose detection has recently gained significant traction in the Natural Language Processing community, as attested by several recent review works. Annotated corpora and benchmarks are key resources, considering the vast number of supervised ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Hate Speech in social media is a complex phenomenon, whose detection has recently gained significant traction in the Natural Language Processing community, as attested by several recent review works. Annotated corpora and benchmarks are key resources, considering the vast number of supervised approaches that have been proposed.",
+      "Language Resources and Evaluation - Hate Speech in social media is a complex phenomenon, whose detection has recently gained significant traction in the Natural Language Processing community, as...",
+      "Hate Speech (HS), lying at the intersection of multiple tensions as expression of conflicts between different groups within and across societies, is a phenomenon that can easily proliferate on social media. It is a vivid example of how technologies with a transformative potential are loaded with both opportunities and challenges.",
+      "The more systematic exploration of the relations between the presence of nominal utterance and populist rhetoric in hateful tweets was inspired by the preliminary investigations in (Comandini and Patti 2019), suggesting that the most hateful part of hateful tweets are often verbless sentences or verbless fragmentsFootnote 25."
+    ],
+    "title": "Resources and benchmark corpora for hate speech detection: a ...",
+    "url": "https://link.springer.com/article/10.1007/s10579-020-09502-8"
+  },
+  {
+    "description": "Discover how natural language processing is used in our daily lives - from email filters to digital calls - in this list of NLP examples.",
+    "favicon_url": "https://you.com/favicon?domain=www.tableau.com&size=128",
+    "snippets": [],
+    "title": "Natural Language Processing (NLP) Examples | Tableau",
+    "url": "https://www.tableau.com/learn/articles/natural-language-processing-examples"
+  },
+  {
+    "description": "Today, the internet is an integral part of our daily lives, enabling people to be more connected than ever before. However, this greater connectivity and access to information increase exposure to harmful content, such as cyber-bullying and cyber-hatred. Models based on machine learning and ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Today, the internet is an integral part of our daily lives, enabling people to be more connected than ever before. However, this greater connectivity and access to information increase exposure to harmful content, such as cyber-bullying and cyber-hatred. Models based on machine learning and natural language offer a way to make online platforms safer by identifying hate speech in web text autonomously.",
+      "Journal of Computational Social Science - Today, the internet is an integral part of our daily lives, enabling people to be more connected than ever before. However, this greater connectivity and...",
+      "These methods and insights hold the potential for safer social media and reduce the need to expose human moderators and annotators to distressing online messaging. ... Discover the latest articles and news from researchers in related subjects, suggested using machine learning.",
+      "Each bar shows the mean value over 10 runs, and the standard deviation ... Highlighting hateful content. Here we describe a method to highlight hateful content in a text. The max-pooling is a dimension-wise max operation, i.e., for each dimension, it selects the maximum value over all word embeddings in the forward and backward pass of the Bi-LSTM. Assume a total of n words in the sentence, each represented by a numerical vector with d dimensions."
+    ],
+    "title": "Transfer learning for hate speech detection in social media | Journal ...",
+    "url": "https://link.springer.com/article/10.1007/s42001-023-00224-9"
+  },
+  {
+    "description": "Online communities are driving user engagement across industries like gaming, social media, ecommerce, dating, and e-learning. Members of these online communities trust platform owners to provide a safe and inclusive environment where they can freely consume content and contribute.",
+    "favicon_url": "https://you.com/favicon?domain=aws.amazon.com&size=128",
+    "snippets": [
+      "HATE_SPEECH \u2013 Speech that criticizes, insults, denounces, or dehumanizes a person or a group on the basis of an identity, be it race, ethnicity, gender identity, religion, sexual orientation, ability, national origin, or another identity group.",
+      "HPC IBM and Red Hat Industries Integration & Automation Internet of Things Machine Learning Media Messaging & Targeting Microsoft Workloads on AWS Migration and Modernization .NET on AWS Networking & Content Delivery Open Source Public Sector Quantum Computing Robotics SAP Security Spatial Computing Startups Storage Supply Chain & Logistics Training & Certification",
+      "Members of these online communities trust platform owners to provide a safe and inclusive environment where they can freely consume content and contribute. Content moderators are often employed to review user-generated content and check that it\u2019s safe and compliant with your terms of use.",
+      "Along with user-generated content, machine-generated content has brought a fresh challenge to content moderation. It automatically creates highly realistic content that may be inappropriate or harmful at scale."
+    ],
+    "title": "Flag harmful content using Amazon Comprehend toxicity detection ...",
+    "url": "https://aws.amazon.com/blogs/machine-learning/flag-harmful-content-using-amazon-comprehend-toxicity-detection/"
+  },
+  {
+    "description": "YouTube is a video-sharing and social media platform where users create profiles and share videos for their followers to view, like, and comment on. A\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "According to our knowledge, this was the first Tamil-language study on FGACD focused on diverse ethnicities. The methodology for detecting abusive messages described in this work may aid in the creation of comment filters for other under-resourced languages on social media.",
+      "We have carried out experiments using ML methods to establish baseline results.",
+      "We have carried out statistical t-test for the significance of the achieved results."
+    ],
+    "title": "Detecting abusive comments at a fine-grained level in a low-resource ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2949719123000031"
+  },
+  {
+    "description": "The proliferation of social media enables people to express their opinions widely online. However, at the same time, this has resulted in the emergence of conflict and hate, making online environments uninviting for users. Although researchers have found that hate is a problem across multiple ...",
+    "favicon_url": "https://you.com/favicon?domain=hcis-journal.springeropen.com&size=128",
+    "snippets": [
+      "The proliferation of social media enables people to express their opinions widely online. However, at the same time, this has resulted in the emergence of conflict and hate, making online environments uninviting for users. Although researchers have found that hate is a problem across multiple platforms, there is a lack of models for online hate detection using multi-platform data.",
+      "The prudent use of classifiers for automatic moderation is also important because the annotation of the hateful comments for model training is typically decontextualized, meaning it ignores community-specific ways of using language and different standards for what is hateful.",
+      "For example, keywords cannot detect sarcasm and forms of humor [54]. Moreover, the dictionaries of hateful words and insults require constant updates [23], as new terminology and slang quickly develop in social media [6]. Furthermore, standards (i.e., what is interpreted as hate) differ by the online community, so that an expression that is hateful in one community may be considered neutral, humor, or typical discourse in another community [55]. For example, in online Q&A platforms like StackOverflow, a concise form of expression can appear rude to outsiders but be perfectly acceptable given the community standards [1].",
+      "The average difference across all LIWC categories is M = 0.011 (SD = 0.240) for the Hateful paired comments and M = 0.002 (SD = 0.020) for the Non-hateful paired comments. Thus, hateful language is replicated more poorly relative to non-hateful language, and it has a considerably higher standard deviation among LIWC categories."
+    ],
+    "title": "Developing an online hate classifier for multiple social media ...",
+    "url": "https://hcis-journal.springeropen.com/articles/10.1186/s13673-019-0205-6"
+  },
+  {
+    "description": "A new study shows that leading AI models are 1.5 times more likely to flag tweets written by African Americans as \u201coffensive\u201d compared to other tweets.",
+    "favicon_url": "https://you.com/favicon?domain=www.vox.com&size=128",
+    "snippets": [
+      "No one knows for sure if the content moderation systems that Facebook, Twitter, and Google use show exactly the same biases in these studies; the technology these companies use to moderate content is proprietary. But the tech giants often turn to academics for guidance on how to better enforce standards around hate speech.",
+      "Their results showed that when moderators knew more about the person tweeting, they were significantly less likely to label that tweet as potentially offensive. At the aggregate level, racial bias against tweets associated with black speech decreased by 11 percent. \u201cThe academic and tech sector are pushing ahead with saying, \u2018let\u2019s create automated tools of hate detection,\u2019 but we need to be more mindful of minority group language that could be considered \u2018bad\u2019 by outside members,\u201d Sap told Recode.",
+      "Another study found similar widespread evidence of racial bias against black speech in five widely used academic data sets for studying hate speech that totaled around 155,800 Twitter posts. This is in large part because what is considered offensive depends on social context. Terms that are slurs when used in some settings \u2014 like the \u201cn-word\u201d or \u201cqueer\u201d \u2014 may not be in others. But algorithms \u2014 and content moderators who grade the test data that teaches these algorithms how to do their job \u2014 don\u2019t usually know the context of the comments they\u2019re reviewing.",
+      "Sap\u2019s study also tested the bias in these data sets as applied to an open source hate speech detecting tool for developers that\u2019s run by Jigsaw, a subsidiary of Alphabet (Google\u2019s parent company). The open source tool, called PerspectiveAPI, is used by news organizations such as the New York Times to help moderate comments online."
+    ],
+    "title": "The algorithms that detect hate speech online are biased against ...",
+    "url": "https://www.vox.com/recode/2019/8/15/20806384/social-media-hate-speech-bias-black-african-american-facebook-twitter"
+  },
+  {
+    "description": "The exponential growth of social media has brought with it an increasing propagation of hate speech and hate based propaganda. Hate speech is commonly defined as any communication that disparages a person or a group on the basis of some characteristics such as race, colour, ethnicity, gender, ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The exponential growth of social media has brought with it an increasing propagation of hate speech and hate based propaganda. Hate speech is commonly defined as any communication that disparages a person or a group on the basis of some characteristics such as race, colour, ethnicity, gender, sexual orientation, nationality, religion.",
+      "Scientometrics - The exponential growth of social media has brought with it an increasing propagation of hate speech and hate based propaganda. Hate speech is commonly defined as any communication...",
+      "The authors of these studies suggest that online hate should be defined as a subjective experience rather than as an average score that is uniform to all users and that research should concentrate on how incorporate user-level features when scoring and automating the processing of online hate.",
+      "Motivated by these concerns, this paper has presented a bibliometric study of the world\u2019s research activity on online hate speech, performed with the aim of providing an overview of the extent of published research in this field, assessing the research output and suggesting potential, fruitful, future directions."
+    ],
+    "title": "Thirty years of research into hate speech: topics of interest and ...",
+    "url": "https://link.springer.com/article/10.1007/s11192-020-03737-6"
+  },
+  {
+    "description": "Online hate speech has become a critical issue, particularly during the COVID-19 pandemic, when anti-Asian sentiment surged across social media platfo\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "However, the causal mechanisms driving emotional and behavioral shifts in users posting hateful content remain understudied. This study investigates the causal relationship between engaging in hateful content and changes in linguistic and emotional expression on social media.",
+      "Hate speech users show heightened anger, anxiety, and fewer positive expressions.",
+      "Our main findings can be summarized as follows: (a) Users who post hateful content show significantly higher levels of anger, anxiety, and negative emotions, along with increased third-person pronoun usage. (b) Moral outrage and profanity levels peak during hateful posts but decline over time, while remaining elevated compared to non-hateful posts.",
+      "These findings contribute to understanding the causal effects of online hate speech on user behavior, offering actionable insights for social media platforms to mitigate the spread of hateful content and its broader societal impact."
+    ],
+    "title": "Exploring hate speech dynamics: The emotional, linguistic, and ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0306457325000214"
+  },
+  {
+    "description": "As online content continues to grow, so does the spread of hate speech. We identify and examine challenges faced by online automatic approaches for hate speech detection in text. Among these difficulties are subtleties in language, differing definitions on what constitutes hate speech, and ...",
+    "favicon_url": "https://you.com/favicon?domain=scholar.google.com&size=128",
+    "snippets": [
+      "As online content continues to grow, so does the spread of hate speech. We identify and examine challenges faced by online automatic approaches for hate speech detection in text. Among these difficulties are subtleties in language, differing definitions on what constitutes hate speech, and limitations of data availability for training and testing of these systems."
+    ],
+    "title": "Google Scholar",
+    "url": "https://scholar.google.com/scholar_lookup?doi=10.1371/journal.pone.0221152"
+  },
+  {
+    "description": "Hate speech is one type of harmful online content which directly attacks or promotes hate towards a group or an individual member based on their actual or perceived aspects of identity, such as ethnicity, religion, and sexual orientation. With ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "This can not only improve generalisability through addressing disparity in annotations, but also help evaluate potential representation biases and disentangle implicit expressions of hate. While clear definitions and guidelines are worth pursuing, how each individual perceives hate speech is bound to be different depending on their background (Waseem, 2016). Thus, annotator disagreement will be inevitable even with the same guidelines and training. Instead of aggregating labels into a gold standard, an alternative way of looking at such disagreement is that it reflects an actual divergence of opinions and are all valid (Basile, 2020).",
+      "For example, can automatic models practically aid human moderators in content moderation? In that case, how can human moderators make use of the outputs or post-hoc feature analysis(e.g., Kennedy et al. (2020)) most effectively? Would that introduce more bias or reduce bias in content moderation? Would such effects differ across different hate expressions?",
+      "Building upon the first two stages, the main obstacles towards generalisable hate speech detection were then summarised: (1) presence of non-standard grammar and vocabulary, (2) paucity of and biases in datasets, and (3) implicit expressions of hate. This was done through extracting and analysing the error analysis of experimental studies found in the first stage, and comparing the results and discussions of the studies found in the second stage. Then, for each category of obstacles identified, another search was carried out, involving combinations of the description and paraphrases of the challenges and the general keywords.",
+      "At the same time, simply using identified code words for a lexicon-based detection approach will result in low precision (Davidson et al., 2017). As there are infinite ways of combining the above alternative rules of spelling, code words, and syntax, hate speech detection models struggle with these rare expressions even with the aid of pre-trained word embeddings."
+    ],
+    "title": "Towards generalisable hate speech detection: a review on obstacles ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8237316/"
+  },
+  {
+    "description": "Advances in Internet Technologies (ITs) and online social networks have made more benefits to humanity. At the same time, the dark side of this growth\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "After the review of definitions from different researchers and international bodies, the hate speech is defined as \u201cany speech, which attacks an individual or a group with an intention to hurt or disrespect based on identity\u201d. Once the hatred is expressed, hurting or disrespecting depends on the perception of the victim. Similarly, cyber terrorism is defined as \u201cTerrorism through utilization of internet and communication technologies and related tools. That is an attack carried out on a",
+      "In this paper, we constructed a standard multi-label Arabic dataset using manual annotation and a semi-supervised annotation technique that can be used for short text classification, sentiment analysis, and multilabel classification. Then, we evaluated the topics classification, sentiment analysis, and multilabel classification. Based on that evaluation we found a relationship between topics published in OSNs and hate speech.",
+      "Hate speech and terrorism are very common and closely related activities. Initially to carry out these activities messages are communicated using traditional social networks, such as broadcast television, broadcast radio, newspapers, etc. Nowadays the online social networks like Twitter, LinkedIn, Facebook, and YouTube are using for the same purpose.",
+      "That is an attack is carried out on a targeted group, an individual, place or any object using computing systems, Internet, stored information and knowledge of software with an intention of making damage to targeted one\u201d. With this overview of hate speech and related terms, the remaining portion of the article is structured as follows."
+    ],
+    "title": "Hate speech review in the context of online social networks - ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1359178917301064"
+  }
+]

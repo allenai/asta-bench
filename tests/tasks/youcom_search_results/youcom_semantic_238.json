@@ -1,0 +1,222 @@
+[
+  {
+    "description": "Despite recent advances in video generation, existing models still lack fine-grained controllability, especially for multi-subject customization with consistent identity and interaction. ... We introduce Self Forcing, a novel training paradigm for autoregressive video diffusion models. ... Contact us on: hello@paperswithcode.com . Papers With Code is a free resource with all ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Despite recent advances in video generation, existing models still lack fine-grained controllability, especially for multi-subject customization with consistent identity and interaction. ... We introduce Self Forcing, a novel training paradigm for autoregressive video diffusion models. ... Contact us on: hello@paperswithcode.com . Papers With Code is a free resource with all data licensed under CC-BY-SA.",
+      "( Various Video Generation Tasks. Gif credit: [MaGViT](https://paperswithcode.com/paper/magvit-masked-generative-video-transformer) )",
+      "In this paper, we propose GenWorld, a large-scale, high-quality, and real-world simulation dataset for AI-generated video detection. ... Experimental results demonstrate its great generalization ability in precise control of varying human movements and worldconsistent modeling of diverse scenarios.",
+      "From professional filmmaking to user-generated content, creators and consumers have long recognized that the power of video depends on the harmonious integration of what we hear (the video's audio track) with what we see (the video's image sequence)."
+    ],
+    "title": "Video Generation | Papers With Code",
+    "url": "https://paperswithcode.com/task/video-generation/codeless"
+  },
+  {
+    "description": "Get trending papers in your email inbox! Subscribe ... Recent advances in video generation have led to remarkable improvements in visual quality and temporal coherence. Upon this, trajectory-controllable video generation has emerged to enable precise object motion control through explicitly ...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Get trending papers in your email inbox! Subscribe ... Recent advances in video generation have led to remarkable improvements in visual quality and temporal coherence. Upon this, trajectory-controllable video generation has emerged to enable precise object motion control through explicitly defined spatial paths.",
+      "Recent years have seen substantial progress in diffusion-based controllable video generation. However, achieving precise control in complex scenarios, including fine-grained object parts, sophisticated motion trajectories, and coherent background movement, remains a challenge. In this paper, we introduce TrackGo, a novel approach that leverages free-form masks and arrows for conditional video generation.",
+      "Controllability, temporal coherence, and detail synthesis remain the most critical challenges in video generation. In this paper, we focus on a commonly used yet underexplored cinematic technique known as Frame In and Frame Out.",
+      "Secondly, trajectory control research is still in its early stages, with most experiments being conducted on simple datasets like Human3.6M. This constraint limits the models' capability to process open-domain images and effectively handle complex curved trajectories. In this paper, we propose DragNUWA, an open-domain diffusion-based video generation model."
+    ],
+    "title": "Daily Papers - Hugging Face",
+    "url": "https://huggingface.co/papers?q=controllable+video+generation"
+  },
+  {
+    "description": "A collection of awesome video generation studies. Contribute to AlonzoLeeeooo/awesome-video-generation development by creating an account on GitHub.",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "LinGen: Towards High-Resolution Minute-Length Text-to-Video Generation with Linear Computational Complexity [Paper] [Project] \u26a0\ufe0f Encapsulated Composition of Text-to-Image and Text-to-Video Models for High-Quality Video Synthesis ... Generative Rendering: Controllable 4D-Guided Video Generation with 2D Diffusion Models [Paper] [Project]",
+      "MotionStone: Decoupled Motion Intensity Modulation with Diffusion Transformer for Image-to-Video Generation [Paper] MotionPro: A Precise Motion Controller for Image-to-Video Generation [Paper] [Code]",
+      "ControlNeXt: Powerful and Efficient Control for Image and Video Generation [Paper] [Code] [Project]",
+      "ControlVideo: Training-free Controllable Text-to-video Generation [Paper] [Code]"
+    ],
+    "title": "GitHub - AlonzoLeeeooo/awesome-video-generation: A collection of ...",
+    "url": "https://github.com/AlonzoLeeeooo/awesome-video-generation"
+  },
+  {
+    "description": "\ud83d\ude80\ud83d\ude80\ud83d\ude80A curated list of papers on controllable video generation. - GitHub - mayuelala/Awesome-Controllable-Video-Generation: \ud83d\ude80\ud83d\ude80\ud83d\ude80A curated list of papers on controllable video generation.",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "A Lip Sync Expert Is All You Need for Speech to Lip Generation In The Wild (23 Aug 2020) [ACM MM 2020] K R Prajwal, Rudrabha Mukhopadhyay, Vinay Namboodiri, et al. C V Jawahar \u00b7 ReCapture: Generative Video Camera Controls for User-Provided Videos using Masked Video Fine-Tuning (11 Nov 2024)",
+      "\ud83d\ude80\ud83d\ude80\ud83d\ude80A curated list of papers on controllable video generation. Please join us for more comprehensive summary. If you have any additions to the list, please raise them in the issue section.",
+      "Phantom: Subject-consistent video generation via cross-modal alignment (16 Feb 2025) Lijie Liu, Tianxiang Ma, Bingchuan Li, et al. Lijie Liu, Tianxiang Ma, Bingchuan Li, Zhuowei Chen, Jiawei Liu, Qian He, Xinglong Wu \u00b7 AnyCharV: Bootstrap Controllable Character Video Generation with Fine-to-Coarse Guidance (12 Feb 2025)",
+      "MotionBooth: Motion-Aware Customized Text-to-Video Generation (29 Oct 2024) Jianzong Wu, Xiangtai Li, Yanhong Zeng, et al. Jianzong Wu, Xiangtai Li, Yanhong Zeng, Jiangning Zhang, Qianyu Zhou, Yining Li, Yunhai Tong, Kai Chen \u00b7 MovieCharacter: A Tuning-Free Framework for Controllable Character Video Synthesis (28 Oct 2024)"
+    ],
+    "title": "GitHub - mayuelala/Awesome-Controllable-Video-Generation: ...",
+    "url": "https://github.com/mayuelala/Awesome-Controllable-Video-Generation"
+  },
+  {
+    "description": "In this survey, we present a ... organization of the rest of this paper is outlined in Figure 2. Initially, we define the long video duration in Section 1. Section 2 discusses four different types of video generation models and control signals....",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "In this survey, we present a comprehensive investigation of existing research on long video generation, aiming to provide a clear overview of the current state of development and contribute to its future progress. The organization of the rest of this paper is outlined in Figure 2. Initially, we define the long video duration in Section 1. Section 2 discusses four different types of video generation models and control signals.",
+      "Generating long videos of dynamic scenes. Advances in Neural Information Processing Systems, 35:31769\u201331781, 2022. Carreira et al. (2018) Joao Carreira, Eric Noland, Andras Banki-Horvath, Chloe Hillier, and Andrew Zisserman. A short note about kinetics-600. arXiv preprint arXiv:1808.01340, 2018. Chen et al. (2023a) Weifeng Chen, Jie Wu, Pan Xie, Hefeng Wu, Jiashi Li, Xin Xia, Xuefeng Xiao, and Liang Lin. Control-a-video: Controllable text-to-video generation with diffusion models.",
+      "In existing researches on long video generation, common prompt inputs can be either a single type of prompt or a combination of multiple prompts, such as text and image or text and video. These control signals are instrumental in determining the content, style, and thematic direction of long videos.",
+      "We designate these as \u201dsuper-long videos\u201d. Hence, future research could focus on the generation of super-long videos and address challenges such as view transitions, character and scene developments, and enrichment of action and plot that arise with extended durations. Enhanced Controllability and Real-world Simulation"
+    ],
+    "title": "A Survey on Long Video Generation: Challenges, Methods, and Prospects",
+    "url": "https://arxiv.org/html/2403.16407v1"
+  },
+  {
+    "description": "Ma grand-m\u00e8re m\u2019a racont\u00e9 que quand elle \u00e9tait \u00e9tudiante, elle avait un petit-ami. \u00c0 l\u2019\u00e2ge de 18 ans, il a d\u00fb partir pour le service militaire, elle ne l\u2019a pas attendu et elle a \u00e9pous\u00e9 quelqu\u2019un d\u2019autre. Quand ma grand-m\u00e8re avait 58-59 ans, un homme (son premier amour) lui ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Ma grand-m\u00e8re m\u2019a racont\u00e9 que quand elle \u00e9tait \u00e9tudiante, elle avait un petit-ami. \u00c0 l\u2019\u00e2ge de 18 ans, il a d\u00fb partir pour le service militaire, elle ne l\u2019a pas attendu et elle a \u00e9pous\u00e9 quelqu\u2019un d\u2019autre. Quand ma grand-m\u00e8re avait 58-59 ans, un homme (son premier amour) lui a envoy\u00e9 une demande d\u2019amis sur un r\u00e9seau social, ils ont commenc\u00e9 parler...",
+      "Ma grand-m\u00e8re m\u2019a racont\u00e9 que quand elle \u00e9tait \u00e9tudiante, elle avait un petit-ami. \u00c0 l\u2019\u00e2ge de 18 ans, il a d\u00fb partir pour le service militaire, elle ne l\u2019a pas attendu et elle a \u00e9pous\u00e9 quelqu\u2019un d\u2019autre. Quand ma grand-m\u00e8re avait 58-59 ans, un homme (son premier amour) lui a envoy\u00e9 une demande d\u2019amis sur un r\u00e9seau social, ils ont commenc\u00e9 \u00e0 parler...",
+      "This paper introduces ModelScopeT2V, a text-to-video synthesis model that evolves from a text-to-image synthesis model (i. e., Stable Diffusion). ... We first pre-train an LDM on images only; then, we turn the image generator into a video generator by introducing a temporal dimension to the latent space diffusion model and fine-tuning on encoded image sequences, i. e., videos. ... The pursuit of controllability as a higher standard of visual content creation has yielded remarkable progress in customizable image synthesis.",
+      "To replicate the success of text-to-image (T2I) generation, recent works employ large-scale video datasets to train a text-to-video (T2V) generator. ... The I2V model is designed to produce videos that strictly adhere to the content of the provided reference image, preserving its content, structure, and style. ... To address these challenges, we introduce StyleCrafter, a generic method that enhances pre-trained T2V models with a style control adapter, enabling video generation in any style by providing a reference image."
+    ],
+    "title": "Text-to-Video Generation | Papers With Code",
+    "url": "https://paperswithcode.com/task/text-to-video-generation"
+  },
+  {
+    "description": "Direct comparison with other works ... video generation model, is difficult due to their incompatibility with the sparse trajectory inputs our work utilizes. To further show that our method provides reasonable controllability compared to existing text-to-video models, we present comparisons with state-of-the-art models when quantitative/qualitative results are available in their papers, given most ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Direct comparison with other works (e.g., [49, 7]), which inject dense structural control into the video generation model, is difficult due to their incompatibility with the sparse trajectory inputs our work utilizes. To further show that our method provides reasonable controllability compared to existing text-to-video models, we present comparisons with state-of-the-art models when quantitative/qualitative results are available in their papers, given most of them are not publicly available.",
+      "FACTOR generates videos with better interaction between subject and objects. It shows more semantic meaning, e.g., the astronaut stretches out the hand, and the duck gets close to the astronaut, and better movement due to our fine-grained control. As the state-of-the-art models are not publicly available, we copy the results from their papers.",
+      "On the other hand, FACTOR has sub-optimal performance when the text prompt is not aligned with the trajectory/appearance control. In this case, the model might perform inferior to the models that take only a single condition as input. We further compare our video generation results with recent state-of-the-art text-to-video models. As their models are not publicly available, we present the results in their papers.",
+      "By optimizing the encoder and the inserted layer, we adapt the model to generate videos that are aligned with both text prompts and fine-grained control. Compared to existing methods relying on dense control signals such as edge maps, we provide a more intuitive and user-friendly interface to allow object-level fine-grained control."
+    ],
+    "title": "Fine-grained Controllable Video Generation via Object Appearance ...",
+    "url": "https://arxiv.org/html/2312.02919v1"
+  },
+  {
+    "description": "Video generation and manipulation is an important yet challenging task in computer vision. Existing methods usually lack ways to explicitly control the synthesized motion. In this work, we present a conditional video generation model that allows detailed control over the motion of the generated ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Video generation and manipulation is an important yet challenging task in computer vision. Existing methods usually lack ways to explicitly control the synthesized motion. In this work, we present a conditional video generation model that allows detailed control over the motion of the generated video.",
+      "Experiments on several standard benchmarks demonstrate that our approach can generate realistic videos comparable to state-of-the-art video generation and video prediction methods while the motion of the generated videos can correspond well with user input. PDF Abstract \u00b7 No code implementations yet. Submit your code now ...  Submit results from this paper to get state-of-the-art GitHub badges and help the community compare results to other papers. No methods listed for this paper. Add relevant methods here \u00b7 Contact us on: hello@paperswithcode.com . Papers With Code is a free resource with all data licensed under CC-BY-SA.",
+      "No code available yet."
+    ],
+    "title": "Papers with Code - Controllable Video Generation With Sparse ...",
+    "url": "https://paperswithcode.com/paper/controllable-video-generation-with-sparse"
+  },
+  {
+    "description": "The recent wave of AI-generated content (AIGC) has witnessed substantial success in computer vision, with the diffusion model playing a crucial role in this achievement. Due to their impressive gen...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "The recent wave of AI-generated content (AIGC) has witnessed substantial success in computer vision, with the diffusion model playing a crucial role in this achievement. Due to their impressive generative capabilities, diffusion models are gradually ...",
+      "Animate anyone: Consistent and controllable image-to-video synthesis for character animation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 8153\u20138163. ... Yaosi Hu, Zhenzhong Chen, and Chong Luo. 2023. LaMD: Latent motion diffusion for video generation.",
+      "ED-T2V: An efficient training framework for diffusion-based text-to-video generation. In Proceedings of the International Joint Conference on Neural Networks. ... Shaoteng Liu, Yuechen Zhang, Wenbo Li, Zhe Lin, and Jiaya Jia. 2023. Video-p2p: Video editing with cross-attention control.",
+      "Tan Wang, Linjie Li, Kevin Lin, Chung-Ching Lin, Zhengyuan Yang, Hanwang Zhang, Zicheng Liu, and Lijuan Wang. 2023. DisCo: Disentangled control for referring human dance generation in real world. arXiv:2307.00040."
+    ],
+    "title": "A Survey on Video Diffusion Models | ACM Computing Surveys",
+    "url": "https://dl.acm.org/doi/10.1145/3696415"
+  },
+  {
+    "description": "We present Imagen Video, a text-conditional video generation system based on a cascade of video diffusion models. Given a text prompt, Imagen Video generates high definition videos using a base video generation model and a sequence of interleaved spatial and temporal video super-resolution models.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2210.02303: Imagen Video: High Definition Video Generation with Diffusion Models",
+      "We find Imagen Video not only capable of generating videos of high fidelity, but also having a high degree of controllability and world knowledge, including the ability to generate diverse videos and text animations in various artistic styles and with 3D object understanding. See this https URL for samples. From: Jonathan Ho [view email] [v1] Wed, 5 Oct 2022 14:41:38 UTC (7,627 KB) ... View a PDF of the paper titled Imagen Video: High Definition Video Generation with Diffusion Models, by Jonathan Ho and 10 other authors",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "View a PDF of the paper titled Imagen Video: High Definition Video Generation with Diffusion Models, by Jonathan Ho and 10 other authors View PDF"
+    ],
+    "title": "[2210.02303] Imagen Video: High Definition Video Generation with ...",
+    "url": "https://arxiv.org/abs/2210.02303"
+  },
+  {
+    "description": "Controllable video generation remains a significant challenge, despite recent advances in generating high-quality and consistent videos. Most existing methods for controlling video generation treat the video as a whole, neglecting intricate fine-grained spatiotemporal relationships, which limits ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Controllable video generation remains a significant challenge, despite recent advances in generating high-quality and consistent videos. Most existing methods for controlling video generation treat the video as a whole, neglecting intricate fine-grained spatiotemporal relationships, which limits both control precision and efficiency.",
+      "We gratefully acknowledge support from the Simons Foundation, member institutions, and all contributors. Donate ... Authors:Yifan Shen, Peiyuan Zhu, Zijian Li, Shaoan Xie, Zeyu Tang, Namrata Deka, Zongfang Liu, Guangyi Chen, Kun Zhang \u00b7 View a PDF of the paper titled Controllable Video Generation with Provable Disentanglement, by Yifan Shen and 8 other authors View PDF HTML (experimental)",
+      "View a PDF of the paper titled Controllable Video Generation with Provable Disentanglement, by Yifan Shen and 8 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+      "Abstract page for arXiv paper 2502.02690: Controllable Video Generation with Provable Disentanglement"
+    ],
+    "title": "[2502.02690] Controllable Video Generation with Provable ...",
+    "url": "https://arxiv.org/abs/2502.02690"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.computer.org&size=128",
+    "snippets": [],
+    "title": "Make-Your-Video: Customized Video Generation Using ...",
+    "url": "https://www.computer.org/csdl/journal/tg/2025/02/10436391/1UwVf2MBnby"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=openaccess.thecvf.com&size=128",
+    "snippets": [],
+    "title": "Controllable Image-to-Video Generation With Text ...",
+    "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Hu_Make_It_Move_Controllable_Image-to-Video_Generation_With_Text_Descriptions_CVPR_2022_paper.pdf"
+  },
+  {
+    "description": "Skip to yearly menu bar Skip to main content \u00b7 Main Navigation \u00b7 NeurIPS \u00b7 Help/FAQ \u00b7 Contact NeurIPS \u00b7 Code of Ethics \u00b7 Code of Conduct \u00b7 Create Profile \u00b7 Journal To Conference Track \u00b7 Diversity & Inclusion",
+    "favicon_url": "https://you.com/favicon?domain=nips.cc&size=128",
+    "snippets": [
+      "We use cookies to store which papers have been visited."
+    ],
+    "title": "NeurIPS 2024 Papers",
+    "url": "https://nips.cc/virtual/2024/papers.html"
+  },
+  {
+    "description": "Text-to-video generation has shown promising results. However, by taking only natural languages as input, users often face difficulties in providing detailed information to precisely control the model's output. In this work, we propose fine-grained controllable video generation (FACTOR) to ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Text-to-video generation has shown promising results. However, by taking only natural languages as input, users often face difficulties in providing detailed information to precisely control the model's output. In this work, we propose fine-grained controllable video generation (FACTOR) to achieve detailed control.",
+      "We gratefully acknowledge support from the Simons Foundation, member institutions, and all contributors. Donate ... View a PDF of the paper titled Fine-grained Controllable Video Generation via Object Appearance and Context, by Hsin-Ping Huang and 6 other authors View PDF HTML (experimental)",
+      "View a PDF of the paper titled Fine-grained Controllable Video Generation via Object Appearance and Context, by Hsin-Ping Huang and 6 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+      "Abstract page for arXiv paper 2312.02919: Fine-grained Controllable Video Generation via Object Appearance and Context"
+    ],
+    "title": "[2312.02919] Fine-grained Controllable Video Generation via Object ...",
+    "url": "https://arxiv.org/abs/2312.02919"
+  },
+  {
+    "description": "Text-driven diffusion models have unlocked unprecedented abilities in image generation, whereas their video counterpart still lags behind due to the excessive training cost of temporal modeling. Besides the training burden, the generated videos also suffer from appearance inconsistency and ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Text-driven diffusion models have unlocked unprecedented abilities in image generation, whereas their video counterpart still lags behind due to the excessive training cost of temporal modeling. Besides the training burden, the generated videos also suffer from appearance inconsistency and structural flickers, especially in long video synthesis.",
+      "We gratefully acknowledge support from the Simons Foundation, member institutions, and all contributors. Donate ... View a PDF of the paper titled ControlVideo: Training-free Controllable Text-to-Video Generation, by Yabo Zhang and 5 other authors View PDF",
+      "View a PDF of the paper titled ControlVideo: Training-free Controllable Text-to-Video Generation, by Yabo Zhang and 5 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+      "Abstract page for arXiv paper 2305.13077: ControlVideo: Training-free Controllable Text-to-Video Generation"
+    ],
+    "title": "[2305.13077] ControlVideo: Training-free Controllable Text-to-Video ...",
+    "url": "https://arxiv.org/abs/2305.13077"
+  },
+  {
+    "description": "Generative artificial intelligence (GAI) is a rapidly growing field with a wide range of applications. In this paper, a thorough examination of the re\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Generative artificial intelligence (GAI) is a rapidly growing field with a wide range of applications. In this paper, a thorough examination of the research landscape in GAI is presented, encompassing a comprehensive overview of the prevailing themes and topics within the field.",
+      "The study analyzes a corpus of 1319 records from Scopus spanning from 1985 to 2023 and comprises journal articles, books, book chapters, conference papers, and selected working papers. The analysis revealed seven distinct clusters of topics in GAI research: image processing and content analysis, content generation, emerging use cases, engineering, cognitive inference and planning, data privacy and security, and Generative Pre-Trained Transformer (GPT) academic applications.",
+      "The paper concludes by calling for further research in GAI, particularly in the areas of explainability, robustness, cross-modal and multi-modal generation, and interactive co-creation."
+    ],
+    "title": "Generative AI: A systematic review using topic modelling techniques ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2543925124000020"
+  },
+  {
+    "description": "An image may convey a thousand words, but a video composed of hundreds or thousands of image frames tells a more intricate story. Despite significant progress in multimodal large language models (MLLMs), generating extended videos remains a formidable challenge.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2412.18688: Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation",
+      "This limitation stems from the complexity of long video generation, which requires more than generative AI techniques for approximating density functions essential aspects such as planning, story development, and maintaining spatial and temporal consistency present additional hurdles. Integrating generative AI with a divide-and-conquer approach could improve scalability for longer videos while offering greater control.",
+      "We believe it would serve as a comprehensive foundation, offering extensive information to guide future advancements and research in the field of long video generation. From: Faraz Waseem [view email] [v1] Tue, 24 Dec 2024 21:24:41 UTC (17,745 KB) ... View a PDF of the paper titled Video Is Worth a Thousand Images: Exploring the Latest Trends in Long Video Generation, by Faraz Waseem and Muhammad Shahzad",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[2412.18688] Video Is Worth a Thousand Images: Exploring the Latest ...",
+    "url": "https://arxiv.org/abs/2412.18688"
+  },
+  {
+    "description": "Researchers have made significant ... dynamics by utilizing deep learning methods such as Generative Adversarial Networks (GANs). However, challenges such as long-term video synthesis consistency and fine-grained control over created content are still under explorati...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Researchers have made significant progress in producing movie clips that reveal fine details and capture the essence of real-world dynamics by utilizing deep learning methods such as Generative Adversarial Networks (GANs). However, challenges such as long-term video synthesis consistency and fine-grained control over created content are still under exploration.",
+      "The lack of large-scale video datasets hinders the development of Generative AI models for video content creation, as they rely on large amounts of data to learn the underlying data distribution. Annotated video datasets are relatively scarce, yet they play a crucial role in controllable video generation.",
+      "By identifying key challenges and future research directions, the paper guides ongoing efforts to merge AI with video technology, while raising awareness about potential ethical issues. Its influence extends beyond academia, encouraging responsible AI development and policy-making in video technology, balancing technological advancements with ethical considerations. {IEEEkeywords} Generative Artificial Intelligence (AI), Large Language Model (LLM), Video Understanding, Video Generation, Video Streaming, GPT",
+      "[87] I. Singh et al., \u201cProgprompt: Generating situated robot task plans using large language models,\u201d in 2023 IEEE International Conference on Robotics and Automation (ICRA). IEEE, 2023, pp. 11 523\u201311 530. [88] A. Brohan et al., \u201cRt-2: Vision-language-action models transfer web knowledge to robotic control,\u201d arXiv preprint arXiv:2307.15818, 2023."
+    ],
+    "title": "A Survey on Generative AI and LLM for Video Generation, ...",
+    "url": "https://arxiv.org/html/2404.16038v1"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=openai.com&size=128",
+    "snippets": [],
+    "title": "Video generation models as world simulators",
+    "url": "https://openai.com/index/video-generation-models-as-world-simulators/"
+  }
+]

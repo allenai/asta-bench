@@ -1,0 +1,269 @@
+[
+  {
+    "description": "Demystifying the role of Mixture of Experts (MoE) in Large Language Models (LLMs) with over 50 illustrations.",
+    "favicon_url": "https://you.com/favicon?domain=newsletter.maartengrootendorst.com&size=128",
+    "snippets": [
+      "Demystifying the role of MoE in Large Language Models",
+      "To see more visualizations related to LLMs and to support this newsletter, check out the book I wrote on Large Language Models! Official website of the book. You can order the book on Amazon. All code is uploaded to GitHub. Hopefully, this was an accessible introduction to Mixture of Experts. If you want to go deeper, I would suggest the following resources: This and this paper are great overviews of the latest MoE innovations.",
+      "As we have seen before, experts learn more fine-grained information than entire domains.1 As such, calling them \u201cexperts\u201d has sometimes been seen as misleading. Expert specialization of an encoder model in the ST-MoE paper. Experts in decoder models, however, do not seem to have the same type of specialization. That does not mean though that all experts are equal. A great example can be found in the Mixtral 8x7B paper where each token is colored with the first expert choice.",
+      "In contrast, sparse models only activate a portion of their total parameters and are closely related to Mixture of Experts. To illustrate, we can chop up our dense model into pieces (so-called experts), retrain it, and only activate a subset of experts at a given time: The underlying idea is that each expert learns different information during training."
+    ],
+    "title": "A Visual Guide to Mixture of Experts (MoE)",
+    "url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "A Survey on Mixture of Experts in Large Language Models",
+    "url": "https://arxiv.org/pdf/2407.06204"
+  },
+  {
+    "description": "In this paper, we delve into performing domain adaptation by finetuning using PEFT LoRA techniques. The first phase of the study encompasses judicious selection of a singular domain as its foundational step. ... As discussed in previous sections, language is a diverse and dynamic tool that adapts to various contexts. Different domains introduce unique linguistic nuances and complexities that require specialized language models...",
+    "favicon_url": "https://you.com/favicon?domain=www.infosys.com&size=128",
+    "snippets": [
+      "Finetuning stands as a powerful domain adaptation technique, anchoring a model's transformation. By initializing a model with pre-trained weights and then recalibrating them using domain-specific data, the model embraces both domain nuances and pre-trained knowledge. Finetuning navigates balance between generalized language mastery and specialized domain expertise.",
+      "With a structured approach, we can overcome challenges such as data scarcity and overfitting, leading to models that are both knowledgeable in general contexts and experts in specific domains. In this whitepaper, we discussed transformative potential of domain adaptation for large language models, specifically within the intricate landscape of legal domain.",
+      "With recent release of various open-source models, which are available in various sizes, domain adaptation of large ML models has become more accessible and easier to implement. These models can be finetuned with domain-specific datasets, enabling them to understand and generate technical language and terminology with greater accuracy. In this paper, we present different techniques of finetuning open-source models like LLaMA (7 billion) on domain-specific dataset, which contain text from a particular industry or subject.",
+      "A language model tailored to this domain must interpret financial jargon accurately and predict market behaviors. ... Technical documents encompass coding syntax, engineering concepts and scientific principles. Precise text generation and comprehension are critical for knowledge transfer among experts in this domain."
+    ],
+    "title": "Generalization to Specialization \u2013 Domain Adaptation of Large ...",
+    "url": "https://www.infosys.com/iki/techcompass/large-language-models.html"
+  },
+  {
+    "description": "We present a toolkit for creating low-cost Mixture-of-Domain-Experts (MOE) from trained models. The toolkit can be used for creating a mixture from models or from adapters. We perform extensive tests and offer guidance on defining the architecture of the resulting MOE using the toolkit.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "In addition, their scoring methods are not practical, as they require in general each adapter\u2019s \"training domain dataset\" to evaluate proximity to the input. Lastly, we mention CALM [14], a version of the MOE idea comprising two models: a base model and an augmenting model. The approach requires learning, for selected layers, linear transformations from the augmenting model to the base model and a cross-attention layer between each projected layer and the corresponding base layer. However, in their paper, the composition of the base model with a small augmenting model is almost always inferior to fine-tuning the base model on the same dataset used for the composition training.",
+      "Taking it one step further, we can imagine a set of trained models, each having a skill in a particular domain. Each MOE can mix a targeted subset of skill-based models to satisfy the distinct needs of each individual user. Given the exceptionally low cost of creating these mixed MOE models, they can be customised rapidly on demand, for each use, with only the skills of interest. There have been a few other efforts to enable mixture of experts model creation from trained models, the first of which is due to Charles Goddard [7, 8] who created the Mergekit repository.",
+      "We thus evaluate a FLAN-trained, a medical-domain-trained, and a math-trained llama3-8B as the MOE base. ... How should expert models be included in the MOE? We assess using the full FFN layers, the FFN and attention layers, a fine-grained variant (called fgmlp, for \u2019fine-grained MLP\u2019) in which a there are three routers for each FFN layer (one each for gate, up and down), and using LoRA adapters as each expert.",
+      "In addition, while our results show that using the FFN layers of the experts is generally preferred, we also enable creating an MOE from LoRA adapter experts. We wish to extend the capabilities of a model using additional pre-trained and tuned expert models. First, we demonstrate this using the InstructLab-enhanced Merlinite model released by IBM instructlab/merlinite-7b-lab [16] as our base model as well as one of our experts."
+    ],
+    "title": "Flexible and Effective Mixing of Large Language Models into a Mixture ...",
+    "url": "https://arxiv.org/html/2408.17280v1"
+  },
+  {
+    "description": "Mixture of experts (MoE) is a machine learning approach, diving an AI model into multiple \u201cexpert\u201d models, each specializing in a subset of the input data.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "Though much of the modern implementation of mixture of experts setups was developed over (roughly) the past decade, the core premise behind MoE models originates from the 1991 paper \u201cAdaptive Mixture of Local Experts.\u201d The paper proposed training an AI system composed of separate networks that each specialized in a different subset of training cases.",
+      "Put AI to work in your business with IBM\u2019s industry-leading AI expertise and portfolio of solutions at your side. ... Reinvent critical workflows and operations by adding AI to maximize experiences, real-time decision-making and business value. ... Explore the IBM library of foundation models in the IBM watsonx portfolio to scale generative AI for your business with confidence. ... NOTE: All links reside outside ibm.com 1 \"Adaptive Mixtures of Local Experts,\" University of Toronto, March 1991 2 \"AI Expert Speculates on GPT-4 Architecture,\" Weights and Biases, 21 June 2023 3 \"Mixtral of exper",
+      "Though conditional computation had long been proposed as a theoretical means to decouple computational demands from increased model capacity, the algorithmic and performance challenges to its successful execution were not overcome until Shazeer et al\u2019s 2017 paper \u201cOutrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer.\u201d4",
+      "The authors hypothesized that because expert layers represented only a quarter of their model\u2019s total layers, and a token will see at most only two experts per layer, isolating MoE parameters results in less comprehensive weight updates (and thus greater overfitting and training loss).8 \u00b7 A July 2023 paper, \u201cMixture-of-Experts Meets Instruction Tuning,\u201d explored the impact of instruction tuning on MoE models using equivalents of Google\u2019s T5 and Flan-T5\u2014a version of T5 instruction-tuned with Google\u2019s Flan protocol \u2014LLMs as a baseline."
+    ],
+    "title": "What is mixture of experts? | IBM",
+    "url": "https://www.ibm.com/think/topics/mixture-of-experts"
+  },
+  {
+    "description": "This alert has been successfully added and will be sent to: \u00b7 You will be notified whenever a record that you have chosen has been cited",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Dselect-k: Differentiable selection in the mixture of experts with applications to multi-task learning. Advances in Neural Information Processing Systems, Vol. 34 (2021), 29335--29347. ... Shwai He, Run-Ze Fan, Liang Ding, Li Shen, Tianyi Zhou, and Dacheng Tao. 2023. Mera: Merging pretrained adapters for few-shot learning.",
+      "Adamix: Mixture-of-adaptations for parameter-efficient model tuning. arXiv preprint arXiv:2205.12410 (2022). ... Steven Euijong Whang and Hector Garcia-Molina. 2013. Joint entity resolution on multiple datasets. VLDB J., Vol. 22, 6 (2013), 773--795. ... Haoyuan Wu, Haisheng Zheng, and Bei Yu. 2024. Parameter-Efficient Sparsity Crafting from Dense to Mixture-of-Experts for Instruction Tuning on General Tasks.",
+      "Robert A Jacobs, Michael I Jordan, Steven J Nowlan, and Geoffrey E Hinton. 1991. Adaptive mixtures of local experts. Neural computation, Vol.",
+      "Zui Chen, Lei Cao, Sam Madden, Tim Kraska, Zeyuan Shang, Ju Fan, Nan Tang, Zihui Gu, Chunwei Liu, and Michael Cafarella. 2023. SEED: Domain-Specific Data Curation With Large Language Models. arXiv e-prints (2023), arXiv--2310. ... Zixiang Chen, Yihe Deng, Yue Wu, Quanquan Gu, and Yuanzhi Li. 2022. Towards understanding mixture of experts in deep learning."
+    ],
+    "title": "Efficient Mixture of Experts based on Large Language Models for ...",
+    "url": "https://dl.acm.org/doi/10.1145/3637528.3671873"
+  },
+  {
+    "description": "The capacity of a neural network to absorb information is limited by its number of parameters. Conditional computation, where parts of the network are active on a per-example basis, has been proposed in theory as a way of dramatically increasing model capacity without a proportional increase ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer, by Noam Shazeer and 6 other authors View PDF \u00b7 Abstract:The capacity of a neural network to absorb information is limited by its number of parameters. Conditional computation, where parts of the network are active on a per-example basis, has been proposed in theory as a way of dramatically increasing model capacity without a proportional increase in computation.",
+      "Abstract page for arXiv paper 1701.06538: Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+      "On large language modeling and machine translation benchmarks, these models achieve significantly better results than state-of-the-art at lower computational cost. From: Noam Shazeer [view email] [v1] Mon, 23 Jan 2017 18:10:00 UTC (294 KB) ... View a PDF of the paper titled Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer, by Noam Shazeer and 6 other authors",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[1701.06538] Outrageously Large Neural Networks: The Sparsely-Gated ...",
+    "url": "https://arxiv.org/abs/1701.06538"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "A Comprehensive Overview of Large Language Models",
+    "url": "http://arxiv.org/pdf/2307.06435"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "At the same time, assuming just two experts are being used per token, the inference speed (FLOPs) is like using a 12B model (as opposed to a 14B model), because it computes 2x7B matrix multiplications, but with some layers shared (more on this soon). Now that we have a rough idea of what a MoE is, let\u2019s take a look at the research developments that led to their invention. The roots of MoEs come from the 1991 paper Adaptive Mixture of Local Experts.",
+      "MoE layer from the Outrageously Large Neural Network paper \u00b7 MoEs have allowed training multi-trillion parameter models, such as the open-sourced 1.6T parameters Switch Transformers, among others. MoEs have also been explored in Computer Vision, but this blog post will focus on the NLP domain. Sparsity uses the idea of conditional computation.",
+      "Just as in GShard, the authors replaced the FFN layers with a MoE layer. The Switch Transformers paper proposes a Switch Transformer layer that receives two inputs (two different tokens) and has four experts. Contrary to the initial idea of using at least two experts, Switch Transformers uses a simplified single-expert strategy.",
+      "FasterMoE: modeling and optimizing training of large-scale dynamic pre-trained models(April 2022) MegaBlocks: Efficient Sparse Training with Mixture-of-Experts (Nov 2022) Mixture-of-Experts Meets Instruction Tuning:A Winning Combination for Large Language Models (May 2023)"
+    ],
+    "title": "Mixture of Experts Explained",
+    "url": "https://huggingface.co/blog/moe"
+  },
+  {
+    "description": "Mixture of experts (MoE) large language model (LLM) architectures have recently emerged, both in proprietary LLMs such as GPT-4, as well as in community models with the open-source release of Mistral\u2026",
+    "favicon_url": "https://you.com/favicon?domain=developer.nvidia.com&size=128",
+    "snippets": [
+      "Mixture of experts (MoE) large language model (LLM) architectures have recently emerged, both in proprietary LLMs such as GPT-4, as well as in community models\u2026",
+      "First, the \u201cexpert\u201d subnetworks that compose the mixture, which are used for both dense and sparse MoE. Second, the routing algorithm used by sparse models to determine which experts process which tokens. In some formulations for dense and sparse MoE, the MoE may include a weighting mechanism that is used to perform a weighted average of expert outputs. For the purpose of this post, we will focus on the sparse case. In many published papers, the MoE technique is applied to \u200cMulti-Layer Perceptrons (MLPs) within transformer blocks.",
+      "While Mixtral 8x7B uses a Top-K algorithm to route tokens, papers such as Mixture-of-Experts with Expert Choice Routing introduce concepts to ensure that experts are not overly routed to. This prevents the formation of bottlenecks. In practice, what does each expert learn? Do they specialize in low-level lingual constructs, such as punctuation, verbs, adjectives, and so forth, or are they the masters of high-level concepts and domains, such as coding, math, biology, and law?",
+      "To learn more about applying MoE in other domains, see Scaling Vision with Sparse Mixture of Experts, Mixture-of-Expert Conformer for Streaming Multilingual ASR, and FEDformer: Frequency Enhanced Decomposed Transformer for Long-term Series Forecasting. This section provides some background information and highlights the benefits of using MoE in LLM architectures. Model capacity can be defined as the level of complexity that a model is capable of understanding or expressing."
+    ],
+    "title": "Applying Mixture of Experts in LLM Architectures | NVIDIA Technical ...",
+    "url": "https://developer.nvidia.com/blog/applying-mixture-of-experts-in-llm-architectures/"
+  },
+  {
+    "description": "Large language models (LLMs) have garnered unprecedented advancements across diverse fields, ranging from natural language processing to computer vision and beyond. The prowess of LLMs is underpinned by their substantial model size, extensive and diverse datasets, and the vast computational ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Large language models (LLMs) have garnered unprecedented advancements across diverse fields, ranging from natural language processing to computer vision and beyond. The prowess of LLMs is underpinned by their substantial model size, extensive and diverse datasets, and the vast computational power harnessed during training, all of which contribute to the emergent abilities of LLMs (e.g., in-context learning) that are not present in small models.",
+      "Abstract page for arXiv paper 2407.06204: A Survey on Mixture of Experts in Large Language Models",
+      "Within this context, the mixture of experts (MoE) has emerged as an effective method for substantially scaling up model capacity with minimal computation overhead, gaining significant attention from academia and industry. Despite its growing prevalence, there lacks a systematic and comprehensive review of the literature on MoE. This survey seeks to bridge that gap, serving as an essential resource for researchers delving into the intricacies of MoE. We first briefly introduce the structure of the MoE layer, followed by proposing a new taxonomy of MoE.",
+      "View a PDF of the paper titled A Survey on Mixture of Experts in Large Language Models, by Weilin Cai and 5 other authors View PDF HTML (experimental)"
+    ],
+    "title": "[2407.06204] A Survey on Mixture of Experts in Large Language Models",
+    "url": "https://arxiv.org/abs/2407.06204"
+  },
+  {
+    "description": "Mixture of Experts layers (MoEs) enable efficient scaling of language models through conditional computation. This paper presents a detailed empirical study of how autoregressive MoE language models scale in comparison with dense models in a wide range of settings: in- and out-of-domain language ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Mixture of Experts layers (MoEs) enable efficient scaling of language models through conditional computation. This paper presents a detailed empirical study of how autoregressive MoE language models scale in comparison with dense models in a wide range of settings: in- and out-of-domain language modeling, zero- and few-shot priming, and full-shot fine-tuning.",
+      "Abstract page for arXiv paper 2112.10684: Efficient Large Scale Language Modeling with Mixtures of Experts",
+      "Overall, this performance gap varies greatly across tasks and domains, suggesting that MoE and dense models generalize differently in ways that are worthy of future study. We make our code and models publicly available for research use. From: Mikel Artetxe [view email] [v1] Mon, 20 Dec 2021 17:05:11 UTC (248 KB) [v2] Wed, 26 Oct 2022 16:14:05 UTC (252 KB) ... View a PDF of the paper titled Efficient Large Scale Language Modeling with Mixtures of Experts, by Mikel Artetxe and 23 other authors",
+      "View a PDF of the paper titled Efficient Large Scale Language Modeling with Mixtures of Experts, by Mikel Artetxe and 23 other authors View PDF"
+    ],
+    "title": "[2112.10684] Efficient Large Scale Language Modeling with Mixtures ...",
+    "url": "https://arxiv.org/abs/2112.10684"
+  },
+  {
+    "description": "After OpenAI's ChatGPT, the tech world witnessed a modern-day gold rush. The AI giant started a new era and created a competition in the AI game. However, among this backdrop of AI-tech players, emerged a rising star - Mixtral 8x7B from Mistral AI, challenging the status quo with its innovative ...",
+    "favicon_url": "https://you.com/favicon?domain=www.upp-technology.com&size=128",
+    "snippets": [
+      "After OpenAI's ChatGPT, the tech world witnessed a modern-day gold rush. The AI giant started a new era and created a competition in the AI game. However, among this backdrop of AI-tech players, emerged a rising star - Mixtral 8x7B from Mistral AI, challenging the status quo with its innovative Mixture of Experts (#MoEs) architecture.",
+      "The story begins in 1991 with the seminal paper by Robert Jacobs and Geoffrey Hinton titled \"Adaptive Mixtures of Local Experts.\" They proposed a novel architecture that broke away from the traditional single-network approach. Their idea: a consortium of specialized networks, each an \"expert\" adept at handling specific subtasks within a broader problem. This specialization can lead to improved overall accuracy and flexibility compared to a single, monolithic model.",
+      "This means that in this regime, a sparse MoEs uses less compute and the same amount of memory capacity compared to a dense model of the same size. In conclusion, the journey of Mixture of Experts unveils a narrative of resilience, innovation, and adaptation. Despite facing challenges and setbacks along the way, MoEs have proven their efficacy and unique creative potential amidst the competitive landscape of Large Language Models.",
+      "Right off the bat, you will notice that Mixtral 8x7B has a really unique naming scheme, instead of a whole number that would represent a model\u2019s parameter count which is what people usually do, they were doing maths on its name, plus Mistral was written as Mixtral, and it\u2019s because they are referring to an architecture paradigm which they introduced for this model: Mixture of experts which is completely different from how most large language models (LLMs) operate."
+    ],
+    "title": "The History of Mixture of Experts | UPP",
+    "url": "https://www.upp-technology.com/blogs/the-history-of-mixture-of-experts/"
+  },
+  {
+    "description": "The advancement of Large Language Models (LLMs) for domain applications in fields such as materials science and engineering depends on the development of fine-tuning strategies that adapt models for specialized, technical capabilities. In this work, we explore the effects of Continued Pretraining ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "The advancement of Large Language Models (LLMs) for domain applications in fields such as materials science and engineering depends on the development of fine-tuning strategies that adapt models for specialized, technical capabilities. In this work, we explore the effects of Continued Pretraining (CPT), Supervised Fine-Tuning (SFT), and various preference-based optimization approaches, including Direct Preference Optimization (DPO) and Odds Ratio Preference Optimization (ORPO), on fine-tuned LLM performance.",
+      "npj Computational Materials - Fine-tuning large language models for domain adaptation: exploration of training strategies, scaling, model merging and synergistic capabilities",
+      "The remaining articles can be retrieved through following the previously established procedure, ideally all in PDF format, but for the scope of this study, the larger dataset provides us a brief look into the effects of training with a larger and more varied dataset. The detailed information on the extended dataset of biological materials is available in \u2018SI_source_articles_3.csv\u2019. For all training unless mentioned otherwise, we used the integrated dataset, which is the combination of the original 1034 biological materials papers and the 4323 spider silk papers.",
+      "A close inspection of the resulting designs further suggests a clear emergence of the leaf microstructure patterns, a result of the prompt and the fine-tuned ability of the generative model to incorporate this particular design idea. Fig. 20: Image generation results developed by lamm-mit/SmolLM-Base-1.7B-CPT-SFT-DPO, leading to this prompt used for image generation (through FLUX.1 [dev]43). Generate a futuristic, eco-friendly architectural concept utilizing a biomimetic composite material that integrates the structural efficiency of spider silk with the adaptive porosity of plant tissues."
+    ],
+    "title": "Fine-tuning large language models for domain adaptation: exploration ...",
+    "url": "https://www.nature.com/articles/s41524-025-01564-y"
+  },
+  {
+    "description": "What two decades of research taught us about sparse language models...",
+    "favicon_url": "https://you.com/favicon?domain=cameronrwolfe.substack.com&size=128",
+    "snippets": [
+      "In [1], authors attempt to overcome some of these challenges with the proposal of the Sparsely-Gated Mixture-Of-Experts layer, showing that MoEs can be applied to language modeling and translation domains. Prior issues with MoEs. Although work in [1] was one of the first to apply MoEs to language modeling, the idea of an MoE dates back to the early 1990s.",
+      "Then, we can use a gating mechanism to (sparsely) select the experts used to process each input. This idea has its roots in research on conditional computation in the early 1990s [15, 30] and allows us to train massive models in a tractable manner, which is helpful in domains\u2014such as language modeling\u2014that benefit from models with extra capacity.",
+      "Mixture of Experts (MoE) models defy this and instead select different parameters for each incoming example. The result is a sparsely-activated model\u2014with an outrageous number of parameters\u2014but a constant computational cost.\u201d - from [5] After studying over two decades of research on MoEs, we should have a decent grasp of the idea, what makes it effective, and how we can apply it to train better language models.",
+      "Notably, ST-MoE-32B is the first sparse model to achieve state-of-the-art results in the transfer learning domain, as prior models struggled heavily with overfitting during the finetuning process. ... Prior to the popularization of MoE-style LLMs, many papers were written on this topic beyond the research we explored in [5] and [24]. Some notable publications in this area are outlined below to provide a more comprehensive picture of research that has been conducted on MoEs in the language modeling domain."
+    ],
+    "title": "Mixture-of-Experts (MoE): The Birth and Rise of Conditional ...",
+    "url": "https://cameronrwolfe.substack.com/p/conditional-computation-the-birth"
+  },
+  {
+    "description": "We propose a mixture-of-experts approach for unsupervised domain adaptation from multiple sources. The key idea is to explicitly capture the relationship between a target example and different source domains. This relationship, expressed by a point-to-set metric, determines how to combine ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "We propose a mixture-of-experts approach for unsupervised domain adaptation from multiple sources. The key idea is to explicitly capture the relationship between a target example and different source domains. This relationship, expressed by a point-to-set metric, determines how to combine predictors trained on various domains.",
+      "Abstract page for arXiv paper 1809.02256: Multi-Source Domain Adaptation with Mixture of Experts",
+      "View a PDF of the paper titled Multi-Source Domain Adaptation with Mixture of Experts, by Jiang Guo and 1 other authors View PDF \u00b7 Abstract:We propose a mixture-of-experts approach for unsupervised domain adaptation from multiple sources. The key idea is to explicitly capture the relationship between a target example and different source domains.",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[1809.02256] Multi-Source Domain Adaptation with Mixture of Experts",
+    "url": "https://arxiv.org/abs/1809.02256"
+  },
+  {
+    "description": "Mixture-of-experts (MoE) is gaining increasing attention due to its unique properties and remarkable performance, especially for language tasks. By sparsely activating a subset of parameters for each token, MoE architecture could increase the model size without sacrificing computational efficiency, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "In DGOR/NSOR: Papers of the 16th Annual Meeting of DGOR in Cooperation with NSOR/Vortr\u00e4ge der 16. Jahrestagung der DGOR zusammen mit der NSOR, pages 622\u2013622. Springer. Komatsuzaki et al. (2022) Aran Komatsuzaki, Joan Puigcerver, James Lee-Thorp, Carlos Riquelme Ruiz, Basil Mustafa, Joshua Ainslie, Yi Tay, Mostafa Dehghani, and Neil Houlsby. 2022. Sparse upcycling: Training mixture-of-experts from dense checkpoints.",
+      "In other words, is MoE a simple ensemble of homogeneous experts or a modular combination of heterogeneous experts? Answering the above question comprehensively is non-trivial. Therefore, in this paper, we take the first step by investigating three recent MoE-based LLMs (Mixtral 8x7B Jiang et al.",
+      "(2023) notice the connection between routing connection and expert computation, and utilize the average of the experts\u2019 first layer weights to guide routing. Pham et al. (2024) proposes adding the expert\u2019s output norm as a supervision signal for routing training. These works provide insights into MoE from one or two viewpoints, while our work offers a systematic analysis and comparison. In this paper, we initially attempt to investigate the inner working mechanisms of MoEs by studying the parameters and outputs of three different MoE models.",
+      "Table 1: Basic information of models used for analysis. The abbreviations are used throughout our paper. Our experiments are conducted on several open-source MoE models, namely Mixtral 8x7B, DeepSeekMoE, and Grok-1, which demonstrate impressive performance across various domains."
+    ],
+    "title": "A Closer Look into Mixture-of-Experts in Large Language Models",
+    "url": "https://arxiv.org/html/2406.18219v1"
+  },
+  {
+    "description": "Explaining Mixture of Experts LLM (MoE): GPT4 is just 8 smaller Expert models; Mixtral is just 8 Mistral models. See the advantages and disadvantages of MoE. Find out how to calculate their number of parameters.",
+    "favicon_url": "https://you.com/favicon?domain=www.tensorops.ai&size=128",
+    "snippets": [
+      "The notion of categorizing these models into different domains of expertise is more of a conceptual tool to help us understand and navigate their diverse capabilities within the AI framework. In traditional models, all tasks are processed by a single, densely packed neural network, akin to a generalist handling every problem. However, for complex problems, it becomes hard to find a generalist model capable of handling everything which is why Mixture of Experts LLM is so valuable.",
+      "Mixture of Experts is a technique in AI where a set of specialized models (experts) are collectively orchestrated by a gating mechanism to handle different parts of the input space, optimizing for performance and efficiency. It leverages the fact that an ensemble of weaker language models specializing in specific tasks can produce more accurate results, similar to traditional ML ensemble methods.",
+      "Similar to traditional machine learning, where combining different models in ensemble techniques like boosting and bagging, Mixture of Experts in LLMs leverages a set of different transformer models, that are trained differently and leverages ML to also weight them differently to generate a complex inference pipeline.",
+      "It employs a routing layer that decides which expert or combination of experts to use for each task, optimizing resource usage. It only has 46.7B parameters, but only uses about 12.9B per token. Despite its impressive capabilities, Mixtral faces challenges like any other MoE model, particularly in training and data management. Mixtral is a sparse mixture-of-experts (SMoE) network."
+    ],
+    "title": "LLM Mixture of Experts Explained",
+    "url": "https://www.tensorops.ai/post/what-is-mixture-of-experts-llm"
+  },
+  {
+    "description": "Request PDF | On Jan 1, 2018, Jiang Guo and others published Multi-Source Domain Adaptation with Mixture of Experts | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "This paper addresses these challenges by proposing a novel approach, CausalDANN, to estimate causal effects using text transformations facilitated by large language models (LLMs). Unlike existing methods, our approach accommodates arbitrary textual interventions and leverages text-level classifiers with domain adaptation ability to produce robust effect estimates against domain shifts, even when only the control group is observed.",
+      "Multi-Source Attention for Unsupervised Domain Adaptation ... ... We evaluate KYC on three NLP tasks as services: NER, sentiment classification, and autocompletion based on predictive language modeling. We compare KYC against the baseline model (without the G \u03c6 network in Figure 5.3) and the mixture of experts (MoE) model",
+      "Experimental results across twelve domains on five public datasets show that Sci-LoRA significantly outperforms state-of-the-art large language models and demonstrates flexible generalization and adaptability in cross-domain lay paraphrasing. ... [20] to handle the multiple source domains. This method explicitly models the relationship between the target domain and various source domains by learning how to combine predictions from domain-specific experts.",
+      "... As the parameter scale increases for large language models (LLMs), parameter-efficient fine-tuning (PEFT) (Houlsby et al., 2019;Han et al., 2024) strategies like Low-Rank Adaptation (LoRA) (Hu et al., 2022) efficiently adapting LLMs to multi-ple data domains by fine-tuning a small subset of parameters. Motivated by the multisource domain adaptation of Mixture of Experts (MoE) (Cai et al., 2024;"
+    ],
+    "title": "Multi-Source Domain Adaptation with Mixture of Experts | Request PDF",
+    "url": "https://www.researchgate.net/publication/334115495_Multi-Source_Domain_Adaptation_with_Mixture_of_Experts"
+  },
+  {
+    "description": "On the first level, the gating function chooses to use either a \"shared\" feedforward layer, or to use the experts. If using the experts, then another gating function computes the weights and chooses the top-2 experts. MoE large language models can be adapted for downstream tasks by instruction ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "On the first level, the gating function chooses to use either a \"shared\" feedforward layer, or to use the experts. If using the experts, then another gating function computes the weights and chooses the top-2 experts. MoE large language models can be adapted for downstream tasks by instruction tuning.",
+      "The adaptive mixtures of local experts uses a Gaussian mixture model. Each expert simply predicts a Gaussian distribution, and totally ignores the input.",
+      "After deep learning, MoE found applications in running the largest models, as a simple way to perform conditional computation: only parts of the model are used, the parts chosen according to what the input is. The earliest paper that applies MoE to deep learning dates back to 2013, which proposed to use a different gating network at each layer in a deep neural network. Specifically, each gating is a linear-ReLU-linear-softmax network, and each expert is a linear-ReLU network.",
+      "As of 2023, models large enough to use MoE tend to be large language models, where each expert has on the order of 10 billion parameters. Other than language models, Vision MoE is a Transformer model with MoE layers. They demonstrated it by training a model with 15 billion parameters.",
+      "A series of large language models from Google used MoE. GShard uses MoE with up to top-2 experts per layer. Specifically, the top-1 expert is always selected, and the top-2th expert is selected with probability proportional to that experts' weight according to the gating function."
+    ],
+    "title": "Mixture of experts - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Mixture_of_experts"
+  },
+  {
+    "description": "Mixture-of-experts (MoE) is gaining increasing attention due to its unique properties and remarkable performance, especially for language tasks. By sparsely activating a subset of parameters for each token, MoE architecture could increase the model size without sacrificing computational efficiency, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Mixture-of-experts (MoE) is gaining increasing attention due to its unique properties and remarkable performance, especially for language tasks. By sparsely activating a subset of parameters for each token, MoE architecture could increase the model size without sacrificing computational efficiency, achieving a better trade-off between performance and training costs.",
+      "Abstract page for arXiv paper 2406.18219: A Closer Look into Mixture-of-Experts in Large Language Models",
+      "View a PDF of the paper titled A Closer Look into Mixture-of-Experts in Large Language Models, by Ka Man Lo and 4 other authors View PDF HTML (experimental)",
+      "In this paper, we make an initial attempt to understand the inner workings of MoE-based large language models. Concretely, we comprehensively study the parametric and behavioral features of three popular MoE-based models and reveal some intriguing observations, including 1) Neurons act like fine-grained experts; 2) The router of MoE usually selects experts with larger output norms; 3) The expert diversity increases as the layer increases, while the last layer is an outlier, which is further validated by an initial experiment."
+    ],
+    "title": "[2406.18219] A Closer Look into Mixture-of-Experts in Large Language ...",
+    "url": "https://arxiv.org/abs/2406.18219"
+  },
+  {
+    "description": "Mixture of Experts (MoE) is a machine learning technique where multiple specialized models (experts) work together, with a gating network selecting the best expert for each input.",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "Training large language models (LLMs) often demands significant computational resources, which can be a barrier for many organizations and researchers. The mixture of experts (MoE) technique addresses this challenge by breaking down large models into smaller, specialized networks. The concept MoE originated from the 1991 paper Adaptive Mixture of Local Experts.",
+      "We covered the core components of MoE, including expert networks and the gating network, and discussed its training and inference processes. Benefits such as improved performance, scalability, and adaptability were highlighted, along with applications in natural language processing, computer vision, and recommendation systems. Despite challenges in training complexity and model size, MoE offers a promising method for advancing AI capabilities.",
+      "Output: This is the final answer or solution that the AI model produces after the experts have done their work. ... Efficiency: Only the experts who are good at a particular part of the problem are used, saving time and computing power. Flexibility: You can easily add more experts or change their specialties, making the system adaptable to different problems.",
+      "For instance, in a language processing task, one component might concentrate on syntax while another on semantics. The training for each component follows a standard neural network training process, where the model learns to minimize the loss function for its specific data subset. The gating network is tasked with learning to select the most suitable expert for a given input."
+    ],
+    "title": "What Is Mixture of Experts (MoE)? How It Works, Use Cases & More ...",
+    "url": "https://www.datacamp.com/blog/mixture-of-experts-moe"
+  },
+  {
+    "description": "Dive into the Mixture-of-Experts paradigm, its evolution, and its transformative potential in the world of deep learning....",
+    "favicon_url": "https://you.com/favicon?domain=deepgram.com&size=128",
+    "snippets": [
+      "The authors introduced a new type of network layer called the \u201cSparsely-Gated Mixture-of-Experts Layer.\u201d They are built on previous iterations of MoE and aim to provide a general-purpose neural network component that can be adapted to different types of tasks.",
+      "It introduces the idea of training experts on specific subtasks of a complex predictive modeling problem. In a typical ensemble scenario, all models are trained on the same dataset, and their outputs are combined through simple averaging, weighted mean, or majority voting. However, in Mixture-of-Experts, each \u201cexpert\u201d model within the ensemble is only trained on a subset of data where it can achieve optimal performance, thus narrowing the model\u2019s focus.",
+      "Unlike traditional MoE methods, all experts are trained jointly with the MoE layer on the same dataset. It is fascinating how each expert can become \u201cspecialized\u201d in their own task, and experts in MoE do not collapse into a single model. The paper \u201cTowards Understanding Mixture of Experts in Deep Learning\u201d by Zixiang Chen et al.",
+      "Additionally, Google Research proposed \u201cExpert Choice Routing\u201d in November 2022, aiming to improve upon the potential flaw and explicitly targeting language models. Unlike traditional MoE models, the EC routing method is founded on a different approach to assigning \u201cexperts\u201d to \u201ctokens\u201d within a Mixture-of-Experts (MoE) model."
+    ],
+    "title": "Mixture of Experts: How an Ensemble of AI Models Act as One | Deepgram",
+    "url": "https://deepgram.com/learn/mixture-of-experts-ml-model-guide"
+  }
+]

@@ -1,0 +1,291 @@
+[
+  {
+    "description": "Also, bootstrapping can be ... statistical computer packages. Scholars have recommended more bootstrap samples as available computing power has increased. If the results may have substantial real-world consequences, then one should use as many samples as is reasonable, given available ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Also, bootstrapping can be time-consuming and there are not many available software for bootstrapping as it is difficult to automate using traditional statistical computer packages. Scholars have recommended more bootstrap samples as available computing power has increased. If the results may have substantial real-world consequences, then one should use as many samples as is reasonable, given available computing power and time.",
+      "Although there are arguments in favor of using studentized residuals; in practice, it often makes little difference, and it is easy to compare the results of both schemes. When data are temporally correlated, straightforward bootstrapping destroys the inherent correlations. This method uses Gaussian process regression (GPR) to fit a probabilistic model from which replicates may then be drawn.",
+      "For practical problems with finite samples, other estimators may be preferable. Asymptotic theory suggests techniques that often improve the performance of bootstrapped estimators; the bootstrapping of a maximum-likelihood estimator may often be improved using transformations related to pivotal quantities. The bootstrap distribution of a parameter-estimator is often used to calculate confidence intervals for its population-parameter.",
+      "As the population is unknown, the true error in a sample statistic against its population value is unknown. In bootstrap-resamples, the 'population' is in fact the sample, and this is known; hence the quality of inference of the 'true' sample from resampled data (resampled \u2192 sample) is measurable. More formally, the bootstrap works by treating inference of the true probability distribution J, given the original data, as being analogous to an inference of the empirical distribution \u0134, given the resampled data.",
+      "Bootstrap aggregating (bagging) is a meta-algorithm based on averaging model predictions obtained from models trained on multiple bootstrap samples. In situations where an obvious statistic can be devised to measure a required characteristic using only a small number, r, of data items, a corresponding statistic based on the entire sample can be formulated. Given an r-sample statistic, one can create an n-sample statistic by something similar to bootstrapping (taking the average of the statistic over all subsamples of size r)."
+    ],
+    "title": "Bootstrapping (statistics) - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Bootstrapping_(statistics)"
+  },
+  {
+    "description": "Bootstrapping is a statistical method that resamples a dataset to create confidence intervals and perform hypothesis tests.",
+    "favicon_url": "https://you.com/favicon?domain=statisticsbyjim.com&size=128",
+    "snippets": [
+      "However, as your data diverge from the normal distribution, I\u2019d expect bootstrapping to become the better analysis. However, I\u2019m not familiar enough with that literature to give you practical advice for making that decision. In statistics, knowing which test is better typically depends on understanding the characteristics of your data and the stringency of the relevant requirements.",
+      "I\u2019ve always read that if my probability distribution is skewed then use the median instead of the mean because the median is a better measure of central value. I want to make the most accurate prediction as possible. Accuracy is my goal. I don\u2019t feel comfortable using the nonparametric tests after reading your parametric/nonparametric tests post. I feel more comfortable using Bootstrap sampling since so much praise have been given to it from other statisticians.",
+      "In this blog post, I explain bootstrapping basics, compare bootstrapping to conventional statistical methods, and explain when it can be the better method. Additionally, I\u2019ll work through an example using real data to create bootstrapped confidence intervals. Both bootstrapping and traditional methods use samples to draw inferences about populations. To accomplish this goal, these procedures treat the single sample that a study obtains as only one of many random samples that the study could have collected. From a single sample, you can calculate a variety of sample statistics, such as the mean, median, and standard deviation\u2014but we\u2019ll focus on the mean here.",
+      "A primary difference between bootstrapping and traditional statistics is how they estimate sampling distributions. Traditional hypothesis testing procedures require equations that estimate sampling distributions using the properties of the sample data, the experimental design, and a test statistic. To obtain valid results, you\u2019ll need to use the proper test statistic and satisfy the assumptions."
+    ],
+    "title": "Introduction to Bootstrapping in Statistics with an Example - ...",
+    "url": "https://statisticsbyjim.com/hypothesis-testing/bootstrapping/"
+  },
+  {
+    "description": "Bootstrapping statistics is a form of hypothesis testing that involves resampling an initial sample to create multiple new simulated samples of a population.",
+    "favicon_url": "https://you.com/favicon?domain=builtin.com&size=128",
+    "snippets": [
+      "The purpose of bootstrapping statistics is to give teams an easy, cost-effective way to test hypotheses and make accurate calculations, even when they have limited data to start. Traditional statistics only takes one sample from a population and uses that sample to draw estimates for the larger population.",
+      "Bootstrapping statistics is a form of hypothesis testing that involves resampling a single data set to create a multitude of simulated samples. Those samples are used to calculate standard errors, confidence intervals and for hypothesis testing. This approach allows you to generate a more accurate sample from a smaller data set than the traditional method.",
+      "This process allows for the calculation of standard errors, confidence intervals, and hypothesis testing,\u201d according to a post on bootstrapping statistics from statistician Jim Frost. A bootstrapping approach is an extremely useful alternative to the traditional method of hypothesis testing, as it\u2019s fairly simple and it mitigates some of the pitfalls encountered within the traditional approach.",
+      "While it might be tempting to think that an outlier can show up multiple times within the resampled data and skew the results and thus, making the traditional approach better, the bootstrapping approach relies as much on the data as the traditional approach.  \u00b7 Both approaches require the use of appropriately drawn samples to make inferences about populations. However, the biggest difference between these two methods is the mechanics behind estimating the sampling distribution. The traditional procedure requires one to have a test statistic that satisfies particular assumptions in order to achieve valid results, and this is largely dependent on the experimental design."
+    ],
+    "title": "What Is Bootstrapping Statistics? | Built In",
+    "url": "https://builtin.com/data-science/bootstrapping-statistics"
+  },
+  {
+    "description": "Bootstrapping is a resampling method for estimating statistics like confidence intervals and standard errors by drawing multiple samples with replacement.",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "Before we get started, if you are interested in data science, consider taking these DataCamp courses on data science and statistics, such as our Statistical Inference in R skill track and our Foundations of Inference in Python course. Let\u2019s start by anchoring bootstrapping correctly in its place among resampling methods. Although there are different kinds of resampling methods, they share one important thing in common: they mimic the sampling process. The reason we use a resampling method is because it isn\u2019t practical to keep taking new samples from our population of interest, and resampling is a sort of shortcut.",
+      "It is because of this practical limitation that we use a resampling method in order to generate statistics about our sample, such as the standard error. There are four main types of resampling methods. It\u2019s worth mentioning the other resampling methods because they share a common history of statistical innovation and improvement. In particular, bootstrapping has been developed as an extension or modification or improvement upon the jackknife method.",
+      "Both methods allow you to estimate statistics such as standard errors and confidence intervals. However, non-parametric bootstrapping offers more flexibility for real-world datasets, especially when dealing with small or complex samples, and is more commonly used in practice.",
+      "We can bootstrap in R by using the infer package from the tidymodels library. Printing this table to our console gives us a data frame of the desired statistic for each replicate."
+    ],
+    "title": "What is Bootstrapping? A Complete Guide | DataCamp",
+    "url": "https://www.datacamp.com/tutorial/bootstrapping"
+  },
+  {
+    "description": "Bootstrapping is an incredibly intuitive and powerful tool in statistics. We resample sampled data many times to generate a sampling distribution for a given st",
+    "favicon_url": "https://you.com/favicon?domain=www.lancaster.ac.uk&size=128",
+    "snippets": [
+      "But what can we do when the sampling distribution is not expected to look like a normal distribution as is the case for different statistics of interest such as the median or when we can\u2019t assume that the sampling distribution will be normal. In this case we can use a technique known as Bootstrapping, where we resample the sampled data many times to generate a sampling distribution for a given statistic from which we can calculate a standard error for that statistic.",
+      "So, be sure to have bootstrapping techniques in mind when you are faced with data that doesn\u2019t appear to be workable with traditional techniques. ... Best view i have ever seen ! ... We use cookies to ensure that we give you the best experience on our website.",
+      "In this case, the median of this sample is 9. Now comes the key part of bootstrapping. Repeating the resampling and calculating the statistic for \u201cB\u201d datasets. Here B is a placeholder for a large number. The choice of B is up to you but typically it is 10,000 or more.",
+      "Bootstrapping is an incredibly intuitive and powerful tool in statistics, but it is important to note that it is not generating new data out of the blue. The central assumption of bootstrapping is that the sampled data you work with is representative of the population of the whole."
+    ],
+    "title": "Bootstrapping in Statistics \u2013 JACK TRAINER",
+    "url": "https://www.lancaster.ac.uk/stor-i-student-sites/jack-trainer/bootstrapping-in-statistics/"
+  },
+  {
+    "description": "93 votes, 39 comments. Apparently people do \"bootstrapping\" where we take a small sample, and then resample from it with replacement over and over\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/[Deleted Account] - 93 votes and 39 comments",
+      "If I understand your question correctly, bootstrapping is used to learn about the sampling distribution, not the individual sample you pulled. Bootstrapping, with it's resampling process, allows you to approximate what all the potential samples you could in theory take and shows you what that distribution looks like. You can then evaluate where your sample measures up against this distribution and apply more standard statistical trchniques.",
+      "In fact, bootstrapping is a valid technique for numerically integrating a function where no analytic solution exists, sometimes referred to as Monte-Carlo integration. The only information that captures *everything* about a sample, is the sample. Sure, you can take summary statistics and all, but these are only useful in the context of some model, and models are always somewhat wrong.",
+      "You get to estimate any weird statistic you want from a simple procedure and you can build in calculations of statistics that have no known arithmetic formula or that have very complex ones with basically the same ease as you can calculate the statistic for each bootstrapped sample along the way and get its distribution. ... But we already know Everything there is to know about that sample. Right, but bootstrapping is used to approximate the distribution of a statistic calculated from a sample."
+    ],
+    "title": "r/statistics on Reddit: [Question] What does \"bootstrapping\" ...",
+    "url": "https://www.reddit.com/r/statistics/comments/m2vi7o/question_what_does_bootstrapping_accomplish_that/"
+  },
+  {
+    "description": "I recently used bootstrapping to estimate confidence intervals for a project. Someone who doesn't know much about statistics recently asked me to explain why bootstrapping works, i.e., why is it that",
+    "favicon_url": "https://you.com/favicon?domain=stats.stackexchange.com&size=128",
+    "snippets": [
+      "I recently used bootstrapping to estimate confidence intervals for a project. Someone who doesn't know much about statistics recently asked me to explain why bootstrapping works, i.e., why is it that resampling the same sample over and over gives good results.",
+      "The late Clifford Lunneborg had a nice book. Chihara and Hesterberg recently came out with an intermediate level mathematical statistics book that covers the bootstrap and other resampling methods. Even advanced books like Lahiri's or Shao and Tu's give good conceptual explanations.",
+      "Further, the bootstrap method gives you an estimate of the sampling distribution of your statistic from the empirical distribution of the original sample, so you can analyze further properties of the statistic besides standard error.",
+      "I realized that although I'd spent a lot of time understanding how to use it, I don't really understand why bootstrapping works. Specifically: if we are resampling from our sample, how is it that we are learning something about the population rather than only about the sample? There seems to be a leap there which is somewhat counter-intuitive. I have found a few answers to this question here which I half-understand. Particularly this one. I am a \"consumer\" of statistics, not a statistician, and I work with people who know much less about statistics than I do."
+    ],
+    "title": "bootstrap - Explaining to laypeople why bootstrapping works - Cross ...",
+    "url": "https://stats.stackexchange.com/questions/26088/explaining-to-laypeople-why-bootstrapping-works"
+  },
+  {
+    "description": "Enroll today at Penn State World Campus to earn an accredited degree or certificate in Statistics.",
+    "favicon_url": "https://you.com/favicon?domain=online.stat.psu.edu&size=128",
+    "snippets": [
+      "You can create a bootstrap sample to find the approximate sampling distribution of any statistic, not just the median.",
+      "If we have sample data, then we can use bootstrapping methods to construct a bootstrap sampling distribution to construct a confidence interval.",
+      "Bootstrapping is a resampling procedure that uses data from one sample to generate a sampling distribution by repeatedly taking random samples from the known sample, with replacement.",
+      "Sampling with replacement is important. If we did not sample with replacement, we would always get the same sample median as the observed value. The sample we get from sampling from the data with replacement is called the bootstrap sample."
+    ],
+    "title": "11.2.1 - Bootstrapping Methods | STAT 500",
+    "url": "https://online.stat.psu.edu/stat500/lesson/11/11.2/11.2.1"
+  },
+  {
+    "description": "The bootstrap method is a resampling technique used to estimate statistics on a population by sampling a dataset with replacement. It can be used to estimate summary statistics such as the mean or standard deviation. It is used in applied machine learning to estimate the skill of machine learning ...",
+    "favicon_url": "https://you.com/favicon?domain=machinelearningmastery.com&size=128",
+    "snippets": [
+      "The bootstrap method is a resampling technique used to estimate statistics on a population by sampling a dataset with replacement. It can be used to estimate summary statistics such as the mean or standard deviation. It is used in applied machine learning to estimate the skill of machine learning models when making predictions on data not included in the training\u2026",
+      "This allows a given observation to be included in a given small sample more than once. This approach to sampling is called sampling with replacement. The process for building one sample can be summarized as follows: Choose the size of the sample. While the size of the sample is less than the chosen size ... The bootstrap method can be used to estimate a quantity of a population. This is done by repeatedly taking small samples, calculating the statistic, and taking the average of the calculated statistics.",
+      "Smaller values can be used will further add variance to the statistics calculated on the sample of estimated values. Ideally, the sample of estimates would be as large as possible given the time resources, with hundreds or thousands of repeats. We can make the bootstrap procedure concrete with a small worked example.",
+      "This sample of statistics can then be summarized by calculating a mean, standard deviation, or other summary values to give a final usable estimate of the statistic. We do not have to implement the bootstrap method manually. The scikit-learn library provides an implementation that will create a single bootstrap sample of a dataset. The resample() scikit-learn function can be used."
+    ],
+    "title": "A Gentle Introduction to the Bootstrap Method - MachineLearnin...",
+    "url": "https://machinelearningmastery.com/a-gentle-introduction-to-the-bootstrap-method/"
+  },
+  {
+    "description": "Bootstrapping in statistics is a powerful resampling technique that enables researchers to estimate various statistics by repeatedly drawing samples from an existing dataset, with replacement. This method generates numerous simulated samples, facilitating the estimation of summary statistics, ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ebsco.com&size=128",
+    "snippets": [
+      "Bootstrapping in statistics is a powerful resampling technique that enables researchers to estimate various statistics by repeatedly drawing samples from an existing dataset, with replacement. This method generates numerous simulated samples, facilitating the estimation of summary statistics, construction of confidence intervals, calculation of standard errors, and execution of hypothesis tests.",
+      "The former provides a range of values for an unknown parameter of the population through measurement of a sample, with this measurement being expressed both in terms of an interval and the degree of confidence that the parameter lies within the interval. In the latter, a researcher makes a claim about a given population through the analysis of a statistical sample. Bootstrapping is a commonly used technique in inferential statistics.",
+      "Originating from the work of statistician Bradley Efron in 1979, bootstrapping has gained popularity as computational capabilities have advanced, allowing for extensive repetition of the sampling process. Unlike traditional hypothesis testing, which relies on specific equations and sample properties, bootstrapping uses the sample data as its own population, creating a more accessible and interpretable approach to statistical analysis.",
+      "In short, bootstrapping is a means of estimating statistics by sampling an existing dataset with replacement. It is often used to estimate summary statistics, construct confidence intervals, calculate standard errors, or perform hypothesis testing for various kinds of sample statistics."
+    ],
+    "title": "Bootstrapping (statistics) | EBSCO Research Starters",
+    "url": "https://www.ebsco.com/research-starters/science/bootstrapping-statistics"
+  },
+  {
+    "description": "Explore how data scientists apply bootstrapping to glean insights from smaller data samples across business and finance realms.",
+    "favicon_url": "https://you.com/favicon?domain=www.mastersindatascience.org&size=128",
+    "snippets": [
+      "For the question of how many times to bootstrap, 1,000 times is often appropriate, and in some cases more can help to find a high level of certainty about the reliability of your statistics. Bootstrapping can also be accomplished with as few as 50 samples.  ... The Data Science: Text Analysis Using R online certificate course from the London School of Economics and Political Science (LSE) equips you with the technical skills to perform text analysis in a practical, hands-on manner.",
+      "Data Science vs. Statistics ... You might have heard the word bootstrapping used in business or finance parlance to describe the way that a startup was self-funded and built from the ground up by its founders. That meaning of bootstrapping stems from the phrase \u201cpull yourself up by your bootstraps,\u201d meaning to succeed on your own, without help from anyone else.",
+      "In a similar way to how bootstrapping is used to infer population results from averaged statistical measures calculated on multiple bags of random samples with replacement, it can be used to infer population results of machine learning models trained on random samples with replacement.",
+      "Particularly useful for assessing the quality of a machine learning model, bootstrapping is a method of inferring results for a population from results found on a collection of smaller random samples of the population, using replacement during the sampling process.  \u00b7 The study of data science will help you acquire a rich understanding of statistical and machine learning concepts."
+    ],
+    "title": "What Is Bootstrapping? | Master's in Data Science",
+    "url": "https://www.mastersindatascience.org/learning/machine-learning-algorithms/bootstrapping/"
+  },
+  {
+    "description": "Statistics is the science of learning from data. Statistical knowledge aids in the proper methods for collecting data, using correct methods for analyzing data, and effectively presenting the results derived from data.",
+    "favicon_url": "https://you.com/favicon?domain=www.linkedin.com&size=128",
+    "snippets": [
+      "A bootstrapping approach is an extremely useful alternative to the traditional method of hypothesis testing as it is fairly simple and it mitigates some of the pitfalls encountered within the traditional approach, which will be discussed later. Statistical inference generally relies on the sampling distribution and the standard error of the feature of interest.",
+      "The traditional procedure requires one to have a test statistic that satisfies particular assumptions in order to achieve valid results, and this is largely dependent on the experimental design. The traditional approach also uses theory to tell what the sampling distribution should look like, but the results fall apart if the assumptions of the theory are not met. The bootstrapping method, on the other hand, takes the original sample data and then resamples it to create many [simulated] samples.",
+      "Cline, Graysen. Nonparametric Statistical Methods Using R. United Kingdom, EDTECH, 2019. Forst, Jim. \u201cIntroduction to Bootstrapping in Statistics with an Example\u201d. Statistics by Jim.",
+      "It means then that suitably accurate information can be obtained quickly and relatively inexpensively from an appropriately drawn sample. However, many things can affect how well a sample reflects the population; and therefore, how valid and reliable the conclusions will be. Because of this, let us talk about bootstrapping statistics."
+    ],
+    "title": "Bootstrapping Statistics. What it is and why it\u2019s used.",
+    "url": "https://www.linkedin.com/pulse/bootstrapping-statistics-what-why-its-used-trist-n-joseph"
+  },
+  {
+    "description": "Bootstrapping has enormous potential in statistics education and practice, but there are subtle issues and ways to go wrong. For example, the common combination of nonparametric bootstrapping and bootstrap percentile confidence intervals is less ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Instead, think of it this way: the data show that the population is skewed, take that as given; we may have observed too few observations from the long right tail, so the confidence interval needs to reach far to the right to protect against that\u2014many (small) SE\u2019s to the right. There are different ways to compute quantiles common in statistical practice. For intervals based on quantiles of the bootstrap distribution, I recommend letting the kth largest value in the bootstrap distribution be the (k + 1)/r quantile, and interpolating for other quantiles.",
+      "Non-commercial re-use, distribution, and reproduction in any medium, provided the original work is properly attributed, cited, and is not altered, transformed, or built upon in any way, is permitted. The moral rights of the named author(s) have been asserted. ... Bootstrapping has enormous potential in statistics education and practice, but there are subtle issues and ways to go wrong.",
+      "Resampling methods, including permutation tests and the bootstrap, have enormous potential in statistics education and practice. They are beginning to make inroads in education. Cobb (2007) was influential in arguing for the pedagogical value of permutation tests in particular. Undergraduate textbooks that consistently use resampling as tools in their own right and to motivate classical methods are beginning to appear, including Lock et al.",
+      "The focus here is on relatively simple bootstrap methods and their pedagogical application, particularly for Stat 101 (introductory statistics with an emphasis on data analysis) and Mathematical Statistics (a first course in statistical theory, using math and simulation), though the methods are useful elsewhere in the curriculum. For more background on the bootstrap and a broader array of applications, see Efron and Tibshirani (1993) and Davison and Hinkley (1997). Hesterberg (2014) is a longer version of this article. Hesterberg et al. (2005) is an introduction to the bootstrap and permutation tests for Stat 101 students. Section 1 introduces the bootstrap for estimators and t statistics, and discusses its pedagogical and practical value."
+    ],
+    "title": "What Teachers Should Know About the Bootstrap: Resampling in the ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4784504/"
+  },
+  {
+    "description": "Discover the power of bootstrapping in statistics, including its applications in data analysis, hypothesis testing, and confidence interval construction.",
+    "favicon_url": "https://you.com/favicon?domain=www.numberanalytics.com&size=128",
+    "snippets": [
+      "When communicating findings, it is essential to clearly explain the bootstrapping method used and the results obtained. Bootstrapping is a powerful statistical technique that provides a robust and flexible method for estimating population parameters, testing hypotheses, and constructing confidence intervals. By understanding the principles of bootstrapping, advanced techniques, and best practices, researchers can unlock the full potential of bootstrapping in their data analysis.",
+      "Bootstrapping is a powerful statistical technique that has revolutionized the way we analyze data. By resampling with replacement from the original dataset, bootstrapping provides a robust and flexible method for estimating population parameters, testing hypotheses, and constructing confidence intervals. In this article, we will explore the fundamentals of bootstrapping, its advanced techniques, and best practices, as well as common pitfalls to avoid.",
+      "The resulting bootstrap sample is then used to estimate the desired population parameter. The key principle behind bootstrapping is that the bootstrap sample is representative of the original dataset, and therefore, the sampling distribution of the bootstrap statistic is similar to the sampling distribution of the original statistic.",
+      "Bootstrapping can be used to estimate a wide range of population parameters, including means, proportions, and regression coefficients. The basic steps involved in estimating a population parameter using bootstrapping are: Resample with replacement: Resample with replacement from the original dataset to obtain a bootstrap sample. Calculate the bootstrap statistic: Calculate the desired statistic (e.g., mean, proportion, regression coefficient) using the bootstrap sample."
+    ],
+    "title": "The Power of Bootstrapping: A Statistical Guide",
+    "url": "https://www.numberanalytics.com/blog/power-bootstrapping-statistical-guide"
+  },
+  {
+    "description": "These resamples can be used to estimate confidence intervals (which will be the focus of this blog post), reduce biases, perform hypothesis tests, and more. With bootstrapping, we are quite literally pulling our data up by its bootstraps. Let's take a look at how it works. Take n repeated random samples, with replacement, from the given dataset. These are called \"resamples\" and should be the same size as the original sample. Calculate the statistic ...",
+    "favicon_url": "https://you.com/favicon?domain=library.virginia.edu&size=128",
+    "snippets": [
+      "These resamples can be used to estimate confidence intervals (which will be the focus of this blog post), reduce biases, perform hypothesis tests, and more. With bootstrapping, we are quite literally pulling our data up by its bootstraps. Let's take a look at how it works. Take n repeated random samples, with replacement, from the given dataset. These are called \"resamples\" and should be the same size as the original sample. Calculate the statistic of interest for each of these resamples, e.g.",
+      "Bootstrapping is a statistical procedure that utilizes resampling (with replacement) of a sample to infer properties of a wider population. More often than not, we want to understand the properties of a population but we only have access to a small sample of that population. Sometimes, we are unable to gather more data because it is too expensive, too time consuming, or just not possible. When this is the situation, we must use the sample we already have in a clever way to learn about the characteristics of the population we are interested in.",
+      "Now our goal is to bootstrap this data to estimate a 95% confidence interval on the Hubble Constant. Recall bootstrapping requires that we resample the data many times so that we get a distribution of a particular statistic, in this case the Hubble Constant, that we can use to estimate a confidence interval on that statistic.",
+      "We then used this confidence interval to calculate the confidence interval on the age of the universe. These confidence intervals serve as good proxies for that of the true Hubble Constant/age of the universe if we could calculate these values using relative velocity and distance data from the entire population of galaxies in the universe. B. Efron. (1979). \u201cBootstrap Methods: Another Look at the Jackknife.\u201d The Annals of Statistics, 7(1) 1-26."
+    ],
+    "title": "Bootstrap Estimates of Confidence Intervals | UVA Library",
+    "url": "https://library.virginia.edu/data/articles/bootstrap-estimates-of-confidence-intervals"
+  },
+  {
+    "description": "Enroll today at Penn State World Campus to earn an accredited degree or certificate in Statistics.",
+    "favicon_url": "https://you.com/favicon?domain=online.stat.psu.edu&size=128",
+    "snippets": [
+      "In Lesson 4.1 we saw how we could construct a sampling distribution when population values were known. What if population values are not known? This is usually the case. If we have sample data, then we can use bootstrapping methods to construct a bootstrap sampling distribution to construct a confidence interval.",
+      "This is known as \"sampling with replacement\" because we are putting each case back into the sample after recording their height. We would repeat this process until we have selected 15 values. Because we are sampling with replacement, some individuals may appear in the bootstrap sample more than once. We would use those 15 selected values to compute a bootstrapped sample mean.",
+      "The distribution of many bootstrapped sample means is known as the bootstrap distribution or bootstrap sampling distribution.  \u00b7 The following pages include additional video examples that use StatKey to demonstrate the construction of bootstrap sampling distributions.",
+      "Bootstrapping is a resampling procedure that uses data from one sample to generate a sampling distribution by repeatedly taking random samples from the known sample."
+    ],
+    "title": "4.3 - Introduction to Bootstrapping | STAT 200",
+    "url": "https://online.stat.psu.edu/stat200/lesson/4/4.3"
+  },
+  {
+    "description": "To generate a new dataset, model ... bootstrap. In practice, a routine for conducting PPC is often incorporated into the MCMC procedure when analyzing the observed data such that new datasets are generated using the parameter values in the current iteration rather than resampling the joint posterior distribution after completing the analysis. A Bayesian p-value is calculated as the proportion of times the selected summary statistic calculated ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "To generate a new dataset, model parameter values are drawn from their joint posterior distribution, occupancy and detection probabilities are calculated, then random detection histories generated in the same manner as for the parametric bootstrap. In practice, a routine for conducting PPC is often incorporated into the MCMC procedure when analyzing the observed data such that new datasets are generated using the parameter values in the current iteration rather than resampling the joint posterior distribution after completing the analysis. A Bayesian p-value is calculated as the proportion of times the selected summary statistic calculated for the generated data is greater than the value calculated from the observed data.",
+      "As with the ordinal bootstrap method, the estimated standard error is given by the standard deviation of all replicated estimates. ... Bootstrapping is a common resampling technique in statistics, the basic version of which samples from the observed empirical distribution with replacement.",
+      "Fit a model with the same structure as in step 1 to the bootstrapped data set. ... Repeat steps 3\u20135 a large number of times to approximate the distribution of the test statistic, given the fitted model is correct.",
+      "Bootstrapping is a type of statistical resampling that employs Monte Carlo methods applied to observed data. This computer-intensive method can be used to determine the sampling distribution of a summary statistic (mean, median, and standard deviation) or relationship (correlation and regression coefficient) when these sampling distributions are extremely difficult to obtain analytically."
+    ],
+    "title": "Bootstrapping - an overview | ScienceDirect Topics",
+    "url": "https://www.sciencedirect.com/topics/earth-and-planetary-sciences/bootstrapping"
+  },
+  {
+    "description": "The wiki page for bootstrapping says that you use it in the case where the underlying distribution is unknown. Why is bootstrapping, or sampling with replacement, better than just calculating the",
+    "favicon_url": "https://you.com/favicon?domain=datascience.stackexchange.com&size=128",
+    "snippets": [
+      "If you are doing inferences about the mean of the population, than you can rely on central limit theorem and build a statistic for that. The same for variance. However what about estimating something which does not rely on general assumptions? Bootstrap works for any kind of statistic, this is where it lies its power. It's simple, and does require only minimal assumptions. And there is another problem which appears in practice.",
+      "Why is bootstrapping, or sampling with replacement, better than just calculating the variance and other properties from the data directly? ... In general when you are evaluating statistics there are two main approaches: either you use some distributional assumptions (a generating model for your data) or not.",
+      "Bootstrapping respects the distribution that your existing data have, so you don't need to make any assumptions regarding the distribution of your data. This is important because in most statistical approaches there are such assumptions, which sometimes we don't even realise or check before we apply them.",
+      "And what about if your distribution is skewed. While it's true that CLT relies only on i.i.d. the needed sample size for estimating a mean on a skewed distribution is in general greater that for a symmetric distribution. I found bootstrapping very useful in two main situations: when the sample is fairly small (but not tiny) and when the distribution is not clean (suppose it's a mixture of two distributions)."
+    ],
+    "title": "statistics - Why use bootstrapping? - Data Science Stack Exchange",
+    "url": "https://datascience.stackexchange.com/questions/10404/why-use-bootstrapping"
+  },
+  {
+    "description": "Introduction to Probability and Statistics at UC Berkeley",
+    "favicon_url": "https://you.com/favicon?domain=stat20.berkeley.edu&size=128",
+    "snippets": [
+      "At a more reasonable sample size, however, this bootstrap distribution will become a good approximation of the sampling distribution and therefore can be used to calculate a confidence interval. ... For a 95% confidence interval, the interval spans the middle 95% of the bootstrap statistics which is equivalent to finding the 2.5% and 97.5% quantiles of the bootstrap distribution. The confidence level can be adapted by modifying the quantiles accordingly. Let\u2019s see the bootstrap in practice in two settings with two very different statistics.",
+      "While a SRS (and other random mechanisms for selecting data) typically gives us representative data, that is not always the case. We may be unlucky and get an oddball sample. The bootstrap cannot recover from this problem. The bootstrap population will not look like the true population, and so the bootstrap sampling distribution will not be useful. Unfortunately, we don\u2019t know when this is happening. However, this is usually not a problem for large samples. The bootstrap works well when the statistic is a mean, or something like a mean, such as a regression coefficient or a standard deviation.",
+      "For step four we repeat this process of drawing a bootstrap sample and calculating another bootstrap statistic. In the diagram, two additional statistics are calculated, but in practice this process will be repeated many many times.",
+      "The bootstrap is based on the observation that if your sample is representative of the population, then the empirical distribution should be a good stand-in for the population distribution. One can then simulate the process of drawing multiple samples from the population by drawing new samples (called resamples) from the empirical distribution. ... A procedure used to assess sampling variability in statistics."
+    ],
+    "title": "Bootstrapping \u2013 Another Approach to Confidence Intervals",
+    "url": "https://stat20.berkeley.edu/spring-2025/3-generalization/09-bootstrapping/notes.html"
+  },
+  {
+    "description": "11 votes, 13 comments. I know the entire procedure of bootstrapping - you have some observed data, and you just resample with replacement from the\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/[Deleted Account] - 11 votes and 13 comments",
+      "We make the assumption that the sample represents the population well - so resampling with replacement (bootstrapping) from the observed sample will give us a better idea of how accurate an estimator/statistic would be. If the observed data is the population then we don\u2019t need to make any assumption. ... Bootstrapping in essence is a probabilistic version of cross validation, which is conceptually easier to understand. They are all used to reduce bias (to ensure your estimate generalises out of sample) in your estimate and to establish the variability by estimating over subsets of the data.",
+      "Bootstrapping can give you empirical equivalents to the mathematical approaches. Bootstrapping can also be used to create subsamples of your population, which is used a lot in machine learning (look up training and test set). ... I made some slides with summarized practical applications here.",
+      "Ask a question about statistics (other than homework). Don't solicit academic misconduct. Don't ask people to contact you externally to the subreddit. Use informative titles. ... I know the entire procedure of bootstrapping - you have some observed data, and you just resample with replacement from the observed data to create a sampling distribution."
+    ],
+    "title": "r/AskStatistics on Reddit: [Q] Why is bootstrapping actually useful?",
+    "url": "https://www.reddit.com/r/AskStatistics/comments/kn6krz/q_why_is_bootstrapping_actually_useful/"
+  },
+  {
+    "description": "Imagine you have a sample of data and you wish to calculate the mean. Now you can easily calculate the\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.lancaster.ac.uk&size=128",
+    "snippets": [
+      "You can then calculate various parameters estimates for each sample and use the distribution of these to create a confidence interval. Bootstrapping is useful for non-parametric distributions where it may be difficult to calculate these otherwise. Obviously bootstrapping is incredibly simple, it doesn\u2019t involve any complex calculations or test statistics.",
+      "You can use bootstrapping on much smaller sample sizes than traditional statistical methods (even sample sizes as small as 10 in some cases).",
+      "That being said not all distributions will give accurate confidence intervals for parameter estimates when bootstrapping. Examples of situations where bootstrapping may fail are with distributions with high correlation or Cauchy distributions (which have no mean anyway). Here I\u2019ve randomly generated a 50 values from a standard normal distribution to represent a sample I may take. I know it should have population mean of zero and standard deviation of 1 but if I use the bootstrapping approach will I a good confidence interval for these?",
+      "In a perfect world you could gather a much much larger sample including the entire population and accurately calculate this however in a lot of cases this is not possible and the original sample is all you\u2019ve got. In this case we can use a technique known as bootstrapping."
+    ],
+    "title": "Bootstrapping \u2013 Katie Howgate",
+    "url": "https://www.lancaster.ac.uk/stor-i-student-sites/katie-howgate/2021/02/05/bootstrapping/"
+  },
+  {
+    "description": "Learn about bootstrapping, a non-parametric method of data resampling, and its advantages and disadvantages for data analytics.",
+    "favicon_url": "https://you.com/favicon?domain=www.linkedin.com&size=128",
+    "snippets": [
+      "Instead, it uses the empirical distribution of the sample as an approximation of the population distribution. Bootstrapping works by repeatedly selecting a subset of observations from the original sample, with the same size as the original sample, and allowing duplicates. Each subset is called a bootstrap sample, and the process is repeated many times (usually thousands or more) to generate a large number of bootstrap samples. The statistic of interest, such as the mean, the median, or the standard deviation, is then calculated for each bootstrap sample, and the distribution of these statistics is used to estimate the uncertainty or the variability of the statistic in the original sample.",
+      "Data Scientist & Analyst | Project Manager | Big fan of ethical use of Big Data and AI | MBA | PMP | \u03b4u\u03b4 \u00b7 - I agree with this definition of bootstrapping, it's quite well worded and encompasses clearly, in my opinion, the type of statistical method, the how and the why of bootstrapping quite simply.",
+      "Bootstrapping is a useful data resampling technique, especially when the sample size is small, the population distribution is unknown, or the statistic of interest is complex or non-standard. It has several advantages, such as being easy to implement and understand without requiring complex formulas or calculations.",
+      "Additionally, bootstrapping can provide more accurate and precise estimates of confidence intervals or standard errors of the statistic by accounting for sampling variability and the shape of the distribution. ... Data Scientist & Analyst | Project Manager | Big fan of ethical use of Big Data and AI | MBA | PMP | \u03b4u\u03b4"
+    ],
+    "title": "What are the advantages and disadvantages of bootstrapping for ...",
+    "url": "https://www.linkedin.com/advice/1/what-advantages-disadvantages-bootstrapping-data"
+  },
+  {
+    "description": "This article presents the basics of bootstrapping in a concise, no-nonsense manner, in order to get you up to speed with the fundamentals as quickly as possible.",
+    "favicon_url": "https://you.com/favicon?domain=www.statology.org&size=128",
+    "snippets": [
+      "Bootstrapping solves this by resampling data to estimate the accuracy of a statistic. This makes it helpful for small samples or data with unknown patterns. Researchers use it to make more reliable conclusions. This article presents the basics of bootstrapping in a concise, no-nonsense manner, in order to get you up to speed with the fundamentals as quickly as possible.",
+      "Statology Study is the ultimate online statistics study guide that helps you study and practice all of the core concepts taught in any elementary statistics course and makes your life so much easier as a student. Introduction to Statistics is our premier online video course that teaches you all of the topics covered in introductory statistics. Get started with our course today. 5 Quick Tips for Using Bootstrap Methods to Estimate\u2026",
+      "Not ideal for very small samples: Can give unreliable results with tiny or skewed datasets. Random variability: Results can vary slightly between runs. Lacks strong theory: Some areas lack a solid theoretical foundation for bootstrapping. Bootstrapping is a powerful tool in statistics. It helps us make better guesses about data using resampling. Bootstrapping is useful for estimating confidence intervals and testing hypotheses.",
+      "It gives reliable results, even with small or uneven data sets. Overall, bootstrapping helps us make strong and informed conclusions from our data. ... Jayita Gulati is a machine learning enthusiast and technical writer driven by her passion for building machine learning models. She holds a Master\u2019s degree in Computer Science from the University of Liverpool. Statology makes learning statistics easy by explaining topics in simple and straightforward ways."
+    ],
+    "title": "Bootstrapping: Resampling Techniques for Robust Statistical Inference",
+    "url": "https://www.statology.org/bootstrapping-resampling-techniques-for-robust-statistical-inference/"
+  },
+  {
+    "description": "Master bootstrapping in statistics with this clear guide. Understand its benefits, challenges, and how to implement it using R and Python.",
+    "favicon_url": "https://you.com/favicon?domain=statisticsglobe.com&size=128",
+    "snippets": [
+      "To effectively apply bootstrapping in practice, both R and Python offer dedicated libraries and functions: R: The boot package in R provides a comprehensive set of functions for bootstrapping, including generating resamples and calculating confidence intervals. Python: In Python, the scikit-learn library offers a Bootstrap module, which facilitates resampling and estimation of statistics through bootstrapping.",
+      "Bootstrapping is a powerful statistical method that involves resampling from a sample to estimate the distribution of a statistic. This technique is particularly useful when the theoretical distribution is unknown or when working with small data sets.",
+      "The method was introduced by Bradley Efron in 1979 and has since become a staple in statistical analysis, especially in situations where traditional methods may not be applicable. The core idea of bootstrapping is to treat the available data as a proxy for the population. By repeatedly drawing samples from this data (with replacement), it\u2019s possible to generate multiple new samples, each of which is used to calculate the desired statistic.",
+      "Bootstrapping is a non-parametric statistical technique used to estimate the sampling distribution of a statistic by resampling with replacement from a single sample."
+    ],
+    "title": "Bootstrapping in Statistics Explained | Comprehensive Guide",
+    "url": "https://statisticsglobe.com/bootstrapping-explained"
+  }
+]

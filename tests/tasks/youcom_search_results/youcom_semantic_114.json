@@ -1,0 +1,286 @@
+[
+  {
+    "description": "Abstract. Rapid advancements of large language models (LLMs) have enabled the processing, understanding, and generation of human-like text, with increasing integration into systems that touch our social sphere. Despite this success, these models can learn, perpetuate, and amplify harmful social ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. Rapid advancements of large language models (LLMs) have enabled the processing, understanding, and generation of human-like text, with increasing integration into systems that touch our social sphere. Despite this success, these models can learn, perpetuate, and amplify harmful social biases.",
+      "Despite this success, these models can learn, perpetuate, and amplify harmful social biases. In this article, we present a comprehensive survey of bias evaluation and mitigation techniques for LLMs. We first consolidate, formalize, and expand notions of social bias and fairness in natural language processing, defining distinct facets of harm and introducing several desiderata to operationalize fairness for LLMs.",
+      "Bias evaluation datasets can assess specific harms, such as stereotyping or derogatory language, that target particular social groups, such as gender or race groups. Similar to our taxonomy of metrics, we organize datasets by their data structure. The complete taxonomy is described in Section 4. ... Bias mitigation techniques apply modifications to an LLM. We organize bias mitigation techniques by the stage at which they operate in the LLM workflow: pre-processing, in-training, intra-processing, and post-processing.",
+      "These harms are forms of \u201csocial bias,\u201d a subjective and normative term we broadly use to refer to disparate treatment or outcomes between social groups that arise from historical and structural power asymmetries, which we define and discuss in Section 2.1 Though LLMs often reflect existing biases, they can amplify these biases, too; in either case, the automated reproduction of injustice can reinforce systems of inequity (Benjamin 2020). From negative sentiment and toxicity directed towards some social groups, to stereotypical linguistic associations, to lack of recognition of certain language dialects, the presence of biases of LLMs have been well-documented (e.g., Blodgett and O\u2019Connor 2017; Hutchinson et al."
+    ],
+    "title": "Bias and Fairness in Large Language Models: A Survey | Computational ...",
+    "url": "https://direct.mit.edu/coli/article/50/3/1097/121961/Bias-and-Fairness-in-Large-Language-Models-A"
+  },
+  {
+    "description": "Large Language Models (LLMs) have revolutionized natural language processing, but their susceptibility to biases poses significant challenges. This comprehensive review examines the landscape of bias in LLMs, from its origins to current mitigation strategies.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "It takes the pretrained BERT and further trains it on the given input, while mitigating the existing social biases by equalizing and declustering. The equalizing stage aims to equalize the associations of neutral words by defining a equalizing loss (Qian et al., 2019). Observing that words are stereotypically associated to a group (e.g., delicate, pink, beautiful), authors develop a declustering stage to decluster the implicit clusters by defining a declustering loss. Similar technique is also applied to mitigate social stereotypes when exposed to different demographic groups (Garimella et al., 2022).",
+      "Intrinsic biases are typically encoded during the training or pre-training phase when the LLM learns from large-scale corpora. For instance, if a pre-trained LLM consistently associates certain professions with specific genders (e.g., assuming all doctors to be male and assuming all nurses to be female) or racial stereotypes (May et al., 2019), this bias would be considered intrinsic bias.",
+      "Briefly, they explore the impact of increasing dropout parameters for BERT and ALBERT\u2019s attention weights and hidden activations, followed by an additional phase of pre-training. Experiments reveal that dropout regularization reduces gender bias in these models. They propose that dropout disrupts the attention mechanisms in BERT and ALBERT, thereby preventing the models from learning undesirable word associations. Grounded in the theory of causal inference, causality-guided methods are investigated due to the theoretical guarantees and good generalization (Da et al., 2024; Cai et al., 2024).",
+      "Biases are often present in unstructured data, and LLMs trained on such data can not only learn these biases but sometimes amplify them as well (Bolukbasi et al., 2016; Sheng et al., 2019). Various methods of bias mitigation exist under different contexts, such as social bias (Garimella et al., 2021, 2022), political bias (Liu et al., 2022), and stereotype bias (Nie et al., 2024b)."
+    ],
+    "title": "Bias in Large Language Models: Origin, Evaluation, and Mitigation",
+    "url": "https://arxiv.org/html/2411.10915v1"
+  },
+  {
+    "description": "In this article, we introduce and discuss the pervasive issue of bias in the large language models that are currently at the core of mainstream approaches to Natural Language Processing (NLP). We f...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "In this article, we introduce and discuss the pervasive issue of bias in the large language models that are currently at the core of mainstream approaches to Natural Language Processing (NLP). We first introduce data selection bias, that is, the bias ...",
+      "Eddie L. Ungless, Amy Rafferty, Hrichika Nag, and Bj\u00f6rn Ross. 2022. A Robust Bias Mitigation Procedure Based on the Stereotype Content Model. In Proceedings of the Fifth Workshop on Natural Language Processing and Computational Social Science (NLP+CSS). Association for Computational Linguistics, 207\u2013217.",
+      "In COMPAS, black defendants were often predicted to be at a higher risk of recidivism than they actually were and twice as likely as white defendants to be misclassified as being at a higher risk of violent recidivism [3, 77]. And the US court system is far from the only real-world area at risk of bias: Racism has also been found to be embedded in healthcare systems [103, 121], sexism in hiring algorithms, and discrimination in targeted advertising [42], and large-scale social studies [68]. Approaches to addressing bias often focus on proposing changes to the model architecture or training pro",
+      "In this section, we provide an overview of how the selection of the documents used to pretrain large language models (LLMs)3 can inadvertently introduce and/or amplify undesirable social biases in a cascading fashion. We also describe how selection bias in language models can come from other sources as well. Indeed, language models are rarely used \u201cas is\u201d; instead, they are adapted to the task of interest by either fine-tuning [65, 109] on smaller, task-specific datasets, or by designing prompts [81], usually in natural language, to work in a zero-shot or few-shot setting."
+    ],
+    "title": "Biases in Large Language Models: Origins, Inventory, and Discussion ...",
+    "url": "https://dl.acm.org/doi/10.1145/3597307"
+  },
+  {
+    "description": "Social identity biases, particularly the tendency to favor one\u2019s own group (ingroup solidarity) and derogate other groups (outgroup hostility), are deeply rooted in human psychology and social behavior. However, it is unknown if such biases are also present in artificial intelligence systems.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Nature Computational Science - Researchers show that large language models exhibit social identity biases similar to humans, having favoritism toward ingroups and hostility toward outgroups. These...",
+      "Researchers show that large language models exhibit social identity biases similar to humans, having favoritism toward ingroups and hostility toward outgroups. These biases persist across models, training data and real-world human\u2013LLM conversations.",
+      "Interestingly, user queries in WildChat and LMSYS display higher levels of ingroup and outgroup bias compared to the pretraining corpora available online. This discrepancy could be attributed to the potentially non-representative nature of these datasets or the inherent differences between conversational data and aggregate online text. These findings highlight a critical challenge in AI alignment\u2014ensuring that bias reduction remains robust across different interaction contexts, particularly in the presence of biased user input.",
+      "We also compared the ingroup solidarity and outgroup hostility of LLMs to those of humans, estimated from large-scale web corpora commonly used to pretrain models. Study 2 assesses how training data affect models\u2019 social identity biases by fine-tuning LLMs on a corpus of US partisan Twitter (now X) data. Study 3 tests whether the biases found in Studies 1 and 2 are evident in real-world conversations between humans and LLMs using two open-source datasets: WildChat35, which contains over half a million user conversations with ChatGPT, and LMSYS-Chat-1M36, containing one million conversations with 25 different state-of-the-art language models."
+    ],
+    "title": "Generative language models exhibit social identity biases | Nature ...",
+    "url": "https://www.nature.com/articles/s43588-024-00741-1"
+  },
+  {
+    "description": "Large language models (LLMs) can pass explicit social bias tests but still harbor implicit biases, similar to humans who endorse egalitarian belief...",
+    "favicon_url": "https://you.com/favicon?domain=www.pnas.org&size=128",
+    "snippets": [
+      "Large language models (LLMs) can pass explicit social bias tests but still harbor implicit biases, similar to humans who endorse egalitarian beliefs yet exhibit subtle biases. Measuring such implic...",
+      "Both measures are based on psychological research: LLM Word Association Test adapts the Implicit Association Test, widely used to study the automatic associations between concepts held in human minds; and LLM Relative Decision Test operationalizes psychological results indicating that relative evaluations between two candidates, not absolute evaluations assessing each independently, are more diagnostic of implicit biases. Using these measures, we found pervasive stereotype biases mirroring those in society in 8 value-aligned models across 4 social categories (race, gender, religion, health) in 21 stereotypes (such as race and criminality, race and weapons, gender and science, age and negativity).",
+      "S. L. Blodgett, S. Barocas, H. Daum\u00e9 III, H. Wallach, \u201cLanguage (technology) is power: A critical survey of \u201cbias\u201d in NLP\u201d in Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (2020), pp. 5454\u20135476. ... A. G. Greenwald, M. R. Banaji, Implicit social cognition: Attitudes, self-esteem, and stereotypes. Psychol. Rev. 102, 4 (1995). ... X. Qi et al., Fine-tuning aligned language models compromises safety, even when users do not intend to!",
+      "Y. T. Cao et al., On the intrinsic and extrinsic fairness evaluation metrics for contextualized language representations. Annu. Meet. Assoc. Comput. Linguist. 2, 561\u2013570 (2022). ... R. Steed, S. Panda, A. Kobren, M. Wick, Upstream mitigation is not all you need: Testing the bias transfer hypothesis in pre-trained language models."
+    ],
+    "title": "Explicitly unbiased large language models still form biased ...",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.2416228122"
+  },
+  {
+    "description": "Abstract. In traditional decision-making processes, social biases of human decision makers can lead to unequal economic outcomes for underrepresented socia",
+    "favicon_url": "https://you.com/favicon?domain=academic.oup.com&size=128",
+    "snippets": [
+      "This question is particularly relevant given the intense scrutiny in recent years surrounding the intersection of AI and fairness in decision-making processes, particularly in word embedding and natural language processing (NLP) tasks (7\u201312). Since the algorithms are trained on human-generated data, AI agents can inherit and reflect similar behavioral biases as humans (13, 14). This aligns with broader findings in AI research, where language technologies have been shown to perpetuate\u2014and in some cases, amplify\u2014societal biases (8, 9, 15\u201318).",
+      "Meanwhile, scientists also show that large language models (LLMs) can potentially make economic decisions with great rationality (27), and generative agents based on fine-tuning techniques can potentially mitigate the biases of LLMs (28\u201330). Additionally, developers of LLMs have made enormous efforts to restrict the model from providing inappropriate opinions or judgments (31, 32). There is also anecdotal evidence, suggesting that popular LLMs are likely prodemocratic and left-libertarian orientated, which suggests that they likely value social equality and diversity (for example, see media reports at link2 and link3).",
+      "Statistical theories of discrimination in labor markets. Ind Labor Relat Rev. ... Man is to computer programmer as woman is to homemaker? Debiasing word embeddings. Adv Neural Inf Process Syst. ... Semantics derived automatically from language corpora contain human-like biases. ... Word embeddings quantify 100 years of gender and ethnic stereotypes.",
+      "This complexity underscores the need for comprehensive, multidimensional approaches to studying and mitigating bias in AI systems, as highlighted in recent surveys (22). It also offers fresh insights into the interpretability of data-driven algorithmic decisions that have significant impacts on individuals' lives (33). Our findings also align with broader concerns in the field about AI systems' potential to perpetuate or even amplify societal biases (11, 12)."
+    ],
+    "title": "Measuring gender and racial biases in large language models: ...",
+    "url": "https://academic.oup.com/pnasnexus/article/4/3/pgaf089/8071848"
+  },
+  {
+    "description": "This paper delves into the intricate relationship between Large Language Models (LLMs) and cultural bias. It underscores the significant impact LLMs can have on shaping a more equitable and culturally sensitive digital landscape, while also addressing the challenges that arise when integrating ...",
+    "favicon_url": "https://you.com/favicon?domain=www.degruyterbrill.com&size=128",
+    "snippets": [
+      "This paper delves into the intricate relationship between Large Language Models (LLMs) and cultural bias. It underscores the significant impact LLMs can have on shaping a more equitable and culturally sensitive digital landscape, while also addressing the challenges that arise when integrating these powerful AI tools.",
+      "Additionally, they internalize, spread, and amplify toxic language (e.g., offensiveness, hate speech, and insults) and social biases (e.g., stereotypes towards people with a particular demographic identity) existing in the training corpora (Gehman et al., 2020; Sheng et al., 2021). One major challenge in mitigating bias in LLMs is constructing fairness datasets that comprehensively represent the diverse cultures and languages across the world (Ramesh et al., 2023).",
+      "Conversely, if training data primarily originates from one culture, it may amplify embedded biases, potentially propagating hate speech and false assertions (Nadis, 2022). Historical Inherited Data encompasses culturally outdated data and past prejudices. Biases entrenched in historical data can infiltrate AI models, perpetuating obsolete stereotypes. For instance, an AI trained on historical texts might associate certain occupations or roles with specific genders or ethnicities.",
+      "These case studies underscore the urgency to directly address this issue and develop methods and principles to mitigate the risks of bias, insensitivity, and appropriation in LLMs. To begin, we delve into a paper by Kotek, Dockum, and Sun (2023), which investigates gender bias and stereotypes in LLMs. They found that LLMs are prone to selecting stereotypical occupations for men and women, amplifying bias beyond what is reflected in people\u2019s perceptions or official statistics."
+    ],
+    "title": "Cultural Bias in Large Language Models: A Comprehensive Analysis ...",
+    "url": "https://www.degruyterbrill.com/document/doi/10.1515/jtc-2023-0019/html?lang=en"
+  },
+  {
+    "description": "Abstract. Culture fundamentally shapes people\u2019s reasoning, behavior, and communication. As people increasingly use generative artificial intelligence (AI)",
+    "favicon_url": "https://you.com/favicon?domain=academic.oup.com&size=128",
+    "snippets": [
+      "Large language models (LLMs) like GPT, Claude, Mistral, and LLaMA, which are trained on Internet-scale textual data to process text and produce human-sounding language, are increasingly used by people in all aspects of their life, including education (20), medicine and public health (21, 22), as well as creative and opinion writing (23, 24). Considering that LLMs tend to be trained on corpora of text that overrepresent certain parts of the world, this widespread adoption raises a critical question of cultural bias, which can be hidden in the way LLMs generate and interpret language (25\u201329).",
+      "Subject Electronics, Communications and Information Systems Engineering Social and Political Sciences ... Improving predictability, reliability, and generalizability of brain-wide associations for cognitive abilities via multimodal stacking \u00b7 Global analysis of constraints to natural climate solution implementation",
+      "Biases in large language models: origins, inventory and discussion. ACM J Data Inf Qual. ... Knowledge of cultural moral norms in large language models. In: Proceedings of the 61st annual meeting of the association for computational linguistics (Vol. 1, Long Papers). p. 428\u2013446; Toronto, Canada: Association for Computational Linguistics. ... Probing pre-trained language models for cross-cultural differences in values.",
+      "The cultural bias inherent in human feedback may have contributed to the substantial shift towards more secular values expressed by GPT-3.5-turbo. A Rule-Based Reward Model was introduced into the training process of GPT-4, which provides additional reward signals that may have mitigated cultural biases from the RLHF process (42)."
+    ],
+    "title": "Cultural bias and cultural alignment of large language models | ...",
+    "url": "https://academic.oup.com/pnasnexus/article/3/9/pgae346/7756548"
+  },
+  {
+    "description": "The rise of Large Language Models (LLMs) like ChatGPT marks a pivotal advancement in artificial intelligence, reshaping the landscape of data analysis and processing. By simulating public opinion, ChatGPT shows promise in facilitating public policy development.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Humanities and Social Sciences Communications - Performance and biases of Large Language Models in public opinion simulation",
+      "Each bar reflects the level of agreement between ChatGPT\u2019s responses and human judgment across different demographic sectors: sex, ethnicity, age, social class, and education. ... Figure 5 reveals distinct patterns in the alignment between ChatGPT\u2019s simulated and actual responses across U.S. demographics regarding the priority between economy and environment. Males show slightly higher agreement and association than females.",
+      "If these simulations are presented as genuine public opinions without proper disclosure of their AI-generated nature, they could be used to manipulate public discourse and decision-making, leading to the spread of misinformation, the amplification of biased perspectives, and the undermining of democratic processes. To mitigate these risks, it is crucial to prioritize inclusivity and equity in AI development. Diversifying the training datasets to encompass a wide range of languages, cultures, and demographic backgrounds is essential to ensure that AI tools like ChatGPT can accurately and fairly represent global public opinions.",
+      "To assess the model\u2019s ideological tendencies, we analyzed the frequency of liberal choices in the simulations for both topics, contrasting them with the actual survey results. Recognizing the broader range of options in political questions, we normalized the responses to mitigate any potential bias amplification due to the larger set of political choices."
+    ],
+    "title": "Performance and biases of Large Language Models in public opinion ...",
+    "url": "https://www.nature.com/articles/s41599-024-03609-x"
+  },
+  {
+    "description": "Biases in medical artificial intelligence (AI) arise and compound throughout the AI lifecycle. These biases can have significant clinical consequences, especially in applications that involve clinical decision-making. Left unaddressed, biased ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Although recent LLMs have achieved unprecedented performance on NLP tasks in medicine and other domains [116\u2013118], medical LLMs deployed for clinical decision-making pose unique limitations and risks with respect to bias [119\u2013122]. LLMs are autoregressive in nature, which means they rely on the statistical patterns of which words have preceded others in their training text corpora [123]. If a medical LLM has been trained on data that contains misinformation or biased content, LLMs deployed for clinical decision-making are at risk of reproducing these problematic contents [120,124\u2013126]. This could lead to the AI system generating biased and inaccurate information to clinicians.",
+      "This can be partially attributed to disparities in healthcare systems and the delivery of medical care: Low SES patients are more likely to be seen at teaching institutions, where clinical reasoning may be systematically different than other clinical settings serving higher SES individuals [84]. Furthermore, uninsured and publicly insured patients (regardless of institution) receive worse medical care than those with private insurance [85]. Implicit cognitive biases of healthcare providers related to patient attributes (gender, race) can also lead to variation in diagnoses (misclassification r",
+      "The bias mitigation techniques discussed throughout this review apply to medical LLMs, particularly proper mechanisms for filtering and clinical verification of training data, as well as continuous physician oversight and awareness of an LLM\u2019s potential to \u201challucinate.\u201d Some statistical debiasing methods designed for language models are emerging; however, their implementation in real-world clinical LLMs remains limited [127\u2013132]. Bias can occur at all stages in the medical AI development pipeline, including biases in data features (imbalanced samples, missing, or hard to capture variables), data annotations (implicit provider biases), model development and evaluation (developer naivety), model implementation (real world generalizability, end-user acceptance and utilization), and publication (authors and their priorities).",
+      "123.Radford A. Improving language understanding by generative pre-training. 2018. [Google Scholar] 124.Kotek H, Dockum R, Sun D, editors. Gender bias and stereotypes in large language models. Proceedings of the ACM collective intelligence conference; 2023. [Google Scholar] 125.Garimella A, Amarnath A, Kumar K, Yalla AP, Anandhavelu N, Chhaya N, et al., editors. He is very intelligent, she is very beautiful? on mitigating social biases in language modelling and generation. Findings of the Association for Computational Linguistics: ACL-IJCNLP."
+    ],
+    "title": "Bias in medical AI: Implications for clinical decision-making - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11542778/"
+  },
+  {
+    "description": "Large Language Models (LLMs) are transforming various aspects of our daily lives and work through their generated content, known as Artificial Intelligence Generated Content (AIGC). To effectively harness this change, it is essential to understand the limitations within these models.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Scientific Reports - Exploring the occupational biases and stereotypes of Chinese large language models",
+      "Moreover, widespread societal biases embedded in the source data, such as rigid gender norms, regional stereotypes, and occupational hierarchies, are easily internalized by the model if not explicitly mitigated. For example, in training corpora, terms like \u201cengineer\u201d and \u201cleader\u201d frequently co-occur with male pronouns, whereas roles such as \u201cnurse\u201d or \u201csecretary\u201d often align with female references40. Furthermore, data collection practices also amplify these structural biases.",
+      "C-LLMs are primarily trained to minimize prediction errors, a process that inherently biases the learning dynamics toward dominant linguistic patterns and high-frequency co-occurrences. This optimization objective causes models to preferentially internalize mainstream expressions while neglecting rare or marginalized language features42. The Transformer architecture, particularly its attention mechanism, further reinforces these tendencies by amplifying associations between frequently co-occurring tokens.",
+      "Yuan, S. et al. z2-wudaocorpora: A super large-scale chinese corpora for pre-training language models. AI Open 2, 65\u201368 (2021). ... Deng, Yichen. The alienation of women\u2019s discourse on chinese social media. SHS Web Conf. 162, 01033. https://doi.org/10.1051/shsconf/202316201033 (2023). ... Birhane, A. et al. The values encoded in machine learning research. In Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency, FAccT \u201922, 173-184 (Association for Computing Machinery, 2022)."
+    ],
+    "title": "Exploring the occupational biases and stereotypes of Chinese large ...",
+    "url": "https://www.nature.com/articles/s41598-025-03893-w"
+  },
+  {
+    "description": "Recently, large language models (LLMs) have attracted considerable attention due to their remarkable capabilities. However, LLMs\u2019 generation of biased or hallucinatory content raised significant concerns, posing major challenges for their practical application.",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Artificial Intelligence Review - Recently, large language models (LLMs) have attracted considerable attention due to their remarkable capabilities. However, LLMs\u2019 generation of biased or...",
+      "This unequal distribution of data facilitates a proclivity in models to acquire knowledge that disproportionately aligns with the domains overrepresented in the data, potentially leading to unintended outcomes such as the manifestation of gender biases within the model. In addition, the training data for extensive models may inadvertently incorporate information characterized by inaccuracy or lack of fidelity. For example, the temporal nature of corpora may lead to ethical annotation processes necessitating substantial resources and proficient annotators.",
+      "Bias information is highlighted in Red, and hallucination information is highlighted in Blue ... Despite the remarkable success, nearly all existing LLMs face two primary challenges and limitations. Typically trained on vast amounts of data, which are often sourced from vast and diverse online corpora, LLMs inherit toxic, offensive, misleading, stereotypical, and other behaviors that are harmful or discriminatory (Bolukbasi et al.",
+      "Another idea involves rewriting given text to rectify implicit and potentially undesirable biases (Ma et al. 2020). This can be seen as treating controllable debiasing as a new formalization of the stylistic rewriting task. However, both of these approaches have limitations. They either require prior information or depend on parallel corpora, which constrains further research in this area. Introducing additional loss functions directly addresses the issue of models learning inappropriate associations at the level of the loss function (Zhao et al."
+    ],
+    "title": "Towards trustworthy LLMs: a review on debiasing and dehallucinating ...",
+    "url": "https://link.springer.com/article/10.1007/s10462-024-10896-y"
+  },
+  {
+    "description": "Background/Objectives: Large Language Models (LLMs) like ChatGPT, LLAMA, and Mistral are widely used for automating tasks such as content creation and data analysis. However, due to their training on publicly available internet data, they may inherit social biases.",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "RQ2: Does adding explicit context to prompt instructions significantly mitigate biased outcomes, or is its impact limited in cases of deeply ingrained biases? RA2: For indirect prompts, no-context prompts are significantly more biased than contextualized prompts, which refers to underlying, inherent hard bias based on training data and model learnings. RQ3: Do optimization techniques such as quantization amplify biases or circumvent built-in model moderation mechanisms?",
+      "To purge models of biased views, model developers use feedback training, in which human workers manually adjust the way the model responds to certain prompts. This process, often called \u201calignment\u201d, aims to recalibrate the millions of connections in the neural network and get the model to conform better with desired values. The prevalent belief is that these methods work well to combat overt stereotypes, and leading companies have employed them for nearly a decade.",
+      "This is likely due to the dynamic and regional nature of contextuality in racial datasets and data paucity/less funding/traction available for disability status datasets. We used the following two datasets to curate the prompts for the testing process: 1. Direct Prompt Dataset: GEST [28]: Each sentence corresponds to a specific gender stereotype, and there are 16 such defined stereotypes in total as laid out in this source.",
+      "RQ2: Does adding explicit context to prompt instructions significantly mitigate biased outcomes, or is its impact limited in cases of deeply ingrained biases? RQ3: Do optimization techniques such as quantization amplify biases or circumvent built-in model moderation mechanisms?"
+    ],
+    "title": "Understanding Social Biases in Large Language Models",
+    "url": "https://www.mdpi.com/2673-2688/6/5/106"
+  },
+  {
+    "description": "In this paper, we investigate the presence of addition bias in Large Language Models (LLMs), drawing a parallel to the cognitive bias observed in huma\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "These results indicate that, similar to humans, LLMs exhibit a marked addition bias, which might have im-plications when LLMs are used on a large scale. Addittive bias might increase resource use and environmental impact, leading to higher eco-nomic costs due to overconsumption and waste."
+    ],
+    "title": "More is more: Addition bias in large language models - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2949882125000131"
+  },
+  {
+    "description": "Artificial intelligence (AI), particularly large language models (LLMs), is increasingly integrated into mental health care. This study examined racial bias in psychiatric diagnosis and treatment across four leading LLMs: Claude, ChatGPT, Gemini, and NewMes-15 (a local, medical-focused LLaMA ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Artificial intelligence (AI), particularly large language models (LLMs), is increasingly integrated into mental health care. This study examined racial bias in psychiatric diagnosis and treatment across four leading LLMs: Claude, ChatGPT, Gemini, and NewMes-15 (a local, medical-focused LLaMA 3 variant).",
+      "npj Digital Medicine - Racial bias in AI-mediated psychiatric diagnosis and treatment: a qualitative comparison of four large language models",
+      "However, these results should be considered in line with the limitations of comparing ordinal scores based on qualitative judgments; these comparisons are based on 40 ratings per LLMs, which may not be enough for statistical inference. However, as this is a qualitative judgment, smaller sample sizes are relatively acceptable, especially as bias is, to some extent, a subjective judgment based on experience. To our knowledge, this is the first evaluation of racial bias across multiple psychiatric diagnoses and multiple LLMs, including generalist LLMs and a locally trained medical-specific LLM.",
+      "The heightened bias in treatment recommendations suggests that AI systems may amplify existing biases in psychiatric care21, even when the diagnosis is accurate. These findings are aligned with recent research in non-psychiatric disciplines suggesting \u201cwhite\u201d treatment bias by LLMs14,34, and underscore a fundamental challenge in AI development: While LLMs can process vast amounts of medical information, they can also propagate and exacerbate biases embedded in their training data35."
+    ],
+    "title": "Racial bias in AI-mediated psychiatric diagnosis and treatment: ...",
+    "url": "https://www.nature.com/articles/s41746-025-01746-4"
+  },
+  {
+    "description": "DOI: https://doi.org/10.1145/3582269.3615599 CI '23: Collective Intelligence Conference, Delft, Netherlands, November 2023 \u00b7 Large Language Models (LLMs) have made substantial progress in the past several months, shattering state-of-the-art benchmarks in many domains.",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "We test four recently published LLMs and demonstrate that they express biased assumptions about men and women's occupations. Our contributions in this paper are as follows: (a) LLMs are 3-6 times more likely to choose an occupation that stereotypically aligns with a person's gender; (b) these choices align with people's perceptions better than with the ground truth as reflected in official job statistics; (c) LLMs in fact amplify the bias beyond what is reflected in perceptions or the ground truth; (d) LLMs ignore crucial ambiguities in sentence structure 95% of the time in our study items, but when explicitly prompted, they recognize the ambiguity; (e) LLMs provide explanations for their choices that are factually inaccurate and likely obscure the true reason behind their predictions.",
+      "Shengyu Jia, Tao Meng, Jieyu Zhao, and Kai-Wei Chang. 2020. Mitigating Gender Bias Amplification in Distribution by Posterior Regularization. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. Association for Computational Linguistics, Online, 2936\u20132942.",
+      "Association for Computational Linguistics, Florence, Italy, 1679\u20131684. https://doi.org/10.18653/v1/P19-1164 \u00b7 Tony Sun, Andrew Gaut, Shirlyn Tang, Yuxin Huang, Mai ElSherief, Jieyu Zhao, Diba Mirza, Elizabeth Belding, Kai-Wei Chang, and William Yang Wang. 2019. Mitigating Gender Bias in Natural Language Processing: Literature Review.",
+      "We further choose our nouns not based on US Labor statistics, as in WinoBias, but instead based on prior literature which has measured English speakers\u2019 estimates of the extent to which occupation-denoting nouns are perceived as skewing more stereotypically male or more stereotypically female [29, 33, 42]. Given the nature of the training data, we may expect training data for the models to more closely track perceived bias in the speaker population than official statistics."
+    ],
+    "title": "Gender bias and stereotypes in Large Language Models",
+    "url": "https://dl.acm.org/doi/fullHtml/10.1145/3582269.3615599"
+  },
+  {
+    "description": "Large language models (LLMs) can pass explicit social bias tests but still harbor implicit biases, similar to humans who endorse egalitarian beliefs yet exhibit subtle biases. Measuring such implicit biases can be a challenge: as LLMs become increasingly proprietary, it may not be possible ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Both measures are based on psychological research: LLM Implicit Bias adapts the Implicit Association Test, widely used to study the automatic associations between concepts held in human minds; and LLM Decision Bias operationalizes psychological results indicating that relative evaluations between two candidates, not absolute evaluations assessing each independently, are more diagnostic of implicit biases. Using these measures, we found pervasive stereotype biases mirroring those in society in 8 value-aligned models across 4 social categories (race, gender, religion, health) in 21 stereotypes (such as race and criminality, race and weapons, gender and science, age and negativity).",
+      "We take a two-pronged approach, starting with prompt-based measures based on existing experiments validated with human participants, then automating the generation of prompts for measuring implicit and decision bias under human supervision (Section 2). We study eight value-aligned language models, across a set of prompt variations in 4 social categories for 21 stereotypes, leading to a total of over 33,000 unique prompts (Section 3). In striking contrast to prior benchmarks which show little to no explicit bias, we find widespread and consequential implicit biases. One common instantiation of human implicit bias tests is the Implicit Association Test (further details in Appendix E).",
+      "Figure 2: LLM Implicit Bias: Results showing LLM Implicit Bias scores on the vertical axis, for 21 stereotypes on the horizontal axis, in 4 social categories coded in 4 colors, across 8 LLMs in 8 panels. Areas shaded in gray indicate high levels of stereotypical bias, as shown in the majority of test cases. Red dotted horizontal lines indicate unbiased responses. Error bars represent 95% bootstrapped confidence intervals. See statistical analyses in the main text and tables in Appendix. We study 8 models trained with reinforcement learning from human feedback bai2022training .",
+      "Stereotyping norwegian salmon: An inventory of pitfalls in fairness benchmark datasets. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 1004\u20131015, 2021. [15] E. S. Bogardus. Measuring social distance."
+    ],
+    "title": "Measuring Implicit Bias in Explicitly Unbiased Large Language Models",
+    "url": "https://arxiv.org/html/2402.04105v2"
+  },
+  {
+    "description": "MIT CSAIL researchers trained logic-aware language models to reduce harmful stereotypes like gender and racial biases using textual-entailment models.",
+    "favicon_url": "https://you.com/favicon?domain=news.mit.edu&size=128",
+    "snippets": [
+      "For example, gender and racial biases are prevalent in many real-world datasets, and if a language model is trained on that, it can perpetuate and amplify these biases in its predictions.\u201d A well-known but dangerous problem.  \u00b7 Humans (typically) can dabble with both logical and stereotypical reasoning when learning. Still, language models mainly mimic the latter, an unfortunate narrative we\u2019ve seen play out ad nauseam when the ability to employ reasoning and critical thinking is absent. So would injecting logic into the fray be enough to mitigate such behavior?",
+      "MIT researchers trained logic-aware language models to reduce harmful stereotypes like gender and racial biases. ... Caption: MIT researchers mitigate stereotypical sentence reasoning bias with textual entailment models.",
+      "Scientists from MIT\u2019s Computer Science and Artificial Intelligence Laboratory (CSAIL) had an inkling that it might, so they set off to examine if logic-aware language models could significantly avoid more harmful stereotypes. They trained a language model to predict the relationship between two sentences, based on context and semantic meaning, using a dataset with labels for text snippets detailing if a second phrase \u201centails,\u201d \u201ccontradicts,\u201d or is neutral with respect to the first one. Using this dataset \u2014 natural language inference \u2014 they found that the newly trained models were significantly less biased than other baselines, without any extra data, data editing, or additional training algorithms.",
+      "With more common language models, two sentences might seem to be correlated due to some bias in training data, like \u201cdoctor\u201d might be pinged with \u201cmasculine,\u201d even when there\u2019s no evidence that the statement is true.  \u00b7 At this point, the omnipresent nature of language models is well-known: Applications in natural language processing, speech recognition, conversational AI, and generative tasks abound."
+    ],
+    "title": "Large language models are biased. Can logic help save them? | MIT ...",
+    "url": "https://news.mit.edu/2023/large-language-models-are-biased-can-logic-help-save-them-0303"
+  },
+  {
+    "description": "Users report prejudiced responses generated by large language models (LLMs) like ChatGPT. Across 3 preregistered experiments, members of stigmatized s\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Stronger implicit biases promoted intentions among White Americans and UK men. Users report prejudiced responses generated by large language models (LLMs) like ChatGPT. Across 3 preregistered experiments, members of stigmatized social groups (Black Americans, women) reported higher trustworthiness of LLMs after viewing unbiased interactions with ChatGPT compared to when viewing AI-generated prejudice (i.e., racial or gender disparities in salary).",
+      "Notably, higher trustworthiness accounted for increased behavioral intentions to use LLMs, but only among stigmatized social groups. Conversely, White Americans were more likely to use LLMs when AI-generated prejudice confirmed implicit racial biases, while men intended to use LLMs when responses matched implicit gender biases.",
+      "This article is part of a special issue entitled: The social bridge: An interdisciplinary view on trust in technology edited by Johannes Kraus, Irene Valori & Merle Fairhurst published in Computers in Human Behavior."
+    ],
+    "title": "Prejudiced interactions with large language models (LLMs) reduce ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S074756322500010X"
+  },
+  {
+    "description": "Pre-trained Language Models (PLMs) have been shown to inherit and even amplify the social biases contained in the training corpus, leading to undesire\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Pre-trained Language Models (PLMs) have been shown to inherit and even amplify the social biases contained in the training corpus, leading to undesired stereotype in real-world applications. Existing techniques for mitigating the social biases of PLMs mainly rely on data augmentation with manually designed prior knowledge or fine-tuning with abundant external corpora to debias.",
+      "Recent researches have shown that PLMs such as BERT, can inherit and even amplify implicit social biases in demographic groups contained in training corpora [4], [5], [6]. Unfair PLMs applied to real-world applications can lead to unpredictable risks. For example, an automated resume filtering system could create human-like gender stereotypes, and it would tend to assign to men jobs that require logical abilities such as doctors or programmers, and to women jobs that require care such as nurses or babysitter [7]. Additionally, the US healthcare system may be racially biased, which calculates that black patients with the same risk level are sicker than white patients [3]. Therefore, mitigating social biases in PLMs' encoding has become a meaningful and challenging area of research.",
+      "However, the data collected in the real world are essentially heterogeneous data with the behavior and characteristics of social subgroups [19], [20]. Language models inherit human-like stereotypes from large unprocessed real corpora [21], and their encoding can even amplify biases in the data [22]. Social bias of PLMs usually refers to the model's differential treatment of a social",
+      "Fine-tuning based methods not only consume a lot of resources due to accessing the parameters of the entire model, but also are prone to introduce new biases when fine-tuning with abundant external corpora that affect the language modeling capabilities of PLMs on other tasks."
+    ],
+    "title": "Mitigating social biases of pre-trained language models via ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0004370224000791"
+  },
+  {
+    "description": "Dive into a comprehensive walk-through on understanding bias in LLMs, the impact it causes, and how to mitigate it to ensure trust and fairness.",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "If the training data used for LLMs contain unrepresentative samples or biases, naturally, the model will inherit and learn these biases. Examples of LLM bias are gender, race, and cultural bias. For example, LLMs can be biased towards genders if the majority of their data shows that women predominantly work as cleaners or nurses, and men are typically engineers or CEOs. The LLM has inherited society's stereotypes due to the training data being fed into it.",
+      "Naturally, everything has its limitations, and AI-powered assistants have their unique challenges. This unique challenge is the potential for LLM bias, which is entrenched in the data used to train the models. Let\u2019s take it a step back. What are LLMs? LLMs are AI systems such as ChatGPT, which are used to model and process human language. It is a type of AI algorithm that uses deep learning techniques to summarize, generate, and predict new content.",
+      "The concern around LLMs and biases comes down to the use of LLMs in the decision-making process, naturally raising ethical concerns. The impacts of bias in LLMs affect both the users of the model and the wider society. As we touched on above, there are different types of stereotypes, such as culture and gender. Biases in the training data of LLMs continue to reinforce these harmful stereotypes, causing society to stay in the cycle of prejudice and effectively preventing progress in society.",
+      "The process consists of building a neutral language model in which the relationships between tokens are considered \u2018neutral\u2019 as there is no logic stating that there is a relationship between the two. CSAIL trained this method on a language model and found the newly trained model was less biased without the need for more data and additional algorithm training. Logic-aware language models will have the ability to avoid producing harmful stereotypes."
+    ],
+    "title": "Understand and Mitigate Bias in LLMs | DataCamp",
+    "url": "https://www.datacamp.com/blog/understanding-and-mitigating-bias-in-large-language-models-llms"
+  },
+  {
+    "description": "Despite the remarkable performance of large language models (LLMs), such as generative pre-trained Transformers (GPTs), across various tasks, they often perpetuate social biases and stereotypes embedded in their training data. In this paper, we introduce a novel framework that reformulates ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Despite the remarkable performance of large language models (LLMs), such as generative pre-trained Transformers (GPTs), across various tasks, they often perpetuate social biases and stereotypes embedded in their training data. In this paper, we introduce a novel framework that reformulates bias detection in LLMs as a hypothesis testing problem, where the null hypothesis $$H_0$$ represents the absence of implicit bias.",
+      "Scientific Reports - Detecting implicit biases of large language models with Bayesian hypothesis testing",
+      "The power of the large language models (LLMs) greatly benefits from the increasing quantity and quality of real corpora1,2,3,4. However, deep neural models can inadvertently acquire undesirable knowledge from the corpora, such as social biases and stereotypes5,6.",
+      "Dror, R., Baumer, G., Shlomov, S. & Reichart, R. The hitchhiker\u2019s guide to testing statistical significance in natural language processing. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), 1383\u20131392, https://doi.org/10.18653/v1/P18-1128(Association for Computational Linguistics, Melbourne, Australia, 2018). Zhiltsova, A., Caton, S. & Mulway, C. Mitigation of unintended biases against non-native english texts in sentiment analysis."
+    ],
+    "title": "Detecting implicit biases of large language models with Bayesian ...",
+    "url": "https://www.nature.com/articles/s41598-025-95825-x"
+  },
+  {
+    "description": "Large language models (LLMs) are powerful decision-making tools widely adopted in healthcare, finance, and transportation. Embracing the opportunities and innovations of LLMs is inevitable. However...",
+    "favicon_url": "https://you.com/favicon?domain=www.tandfonline.com&size=128",
+    "snippets": [
+      "1. Large language models (LLMs1), such as ChatGPT (Team OpenAI 2022), are the key to remarkable innovations and opportunities. There are examples where LLMs exhibit capabilities across various doma...",
+      "This can incorporate representational harms such as misrepresentation, stereotyping, disparate system performance, and direct and indirect discrimination (Crawford Citation2017; Blodgett et al. Citation2020; Barocas et al. Citation2023). LLMs inherit stereotypes and misrepresentations of societies from the training data (Bender et al. Citation2021; Yogarajan et al. Citation2023a), and can also amplify these biases (Abid et al.",
+      "On measuring social biases in sentence encoders. In: NAACL-HLT. ACL. p. 622\u2013628. ... Meade N, Poole-Dayan E, Reddy S. 2022. An empirical survey of the effectiveness of debiasing techniques for pre-trained language models. In: ACL, Dublin, Ireland. p. 1878\u20131898. ... Nadeem M, Bethke A, Reddy S. 2021 Aug. StereoSet: measuring stereotypical bias in pretrained language models. In: ACL; Online. Association for Computational Linguistics.",
+      "Gender biases and where to find them: exploring gender bias in pre-trained transformer-based language models using movement pruning. In: GeBNLP, Seattle, Washington. p. 67\u201373. ... Karimi Mahabadi R, Belinkov Y, Henderson J. 2020. End-to-end bias mitigation by modelling biases in corpora."
+    ],
+    "title": "Full article: Debiasing large language models: research opportunities*",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/03036758.2024.2398567"
+  },
+  {
+    "description": "New Study from Stanford Law School and the Stanford Institute for Human-Centered AI Takes Novel Approach to Identifying and Mitigating Racial Bias in",
+    "favicon_url": "https://you.com/favicon?domain=law.stanford.edu&size=128",
+    "snippets": [
+      "But in order to design effective mitigation strategies, we really need to think about regulatory and legal frameworks that focus on the companies actually using these models in real-world scenarios.\u201d Nyarko, an expert in empirical legal studies and computational law, focuses his research at the intersection of AI, machine learning, and legal accountability. He is also an Associate Director and Senior Fellow at the Stanford Institute for Human-Centered AI (HAI).",
+      "They established that selectively removing, or pruning, specific computational units\u2014akin to artificial \u201cneurons\u201d\u2014 reduces bias without compromising a model\u2019s overall utility. But a bias mitigation strategy trained on financial decision-making, for example, does not necessarily work for commercial transactions or hiring decisions, they found.",
+      "To mitigate these biases, the team used a method known as model pruning. This involves selectively deactivating or removing specific neurons that were identified as contributing to biased behavior. To identify which neurons to prune, the researchers conducted a comprehensive analysis to identify which neurons only activate when the input prompt involves a racial minority, but not otherwise.",
+      "Numerous studies over the last several years, including research from Stanford Law School and Stanford University, have demonstrated that LLMs exhibit racial biases in their responses. These biases often manifest in ways that reinforce stereotypes or produce systematically different outputs based on racial markers, such as names or dialects."
+    ],
+    "title": "Bias in Large Language Models\u2014and Who Should Be Held Accountable ...",
+    "url": "https://law.stanford.edu/press/bias-in-large-language-models-and-who-should-be-held-accountable/"
+  }
+]

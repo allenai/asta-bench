@@ -1,0 +1,268 @@
+[
+  {
+    "description": "Discover how to measure & quantify the impact of GitHub Copilot on code quality, productivity, & efficiency in software development.",
+    "favicon_url": "https://you.com/favicon?domain=resources.github.com&size=128",
+    "snippets": [
+      "How to plan and measure for system-level improvements that may result from GitHub Copilot. The first two stages\u2014Evaluation and Adoption\u2014focus on leading indicators as close to the coding activity as possible. They rely on a combination of self-reported data from developers and existing telemetry from GitHub. Employing this strategy makes it possible to both (a) reliably predict future impact, and (b) perform an evaluation with relatively little additional investment in observability.",
+      "Be on the lookout for business factors that may require you to shift priorities, move your targets, and consider alternative system-level measures. Even as you sustain use of Copilot, continue to analyze surveys and quantitative engagement measures to ensure all developers are able to experience Copilot\u2019s impact. Address any identified barriers and provide additional required enablement.",
+      "Measures such as Average Daily Active Users and Total Acceptance Rate can help identify where further enablement of your team is required. Goal: Targeted teams are enabled and actively using GitHub Copilot. Exit criteria: >80% of committed licenses are assigned and active with neutral-or-better impact to system-level metrics. As you expand use of Copilot across your organization, in addition to observing the measures used during evaluation, consider using the",
+      "Thus, we recommend considering leading indicators before adding new metrics to your ROI and engineering scorecards. Those leading indicators should include a combination of both self-reported data from engineering surveys and existing telemetry from GitHub. Developer surveys: There\u2019s ample research showing that developers are domain experts capable of assessing help versus harm within their own toolchain. We trust developers to critically assess GitHub Copilot\u2019s impact on their own work."
+    ],
+    "title": "Measuring Impact of GitHub Copilot - GitHub Resources",
+    "url": "https://resources.github.com/learn/pathways/copilot/essentials/measuring-the-impact-of-github-copilot/"
+  },
+  {
+    "description": "Membership in ACM includes a subscription to Communications of the ACM (CACM), the computing industry's most trusted source for staying connected to the world of advanced computing \u00b7 A case study asks Copilot users about the tool's impact on their productivity, and seeks to find their perceptions ...",
+    "favicon_url": "https://you.com/favicon?domain=cacm.acm.org&size=128",
+    "snippets": [
+      "We normalize these measures against each other and write X_per_Y to indicate we have normalized metric X by metric Y. For example: accepted_per_hour is calculated as the total number of accepted events divided by the total number of (active) hour events. Table 2 defines the core set of metrics which we feel have a natural interpretation in this context. We note that there are other alternatives and we incorporate these in our discussion where relevant. Table 2. The core set of measurements considered in this paper. To understand users\u2019 experience with GitHub Copilot, we emailed a link to an online survey to",
+      "This meshes well with current thinking in software engineering research suggesting measuring productivity on multiple dimensions and using self-reported data.6 Thus we focus on studying perceived productivity. Here, we investigate whether usage measurements of developer interactions with GitHub Copilot can predict perceived productivity as reported by developers. We analyze ... 631 survey responses from developers using GitHub Copilot and match their responses to measurements collected from the IDE. We consider acceptance counts and more detailed measures of contribution, such as the amount of code contributed by GitHub Copilot and persistence of accepted completions in the code.",
+      "Looking further at individual measures of productivity, (Table 3) we find that both language proficiency and years of experience negatively predict developers agreeing that Copilot helps them write better code. However, proficiency positively predicts developers agreeing that Copilot helps them stay in the flow, focus on more satisfying work, spend less effort on repetitive tasks, and perform repetitive tasks faster.",
+      "We find acceptance rate (accepted_per_shown) most positively predicts users\u2019 perception of productivity, although, given the confounding and human factors, there is still notable unexplained variance. Of all usage measurements, acceptance rate correlates best with aggregate productivity ( ... 0001). This measurement is also the best performing for at least one survey question in each of the SPACE dimensions. This correlation is high confidence but leaves considerable unexplained variance."
+    ],
+    "title": "Measuring GitHub Copilot\u2019s Impact on Productivity \u2013 ...",
+    "url": "https://cacm.acm.org/research/measuring-github-copilots-impact-on-productivity/"
+  },
+  {
+    "description": "When the GitHub Copilot Technical Preview launched just over one year ago, we wanted to know one thing: Is this tool helping developers? The GitHub Next team conducted research using a combination of surveys and experiments, which led us to expected and unexpected answers.",
+    "favicon_url": "https://you.com/favicon?domain=github.blog&size=128",
+    "snippets": [
+      "Between 60\u201375% of users reported they feel more fulfilled with their job, feel less frustrated when coding, and are able to focus on more satisfying work when using GitHub Copilot. That\u2019s a win for developers feeling good about what they do! Conserving mental energy. Developers reported that GitHub Copilot helped them stay in the flow (73%) and preserve mental effort during repetitive tasks (87%). That\u2019s developer happiness right there, since we know from previous research that context switches and interruptions can ruin a developer\u2019s day, and that certain types of work are draining [8, 9].",
+      "In our research, we saw that GitHub Copilot supports faster completion times, conserves developers\u2019 mental energy, helps them focus on more satisfying work, and ultimately find more fun in the coding they do. We\u2019re also hearing that these benefits are becoming material to engineering leaders in companies that ran early trials with GitHub Copilot. When they consider how to keep their engineers healthy and productive, they are thinking through the same lens of holistic developer wellbeing and promoting the use of tools that bring delight.",
+      "AI agents in GitHub Copilot don\u2019t just assist developers but actively solve problems through multi-step reasoning and execution.",
+      "\ud83d\udcdd Helpful context: In the survey, we included statements that covered all dimensions of the SPACE framework. SPACE is the acronym for a multidimensional framework that describes several aspects of developer productivity: (1) Satisfaction and well-being; (2) Performance; (3) Activity; (4) Communication and collaboration; and (5) Efficiency and flow. In this post, we focus on the results from the dimensions of \u201cSatisfaction and well-being\u201d and \u201cEfficiency and flow.\u201d Both dimensions are critical to developer productivity and are often overlooked."
+    ],
+    "title": "Research: quantifying GitHub Copilot\u2019s impact on developer ...",
+    "url": "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "The Impact of AI on Developer Productivity",
+    "url": "https://arxiv.org/pdf/2302.06590"
+  },
+  {
+    "description": "Generative AI tools hold promise to increase human productivity. This paper presents results from a controlled experiment with GitHub Copilot, an AI pair programmer. Recruited software developers were asked to implement an HTTP server in JavaScript as quickly as possible.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Generative AI tools hold promise to increase human productivity. This paper presents results from a controlled experiment with GitHub Copilot, an AI pair programmer. Recruited software developers were asked to implement an HTTP server in JavaScript as quickly as possible.",
+      "Abstract page for arXiv paper 2302.06590: The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+      "View a PDF of the paper titled The Impact of AI on Developer Productivity: Evidence from GitHub Copilot, by Sida Peng and 3 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+      "View a PDF of the paper titled The Impact of AI on Developer Productivity: Evidence from GitHub Copilot, by Sida Peng and 3 other authors View PDF"
+    ],
+    "title": "[2302.06590] The Impact of AI on Developer Productivity: Evidence ...",
+    "url": "https://arxiv.org/abs/2302.06590"
+  },
+  {
+    "description": "We conducted research with developers at Accenture to understand GitHub Copilot\u2019s real-world impact in enterprise organizations.",
+    "favicon_url": "https://you.com/favicon?domain=github.blog&size=128",
+    "snippets": [
+      "Organizations seeking to conduct studies on the impact of GitHub Copilot can follow a methodological approach focusing on collecting and analyzing three types of data: quantitative, qualitative, and operational. To ensure readiness for data collection, organizations are advised to streamline their DevOps platform telemetry infrastructure in alignment with their specific goals and workflows.",
+      "Our objective was to assess the influence of GitHub Copilot on developers\u2019 experience within the enterprise setting, where they collaborate on multifaceted projects. We collected DevOps telemetry on several output performance metrics that reflect insights into developers\u2019 regular coding activity. Beyond the initial experiment, we conducted a company-wide adoption analysis, which explored installation rates, generated code acceptance rates, and the time it took developers to accept GitHub Copilot\u2019s first coding suggestion.",
+      "By enabling developers to maintain focus and stay in the flow, GitHub Copilot doesn\u2019t sacrifice quality for speed. And our findings provide evidence for exactly that. In our study, developers accepted around 30% of GitHub Copilot\u2019s suggestions.",
+      "Not only did this survey uncover insights into how and when developers are using GitHub Copilot, but it also indicated an overwhelming improvement in developer satisfaction, which we know to be a key component of the developer experience (DevEx). The combination of both telemetry data and the information from the survey provides a full picture for us to understand GitHub Copilot\u2019s impact at the enterprise level."
+    ],
+    "title": "Research: Quantifying GitHub Copilot\u2019s impact in the enterprise ...",
+    "url": "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-in-the-enterprise-with-accenture/"
+  },
+  {
+    "description": "This paper presents a comprehensive evaluation of GitHub Copilot\u2019s deployment and impact on developer productivity at Zoominfo, a leading Go-To-Market (GTM) Intelligence Platform. We describe our systematic four-phase approach to evaluating and deploying GitHub Copilot across our engineering ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "All participants were required to adhere to these guidelines to ensure the validity and security of the evaluation process. We conducted a two-week controlled trial from August 15th to August 29th, 2023, with 126 participating engineers actively integrating GitHub Copilot into their daily development workflows. At the trial\u2019s conclusion, we collected feedback through a comprehensive survey (72 respondents, about 57% response rate). ... Security considerations.",
+      "Both of these may be seen as limitations of this measure but for now, the acceptance rate measure seems like a good one among the alternatives considered in [34]. The acceptance rate of shown suggestions for a team is the average over the rates for developers. After months of usage, we have also been monitoring for any changes in our regular developer productivity metrics such as the DORA metrics and developer satisfaction scores. Once we establish a reliable causality between these metrics and the GitHub Copilot usage, we are planning to report the results in a subsequent paper.",
+      "Quantitative impact: The tool shows consistent acceptance rates (33% for suggestions, 20% for lines) across different programming languages, indicating reliable utility across diverse development contexts. ... Developer satisfaction: High satisfaction rates (72%) and positive feedback suggest that GitHub Copilot effectively supports daily development tasks, particularly in areas like boilerplate code generation and unit testing. ... Implementation considerations: Our phased deployment approach, including security training and policy alignment, proved effective for managing the transition to AI-assisted development.",
+      "This paper presents a comprehensive evaluation of GitHub Copilot\u2019s deployment and impact on developer productivity at Zoominfo, a leading Go-To-Market (GTM) Intelligence Platform. We describe our systematic four-phase approach to evaluating and deploying GitHub Copilot across our engineering organization, involving over 400 developers. Our analysis combines both quantitative metrics, focusing on acceptance rates of suggestions given by GitHub Copilot and qualitative feedback given by developers through developer satisfaction surveys."
+    ],
+    "title": "Experience with GitHub Copilot for Developer Productivity at Zoominfo",
+    "url": "https://arxiv.org/html/2501.13282v1"
+  },
+  {
+    "description": "Request PDF | Measuring GitHub Copilot's Impact on Productivity | Case study asks Copilot users about its impact on their productivity, and seeks to find their perceptions mirrored in user data. | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Furthermore, AVD deploys explainable AI safety dashboards to ensure regulatory transparency and proactive risk management by tracing agentic decision paths. This conceptual AVD stack aims to dramatically slash design-to-field cycle times, enhance resource efficiency, reduce embodied carbon, and elevate site safety within a single, coherent, and closed-loop pipeline. By outlining this integrated four-tier architecture and its operational dynamics, this paper posits Agentic Vibe Design as a foundational conceptual pathway from conversational ideation to autonomous, code-complete deployment, heralding a new era of seamless, agentic construction automation where stakeholders can \"vibe,\" code, and build in a continuous, self-improving loop.",
+      "This paper presents a comprehensive evaluation of GitHub Copilot's deployment and impact on developer productivity at Zoominfo, a leading Go-To-Market (GTM) Intelligence Platform. We describe our systematic four-phase approach to evaluating and deploying GitHub Copilot across our engineering organization, involving over 400 developers. Our analysis combines both quantitative metrics, focusing on acceptance rates of suggestions given by GitHub Copilot and qualitative feedback given by developers through developer satisfaction surveys.",
+      "[41]. Researchers have highlighted the significance of various metrics in assessing the performance and effectiveness of these tools, focusing on metrics such as code acceptance rate, correctness ratio, reproducibility, similarity, validity, accuracy, and security vulnerabilities. ... The Role of GitHub Copilot on Software Development: A Perspec-tive on Productivity, Security, Best Practices and Future Directions ... GitHub Copilot is transforming software development by automating tasks and boosting productivity through AI-driven code generation. In this paper, we con-duct a literature survey to synthesize insights on Copilot's impact on productivity and security.",
+      "Today, knowledge workers account for more than two-thirds of the workforce, and thus should be the focus of strategic plans to improve productivity. Currently there are no universally accepted methods to measure knowledge worker productivity, or even generally accepted categories. This paper provides a taxonomy of knowledge worker productivity measurements, and identifies a number of productivity dimensions that are used to categorize the findings of previous research."
+    ],
+    "title": "Measuring GitHub Copilot's Impact on Productivity | Request PDF",
+    "url": "https://www.researchgate.net/publication/378414685_Measuring_GitHub_Copilot's_Impact_on_Productivity"
+  },
+  {
+    "description": "Context. AI-based development tools, such as GitHub Copilot, are transforming the software development process by offering real-time code suggestions. These tools promise to improve the productivity by reducing cognitive load and speeding up task completion. Previous exploratory studies, however, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Relevance of Suggestions. The SUGGrel variable evaluates whether the suggestions provided by Copilot is accurate to the developer. We will use the Tako plugin for Visual Studio Code to collect such information. Tako records all the developer\u2019s activities in the IDE, including the interactions with Copilot. We will measure the percentage of suggestions accepted and rejected by the developer.",
+      "Our study specifically focuses on stress induced by interruptions during task execution, which has been shown to contribute to frustration. Yuan et al. [25] further predict that heart-rate measures will be positively correlated with the negative emotions experienced during frustration. In our case, we hypothesize that the stress measured through HRV is primarily driven by interruptions caused by Copilot\u2019s suggestions.",
+      "Code Assistant, GitHub Copilot, Productivity, Developer\u2019s Frustration \u00b7 Automation of source code generation has long been a key focus of software engineering research [1]. Several techniques have emerged to speed up the coding process, including code completion tools that predict subsequent developer actions and retrieval-based approaches that recommend relevant code fragments.",
+      "Automatic suggestions provided by AI assistants increase expert developers\u2019 frustration. Stress plays a crucial role in cognitive performance, task efficiency, and overall well-being of developers [11, 13]. As previously mentioned, automatic suggestions, while potentially beneficial in some cases, can mostly be perceived as interruptions by expert developers, reducing their focus and imposing a cognitive load on them as they review, accept, or reject them [11, 10]. We expect that such a cognitive load, in conjunction with the increased frustration (H"
+    ],
+    "title": "How do Copilot Suggestions Impact Developers\u2019 Frustration and ...",
+    "url": "https://arxiv.org/html/2504.06808v1"
+  },
+  {
+    "description": "What methodology (and metrics) should you use to accurately assess the impact on productivity and value delivery of a tool like GitHub Copilot?",
+    "favicon_url": "https://you.com/favicon?domain=devops.com&size=128",
+    "snippets": [
+      "Most software delivery teams are considering adopting AI in some form to help engineers accelerate their value delivery and increase delivery effectiveness. GitHub Copilot is one of the first examples of AI-powered engineering assistance. It is self-styled as \u2018your AI pair programmer\u2019 and can autocomplete lines of code.",
+      "Anecdotal reports suggest that developers find that GitHub Copilot makes the more tedious aspects of coding less taxing and positively impacts wellbeing. An employee NPS makes this straightforward to validate and quantify. Although an important factor of productivity measurement, it shouldn\u2019t be viewed in isolation from the other metrics when quantifying overall developer productivity. The above are some examples of relevant metrics to consider when analyzing the impact of GitHub Copilot on delivery productivity.",
+      "The metrics reflect the SPACE framework for measuring developer productivity, emphasizing the key areas GitHub Copilot will likely impact. These metrics can be tracked over time for a representative group of GitHub users to see the \u2018before and after\u2019 effect. We suggest that a representative sample would include engineers of different seniority and activity\u2013and the time period for analysis would be at least three sprint cycles (e.g., six weeks or more). An end-to-end software delivery analytics platform provides a single pane of glass to measure the real impact of a tool like GitHub Copilot.",
+      "To robustly measure the impact of GitHub Copilot (and similar AI engineering-enhancement tools), the methodology must be: ... Holistic\u2014considering all benefits and potential impacts across the end-to-end SDLC (software delivery lifecycle)"
+    ],
+    "title": "Best of 2023: Measuring GitHub Copilot's Impact on Engineering ...",
+    "url": "https://devops.com/measuring-github-copilots-impact-on-engineering-productivity/"
+  },
+  {
+    "description": "Findings show that code quality is better across the board and developers felt more confident, too.",
+    "favicon_url": "https://you.com/favicon?domain=github.blog&size=128",
+    "snippets": [
+      "In fact, almost 70% of participants accepted comments from reviewers using GitHub Copilot Chat. These results show the impact GitHub Copilot Chat has on collaboration, and underscores the potential impact of scaling it across larger engineering teams in bigger organizations. Reducing time spent on pull requests and code reviews means developers can focus on higher-priority changes. And better quality code from the start ensures code doesn\u2019t need to be rolled back later, nor does it require additional testing.",
+      "AI agents in GitHub Copilot don\u2019t just assist developers but actively solve problems through multi-step reasoning and execution.",
+      "88% of developers reported maintaining flow state with GitHub Copilot Chat because they felt more focused, less frustrated, and enjoyed coding more, too. Last year, our research uncovered that developers using GitHub Copilot code 55% faster. But working fast is just one part of the picture\u2014in many cases, there has traditionally been a tradeoff between doing something quickly and doing something right. As artificial intelligence continues to write code for an increasing number of developers, ensuring good code quality is even more important.",
+      "This goes a long way toward ensuring that code will, simply put, work. In this study, we investigated whether GitHub Copilot and its chatbot functionalities would improve perceived quality of the code produced, reduce time required to review the code, and produce code that passes unit testing."
+    ],
+    "title": "Research: Quantifying GitHub Copilot\u2019s impact on code quality ...",
+    "url": "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-code-quality/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "A Qualitative Study of User Perception of M365 AI Copilot",
+    "url": "https://arxiv.org/pdf/2503.17661"
+  },
+  {
+    "description": "Case study asks Copilot users about its impact on their productivity, and seeks to find their perceptions mirrored in user data.",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Murphy-Hill, E. et al. What predicts software developers' productivity? IEEE Transactions on Software Engineering 47, 3 (2019), 582--594. ... Peng, S., Kalliamvakou, E., Cihon, P., and Demirer, M. The impact of AI on developer productivity: Evidence from GitHub Copilot.",
+      "Motivated by its growing popularity and expanding use, we offer a perspective on the h index, which refers to the number of papers ... ... This study compares the research productivity and impact of inbred and non-inbred faculty employed at Australian law schools. The sample consists of 429 academics, employed at 21 law schools. To measure research productivity and impact we use articles ... ... This work is licensed under a Creative Commons Attribution International 4.0 License. ... Banh LHolldack FStrobel G(2025)Copiloting the future: How generative AI transforms Software EngineeringInformation and Software Technology10.1016/j.infsof.2025.107751183(107751)Online publication date: Jul-2025",
+      "Ari Aye, G., Kim, S., and Li, H. Learning autocompletion from real-world datasets. In Proceedings of the 43rd IEEE/ACM Intern.",
+      "Zhou, W., Kim, S., Murali, V., and Ari Aye, G. Improving code autocompletion with transfer learning. CoRR abs/2105.05991 (2021); https://arxiv.org/abs/2105.05991 ... Banh LHolldack FStrobel G(2025)Copiloting the future: How generative AI transforms Software EngineeringInformation and Software Technology10.1016/j.infsof.2025.107751183(107751)Online publication date: Jul-2025"
+    ],
+    "title": "Measuring GitHub Copilot's Impact on Productivity | Communications ...",
+    "url": "https://dl.acm.org/doi/10.1145/3633453"
+  },
+  {
+    "description": "GitHub Copilot works alongside you directly in your editor, suggesting whole lines or entire functions for you.",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "To generate a code suggestion, the GitHub Copilot extension begins by examining the code in your editor\u2014focusing on the lines just before and after your cursor, but also information including other files open in your editor and the URLs of repositories or file paths to identify relevant context.",
+      "Backed by the leaders in AI, GitHub Copilot provides contextualized assistance throughout the software development lifecycle, from code completions and chat assistance in the IDE to code explanations and answers to docs in GitHub and more. With GitHub Copilot elevating their workflow, developers can focus on: value, innovation, and happiness.",
+      "User Engagement Data: This includes pseudonymous identifiers captured on user interactions with Copilot, such as accepted or dismissed completions, error messages, system logs, and product usage metrics. Prompts: These are inputs for chat or code, along with context, sent to Copilot's AI to generate suggestions. Suggestions: These are the AI-generated code lines or chat responses provided to users based on their prompts.",
+      "To generate a suggestion for chat in the code editor, the GitHub Copilot extension creates a contextual prompt by combining your prompt with additional context including the code file open in your active document, your code selection, and general workspace information, such as frameworks, languages, and dependencies. That information is sent to GitHub Copilot\u2019s model, to make a probabilistic determination of what is likely to come next and generate suggestions. To generate a suggestion for chat on GitHub.com, such as providing an answer to a question from your chat prompt, GitHub Copilot creates a contextual prompt by combining your prompt with additional context including previous prompts, the open pages on GitHub.com as well as retrieved context from your codebase or Bing search."
+    ],
+    "title": "GitHub Copilot \u00b7 Your AI pair programmer",
+    "url": "https://github.com/features/copilot"
+  },
+  {
+    "description": "The Summary analytics page shows you the scope of analytics, clustered with AI technology, so you can instantly see what topics and agents you should consider improving.",
+    "favicon_url": "https://you.com/favicon?domain=learn.microsoft.com&size=128",
+    "snippets": [
+      "Analytics aren't available on the Analytics page for activity completed when you test your agent in Copilot Studio using the test panel. A session starts when a user interacts with your agent or the agent sends a proactive message to the user. The session begins in an unengaged state. A session becomes engaged when one of the following occurs: ... Once the session becomes engaged, it remains engaged. An engaged session can have one of the following outcomes: resolved, escalated, or abandoned. A session ends and is considered escalated when the Escalate topic is triggered or a Transfer to agent node is run.",
+      "Sessions that don't meet any of the above criteria are considered neutral sessions and don't appear on this chart. On the Summary tab of the Analytics page, you can use the Information icons to learn more about engagement, escalation, abandon, and resolution rates. Copilot Studio uses natural language processing (NLP) techniques to extract themes and assign sentiment to a given agent session.",
+      "The Customer satisfaction status chart provides key insights on the themes users search for, and the satisfaction level of the users about the agent's responses. Sessions with similar themes are grouped together. The chart shows the number of sessions for each theme during the selected period, and the percentage of these sessions that were satisfied or dissatisfied. Sessions that weren't satisfied and not dissatisfied are considered neutral sessions and don't appear on this chart.",
+      "This process analyzes the text of the session to determine if the overall sentiment is positive, negative, or neutral. The process also preprocesses user queries to remove false positives. For example, this preprocessing ensures that a query such as \"what is the best option?\" isn't classified as positive solely because the word \"best\" appears in the query."
+    ],
+    "title": "Analyze agent performance and usage - Microsoft Copilot Studio ...",
+    "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-summary"
+  },
+  {
+    "description": "Download Citation | The Impact of AI on Developer Productivity: Evidence from GitHub Copilot | Generative AI tools hold promise to increase human productivity. This paper presents results from a controlled experiment with GitHub Copilot, an... | Find, read and cite all the research you need ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Download Citation | The Impact of AI on Developer Productivity: Evidence from GitHub Copilot | Generative AI tools hold promise to increase human productivity. This paper presents results from a controlled experiment with GitHub Copilot, an... | Find, read and cite all the research you need on ResearchGate",
+      "This paper aims to develop a deeper understanding of workers\u2019 experiences with interactions with automated agents (AA) in the workplace and provide actionable recommendations for organisational leaders to achieve positive outcomes. We propose and test a simulation model that quantifies and predicts workers\u2019 experiences with AA, shedding light on the interplay of diverse variables, such as workload, effort and trust.",
+      "Large language models (LLMs), like ChatGPT, GitHub Copilot, and Microsoft Copilot, present challenges in university education, particularly for paper assignments. These AI-driven tools enable students to (semi)automatically complete tasks that were previously considered evidence of skill acquisition, potentially affecting grading and skill development.",
+      "La aparici\u00f3n de herramientas como GitHub Copilot en el 2021 fue uno de los principales factores de inter\u00e9s en la industria, un modelo de inteligencia artificial basado en Codex de OpenAI que se enfoca en el autocompletado de c\u00f3digo fuente, capaz de mejorar la productividad de un desarrollador realizando las mismas actividades hasta un 50% m\u00e1s r\u00e1pido en comparaci\u00f3n con un desarrollo sin el apoyo de esta herramienta"
+    ],
+    "title": "The Impact of AI on Developer Productivity: Evidence from GitHub ...",
+    "url": "https://www.researchgate.net/publication/368473822_The_Impact_of_AI_on_Developer_Productivity_Evidence_from_GitHub_Copilot"
+  },
+  {
+    "description": "PDF | Recent times saw captivating improvements to artificial intelligence-assisted code completion technology. The precise effect this contributes to... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "The Copilot version which is offered to the developers is \u201cGitHub Copilot for Business\u201d. Providing this \u00b7 resource is the responsibility of a global toolchain department within the organization that focuses on de-",
+      "However, they still had access to Copilot as \u00b7 needed by simply copying code over to a working IDE. The participating teams went through the same onboarding process provided to all other employees within \u00b7 the organization. This process is equal for all employees, regardless of their maturity level or project com- plexity. It had two relevant components regarding enablement.",
+      "by interpreting the measurements in the context of the SPACE framework. The teams were thus compared \u00b7 to themselves, not to each other. This approach allows the IT Hub to compare the performance of diverse \u00b7 teams over time, in an attempt to draw conclusions how Copilot affected their work. It was relevant to this study that the throughput measured the volume of work completed by a team within",
+      "investigation to determine the productivity gain from Copilot utilization. The upcoming sections first contextualize modern software development and productivity. Second, an elab- oration is given on the case study: how it was conducted and what the data analysis yielded. Lastly, a dis- cussion is provided detailing the findings and limitations."
+    ],
+    "title": "(PDF) The impact of GitHub Copilot on developer productivity from ...",
+    "url": "https://www.researchgate.net/publication/381609417_The_impact_of_GitHub_Copilot_on_developer_productivity_from_a_software_engineering_body_of_knowledge_perspective"
+  },
+  {
+    "description": "This systematic literature review comprehensively examines the application of Large Language Models (LLMs) in forecasting and anomaly detection, highlighting the current state of research, inherent challenges, and prospective future directions. LLMs have demonstrated significant potential in ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "By training on large datasets, LLMs can learn the underlying structures and dependencies in time series, potentially enabling them to predict missing values with higher accuracy than traditional methods. Moreover, LLMs can incorporate contextual information and external variables, providing a more nuanced approach to imputation that considers both temporal dynamics and external influences. Despite the potential of LLMs to handle missing data, several challenges remain. Ensuring the quality and reliability of imputed values is paramount, as inaccuracies can propagate through subsequent analyses and lead to misleading conclusions.",
+      "Section 11 provides an overview of related work, and Section 12 concludes the paper. In the rapidly evolving domain of artificial intelligence (AI), LLMs have emerged as copilot tools in various applications, notably in forecasting and anomaly detection [10, 23]. However, despite their growing prominence, a substantial knowledge gap exists regarding their comprehensive capabilities and limitations in these contexts.",
+      "Similarly, in supply chain management, forecasting plays a pivotal role in inventory control, demand planning, and logistics optimization, thus ensuring operational efficiency and cost-effectiveness [20]. Moreover, in the realm of public policy and healthcare, forecasting is critical for preparing for future demands, whether it be anticipating economic shifts, public health needs, or environmental changes [21]. Accurate predictions can guide policy formulation and resource allocation, thereby enhancing the effectiveness of public services and interventions.",
+      "One method involves applying large language models directly to time series predictions, focusing on converting time series data into input data suitable for the models, such as GPT, Llama, and others. Another type is to train a large language model in the domain of time series, by using a large amount of data from several time series datasets to jointly train a large language model in the domain of time series, which can then be used for downstream time series tasks. Specifically, the paper focuses on the second type, examining the ways in which researchers train large language models across a variety of domains."
+    ],
+    "title": "Large Language Models for Forecasting and Anomaly Detection: A ...",
+    "url": "https://arxiv.org/html/2402.10350v1"
+  },
+  {
+    "description": "A first look at the impact on productivity, creativity, and time.",
+    "favicon_url": "https://you.com/favicon?domain=www.microsoft.com&size=128",
+    "snippets": [
+      "There was no statistically significant change in accuracy between the two groups. ... We see broader opportunity for Copilot to drive organizational impact at scale across every function. We\u2019re taking a learn-it-all approach, starting with our own salespeople and customer service agents.",
+      "We scored their work according to the accuracy of the information found and the time required for completion. We also asked subjects how they felt about the task and the products they used. Study on the impact of Copilot in Dynamics 365 Customer Service Microsoft\u2019s Office of the Chief Economist, in partnership with the Dynamics 365 product group, recently completed a study that evaluated Copilot\u2019s impact on agent productivity for Microsoft Support agents supporting the Commercial business.",
+      "We recruited subjects using the Upwork platform, providing some with standard Microsoft 365 and some with Microsoft 365 Copilot. We assigned users a suite of tasks including information retrieval, understanding a missed meeting, and drafting a blog post to announce a product. We scored their work according to the accuracy of the information found and the quality of the post drafted.",
+      "What everyone wants to know now is: will generative AI really transform work, and how?ight months ago, we introduced Microsoft 365 Copilot to reduce digital debt and increase productivity so people can focus on the work that is uniquely human."
+    ],
+    "title": "What Can Copilot\u2019s Earliest Users Teach Us About AI at Work?",
+    "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/copilots-earliest-users-teach-us-about-generative-ai-at-work"
+  },
+  {
+    "description": "Learn about what Microsoft 365 Copilot is and the common Copilot features in Microsoft 365 apps, like Word, Excel, PowerPoint, and Teams. This article answers common questions about Copilot, including what is Copilot, how Copilot works, and the benefits of using Copilot. What is M365 Copilot?",
+    "favicon_url": "https://you.com/favicon?domain=learn.microsoft.com&size=128",
+    "snippets": [
+      "Microsoft 365 Copilot enhances search relevance and accuracy by using advanced lexical and semantic understanding of Microsoft Graph data, resulting in more contextually precise information retrieval. Copilot preserves security, compliance, and privacy, ensuring organizational boundaries are respected while offering seamless user experience.",
+      "It can also help prevent unauthorized sharing or leakage and review Copilot prompts and responses. To learn more, see Microsoft Purview data security and compliance protections for generative AI apps. ... Agents are scoped or focused versions of Microsoft 365 Copilot that act as AI assistants and can automate business processes.",
+      "These algorithms use deep learning techniques and data sets to understand, summarize, predict, and generate content. The LLMs include pretrained models, like Generative Pre-Trained Transformers, like GPT-4, that are designed for these tasks. To learn more about Generative Pre-Trained Transformers (GPT), ask Copilot. ... Copilot has intelligent features, functionality, and prompting. These features are designed to help users in the context of their work within their Microsoft 365 apps.",
+      "Users enter a prompt in Copilot and Copilot responds with AI-generated information. The responses are in real-time and can include internet-based content and work content that users have permission to access. Users get content relevant to their work tasks, and in the context of the Microsoft 365 app they're using."
+    ],
+    "title": "What is Microsoft 365 Copilot? | Microsoft Learn",
+    "url": "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-overview"
+  },
+  {
+    "description": "Large Language Model (LLM)-based in-application assistants, or copilots, can automate software tasks, but users often prefer learning by doing, raising questions about the optimal level of automation for an effective user experience. We investigated two automation paradigms by designing and ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Figure 2. AutoCopilot: (a) Fully automates the user\u2019s task (e.g., creating a webpage that includes a login and product page); (b) Similar to state-of-the-art copilots, demonstrates incorrect automation (such as color coding the entire sheet instead of values greater than 40 in column C); (c) Provides follow-up textual response based on context from software documentation \u00b7 Recent efforts to optimize copilots (e.g., for productivity or creative tasks) have largely focused on technical improvements, often without adequately considering user needs or incorporating insights from user studies (Tian et al., 2024).",
+      "Since users often struggle to locate and use the correct UI elements when only text-based guidance is offered (Brown et al., 2020; AI, 2022; Spataro, 2023; Khurana et al., 2024), copilots provide relevant in-context visual references within the chat. These visuals, tailored to the user\u2019s specific task and application, can help users locate and use software features, such as the text tool in Figma or advanced sorting option in Google Sheets. Based on the above considerations, we derived four key design goals for building GuidedCopilot:",
+      "Additionally, when the hybrid-RAG in AutoCopilot fails to identify relevant automation functions related to the detected intent, it shows a breakdown with an error message. To ensure consistent reliability of automation across both copilot conditions, we employed the same software documentation for RAG, ensuring both copilots generated consistent response/automation quality and accuracy while minimizing hallucinations.",
+      "We examine two distinct design paradigms for automation (Endsley, 2017; Horvitz, 2007; Bainbridge, 1983): whether users prefer copilots that fully automate tasks (\u201cDo It For Me\u201d), as seen in fully automated systems, or those that serve as assistants, combining semi-automation for repetitive tasks with guided support and instructions for learning complex tasks (\u201cDo It With Me\u201d). We investigate how these design paradigms (semi-automation vs. full automation) impact task completion and user perceptions of software copilots, considering factors such as user expertise (novice vs. expert), familiarity with LLMs, and the nature of the tasks (fixed vs and creative, exploratory). To study these design paradigms, we designed and implemented two in-application copilot interventions."
+    ],
+    "title": "Do It For Me vs. Do It With Me: Investigating User Perceptions ...",
+    "url": "https://arxiv.org/html/2504.15549v1"
+  },
+  {
+    "description": "Generative AI tools hold promise to increase human productivity. This paper presents results from a controlled experiment with GitHub Copilot, an AI pair programmer. Recruited software developers were asked to implemen\u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "We verify from telemetry after the experiment that all participants from the treated group have configured GitHub Copilot and accepted recommendations other than five who did not finish the sign up and thus started the experiment without the GitHub Copilot. Both treated and control groups were instructed to complete an entry survey to provide demographic information such as age, gender, location, and educational background.",
+      "While there is a growing literature studying perceptions of AI tools, how people use them, and their implications for security and education [Nguyen and Nadi, 2022, Barke et al., 2022, Finnie-Ansley et al., 2022, Sandoval et al., 2022] there has been little research on productivity impacts of AI-powered tools in professional contexts, cf. [Mozannar et al., 2022, Vaithilingam et al., 2022, Ziegler et al., 2022]. The potential productivity impacts of AI have major implications for the labor market and firms, including changes in employment, skills, and firm organization [Raj and Seamans, 2018, Agrawal et al., 2019]. This paper studies the productivity effects of AI tools on software development. We present a controlled trial of GitHub Copilot, an AI pair programmer that suggests code and entire functions in real time based on context.",
+      "The paper proceeds as follows. We first describe the design of the controlled trial and provide summary statistics. We then present the results. We conclude by a discussion on implications of the study for productivity research on AI-powered tools, its limitations, and future research directions on the broader economic impacts of AI-driven productivity. We conducted a controlled experiment to measure the productivity impact of using GitHub Copilot in programming tasks.",
+      "This result provides indirect evidence that treated group benefited from Copilot during their task as their willingness to pay is significantly higher than the control group. ... Note: This graph shows the distribution of the irrelevant price between the treated (blue) and control (orange) groups. This paper presents evidence on the productivity effects of generative AI tools in software development."
+    ],
+    "title": "[2302.06590] The Impact of AI on Developer Productivity: Evidence ...",
+    "url": "https://ar5iv.labs.arxiv.org/html/2302.06590"
+  },
+  {
+    "description": "With the advances in machine learning, there is a growing interest in AI-enabled tools for autocompleting source code. GitHub Copilot, also referred to as the \"AI Pair Programmer\", has been trained on billions of lines of open source GitHub code, and is one of such tools that has been increasingly ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "With the advances in machine learning, there is a growing interest in AI-enabled tools for autocompleting source code. GitHub Copilot, also referred to as the \"AI Pair Programmer\", has been trained on billions of lines of open source GitHub code, and is one of such tools that has been increasingly used since its launch on June 2021.",
+      "Abstract page for arXiv paper 2303.08733: Practices and Challenges of Using GitHub Copilot: An Empirical Study",
+      "View a PDF of the paper titled Practices and Challenges of Using GitHub Copilot: An Empirical Study, by Beiqi Zhang and 4 other authors View PDF \u00b7 Abstract:With the advances in machine learning, there is a growing interest in AI-enabled tools for autocompleting source code.",
+      "Our results suggest that using Copilot is like a double-edged sword, which requires developers to carefully consider various aspects when deciding whether or not to use it. Our study provides empirically grounded foundations and basis for future research on the role of Copilot as an AI pair programmer in software development. From: Peng Liang [view email] [v1] Wed, 15 Mar 2023 16:17:50 UTC (526 KB) [v2] Tue, 25 Apr 2023 16:44:33 UTC (526 KB) [v3] Thu, 27 Apr 2023 14:48:21 UTC (526 KB) ... View a PDF of the paper titled Practices and Challenges of Using GitHub Copilot: An Empirical Study, by Beiqi Zhang and 4 other authors"
+    ],
+    "title": "[2303.08733] Practices and Challenges of Using GitHub Copilot: ...",
+    "url": "https://arxiv.org/abs/2303.08733"
+  }
+]

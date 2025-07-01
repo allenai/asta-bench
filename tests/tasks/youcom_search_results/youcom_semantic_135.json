@@ -1,0 +1,268 @@
+[
+  {
+    "description": "The goal of contrastive representation learning is to learn such an embedding space in which similar sample pairs stay close to each other while dissimilar ones are far apart. Contrastive learning can be applied to both supervised and unsupervised settings. When working with unsupervised data, ...",
+    "favicon_url": "https://you.com/favicon?domain=lilianweng.github.io&size=128",
+    "snippets": [
+      "The goal of contrastive representation learning is to learn such an embedding space in which similar sample pairs stay close to each other while dissimilar ones are far apart. Contrastive learning can be applied to both supervised and unsupervised settings. When working with unsupervised data, contrastive learning is one of the most powerful approaches in self-supervised learning.",
+      "Using a large batch size during training is another key ingredient in the success of many contrastive learning methods (e.g. SimCLR, CLIP), especially when it relies on in-batch negatives. Only when the batch size is big enough, the loss function can cover a diverse enough collection of negative samples, challenging enough for the model to learn meaningful representation to distinguish different examples. Hard negative samples should have different labels from the anchor sample, but have embedding features very close to the anchor embedding.",
+      "For example when learning sentence embedding, we can treat sentence pairs labelled as \u201ccontradiction\u201d in NLI datasets as hard negative pairs (e.g. SimCSE, or use top incorrect candidates returned by BM25 with most keywords matched as hard negative samples (DPR; Karpukhin et al., 2020). However, it becomes tricky to do hard negative mining when we want to remain unsupervised. Increasing training batch size or memory bank size implicitly introduces more hard negative samples, but it leads to a heavy burden of large memory usage as a side effect.",
+      "Various translation models for different languages can be employed for creating different versions of augmentations. Once we have a noise version of text samples, many contrastive learning frameworks introduced above, such as MoCo, can be used to learn sentence embedding. Shen et al. (2020) proposed to apply Cutoff to text augmentation, inspired by cross-view training."
+    ],
+    "title": "Contrastive Representation Learning | Lil'Log",
+    "url": "https://lilianweng.github.io/posts/2021-05-31-contrastive/"
+  },
+  {
+    "description": "Learn everything you need to know about contrastive learning and its most prominent applications.",
+    "favicon_url": "https://you.com/favicon?domain=www.v7labs.com&size=128",
+    "snippets": [
+      "Such challenges hinder the model training. For example, if we have an image of a dog as the anchor sample, then only augmented versions of this image can form the positive samples. Images of other dogs, thus, also belong to the set of negative samples. Since, according to the Self-Supervised Learning framework, the contrastive loss function will force the two different dog images to be distant in the embedding space, whereas, in reality, they should lie as close together as possible.",
+      "The problems associated with SSCL mentioned here have also given rise to the field of Non-Contrastive Learning for Self-Supervised Learning, where we do not use any negative samples at all. We only use positive samples to train models where the aim is to push the representations of the samples (belonging to the same distribution) close to each other in the embedding space.",
+      "While conventional Contrastive Learning methods are restricted to downstream tasks, the SupCon model allows the label information to play an active role in the representation learning. The model proposed is robust to image corruptions and hyperparameter variations. ... Contrastive Learning has seen applications in NLP as well (such as SimCSE), where the goal is to learn such embedding space in which similar sentences are close to each other while dissimilar ones are far apart.",
+      "The negative sample can be any other image in the dataset. The image below shows the basic framework of the instance discrimination-based contrastive learning technique. The distance function can be anything, from Euclidean distance to cosine distances in the embedding space. Some image augmentation methods popularly used for Instance Discrimination-based Contrastive Learning is listed as follows:"
+    ],
+    "title": "The Beginner\u2019s Guide to Contrastive Learning",
+    "url": "https://www.v7labs.com/blog/contrastive-learning-guide"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "Contrastive Learning of Sentence Embeddings from Scratch",
+    "url": "https://aclanthology.org/2023.emnlp-main.238.pdf"
+  },
+  {
+    "description": "Contrastive learning allows models to extract meaningful representations from unlabeled data. By leveraging similarity and dissimilarity, contr",
+    "favicon_url": "https://you.com/favicon?domain=encord.com&size=128",
+    "snippets": [
+      "Contrastive learning allows models to extract meaningful representations from unlabeled data. How does it work? What are the practical applications? | Encord",
+      "Contrastive learning is an approach that focuses on extracting meaningful representations by contrasting positive and negative pairs of instances. It leverages the assumption that similar instances should be closer in a learned embedding space while dissimilar instances should be farther apart. By framing learning as a discrimination task, contrastive learning allows models to capture relevant features and similarities in the data. Supervised contrastive learning (SCL) is a branch that uses labeled data to train models explicitly to differentiate between similar and dissimilar instances.",
+      "The model is trained to minimize the distance between positive pairs and maximize the distance between negative pairs in the embedding space. \ud83d\udca1 To learn more about embeddings, read The Full Guide to Embeddings in Machine Learning. Contrastive learning utilizes a variety of loss functions to establish the objectives of the learning process.",
+      "It measures the similarity between positive and negative pairs in the learned embedding space. InfoNCE loss maximizes the agreement between positive pairs and minimizes the agreement between negative pairs. The key idea behind InfoNCE loss is to treat the contrastive learning problem as a binary classifier. Given a positive pair and a set of negative pairs, the model is trained to discriminate between positive and negative instances."
+    ],
+    "title": "Full Guide to Contrastive Learning | Encord",
+    "url": "https://encord.com/blog/guide-to-contrastive-learning/"
+  },
+  {
+    "description": "Defining positive and negative labels for a retrieval task in a search ranking system is a non-trivial problem. This article goes over various sampling strategies for creating negative and positive pairs for effective representation learning. It introduces the concept of mining hard examples, ...",
+    "favicon_url": "https://you.com/favicon?domain=blog.reachsumit.com&size=128",
+    "snippets": [
+      "Defining positive and negative labels for a retrieval task in a search ranking system is a non-trivial problem. This article goes over various sampling strategies for creating negative and positive pairs for effective representation learning. It introduces the concept of mining hard examples, followed by various strategies to sample hard positive and hard negative pairs.",
+      "Neelakantan, A., Xu, T.. Text and Code Embeddings by Contrastive Pre-Training. ArXiv. /abs/2201.10005 \u21a9\ufe0e \u00b7 Chen, X., Lakhotia, K., O\u011fuz, B., Gupta, A., Lewis, P., Peshterliev, S., Mehdad, Y., Gupta, S., & Yih, W. (2021). Salient Phrase Aware Dense Retrieval: Can a Dense Retriever Imitate a Sparse One? Conference on Empirical Methods in Natural Language Processing.",
+      "The final (denoised) set of negatives is more reliable and can be used as hard negatives. We saw earlier how Approximate nearest neighbor Negative Contrastive Learning (ANCE)7 can be used to sample negatives. The main drawback of this approach was that the inference is too expensive to compute per batch as it requires a forward pass on the entire corpus which is much bigger than the training batch. But it also means that the retrieved samples are global negatives from the entire corpus and can be considered hard negatives.",
+      "Using only hard negatives will change the representativeness of the retrieval task training data, which might impose a non-trivial bias on the learned embeddings. For example, the model may hardly learn to retrieve if the negatives are too weak; it may be optimized in the wrong direction if the negative samples are biased8. In Facebook Search2, the authors found that models trained simply using hard negatives cannot outperform models trained with random negatives. Their experiments showed that blending random and hard negatives in training is advantageous. Increasing the ratio of easy-to-hard negatives continued the model improvement up to a 100:1 easy-to-hard ratio."
+    ],
+    "title": "Positive and Negative Sampling Strategies for Representation Learning ...",
+    "url": "https://blog.reachsumit.com/posts/2023/03/pairing-for-representation/"
+  },
+  {
+    "description": "If you think you need to spend $2,000 on a 120-day program to become a data scientist, then listen to me for a minute.",
+    "favicon_url": "https://you.com/favicon?domain=mr-amit.medium.com&size=128",
+    "snippets": [
+      "If you think you need to spend $2,000 on a 120-day program to become a data scientist, then listen to me for a minute. I understand that learning data science can be really challenging, especially\u2026",
+      "Whether you\u2019re training for fine-grained classification, sentence embeddings, or cross-modal retrieval, mastering the art of hard negative mining is essential. As you move forward in applying contrastive learning to your projects, remember that the difficulty of negatives isn\u2019t something to shy away from \u2014 it\u2019s what will push your model toward real excellence.",
+      "For example, if you\u2019re training a model on sentence pairs, each sentence in the batch that isn\u2019t a positive pair is considered a negative. This method keeps things computationally feasible by leveraging data already being processed. Memory Bank: Another powerful technique is using a memory bank. In this method, you store a large number of negative samples and pull from this bank during training. A prime example is MoCo (Momentum Contrast), which maintains a memory bank of past embeddings to draw negative samples from, ensuring that they\u2019re harder than just random samples from the current batch.",
+      "It\u2019s like having a personal trainer who knows exactly when to push you harder, but never too much. Let\u2019s talk real-world. Where does all this theory about contrastive learning and hard negatives actually apply? You\u2019d be surprised at the breadth of applications. ... Sentence Similarity: In sentence embedding tasks, hard negative sampling can make a huge difference."
+    ],
+    "title": "Contrastive Learning with Hard Negative Samples | by It's Amit ...",
+    "url": "https://mr-amit.medium.com/contrastive-learning-with-hard-negative-samples-2cccb609fa0c"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.ijcai.org&size=128",
+    "snippets": [],
+    "title": "Rethinking InfoNCE: How Many Negative Samples Do You ...",
+    "url": "https://www.ijcai.org/proceedings/2022/0348.pdf"
+  },
+  {
+    "description": "Sentence representation learning is a crucial task in natural language processing, as the quality of learned representations directly influences downstream tasks, such as sentence classification an...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Sentence representation learning is a crucial task in natural language processing, as the quality of learned representations directly influences downstream tasks, such as sentence classification and sentiment analysis. Transformer-based pretrained ...",
+      "The embeddings of the original instances with the optimal noise can be regarded as hard negatives of the original instances. Experimental results have indicated that VaSCL (which adopts dropout augmentation) outperforms SimCSE, verifying the effectiveness of the hard negatives. CARDS [139] retrieves the top k negative samples from the training corpus for each sample using text retrieval [120, 132], then computes the cosine similarity between the anchor and retrieved negative instance to screen out hard negatives.",
+      "As discussed in Section 3, PairSupCon [133] requires importance sampling, VaSCL [134] needs to obtain the optimal noise from the top-k neighborhood, AdCSE [59] requires external adversarial training, and CARDS [139] needs to leverage text retrieval to choose the top-k negatives before selecting the hard negatives using the cosine similarity between sentence pairs. These limitations restrict the application of hard negatives to a wide range of tasks involving contrastive learning.",
+      "However, \\(\\tau\\) cannot be too small because the InfoNCE loss will degenerate to the triplet loss that only considers hard negatives as \\(\\tau\\) approaches 0. At present, almost all of the contrastive sentence representation models adopt \\(\\tau = 0.05\\) for model training. Moreover, a larger mini-batch size is usually beneficial for enhancing contrastive learning, as it partially increases the likelihood of hard negatives in negative samples. Sentence representations, which encapsulate the semantic and syntactic features of a sentence in the form of dense vector embeddings, have been extensively studied."
+    ],
+    "title": "Contrastive Learning Models for Sentence Representations | ACM ...",
+    "url": "https://dl.acm.org/doi/10.1145/3593590"
+  },
+  {
+    "description": "Learn about Contrastive Learning, its techniques, models like CLIP & SimCLR, and applications in vector databases for efficient data retrieval.",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Traditionally, machine learning (ML) can be classified broadly into two types: supervised and unsupervised learning. In supervised\u2026",
+      "In self-supervised learning, we partition the data into positive and negative samples \u2014 similar to binary (supervised) classification \u2014 by treating the object under consideration as a positive example and all the other samples as negative. Self-supervised learning methods learn joint embeddings and can be broadly classified into two types: ... In contrastive methods, we take different samples of the same data, like different views of the same image and try to maximize their similarity scores, while trying to minimize them for the other samples/images.",
+      "As a result, we can have countless applications of contrastive learning in conjunction with vector databases, for example: Zero-shot recognition (can have a number of applications itself) using CLIP \u00b7 Recommendation system for an online user \u2014 based on the user\u2019s history, it will suggest the products having the closest proximity to those embeddings. Document retrieval \u2014 retrieve the document from the database which is closest to the user\u2019s query embedding",
+      "To make the training more practical, we perform it in batches and let\u2019s say we have a batch of 32 images, then 1 image (itself) needs to have a maximized similarity score, while the other 31 will have to have as much minimized similarity score as possible. However, having a single positive vs a number of negative examples makes it quite hard to learn discriminative features, so we employ some smart techniques like data augmentation to make multiple copies of the same data point."
+    ],
+    "title": "An In-Depth Guide to Contrastive Learning: Techniques, Models, ...",
+    "url": "https://medium.com/@myscale/an-in-depth-guide-to-contrastive-learning-techniques-models-and-applications-909828f65f20"
+  },
+  {
+    "description": "Definition: At its core, contrastive learning is a self-supervised technique where the goal is to learn representations by comparing data points. Think of it like a game of \u201cspot the difference,\u201d but\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "\u201cIn the middle of every difficulty lies opportunity.\u201d \u2014 Albert Einstein.",
+      "You freeze the encoder and train a small linear classifier on top of it, and the performance tells you how well the contrastive learning model has learned useful features. 2. k-Nearest Neighbors (k-NN) in Embedding Space Another method is to evaluate the quality of the embeddings directly using a k-NN classifier. After training, you can classify images by finding their nearest neighbors in the embedding space. This gives you a sense of how well the model has structured the space. 3. Recall and Precision on Retrieval Tasks In tasks like image retrieval, you\u2019ll often use recall and precision.",
+      "The explosion of contrastive learning in AI, particularly in areas like visual representation learning, is hard to ignore. Traditional methods rely heavily on large, labeled datasets. But contrastive learning breaks free from that constraint by letting your model learn rich, generalizable features from the raw, unlabelled data itself. You\u2019ve probably seen this in action even if you didn\u2019t realize it. Applications like image classification (think Google Photos recognizing your cat), clustering (grouping similar objects), and image retrieval (like finding similar images on Pinterest) all benefit from contrastive learning.",
+      "The most commonly used loss in contrastive learning is InfoNCE. It\u2019s designed to maximize agreement between positive pairs while pushing negative pairs apart. Here\u2019s how it works in practice: For each sample, the model generates an embedding (a vector representation)."
+    ],
+    "title": "Contrastive Learning Explained. \u201cIn the middle of every difficulty ...",
+    "url": "https://medium.com/biased-algorithms/contrastive-learning-explained-9343b3a67513"
+  },
+  {
+    "description": "Contrastive learning is emerging as a powerful technique for extracting knowledge from unlabeled data. This technique requires a balanced mixture of two ingredients: positive (similar) and negative (dissimilar) samples. This is typically achieved by maintaining a queue of negative samples during ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled Exploring the Impact of Negative Samples of Contrastive Learning: A Case Study of Sentence Embedding, by Rui Cao and 6 other authors View PDF \u00b7 Abstract:Contrastive learning is emerging as a powerful technique for extracting knowledge from unlabeled data. This technique requires a balanced mixture of two ingredients: positive (similar) and negative (dissimilar) samples. This is typically achieved by maintaining a queue of negative samples during training.",
+      "Abstract page for arXiv paper 2202.13093: Exploring the Impact of Negative Samples of Contrastive Learning: A Case Study of Sentence Embedding",
+      "This paper presents a momentum contrastive learning model with negative sample queue for sentence embedding, namely MoCoSE. We add the prediction layer to the online branch to make the model asymmetric and together with EMA update mechanism of the target branch to prevent the model from collapsing. We define a maximum traceable distance metric, through which we learn to what extent the text contrastive learning benefits from the historical information of negative samples.",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs."
+    ],
+    "title": "[2202.13093] Exploring the Impact of Negative Samples of Contrastive ...",
+    "url": "https://arxiv.org/abs/2202.13093"
+  },
+  {
+    "description": "Have you ever wondered how machines learn to distinguish between a cat and a dog, or how they understand whether or not two sentences are similar? Contrastive learning represents a paradigm shift in\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Have you ever wondered how machines learn to distinguish between a cat and a dog, or how they understand whether or not two sentences are\u2026",
+      "By conceptualizing the learning process as a task of discrimination, contrastive learning equips models with the capability to discern and assimilate critical features and relationships inherent in the dataset. Here, labels guide the model training, simplifying the generation of positive and negative pairs. The challenge lies in managing computational resources and achieving efficient training convergence. Hard pairs and triplets, those with high loss values, are crucial for model effectiveness. This method leverages properties of data to generate pseudo-labels in the absence of actual labels.",
+      "The core methodologies underpinning this process include: Extracting meaningful representations by contrasting positive and negative pairs of instances. Prioritizing the maximization of similarity between analogous samples and its minimization between dissimilar samples. Adhering to the premise that similar instances should be positioned closer within the learned embedding space, while dissimilar instances should be more distant.",
+      "Upon the encoding and projection of augmented instances into the embedding space, the contrastive learning objective is then systematically applied. This objective is designed with a dual focus: firstly, to maximize concordance among positive pairs, which are instances originating from the same sample; and secondly, to minimize the concordance among negative pairs, constituted by instances derived from disparate samples."
+    ],
+    "title": "Contrastive Learning: A Comprehensive Guide | by Juan C Olamendy ...",
+    "url": "https://medium.com/@juanc.olamendy/contrastive-learning-a-comprehensive-guide-69bf23ca6b77"
+  },
+  {
+    "description": "Efficiently mining and distinguishing hard negatives is the key to Contrastive Learning (CL) in various visual understanding tasks. By properly emphasizing the penalty of hard negatives, Hard Negative Mining (HNM) can improve the CL performance. However, there is no method to quantitatively ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "Efficiently mining and distinguishing hard negatives is the key to Contrastive Learning (CL) in various visual understanding tasks. By properly emphasizing the penalty of hard negatives, Hard Negative Mining (HNM) can improve the CL performance. However, there is no method to quantitatively analyze the penalty strength of hard negatives, which makes training difficult to converge.",
+      "Experiments on two visual understanding tasks, i.e., Image\u2013Text Retrieval (ITR) and Temporal Action Localization (TAL), with different modal data as research objects have verified that T-PSC can accelerate model training and improve the performance of current visual understanding models. T-PSC can be applied to existing ITR and TAL models in a plug-and-play manner without any changes. In recent years, contrastive learning has made great progress in visual understanding, and a meaningful feature embedding space is generated via the contrastive loss [24]. SimCLR [25] proposes a simple framework based on contrastive learning, which learns effective visual representations by minimizing the distance between differently augmented views of the same sample via a contrastive loss.",
+      "Coupled with better training behavior, the final retrieval performance is also improved. By revisiting hard negative mining in contrastive learning, this paper proposes T-PSC to effectively distinguish hard negative samples in visual understanding tasks. In order to overcome the side effects of convergence difficulties caused by traditional hard negative mining methods, we define a metric for the penalty strength of negatives.",
+      "Then, the retrieval results are obtained by ranking the similarities. Existing ITR methods can be divided into two categories according to the image\u2013text matching methods, i.e., global-level matching methods [17,33,34] and local-level matching methods [18,30,35]. The global-level matching methods embed the whole images and sentences into a joint embedding space, and the matching score between the embeddings of images and sentences can be calculated via a simple similarity metric (e.g., cosine similarity)."
+    ],
+    "title": "Revisiting Hard Negative Mining in Contrastive Learning for Visual ...",
+    "url": "https://www.mdpi.com/2079-9292/12/23/4884"
+  },
+  {
+    "description": "Contrastive learning focuses on comparing data points to improve model performance across various tasks.",
+    "favicon_url": "https://you.com/favicon?domain=blog.roboflow.com&size=128",
+    "snippets": [
+      "By creating positive and negative pairs through data augmentation, contrastive learning allows models to learn without explicit supervision, making it highly valuable for pretraining models on large, unlabeled datasets. In natural language processing (NLP), contrastive learning can be used to learn meaningful text embeddings. For example, given two sentences, the model can be trained to determine whether they convey the same meaning or are contextually similar.",
+      "By training models to minimize the distance between images of the same person and maximize the distance between images of different people, contrastive learning helps create discriminative face embeddings. These embeddings are robust to variations in lighting, pose, and expression, which is crucial for reliable face recognition systems, such as those used in security or authentication applications. Another common use case is image retrieval, where the task is to find visually similar images given a query image.",
+      "This objective encourages the model to draw similar instances closer together in the embedding space and push dissimilar ones farther apart. The similarity between instances is typically measured using distance metrics like Euclidean distance or cosine similarity. Through training, the model minimizes the distance between positive pairs and maximizes the distance between negative pairs, resulting in more effective and discriminative representations. Contrastive learning employs various loss functions to define the objectives of the learning process, playing a critical role in guiding the model to capture meaningful representations and distinguish between similar and dissimilar instances.",
+      "In this blog post, we will explore the fundamentals of contrastive learning, delve into its core methods, and discuss how it is transforming modern machine learning practices. Contrastive learning is an approach aimed at learning meaningful representations by contrasting pairs of data points that are either similar (positive pairs) or dissimilar (negative pairs)."
+    ],
+    "title": "What is Contrastive Learning? A guide.",
+    "url": "https://blog.roboflow.com/contrastive-learning-machine-learning/"
+  },
+  {
+    "description": "The advancement of transformer neural networks has significantly enhanced the performance of sentence similarity models. However, these models often struggle with highly discriminative tasks and generate sub-optimal representations of complex documents such as peer-reviewed scientific literature.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Scientific Reports - Contrastive learning and mixture of experts enables precise vector embeddings in biological databases",
+      "The ability to generate reliable vector embeddings and perform precise classification is crucial, especially for technologies that rely on information retrieval and web search. One approach to further curate transformer latent spaces is to utilize contrastive learning to create sentence similarity models, initially revolutionizing sentiment analysis with broader applications in vector search7,8,9.",
+      "SciBERT, BioBERT, and PubmedBERT have all been trained further on a scientific corpus with additional MLM44,45,46. all-MiniLM-L6-v2 (Mini), MPNet, and E5 have been fine-tuned using contrastive learning for sentence similarity and embedding-based tasks10,47,48,49,50,51,52,53.",
+      "Overall, our use of co-citation networks enables rapid and efficient dataset compilation for training transformers on niche scientific domains. The fine-tuning of base BERT models through contrastive learning with an MNR-inspired loss significantly improves sentence similarity capabilities. The MoE approach further expands these capabilities, suggesting the feasibility of a universal model for text classification and vector embeddings across various domains through MoE seeding and enforced routing."
+    ],
+    "title": "Contrastive learning and mixture of experts enables precise vector ...",
+    "url": "https://www.nature.com/articles/s41598-025-98185-8"
+  },
+  {
+    "description": "Contrastive learning has emerged as an essential approach in self-supervised visual representation learning. Its main goal is to maximize the similarities between augmented versions of the same image (positive pairs), while minimizing the similarities between different images (negative pairs).",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Neural Processing Letters - Contrastive learning has emerged as an essential approach in self-supervised visual representation learning. Its main goal is to maximize the similarities between...",
+      "In recent years, self-supervised learning has undergone notable advancements, with the emergence of numerous noteworthy methodologies. Among these, contrastive learning has garnered significant attention, owing to its exceptional performance in many downstream tasks. Contrastive learning is mainly utilized to train the network model by maximizing the similarities of positive pairs and minimizing the similarities of negative pairs.",
+      "Among many of the existing methods, positive samples usually come from different augmentation versions of the same image, as shown in Fig. 1(b). In contrast, negative samples are obtained either from current batch or memory bank. Because the number of negative samples will directly affect the training results.",
+      "The queue in momentum contrastive learning contains many normal negative samples and few hard ones (about 5\\(\\%\\)). Only few hard negative samples actually work when the model is trained, while many existing methods have ignored the importance of hard negative samples."
+    ],
+    "title": "Synthetic Hard Negative Samples for Contrastive Learning | Neural ...",
+    "url": "https://link.springer.com/article/10.1007/s11063-024-11522-2"
+  },
+  {
+    "description": "This is the second part of series of articles \u201cDeep Learning in Information Retrieval\u201d. This series is for those who knows basics of deep learning and would like to deep dive into the field of modern\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "This is the second part of series of articles \u201cDeep Learning in Information Retrieval\u201d. This series is for those who knows basics of deep\u2026",
+      "Approximate nearest neighbor Negative Contrastive Learning Process. Image from [4] ANCE consists of two components: Trainer and Inferencer. Both componets are used during model training process. The Trainer uses negatives from the ANN index to train a dense retrieval model. The Inferencer uses a recent checkpoint to update the representation of documents in the corpus then refreshes the ANN index with most up-to-date embeddings of documents.",
+      "Dense retrieval models are hard to train. It requires different training tricks like hard negative mining, etc. Later works in this field are dedicated to research of different enhancements in training process of such models. For example, Approximate nearest neighbor Negative Contrastive Learning (ANCE) approach is a learning mechanism that selects hard training negatives globally from the entire corpus, using an asynchronously updated ANN index [4].",
+      "Approximate nearest neighbor negative contrastive learning for dense text retrieval, CoRR, 2020, arXiv:2007.00808. Yingqi Qu, Yuchen Ding, Jing Liu, Kai Liu, Ruiyang Ren, Wayne Xin Zhao, Daxiang Dong, Hua Wu, and Haifeng Wang. 2021. RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering."
+    ],
+    "title": "Deep Learning in Information Retrieval. Part II: Dense Retrieval ...",
+    "url": "https://medium.com/@aikho/deep-learning-in-information-retrieval-part-ii-dense-retrieval-1f9fecb47de9"
+  },
+  {
+    "description": "Contrastive learning is a machine learning technique that trains models to differentiate between similar and dissimilar data pairs. It is used for self-supervised learning, computer vision, natural language processing and other use cases.",
+    "favicon_url": "https://you.com/favicon?domain=builtin.com&size=128",
+    "snippets": [
+      "Contrastive learning is a machine learning method that trains models to distinguish between similar and dissimilar data, by bringing related data points closer and pushing unrelated ones apart in an embedding space. Contrastive learning uses anchor, positive and negative samples to train a model.",
+      "One of the key advantages of contrastive learning is its ability to learn from unlabeled data, making it highly scalable and useful for pre-training.  \u00b7 However, this technique presents several challenges, including finding suitable hard negatives, selecting the right batch size and minimizing false negatives. Below, we\u2019ll examine how contrastive learning works, common loss functions, practical implementation challenges, key applications and some considerations that need to be taken into account while implementing this contrastive learning.",
+      "Hard negatives improve the representation quality learned by contrastive learning; if negatives are too easy, then an encoder may already be able to discriminate the pairs without training.  \u00b7 However, we want to avoid \u201cfalse negatives\u201d or images of the same object that are considered as negatives simply because they are different images in the unlabeled dataset. Several more advanced methods, beyond the scope of this article, have focused on sampling harder negatives or attempting to avoid false negatives with a modified contrastive loss.",
+      "A lower temperature emphasizes and places a greater penalty on harder negatives by amplifying differences in similarity. Common values are around 0.07 or 0.1.  ... Contrastive learning is most notably used for self-supervised learning, a type of unsupervised learning where the label, or supervisory signal, comes from the data itself. In the self-supervised setting, contrastive learning allows us to train encoders to learn from massive amounts of unlabeled data."
+    ],
+    "title": "Contrastive Learning: A Tutorial | Built In",
+    "url": "https://builtin.com/machine-learning/contrastive-learning"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "In practice, we used a scaled similarity because score differences tends to be too small and apply a scaling factor ... C = 20 C=20 (Henderson and al., 2020, Radford and al., 2021). ... (a_i , p_j), i \\neq j (ai\u200b,pj\u200b),i\ue020=j, as negatives sample pairs. The batch composition is therefore a key training aspect. Given the literature in the domain, we mainly focused on three main aspects of the batch. In contrastive learning, a larger batch size is synonymous with better performance.",
+      "Sentence embedding methods, therefore, compose inner words to compute the final representation. For example, SentenceBert model (Reimers and Gurevych, 2019) uses Transformer, the cornerstone of many NLP applications, followed by a pooling operation over the contextualized word vectors. (c.f. Figure below.) The parameters from the composition module are usually learned using a self-supervised objective. For the project, we used a contrastive training method illustrated in the figure below.",
+      "We built a large batch and gathered samples from the same batch dataset to limit the topic distribution and favor hard negatives. However, we also mix at least two datasets in the batch to learn a global structure between topics and not only a local structure within a topic.",
+      "(a_i , p_j), i \\neq j (ai\u200b,pj\u200b),i\ue020=j to distant vectors in the embedding space. This training method is also called training with in-batch negatives, InfoNCE or NTXentLoss."
+    ],
+    "title": "Train a Sentence Embedding Model with 1B Training Pairs",
+    "url": "https://huggingface.co/blog/1b-sentence-embeddings"
+  },
+  {
+    "description": "Even in the context of modern large language model, retrieval augmented generation [33] is still a highly efficient method to avoid stuffing everything inside a model's prompt, and having to fear the need to re-train this model to prevent generating potentially out-dated information. [1] Youtube: Training State of the Art Sentence Embedding Models \u00b7 [2] SBERT Documentation - Multiple Negatives ...",
+    "favicon_url": "https://you.com/favicon?domain=ethen8181.github.io&size=128",
+    "snippets": [
+      "Even in the context of modern large language model, retrieval augmented generation [33] is still a highly efficient method to avoid stuffing everything inside a model's prompt, and having to fear the need to re-train this model to prevent generating potentially out-dated information. [1] Youtube: Training State of the Art Sentence Embedding Models \u00b7 [2] SBERT Documentation - Multiple Negatives Ranking Loss",
+      "For fine-tuning procedure, many works including the original SBERT relied on classification, regression, pairwise triplet/hinge loss style objective function [5] [14] [15]. But one of SBERT authors later pointed out that contrastive learning is a much better approach [1] and E5 (EmbEddings from bidirEctional Encoder rEpresentations) [13] which also involves pre-training stage with contrastive learning tops the retrieval benchmark suite from MTEB (Massive Text Embedding Benchmark) [10]. So here we are, discussing some recipes for training sentence embeddings via contrastive learning.",
+      "CLIP (Contrastive Language-Image Pre-Training) [8] introduces a symmetric version of this loss function. PyTorch style pseudocode is shown below: # @ denotes matrix multiplication, and represents a in batch negative # operation mentioned in the next section. scores = anchor_embedding @ positive_embedding.T / temperature labels = torch.arange(len(scores), device=scores.device, dtype=torch.long) cross_entropy_loss(scores, labels) # clip style symmetric version anchor_scores = anchor_embedding @ positive_embedding.T / temperature positive_scores = positive_embedding @ anchor_embedding.T / temperature labels = torch.arange(len(anchor_scores), device=scores.device, dtype=torch.long) loss = (cross_entropy_loss(anchor_scores, labels) + cross_entropy_loss(positive_scores, labels)) / 2",
+      "[5] Nils Reimers, Iryna Gurevych - Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks - 2019 \u00b7 [6] Kai Liu, Ruiyang Ren, Wayne Xin Zhao, et al. - RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering - 2021 \u00b7 [7] Nandan Thakur, Nils Reimers, Johannes Daxenberger, Iryna Gurevych - Augmented SBERT: Data Augmentation Method for Improving Bi-Encoders for Pairwise Sentence Scoring Tasks - 2020"
+    ],
+    "title": "Training Bi-Encoder Models with Contrastive Learning Notes",
+    "url": "https://ethen8181.github.io/machine-learning/deep_learning/contrastive/contrastive_learning_notes.html"
+  },
+  {
+    "description": "Building on the practices of training state-of-the-art dense retrievers (Ren et al., 2021; Wang et al., 2022), we use mined hard negatives and knowledge distillation from a cross-encoder (CE) teacher model for the MS-MARCO and NQ datasets. For the NLI dataset, contradiction sentences are regarded as hard negatives. The loss function is a linear interpolation between contrastive ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Building on the practices of training state-of-the-art dense retrievers (Ren et al., 2021; Wang et al., 2022), we use mined hard negatives and knowledge distillation from a cross-encoder (CE) teacher model for the MS-MARCO and NQ datasets. For the NLI dataset, contradiction sentences are regarded as hard negatives. The loss function is a linear interpolation between contrastive loss",
+      "We choose a simple contrastive learning recipe using in-batch negatives with a large batch-size to train our model. Extensive experiments on both BEIR and MTEB benchmarks demonstrate the effectiveness of the proposed method. On the BEIR zero-shot retrieval benchmark (Thakur et al., 2021), E5 is the first model to outperform the strong BM25 baseline without using any labeled data.",
+      "While pre-trained language models such as BERT (Devlin et al., 2019) and GPT (Brown et al., 2020) can produce transferrable text representations, they are not ideal for tasks such as retrieval and text matching where a single-vector embedding of texts is more desired due to its efficiency and versatility. To obtain better text embeddings, contrastive learning is often the go-to framework to enhance the sequence-level representations from text pairs. Along this line of research, some works are geared towards learning task-specific embeddings. For example, GTR (Ni et al., 2021) and Sentence-T5 (Ni et al., 2022) fine-tune pre-trained models with supervised datasets to learn embeddings customized for passage retrieval and semantic textual similarity, respectively.",
+      "For long-tail domains such as Trec-Covid (Voorhees et al., 2021) and retrieval tasks that involve long documents (Touche-2020) (Bondarenko et al., 2022) or rely heavily on exact lexical match (Fever) (Thorne et al., 2018), further research efforts are still necessary to improve current dense retrievers. In this work, we train a general-purpose text embedding model E5 from weak supervision signals. We adopt a simple contrastive training framework with in-batch negatives and learn from a large-scale text pair dataset we harvest from heterogeneous data sources across the web."
+    ],
+    "title": "Text Embeddings by Weakly-Supervised Contrastive Pre-training",
+    "url": "https://arxiv.org/html/2212.03533v2"
+  },
+  {
+    "description": "Paper List for Contrastive Learning for Natural Language Processing - ryanzhumich/Contrastive-Learning-NLP-Papers",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Exploring the Impact of Negative Samples of Contrastive Learning: A Case Study of Sentence Embedding Rui Cao, Yihao Wang, Yuxin Liang, Ling Gao, Jie Zheng, Jie Ren, Zheng Wang Findings of ACL 2022 [pdf] Syntax-guided Contrastive Learning for Pre-trained Language Model Shuai Zhang, Wang Lijie, Xinyan Xiao, Hua Wu Findings of ACL 2022 [pdf]",
+      "Towards Unsupervised Dense Information Retrieval with Contrastive Learning Gautier Izacard, Mathilde Caron, Lucas Hosseini, Sebastian Riedel, Piotr Bojanowski, Armand Joulin, Edouard Grave arXiv [pdf] Text and Code Embeddings by Contrastive Pre-Training Arvind Neelakantan, Tao Xu, Raul Puri, Alec Radford, Jesse Michael Han, Jerry Tworek, Qiming Yuan, Nikolas Tezak, Jong Wook Kim, Chris Hallacy, Johannes Heidecke, Pranav Shyam, Boris Power, Tyna Eloundou Nekoul, Girish Sastry, Gretchen Krueger, David Schnurr, Felipe Petroski Such, Kenny Hsu, Madeleine Thompson, Tabarak Khan, Toki Sherbakov, Joanne Jang, Peter Welinder, Lilian Weng arXiv [pdf] [code]",
+      "New Intent Discovery with Pre-training and Contrastive Learning Yuwei Zhang, Haode Zhang, Li-Ming Zhan, Xiao-Ming Wu, Albert Lam ACL 2022 [pdf] RoCBert: Robust Chinese Bert with Multimodal Contrastive Pretraining Hui Su, Weiwei Shi, Xiaoyu Shen, Zhou Xiao, Tuo Ji, Jiarui Fang, Jie Zhou ACL 2022 [pdf] Sentence-aware Contrastive Learning for Open-Domain Passage Retrieval Wu Hong, Zhuosheng Zhang, Jinyuan Wang, Hai Zhao ACL 2022 [pdf]",
+      "Approximate Nearest Neighbor Negative Contrastive Learning for Dense Text Retrieval Lee Xiong, Chenyan Xiong, Ye Li, Kwok-Fung Tang, Jialin Liu, Paul Bennett, Junaid Ahmed, Arnold Overwijk ICLR 2021 [pdf] Improving Gradient-based Adversarial Training for Text Classification by Contrastive Learning and Auto-Encoder Yao Qiu, Jinchao Zhang, Jie Zhou Findings of ACL 2021 [pdf]"
+    ],
+    "title": "GitHub - ryanzhumich/Contrastive-Learning-NLP-Papers: Paper List ...",
+    "url": "https://github.com/ryanzhumich/Contrastive-Learning-NLP-Papers"
+  },
+  {
+    "description": "Semantic Textual Similarity (STS) is an important task in the area of Natural Language Processing (NLP) that measures the similarity of the underlying semantics of two texts. Although pre-trained contextual embedding models such as Bidirectional Encoder Representations from Transformers (BERT) ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "Semantic Textual Similarity (STS) is an important task in the area of Natural Language Processing (NLP) that measures the similarity of the underlying semantics of two texts. Although pre-trained contextual embedding models such as Bidirectional Encoder Representations from Transformers (BERT) have achieved state-of-the-art performance on several NLP tasks, BERT-derived sentence embeddings have been proven to collapse in some way, i.e., sentence embeddings generated by BERT depend on the frequency of words.",
+      "Since the BERT pre-trained language model has a collapse problem, the BERT-generated sentence embeddings mapped into a small area and almost all sentence pairs have a cosine similarity in the range of 0.6 and 1.0. This paper proposed an effective contrastive learning model, called SupMPN, to deal with this problem. We developed a new contrastive objective function to fine-tune BERT that involves the multiple hard positives and multiple hard negatives in contrasting learning simultaneously.",
+      "SBERT-base-nli-v2 was trained on SNLI and MNLI data using the Multiple-Negative Ranking Loss (MNRL) in [73]. SG-BERT: Ref. [34] proposed this model which is a self-supervised contrastive learning method using the redesign of NT-Xent objective with self-guidance. They exploit similarities between different sentence embeddings made by BERT itself.",
+      "Although SBERT increases BERT performance on STS tasks through training with human-labeled NLI datasets, it still fails to produce good sentence embeddings. Recently, several models have been proposed to enhance BERT and/or RoBERTa [55] on Semantic Textual Similarity (STS) using contrastive learning."
+    ],
+    "title": "SupMPN: Supervised Multiple Positives and Negatives Contrastive ...",
+    "url": "https://www.mdpi.com/2076-3417/12/19/9659"
+  }
+]

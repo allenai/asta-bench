@@ -1,0 +1,252 @@
+[
+  {
+    "description": "The Stanford Natural Language Inference (SNLI) corpus (version 1.0) is a collection of 570k human-written English sentence pairs manually labeled for balanced classification with the labels entailment, contradiction, and neutral. We aim for it to serve both as a benchmark for evaluating representational systems for text, especially including those induced by representation-learning methods, as well as a resource for developing NLP models of any kind. The following paper ...",
+    "favicon_url": "https://you.com/favicon?domain=nlp.stanford.edu&size=128",
+    "snippets": [
+      "The Stanford Natural Language Inference (SNLI) corpus (version 1.0) is a collection of 570k human-written English sentence pairs manually labeled for balanced classification with the labels entailment, contradiction, and neutral. We aim for it to serve both as a benchmark for evaluating representational systems for text, especially including those induced by representation-learning methods, as well as a resource for developing NLP models of any kind. The following paper introduces the corpus in detail.",
+      "The following table reflects our informal attempt to catalog published 3-class classification results on the SNLI test set. We define sentence vector-based models as those which perform classification on the sole basis of a pair of fixed-size sentence representations that are computed independently of one another. Reported parameter counts do not include word embeddings. If you would like to add a paper that reports a number at or above the current state of the art, email Sam.",
+      "Performing groundbreaking Natural Language Processing research since 1999.",
+      "About 4k sentences in the training set have captionIDs and pairIDs beginning with 'vg_'. These come from a pilot data collection effort that used data from the VisualGenome corpus, which wass still under construction at the time of the release of SNLI."
+    ],
+    "title": "The Stanford Natural Language Inference (SNLI) Corpus",
+    "url": "https://nlp.stanford.edu/projects/snli/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=nlp.stanford.edu&size=128",
+    "snippets": [],
+    "title": "Stanford",
+    "url": "https://nlp.stanford.edu/pubs/snli_paper.pdf"
+  },
+  {
+    "description": "The current state-of-the-art on SNLI is UnitedSynT5 (3B). See a full comparison of 98 papers with code.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Contact us on: hello@paperswithcode.com .",
+      "Papers With Code is a free resource with all data licensed under CC-BY-SA."
+    ],
+    "title": "SNLI Benchmark (Natural Language Inference) | Papers With Code",
+    "url": "https://paperswithcode.com/sota/natural-language-inference-on-snli"
+  },
+  {
+    "description": "Natural language inference (NLI) is the task of determining whether a \"hypothesis\" is true (entailment), false (contradiction), or undetermined (neutral) given a \"premise\". ... Approaches used for NLI include earlier symbolic and statistical approaches to more recent deep learning approaches. Benchmark datasets used for NLI include SNLI...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Natural language inference (NLI) is the task of determining whether a \"hypothesis\" is true (entailment), false (contradiction), or undetermined (neutral) given a \"premise\". ... Approaches used for NLI include earlier symbolic and statistical approaches to more recent deep learning approaches. Benchmark datasets used for NLI include SNLI, MultiNLI, SciTail, among others.",
+      "You can get hands-on practice on the SNLI task by following this d2l.ai chapter.",
+      "**Natural language inference (NLI)** is the task of determining whether a \"hypothesis\" is true (entailment), false (contradiction), or undetermined (neutral) given a \"premise\". Example: | Premise | Label | Hypothesis | | --- | ---| --- | | A man inspects the uniform of a figure in some East Asian country.",
+      "Contact us on: hello@paperswithcode.com ."
+    ],
+    "title": "Papers with Code - Natural Language Inference",
+    "url": "https://paperswithcode.com/task/natural-language-inference/latest"
+  },
+  {
+    "description": "We show how our corpus of explanations, which we call e-SNLI, can be used for various goals, such as obtaining full sentence justifications of a model\u2019s decisions, improving universal sentence representations and transferring to out-of-domain NLI datasets. Our dataset thus opens up a range of research directions for using natural language explanations, both for improving models and for asserting their trust \u00b7 Papers ...",
+    "favicon_url": "https://you.com/favicon?domain=papers.nips.cc&size=128",
+    "snippets": [
+      "We show how our corpus of explanations, which we call e-SNLI, can be used for various goals, such as obtaining full sentence justifications of a model\u2019s decisions, improving universal sentence representations and transferring to out-of-domain NLI datasets. Our dataset thus opens up a range of research directions for using natural language explanations, both for improving models and for asserting their trust \u00b7 Papers published at the Neural Information Processing Systems Conference.",
+      "Electronic Proceedings of Neural Information Processing Systems"
+    ],
+    "title": "e-SNLI: Natural Language Inference with Natural Language Explanations",
+    "url": "https://papers.nips.cc/paper/8163-e-snli-natural-language-inference-with-natural-language-explanations"
+  },
+  {
+    "description": "Abstract page for arXiv paper 1812.01193: e-SNLI: Natural Language Inference with Natural Language Explanations",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled e-SNLI: Natural Language Inference with Natural Language Explanations, by Oana-Maria Camburu and 3 other authors View PDF",
+      "In order for machine learning to garner widespread public adoption, models must be able to provide interpretable and robust explanations for their decisions, as well as learn from human-provided explanations at train time. In this work, we extend the Stanford Natural Language Inference dataset with an additional layer of human-annotated natural language explanations of the entailment relations.",
+      "We further implement models that incorporate these explanations into their training process and output them at test time. We show how our corpus of explanations, which we call e-SNLI, can be used for various goals, such as obtaining full sentence justifications of a model's decisions, improving universal sentence representations and transferring to out-of-domain NLI datasets.",
+      "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[1812.01193] e-SNLI: Natural Language Inference with Natural Language ...",
+    "url": "https://arxiv.org/abs/1812.01193"
+  },
+  {
+    "description": "The SNLI Corpus \u00b7 Files in This Item: Show full item record \u00b7",
+    "favicon_url": "https://you.com/favicon?domain=archive.nyu.edu&size=128",
+    "snippets": [],
+    "title": "The SNLI Corpus : Faculty Digital Archive : NYU Libraries",
+    "url": "https://archive.nyu.edu/handle/2451/41728"
+  },
+  {
+    "description": "The SNLI corpus (version 1.0) is a collection of 570k human-written English sentence pairs manually labeled for balanced classification with the labels entailment, contradiction, and neutral, supporting the task of natural language inference (NLI), also known as recognizing textual entailment (RTE). Additional Documentation: Explore on Papers ...",
+    "favicon_url": "https://you.com/favicon?domain=www.tensorflow.org&size=128",
+    "snippets": [
+      "The SNLI corpus (version 1.0) is a collection of 570k human-written English sentence pairs manually labeled for balanced classification with the labels entailment, contradiction, and neutral, supporting the task of natural language inference (NLI), also known as recognizing textual entailment (RTE). Additional Documentation: Explore on Papers With Code north_east",
+      "@inproceedings{snli:emnlp2015, Author = {Bowman, Samuel R. and Angeli, Gabor and Potts, Christopher, and Manning, Christopher D.}, Booktitle = {Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing (EMNLP)}, Publisher = {Association for Computational Linguistics}, Title = {A large annotated corpus for learning natural language inference}, Year = {2015} } Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License.",
+      "TFDS now supports the Croissant \ud83e\udd50 format!",
+      "Read the documentation to know more."
+    ],
+    "title": "snli | TensorFlow Datasets",
+    "url": "https://www.tensorflow.org/datasets/catalog/snli"
+  },
+  {
+    "description": "Accepted as a short paper at ACL, 2020. ! New dataset of visual textual entailment with natural language explanations taken from e-SNLI: e-SNLI-VE-2.0: Corrected Visual-Textual Entailment with Natural Language Explanations. At the IEEE CVPR Workshop on Fair, Data Efficient and Trusted Computer ...",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Accepted as a short paper at ACL, 2020. ! New dataset of visual textual entailment with natural language explanations taken from e-SNLI: e-SNLI-VE-2.0: Corrected Visual-Textual Entailment with Natural Language Explanations. At the IEEE CVPR Workshop on Fair, Data Efficient and Trusted Computer Vision, 2020",
+      "Contribute to OanaMariaCamburu/e-SNLI development by creating an account on GitHub.",
+      "! Check out our e-SNLI-VE, a new dataset of natural language explanations for vision-language understanding, and our e-ViL benchmark for evaluating natural language explanations: e-ViL: A Dataset and Benchmark for Natural Language Explanations in Vision-Language Tasks accepted at ICCV, 2021.",
+      "@incollection{NIPS2018_8163, title = {e-SNLI: Natural Language Inference with Natural Language Explanations}, author = {Camburu, Oana-Maria and Rockt\\\"{a}schel, Tim and Lukasiewicz, Thomas and Blunsom, Phil}, booktitle = {Advances in Neural Information Processing Systems 31}, editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett}, pages = {9539--9549}, year = {2018}, publisher = {Curran Associates, Inc.}, url = {http://papers.nips.cc/paper/8163-e-snli-natural-language-inference-with-natural-language-explanations.pdf} }"
+    ],
+    "title": "GitHub - OanaMariaCamburu/e-SNLI",
+    "url": "https://github.com/OanaMariaCamburu/e-SNLI"
+  },
+  {
+    "description": "Repository to track the progress in Natural Language Processing (NLP), including the datasets and the current state-of-the-art for the most common NLP tasks.",
+    "favicon_url": "https://you.com/favicon?domain=nlpprogress.com&size=128",
+    "snippets": [
+      "The Multi-Genre Natural Language Inference (MultiNLI) corpus contains around 433k hypothesis/premise pairs. It is similar to the SNLI corpus, but covers a range of genres of spoken and written text and supports cross-genre evaluation.",
+      "In contrast to the SNLI and MultiNLI, it was not crowd-sourced but created from sentences that already exist \u201cin the wild\u201d. Hypotheses were created from science questions and the corresponding answer candidates, while relevant web sentences from a large corpus were used as premises.",
+      "The Stanford Natural Language Inference (SNLI) Corpus contains around 550k hypothesis/premise pairs.",
+      "State-of-the-art results can be seen on the SNLI website."
+    ],
+    "title": "Natural language inference | NLP-progress",
+    "url": "http://nlpprogress.com/english/natural_language_inference.html"
+  },
+  {
+    "description": "The recently released Stanford Natural Language Inference (SNLI) corpus has made it possible to develop and evaluate learning-centered methods such as deep neural networks for natural language inference (NLI). In this paper, we propose a special long short-term memory (LSTM) architecture for NLI.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled Learning Natural Language Inference with LSTM, by Shuohang Wang and Jing Jiang View PDF \u00b7 Abstract:Natural language inference (NLI) is a fundamentally important task in natural language processing that has many applications. The recently released Stanford Natural Language Inference (SNLI) corpus has made it possible to develop and evaluate learning-centered methods such as deep neural networks for natural language inference (NLI).",
+      "On the SNLI corpus, our model achieves an accuracy of 86.1%, outperforming the state of the art. From: Shuohang Wang [view email] [v1] Wed, 30 Dec 2015 05:02:53 UTC (694 KB) [v2] Thu, 10 Nov 2016 11:54:29 UTC (367 KB) ... View a PDF of the paper titled Learning Natural Language Inference with LSTM, by Shuohang Wang and Jing Jiang",
+      "Abstract page for arXiv paper 1512.08849: Learning Natural Language Inference with LSTM",
+      "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[1512.08849] Learning Natural Language Inference with LSTM",
+    "url": "https://arxiv.org/abs/1512.08849"
+  },
+  {
+    "description": "Understanding entailment and contradiction is fundamental to understanding natural language, and inference about entailment and contradiction is a valuable testing ground for the development of semantic representations. However, machine learning research in this area has been dramatically limited ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Understanding entailment and contradiction is fundamental to understanding natural language, and inference about entailment and contradiction is a valuable testing ground for the development of semantic representations. However, machine learning research in this area has been dramatically limited by the lack of large-scale resources.",
+      "Abstract page for arXiv paper 1508.05326: A large annotated corpus for learning natural language inference",
+      "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "View a PDF of the paper titled A large annotated corpus for learning natural language inference, by Samuel R."
+    ],
+    "title": "[1508.05326] A large annotated corpus for learning natural language ...",
+    "url": "https://arxiv.org/abs/1508.05326"
+  },
+  {
+    "description": "In this paper, we aim to answer these questions by enriching the state-of-the-art neural natural language inference models with external knowledge. We demonstrate that the proposed models with external knowledge further improve the state of the art on the Stanford Natural Language Inference (SNLI) ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "In this paper, we aim to answer these questions by enriching the state-of-the-art neural natural language inference models with external knowledge. We demonstrate that the proposed models with external knowledge further improve the state of the art on the Stanford Natural Language Inference (SNLI) dataset.",
+      "Request PDF | e-SNLI: Natural Language Inference withNatural Language Explanations | In order for machine learning to garner widespread public adoption, models must be able to provide interpretable and robust explanations for their... | Find, read and cite all the research you need on ResearchGate",
+      "... [Show full abstract] We further implement models that incorporate these explanations into their training process and output them at test time. We show how our corpus of explanations, which we call e-SNLI, can be used for various goals, such as obtaining full sentence justifications of a model's decisions, improving universal sentence representations and transferring to out-of-domain NLI datasets.",
+      "Our approach uses attention to decompose the problem into subproblems that can be solved separately, thus making it trivially parallelizable. On the Stanford Natural Language Inference (SNLI) dataset, we obtain state-of-the-art results with almost an order of magnitude fewer parameters than previous work and without relying on any word-order information."
+    ],
+    "title": "e-SNLI: Natural Language Inference withNatural Language Explanations ...",
+    "url": "https://www.researchgate.net/publication/329414130_e-SNLI_Natural_Language_Inference_withNatural_Language_Explanations"
+  },
+  {
+    "description": "In this assignment, i implemented an \"Natural Language Inference\" model, based on the Stanford SNLI dataset. The dataset page is https://nlp.stanford.edu/projects/snli/. The paper I chose to implement from the leaderboard is \"600D Residual stacked encoders\" by Yixin Nie and Mohit Bansal, that ...",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "In this assignment, i implemented an \"Natural Language Inference\" model, based on the Stanford SNLI dataset. The dataset page is https://nlp.stanford.edu/projects/snli/. The paper I chose to implement from the leaderboard is \"600D Residual stacked encoders\" by Yixin Nie and Mohit Bansal, that was published in November 2017.",
+      "Forth Assignment in \u05f3Deep Learning for Texts and Sequences' course by Prof. Yoav Goldberg at Bar-Ilan University - DorinK/Implementing-an-SNLI-Paper",
+      "Link to the paper: https://arxiv.org/pdf/1708.02312.pdf",
+      "In my attempt to replicate the paper's result, I achived:"
+    ],
+    "title": "GitHub - DorinK/Implementing-an-SNLI-Paper: Forth Assignment in ...",
+    "url": "https://github.com/DorinK/Implementing-an-SNLI-Paper"
+  },
+  {
+    "description": "MultiNLI 0.9 differs from MultiNLI 1.0 only in the pairID and promptID fields in the training and development sets (and the attached paper), so results achieved on version 0.9 are still valid on 1.0. Version 0.9 can be downloaded here. MultiNLI is modeled after SNLI.",
+    "favicon_url": "https://you.com/favicon?domain=cims.nyu.edu&size=128",
+    "snippets": [
+      "The two corpora are distributed in the same formats, and for many applications, it may be productive to treat them as a single, larger corpus. You can find out more about SNLI here and download it from an NYU mirror here. A description of the data can be found here (PDF) or in the corpus package zip. If you use the corpus in an academic paper, please cite us:",
+      "The data description paper presents the following baselines: Note that the ESIM relies on attention between sentences and would be ineligible for inclusion in the RepEval competition. All three models are trained on a mix of MultiNLI and SNLI and use GloVe word vectors.",
+      "The Multi-Genre Natural Language Inference (MultiNLI) corpus is a crowd-sourced collection of 433k sentence pairs annotated with textual entailment information. The corpus is modeled on the SNLI corpus, but differs in that covers a range of genres of spoken and written text, and supports a distinctive cross-genre generalization evaluation.",
+      "Code (TensorFlow/Python) is available here, alongside a script to reproduce the categories used in the error analysis in the paper. Additional analysis-oriented datasets are available as part of GLUE and here. To evaluate your system on the full test set, use the following Kaggle in Class competitions."
+    ],
+    "title": "MultiNLI",
+    "url": "https://cims.nyu.edu/~sbowman/multinli/"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "The SNLI corpus (version 1.0) is a collection of 570k human-written English sentence pairs manually labeled for balanced classification with the labels entailment, contradiction, and neutral, supporting the task of natural language inference (NLI), also known as recognizing textual entailment (RTE).",
+      "For each instance, there is a string for the premise, a string for the hypothesis, and an integer for the label. Note that each premise may appear three times with a different hypothesis and label. See the SNLI corpus viewer to explore more examples.",
+      "The SNLI dataset has 3 splits: train, validation, and test. All of the examples in the validation and test sets come from the set that was annotated in the validation task with no-consensus examples removed. The remaining multiply-annotated examples are in the training set with no-consensus examples removed.",
+      "The SNLI corpus (version 1.0) was developed as a benchmark for natural langauge inference (NLI), also known as recognizing textual entailment (RTE), with the goal of producing a dataset large enough to train models using neural methodologies."
+    ],
+    "title": "stanfordnlp/snli \u00b7 Datasets at Hugging Face",
+    "url": "https://huggingface.co/datasets/stanfordnlp/snli"
+  },
+  {
+    "description": "We train a GTR-T5-XL model on this ... on the E-SNLI dataset, and 92.57% accuracy on the MultiNLI dataset, surpassing the previous SOTA models. This research demonstrates the potential of synthetic data augmentation in improving NLI models, offering a path forward for further advancements in natural language understanding tasks. ... Spyros E. Polykalas \u00b7 This paper provides a ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "We train a GTR-T5-XL model on this expanded dataset, achieving a new benchmark of 94.7% accuracy on the SNLI dataset, 94.01% accuracy on the E-SNLI dataset, and 92.57% accuracy on the MultiNLI dataset, surpassing the previous SOTA models. This research demonstrates the potential of synthetic data augmentation in improving NLI models, offering a path forward for further advancements in natural language understanding tasks. ... Spyros E. Polykalas \u00b7 This paper provides a review of classification methods for irony and sarcasm in textual data.",
+      "In this paper, we aim to answer these questions by enriching the state-of-the-art neural natural language inference models with external knowledge. We demonstrate that the proposed models with external knowledge further improve the state of the art on the Stanford Natural Language Inference (SNLI) dataset.",
+      "We show how our corpus of explanations, which we call e-SNLI, can be used for various goals, such as obtaining full sentence justifications of a model's decisions, improving universal sentence representations and transferring to out-of-domain NLI datasets. Our dataset thus opens up a range of research directions for using natural language explanations, both for improving models and for asserting their trust.Read more \u00b7 You can request the full-text of this conference paper directly from the authors on ResearchGate.Request full-text",
+      "[1], in which the authors developed a Natural Language Inference with explanations dataset named e-SNLI. In this paper, we extend it by introducing common sense and supporting facts to improve the quality of text etailment tasks."
+    ],
+    "title": "E-SNLI: Natural language inference with natural language explanations ...",
+    "url": "https://www.researchgate.net/publication/333507939_E-SNLI_Natural_language_inference_with_natural_language_explanations"
+  },
+  {
+    "description": "Samuel R. Bowman, Gabor Angeli, Christopher Potts, Christopher D. Manning. Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing. 2015.",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [
+      "SNLI, Flickr30k, SICK \u00b7 PDF Cite Search Code Video Fix data \u00b7 \u00d7 \u00b7 BibTeX \u00b7 MODS XML \u00b7 Endnote \u00b7 Preformatted \u00b7 @inproceedings{bowman-etal-2015-large, title = \"A large annotated corpus for learning natural language inference\", author = \"Bowman, Samuel R. and Angeli, Gabor and Potts, Christopher and Manning, Christopher D.\", editor = \"M{\\`a}rquez, Llu{\\'i}s and Callison-Burch, Chris and Su, Jian\", booktitle = \"Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing\", month = sep, year = \"2015\", address = \"Lisbon, Portugal\", publisher = \"Association for Computational Linguistics\", url = \"https://aclanthology.org/D15-1075/\", doi = \"10.18653/v1/D15-1075\", pages = \"632--642\" } Download as File Copy to Clipboard \u00b7",
+      "Samuel R. Bowman, Gabor Angeli, Christopher Potts, and Christopher D. Manning. 2015. A large annotated corpus for learning natural language inference. In Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing, pages 632\u2013642, Lisbon, Portugal.",
+      "%0 Conference Proceedings %T A large annotated corpus for learning natural language inference %A Bowman, Samuel R. %A Angeli, Gabor %A Potts, Christopher %A Manning, Christopher D. %Y M\u00e0rquez, Llu\u00eds %Y Callison-Burch, Chris %Y Su, Jian %S Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing %D 2015 %8 September %I Association for Computational Linguistics %C Lisbon, Portugal %F bowman-etal-2015-large %R 10.18653/v1/D15-1075 %U https://aclanthology.org/D15-1075/ %U https://doi.org/10.18653/v1/D15-1075 %P 632-642",
+      "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <modsCollection xmlns=\"http://www.loc.gov/mods/v3\"> <mods ID=\"bowman-etal-2015-large\"> <titleInfo> <title>A large annotated corpus for learning natural language inference</title> </titleInfo> <name type=\"personal\"> <namePart type=\"given\">Samuel</namePart> <namePart type=\"given\">R</namePart> <namePart type=\"family\">Bowman</namePart> <role> <roleTerm authority=\"marcrelator\" type=\"text\">author</roleTerm> </role> </name> <name type=\"personal\"> <namePart type=\"given\">Gabor</namePart> <namePart type=\"family\">Angeli</namePart> <role> <roleTerm authority=\"marcrel"
+    ],
+    "title": "A large annotated corpus for learning natural language inference ...",
+    "url": "https://aclanthology.org/D15-1075/"
+  },
+  {
+    "description": "The SNLI corpus (version 1.0) is a collection of 570k human-written English sentence pairs manually labeled for balanced classification with the labels entailment, contradiction, and neutral, supporting the task of natural language inference (NLI), also known as recognizing textual entailment (RTE).",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Paper : https://nlp.stanford.edu/pubs/snli_paper.pdf \u00b7 Brief Description (from website): The SNLI corpus (version 1.0) is a collection of 570k human-written English sentence pairs manually labeled for balanced classification with the labels entailment, contradiction, and neutral, supporting the task of natural language inference (NLI), also known as recognizing textual entailment (RTE).",
+      "Two men are smiling and laughing at the cats playing on the floor. A black race car starts up in front of a crowd of people. ... A man is driving down a lonely road. A soccer game with multiple males playing. ... Some men are playing a sport. A smiling costumed woman is holding an umbrella. ... A happy woman in a fairy costume holds an umbrella. ... import json import os import re from keras.utils.np_utils import to_categorical class SnliReader: \"\"\"Reader for the SNLI dataset More details can be found here : https://nlp.stanford.edu/projects/snli/ Each data point contains 2 sentences and their label('contradiction', 'entailment', 'neutral') Additionally, it also provides annotator labels which has a range of labels given by the annotators.",
+      "Dataset download link : https://nlp.stanford.edu/projects/snli/snli_1.0.zip Dataset website : https://nlp.stanford.edu/projects/snli/ Paper : https://nlp.stanford.edu/pubs/snli_paper.pdf Brief Description (from website): The SNLI corpus ...",
+      "4705552913.jpg#2 4705552913.jpg#2r1n neutral entailment neutral neutral neutral Parameters ---------- filepath : str path to the folder with the snli data \"\"\" def __init__(self, filepath): self.filepath = filepath self.filename = {} self.filename['train'] = 'snli_1.0_train.jsonl' self.filename['dev'] = 'snli_1.0_dev.jsonl' self.filename['test'] = 'snli_1.0_test.jsonl' self.label2index = {'contradiction': 0, 'entailment': 1, 'neutral': 2} def get_data(self, split): \"\"\"Returnd the data for the given split Parameters ---------- split : {'train', 'test', 'dev'} The split of the data Returns ------"
+    ],
+    "title": "SNLI(Stanford Natural Language Inference) corpus \u00b7 Issue #32 \u00b7 ...",
+    "url": "https://github.com/RaRe-Technologies/gensim-data/issues/32"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.neurips.cc&size=128",
+    "snippets": [],
+    "title": "e-SNLI: Natural Language Inference with Natural Language ...",
+    "url": "https://proceedings.neurips.cc/paper/2018/file/4c7a167bb329bd92580a99ce422d6fa6-Paper.pdf"
+  },
+  {
+    "description": "The e-SNLI dataset extends the Stanford Natural Language Inference Dataset to include human-annotated natural language explanations of the entailment relations. Additional Documentation: Explore on Papers With Code north_east",
+    "favicon_url": "https://you.com/favicon?domain=www.tensorflow.org&size=128",
+    "snippets": [
+      "@incollection{NIPS2018_8163, title = {e-SNLI: Natural Language Inference with Natural Language Explanations}, author = {Camburu, Oana-Maria and Rockt\"{a}schel, Tim and Lukasiewicz, Thomas and Blunsom, Phil}, booktitle = {Advances in Neural Information Processing Systems 31}, editor = {S. Bengio and H. Wallach and H. Larochelle and K. Grauman and N. Cesa-Bianchi and R. Garnett}, pages = {9539--9549}, year = {2018}, publisher = {Curran Associates, Inc.}, url = {http://papers.nips.cc/paper/8163-e-snli-natural-language-inference-with-natural-language-explanations.pdf} } Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License.",
+      "[{ \"type\": \"thumb-down\", \"id\": \"missingTheInformationINeed\", \"label\":\"Missing the information I need\" },{ \"type\": \"thumb-down\", \"id\": \"tooComplicatedTooManySteps\", \"label\":\"Too complicated / too many steps\" },{ \"type\": \"thumb-down\", \"id\": \"outOfDate\", \"label\":\"Out of date\" },{ \"type\": \"thumb-down\", \"id\": \"samplesCodeIssue\", \"label\":\"Samples / code issue\" },{ \"type\": \"thumb-down\", \"id\": \"otherDown\", \"label\":\"Other\" }]"
+    ],
+    "title": "esnli | TensorFlow Datasets",
+    "url": "https://www.tensorflow.org/datasets/catalog/esnli"
+  },
+  {
+    "description": "Stanford Natural Language Inference (SNLI) Corpus is a collection of over 500000 labeled English sentence pairs (Bowman et al., 2015).",
+    "favicon_url": "https://you.com/favicon?domain=d2l.ai&size=128",
+    "snippets": [
+      "We download and store the extracted SNLI dataset in the path ../data/snli_1.0.",
+      "The original SNLI dataset contains much richer information than what we really need in our experiments.",
+      "Thus, we define a function read_snli to only extract part of the dataset, then return lists of premises, hypotheses, and their labels.",
+      "import os import re import torch from torch import nn from d2l import torch as d2l #@save d2l.DATA_HUB['SNLI'] = ( 'https://nlp.stanford.edu/projects/snli/snli_1.0.zip', '9fcde07509c7e87ec61c640c1b2753d9041758e4') data_dir = d2l.download_extract('SNLI')"
+    ],
+    "title": "16.4. Natural Language Inference and the Dataset \u2014 Dive into ...",
+    "url": "https://d2l.ai/chapter_natural-language-processing-applications/natural-language-inference-and-dataset.html"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=papers.nips.cc&size=128",
+    "snippets": [],
+    "title": "Neurips",
+    "url": "https://papers.nips.cc/paper/8163-e-snli-natural-language-inference-with-natural-language-explanations.pdf"
+  }
+]

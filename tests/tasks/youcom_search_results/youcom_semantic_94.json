@@ -1,0 +1,274 @@
+[
+  {
+    "description": "Recent models like the GPT-3 Language Model (Brown et al., 2020) and the Flamingo Visual-Language Model (Alayrac et al., 2022) use in-context few-shot learning. The models are able to make highly",
+    "favicon_url": "https://you.com/favicon?domain=datascience.stackexchange.com&size=128",
+    "snippets": [
+      "I highly recommend you read Microsoft's recent paper about In Context Learning. Although the focus is on LLM I think it can be generalised to other models. The idea is to consider models as mesa|meta-optimisers (optimisers at inference time).",
+      "The explanation appears to be that few-shot learning works because the model looks at the task description, then looks at the support examples (which are successful examples of how the given task can be fulfilled), and then based on the model's understanding of what the assigned task is and its understanding of the examples given of how the task could be successfully fulfilled it is then able to understand what it is supposed to predict based on the prompt.",
+      "Generally speaking, the more support examples the model sees at inference time, the better it will perform (but there is a point at which continuing to add further support examples does not increase performance). However, given that traditional machine learning models need to train on thousands of examples, it would seem unlikely that a model could really fulfill a task just based on a few examples."
+    ],
+    "title": "nlp - How Exactly Does In-Context Few-Shot Learning Actually Work ...",
+    "url": "https://datascience.stackexchange.com/questions/115554/how-exactly-does-in-context-few-shot-learning-actually-work-in-theory-under-the"
+  },
+  {
+    "description": "Dive into In-context learning: its functioning, approaches, benefits, challenges, and real-world applications. Everything you need to know.",
+    "favicon_url": "https://you.com/favicon?domain=www.lakera.ai&size=128",
+    "snippets": [
+      "The art of crafting effective prompts for few-shot learning is known as prompt engineering, and it plays a crucial role in leveraging the model's in-context learning capabilities. The Stanford AI Lab blog introduces a Bayesian inference framework to understand in-context learning in large language models like GPT-3. The framework suggests that in-context learning is an emergent behavior where the model performs tasks by conditioning on input-output examples without optimizing any parameters.",
+      "This involves incorporating multiple demonstration examples across different tasks and ensuring that the input-output correspondence is well-defined. In large language models (LLMs), prompt engineering has emerged as a crucial strategy to exploit in-context learning (ICL). This technique involves carefully crafting prompts to provide clear instructions and context to the model, enabling it to perform complex tasks more effectively. Few-shot learning is often combined with prompt engineering to provide a more robust framework.",
+      "Explore real-world LLM exploits, case studies, and mitigation strategies with Lakera. ... Use our checklist to evaluate and select the best LLM security tools for your enterprise.",
+      "The approach encodes demonstration examples with tailored position embeddings, which are then collectively attended by the test example using a rescaled attention mechanism. Experimental results across various tasks indicate that this method enhances performance and diminishes evaluation variance compared to conventional in-context learning. Why Can GPT Learn In-Context? Language Models Implicitly Perform Gradient Descent as Meta-Optimizers"
+    ],
+    "title": "What is In-context Learning, and how does it work: The Beginner\u2019s ...",
+    "url": "https://www.lakera.ai/blog/what-is-in-context-learning"
+  },
+  {
+    "description": "While large-language models demonstrate remarkable zero-shot capabilities, they still fall short on more complex tasks when using the zero-shot setting. Few-shot prompting can be used as a technique to enable in-context learning where we provide demonstrations in the prompt to steer the model ...",
+    "favicon_url": "https://you.com/favicon?domain=www.promptingguide.ai&size=128",
+    "snippets": [
+      "While large-language models demonstrate remarkable zero-shot capabilities, they still fall short on more complex tasks when using the zero-shot setting. Few-shot prompting can be used as a technique to enable in-context learning where we provide demonstrations in the prompt to steer the model to better performance.",
+      "We can observe that the model has somehow learned how to perform the task by providing it with just one example (i.e., 1-shot). For more difficult tasks, we can experiment with increasing the demonstrations (e.g., 3-shot, 5-shot, 10-shot, etc.).",
+      "Learn more about few-shot prompting and advanced prompting methods in our new AI courses. Join now! (opens in a new tab) Use code PROMPTING20 to get an extra 20% off. Standard few-shot prompting works well for many tasks but is still not a perfect technique, especially when dealing with more complex reasoning tasks. Let's demonstrate why this is the case.",
+      "In other words, it might help if we break the problem down into steps and demonstrate that to the model. More recently, chain-of-thought (CoT) prompting (opens in a new tab) has been popularized to address more complex arithmetic, commonsense, and symbolic reasoning tasks. Overall, it seems that providing examples is useful for solving some tasks. When zero-shot prompting and few-shot prompting are not sufficient, it might mean that whatever was learned by the model isn't enough to do well at the task."
+    ],
+    "title": "Few-Shot Prompting | Prompt Engineering Guide",
+    "url": "https://www.promptingguide.ai/techniques/fewshot"
+  },
+  {
+    "description": "Learn what In Context Learning is, how it can boost LLM performance, and discover best practices for optimizing prompts with examples and templates to get started.",
+    "favicon_url": "https://you.com/favicon?domain=www.prompthub.us&size=128",
+    "snippets": [
+      "Traditional learning involves adjusting model parameters, whereas in-context learning could be seen more as pattern recognition. For our purposes, though, we\u2019re more focused on performance and output quality rather than theoretical distinctions. That\u2019s it for today! Have a great week, and I\u2019ll talk to you soon. ... One of the common ways to implement in-context learning is via one or few-shot learning. Zero-shot learning refers to when you don\u2019t include any demonstrations in your prompt.",
+      "It is still a good idea to include instructions and supplement them with the demonstrations. Let\u2019s dive into a few examples of how you can leverage in-context learning. ... Hey everyone, how\u2019s it going? Dan here, happy Sunday! Today we\u2019re going to be talking about in-context learning, and we\u2019ll keep it relatively quick. What led me down this path was our recent work on few-shot prompting, and I started thinking about the difference between few-shot prompting and in-context learning since they\u2019re often used interchangeably.",
+      "The context that\u2019s being sent along helps the model learn about structure, tone, and style preferences for the output. Essentially, it\u2019s about showing rather than telling\u2014demonstrating what you want the model to do through examples rather than long, detailed instructions. Let\u2019s quickly go over the differences between zero-shot, one-shot, and few-shot learning:",
+      "One-shot learning is when you include one demonstration in your prompt to help guide the model when producing its output. One-shot prompt example Your job is to classify sentiment of product reviews. Classify the following review: The product works great! // Positive The product doesn\u2019t work for our use case // ... Few-shot learning takes this further by including multiple demonstrations in the prompt to show the model different inputs and outputs."
+    ],
+    "title": "PromptHub Blog: In Context Learning Guide",
+    "url": "https://www.prompthub.us/blog/in-context-learning-guide"
+  },
+  {
+    "description": "Learn how to generate exemplars for few shot prompts using the model itself and save lots of time and effort.",
+    "favicon_url": "https://you.com/favicon?domain=learnprompting.org&size=128",
+    "snippets": [
+      "SG-ICL stands out because it self-generates demonstrations instead of retrieving them from external datasets. Here's how it differs from other methods: Few-Shot Learning: Few-shot learning uses a small number of manually selected training samples.",
+      "Low variance in performance: By generating task-specific examples, SG-ICL provides more consistent results compared to relying on randomly selected demonstrations from datasets.",
+      "Typically, in-context learning (ICL) relies on a few input-label pairs (called exemplars) to help models perform tasks without fine-tuning. However, these demonstrations are often chosen from external datasets, which introduces dependency on external data.",
+      "SG-ICL generates these demonstrations using the language model itself, reducing reliance on external datasets and improving performance consistency."
+    ],
+    "title": "Self-Generated In-Context Learning: Generate Few Shot Exemplars ...",
+    "url": "https://learnprompting.org/docs/advanced/few_shot/self_generated_icl"
+  },
+  {
+    "description": "We explore in-context learning (ICL) models from a learning-to-learn perspective. Unlike studies that identify specific learning algorithms in ICL models, we compare ICL models with typical meta-learners to understand their superior performance. We theoretically prove the expressiveness of ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Abstract: We explore in-context learning (ICL) models from a learning-to-learn perspective. Unlike studies that identify specific learning algorithms in ICL models, we compare ICL models with typical meta-learners to understand their superior performance. We theoretically prove the expressiveness of ICL models as learning algorithms and examine their learnability and generalizability.",
+      "As examples, we implement meta-level meta-learning for domain adaptability with limited data and meta-level curriculum learning for accelerated convergence during pre-training, demonstrating their empirical effectiveness. ... Code Of Ethics: I acknowledge that I and all co-authors of this work have read and commit to adhering to the ICLR Code of Ethics. Submission Guidelines: I certify that this submission complies with the submission instructions as described on https://iclr.cc/Conferences/2025/AuthorGuide. Anonymous Url: I certify that there is no URL (e.g., github page) that could be used to find authors\u2019 identity."
+    ],
+    "title": "Why In-Context Learning Models are Good Few-Shot Learners? | ...",
+    "url": "https://openreview.net/forum?id=iLUcsecZJp"
+  },
+  {
+    "description": "Few-shot learning is a machine learning framework where an AI model learns to make accurate predictions by training on a very small number of labeled samples.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "Learn how to select the most suitable AI foundation model for your use case. ... IBM\u00ae Granite\u2122 is our family of open, performant and trusted AI models, tailored for business and optimized to scale your AI applications. Explore language, code, time series and guardrail options.",
+      "This allows for greatly expedited learning in a few-shot context. Transfer learning is most successful when the model\u2019s initial training is relevant to the new task. For example, a model trained on certain species of birds will generalize well to unseen species of birds after fine-tuning with only a few labeled samples, because the learned weights of the filters the CNN uses for convolutions are already optimized to capture features relevant to bird classification (like plumage, beaks, wing size, etc.)\u2014but using few-shot learning to teach the same model to recognize vehicles will yield less satisfactory performance.",
+      "Optimization-based meta learning approaches, also referred to as gradient-based meta learning (GMBL), aim to learn initial model parameters or hyperparameters for a neural network that can be efficiently fine-tuned for relevant tasks.",
+      "MAML entails two different levels of parameters updates across a set of varied FSL training tasks, p(T). In each training episode, a new task Ti is randomly sampled from p(T); gradient descent, performed in K steps of size \u03b1, is used to optimize a vector of task-specific model parameters (\u03b8\u2019i) after each training task."
+    ],
+    "title": "What Is Few-Shot Learning? | IBM",
+    "url": "https://www.ibm.com/think/topics/few-shot-learning"
+  },
+  {
+    "description": "In-context learning is a prompt engineering technique where natural-language demonstrations are provided as part of the prompt (source). Few-shot prompting is about providing a few examples in the ...",
+    "favicon_url": "https://you.com/favicon?domain=genai.stackexchange.com&size=128",
+    "snippets": [
+      "Following the paper of GPT-3 (Brown et al., 2020), we provide a definition of in-context learning: Incontext learning is a paradigm that allows language models to learn tasks given only a few examples in the form of demonstration.",
+      "\u2013 Intrastellar Explorer Commented Jan 11, 2024 at 19:55"
+    ],
+    "title": "llm - What is the difference between in-context learning and few-shot ...",
+    "url": "https://genai.stackexchange.com/questions/638/what-is-the-difference-between-in-context-learning-and-few-shot-prompting"
+  },
+  {
+    "description": "Everything you need to know about few show prompting: What it is, when you should use it, common questions, templates, and the latest research",
+    "favicon_url": "https://you.com/favicon?domain=www.prompthub.us&size=128",
+    "snippets": [
+      "Therefore, we recommend users directly describe the problem and specify the output format using a zero-shot setting for optimal results. \u200d If you want more information about R1, feel free to check out our full rundown here: DeepSeek R-1 Model Overview and How it Ranks Against OpenAI's o1 ... The findings from these two papers about few-shot prompting and reasoning models actually align with OpenAI's guidance: \u201cLimit additional context in retrieval-augmented generation (RAG): When providing additional context or documents, include only the most relevant information to prevent the model from overcomplicating its response.\u201d",
+      "The primary goal of MANIPLE is to maximize the gains from few shot prompting by identifying the optimal subset of examples that are most relevant and effective for each bug. ... Statistical Modeling: MANIPLE examines patterns patterns from past bug fixes to decide which examples to include to get successful outcomes. Probabilistic Inference: The model isolates each example to determine how much it contributed positively to the successful bug fix. Fact Selection Optimization: Based on the probabilities, MANIPLE selects the subset of facts that maximizes the likelihood of successful bug repair.",
+      "Fact Selection Model: The researchers built a statistical model named MANIPLE that algorithmically selected the most effective subset of facts for each bug, optimizing the prompt's effectiveness.",
+      "What exactly is few-shot prompting? Basically, it's when you send examples along in your prompt to help guide or train the model on what you want your output to look like, sound like, and the shape of it. It's basically like training the prompt, also known as in-context learning."
+    ],
+    "title": "PromptHub Blog: The Few Shot Prompting Guide",
+    "url": "https://www.prompthub.us/blog/the-few-shot-prompting-guide"
+  },
+  {
+    "description": "A Bayesian inference framework for in-context learning in large language models.",
+    "favicon_url": "https://you.com/favicon?domain=ai.stanford.edu&size=128",
+    "snippets": [
+      "Language Models are Few-Shot Learners. Neural Information Processing Systems (NeurIPS), 2020. \u21a9 \u00b7 Jason Wei, Yi Tay, Rishi Bommasani, Colin Raffel, Barret Zoph, Sebastian Borgeaud, Dani Yogatama, Maarten Bosma, Denny Zhou, Donald Metzler, Ed H. Chi, Tatsunori Hashimoto, Oriol Vinyals, Percy Liang, Jeff Dean, William Fedus. Emergent Abilities of Large Language Models. arXiv preprint, 2022. \u21a9 \u00b7 Sachin Ravi and Hugo Larochelle. Optimization as a model for few-shot learning.",
+      "This blog post primarily draws from the theoretical framework for in-context learning from An Explanation of In-context Learning as Implicit Bayesian Inference 1 and experiments from Rethinking the Role of Demonstrations: What Makes In-Context Learning Work? 2. TL;DR \u2013 In-context learning is a mysterious emergent behavior in large language models (LMs) where the LM performs a task just by conditioning on input-output examples, without optimizing any parameters.",
+      "It typically requires very few training examples to get a prototype working, and the natural language interface is intuitive even for non-experts. Why is in-context learning surprising? In-context learning is unlike conventional machine learning in that there\u2019s no optimization of any parameters.",
+      "What is in-context learning? In-context learning was popularized in the original GPT-3 paper as a way to use language models to learn tasks given only a few examples.[1] During in-context learning, we give the LM a prompt that consists of a list of input-output pairs that demonstrate a task."
+    ],
+    "title": "How does in-context learning work? A framework for understanding ...",
+    "url": "http://ai.stanford.edu/blog/understanding-incontext/"
+  },
+  {
+    "description": "Large language models (LLMs) excel at few-shot in-context learning (ICL) -- learning from a few examples provided in context at inference, without any weight updates. Newly expanded context windows allow us to investigate ICL with hundreds or thousands of examples -- the many-shot regime.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2404.11018: Many-Shot In-Context Learning",
+      "To mitigate this limitation, we explore two new settings: Reinforced and Unsupervised ICL. Reinforced ICL uses model-generated chain-of-thought rationales in place of human examples. Unsupervised ICL removes rationales from the prompt altogether, and prompts the model only with domain-specific questions. We find that both Reinforced and Unsupervised ICL can be quite effective in the many-shot regime, particularly on complex reasoning tasks. Finally, we demonstrate that, unlike few-shot learning, many-shot learning is effective at overriding pretraining biases, can learn high-dimensional functions with numerical inputs, and performs comparably to fine-tuning."
+    ],
+    "title": "[2404.11018] Many-Shot In-Context Learning",
+    "url": "https://arxiv.org/abs/2404.11018"
+  },
+  {
+    "description": "Learn everything you need to know about Few-Shot Learning, including key techniques, use cases, and how it enables machine learning models to perform with mi\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.digitalocean.com&size=128",
+    "snippets": [
+      "The classification loss derived from the teacher model is then used to train the student model, making it proficient in the classification task. As the discussion up to this point suggests, One-Shot Learning is a task where the support set consists of only one data sample per class. You can imagine that the task is more complicated with less supporting information. The face recognition technology used in modern smartphones uses One-Shot Learning. One such example is the One-Shot Semantic Segmentation approach explored by Shaban et al.",
+      "If you are creating a DigitalOcean GPU Droplet, open the following tutorial for a full breakdown of all the steps to set up the Droplet, SSH into your Droplet from your local machine, and spin up an accessible Jupyter Notebook with Visual Studio Code and your browser. For instructions on getting started with Python code, we recommend trying this beginner\u2019s guide to set up your system and prepare to run beginner tutorials.",
+      "The authors introduce a novel computational model for learning path planning by imitation, which uses a fundamental idea in plan adaptation- the presence of invariant feature points in both the demonstration and a given situation- to generate a motion path for the new scenario. Few-Shot Learning has recently become popular in Natural Language Processing tasks as well, where labels for Language Processing are inherently difficult to come by. For example, Yu et al. address a text classification challenge using a Few-Shot Learning approach based on metric learning. Their method involves a meta-learner that selects and combines multiple metrics tailored to the target task by leveraging task clustering during meta-training.",
+      "FSL methods that constrain the parameter space and use regularization techniques fall under the category of parameter-level approaches. Models are trained to find the optimal route in the parameter space for providing targeted predictions."
+    ],
+    "title": "Everything you need to know about Few-Shot Learning | DigitalOcean",
+    "url": "https://www.digitalocean.com/community/tutorials/few-shot-learning"
+  },
+  {
+    "description": "Explore the differences, use cases, and examples between zero-shot prompting and few-shot prompting.",
+    "favicon_url": "https://you.com/favicon?domain=shelf.io&size=128",
+    "snippets": [
+      "Its performance might not be optimal for tasks that are significantly different from those it encountered during training. Few-shot prompting offers less flexibility in terms of the broad applicability to any given task without preparation, as it requires the selection and presentation of relevant examples.",
+      "One-shot prompting \u2013 or one-shot learning \u2013 is similar to zero-shot learning. It\u2019s a prompt engineering technique where a model is given a single prompt to understand the task and generate a response or prediction. It offers slightly more information than zero-shot prompting, but not as much as few-shot prompts. Here are three examples of zero-shot prompting, where the model is given a task without any prior examples or demonstrations:",
+      "This sequence generation continues until the model completes a sentence or paragraph, using sophisticated algorithms to ensure the output is coherent and contextually appropriate based on the vast amount of text it has been trained on. As you can see, the content of the response depends on your prompt. Your input begets the output. This means the practice of writing smart prompts \u2013 called prompt engineering \u2013 is important for anyone who spends a lot of time using generative AI. Zero-shot prompting (sometimes called zero-shot learning) is like being asked to solve a problem or perform a task without any specific preparation or examples just for that task.",
+      "Few-shot prompting (or few-shot learning) is like getting a mini-lesson before you have to do something new. Imagine you\u2019ve never made a particular type of dish before, say, sushi. But instead of just diving in without any guidance, you\u2019re given a few quick examples or recipes to check out first. This handful of examples creates context learning."
+    ],
+    "title": "Zero-Shot vs. Few-Shot Prompting: Key Differences - Shelf",
+    "url": "https://shelf.io/blog/zero-shot-and-few-shot-prompting/"
+  },
+  {
+    "description": "Tutorials, guides and deep dives into the best techniques and research for building reliable AI.",
+    "favicon_url": "https://you.com/favicon?domain=blog.athina.ai&size=128",
+    "snippets": [
+      "Strategy Selection: Recognize that both FT and ICL are valuable tools in the NLP toolkit, with the optimal choice often hinging on a balance of task complexity, domain specificity, and resource availability."
+    ],
+    "title": "Few-shot Fine-tuning vs. In-context Learning: A Fair Comparison ...",
+    "url": "https://blog.athina.ai/few-shot-fine-tuning-vs.-in-context-learning-a-fair-comparison-and-evaluation"
+  },
+  {
+    "description": "Automatically generating summaries for source code has emerged as a valuable task in software development. While state-of-the-art (SOTA) approaches ha\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "We empirically study the performance of LLMs on project-specific code summarization tasks and explore key factors to high-quality prompts. ... We propose a neural prompt selector trained on data generated by LLM, obtaining project-specific examples for in-context learning in the few-shot situation. ... We conduct comprehensive experiments to evaluate P-CodeSum. Results demonstrate the high quality of prompts generated by our selector and the significant improvements that P-CodeSum brings to PCS tasks.",
+      "The first to tackle the few-shot problem of code summarization for a specific project. ... Explores critical factors to high-quality prompts in large language models for project-specific code summarization. ... Automatically generates in-context learning examples for a specific project by using large language models. ... Designs a prompt selector by incorporating P-tuning into CodeBERT. ... Demonstrates superior performance in project-specific code summarization task compared to state-of-the-art approaches.",
+      "He is currently a master\u2019s graduate student in the School of Software at Shanghai Jiao Tong University. His research interests include intelligent software engineering and large language models. ... LiX. et al. ... AbdaliS. et al. ... AhmadW.U. et al. ... AhmedT. et al. AhmedT. et al. ... ArakelyanS. et al. ... BhattacharyaP. et al. BrownT. et al. ... Cai, C., Wang, Q., Liang, B., Qin, B., Yang, M., Wong, K.-F., Xu, R., 2023. In-context learning for few-shot multimodal...",
+      "Based on the empirical findings, we propose P-CodeSum, which focuses on automatically generating high-quality prompts to guide LLMs in generating code summaries tailored to specific projects in few-shot scenarios. Specifically, P-CodeSum gathers a repository-level pool of (code, summary) examples to characterize the project-specific features. P-CodeSum leverages LLMs themselves to craft a dataset of in-context examples using the example pool. Then, it trains a prompt selector (i.e., a classifier based on CodeBERT Feng et al., 2020) for each project using the collected dataset."
+    ],
+    "title": "Project-specific code summarization with in-context learning - ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0164121224001948"
+  },
+  {
+    "description": "Few-Shot Learning refers to the problem of learning the underlying pattern in the data just from a few training samples. Requiring a large number of data samples, many deep learning solutions suffer from data hunger and extensively high computation time and resources.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2203.04291: Learning from Few Examples: A Summary of Approaches to Few-Shot Learning",
+      "Furthermore, data is often not available due to not only the nature of the problem or privacy concerns but also the cost of data preparation. Data collection, preprocessing, and labeling are strenuous human tasks. Therefore, few-shot learning that could drastically reduce the turnaround time of building machine learning applications emerges as a low-cost solution.",
+      "View a PDF of the paper titled Learning from Few Examples: A Summary of Approaches to Few-Shot Learning, by Archit Parnami and Minwoo Lee View PDF"
+    ],
+    "title": "[2203.04291] Learning from Few Examples: A Summary of Approaches ...",
+    "url": "https://arxiv.org/abs/2203.04291"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.cs.princeton.edu&size=128",
+    "snippets": [],
+    "title": "Towards Understanding In-context Learning - cs.Princeton",
+    "url": "https://www.cs.princeton.edu/courses/archive/fall22/cos597G/lectures/lec07.pdf"
+  },
+  {
+    "description": "Large language models (LMs) are able to in-context learn -- perform a new task via inference alone by conditioning on a few input-label pairs (demonstrations) and making predictions for new inputs. However, there has been little understanding of how the model learns and which aspects of the ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Large language models (LMs) are able to in-context learn -- perform a new task via inference alone by conditioning on a few input-label pairs (demonstrations) and making predictions for new inputs. However, there has been little understanding of how the model learns and which aspects of the demonstrations contribute to end task performance.",
+      "Abstract page for arXiv paper 2202.12837: Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?",
+      "In this paper, we show that ground truth demonstrations are in fact not required -- randomly replacing labels in the demonstrations barely hurts performance on a range of classification and multi-choce tasks, consistently over 12 different models including GPT-3. Instead, we find that other aspects of the demonstrations are the key drivers of end task performance, including the fact that they provide a few examples of (1) the label space, (2) the distribution of the input text, and (3) the overall format of the sequence. Together, our analysis provides a new way of understanding how and why in-context learning works, while opening up new questions about how much can be learned from large language models through inference alone.",
+      "View a PDF of the paper titled Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?, by Sewon Min and 6 other authors View PDF"
+    ],
+    "title": "[2202.12837] Rethinking the Role of Demonstrations: What Makes ...",
+    "url": "https://arxiv.org/abs/2202.12837"
+  },
+  {
+    "description": "199 votes, 84 comments. Everywhere I look for the answer to this question, the responses do little more than anthropomorphize the model. They\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/synthphreak - 199 votes and 84 comments",
+      "There's a bunch of work that looks at ICL as solving an optimization problem. It creates an inner model and loss function that exist only within the activations, and applies a few steps of gradient descent to that model. You can demonstrate this on toy models trained on non-text datasets, and even manually construct a set of transformer weights that does it.",
+      "This was somewhat my understanding, too. But, many studies, report that adaptation to new tasks is an advantage of ICL. If it is retrieval, it is confined to the knowledge that it already knows, how does it \"adapt\" to new tasks? Why does in-context outperform few-shot supervised learning?",
+      "If you make few shot prompting, you make desired outcome more probable."
+    ],
+    "title": "r/MachineLearning on Reddit: [D] LLMs: Why does in-context learning ...",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1cdih0a/d_llms_why_does_incontext_learning_work_what/"
+  },
+  {
+    "description": "Declarative machine learning: End-to-end machine learning pipelines using data-driven configurations.",
+    "favicon_url": "https://you.com/favicon?domain=ludwig.ai&size=128",
+    "snippets": [
+      "This is related to few-shot learning in that we inject labeled data into the prompt. The difference is that the \"shots\" included in the prompt are dynamic, not static. We may have many more examples than can fit into the prompt, and we use a retrieval process to select the most relevant examples to include in the prompt.",
+      "If the user has an inputs that is a single English text, and a prompt that is translate from English to French:, the user can use a retrieval process to select the most relevant English-French text pairs to include in the prompt. This will help the LLM perform the translation task. It's possible that this performs better than few-shot learning, since the retrieval process can dynamically select the most relevant examples to include in the prompt.",
+      "You can find an example of zero-shot learning here. Few-shot learning is a variant of zero-shot learning that involves providing a static set of labeled examples to the model in order to help it perform the task.",
+      "For example, if a user provides the prompt translate from English to French:, followed by a few English-French translation pairs, followed by the English text to translate, the LLM will generate French text that is a translation of the English text. This often results in better performance than zero-shot learning, but requires a small amount of labeled data."
+    ],
+    "title": "In-Context Learning - Ludwig",
+    "url": "https://ludwig.ai/latest/user_guide/llms/in_context_learning/"
+  },
+  {
+    "description": "Few-shot learning (FSL) has emerged as an effective learning method and shows great potential. Despite the recent creative works in tackling FSL tasks, learning valid information rapidly from just ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Few-shot learning (FSL) has emerged as an effective learning method and shows great potential. Despite the recent creative works in tackling FSL tasks, learning valid information rapidly from just a few or even zero samples remains a serious challenge. In ...",
+      "In NeurIPS 2021 Competitions and Demonstrations Track. PMLR, 80\u201396. ... Yutai Hou, Xinghao Wang, Cheng Chen, Bohan Li, Wanxiang Che, and Zhigang Chen. 2022. FewJoint: Few-shot learning for joint dialogue understanding. Int. J. Mach. Learn. Cyber. (2022), 1\u201315. ... Huimin Sun, Jiajie Xu, Kai Zheng, Pengpeng Zhao, Pingfu Chao, and Xiaofang Zhou. 2021. MFNP: A meta-optimized model for few-shot next POI recommendation.",
+      "MetaNODE: Prototype optimization as a neural ODE for few-shot learning. In Proceedings of the AAAI Conference on Artificial Intelligence. 9014\u20139021. ... Yinbo Chen, Zhuang Liu, Huijuan Xu, Trevor Darrell, and Xiaolong Wang. 2021. Meta-baseline: Exploring simple meta-learning for few-shot learning.",
+      "Yabin Zhang, Hui Tang, and Kui Jia. 2018. Fine-grained visual categorization using meta-learning optimization with sample selection of auxiliary data. In Proceedings of the European Conference on Computer Vision (ECCV)."
+    ],
+    "title": "A Comprehensive Survey of Few-shot Learning: Evolution, Applications, ...",
+    "url": "https://dl.acm.org/doi/10.1145/3582688"
+  },
+  {
+    "description": "In-context learning (ICL) is a specific method of prompt engineering where demonstrations of the task are provided to the model as part of the prompt.",
+    "favicon_url": "https://you.com/favicon?domain=www.hopsworks.ai&size=128",
+    "snippets": [
+      "In-context learning (ICL) is a specific method of prompt engineering where demonstrations of the task are provided to the model as part of the prompt (in natural language). With ICL, you can use off-the-shelf large language models (LLMs) to solve novel tasks without the need for fine-tuning.",
+      "The goal is to make predictions for new classes based on just a few examples. The following example uses zero prompts as context. ... GPT-4 Response: Germany won the 2014 FIFA World Cup. The tournament was held in Brazil, and Germany defeated Argentina 1-0 in the final, with the match-winning goal scored by Mario G\u00f6tze during extra time \u00b7 The zero-shot completion includes additional information about the match that I didn't really want.",
+      "The following example adds an instruction and one-shot prompt to the context: Prompt: Answer the question using the format shown in the context. Who won the World Cup in 2014? Germany won the 2014 FIFA World Cup. They defeated Argentina in the final. It was a low scoring game. Who won the world cup in 2018? GPT-4 Response: France won the 2018 FIFA World Cup. They defeated Croatia in the final. It was a higher scoring game compared to the 2014 final. The following example adds a few-shot prompt to the context.",
+      "Reynolds and McDonell describe fews-shot prompts as where a small number of examples of solved tasks are provided as part of the input to the trained LLM."
+    ],
+    "title": "What is In Context Learning (ICL)? - Hopsworks",
+    "url": "https://www.hopsworks.ai/dictionary/in-context-learning-icl"
+  },
+  {
+    "description": "The above figures only summarize some findings for accuracy-metric datasets. There are still other results, e.g.: non-accuracy-metric dataset evaluations. Please feel free to read the paper directly\u2026",
+    "favicon_url": "https://you.com/favicon?domain=sh-tsang.medium.com&size=128",
+    "snippets": [
+      "Larger models make increasingly efficient use of in-context information \u00b7 K: The number of demonstration examples. A simple task is learnt which requiring the model to remove extraneous symbols from a word.",
+      "Though the results in this case are particularly striking, the general trends with both model size and number of examples in-context hold for most tasks. These \u201clearning\u201d curves involve no gradient updates or fine-tuning, just increasing numbers of demonstrations given as conditioning.",
+      "The steeper \u201cin-context learning curves\u201d for large models demonstrate improved ability to learn a task from contextual information.",
+      "While zero-shot performance improves steadily with model size, few-shot performance increases more rapidly, demonstrating that larger models are more proficient at in-context learning."
+    ],
+    "title": "Review \u2014 GPT-3: Language Models are Few-Shot Learners | by Sik-Ho ...",
+    "url": "https://sh-tsang.medium.com/review-gpt-3-language-models-are-few-shot-learners-ff3e63da944d"
+  },
+  {
+    "description": "Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples.",
+      "Abstract page for arXiv paper 2005.14165: Language Models are Few-Shot Learners",
+      "View a PDF of the paper titled Language Models are Few-Shot Learners, by Tom B. Brown and 30 other authors View PDF \u00b7 Abstract:Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task.",
+      "For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora."
+    ],
+    "title": "[2005.14165] Language Models are Few-Shot Learners",
+    "url": "https://arxiv.org/abs/2005.14165"
+  }
+]

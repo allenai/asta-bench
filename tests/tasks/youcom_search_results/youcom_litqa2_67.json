@@ -1,0 +1,276 @@
+[
+  {
+    "description": "A network-based protein design enables the generation of cyclic homo-oligomers across the nanoscopic scale.",
+    "favicon_url": "https://you.com/favicon?domain=www.science.org&size=128",
+    "snippets": [
+      "This approach allowed for the design of a range of experimentally validated cyclic oligomers and paves the way for the design of increasingly complex assemblies. \u2014VV \u00b7 Deep learning generative approaches provide an opportunity to broadly explore protein structure space beyond the sequences and structures of natural proteins. Here, we use deep network hallucination to generate a wide range of symmetric protein homo-oligomers given only a specification of the number of protomers and the protomer length.",
+      "Crystal structures of seven designs are very similar to the computational models (median root mean square deviation: 0.6 angstroms), as are three cryo\u2013electron microscopy structures of giant 10-nanometer rings with up to 1550 residues and C33 symmetry; all differ considerably from previously solved structures. Our results highlight the rich diversity of new protein structures that can be generated using deep learning and pave the way for the design of increasingly complex components for nanomachines and biomaterials. ... By J. Dauparas, I. Anishchenko, N. Bennett, et al.Science7 Oct 2022",
+      "I. G. Johnston, K. Dingle, S. F. Greenbury, C. Q. Camargo, J. P. K. Doye, S. E. Ahnert, A. A. Louis, Symmetry and simplicity spontaneously emerge from the algorithmic nature of evolution. Proc. Natl. Acad. Sci. U.S.A. 119, e2113883119 (2022). ... S. E. Ahnert, J. A. Marsh, H. Hern\u00e1ndez, C. V. Robinson, S. A. Teichmann, Principles of assembly reveal a periodic table of protein complexes.",
+      "The formalism described here can be extended to other types of complex design tasks, including the design of higher-order point group symmetries, arbitrary symmetric or asymmetric hetero-oligomeric assemblies, oligomeric scaffolding of existing functional domains, and design of multiple states, provided a loss function describing the solution can be formalized and computed."
+    ],
+    "title": "Hallucinating symmetric protein assemblies | Science",
+    "url": "https://www.science.org/doi/10.1126/science.add1964"
+  },
+  {
+    "description": "Protein design is the rational design of new protein molecules to design novel activity, behavior, or purpose, and to advance basic understanding of protein function. Proteins can be designed from scratch (de novo design) or by making calculated variants of a known protein structure and its ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "In 2022, a study reported deep learning software that can design proteins that contain prespecified functional sites. The dead-end elimination (DEE) algorithm reduces the search space of the problem iteratively by removing rotamers that can be provably shown to be not part of the global lowest energy conformation (GMEC).",
+      "Statistical potentials, in contrast to physics-based potentials, have the advantage of being fast to compute, of accounting implicitly of complex effects and being less sensitive to small changes in the protein structure. These energy functions are based on deriving energy values from frequency of appearance on a structural database. Protein design, however, has requirements that can sometimes be limited in molecular mechanics force-fields.",
+      "A protein design algorithm must, thus, search all the conformations of each sequence, with respect to the target fold, and rank sequences according to the lowest-energy conformation of each one, as determined by the protein design energy function. Thus, a typical input to the protein design algorithm is the target fold, the sequence space, the structural flexibility, and the energy function, while the output is one or more sequences that are predicted to fold stably to the target structure.",
+      "The K* algorithm approximates the binding constant of the algorithm by including conformational entropy into the free energy calculation. The K* algorithm considers only the lowest-energy conformations of the free and bound complexes (denoted by the sets P, L, and PL) to approximate the partition functions of each complex:",
+      "Protein design energy functions must be adapted to score binding predictions because binding involves a trade-off between the lowest-energy conformations of the free proteins (EP and EL) and the lowest-energy conformation of the bound complex (EPL):"
+    ],
+    "title": "Protein design - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Protein_design"
+  },
+  {
+    "description": "Most proteins form symmetric, multimeric complexes. Modeling shows that a strong prevalence for symmetry among stable structures can account for this \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [],
+    "title": "Protein Complexes: The Evolution of Symmetry - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0960982208014814"
+  },
+  {
+    "description": "Three billion years of evolution have produced a tremendous diversity of protein molecules, and yet the full potential of this molecular class is likely far greater. Accessing this potential has been challenging for computation and experiments because the space of possible protein molecules ...",
+    "favicon_url": "https://you.com/favicon?domain=www.biorxiv.org&size=128",
+    "snippets": [
+      "Three billion years of evolution have produced a tremendous diversity of protein molecules, and yet the full potential of this molecular class is likely far greater. Accessing this potential has been challenging for computation and experiments because the space of possible protein molecules is much larger than the space of those likely to host function.",
+      "bioRxiv - the preprint server for biology, operated by Cold Spring Harbor Laboratory, a research and educational institution",
+      "We suggest that Chroma can effectively realize protein design as Bayesian inference under external constraints, which can involve symmetries, substructure, shape, semantics, and even natural language prompts. With this unified approach, we hope to accelerate the prospect of programming protein matter for human health, materials science, and synthetic biology. The authors have declared no competing interest. ... Posted December 02, 2022. ... John Ingraham, Max Baranov, Zak Costello, Vincent Frappier, Ahmed Ismail, Shan Tie, Wujie Wang, Vincent Xue, Fritz Obermeyer, Andrew Beam, Gevorg Grigoryan",
+      "View ORCID ProfileJohn Ingraham, Max Baranov, Zak Costello, View ORCID ProfileVincent Frappier, View ORCID ProfileAhmed Ismail, View ORCID ProfileShan Tie, View ORCID ProfileWujie Wang, View ORCID ProfileVincent Xue, View ORCID ProfileFritz Obermeyer, View ORCID ProfileAndrew Beam, View ORCID ProfileGevorg Grigoryan"
+    ],
+    "title": "Illuminating protein space with a programmable generative model ...",
+    "url": "https://www.biorxiv.org/content/10.1101/2022.12.01.518682v1"
+  },
+  {
+    "description": "Three billion years of evolution has produced a tremendous diversity of protein molecules1, but the full potential of proteins is likely to be much greater. Accessing this potential has been challenging for both computation and experiments because the space of possible protein molecules is ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Three billion years of evolution has produced a tremendous diversity of protein molecules1, but the full potential of proteins is likely to be much greater. Accessing this potential has been challenging for both computation and experiments because the space of possible protein molecules is much larger than the space of those likely to have functions.",
+      "Evolution has produced a range of diverse proteins, and now a generative model called Chroma can expand that set by allowing the user to design new proteins and protein complexes with desired properties and functions.",
+      "Nature - Evolution has produced a range of diverse proteins, and now a generative model called Chroma can expand that set by allowing the user to design new proteins and protein complexes with...",
+      "Ingraham, J., Garg, V., Barzilay, R. & Jaakkola, T. Generative models for graph-based protein design. In Proc. Advances in Neural Information Processing Systems 32 (eds Wallach, H. et al.) (NeurIPS, 2019). Anand, N. et al. Protein sequence design with a learned potential. Nat. Commun. 13, 746 (2022)."
+    ],
+    "title": "Illuminating protein space with a programmable generative model ...",
+    "url": "https://www.nature.com/articles/s41586-023-06728-8"
+  },
+  {
+    "description": "Three billion years of evolution has produced a tremendous diversity of protein molecules1, but the full potential of proteins is likely to be much greater. Accessing this potential has been challenging for both computation and experiments because ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "15.Ingraham, J., Garg, V., Barzilay, R. & Jaakkola, T. Generative models for graph-based protein design. In Proc.Advances in Neural Information Processing Systems32 (eds Wallach, H. et al.) (NeurIPS, 2019). 16.Anand N, et al. Protein sequence design with a learned potential. Nat. Commun. 2022;13:746.",
+      "The rates at which this happens vary according to the specific condition and protein length (and are subject to the caveats of this test mentioned above), but even in the challenging cases of shape-, complex symmetry-, class- and language-conditioned designs, we observe widespread refolding across specific conditions and structure prediction methods.",
+      "23\u201333 and Supplementary Appendices N\u2013T). Although we believe that each of these represents only a preliminary demonstration of possible conditioning modes, they provide a glimpse of the potential for programmable protein design. We began by considering analytic conditioners that can control protein backbone geometry. We found that conditioning on the symmetry of protein complexes can readily generate samples under arbitrary symmetry groups (Fig.",
+      "1c and Supplementary Appendix M). We explored several conditioner primitives including geometrical constraints that can outfill proteins from fixed substructures (Supplementary Appendix N), enforce particular distances between atoms (Supplementary Appendix O), graft motifs into larger structures (Supplementary Appendix P), symmetrize complexes under arbitrary symmetry groups (Supplementary Appendix Q) and enforce shape adherence to arbitrary point clouds (Supplementary Appendix R)."
+    ],
+    "title": "Illuminating protein space with a programmable generative model - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10686827/"
+  },
+  {
+    "description": "Proteins can self-associate with copies of themselves to form symmetric complexes called homomers. Homomers are widespread in all kingdoms of life and allow for unique geometric and functional properties, as reflected in viral capsids or allostery. Once a protein forms a homomer, however, its ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Proteins can self-associate with copies of themselves to form symmetric complexes called homomers. Homomers are widespread in all kingdoms of life and allow for unique geometric and functional properties, as reflected in viral capsids or allostery. Once a protein forms a homomer, however, its internal symmetry can compound the effect of point mutations and trigger uncontrolled self-assembly into high-order structures.",
+      "Scientific Data - Geometric description of self-interaction potential in symmetric protein complexes",
+      "Design Type(s) protein interaction analysis objective \u2022 protein structure prediction objective \u2022 modeling and simulation objective Measurement Type(s) protein complex Technology Type(s) computational modeling technique Factor Type(s) Filtering \u2022 source Sample Characteristic(s) laboratory environment Machine-accessible metadata file describing the reported data (ISA-Tab format)",
+      "These data have implications in the study of disease-causing mutations, protein evolution and can be exploited in the design of biomaterials. Machine-accessible metadata file describing the reported data (ISA-Tab format) ... The controlled association of proteins into functional complexes is central to the myriad of biochemical processes required to maintain cellular functions1,2. The symmetry of protein complexes enables unique biological properties: compact genetic encoding of large assemblies such as viral capsids, cytoskeleton tubules and filaments, or cooperative, switch-like transitions involving allostery."
+    ],
+    "title": "Geometric description of self-interaction potential in symmetric ...",
+    "url": "https://www.nature.com/articles/s41597-019-0058-x"
+  },
+  {
+    "description": "The design of proteins that bind to a specific site on the surface of a target protein using no information other than the three-dimensional structure of the target remains a challenge1\u20135. Here we describe a general solution to this problem that starts with a broad exploration of the vast ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "The design of proteins that bind to a specific site on the surface of a target protein using no information other than the three-dimensional structure of the target remains a challenge1\u20135. Here we describe a general solution to this problem that starts with a broad exploration of the vast space of possible binding modes to a selected region of a protein surface, and then intensifies the search in the vicinity of the most promising binding modes.",
+      "A design pipeline is presented whereby binding proteins can be designed de novo without the need for prior information on binding hotspots or fragments from structures of complexes with binding partners.",
+      "Nature - A design pipeline is presented whereby binding proteins can be designed de novo without the need for prior information on binding hotspots or fragments from structures of complexes with...",
+      "Further information on research design is available in the Nature Research Reporting Summary linked to this paper. The atomic coordinates and experimental data of H3_mb in complex with H3 HA, TrkA_mb in complex with TrkA, unbound FGFR2_mb, FGFR2_mb in complex with FGFR4, unbound IL-7R\u03b1_mb, IL-7R\u03b1_mb in complex with IL-7R\u03b1 and VirB8_mb in complex with VirB8 have been deposited in the RCSB PDB with the accession numbers 7RDH, 7N3T, 7N1K, 7N1J, 7S5B, 7OPB and 7SH3, respectively."
+    ],
+    "title": "Design of protein-binding proteins from the target structure alone ...",
+    "url": "https://www.nature.com/articles/s41586-022-04654-9"
+  },
+  {
+    "description": "Protein-protein interactions are at the basis of many protein functions, and the knowledge of 3D struc-tures of protein-protein complexes provides structural...",
+    "favicon_url": "https://you.com/favicon?domain=www.frontiersin.org&size=128",
+    "snippets": [
+      "Although in usual MM-PBSA approaches (Hou et al., 2011; Wang et al., 2018), the non-polar solvation energy component term is usually calculated via linear equation with respect to ASA of the protein and protein complexes, it turned out that there is no simple relationship between \u2206ASA and the dispersive solvation energy, \u2206Gnp,disp, solv, see Figure 8A. This finding supports the fact that the standard ASA model does not work properly as pointed out by other groups who proposed to further decomposed the nonpolar component into attractive (dispersive) and repulsive (cavity) components using the Weeks-Chandler-Anderson (WCA) separation scheme (Weeks et al., 1971; Chandler et al., 1983; Levy et al., 2003; Zacharias, 2003; Shivakumar et al., 2009):",
+      "Weeks, J. D., Chandler, D., and Andersen, H. C. (1971). Role of repulsive forces in determining the equilibrium structure of simple liquids. J. Chem. Phys. 54, 5237\u20135247. doi:10.1063/1.1674820 ... Wickstrom, L., Gallicchio, E., Chen, L., Kurtzman, T., and Deng, N. (2022).",
+      "The entropic contribution is notably difficult to estimate, in particular when Cartesian coordinates are used, since it can require long MD simulations to reach convergence and its difference can be affected by this instability. To improve this, several groups proposed to compute the conformational entropy using internal variables (Harpole and Sharp, 2011), such as torsions (Chong and Ham, 2016b; Hikiri et al., 2016; Wickstrom et al., 2022).",
+      "Volume 9 - 2022 | https://doi.org/10.3389/fmolb.2022.970109 \u00b7 This article is part of the Research TopicIn Celebration of Women in Science: Biological Modeling and SimulationView all 9 articles ... Protein-protein interactions are at the basis of many protein functions, and the knowledge of 3D structures of protein-protein complexes provides structural, mechanical and dynamical pieces of information essential to understand these functions."
+    ],
+    "title": "Frontiers | A dynamical view of protein-protein complexes: Studies ...",
+    "url": "https://www.frontiersin.org/journals/molecular-biosciences/articles/10.3389/fmolb.2022.970109/full"
+  },
+  {
+    "description": "Proteins are nature\u2019s primary building blocks for the construction of sophisticated molecular machines and dynamic materials, ranging from protein complexes such as photosystem II and nitrogenase that drive biogeochemical cycles to cytoskeletal ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "At the same time, it is also frequently observed that a single protein can crystallize in several different space group symmetries, featuring various protein-protein contacts that can be hard to rationalize in terms of their thermodynamic favorability even a posteriori. This is because the free-energy landscape for the self-assembly of any protein is multidimensional, shallow and marked by many energy minima whose magnitudes are readily altered by external perturbations. While such a complex energy landscape makes the prediction and design of protein self-assembly difficult, this complication is not unique to proteins.",
+      "Consequently, the majority of natural protein assemblies are symmetric, with cyclic, dihedral or cubic point group symmetries in the case of closed architectures, helical or cyclic + translation symmetries in 1D structures, plane group symmetries in 2D assemblies and space group symmetries in 3D arrays. Protein assemblies can be homomeric (i.e., composed of one type of protein monomer) (Figure 3a-i, iii and iv) or heteromeric (i.e., composed of two or more different types of protein monomers) (Figure 3a-ii and v). A large fraction of symmetrical protein assemblies is homomeric, while a much smaller fraction of symmetrical protein assemblies is heteromeric. The functional complexity of protein assemblies generally scales with their heteromeric composition, in that the different types of protein subunits within an assembly perform different functions.",
+      "Before describing these examples, we will briefly summarize the general design parameters of natural protein assemblies, namely their shape/structure/dimensionality, symmetry, compositions, and connectivity, and how these relate to biological functions. We also note that by \u201cprotein assemblies\u201d we refer exclusively to protein complexes that act as a unit and are sufficiently long-lived to be structurally characterized by conventional tools such as crystallography, electron microscopy, nuclear magnetic resonance spectroscopy (NMR), atomic force microscopy (AFM), small angle X-ray scattering (SAXS), etc.",
+      "Discrete, folded polypeptides with either identical or distinct tertiary structures can assemble via non-covalent interactions into supramolecular complexes, termed quaternary structures. Further non-covalent interactions at the interfaces of symmetric quaternary structures can give rise to extended structures, exemplified here by a bacterial S-layer structure."
+    ],
+    "title": "Protein Assembly by Design - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9148388/"
+  },
+  {
+    "description": "From a chemical point of view, proteins are by far the most structurally complex and functionally sophisticated molecules known. This is perhaps not surprising, once one realizes that the structure and chemistry of each protein has been developed and fine-tuned over billions of years of ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "From a chemical point of view, proteins are by far the most structurally complex and functionally sophisticated molecules known. This is perhaps not surprising, once one realizes that the structure and chemistry of each protein has been developed and fine-tuned over billions of years of evolutionary history.",
+      "In the simplest case, two identical folded polypeptide chains bind to each other in a \u201chead-to-head\u201d arrangement, forming a symmetric complex of two protein subunits (a dimer) held together by interactions between two identical binding sites. The Cro repressor protein\u2014a gene regulatory protein that binds to DNA to turn genes off in a bacterial cell\u2014provides an example (Figure 3-21).",
+      "Many other types of symmetric protein complexes, formed from multiple copies of a single polypeptide chain, are commonly found in cells.",
+      "Each protein behaves quite differently in this respect, and protein crystals can be generated only through exhaustive trial-and-error methods that often take many years to succeed\u2014if they succeed at all. Membrane proteins and large protein complexes with many moving parts have generally been the most difficult to crystallize, which is why only a few such protein structures are displayed in this book."
+    ],
+    "title": "The Shape and Structure of Proteins - Molecular Biology of the ...",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK26830/"
+  },
+  {
+    "description": "Methods from artificial intelligence (AI) trained on large datasets of sequences and structures can now \u201cwrite\u201d proteins with new shapes and molecular\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [],
+    "title": "De novo protein design\u2014From new structures to programmable ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0092867423014022"
+  },
+  {
+    "description": "Proteins are nature\u2019s primary building blocks for the construction of sophisticated molecular machines and dynamic materials, ranging from protein complexes such as photosystem II and nitrogenase that drive biogeochemical cycles to cytoskeletal ...",
+    "favicon_url": "https://you.com/favicon?domain=ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "At the same time, it is also frequently observed that a single protein can crystallize in several different space group symmetries, featuring various protein-protein contacts that can be hard to rationalize in terms of their thermodynamic favorability even a posteriori. This is because the free-energy landscape for the self-assembly of any protein is multidimensional, shallow and marked by many energy minima whose magnitudes are readily altered by external perturbations. While such a complex energy landscape makes the prediction and design of protein self-assembly difficult, this complication is not unique to proteins.",
+      "Consequently, the majority of natural protein assemblies are symmetric, with cyclic, dihedral or cubic point group symmetries in the case of closed architectures, helical or cyclic + translation symmetries in 1D structures, plane group symmetries in 2D assemblies and space group symmetries in 3D arrays. Protein assemblies can be homomeric (i.e., composed of one type of protein monomer) (Figure 3a-i, iii and iv) or heteromeric (i.e., composed of two or more different types of protein monomers) (Figure 3a-ii and v). A large fraction of symmetrical protein assemblies is homomeric, while a much smaller fraction of symmetrical protein assemblies is heteromeric. The functional complexity of protein assemblies generally scales with their heteromeric composition, in that the different types of protein subunits within an assembly perform different functions.",
+      "Before describing these examples, we will briefly summarize the general design parameters of natural protein assemblies, namely their shape/structure/dimensionality, symmetry, compositions, and connectivity, and how these relate to biological functions. We also note that by \u201cprotein assemblies\u201d we refer exclusively to protein complexes that act as a unit and are sufficiently long-lived to be structurally characterized by conventional tools such as crystallography, electron microscopy, nuclear magnetic resonance spectroscopy (NMR), atomic force microscopy (AFM), small angle X-ray scattering (SAXS), etc.",
+      "Discrete, folded polypeptides with either identical or distinct tertiary structures can assemble via non-covalent interactions into supramolecular complexes, termed quaternary structures. Further non-covalent interactions at the interfaces of symmetric quaternary structures can give rise to extended structures, exemplified here by a bacterial S-layer structure."
+    ],
+    "title": "Protein Assembly by Design - PMC",
+    "url": "https://ncbi.nlm.nih.gov/pmc/articles/PMC9148388"
+  },
+  {
+    "description": "Rotem Sertchook (Synergix) \u00b7 Basic principles in protein structure are illustrated in this chapter, starting with their amino acid building blocks and continuing to their folded, complex 3D architecture",
+    "favicon_url": "https://you.com/favicon?domain=www.drugdesign.org&size=128",
+    "snippets": [
+      "The free rotation about two rotatable bonds of each amino acid allows adjacent rigid peptide units to rotate about these bonds, and as a consequence the polypeptide chain can fold in many different ways. The exact geometry of a polypeptide chain is defined by the respective \u03a6 and \u03a8 values. With two rotatable bonds for each amino acid, the conformational complexity of any polypeptide chain is huge.",
+      "Examples of some protein structures that have served as a basis for the successful design of drugs are shown here (move the mouse to visualize their respective therapeutic areas). This terminates our introduction to Protein Structure. We hope that this chapter has increased your understanding of the complex world of protein structure.",
+      "The most striking feature of the folded conformation of a protein is its complexity, revealing the organization and the relationships of thousands of atoms in three-dimensional space.",
+      "The subunits in a protein may be identical. In this case, the resulting homo oligomers are usually symmetrical and almost always exhibit rotational symmetry about one or more axes. Several examples are shown below, according to their symmetry group."
+    ],
+    "title": "Protein Structure - Drug Design Org",
+    "url": "https://www.drugdesign.org/chapters/protein-structure/"
+  },
+  {
+    "description": "Many naturally occurring protein assemblies have dynamic structures that allow them to perform specialized functions. Although computational methods for designing novel self-assembling proteins have advanced substantially over the past decade, they primarily focus on designing static structures.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Nature Structural & Molecular Biology - This study reports unexpected structural diversity in computationally designed protein assemblies due to subunit flexibility. Fixing flexibility in one...",
+      "This study reports unexpected structural diversity in computationally designed protein assemblies due to subunit flexibility. Fixing flexibility in one design restores the intended architecture, suggesting a strategy to design dynamic assemblies.",
+      "Conformational flexibility facilitates self-assembly of complex DNA nanostructures. Proc. Natl Acad. Sci. USA 105, 10665\u201310669 (2008). ... Fletcher, J. M. et al. Self-assembling cages from coiled-coil peptide modules. Science 340, 595\u2013599 (2013). ... Mosayebi, M. et al. Beyond icosahedral symmetry in packings of proteins in spherical shells.",
+      "Laniado, J., Meador, K. & Yeates, T. O. A fragment-based protein interface design algorithm for symmetric assemblies. Protein Eng. Des. Sel. 34, gzab008 (2021). ... Hamilton, J. R. et al. Targeted delivery of CRISPR-Cas9 and transgenes enables complex immune cell engineering."
+    ],
+    "title": "Local structural flexibility drives oligomorphism in computationally ...",
+    "url": "https://www.nature.com/articles/s41594-025-01490-z"
+  },
+  {
+    "description": "Combining a basic set of building blocks into more complex forms is a universal design principle. Most protein designs have proceeded from a manual bottom-up approach using parts created by nature, but top-down design of proteins is fundamentally hard due to biological complexity.",
+    "favicon_url": "https://you.com/favicon?domain=scholar.google.com&size=128",
+    "snippets": [
+      "Designing a diverse set of specifications, including constraints on atomic coordinates, secondary structure, symmetry, and multimerization, demonstrates the generality and controllability of the approach. Enumerating constraints at increasing levels of hierarchical complexity shows that the approach can access a combinatorially large design space.",
+      "We demonstrate how the modularity and programmability long sought for protein design can be realized through generative artificial intelligence. Advanced protein language models demonstrate emergent learning of atomic resolution structure and \u2026 ... Combining a basic set of building blocks into more complex forms is a universal design principle."
+    ],
+    "title": "Google Scholar",
+    "url": "https://scholar.google.com/scholar_lookup?doi=10.1101/2022.12.21.521526"
+  },
+  {
+    "description": "The majority of soluble and membrane-bound proteins in modern cells are symmetrical oligomeric complexes with two or more subunits. The evolutionary selection of symmetrical oligomeric complexes is driven by functional, genetic, and physicochemical needs. Large proteins are selected for specific ...",
+    "favicon_url": "https://you.com/favicon?domain=pubmed.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "The majority of soluble and membrane-bound proteins in modern cells are symmetrical oligomeric complexes with two or more subunits. The evolutionary selection of symmetrical oligomeric complexes is driven by functional, genetic, and physicochemical needs. Large proteins are selected for specific mor \u2026",
+      "Symmetry is broken or modified in many forms: quasisymmetry, in which identical subunits adopt similar but different conformations; pleomorphism, in which identical subunits form different complexes; pseudosymmetry, in which different molecules form approximately symmetrical complexes; and symmetry mismatch, in which oligomers of different symmetries interact along their respective symmetry axes.",
+      "Simple mechanisms for the evolution of protein complexity. Pillai AS, Hochberg GKA, Thornton JW. Pillai AS, et al. Protein Sci. 2022 Nov;31(11):e4449. doi: 10.1002/pro.4449. Protein Sci. 2022. PMID: 36107026 Free PMC article.",
+      "Several complexes have reciprocating mechanisms in which the complex is asymmetric, but, over time, all subunits cycle through the same set of conformations. Global asymmetry is only rarely observed. Evolution of oligomeric complexes may favor the formation of dimers over complexes with higher cyclic symmetry, through a mechanism of prepositioned pairs of interacting residues."
+    ],
+    "title": "Structural symmetry and protein function - PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/10940245/"
+  },
+  {
+    "description": "Proteins are tiny models of biological complexity: specific interactions among their many amino acids cause proteins to fold into elaborate structures, assemble with other proteins into higher\u2010order complexes, and change their functions and structures ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Received 2022 Jun 23; Revised 2022 Sep 1; Accepted 2022 Sep 10. This is an open access article under the terms of the http://creativecommons.org/licenses/by-nc/4.0/ License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited and is not used for commercial purposes. ... No primary data were generated for this review. Proteins are tiny models of biological complexity: specific interactions among their many amino acids cause proteins to fold into elaborate structures, assemble with other proteins into higher\u2010order complexes, and change their functions and structures upon binding other molecules.",
+      "Published online 2022 Oct 26. doi: 10.1002/pro.4449 ... Arvind S. Pillai, 1 , 2 Georg K.A. Hochberg, 3 , 4 and Joseph W. Thornton 1 , 5 \u00b7 1 Department of Ecology and Evolution, University of Chicago, Chicago Illinois, USA \u00b7 2 Institute for Protein Design, University of Washington, Seattle WA, USA",
+      "Pillai AS, Hochberg GKA, Thornton JW. Simple mechanisms for the evolution of protein complexity. Protein Science. 2022;31(11):e4449.",
+      "The second critical factor is that most homomeric interfaces are isologous: they involve the same surface region on the two subunits, rotated 180\u00b0 relative to each other around an axis of symmetry (Figure 2b). 11 , 23 , 51 A single mutation in an isologous interface will change residues on both sides of the interface, doubling its energetic contribution and squaring the effect on occupancy. One favorable mutation can thus have the same effect as two mutations in a nonisologous interface, improving binding by up to 8 kcal/mol and occupancy by four orders of magnitude. For higher\u2010order homomeric complexes, the effect is magnified further: a single affinity\u2010increasing an isologous interface occurs four times in a homotetramer (increasing occupancy by up to 8 orders of magnitude), eight times in a homo\u2010octamer, and a vast number of times in a fibril."
+    ],
+    "title": "Simple mechanisms for the evolution of protein complexity - PMC",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9601886/"
+  },
+  {
+    "description": "Protein structures are made by condensation of amino acids forming peptide bonds. The sequence of amino acids in a protein is called its primary structure. The secondary structure is determined by the dihedral angles of the peptide bonds, the tertiary structure by the folding of protein chains ...",
+    "favicon_url": "https://you.com/favicon?domain=byjus.com&size=128",
+    "snippets": [
+      "The spatial arrangement of these subunits with respect to each other is known as quaternary structure. The exact amino acid sequence of each protein drives it to fold into its own unique and biologically active three-dimensional fold also known as the tertiary structure. Proteins consist of different combinations of secondary elements some of which are simple whereas others are more complex.",
+      "The sequence of amino acids in a protein is called its primary structure. The secondary structure is determined by the dihedral angles of the peptide bonds, the tertiary structure by the folding of protein chains in space. Association of folded polypeptide molecules to complex functional proteins results in quaternary structure.",
+      "This structure arises from further folding of the secondary structure of the protein. H-bonds, electrostatic forces, disulphide linkages, and Vander Waals forces stabilize this structure.",
+      "This bond is otherwise an amide linkage. When peptide bonds are established among more than ten amino acids, they together form a polypeptide chain. Very often, when a polypeptide chain has a mass exceeding 10000u and the number of amino acids in the chain exceeding 100, we get a protein."
+    ],
+    "title": "Define Protein Structure",
+    "url": "https://byjus.com/chemistry/protein-structure-and-levels-of-protein/"
+  },
+  {
+    "description": "Attention is brought to the fact that many coordinate sets deposited in the Protein Data Bank are located outside of the unit cells and are sometimes presented in space groups with symmetry lower than the true space group, and that symmetric ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Attention is brought to the fact that many coordinate sets deposited in the Protein Data Bank are located outside of the unit cells and are sometimes presented in space groups with symmetry lower than the true space group, and that symmetric oligomers are sometimes scattered, making it harder for the users to interpret quaternary structures. Keywords: Protein Data Bank, unit cell, placement of coordinates, molecular symmetry \u00b7 The Protein Data Bank (PDB) constitutes a collection of the available atomic models of macromolecules and their complexes obtained by various methods used in structural biology, but chiefly by crystallography.",
+      "An instructive example is the structure of a DNA-binding protein (PDB entry 5t9d; Billon et al., 2017 \u25b8) presented as a symmetric trimer positioned at the diagonal of the ortho\u00adrhombic cell in space group P212121, with the three cell dimensions almost identical and, of course, all right angles (Fig. 3 \u25b8). This data set can be rescaled by applying the cubic 23 symmetry with an R merge of 3.4% and it refines in P213 to R and R free values of 17.7 and 22.4%, respectively, which are lower than the values quoted for the orthorhombic symmetry.",
+      "The entry \u20184 \u00d7 2 ABCD,EF+G+H\u2019 means that the structure contains two tetramers, one tetramer ABCD and a second tetramer formed by the dimer EF and molecules G and H transformed by the space-group symmetry operations. ... An example is found in the paper by Sola-Carvajal et al. (2014 \u25b8) that discusses the structures of a tetrameric enzyme in three different states: the apoenzyme as well as complexes with a substrate and with a cofactor.",
+      "An interesting case is a collection of 25 structures of different complexes of influenza virus endonuclease with various inhibitors that were published in a single paper (Beylkin et al., 2017 \u25b8). These structures were crystallized in three space groups, with a single protein molecule found in the asymmetric unit, but were presented in various locations around the unit cell (Table 1b \u25b8)."
+    ],
+    "title": "Crystallographically correct but confusing presentation of structural ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6130463/"
+  },
+  {
+    "description": "About 50 years ago, biologists set out to solve the protein-folding problem. The road to the Nobel victory has been arduous but full of small wins along the way.",
+    "favicon_url": "https://you.com/favicon?domain=www.the-scientist.com&size=128",
+    "snippets": [
+      "\u201cAlphaFold has already accelerated and enabled massive discoveries, including cracking the structure of the nuclear pore complex.",
+      "Users could play the game by dragging different parts of proteins on the screen to minimize the energy\u2014less energy meant more points. It was the perfect balance of work and play; in fact, in 2011, a group of Foldit users helped solve the structure of a protein that scientists had struggled to decode for decades.2 Citizen scientists also used the game to help design new proteins.3"
+    ],
+    "title": "The Journey to a Nobel Prize: A Protein Design and Structure Research ...",
+    "url": "https://www.the-scientist.com/the-journey-to-a-nobel-prize-a-protein-design-and-structure-research-timeline-72256"
+  },
+  {
+    "description": "Eukaryotic cells possess hundreds of protein complexes that contain multiple subunits and must be formed at the correct time and place during developm\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Eukaryotic cells possess hundreds of protein complexes that contain multiple subunits and must be formed at the correct time and place during development. Despite specific assembly pathways, cells frequently encounter complexes with missing or aberrant subunits that can disrupt important signaling events.",
+      "Cells, therefore, employ several ubiquitin-dependent quality control pathways that can prevent, correct, or degrade flawed complexes.",
+      "In this review, we will discuss our emerging understanding of such quality control of protein complex composition."
+    ],
+    "title": "Quality control of protein complex composition - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1097276522001678"
+  },
+  {
+    "description": "Protein assemblies are often symmetric, as this organization has many advantages compared to individual proteins. Complex protein structures thus very\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Complex protein structures thus very often possess high-order symmetries. Detection and analysis of these symmetries has been a challenging problem and no efficient algorithms have been developed so far. This paper presents the extension of our cyclic symmetry detection method for higher-order symmetries with multiple symmetry axes.",
+      "Below we provide details about the high-order symmetry measure and the computation of the symmetry axes for an assembly possessing any point group symmetry. The method first perceives the topology between different chains, and is able to deal with complex subunits that are composed of multiple chains. Then it iteratively solves a constrained quadratic optimization problem using a set of analytical solutions. Similarly to the analysis of the cyclic groups (Pag\u00e8s et al., 2018), in this paper we will be mainly dealing with",
+      "Symmetric protein complexes are very common in nature, as has been highlighted in our previous work on symmetry detection in cyclic protein assemblies (Pag\u00e8s et al., 2018), and many of these are deposited to the Protein Data Bank (PDB) (Berman et al., 2000).",
+      "As function of proteins is very often determined by their structure, it appears that complex function requires complex structures (Levy et al., 2006, Levy et al., 2008). High-order symmetries are thus essential to build large and complex protein assemblies. Dihedral and cubic groups are overrepresented among large protein assemblies with some specific structural functions, for example those of viral capsids."
+    ],
+    "title": "Analytical symmetry detection in protein assemblies. II. Dihedral ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1047847718301291"
+  },
+  {
+    "description": "Most proteins do not function on their own but as part of large signaling complexes that are arranged in every living cell in response to specific environmental cues. Proteins interact with each other either constitutively or transiently and do so ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Most proteins do not function on their own but as part of large signaling complexes that are arranged in every living cell in response to specific environmental cues. Proteins interact with each other either constitutively or transiently and do so with different affinity.",
+      "51) such as one-hybrid screens which are designed to investigate protein-DNA interactions, and three-hybrid screens which have been developed to identify proteins that interact with RNA.52\u201355 Some successful attempts have also been made to adopt the three-hybrid system to investigate ternary protein complex formation that involves three proteins, the concept being that it is possible to trap the interaction of two proteins which occurs only in the presence of a third protein.55,56 In all two-hybrid screens, either a matrix approach or a library approach can be taken (reviewed in ref.",
+      "Pearson's correlation coefficient is a standard measure of pattern recognition and can be used to measure the strength of the linear relationship between two fluorescence images.120,121 It compares the similarity of shapes and ignores signal intensity giving a value between \u22121 and 1, where \u22121 suggests an entirely negative correlation.121 Manders' overlap coeffiecient is derived from the Pearson's correlation coefficient and indicates the overlap of two signals and hence the true degree of colocalization.121 This coefficient gives a value between 0 and 1, with a value of 1 being complete co",
+      "The objective here is to discuss several different high throughput screens and discuss the procedures involved in designing the appropriate verification methods which can be applied to investigate protein-protein interactions."
+    ],
+    "title": "Tools used to study how protein complexes are assembled in signaling ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3225741/"
+  }
+]

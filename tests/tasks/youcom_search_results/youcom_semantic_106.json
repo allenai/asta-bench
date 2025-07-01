@@ -1,0 +1,273 @@
+[
+  {
+    "description": "A major factor in the recent success of large language models is the use of enormous and ever-growing text datasets for unsupervised pre-training. However, naively training a model on all available data may not be optimal (or feasible), as the quality of available text data can vary.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "In-context learning (ICL) is a widely used prompting paradigm for language models (LMs). Instead of being fine-tuned with the LM, a few demonstration examples are given as a prompt to guide the language model to perform a similar prediction task on the input query (Brown et al., 2020). In-context learning is known to be sensitive to the choice (Perez et al., 2021), and even ordering (Lu et al., 2022), of the demonstrations. To improve the ICL performance without extensively training the potentially large LM, many recent papers have worked on constructing better in-context demonstrations by: selecting an optimal ordering from a fixed set of demonstrations, selecting from a large set of labeled data, or strategically annotating a small set of unlabeled data.",
+      "Practitioners often aim to curate a dataset that is \u201cunbiased and fair\u201d. As such, the aim is for models trained on such data to follow similarly unbiased behavior. Certain popular datasets have also been found to have illegal or extremely inappropriate content, which motivates strict data filters (David, 2023). Towards this purpose, most datasets employ a process to filter out documents that do not conform with such behaviors. Bias and fairness are one of the least well-defined filtering requirements and may be in conflict with different ideologies (Gururangan et al., 2022) and implications (Longpre et al., 2023c).",
+      "For example, the GLaM dataset (Du et al., 2022) sets mixture weights based on (1) the downstream performance of smaller models and (2) the sizes of each domain, preventing small sources such as Wikipedia from being over-sampled. While the size of these smaller models is unknown, these models must be large enough to have a meaningful downstream performance (roughly 1B parameters). Similarly, the dataset used to train Gopher (Rae et al., 2022) used domain weights tuned by sweeping over 7 combinations of domain weights and choosing the one that leads to the best downstream performance. Overall, the optimal domain weights may not be intuitive and likely depend on all parts of the training pipeline, including the tokenizer, dataset, model architecture, optimizer, and other hyperparameters.",
+      "To extend this scaling beyond the openly available data, data augmentation techniques such as translation (Muennighoff et al., 2022b; Yong et al., 2022; Dhole et al., 2021; Singh et al., 2024; \u00dcst\u00fcn et al., 2024), input inversion (Min et al., 2022; Longpre et al., 2023a), and negative examples (Wang et al., 2022b) have successfully been used to further enrich the data variety. A number of works also increase data diversity by templatizing data in multiple prompt formats, including zero-shot, few-shot, and chain-of-thought prompts (Chung et al., 2022; Iyer et al., 2022). These works demonstrate that task variety and template variety both drive greater generalization, though Wei et al. (2021) report easier training tasks, such as sentiment analysis, contribute less."
+    ],
+    "title": "A Survey on Data Selection for Language Models",
+    "url": "https://arxiv.org/html/2402.16827v1"
+  },
+  {
+    "description": "Boost Your LLM Success! Discover the Essential Things to Consider for Data Collection and Preprocessing. Don't Miss Out!",
+    "favicon_url": "https://you.com/favicon?domain=www.labellerr.com&size=128",
+    "snippets": [
+      "Additionally, it was found that scaling the data size in proportion to the model size could lead to a more compute-efficient model. Another recent study showed that smaller models could perform well with more extended training and more data. Therefore, researchers must pay attention to collecting enough high-quality data to sufficiently train their models, especially when scaling the model parameters. Previous research has indicated that pre-training on low-quality data, such as noisy, toxic, or duplicate data, can harm the performance of language models.",
+      "These models primarily specialize in generating text, but they can also extend their capabilities to generate other forms of content such as audio, images, video, synthetic data, 3D models, and more. The data required to train a large language model (LLM) may vary, and there is no definitive answer.",
+      "Many developers and researchers face significant challenges in sourcing and preparing the vast amounts of text data necessary for training these advanced AI systems.  ... 80% of the time spent on AI projects is devoted to data preparation tasks rather than on model training or deployment. Through this training, they learn language structure and patterns and can perform various language-related tasks such as summarization, translation, sentiment analysis, and more.",
+      "Statistic-based filtering measures text quality based on statistical features of the corpus, while keyword-based filtering removes noisy or unuseful elements based on specific keyword sets, such as HTML tags, hyperlinks, boilerplates, and offensive words. Previous research has shown that having duplicate data in a pre-training corpus can reduce the diversity of language models, potentially leading to instability during training and negatively impacting the model's performance."
+    ],
+    "title": "Data Collection and Preprocessing for LLMs [Updated]",
+    "url": "https://www.labellerr.com/blog/data-collection-and-preprocessing-for-large-language-models/"
+  },
+  {
+    "description": "Mengzhou Xia and Sadhika Malladi \u00b7 TL;DR: We describe how data selection for modern-day LLMs differs from prior settings and how our algorithm, LESS, effectively selects relevant data to cultivate specific capabilities in models during instruction tuning",
+    "favicon_url": "https://you.com/favicon?domain=www.cs.princeton.edu&size=128",
+    "snippets": [
+      "Sener & Severese 2018 explicitly defines this problem to be a core-set problem (Bachem et al., 2017, Tremblay et al., 2019), which aims to choose a set of datapoints such that each data point is close to at least one selected data point. Subsequent research has linked specific attributes of datapoints, such as being \u201ceasy to forget\u201d (Toneva et al., 2019), exhibiting \u201clarge prediction error\u201d (Paul et al., 2021), being \u201chard to memorize\u201d (Feldman et al., 2020), being \u201credundant in clustering\u201d (Birodkar et al., 2019) and having \u201cuncertain predictions\u201d (Chitta et al., 2019) with their representativeness and importance.",
+      "Recent work, dubbed datamodels (Ilyas et al., 2022), seeks to make this bi-level optimization problem more tractable by directly training a model to predict the test performance that would result from excluding or including a particular datapoint. Subsequent work (Park et al., 2023) made this approach computationally efficient, and recently, Engstrom et al., 2024 used this approach to score pre-training examples based on how they affect performance on a target set of examples. Our work, LESS, can be interpreted as one such meta-learning formulation for selecting data in the instruction tuning setting.",
+      "However, measuring the gradient of every token in the sequence is prohibitively expensive with today\u2019s methods, so we stick to sequence selection and leave a token-level formulation to future work. Altogether, once we make the necessary modifications, we arrive at the following formula for computing the influence of a training datapoint $x$ on a validation point $z$.",
+      "We consider general pre-training data selection to be a form of in-domain data selection, as it aims to choose data that covers all potential use cases. Algorithmic Filtering: Early in 2019, researchers have found that excluding high-perplexity examples from CommonCrawl could significantly boost training efficiency, since such examples are often nonsensical or of low quality (Wenzek et al., 2019, Marion et al., 2023)."
+    ],
+    "title": "Using LESS Data to Tune Models",
+    "url": "https://www.cs.princeton.edu/~smalladi/blog/2024/04/04/dataselection/"
+  },
+  {
+    "description": "A major factor in the recent success of large language models is the use of enormous and ever-growing text datasets for unsupervised pre-training. However, naively training a model on all available data may not be optimal (or feasible), as the quality of available text data can vary.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2402.16827: A Survey on Data Selection for Language Models",
+      "However, naively training a model on all available data may not be optimal (or feasible), as the quality of available text data can vary. Filtering out data can also decrease the carbon footprint and financial costs of training models by reducing the amount of training required. Data selection methods aim to determine which candidate data points to include in the training dataset and how to appropriately sample from the selected data points.",
+      "To narrow this gap in knowledge, we present a comprehensive review of existing literature on data selection methods and related research areas, providing a taxonomy of existing approaches. By describing the current landscape of research, this work aims to accelerate progress in data selection by establishing an entry point for new and established researchers."
+    ],
+    "title": "[2402.16827] A Survey on Data Selection for Language Models",
+    "url": "https://arxiv.org/abs/2402.16827"
+  },
+  {
+    "description": "Thanks to Large Language Models (LLMs) like ChatGPT, Artificial Intelligence has now caught the attention of pretty much everyone, but how these models work is still less widely understood.",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "There\u2019s an abundance of text on the internet, in books, in research papers, and more. And we can easily create a massive dataset from all of this. We don\u2019t even need to label the data, because the next word itself is the label, that\u2019s why this is also called self-supervised learning. The image above shows how this is done. Just a single sequence can be turned into multiple sequences for training. And we have lots of such sequences.",
+      "As a result, an LLM trained on that data learns how to do that too. It learns to attend to the main points and compress them into a short text. Note that when a summary is generated, the full text is part of the input sequence of the LLM. This is similar to, say, a research paper that has a conclusion while the full text appears just before. As a result, that skill has probably been learned during pre-training already, although surely instruction fine-tuning helped improve that skill even further.",
+      "In that phase, the model learns not only to master the grammar and syntax of language, but it also acquires a great deal of knowledge about the world, and even some other emerging abilities that we will speak about later. But now I have a couple of questions for you: First, what might be the problem with this kind of pre-training? Well, there are certainly a few, but the one I am trying to point to here has to do with what the LLM has really learned. Namely, it has learned mainly to ramble on about a topic. It may even be doing an incredibly good job, but what it doesn\u2019t do is respond well to the kind of inputs you would generally want to give an AI, such as a question or an instruction.",
+      "One of the key drivers in the last few years has simply been the massive scaling up of neural networks and data sets, which has caused performance to increase along with them. For example, GPT-4, reportedly a model with more than one trillion parameters in total, can pass the bar exam or AP Biology with a score in the top 10 percent of test takers. Surprisingly, those large LLMs even show certain emerging abilities, i.e., abilities to solve tasks and to do things that they were not explicitly trained to do."
+    ],
+    "title": "How Large Language Models Work. From zero to ChatGPT | by Andreas ...",
+    "url": "https://medium.com/data-science-at-microsoft/how-large-language-models-work-91c362f5b78f"
+  },
+  {
+    "description": "How high-quality data impacts every aspect of the LLM training pipeline...",
+    "favicon_url": "https://you.com/favicon?domain=cameronrwolfe.substack.com&size=128",
+    "snippets": [
+      "Beyond training and fine-tuning the LLM, the data used for in-context/few-shot learning can massively impact performance. In particular, recent research on few-shot learning shows us that factors such as the ordering, distribution, or format of exemplars can impact a model\u2019s performance.",
+      "For example, data for SFT can be downloaded from online sources (e.g., ShareGPT) or obtained directly from LLM APIs for ChatGPT or GPT-4. Such an approach is incredibly efficient compared to manual curation, and (in some cases) it even works well; e.g., Orca [3] is trained over a large number of dialogues obtained from ChatGPT/GPT-4 and performs quite well (even compared to top models).",
+      "In fact, most knowledge possessed by the model seems to come from pre-training. A similar argument is made in [1], where we see that high-quality alignment can be achieved via a small, curated dataset for SFT. Such a result is especially interesting given the massive amount of human and computational resources that have been invested into aligning popular proprietary models like GPT-4.",
+      "We will learn that the alignment process, although critical, primarily teaches an LLM steerability and correct behavior or style, while most knowledge is gained during pre-training. As such, alignment can be performed successfully even with minimal training data."
+    ],
+    "title": "Data is the Foundation of Language Models",
+    "url": "https://cameronrwolfe.substack.com/p/data-is-the-foundation-of-language"
+  },
+  {
+    "description": "Large Language Models (LLMs) have emerged as transformative tools in artificial intelligence (AI), exhibiting remarkable capabilities across diverse tasks such as text generation, reasoning, and decision-making. While their success has primarily been driven by advances in computational power ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Research has shown that the specific examples chosen in a few-shot scenario can lead to vastly different outcomes, ranging from near state-of-the-art accuracy to almost random guessing [DBLP:conf/acl/LuBM0S22]. To mitigate this variability, advanced techniques such as using sentence embeddings to select examples that are semantically close to the input [DBLP:conf/acl/GaoFC20, DBLP:conf/acl-deelio/LiuSZDCC22] or employing entropy-based methods to optimize the sequence of examples have been proposed [DBLP:conf/acl/LuBM0S22]. Moreover, formal understanding of why in-context learning works has been a subject of ongoing research.",
+      "Conformal Prediction (CP) [vovk2005algorithmic, angelopoulos2023conformal] has emerged as a versatile framework for distribution-free statistical inference. CP constructs confidence sets for predictions based on the empirical distribution of residuals, ensuring validity without assumptions about the underlying model or data. Its flexibility and computational efficiency have made it an appealing tool for LLMs despite challenges like large output spaces and non-exchangeable token sequences. To address these issues, works such as [kumar2023conformal, ren2023robots] have restricted the output space, applying CP to tasks like multiple-choice question answering and robot actions, while [ravfogel2023conformal] calibrated nucleus sampling to improve token-level predictions.",
+      "Prefix-tuning is an example of this approach [li-liang-2021-prefix], where continuous task-specific vectors are prepended to inputs, allowing the LM to perform the task more effectively without altering its parameters. In addition, some methods, such as P-tuning [liu2021gpt] and PTR [DBLP:journals/aiopen/HanZDLS22], enhance hard prompt templates by incorporating some tunable embeddings, rather than relying solely on purely learnable prompt templates. These approaches blend the structure of hard prompts with the flexibility of trainable soft tokens, improving prompt performance and adaptability.",
+      "However, these models sometimes exhibit unintended behaviors, such as making up facts or producing biased or toxic content [weidinger2021ethical, bommasani2022opportunities, kenton2021alignment]. This issue has been framed as a lack of \u201calignment\u201d of the models, where alignment in LLMs is defined in terms of desiderata such as \u201censuring that models are helpful, honest, and harmless\u201d [askell2021general]. To tackle the issue of aligning LLMs, researchers have developed two distinct categories of approaches: (1) Reward-based methods, which involve training a reward model using preference data and subsequently optimizing the model\u2019s behaviors to maximize the reward received; and (2) Reward-free methods, which eliminate the reward model altogether and instead directly utilize human preferences to train the LLM."
+    ],
+    "title": "An Overview of Large Language Models for Statisticians",
+    "url": "https://arxiv.org/html/2502.17814v1"
+  },
+  {
+    "description": "This technical report thoroughly examines the process of fine-tuning Large Language Models (LLMs), integrating theoretical insights and practical applications. It begins by tracing the historical development of LLMs, emphasising their evolution from traditional Natural Language Processing (NLP) ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Initialising Optimisers and Loss Functions: When initialising optimisers and loss functions for fine-tuning an LLM, it is crucial to select the appropriate optimiser to efficiently update the model\u2019s weights and the correct loss function to measure model performance [43]. When fine-tuning a large language model (LLM), the computational environment plays a crucial role in ensuring efficient training. To achieve optimal performance, it\u2019s essential to configure the environment with high-performance hardware such as GPUs (Graphics Processing Units) or TPUs (Tensor Processing Units).",
+      "Understanding LLMs requires tracing the development of language models through stages such as Statistical Language Models (SLMs), Neural Language Models (NLMs), Pre-trained Language Models (PLMs), and LLMs. Emerging in the 1990s, SLMs analyse natural language using probabilistic methods to determine the likelihood of sentences within texts. For instance, the probability ... NLMs leverage neural networks to predict word sequences, overcoming SLM limitations.",
+      "The transformers library, part of HuggingFace, enables users to access these models via classes such as AutoModelForCausalLM. This library supports loading fine-tuned models as well as 4-bit quantised models. Additionally, the transformers library includes the \u201dpipeline\u201d feature, making it easy to use pre-trained models for various tasks [35]. ... Description: PyTorch offers comprehensive tools and libraries for Initialising and fine-tuning large language models. It provides a flexible and efficient platform for building and deploying deep learning models.",
+      "Lower Memory Footprint: Since fewer parameters are being updated, the memory footprint during training is reduced, enabling the use of larger batch sizes or more complex models within the same hardware constraints. ... Flexibility: LoRA can be easily integrated with existing pre-trained models without extensive modifications to the model architecture. ... Compatibility: It can be used alongside other fine-tuning techniques, such as adapter layers or prompt-tuning, to further enhance performance. ... Comparable Results: Despite the reduction in the number of trainable parameters, LoRA has been shown to achieve performance comparable to full fine-tuning in many tasks."
+    ],
+    "title": "The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: ...",
+    "url": "https://arxiv.org/html/2408.13296v1"
+  },
+  {
+    "description": "Abstract. Rapid advancements of large language models (LLMs) have enabled the processing, understanding, and generation of human-like text, with increasing integration into systems that touch our social sphere. Despite this success, these models can learn, perpetuate, and amplify harmful social ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. Rapid advancements of large language models (LLMs) have enabled the processing, understanding, and generation of human-like text, with increasing integration into systems that touch our social sphere. Despite this success, these models can learn, perpetuate, and amplify harmful social biases.",
+      "Another way of understanding social bias in LLMs is to examine at which points within the model development and deployment process the bias emerges, which may exacerbate preexisting historical biases. This has been thoroughly explored by Mehrabi et al. (2021), Shah, Schwartz, and Hovy (2020), and Suresh and Guttag (2021), and we summarize these pathways here: Training Data: The data used to train an LLM may be drawn from a non-representative sample of the population, which can cause the model to fail to generalize well to some social groups.",
+      "Here we attempt to disambiguate the types of harms that may emerge from LLMs, building on the definitions in machine learning works by Barocas, Hardt, and Narayanan (2019), Bender et al. (2021), Blodgett et al. (2020), Crawford (2017), Mehrabi et al. (2021), Suresh and Guttag (2021), and Weidinger et al. (2022), and following extensive (socio)linguistic research in this area by Beukeboom and Burgers (2019), Craft et al.",
+      "Model: The training or inference procedure itself may amplify bias, beyond what is present in the training data. The choice of optimization function, such as selecting accuracy over some measure of fairness, can affect a model\u2019s behavior. The treatment of each training instance or social group matters too, such as weighing all instances equally during training instead of utilizing a cost-sensitive approach."
+    ],
+    "title": "Bias and Fairness in Large Language Models: A Survey | Computational ...",
+    "url": "https://direct.mit.edu/coli/article/50/3/1097/121961/Bias-and-Fairness-in-Large-Language-Models-A"
+  },
+  {
+    "description": "How to enhance LLMs with human-like cognitive skills",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "In addition, you can use it to establish traceability so the model can point a user to the original sources of information. Beyond structured knowledge injection, efforts are underway to integrate multimodal information and knowledge into LLMs. For instance, in April 2022, DeepMind introduced Flamingo, a visual language model that can seamlessly ingest text, images and video.[5] At the same time, Google is working on Socratic Models, a modular framework in which multiple pre-trained models may be composed zero-shot i.e., via multi-modal prompting, to exchange information with each other.[6]",
+      "Jump into the role of a mean, adversarial user, stress-test your models and explore their weak points. Do this early on, before too much skin has been put in the game. Evaluation and dedicated probing: The design of your training task and evaluation procedure are of central importance.",
+      "Figure 2: Adapters are trained during the memorisation step \u00b7 During utilisation, the LM learns to leverage the facts memorised by the adapters in the respective downstream tasks.",
+      "Even with huge training data, this knowledge cannot be complete. For example, it might miss domain-specific knowledge that is required for commercial use cases. Another important limitation, as of now, is the recency of the information. Since language models lack a notion of temporal context, they can\u2019t work with dynamic information such as the current weather, stock prices or even today\u2019s date."
+    ],
+    "title": "Overcoming the Limitations of Large Language Models | Towards Data ...",
+    "url": "https://towardsdatascience.com/overcoming-the-limitations-of-large-language-models-9d4e92ad9823/"
+  },
+  {
+    "description": "Recent breakthroughs in large language modeling have facilitated rigorous exploration of their application in diverse tasks related to tabular data modeling, such as prediction, tabular data synthesis, question answering, and table understanding. Each task presents unique challenges and ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Future research is needed to explore the mechanisms for LLM\u2019s emerging capabilities for tabular data understanding. Easy to use Currently, most relevant models require fine-tuning or data serialization, which could make these models hard to access. Some pretrained model such as Wang et al.",
+      "Deep learning methods often exhibit suboptimal performance on datasets they were not initially trained on, making transfer learning using the pre-training and fine-tuning paradigm highly promising (Shwartz-Ziv & Armon, 2022). ... The transformation of tabular data into LLM-readable natural language addresses the curse of dimensionality associated with one-hot encoding of high-dimensional categorical data during tabular preprocessing. ... The emergent capabilities, such as step-by-step reasoning through CoT, have transformed LM from language modeling to a more general task-solving tool.",
+      "The final and most recent stage of LM is the Large Language Models (LLMs), and will be the focus of this paper. Motivated by the observation that scaling the data and model size usually leads to improved performance, researchers sought to test the boundaries of PLM\u2019s performance of a larger size, such as text-to-text transfer transformers (T5) (Raffel et al., 2023), GPT-3 (Brown et al., 2020), etc. Intriguingly, some advanced abilities emerge as a result.",
+      "Large language models (LLMs) are deep learning models trained on extensive data, endowing them with versatile problem-solving capabilities that extend far beyond the realm of natural language processing (NLP) tasks (Fu & Khot, 2022). Recent research has revealed emergent abilities of LLMs, such as improved performance on few-shot prompted tasks (Wei et al., 2022b)."
+    ],
+    "title": "Large Language Models(LLMs) on Tabular Data: Prediction, Generation, ...",
+    "url": "https://arxiv.org/html/2402.17944v2"
+  },
+  {
+    "description": "Large language models (LLMs) are artificial intelligence (AI) based computational models designed to understand and generate human like text. With billions of training parameters, LLMs excel in identifying intricate language patterns, enabling remarkable performance across a variety of natural ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Large language models (LLMs) are artificial intelligence (AI) based computational models designed to understand and generate human like text. With billions of training parameters, LLMs excel in identifying intricate language patterns, enabling remarkable performance across a variety of natural language processing (NLP) tasks.",
+      "Scientific Reports - Industrial applications of large language models",
+      "LLMs provide assistance to researchers by summarizing the research articles and identifying the trends. LMMs are used to provide personalized feedback to students215. LLMs may misinterpret user queries when applied to multiple topics. LLMs may produce incorrect information for complex and diverse topics216. LLMs often lack the ability to provide effectively to various learning preferences, such as visual, and auditory. Training data may not represent all cultural, linguistic, or regional contexts resulting in biased outputs217.",
+      "After the availability of large data sets, the researchers started to explore neural networks in more detail in such a way that they could help to improve language models. Finally the researchers achieved their millstone in the form of Recurrent Neural Networks (RNNs) and LSTMs19. The RNNs were able to model the sequential data in languages but they also have limitations in term of long-term dependencies. The LLMs were started to emerge after the introduction of transformer architecture20. The transformer architecture is a efficient in handling long-term dependencies21."
+    ],
+    "title": "Industrial applications of large language models | Scientific Reports",
+    "url": "https://www.nature.com/articles/s41598-025-98483-1"
+  },
+  {
+    "description": "Selecting a suitable pretraining dataset is crucial for both general-domain (e.g., GPT-3) and domain-specific (e.g., Codex) language models (LMs). We formalize this problem as selecting a subset of a large raw unlabeled dataset to match a desired target distribution given unlabeled target samples.",
+    "favicon_url": "https://you.com/favicon?domain=neurips.cc&size=128",
+    "snippets": [
+      "Selecting a suitable pretraining dataset is crucial for both general-domain (e.g., GPT-3) and domain-specific (e.g., Codex) language models (LMs). We formalize this problem as selecting a subset of a large raw unlabeled dataset to match a desired target distribution given unlabeled target samples. Due to the scale and dimensionality of the raw text data, existing methods use simple heuristics or require human experts to manually curate data. Instead, we extend the classic importance resampling approach used in low-dimensions for LM data selection."
+    ],
+    "title": "NeurIPS Poster Data Selection for Language Models via Importance ...",
+    "url": "https://neurips.cc/virtual/2023/poster/70154"
+  },
+  {
+    "description": "A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation. The largest and most capable LLMs are generative pretrained transformers (GPTs), which are ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "The largest LLM may be too expensive to train and use directly. For such models, mixture of experts (MoE) can be applied, a line of research pursued by Google researchers since 2017 to train models reaching up to 1 trillion parameters. In order to find out which tokens are relevant to each other within the scope of the context window, the attention mechanism calculates \"soft\" weights for each token, more precisely for its embedding, by using multiple attention heads, each with its own \"relevance\" for calculating its own soft weights.",
+      "Since 2023, many LLMs have been trained to be multimodal, having the ability to also process or generate other types of data, such as images or audio. These LLMs are also called large multimodal models (LMMs).",
+      "LLaMA models have also been turned multimodal using the tokenization method, to allow image inputs, and video inputs. GPT-4o can process and generate text, audio and images. Such models are sometimes called large multimodal models (LMMs). A common method to create multimodal models out of an LLM is to \"tokenize\" the output of a trained encoder.",
+      "Cleaned datasets can increase training efficiency and lead to improved downstream performance. A trained LLM can be used to clean datasets for training a further LLM. With the increasing proportion of LLM-generated content on the web, data cleaning in the future may include filtering out such content.",
+      "External filters, circuit breakers and overrides have been posed as solutions. While LLMs have shown remarkable capabilities in generating human-like text, they are susceptible to inheriting and amplifying biases present in their training data. This can manifest in skewed representations or unfair treatment of different demographics, such as those based on race, gender, language, and cultural groups. Since English data is overrepresented in current large language models' training data, it may also downplay non-English views."
+    ],
+    "title": "Large language model - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Large_language_model"
+  },
+  {
+    "description": "The rapid development of Large Language Models (LLMs) like GPT-4, Claude-3, and Gemini has transformed the field of natural language processing. However, it has also resulted in a significant issue known as Benchmark Data Contamination (BDC). This occurs when language models inadvertently ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Therefore, assessments based on traditional benchmarks may not accurately represent the true capabilities of LLMs and can lead to misguided conclusions about their performance. In response to the widespread challenges around BDC, researchers have started to explore alternative assessment methods to reduce the risks associated with traditional benchmarks. Some promising approaches have been proposed, such as regenerating benchmark data (Xia et al., 2024; Zhu et al., 2024c, a), which mitigates BDC by reconstructing the original benchmarks using LLMs, and benchmark-free evaluation (Li et al., 2024c; Yu et al., 2024; Chiang et al., 2024), which tries to avoid relying on predefined benchmarks altogether.",
+      "Such models have evolved significantly, leveraging advancements like Transformers and self-attention, which have enabled them to process longer sequences effectively. Examples of LLMs include GPT (Radford et al., 2019; Brown et al., 2020; OpenAI, 2024), PaLM (Chowdhery et al., 2023), and LLaMA (Touvron et al., 2023). They serve as the backbone of many NLP applications, such as text generation, translation, question answering, and summarization. Research on LLMs has advanced in both academia and industry, and remarkable progress has been made with the launch of ChatGPT (OpenAI, 2022), which has attracted widespread attention.",
+      "This problem is difficult to resolve completely, although it can be mitigated through alignment tuning strategies (Ouyang et al., 2022a). While LLMs have learned general language patterns, they underperform in specialized domains, such as medicine or engineering. This may be related to catastrophic forgetting (Kemker et al., 2018) or a scarcity of relevant training data.",
+      "Code Generation (Jain et al., 2024; Xia et al., 2024; Guo et al., 2024; Rozi\u00e8re et al., 2024; Chen et al., 2021; Majdinasab et al., 2024): In code generation tasks, large-scale pre-training data may include code snippets and corresponding programming ideas from online forums or repositories about the benchmarks, which may lead to a high risk of contamination. For example, if content related to the benchmark is included in the pre-training process, while it is not difficult to mitigate BDC by directly filtering answers that match the test set, excluding semantic-level related content, such as problem-solving tutorials, is challenging."
+    ],
+    "title": "Benchmark Data Contamination of Large Language Models: A Survey",
+    "url": "https://arxiv.org/html/2406.04244v1"
+  },
+  {
+    "description": "A major factor in the recent success of large language models is the use of enormous and ever-growing text datasets for unsupervised pre-training. However, naively training a model on all available data may not be optimal (or feasible), as the quality of available text data can vary.",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "However, naively training a model on all available data may not be optimal (or feasible), as the quality of available text data can vary. Filtering out data can also decrease the carbon footprint and financial costs of training models by reducing the amount of training required. Data selection methods aim to determine which candidate data points to include in the training dataset and how to appropriately sample from the selected data points.",
+      "To narrow this gap in knowledge, we present a comprehensive review of existing literature on data selection methods and related research areas, providing a taxonomy of existing approaches. By describing the current landscape of research, this work aims to accelerate progress in data selection by establishing an entry point for new and established researchers."
+    ],
+    "title": "A Survey on Data Selection for Language Models | OpenReview",
+    "url": "https://openreview.net/forum?id=XfHWcNTSHp"
+  },
+  {
+    "description": "Dive into LLM fine-tuning: its importance, types, methods, and best practices for optimizing language model performance.",
+    "favicon_url": "https://you.com/favicon?domain=www.superannotate.com&size=128",
+    "snippets": [
+      "Billions of dollars have been poured into LLM research and development recently. Industry leaders and tech enthusiasts are showing a growing appetite to deepen their understanding of LLMs and their fine-tuning. While this frontier in natural language processing (NLP) keeps expanding more and more, staying informed is critical. The value LLMs may add to your business depends on your knowledge and intuition around this technology.",
+      "This approach is both computationally efficient and time-saving. Additionally, pre-training captures general language understanding, allowing fine-tuning to focus on domain-specific nuances, often resulting in better model performance in specialized tasks. While leveraging pre-trained models provides a robust starting point, the choice of model architecture \u2014 including advanced strategies like Mixture of Experts (MoE) and Mixture of Tokens (MoT) \u2014 is crucial in tailoring your model more effectively.",
+      "Traditional fine-tuning embeds data into the model's architecture, essentially 'hardwriting' the knowledge, which prevents easy modification. On the other hand, RAG permits continuous updates in training data and allows removal/revision of data, ensuring the model remains current and accurate.",
+      "2. Model selection: Choose between training a model from scratch or modifying an existing one. In many cases, adapting a pre-existing model is efficient, but some instances require fine-tuning with a new model."
+    ],
+    "title": "Fine-tuning large language models (LLMs) in 2025 | SuperAnnotate",
+    "url": "https://www.superannotate.com/blog/llm-fine-tuning"
+  },
+  {
+    "description": "As a primary means of information acquisition, information retrieval (IR) systems, such as search engines, have integrated themselves into our daily lives. These systems also serve as components of dialogue, question-answering, and recommender systems. The trajectory of IR has evolved dynamically ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Building upon the success of GPT-3 [34], which is the first model to encompass over 100B parameters, several noteworthy models have been inspired, including GPT-J, BLOOM [78], OPT [75], Chinchilla [81], and LLaMA [35]. These models follow the similar Transformer decoder structure as GPT-3 and are trained on various combinations of datasets. Owing to their vast number of parameters, fine-tuning LLMs for specific tasks, such as IR, is often deemed impractical. Consequently, two prevailing methods for applying LLMs have been established: in-context learning (ICL) and parameter-efficient fine-tuning. ICL is one of the emergent abilities of LLMs [34] empowering them to comprehend and furnish answers based on the provided input context, rather than relying merely on their pre-training knowledge.",
+      "Language models (LMs) are designed to calculate the generative likelihood of word sequences by taking into account the contextual information from preceding words, thereby predicting the probability of subsequent words. Consequently, by employing certain word selection strategies (such as greedy decoding or random sampling), LMs can proficiently generate natural language texts.",
+      "By combining the same demonstration with various documents, it is easy to create a vast pool of synthetic training samples and support the fine-tuning of retrievers on specific target domains. Recent studies [121] have also leveraged open-sourced LLMs, such as Alpaca-LLaMA and tk-Instruct, to produce sufficient pseudo queries and applied curriculum learning to pre-train dense retrievers.",
+      "It has been proven that some LLMs (such as T0) yield significant performance in zero-shot document reranking based on the query generation method [148]. Recently, research [149] has also shown that the LLMs that are pre-trained without any supervised instruction fine-tuning (such as LLaMA) also yield robust zero-shot ranking ability. Although effective, these methods primarily rely on a handcrafted prompt (e.g., \u201cPlease write a query based on this document\u201d), which may not be optimal."
+    ],
+    "title": "Large Language Models for Information Retrieval: A Survey",
+    "url": "https://arxiv.org/html/2308.07107v3"
+  },
+  {
+    "description": "In this blog post, we will explain why LLMs are the future of AI as we know it\u2014and take a look at the challenges they\u2019re facing.",
+    "favicon_url": "https://you.com/favicon?domain=www.v7labs.com&size=128",
+    "snippets": [
+      "Data preprocessing techniques, such as cleaning, formatting, and tokenization, are typically applied to ensure the data is in a suitable format for training the LLM. This stage involves defining the architecture and parameters of the model. This includes selecting the appropriate model architecture, such as transformer-based architectures like GPT or BERT, and determining the model size, number of layers, and attention mechanisms. The model configuration step aims to optimize the model's architecture and parameters to achieve the desired performance and efficiency.",
+      "The model may occasionally generate incorrect or nonsensical responses, be sensitive to input phrasing, exhibit biases in the training data, and struggle with handling ambiguous queries. OpenAI has made efforts to mitigate these issues, but challenges in fine-tuning such large language models persist.",
+      "LLMs are typically trained on vast datasets collected from the internet, which may include information that becomes obsolete over time. As a result, the models may generate responses or recommendations that are no longer accurate or relevant. This limitation is particularly significant for rapidly evolving domains, such as technology or current events.",
+      "Content creation is a broad field encompassing areas such as writing articles, blog posts, marketing copy, product descriptions, and more. Content creation typically involves extensive research, outlining, drafting, and editing by human writers. LLMs can aid greatly in that process, assisting human writers in these tasks. One of the key advantages of LLMs for content creation is their ability to generate coherent and contextually relevant text. By training on massive amounts of data, LLMs develop a deep understanding of language patterns, enabling them to produce high-quality content that is grammatically correct and semantically meaningful."
+    ],
+    "title": "Large Language Models (LLMs): Challenges, Predictions, Tutorial",
+    "url": "https://www.v7labs.com/blog/large-language-models-llms"
+  },
+  {
+    "description": "To develop autonomous agents capable of executing complex, multi-step decision-making tasks as specified by humans in natural language, existing reinforcement learning approaches typically require expensive labeled datasets or access to real-time experimentation.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Such LLM-based state abstraction has been previously shown effective in the context of robotics by Peng et al. (2023) who employ LLMs to translate the language command into a binary mask highlighting the location of the goal-object. Decision Transformers. Pre-trained models based on the Transformer architecture have been widely used to address decision-making problems.",
+      "This paper presents TEDUO, a novel training pipeline for offline language-conditioned policy learning. TEDUO operates on easy-to-obtain, unlabeled datasets and is suited for the so-called in-the-wild evaluation, wherein the agent encounters previously unseen goals and states. To address the challenges posed by such data and evaluation settings, our method leverages the prior knowledge and instruction-following capabilities of large language models (LLMs) to enhance the fidelity of pre-collected offline data and enable flexible generalization to new goals and states.",
+      "For instance, Voyager (Wang et al., 2023) pushes the concept of an LLM agent to its limits by developing an automatic curriculum for GPT-4, supported by a library of executable programs, to play Minecraft. Another method involves providing the LLM with a game manual (Wu et al., 2023). However, these approaches either rely on extensive expert knowledge, such as carefully designed prompts, or on game manuals, which may not always be available.",
+      "As expected, training on a wider range of goals results in an improved performance on unseen test goals. We do not observe a plateau in performance metrics, suggesting that with additional compute further gains may be possible. Consequently, our approach shifts the bottleneck from the limited availability of real observational data to computational power. Limitations. Leveraging LLMs\u2019 prior knowledge enables efficient policy generation with minimal data."
+    ],
+    "title": "LLMs for Generalizable Language-Conditioned Policy Learning under ...",
+    "url": "https://arxiv.org/html/2412.06877v1"
+  },
+  {
+    "description": "Gain valuable insights into essential topics such as LLM training, prompt engineering, concerns, applications, and more.",
+    "favicon_url": "https://you.com/favicon?domain=rbcborealis.com&size=128",
+    "snippets": [
+      "As LLMs become increasingly convincing, users may trust them to provide accurate information. The adoption of reinforcement learning from human feedback (RLHF) for training models such as GPT-4 has reduced the frequency of hallucinations. OpenAI (2023) reports that GPT-4 scores 19 percentage points higher than the improved version of ChatGPT in evaluations of truthfulness.",
+      "Falcon[checkpoint] was released by TII in May 2023. It is an open-source LLM with 40 billion parameters under the Apache 2.0 license. Falcon stands out due to the high quality of its training data, which includes 1,000 billion tokens from the RefinedWeb enhanced with curated corpora. At the time of writing, Falcon holds the top position on the Huggingface Open LLM Leaderboard. Evaluating LLM performance is challenging as it encompasses various factors such as language coherence, task-specific performance, reasoning ability, and toxicity levels.",
+      "Additional components, such as layer normalization and residual connections, are included to facilitate training. Figure 4. Transformer architecture. A Decoder-only Transformer consists of a stack of Transformer decoder blocks. After the input is converted to a sequence of token embeddings (Figure 3.), it is sent to the decoder-only Transformer which transforms the input embeddings block by block.",
+      "Copyright issues need to be considered from two perspectives: inputs and outputs. In terms of inputs, the question is whether or not mining and analyzing data for the purpose of training AI models infringes copyright. Quintais (2023) pointed out that such training data might fall under existing text and data mining exemptions."
+    ],
+    "title": "A High-level Overview of Large Language Models - Research Blog ...",
+    "url": "https://rbcborealis.com/research-blogs/a-high-level-overview-of-large-language-models/"
+  },
+  {
+    "description": "Certifications. Accepted TMLR papers can be awarded a number of certifications by the action editors or editors-in-chief of TMLR. The current list of awarded certificates is (click on the badges to see the papers with the certification): \u00b7 Yunpeng Jiang, Yutong Ban, Paul Weng, June 2025 ...",
+    "favicon_url": "https://you.com/favicon?domain=jmlr.org&size=128",
+    "snippets": [
+      "Featured This certification may be awarded to papers that are very high quality. These papers present significant contributions which are novel, clearly explained, and well supported with evidence, theory, or analysis.",
+      "Survey The Survey Certificate is awarded to papers that not only meet the criteria for acceptance but also provide an exceptionally thorough or insightful survey of the topic or approach may be awarded this certification.",
+      "Outstanding The editorial board of TMLR jointly awards this certification to papers which are deemed to be exceptionally high quality and broadly significant for the field. The certification may be given well after the paper's initial publication in TMLR (a year or more), and is equivalent to a best paper award at a top-tier conference.",
+      "Guangyao Zhou, Sivaramakrishnan Swaminathan, Rajkumar Vasudeva Raju, J Swaroop Guntupalli, Wolfgang Lehrach, Joseph Ortiz, Antoine Dedieu, Miguel Lazaro-Gredilla, Kevin Patrick Murphy, May 2025 [openreview] [pdf] [bib]"
+    ],
+    "title": "Transactions on Machine Learning Research",
+    "url": "https://jmlr.org/tmlr/papers/"
+  },
+  {
+    "description": "Data scarcity is a major challenge when training deep learning (DL) models. DL demands a large amount of data to achieve exceptional performance. Unfortunately, many applications have small or inadequate data to train DL frameworks. Usually, manual labeling is needed to provide labeled data, ...",
+    "favicon_url": "https://you.com/favicon?domain=journalofbigdata.springeropen.com&size=128",
+    "snippets": [
+      "Data scarcity is a major challenge when training deep learning (DL) models. DL demands a large amount of data to achieve exceptional performance. Unfortunately, many applications have small or inadequate data to train DL frameworks. Usually, manual labeling is needed to provide labeled data, which typically involves human annotators with a vast background of knowledge.",
+      "When learning occurs, a human operator may pose questions to address the problem [111,112,113]. Similar to supervised learning, active learning may yield similar or better outcomes than passive supervised learning despite data efficiency [114, 115]. In this technique, the main principle denotes enabling the DL algorithm to select data for learning in order to gain accurate prediction despite fewer training labels [114]. When the question is raised, unclassified examples are labeled by the human annotator [112, 116]. This method is crucial when labeling/gathering new data is costly and the availability of few data [117]. The very process of active learning enhances model efficacy while lowering samples [118].",
+      "Since its emergence, this approach has been enhanced and applied in DL models [248]. ... This type involves training models to recognize new objects or classes with only a few examples, typically ranging from 1 to 10 examples per class. In other words, the goal of few-shot learning is to enable machines to learn quickly and efficiently with limited data.",
+      "Many DL models with NLP can be enhanced with TL, such as adding pre-trained layers that identify vocabulary or dialect and concurrent model training to identify language aspects. The method of TL can be used for model adaption across multiple languages. Models trained and refined in one language may be adapted for other similar languages."
+    ],
+    "title": "A survey on deep learning tools dealing with data scarcity: ...",
+    "url": "https://journalofbigdata.springeropen.com/articles/10.1186/s40537-023-00727-2"
+  }
+]

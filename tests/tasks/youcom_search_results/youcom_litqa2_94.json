@@ -1,0 +1,290 @@
+[
+  {
+    "description": "In morphological profiling, quantitative data are extracted from microscopy images of cells to identify biologically relevant similarities and differences among samples based on these profiles. This protocol describes the design and execution of ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "This protocol describes the design and execution of experiments using Cell Painting, a morphological profiling assay multiplexing six fluorescent dyes imaged in five channels, to reveal eight broadly relevant cellular components or organelles. Cells are plated in multi-well plates, perturbed with the treatments to be tested, stained, fixed, and imaged on a high-throughput microscope. Then, automated image analysis software identifies individual cells and measures ~1,500 morphological features (various measures of size, shape, texture, intensity, etc.) to produce a rich profile suitable for detecting subtle phenotypes.",
+      "The image feature extraction workflow for Cell Painting is divided into three tasks, each of which is performed by a CellProfiler pipeline: (a) illumination correction, (b) quality control, and (c) morphological feature extraction. Illumination correction serves to correct each image for spatial illumination heterogeneities introduced by the microscope optics, which can bias intensity-based measurements and impair cellular feature identification.",
+      "Finally, morphological image feature extraction provides the raw quantitative material for profiling. The third CellProfiler pipeline corrects each image with the previously-calculated illumination estimate, labels images which fail the previously-determined quality control criteria, and for each cell identifies the nucleus, cell body and cytoplasm, and makes measurements of morphology, intensity, texture, and adjacency for each cellular sub-compartment.",
+      "The quality control and morphological feature extraction pipelines are set to write out cellular features to a MySQL database which is recommended for analyses involving >1,000 images; see \u201cComputing system\u201d for details. If using a smaller number of images, the pipelines can be adjusted to output the measured features to a comma-delimited file (CSV) using the ExportToSpreadsheet module."
+    ],
+    "title": "Cell Painting, a high-content image-based assay for morphological ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5223290/"
+  },
+  {
+    "description": "Genetic and chemical perturbations impact diverse cellular phenotypes, including multiple indicators of cell health. These readouts reveal toxicity and antitumorigenic effects relevant to drug discovery and personalized medicine. We developed two customized microscopy assays, one using four ...",
+    "favicon_url": "https://you.com/favicon?domain=www.molbiolcell.org&size=128",
+    "snippets": [
+      "Genetic and chemical perturbations impact diverse cellular phenotypes, including multiple indicators of cell health. These readouts reveal toxicity and antitumorigenic effects relevant to drug discovery and personalized medicine. We developed two customized microscopy assays, one using four targeted reagents and the other three targeted reagents, to collectively measure 70 specific cell health phenotypes including proliferation, apoptosis, reactive oxygen species, DNA damage, and cell cycle stage.",
+      "The next step in a Cell Painting protocol is to extract morphology features from the images that can be used as an unbiased systems biology measurement to describe how each perturbation impacts various cellular compartments in the assay. We built a CellProfiler image analysis and illumination correction pipeline (version 2.2.0) pipeline to extract these image-based features (McQuin et al., 2018).",
+      "Image-based profiling assays are increasingly being used to quantitatively study the morphological impact of chemical and genetic perturbations in various cell contexts (Caicedo et al., 2016; Scheeder et al., 2018). One unbiased assay, called Cell Painting, stains for various cellular compartments and organelles using nonspecific and inexpensive reagents (Gustafsdottir et al., 2013).",
+      "We developed two customized microscopy assays, one using four targeted reagents and the other three targeted reagents, to collectively measure 70 specific cell health phenotypes including proliferation, apoptosis, reactive oxygen species, DNA damage, and cell cycle stage. We then tested an approach to predict multiple cell health phenotypes using Cell Painting, an inexpensive and scalable image-based morphology assay."
+    ],
+    "title": "Predicting cell health phenotypes using image-based morphology ...",
+    "url": "https://www.molbiolcell.org/doi/10.1091/mbc.E20-12-0784"
+  },
+  {
+    "description": "The process of programmed cell death, or apoptosis, is generally characterized by distinct morphological characteristics and energy-dependent biochemical mechanisms. Apoptosis is considered a vital component of various processes including normal ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Detection of apoptosis in whole mounts 6. Mitochondrial assays. The evaluation of hematoxylin and eosin-stained tissue sections with light microscopy does allow the visualization of apoptotic cells. Although a single apoptotic cell can be detected with this method, confirmation with other methods may be necessary. Because the morphological events of apoptosis are rapid and the fragments are quickly phagocytized, considerable apoptosis may occur in some tissues before it is histologically apparent.",
+      "Additionally, there is loss of antigenicity during processing so that immunohistological or enzyme assays cannot be performed on the same tissue. However, this tissue may be used for transmission electron microscopy (TEM). TEM is considered the gold standard to confirm apoptosis. This is because categorization of an apoptotic cell is irrefutable if the cell contains certain ultrastructural morphological characteristics (White and Cinti, 2004).",
+      "In certain cells and under certain conditions the morphological features of autophagy may occur prior to apoptotic cell death, representing an early phase of apoptosis. The controversy still remains, however interest in the field of autophagic cell death is constantly increasing with the emergence of new assays and markers for elucidating the molecular basis of autophagy and its possible implications in programmed cell death and malignant cell transformation.",
+      "Although many of the key apoptotic proteins have been identified, the molecular mechanisms of action or inaction of these proteins remain to be elucidated. The goal of this review is to provide a general overview of current knowledge on the process of apoptosis including morphology, biochemistry, the role of apoptosis in health and disease, detection methods, as well as a discussion of potential alternative forms of apoptosis."
+    ],
+    "title": "Apoptosis: A Review of Programmed Cell Death - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2117903/"
+  },
+  {
+    "description": "Programmed cell death is considered a key player in a variety of cellular processes that helps to regulate tissue growth, embryogenesis, cell turnover, immune response, and other biological processes. Among different types of cell death, apoptosis has been studied widely, especially in the ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Programmed cell death is considered a key player in a variety of cellular processes that helps to regulate tissue growth, embryogenesis, cell turnover, immune response, and other biological processes. Among different types of cell death, apoptosis has been studied widely, especially in the field of cancer research to understand and analyse cellular mechanisms, and signaling pathways that control cell cycle arrest.",
+      "Apoptosis - Programmed cell death is considered a key player in a variety of cellular processes that helps to regulate tissue growth, embryogenesis, cell turnover, immune response, and other...",
+      "The cell starts shrinking/swelling, which alters the permeability and morphology of the cell membrane. To detect an alteration in permeability and morphology of the cell membrane, the following detection methods are used. Annexin V binding assay is mainly an established technique for the identification and quantification of apoptotic cells.",
+      "a FACS assessment of cell apoptosis using Annexin/PI staining (A) untreated MCF-7 cells (B) HNPMI (an indoline derivative) treated MCF-7 cells, UL\u2014Necrotic cells, UR\u2014Late apoptotic cells, LL\u2014Viable cells, LR\u2014Early apoptotic cells [39]. b Fluorometric quantification of released cellular lactate dehydrogenase (LDH) when cells are damaged or under stress. LDH released into the culture medium is measured with a diaphorase coupled enzymatic assay that results in the conversion of a non-fluorescent compound (resazurin) to a fluorescent compound (resorufin) measured by a fluorometer."
+    ],
+    "title": "Programmed cell death detection methods: a systematic review and ...",
+    "url": "https://link.springer.com/article/10.1007/s10495-022-01735-y"
+  },
+  {
+    "description": "Cellular nuisance compounds are a burden in chemical biology and drug screening. Here the authors profile prototypical cytotoxic and nuisance compounds using the cell painting assay to systematically characterise cellular morphologies associated with compound-dependent cellular injury and nuisance ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Cellular nuisance compounds are a burden in chemical biology and drug screening. Here the authors profile prototypical cytotoxic and nuisance compounds using the cell painting assay to systematically characterise cellular morphologies associated with compound-dependent cellular injury and nuisance activity.",
+      "Robust, generalizable approaches to identify compounds efficiently with undesirable mechanisms of action in complex cellular assays remain elusive. Such a process would be useful for hit triage during high-throughput screening and, ultimately, predictive toxicology during drug development. Here we generate cell painting and cellular health profiles for 218 prototypical cytotoxic and nuisance compounds in U-2 OS cells in a concentration-response format. A diversity of compounds that cause cellular damage produces bioactive cell painting morphologies, including cytoskeletal poisons, genotoxins, nonspecific electrophiles, and redox-active compounds.",
+      "Nature Communications - Cellular nuisance compounds are a burden in chemical biology and drug screening. Here the authors profile prototypical cytotoxic and nuisance compounds using the cell...",
+      "Gustafsdottir, S. et al. Multiplex cytological profiling assay to measure diverse cellular states. PLoS ONE 8, e80999 (2013). ... Bray, M. et al. Cell painting, a high-content image-based assay for morphological profiling using multiplexed fluorescent dyes. Nat. Protoc."
+    ],
+    "title": "Reference compounds for characterizing cellular injury in ...",
+    "url": "https://www.nature.com/articles/s41467-023-36829-x"
+  },
+  {
+    "description": "Over the past few years, the field of regulated cell death continues to expand and novel mechanisms that orchestrate multiple regulated cell death pathways a...",
+    "favicon_url": "https://you.com/favicon?domain=www.frontiersin.org&size=128",
+    "snippets": [
+      "Based on the cellular characteristics, including the size, granularity and morphology of the cells, the integrity or potential of the cell membrane, the intracellular pH, and the levels of cellular contents such as surface receptors, proteins, the ions (e.g., calcium), DNA, and RNA, flow cytometry could provide data to distinguish RCDs through the use of fluorescence, absorbance measurements, and light-scattering. Currently, flow cytometry is used not only in cell counting but also in image analysis, namely multispectral imaging cytometry for multiparameter studies on cell demise (Lelliott et al., 2019; Cerrato et al., 2020). Morphology-based flow cytometry assays are used to identify RCDs, such as the percentage of apoptotic cells that are indicated based on the cells exhibiting nuclear fragmentation as well as a low nuclear area and a bright detail intensity.",
+      "As for apoptosis, people have marked it by the typical morphological changes: cell shrinkage, DNA fragmentation (karyorrhexis), chromatin changes during condensation and margination, a ruffling plasma membrane, and breaking up of cell fragments into apoptotic bodies (a process called \u201cbudding\u201d), which are eventually degraded within phagolysosomes. Previously, light microscopy has identified the morphological changes occurring during apoptosis with cellular shrinking and pyknosis (Kerr et al., 1972).",
+      "The characteristic morphology in necrotic cells, such as cytoplasmic swelling, is due to the membrane permeabilization being an early event. Losing membrane permeability in apoptotic cells occurs relatively late. Acting as a non-invasive response to cell death with the formation of large-scale autophagic cavitation, autophagy contributes to maintaining the balance of the cellular structure, metabolism, and biological function for homeostasis (Deter and De Duve, 1967; Mizushima and Komatsu, 2011).",
+      "As a non-apoptotic form of RCDs, ferroptosis is characterized by iron-dependent accumulation of toxic lipid peroxides in plasma membranes. The cystathionine-\u03b2-synthase (CBS) is a marker of transsulfuration pathway activity involved in ferroptosis (Wang et al., 2019b). The lipid peroxide level is closely related to ferroptosis, so it provides a useful means to detect ferroptosis in biological samples, such as measuring the level of cellular lipid peroxide via flow cytometry assays, immunostaining, or colorimetric assays (Uchida et al., 1993: Yagi, 1998; Drummen et al., 2002)."
+    ],
+    "title": "Frontiers | Guidelines for Regulated Cell Death Assays: A Systematic ...",
+    "url": "https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2021.634690/full"
+  },
+  {
+    "description": "Bio-Rad offers products and resources for studying apoptosis by flow cytometry including kits assays and antibodies. Buy online today",
+    "favicon_url": "https://you.com/favicon?domain=www.bio-rad-antibodies.com&size=128",
+    "snippets": [
+      "Whilst detection of apoptosis can be relatively straightforward, once the right assay has been chosen, making sense of the data can prove challenging. Accurate gating of your cell population is very important due to changes in cell morphology which occur during apoptosis. The position of a forward and side scatter gate can drastically alter your results. This can be clearly seen in Figure 8 below, where healthy and apoptotic Jurkats have been stained with annexin V and PI.",
+      "The easiest and simplest way to measure cell morphological changes using flow cytometry is by looking for changes in the forward (FSC) and side scatter (SSC). As cells progress through apoptosis both FSC and SSC reduce, whereas necrotic cells initially swell before bursting. FSC and SSC will not always allow you to distinguish between apoptotic and necrotic cells however, so caution should be used with this method.",
+      "The assays rely on the ability of annexin V to bind to the membrane phospholipid PS exposed at the cell surface during the early to mid stages of apoptosis and, when used in combination with a viability dye, apoptotic from necrotic cells can be distinguished. Fig. 5. Annexin V staining to measure apoptosis by flow cytometry.",
+      "In apoptotic cells with reduced mitochondrial membrane potential, these dyes leave the mitochondria and are found throughout the cytoplasm in their monomeric form, showing reduced fluorescence (Figure 3). JC-1 works slightly differently - its fluorescence emission wavelength varies as it changes from aggregates in mitochondria to monomers in the cytoplasm. Table 4. Flow cytometry validated mitochondrial membrane potential assays."
+    ],
+    "title": "Apoptosis Analysis by Flow Cytometry | Bio-Rad",
+    "url": "https://www.bio-rad-antibodies.com/apoptosis-flowcytometry.html"
+  },
+  {
+    "description": "Additionally, plants do not contain ... removing apoptotic bodies. Whether this whole process resembles animal apoptosis closely enough to warrant using the name apoptosis (as opposed to the more general programmed cell death) is unclear. The characterization of the caspases allowed the development of caspase inhibitors, which can be used to determine whether a cellular process involves active caspases. Using these inhibitors it was discovered that cells can die while displaying a morphology similar to ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Additionally, plants do not contain phagocytic cells, which are essential in the process of breaking down and removing apoptotic bodies. Whether this whole process resembles animal apoptosis closely enough to warrant using the name apoptosis (as opposed to the more general programmed cell death) is unclear. The characterization of the caspases allowed the development of caspase inhibitors, which can be used to determine whether a cellular process involves active caspases. Using these inhibitors it was discovered that cells can die while displaying a morphology similar to apoptosis without caspase activation.",
+      "In contrast to necrosis, which is a form of traumatic cell death that results from acute cellular injury, apoptosis is a highly regulated and controlled process that confers advantages during an organism's life cycle. For example, the separation of fingers and toes in a developing human embryo occurs because cells between the digits undergo a form of apoptosis that is genetically determined. Unlike necrosis, apoptosis produces cell fragments called apoptotic bodies that phagocytes are able to engulf and remove before the contents of the cell can spill out onto surrounding cells and cause damage to them.",
+      "The binding of nuclear receptors by glucocorticoids, heat, radiation, nutrient deprivation, viral infection, hypoxia, increased intracellular concentration of free fatty acids and increased intracellular calcium concentration, for example, by damage to the membrane, can all trigger the release of intracellular apoptotic signals by a damaged cell. A number of cellular components, such as poly ADP ribose polymerase, may also help regulate apoptosis.",
+      "The removal of dying cells by phagocytes occurs in an orderly manner without eliciting an inflammatory response. During apoptosis cellular RNA and DNA are separated from each other and sorted to different apoptotic bodies; separation of RNA is initiated as nucleolar segregation.",
+      "Label-free live cell imaging, time-lapse microscopy, flow fluorocytometry, and transmission electron microscopy can be used to compare apoptotic and necrotic cells. There are also various biochemical techniques for analysis of cell surface markers (phosphatidylserine exposure versus cell permeability by flow cytometry), cellular markers such as DNA fragmentation (flow cytometry), caspase activation, Bid cleavage, and cytochrome c release (Western blotting)."
+    ],
+    "title": "Apoptosis - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Apoptosis"
+  },
+  {
+    "description": "The cells of a multicellular organism are members of a highly organized community. The number of cells in this community is tightly regulated\u2014not simply by controlling the rate of cell division, but also by controlling the rate of cell death. If cells are no longer needed, they commit suicide ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "The cells of a multicellular organism are members of a highly organized community. The number of cells in this community is tightly regulated\u2014not simply by controlling the rate of cell division, but also by controlling the rate of cell death. If cells are no longer needed, they commit suicide by activating an intracellular death program.",
+      "Sculpting the digits in the developing mouse paw by apoptosis. (A) The paw in this mouse embryo has been stained with a dye that specifically labels cells that have undergone apoptosis. The apoptotic cells appear as bright green dots between the developing (more...)",
+      "Most importantly, the cell surface is altered, displaying properties that cause the dying cell to be rapidly phagocytosed, either by a neighboring cell or by a macrophage (a specialized phagocytic cell, discussed in Chapter 24), before any leakage of its contents occurs (Figure 17-37)."
+    ],
+    "title": "Programmed Cell Death (Apoptosis) - Molecular Biology of the Cell ...",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK26873/"
+  },
+  {
+    "description": "The process of programmed cell death, or apoptosis, is generally characterized by distinct morphological characteristics and energy-dependent biochemical mechanisms. Apoptosis is considered a vital component of various processes including normal cell ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Detection of apoptosis in whole mounts 6. Mitochondrial assays. The evaluation of hematoxylin and eosin-stained tissue sections with light microscopy does allow the visualization of apoptotic cells. Although a single apoptotic cell can be detected with this method, confirmation with other methods may be necessary. Because the morphological events of apoptosis are rapid and the fragments are quickly phagocytized, considerable apoptosis may occur in some tissues before it is histologically apparent.",
+      "Additionally, there is loss of antigenicity during processing so that immunohistological or enzyme assays cannot be performed on the same tissue. However, this tissue may be used for transmission electron microscopy (TEM). TEM is considered the gold standard to confirm apoptosis. This is because categorization of an apoptotic cell is irrefutable if the cell contains certain ultrastructural morphological characteristics (White and Cinti, 2004).",
+      "In certain cells and under certain conditions the morphological features of autophagy may occur prior to apoptotic cell death, representing an early phase of apoptosis. The controversy still remains, however interest in the field of autophagic cell death is constantly increasing with the emergence of new assays and markers for elucidating the molecular basis of autophagy and its possible implications in programmed cell death and malignant cell transformation.",
+      "Although many of the key apoptotic proteins have been identified, the molecular mechanisms of action or inaction of these proteins remain to be elucidated. The goal of this review is to provide a general overview of current knowledge on the process of apoptosis including morphology, biochemistry, the role of apoptosis in health and disease, detection methods, as well as a discussion of potential alternative forms of apoptosis."
+    ],
+    "title": "Apoptosis: A Review of Programmed Cell Death - PMC",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2117903/"
+  },
+  {
+    "description": "Abstract Apoptosis is a mode of programmed cell death that plays important roles in tissue sculpting during development, in the maintenance of tissue homeostasis in the adult, and in the eradicatio...",
+    "favicon_url": "https://you.com/favicon?domain=currentprotocols.onlinelibrary.wiley.com&size=128",
+    "snippets": [
+      "Apoptosis is a mode of programmed cell death that plays important roles in tissue sculpting during development, in the maintenance of tissue homeostasis in the adult, and in the eradication of injure...",
+      "Numerous cytotoxic drugs and other stimuli can induce apoptosis, and it is useful to include a well-known pro-apoptotic agent as a positive control (Table 1), as the specific morphological features of apoptosis can vary between cell types. Because necrosis is largely a physical process due to plasma membrane rupture, followed by high-amplitude cellular and organelle swelling, the features of necrotic cells tend to be broadly similar even among diverse cell types (Fig. 7). Table 1. Stimuli That Initiate Apoptosis in Many Cell Types ... 1. Count live, apoptotic, or necrotic cells (i.e., those that display extensive plasma membrane blebbing or extensive membrane swelling, as illustrated in Figs.",
+      "Release of intracellular contents can provoke inflammation due to the liberation of pro-inflammatory molecules, called damage-associated molecular patterns (DAMPs), but this is avoided in apoptosis as cells are removed by phagocytes after the appearance of \u2018eat me\u2019 signals such as phosphatidylserine on the surface apoptotic cells. Apoptosis is executed at the molecular level by a dedicated set of proteases called caspases (L\u00fcthi et al., 2008; Slee et al., 1999). Activation of members of this family of cysteine proteases results in the proteolysis of hundreds of caspase substrates, leading to the controlled demolition of the cellular architecture (Martin et al., 2012; Taylor et al., 2008). Apoptosis is characterized by a series of striking morphological and biochemical alterations.",
+      "Cells stained in this way can then be counted, with apoptotic nuclei displaying characteristic hypercondensation and fragmentation into distinct globules (Fig. 9). In contrast, necrotic, necroptotic, or ferroptotic cells display a swollen, decondensed morphology that is very distinct from the features exhibited by apoptotic nuclei (Fig."
+    ],
+    "title": "Discriminating Between Apoptosis, Necrosis, Necroptosis, and ...",
+    "url": "https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/cpz1.951"
+  },
+  {
+    "description": "This blog describes the triggers & mechanisms that lead to death by apoptosis, as well as assays for measuring apoptosis in your research.",
+    "favicon_url": "https://you.com/favicon?domain=www.bio-rad-antibodies.com&size=128",
+    "snippets": [
+      "However, in apoptotic cells the dye diffuses throughout the cell. Once dispersed, the reagent assumes a monomeric form and displays reduced orange/red fluorescence levels. This reduced intensity can be observed in the images labeled dying. Not only is the staining intensity reduced some cells show no staining at all. The image on the right of dying Jurkat human T lymphocytes visually demonstrates morphological differences between healthy and dying cells.",
+      "Rearrangements of the plasma membrane phospholipid asymmetry in apoptotic cells can be measured using kits such as the pSIVA\u2122 Real-Time Apoptosis Fluorescent Microscopy Kit and Annexin V Kits. DNA fragmentation, which occurs during the late stages of apoptosis can also be visualized using TUNEL (for Terminal deoxynucleotidyl transferase dUTP Nick End Labeling) assays.",
+      "Scientists often utilize multiple assays to confirm and measure apoptosis during their research. For more information on apoptosis and advice on apoptosis assay selection, check out our webinar \u201cA question of life or death\u201d\u2014 differentiating between healthy and apoptotic cells.",
+      "The cell eventually separates into cell fragments called apoptotic bodies during a process referred to as \u201cbudding\u201d (Elmore 2007). The journey of an apoptotic cell often ends with the engulfment of apoptotic bodies by macrophages. Several tools and reagents are currently available for measuring the different stages of apoptosis described."
+    ],
+    "title": "Cell death by apoptosis - a single cell from health to death | Bio-Rad",
+    "url": "https://www.bio-rad-antibodies.com/blog/cell-death-by-apoptosis.html"
+  },
+  {
+    "description": "Abstract. Apoptosis is characterised by a series of typical morphological features, such as shrinkage of the cell, fragmentation into membrane-bound apopto",
+    "favicon_url": "https://you.com/favicon?domain=academic.oup.com&size=128",
+    "snippets": [
+      "This suggests that different types of cell death share common mechanisms in the early phases, whereas activation of caspases determines the phenotype of cell death. Detection of apoptotic cells in tissue samples currently relies on the TUNEL assay. TUNEL-positive cardiomyocytes show morphological features of apoptosis and the typical ladder pattern in DNA electrophoresis.",
+      "Register Morphologic and biochemical hallmarks of apoptosis - 24 Hours access ... This article is also available for rental through DeepDyve. Advertisement intended for healthcare professionals ... Effects of down-regulation of microRNA-23a on TNF-\u03b1-induced endothelial cell apoptosis through caspase-dependent pathways",
+      "Thus, provided that the staining protocol is carefully standardised, this quantitative methodology provides reproducible results of the occurrence of cardiomyocyte apoptosis in cardiac samples. Recently, potentially more specific assays based on analysis of DNA fragmentation or demonstration of caspase activation have been developed. Applicability of these assays to demonstrate cardiomyocyte apoptosis should be tested.",
+      "Antti Saraste, Kari Pulkki, Morphologic and biochemical hallmarks of apoptosis, Cardiovascular Research, Volume 45, Issue 3, February 2000, Pages 528\u2013537, https://doi.org/10.1016/S0008-6363(99)00384-3"
+    ],
+    "title": "Morphologic and biochemical hallmarks of apoptosis | Cardiovascular ...",
+    "url": "https://academic.oup.com/cardiovascres/article/45/3/528/304427"
+  },
+  {
+    "description": "In morphological profiling, quantitative data are extracted from microscopy images of cells to identify biologically relevant similarities and differences among samples based on these profiles. This protocol describes the design and execution of experiments ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "This protocol describes the design and execution of experiments using Cell Painting, a morphological profiling assay multiplexing six fluorescent dyes imaged in five channels, to reveal eight broadly relevant cellular components or organelles. Cells are plated in multi-well plates, perturbed with the treatments to be tested, stained, fixed, and imaged on a high-throughput microscope. Then, automated image analysis software identifies individual cells and measures ~1,500 morphological features (various measures of size, shape, texture, intensity, etc.) to produce a rich profile suitable for detecting subtle phenotypes.",
+      "The image feature extraction workflow for Cell Painting is divided into three tasks, each of which is performed by a CellProfiler pipeline: (a) illumination correction, (b) quality control, and (c) morphological feature extraction. Illumination correction serves to correct each image for spatial illumination heterogeneities introduced by the microscope optics, which can bias intensity-based measurements and impair cellular feature identification.",
+      "Finally, morphological image feature extraction provides the raw quantitative material for profiling. The third CellProfiler pipeline corrects each image with the previously-calculated illumination estimate, labels images which fail the previously-determined quality control criteria, and for each cell identifies the nucleus, cell body and cytoplasm, and makes measurements of morphology, intensity, texture, and adjacency for each cellular sub-compartment.",
+      "The quality control and morphological feature extraction pipelines are set to write out cellular features to a MySQL database which is recommended for analyses involving >1,000 images; see \u201cComputing system\u201d for details. If using a smaller number of images, the pipelines can be adjusted to output the measured features to a comma-delimited file (CSV) using the ExportToSpreadsheet module."
+    ],
+    "title": "Cell Painting, a high-content image-based assay for morphological ...",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5223290/"
+  },
+  {
+    "description": "Apoptosis and necrosis are the two major forms of cell death mechanisms. Both forms of cell death are involved in several physiological and pathological conditions and also in the elimination of cancer cells following successful chemotherapy. Large number of cellular and biochemical assays ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Apoptosis and necrosis are the two major forms of cell death mechanisms. Both forms of cell death are involved in several physiological and pathological conditions and also in the elimination of cancer cells following successful chemotherapy. Large number of cellular and biochemical assays have evolved to determine apoptosis or necrosis for qualitative and quantitative purposes.",
+      "Cell Death Discovery - A quantitative real-time approach for discriminating apoptosis and necrosis",
+      "Both forms of cell death are involved in several physiological and pathological conditions and also in the elimination of cancer cells following successful chemotherapy. Large number of cellular and biochemical assays have evolved to determine apoptosis or necrosis for qualitative and quantitative purposes. A closer analysis of the assays and their performance reveal the difficulty in using any of these methods as a confirmatory approach, owing to the secondary induction of necrosis in apoptotic cells.",
+      "To distinguish these two possibilities, we exposed the cells with valinomycin followed by time lapse imaging, so that the fate of each cell could be temporally analyzed to distinguish apoptotic cells from cells acquiring necrotic phenotypes after caspase activation. Representative snap shots from the real-time imaging is shown in Figure 1c. (The full sequence is given as Supplementary Video 1). As seen from the video and image, caspase activation is readily visible with increase in blue fluorescence (donor) and subsequent increase in ratio. Also, some of the cells showed necrotic morphology without ratio change (primary necrosis) and a few cells showed sudden release of the transgene after its cleavage (secondary necrosis)."
+    ],
+    "title": "A quantitative real-time approach for discriminating apoptosis ...",
+    "url": "https://www.nature.com/articles/cddiscovery2016101"
+  },
+  {
+    "description": "Apoptosis is a form of cell death characterized by several features. Read our guide to learn more.",
+    "favicon_url": "https://you.com/favicon?domain=www.abcam.com&size=128",
+    "snippets": [
+      "You can determine how cells are dying by measuring markers that are activated in different types, and at different stages, of cell death. There are a number of methods for running an apoptosis assay to measure these markers of apoptosis. Loss of membrane asymmetry in apoptosis can be detected using Annexin V. Annexin V binds to phosphatidylserine, which migrates to the outer plasma membrane in apoptosis. Analysis is typically by flow cytometry. Pair Annexin V with a membrane-impermeable dye like 7-AAD to distinguish between intact, apoptotic, and necrotic cells.",
+      "Chromatin condensation and genomic DNA fragmentation, together with cell membrane blebbing, are considered morphological hallmarks of the terminal stages of apoptosis. ... During apoptosis, chromatin undergoes a phase change from a heterogeneous, genetically active network to an inert, highly condensed form. When stained with DNA-binding nuclear dyes, the compacted chromatin will be brighter than the chromatin from non-apoptotic cells, and the condensed nuclei can be easily identified by fluorescence microscopy (qualitative detection) and/or flow cytometry (quantitative detection).",
+      "The pros and cons of apoptosis assays for use in the study of cells, tissues, and organs. Microsc. Microanal. 8, 375\u2013391 (2002). 26. Kravtsov, V., Daniel, T. & Koury, M. Comparative analysis of different methodological approaches to the in vitro study of drug-induced apoptosis. Am. J. Pathol. 155, 1327\u20131339 (1999). 27. Poreba, M., Groborz, K., Navarro, M. et al. Caspase selective reagents for diagnosing apoptotic mechanisms.",
+      "Cell Death Differ. 26, 229\u2013244 (2019). 28. Waterhouse, N. & Trapani, J. A new quantitative assay for cytochrome c release in apoptotic cells. Cell Death Differ."
+    ],
+    "title": "Apoptosis | Abcam",
+    "url": "https://www.abcam.com/en-us/technical-resources/guides/cell-health-guide/apoptosis"
+  },
+  {
+    "description": "Apoptosis is a regulated form of programmed cell death (PCD) that occurs without external influence.",
+    "favicon_url": "https://you.com/favicon?domain=blog.cellsignal.com&size=128",
+    "snippets": [
+      "The TUNEL Assay Kit (Fluorescence, 594 nm) #48513 assay (red) reveals DNA fragmentation characteristic of apoptosis, while recombinant monoclonal antibody Cleaved Caspase-3 (Asp175) (5A1E) Rabbit mAb #9664 (green) identifies cells executing the intrinsic apoptotic pathway. DAPI #4083 (blue) staining labels all nuclei, showing cellular organization. However, since DNA fragmentation can also occur during necrosis, it is crucial not to rely on TUNEL as an indicator of apoptosis versus other forms of cell death. Morphological analysis can help, as the DNA damage observed in apoptosis is associated with small, round, evenly distributed apoptotic bodies, whereas in necrosis, DNA fragmentation is less organized and associated with cell lysis.",
+      "Cleaved caspase-8 then cleaves and activates the executioner caspases, such as caspase-3 and caspase-7, which orchestrate the cleavage of cellular substrates and the morphological changes characteristic of apoptosis. Cleavage-specific antibodies targeting active forms of caspases or their substrates are important tools for identifying apoptotic cell death.",
+      "Free cytochrome c in the cytoplasm then interacts with Apaf-1 to form a complex called the apoptosome, which activates caspase-9 and triggers a cascade of apoptotic events that dismantle the cell. Another way of identifying apoptosis is to measure mitochondrial membrane potential to identify the occurrence of MOMP. This type of assay uses a mitochondrial membrane-permeable fluorescent dye, such as TMRE (tetramethylrhodamine ethyl ester perchlorate), which accumulates in healthy, polarized mitochondria.",
+      "Late Phase: DNA fragmentation, membrane blebbing, and formation of apoptotic bodies, which are then recognized and engulfed by phagocytes. Because apoptosis shares some overlapping features and pathways with other forms of programmed cell death, such as autophagy and necrosis, multiple markers and assays are typically needed to verify the type and stage of cell death occurring."
+    ],
+    "title": "Mechanisms of Cell Death: Apoptosis | Intrinsic & Extrinsic Pathways",
+    "url": "https://blog.cellsignal.com/mechanisms-of-cell-death-apoptosis"
+  },
+  {
+    "description": "Several modes of cell death are now recognized, including necrosis, apoptosis, and autophagy. Oftentimes the distinctions between these various modes may not be apparent, although the precise mode may be physiologically important. Accordingly, it is often desirable to be able to classify the ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Several modes of cell death are now recognized, including necrosis, apoptosis, and autophagy. Oftentimes the distinctions between these various modes may not be apparent, although the precise mode may be physiologically important. Accordingly, it is often desirable to be able to classify the mode of cell death.",
+      "Histochemistry and Cell Biology - Several modes of cell death are now recognized, including necrosis, apoptosis, and autophagy. Oftentimes the distinctions between these various modes may not be...",
+      "Clearly, cellular morphological characteristics must be taken into consideration when determining the mode of cell death. This is of utmost importance when employing the TUNEL assay, since this technique stains both apoptotic and necrotic cells, which as just described display widely different morphological characteristics.",
+      "The TUNEL-positive nuclei did not display the characteristic shrunken appearance expected for an apoptotic cell, again emphasizing the need to corroborate staining results with morphological observations. Similar conclusions were reached by Negoescu et al. (1996) and Labat-Moleur et al. (1998) in their efforts to improve tissue preparation and staining procedures for the TUNEL method. The TUNEL assay maintains its popularity as a marker of apoptotic cells; it is available in a kit form, is easy to use, and has been available for a number of years, becoming entrenched in the literature."
+    ],
+    "title": "Morphological and cytochemical determination of cell death by ...",
+    "url": "https://link.springer.com/article/10.1007/s00418-007-0356-9"
+  },
+  {
+    "description": "The term apoptosis was proposed ... normal cell turnover in healthy adult tissue, and atrophy upon hormone withdrawal (57). The morphology associated with this phenomenon was characterized by nuclear and cytoplasmic condensation and cellular fragmentation into membrane-bound fragments. These fragments or apoptotic bodies were ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "The term apoptosis was proposed by Kerr and colleagues in 1972 to describe a specific morphological pattern of cell death observed as cells were eliminated during embryonic development, normal cell turnover in healthy adult tissue, and atrophy upon hormone withdrawal (57). The morphology associated with this phenomenon was characterized by nuclear and cytoplasmic condensation and cellular fragmentation into membrane-bound fragments. These fragments or apoptotic bodies were taken up by other cells and degraded within phagosomes.",
+      "In the absence of phagocytosis, apoptotic bodies may proceed to lysis and secondary or apoptotic necrosis. Autophagy features degradation of cellular components within the intact dying cell in autophagic vacuoles. The morphological characteristics of autophagy include vacuolization, degradation of cytoplasmic contents, and slight chromatin condensation.",
+      "Rotavirus infection of MA104 cells induces cell death morphologically consistent with oncosis, which also requires increased intracellular calcium (99). In addition, Pseudomonas aeruginosa infection induces oncosis in infected macrophages and neutrophils (23). These cells demonstrate swelling, rapid plasma membrane breakdown, and swollen nuclei without internucleosomal DNA fragmentation. Apoptotic bodies and the cellular debris released during lysis of oncotic cells can both be phagocytized and degraded by neighboring viable cells in vivo (128).",
+      "For example, PS exposure may not be a requisite step in the pathway to death but may be required for the appropriate noninflammatory outcome of apoptotic cell death. The study of apoptosis was initially based on cell morphology by using light microscopy and electron microscopy to identify nuclear and cytoplasmic condensation and cellular fragmentation (57)."
+    ],
+    "title": "Apoptosis, Pyroptosis, and Necrosis: Mechanistic Description of ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1087413/"
+  },
+  {
+    "description": "Apoptosis is a highly regulated form of programmed cell death that occurs in multicellular organisms throughout life and in response to cellular stress.",
+    "favicon_url": "https://you.com/favicon?domain=blog.cellsignal.com&size=128",
+    "snippets": [
+      "In general, apoptosis assays have been designed to detect the multiple cellular events indicative of activation of the apoptotic pathway. In addition to the markers described above, these include chromatin condensation, which can be visualized by staining with DNA dyes such as DAPI and Hoechst 33342.",
+      "Nuclear condensation, cell shrinkage, membrane blebbing, and DNA fragmentation are characteristic features of the cellular disassembly that occurs during this form of cell death. A family of proteolytic enzymes, called caspases, serves as the central regulators of apoptosis, and their activity, in turn, is balanced by myriad additional pro-apoptotic and anti-apoptotic proteins.",
+      "While several methods have been developed to detect apoptotic cells, selecting the appropriate assay is strongly influenced by its sensitivity and specificity when performed with the experimental model of interest. For example, annexin V staining of cell suspensions can effectively identify changes that occur to the lipid bilayer early in apoptosis by flow cytometry.",
+      "For example, growth factor and cytokine-induced signaling via the PI3K/Akt pathway leads to the phosphorylation and inhibition of the pro-apoptotic Bcl-2 family members Bad, Bax, caspase-9, GSK-3, and FoxO1 and the upregulation of the anti-apoptotic proteins like Bcl-2. The balance between cell death and pro-survival signaling cascades is the focus of the majority of assays for apoptosis."
+    ],
+    "title": "Seven Assays to Detect Apoptosis | Cell Process",
+    "url": "https://blog.cellsignal.com/blog.cellsignal.com/cell-process-seven-assays-to-detect-apoptosis"
+  },
+  {
+    "description": "Apoptosis is a type of programmed cell death that occurs normally throughout the lifespan and can also occur in response to harmful stimuli. Apoptotic cells are identified by their altered morphology, caspase activation, and the presence of damaged DNA.",
+    "favicon_url": "https://you.com/favicon?domain=www.cellsignal.com&size=128",
+    "snippets": [
+      "Apoptotic cells can be distinguished from viable cells by phenotypic changes and activity of certain proteins. Several different methods can be used to analyze and measure levels of apoptosis within a population. These assays include:",
+      "Cleavage of caspase-3, caspase activity assay, and cleavage of other caspases and PARP are frequently used readouts for apoptosis ... Detects apoptotic cells with condensed chromatin after staining with nuclear dyes, such as DAPI or Hoechst 33342 ... Translocation of cytochrome c from mitochondria to the cytoplasm is a hallmark feature of apoptotic cells ... Depolarization and subsequent decrease of the mitochondrial membrane potential is a hallmark feature of apoptotic cells",
+      "Cells can die in a number of different manners, depending on the cellular context and triggering stimulus. ... Apoptosis - programmed cell death that occurs during growth and development and can also occur in response to harmful environmental stimuli. Necrosis - can be a passive or an active, regulated process such as necroptosis or pyroptosis. Different assays can be used to determine the mechanism of cell death or rule out a mechanism of cell death within a cellular population.",
+      "Nuclear protein that is released into the extracellular environment during necrotic, but not apoptotic, cell death"
+    ],
+    "title": "Overview of Cell Death | Cell Signaling Technology",
+    "url": "https://www.cellsignal.com/science-resources/cell-death-overview"
+  },
+  {
+    "description": "Modern quantitative image analysis techniques have enabled high-throughput, high-content imaging experiments. Image-based profiling leverages the rich information in images to identify similarities or differences among biological samples, rather ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "High Content Screening (HCS) is an effective and efficient phenotypic screening strategy that uses microscopy as the readout.3 HCS captures and measures cell phenotypes in images and can identify candidate targets (for example, when genetic perturbations are screened) and therapeutics (when small molecules are screened). At the core of HCS is cellular morphology\u2014the visual appearance of cells, usually stained for cell structures or biomarkers\u2014which is intricately linked to cell physiology, health, and function (Supplementary Table 1 lists some common keywords used in HCS assays).",
+      "A major development emerged in 2004, when Perlman et al. demonstrated that, instead of tailoring an image-based assay to measure a particular phenotype of interest, images might be used in an relatively unbiased way (besides the choice of experimental conditions) to group drug treatments that have similar impacts on cell morphology.4 This finding, combined with other advances such as transcriptional profiling, and automated sample preparation and microscopy, helped launch the field of image-based profiling and the use of image assays that maximize information content.5\u20137",
+      "Morphological profiling using the Cell Painting assay. (a) Schematic representation of Cell Painting assay; cells are incubated and perturbed and a set of six stains is applied. (b) Images are then obtained in five channels by automated microscopy followed by nucleus and cell body segmentation. (c) Appropriate software or deep learning-based methods are applied to measure or calculate morphological features from the images.",
+      "Seal et al. used machine learning to predict mitochondrial toxicity by combining gene expression, Cell Painting data and chemical structures, with detection scores of 0.40 compared to 0.25 using chemical structures alone.45 The combination of cell morphology and gene expression at a single-cell level is also an exciting research area that remains to be explored, given the higher computational demands for single-cell analysis and the technical challenges to measuring both kinds of profiles in the same assay.116"
+    ],
+    "title": "Cell Painting: A Decade of Discovery and Innovation in Cellular ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11810604/"
+  },
+  {
+    "description": "The caspase family of cysteine ... cells. As such, the caspases are tightly regulated both transcriptionally and by endogenous anti-apoptotic polypeptides, which block productive activation (Earnshaw et al. 1999). Furthermore, the enzymes involved in this process dictate distinct pathways and demonstrate specialized functions consistent with their primary biological roles (Stennicke et al. 1999). Assays that directly measure caspase activity ...",
+    "favicon_url": "https://you.com/favicon?domain=www.promega.com&size=128",
+    "snippets": [
+      "The caspase family of cysteine proteases are the central mediators of the proteolytic cascade leading to cell death and elimination of compromised cells. As such, the caspases are tightly regulated both transcriptionally and by endogenous anti-apoptotic polypeptides, which block productive activation (Earnshaw et al. 1999). Furthermore, the enzymes involved in this process dictate distinct pathways and demonstrate specialized functions consistent with their primary biological roles (Stennicke et al. 1999). Assays that directly measure caspase activity can provide valuable information for the researcher about the mechanism of death in dying cells.",
+      "Morphologically, apoptosis is first characterized by a change in the refractive index of the cell (Hengartner, 1997) followed by cytoplasmic shrinkage and nuclear condensation. The cell membrane begins to show blebs or spikes (protrusions of the cell membrane), depending on cell type (Figure 3.1), and eventually these blebs and spikes separate from the dying cell and form \"apoptotic bodies\".",
+      "The mitochondrial outer membrane (MOM) also undergoes changes that include loss of its electrochemical gradient, possibly by the formation of pores in the MOM, and substances such as cytochrome c leak from the MOM into the cytoplasm. Finally, adjacent cells or macrophages phagocytose apoptotic bodies and the dying cell. The apoptotic cell does not provoke an inflammatory response, and only individual cells are affected by apoptosis in vivo. Figure 3.1. Morphology changes during apoptosis.",
+      "After extended incubation, apoptotic cells ultimately shut down metabolism, lose membrane integrity and release their cytoplasmic contents into the culture medium (Riss and Moravec, 2004). Therefore, cells that have initiated apoptosis may exhibit some of the morphological phenotypes associated with necrosis."
+    ],
+    "title": "Apoptosis",
+    "url": "https://www.promega.com/resources/guides/cell-biology/apoptosis/"
+  },
+  {
+    "description": "Apoptosis is the process of programmed cell death.",
+    "favicon_url": "https://you.com/favicon?domain=www.genome.gov&size=128",
+    "snippets": [
+      "Apoptosis is the process of programmed cell death. It is used during early development to eliminate unwanted cells; for example, those between the fingers of a developing hand. In adults, apoptosis is used to rid the body of cells that have been damaged beyond repair.",
+      "And this happens normally during development, for instance, in the development of the hand, that normally to begin with, the hand looks very much like a duck paddle foot and the webs between the fingers. Those cells apoptose, giving you the fingers. There are human conditions where that ceases to where apoptosis just does not happen and people are born with web feet.",
+      "Apoptosis normally happens in cells that have been around in the body long enough that they're kind of worn out, and so they need to make way for nice, new young cells. When that doesn't happen, that's cancer. And so apoptosis can be normal, and in the absence of apoptosis, that can lead to cancer.",
+      "Too much apoptosis in an otherwise normal human being will result in a number of so-called neurodegenerative diseases where cells die when they're not supposed to die. And they get messages from some place, most of which we don't understand, to tell them to die, so in a certain part of the lower part of the brain, that's what causes Parkinson's disease."
+    ],
+    "title": "Apoptosis",
+    "url": "https://www.genome.gov/genetics-glossary/apoptosis"
+  }
+]

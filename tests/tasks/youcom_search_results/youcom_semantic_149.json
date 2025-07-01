@@ -1,0 +1,278 @@
+[
+  {
+    "description": "Pre-trained language models have achieved striking success in natural language processing (NLP), leading to a paradigm shift from supervised learning \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Pre-trained language models have achieved striking success in natural language processing (NLP), leading to a paradigm shift from supervised learning to pre-training followed by fine-tuning. The NLP community has witnessed a surge of research interest in improving pre-trained models."
+    ],
+    "title": "Pre-Trained Language Models and Their Applications - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2095809922006324"
+  },
+  {
+    "description": "Large language models are first trained on massive text datasets in a process known as pre-training: gaining a solid grasp of grammar, facts, and reasoning. Next comes fine-tuning to specialize in particular tasks or domains. And let's not forget the one that makes prompt engineering possible: ...",
+    "favicon_url": "https://you.com/favicon?domain=www.entrypointai.com&size=128",
+    "snippets": [
+      "Large language models are first trained on massive text datasets in a process known as pre-training: gaining a solid grasp of grammar, facts, and reasoning. Next comes fine-tuning to specialize in particular tasks or domains. And let's not forget the one that makes prompt engineering possible: in-context learning, allowing models to adapt their responses on-the-fly based on the specific queries or prompts they are given.",
+      "Large language models (LLMs) have taken the world by storm, and for good reason. They possess the remarkable ability to comprehend and generate human-like text, opening up a horizon of new applications.",
+      "Think of it as the model's introduction to the world of words, phrases, and ideas. During this phase, the LLM learns grammar rules, linguistic patterns, factual information, and reasoning abilities.",
+      "The architecture's attention mechanism allows the model to consider the entire context and prioritize the relevant parts, capturing nuances that are crucial for understanding the meaning. Let's explore the world of pre-trained models and how they allow for a range of language tasks: Think of pre-trained models as the ultimate storytellers. They can whip up engaging narratives, generate creative poetry, and provide responses that feel remarkably human. Businesses are using this ability for virtual assistants that guide customers through troubleshooting or chatbots that offer real-time support (although that often involves fine-tuning)."
+    ],
+    "title": "Pre-training vs Fine-Tuning vs In-Context Learning of Large Language ...",
+    "url": "https://www.entrypointai.com/blog/pre-training-vs-fine-tuning-vs-in-context-learning-of-large-language-models/"
+  },
+  {
+    "description": "Training a deep neural network can be costly but training time is reduced when a pre-trained network can be adapted to different use cases. Ideally, only a small number of parameters needs to be changed in this process of fine-tuning, which can then be more easily distributed.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "With the prevalence of pre-trained language models (PLMs) and the pre-training\u2013fine-tuning paradigm, it has been continuously shown that larger models tend to yield better performance. However, as PLMs scale up, fine-tuning and storing all the parameters is prohibitively costly and eventually becomes practically infeasible. This necessitates a new branch of research focusing on the parameter-efficient adaptation of PLMs, which optimizes a small portion of the model parameters while keeping the rest fixed, drastically cutting down computation and storage costs.",
+      "Nature Machine Intelligence - Training a deep neural network can be costly but training time is reduced when a pre-trained network can be adapted to different use cases. Ideally, only a small...",
+      "As the adapter injects additional neural modules to each layer of the transformer model, the path of data flow becomes longer and further leads to inference latency (longer forwards time). Considering that different delta-tuning methods are compatible with each other, which means they could be applied on the same PLM together, we investigate whether such a combination would bring additional benefits. Specifically, we evaluate both simultaneous combination and sequential combination.",
+      "Empirically, we conduct extensive experiments across 100+ NLP tasks to fairly evaluate and explore the combinatorial property, influence of scale and transferability for delta-tuning. In terms of performance, delta-tuning can be slightly behind or comparable to fine-tuning on a wide range of tasks, and the gap shrinks as the model scales; in terms of efficiency, delta-tuning could considerably reduce storage space and memory usage, as well as accelerate backpropagation."
+    ],
+    "title": "Parameter-efficient fine-tuning of large-scale pre-trained language ...",
+    "url": "https://www.nature.com/articles/s42256-023-00626-4"
+  },
+  {
+    "description": "Explore fine-tuning vs. pre-training and understand how each method impacts language model performance and application, helping you choose the right approach.",
+    "favicon_url": "https://you.com/favicon?domain=www.sapien.io&size=128",
+    "snippets": [
+      "By adjusting the model using labeled data, SFT LLM techniques ensure that the model achieves high accuracy and relevance in applications such as customer service or legal analysis. The primary objective of fine-tuning is to refine and adapt the general knowledge acquired during the pre-training phase, transforming it into a focused and actionable model tailored for specific applications.",
+      "Narrowing the focus during fine-tuning allows LLM developers to deliver exceptional performance in niche applications while leveraging the general linguistic foundation built during pre-training. Fine-tuning methods in natural language processing (NLP) often rely on supervised learning, which uses labeled data to steer the model toward specific task objectives. One key technique that enhances this process is transfer learning.",
+      "This phase aims to give the language model a generalized understanding of linguistic structures, patterns, and semantics across diverse contexts. Unlike fine-tuning, which is task-specific, pre-training models focus on building foundational capabilities that allow LLMs to process and generate language in various applications without the need for task-specific data.",
+      "Generalized Linguistic Knowledge: Pre-training focuses on acquiring generalized linguistic knowledge across different domains, which significantly enhances the model's versatility."
+    ],
+    "title": "Fine-Tuning vs. Pre-Training: Their Impact on Language Models",
+    "url": "https://www.sapien.io/blog/fine-tuning-vs-pre-training-key-differences-for-language-models"
+  },
+  {
+    "description": "Large-scale pre-trained models (PTMs) such as BERT and GPT have recently achieved great success and become a milestone in the field of artificial inte\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "By storing knowledge into huge parameters and fine-tuning on specific tasks, the rich knowledge implicitly encoded in huge parameters can benefit a variety of downstream tasks, which has been extensively demonstrated via experimental verification and empirical analysis."
+    ],
+    "title": "Pre-trained models: Past, present and future - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666651021000231"
+  },
+  {
+    "description": "Language models have achieved remarkable advancements in natural language understanding and generation. These models learn through a combination of pre-training, fine-tuning, and in-context learning\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Pre-training focuses on unsupervised learning from large-scale unlabeled data, capturing general language understanding.",
+      "Example: A language model is trained to generate responses to customer queries in a polite and helpful manner. The training includes structured prompts and reinforcement learning techniques to encourage appropriate responses.",
+      "Pre-training captures general language understanding, fine-tuning specializes models for specific tasks, and in-context learning incorporates task-specific instructions to enhance performance. Understanding these approaches provides insights into the different stages and techniques involved in the learning process of language models, enabling their effective application across various natural language processing tasks.",
+      "Gradient-Based Optimization: Fine-tuning typically involves gradient-based optimization techniques to update the model\u2019s parameters based on the task-specific data."
+    ],
+    "title": "Empowering Language Models: Pre-training, Fine-Tuning, and In-Context ...",
+    "url": "https://medium.com/@bijit211987/the-evolution-of-language-models-pre-training-fine-tuning-and-in-context-learning-b63d4c161e49"
+  },
+  {
+    "description": "Learn how fine-tuning large language models (LLMs) improves their performance in tasks like language translation, sentiment analysis, and text generation.",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "Read this article to discover the basics of large language models, the key technology that is powering the current AI revolution ... Learn how to fine-tune LLMs on custom datasets, evaluate performance, and seamlessly export and serve models using the LLaMA-Factory's low/no-code framework. ... Learn how to fine-tune Llama-2 on Colab using new techniques to overcome memory and computing limitations to make open-source large language models more accessible.",
+      "Most LLM models today have a very good global performance but fail in specific task-oriented problems. The fine-tuning process offers considerable advantages, including lowered computation expenses and the ability to leverage cutting-edge models without the necessity of building one from the ground up.",
+      "Fine-Tuning LLaMA 2: A Step-by-Step Guide to Customizing the Large Language Model ... Yes, fine-tuning can be performed with small datasets using techniques like few-shot learning or low-rank adaptation (LoRA), which optimize a subset of the model\u2019s parameters.",
+      "In the process of fine-tuning for a particular task, there's a risk that the model might lose the broad knowledge it initially acquired. This issue, referred as catastrophic forgetting, can diminish the model's ability to perform well across a variety of tasks using natural language processing."
+    ],
+    "title": "Fine-Tuning LLMs: A Guide With Examples | DataCamp",
+    "url": "https://www.datacamp.com/tutorial/fine-tuning-large-language-models"
+  },
+  {
+    "description": "I am very new to the LLM field. I have two questions: What is the difference between pre-training, fine-tuning, and instruct-tuning? I am not asking\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "This is one of the primary reasons I am personally skeptical of the idea of open source overtaking commercial models, since most open-weight LLMs still had to come from a corporation making the initial investment in pre-training. Suffice it to say as a beginner, you will not be doing any pre-training. Fine-tuning is where you take an already-pre-trained model and further train it on a more specific dataset. This dataset is typically smaller and focused on a particular domain or task.",
+      "The format {'instruction': '', 'input': \"\", 'output': \"\"} is typically used for instruct tuning, as it focuses on aligning model outputs with specific instructions. However, it can also be used in fine-tuning, especially when the model being fine-tuned is instruction-based or designed to handle prompt-based tasks.",
+      "If it's simple fact-based results you want, you could also just use RAG (retrieval augmented generation, there are TONS of articles on it these days) to retrieve the data from a data source rather than fine-tune it. I generally liken the difference between fine-tuning and RAG as studying for tests that you can easily cheat on. You can read a brief bit on this under \"The RAG component\" in a project I did for my masters here. ... Fine-tuning for a new language is a lot more complex and involves more than just formatting the data. It requires a dataset in the target language that the model can learn from.",
+      "The new knowledge added during fine-tuning is more about enhancing the model's performance in specific contexts rather than broadly expanding its general knowledge. An example of fine-tuning that I did a few years ago (before ChatGPT changed everything) was to fine-tune GPT-2 on song lyrics."
+    ],
+    "title": "r/learnmachinelearning on Reddit: What is the difference between ...",
+    "url": "https://www.reddit.com/r/learnmachinelearning/comments/19f04y3/what_is_the_difference_between_pretraining/"
+  },
+  {
+    "description": "In this study, we delve into the adaptation and effectiveness of Transformer-based, pre-trained Large Language Models (LLMs) within the biomedical dom\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "In this study, we delve into the adaptation and effectiveness of Transformer-based, pre-trained Large Language Models (LLMs) within the biomedical domain, a field that poses unique challenges due to its complexity and the specialized nature of its data. Building on the foundation laid by the transformative architecture of Transformers, we investigate the nuanced dynamics of LLMs through a multifaceted lens, focusing on two domain-specific tasks, i.e., Natural Language Inference (NLI) and Named Entity Recognition (NER).",
+      "To achieve this goal, we probed and analyzed the inner encoding and attention mechanisms in LLMs, both encoder- and decoder-based, tailored for either general or biomedical-specific applications. This examination occurs before and after the models are fine-tuned across various data volumes.",
+      "Our findings reveal that the models\u2019 downstream effectiveness is intricately linked to specific patterns within their internal mechanisms, shedding light on the nuanced ways in which LLMs process and apply knowledge in the biomedical context."
+    ],
+    "title": "From pre-training to fine-tuning: An in-depth analysis of Large ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0933365724002458"
+  },
+  {
+    "description": "Discover the key differences between pre-training vs fine-tuning AI models and how to choose the right approach for your ML projects.",
+    "favicon_url": "https://you.com/favicon?domain=labelyourdata.com&size=128",
+    "snippets": [
+      "Techniques like Adapters can be used to fine-tune specific layers without requiring full fine-tuning. Models focused on mapping or geographic tasks can benefit from pre-training on datasets with geospatial annotation, followed by fine-tuning to adapt to applications like urban planning or environmental monitoring. Metrics evaluate performance in pre-training and fine-tuning, ensuring robust foundational models and task-specific accuracy.",
+      "Pre-training is the process of teaching model foundational knowledge by exposing it to a vast and diverse dataset. This stage helps the model learn patterns, relationships, and structures inherent in language. Fine-tuning builds on this foundation by focusing the model on a specific domain.",
+      "Fine-tuning narrows the focus, customizing the pre-trained model to excel at a particular task. For example, in summarization or sentiment analysis, it trains it on task-specific data. No, fine-tuning is always done after pre-training. Pre-training lays the groundwork, providing the model with general language understanding.",
+      "Focus on ensuring that the model learns generalized, diverse representations of language without overfitting to specific patterns."
+    ],
+    "title": "Pre-Training vs Fine Tuning: Choosing the Right Approach in 2025 ...",
+    "url": "https://labelyourdata.com/articles/llm-fine-tuning/pre-training-vs-fine-tuning"
+  },
+  {
+    "description": "Rather than explore these two training ... do model pretraining and fine-tuning interact to affect the resulting model? Does more pre-training hinder better fine-tuning results? What does the model learn and forget during pre-training as well as fine-tuning? Answering these questions requires us to examine how models learn during pre-training and how this affects fine-tuning. Therefore, we fine-tune multiple pre-training checkpoints of a large language model (Figure 1), evaluating each checkpoint ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Rather than explore these two training regimes independently, we question: how do model pretraining and fine-tuning interact to affect the resulting model? Does more pre-training hinder better fine-tuning results? What does the model learn and forget during pre-training as well as fine-tuning? Answering these questions requires us to examine how models learn during pre-training and how this affects fine-tuning. Therefore, we fine-tune multiple pre-training checkpoints of a large language model (Figure 1), evaluating each checkpoint and its fine-tuned version on downstream evaluation sets.",
+      "Figure 3: Example of few-shot performance on different pre-training steps of the models that benefited (3(a)) and did not benefit from fine-tuning (3(b)). The solid blue line represents the fine-tuned checkpoint, and the dashed orange line represents the base checkpoint. The results of all datasets can be found in Figure 9 and Figure 8. Figure 4: Amount of performance increase brought by fine-tuning between tasks that model can solve in pre-training (mandarin orange) and tasks that the model could not solve until fine-tuning (sage green). The exact number of mean increase is shown in Appendix G. We begin our evaluation by considering how additional pre-training changes the BASE model.",
+      "The hyperparameter tuning procedure and setup for each fine-tuning setting can be found in Appendix A. Our paper considers OLMo-1B Groeneveld et al. (2024), a high-performing open-source large language model. Ideally, we would evaluate multiple models, but OLMo is the only model to release intermediate pre-training checkpoints, and thus the only model that supports our analysis222https://github.com/allenai/OLMo/tree/main/checkpoints 333We also experimented with RedPajama-INCITE (https://www.together.ai/blog/redpajama-models-v1), which is the only other model to release checkpoints.",
+      "Each model checkpoint is fully fine-tuned for 5 epochs with a batch size of 8 and a learning rate of ... Table 1: Dataset information. For Generation tasks, ROUGE-L is used as evaluation metric, and accuracy is used for classification tasks. The evaluation challenge is to select a representative number of datasets for different types of tasks to test model abilities, recognizing that each dataset requires evaluating each model checkpoint and its fine-tuned counterparts."
+    ],
+    "title": "Amuro & Char: Analyzing the Relationship between Pre-Training and ...",
+    "url": "https://arxiv.org/html/2408.06663v2"
+  },
+  {
+    "description": "Now that we understood how the LLMs work in my previous article. In this article, we will examine how an LLM is pre-trained and fine-tuned.",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Now that we understood how the LLMs work in my previous article. In this article, we will examine how an LLM is pre-trained and fine-tuned. In the industry, companies often integrate pre-trained\u2026",
+      "As a result, PEFT requires low computation power which can be low as one GPU which is incredible considering the size of the Large Language Models. ... Another great thing about PEFT is that you can train multiple layers for different tasks and these layers can be swapped during inference. Thus achieving a multi-task model. ... A popular method to fine-tune a model using human feedback is called reinforcement learning human feedback. RLHF utilizes reinforcement learning which is one of the three techniques of machine learning alongside supervised and unsupervised learning.",
+      "Selective methods fine-tune only a subset of the original LLM parameters. ... Reparameterization reduces the number of parameters to train by creating low rank transformations of the original network weights. LoRA can be given as example. ... soft prompts: keep the original LLM weights frozen and focus on manipulating the input to achieve better performance ... As it can be seen some techniques freeze most of the model weights and updates only a small section of it and some don\u2019t even touch the original model at all and add new parameters or layers to train.",
+      "Even though the main intuition of fine-tuning an LLM is as I have explained, there are three different ways to fine-tune an LLM: ... The training dataset for fine-tuning consists of prompt-completion pairs. So we create a dataset with the question or prompts and the answer we want from the LLM which is also called ground truth. The model predicts an answer and the answer is compared to the ground truth to calculate some kind of loss(evaluation metrics will be explained in the next article)."
+    ],
+    "title": "Everything to learn about Large Language Models(Part 2/3 Pre-training ...",
+    "url": "https://medium.com/@aydinKerem/everything-to-learn-about-large-language-models-part-2-3-pre-training-and-fine-tuning-5fc68700701a"
+  },
+  {
+    "description": "The Importance of Reasoning Reasoning is a fundamental human capability that plays a crucial role in our survival and daily decision-making. From navigating the route to work, handling tasks at our jobs, to restraining ourselves from sending a slightly passive-aggressive email to a coworker ...",
+    "favicon_url": "https://you.com/favicon?domain=www.linkedin.com&size=128",
+    "snippets": [
+      "The Importance of Reasoning Reasoning is a fundamental human capability that plays a crucial role in our survival and daily decision-making. From navigating the route to work, handling tasks at our jobs, to restraining ourselves from sending a slightly passive-aggressive email to a coworker \u2014 reason",
+      "From navigating the route to work, handling tasks at our jobs, to restraining ourselves from sending a slightly passive-aggressive email to a coworker \u2014 reasoning is at the root of our ability to make sound decisions. When a model lacking reasoning skills is tasked with answering even straightforward questions, it may misinterpret the query, generate a response based on a literal understanding, or fail to consider multi-step implications.",
+      "Equipping a model with reasoning abilities significantly enhances its potential to accurately resolve complex problems. There are several strategies to bolster a model\u2019s reasoning capabilities, broadly categorized into three areas: pre-training techniques, fine-tuning processes, and prompting/inference time strategies.",
+      "Employing one or a combination of these approaches can substantially improve a model\u2019s reasoning proficiency \u2014 resulting in better outputs. We will cover two pre-training techniques which can be used to enhance a models ability to inherently reason:"
+    ],
+    "title": "Advanced Language Model Reasoning: Pre-Training , Fine-Tuning, ...",
+    "url": "https://www.linkedin.com/pulse/advanced-language-model-reasoning-pre-training-inference-sandi-besen-mmdtc"
+  },
+  {
+    "description": "Explore and run machine learning code with Kaggle Notebooks | Using data from multiple data sources",
+    "favicon_url": "https://you.com/favicon?domain=www.kaggle.com&size=128",
+    "snippets": [],
+    "title": "Language Models Pre-training | Kaggle",
+    "url": "https://www.kaggle.com/code/vad13irt/language-models-pre-training"
+  },
+  {
+    "description": "Pretraining and fine-tuning are essential techniques in machine learning that enable models to learn from large datasets and adapt to specific tasks.",
+    "favicon_url": "https://you.com/favicon?domain=www.activeloop.ai&size=128",
+    "snippets": [
+      "Pretraining and fine-tuning are essential techniques in machine learning that enable models to learn from large datasets and adapt to specific tasks. Pretraining involves training a model on a large dataset to learn general features and representations. This process helps the model capture the underlying structure of the data and develop a strong foundation for further learning.",
+      "For instance, pretrained language models have demonstrated outstanding performance in tasks requiring social and emotional commonsense reasoning. In computer vision, hierarchical pretraining has been shown to decrease convergence time, improve accuracy, and enhance the robustness of self-supervised pretraining. In conclusion, pretraining and fine-tuning are powerful techniques that enable machine learning models to learn from vast amounts of data and adapt to specific tasks.",
+      "In NLP, pretrained language models have demonstrated outstanding performance in tasks requiring social and emotional commonsense reasoning. In computer vision, hierarchical pretraining has been shown to decrease convergence time, improve accuracy, and enhance the robustness of self-supervised pretraining.",
+      "Recent research has explored various aspects of pretrained language models, such as extending them to new languages, understanding their learning process, and improving their efficiency. One study focused on adding new subwords to the tokenizer of a multilingual pretrained model, allowing it to be applied to previously unsupported languages."
+    ],
+    "title": "What is Pretraining and Fine-tuning",
+    "url": "https://www.activeloop.ai/resources/glossary/pretraining-and-fine-tuning/"
+  },
+  {
+    "description": "Boost Your LLM Success! Discover the Essential Things to Consider for Data Collection and Preprocessing. Don't Miss Out!",
+    "favicon_url": "https://you.com/favicon?domain=www.labellerr.com&size=128",
+    "snippets": [
+      "LLMs require better quality data for their pretraining, and their model capacity primarily depends on the pretraining corpus and its preprocessing compared to smaller language models. This section focuses on the acquisition and processing of pretraining data, which includes the sources of data, methods for preprocessing, and an analysis of how pretraining data affects the performance of LLMs.",
+      "Despite these limitations, LLMs are widely used in various fields, including chatbots, virtual assistants, and natural language processing. Given LLMs' various opportunities and challenges, focusing on research and development in this area is important. In this article, we\u2019ll learn about the key components of successful data preparation, including recent advancements in pre-training methods, adaptation tuning for improved effectiveness and safety, practical utilization for diverse applications, and robust capability evaluation techniques.",
+      "Previous research has indicated that pre-training on low-quality data, such as noisy, toxic, or duplicate data, can harm the performance of language models. To develop an effective LLM, it is important to consider both the quantity and quality of the collected training data.",
+      "Language-based filtering removes texts in languages irrelevant to the LLM's tasks, while metric-based filtering uses evaluation metrics like perplexity to detect unnatural sentences. Statistic-based filtering measures text quality based on statistical features of the corpus, while keyword-based filtering removes noisy or unuseful elements based on specific keyword sets, such as HTML tags, hyperlinks, boilerplates, and offensive words. Previous research has shown that having duplicate data in a pre-training corpus can reduce the diversity of language models, potentially leading to instability during training and negatively impacting the model's performance."
+    ],
+    "title": "Data Collection and Preprocessing for LLMs [Updated]",
+    "url": "https://www.labellerr.com/blog/data-collection-and-preprocessing-for-large-language-models/"
+  },
+  {
+    "description": "I've been wanting to write an introduction on how to fine-tune large language models for a while now because it's such a vast and under-documented area, especially when it comes to the libraries, hyperparameters, and techniques involved. In short, fine-tuning allows us to adapt models for specific ...",
+    "favicon_url": "https://you.com/favicon?domain=www.stephendiehl.com&size=128",
+    "snippets": [
+      "For instruction-following and chat models, ROUGE (Recall-Oriented Understudy for Gisting Evaluation) scores help evaluate the similarity between generated responses and reference answers. ROUGE-1 and ROUGE-2 measure overlap in unigrams and bigrams respectively, while ROUGE-L considers the longest common subsequence. These metrics are particularly useful for assessing how well the model captures key information and maintains coherent phrasing, though they shouldn't be relied upon exclusively as they don't always correlate with human judgments of quality.",
+      "The technique works best when starting with a well-trained SFT model and using high-quality preference data. Regular checkpointing and evaluation of generated responses helps ensure the model improves while maintaining reasonable behavior relative to the reference model.",
+      "When analyzing these metrics, it's important to consider their trends rather than absolute values, as the appropriate ranges can vary significantly depending on the task, dataset, and model architecture. A sudden spike in eval_loss or perplexity often indicates a training issue that needs attention, while gradual improvement across all metrics suggests healthy learning progression. To load metrics we use the evaluate library.",
+      "Post-training refers to the phase after fine-tuning where additional techniques are applied to further refine and optimize the model's performance. This phase often includes Reinforcement Learning from Human Feedback (RLHF), where models learn to align their outputs with human preferences through feedback and reward signals. Preference optimization is another key aspect, focusing on adjusting the model to better meet specific user needs or ethical guidelines."
+    ],
+    "title": "Introduction to Fine-tuning Large Language Models",
+    "url": "https://www.stephendiehl.com/posts/training_llms/"
+  },
+  {
+    "description": "This technical report thoroughly examines the process of fine-tuning Large Language Models (LLMs), integrating theoretical insights and practical applications. It begins by tracing the historical development of LLMs, emphasising their evolution from traditional Natural Language Processing (NLP) ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Figure 1.3: Mind map depicting various dimensions of Large Language Models (LLMs), covering aspects from pre-training and fine-tuning methodologies to efficiency, evaluation, inference, and application domains. Each dimension is linked to specific techniques, challenges, and examples of models that exemplify the discussed characteristics. This diagram serves as an overview of the multifaceted considerations in the development and deployment of LLMs.",
+      "A structured seven-stage pipeline for LLM fine-tuning is introduced, covering the complete lifecycle from data preparation to model deployment. Key considerations include data collection strategies, handling of imbalanced datasets, model initialisation, and optimisation techniques, with a particular focus on hyperparameter tuning.",
+      "Incorporate Techniques for Handling Multiple Tasks: If fine-tuning for multiple tasks, consider strategies like fine-tuning with multiple adapters or leveraging Mixture of Experts (MoE) architectures. These methods allow a single model to handle various tasks by utilising specialised sub-networks or adapters for each task. ... Monitor Performance on a Validation Set: Regularly evaluate the model\u2019s performance on a validation set to ensure it generalises well to unseen data.",
+      "Prune and optimise the Model (if necessary): To deploy the model in resource-constrained environments, consider pruning techniques to reduce its size and complexity. This involves removing unnecessary parameters or components without significantly affecting performance. Utilise dynamic pruning methods during inference to optimise the model on-the-fly for different scenarios. ... Continuous Evaluation and Iteration: Continuously evaluate the model\u2019s performance across various tasks using appropriate benchmarks."
+    ],
+    "title": "The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: ...",
+    "url": "https://arxiv.org/html/2408.13296v1"
+  },
+  {
+    "description": "Fine-tuning in machine learning is the process of adapting a pre-trained model for specific tasks or use cases through further training on a smaller dataset.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "This is used prominently in computer vision models designed for few-shot or zero-shot learning, like Contrasting Language-Image Pretraining (CLIP). SSL thus allows for the use of massively large datasets in training without the burden of having to annotate millions or billions of data points. This saves a tremendous amount of labor, but nevertheless requires huge computational resources. Conversely, fine-tuning entails techniques to further train a model whose weights have already been updated through prior training.",
+      "It has become a fundamental deep learning technique, particularly in the training process of foundation models used for generative AI. Fine-tuning could be considered a subset of the broader technique of transfer learning: the practice of leveraging knowledge an existing model has already learned as the starting point for learning new tasks.",
+      "Fine-tuning can be used to update the weights of the entire network, but for practical reasons this is not always the case. There exist a wide variety of alternate fine-tuning methods, often referred to under the umbrella term of parameter-efficient fine-tuning (PEFT), that update only a select subset of model parameters.",
+      "RLHF, also called reinforcement learning from human preferences, helps fine-tune models for qualities that are complex, ill-defined or difficult to specify through discrete examples. Consider comedy: to teach a model to be \u201cfunny\u201d with SFT not only requires the cost and labor of writing (or acquiring) enough jokes to constitute a learnable pattern, but also requires that what a given data scientist thinks is funny aligns with what the user base would find funny."
+    ],
+    "title": "What is Fine-Tuning? | IBM",
+    "url": "https://www.ibm.com/think/topics/fine-tuning"
+  },
+  {
+    "description": "The large language models, as predicted by scaling law forecasts, have made groundbreaking progress in many fields, particularly in natural language generation tasks, where they have approached or even surpassed human levels. However, the unprecedented scale of their parameters brings significant ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The large language models, as predicted by scaling law forecasts, have made groundbreaking progress in many fields, particularly in natural language generation tasks, where they have approached or even surpassed human levels. However, the unprecedented scale of their parameters brings significant computational and storage costs.",
+      "Artificial Intelligence Review - The large language models, as predicted by scaling law forecasts, have made groundbreaking progress in many fields, particularly in natural language generation...",
+      "These benchmarks are essential for evaluating the foundational knowledge and general reasoning abilities of LLM. These benchmarks help determine how well models can understand and generate text in various contexts, ensuring that they possess a solid understanding of language fundamentals. Datasets such as MMLU, ARC, and HellaSwag are commonly used for general evaluations. Specialized Tasks: Specialized tasks focus on evaluating LLM in specific domains, such as mathematics, coding, and natural language understanding.",
+      "Table 4 A typical list of available datasets for LLM evaluation ... PEFT techniques are typically divided into three primary categories: Additive PEFT (Sect. 3.1), which introduces additional trainable components or parameters into the pre-existing model; Reparameterized PEFT (Sect. 3.2), a method that restructures the model\u2019s parameters during the training phase and then reverts to the original form for inference; and Selective PEFT (Sect. 3.3), which focuses on optimizing a specific subset of the model\u2019s parameters."
+    ],
+    "title": "Parameter-efficient fine-tuning in large language models: a survey ...",
+    "url": "https://link.springer.com/article/10.1007/s10462-025-11236-4"
+  },
+  {
+    "description": "New LLM Pre-training and Post-training Paradigms: A Look at How Moderns LLMs Are Trained",
+    "favicon_url": "https://you.com/favicon?domain=magazine.sebastianraschka.com&size=128",
+    "snippets": [
+      "It\u2019s also interesting that they explicitly used Q&A data as part of the pre-training\u2014something I discussed in my previous article, Instruction Pretraining LLMs. All in all, it's a refreshing and delightful technical report. Google's Gemma models were recently described in Gemma 2: Improving Open Language Models at a Practical Size. I'll provide an overview of some of key facts in the following overview section before discussing the pre-training and post-training processes. The Gemma 2 models are available in three sizes: 2 billion, 9 billion, and 27 billion parameters. The primary focus is on exploring techniques that do not necessarily require increasing the size of training datasets but rather on developing relatively small and efficient LLMs.",
+      "If you find it valuable and would like to support my work, please consider purchasing a copy of my books and recommending them to your colleagues. Your review on Amazon would also be greatly appreciated! Build a Large Language Model (from Scratch), Machine Learning Q and AI, and Machine Learning with PyTorch and Scikit-Learn \u00b7 Build a Large Language Model (from Scratch) is a highly focused book dedicated to coding LLMs from the ground up in PyTorch, covering everything from pre-training to post-training\u2014arguably the best way to truly understand LLMs.",
+      "The development of large language models (LLMs) has come a long way, from the early GPT models to the sophisticated open-weight LLMs we have today. Initially, the LLM training process focused solely on pre-training, but it has since expanded to include both pre-training and post-training. Post-training typically encompasses supervised instruction fine-tuning and alignment, which was popularized by ChatGPT.",
+      "In contrast to other recent large language models, Llama 3 did not employ knowledge distillation techniques, opting instead for a more straightforward model development path. For post-training, the model utilized Direct Preference Optimization (DPO) instead of the more complex reinforcement learning strategies that have been popular in other models. Overall, this choice is interesting as it indicates a focus on refining LLM performance through simpler (but proven) methods."
+    ],
+    "title": "New LLM Pre-training and Post-training Paradigms",
+    "url": "https://magazine.sebastianraschka.com/p/new-llm-pre-training-and-post-training"
+  },
+  {
+    "description": "The rise of deep learning techniques and especially the advent of large language models (LLMs) intensified the discussions around possibilities that artificial intelligence with higher generalization capability entails. The range of opinions on the capabilities of LLMs is extremely broad: from ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The rise of deep learning techniques and especially the advent of large language models (LLMs) intensified the discussions around possibilities that artificial intelligence with higher generalization capability entails. The range of opinions on the capabilities of LLMs is extremely broad: from equating language models with stochastic parrots to stating that they are already conscious.",
+      "Neural Computing and Applications - The rise of deep learning techniques and especially the advent of large language models (LLMs) intensified the discussions around possibilities that artificial...",
+      "Additionally, employing sophisticated prompting techniques enhances robustness against inadvertent reasoning errors and enables learning from experience without re-training. The comparative table presents the key results of various studies that were considered in this review (Appendix A). This paper provides a review of the expanding field of research focused on understanding the generalization capabilities of neural networks.",
+      "[93] applied the technique to fine-tune pre-trained models and noted improvements in generalization. Zhang et al. [94] proposed a two-level optimizer where the outer loop advances in the direction of the average weight updates computed in the inner loop. While their primary focus was on enhancing convergence, they also noted improved generalization."
+    ],
+    "title": "Generalization potential of large language models | Neural Computing ...",
+    "url": "https://link.springer.com/article/10.1007/s00521-024-10827-6"
+  },
+  {
+    "description": "Natural Language Processing (NLP) has been revolutionized by the advent of pre-trained models. Most of today's best-known LLMs are pre-trained. Why is it so critical to pre-train AI models, and LLMs in particular? And what other indispensable steps should be taken to obtain effective language ...",
+    "favicon_url": "https://you.com/favicon?domain=toloka.ai&size=128",
+    "snippets": [
+      "Natural Language Processing (NLP) has been revolutionized by the advent of pre-trained models. Most of today's best-known LLMs are pre-trained. Why is it so critical to pre-train AI models, and LLMs in particular? And what other indispensable steps should be taken to obtain effective language models that comprehend user preferences and can fulfill your business-specific tasks?",
+      "Unlike data for pretraining these preference datasets are smaller yet harder to obtain. Read our article on SFT to learn more or simply get in touch, if you need high-quality dataset for RLHF or SFT. The performance of the pre-trained and fine-tuned model is evaluated on various benchmarks and tasks to assess its generalization ability and effectiveness in understanding and generating human-like text.",
+      "This so-called continuous model evaluation also incorporates human assessment of model quality. Pre-training in machine learning is important due to its numerous benefits. Here are some key reasons why pre-training is important: The availability of pre-trained models enables a technique known as transfer learning, where a model trained on one task or dataset is employed to improve performance on a related task or dataset. Fine-tuning is a type of transfer learning that involves updating the parameters of the entire pre-trained model.",
+      "You need to fine-tune your LMM as well and introduce other steps like RLFH and model output evaluation. By incorporating these stages into the training pipeline, developers can create customized language models that meet the specific requirements and objectives of their applications"
+    ],
+    "title": "Pre-training in LLM Development",
+    "url": "https://toloka.ai/blog/pre-training-in-llm-development/"
+  },
+  {
+    "description": "Explore the roles of pre-training and fine-tuning for large language models, their benefits, real-world applications, and a comprehensive comparison.",
+    "favicon_url": "https://you.com/favicon?domain=www.ankursnewsletter.com&size=128",
+    "snippets": [
+      "Ankur\u2019s Newsletter is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.",
+      "On the other hand, fine-tuning is often used by startups specializing in niche markets, such as Replika in personalized conversational agents or Grammarly in writing assistance, where the focus is on a specific task performance.",
+      "While pre-training is a resource-intensive process, as seen with models like GPT-3, the long-term benefits often offset the initial investment for major companies. Fine-tuning, being more task-specific, requires less computational power and can be a cost-effective strategy for companies focusing on specific applications.",
+      "The strategic choice between investing in pre-training versus fine-tuning is influenced by the nature of the business, the uniqueness of its data, and the specificity of the tasks it needs to perform. Larger corporations with diverse AI needs may invest heavily in pre-training to create versatile models. At the same time, startups or companies with a narrow focus may find fine-tuning existing models to be more cost-effective and just as beneficial."
+    ],
+    "title": "Pre-training Vs. Fine-Tuning Large Language Models",
+    "url": "https://www.ankursnewsletter.com/p/pre-training-vs-fine-tuning-large"
+  }
+]

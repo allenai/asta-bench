@@ -1,0 +1,264 @@
+[
+  {
+    "description": "We analyse the performance of the large language models (LLMs) OPT, BERT, and FinBERT, alongside the traditional Loughran-McDonald dictionary, in the \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "We analyse the performance of the large language models (LLMs) OPT, BERT, and FinBERT, alongside the traditional Loughran-McDonald dictionary, in the sentiment analysis of 965,375 U.S. financial news articles from 2010 to 2023. Our findings reveal that the GPT-3-based OPT model significantly outperforms the others, predicting stock market returns with an accuracy of 74.4%. A long-short strategy based on OPT, accounting for 10 basis points (bps) in transaction costs, yields an exceptional Sharpe ratio of 3.05.",
+      "A portfolio based on sentiment analysis with GPT has a Sharpe ratio of 3.05.",
+      "Sentiment analysis with machine learning yields a 355% investment gain over 2 years."
+    ],
+    "title": "Sentiment trading with large language models - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1544612324002575"
+  },
+  {
+    "description": "Recent advances in large language models (LLMs) have unlocked novel opportunities for machine learning applications in the financial domain. These models have demonstrated remarkable capabilities in understanding context, processing vast amounts of data, and generating human-preferred contents.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "We explore potential solutions and future research directions, providing a foundation for further development in the financial sector. Paper Organization: The paper is structured as follows: In Section 2, we discuss the various LLMs that are specifically designed or fine-tuned for financial applications. Section 3 provides a comprehensive survey on various application areas, including linguistic tasks, sentiment analysis, financial time series analysis, financial reasoning, and agent-based modeling.",
+      "For instance, Steinert and Altmann [60] explore the zero-shot capability of GPT-4 to predict same-day stock price movements of Apple and Tesla in 2017 with microblogging messages, and by comparing its performance to BERT, they highlight the importance of prompt engineering in extracting sophisticated sentiments from GPT-4 for financial applications. The integration of LLMs in financial analysis represents a revolutionary transformation in how data-driven decisions are made within the financial sector.",
+      "Figure 5: Illustration of financial time series analysis. Recent research has explored the utility of LLMs in the domain of financial time series forecasting, demonstrating both the potential and the limitations of these advanced computational tools. This section reviews key studies that have contributed to our understanding of how LLMs can be applied to predict stock market movements and other financial indicators.",
+      "[158] introduce BioFinBERT, a fine-tuned language model that utilizes sentiment analysis of regulatory filings and legal documents, such as 10-Q, 10-K, 6-K, and 20-F reports, along with biotech company press releases, to execute market orders and predict stock price movements in the biotechnology sector. Another paper [159] investigates how corporations adjust their regulatory disclosures to be more machine-readable in the age of AI, influencing both the sentiment expressed and the speed of information dissemination in financial markets."
+    ],
+    "title": "A Survey of Large Language Models for Financial Applications: ...",
+    "url": "https://arxiv.org/html/2406.11903v1"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=web.media.mit.edu&size=128",
+    "snippets": [],
+    "title": "Large Language Models for Financial and Investment ...",
+    "url": "https://web.media.mit.edu/~xdong/paper/jpm24b.pdf"
+  },
+  {
+    "description": "PDF | Stock market has become one of the major components of economy not only in developed countries but also in third world developing countries.... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "3. Part of the database retrieved by applying our text analyzer algorithm on news archive of Dhaka Stock Exchange. ... Many papers on extracting information from texts and documents have been published. Abdullah, Rahaman and Rahman \u00b7 [2] proposed a model that shows users the set of stocks that is suitable for their choice based on their input.",
+      "While there are numerous research that explore the possibilities of machine learning and deep learning techniques for stock market prediction, due to the lack of inter-domain expertise (people who are experts in both data science and finance), most of these projects use relatively elementary methods and fail to account for many underlying constraints. This paper aims to create a stock market investment aide which predicts the price action of stock market instruments using neural networks that learn time series patterns in the historical price data, correlates the prediction with the sentiment score of the market for that day and thereby give the investor/trader a buy or sell signal.",
+      "Stock movements are hard to predict, but the researches covered by this review used textual and numerical data with different machine learning models to predict certain stocks' movements, achieving promising results. ... ... Many papers on extracting information from texts and documents have been published.",
+      "In our paper we present Deep Learning models with a layer differentiated training method which were used for the SHARED TASK @ CONSTRAINT 2021 sub-tasks COVID19 Fake News Detection in English and Hostile Post Detection in Hindi. We propose a Layer Differentiated training procedure for training a pre-trained ULMFiT [8] model."
+    ],
+    "title": "(PDF) Analysis of stock market using text mining and natural language ...",
+    "url": "https://www.researchgate.net/publication/261212654_Analysis_of_stock_market_using_text_mining_and_natural_language_processing"
+  },
+  {
+    "description": "These embeddings are integrated with existing stock features to serve as inputs for the LG model. The LG model, functioning as the policy network, is trained via Proximal Policy Optimization (PPO) (Schulman et al., 2017) with trajectories sampled from the training trading period. Another important category involves agents using LLMs as Alpha Miners, where the LLM generates alpha factors ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "These embeddings are integrated with existing stock features to serve as inputs for the LG model. The LG model, functioning as the policy network, is trained via Proximal Policy Optimization (PPO) (Schulman et al., 2017) with trajectories sampled from the training trading period. Another important category involves agents using LLMs as Alpha Miners, where the LLM generates alpha factors instead of directly making trading decisions.",
+      "As LLM powered agent is an emerging research topic, relatively few studies have explored applying this technique in financial trading. In this survey, we reviewed 27 papers that study using LLMs for financial trading with seven of which explicitly include the term \u201dagent\u201d in their titles. We identified these papers through multiple Google Scholar search using keywords such as \u201dLLM for trading\u201d and \u201dGPT stock agent.\u201d Each paper was manually assessed to confirm its relevance to financial trading with LLM agents.",
+      "The authors also found that the general-purpose LLMs such as GPT4(OpenAI, 2024) has great in-context learning capability in financial oriented tasks. LLMFactor(Wang et al., 2024a) first utilizes LLM\u2019s reasoning capability to identify important factors by asking the LLM to analysis relationship between historical news and corresponding stock price movements.",
+      "This effort represents a significant step forward in utilizing visual data within LLM frameworks for trading applications, by leveraging trading chart information, which forms the cornerstone of technical analysis widely used by traders. This pioneering work sets a promising direction for further exploration in integrating visual data into LLM-based trading agents. Simulated data and environments are created to replicate real-world scenarios, providing finance professionals with effective tools for understanding both market dynamics and LLM agent behavior. In (Zhang et al., 2024b), a group of LLM stock agents with varying personalities engage in trading within a simulated environment."
+    ],
+    "title": "Large Language Model Agent in Financial Trading: A Survey",
+    "url": "https://arxiv.org/html/2408.06361v1"
+  },
+  {
+    "description": "Discover how Large Language Models (LLMs) are revolutionizing financial analysis, risk management, and fraud detection.",
+    "favicon_url": "https://you.com/favicon?domain=arya.ai&size=128",
+    "snippets": [
+      "Financial institutions can explore AI-powered LLMs to enhance their financial operations today.",
+      "From automated customer support to stock market predictions, financial LLMs are helping institutions increase efficiency, enhance security, and drive smarter decision-making.",
+      "Generates concise summaries of earnings, stock performance, and investments, reducing manual effort and ensuring consistent, real-time, and accurate financial communication across stakeholders.",
+      "Forecasts market trends, stock movements, and economic changes using historical and real-time data, empowering finance professionals to make proactive, data-backed investment and business decisions."
+    ],
+    "title": "5 Best Large Language Models (LLMs) for Financial Analysis",
+    "url": "https://arya.ai/blog/5-best-large-language-models-llms-for-financial-analysis"
+  },
+  {
+    "description": "PDF | This paper comprehensively examines Large Language Models (LLMs) in sentiment analysis, specifically focusing on financial markets and exploring... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "This paper comprehensively examines Large Language Models (LLMs) in sentiment analysis, specifically focusing on financial markets and exploring the correlation between news sentiment and Bitcoin prices. We systematically categorize various LLMs used in financial sentiment analysis, highlighting their unique applications and features.",
+      "Liu et al.: Preparation of Papers for IEEE TRANSACTIONS and JOURNALS \u00b7 FIGURE 1. Bitcoin\u2019s Approach to Transaction Flow and Validation. analysis, especially in \ufb01nancial markets, there remains a sig- ni\ufb01cant gap in understanding the extent and nature of their \u00b7 impact on \ufb01nancial instruments, particularly cryptocurren- cies like Bitcoin. Existing literature predominantly focuses \u00b7 on the technical capabilities of LLMs without adequately \u00b7 exploring their practical implications in \ufb01nancial sentiment",
+      "FIGURE 2. Structure of this paper. ment analysis. Section 5 discusses the data collection method \u00b7 and categorization. Section 6 explores the applications of",
+      "Liu et al.: Preparation of Papers for IEEE TRANSACTIONS and JOURNALS \u00b7 tecture impact their effectiveness. We categorize LLMs based \u00b7 on their structural design, distinguishing between encoder- only, encoder-decoder, and decoder-only models, each with \u00b7 distinct capabilities in processing natural language. For an in- depth exploration of the relevant literature, we have included"
+    ],
+    "title": "(PDF) Large Language Models and Sentiment Analysis in Financial ...",
+    "url": "https://www.researchgate.net/publication/383248674_Large_Language_Models_and_Sentiment_Analysis_in_Financial_Markets_A_Review_Datasets_and_Case_Study"
+  },
+  {
+    "description": "The first model, which is also the benchmark in this paper, is the ARIMA time-series model. We experiment using different p, d and q parameters, but also with different window sizes. Window size is a crucial factor in the time-series analysis since it defines how many past values are considered ...",
+    "favicon_url": "https://you.com/favicon?domain=www.emerald.com&size=128",
+    "snippets": [
+      "The first model, which is also the benchmark in this paper, is the ARIMA time-series model. We experiment using different p, d and q parameters, but also with different window sizes. Window size is a crucial factor in the time-series analysis since it defines how many past values are considered for making a prediction.",
+      "Out of all the possible factors affecting the prices, it all comes down to the investors and their willingness to invest money. To extract the emotion of the investors, sentiment analysis is used. Existing studies have shown that there is a correlation between financial news headlines and stock market price movement. In the recent past, it is easily found a few examples of news headlines affecting the stock market and even cryptocurrency market prices. In this paper, natural language processing (NLP) is used to explore possibilities to advance the traditional approaches to stock price prediction.",
+      "From this review of recent papers, it can be concluded that the contributions are highly dependent on the chosen dataset and its timeline, country of interest and many more different factors, which makes it difficult to make straightforward comparisons and conclusions. Our paper contributes to the specification, implementation and testing of several different neural network architectures and utilizes the Wall Street Journal news to investigate if and to what extent sentiment calculated from news contributes to the improvement of these models.",
+      "Therefore, the optimal predictive model for specific research setting highly depends on specific objectives and available resources (Shilpaand and Shambhavi, 2021), leaving the door open for the enhancement of existing models. In addition, datasets differ according to the respective timelines and countries (Sidogi et al., 2021), which are both highly important factors that influence a particular setting and initial conditions of the research, thus leaving room for studying from diverse data. Our contribution lies in a systematic approach to exploring a variety of different neural network models and various parameters of these models in order to achieve the best performance, thus providing a theoretical framework to be used when choosing the appropriate model architecture depending on the particular purpose that goes beyond stock price prediction."
+    ],
+    "title": "Predicting stock market using natural language processing | Emerald ...",
+    "url": "https://www.emerald.com/insight/content/doi/10.1108/ajb-08-2022-0124/full/html"
+  },
+  {
+    "description": "PDF | The foundation of the economy is the stock market. People used to have the notion that investing in the stock market included more risks.... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Sentiment analysis is widely recognised as the most actively researched area in data mining. These days, a number of social media platforms have been created, and Twitter is a crucial instrument for exchanging and gathering people's thoughts, feelings, opinions, and attitudes about specific things. This paper presents a comparative analysis of Large Language Models (LLMs) and ML models for sentiment analysis on a Twitter dataset.",
+      "... [Show full abstract] This paper aims to compare the sentiment classification on Amazon product review dataset using the various types of LLMs, including BERT and TF-IDF models. Thus, the resultant dataset containing 59,794 total reviews was pre-processed and further split into the training and testing sets. When performing the Exploratory Data Analysis (EDA) it was determined there were three sentiments; Positive, Negative and Neutral.",
+      "The widespread usage of machine learning in different mainstream contexts has made deep learning the technique of choice in various domains, including finance. This systematic survey explores various scenarios employing deep learning in financial markets, especially the stock market. A key requirement for our methodology is its focus on research papers involving backtesting.",
+      "Our analysis identifies key research trends, commonalities, and divergences across studies, evaluating both their empirical contributions and methodological innovations. We highlight the strengths of existing research, such as improved sentiment extraction and the use of reinforcement learning to factor market feedback, alongside critical gaps in scalability, interpretability, and real-world validation."
+    ],
+    "title": "(PDF) Prediction of Stock Market Trends Based on Large Language Models",
+    "url": "https://www.researchgate.net/publication/384017320_Prediction_of_Stock_Market_Trends_Based_on_Large_Language_Models"
+  },
+  {
+    "description": "In this section, we trace the progress of textual analysis techniques in stock prediction works, and also explore some pioneering works that utilized Large Language Models (LLMs) in the financial domain.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "In this work, we explored the explainable stock prediction task, which was largely difficult to solve before generative models. For this task, we highlighted two challenges: the limitations of current LLMs in weighing varied market factors to make aggregate stock predictions, and the lack of annotated training samples for fine-tuning LLMs to make explanations.",
+      "Later works would define the challenges in text analysis more clearly, which was attributed to the chaotic and diverse nature of text data (Hu et al., 2018). This led to the popular use of attention-based models to capture the \u201dmost important\u201d information in texts directly from pre-trained text embeddings (Deng et al., 2019). Some other notable works include the use of Variational Auto-Encoders (VAEs) to model the latent factors in market information (Xu and Cohen, 2018), and Transformer models (Yang et al., 2020).",
+      "To demonstrate the effectiveness of our SEP-trained model, we compare it against baselines from both traditional deep-learning models and fine-tuned Large Language Models (LLMs). ... +Attention (Xu and Cohen, 2018): In this model, a Variational Auto-encoder (VAE) (Kingma and Welling, 2013) is used to model the latent market factors within texts.",
+      "PIXIU: A Large Language Model, Instruction Data and Evaluation Benchmark for Finance. arXiv preprint arXiv:2306.05443 (2023). Xu and Cohen (2018) Yumo Xu and Shay B Cohen. 2018. Stock movement prediction from tweets and historical prices. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)."
+    ],
+    "title": "Learning to Generate Explainable Stock Predictions using ...",
+    "url": "https://arxiv.org/html/2402.03659v3"
+  },
+  {
+    "description": "In this literature review, we investigate machine learning techniques that are applied for stock market prediction. A focus area in this literature re\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The main contributions of this review are: (1) an extensive examination of the data, in particular, the markets and stock indices covered in the predictions, as well as the 2173 unique variables used for stock market predictions, including technical indicators, macro-economic variables, and fundamental indicators, and (2) an in-depth review of the machine learning techniques and their variants deployed for the predictions. In addition, we provide a bibliometric analysis of these journal articles, highlighting the most influential works and articles."
+    ],
+    "title": "Machine learning techniques and data for stock market forecasting: ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0957417422001452"
+  },
+  {
+    "description": "The rapid integration of advanced machine learning techniques, particularly Large Language Models (LLMs), offers opportunities to enhance the equity stock rating process. This paper explores the application of LLMs to predict stock performance and generate stock ratings by ingesting diverse ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The rapid integration of advanced machine learning techniques, particularly Large Language Models (LLMs), offers opportunities to enhance the equity stock rating process. This paper explores the application of LLMs to predict stock performance and generate stock ratings by ingesting diverse datasets.",
+      "Another challenge is that we did not provide the model with many essential factors that analysts consider, such as projections of future performance, earnings call reports, investor sentiment, and other qualitative assessments. Additionally, we did not test the model\u2019s ability to process and understand extremely large amounts of information, which analysts often review in their evaluations. This study explores the potential of LLMs to predict stock ratings, a novel application within the finance sector.",
+      "Future work will extend the analysis to longer time horizons, incorporating more diverse data, and utilizing newer models to enhance detailed investment analysis and reports. \u2020\u2020journalyear: 2024\u2020\u2020conference: 5th ACM International Conference on AI in Finance; November 14\u201317, 2024; Brooklyn, NY, USA\u2020\u2020booktitle: 5th ACM International Conference on AI in Finance (ICAIF \u201924), November 14\u201317, 2024, Brooklyn, NY, USA\u2020\u2020doi: 10.1145/3677052.3698694\u2020\u2020isbn: 979-8-4007-1081-0/24/11 \u00b7 This paper was prepared for informational purposes by the Artificial Intelligence Research group of JPMorgan Chase & Co.",
+      "Our method explores best practices for enabling LLMs to utilize various modalities of financial data, and demonstrates its effectiveness at stock rating predictions. Since we do not fine-tune the model, the process remains cost-effective. When evaluated based on forward returns, our method outperforms financial analysts in our experiments."
+    ],
+    "title": "AI in Investment Analysis: LLMs for Equity Stock Ratings",
+    "url": "https://arxiv.org/html/2411.00856v1"
+  },
+  {
+    "description": "Analyzing both numbers and narrative context in company reports led to better price forecasts.",
+    "favicon_url": "https://you.com/favicon?domain=www.chicagobooth.edu&size=128",
+    "snippets": [
+      "It\u2019s a big leap forward from the days when intrepid analysts would scour quarterly reports manually as they searched for usable information, and it\u2019s one that the researchers suspect will lead to investors developing other sophisticated models tailored to meet specific investing needs. ... Eugene F. Fama and Kenneth R. French, \u201cCommon Risk Factors in the Returns on Stocks and Bonds,\u201d Journal of Financial Economics, February 1993.",
+      "The US Securities and Exchange Commission requires publicly traded companies to include a management discussion and analysis of quarterly and annual financial statements.",
+      "\u2014\u2014\u2014, \u201cA Five-Factor Asset Pricing Model,\u201d Journal of Financial Economics, April 2015. Alex Kim and Valeri Nikolaev, \u201cContext-Based Interpretation of Financial Information,\u201d Working paper, June 2023.",
+      "With this finding as a stepping stone, the researchers then incorporated the idea of number-context interactions into an asset pricing model. They did this by homing in on profitability, which is one of the factors foundational to investing identified by Chicago Booth Nobel Laureate Eugene F."
+    ],
+    "title": "Large Language Models Can Improve Stock Market Forecasts | Chicago ...",
+    "url": "https://www.chicagobooth.edu/review/large-language-models-can-improve-stock-market-forecasts"
+  },
+  {
+    "description": "This study is dedicated to assessing the capabilities of large language models (LLMs) such as GPT-3.5-Turbo, GPT-4, and GPT-4-Turbo in extracting structured information from scientific documents in...",
+    "favicon_url": "https://you.com/favicon?domain=www.tandfonline.com&size=128",
+    "snippets": [
+      "1. Mining experimental data from literature has become increasingly popular in materials science due to the vast amount of information available and the need to accelerate materials discovery using...",
+      "Large Language Model Is Not a Good Few-shot Information Extractor, but a Good Reranker for Hard Samples! ... Accelerating materials discovery using artificial intelligence, high performance computing and robotics ... Exploration of new superconductors and functional materials, and fabrication of superconducting tapes and wires of iron pnictides",
+      "However, in practice, authors in literature may frequently employ substantives such as commercial names, well-known terms, or crafted designations to describe samples, all of which streamline information in their research papers. Nonetheless, conveying such definitions can unambiguously be challenging. To address Q1, we evaluate the LLM\u2019s performance on NER tasks related to materials and properties extraction. For each task, we choose a pertinent dataset and analyse the performance of each LLM.",
+      "Through a comprehensive assessment of prominent models like GPT-3.5-Turbo, GPT-4, and GPT-4-Turbo, we aim to provide a preliminary assessment of their capabilities and constraints ... Mining experimental data from literature has become increasingly popular in materials science due to the vast amount of information available and the need to accelerate materials discovery using data-driven techniques. Data for machine learning in materials science is often sourced from published papers, material databases, laboratory experiments, or first-principles calculations [Citation1]. The introduction of big data in materials research has shifted from traditional random techniques to more efficient, data-driven methods."
+    ],
+    "title": "Full article: Mining experimental data from materials science ...",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/27660400.2024.2356506"
+  },
+  {
+    "description": "Text-mining technologies have substantially affected financial industries. As the data in every sector of finance have grown immensely, text mining has emerged as an important field of research in the domain of finance. Therefore, reviewing the recent literature on text-mining applications ...",
+    "favicon_url": "https://you.com/favicon?domain=jfin-swufe.springeropen.com&size=128",
+    "snippets": [
+      "Text-mining technologies have substantially affected financial industries. As the data in every sector of finance have grown immensely, text mining has emerged as an important field of research in the domain of finance. Therefore, reviewing the recent literature on text-mining applications in finance can be useful for identifying areas for further research.",
+      "The authors also implemented the JST model (Lin and He 2009) and Aspect-based Sentiment Analysis for analysing topic sentiments for stock prediction. The study\u2019s limitation was that the topics and models were selected beforehand. The accuracy was around 54%; however, the overall prediction in the model passed only if the stock went up or down. As the model just focused on sentiments and historical prices, the authors intended to add more factors to build a more accurate model.",
+      "The researchers mentioned that in future work they would incorporate the Saudi stock market closing values and sentiment features on tweets to explore the patterns between the Saudi stock index and public opinion on Twitter. Vijayan and Potey (2016) proposed a model based on recent news headlines that predicted the forex trends based on the given market situations. The information about the past forex currency pair trends was analysed along with the news headlines corresponding to that timeline, and it was assumed that the market would behave in the future as it had done in the past.",
+      "Not only the price models but also a number of different related models include macroeconomic variables (e.g., investment). Although macroeconomic indicators are important, they tend to be updated infrequently. Unlike such economic factors, public mood and sentiments (Xing et al. 2018a, b) are dynamic and can be instantaneously monitored. For instance, behavioural science researchers have found that the stock market is affected by the investors\u2019 psychology (Daniel et al."
+    ],
+    "title": "Comprehensive review of text-mining applications in finance | ...",
+    "url": "https://jfin-swufe.springeropen.com/articles/10.1186/s40854-020-00205-1"
+  },
+  {
+    "description": "Forecasting stock movements is a crucial research endeavor in finance, aiding traders in making informed decisions for enhanced profitability. Utilizing actual stock prices and correlating factors from the Wind platform presents a potent yet intricate forecasting approach.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Scientific Reports - PMANet: a time series forecasting model for Chinese stock price prediction",
+      "Utilizing actual stock prices and correlating factors from the Wind platform presents a potent yet intricate forecasting approach. While previous methodologies have explored this avenue, they encounter challenges including limited comprehension of interrelations among stock data elements, diminished accuracy in extensive series, and struggles with anomaly points. This paper introduces an advanced hybrid model for stock price prediction, termed PMANet.",
+      "Then the process of exploring new paths and updating the global optimal paths is carried out by repeating this process for the number of iterations (N), thus balancing between the global optimal solution and the current solution, in this way the algorithm is able not only to maintain the search for the current optimal solution, but also to explore new solutions and to explore more efficiently in the space of multimutant points, for experiments on APSO see subsection \"Effectiveness of APSO\". Stock prediction presents a multifaceted challenge, influenced by a myriad of factors encompassing economic, market, and political realms.",
+      "Employing the Shanghai Stock Exchange as their study sample, their findings showcased that the proposed method outperformed traditional and benchmark methods in terms of both return and risk. The stock market's nonlinearity, noise, non-stationarity, and intricate influencing factors pose significant challenges for traditional machine learning methods18."
+    ],
+    "title": "PMANet: a time series forecasting model for Chinese stock price ...",
+    "url": "https://www.nature.com/articles/s41598-024-69303-9"
+  },
+  {
+    "description": "In the dynamic and data-driven landscape of financial markets, this paper introduces MarketSenseAI, a novel AI-driven framework leveraging the advanced reasoning capabilities of GPT-4 for scalable stock selection. MarketSenseAI incorporates Chain of Thought and In-Context Learning methodologies ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The overall decision to \u201dhold\u201d reflects a prudent approach, considering the various contrasting factors at play. Table 6: Apple Inc. Generated Signal and Explanation (November 2023) ... Note: Green text highlights positive developments for the company/stock, while red text marks elements with negative sentiment. The analysis of text similarity in MarketSenseAI, as shown in Figure 6 and detailed in Table 7, reveals how the model\u2019s reasoning aligns with the dynamics of the input data, crucial for generating monthly investment signals.",
+      "This paper makes several key contributions to the evolving discourse on the fusion of AI and financial analysis, primarily through the presentation of an innovative service for stock analysis, named MarketSenseAI111MarketSenseAI service is available at www.marketsense-ai.com., rooted in the power of LLMs.",
+      "In essence, this paper pioneers the integration of multi-source data analysis with the cognitive capabilities of LLMs to redefine stock selection and portfolio management.",
+      "In this context, Exchange Traded Funds (ETFs) offer a practical solution. ETFs enable these investors to engage with the broader market more effectively, an approach often referred to as investing in \u2019beta.\u2019 \u00b7 Similarly, small to medium-sized asset or wealth management firms encounter their own set of challenges. They may find it difficult to conduct in-depth analysis of individual stocks due to resource constraints or limited selection scope."
+    ],
+    "title": "Can Large Language Models Beat Wall Street? Unveiling the Potential ...",
+    "url": "https://arxiv.org/html/2401.03737v1"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=scholarworks.lib.csusb.edu&size=128",
+    "snippets": [],
+    "title": "Machine Learning Stock Market Prediction Studies",
+    "url": "https://scholarworks.lib.csusb.edu/cgi/viewcontent.cgi?article=1435&context=jitim"
+  },
+  {
+    "description": "In the fast-evolving artificial intelligence era, the intersection of natural language processing and financial analysis has attracted significant attention, primarily due to its potential to provide valuable insights into financial market behavior. Sentiment analysis of financial news articles ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "In the fast-evolving artificial intelligence era, the intersection of natural language processing and financial analysis has attracted significant attention, primarily due to its potential to provide valuable insights into financial market behavior. Sentiment analysis of financial news articles is a crucial aspect of this intersection, providing cues about market sentiment that may affect stock price dynamics.",
+      "Discover Computing - In the fast-evolving artificial intelligence era, the intersection of natural language processing and financial analysis has attracted significant attention, primarily due to...",
+      "This paper investigates the potential of LLMs, taking GLM [3] as an example, in financial news sentiment analysis, capturing market sentiments that could influence stock prices effectively. This study aims to explore how these advanced models can be adapted via techniques like prompt engineering and domain knowledge insertion to provide precise and timely sentiment predictions.",
+      "The paper presents a novel prompt engineering strategy, DK-CoT, to enhance the performance of LLMs in financial news sentiment analysis, which has successfully addressed the research questions outlined in Sect. 1.2. For RQ 1, we explored the potential of LLMs such as GLM in financial news sentiment analysis, demonstrating that advanced models with extensive pre-training can be adapted via prompt engineering, domain knowledge insertion, and ensemble methods to provide precise and efficient sentiment predictions."
+    ],
+    "title": "Leveraging large language model as news sentiment predictor in ...",
+    "url": "https://link.springer.com/article/10.1007/s10791-025-09573-7"
+  },
+  {
+    "description": "International Journal of Crowd Science \u00b7 Article publication date: 5 March 2021",
+    "favicon_url": "https://you.com/favicon?domain=www.emerald.com&size=128",
+    "snippets": [
+      "Many studies have shown that deep learning has superior efficiency than other models (Marmer, 2008) and neural network models excel regression and discriminant models (Refenes et al., 1994). In terms of feature selection, some scholars explore the correlation between new features and stock price and some new features, including political factors, macroeconomic factors and investors\u2019 sentiment, etc., have been incorporated into the prediction model (Cervello-Royo et al., 2015; Patel et al., 2015).",
+      "Doc2Vec is a method proposed in 2014 to map various length text into the fixed-length vector, which can mine the semantic and emotional information hidden in the text (Le and Mikolov, 2014). Doc2Vec is based on a neural network language model to learn the vector expression of each text, mainly including two models, i.e.",
+      "Doc2Vec model can be used for a lot of unstructured text data mining and NLP research, such as false comment identification, document classification, document emotion analysis and other tasks. In this paper, the Doc2Vec model is used to extract the features of social media text and form text feature vectors.",
+      "However, existing approaches on stock price prediction have two main limitations. First, although the text features are used in the existing models to better incorporate the important information in social media, they are usually mined based on traditional text mining technologies, such as the bag-of-word model."
+    ],
+    "title": "A stock price prediction method based on deep learning technology ...",
+    "url": "https://www.emerald.com/insight/content/doi/10.1108/ijcs-05-2020-0012/full/html"
+  },
+  {
+    "description": "The keywords used in traditional stock price prediction are mainly based on literature and experience. This study designs a new text mining method for keywords augmentation based on natural languag...",
+    "favicon_url": "https://you.com/favicon?domain=onlinelibrary.wiley.com&size=128",
+    "snippets": [
+      "School of Statistics, Southwestern University of Finance and Economics, Chengdu 610071, Sichuan, China swufe.edu.cnSearch for more papers by this author ... The keywords used in traditional stock price prediction are mainly based on literature and experience. This study designs a new text mining method for keywords augmentation based on natural language processing models including Bidirectional Encoder Representation from Transformers (BERT) and Neural Contextualized Representation for Chinese Language Understanding (NEZHA) natural language processing models.",
+      "(2019) constructed a stock return prediction model in fundamental quantitative investment by using cyclic neural network and long- and short-term memory networks and other technologies, and the results show that the LSTM model is significantly superior to the traditional linear algorithm in identifying the complex relationship between anomaly factor prediction and excess return [32]. Liu et al. showed that LSTM could capture the relationship between historical climate data, which has good practicability for predicting greenhouse climate [33]. Mehtab, Baek et al.\u2019s research also shows that the deep learning LSTM model has outstanding performance in stock prediction [34, 35]. Based on the above analysis, the following research methods are presented in this study.",
+      "6 Mehtab S. and Sen J., Stock Price Prediction Using Convolutional Neural Networks on a Multivariate Timeseries, 2020, https://EconPapers.repec.org/RePEc:arx:papers:2001.09769. ... 7 Dos L., Pinheiro S., and Dras M., Stock market prediction with deep learning: a character-based neural language model for event-based trading, Proceedings of the Australasian Language Technology Association Workshop 2017, December 2017, Brisbane, Australia, 6\u201315. ... 8 Xu X. C. and Tian K., A new method of stock index prediction based on sentiment analysis of financial text, Journal of Quantitative and Technical Economics.",
+      "By introducing Input Gate, Forget Gate, and Output Gate, LSTM can effectively solve the problem that the RNN network cannot capture the long-distance dependence in the long-distance sequence as discussed by Hochreiter and Schmidhuber [37]. This study uses NEZHA model to obtain the keyword and the LSTM model to predict the stock price sequence. LSTM can mine the dependence between the keywords\u2019 web search index and the stock price compared with traditional linear models."
+    ],
+    "title": "Stock Price Prediction Based on Natural Language Processing1 - ...",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1155/2022/9031900"
+  },
+  {
+    "description": "This study is dedicated to evaluating the capabilities of advanced large language models (LLMs) such as GPT-3.5-Turbo, GPT-4, and GPT-4-Turbo in the extraction of structured information from scientific documents within the field of materials science. We introduce a novel methodology for the ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Few-shot prompting refers to the model\u2019s ability to adapt and perform a new task with minimal examples or prompts, while zero-shot prompting denotes the model\u2019s capability to generalise to tasks it has not been explicitly trained on, emphasising transfer learning within the language domain. Finally, fine-tuning involves adjusting the parameters of a pre-trained model on a specific task or domain using a smaller, task-specific dataset to enhance its performance for that particular application. We selected two datasets for evaluation: MeasEval [29], a SemEval 2021 task of extracting counts, measurements, and related context from scientific documents and SuperMat, an annotated and linked dataset of research papers on superconductors [30]. SuperMat contains both materials and properties and for copyright reasons is not publicly distributed.",
+      "This study is dedicated to evaluating the capabilities of advanced large language models (LLMs) such as GPT-3.5-Turbo, GPT-4, and GPT-4-Turbo in the extraction of structured information from scientific documents within the field of materials science. We introduce a novel methodology for the comparative analysis of intricate material expressions, emphasising the standardisation of chemical formulas to tackle the complexities inherent in materials science information assessment.",
+      "However, in practice, authors in literature may frequently employ substantives such as commercial names, well-known terms, or crafted designations to describe samples, all of which streamline information in their research papers. Nonetheless, conveying such definitions can unambiguously be challenging. To address Q1, we evaluate the LLM\u2019s performance on NER tasks related to materials and properties extraction. For each task, we choose a pertinent dataset and analyse the performance of each LLM.",
+      "Overall, the results suggest that although LLMs demonstrate relevant reasoning skills in connecting concepts, for tasks requiring extracting complex domain-specific entities like materials, specialised models are currently a better choice. \u2020\u2020articletype: RESEARCH PAPER"
+    ],
+    "title": "Mining experimental data from Materials Science literature with ...",
+    "url": "https://arxiv.org/html/2401.11052v1"
+  },
+  {
+    "description": "Discover how financial professionals can select, evaluate, and deploy AI models to boost efficiency, insights, and ROI in their workflows.",
+    "favicon_url": "https://you.com/favicon?domain=rpc.cfainstitute.org&size=128",
+    "snippets": [
+      "Financial institutions are beginning to explore how these models can enhance various processes, such as analyzing financial reports, automating customer service, detecting fraud, and conducting market sentiment analysis. While some organizations are experimenting with these technologies, widespread integration is limited due to such factors as data privacy concerns, regulatory compliance, and the need for specialized fine-tuning to ensure accuracy in finance-specific applications.",
+      "It focuses on core NLP-focused tasks, such as named entity recognition, news headline classification, and sentiment analysis, providing a foundation for evaluating models\u2019 basic understanding of financial language. FLARE: Introduced in 2023, FLARE expanded the scope of financial benchmarks by including both NLP and financial prediction tasks, such as stock movement forecasting.",
+      "FinLLMs excel in tasks requiring financial language understanding, such as sentiment analysis, but tend to lag behind general purpose models in areas needing complex reasoning or mathematical skills. In such tasks as stock prediction and summarization, both model types encounter limitations, though FinLLMs gain some advantage through specialized tuning.",
+      "Transitioning from exploring the potential of LLMs in finance to selecting the right model is a critical step. With the vast and evolving array of models available, financial institutions face an important decision: choosing between open-source and closed-source options. Each model type presents unique benefits and challenges, impacting such factors as customization, data control, and cost."
+    ],
+    "title": "For LLMs in the Financial Industry | A Practical Guide",
+    "url": "https://rpc.cfainstitute.org/research/the-automation-ahead-content-series/practical-guide-for-llms-in-the-financial-industry"
+  }
+]

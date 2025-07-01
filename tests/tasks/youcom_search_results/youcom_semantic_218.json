@@ -1,0 +1,285 @@
+[
+  {
+    "description": "I'm an LLM Research Engineer with over a decade of experience in artificial intelligence. My work bridges academia and industry, with roles including senior staff at an AI company and a statistics professor. My expertise lies in LLM research and the development of high-performance AI systems, ...",
+    "favicon_url": "https://you.com/favicon?domain=sebastianraschka.com&size=128",
+    "snippets": [
+      "I'm an LLM Research Engineer with over a decade of experience in artificial intelligence. My work bridges academia and industry, with roles including senior staff at an AI company and a statistics professor. My expertise lies in LLM research and the development of high-performance AI systems, with a deep focus on practical, code-driven implementations.",
+      "A lot has happened this month, especially with the releases of new flagship models like GPT-4.5 and Llama 4. But you might have noticed that reactions to the...",
+      "RLHF Step 1, shown below, is a supervised fine-tuning step to create the base model for further RLHF fine-tuning. Annotated figure from InstructGPT paper, https://arxiv.org/abs/2203.02155 \u00b7 In RLHF step 1, we create or sample prompts (from a database, for example) and ask humans to write good-quality responses. We then use this dataset to fine-tune the pre-trained base model in a supervised fashion.",
+      "In RLHF Step 2, we then use this model from supervised fine-tuning (SFT) to create a reward model, as shown below. Annotated figure from InstructGPT paper, https://arxiv.org/abs/2203.02155 \u00b7 As depicted in the figure above, for each prompt, we generate four responses from the fine-tuned LLM created in the prior step."
+    ],
+    "title": "The State of Reinforcement Learning for LLM Reasoning",
+    "url": "https://sebastianraschka.com/blog/2025/the-state-of-reinforcement-learning-for-llm-reasoning.html"
+  },
+  {
+    "description": "In this post, we introduce a state-of-the-art method to fine-tune LLMs by reinforcement learning, reviewed the pros and cons of RLHF vs. RLAIF vs. DPO, and saw how to scale LLM fine-tuning efforts with RLAIF. We also see how to implement an end-to-end RLAIF pipeline on SageMaker using the Hugging ...",
+    "favicon_url": "https://you.com/favicon?domain=aws.amazon.com&size=128",
+    "snippets": [
+      "In this post, we introduce a state-of-the-art method to fine-tune LLMs by reinforcement learning, reviewed the pros and cons of RLHF vs. RLAIF vs. DPO, and saw how to scale LLM fine-tuning efforts with RLAIF. We also see how to implement an end-to-end RLAIF pipeline on SageMaker using the Hugging Face Transformer and TRL libraries, and using either off-the-shelf toxicity reward models to align responses during PPO or by directly prompting an LLM to generate quantitative reward feedback during PPO.",
+      "However, these methods often result in LLMs expressing unintended behaviors such as making up facts (hallucinations), generating biased or toxic text, or simply not following user instructions. This leads to responses that are untruthful, toxic, or simply not helpful to the user. In other words, these models are not aligned with their users. Supervised learning can help tune LLMs by using examples demonstrating some desired behaviors, which is called supervised fine-tuning (SFT).",
+      "Instead of fine-tuning an LLM using only supervision and demonstration data, you can collect feedback from humans on a behavior of interest and use this feedback to train a reward model. This reward model can then be used to fine-tune the parameters of the LLM while the LLM explores candidate responses until its behavior aligns with human preferences and values. This method is called reinforcement learning from human feedback (Ouyang et al.",
+      "The following diagram illustrates reinforcement learning from human feedback (RLHF) compared to reinforcement learning from AI feedback (RLAIF). Recently, Lee et al. (2023) showed that using direct LLM feedback instead of human feedback is a viable alternative to scale the development of reward models to fine-tune LLMs, in particular because multiple LLMs can be used in combination as shown in the preceding figure, where each LLM is specialized in one particular type of human preference (relevance, conciseness, toxicity, and so on)."
+    ],
+    "title": "Fine-tune large language models with reinforcement learning from ...",
+    "url": "https://aws.amazon.com/blogs/machine-learning/fine-tune-large-language-models-with-reinforcement-learning-from-human-or-ai-feedback/"
+  },
+  {
+    "description": "Learn how reinforcement learning from human feedback can be used to train models on tasks that are harder to specify.",
+    "favicon_url": "https://you.com/favicon?domain=labelbox.com&size=128",
+    "snippets": [
+      "The reinforcement learning process aligns the behavior of the supervised policy (in this case, the baseline fine-tuned LLM) to the preferences of labelers. Further iterations on steps 2 and 3 will continue to improve model performance. Reinforcement learning from human feedback is a powerful tool to improve model performance, particularly in cases where an objective is hard to explicitly specify as a reward function. RLHF unlocks a wide variety of performance enhancements from foundation models, the impacts of which have already sent ripples through the tech industry and mainstream culture.",
+      "The highly nuanced improvements enabled by RLHF have significant impacts on the usability and performance to a model. This can include subtle improvements in tone, reductions in bias and toxicity, and domain specific content generation. The focus of this post will be on how to leverage RLHF to fine-tune large language models (LLMs). As stated in \"Deep reinforcement learning from human preferences,\" RLHF emerged from a core problem in reinforcement learning: the fact that \u201cmany [reinforcement learning] tasks involve goals that are complex, poorly-defined, or hard to specify.\"",
+      "The next step in the RLHF process is to collect human feedback on these completions, specifically in the form of comparisons. This comparison data is then used to train a reward model. The reward model will then be used to optimize the fine-tuned supervised learning model through reinforcement learning (see step 3).",
+      "The supervised learning baseline is fine-tuned to maximize the reward using a reinforcement learning (RL) algorithm. Proximal Policy Optimization (PPO) is an industry-leading class of RL algorithms developed by OpenAI."
+    ],
+    "title": "Using reinforcement learning from human feedback to fine-tune large ...",
+    "url": "https://labelbox.com/blog/using-reinforcement-learning-from-human-feedback-to-fine-tune-large-language-models/"
+  },
+  {
+    "description": "Large language models (LLMs) are a type of artificial intelligence, which operate by predicting and assembling sequences of words that are statistical\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Large language models (LLMs) are a type of artificial intelligence, which operate by predicting and assembling sequences of words that are statistically likely to follow from a given text input. With this basic ability, LLMs are able to answer complex questions and follow extremely complex instructions.",
+      "Products created using LLMs such as ChatGPT by OpenAI and Claude by Anthropic have created a huge amount of traction and user engagements and revolutionized the way we interact with technology, bringing a new dimension to human-computer interaction. Fine-tuning is a process in which a pretrained model, such as an LLM, is further trained on a custom data set to adapt it for specialized tasks or domains.",
+      "In this review, we outline some of the major methodologic approaches and techniques that can be used to fine-tune LLMs for specialized use cases and enumerate the general steps required for carrying out LLM fine-tuning. We then illustrate a few of these methodologic approaches by describing several specific use cases of fine-tuning LLMs across medical subspecialties.",
+      "Finally, we close with a consideration of some of the benefits and limitations associated with fine-tuning LLMs for specialized use cases, with an emphasis on specific concerns in the field of medicine."
+    ],
+    "title": "Fine-Tuning Large Language Models for Specialized Use Cases - ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2949761224001147"
+  },
+  {
+    "description": "Learn about OpenAI's reinforcement fine-tuning, a new technique for refining large language models using a reward-driven training loop.",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "RFT is built on the backbone of reinforcement learning (RL), where agents are rewarded positively or negatively based on their actions, enabling them to align with the behavior we expect of them. This is achieved by assigning a score to the agent\u2019s output. Through iterative training based on these scores, agents learn without needing to explicitly understand the rules or memorize predefined steps for solving the problem. When combined with efforts to improve LLMs on specialized tasks, RFT emerges out of RL and fine-tuning techniques.",
+      "Supervised fine-tuning (SFT) involves taking a pre-trained model and adjusting it with additional data using supervised learning techniques. In practice, SFT works best when the goal is to align the model\u2019s output or format to a particular dataset or to make sure the model follows certain instructions. While supervised fine-tuning and reinforcement fine-tuning both rely on labeled data, they use it differently.",
+      "Reinforcement learning from AI feedback (RLAIF) leverages AI models to provide feedback during LLM training, enhancing performance and scalability. ... Learn how fine-tuning large language models (LLMs) improves their performance in tasks like language translation, sentiment analysis, and text generation.",
+      "Reinforcement learning has been integrated into the fine-tuning of the LLMs before, but OpenAI\u2019s reinforcement fine-tuning seems to take that to a higher level."
+    ],
+    "title": "What Is OpenAI's Reinforcement Fine-Tuning? | DataCamp",
+    "url": "https://www.datacamp.com/blog/reinforcement-fine-tuning"
+  },
+  {
+    "description": "Discover how LLM reinforcement learning improves AI models through human feedback. Learn its applications and benefits!",
+    "favicon_url": "https://you.com/favicon?domain=www.labellerr.com&size=128",
+    "snippets": [
+      "Explore how LLM reinforcement learning with human feedback (RLHF) fine-tunes large language models, improving natural language responses and optimizing AI behavior through rewards, human input, and iterative learning for enhanced model performance.",
+      "This refinement process employs reinforcement learning methods, incorporating techniques like Kullback-Leibler (KL) divergence and Proximal Policy Optimization (PPO). Figure: Techniques to Fine-Tune Model with Reinforcement Learning with Human Feedback",
+      "Reinforcement Learning: The reward model is fine-tuned using outputs from the primary model, and it receives quality scores from testers.",
+      "Subsequently, the fine-tuned model was refined further through RLHF, transforming it into a version suitable for customer interactions \u2013 think giving it a smiley face \u2013 and eliminating the Shoggoth analogy."
+    ],
+    "title": "LLM Reinforcement Learning: Enhancing AI Performance [Updated]",
+    "url": "https://www.labellerr.com/blog/reinforcement-learning-from-human-feedback/"
+  },
+  {
+    "description": "Explore how reinforcement fine-tuning outperforms supervised fine-tuning in data-scarce scenarios. Learn about the advantages of reinforcement learning techniques in optimizing machine learning models with limited data",
+    "favicon_url": "https://you.com/favicon?domain=predibase.com&size=128",
+    "snippets": [
+      "The best way to get started with Reinforcement Fine-Tuning (RFT) or Supervised Fine-Tuning (SFT) is by joining our early access program at Predibase. Our platform makes it easy to fine-tune and deploy open-source LLMs without the complexity of managing infrastructure.",
+      "Reinforcement Fine-Tuning (RFT) is a new alternative to Supervised Fine-Tuning (SFT) that applies reinforcement learning to supervised tasks, improving model performance on specific tasks and domains. As the method used to fine-tune DeepSeek v3 into DeepSeek-R1-Zero, RFT marks a paradigm shift for the industry, opening up new domains and use cases previously considered incompatible with SFT, and able to achieve meaningful performance gains with as few as a dozen examples.",
+      "Reinforcement Fine-Tuning (RFT) is a method that applies reinforcement learning techniques to fine-tune language models without requiring labeled data. Unlike traditional Supervised Fine-Tuning (SFT), which adjusts model weights based on fixed prompt-completion pairs, RFT optimizes model behavior using a reward function that scores the correctness of generated outputs.",
+      "This was demonstrated by Jiayi Pan when he showed the \u201caha\u201d moment from the DeepSeek paper (where it learned to reason intelligently about the task) could be recreated to solve the very specific task of playing the game Countdown. Following Philipp Schmid\u2019s reproduction of these results, we ran a set of tests with RFT (using GRPO) on this dataset. Additionally, using a solver to curate a dataset consisting of problems and ground truth solutions, we fine-tuned models with SFT."
+    ],
+    "title": "Why Reinforcement Learning Beats SFT with Limited Data",
+    "url": "https://predibase.com/blog/how-reinforcement-learning-beats-supervised-fine-tuning-when-data-is-scarce"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=rlhfbook.com&size=128",
+    "snippets": [],
+    "title": "Reinforcement Learning from Human Feedback",
+    "url": "https://rlhfbook.com/book.pdf"
+  },
+  {
+    "description": "Boost LLM performance with OpenAI's reinforcement fine-tuning (ReFT): A fusion of reinforcement learning and fine-tuning for superior reasoning skills.",
+    "favicon_url": "https://you.com/favicon?domain=www.superannotate.com&size=128",
+    "snippets": [
+      "The training utilized advanced computational resources, and specific parameters were set for the warm-up stage, the number of training epochs, and the learning rate. The ReFT approach was rigorously tested against these baselines to validate its effectiveness. Table 1: Value accuracy comparison among the baselines and proposed ReFT method fine-tuned with two foundation models on all datasets: Source \u00b7 In comparative studies shown in Table 1, reinforced fine-tuning (ReFT) consistently outperforms supervised fine-tuning (SFT) and self-training methods across various datasets, including GSM8K, SVAMP, and MathQA.",
+      "Reinforced fine-tuning (ReFT) starts with supervised fine-tuning (SFT), typically lasting one or two cycles. During this phase, the model gains an essential capability to solve mathematical problems correctly. Following this, ReFT takes the model's training to the next level by employing a reinforcement learning (RL) algorithm using methods like proximal policy optimization (PPO).",
+      "In their study, the authors compare reinforced fine-tuning (ReFT) with supervised fine-tuning (SFT) and two types of self-training methodologies: offline self-training (OfflineST) and online self-training (Online-ST). SFT is a basic method where the language model is fine-tuned on training data, while the self-training approaches utilize model-generated samples for further training.",
+      "ReFT itself comes from reinforcement learning (RL). In RL, an agent learns by receiving positive or negative rewards for its actions. Here, the \u201cactions\u201d are the model\u2019s outputs, which get scored to show how well they meet our expectations."
+    ],
+    "title": "ReFT: Enhancing LLMs with reinforcement fine-tuning | SuperAnnotate",
+    "url": "https://www.superannotate.com/blog/reinforced-fine-tuning"
+  },
+  {
+    "description": "Reinforcement learning from human feedback (RLHF) is a machine learning technique in which a \u201creward model\u201d is trained by human feedback to optimize an AI agent",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "Prior to the start of explicit reinforcement learning, supervised fine-tuning (SFT) is used to prime the model to generate its responses in the format expected by users. As alluded to earlier, the LLM pre-training process optimizes models for completion: predicting the next words in a sequence began with the user\u2019s prompt by replicating linguistic patterns learned during model pre-training. Sometimes, LLMs won\u2019t complete a sequence in the way a user wants: for example, if a user\u2019s prompt is, \u201cteach me how to make a resum\u00e9,\u201d the LLM might respond with \u201cusing Microsoft Word.\u201d It\u2019s a valid way to complete the sentence, but not aligned with user\u2019s goal.",
+      "Perhaps most importantly, OpenAI\u2019s 2017 paper noted that its methodology\u2014particularly the introduction of the proximal policy optimization (PPO) algorithm for updating model weights\u2014greatly reduced the cost of gathering and distilling the necessary human feedback. This paved the way for the eventual integration of RLHF with the field of natural language processing (NLP), with the resulting advancements helping to usher both LLMs and RLHF into the vanguard of AI research.",
+      "RLHF is generally employed to fine-tune and optimize a pre-trained model, rather than as an end-to-end training method. For example, InstructGPT used RLHF to enhance the pre-existing GPT\u2014that is, Generative Pre-trained Transformer\u2014model.",
+      "RLHF has since been used in the training of state-of-the-art LLMs from OpenAI, DeepMind, Google6 and Anthropic.7 \u00b7 Discover expertly curated insights and news on AI, cloud and more in the weekly Think Newsletter. ... Conceptually, reinforcement learning (RL) aims to emulate the way that human beings learn: AI agents learn holistically through trial and error, motivated by strong incentives to succeed."
+    ],
+    "title": "What Is Reinforcement Learning From Human Feedback (RLHF)? | IBM",
+    "url": "https://www.ibm.com/think/topics/rlhf"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Here are some papers on RLHF that pre-date the LM focus: TAMER: Training an Agent Manually via Evaluative Reinforcement (Knox and Stone 2008): Proposed a learned agent where humans provided scores on the actions taken iteratively to learn a reward model. Interactive Learning from Policy-Dependent Human Feedback (MacGlashan et al. 2017): Proposed an actor-critic algorithm, COACH, where human feedback (both positive and negative) is used to tune the advantage function.",
+      "A Survey of Preference-based Reinforcement Learning Methods (Wirth et al. 2017): Summarizes efforts above with many, many more references. And here is a snapshot of the growing set of \"key\" papers that show RLHF's performance for LMs: Fine-Tuning Language Models from Human Preferences (Zieglar et al. 2019): An early paper that studies the impact of reward learning on four specific tasks.",
+      "In their shared papers, Anthropic used transformer models from 10 million to 52 billion parameters trained for this task. DeepMind has documented using up to their 280 billion parameter model Gopher. It is likely that all these companies use much larger models in their RLHF-powered products. This initial model can also be fine-tuned on additional text or conditions, but does not necessarily need to be.",
+      "Given a prompt, x, from the dataset, the text y is generated by the current iteration of the fine-tuned policy. Concatenated with the original prompt, that text is passed to the preference model, which returns a scalar notion of \u201cpreferability\u201d, ... r_\\theta r\u03b8\u200b. In addition, per-token probability distributions from the RL policy are compared to the ones from the initial model to compute a penalty on the difference between them. In multiple papers from OpenAI, Anthropic, and DeepMind, this penalty has been designed as a scaled version of the Kullback\u2013Leibler (KL) divergence between these sequences of distributions over tokens,"
+    ],
+    "title": "Illustrating Reinforcement Learning from Human Feedback (RLHF)",
+    "url": "https://huggingface.co/blog/rlhf"
+  },
+  {
+    "description": "Recently, reinforcement learning (RL) has been shown to greatly enhance the reasoning capabilities of large language models (LLMs), and RL-based approaches have been progressively applied to visual multimodal tasks. However, the audio modality has largely been overlooked in these developments.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2503.11197: Reinforcement Learning Outperforms Supervised Fine-Tuning: A Case Study on Audio Question Answering",
+      "View a PDF of the paper titled Reinforcement Learning Outperforms Supervised Fine-Tuning: A Case Study on Audio Question Answering, by Gang Li and 5 other authors View PDF HTML (experimental) Abstract:Recently, reinforcement learning (RL) has been shown to greatly enhance the reasoning capabilities of large language models (LLMs), and RL-based approaches have been progressively applied to visual multimodal tasks.",
+      "We leverage the group relative policy optimization (GRPO) algorithm to Qwen2-Audio-7B-Instruct, and our experiments demonstrated state-of-the-art performance on the MMAU Test-mini benchmark, achieving an accuracy rate of 64.5%. The main findings in this technical report are as follows: 1) The GRPO algorithm can be effectively applied to large audio language models (LALMs), even when the model has only 8.2B parameters; 2) With only 38k post-training samples, RL significantly outperforms supervised fine-tuning (SFT), indicating that RL-based approaches can be effective without large datasets; 3)",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2503.11197] Reinforcement Learning Outperforms Supervised ...",
+    "url": "https://arxiv.org/abs/2503.11197"
+  },
+  {
+    "description": "Understanding the problem formulation and basic algorithms for RL..",
+    "favicon_url": "https://you.com/favicon?domain=cameronrwolfe.substack.com&size=128",
+    "snippets": [
+      "There's actually also a recent paper called Direct Policy Optimization where they skip the RL part and update the LLM directly on the reward signal in supervised fashion: https://arxiv.org/abs/2305.18290 \u00b7 That's a small detail and I love the article though, and I do think that RL(HF) is a worthwhile approach for improving the helpfulness & safety of LLMs!",
+      "Recent AI research has revealed that reinforcement learning\u2014more specifically, reinforcement learning from human feedback (RLHF)\u2014is a key component of training a state-of-the-art large language model (LLM). Despite this fact, most open-source research on language models heavily emphasizes supervised learning strategies, such as supervised fine-tuning (SFT).",
+      "We will start with basic definitions and approaches\u2014covered in this overview\u2014and work our way towards modern algorithms (e.g., PPO) that are used to finetune language models with RLHF. Throughout this process, we will explore example implementations of these ideas, aiming to demystify and normalize the use of reinforcement learning in the language modeling domain. As we will see, these ideas are easy to use in practice if we take the time to understand how they work! Comparison of supervised and reinforcement learning",
+      "Although RL is just another way of training a neural network, the training setup is different compared to supervised learning. Similarly to how humans learn, RL trains neural networks through trial and error. More specifically, the neural network will produce an output, receive some feedback about this output, then learn from the feedback. For example, when finetuning a language model with reinforcement learning from human feedback (RLHF), the language model produces some text then receives a score/reward from a human annotator2 that captures the quality of that text; see above."
+    ],
+    "title": "Basics of Reinforcement Learning for LLMs",
+    "url": "https://cameronrwolfe.substack.com/p/basics-of-reinforcement-learning"
+  },
+  {
+    "description": "This technical report thoroughly examines the process of fine-tuning Large Language Models (LLMs), integrating theoretical insights and practical applications. It begins by tracing the historical development of LLMs, emphasising their evolution from traditional Natural Language Processing (NLP) ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Versatility: The technique has proven effective across diverse fine-tuning scenarios, including supervised fine-tuning, direct preference optimisation, and continual learning. Table 6.3: Comparative Analysis of Half Fine-Tuning (HFT) and Low-Rank Adaptation (LoRA). Lamini [69] was introduced as a specialised approach to fine-tuning Large Language Models (LLMs), targeting the reduction of hallucinations.",
+      "Data annotation involves labelling or tagging textual data with specific attributes relevant to the model\u2019s training objectives. This process is crucial for supervised learning tasks and greatly influences the performance of the fine-tuned model.",
+      "Building on traditional language models (LMs) like N-gram models [1], LLMs address limitations such as rare word handling, overfitting, and capturing complex linguistic patterns. Notable examples, such as GPT-3 and GPT-4 [2], leverage the self-attention mechanism within Transformer architectures to efficiently manage sequential data and understand long-range dependencies. Key advancements include in-context learning for generating coherent text from prompts and Reinforcement Learning from Human Feedback (RLHF) [3] for refining models using human responses.",
+      "Model Description: FinGPT, an open-source LLM tailored for the financial sector, enhances financial research and cooperation by promoting data accessibility and handling finance-specific issues like data acquisition and quality [56]. Base Model: LlaMA, ChatGLM, and other Transformer Models Fine-tuned Model Parameters: Not Known Fine-Tuning Techniques Used: LoRA, Reinforcement Learning on Stock Prices (RLSP) Datasets Used:"
+    ],
+    "title": "The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: ...",
+    "url": "https://arxiv.org/html/2408.13296v1"
+  },
+  {
+    "description": "Reinforcement learning from human feedback has turned out to be the key to unlocking the full potential of today\u2019s LLMs.",
+    "favicon_url": "https://you.com/favicon?domain=neptune.ai&size=128",
+    "snippets": [
+      "You are now well-equipped to fine-tune your own large language models with RLHF! If you do, let me know what you built! ... Computer Vision General LLMOps ML Model Development ML Tools MLOps Natural Language Processing Paper Reflections Reinforcement Learning Tabular Data Time Series",
+      "I now hear you asking: \u201cBut how is injecting the human into the loop better than the traditional fine-tuning in which we train the model in a supervised fashion on a static dataset? Can\u2019t we simply pass human preferences to the model by constructing a fine-tuning data set based on these preferences?\u201c That\u2019s a fair question. Consider succinctness as a preference for a text summarizing model. We could fine-tune a Large Language Model on concise summaries by training it in a supervised manner on the set of input-output pairs where input is the original text and output is the desired summary.",
+      "High-Level overview of Reinforcement Learning from Human Feeback (RLHF). A reward model is trained on a preference dataset that includes the input, alternative outputs, and a label indicating which of the outputs is preferable. The LLM is fine-tuned through reinforcement learning with Proximal Policy Optimization (PPO).",
+      "The RLHF process consists of three steps: collecting human feedback in the form of a preference dataset, training a reward model to mimic human preferences, and fine-tuning the LLM using the reward model. The last step is enabled by the Proximal Policy Optimization (PPO) algorithm. Alternatives to RLHF include Constitutional AI where the model learns to critique itself whenever it fails to adhere to a predefined set of rules and Reinforcement Learning from AI Feedback (RLAIF) in which off-the-shelf LLMs replace humans as preference data providers."
+    ],
+    "title": "Reinforcement Learning From Human Feedback (RLHF) For LLMs",
+    "url": "https://neptune.ai/blog/reinforcement-learning-from-human-feedback-for-llms"
+  },
+  {
+    "description": "Improve LLM reasoning with reinforcement fine-tuning and reward functions.",
+    "favicon_url": "https://you.com/favicon?domain=www.deeplearning.ai&size=128",
+    "snippets": [
+      "Reinforcement Fine-Tuning (RFT) is a technique for adapting LLMs to complex reasoning tasks like mathematics and coding. RFT leverages reinforcement learning (RL) to help models develop their strategies for completing a task, rather than relying on pre-existing examples as in traditional supervised fine-tuning.",
+      "This course is for anyone who wants to fine-tune LLMs for complex reasoning tasks without relying on large labeled datasets. Ideal for those interested in reinforcement learning, LLM reasoning, and improving the performance of small, open-source models.",
+      "By the end of this course, you\u2019ll be able to fine-tune LLMs using reinforcement learning to improve reasoning without relying on large labeled datasets or subjective human feedback.",
+      "You\u2019ll learn how to build reward functions that you can use in the GRPO training process to guide an LLM toward better performance on multi-step reasoning tasks. ... When reinforcement fine-tuning is a better fit than supervised fine-tuning, especially for tasks involving multi-step reasoning or limited labeled data."
+    ],
+    "title": "Reinforcement Fine-Tuning LLMs with GRPO - DeepLearning.AI",
+    "url": "https://www.deeplearning.ai/short-courses/reinforcement-fine-tuning-llms-grpo/"
+  },
+  {
+    "description": "Explore RLHF's transformative role in making LLMs more attuned to human preferences, enhancing AI interactions for a more intuitive future.",
+    "favicon_url": "https://you.com/favicon?domain=www.superannotate.com&size=128",
+    "snippets": [
+      "RLHF is an evolving area of research, and there are many variations of how we may implement it, but the high-level themes are the same. RLHF consists of three stages: We first create a preference dataset. Then, we use this preference dataset to train a reward function with supervised learning. Afterwards, we use the reward learning in the reinforcement learning loop to fine-tune our base LLM.",
+      "Instead of traditional model tuning, this process is referred to as reinforcement learning, guiding our AI to produce outputs that better match what people want to see or hear. In this process, you start with an LLM that's already been trained with instructions and learned to follow them. You then gather a dataset that indicates a human labeler's preferences between multiple completions of the same prompts and use this dataset as a reward signal to fine-tune an instruction-tuned LLM.",
+      "RLHF (Reinforcement Learning with Human Feedback) works in three steps: first, human feedback is collected to create a preference dataset. Second, a reward model is trained using this dataset. Third, the reward model is used in a reinforcement learning loop to fine-tune a language model, improving its alignment with human preferences.",
+      "However, translating the nuances of human emotion, humor, and thought into binary code remained a puzzle. Enter reinforcement learning with human feedback (RLHF), a groundbreaking approach poised to bring us closer to solving this mystery. RLHF is about fine-tuning LLMs to grasp the subtle nuances of human communication."
+    ],
+    "title": "Reinforcement learning with human feedback (RLHF) for LLMs | ...",
+    "url": "https://www.superannotate.com/blog/rlhf-for-llm"
+  },
+  {
+    "description": "Supervised fine-tuning (SFT) is a method used in machine learning to improve the performance of a pre-trained model. The model is initially trained on a large dataset, then fine-tuned on a smaller, specific dataset. This allows the model to maintain the general knowledge learned from the large ...",
+    "favicon_url": "https://you.com/favicon?domain=klu.ai&size=128",
+    "snippets": [
+      "Supervised fine-tuning (SFT) is a method used in machine learning to improve the performance of a pre-trained model. The model is initially trained on a large dataset, then fine-tuned on a smaller, specific dataset. This allows the model to maintain the general knowledge learned from the large dataset while adapting to the specific characteristics of the smaller dataset.",
+      "Supervised fine-tuning (SFT) is a technique used to adapt a pre-trained (base) Large Language Model (LLM) to a specific downstream task using labeled data. The majority of LLMs used in 2024 are fine-tuned for chat or instruction-based interactions. In SFT, the pre-trained LLM is fine-tuned on a labeled dataset using supervised learning techniques.",
+      "Zephyr 7b fine-tune training was conducted on 16 Nvidia A100 GPUs for approximately 4 hours, which serves as an example starting point for models with 7 billion parameters. Supervised fine-tuning is a three-step process used in AI and Large Language Models (LLMs) to optimize models for specific tasks. Step 1: Pre-training \u2014 The base or foundation model is initially trained on a large dataset, learning to understand language patterns, grammar, and context by predicting the next word in a given sentence.",
+      "Proximal policy optimization \u2014 This method involves fine-tuning the LLM on a specific task using reinforcement learning from human feedback (RLHF). Comparative ranking \u2014 This technique involves training the LLM to rank different outputs based on their relevance or quality, allowing the model to learn to generate more relevant and high-quality outputs. These fine-tuning techniques help adapt pre-trained LLMs to specific tasks and domains, improving their performance and making them more suitable for various applications."
+    ],
+    "title": "Supervised fine-tuning (SFT) \u2014 Klu",
+    "url": "https://klu.ai/glossary/supervised-fine-tuning"
+  },
+  {
+    "description": "Learn how Reinforcement Learning from Human Feedback (RLHF) is revolutionizing AI. Discover how human input shapes AI behavior, ethics, and potential. Explore case studies and cutting-edge research.",
+    "favicon_url": "https://you.com/favicon?domain=www.lakera.ai&size=128",
+    "snippets": [
+      "Understanding the Effects of RLHF on LLM Generalisation and Diversity: This work delves into how RLHF impacts the generalization abilities and output diversity of LLMs. By evaluating models on distributions different from the training inputs, the research provides insights into RLHF's effects on model performance across various tasks\u200b (ar5iv)\u200b. The Alignment Ceiling: Objective Mismatch in Reinforcement Learning from Human Feedback: This paper discusses the challenges related to objective mismatch in RLHF, such as verbosity and evasiveness in model responses.",
+      "The impact of Reinforcement Learning from Human Feedback (RLHF) on model performance, particularly for models like InstructGPT and GPT-4, is profound, marking a significant advancement over their predecessor, GPT-3. This approach has enhanced the models' ability to follow instructions, maintain factual accuracy, reduce instances of hallucination and improve their efficiency. InstructGPT, a model fine-tuned using RLHF, has shown remarkable performance improvements despite having significantly fewer parameters than GPT-3.",
+      "Challenge: Traditional LLMs, when asked to write an email requesting an interview, often need clarification on the prompt, leading to outputs that are irrelevant to the task at hand. RLHF Implementation: The process begins with collecting human-written email responses to various prompts. These responses serve as the ideal outputs for specific scenarios, such as requesting an interview. The AI is then fine-tuned on this dataset, learning the structure, tone, and content that make an email appropriate for its context\u200b.",
+      "See how attackers deliberately break alignment protocols in this guide to jailbreaking LLMs. Understand how direct prompt injections exploit specific phrasing to override reinforced behaviors. Explore why hallucinations still happen in RLHF-tuned models with this hallucination troubleshooting guide."
+    ],
+    "title": "Reinforcement Learning from Human Feedback (RLHF): Bridging AI ...",
+    "url": "https://www.lakera.ai/blog/reinforcement-learning-from-human-feedback"
+  },
+  {
+    "description": "Fine-tuning is a widespread technique that allows practitioners to transfer pre-trained capabilities, as recently showcased by the successful applications of foundation models. However, fine-tuning reinforcement learning (RL) models remains a challenge. This work conceptualizes one specific ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Relation to continual reinforcement learning The main focus of this paper is the efficient fine-tuning of a pre-trained RL agent. We consider forgetting only as far as it impacts the transfer and we are solely interested in the performance on the downstream task, disregarding the performance of the pre-trained tasks.",
+      "Although we see significant positive transfer once the forgetting problem is addressed, it remains an open question where this impact comes from. Although there are several studies on the impact of representation learning on transfer in supervised learning (Neyshabur et al., 2020; Kornblith et al., 2021), the same question in RL remains relatively understudied.",
+      "Its effectiveness has recently been showcased by spectacular successes in the deployment of foundation models in downstream tasks, including natural language processing (Chung et al., 2022), computer vision (Sandler et al., 2022), automatic speech recognition (Zhang et al., 2022), and cheminformatics (Chithrananda et al., 2020). These successes are predominantly evident in supervised and self-supervised learning domains. However, achievements of comparable significance have not yet fully found their way to reinforcement learning (RL) (Wulfmeier et al., 2023).",
+      "Due to high sample complexity and computation costs, training reinforcement learning algorithms from scratch is expensive (Ceron & Castro, 2021; Vinyals et al., 2019; Machado et al., 2018a). As such, transfer learning and reusing prior knowledge as much as possible (Agarwal et al., 2022) are becoming more attractive. However, the fine-tuning strategy massively popular in supervised learning (Bommasani et al., 2021; Yosinski et al., 2014; Girshick et al., 2014) is relatively less common in reinforcement learning."
+    ],
+    "title": "Fine-tuning Reinforcement Learning Models is Secretly a Forgetting ...",
+    "url": "https://arxiv.org/html/2402.02868v2"
+  },
+  {
+    "description": "Learn how supervised fine-tuning and reinforcement learning with human feedback work, along with their strengths, limitations, and applicable use cases.",
+    "favicon_url": "https://you.com/favicon?domain=www.invisible.co&size=128",
+    "snippets": [
+      "To train an LLM or foundation model from its original, broad understanding to work in specific use cases, AI teams will need to fine tune them first. Fine-tuning techniques has become crucial for customizing large language models (LLMs), as this process enables models to comply with domain-specific standards, improves reliability, and builds trust among users. Among various fine-tuning methods, supervised fine-tuning (SFT) and reinforcement learning from human feedback (RLHF) stand out for their success in delivering high quality fine-tuned models.",
+      "Common techniques include supervised, unsupervised, and reinforcement learning, applied in fields like healthcare, finance, and automation. Overfitting happens when an AI model learns a training dataset too well, including its noise or unique characteristics, and then struggles to perform effectively on new, unseen data. This can occur during the fine-tuning of LLMs if the dataset is too small or lacks diversity, resulting in poor generalization.",
+      "RLHF is a fine-tuning approach that improves LLMs by using human evaluations to guide learning. Instead of fixed labels, humans rank the model\u2019s outputs. A reward model reflects these preferences, which the LLM optimizes through reinforcement learning.",
+      "SFT is used in medicine to adapt LLMs for healthcare applications. Training an LLM on expert-annotated medical texts, research papers, clinical guidelines, and patient records (with appropriate privacy safeguards), SFT can create models capable of: Analyzing medical literature: Fine-tuned LLMs can help clinical experts process and summarize large volumes of medical literature to ensure that they remain updated on the latest findings."
+    ],
+    "title": "Supervised Fine-Tuning vs. RLHF: How to Choose the Right Approach ...",
+    "url": "https://www.invisible.co/blog/supervised-fine-tuning-vs-rlhf-how-to-choose-the-right-approach-to-train-your-llm"
+  },
+  {
+    "description": "Fine-tuning Diffusion Models remains ... Models (LLMs). While cutting-edge diffusion models such as Stable Diffusion (SD) and SDXL rely on supervised fine-tuning, their performance inevitably plateaus after seeing a certain volume of data. Recently, reinforcement learning (RL) has been employed to fine-tune diffusion ...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Fine-tuning Diffusion Models remains an underexplored frontier in generative artificial intelligence (GenAI), especially when compared with the remarkable progress made in fine-tuning Large Language Models (LLMs). While cutting-edge diffusion models such as Stable Diffusion (SD) and SDXL rely on supervised fine-tuning, their performance inevitably plateaus after seeing a certain volume of data. Recently, reinforcement learning (RL) has been employed to fine-tune diffusion models with human preference data, but it requires at least two images (\"winner\" and \"loser\" images) for each text prompt.",
+      "Despite their impressive performance, recent studies have highlighted the potential for significant enhancements in LLMs' task-specific performance through fine-tuning strategies like Reinforcement Learning with Human Feedback (RLHF), supervised fine-tuning (SFT), and Quantized Low-Rank Adapters (Q-LoRA) method. However, previous works have shown that while fine-tuning offers significant performance gains, it also leads to challenges such as catastrophic forgetting and privacy and safety risks. To this end, there has been little to no work in understanding the impact of fine-tuning on the reasoning capabilities of LLMs.",
+      "We ask: what is the simplest, most scalable way to enable search in LLMs? We propose a post-training framework called Reinforcement Learning via Self-Play (RLSP). RLSP involves three steps: (1) supervised fine-tuning with human or synthetic demonstrations of the reasoning process, (2) using an exploration reward signal to encourage diverse and efficient reasoning behaviors, and (3) RL training with an outcome verifier to ensure correctness while preventing reward hacking.",
+      "Through comprehensive empirical evidence on several models, datasets, and tasks, we show that low-rank fine-tuning inadvertently preserves undesirable biases and toxic behaviors. We also show that this extends to sequential decision-making tasks, emphasizing the need for careful evaluation to promote responsible LLMs development. ... Reinforcement Learning (RL) has played a central role in the recent surge of LLMs' math abilities by enabling self-improvement through binary verifier signals. In contrast, Supervised Learning (SL) is rarely considered for such verification-driven training, largely due to its heavy reliance on reference answers and inability to reflect on mistakes."
+    ],
+    "title": "Daily Papers - Hugging Face",
+    "url": "https://huggingface.co/papers?q=RL+fine-tuning+outcome"
+  },
+  {
+    "description": "The burgeoning capabilities of Large Language Models (LLMs) have captivated the world, but unlocking their full potential for specific tasks often requires a crucial step: fine-tuning. Historically\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "The burgeoning capabilities of Large Language Models (LLMs) have captivated the world, but unlocking their full potential for specific\u2026",
+      "The burgeoning capabilities of Large Language Models (LLMs) have captivated the world, but unlocking their full potential for specific tasks often requires a crucial step: fine-tuning. Historically, this has been dominated by Supervised Fine-Tuning (SFT). However, the limitations of SFT, particularly concerning data requirements and the nuances of complex reasoning, have paved the way for new paradigms: Reinforcement Learning from Human Feedback (RLHF), Direct Preference Optimization (DPO), and most recently, Group Relative Policy Optimization (GRPO).",
+      "Ample Labeled Data (100,000+ rows): Supervised Fine-Tuning (SFT) is often the fastest and most efficient path to a good model. Moderate Labeled Data (1,000\u2013100,000 rows): Consider if chain-of-thought or other reasoning prompts improve initial performance. If Yes: Reinforcement Fine-Tuning (RFT) with GRPO can significantly amplify reasoning gains by rewarding correct steps.",
+      "While Supervised Fine-Tuning laid the groundwork and RLHF/DPO introduced human alignment, Group Relative Policy Optimization (GRPO) marks a new frontier. By leveraging programmable reward functions, GRPO empowers LLMs to learn complex reasoning tasks with unprecedented data efficiency and the ability to organically discover solutions."
+    ],
+    "title": "LLM Fine-Tuning: From Supervised Learning to Reinforcement-Based ...",
+    "url": "https://medium.com/@yash9439/llm-fine-tuning-from-supervised-learning-to-reinforcement-based-reasoning-ea163d7ddb76"
+  },
+  {
+    "description": "Reinforcement learning from human feedback is a fine-tuning process that enables large language models to follow human instructions. Here's how it works.",
+    "favicon_url": "https://you.com/favicon?domain=kili-technology.com&size=128",
+    "snippets": [
+      "RLHF is an advanced machine learning technique that augments the self-supervised learning that large models go through. It is not viable as a standalone model learning method because of the potentially costly involvement of human trainers. Instead, AI companies use RLHF to fine-tune a pre-trained model.",
+      "First, you identify and choose a pre-trained model. For example, ChatGPT was developed from an existing GPT model. Such models have undergone self-supervised learning and can predict and form sentences. Then, fine-tune the pre-trained model to enhance its capabilities further.",
+      "There is less toxicity and dangerous behavior when the model is fine-tuned with RLHF. Hallucination, a phenomenon where the model fabricates and produces incorrect facts, is also reduced in an HRLF-trained model. The model is more adaptable to use cases not extensively exposed during training. The emergence of large language models is an essential milestone for developments in linguistic AI systems. They are deep-learning models trained on voluminous texts from various sources. By itself, LLMs are capable of forming coherence and grammatically correct sentences from human input.",
+      "Financial institutions fine-tune LLMs to recommend relevant products to customers and identify insights from financial data."
+    ],
+    "title": "Exploring Reinforcement Learning with Human Feedback",
+    "url": "https://kili-technology.com/large-language-models-llms/exploring-reinforcement-learning-from-human-feedback-rlhf-a-comprehensive-guide"
+  }
+]

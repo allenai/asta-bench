@@ -1,0 +1,267 @@
+[
+  {
+    "description": "Few-shot learning is a machine learning framework where an AI model learns to make accurate predictions by training on a very small number of labeled samples.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "More intricate approaches teach new skills through the design of relevant downstream tasks\u2013often meta learning tasks\u2014to a model that been pre-trained via self-supervised pretext tasks: this is increasingly common in NLP, particularly in the context of foundation models.",
+      "Whereas approaches built upon transfer learning adapt pre-trained models, meta learning methods often train systems end-to-end from scratch. According to Santoro, et al, \u201cmeta learning\u201d refers to scenarios in which multiple tasks are used to train a model at both a short-term and long-term level. Within each task, the model learns rapidly to make predictions relevant to the limited domain of that specific task; across tasks, the model gradually accrues knowledge by capturing the way patterns and task structure vary across target domains.",
+      "For example, the goal of many prominent meta learning methods is to train a model function, across multiple training episodes, to output a prediction for the degree of similarity between data points from any classes\u2014including classes the model has not yet seen\u2014to then use learnings from that process to solve downstream tasks (like specifically defined classification problems). Some meta learning approaches work on a more abstract level, by training models to be easy to train.",
+      "Metric-based meta learning algorithms operate on principle similar to that of K-nearest neighbors: rather than predicting classification by directly modeling the decision boundary between classes, metric-based approaches generate a continuous value (like a vector embedding) to represent a given data sample, and make inferences by learning a function that measures some distance metric representing the similarity between this value and the value of the different samples or classes it is being compared to."
+    ],
+    "title": "What Is Few-Shot Learning? | IBM",
+    "url": "https://www.ibm.com/think/topics/few-shot-learning"
+  },
+  {
+    "description": "Few-shot intent detection is a challenging task. Most existing methods only focus on acquisition of generalization knowledge in known classes, or on t\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "We present the results of comparative experiments, including accuracy comparisons on four datasets and the comparison of different intention prediction strategies. To verify the effectiveness of the proposed method, we performed ablation experiments as well as various effectiveness analyses. In this study, we aim to enhance the performance of intent detection models. Previous approaches have overlooked two important issues: firstly, the models lack feature information learning, which is beneficial for predicting intents; and secondly, the models lack discriminative representation learning of intent keywords.",
+      "To address these problems, in this paper, we propose a few-shot intent detection framework based on mutual information and contrastive learning. It improves the robustness of \u00b7 Shun Yang: Writing \u2013 original draft, Visualization, Software, Methodology, Formal analysis, Conceptualization. YaJun Du: Supervision, Data curation, Conceptualization. JiaMing Huang: Visualization, Resources, Investigation.",
+      "We introduce sample-level and class-level contrast learning, which improve the model\u2019s discriminative representation learning for intent keywords and prevent the model from overfitting known classes, respectively. ... We conducted the experiment and analyzed the reasons behind it. Our approach achieved advanced performance on four public datasets.",
+      "Existing methods mainly address few-shot intent detection from three perspectives: (1) constructing an intent detection metric space [9], (2) learning generalizable features from known classes [15], and (3) enhancing the adaptation ability of meta-learning tasks [16]. However, these methods focus too much on learning generalizable features from known classes or only on the adaptation of meta-tasks, which leads to them neglecting two important factors in intent detection: (1) the model lacks the learning of the feature information, which is beneficial to the prediction intent, and (2) the model lacks to learn discriminative representations of intent keywords in text."
+    ],
+    "title": "Few-shot intent detection with mutual information and contrastive ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1568494624011128"
+  },
+  {
+    "description": "Few-Shot Learning refers to the problem of learning the underlying pattern in the data just from a few training samples. Requiring a large number of data samples, many deep learning solutions suffer from data hunger and extensively high computation time and resources.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2203.04291: Learning from Few Examples: A Summary of Approaches to Few-Shot Learning",
+      "This survey paper comprises a representative list of recently proposed few-shot learning algorithms. Given the learning dynamics and characteristics, the approaches to few-shot learning problems are discussed in the perspectives of meta-learning, transfer learning, and hybrid approaches (i.e., different variations of the few-shot learning problem).",
+      "View a PDF of the paper titled Learning from Few Examples: A Summary of Approaches to Few-Shot Learning, by Archit Parnami and Minwoo Lee View PDF"
+    ],
+    "title": "[2203.04291] Learning from Few Examples: A Summary of Approaches ...",
+    "url": "https://arxiv.org/abs/2203.04291"
+  },
+  {
+    "description": "Learn everything you need to know about Few-Shot Learning, including key techniques, use cases, and how it enables machine learning models to perform with mi\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.digitalocean.com&size=128",
+    "snippets": [
+      "Gradient-based Meta-Learning approaches use two learners - a teacher model (base-learner) and a student model (meta-learner) using knowledge distillation. The teacher model guides the student model through the high-dimensional parameter space. Using the information from the support set, the teacher model is first trained to make predictions on the query set samples.",
+      "FSL methods that constrain the parameter space and use regularization techniques fall under the category of parameter-level approaches. Models are trained to find the optimal route in the parameter space for providing targeted predictions.",
+      "The classification loss derived from the teacher model is then used to train the student model, making it proficient in the classification task. As the discussion up to this point suggests, One-Shot Learning is a task where the support set consists of only one data sample per class. You can imagine that the task is more complicated with less supporting information. The face recognition technology used in modern smartphones uses One-Shot Learning. One such example is the One-Shot Semantic Segmentation approach explored by Shaban et al.",
+      "Research on better FSL models is still being actively pursued to make them as accurate or even better than fully-supervised learning approaches. Problems like One-Shot or Zero-Shot Learning which are significantly more complex, are being extensively studied to bridge the gap between AI and human learners."
+    ],
+    "title": "Everything you need to know about Few-Shot Learning | DigitalOcean",
+    "url": "https://www.digitalocean.com/community/tutorials/few-shot-learning"
+  },
+  {
+    "description": "Abstract. Prompt-based approaches excel at few-shot learning. However, Perez et al. (2021) recently cast doubt on their performance as they had difficulty getting good results in a \u201ctrue\u201d few-shot setting in which prompts and hyperparameters cannot be tuned on a dev set.",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Instruction-based learning has also been used in few-shot settings; popular variants include in-context learning, where the model\u2019s parameters are fixed and examples are provided as additional context (Brown et al., 2020; Lu et al., 2021; Kumar and Talukdar, 2021; Zhao et al., 2021; Min et al., 2021), finetuning the entire model (Schick and Sch\u00fctze, 2020, 2021; Gao et al., 2021; Tam et al., 2021), and prompt tuning, where only the instruction itself is optimized (Shin et al., 2020; Hambardzumyan et al., 2021; Li and Liang, 2021; Lester et al., 2021). Several works investigating the limitati",
+      "In light of these findings, we also hope that future work will not view human involvement in prompt design as a drawback of instruction-based approaches, but rather as an exciting possibility to communicate with models in ways other than exclusively through examples. Our study has limitations. First, a major obstacle to using Pet in real-world applications is that we do not know a priori how well it performs for a given task; we therefore believe an important next step is to investigate methods for estimating performance without access to large test sets\u2014for example, through model calibration (Desai and Durrett, 2020; Jiang et al., 2021; Zhao et al., 2021)\u2014in real-world settings.",
+      "Building on earlier work (Anaby-Tavor et al., 2020; Papanikolaou and Pierleoni, 2020; Yang et al., 2020; Mohapatra et al., 2020; Kumar et al., 2020; Schick and Sch\u00fctze, 2021), we investigate whether synthetic examples can replace unlabeled data. We use GPT2-XL (Radford et al., 2019) to generate synthetic unlabeled data: We provide one or two random training examples without labels as in-context examples (Brown et al., 2020) and let the model generate an additional example.",
+      "Using this process, we obtain 20 different intentionally bad PVPs per task. For each task, we start with 3 randomly selected, high-quality patterns from our original set of manually designed instructions, add noise PVPs one by one, and investigate the effect on performance."
+    ],
+    "title": "True Few-Shot Learning with Prompts\u2014A Real-World Perspective ...",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00485/111728/True-Few-Shot-Learning-with-Prompts-A-Real-World"
+  },
+  {
+    "description": "Explore the differences, use cases, and examples between zero-shot prompting and few-shot prompting.",
+    "favicon_url": "https://you.com/favicon?domain=shelf.io&size=128",
+    "snippets": [
+      "The generalization capability in this context is more focused. The model learns to generalize based on the few examples provided, which creates a more nuanced understanding and can improve performance on tasks that are similar to these examples. The model then uses these examples to make inferences about the task requirements, leading to better task-specific performance and adaptation. However, this approach can sometimes cause the model to overfit to the provided examples if they are not representative of the task\u2019s broader scope.",
+      "It assigns probabilities for what the next token could be, uses those values to predict the next one, and then repeats this process. Craft Smarter AI Results with a free in-depth LLM Guide. Step beyond the basics with our \u2018Practical Guide to LLMs,\u2019 designed for the seasoned data scientist and AI architect. This sequence generation continues until the model completes a sentence or paragraph, using sophisticated algorithms to ensure the output is coherent and contextually appropriate based on the vast amount of text it has been trained on.",
+      "The model must apply its understanding of language, the world, or domain-specific knowledge to generate a response or make predictions about a task it hasn\u2019t been explicitly shown examples of. The generalization hinges on the breadth and depth of the model\u2019s training dataset and its ability to apply this knowledge to new contexts.",
+      "Large language models like GPT generate text using a technique called autoregressive prediction. They\u2019ve been trained on huge datasets to understand language patterns and contexts."
+    ],
+    "title": "Zero-Shot vs. Few-Shot Prompting: Key Differences - Shelf",
+    "url": "https://shelf.io/blog/zero-shot-and-few-shot-prompting/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "Exploring Zero and Few-shot Techniques for Intent ...",
+    "url": "https://aclanthology.org/2023.acl-industry.71.pdf"
+  },
+  {
+    "description": "Despite its astounding success in learning deeper multi-dimensional data, the performance of deep learning declines on new unseen tasks mainly due to its focus on same-distribution prediction. More...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Despite its astounding success in learning deeper multi-dimensional data, the performance of deep learning declines on new unseen tasks mainly due to its focus on same-distribution prediction. Moreover, deep learning is notorious for poor generalization from few samples. Meta-learning is a promising approach that addresses these issues by adapting to new tasks with few-shot datasets. This survey first briefly introduces meta-learning and then investigates state-of-the-art meta-learning methods and recent advances in: (i) metric-based, (ii) memory-based, (iii), and learning-based methods.",
+      "Then, the labels of query samples are predicted based on proximity to the support set. Principally, the success of these methods depends on embedding learning. In this context, the aim of embedding learning is to convert each high dimensional sample to a lower dimensional sample in the form of vector representations in such a way that similar samples reside closely in a new lower dimension space.",
+      "In this context, experience is interpreted as fitting to data. However, during episodic training, unrelated tasks or even less related tasks may result in divergent optimization directions as well as disparate performance, which eventually may lead to uncertainty in unseen class prediction [46]. The disparity between Omniglot and more complex sets like MiniImageNet, raises concerns about the predictability and reliability of meta-learners.",
+      "The task context encoder is responsible for learning representations, while the weight generator is designed to compute the conditional distributions of weights. The authors used matching networks as TargetNet which use generated weights to compute matching probability score as well as classification loss. Another novelty of this study is the introduction of intertask normalization, a strategy that allows similar tasks in a batch of tasks to interact with each other."
+    ],
+    "title": "Meta-learning Approaches for Few-Shot Learning: A Survey of Recent ...",
+    "url": "https://dl.acm.org/doi/10.1145/3659943"
+  },
+  {
+    "description": "Explore the power of few-shot learning, enabling AI models to learn from limited examples. Discover best practices, challenges, and future innovations in this comprehensive guide.",
+    "favicon_url": "https://you.com/favicon?domain=promptengineering.org&size=128",
+    "snippets": [
+      "Contextual Adaptation: Language models utilize the provided examples to adjust their understanding and predictions based on the context established by these examples. Pattern Recognition: Through multiple examples, the model identifies patterns and relationships within the data, improving its accuracy and reliability in predictions or task performance. Incremental Learning: This approach allows the model to refine its knowledge incrementally, building a more robust understanding with each additional example.",
+      "Data Scarcity: In many domains, obtaining labeled data for every possible task is impractical. Zero-shot learning provides a solution by enabling models to operate in contexts where little or no labeled data is available. Zero-shot learning is an approach that enables models to perform tasks without any task-specific training examples.",
+      "Improved Accuracy: Access to multiple examples provides a richer context, leading to more accurate predictions and better understanding of nuanced language.",
+      "Studies have shown that the most significant performance gains often occur when moving from zero-shot to one-shot or few-shot learning. The introduction of even a single example can provide the model with valuable context and guidance, leading to a noticeable improvement in accuracy."
+    ],
+    "title": "0-Shot vs Few-Shot vs Partial-Shot Examples in Language Model Learning",
+    "url": "https://promptengineering.org/0-shot-vs-few-shot-vs-partial-shot-examples-in-language-model-learning/"
+  },
+  {
+    "description": "Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples.",
+      "Abstract page for arXiv paper 2005.14165: Language Models are Few-Shot Learners",
+      "By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches.",
+      "GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora."
+    ],
+    "title": "[2005.14165] Language Models are Few-Shot Learners",
+    "url": "https://arxiv.org/abs/2005.14165"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.neurips.cc&size=128",
+    "snippets": [],
+    "title": "Language Models are Few-Shot Learners",
+    "url": "https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf"
+  },
+  {
+    "description": "Abstract. Large language models (LLMs) are sophisticated AI-driven models trained on vast sources of natural language data. They are adept at generating re",
+    "favicon_url": "https://you.com/favicon?domain=academic.oup.com&size=128",
+    "snippets": [
+      "Assessment of an in silico mechanistic model for proarrhythmia risk prediction under the ci pa initiative. ... Mechanistic model-informed proarrhythmic risk assessment of drugs: review of the \u201cCiPA\u201d initiative and design of a prospective clinical validation study. ... A systematic strategy for estimating hERG block potency and its implications in a new cardiac safety paradigm. ... Language models are few-shot learners. ... In-context learning and induction heads.",
+      "This choice of data source allowed us to test the model's efficacy in a real-world, data-sensitive context, assessing its ability to identify complex relations in regulatory documents. The Flan-T5 model's precision rate of 78.5% in predicting true positives underscores its practical utility and reliability.",
+      "When applied to a more domain-specific task, a more detailed explanation of some technical terms needs to be incorporated into the prompt so that the model can \u2018understand\u2019 the question through in-context learning [47\u201349]. For few-shot learning, we adopted a prompt style similar to zero-shot learning, with randomly selected example sentences added to facilitate in-context learning. There are reports that a more carefully selected and dynamically adjusted exemplar set might improve the performance [50\u201352], which can be future evaluated in our future studies.",
+      "This application demonstrates the feasibility of using locally implemented open-source LLMs in real-world biomedical contexts and opening the way for future research and development in this area. The performance analysis revealed that certain sentences are written in a neutral, informative style. As an example, consider the following sentence: \u2018Accumulation of ketorolac tromethamine has not been studied in special populations (elderly patients, renal failure patients, or hepatic disease patients)\u2019. Here, the sentence describes the lack of research about the patient's intrinsic factors affecting the drug's pharmacokinetics."
+    ],
+    "title": "Harnessing large language models\u2019 zero-shot and few-shot learning ...",
+    "url": "https://academic.oup.com/bib/article/25/5/bbae354/7739674"
+  },
+  {
+    "description": "In the age of large language models (LLMs), the ability to perform complex tasks with minimal data is revolutionizing how we approach artificial intelligence. Few-shot and zero-shot learning are two\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "In the age of large language models (LLMs), the ability to perform complex tasks with minimal data is revolutionizing how we approach\u2026",
+      "Both approaches are part of the broader trend toward cross-domain generalization, where models are expected to transfer knowledge from one domain to another with minimal or no adaptation. \u201cFew-shot learning\u201d and \u201czero-shot learning\u201d are well-known concepts in machine learning that were studied long before LLMs appeared on the scene. In the context of LLMs, these terms are sometimes used interchangeably with \u201cfew-shot prompting\u201d and \u201czero-shot prompting.\u201d However, they are not the same.",
+      "Transformers revolutionized scalability. Their self-attention mechanism allowed models to dynamically focus on relevant context, mimicking how humans prioritize information. By pre-training on vast corpora, systems like GPT-3 internalized patterns \u2014 translation templates, summarization styles, logical chains \u2014 and replicated them during inference.",
+      "Typically, this means presenting the model with anywhere from one to five task demonstrations, also known as \u201cshots.\u201d The model uses these demonstrations to infer the task structure and generalize it to unseen inputs. Unlike traditional methods, where retraining a model with large labeled datasets is essential, few-shot learning works in-context \u2014 the model doesn\u2019t change its weights or update parameters but learns through examples embedded directly in the prompt."
+    ],
+    "title": "Few-Shot and Zero-Shot Learning : Unlocking Cross-Domain ...",
+    "url": "https://medium.com/@anicomanesh/mastering-few-shot-and-zero-shot-learning-in-llms-a-deep-dive-into-cross-domain-generalization-b33f779f5259"
+  },
+  {
+    "description": "What is Few-Shot Learning, how does it work and what are its most prominent applications? Read this beginner's guide to Few-Shot Learning and start training reliable AI models with V7 today.",
+    "favicon_url": "https://you.com/favicon?domain=www.v7labs.com&size=128",
+    "snippets": [
+      "If the data is insufficient to constrain the problem, then one possible solution is to learn from the experience of other similar problems. To this end, most approaches characterize few-shot learning as a meta-learning problem.",
+      "Few-shot learning uses the N-way-K-shot classification approach to discriminate between N classes with K examples.",
+      "Approaches to meta-learning are diverse, and there is no single best approach.",
+      "Prototypical networks are more efficient than the recent meta-learning algorithms, making them an appealing approach to few-shot and zero-shot learning."
+    ],
+    "title": "A Step-by-step Guide to Few-Shot Learning",
+    "url": "https://www.v7labs.com/blog/few-shot-learning-guide"
+  },
+  {
+    "description": "Few-shot learning (FSL) has emerged as an effective learning method and shows great potential. Despite the recent creative works in tackling FSL tasks, learning valid information rapidly from just ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Few-shot learning (FSL) has emerged as an effective learning method and shows great potential. Despite the recent creative works in tackling FSL tasks, learning valid information rapidly from just a few or even zero samples remains a serious challenge. In ...",
+      "In this context, we extensively investigated 200+ FSL papers published in top journals and conferences in the past three years, aiming to present a timely and comprehensive overview of the most recent advances in FSL with a fresh perspective and to provide an impartial comparison of the strengths and weaknesses of existing work.",
+      "Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva Ramanan, Piotr Doll\u00e1r, and C. Lawrence Zitnick. 2014. Microsoft COCO: Common objects in context. In Proceedings of the European Conference on Computer Vision.",
+      "Matthew E. Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke Zettlemoyer. 2018. Deep contextualized word representations."
+    ],
+    "title": "A Comprehensive Survey of Few-shot Learning: Evolution, Applications, ...",
+    "url": "https://dl.acm.org/doi/10.1145/3582688"
+  },
+  {
+    "description": "Explore how few-shot learning works, its key techniques and applications, and what the future holds for few-shot learning.",
+    "favicon_url": "https://you.com/favicon?domain=research.aimultiple.com&size=128",
+    "snippets": [
+      "The model is adjusted with additional context to better predict outcomes on the test set.",
+      "Unlike supervised learning, which requires a significant number of labeled samples, few-shot learning approaches allow machine learning models to generalize to new tasks with minimal training data. Few-shot learning belongs to the broader category of shot learning: Few-shot learning: Learns from only a handful of labeled examples. One-shot learning: Learns from a single prompt. Zero-shot learning: Makes predictions without labeled data, relying on pre-existing knowledge.",
+      "Facilitates the analysis of data from diverse IoT devices with limited labeled data, improving predictive maintenance and anomaly detection.\u200b \u00b7 Assists in tasks like curve-fitting, where models learn to approximate functions from a few data points, enhancing scientific computations.\u200b \u00b7 Enables models to perform deductive reasoning tasks with minimal examples, contributing to advancements in artificial intelligence and problem-solving. ... There are several approaches to train models with very few labeled examples per class, categorized into three main types: metric-based, optimization-based, and generative approaches.",
+      "A crucial aspect of few-shot learning work is prompt engineering, where models are given a few-shot prompt or a zero-shot prompt containing concrete examples to guide their responses. This prompt engineering technique is particularly effective for large language models, which can be fine-tuned with additional context rather than requiring more data or additional training."
+    ],
+    "title": "Few-Shot Learning: Methods & Applications in 2025",
+    "url": "https://research.aimultiple.com/few-shot-learning/"
+  },
+  {
+    "description": "While large-language models demonstrate remarkable zero-shot capabilities, they still fall short on more complex tasks when using the zero-shot setting. Few-shot prompting can be used as a technique to enable in-context learning where we provide demonstrations in the prompt to steer the model ...",
+    "favicon_url": "https://you.com/favicon?domain=www.promptingguide.ai&size=128",
+    "snippets": [
+      "While large-language models demonstrate remarkable zero-shot capabilities, they still fall short on more complex tasks when using the zero-shot setting. Few-shot prompting can be used as a technique to enable in-context learning where we provide demonstrations in the prompt to steer the model to better performance.",
+      "There is no consistency in the format above but the model still predicted the correct label. We have to conduct a more thorough analysis to confirm if this holds for different and more complex tasks, including different variations of prompts. ... Learn more about few-shot prompting and advanced prompting methods in our new AI courses.",
+      "A Comprehensive Overview of Prompt Engineering",
+      "When zero-shot prompting and few-shot prompting are not sufficient, it might mean that whatever was learned by the model isn't enough to do well at the task. From here it is recommended to start thinking about fine-tuning your models or experimenting with more advanced prompting techniques."
+    ],
+    "title": "Few-Shot Prompting | Prompt Engineering Guide",
+    "url": "https://www.promptingguide.ai/techniques/fewshot"
+  },
+  {
+    "description": "In the rapid evolution of Natural Language Processing (NLP), a new trend has emerged: task-agnostic pre-training and task-agnostic architectures. This progress has led to significant improvement in\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Remember, while GPT-3 offers promising results, it\u2019s not perfect and should be used responsibly, especially in sensitive use cases like medical diagnosis, where incorrect predictions could have serious consequences. The work by Tom B. Brown et al. showcases the immense potential of large-scale language models, specifically in the context of few-shot learning.",
+      "The authors found that one- and few-shot performance was often much higher than true zero-shot performance, suggesting that language models can also be understood as meta-learners where slow outer-loop gradient descent-based learning is combined with fast \u201cin-context\u201d learning.",
+      "The authors suggest that this final fine-tuning step may not be necessary. They demonstrate that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even becoming competitive with prior state-of-the-art fine-tuning approaches.",
+      "Medical Diagnosis: In the medical field, GPT-3 could be used to predict diseases based on symptoms. It could be trained on a few examples of symptoms and their corresponding diseases, and then given a new set of symptoms, it could predict the possible disease."
+    ],
+    "title": "The Power of Few-Shot Learning in Language Models | by Pankaj | Medium",
+    "url": "https://medium.com/@pankaj_pandey/the-power-of-few-shot-learning-in-language-models-4fe79060fef4"
+  },
+  {
+    "description": "In this guide, we\u2019ll walk through the key difference between these techniques and how to implement them. Explore how to use each of these learning techniques with Labelbox\u2019s LLM Editor & Labelbox Model",
+    "favicon_url": "https://you.com/favicon?domain=labelbox.com&size=128",
+    "snippets": [
+      "We can also improve results by ensuring variability within the few-shot learning examples. Currently, we are using a naive approach by selecting 100 randomly generated examples from the training dataset, so that it fits within the context window of gpt-3.5-turbo.",
+      "Three techniques in particular \u2014 zero-shot learning, few-shot learning, and fine-tuning \u2014 take different approaches to leveraging LLMs. In this guide, we\u2019ll walk through the key difference between these techniques and how to implement them.  \u00b7 We\u2019ll walk through a case study of extracting airline names from tweets to compare the techniques.",
+      "Through our case study extracting airline names from tweets, we've explored the key differences between zero-shot learning, few-shot learning, and fine-tuning for applying large language models to NLP tasks. The best technique depends on your use case and available resources. The key is understanding how different data inputs affect an LLM's behavior. With the right approach, you can take advantage of LLMs' reasoning skills for a wide range of NLP applications.",
+      "Discover how to employ a more comprehensive approach to evaluating leading text-to-speech models using both human preference ratings and automated evaluation techniques."
+    ],
+    "title": "Zero-Shot Learning vs. Few-Shot Learning vs. Fine-Tuning: A technical ...",
+    "url": "https://labelbox.com/guides/zero-shot-learning-few-shot-learning-fine-tuning/"
+  },
+  {
+    "description": "Explore Few-Shot learning in computer vision, from foundational concepts to algorithms, including object detection nuances.",
+    "favicon_url": "https://you.com/favicon?domain=neptune.ai&size=128",
+    "snippets": [
+      "As you might have already guessed, if we\u2019re working with images, we basically train a convolutional neural network to output an image embedding vector, which is later compared to other embeddings to predict the class. For the Gradient-Based approach, you need to build a meta-learner and a base-learner.",
+      "In this article, we have figured out what Few-Shot Learning is, what FSL variations and problem approaches there are, and what algorithms you can use to solve image classification and Object Detection FSL tasks.",
+      "This would call for innovative approaches.",
+      "This is the approach that you use when doing ZSL and, according to current trends, Zero-Shot Learning will soon become more effective."
+    ],
+    "title": "Understanding Few-Shot Learning in Computer Vision: What You Need ...",
+    "url": "https://neptune.ai/blog/understanding-few-shot-learning-in-computer-vision"
+  },
+  {
+    "description": "Power of LLMs for prevalent language-based ML tasks using prompting and analyze the pros and cons of zero-shot and few-shot prompting.",
+    "favicon_url": "https://you.com/favicon?domain=www.analyticsvidhya.com&size=128",
+    "snippets": [
+      "Below (Figure 6) is an example from the studies described in the paper \u201cLanguage Models are Few-Shot Learners\u201d comparing the performance of few-shot, one-shot, and zero-shot models with GPT-3. The performance is measured on the LAMBADA benchmark (target word prediction) under different few-shot settings. The uniqueness of LAMBADA lies in its focus on evaluating a model\u2019s ability to handle long-range dependencies in text, which are situations where a considerable distance separates a piece of information from its relevant context.",
+      "This differs from traditional few-shot learning, which entails fine-tuning the LLM with a few samples for a novel problem. This approach lessens the reliance on large labeled datasets by allowing models to swiftly adapt and produce precise predictions for new classes with a small number of labeled samples.",
+      "A: While powerful, generative LLMs may need help with domain-specific tasks that need deep contextual understanding. Additionally, privacy concerns arise when using generalized LLMs, especially for sensitive data, making careful handling essential. Tom B. Brown and others, Language models are few-shot learners, In Proceedings of the 34th International Conference on Neural Information Processing Systems (NIPS\u201920), 2020.",
+      "Explore Generative AI for beginners: create text and images, use top AI tools, learn practical skills, and ethics. ... Master Large Language Models (LLMs) with this course, offering clear guidance in NLP and model training made simple. ... This free course guides you on building LLM apps, mastering prompt engineering, and developing chatbots with enterprise data. ... Explore practical solutions, advanced retrieval strategies, and agentic RAG systems to improve context, relevance, and accuracy in AI-driven applications."
+    ],
+    "title": "Harness the Power of LLMs: Zero-shot and Few-shot Prompting",
+    "url": "https://www.analyticsvidhya.com/blog/2023/09/power-of-llms-zero-shot-and-few-shot-prompting/"
+  },
+  {
+    "description": "Machine learning has been highly successful in data-intensive applications but is often hampered when the data set is small. Recently, Few-Shot Learning (FSL) is proposed to tackle this problem. Using prior knowledge, FSL can rapidly generalize to new tasks containing only a few samples with ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Machine learning has been highly successful in data-intensive applications but is often hampered when the data set is small. Recently, Few-Shot Learning (FSL) is proposed to tackle this problem. Using prior knowledge, FSL can rapidly generalize to new tasks containing only a few samples with supervised information.",
+      "Abstract page for arXiv paper 1904.05046: Generalizing from a Few Examples: A Survey on Few-Shot Learning",
+      "In this paper, we conduct a thorough survey to fully understand FSL. Starting from a formal definition of FSL, we distinguish FSL from several relevant machine learning problems. We then point out that the core issue in FSL is that the empirical risk minimized is unreliable.",
+      "View a PDF of the paper titled Generalizing from a Few Examples: A Survey on Few-Shot Learning, by Yaqing Wang and Quanming Yao and James Kwok and Lionel M."
+    ],
+    "title": "[1904.05046] Generalizing from a Few Examples: A Survey on Few-Shot ...",
+    "url": "https://arxiv.org/abs/1904.05046"
+  },
+  {
+    "description": "In subject area: Computer Science \u00b7 Few-shot learning is a technique that enables models to quickly generalize and adapt to new tasks using a small number of annotated samples and prior knowledge. It is especially useful in situations where there is a lack of labeled training examples, such ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The proposed FSS architecture allowed learning from small support samples and improved query sample generalization. Furthermore, the Res2Net50-based encoder [184] allowed for better network convergence. Chen et al [185]. developed a few-shot learning approach for predicting COVID-19 CT analysis with minimum training.",
+      "Qin et al. [106] proposed face PAD using zero-shot and few-shot approaches. The authors designed Adaptive Inner-update Meta Face Anti-Spoofing (AIM-FAS) with meta learning. Using pre-defined live and fake samples along with a few samples of unknown attacks, the model carried out spoof detection.",
+      "The meta learner provided better discrimination between live faces and attacks. With adaptive inner update, the discriminative capacity enhanced, improving generalisation. Liu et al. [107] used a zero-shot approach to address the unseen attack detection in face PAD.",
+      "Second, the examples from the same class are gathered and examples from different classes are isolated by training the network. Finally, a nearest neighbour classifier is performed for classification purpose [199]. Moreover, a novel approach based on a relation network for hyperspectral image few-shot classification by using the full spatial\u2013spectral features is presented."
+    ],
+    "title": "Few-Shot Learning - an overview | ScienceDirect Topics",
+    "url": "https://www.sciencedirect.com/topics/computer-science/few-shot-learning"
+  }
+]

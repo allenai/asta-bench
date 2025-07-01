@@ -1,0 +1,248 @@
+[
+  {
+    "description": "This makes Prolog (and other logic programming languages) particularly useful for database, symbolic mathematics, and language parsing applications. Because Prolog allows impure predicates, checking the truth value of certain special predicates may have some deliberate side effect, such as ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "This makes Prolog (and other logic programming languages) particularly useful for database, symbolic mathematics, and language parsing applications. Because Prolog allows impure predicates, checking the truth value of certain special predicates may have some deliberate side effect, such as printing a value to the screen.",
+      "In some ways Prolog is a subset of Planner. The ideas in Planner were later further developed in the Scientific Community Metaphor. AgentSpeak is a variant of Prolog for programming agent behavior in multi-agent systems. Erlang began life with a Prolog-based implementation and maintains much of Prolog's unification-based syntax. Pilog is a declarative language built on top of PicoLisp, that has the semantics of Prolog, but uses the syntax of Lisp.",
+      "Prolog-MPI is an open-source SWI-Prolog extension for distributed computing over the Message Passing Interface. Also there are various concurrent Prolog programming languages. Some Prolog implementations, notably Visual Prolog, SWI-Prolog and Ciao, support server-side web programming with support for web protocols, HTML and XML.",
+      "Prolog was one of the first logic programming languages and remains the most popular such language today, with several free and commercial implementations available. The language has been used for theorem proving, expert systems, term rewriting, type systems, and automated planning, as well as its original intended field of use, natural language processing.",
+      "Although Prolog is widely used in research and education, Prolog and other logic programming languages have not had a significant impact on the computer industry in general. Most applications are small by industrial standards, with few exceeding 100,000 lines of code."
+    ],
+    "title": "Prolog - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prolog"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "Disadvantages : 1. LISP (another logic programming language) dominates over prolog with respect to I/O features. 2. Sometimes input and output is not easy. Applications : Prolog is highly used in artificial intelligence(AI). Prolog is also used for pattern matching over natural language parse trees.",
+      "Unlike many other programming languages, Prolog is intended primarily as a declarative programming language. In prolog, logic is expressed as relations (called as Facts and Rules). Core heart of prolog lies at the logic being applied. Formulation or Computation is carried out by running a query over these relations. Installation in Linux : ... In prolog, We declare some facts.",
+      "Key Features : 1. Unification : The basic idea is, can the given terms be made to represent the same structure. 2. Backtracking : When a task fails, prolog traces backwards and tries to satisfy previous task. 3. Recursion : Recursion is the basis for any search in program.",
+      "Running queries : A typical prolog query can be asked as : Query 1 : ?- singer(sonu). Output : Yes. Explanation : As our knowledge base contains the above fact, so output was 'Yes', otherwise it would have been 'No'. Query 2 : ?- odd_number(7). Output : No. Explanation : As our knowledge base does not contain the above fact, so output was 'No'. Advantages : 1. Easy to build database. Doesn't need a lot of programming effort."
+    ],
+    "title": "Prolog | An Introduction - GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/prolog-an-introduction/"
+  },
+  {
+    "description": "Learn the basics of Prolog, a logic programming language, including its syntax, features, and applications.",
+    "favicon_url": "https://you.com/favicon?domain=www.tutorialspoint.com&size=128",
+    "snippets": [
+      "Prolog is also considered as a fourth generation programming language supporting the declarative programming paradigm. The well-known Japanese Fifth-Generation Computer Project, that was announced in 1981, adopted Prolog as a development language, and thereby grabbed considerable attention on the language and its capabilities. Prolog is used in various domains. It plays a vital role in automation system. Following are some other important fields where Prolog is used \u2212",
+      "Some logic programming languages like Datalog or ASP (Answer Set Programming) are known as purely declarative languages. These languages allow statements about what the program should accomplish. There is no such step-by-step instruction on how to perform the task. However, other languages like Prolog, have declarative and also imperative properties.",
+      "Prolog or PROgramming in LOGics is a logical and declarative programming language. It is one major example of the fourth generation language that supports the declarative programming paradigm. This is particularly suitable for programs that involve symbolic or non-numeric computation. This is the main reason to use Prolog as the programming language in Artificial Intelligence, where symbol manipulation and inference manipulation are the fundamental tasks.",
+      "The explicit goal-directed linear resolution procedures, gave impetus to the development of a general purpose logic programming system. The first Prolog was the Marseille Prolog based on the work by Colmerauer in the year 1970. The manual of this Marseille Prolog interpreter (Roussel, 1975) was the first detailed description of the Prolog language."
+    ],
+    "title": "Prolog Introduction",
+    "url": "https://www.tutorialspoint.com/prolog/prolog_introduction.htm"
+  },
+  {
+    "description": "Prolog is a logic programming language largely used for artificial intelligence (AI) application development and research. It uses a declarative programming approach, making it helpful for handling uncertain or incomplete information to infer solutions.",
+    "favicon_url": "https://you.com/favicon?domain=builtin.com&size=128",
+    "snippets": [
+      "Prolog programming language screenshot. | Screenshot: Charles Calapini ... One way to use Prolog is to define a set of rules that describe the relationships between different objects or concepts in your problem domain. For example, you might define rules that specify that certain objects are bigger than others, or that some objects are the same color.",
+      "There is no single \u201csyntax\u201d for Prolog, as the language allows for a wide range of different programming styles and approaches. However, here are some basic elements of Prolog syntax that are commonly used: Facts are statements that are assumed to be true. In Prolog, facts are written using a predicate name followed by a list of arguments enclosed in parentheses. For example: man(john).",
+      "Prolog is a declarative and logic programming language designed for developing logic-based AI applications. Developers can set rules and facts around a problem, and then Prolog\u2019s interpreter will use that information to automatically infer solutions.",
+      "Prolog is also a declarative programming language, meaning that it allows the programmer to specify the rules and facts about a problem domain, and then the Prolog interpreter will use these rules and facts to automatically infer solutions to problems."
+    ],
+    "title": "Introduction to Prolog: A Programming Language for AI | Built In",
+    "url": "https://builtin.com/software-engineering-perspectives/prolog"
+  },
+  {
+    "description": "If you want to improve your skill set by learning a new programming language, say hi to Prolog, your new friend. Prolog has been around since the 1970s and has been a great problem-solving tool, mostly in the AI and\u2026",
+    "favicon_url": "https://you.com/favicon?domain=scrapingrobot.com&size=128",
+    "snippets": [
+      "Learn how to use programming language Prolog to solve problems in numerous applications today. What are the advantages of Prolog programming?",
+      "Even when Prolog is powerful enough to handle some tasks, you might rely on something other than it for other applications. Areas requiring complex algorithms and intricate real-time control are better handled with different languages. Here are the questions that most people ask concerning Python programming. SLD resolution. Prolog also employs a first-order logic subset, the horn logic, in operations. Prolog has one datatype, with numerous subtypes; numbers, names, variables, and atoms. Prolog is an example of fourth-generation programming.",
+      "The query seeks to find out how many classes are scheduled for Monday. Prolog programming can help to retrieve someone\u2019s class schedule, helping in timetable generation or general educational planning. Simple declarative approach \u2013 Prolog allows you to write complex logic easily through its declarative style. The programming language only focuses on what needs to be solved and doesn\u2019t involve intricate algorithms.",
+      "Here are some of the most popular use cases of the Prolog programming language."
+    ],
+    "title": "A Complete Guide \u2013 How to Use the Programming Language Prolog",
+    "url": "https://scrapingrobot.com/blog/programming-language-prolog/"
+  },
+  {
+    "description": "Prolog Tutorial with Tutorial, Introduction, Starting of Prolog, Prolog Programs, Types of Prolog, Applications of Prolog, Backtracking in Prolog etc.",
+    "favicon_url": "https://you.com/favicon?domain=www.javatpoint.com&size=128",
+    "snippets": [
+      "Using the built-in predicates, the sequence of goals, or specifying a goal at the system prompt would be of little value in itself. To write a Prolog program, firstly, the user has to write a program which is written in the Prolog language, load that program,...",
+      "Data Objects in Prolog In Prolog, data objects are also known as terms. In Prolog, the example of terms is bulldog, dog(rottweiler), A, and cat(A). Terms have several different types, which are explained as follows: 1. Numbers In Prolog, all versions allow the use of integers.",
+      "Prolog is used to provide the Tuples, lists, numbers, atoms, and patterns. In this section, we can define the type of objects that are passed as arguments. Simple Types This type of Prolog is implementation-dependent.",
+      "Java Data Structures C Programming C++ Tutorial C# Tutorial PHP Tutorial HTML Tutorial JavaScript Tutorial jQuery Tutorial Spring Tutorial"
+    ],
+    "title": "Prolog Tutorial - javatpoint",
+    "url": "https://www.javatpoint.com/prolog"
+  },
+  {
+    "description": "For example, the conjoined questions ... Combinations of relations can be created by special PROLOG operations. Suppose the following relations are defined: ... Thus a PROLOG program consists of the basic facts in terms of declarations and some rules for defining more complex relations from ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sjsu.edu&size=128",
+    "snippets": [
+      "For example, the conjoined questions ... Combinations of relations can be created by special PROLOG operations. Suppose the following relations are defined: ... Thus a PROLOG program consists of the basic facts in terms of declarations and some rules for defining more complex relations from the basic relations.",
+      "Below is given a set of basic rules of differentiation in a PROLOG format. ... The rule that deriv(X,X,1) is always true. This is the meaning of \":- !.\" It could be read as \"if anything.\" The output of a program run on the basis of the above data is not simplified. For example, the question ... The derivative program needs to operate in conjunction with a simplification program. Some commands in such a simplification program would be:",
+      "There are primarily two computer languages used in artificial intelligence work, LISP and PROLOG. LISP, which is short for List Processing, was created by John McCarthy of Stanford University. It looks klutzy but it is based upon the lamba calculus and works quite well for computation associated with artificial intelligence.",
+      "PROLOG has an elegant formulation but it does not have the range of application that LISP has. The Japanese when they formulated the Fifth Generation project chose PROLOG over LISP as the programming language. This was perhaps one of the factors that contributed to the failure of the Fifth Generation project."
+    ],
+    "title": "Introduction to the Programming Language PROLOG: A Language for ...",
+    "url": "https://www.sjsu.edu/faculty/watkins/prolog.htm"
+  },
+  {
+    "description": "Other articles where PROLOG is discussed: artificial intelligence programming language: The logic programming language PROLOG (Programmation en Logique) was conceived by Alain Colmerauer at the University of Aix-Marseille, France, where the language was first implemented in 1973.",
+    "favicon_url": "https://you.com/favicon?domain=www.britannica.com&size=128",
+    "snippets": [
+      "Logic programming languages, of which PROLOG (programming in logic) is the best known, state a program as a set of logical relations (e.g., a grandparent is the parent of a parent of someone). Such languages are similar to the SQL database language. A program is executed by an \u201cinference engine\u201d\u2026Read More ... Prolog has been used largely for logic programming, and its applications include natural language understanding and expert systems such as MYCIN.",
+      "The logic programming language PROLOG (Programmation en Logique) was conceived by Alain Colmerauer at the University of Aix-Marseille, France, where the language was first implemented in 1973. PROLOG was further developed by the logician Robert Kowalski, a member of the AI group at the University of Edinburgh."
+    ],
+    "title": "PROLOG | computer language | Britannica",
+    "url": "https://www.britannica.com/technology/PROLOG"
+  },
+  {
+    "description": "33 votes, 22 comments. 8.7K subscribers in the prolog community. Content and discussion about Prolog, logic programming, and related matters.",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "It has been something of a trend for at least a decade that ideas from \"research\" languages slowly find their way into \"production\" languages. Pattern matching for example is not at all a new idea (there is, for example, Icon), but it still hasn't properly taken off (Rust maybe? we'll see...). Prolog itself has been influenced by functional programming, it seems.",
+      "You won't get a job only because you know Prolog, but it is a language that will teach you thinking about problems in a more general and structured manner. There are also programming techniques that are useful in any language. ... This is why I use it, some problems are just easier to think about in prolog terms, and I have even written rule a based engine in prolog and then transformed it to c# and the results are clear code and a low bug rate.",
+      "This new language allows to write logic programs using partial functions. ( I take this opportunity to greet the community (I am new here) and I apologize for my poor English ) ... I agree with what everyone else is saying , just wanted to add one more thing - surprisingly, knowing Prolog will make it easier to learn \"new\" languages (e.g., Erlang is quite similar to Prolog in terms of syntax, and knowing Erlang will make it easier to learn Elixir). ... It can pop up in some surprising places.",
+      "It's funny, but I don't think any programming language is really going to die, going forward, if there is even one person who is passionate about it. I mean, SNOBOL, seriously. And there are even proto-Prolog ideas there."
+    ],
+    "title": "r/prolog on Reddit: Is Prolog still used today and is it still ...",
+    "url": "https://www.reddit.com/r/prolog/comments/952d5v/is_prolog_still_used_today_and_is_it_still_worth/"
+  },
+  {
+    "description": "Prolog programming language distinguishes itself from other programming languages because of several distinguished features. Explore what prolog is, its applications, advantages, and limitations.",
+    "favicon_url": "https://you.com/favicon?domain=www.usaii.org&size=128",
+    "snippets": [
+      "% Rule: Someone likes music if their genre is Pop ... It is used to ask the interpreter to solve problems based on the rules and facts in the program. They are written using the same syntax as facts but followed by a question mark. ... Expert systems: Prolog can represent knowledge and reason logically making it ideal for building expert systems that can capture and apply the knowledge of human experts in specific domains. Natural Language Processing: Prologs are used to develop systems capable of understanding and processing human languages and help machines with translation and sentiment analysis",
+      "Python and Java are the two most dominating programming languages in the world currently that are used in data science, artificial intelligence, cybersecurity, software development, and all kinds of technical industries. But Prolog stands out from all other programming languages as a unique tool specially designed for AI applications and AI programming.",
+      "Prolog is one of the most popular logic programming languages that is highly suitable for artificial intelligence and logic. It was developed in the 1970s and initially intended to build intelligent systems that can do reasoning and problem-solving like humans. Now, though its use in mainstream AI has reduced, it still remains a valuable tool in many specific areas such as expert systems and natural language processing.",
+      "Prolog is one of the finest languages because of its unique approach to programming. They are excellent in tasks involving logic, reasoning, and knowledge representation. Though they are not used mainstream in AI programming, they are still important tools in many specific domains including education."
+    ],
+    "title": "What is Prolog Programming Language: An Overview",
+    "url": "https://www.usaii.org/ai-insights/what-is-prolog-programming-language-an-overview"
+  },
+  {
+    "description": "Answer (1 of 3): Well, I can\u2019t really tell what are the most common uses for Prolog as I haven\u2019t been involved too seriously on that community. I can tell you of the kinds of apps I\u2019ve developed with it and that I think Prolog is very suited to do. Using Prolog, I\u2019ve developed: * A ...",
+    "favicon_url": "https://you.com/favicon?domain=www.quora.com&size=128",
+    "snippets": [
+      "Answer (1 of 3): Well, I can\u2019t really tell what are the most common uses for Prolog as I haven\u2019t been involved too seriously on that community. I can tell you of the kinds of apps I\u2019ve developed with it and that I think Prolog is very suited to do. Using Prolog, I\u2019ve developed: * A schedule m...",
+      "Something went wrong."
+    ],
+    "title": "What are the most common practical uses for Prolog as a programming ...",
+    "url": "https://www.quora.com/What-are-the-most-common-practical-uses-for-Prolog-as-a-programming-language-Could-you-name-some-apps-that-were-developed-using-Prolog"
+  },
+  {
+    "description": "Logic Programming for AI Topics. Group 11: Simran Cashyap (suc05), Max Sheremet (ms1005) and Charence Wong (cclw05).",
+    "favicon_url": "https://you.com/favicon?domain=www.doc.ic.ac.uk&size=128",
+    "snippets": [
+      "\u00a9 Simran, Max & Charence 2006 Topics in AI - Logic Programming - Group 11 DoC Imperial College London"
+    ],
+    "title": "Logic Programming - Prolog",
+    "url": "https://www.doc.ic.ac.uk/~cclw05/topics1/prolog.html"
+  },
+  {
+    "description": "Prolog has a built-in backtracking ... Prolog programs can be quite slow!). Other examples of declarative languages are SQL, regular expressions, and HTML. While Prolog has not been a commercially successful language, it does have some common applications, such as: Grammars for natural language processing. For instance, the IBM Watson system used Prolog (among ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sfu.ca&size=128",
+    "snippets": [
+      "Prolog has a built-in backtracking search that can solve pretty much any problem (if you have enough time \u2014 naive Prolog programs can be quite slow!). Other examples of declarative languages are SQL, regular expressions, and HTML. While Prolog has not been a commercially successful language, it does have some common applications, such as: Grammars for natural language processing. For instance, the IBM Watson system used Prolog (among other languages) to help it answer natural language questions.",
+      "Often, variations of Prolog are used for this sort of application, e.g. Datomic is a database that uses the Prolog-like language datalog to write queries. Problems that require some sort of backtracking, such as scheduling or timetabling problem from logistics, can often be nicely represented and solved in Prolog. While Prolog can be used as a general-purpose programming language, it\u2019s not very popular for that since its syntax and semantics is unfamiliar to most programmers, and it can be quite tricky to write efficient programs (even for some common programming problems).",
+      "Prolog rules are flexible enough to implement any function we like, and so it is possible to use Prolog as a general-purpose programming language. Lets write a function called member(X, L) that succeeds just when X is somewhere on the list L.",
+      "Variables in Prolog are called logic variables, and they are different than variables in other programming languages: All Prolog variables must start with an uppercase letter. For example, X, Who, and John are all examples of Prolog variables, while x, who, and john are all non-variable objects. A Prolog variable is either instantiated or uninstantiated. An instantiated variable has some value associated with it, while an uninstantiated variable has no value associated with it."
+    ],
+    "title": "Introduction to Prolog \u2014 383summer2019 documentation",
+    "url": "https://www.sfu.ca/~tjd/383summer2019/prolog_intro.html"
+  },
+  {
+    "description": "At this point, you might be wondering how Prolog differs from functional programming, a paradigm you might be more familiar with. In functional programming, you specify how to compute a result using\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Prolog, short for \u201cProgramming in Logic,\u201d is a unique and powerful programming language that\u2019s based on the principles of formal logic. In the world of computer science, Prolog stands out for its ability to tackle problems that involve complex rules, knowledge representation, and intricate relationships.",
+      "Whether you\u2019re a novice or an experienced programmer, this guide will help you grasp the basics of Prolog and set the stage for your journey into the world of logic programming. At its core, Prolog is a declarative, rule-based language. Unlike imperative languages like Python or C++, which specify \u201chow\u201d a task should be done, Prolog focuses on \u201cwhat\u201d you want to accomplish.",
+      "Such types of relationship problems can be solved by using logic programming(Prolog). In Prolog, everything revolves around facts and rules. Facts are simple statements that express something as true.",
+      "Knowledge Representation: It\u2019s used for representing and reasoning over complex knowledge structures. To start coding in Prolog, you\u2019ll need a Prolog interpreter or system like SWI-Prolog.You can download SWI Prolog through the below link: ... Install it on your system, and you\u2019re ready to go. In the next article in this series, we\u2019ll dive deeper into creating your first Prolog program, understanding more complex rules, and exploring how to use Prolog for practical problem-solving."
+    ],
+    "title": "A Beginner\u2019s Guide to Prolog: Unlocking the Power of Logic ...",
+    "url": "https://medium.com/@himashasilva/a-beginners-guide-to-prolog-unlocking-the-power-of-logic-programming-c9ef3cc7cf47"
+  },
+  {
+    "description": "Define programming languages prolog. This exploration into Prolog's history, design principles, and its subtle role in modern AI will answer just that.",
+    "favicon_url": "https://you.com/favicon?domain=rayobyte.com&size=128",
+    "snippets": [
+      "But what is it about Prolog that has allowed it to remain relevant in a rapidly evolving tech landscape? This exploration into Prolog\u2019s history, design principles, and its subtle role in modern AI will answer just that. We\u2019ll also look at some examples of Prolog in use today. Prolog is an example of a fourth generation programming language.",
+      "Although the advent of more versatile programming languages has overshadowed Prolog in some areas of AI, it remains a valuable tool in specific domains such as expert systems and advanced knowledge bases.",
+      "In an era dominated by new programming languages, it\u2019s easy to overlook the foundational technologies that set the stage for today\u2019s innovations. Among these, the programming language Prolog holds a unique place. Developed in the 1970s, Prolog was engineered with the ambitious goal of mimicking human reasoning and problem-solving capabilities.",
+      "Let\u2019s begin by tracing the history of Prolog, including why it was developed and what it was created to achieve. The story of the programming language Prolog (Programming in Logic) began in the early 1970s at the University of Marseille, where Alain Colmerauer and Philippe Roussel developed it as a part of their artificial intelligence research."
+    ],
+    "title": "Prolog: A Complete Guide to How to Use It || Rayobyte",
+    "url": "https://rayobyte.com/blog/programming-language-prolog/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=staff.fnwi.uva.nl&size=128",
+    "snippets": [],
+    "title": "Lecture Notes: An Introduction to Prolog Programming",
+    "url": "https://staff.fnwi.uva.nl/u.endriss/teaching/prolog/prolog.pdf"
+  },
+  {
+    "description": "Prolog is one of those languages you normally learn during your formative years (in school, university, and the like), but it is learned and forgotten almost at the same time. Why is that, though\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "A quick review of this poorly known programming language and why it could potentially shape your career",
+      "When asked what other languages they knew how to use, they dropped the line \u201cWell, I learned Prolog during my university years, but no one uses that anymore.\u201d ... Surely, that can\u2019t be true, can it? Full disclaimer: I am not one of those software developers who learned Prolog during university. I never saw it as part of my curricula, but I did learn about it several years ago while reading Seven Languages in Seven Weeks (a must-read book for all\u2026 ... Advice for programmers.",
+      "Advice for programmers. ... Photo by Paulius Dragunas on Unsplash. Prolog is one of those languages you normally learn during your formative years (in school, university, and the like), but it is learned and forgotten almost at the same time."
+    ],
+    "title": "Have You Heard of Prolog?. A quick review of this poorly known\u2026",
+    "url": "https://medium.com/better-programming/have-you-heard-of-prolog-ce34fdb8660a"
+  },
+  {
+    "description": "Most important thing to keep in mind while writing prolog program - \"order of writing facts & rules always matters\". Example 1 : Below food table shows the facts, rules, goals and their english meanings. ... Example 2 : Below student-professor relation table shows the facts, rules, goals and their english meanings. ... Try it yourself in SWI-prolog : Use ...",
+    "favicon_url": "https://you.com/favicon?domain=athena.ecs.csus.edu&size=128",
+    "snippets": [
+      "Most important thing to keep in mind while writing prolog program - \"order of writing facts & rules always matters\". Example 1 : Below food table shows the facts, rules, goals and their english meanings. ... Example 2 : Below student-professor relation table shows the facts, rules, goals and their english meanings. ... Try it yourself in SWI-prolog : Use above Example 1 & Example 2 and try below queries by yourself and find out why did you get those answers.",
+      "Example - 3 Arithmetic Example - 4 Car & Owner Example - 5 List in Prolog Example - 6 Own pet & Love"
+    ],
+    "title": "Prolog Examples",
+    "url": "https://athena.ecs.csus.edu/~mei/logicp/prolog/programming-examples.html"
+  },
+  {
+    "description": "In computational semantics, prolog programming refers to logic programming. Its foundation is the data-based language's factual norms.",
+    "favicon_url": "https://you.com/favicon?domain=www.educba.com&size=128",
+    "snippets": [
+      "The prolog language is a declarative and logical programming language for AI technology.It is an acronym of the logical programming language and its work for artificial intelligence. Prolog programming means programming in logic to be used in computational semantics.It is based on the fact and rules of the data-based language.It is a logical relationship and data-related work for advanced computational technology.",
+      "This programming language is working on graphical user interfaces with a single data type. It is free, the open-source language for highly interactive applications.The prolog is problem-solving, natural processing, and theorem-proving programming language with minimal algorithm and syntaxes.",
+      "It has powerful interfaces between the prolog and C programming language. The user of prolog programmer creates their constraints with customization.",
+      "This programming language provides high-level and categorized constraints. The prolog supports easier pattern matching and searching data features. The prolog language does not use complex algorithms and coding."
+    ],
+    "title": "Prolog Programming | How does Prolog Programming work?",
+    "url": "https://www.educba.com/prolog-programming/"
+  },
+  {
+    "description": "Answer (1 of 11): Despite what the other answers said: Unless you are forced to use prolog, try to avoid it. I wrote my PhD thesis in the 90s using Prolog and did quite a lot of Prolog programming myself and came to the following conclusion: Prolog is from a theoretical point of view a very inte...",
+    "favicon_url": "https://you.com/favicon?domain=www.quora.com&size=128",
+    "snippets": [
+      "Something went wrong."
+    ],
+    "title": "What is Prolog used for today? - Quora",
+    "url": "https://www.quora.com/What-is-Prolog-used-for-today"
+  },
+  {
+    "description": "tl;dr Prolog gave me a whole new perspective. Let me know programming languages that altered how you...",
+    "favicon_url": "https://you.com/favicon?domain=dev.to&size=128",
+    "snippets": [
+      "tl;dr Prolog gave me a whole new perspective. Let me know programming languages that altered how you... Tagged with discuss, career.",
+      "Great spirit we should always try to learn something new from a programming language. ... Perl enthusiast. ... Moreover, there's a language with syntax similar to Prolog, so learning Prolog might make it easier for you to learn the other one, too. Its name is Erlang and it's still used in production in many businesses.",
+      "What the fu*k is a Prolog were my precise thoughts. I thought I was pretty clued up on all the programming languages out there. Why are we learning a programming language I've never even heard of? I went home, did some googling to try to find out what this Prolog thing was.",
+      "Prolog is a logic programming language. You define relations which are known as Facts and Rules. You then query your knowledge base and it returns the output based on those facts and rules. Solutions are typically written by recursion, the program calls itself until some objective has been satisfied, which is often referred to as the base case or final state."
+    ],
+    "title": "The Programming Language That Changed My Life! - DEV Community",
+    "url": "https://dev.to/lukegarrigan/the-programming-language-that-changed-my-life-2kc7"
+  },
+  {
+    "description": "It suffices to support parameter combinations we need to % use in the program. It is a good idea to document which combinations % are supported. In regular Prolog this is informally in structured % comments, but in some Prolog variants like Visual Prolog and Mercury % this is mandatory and ...",
+    "favicon_url": "https://you.com/favicon?domain=learnxinyminutes.com&size=128",
+    "snippets": [
+      "It suffices to support parameter combinations we need to % use in the program. It is a good idea to document which combinations % are supported. In regular Prolog this is informally in structured % comments, but in some Prolog variants like Visual Prolog and Mercury % this is mandatory and checked by the compiler.",
+      "Prolog is a logic programming language first specified in 1972, and refined into multiple modern implementations.",
+      "% False - atoms are case sensitive ?- batman = darthVader. % False - atoms are distinct % Atoms are popular in examples but were created on the assumption that % Prolog would be used interactively by end users - they are less % useful for modern applications and some Prolog variants abolish them % completely."
+    ],
+    "title": "Learn Prolog in Y Minutes",
+    "url": "https://learnxinyminutes.com/prolog/"
+  }
+]

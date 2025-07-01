@@ -1,0 +1,266 @@
+[
+  {
+    "description": "When should your data team use RAG vs fine tuning for your generative AI initiative? We dive into the benefits and use cases of each.",
+    "favicon_url": "https://you.com/favicon?domain=www.montecarlodata.com&size=128",
+    "snippets": [
+      "Generative AI has the potential to transform your business and your data engineering team, but only when it\u2019s done right. So how can your data team actually drive value with your LLM or GenAI initiative? Leading organizations are often deciding between two emerging frameworks that differentiate their AI for business value: RAG vs fine tuning.",
+      "Data observability transforms data quality from a hidden risk into a managed asset, ensuring your AI investments deliver consistent value whether you choose RAG, fine-tuning, or a combination of both approaches. To learn more about how data observability can ensure the reliability of your GenAI pipelines, chat with our team here.",
+      "ML and GenAI applications Launch and maintain performant and reliable AI products.",
+      "The RAG pipeline follows a straightforward sequence that transforms a simple question into an informed response. When a user asks a question, the technology doesn\u2019t immediately start generating an answer. Instead, it first searches a connected knowledge base for relevant content. This knowledge base could be company documents, a curated database, scientific papers, or any other collection of information that the organization has made searchable."
+    ],
+    "title": "RAG Vs Fine Tuning: How To Choose The Right Method",
+    "url": "https://www.montecarlodata.com/blog-rag-vs-fine-tuning/"
+  },
+  {
+    "description": "Retrieval-augmented generation (RAG) is a technique for enhancing the accuracy and reliability of generative AI models with facts fetched from external sources.",
+    "favicon_url": "https://you.com/favicon?domain=blogs.nvidia.com&size=128",
+    "snippets": [
+      "The paper, with coauthors from the former Facebook AI Research (now Meta AI), University College London and New York University, called RAG \u201ca general-purpose fine-tuning recipe\u201d because it can be used by nearly any LLM to connect with practically any external resource.",
+      "The court clerk of AI is a process called retrieval-augmented generation, or RAG for short. Patrick Lewis, lead author of the 2020 paper that coined the term, apologized for the unflattering acronym that now describes a growing family of methods across hundreds of papers and dozens of commercial services he believes represent the future of generative AI.",
+      "Retrieval-augmented generation gives models sources they can cite, like footnotes in a research paper, so users can check any claims. That builds trust. What\u2019s more, the technique can help models clear up ambiguity in a user query. It also reduces the possibility that a model will give a very plausible but incorrect answer, a phenomenon called hallucination. Another great advantage of RAG is it\u2019s relatively easy.",
+      "A blog by Lewis and three of the paper\u2019s coauthors said developers can implement the process with as few as five lines of code. That makes the method faster and less expensive than retraining a model with additional datasets. And it lets users hot-swap new sources on the fly. With retrieval-augmented generation, users can essentially have conversations with data repositories, opening up new kinds of experiences. This means the applications for RAG could be multiple times the number of available datasets."
+    ],
+    "title": "What Is Retrieval-Augmented Generation aka RAG | NVIDIA Blogs",
+    "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/"
+  },
+  {
+    "description": "Both retrieval-augmented generation, or RAG, and fine-tuning can help an LLM be more useful for your business. Which is better? Can you combine them for maximum performance? Read on.",
+    "favicon_url": "https://you.com/favicon?domain=www.oracle.com&size=128",
+    "snippets": [
+      "Want to help an LLM work smarter for your business? There are two paths: Fine-tune it, or augment it with retrieval-augmented generation (RAG). Here\u2019s how each technique works and what each one can do for you.",
+      "Business intelligence. Companies can use RAG to help GenAI models pull relevant market data for automated production of insights and reports.",
+      "RAG vs. Fine-Tuning FAQs \u00b7 General-purpose large language models, or LLMs, have become popular with the public because they can discuss a wide variety of topics and write term papers, thank you notes, and many other tasks. In business, however, these generic outputs won\u2019t do.",
+      "In healthcare, RAG can be applied to support doctors and other clinicians by aiding in diagnosis and treatment planning. It does this by helping AI models retrieve medical case studies, research papers, or clinical trial results that are relevant to a patient\u2019s symptoms or condition."
+    ],
+    "title": "RAG vs. Fine-Tuning: How to Choose",
+    "url": "https://www.oracle.com/artificial-intelligence/generative-ai/retrieval-augmented-generation-rag/rag-fine-tuning/"
+  },
+  {
+    "description": "This article aims to simplify the choice between Fine-tuning and Retrieval-Augmented Generation (RAG) and comprehensive insights to make an informed decision. We\u2019ll begin by explaining the core\u2026",
+    "favicon_url": "https://you.com/favicon?domain=harsha-srivatsa.medium.com&size=128",
+    "snippets": [
+      "This article aims to simplify the choice between Fine-tuning and Retrieval-Augmented Generation (RAG) and comprehensive insights to make an\u2026",
+      "While highly effective for tasks requiring a deep understanding of context or external information, RAG may not be ideal for applications requiring quick, real-time responses due to its computational intensity.",
+      "Availability of Labeled Training Data: If you have a wealth of domain-specific, labeled training data, fine-tuning can offer more tailored model behavior. In scenarios where such data is limited, a RAG system provides a robust alternative.",
+      "As Generative AI technologies continue to evolve, the methodologies underpinning them are also undergoing rapid transformation. While fine-tuning and Retrieval-Augmented Generation (RAG) are currently at the forefront, the landscape is dynamic, suggesting a future where these methods may coexist, converge into hybrid models, or even give way to entirely new techniques."
+    ],
+    "title": "Fine-tuning versus RAG in Generative AI Applications Architecture ...",
+    "url": "https://harsha-srivatsa.medium.com/fine-tuning-versus-rag-in-generative-ai-applications-architecture-d54ca6d2acb8"
+  },
+  {
+    "description": "There are two common ways in which developers are incorporating proprietary and domain-specific data when building applications of Large Language Models (LLMs): Retrieval-Augmented Generation (RAG) and Fine-Tuning. RAG augments the prompt with the external data, while fine-Tuning incorporates ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "There are two common ways in which developers are incorporating proprietary and domain-specific data when building applications of Large Language Models (LLMs): Retrieval-Augmented Generation (RAG) and Fine-Tuning. RAG augments the prompt with the external data, while fine-Tuning incorporates the additional knowledge into the model itself.",
+      "Abstract page for arXiv paper 2401.08406: RAG vs Fine-tuning: Pipelines, Tradeoffs, and a Case Study on Agriculture",
+      "RAG augments the prompt with the external data, while fine-Tuning incorporates the additional knowledge into the model itself. However, the pros and cons of both approaches are not well understood. In this paper, we propose a pipeline for fine-tuning and RAG, and present the tradeoffs of both for multiple popular LLMs, including Llama2-13B, GPT-3.5, and GPT-4.",
+      "View a PDF of the paper titled RAG vs Fine-tuning: Pipelines, Tradeoffs, and a Case Study on Agriculture, by Angels Balaguer and 15 other authors View PDF"
+    ],
+    "title": "[2401.08406] RAG vs Fine-tuning: Pipelines, Tradeoffs, and a Case ...",
+    "url": "https://arxiv.org/abs/2401.08406"
+  },
+  {
+    "description": "Leveraging the full potential of LLMs requires choosing the right technique between retrieval-augmented generation (RAG) and fine-tuning.",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Leveraging the full potential of LLMs requires choosing the right technique between retrieval-augmented generation (RAG) and fine-tuning. Let\u2019s examines when to use RAG versus fine-tuning for LLMs\u2026",
+      "Retrieval-augmentation combines the benefits of LLMs ability to understand language with the relevant knowledge in a domain-specific database. This makes RAG systems more knowledgeable, consistent, and safe compared to vanilla LLMs.",
+      "Let\u2019s examines when to use RAG versus fine-tuning for LLMs, smaller models, and pre-trained models.",
+      "Therefore, RAG systems often achieve better performance than fine-tuning while retaining more capabilities of the original LLM."
+    ],
+    "title": "When to Apply RAG vs Fine-Tuning. Leveraging the full potential ...",
+    "url": "https://medium.com/@bijit211987/when-to-apply-rag-vs-fine-tuning-90a34e7d6d25"
+  },
+  {
+    "description": "This article is based on the paper \u201cFine Tuning vs. Retrieval Augmented Generation for Less Popular Knowledge\u201d published in March 2024 from Radboud University and University of Amsterdam by Heydar\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "This article is based on the paper \u201cFine Tuning vs. Retrieval Augmented Generation for Less Popular Knowledge\u201d published in March 2024\u2026",
+      "RAG retrieves relevant information from a document corpus and enhances llm\u2019s response generation through the implementation of in-context learning (ICL) while fine-tuning approach updates model weights to become good at recalling specific information and enhance its memorization capabilities during inference.",
+      "This paper particularly focuses on the questions \u201cWhat is the effectiveness of RAG and fine-tuning with synthetic data on QA for low-frequency factual knowledge?\u201d and \u201cWhich parameters including the quality of synthetic samples, the method to be fine-tuned, the model size, and the performance of retrieval models affect the downstream performance?\u201d. The paper has explored various factors including model size, retrieval models, the quality of synthetic data generation, and the fine tuning method (PEFT vs.",
+      "Fine-tuning provided a substantial improvements in the most and least popular categories while RAG consistently outperformed fine tuning methods, particularly when combined with fine-tuning in smaller models."
+    ],
+    "title": "Paper Breakdown : Fine Tuning vs RAG for Less Popular Knowledge ...",
+    "url": "https://medium.com/@pranjalkhadka/paper-breakdown-fine-tuning-vs-rag-for-less-popular-knowledge-ef018d2e275c"
+  },
+  {
+    "description": "When an LLM doesn't meet your expectations, you can optimize it using retrieval-augmented generation or by fine-tuning it. Find out what's best, when.",
+    "favicon_url": "https://you.com/favicon?domain=www.k2view.com&size=128",
+    "snippets": [
+      "K2view Finds that Just 2% of U.S. and UK Businesses are Ready for GenAI Deployment \u00b7 K2view Launches New Synthetic Data Management Solution \u00b7 K2view a Leader in the 2023 SPARK Matrix for Data Masking Tools ... RAG vs fine-tuning vs prompt engineering: And the winner is...",
+      "Retrieval-Augmented Generation (RAG) is a Generative AI (GenAI) framework that enhances Large Language Models (LLMs) by enabling them to access and use up-to-date and trustworthy information from internal knowledge bases and enterprise systems \u2013 without the need for retraining.",
+      "Whether you choose RAG or fine-tuning, data products are revolutionizing the way Generative AI works. These reusable data assets combine data with everything you need to make them independently accessible to authorized GenAI users.",
+      "A data product approach can be applied to multiple RAG and fine-tuning use cases \u2013 delivering insights derived from an organization\u2019s internal information and data to:  \u00b7 Resolve customer service issues faster.  \u00b7 Create hyper-personalized marketing campaigns.  \u00b7 Deliver relevant cross-/up-sell recommendations.  \u00b7 Detect fraud by identifying suspicious activity in a user account.  \u00b7 Fine-tune your GenAI knowledge by getting acquainted with GenAI Data Fusion, the 360\u00b0 RAG tools by K2view."
+    ],
+    "title": "Retrieval-Augmented Generation vs Fine-Tuning: What\u2019s Right for You?",
+    "url": "https://www.k2view.com/blog/retrieval-augmented-generation-vs-fine-tuning/"
+  },
+  {
+    "description": "This study presents an innovative enhancement to retrieval-augmented generation (RAG) systems by seamlessly integrating fine-tuned large language models (LLMs) with vector databases. This integration capitalizes on the combined strengths of structured data retrieval and the nuanced comprehension ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "This study presents an innovative enhancement to retrieval-augmented generation (RAG) systems by seamlessly integrating fine-tuned large language models (LLMs) with vector databases. This integration capitalizes on the combined strengths of structured data retrieval and the nuanced comprehension provided by advanced LLMs.",
+      "Scientific Reports - A fine-tuning enhanced RAG system with quantized influence measure as AI judge",
+      "The paper introduces a novel system that enhances retrieval-augmented generation (RAG) models by integrating fine-tuned large language models (LLMs) with a traditional vector database, aiming to improve communication within homeless shelters and potentially other communities in need.",
+      "In this paper, we present a novel QIM as an AI Judge, significantly enhancing the precision of our Retrieval-Augmented Generation (RAG) system. Our study integrates real user feedback, incorporating detailed descriptions and quantitative analyses to showcase the impact on model performance."
+    ],
+    "title": "A fine-tuning enhanced RAG system with quantized influence measure ...",
+    "url": "https://www.nature.com/articles/s41598-024-79110-x"
+  },
+  {
+    "description": "Explore how RAG, Fine-tuning, and LoRA enhance open-source GenAI models. Learn when to use each technique, their benefits and trade-offs, and how they improve model performance while optimizing costs in enterprise AI applications.",
+    "favicon_url": "https://you.com/favicon?domain=www.theriseunion.com&size=128",
+    "snippets": [
+      "Summary: As the adoption of Generative AI (GenAI) accelerates across industries, organizations are increasingly turning to open-source GenAI models. These models offer flexibility, customization, and cost-effectiveness, but fully harnessing their power requires understanding key techniques like Retrieval-Augmented Generation (RAG), fine-tuning, and Low-Rank Adaptation (LoRA) adapters.",
+      "This blog will introduce these concepts, their roles in GenAI, and how to evaluate which method is best for your organization. RAG is a technique that enhances generative models by augmenting them with external information sources, such as knowledge bases, documents, or databases.",
+      "RAG retrieves documents or data using vector embeddings, which represent the model\u2019s understanding of the input text. By matching the embeddings to external sources, the model augments its output in real time with relevant information, enriching responses without requiring additional model training. For organizations using open-source GenAI models, especially those with limited fine-tuning capabilities, RAG offers a practical way to enrich model outputs with current, context-specific information.",
+      "In the rapidly evolving landscape of AI, leveraging techniques like RAG, fine-tuning, and LoRA adapters can help organizations unlock the full potential of open-source GenAI models."
+    ],
+    "title": "Understanding the Role of RAG, Fine-Tuning, and LoRA in GenAI - ...",
+    "url": "https://www.theriseunion.com/en/blog/Understanding-the-essential-Role-of-RAG-Fine-tuning-and-LoRA-in-GenAI.html"
+  },
+  {
+    "description": "The study evaluates the effectiveness of Retrieval-Augmented Generation (RAG) and fine-tuning pipelines for adapting Large Language Models (LLMs) to agricultural datasets, showing significant improvements in accuracy and cross-geographical knowledge integration \u00b7 There are two common ways ...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Join the discussion on this paper page",
+      "The study evaluates the effectiveness of Retrieval-Augmented Generation (RAG) and fine-tuning pipelines for adapting Large Language Models (LLMs) to agricultural datasets, showing significant improvements in accuracy and cross-geographical knowledge integration.",
+      "There are two common ways in which developers are incorporating proprietary and domain-specific data when building applications of Large Language Models (LLMs): Retrieval-Augmented Generation (RAG) and Fine-Tuning. RAG augments the prompt with the external data, while fine-Tuning incorporates the additional knowledge into the model itself.",
+      "In this paper, we propose a pipeline for fine-tuning and RAG, and present the tradeoffs of both for multiple popular LLMs, including Llama2-13B, GPT-3.5, and GPT-4. Our pipeline consists of multiple stages, including extracting information from PDFs, generating questions and answers, using them for fine-tuning, and leveraging GPT-4 for evaluating the results."
+    ],
+    "title": "Paper page - RAG vs Fine-tuning: Pipelines, Tradeoffs, and a Case ...",
+    "url": "https://huggingface.co/papers/2401.08406"
+  },
+  {
+    "description": "RAG is an AI framework for retrieving facts to ground LLMs on the most accurate information and to give users insight into AI\u2019s decision making process.",
+    "favicon_url": "https://you.com/favicon?domain=research.ibm.com&size=128",
+    "snippets": [
+      "But fine-tuning alone rarely gives the model the full breadth of knowledge it needs to answer highly specific questions in an ever-changing context. In a 2020 paper, Meta (then known as Facebook) came up with a framework called retrieval-augmented generation to give LLMs access to information beyond their training data. RAG allows LLMs to build on a specialized body of knowledge to answer questions in more accurate way.",
+      "IBM unveiled its new AI and data platform, watsonx, which offers RAG, back in May. Underpinning all foundation models, including LLMs, is an AI architecture known as the transformer. It turns heaps of raw data into a compressed representation of its basic structure. Starting from this raw representation, a foundation model can be adapted to a variety of tasks with some additional fine-tuning on labeled, domain-specific knowledge.",
+      "For straightforward queries, this manual decision-tree method worked just fine. But it had limitations. Anticipating and scripting answers to every question a customer might conceivably ask took time; if you missed a scenario, the chatbot had no ability to improvise. Updating the scripts as policies and circumstances evolved was either impractical or impossible. Today, LLM-powered chatbots can give customers more personalized answers without humans having to write out new scripts. And RAG allows LLMs to go one step further by greatly reducing the need to feed and retrain the model on fresh examples.",
+      "With enough fine-tuning, an LLM can be trained to pause and say when it\u2019s stuck. But it may need to see thousands of examples of questions that can and can\u2019t be answered. Only then can the model learn to identify an unanswerable question, and probe for more detail until it hits on a question that it has the information to answer. RAG is currently the best-known tool for grounding LLMs on the latest, verifiable information, and lowering the costs of having to constantly retrain and update them."
+    ],
+    "title": "What is retrieval-augmented generation (RAG)? - IBM Research",
+    "url": "https://research.ibm.com/blog/retrieval-augmented-generation-RAG"
+  },
+  {
+    "description": "Enhancing RAG Systems: Discover fine-tuning strategies for optimizing retrieval augmented generation in large language models.",
+    "favicon_url": "https://you.com/favicon?domain=www.superannotate.com&size=128",
+    "snippets": [
+      "Fine-tuning a retrieval augmented generation (RAG) system has become increasingly relevant with the rapid evolution of large language models (LLMs). Implementing RAG systems using tools like HuggingFace, open-source vector databases, and LLM-APIs presents unique challenges and opportunities.",
+      "Sometimes, the system struggles to answer questions even when the necessary information is in the dataset, raising concerns about how well its components work. The key to enhancing RAG systems lies in understanding why these inconsistencies occur, identifying the underlying issues, and applying targeted solutions.",
+      "A high benchmark score only really says anything if the type of questions and documents you use are represented in the dataset used for the benchmark. When building RAG systems for specialized external knowledge or internal company data, your existing data will likely differ from the one used to test the models, which might cause several issues.",
+      "To improve our model, we need to establish a way of evaluating the performance of the entire RAG system. Understanding the technicalities of the performance is critical to identifying the source of the low performance and comparing versions with different components."
+    ],
+    "title": "Optimizing RAG systems with fine-tuning techniques | SuperAnnotate",
+    "url": "https://www.superannotate.com/blog/rag-fine-tuning"
+  },
+  {
+    "description": "Retrieval-augmented generation is an AI framework that improves LLM accuracy. Learn how to inject enterprise data into LLMs for more reliable responses.",
+    "favicon_url": "https://you.com/favicon?domain=www.k2view.com&size=128",
+    "snippets": [
+      "Retrieval-Augmented Generation (RAG) is a Generative AI (GenAI) architecture that augments a Large Language Model (LLM) with fresh, trusted data retrieved from authoritative internal knowledge bases and enterprise systems, to generate more informed and reliable responses. The acronym \u201cRAG\u201d is attributed to the 2020 publication, \u201cRetrieval-Augmented Generation for Knowledge-Intensive Tasks\u201d, submitted by Facebook AI Research (now Meta AI). The paper describes RAG as \u201ca general-purpose fine-tuning recipe\u201d because it\u2019s meant to connect any LLM with any internal or external knowledge source.",
+      "RAG transforms real-time, multi-source business data into intelligent, context-aware, and compliant prompts to reduce AI hallucinations and elevate the effectiveness and trust of generative AI apps. According to the Gartner Generative AI Hype Cycle report from 2024, \"IT and data and analytics leaders looking at adopting GenAI capabilities on top of private and public corporate data should prioritize RAG investments.\"",
+      "To generate smart contextual prompts, you\u2019ll need sophisticated prompt engineering capabilities, including chain-of-thought prompting, to inject the relevant data into the RAG LLM in a way that generates the most accurate responses. To ensure your data remains private and secure, you must limit your LLM\u2019s access to authorized data only \u2013 per the example above, that means only David Smith\u2019s data and nobody else\u2019s. Besides these challenges, organizations have additional concerns, as revealed in our recent survey: Top concerns in leveraging enterprise data for GenAI and RAG Source: K2view Enterprise Data Readiness for GenAI in 2024 report",
+      "According to the 2024 Gartner LLM report, Lessons from Generative AI Early Adopters, \"Organizations continue to invest significantly in GenAI, but are challenged by obstacles related to technical implementation, costs, and talent.\" Despite these challenges, RAG still represents a great leap forward in generative AI."
+    ],
+    "title": "What is Retrieval-Augmented Generation (RAG)? A Practical Guide",
+    "url": "https://www.k2view.com/what-is-retrieval-augmented-generation"
+  },
+  {
+    "description": "Learn how RAG compares to fine-tuning and the impact of both model techniques on LLM performance.",
+    "favicon_url": "https://you.com/favicon?domain=www.vellum.ai&size=128",
+    "snippets": [
+      "For example, you can continuously iterate on your RAG to make it reach the success criteria. Essentially you might end up using both RAG and fine-tuned models to create an exceptional user experience. ... An AI expert with a strong ML background, specializing in GenAI and LLM education.",
+      "GenAI vs LLM: The Basics, Differences, and Best Uses",
+      "Learn how LLM and GenAI models compare, their differences, applications and use-cases",
+      "Prompt engineering can help to an extent\u2014advanced techniques like few-shot and chain-of-thought prompting or function calling can greatly improve the quality of output. However, advanced methods like retrieval augmented generation (RAG) or fine-tuning can help you build context-aware apps that are easily steerable and more reliable once in production."
+    ],
+    "title": "RAG vs Fine-Tuning: How to Choose the Right Technique?",
+    "url": "https://www.vellum.ai/blog/rag-vs-fine-tuning-complete-comparison"
+  },
+  {
+    "description": "I often get questions about some key terms floating around: RAG, Fine-tuning, and Grounding. They might sound complex, but understanding them is crucial for anyone looking to leverage the real power\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Understanding the difference between RAG, fine-tuning, and the goal of grounding empowers you to build more effective, trustworthy, and intelligent GenAI applications.",
+      "Often, RAG and fine-tuning can be used together! For example, you might fine-tune a model on medical literature to understand medical concepts better (fine-tuning) and then use RAG to feed it the latest research papers or a specific patient\u2019s history to answer a question (RAG).",
+      "Your Quick Guide to Smarter GenAI \ud83e\udde0\ud83d\udca1",
+      "I often get questions about some key terms floating around: RAG, Fine-tuning, and Grounding. They might sound complex, but understanding them is crucial for anyone looking to leverage the real power of Large Language Models (LLMs)."
+    ],
+    "title": "GenAI Power Plays: RAG vs. Fine-tuning vs. Grounding | by Garvit ...",
+    "url": "https://medium.com/data-science-collective/genai-power-plays-rag-vs-fine-tuning-vs-grounding-58bee7e285fc"
+  },
+  {
+    "description": "Retrieval-Augmented Generation (RAG) is a natural language processing (NLP) model that combines the strengths of both retrieval-based and generative approaches.",
+    "favicon_url": "https://you.com/favicon?domain=www.linkedin.com&size=128",
+    "snippets": [
+      "Retrieval-augmented generation (RAG) is a natural language processing (NLP) model that combines the strengths of both retrieval-based and generative approaches. Facebook AI introduced it in a research paper published in 2020.",
+      "RAG is handy for tasks that require the model to incorporate specific, up-to-date, or domain-specific knowledge from large datasets, like recent news articles or medical research papers.",
+      "RAG is designed to augment LLM capabilities by retrieving relevant information from knowledge sources before generating a response. It's ideal for applications that query databases, documents, or other structured/unstructured data repositories.",
+      "In summary, RAG incorporates external knowledge from retrieved documents into the generation process while fine-tuning and adapting a pre-trained model to a specific task or domain using a task-specific dataset."
+    ],
+    "title": "Differences Between RAG and Fine Tuning",
+    "url": "https://www.linkedin.com/pulse/differences-between-rag-fine-tuning-xenonstack"
+  },
+  {
+    "description": "RAG models are advancing. These models combine NLP with information retrieval, enabling accurate and contextually relevant responses.",
+    "favicon_url": "https://you.com/favicon?domain=hyperight.com&size=128",
+    "snippets": [
+      "RAG gives language models access to up-to-date, domain-specific information, helping them deliver more accurate and relevant answers. In fact, a study found that responses powered by RAG were almost 43% more accurate than those from models that relied only on fine-tuning.",
+      "On top of that, RAG blends deep learning with natural language processing, helping it better understand the finer details of language \u2014 like context, meaning, and tone.",
+      "Retrieval-augmented generation (RAG) models are quickly making waves in natural language processing (NLP). By combining language skills with information retrieval, they can deliver more accurate and meaningful answers.",
+      "Retrieval-augmented generation, or RAG, is changing the way large language models (LLMs) work. Instead of relying only on what they were trained on, RAG lets them pull in fresh, relevant information from outside sources."
+    ],
+    "title": "7 Practical Applications of RAG Models and Their Impact on Society ...",
+    "url": "https://hyperight.com/7-practical-applications-of-rag-models-and-their-impact-on-society/"
+  },
+  {
+    "description": "RAG vs. fine-tuning: pros and cons of both LLM learning techniques. Discover which of the two techniques best suits your project.",
+    "favicon_url": "https://you.com/favicon?domain=addepto.com&size=128",
+    "snippets": [
+      "This post will provide an in-depth review of RAG vs fine-tuning, shedding light on the strengths and weaknesses of both LLM learning techniques \u2013 RAG and fine-tuning \u2013 and their overall impact on the performance and functionality of large language models.",
+      "Retrieval-Augmented Generation (RAG) helps improve language translating tasks by considering the context element in an external knowledge base. By considering specific terminology and domain knowledge, this advanced approach leads to more accurate language translations.",
+      "Adopting RAG in LLM learning has significantly improved the educational tools available to students. Thanks to this technique, students can now access answers, explanations, and even additional context based on various study materials.",
+      "This helps significantly reduce the amount of time and effort required for legal document review, allowing legal professionals to focus on more important tasks. Using RAG systems also helps improve the accuracy and consistency of the legal document review processes."
+    ],
+    "title": "RAG vs. fine-tuning: LLM learning techniques comparison - Addepto",
+    "url": "https://addepto.com/blog/rag-vs-fine-tuning-a-comparative-analysis-of-llm-learning-techniques/"
+  },
+  {
+    "description": "Explore the limitations of foundation models and how retrieval-augmented generation (RAG) can address these limitations so chat, search, and agentic workflows can all benefit.",
+    "favicon_url": "https://you.com/favicon?domain=www.pinecone.io&size=128",
+    "snippets": [
+      "More control: control over which sources are used, real-time data access, authorization to data, guardrails/safety/compliance, traceability/source citations, retrieval strategies, cost, tune each component independently of the others \u00b7 Cost-effective compared to alternatives like training/re-training your own model, fine-tuning, or stuffing the context window: foundation models are costly to produce and require specialized knowledge to create, as is fine-tuning; the larger the context sent to the model, the higher the cost \u00b7 But this traditional RAG approach is simple, often with a vector database and a one-shot prompt with context sent to the model to generate output.",
+      "Models are trained on massive datasets containing years of human knowledge and creative output from code repositories, books, websites, conversations, scientific papers, and more.",
+      "AI applications are no different, and so identifying a set of queries and their expected answers is critical to knowing if your application is working. Maintaining that evaluation set is also critical to knowing where to improve over time, and whether those improvements are working. RAG itself is just one optimization, but there are others like query rewriting, chunk expansion, knowledge graphs and more.",
+      "In simple traditional RAG, you\u2019ll retrieve data from a vector database like Pinecone, using semantic search to find the true meaning of the user\u2019s query and retrieve relevant information instead of simply matching keywords in the query."
+    ],
+    "title": "Retrieval-Augmented Generation (RAG) | Pinecone",
+    "url": "https://www.pinecone.io/learn/retrieval-augmented-generation/"
+  },
+  {
+    "description": "RAG and Fine Tuning can both be useful tools to improve the performance of your large language models. In this article we explore when to use each approach.",
+    "favicon_url": "https://you.com/favicon?domain=vectorize.io&size=128",
+    "snippets": [
+      "Retrieval Augmented Generation, or RAG, is a framework to help large language models be more accurate and up-to-date by instructing the models to pay attention to primary source data before giving their response, which makes them less likely to hallucinate because they\u2019re less likely to rely only on information they learned during training.",
+      "This can have a negative effect as well, because if the Retriever or RAG system is not sufficiently good enough to give a large language model quality information, then users are bound to not receive the answers they are looking for.",
+      "RAG enriches responses with accurate, up-to-date information from external databases but may not tailor the linguistic style to user preferences without additional customization techniques. Fine-tuning requires a well-curated dataset specific to the task and less external data infrastructure than RAG, but relies on high-quality domain-specific training data.",
+      "RAG is cost-effective, efficient, and scalable for applications needing access to the latest information or diverse topic coverage. Fine-tuning demands a significant initial investment in time and resources but operates efficiently within specialized domains; scalability requires additional fine-tuning rounds for new domains."
+    ],
+    "title": "RAG vs. Fine Tuning: Which One is Right for You? \u2013 Vectorize",
+    "url": "https://vectorize.io/rag-vs-fine-tuning/"
+  },
+  {
+    "description": "Both retrieval-augmented generation, or RAG, and fine-tuning can help an LLM be more useful for your business. Which is better? Can you combine them for maximum performance? Read on.",
+    "favicon_url": "https://you.com/favicon?domain=www.oracle.com&size=128",
+    "snippets": [
+      "Want to help an LLM work smarter for your business? There are two paths: Fine-tune it, or augment it with retrieval-augmented generation (RAG). Here\u2019s how each technique works and what each one can do for you.",
+      "Business intelligence. Companies can use RAG to help GenAI models pull relevant market data for automated production of insights and reports.",
+      "RAG vs. Fine-Tuning FAQs \u00b7 General-purpose large language models, or LLMs, have become popular with the public because they can discuss a wide variety of topics and write term papers, thank you notes, and many other tasks. In business, however, these generic outputs won\u2019t do.",
+      "In healthcare, RAG can be applied to support doctors and other clinicians by aiding in diagnosis and treatment planning. It does this by helping AI models retrieve medical case studies, research papers, or clinical trial results that are relevant to a patient\u2019s symptoms or condition."
+    ],
+    "title": "RAG vs. Fine-Tuning: How to Choose | Oracle Canada",
+    "url": "https://www.oracle.com/ca-en/artificial-intelligence/generative-ai/retrieval-augmented-generation-rag/rag-fine-tuning/"
+  }
+]

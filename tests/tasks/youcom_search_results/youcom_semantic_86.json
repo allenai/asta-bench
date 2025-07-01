@@ -1,0 +1,276 @@
+[
+  {
+    "description": "Full fine-tuning and adapter-based tuning are two approaches to adapting pre-trained language models for specific tasks,",
+    "favicon_url": "https://you.com/favicon?domain=zilliz.com&size=128",
+    "snippets": [
+      "Adapters shine in resource-constrained environments or multi-task scenarios\u2014like a cloud service handling dozens of NLP tasks\u2014where saving compute and storage costs is a priority. However, adapters may slightly underperform full fine-tuning in some cases due to their limited parameter updates.",
+      "This method is powerful because it tailors the model comprehensively, but it\u2019s computationally expensive and requires storing a separate copy of the entire updated model for each task. Imagine training a 1-billion-parameter model for sentiment analysis: every parameter change consumes significant GPU memory and time, and deploying multiple fine-tuned models for different tasks becomes storage-intensive."
+    ],
+    "title": "What is the difference between full fine-tuning and adapter-based ...",
+    "url": "https://zilliz.com/ai-faq/what-is-the-difference-between-full-finetuning-and-adapterbased-tuning"
+  },
+  {
+    "description": "Adapters and Low-Rank Adaptation (LoRA) are parameter-efficient fine-tuning techniques designed to make the training of language models more efficient. Previous results demonstrated that these methods can even improve performance on some ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "This paper complements existing research by investigating how these techniques influence classification performance and computation costs compared to full fine-tuning. We focus specifically on multilingual text classification tasks (genre, framing, and persuasion techniques detection; with different input lengths, number of predicted classes and classification difficulty), some of which have limited training data. In addition, we conduct in-depth analyses of their efficacy across different training scenarios (training on the original multilingual data; on the translations into English; and on a subset of English-only data) and different languages.",
+      "Many of the recent research efforts are therefore focused on the development of more efficient training techniques [3\u20135]. Methods that can decrease the computational costs make language models more accessible to researchers and practitioners with limited computational resources, and reduces the carbon footprint of their training. In this study, we investigate the effectiveness of parameter-efficient fine-tuning techniques (PEFTs) in multilingual, monolingual and cross-lingual text classification scenarios. We have included PEFT techniques that have been evaluated on large volumes of data (>20B) in prior research [6]\u2014namely, LoRA, adapter, BitFit, prefix tuning and prompt tuning.",
+      "Overall, we found that adapters improved performance in certain monolingual scenarios in sub-task 1 and for multilingual ones in sub-task 2. The main contributions of this paper are the following: Provide an evaluation of PEFTs on diverse text classification tasks as compared to fully fine-tuned models.",
+      "The biases from the query, key and value layers, attention and normalisation layers are the only fine-tuned parameters of the network. The ... \u00b7 matrices and other MLP parameters are kept frozen. This reduces the number of trainable parameters to 0.08%\u20130.09%. The authors additionally show how the number of trainable parameters can be further reduced by focusing only on the bias terms from the query layer and the second MLP layer. Despite significantly reducing the number of trainable parameters, bottleneck adapters were previously found to have minimal negative impact on the performance of fine-tuned models for simple sentence classification tasks."
+    ],
+    "title": "Comparison between parameter-efficient techniques and full ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11068208/"
+  },
+  {
+    "description": "Adapter-based tuning has recently arisen as an alternative to fine-tuning. It works by adding light-weight adapter modules to a pretrained language model (PrLM) and only updating the parameters of adapter modules when learning on a downstream task. As such, it adds only a few trainable parameters ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Adapter-based tuning has recently arisen as an alternative to fine-tuning. It works by adding light-weight adapter modules to a pretrained language model (PrLM) and only updating the parameters of adapter modules when learning on a downstream task. As such, it adds only a few trainable parameters per new task, allowing a high degree of parameter sharing.",
+      "Abstract page for arXiv paper 2106.03164: On the Effectiveness of Adapter-based Tuning for Pretrained Language Model Adaptation",
+      "As such, it adds only a few trainable parameters per new task, allowing a high degree of parameter sharing. Prior studies have shown that adapter-based tuning often achieves comparable results to fine-tuning. However, existing work only focuses on the parameter-efficient aspect of adapter-based tuning while lacking further investigation on its effectiveness.",
+      "We then empirically compare the two tuning methods on several downstream NLP tasks and settings. We demonstrate that 1) adapter-based tuning outperforms fine-tuning on low-resource and cross-lingual tasks; 2) it is more robust to overfitting and less sensitive to changes in learning rates."
+    ],
+    "title": "[2106.03164] On the Effectiveness of Adapter-based Tuning for ...",
+    "url": "https://arxiv.org/abs/2106.03164"
+  },
+  {
+    "description": "Training a deep neural network can be costly but training time is reduced when a pre-trained network can be adapted to different use cases. Ideally, only a small number of parameters needs to be changed in this process of fine-tuning, which can then be more easily distributed.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "With the prevalence of pre-trained language models (PLMs) and the pre-training\u2013fine-tuning paradigm, it has been continuously shown that larger models tend to yield better performance. However, as PLMs scale up, fine-tuning and storing all the parameters is prohibitively costly and eventually becomes practically infeasible.",
+      "Nature Machine Intelligence - Training a deep neural network can be costly but training time is reduced when a pre-trained network can be adapted to different use cases. Ideally, only a small...",
+      "As the model scales, how to efficiently and effectively adapt large models to particular downstream tasks becomes an intriguing research issue. Although in-context learning has shown promising performance for PLMs such as GPT-3, fine-tuning still overtakes it under the task-specific setting.",
+      "To sum up, adapters are lightweight additional neural modules that could be trained in a task-specific style, which could be regarded as \u2018encapsulation\u2019 of task information (in fact, this perspective can be applied to all the \u2018deltas\u2019). Although in an ideal world, adapters could be freely shared and reused by researchers, in practice, sharing and reusing such modules face substantial obstacles. Taking the first step, AdapterHub35 provides a feasible platform and toolkit to deploy adapters inside the transformer-based models. Instead of injecting neural modules to the transformer model, prompt-based methods wrap the original input with additional context."
+    ],
+    "title": "Parameter-efficient fine-tuning of large-scale pre-trained language ...",
+    "url": "https://www.nature.com/articles/s42256-023-00626-4"
+  },
+  {
+    "description": "Fine-tuning in machine learning is the process of adapting a pre-trained model for specific tasks or use cases through further training on a smaller dataset.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "Fine-tuning in machine learning is the process of adapting a pre-trained model for specific tasks or use cases. It has become a fundamental deep learning technique, particularly in the training process of foundation models used for generative AI. Fine-tuning could be considered a subset of the broader technique of transfer learning: the practice of leveraging knowledge an existing model has already learned as the starting point for learning new tasks.",
+      "While fine-tuning is ostensibly a technique used in model training, it\u2019s a process distinct from what is conventionally called \u201ctraining.\u201d For the sake of disambiguation, data scientists typically refer to the latter as pre-training in this context.",
+      "At the onset of training (or, in this context, pre-training), the model has not yet \u201clearned\u201d anything.",
+      "Parameter efficient fine-tuning (PEFT) encompasses a range of methods to reduce the number of trainable parameters that need to be updated in order to effectively adapt a large pre-trained model to specific downstream applications. In doing so, PEFT significantly decreases the computational resources and memory storage needed to yield an effectively fine-tuned model."
+    ],
+    "title": "What is Fine-Tuning? | IBM",
+    "url": "https://www.ibm.com/think/topics/fine-tuning"
+  },
+  {
+    "description": "Adapter-based tuning has recently arisen as an alternative to fine-tuning. It works by adding light-weight adapter modules to a pretrained language model (PrLM) and only updating the parameters of adapter modules when \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.arxiv-vanity.com&size=128",
+    "snippets": [
+      "As such, it adds only a few trainable parameters per new task, allowing a high degree of parameter sharing. Prior studies have shown that adapter-based tuning often achieves comparable results to fine-tuning. However, existing work only focuses on the parameter-efficient aspect of adapter-based tuning while lacking further investigation on its effectiveness.",
+      "Though using much less trainable parameters, adapter-based tuning has demonstrated comparable performance with full PrLM fine-tuning (Houlsby et al., 2019; Bapna and Firat, 2019; Stickland and Murray, 2019). Existing work mostly focuses on the parameter-efficient aspect of adapters and attempt to derive useful applications from that, which is still the case in most recent works: R\u00fcckl\u00e9 et al.",
+      "In each setting, we draw another 1k samples from the remaining training set as the validation set and instead use the original validation set as the test set, since the original GLUE test sets are not publicly available 333Users are limited to a maximum of two submissions per day to obtain test results, which is inconvenient for a large number of runs. We perform fine-tuning on BERT-base (BERT-ft) and RoBERTa-base (RoBa.-ft) respectively as our baselines.",
+      "To verify the effects of training size, on high-resource tasks, we plot the performances with varying numbers of training examples in Figure 3. The trend is consistent with our existing observations \u2013 adapter-based tuning achieves better results when the training set is small while fine-tuning will gradually catch up with an increasing number of training examples."
+    ],
+    "title": "[2106.03164] On the Effectiveness of Adapter-based Tuning for ...",
+    "url": "https://www.arxiv-vanity.com/papers/2106.03164/"
+  },
+  {
+    "description": "Request PDF | On Jan 1, 2021, Ruidan He and others published On the Effectiveness of Adapter-based Tuning for Pretrained Language Model Adaptation | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "This paper complements the existing research by investigating how these techniques influence the classification performance and computation costs compared to full fine-tuning when applied to multilingual text classification tasks (genre, framing, and persuasion techniques detection; with different input lengths, number of predicted classes and classification difficulty), some of which have limited training data. In addition, we conduct in-depth analyses of their efficacy across different training scenarios (training on the original multilingual data; on the translations into English; and on a subset of English-only data) and different languages.",
+      "This paper complements existing research by investigating how these techniques influence classification performance and computation costs compared to full fine-tuning. We focus specifically on multilingual text classification tasks (genre, framing, and persuasion techniques detection; with different input lengths, number of predicted classes and classification difficulty), some of which have limited training data. In addition, we conduct in-depth analyses of their efficacy across different training scenarios (training on the original multilingual data; on the translations into English; and on a subset of English-only data) and different languages.",
+      "Then we combine these two modules with several existing PETL methods as the integrated VLN-PETL. Extensive experimental results on four mainstream VLN tasks (R2R, REVERIE, NDH, RxR) demonstrate the effectiveness of our proposed VLN-PETL, where VLN-PETL achieves comparable or even better performance to full fine-tuning and outperforms other PETL methods with promising margins.",
+      "... In the context of large language models, the training cost of fully tuning a model to a new domain from scratch is substantial. To preserve old knowledge and reduce fine-tuning efforts, methods, such as Adapter \u00b7 (He et al., 2021), Prefix-Tuning (Li and Liang, 2021) and LoRA (Hu et al., 2021), need to train only a small fraction of model parameters. These methods demonstrate improved performance in model fine-tuning compared to simply fine-tuning the top layer for downstream tasks, but they also encounter certain drawbacks."
+    ],
+    "title": "On the Effectiveness of Adapter-based Tuning for Pretrained Language ...",
+    "url": "https://www.researchgate.net/publication/353491355_On_the_Effectiveness_of_Adapter-based_Tuning_for_Pretrained_Language_Model_Adaptation"
+  },
+  {
+    "description": "Parameter-efficient fine-tuning (PEFT) is a method of improving the performance of pretrained large language models (LLMs) and neural networks for specific tasks or data sets.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "Join our world-class panel of engineers, researchers, product leaders and more as they cut through the AI noise to bring you the latest in AI news and insights. ... Traditional full fine-tuning methods involve slight adjustments to all the parameters in pretrained LLMs to adapt them for specific tasks.",
+      "Adapters are one of the first PEFT techniques to be applied to natural language processing (NLP) models. Researchers strove to overcome the challenge of training a model for multiple downstream tasks while minimizing model weights.",
+      "Overfitting is when a model hews too closely to its training data during the training process, making it unable to generate accurate predictions in other contexts.",
+      "PEFT works by freezing most of the pretrained language model\u2019s parameters and layers while adding a few trainable parameters, known as adapters, to the final layers for predetermined downstream tasks."
+    ],
+    "title": "What is parameter-efficient fine-tuning (PEFT)? | IBM",
+    "url": "https://www.ibm.com/think/topics/parameter-efficient-fine-tuning"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "On the Effectiveness of Adapter-based Tuning for ...",
+    "url": "https://aclanthology.org/2021.acl-long.172.pdf"
+  },
+  {
+    "description": "With the advent of increasingly large and sophisticated pre-trained models, a new challenge emerges as to how to customise these powerful models for distinct tasks or domains without incurring\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Retrieval Adapters: Retrieval adapters fine-tune the mechanisms involved in matching queries with pertinent data through the refinement of existing retrieval processes or the integration of sophisticated algorithms. These adapters play a critical role in ensuring the accuracy and contextual appropriateness of document selection. Task-Specific Adapters: Task-specific adapters are crafted to enhance the RAG model\u2019s performance across a wide spectrum of tasks, including but not limited to summarization, translation, and domain-specific question answering.",
+      "This could include textual data from platforms, interaction logs, and public mentions, among others. The diversity of these sources is vital, as it enriches the model\u2019s learning with a wide array of expressions and sentiments, enhancing its ability to generalise across different contexts.",
+      "This method enables precise, task-specific adjustments of the model without altering its foundational structure. The efficiency of adapters stems from their ability to focus training on a limited subset of the model\u2019s parameters, thereby substantially reducing the computational resources necessary for fine-tuning.",
+      "Computational Efficiency: Improve the fine-tuning process by focusing on a minimal subset of parameters, thus significantly lightening the computational burden. This targeted approach makes cutting-edge NLP technologies accessible, even to those with limited computational resources, by limiting adjustments to a select few parameters."
+    ],
+    "title": "The Power of Adapters in Fine-tuning LLMs | by Zia Babar | Medium",
+    "url": "https://medium.com/@zbabar/the-power-of-adapters-in-fine-tuning-llms-722c87c5bca6"
+  },
+  {
+    "description": "The two most common transfer learning techniques in NLP were feature-based transfer (generating input text embedding from a pre-trained large model and using it as a feature in your custom model) and\u2026",
+    "favicon_url": "https://you.com/favicon?domain=siddharth-1729-65206.medium.com&size=128",
+    "snippets": [
+      "The two most common transfer learning techniques in NLP were feature-based transfer (generating input text embedding from a pre-trained\u2026",
+      "Adapter modules creates a bottleneck architecture where the adapters first project (feed forward down-project weight matrix in the above image) the original d-dimensional features into a smaller dimension, m, apply a nonlinearity, then project back (feed-forward up-project weight matrix) to d dimensions. The total number of parameters added per layer, including biases, is 2m*d + d + m. By setting m << d, the number of parameters added per task are limited (less than 1%).",
+      "The two most common transfer learning techniques in NLP were feature-based transfer (generating input text embedding from a pre-trained large model and using it as a feature in your custom model) and fine-tuning (fine tuning the pre-trained model on custom data set). It is notoriously hard to fine tune Large Language Models (LLMs) for a specific task on custom domain specific dataset.",
+      "Given their enormous size (e.g. GPT3 175B parameters , Google T5 Flan XXL [1] 11B parameters, Meta Llama[2] 65 billion parameters) ones needs mammoth computing horsepower and extremely large scale datasets to fine tune them on a specific task."
+    ],
+    "title": "Summary Of Adapter Based Performance Efficient Fine Tuning (PEFT) ...",
+    "url": "https://siddharth-1729-65206.medium.com/summary-of-adapter-based-performance-efficient-fine-tuning-peft-techniques-for-large-language-fa65d0c2d55f"
+  },
+  {
+    "description": "In the arena of language model fine-tuning, the traditional approaches, such as Domain-Adaptive Pretraining (DAPT) and Task-Adaptive Pretraining (TAPT), although effective, but computational intensive. This research introduces a novel adaptation method utilizing the UniPELT framework as a base ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Furthermore, this could suggest a limitation of the parameter-efficient tuning strategy, where a larger number of parameters may be necessary to tackle domains that have highly heterogeneous and complex contexts.Upon comparing the adapter architectures, we found that adding an extra adapter layer for prompt-tuning significantly outperformed the UniPELT or internal substitution within UniPELT submodules (IA3+Prefix+SeqBn), especially for the small ACL-ARC dataset in the CS domain.",
+      "Finally, we adopt the same strategy to Houlsby, \u201cwe con\ufb01rm that adapters work on tasks other than classi\ufb01cation by running on SQuAD v1.1 (Rajpurkar et al., 2018).\u201d [5, 15]. We explore similar themes in our work as noted in the previous research by as the Houlsby et al. (2019)[5]. In addition to studying the effectiveness of adapters in classification tasks, we also wish to explore whether this approach is effective for text generation tasks. This is particularly important in today\u2019s context of popular generative AI, as training models to generate outputs that more closely align with user needs while reducing computational resources is crucial.",
+      "This approach proves effective across most datasets in GLUE and for most of the domain-specific data, which merits further research. ... We apply UniPELT to the Stanford Question Answering Dataset (SQuAD) and observe positive results, demonstrating its efficacy for question-and-answer data.",
+      "The study underlines the potential of adapters in achieving high performance with significantly reduced resource consumption, suggesting a promising direction for future research in parameter-efficient fine-tuning. The existing literature indicates that continued pretraining on domain-specific unlabeled data can enhance the performance of language models on domain-specific tasks."
+    ],
+    "title": "Parameter-Efficient Fine-Tuning With Adapters",
+    "url": "https://arxiv.org/html/2405.05493v1"
+  },
+  {
+    "description": "There are various approaches to fine tuning \u2014 depending on the training data, learning paradigm, extent of model modification and techniques used for efficiency. In this article let us explore a few\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "There are various approaches to fine tuning \u2014 depending on the training data, learning paradigm, extent of model modification and\u2026",
+      "Adapter fine tuning has emerged as a promising alternative and is an active research area with many new methods and applications being proposed and explored. Adapter-based tuning brings the best of both worlds \u2014 efficiency and performance. It often achieves performance comparable to full model fine-tuning, though requires training far fewer parameters resulting in faster training times and reduced memory usage.",
+      "\u00b7 Prefix tuning (Li and Liang, 2021): This method focuses on modifying the input embedding layer, making it efficient for few-shot learning and NLP tasks with limited data. Best suited for tasks where clear and concise prompts can be defined, particularly in text-to-text scenarios like summarization or question answering. However, it might not be as effective for tasks requiring significant adaptation beyond the input layer. \u00b7 Parallel adapters (He et al., 2021): This approach uses independent adapter modules in parallel with existing layers, offering flexibility and good performance for multi-task learning and tasks requiring adaptation across multiple layers.",
+      "\u00b7 Compacters (Mahabadi et al., 2021): This technique aims to reduce the model size by compressing some layers while adding adapters for task-specific information. It\u2019s suitable for deployment on devices with limited memory but might compromise performance compared to other methods."
+    ],
+    "title": "Everything you need to know about Fine-tuning LLMs \u2014 Part 3 | ...",
+    "url": "https://medium.com/@sasirekharameshkumar/everything-you-need-to-know-about-fine-tuning-llms-part-3-d849f6fb0d39"
+  },
+  {
+    "description": "Large Language Models (LLMs) are gaining significant popularity in recent years for specialized tasks using prompts due to their low computational cost. Standard methods like prefix tuning utilize special, modifiable tokens that lack semantic meaning and require extensive training for best ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Large Language Models (LLMs) are gaining significant popularity in recent years for specialized tasks using prompts due to their low computational cost. Standard methods like prefix tuning utilize special, modifiable tokens that lack semantic meaning and require extensive training for best performance, often falling short.",
+      "Scientific Reports - Parameter-efficient fine-tuning of large language models using semantic knowledge tuning",
+      "This method enables efficient domain-specific fine-tuning without requiring the retraining of the entire model, particularly in resource-limited settings. Recent innovations introduce hierarchical prefix tuning, which organizes prefixes in a hierarchical manner to provide more detailed control over the model\u2019s responses29. Additionally, dynamic prefix tuning allows for real-time adaptation based on the input context, thereby improving the flexibility and adaptability of the model30.",
+      "Furthermore, incorporation of subspace learning into neural architecture search has proven invaluable in identifying efficient and innovative architectures, optimizing both performance and resource utilization51,52,53. The efficacy of subspace learning is further highlighted in scenarios requiring rapid adaptation to new tasks with limited data, such as few-shot learning and online learning, where it allows robust model performance despite data limitations54."
+    ],
+    "title": "Parameter-efficient fine-tuning of large language models using ...",
+    "url": "https://www.nature.com/articles/s41598-024-75599-4"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Arxiv",
+    "url": "https://arxiv.org/pdf/1902.00751"
+  },
+  {
+    "description": "In a world dominated by foundation models, the real power lies in domain adaptation. But how we adapt \u2014 fully retrain vs. lightweight fine-tune vs. just prompt smartly \u2014 can make or break a project\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Day 70 of #100DaysOfAI |Module 5: Model Fine-Tuning & Adaptation -Part 2",
+      "Frequently used in Retrieval-Augmented Generation (RAG) pipelines with tools like LangChain or LlamaIndex. This setup allows context-aware output without needing to retrain or load model weights \u2014 ideal for dynamic, domain-specific responses."
+    ],
+    "title": "Adapter-based Tuning vs. Prompt-based Tuning + Full Fine-Tuning ...",
+    "url": "https://medium.com/@akankshasinha247/adapter-based-tuning-vs-prompt-based-tuning-full-fine-tuning-fdd5bb0b4767"
+  },
+  {
+    "description": "In deep learning, fine-tuning is an approach to transfer learning in which the parameters of a pre-trained neural network model are trained on new data. Fine-tuning can be done on the entire neural network, or on only a subset of its layers, in which case the layers that are not being fine-tuned ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Low-rank adaptation (LoRA) is an adapter-based technique for efficiently fine-tuning models. The basic idea is to design a low-rank matrix that is then added to the original matrix. An adapter, in this context, is a collection of low-rank matrices which, when added to a base model, produces a fine-tuned model.",
+      "Fine-tuning can be done on the entire neural network, or on only a subset of its layers, in which case the layers that are not being fine-tuned are \"frozen\" (i.e., not changed during backpropagation). A model may also be augmented with \"adapters\" that consist of far fewer parameters than the original model, and fine-tuned in a parameter-efficient way by tuning the weights of the adapters and leaving the rest of the model's weights frozen.",
+      "One specific method within the ReFT family is low-rank linear subspace ReFT (LoReFT), which intervenes on hidden representations in the linear subspace spanned by a low-rank projection matrix. LoReFT can be seen as the representation-based equivalent of low-rank adaptation (LoRA).",
+      "Representation fine-tuning (ReFT) is a technique developed by researchers at Stanford University aimed at fine-tuning large language models (LLMs) by modifying less than 1% of their representations."
+    ],
+    "title": "Fine-tuning (deep learning) - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning)"
+  },
+  {
+    "description": "Imagine you have a super smart computer program that understands a lot of things. It\u2019s like a super chef who knows how to make all kinds of dishes. Now, you want this program to do different tasks\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Adapter layers, often termed \u201cAdapters\u201d, add minimal additional parameters to the pretrained model. These adapters are inserted between existing layers of the network. Adapters is a PEFT technique shown to achieve similar performance as compared to tuning the top layers while requiring as fewer parameters as two orders of magnitude.",
+      "Parameter-efficient fine-tuning is particularly used in the context of large-scale pre-trained models (such as in NLP), to adapt that pre-trained model to a new task without drastically increasing the number of parameters.",
+      "Let\u2019s start off by defining what parameter-efficient fine-tuning is and give some context on it.",
+      "Quantized Low-Rank Adaptation (QLoRA) aims to efficiently fine-tune massive models (like a 65B parameter model) on limited GPU memory without compromising the model\u2019s performance. It builds on LoRA\u2019s principles and introduces 4-bit NormalFloat (NF4) quantization and Double Quantization techniques."
+    ],
+    "title": "Parameter Efficient Fine Tuning. Adapters; LoRA; QLora; Surgical\u2026",
+    "url": "https://medium.com/aimonks/parameter-efficient-fine-tuning-075954d1db51"
+  },
+  {
+    "description": "The advancement of Large Language Models (LLMs) for domain applications in fields such as materials science and engineering depends on the development of fine-tuning strategies that adapt models for specialized, technical capabilities. In this work, we explore the effects of Continued Pretraining ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "The advancement of Large Language Models (LLMs) for domain applications in fields such as materials science and engineering depends on the development of fine-tuning strategies that adapt models for specialized, technical capabilities. In this work, we explore the effects of Continued Pretraining (CPT), Supervised Fine-Tuning (SFT), and various preference-based optimization approaches, including Direct Preference Optimization (DPO) and Odds Ratio Preference Optimization (ORPO), on fine-tuned LLM performance.",
+      "npj Computational Materials - Fine-tuning large language models for domain adaptation: exploration of training strategies, scaling, model merging and synergistic capabilities",
+      "These included Continued Pre-Training (CPT), Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO), and Odds Ratio Preference Optimization (ORPO). The goal was to determine how these methods impact the specialization of LLMs, particularly in the context of engineering or science domains. A key finding of our research is that model scale plays a crucial role in the efficacy of fine-tuning strategies.",
+      "This differential improvement pattern underscores the critical role of model size in both the efficacy and scope of fine-tuning processes. Consequently, while the larger Llama and Mistral models are better equipped to leverage the full spectrum of fine-tuning techniques like DPO and ORPO combined with SLERP, SmolLM demonstrates that even smaller-scale models can achieve meaningful performance boosts, albeit with limitations imposed by their smaller capacity."
+    ],
+    "title": "Fine-tuning large language models for domain adaptation: exploration ...",
+    "url": "https://www.nature.com/articles/s41524-025-01564-y"
+  },
+  {
+    "description": "Collection of Tools and Papers related to Adapters / Parameter-Efficient Transfer Learning/ Fine-Tuning - calpt/awesome-adapter-resources",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "TLDR Conv-Adapter, a PET module designed for ConvNets, is light-weight, domain-transferable, and architecture-agnostic with generalized performance on different tasks with comparable or surpasses the performance of full fine-tuning on 23 classification tasks of various domains. ... TLDR AdaptFormer introduces lightweight modules that only add less than 2% extra parameters to a ViT, while it is able to increase the ViT's transferability without updating its original pre-trained parameters, significantly outperforming the existing 100\\% fully fine-tuned models on action recognition benchmarks.",
+      "TLDR This paper finds that ensembling multiple existing language adapters makes the fine-tuned model significantly more robust to other language varieties not included in these adapters, and proposes EMA, a method that optimizes the ensemble weights of the pretrained language adapters for each test sentence by minimizing the entropy of its predictions.",
+      "TLDR This paper re-frame state-of-the-art parameter-efficient transfer learning methods as modifications to specific hidden states in pre-trained models, and defines a set of design dimensions along which different methods vary, achieving comparable results to fine-tuning all parameters on all four tasks. ... TLDR AdaMix is proposed as a general PEFT method that tunes a mixture of adaptation modules \u2013 given the underlyingPEFT method of choice \u2013 introduced in each Transformer layer while keeping most of the PLM weights frozen, and outperforms SOTA parameter-efficient fine-tuning and full model fine- Tuning for both NLU and NLG tasks.",
+      "TLDR A survey of modular architectures is offered, providing a unified view over several threads of research that evolved independently in the scientific literature, and various additional purposes of modularity are explored, including scaling language models, causal inference, programme induction, and planning in reinforcement learning. ... TLDR A taxonomy that covers a broad range of methods and present a detailed method comparison with a specific focus on real-life efficiency and fine-tuning multibillion-scale language models is provided."
+    ],
+    "title": "GitHub - calpt/awesome-adapter-resources: Collection of Tools and ...",
+    "url": "https://github.com/calpt/awesome-adapter-resources"
+  },
+  {
+    "description": "Discover how LoRA adapters and LoRA tuning revolutionize fine-tuning of large language models (LLMs) by enabling efficient and cost-effective customization of large language models. Explore the future of LoRA tuning in machine learning.",
+    "favicon_url": "https://you.com/favicon?domain=predibase.com&size=128",
+    "snippets": [
+      "For example, LoRA can reduce your memory footprint to a quarter. If your initial compute resources were ready for full fine-tuning, then you can quadruple or even octuple your batch size. This adjustment can make your training significantly faster by better utilizing your existing resources.",
+      "This preserves the LLM's general knowledge and avoids catastrophic forgetting when learning new tasks. Adapters can also reduce the number of parameters that need to be updated, reducing the time and compute required\u2014training overhead can be reduced up to 70% compared to full fine-tuning.",
+      "To further compress, LoRA transforms the adapter into an optimized decomposition and subsequently lowers the rank of these matrices. These techniques produce an adapter that is equally as performant compared to full fine-tuning while training substantially fewer weights and using less storage.",
+      "If we look at the total amount of trainable parameters for each model below, you can see that RoBERTa large, full fine-tuned, is training in excess of 350 million parameters while DeBERTa XXL is training in excess of 1.5 billion parameters. Comparatively, the LoRA trainable parameters are 0.2% for RoBERTa and 0.3% for DeBERTa which represents a very large performance gain in terms of memory footprint."
+    ],
+    "title": "5 Reasons Why LoRA Adapters are the Future of Fine-tuning",
+    "url": "https://predibase.com/blog/5-reasons-why-lora-adapters-are-the-future-of-fine-tuning"
+  },
+  {
+    "description": "Welcome back, everyone! In the last few articles, we covered the ins and outs of various adapters like LoRA, AdaLoRA, IA3, LoHa, and LoKr. In this article, we\u2019re going to dive into how to use these\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "\u2694\ufe0f Battle of the Adapters! Discover top fine-tuning methods ( LoRA, AdaLoRA, IA3, LoHa, and LoKr) and see who wins the showdown! \ud83d\udca5",
+      "That\u2019s a wrap, folks! This marks the end of our series comparing PEFT adapters. Hopefully, you\u2019ve found some new ideas to apply in your projects, assignments, or research. If you found this helpful, don\u2019t forget to follow, leave a comment, and give it a clap!",
+      "For each dataset and adapter, the code fine-tunes a model (using ViT, no less!), prints out how many parameters are being trained, and then saves the model after it\u2019s done.",
+      "model_checkpoint = \"google/vit-base-patch16-224-in21k\" batch_size = 64 config = { \"model1\": { \"train_data\": dataset1_train, \"test_data\": dataset1_test, \"label2id\": dataset1_label2id, \"id2label\": dataset1_id2label, \"epochs\": 20, \"path\": \"./finetuned-model1\", }, \"model2\": { \"train_data\": dataset2_train, \"test_data\": dataset2_test, \"label2id\": dataset2_label2id, \"id2label\": dataset2_id2label, \"epochs\": 20, \"path\": \"./finetuned-model2\", }, } # Set transformations for datasets for cfg in config.values(): cfg[\"train_data\"].set_transform(preprocess) cfg[\"test_data\"].set_transform(preprocess) # Traini"
+    ],
+    "title": "Battle of the Adapters: Efficient Fine-Tuning Methods Compared ...",
+    "url": "https://medium.com/predict/battle-of-the-adapters-efficient-fine-tuning-methods-compared-e9fac9e4f10d"
+  },
+  {
+    "description": "The large language models, as predicted by scaling law forecasts, have made groundbreaking progress in many fields, particularly in natural language generation tasks, where they have approached or even surpassed human levels. However, the unprecedented scale of their parameters brings significant ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The large language models, as predicted by scaling law forecasts, have made groundbreaking progress in many fields, particularly in natural language generation tasks, where they have approached or even surpassed human levels. However, the unprecedented scale of their parameters brings significant computational and storage costs.",
+      "Artificial Intelligence Review - The large language models, as predicted by scaling law forecasts, have made groundbreaking progress in many fields, particularly in natural language generation...",
+      "This data not only serves as the bedrock for the model\u2019s comprehension of language but also influences its ability to generalize and adapt to new contexts and tasks. To meet these requirements, a variety of comprehensive and accessible datasets have been curated and made available for the research community.",
+      "This diversity ensures that models trained on The Pile are exposed to a broad spectrum of language use cases, making them more adaptable to various downstream tasks. In the context of evaluating PEFT methods, The Pile offers a robust testbed. Its rich diversity of text types allows researchers to evaluate how well these fine-tuning methods can adapt models to different domains and tasks, thereby enhancing their understanding of the effectiveness of PEFT methods in various applications (Table 2)."
+    ],
+    "title": "Parameter-efficient fine-tuning in large language models: a survey ...",
+    "url": "https://link.springer.com/article/10.1007/s10462-025-11236-4"
+  },
+  {
+    "description": "Boost LLMs like GPT-4 & BERT with efficient finetuning adapters. Enhance specific tasks like legal doc analysis without extensive resources. Dive into adapter layers for top performance with fewer parameters.",
+    "favicon_url": "https://you.com/favicon?domain=magazine.sebastianraschka.com&size=128",
+    "snippets": [
+      "In a nutshell, prompt tuning (different from prompting) appends a tensor to the embedded inputs of a pretrained LLM. The tensor is then tuned to optimize a loss function for the finetuning task and data while all other parameters in the LLM remain frozen. For example, imagine an LLM pretrained on a general dataset to generate texts.",
+      "According to the original adapter paper, a BERT model trained with the adapter method reaches a modeling performance comparable to a fully finetuned BERT model while only requiring the training of 3.6% of the parameters. Moreover, the researchers included a figure where they compared the adapter method to only finetung the output (top) layers of a BERT model and found that using adapters, it's possible to match the finetuning top-layer-finetuning performance with a much smaller number of parameters:",
+      "However, as LLMs are \"large,\" updating multiple layers in a transformer model can be very expensive, so researchers started developing parameter-efficient alternatives. In this article, we discussed several parameter-efficient alternatives to the conventional LLM finetuning mechanism.",
+      "However, finetuning LLMs can be very expensive in terms of computational resources and time, which is why researchers started developing parameter-efficient finetuning methods."
+    ],
+    "title": "Finetuning LLMs Efficiently with Adapters",
+    "url": "https://magazine.sebastianraschka.com/p/finetuning-llms-with-adapters"
+  }
+]

@@ -1,0 +1,239 @@
+[
+  {
+    "description": "To this end, we improve over existing ... uncertainty-aware treatment effect estimation. Specifically, we provide strong empirical evidence that our BNCDE based on a combination of neural CDEs and latent neural SDEs outperforms the existing ad-hoc baselines, namely TE-CDE (Seedat et ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "To this end, we improve over existing methods by leveraging the Bayesian paradigm and by introducing a novel neural approach for uncertainty-aware treatment effect estimation. Specifically, we provide strong empirical evidence that our BNCDE based on a combination of neural CDEs and latent neural SDEs outperforms the existing ad-hoc baselines, namely TE-CDE (Seedat et al., 2022) with MC dropout (Gal & Ghahramani, 2016).",
+      "A key benefit of this is that neural SDEs as a variational family are both scalable and arbitrarily expressive (Tzen & Raginsky, 2019; Xu et al., 2022). However, no work has integrated Bayesian uncertainty quantification into neural CDEs. Research gap: As shown above, there is no method for treatment effect estimation in continuous time with Bayesian uncertainty quantification.",
+      "To the best of our knowledge, ours is the first tailored neural method for uncertainty-aware treatment effect estimation in continuous time. In our BNCDE, the time dimension is modeled through a coupled system of neural controlled differential equations and neural stochastic differential equations, where the neural stochastic differential equations allow for tractable variational Bayesian inference. Specifically, we use latent neural SDEs to parameterize the posterior distribution of the weights in the neural controlled differential equations.",
+      "By design, the solutions to our SDEs are stochastic weight processes based on which we then compute the Bayesian posterior predictive distribution of the potential outcomes in continuous time. We contribute to three different streams of the literature:111https://github.com/konstantinhess/Bayesian-Neural-CDE (1) We contribute to the literature on treatment effect estimation: We develop a novel method for treatment effect estimation from observational data in continuous time with uncertainty quantification."
+    ],
+    "title": "Bayesian Neural Controlled Differential Equations for Treatment ...",
+    "url": "https://arxiv.org/html/2310.17463v2"
+  },
+  {
+    "description": "Stochastic differential equations (SDEs) are one of the most commonly studied probabilistic dynamical systems, and widely used to model complex biological processes. Building upon the previously introduced idea of performing inference of dynamical systems by parametrising their coefficient ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Stochastic differential equations (SDEs) are one of the most commonly studied probabilistic dynamical systems, and widely used to model complex biological processes. Building upon the previously introduced idea of performing inference of dynamical systems by parametrising their coefficient functions via neural networks, we propose a novel formulation for an optimisation objective that combines simulation-based penalties with pseudo-likelihoods.",
+      "npj Systems Biology and Applications - Loss formulations for assumption-free neural inference of SDE coefficient functions",
+      "For ordinary differential equations, and under certain assumptions on the involved kinetics, the use of deep learning has been proposed to facilitate parameter estimation19,20, but also for dynamics discovery21 via symbolic regression. For SDEs, however, there is little established work beyond that of Rackauckas et al.17, who represented coefficient functions as a neural network, and subsequently optimised it by penalising disagreement between observed data and simulations from the current coefficient model candidate.",
+      "Given sufficient data density, on the other hand, another promising avenue would be de-coupling the tasks of estimating the drift and diffusion, thus utilising a timescale separation approach, as has been suggested by Ditlevsen in the context of climate modelling26."
+    ],
+    "title": "Loss formulations for assumption-free neural inference of SDE ...",
+    "url": "https://www.nature.com/articles/s41540-025-00500-6"
+  },
+  {
+    "description": "Treatment effect estimation in continuous time is crucial for personalized medicine. However, existing methods for this task are limited to point estimates of the potential outcomes, whereas uncertainty estimates have been ignored. Needless to say, uncertainty quantification is crucial for ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Treatment effect estimation in continuous time is crucial for personalized medicine. However, existing methods for this task are limited to point estimates of the potential outcomes, whereas uncertainty estimates have been ignored. Needless to say, uncertainty quantification is crucial for reliable decision-making in medical applications.",
+      "To fill this gap, we propose a novel Bayesian neural controlled differential equation (BNCDE) for treatment effect estimation in continuous time. In our BNCDE, the time dimension is modeled through a coupled system of neural controlled differential equations and neural stochastic differential equations, where the neural stochastic differential equations allow for tractable variational Bayesian inference.",
+      "TL;DR: We develop a novel variational Bayesian method for uncertainty-aware treatment effect estimation in continuous time using neural controlled differential equations and neural stochastic differential equations.",
+      "Thereby, for an assigned sequence of treatments, our BNCDE provides meaningful posterior predictive distributions of the potential outcomes. To the best of our knowledge, ours is the first tailored neural method to provide uncertainty estimates of treatment effects in continuous time."
+    ],
+    "title": "Bayesian Neural Controlled Differential Equations for Treatment ...",
+    "url": "https://openreview.net/forum?id=uwO71a8wET&noteId=iRdjmgQLq8"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [],
+    "title": "NEURAL SDES MADE EASY",
+    "url": "https://openreview.net/pdf?id=padYzanQNbg"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=papers.nips.cc&size=128",
+    "snippets": [],
+    "title": "Non-adversarial training of Neural SDEs with signature ...",
+    "url": "https://papers.nips.cc/paper_files/paper/2023/file/2460396f2d0d421885997dd1612ac56b-Paper-Conference.pdf"
+  },
+  {
+    "description": "Personalized medicine based on medical images, including predicting future individualized clinical disease progression and treatment response, would have an enormous impact on healthcare and drug development, particularly for diseases (e.g. multiple sclerosis (MS)) with long term, complex, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Causal inference for prediction of future ITE in medical image analysis remains in its infancy [29], with some recent work focused on future fixed-timepoint outcomes[9, 36]. The importance of causality for image-based personalised medicine warrants extending prior work on causal modeling for ITE estimation to NSDEs, which have not been studied in this context. In this paper, we present the first probabilistic temporal causal model for image-based personalized medicine. The encoder combines the pre-treatment (baseline) high-dimensional images (i.e.",
+      "Moreover, we find that sampling-based uncertainty estimates allow for isolating subsets of patients for which the model is more confident, improving the predictive accuracy of the trajectory and ITE. A causal stochastic temporal model is proposed: At baseline, multi-dimensional MRI, and the associated tabular data (clinical, demographic, and subtype), are encoded in two distinct lower-dimensional latent spaces. The treatment label, one-hot-encoded, is concatenated together with the tabular and image embeddings and fed to the NSDE which projects the combined latent representation (from baseline) forward in time.",
+      "To this end, patients were ordered based on the model confidence (see Section 2.2). Fig.2 reports the MSE results averaged along the entire trajectories for patients filtered based on their uncertainty estimates. To better analyze the impact of uncertainty on error, the MSE was normalized to the baseline case where no uncertainty filtering was performed (100% of the data). Results indicate that trajectory predictions for all treatments decrease in error when more confident predictions are considered, confirming the desired performance of the predicted uncertainties.",
+      "For chronic neurological diseases such as MS, the ability to accurately predict continuous individual trajectories of disease evolution on different treatments from baseline MRI would be of substantial importance to improving patient care and drug development. In this work, a probabilistic temporal model is proposed for (1) predicting continuous disability trajectories in latent space based on NSDEs, and (2) future individual treatment responses, and validated on a large (>3600 patients) unified RCT dataset for a variety of treatments. Causal inference, combined with uncertainty estimates, provides additional trustworthiness in predicted counterfactual trajectories, and permit the identification of high confidence subgroups of highly responsive patients."
+    ],
+    "title": "Probabilistic Temporal Prediction of Continuous Disease Trajectories ...",
+    "url": "https://arxiv.org/html/2406.12807v1"
+  },
+  {
+    "description": "Code for \"Neural Controlled Differential Equations for Irregular Time Series\" (Neurips 2020 Spotlight) - patrick-kidger/NeuralCDE",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [],
+    "title": "GitHub - patrick-kidger/NeuralCDE: Code for \"Neural Controlled ...",
+    "url": "https://github.com/patrick-kidger/NeuralCDE"
+  },
+  {
+    "description": "Treatment effect estimation in continuous time is crucial for personalized medicine. However, existing methods for this task are limited to point estimates of the potential outcomes, whereas uncertainty estimates have been ignored. Needless to say, uncertainty quantification is crucial for ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Treatment effect estimation in continuous time is crucial for personalized medicine. However, existing methods for this task are limited to point estimates of the potential outcomes, whereas uncertainty estimates have been ignored. Needless to say, uncertainty quantification is crucial for reliable decision-making in medical applications.",
+      "Abstract page for arXiv paper 2310.17463: Bayesian Neural Controlled Differential Equations for Treatment Effect Estimation",
+      "To fill this gap, we propose a novel Bayesian neural controlled differential equation (BNCDE) for treatment effect estimation in continuous time. In our BNCDE, the time dimension is modeled through a coupled system of neural controlled differential equations and neural stochastic differential equations, where the neural stochastic differential equations allow for tractable variational Bayesian inference.",
+      "Thereby, for an assigned sequence of treatments, our BNCDE provides meaningful posterior predictive distributions of the potential outcomes. To the best of our knowledge, ours is the first tailored neural method to provide uncertainty estimates of treatment effects in continuous time."
+    ],
+    "title": "[2310.17463] Bayesian Neural Controlled Differential Equations ...",
+    "url": "https://arxiv.org/abs/2310.17463"
+  },
+  {
+    "description": "Neural ordinary differential equations are an attractive option for modelling temporal dynamics. However, a fundamental issue is that the solution to an ordinary differential equation is determined by its initial condition, and there is no mechanism for adjusting the trajectory based on subsequent ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Neural ordinary differential equations are an attractive option for modelling temporal dynamics. However, a fundamental issue is that the solution to an ordinary differential equation is determined by its initial condition, and there is no mechanism for adjusting the trajectory based on subsequent observations.",
+      "Abstract page for arXiv paper 2005.08926: Neural Controlled Differential Equations for Irregular Time Series"
+    ],
+    "title": "[2005.08926] Neural Controlled Differential Equations for Irregular ...",
+    "url": "https://arxiv.org/abs/2005.08926"
+  },
+  {
+    "description": "Inspired by the ubiquitous use of differential equations to model continuous dynamics across diverse scientific and engineering domains, we propose a novel and intuitive approach to continuous sequence modeling. Our method interprets time-series data as discrete samples from an underlying ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Results Table 1 shows the performance of our Neural SDE compared to the Diffusion Policy baseline. Our model achieves competitive performance, demonstrating its effectiveness in policy learning. This is notable given that SDEs often assume some level of smoothness in the underlying dynamics, while imitation learning often involves non-smooth dynamics.",
+      "Both baselines condition on the past 4 frames to generate the next frame autoregressively. Specifically, we concatenate these 4 frames into a single state: At each training step, the model sees a pair of consecutive states ... ( italic_X start_POSTSUBSCRIPT italic_t end_POSTSUBSCRIPT , italic_X start_POSTSUBSCRIPT italic_t + roman_\u0394 italic_t end_POSTSUBSCRIPT ). Under the Neural SDE framework, we aim to estimate",
+      "Quantitative Comparison and Inference Efficiency Our Neural SDE model achieves comparable results to the Flow Matching (Lipman et al., 2022) and Probabilistic Forecasting with Interpolants (PFI) (Chen et al., 2024) baselines across multiple metrics, including FVD (Unterthiner et al., 2019), JEDI (Bicsi et al., 2023) , SSIM (Wang et al., 2004), and PSNR (Hore & Ziou, 2010), on the KTH and CLEVRER datasets. One of the most compelling advantages of our method is its inference efficiency.",
+      "The Flow+Denoiser+Diffusion plot shows that incorporating the denoiser effectively mitigates covariate-shift. Figure 4: Non-Smooth Trajectory Generation. A Push-T trajectory generated by our Neural SDE, showcasing its ability to handle drastic changes in direction. Table 1: Success rate (SR) comparison on PushT. Baseline results (trained on a Transformer backbone) are from Chi et al."
+    ],
+    "title": "Neural SDEs as a Unified Approach to Continuous-Domain Sequence ...",
+    "url": "https://arxiv.org/html/2501.18871v1"
+  },
+  {
+    "description": "Personalized medicine based on medical images, including predicting future individualized clinical disease progression and treatment response, would have an enormous impact on healthcare and drug development, particularly for diseases (e.g. multiple sclerosis (MS)) with long term, complex, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Personalized medicine based on medical images, including predicting future individualized clinical disease progression and treatment response, would have an enormous impact on healthcare and drug development, particularly for diseases (e.g. multiple sclerosis (MS)) with long term, complex, heterogeneous evolutions and no cure.",
+      "Abstract page for arXiv paper 2406.12807: Probabilistic Temporal Prediction of Continuous Disease Trajectories and Treatment Effects Using Neural SDEs",
+      "Our results present the first successful uncertainty-based causal Deep Learning (DL) model to: (a) accurately predict future patient MS disability evolution (e.g. EDSS) and treatment effects leveraging baseline MRI, and (b) permit the discovery of subgroups of patients for which the model has high confidence in their response to treatment even in clinical trials which did not reach their clinical endpoints. From: Joshua Durso-Finley [view email] [v1] Tue, 18 Jun 2024 17:22:55 UTC (18,745 KB) ... View a PDF of the paper titled Probabilistic Temporal Prediction of Continuous Disease Trajectories and Treatment Effects Using Neural SDEs, by Joshua Durso-Finley and 5 other authors",
+      "View a PDF of the paper titled Probabilistic Temporal Prediction of Continuous Disease Trajectories and Treatment Effects Using Neural SDEs, by Joshua Durso-Finley and 5 other authors View PDF HTML (experimental)"
+    ],
+    "title": "[2406.12807] Probabilistic Temporal Prediction of Continuous Disease ...",
+    "url": "https://arxiv.org/abs/2406.12807"
+  },
+  {
+    "description": "This paper addresses the use of neural networks for the estimation of treatment effects from observational data. Generally, estimation proceeds in two stages. First, we fit models for the expected outcome and the probability of treatment (propensity score) for each unit.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:This paper addresses the use of neural networks for the estimation of treatment effects from observational data. Generally, estimation proceeds in two stages. First, we fit models for the expected outcome and the probability of treatment (propensity score) for each unit.",
+      "Abstract page for arXiv paper 1906.02120: Adapting Neural Networks for the Estimation of Treatment Effects",
+      "Second, we plug these fitted models into a downstream estimator of the effect. Neural networks are a natural choice for the models in the first step. The question we address is: how can we adapt the design and training of the neural networks used in the first step in order to improve the quality of the final estimate of the treatment effect?",
+      "View a PDF of the paper titled Adapting Neural Networks for the Estimation of Treatment Effects, by Claudia Shi and 2 other authors View PDF"
+    ],
+    "title": "[1906.02120] Adapting Neural Networks for the Estimation of Treatment ...",
+    "url": "https://arxiv.org/abs/1906.02120"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [],
+    "title": "On the Choice of Interpolation Scheme for Neural CDEs",
+    "url": "https://openreview.net/pdf?id=caRBFhxXIG"
+  },
+  {
+    "description": "The documentation for the Diffrax software library.",
+    "favicon_url": "https://you.com/favicon?domain=docs.kidger.site&size=128",
+    "snippets": [],
+    "title": "Neural SDE - Diffrax",
+    "url": "https://docs.kidger.site/diffrax/examples/neural_sde/"
+  },
+  {
+    "description": "Inspired by the ubiquitous use of differential equations to model continuous dynamics across diverse scientific and engineering domains, we propose a novel and intuitive approach to continuous sequence modeling. Our method interprets time-series data as \\textit{discrete samples from an underlying ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Inspired by the ubiquitous use of differential equations to model continuous dynamics across diverse scientific and engineering domains, we propose a novel and intuitive approach to continuous sequence modeling. Our method interprets time-series data as \\textit{discrete samples from an underlying continuous dynamical system}, and models its time evolution using Neural Stochastic Differential Equation (Neural SDE), where both the flow (drift) and diffusion terms are parameterized by neural networks.",
+      "Abstract page for arXiv paper 2501.18871: Neural SDEs as a Unified Approach to Continuous-Domain Sequence Modeling",
+      "View a PDF of the paper titled Neural SDEs as a Unified Approach to Continuous-Domain Sequence Modeling, by Macheng Shen and Chen Cheng View PDF HTML (experimental)",
+      "We derive a principled maximum likelihood objective and a \\textit{simulation-free} scheme for efficient training of our Neural SDE model. We demonstrate the versatility of our approach through experiments on sequence modeling tasks across both embodied and generative AI."
+    ],
+    "title": "[2501.18871] Neural SDEs as a Unified Approach to Continuous-Domain ...",
+    "url": "https://arxiv.org/abs/2501.18871"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=people.bath.ac.uk&size=128",
+    "snippets": [],
+    "title": "Neural Controlled Differential Equations - People.bath.ac.uk",
+    "url": "https://people.bath.ac.uk/jmf68/pdf/Neural%20Controlled%20Differential%20Equations.pdf"
+  },
+  {
+    "description": "Part of Advances in Neural Information Processing Systems 34 (NeurIPS 2021) \u00b7 Patrick Kidger, James Foster, Xuechen (Chen) Li, Terry Lyons",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.neurips.cc&size=128",
+    "snippets": [
+      "Neural SDEs combine many of the best qualities of both RNNs and SDEs, and as such are a natural choice for modelling many types of temporal dynamics. They offer memory efficiency, high-capacity function approximation, and strong priors on model space. Neural SDEs may be trained as VAEs or as GANs; in either case it is necessary to backpropagate through the SDE solve.",
+      "Next, we introduce the \\textit{Brownian interval}. This is a new and computationally efficient way of exactly sampling \\textit{and reconstructing} Brownian motion; this is in contrast to previous reconstruction techniques that are both approximate and relatively slow. This gives up to a $10.6\\times$ speed improvement over previous techniques. After that, when specifically training Neural SDEs as GANs (Kidger et al."
+    ],
+    "title": "Efficient and Accurate Gradients for Neural SDEs",
+    "url": "https://proceedings.neurips.cc/paper/2021/hash/9ba196c7a6e89eafd0954de80fc1b224-Abstract.html"
+  },
+  {
+    "description": "Irregular sampling intervals and missing values in real-world time series data present challenges for conventional methods that assume consistent intervals and complete data. Neural Ordinary Differential Equations (Neural ODEs) offer an alternative approach, utilizing neural networks combined ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Efficient and accurate gradients for neural sdes. Advances in Neural Information Processing Systems, 34:18747\u201318761, 2021b. Kloeden & Neuenkirch (2007) Peter E Kloeden and Andreas Neuenkirch. The pathwise convergence of approximation schemes for stochastic differential equations. LMS journal of Computation and Mathematics, 10:235\u2013253, 2007. Kong et al. (2020) L. Kong, J. Sun, and C. Zhang. Sde-net: Equipping deep neural networks with uncertainty estimates.",
+      "(2020) introduced neural controlled differential equations (Neural CDEs), which are continuous-time analogs of RNNs that employ controlled paths to represent irregular time series. As an extension of Neural ODEs, neural stochastic differential equations (Neural SDEs) have been introduced with a focus on aspects such as gradient computation, variational inference for latent spaces, and uncertainty quantification.",
+      "(2022)), Neural ODEs: Neural ODEs (Chen et al., 2018), GRU-ODE (De Brouwer et al., 2019), ODE-RNN (Rubanova et al., 2019), ODE-LSTM (Lechner & Hasani, 2020), Latent-ODE (Rubanova et al., 2019), Augmented-ODE (Dupont et al., 2019), and ACE-NODE (Jhin et al., 2021))), Neural CDEs (Neural CDE Kidger et al. (2020), Neural RDE (Morrill et al., 2021a), ANCDE (Jhin et al., 2023b), EXIT (Jhin et al., 2022), and LEAP (Jhin et al., 2023a)), and Neural SDEs (Neural SDEs (Tzen & Raginsky, 2019), and Latent SDE Li et al.",
+      "While CDE-based methods typically benefit from OI (Kidger et al., 2020), our models perform well even without OI. This indicates that the proposed Neural SDEs leverage the advantages of incorporating a controlled path in the drift function and introducing stochasticity through the diffusion function."
+    ],
+    "title": "Stable Neural Stochastic Differential Equations in Analyzing ...",
+    "url": "https://arxiv.org/html/2402.14989v1"
+  },
+  {
+    "description": "Neural controlled differential equations (Neural CDEs) are a continuous-time extension of recurrent neural networks (RNNs), achieving state-of-the-art (SOTA) performance at modelling functions of irregular time series. In order to interpret discrete data in continuous time, current implementations ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Neural controlled differential equations (Neural CDEs) are a continuous-time extension of recurrent neural networks (RNNs), achieving state-of-the-art (SOTA) performance at modelling functions of irregular time series. In order to interpret discrete data in continuous time, current implementations rely on non-causal interpolations of the data.",
+      "Abstract page for arXiv paper 2106.11028: Neural Controlled Differential Equations for Online Prediction Tasks",
+      "This is fine when the whole time series is observed in advance, but means that Neural CDEs are not suitable for use in \\textit{online prediction tasks}, where predictions need to be made in real-time: a major use case for recurrent networks. Here, we show how this limitation may be rectified.",
+      "First, we identify several theoretical conditions that interpolation schemes for Neural CDEs should satisfy, such as boundedness and uniqueness. Second, we use these to motivate the introduction of new schemes that address these conditions, offering in particular measurability (for online prediction), and smoothness (for speed)."
+    ],
+    "title": "[2106.11028] Neural Controlled Differential Equations for Online ...",
+    "url": "https://arxiv.org/abs/2106.11028"
+  },
+  {
+    "description": "The documentation for the Diffrax software library.",
+    "favicon_url": "https://you.com/favicon?domain=docs.kidger.site&size=128",
+    "snippets": [],
+    "title": "Neural CDE - Diffrax",
+    "url": "https://docs.kidger.site/diffrax/examples/neural_cde/"
+  },
+  {
+    "description": "Neural controlled differential equations (Neural CDEs) are a continuous-time extension of recurrent neural networks (RNNs), achieving state-of-the-art (SOTA) performance at modelling functions of irregular time series. In order to interpret discrete data in continuous time, current implementations ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Abstract: Neural controlled differential equations (Neural CDEs) are a continuous-time extension of recurrent neural networks (RNNs), achieving state-of-the-art (SOTA) performance at modelling functions of irregular time series. In order to interpret discrete data in continuous time, current implementations rely on non-causal interpolations of the data.",
+      "This is fine when the whole time series is observed in advance, but means that Neural CDEs are not suitable for use in \\textit{online prediction tasks}, where predictions need to be made in real-time: a major use case for recurrent networks. Here, we show how this limitation may be rectified.",
+      "First, we identify several theoretical conditions that control paths for Neural CDEs should satisfy, such as boundedness and uniqueness. Second, we use these to motivate the introduction of new schemes that address these conditions, offering in particular measurability (for online prediction), and smoothness (for speed)."
+    ],
+    "title": "On the Choice of Interpolation Scheme for Neural CDEs | OpenReview",
+    "url": "https://openreview.net/forum?id=caRBFhxXIG"
+  },
+  {
+    "description": "Neural Rough Differential Equations for Long Time SeriesJames Morrill, Cristopher Salvi, Patrick Kidger, James FosterNeural controlled differe...",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.mlr.press&size=128",
+    "snippets": [
+      "@InProceedings{pmlr-v139-morrill21b, title = {Neural Rough Differential Equations for Long Time Series}, author = {Morrill, James and Salvi, Cristopher and Kidger, Patrick and Foster, James}, booktitle = {Proceedings of the 38th International Conference on Machine Learning}, pages = {7829--7838}, year = {2021}, editor = {Meila, Marina and Zhang, Tong}, volume = {139}, series = {Proceedings of Machine Learning Research}, month = {18--24 Jul}, publisher = {PMLR}, pdf = {http://proceedings.mlr.press/v139/morrill21b/morrill21b.pdf}, url = {https://proceedings.mlr.press/v139/morrill21b.html}, abstract = {Neural controlled differential equations (CDEs) are the continuous-time analogue of recurrent neural networks, as Neural ODEs are to residual networks, and offer a memory-efficient continuous-time way to model functions of potentially irregular time series.",
+      "This is the approach for solving \\textit{rough differential equations} (RDEs), and correspondingly we describe our main contribution as the introduction of Neural RDEs. This extension has a purpose: by generalising the Neural CDE approach to a broader class of driving signals, we demonstrate particular advantages for tackling long time series.",
+      "%0 Conference Paper %T Neural Rough Differential Equations for Long Time Series %A James Morrill %A Cristopher Salvi %A Patrick Kidger %A James Foster %B Proceedings of the 38th International Conference on Machine Learning %C Proceedings of Machine Learning Research %D 2021 %E Marina Meila %E Tong Zhang %F pmlr-v139-morrill21b %I PMLR %P 7829--7838 %U https://proceedings.mlr.press/v139/morrill21b.html %V 139 %X Neural controlled differential equations (CDEs) are the continuous-time analogue of recurrent neural networks, as Neural ODEs are to residual networks, and offer a memory-efficient continuous-time way to model functions of potentially irregular time series."
+    ],
+    "title": "Neural Rough Differential Equations for Long Time Series",
+    "url": "https://proceedings.mlr.press/v139/morrill21b.html"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Neural SDEs as Infinite-Dimensional GANs",
+    "url": "https://arxiv.org/pdf/2102.03657"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [],
+    "title": "Probabilistic Temporal Prediction of Continuous Disease ...",
+    "url": "https://www.researchgate.net/publication/381518003_Probabilistic_Temporal_Prediction_of_Continuous_Disease_Trajectories_and_Treatment_Effects_Using_Neural_SDEs"
+  }
+]

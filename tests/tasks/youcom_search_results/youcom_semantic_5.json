@@ -1,0 +1,279 @@
+[
+  {
+    "description": "Factual inconsistency with source documents in automatically generated summaries can lead to misinformation or pose risks. Existing factual consistenc\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Factual inconsistency with source documents in automatically generated summaries can lead to misinformation or pose risks. Existing factual consistency (FC) metrics are constrained by their performance, efficiency, and explainability. Recent advances in Large language models (LLMs) have demonstrated remarkable potential in text evaluation but their effectiveness in assessing FC in summarization remains underexplored.",
+      "Prior research has mostly focused on proprietary LLMs, leaving essential factors that affect their assessment capabilities unexplored. Additionally, current FC evaluation benchmarks are restricted to news articles, casting doubt on the generality of the FC methods tested on them. In this paper, we first address the gap by introducing TreatFact\u2014a dataset of LLM-generated summaries of clinical texts, annotated for FC by domain experts.",
+      "Nevertheless, there is potential for enhancing the performance of open-source LLMs through increasing model size, expanding pre-training data, and developing well-curated fine-tuning data. Experiments on TreatFact suggest that both previous methods and LLM-based evaluators are unable to capture factual inconsistencies in clinical summaries, posing a new challenge for FC evaluation.",
+      "TreatFact: a clinical summary dataset annotated for factual consistency."
+    ],
+    "title": "Factual consistency evaluation of summarization in the Era of large ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0957417424013228"
+  },
+  {
+    "description": "Request PDF | Assessing The Factual Accuracy of Generated Text | We propose a model-based metric to estimate the factual accuracy of generated text that is complementary to typical scoring schemes like ROUGE... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "[11]. Fact-tuples also struggle with abstract or implicit knowledge, limiting their usefulness for more creative or generative tasks where direct fact alignment is less clear. ... A review of faithfulness metrics for hallucination assessment in Large Language Models ... This review examines the means with which faithfulness has been evaluated across open-ended summarization, question-answering and machine translation tasks.",
+      "The two datasets have been extensively studied for the factual consistency in their generated summaries across a variety of models \u00b7 (Goodrich et al., 2019;Cao et al., 2018). Reference summaries from CNN/DM are longer, having on average three sentences, and more extractive in nature. ... ... They primarily fall in two paradigms-Entailment based and QA based metrics.",
+      "Abstractive summarization (AS) systems, which aim to generate a text for summarizing crucial information of the original document, have been widely adopted in recent years. Unfortunately, factually unreliable summaries may still occur, leading to unexpected misunderstanding and distortion of information. This calls for methods that can properly evaluate the quality of AS systems. Yet, the existing reference-based evaluation approach for AS relies on reference summaries as well as automatic evaluation metrics (e.g., ROUGE).",
+      "The source codes and the data are available at https://github.com/gospelnnadi/Text-Summarization-SOTA-Experiment. ... 88], where the authors investigated the correlation between this measure and human evaluation. Especially in [88], the authors conclude that Factual Consistency is the measure presenting the highest correlation with human evaluation scores compared to any other measure, like the Rouge metrics. ... ... Factual Consistency has been presented in [87,88], where the authors investigated the correlation between this measure and human evaluation."
+    ],
+    "title": "Assessing The Factual Accuracy of Generated Text | Request PDF",
+    "url": "https://www.researchgate.net/publication/334717774_Assessing_The_Factual_Accuracy_of_Generated_Text"
+  },
+  {
+    "description": "Request PDF | On Jan 1, 2020, Alex Wang and others published Asking and Answering Questions to Evaluate the Factual Consistency of Summaries | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "While prior work has addressed some of these conflicts in isolation, we unify them under the broader concept of conflicting information, analyze their implications, and discuss mitigation strategies. We highlight key challenges and future directions for developing conflict-aware NLP systems that can reason over and reconcile conflicting information more effectively. ... ... The standard metrics have been fading in popularity as the field of machine text summarization has advanced and as it has become clearer that these metrics have low correlation with human judgment [19][20][21]",
+      "... Within the domain of abstract summarization, question generation has been widely used as a measure of faithfulness \u00b7 [8,15,16,17]. This methodology involves the generation of questions from both the model-generated summary and the corresponding source document, then the answers to these questions are compared to assess factual consistency. ... ... If the answers to the questions generated from the summary align with those from the reference, the summary is considered faithful to the original text. This metric can output a score from 0-1, that shows the percentage of questions that had aligned answers (whereby a score of 1 demonstrates that every answer provided by the summary is in alignment with the answer provided by the source document)",
+      "Recent works in end-to-end dialogue systems have adopted metrics from machine translation and text summarization to compare a model's generated response to a single target response. We show that these metrics correlate very weakly or not at all with human judgements of the response quality in both technical and non-technical domains. We provide quantitative and qualitative results highlighting specific weaknesses in existing metrics, and provide recommendations for future development of better automatic evaluation metrics for dialogue systems.",
+      "Moreover, BLEUBERI models generate outputs that are more factually grounded than competing methods. Overall, we show that given access to high-quality reference outputs (easily obtained via existing instruction-following datasets or synthetic data generation), string matching-based metrics are cheap yet effective proxies for reward models during alignment. We release our code and data at https://github.com/lilakk/BLEUBERI. ... Wang, Cho, and Lewis 2020) generates questions about the summary and its source, compares the answers, and the faithfulness score is computed based on the similarity of the corresponding answers.."
+    ],
+    "title": "Asking and Answering Questions to Evaluate the Factual Consistency ...",
+    "url": "https://www.researchgate.net/publication/343298797_Asking_and_Answering_Questions_to_Evaluate_the_Factual_Consistency_of_Summaries"
+  },
+  {
+    "description": "Abstract. The scarcity of comprehensive up-to-date studies on evaluation metrics for text summarization and the lack of consensus regarding evaluation protocols continue to inhibit progress. We address the existing shortcomings of summarization evaluation methods along five dimensions: 1) we ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. The scarcity of comprehensive up-to-date studies on evaluation metrics for text summarization and the lack of consensus regarding evaluation protocols continue to inhibit progress. We address the existing shortcomings of summarization evaluation methods along five dimensions: 1) we re-evaluate 14 automatic evaluation metrics in a comprehensive and consistent fashion using neural summarization model outputs along with expert and crowd-sourced human annotations; 2) we consistently benchmark 23 recent summarization models using the aforementioned automatic evaluation metrics; 3) we asse",
+      "Many of the currently used metrics were developed and assessed using the Document Understanding Conference (DUC) and Text Analysis Conference (TAC) shared-tasks datasets (Dang and Owczarzak2008, 2009). However, it has recently been shown that the mentioned datasets contain human judgments for model outputs scoring on a lower scale compared to current summarization systems putting into question the true performance of those metrics in the new setting (Peyrard, 2019).",
+      "Our selection of evaluation methods includes several recently introduced metrics that have been applied to both text generation and summarization, standard machine translation metrics, and other miscellaneous performance statistics.",
+      "Automatically assessing machine summary content without a gold standard. ... On faithfulness and factuality in abstractive summarization. In \u00b7 Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, ACL 2020, Online, July 5\u201310, 2020, pages ... Distributed representations of words and phrases and their compositionality. In ... Curran Associates, Inc. ... Xiang et al. ... Abstractive text summarization using sequence-to-sequence rnns and beyond."
+    ],
+    "title": "SummEval: Re-evaluating Summarization Evaluation | Transactions ...",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00373/100686/SummEval-Re-evaluating-Summarization-Evaluation"
+  },
+  {
+    "description": "We then analyse multiple models that estimate factual accuracy on a Wikipedia text summarization task, and show their efficacy compared to ROUGE and other model-free variants by conducting a human evaluation study. ... Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, 2015, Neural Machine Translation by Jointly Learning to Align ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "We then analyse multiple models that estimate factual accuracy on a Wikipedia text summarization task, and show their efficacy compared to ROUGE and other model-free variants by conducting a human evaluation study. ... Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio, 2015, Neural Machine Translation by Jointly Learning to Align and Translate.",
+      "You will be notified whenever a record that you have chosen has been cited. To manage your alert preferences, click on the button below.Manage my Alerts ... We propose a model-based metric to estimate the factual accuracy of generated text that is complementary to typical scoring schemes like ROUGE (Recall-Oriented Understudy for Gisting Evaluation) and BLEU (Bilingual Evaluation Understudy).",
+      "We examine accuracy issues in the task of generating summaries of basketball games, including what accuracy means ... ... Factual accuracy problems limit the usefulness of neural solutions for complex data-to-text. ... The problem of factual incorrectness in machine-generated abstractive summarization has received widespread attention in the past few years.",
+      "Alon Lavie and Abhaya Agarwal. 2007, Meteor: An Automatic Metric for MT Evaluation with High Levels of Correlation with Human Judgments. In Proceedings of the Second Workshop on Statistical Machine Translation."
+    ],
+    "title": "Assessing The Factual Accuracy of Generated Text | Proceedings ...",
+    "url": "https://dl.acm.org/doi/10.1145/3292500.3330955"
+  },
+  {
+    "description": "There is a great amount of textual content in the world. And we seek the most important information in a short time. Automatic text summarization systems have helped us quickly browse news articles\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Key information in source texts and reference summaries is masked to artificially generate factually inconsistent summaries",
+      "A model may misrepresent information present in the source text (intrinsic error) or add information not inferable from the source text (extrinsic error). Types of errors in abstractive summarization (Based on Maynez et al., 2020) Since a single error can sharply decrease the reliability of the generated summary, it is crucial to check the factual inconsistency of abstractive summaries. The most recently developed idea to do so is to train a factual consistency classifier with two datasets, positive summaries (factually consistent) and negative summaries (factually inconsistent).",
+      "With advances of neural text generation methods, instead of simply concatenating selected sentences from the source text, a system can generate paraphrases to construct a more coherent, informative summary. This approach is called abstractive summarization. Extractive summarization extracts key terms verbatim. Abstractive summarization paraphrases the document. (Source: AWS blog) As an abstractive summarization system generates sentences that are different from the original ones, oftentimes (nearly 30%) the outputs are fake, or in other words, factually inconsistent.",
+      "Summary level Pearson Correlation(r) and Spearman\u2019s Correlation(\u03c1) between various automatic metrics and human judgments of factual consistency for the model generated summaries \u00b7 We demonstrate that there is a tradeoff in adjusting the article and summary masking ratios for generating negative summaries. Too high a masking ratio decreases the generated negative summary\u2019s relevance to the source article, and too low a masking ratio leads to generate rather positive summaries."
+    ],
+    "title": "Check Factual Consistency of Auto-generated Summaries Using Masked ...",
+    "url": "https://medium.com/snu-aiis-blog/check-factual-consistency-of-auto-generated-summaries-using-masked-summarization-bc2a19e3422e"
+  },
+  {
+    "description": "We evaluate the proposed approaches ... the faithfulness of the generated summaries over strong baselines. Finally, we show that the human judgments we collected in all languages are useful for training automatic metrics to assess the quality, factual consistency and informativeness ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "We evaluate the proposed approaches using both automatic and human evaluation in 45 languages, and observe significant gains in the faithfulness of the generated summaries over strong baselines. Finally, we show that the human judgments we collected in all languages are useful for training automatic metrics to assess the quality, factual consistency and informativeness of generated summaries.",
+      "A well-known issue limiting the wider adoption of abstractive summarization models is their tendency to generate factually inconsistent summaries, a.k.a \u201challucinations\u201d (Maynez et al., 2020; Zhao et al., 2020, inter alia). A recently popular line of work explores how to best detect hallucinations in machine generated text, thereby enabling the automatic identification of factually inconsistent summaries (Eyal et al., 2019; Falke et al., 2019; Kryscinski et al., 2020; Wang et al., 2020; Goyal and Durrett, 2021; Scialom et al., 2021; Honovich et al., 2022; Tang et al., 2022, inter alia).",
+      "Specifically, we employ Textual Entailment models (a.k.a. Natural Language Inference; Dagan et al. 2005; Bowman et al. 2015) in order to determine whether a summary is factually consistent Maynez et al. (2020); Laban et al. (2021). We opportunistically opt for NLI given the availability of multilingual benchmarks for model training Conneau et al. (2018); Nie et al. (2020). Approaches based on question generation and answering have been also shown to work well for factuality evaluation (i.e.",
+      "In this paper we leveraged factual consistency evaluation for improving summarization models in multiple languages. Extensive experiments on the XLSum dataset showed large gains when training summarization models on a subset of the data selected using the NLI signal. Through a large-scale human evaluation study, we obtained ratings which not only helped us distinguish best performing systems, but were further used to learn metrics for assessing multilingual summaries along the dimensions of Quality, Attribution, and Informativeness."
+    ],
+    "title": "Multilingual Summarization with Factual Consistency Evaluation",
+    "url": "https://arxiv.org/html/2212.10622v2"
+  },
+  {
+    "description": "While large language models (LLMs) have proven to be effective on a large variety of tasks, they are also known to hallucinate information. To measure whether an LLM prefers factually consistent continuations of its input, we propose a new benchmark called FIB(Factual Inconsistency Benchmark) ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "While large language models (LLMs) have proven to be effective on a large variety of tasks, they are also known to hallucinate information. To measure whether an LLM prefers factually consistent continuations of its input, we propose a new benchmark called FIB(Factual Inconsistency Benchmark) that focuses on the task of summarization.",
+      "Abstract page for arXiv paper 2211.08412: Evaluating the Factual Consistency of Large Language Models Through News Summarization",
+      "View a PDF of the paper titled Evaluating the Factual Consistency of Large Language Models Through News Summarization, by Derek Tam and 5 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+      "For factually consistent summaries, we use human-written reference summaries that we manually verify as factually consistent. To generate summaries that are factually inconsistent, we generate summaries from a suite of summarization models that we have manually annotated as factually inconsistent."
+    ],
+    "title": "[2211.08412] Evaluating the Factual Consistency of Large Language ...",
+    "url": "https://arxiv.org/abs/2211.08412"
+  },
+  {
+    "description": "Sifting through vast textual data and summarizing key information from electronic health records (EHR) imposes a substantial burden on how clinicians allocate their time. Although large language models (LLMs) have shown immense promise in natural ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "This novel finding affirms the non-inferiority of machine-generated summaries in a clinical context. We qualitatively analyze summaries to pinpoint challenges faced by both models and humans. Such insights can guide future enhancements of LLMs and their integration into clinical workflows. To support aligning future model outputs and NLP metrics directly to clinical preferences, we identify which metrics most correlate with reader scores on the aforementioned key attributes.",
+      "Intuitively, a lower value seems appropriate given our goal of factually summarizing text with a high aversion to hallucinations, or instances where the model generates factually incorrect text. ... Prompt anatomy. Each summarization task uses a slightly different instruction, as depicted in Table A1. Model performance across different temperature values and expertise. ... When considering which open-source models to evaluate, we first assessed the benefit of fine-tuning open-source models on medical text.",
+      "Recent work in clinical natural language processing (NLP) has demonstrated potential on medical text [66, 75], adapting to the medical domain by either training a new model [59, 70], fine-tuning an existing model [67, 72], or supplying task-specific examples in the model prompt [46, 72]. However, adapting LLMs to summarize a diverse set of clinical tasks has not been thoroughly explored, nor has non-inferiority to humans been achieved. With the overarching objective of bringing LLMs closer to clinical readiness, we aim to bridge the gap between theoretical promise and practical utility. We begin by implementing adaptation methods across eight open-source and proprietary LLMs for four distinct summarization tasks comprising six datasets. To our knowledge, the subsequent evaluation via NLP metrics is the most comprehensive assessment of contemporary LLMs for clinical text summarization.",
+      "To address this, there have been recent releases of expert evaluations for adjacent clinical NLP tasks [24, 79]. Other work employs human experts to evaluate synthesized abstracts, demonstrating that NLP metrics are not sufficient to measure summary quality [63]. Aside from the low correlation values in Figure 6, our reader study results in Figure 4 also highlight another limitation of NLP metrics, especially as model-generated summaries become increasingly viable. These metrics rely on a reference, which we have demonstrated can be fallible. Hence we advocate that human evaluation is essential when assessing the clinical feasibility of new methods."
+    ],
+    "title": "Clinical Text Summarization: Adapting Large Language Models Can ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10635391/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=ink.library.smu.edu.sg&size=128",
+    "snippets": [],
+    "title": "Factual consistency evaluation for text summarization via ...",
+    "url": "https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=10147&context=sis_research"
+  },
+  {
+    "description": "While previous efforts have ... to assess metrics\u2019 sensitivity to specific error types or their general detection capabilities. In contrast, our work examines the degree to which factuality metrics respond to factual changes compared to unrelated textual attributes or artifacts, shedding light on their susceptibility to spurious correlations and non-factual influences. Automatic factuality metrics for summarization have been evaluated ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "While previous efforts have meta-evaluated factuality metrics (Gabriel et al., 2021; Chen et al., 2021a), these approaches primarily focus on inducing errors to assess metrics\u2019 sensitivity to specific error types or their general detection capabilities. In contrast, our work examines the degree to which factuality metrics respond to factual changes compared to unrelated textual attributes or artifacts, shedding light on their susceptibility to spurious correlations and non-factual influences. Automatic factuality metrics for summarization have been evaluated using various benchmarks, predominantly based on news sources (Hermann et al., 2015; Narayan et al., 2018).",
+      "Distilling salient information from large volumes of unstructured text\u2014i.e., summarization\u2014is a compelling practical use case for LLMs. As they have grown increasingly competent at this task, it has become concomitantly difficult to evaluate their performance, which requires assessing often subtle but potentially critical factual inconsistencies between inputs and generated summaries.",
+      "This in turn has motivated development of a variety of metrics intended to measure the factual consistency of generated summaries against their source. But are these approaches measuring what they purport to do? In this work, we stress-test automatic factuality metrics. Specifically, we investigate whether and to what degree superficial attributes of summary texts suffice to predict \u201cfactuality\u201d, finding that a (supervised) model using only such shallow features is reasonably competitive with SOTA factuality scoring methods.",
+      "The wording of this phrase varies slightly across metrics to align with their specific methods for evaluating factual consistency. The complete list of these phrases for each metric is provided in the Appendix D.1. Finally, we append both phrases to the corresponding summaries summ (+top) and summ (+assertion). Our goal here is to determine whether the appended text unduly influences metrics, potentially resulting in inflated scores that do not accurately reflect the factual quality of the original content."
+    ],
+    "title": "Do Automatic Factuality Metrics Measure Factuality? A Critical ...",
+    "url": "https://arxiv.org/html/2411.16638v1"
+  },
+  {
+    "description": "In this article, I'll teach you how to create your own text summarization metric.",
+    "favicon_url": "https://you.com/favicon?domain=www.confident-ai.com&size=128",
+    "snippets": [
+      "In a nutshell, arbitrariness causes LLM-Evals to overlook the exclusion of essential details(or at least hinders their ability to identify what should be considered essential), while bias causes LLM-Evals to overlook factual inconsistencies between the original text and the summary. Unsurprisingly, while developing our own summarization metric at Confident AI, we ran into all the problems I mentioned above. However, we came across this paper that introduced the Question Answer Generation framework, which was instrumental in overcoming bias and inconsistencies in LLM-Evals.",
+      "Publicly sharable risk assessments. On-demand custom guards available. ... If you re-read the first paragraph of this article, you\u2019ll notice that at the end of the day, you only care about two things in a summarization task: Coverage of details from the original text. Factual alignment between the original text and summary.",
+      "In this article, I\u2019m going to share how we built our own bullet-proof LLM-Evals (metrics evaluated using LLMs) to evaluate a text-summarization task. In summary (no pun intended), it involves asking closed-ended questions to: Identify misalignment in factuality between the original text and summary. Identify exclusion of details in the summary from the original text. Historically, model-based scorers (e.g., BertScore and ROUGE) have been used to evaluate the quality of text summaries.",
+      "Moreover, these metrics struggle especially when the original text is composed of concatenated text chunks, which is often the case for a retrieval augmented generation (RAG) summarization use case. This is because they often fail to effectively assess summaries for disjointed information within the combined text chunks."
+    ],
+    "title": "A Step-By-Step Guide to Evaluating an LLM Text Summarization Task ...",
+    "url": "https://www.confident-ai.com/blog/a-step-by-step-guide-to-evaluating-an-llm-text-summarization-task"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "Improving Factual Consistency of Abstractive ...",
+    "url": "https://aclanthology.org/2021.acl-long.536.pdf"
+  },
+  {
+    "description": "Evaluating text summarization is hard as there is no one correct solution, and quality often depends on the summary's context and purpose.",
+    "favicon_url": "https://you.com/favicon?domain=neptune.ai&size=128",
+    "snippets": [
+      "This emphasis can sometimes overlook other important aspects of summarization quality, such as coherence, fluency, and factual accuracy. G-Eval is another evaluation metric that harnesses the power of large language models (LLMs) to provide sophisticated, nuanced evaluations of text summarization tasks. It is an example of an approach known as LLM-as-a-judge. As of 2024, G-Eval is considered state-of-the-art for evaluating text summarization tasks. G-Eval assesses the quality of the generated summary across four dimensions: coherence, consistency, fluency, and relevance.",
+      "Over the years, various metrics and LLM-based approaches have been introduced, but there is no gold standard yet. In this article, we\u2019ll discuss why evaluating text summarization is not as straightforward as it might seem at first glance, take a deep dive into the strengths and weaknesses of different metrics, and examine open questions and current developments. Summarization is a classic machine-learning (ML) task in the range of natural language processing (NLP).",
+      "ROUGE and METEOR metrics focus on surface-level matching of N-grams and exact/stemmed/synonym matches, but they do not capture semantic meaning or context. LLM evaluation frameworks, such as BERT and GPT, have been developed to address this limitation by focusing on understanding the actual meaning and coherence of the content. BERTScore is an LLM-based framework that evaluates the quality of a generated summary by comparing it to a human-written reference summary.",
+      "Relying on human experts to write and assess reference summaries makes the evaluation process costly and time-consuming. Also, these evaluators can sometime suffer from subjectivity and variability making the standardization difficult across different evaluators.  \u00b7 Another significant open challenge is evaluating the factual consistency. All metrics we discussed in this article do not effectively detect factual inaccuracies or misleading interpretation of the summarized source."
+    ],
+    "title": "LLM Evaluation For Text Summarization",
+    "url": "https://neptune.ai/blog/llm-evaluation-text-summarization"
+  },
+  {
+    "description": "Large Language Models have expanded the potential for clinical Natural Language Generation (NLG), presenting new opportunities to manage the vast amounts of medical text. However, their use in such high-stakes environments necessitate robust evaluation workflows.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Large Language Models have expanded the potential for clinical Natural Language Generation (NLG), presenting new opportunities to manage the vast amounts of medical text. However, their use in such high-stakes environments necessitate robust evaluation workflows. In this review, we investigated the current landscape of evaluation metrics for NLG in healthcare and proposed a future direction to address the resource constraints of expert human evaluation while balancing alignment with human judgments. ... The rapid development of Large Language Models (LLMs) has led to significant advancements in the field of Natural Language Generation (NLG).",
+      "npj Health Systems - Current and future state of evaluation of large language models for medical summarization tasks",
+      "Consequently, automated metrics developed prior to the advent of LLMs are typically optimized for extractive approaches, limiting their ability to fully capture the inferences and new language generated by abstractive summarization. Furthermore, the subjective nature of assessing clinical reasoning and coherence in abstractive summaries presents additional challenges. Automated metrics often fail to account for the alignment of generated content with clinical logic or decision-making pathways, which are critical in the medical domain.",
+      "Often, human evaluation frameworks are developed for specific projects with only one evaluator, and while metrics like inter-rater reliability are crucial to establish validity, they are not always reported18,23. Moreover, clinically relevant evaluation rubrics have not been specifically designed to assess LLM-generated summaries."
+    ],
+    "title": "Current and future state of evaluation of large language models ...",
+    "url": "https://www.nature.com/articles/s44401-024-00011-2"
+  },
+  {
+    "description": "Derek Tam, Anisha Mascarenhas, Shiyue Zhang, Sarah Kwan, Mohit Bansal, Colin Raffel. Findings of the Association for Computational Linguistics: ACL 2023. 2023.",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [
+      "For factually consistent summaries, we use human-written reference summaries that we manually verify as factually consistent. To generate summaries that are factually inconsistent, we generate summaries from a suite of summarization models that we have manually annotated as factually inconsistent.",
+      "We validate design choices in our benchmark including the scoring method and source of distractor summaries. ... Derek Tam, Anisha Mascarenhas, Shiyue Zhang, Sarah Kwan, Mohit Bansal, and Colin Raffel. 2023. Evaluating the Factual Consistency of Large Language Models Through News Summarization.",
+      "Evaluating the Factual Consistency of Large Language Models Through News Summarization (Tam et al., Findings 2023) ... @inproceedings{tam-etal-2023-evaluating, title = \"Evaluating the Factual Consistency of Large Language Models Through News Summarization\", author = \"Tam, Derek and Mascarenhas, Anisha and Zhang, Shiyue and Kwan, Sarah and Bansal, Mohit and Raffel, Colin\", editor = \"Rogers, Anna and Boyd-Graber, Jordan and Okazaki, Naoaki\", booktitle = \"Findings of the Association for Computational Linguistics: ACL 2023\", month = jul, year = \"2023\", address = \"Toronto, Canada\", publisher = \"Ass",
+      "Evaluating the Factual Consistency of Large Language Models Through News Summarization (Tam et al., Findings 2023) Derek Tam, Anisha Mascarenhas, Shiyue Zhang, Sarah Kwan, Mohit Bansal, and Colin Raffel. 2023. Evaluating the Factual Consistency of Large Language Models Through News Summarization."
+    ],
+    "title": "Evaluating the Factual Consistency of Large Language Models Through ...",
+    "url": "https://aclanthology.org/2023.findings-acl.322/"
+  },
+  {
+    "description": "Practical applications of abstractive summarization models are limited by frequent factual inconsistencies with respect to their input. Existing automatic evaluation metrics for summarization are largely insensitive to such errors. We propose an automatic evaluation protocol called QAGS (pronounced ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Practical applications of abstractive summarization models are limited by frequent factual inconsistencies with respect to their input. Existing automatic evaluation metrics for summarization are largely insensitive to such errors. We propose an automatic evaluation protocol called QAGS (pronounced \"kags\") that is designed to identify factual inconsistencies in a generated summary.",
+      "Abstract page for arXiv paper 2004.04228: Asking and Answering Questions to Evaluate the Factual Consistency of Summaries",
+      "QAGS has substantially higher correlations with these judgments than other automatic evaluation metrics. Also, QAGS offers a natural form of interpretability: The answers and questions generated while computing QAGS indicate which tokens of a summary are inconsistent and why. We believe QAGS is a promising tool in automatically generating usable and factually consistent text.",
+      "View a PDF of the paper titled Asking and Answering Questions to Evaluate the Factual Consistency of Summaries, by Alex Wang and 2 other authors View PDF"
+    ],
+    "title": "[2004.04228] Asking and Answering Questions to Evaluate the Factual ...",
+    "url": "https://arxiv.org/abs/2004.04228"
+  },
+  {
+    "description": "Despite significant progress has been achieved in text summarization, factual inconsistency in generated summaries still severely limits its practical applications. Among the key factors to ensure factual consistency, a reliable automatic evaluation metric is the first and the most crucial one.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Despite significant progress has been achieved in text summarization, factual inconsistency in generated summaries still severely limits its practical applications. Among the key factors to ensure factual consistency, a reliable automatic evaluation metric is the first and the most crucial one.",
+      "Abstract page for arXiv paper 2108.13134: Factual Consistency Evaluation for Text Summarization via Counterfactual Estimation",
+      "However, existing metrics either neglect the intrinsic cause of the factual inconsistency or rely on auxiliary tasks, leading to an unsatisfied correlation with human judgments or increasing the inconvenience of usage in practice. In light of these challenges, we propose a novel metric to evaluate the factual consistency in text summarization via counterfactual estimation, which formulates the causal relationship among the source document, the generated summary, and the language prior.",
+      "We remove the effect of language prior, which can cause factual inconsistency, from the total causal effect on the generated summary, and provides a simple yet effective way to evaluate consistency without relying on other auxiliary tasks. We conduct a series of experiments on three public abstractive text summarization datasets, and demonstrate the advantages of the proposed metric in both improving the correlation with human judgments and the convenience of usage."
+    ],
+    "title": "[2108.13134] Factual Consistency Evaluation for Text Summarization ...",
+    "url": "https://arxiv.org/abs/2108.13134"
+  },
+  {
+    "description": "Recent advances in large language models (LLMs) have demonstrated remarkable successes in zero- and few-shot performance on various downstream tasks, paving the way for applications in high-stakes domains. In this study, we systematically examine the capabilities and limitations of LLMs, ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Recent advances in large language models (LLMs) have demonstrated remarkable successes in zero- and few-shot performance on various downstream tasks, paving the way for applications in high-stakes domains. In this study, we systematically examine the capabilities and limitations of LLMs, specifically GPT-3.5 and ChatGPT, in performing zero-shot medical evidence summarization across six clinical domains.",
+      "npj Digital Medicine - Evaluating large language models on medical evidence summarization",
+      "In our study, we observed similar results for three model settings when using automatic metrics, which fall short of accurately measuring factual inconsistency, potential for medical harmfulness, or human preference for LLM-generated summaries. Therefore, human evaluation becomes an essential component to properly assess the quality and factuality of medical evidence summaries generated by LLMs at this time, and more effective automatic evaluation methods should be developed for this field.",
+      "To obtain a comprehensive understanding of the summarization capabilities of LLMs, we conducted an extensive human evaluation of the model-generated summaries, which goes beyond the capabilities of automatic metrics14. Specifically, the lack of standardized terminology of error types for medical evidence summarization necessitated our use of human evaluation to invent new error definitions. Our evaluation methods drew from qualitative methods in grounded theory, which involved open coding of qualitative descriptions of factual inconsistencies, further contributing to the development of error definitions."
+    ],
+    "title": "Evaluating large language models on medical evidence summarization ...",
+    "url": "https://www.nature.com/articles/s41746-023-00896-7"
+  },
+  {
+    "description": "This blog will show some of the metrics used in text summarization and how they can be used within our code implementations.",
+    "favicon_url": "https://you.com/favicon?domain=www.holisticai.com&size=128",
+    "snippets": [
+      "However, although LLMs have demonstrated to be one of the most potent tools in NLP, some concerns are faced by researchers and developers mainly aimed at the evaluation of the generated text with the development of different metrics that could provide a general view with respect to the quality, consistent and coherence of the summarizations. The development of metrics is not a recent topic; since the appearance of text generation models, different quantitative metrics have been developed to assess the outcomes of these models.",
+      "Next, we will describe some of the metrics that can help us assess the outcomes of our summarization models. For now, we will focus on those that we can find in the Hugginface library because of their easy code implementation and because they are ready to use. BLEU was introduced by Papineni et. Al. In 2002, as a method for quantitative evaluation of generated text. Although this metric was initially proposed for machine translation tasks, it can be also used for evaluating text summaries or even text completion.",
+      "Although this task is trivial for these powerful text-processing tools, some questions arise: How can we trust the information we receive? Can the quality of the summarized text be measured? These questions bring to us an important topic widely studied in natural language processing (NLP): the use and development of metrics to assess generated text.",
+      "Unlike previous metrics, METEOR considers not only exact word matches but also semantic similarity and lexical variation between the generated text and its reference. To assign a score, METEOR calculates the precision and recall of exact word matches, uses a word-to-word alignment mechanism to find correspondences between words and measures the lexical overlap between the two texts. It also incorporates synonyms and morphological variants to assess semantic equivalence."
+    ],
+    "title": "LLM Summarization Metrics",
+    "url": "https://www.holisticai.com/blog/llm-summarization-metrics"
+  },
+  {
+    "description": "Large Language Models (LLMs) are revolutionizing natural language processing by providing previously unseen capacities for text generation, comprehension, and summarization. These models are\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "It does not directly measure the coherence, readability, or factual accuracy of the generated summaries. Therefore, it\u2019s often used in conjunction with other evaluation methods, both intrinsic (evaluating the summary itself) and extrinsic (evaluating how the summary affects the performance of a task, like information retrieval or question answering), to provide a more comprehensive assessment of model performance. This technique was originally designed for evaluating machine translation, but BLEU has also been used for summarization.",
+      "Learning Capability: With advancements in machine learning, LLMs continue to improve, learning from their mistakes and incorporating feedback to enhance the quality of summaries. Also newer LLM APIs are more agent driven, understanding the nuances of the request and producing outputs accordingly. Recent advancements in NLP models, notably through neural networks and deep learning, have introduced evaluation metrics like BERTScore and BARTScore to assess generated text\u2019s fluency, coherence, coverage, and accuracy.",
+      "The emergence of advanced models like BERT since 2017 led to the development of more sophisticated evaluation techniques, such as BERTScore, which emerged around 2020. This method compares the contextual embeddings of generated and reference texts, offering deeper insights into the semantic alignment. Recently, approaches have shifted towards more holistic and greatly nuanced LLM evaluation frameworks that incorporate both human SME and machine evaluations, aiming for a more balanced assessment of tasks in capturing the complexity and subtlety of human language.",
+      "Lack of Standardized Criteria: Although efforts have been made to standardize evaluation criteria (e.g., coherence, conciseness, relevance), the application of these criteria can still vary widely among human evaluators. Alignment with Human Judgment: While LLMs can potentially offer a more nuanced evaluation of text summarization by understanding context and semantic similarity beyond surface-level overlaps, aligning their assessments with human judgments remains challenging."
+    ],
+    "title": "Text Summarization Evaluation: From Traditional Methods to LLM-based ...",
+    "url": "https://medium.com/@aruncjohn/text-summarization-evaluation-from-traditional-methods-to-llm-based-evaluations-bb1edb4a816f"
+  },
+  {
+    "description": "Yuexiang Xie, Fei Sun, Yang Deng, Yaliang Li, Bolin Ding. Findings of the Association for Computational Linguistics: EMNLP 2021. 2021.",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [
+      "Despite significant progress has been achieved in text summarization, factual inconsistency in generated summaries still severely limits its practical applications. Among the key factors to ensure factual consistency, a reliable automatic evaluation metric is the first and the most crucial one.",
+      "However, existing metrics either neglect the intrinsic cause of the factual inconsistency or rely on auxiliary tasks, leading to an unsatisfied correlation with human judgments or increasing the inconvenience of usage in practice. In light of these challenges, we propose a novel metric to evaluate the factual consistency in text summarization via counterfactual estimation, which formulates the causal relationship among the source document, the generated summary, and the language prior.",
+      "We remove the effect of language prior, which can cause factual inconsistency, from the total causal effect on the generated summary, and provides a simple yet effective way to evaluate consistency without relying on other auxiliary tasks. We conduct a series of experiments on three public abstractive text summarization datasets, and demonstrate the advantages of the proposed metric in both improving the correlation with human judgments and the convenience of usage.",
+      "@inproceedings{xie-etal-2021-factual-consistency, title = \"Factual Consistency Evaluation for Text Summarization via Counterfactual Estimation\", author = \"Xie, Yuexiang and Sun, Fei and Deng, Yang and Li, Yaliang and Ding, Bolin\", editor = \"Moens, Marie-Francine and Huang, Xuanjing and Specia, Lucia and Yih, Scott Wen-tau\", booktitle = \"Findings of the Association for Computational Linguistics: EMNLP 2021\", month = nov, year = \"2021\", address = \"Punta Cana, Dominican Republic\", publisher = \"Association for Computational Linguistics\", url = \"https://aclanthology.org/2021.findings-emnlp.10/\", do"
+    ],
+    "title": "Factual Consistency Evaluation for Text Summarization via ...",
+    "url": "https://aclanthology.org/2021.findings-emnlp.10/"
+  },
+  {
+    "description": "Many text generation applications require the generated text to be factually consistent with input information. Automatic evaluation of factual consistency is challenging. Previous work has developed various metrics that often depend on specific functions, such as natural language inference ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled AlignScore: Evaluating Factual Consistency with a Unified Alignment Function, by Yuheng Zha and 3 other authors View PDF \u00b7 Abstract:Many text generation applications require the generated text to be factually consistent with input information. Automatic evaluation of factual consistency is challenging. Previous work has developed various metrics that often depend on specific functions, such as natural language inference (NLI) or question answering (QA), trained on limited data.",
+      "Abstract page for arXiv paper 2305.16739: AlignScore: Evaluating Factual Consistency with a Unified Alignment Function",
+      "Those metrics thus can hardly assess diverse factual inconsistencies (e.g., contradictions, hallucinations) that occur in varying inputs/outputs (e.g., sentences, documents) from different tasks. In this paper, we propose AlignScore, a new holistic metric that applies to a variety of factual inconsistency scenarios as above. AlignScore is based on a general function of information alignment between two arbitrary text pieces. Crucially, we develop a unified training framework of the alignment function by integrating a large diversity of data sources, resulting in 4.7M training examples from 7 well-established tasks (NLI, QA, paraphrasing, fact verification, information retrieval, semantic similarity, and summarization).",
+      "Moreover, AlignScore (355M parameters) matches or even outperforms metrics based on ChatGPT and GPT-4 that are orders of magnitude larger. From: Yuheng Zha [view email] [v1] Fri, 26 May 2023 08:41:59 UTC (7,086 KB) ... View a PDF of the paper titled AlignScore: Evaluating Factual Consistency with a Unified Alignment Function, by Yuheng Zha and 3 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+    ],
+    "title": "[2305.16739] AlignScore: Evaluating Factual Consistency with a ...",
+    "url": "https://arxiv.org/abs/2305.16739"
+  },
+  {
+    "description": "Alex Wang, Kyunghyun Cho, Mike Lewis. Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics. 2020.",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [
+      "QAGS has substantially higher correlations with these judgments than other automatic evaluation metrics. Also, QAGS offers a natural form of interpretability: The answers and questions generated while computing QAGS indicate which tokens of a summary are inconsistent and why. We believe QAGS is a promising tool in automatically generating usable and factually consistent text.",
+      "Asking and Answering Questions to Evaluate the Factual Consistency of Summaries (Wang et al., ACL 2020) ... @inproceedings{wang-etal-2020-asking, title = \"Asking and Answering Questions to Evaluate the Factual Consistency of Summaries\", author = \"Wang, Alex and Cho, Kyunghyun and Lewis, Mike\", editor = \"Jurafsky, Dan and Chai, Joyce and Schluter, Natalie and Tetreault, Joel\", booktitle = \"Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics\", month = jul, year = \"2020\", address = \"Online\", publisher = \"Association for Computational Linguistics\", url = \"https://aclanthology.org/2020.acl-main.450/\", doi = \"10.18653/v1/2020.acl-main.450\", pages = \"5008--5020\", abstract = \"Practical applications of abstractive summarization models are limited by frequent factual inconsistencies with respect to their input.",
+      "Asking and Answering Questions to Evaluate the Factual Consistency of Summaries (Wang et al., ACL 2020) Alex Wang, Kyunghyun Cho, and Mike Lewis. 2020. Asking and Answering Questions to Evaluate the Factual Consistency of Summaries. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, pages 5008\u20135020, Online."
+    ],
+    "title": "Asking and Answering Questions to Evaluate the Factual Consistency ...",
+    "url": "https://aclanthology.org/2020.acl-main.450/"
+  }
+]

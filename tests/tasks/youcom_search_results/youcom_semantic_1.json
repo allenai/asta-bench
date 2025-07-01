@@ -1,0 +1,263 @@
+[
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=hal.science&size=128",
+    "snippets": [],
+    "title": "Morphological Analyzers of Arabic Dialects: A survey",
+    "url": "https://hal.science/hal-03914581/document"
+  },
+  {
+    "description": "PDF | Given the limited availability of resources for Arabic dialects, establishing corpora , linguistic resources, and tools presents a considerable... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "To address the need for processing dialectal text, we developed a morphological analyzer called DiMorph (Dialectal Morphological Analyzer), specifically designed to process the Moroccan dialect. We adopted the AraMorph morphological engine, originally designed for processing Modern Standard Arabic texts. Subsequently, we created specific linguistic resources and preprocessing and postprocessing components to better handle dialectal texts\u2019 morphological and linguistic intricacies.",
+      "enhance the accuracy and e\ufb00ectiveness of our analysis tool and enrich our linguistic ... Levantine, Maghrebi, and Gulf Arabic. For instance, [4] introduced a POS tagger \u00b7 based on a Conditional Random Fields (CRF) sequence labeler, catering to Levantine, Maghrebi, and Gulf Arabic dialects. Speci\ufb01cally for Gulf Arabic, [18] developed a morphological analyzer encompass-",
+      "ing over 2600 verbs, while [19] proposed a comprehensive morphological analysis and \u00b7 disambiguation system. These tools contribute signi\ufb01cantly to the morpho-syntactic \u00b7 analysis of Gulf Arabic, addressing its unique linguistic features and complexities. However, as noted by [20], the existing morpho-syntactic analyzers present some \u00b7 disadvantages, such as the low accuracy results and the low coverage of Arabic dialects.",
+      "Consequently, we considered that adapting a tool would be less time-consuming \u00b7 than starting our work from scratch. For this reason, we have decided to adapt \u00b7 AraMorph to process dialectal texts. However, the adaptation should be based on \u00b7 speci\ufb01c dialectal linguistic features. The \ufb01rst step must be a linguistic study, and as \u00b7 for our case, we started with the study of Darija linguistic features in the following ... United Arab Emirates, Qatar, Bahrain, and Kuwait."
+    ],
+    "title": "(PDF) DiMorph: A Morphological Analyzer for Arabic Dialects with ...",
+    "url": "https://www.researchgate.net/publication/385708065_DiMorph_A_Morphological_Analyzer_for_Arabic_Dialects_with_a_Focus_on_the_Moroccan_Dialect"
+  },
+  {
+    "description": "While Modern Standard Arabic (MSA) has many resources, Arabic Dialects, the primarily spoken local varieties of Arabic, are quite impoverished in this\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "ADAM is a poor man\u2019s solution to quickly develop morphological analyzers for dialectal Arabic. ADAM has roughly half the out-of-vocabulary rate of a state-of-the-art MSA analyzer and is comparable in its recall performance to an Egyptian dialectal morphological analyzer that took years and expensive resources to build."
+    ],
+    "title": "ADAM: Analyzer for Dialectal Arabic Morphology - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1319157814000342"
+  },
+  {
+    "description": "We present MAGEAD, a morphological analyzer and generator for the Arabic language family. Our work is novel in that it explicitly addresses the need for processing the morphology of the dialects. MAGEAD provides an analysis to a root+pattern",
+    "favicon_url": "https://you.com/favicon?domain=www.academia.edu&size=128",
+    "snippets": [
+      "The proposed approach is compared with Xerox Arabic Analyzer and Smrz Arabic Analyzer. ... In this paper we present Sarrif, our Arabic Morphology Parser, featuring a novel approach to the description of Arabic morphology with 2-tape finite state transducers, based on a particular and systematic use of the operation of composition in a way that allows for incremental substitutions of concatenated lexical morpheme specifications with their surface realization for non-concatenative processes (the case of Arabic templatic interdigitation and non-templatic circumfixation).",
+      "MAGEAD provides an analysis to a root+pattern representation, it has separate phonological and orthographic representations, and it allows for combining morphemes from different dialects. ... We present MAGEAD, a morphological analyzer and generator for the Arabic language family.",
+      "MAGEAD performs an on-line analysis to or generation from a root+pattern+features representation, it has separate phonological and orthographic representations, and it allows for combining morphemes from different dialects. We present a detailed evaluation of MAGEAD. ... A. Alatabbi \u00b7 We present MAGEAD, a morphological analyzer and generator for the Arabic language family.",
+      "Our approach for Arabic morphological analysis and generation can be used in different Arabic NLP applications such as Machine Translation (MT) and Information Retrieval (IR). ... Morphological analyzers are preprocessors for text analysis. Many Text Analytics applications need them to perform their tasks. This paper reviews the SALMA-Tools (Standard Arabic Language Morphological Analysis) [1]. The SALMA-Tools is a collection of open-source standards, tools and resources that widen the scope of Arabic word structure analysisparticularly morphological analysis, to process Arabic text corpora of different domains, formats and genres, of both vowelized and non-vowelized text."
+    ],
+    "title": "(PDF) Morphological Analysis and Generation for Arabic Dialects",
+    "url": "https://www.academia.edu/3215245/Morphological_Analysis_and_Generation_for_Arabic_Dialects"
+  },
+  {
+    "description": "When the written language that children learn to read and write is distinct from the oral language they acquired as their mother tongue, they may encounter subs...",
+    "favicon_url": "https://you.com/favicon?domain=journals.sagepub.com&size=128",
+    "snippets": [
+      "When the written language that children learn to read and write is distinct from the oral language they acquired as their mother tongue, they may encounter substantial challenges. The linguistic di...",
+      "The present study focuses on Arabic, a prototypical case of diglossia, where the distance between the spoken and standard varieties has been intensively examined phonologically and lexically. However, a paucity of studies has addressed their morphological distance. This study takes one step in this direction by describing, analyzing, and quantifying the distance of morphemes in content words from spoken Palestinian dialect (SPD) to Modern Standard Arabic (MSA).",
+      "To date, however, we could hardly locate any specific investigation mapping the morphological distance between the two forms of the Arabic language in its inflectional, derivational, and clitic systems. Only one study examined the morphological distance between SPD and MSA at the level of form (word-patterns and roots) in the nominal system among young children ages 3\u20136 (Shalhoub-Awwad & Khamis-Jubran, 2021).",
+      "The study on morphological distance in learning to read Arabic has only recently begun to receive attention. Most of the studies that have examined the morphological impact on early reading acquisition have focused mainly on the spoken variety. These studies have consistently reported that morphological awareness plays a significant role in word recognition and spelling development (e.g."
+    ],
+    "title": "Morphological distance between spoken Palestinian dialect and ...",
+    "url": "https://journals.sagepub.com/doi/full/10.1177/01427237221145375"
+  },
+  {
+    "description": "Abstract. The written form of the Arabic language, Modern Standard Arabic (MSA), differs in a non-trivial manner from the various spoken regional dialects of Arabic\u2014the true \u201cnative languages\u201d of Arabic speakers. Those dialects, in turn, differ quite a bit from each other.",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Four techniques for online handling of out-of-vocabulary words in Arabic-English statistical machine translation. In ... Columbus, OH. ... Conventional orthography for dialectal Arabic. In \u00b7 Proceedings of the Language Resources and Evaluation Conference (LREC), pages ... A morphological analyzer for Egyptian Arabic.",
+      "Buckwalter Arabic morphological analyzer version 2.0. ... Philadelphia, PA. ... Creating speech and language data with Amazon's Mechanical Turk. In \u00b7 Proceedings of the NAACL HLT 2010 Workshop on Creating Speech and Language Data with Amazon's Mechanical Turk, pages ... Los Angeles, CA. ... William B. and ... N-gram-based text categorization. In ... Stanley F. and ... An empirical study of smoothing techniques for language modeling.",
+      "MAGEAD: A morphological analyzer and generator for the Arabic dialects.",
+      "They too focus on on-line sources such as blogs and forums, and use information retrieval tasks to measure their ability to properly process dialectal Arabic content. The COLABA project demonstrates the importance of using dialectal content when training and designing tools that deal with dialectal Arabic, and deal quite extensively with resource creation and data harvesting for dialectal Arabic. Chiang et al. (2006) investigate building a parser for Levantine Arabic, without using any significant amount of dialectal data."
+    ],
+    "title": "Arabic Dialect Identification | Computational Linguistics | MIT Press",
+    "url": "https://direct.mit.edu/coli/article/40/1/171/1458/Arabic-Dialect-Identification"
+  },
+  {
+    "description": "PDF | Morphological analysis is a crucial component in natural language processing. For the Arabic language, many attempts have been conducted in order... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "In addition, these tools often cover a few dialects of Arabic such as Egyptian, Levantine, and Gulf, and don\u2019t support currently all of them. In this paper, we present a literature review of morphological analyzers supporting Arabic dialects. We classify their building approaches and propose some guidelines to adapt them to a specific Arabic dialect.KeywordsMorphological analyzerArabic dialectLexiconNatural language processingStandard ArabicCorpusAnnotation",
+      "In addition, those tools often cover a few dialects of Arabic \u00b7 such as Egyptian and Levantine, thereby they don\u2019t currently \u00b7 support all Arabic dialects. In this paper, we present a wide \u00b7 literature review of morphological analyzers processing Arabic \u00b7 dialects. We classify their building approaches and propose some \u00b7 guidelines to adapt them to a specific Arabic dialect.",
+      "Resources and Tools. ... Harrat, S., Meftouh, K., Abbas, M., H. K., & Smaili, K. (2016). An Algerian dialect: Study and Resources. (IJACSA) International Journal of Advanced Computer Science ... H. (2016). Improving Arabic morphological analyzers",
+      "Our goal in this paper is to pave the way toward building advanced Moroccan dialect NLP tools such as morphological analyzer and machine translation system. ... Language Identification is an NLP task which aims at predicting the language of a given text. For the Arabic dialects many attempts have been done to address this topic."
+    ],
+    "title": "(PDF) Arabic Dialects Morphological Analyzers: A Survey",
+    "url": "https://www.researchgate.net/publication/364102957_Arabic_Dialects_Morphological_Analyzers_A_Survey"
+  },
+  {
+    "description": "This paper sheds light on an in-progress work for building a morphological analyzer for Egyptian Arabic (EGY). To build such a tool, a corpus of 527,0\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "This paper sheds light on an in-progress work for building a morphological analyzer for Egyptian Arabic (EGY). To build such a tool, a corpus of 527,000 EGY words is built covering different sources and genres, a tag-set is developed and about 239,000 words are morphologically annotated according to their contexts."
+    ],
+    "title": "A Morphologically Annotated Corpus and a Morphological Analyzer ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1877050921012011"
+  },
+  {
+    "description": "PDF | Arabic Language has complex morphology; this led to unavailability to standard Arabic morphological analysis tools until now. In this paper, we... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Table 9: Unicode vs. cp-1256 Arabic windows encoding ... English. They infer intuitively that dog is to dogs as \u00b7 cat is to cats; similarly, dog is to dog catcher as dish is \u00b7 to dishwasher (in one sense). The rules understood by \u00b7 the speaker reflect specific patterns (or regularities) in \u00b7 the way words are formed from smaller units and how \u00b7 those smaller units interact in speech. In this way, morphology is the branch of linguistics that studies",
+      "To the best of our knowledge, there is still no published study to detect spam in Arabic reviews because it has a very complex morphology compared to English. In this research, we propose a new approach for performing spam detection in Arabic opinion reviews by merging methods from data mining and text mining in one mining classification approach. Our work is based on the state-of-the-art achievements in the Latin-based spam detection techniques keeping in mind the specific nature of the Arabic language.",
+      "This study examines Emirati soft power strategies based on Arabic online journalism by analyzing and categorizing posts and comments on the Facebook pages of Arabic newspapers. This study focuses on the Facebook pages of five Emirate journals, encompassing 60,619 posts and comments.",
+      "In this paper, we present and evaluate existing common Arabic stemming / light stemming algorithms, we also implement and integrate Arabic morphological analysis tools into the leading open source machine learning and data mining tools, Weka and RapidMiner. ... Content may be subject to copyright. ... Content may be subject to copyright. ... Motaz K. Saad ... Arabic stemming / light stemming. ... Dialectal Arabic (DA)."
+    ],
+    "title": "(PDF) Arabic Morphological Tools for Text Mining",
+    "url": "https://www.researchgate.net/publication/234136254_Arabic_Morphological_Tools_for_Text_Mining"
+  },
+  {
+    "description": "This article presents a systemof a morphological analyzer of the Arabic language, by integrating several approaches and the viterbi algorithm. First approach is based on database for all thesurface patterns in the Arabic language, second approach is",
+    "favicon_url": "https://you.com/favicon?domain=www.academia.edu&size=128",
+    "snippets": [
+      "Each kind of these applications needs a certain balance between: performance, accuracy, and generality of solutions (i.e. getting all possible roots); while we focus on performance with a good accuracy in Information retrieval applications, we try to achieve high accuracy in systems like pos-tagger and machine translation, and both high accuracy and high generality in systems like language learning systems and Arabic lexical dictionaries. In this paper, we describe our approach to build a flexible and application oriented Arabic morphological analyzer; this approach is designed to satisfy various requirements of most applications which need morphological processing.",
+      "In this paper we describe a new version of the Arabic Morphological analyzer MORPH2 (a morphological analyzer for Arabic texts). The aim of this work is to deal with the observed problems when evaluating the old MORPH2's version. Then, we present the morphological analysis method used to build this analyzer. We focus on the new step (vocalization and validation) added to our method.",
+      "T. Buckwalter, \"Buckwalter Arabic Morphological Analyzer Version 1.0,\" Linguistic Data Consortium, University of Pennsylvania, LDC Catalog No.: LDC2002L49, 2002. J. Dichy, A. Farghaly, and U. Lumi\u00e8re-lyon, \"Roots and patterns vs. stems plus grammar-lexis specifications: on what basis should a multilingual lexical database centred on Arabic be built ?,\" in Machine Translation, 2003, pp.",
+      "In this article we have developed an Arabic morphological analyzer. For this, we have used the relational concept in the database to build our Arabic morphological analyzer. This analyzer uses a set of tables which are linked together by relationships. These relations model certain numbers of compatibility rules between different affixes."
+    ],
+    "title": "(PDF) Integrated approaches in a morphological analyzer of the ...",
+    "url": "https://www.academia.edu/105560466/Integrated_approaches_in_a_morphological_analyzer_of_the_Arabic_language"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [],
+    "title": "Morphological analysis and generation for Arabic dialects",
+    "url": "https://dl.acm.org/doi/pdf/10.5555/1621787.1621791"
+  },
+  {
+    "description": "Text preprocessing is an essential stage in text categorization (TC) particularly and text mining generally. Morphological tools can be used in text preprocessing to reduce multiple forms of the word to one form. There has been a debate among",
+    "favicon_url": "https://you.com/favicon?domain=www.academia.edu&size=128",
+    "snippets": [
+      "Darwish, K. (2002). Building a shallow Arabic morphological analyzer in one day. In Proc. Of the 40th Annual Meeting of the Association for Computational Linguistics (ACL'02) (pp.",
+      "However, addressing the Arab classification errors with high performance is largely insufficient to deal with the huge quantities to reveal the classification of Arab documents; while some work was tackled out on the classification of the Arabic text, most of the research has focused on English text. The methods proposed for English are not suitable for Arabic as the morphology of the two languages differs substantially.",
+      "The first phase preprocesses the input text in order to isolate the words and represent them in a formal way. The second phase applies a light stemmer in order to extract the stem of each word by eliminating the prefixes and suffixes. The third phase is a rule-based morphological analyzer that determines the root and the morphological pattern for each extracted stem.",
+      "There has been a debate among researchers about the benefits of using morphological tools in TC. Studies in the English language illustrated that performing stemming during the preprocessing stage degrades the performance slightly. However, they have a great impact on reducing the memory requirement and storage resources needed. The effect of the preprocessing tools on Arabic text categorization is an area of research."
+    ],
+    "title": "(PDF) A Study of Text Preprocessing Tools for Arabic Text ...",
+    "url": "https://www.academia.edu/22303122/A_Study_of_Text_Preprocessing_Tools_for_Arabic_Text_Categorization"
+  },
+  {
+    "description": "Arabic Language has complex morphology; this led to unavailability to standard Arabic morphological analysis tools until now. In this paper, we present and evaluate existing common Arabic stemming / light stemming algorithms, we also implement and",
+    "favicon_url": "https://you.com/favicon?domain=www.academia.edu&size=128",
+    "snippets": [
+      "Each kind of these applications needs a certain balance between: performance, accuracy, and generality of solutions (i.e. getting all possible roots); while we focus on performance with a good accuracy in Information retrieval applications, we try to achieve high accuracy in systems like pos-tagger and machine translation, and both high accuracy and high generality in systems like language learning systems and Arabic lexical dictionaries. In this paper, we describe our approach to build a flexible and application oriented Arabic morphological analyzer; this approach is designed to satisfy various requirements of most applications which need morphological processing.",
+      "In this paper we describe a new version of the Arabic Morphological analyzer MORPH2 (a morphological analyzer for Arabic texts). The aim of this work is to deal with the observed problems when evaluating the old MORPH2's version. Then, we present the morphological analysis method used to build this analyzer. We focus on the new step (vocalization and validation) added to our method.",
+      "The main contribution of the paper is to provide better understanding among existing approaches with the hope of building an error-free and effective Arabic stemmer in the near future. ... George A. Kiraz ... The past few decades have witnessed an increased interest in Arabic natural language processing, and in particular computational morphology. In the early 1990s one had to contend with a number of papers that proposed methodologies to handle the various complexities of Arabic morphology, most of which had little implementation associated with them, with the sole notable exception of the works of Beesley, Buckwalter, and others.",
+      "Arabic morphological analysers and stemming algorithms have become a popular area of research. Many computational linguists have designed and developed algorithms to solve the problem of morphology and stemming. Each researcher proposed his own gold standard, testing methodology and accuracy measurements to test and compute the accuracy of his algorithm. ... Morphological analyzers are preprocessors for text analysis."
+    ],
+    "title": "(PDF) Arabic Morphological Tools for Text Mining",
+    "url": "https://www.academia.edu/2424585/Arabic_Morphological_Tools_for_Text_Mining"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Developing a New Approach for Arabic Morphological ...",
+    "url": "https://arxiv.org/pdf/1101.5494"
+  },
+  {
+    "description": "Arabic has a very rich morphology characterized by a combination of templatic and affixational morphemes, complex morphological rules, and a rich feature system. This complexity makes working with Arabic as a source of target language in machine translation (MT) a...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Nizar Habash and Owen Rambow. MAGEAD: A Morphological Analyzer and Generator for the Arabic Dialects. In Proceedings of the 21st International Conference on Computational Linguistics and 44th Annual Meeting of the Association for Computational Linguistics, pp.",
+      "First, it is not clear what the right representation is for Arabic words given a specific MT approach or system. And secondly, there are many MT-relevant resources for Arabic morphology, lexicography and syntax (e.g., morphological analyzers, dictionaries and treebanks) that adopt various representations that are not necessarily compatible with each other.",
+      "Building a Shallow Morphological Analyzer in One Day. In Proceedings of the workshop on Computational Approaches to Semitic Languages in the 40th Annual Meeting of the Association for Computational Linguistics (ACL-02), pp. 47\u201354, Philadelphia, PA, USA, 2002. ... Mona Diab, Kadri Hacioglu, and Daniel Jurafsky. Automatic Tagging of Arabic Text: From Raw Text to Base Phrase Chunks.",
+      "Mohamed Maamouri, Ann Bies, and Tim Buckwalter. The Penn Arabic Treebank: Building a Large-Scale Annotated Arabic Corpus. In NEMLAR Conference on Arabic Language Resources and Tools, Cairo, Egypt, 2004. ... Guido Minnen, John Carroll, and Darren Pearce. Robust, Applied Morphological Generation."
+    ],
+    "title": "Arabic Morphological Representations for Machine Translation | ...",
+    "url": "https://link.springer.com/chapter/10.1007/978-1-4020-6046-5_14"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=thesai.org&size=128",
+    "snippets": [],
+    "title": "Arabic Morphological Analysis Techniques",
+    "url": "https://thesai.org/Downloads/Volume11No2/Paper_29-Arabic_Morphological_Analysis_Techniques.pdf"
+  },
+  {
+    "description": "PDF | This paper presents an Arabic morphological analyzer1 that is a component of an architecture which can process unrestricted text from Inter- net.... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "In this paper we present a critical overview of available Arabic corpus analysis tools, focusing on concordancing (Monoconc: Barlow 2003), morphological analysis and Part-of-Speech tagging (Shaalan 1989, Ahmed 2000, Khoja 2001, Freeman 2001, Beesley 2001, Berri Zidoum and Atif 2001, Buckwalter 2002, Maamouri and Cieri 2002, Sakhr 2003, Darwish 2003), Machine-Readable Dictionaries (Ajeeb 2003), and corpus visualization tools (Abu Shawar 2004).",
+      "The architecture includes a key component: the GMA (Generic Morphological Analyzer) that is language independent and contains the rule models and the software components used to develop morphological analyzers. The architecture relies on a flexible linguistic method namely the contextual exploration method to describe the morpholo gical rules of a language and implement them as a knowledge-based system. We focus on the Arabic language and provide the description of the implemented system.",
+      "Most of researchers in Arabic linguistics tend to believe that they have to choose between sentence\u2019 grammar and text\u2019 grammar. Proponents of old grammarians see that the sentence is the basis of linguistic lessons while specialists in the text\u2019 grammar see that text grammar is the summit of linguistic lessons because it gives tools that assist linguists to analyze texts, as it deals with ... [Show full abstract] linguistic compounds used in specific contexts, while the grammar of sentence deals with system sentences that describe language models and do not fall under the framework of completed speech.",
+      "The morphological rules fall into two categories: the regular morphological rules of the Arabic grammar and the exception rules that represent the language exceptions. The representation and the implemen- tation of these rules and the matching algorithm are discussed in this paper. ... Content may be subject to copyright. ... Content may be subject to copyright. ... ... Handling the unvowelled texts is confusing since the unvowelled word may have more than one meaning."
+    ],
+    "title": "(PDF) Web-Based Arabic Morphological Analyzer",
+    "url": "https://www.researchgate.net/publication/221628708_Web-Based_Arabic_Morphological_Analyzer"
+  },
+  {
+    "description": "The various tools dedicated to Arabic natural language processing have undergone significant development during recent years. Among these tools, Arabic morphological analyzers are of great importance because they are often used within other projects that are more advanced such as syntactic ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The various tools dedicated to Arabic natural language processing have undergone significant development during recent years. Among these tools, Arabic morphological analyzers are of great importance because they are often used within other projects that are more advanced such as syntactic parsers, search engines, machine translation systems, etc.",
+      "International Journal of Speech Technology - The various tools dedicated to Arabic natural language processing have undergone significant development during recent years. Among these tools, Arabic...",
+      "Building a shallow Arabic morphological analyzer in one day. Proceedings of the ACL-2002 workshop on computational approaches to semitic languages, (pp. 47\u201354). Retrieved from https://aclweb.org/anthology. Diab, M. (2009). Second generation tools (AMIRA 2.0): Fast and robust tokenization, POS tagging, and base phrase chunking.",
+      "The 2nd international conference on Arabic language resources & tools, (pp. 159\u2013162). Jaafar, Y., & Bouzoubaa, K. (2014). Benchmark of Arabic morphological analyzers: Challenges and solutions. Intelligent systems: Theories and applications (SITA-14), (pp."
+    ],
+    "title": "Improving Arabic morphological analyzers benchmark | International ...",
+    "url": "https://link.springer.com/article/10.1007/s10772-016-9340-x"
+  },
+  {
+    "description": "We present new language resources for Moroccan and Sanaani Yemeni Arabic. The resources include corpora for each dialect which have been morphologically annotated, and morphological analyzers for each dialect which are derived from these corpora.",
+    "favicon_url": "https://you.com/favicon?domain=www.academia.edu&size=128",
+    "snippets": [
+      "We present new language resources for Moroccan and Sanaani Yemeni Arabic. The resources include corpora for each dialect which have been morphologically annotated, and morphological analyzers for each dialect which are derived from these corpora. These are the first sets of resources for Moroccan and Yemeni Arabic.",
+      "These corpora will be publicly available to serve as benchmarks for training and evaluating systems for Arabic dialect morphological analysis and disambiguation. ... This paper sheds light on an in-progress work for building a morphological analyzer for Egyptian Arabic (EGY). To build such a tool, a corpus of 527,000 EGY words is built covering different sources and genres, a tag-set is developed and about 239,000 words are morphologically annotated according to their contexts.",
+      "The morphological transducer is based on a lexical database specifically constructed for this purpose. In contrast to previous resources, the database is tuned to MSA, eliminating lexical entries no longer attested in contemporary use. ... George A. Kiraz ... We present MAGEAD, a morphological analyzer and generator for the Arabic language family. Our work is novel in that it explicitly addresses the need for processing the morphology of the dialects.",
+      "This paper sheds light on an in-progress work for building a morphological analyzer for Egyptian Arabic (EGY). To build such a tool, a tag-set schema is developed depending on a corpus of 527,000 EGY words covering different sources and genres. This tag-set schema is used in annotating about 318,940 words, morphologically, according to their contexts."
+    ],
+    "title": "(PDF) Morphologically Annotated Corpora and Morphological Analyzers ...",
+    "url": "https://www.academia.edu/69655644/Morphologically_Annotated_Corpora_and_Morphological_Analyzers_for_Moroccan_and_Sanaani_Yemeni_Arabic?hb-sb-sw=6675135"
+  },
+  {
+    "description": "Academia.edu is a platform for academics to share research papers.",
+    "favicon_url": "https://you.com/favicon?domain=www.academia.edu&size=128",
+    "snippets": [
+      "Arabic morphological analysis techniques: A comprehensive survey",
+      "This paper discusses developments in the study of Arabic morphology with emphasis on developments since the 1980's. It explains the motivations and results of the stem-based or word-based research program, as opposed to the traditional root-based approach. ... George A. Kiraz ... A. Alatabbi ... George A. Kiraz ... This article presents a systemof a morphological analyzer of the Arabic language, by integrating several approaches and the viterbi algorithm.",
+      "Moreover, it shows the interest and the advantages of integrating these approaches are to improve our morphological analyzer. ... Sorry, preview is currently unavailable. You can download the paper by clicking the button above. The Use of the Relational Concept in the Arabic Morphological Analysis ... Information SystemsComputer ScienceArabicEnglishLinguisticsAlgorithmArabic LanguageLibrary and Information StudiesNatural languageClassificationMorphological AnalysisStemmingDefinitionConceptSemiticThe American"
+    ],
+    "title": "(PDF) Arabic morphological analysis techniques: A comprehensive ...",
+    "url": "https://www.academia.edu/78595619/Arabic_morphological_analysis_techniques_A_comprehensive_survey"
+  },
+  {
+    "description": "Abstract While Modern Standard Arabic (MSA) has many resources, Arabic Dialects, the primarily spoken local varieties of Arabic, are quite impoverished in this regard. In this article, we present ADAM (Analyzer for Dialectal Arabic Morphology). ADAM is a poor man\u2019s solution to quickly develop ...",
+    "favicon_url": "https://you.com/favicon?domain=cyberleninka.org&size=128",
+    "snippets": [
+      "Abstract While Modern Standard Arabic (MSA) has many resources, Arabic Dialects, the primarily spoken local varieties of Arabic, are quite impoverished in this regard. In this article, we present ADAM (Analyzer for Dialectal Arabic Morphology). ADAM is a poor man\u2019s solution to quickly develop morphological analyzers for dialectal Arabic.",
+      "MSA tools cannot be effectively used to handle DA: Habash and Rambow, 2006 reported that less than two-thirds of Levantine verbs can be analyzed using an MSA morphological analyzer and Habash et al., 2012b reported that only 64% of Egyptian Arabic words are analyzable using an MSA analyzer. Salloum and Habash (2011) reported that 26% of out-of-vocabulary (OOV) terms in dialectal corpora have MSA readings or are proper nouns.",
+      "Efforts for modeling dialectal Arabic morphology generally fall in two camps. First are the solutions that focus on extending MSA tools to cover DA phenomena. For example, Abo Bakr et al., 2008 and Salloum and Habash, 2011 extended the BAMA/SAMA databases (Buckwalter, 2004; Graff et al., 2009) to accept DA prefixes and suffixes.",
+      "Arabic complex morphology and ambiguity are handled using tools for analysis, disambiguation and tokenization (Habash and Rambow, 2005; Diab et al., 2007). In this article, we focus on the problem of morphological analysis, which is concerned with identifying all and only the possible readings (or analyses) for a word out of context (Habash, 2010)."
+    ],
+    "title": "ADAM: Analyzer for Dialectal Arabic Morphology \u2013 topic of research ...",
+    "url": "https://cyberleninka.org/article/n/354759"
+  },
+  {
+    "description": "Academia.edu is a platform for academics to share research papers.",
+    "favicon_url": "https://you.com/favicon?domain=www.academia.edu&size=128",
+    "snippets": [
+      "An Improved General Purpose Arabic Morphological Analyzer and Generator Model (GPAM)",
+      "International Journal of Advanced Computer Science and ApplicationsAn Algerian dialect: Study and Resources ... The interaction between roots and patterns in Arabic has intrigued lexicographers and morphol-ogists for centuries. While roots provide the consonantal building blocks, patterns provide the syllabic vocalic moulds. While roots provide abstract semantic classes, patterns realize these classes in specific instances.",
+      "Addis Ababa University School of Graduate Studies School of Information Science Development of Stemming Algorithm for Tigrigna Text ... Communications in Computer and Information ScienceJabal\u00edn: A Comprehensive Computational Model of Modern Standard Arabic Verbal Morphology Based on Traditional Arabic Prosody ... Journal Language Resources and EvaluationCurras: an annotated corpus for the Palestinian Arabic dialect",
+      "Proceedings of the Challenge of Arabic for NLP/MT ConferenceAn Ambiguity-Controlled Morphological Analyzer for Modern Standard Arabic Modelling Finite State Networks ... Morphological ambiguity is a major concern for syntactic parsers, POS taggers and other NLP tools."
+    ],
+    "title": "(PDF) An Improved General Purpose Arabic Morphological Analyzer ...",
+    "url": "https://www.academia.edu/26252296/An_Improved_General_Purpose_Arabic_Morphological_Analyzer_and_Generator_Model_GPAM_"
+  },
+  {
+    "description": "Over the past two decades, since around 2000, Arabic NLP researchers have investigated a variety of approaches to PoS-tagging and morphological analysis. In this paper, we present this research as a timeline or a list of events in chronological",
+    "favicon_url": "https://you.com/favicon?domain=www.academia.edu&size=128",
+    "snippets": [
+      "Most of the work focuses on Modern Standard Arabic (MSA). A few systems aim at Dialect Arabic (DA); t he Classical Arabic (CA) gets the least attention. ... TableI. Summary Timeline of Different Approaches ... We present a timeline of 24 different approaches and tools for Arabic Part of Speech (POS) tagging and morphological analysis. And it is a new version of the Arabic Morphological analyzer MORPH1.",
+      "Columbia Arabic Language and dIalect Morphological Analyzer (CALIMA) for morphological analyzer for Egyptian Arabic, Egyptian Arabic is a form of Dialectal Arabic (DA). Tagging Classical Arabic Text using Available Morphological Analysers and Part of Speech Taggers ... Focusing on Classical Arabic, this paper in its first part evaluates morphological analysers and POS taggers that are available freely for research purposes, are designed for Modern Standard Arabic (MSA) or Classical Arabic (CA), are able to analyse all forms of words, and have academic credibility.",
+      "Morphology; Natural language processing systems; Annotation; Dialect identification; Emirati; Gulf Arabic; Lemmatization; Part Of Speech; Part of speech tagging; Tokenization; Computational linguistics ... Morphological analyzers and part-of-speech taggers are key technologies for most text analysis applications.",
+      "Morphologically Annotated Corpora and Morphological Analyzers for Moroccan and Sanaani Yemeni Arabic ... JEP-TALN 2004 - session on Arabic Language Processing A Review of Arabic Corpus Analysis Tools Un Examen d'Outils pour l'Analyse de Corpus Arabes ... Morphologically Annotated Corpora for Seven Arabic Dialects: Taizi, Sanaani, Najdi, Jordanian, Syrian, Iraqi and Moroccan"
+    ],
+    "title": "(PDF) TIMELINE OF THE DEVELOPMENT OF ARABIC POS TAGGERS AND ...",
+    "url": "https://www.academia.edu/37725379/TIMELINE_OF_THE_DEVELOPMENT_OF_ARABIC_POS_TAGGERS_AND_MORPHOLOGICALANALYSERS"
+  },
+  {
+    "description": "Arabic dialects also called colloquial Arabic or vernaculars are spoken varieties of Standard Arabic. These dialects have mixed form with many variati\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Indeed, these dialects are not enough resourced in terms of NLP tools and those concerning modern standard Arabic (MSA) are not adapted to process them. In this paper, we focus on machine translation of Arabic dialects. This area has become an interesting research field because of the many challenges to overcome. In fact, Arabic dialects differ from Standard Arabic at phonological, lexical, morphological and syntactic levels.",
+      "Recent works [44] have shown promising results in this direction even if a parallel corpus does not exist [68]. Nonetheless, building customized dialectical parsers should be strongly considered in future works. ... Sentiment analysis is a task of natural language processing that has recently attracted increasing attention. However, sentiment analysis research has mainly been carried out for the English language. Although Arabic is ramping up as one of the most used languages on the Internet, only a few studies have focused on Arabic sentiment analysis so far.",
+      "Except some work dedicated to Middle-east dialects (Egyptian dialect mostly), these dialects are not enough studied regarding to NLP area. Most MSA resources and tools are not adapted to them and do not take into account their features. The reader can refer to Habash (2010) which presented a comprehensive survey on Arabic NLP, the work focused on MSA but included many interesting notes on",
+      "This growing use opens new research direction for Arabic natural language processing (NLP). We focus, in this paper, on machine translation in the context of Arabic dialects. We provide a survey of recent research in this area. We report for each study a detailed description of the adopted approach and we give its most relevant contribution."
+    ],
+    "title": "Machine translation for Arabic dialects (survey) - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0306457316305702"
+  }
+]

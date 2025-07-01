@@ -1,0 +1,275 @@
+[
+  {
+    "description": "Reference, context, and preference-based metrics, self-consistency, and catching hallucinations.",
+    "favicon_url": "https://you.com/favicon?domain=eugeneyan.com&size=128",
+    "snippets": [
+      "Here, we\u2019ll first discuss the four dimensions for evaluating abstractive summarization before diving into reference-based, context-based, preference-based, and sampling-based metrics. Along the way, we\u2019ll dig into methods to detect hallucination, specifically natural language inference (NLI) and question-answering (QA). Kryscinski et al. (2019) proposed four dimensions for evaluating abstractive summaries:",
+      "Consistency: The summary and source document should be factually consistent aka faithful (i.e., no new information in the summary that\u2019s not in the source) Of these, fluency is now mostly solved given how well modern language models perform. A recent benchmark on abstractive summarization excluded it for this reason.",
+      "What other ways are there to evaluate abstractive summaries and/or detect inconsistency? Please reach out! Kry\u015bci\u0144ski, Wojciech, et al. \u201cNeural text summarization: A critical evaluation.\u201d arXiv preprint arXiv:1908.08960 (2019). Zhang, Tianyi, et al. \u201cBenchmarking large language models for news summarization.\u201d arXiv preprint arXiv:2301.13848 (2023). Kry\u015bci\u0144ski, Wojciech, et al. \u201cEvaluating the factual consistency of abstractive text summarization.\u201d arXiv preprint arXiv:1910.12840 (2019).",
+      "Pagnoni, Artidoro, Vidhisha Balachandran, and Yulia Tsvetkov. \u201cUnderstanding factuality in abstractive summarization with FRANK: A benchmark for factuality metrics.\u201d arXiv preprint arXiv:2104.13346 (2021)."
+    ],
+    "title": "Evaluation & Hallucination Detection for Abstractive Summaries",
+    "url": "https://eugeneyan.com/writing/abstractive/"
+  },
+  {
+    "description": "State-of-the-art abstractive summarization systems often generate \\emph{hallucinations}; i.e., content that is not directly inferable from the source text. Despite being assumed incorrect, we find that much hallucinated content is factual, namely consistent with world knowledge.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:State-of-the-art abstractive summarization systems often generate \\emph{hallucinations}; i.e., content that is not directly inferable from the source text. Despite being assumed incorrect, we find that much hallucinated content is factual, namely consistent with world knowledge. These factual hallucinations can be beneficial in a summary by providing useful background information. In this work, we propose a novel detection approach that separates factual from non-factual hallucinations of entities.",
+      "Abstract page for arXiv paper 2109.09784: Hallucinated but Factual! Inspecting the Factuality of Hallucinations in Abstractive Summarization",
+      "% on factuality classification tasks. Furthermore, we show that our detector, when used as a reward signal in an off-line reinforcement learning (RL) algorithm, significantly improves the factuality of summaries while maintaining the level of abstractiveness. From: Meng Cao [view email] [v1] Mon, 30 Aug 2021 15:40:52 UTC (291 KB) [v2] Mon, 6 Dec 2021 18:26:03 UTC (314 KB) ... View a PDF of the paper titled Hallucinated but Factual!",
+      "Inspecting the Factuality of Hallucinations in Abstractive Summarization, by Meng Cao and 1 other authors"
+    ],
+    "title": "[2109.09784] Hallucinated but Factual! Inspecting the Factuality ...",
+    "url": "https://arxiv.org/abs/2109.09784"
+  },
+  {
+    "description": "State-of-the-art abstractive summarization systems often generate hallucinations; i.e., content that is not directly inferable from the source text. Despite being assumed to be incorrect, we find that much hallucinated content is actually consistent with world knowledge, which we call factual ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Abstract: State-of-the-art abstractive summarization systems often generate hallucinations; i.e., content that is not directly inferable from the source text. Despite being assumed to be incorrect, we find that much hallucinated content is actually consistent with world knowledge, which we call factual hallucinations. Including these factual hallucinations in a summary can be beneficial because they provide useful background information. In this work, we propose a novel detection approach that separates factual from non-factual hallucinations of entities.",
+      "Empirical results suggest that our method vastly outperforms two baselines in both accuracy and F1 scores and has a strong correlation with human judgments on factuality classification tasks.Furthermore, we use our method as a reward signal to train a summarization system using an off-line reinforcement learning (RL) algorithm that can significantly improve the factuality of generated summaries while maintaining the level of abstractiveness."
+    ],
+    "title": "Hallucinated but Factual! Inspecting the Factuality of Hallucinations ...",
+    "url": "https://openreview.net/forum?id=bdr9YwacFP"
+  },
+  {
+    "description": "Request PDF | Inspecting the Factuality of Hallucinated Entities in Abstractive Summarization | ive summarization systems often generate \\emph{hallucinations}; i.e., content that is not directly inferable from the source text. Despite being... | Find, read and cite all the research you need ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Request PDF | Inspecting the Factuality of Hallucinated Entities in Abstractive Summarization | ive summarization systems often generate \\emph{hallucinations}; i.e., content that is not directly inferable from the source text. Despite being... | Find, read and cite all the research you need on ResearchGate",
+      "ive summarization models often generate summaries that contain hallucinated or contradictory information. In this paper, we propose a simple but effective contrastive learning framework that incorporates recent developments in reward learning and factuality metrics. Empirical studies demonstrate that the proposed framework enables summarization models to learn from feedback of factuality metrics ... [Show full abstract] using contrastive reward learning, leading to more factual summaries by human evaluations.",
+      "Empirical results suggest that our method vastly outperforms three strong baselines in both accuracy and F1 scores and has a strong correlation with human judgments on factuality classification tasks. Furthermore, our approach can provide insight into whether a particular hallucination is caused by the summarizer's pre-training or fine-tuning step. ... To read the file of this research, you can request a copy directly from the authors. ... ResearchGate has not been able to resolve any citations for this publication. Reducing Quantity Hallucinations in Abstractive Summarization",
+      "Through these annotations, we identify the proportion of different categories of factual errors in various summarization models and benchmark factuality metrics, showing their correlation with human judgment as well as their specific strengths and weaknesses.View full-text ... We study generating abstractive summaries that are faithful and factually consistent with the given articles."
+    ],
+    "title": "Inspecting the Factuality of Hallucinated Entities in Abstractive ...",
+    "url": "https://www.researchgate.net/publication/354766956_Inspecting_the_Factuality_of_Hallucinated_Entities_in_Abstractive_Summarization"
+  },
+  {
+    "description": "Meng Cao, Yue Dong, Jackie Cheung. Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2022.",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [
+      "State-of-the-art abstractive summarization systems often generate hallucinations; i.e., content that is not directly inferable from the source text. Despite being assumed to be incorrect, we find that much hallucinated content is actually consistent with world knowledge, which we call factual hallucinations. Including these factual hallucinations in a summary can be beneficial because they provide useful background information. In this work, we propose a novel detection approach that separates factual from non-factual hallucinations of entities.",
+      "Inspecting the Factuality of Hallucinations in Abstractive Summarization\", author = \"Cao, Meng and Dong, Yue and Cheung, Jackie\", editor = \"Muresan, Smaranda and Nakov, Preslav and Villavicencio, Aline\", booktitle = \"Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)\", month = may, year = \"2022\", address = \"Dublin, Ireland\", publisher = \"Association for Computational Linguistics\", url = \"https://aclanthology.org/2022.acl-long.236/\", doi = \"10.18653/v1/2022.acl-long.236\", pages = \"3340--3354\", abstract = \"State-of-the-art abstractive",
+      "Inspecting the Factuality of Hallucinations in Abstractive Summarization</title> </titleInfo> <name type=\"personal\"> <namePart type=\"given\">Meng</namePart> <namePart type=\"family\">Cao</namePart> <role> <roleTerm authority=\"marcrelator\" type=\"text\">author</roleTerm> </role> </name> <name type=\"personal\"> <namePart type=\"given\">Yue</namePart> <namePart type=\"family\">Dong</namePart> <role> <roleTerm authority=\"marcrelator\" type=\"text\">author</roleTerm> </role> </name> <name type=\"personal\"> <namePart type=\"given\">Jackie</namePart> <namePart type=\"family\">Cheung</namePart> <role> <roleTerm authori",
+      "Inspecting the Factuality of Hallucinations in Abstractive Summarization %A Cao, Meng %A Dong, Yue %A Cheung, Jackie %Y Muresan, Smaranda %Y Nakov, Preslav %Y Villavicencio, Aline %S Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) %D 2022 %8 May %I Association for Computational Linguistics %C Dublin, Ireland %F cao-etal-2022-hallucinated %X State-of-the-art abstractive summarization systems often generate hallucinations; i.e., content that is not directly inferable from the source text. Despite being assumed to be incorrect, we fi"
+    ],
+    "title": "Hallucinated but Factual! Inspecting the Factuality of Hallucinations ...",
+    "url": "https://aclanthology.org/2022.acl-long.236/"
+  },
+  {
+    "description": "It is well known that the standard likelihood training and approximate decoding objectives in neural text generation models lead to less human-like responses for open-ended tasks such as language modeling and story generation. In this paper we have analyzed limitations of these models for ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "It is well known that the standard likelihood training and approximate decoding objectives in neural text generation models lead to less human-like responses for open-ended tasks such as language modeling and story generation. In this paper we have analyzed limitations of these models for abstractive document summarization and found that these models are highly prone to hallucinate content that is unfaithful to the input document.",
+      "Abstract page for arXiv paper 2005.00661: On Faithfulness and Factuality in Abstractive Summarization",
+      "We conducted a large scale human evaluation of several neural abstractive summarization systems to better understand the types of hallucinations they produce. Our human annotators found substantial amounts of hallucinated content in all model generated summaries. However, our analysis does show that pretrained models are better summarizers not only in terms of raw metrics, i.e., ROUGE, but also in generating faithful and factual summaries as evaluated by humans.",
+      "View a PDF of the paper titled On Faithfulness and Factuality in Abstractive Summarization, by Joshua Maynez and Shashi Narayan and Bernd Bohnet and Ryan McDonald View PDF \u00b7 Abstract:It is well known that the standard likelihood training and approximate decoding objectives in neural text generation models lead to less human-like responses for open-ended tasks such as language modeling and story generation."
+    ],
+    "title": "[2005.00661] On Faithfulness and Factuality in Abstractive ...",
+    "url": "https://arxiv.org/abs/2005.00661"
+  },
+  {
+    "description": "State-of-the-art abstractive summarization systems often generate \\emph{hallucinations}; i.e., content that is not directly inferable from the source text. Despite being assumed incorrect, we find that much hallucinated content is factual, namely consistent with world knowledge. These factual hallucinations can be beneficial in a summary by providing useful background information. In this work, we propose ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "State-of-the-art abstractive summarization systems often generate \\emph{hallucinations}; i.e., content that is not directly inferable from the source text. Despite being assumed incorrect, we find that much hallucinated content is factual, namely consistent with world knowledge. These factual hallucinations can be beneficial in a summary by providing useful background information. In this work, we propose a novel detection approach that separates factual from non-factual hallucinations of entities.",
+      "Empirical results suggest that our approach vastly outperforms two baselines %in both accuracy and F1 scores and strongly correlates with human judgments. % on factuality classification tasks. Furthermore, we show that our detector, when used as a reward signal in an off-line reinforcement learning (RL) algorithm, significantly improves the factuality of summaries while maintaining the level of abstractiveness.",
+      "Implemented in one code library."
+    ],
+    "title": "Papers with Code - Hallucinated but Factual! Inspecting the ...",
+    "url": "https://paperswithcode.com/paper/inspecting-the-factuality-of-hallucinated"
+  },
+  {
+    "description": "List of papers on hallucination detection in LLMs. - EdinburghNLP/awesome-hallucination-detection",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Comments: Proposes training with soft labels from a teacher LLM to reduce overconfidence and lower hallucination rates in summarization tasks. Maintains quality (ROUGE/BERTScore) while significantly decreasing factual errors. Metrics: Hallucination rate (% of outputs containing any unsupported legal claim). Datasets: Custom set of factual US case queries, where ground-truth outcomes can be verified. Comments: Empirical study finding that GPT-3.5 and LLaMA-2 hallucinate in 69% and 88% of legal Q&A, respectively.",
+      "Datasets: Custom fine-grained hallucination detection/editing dataset for various types of (factual) hallucinations: Entity, Relation, Contradictory, Invented, Subjective, Unverifiable. Metrics: Accuracy for various error types -- positive examples, date swap, entity swap, negated sentences, number swap, pronoun swap. Datasets: They propose SummEdits, a 10-domain inconsistency detection benchmark. Metrics: They propose FactCC, a metric that measures the factual consistency of abstractive text summarization (intuition: a summary is factually consistent if it contains the same facts as the source document)",
+      "Datasets: A novel dataset, XEnt, for analysing entity hallucination and factuality in abstractive summarisation, consisting of 800 summaries generated by BART and annotated.",
+      "Natural Language Inference (NLI)-based: based on the idea that only the source knowledge reference should entail the entirety of the information in faithful and hallucination-free generation. A Survey of Hallucination in \u201cLarge\u201d Foundation Models surveys papers flagging them for detection, mitigation, tasks, datasets, and evaluation metrics. Regarding hallucinations in text, it categorises papers by LLMs, Multilingual LLMs, and Domain-specific LLMs. The Dawn After the Dark: An Empirical Study on Factuality Hallucination in Large Language Models proposed a taxonomy of different types of hallucinations: Entity-error Hallucination, Relation-error Hallucination, Incompleteness Hallucination, Outdatedness Hallucination, Overclaim Hallucination, Unverifiability Hallucination."
+    ],
+    "title": "GitHub - EdinburghNLP/awesome-hallucination-detection: List of ...",
+    "url": "https://github.com/EdinburghNLP/awesome-hallucination-detection"
+  },
+  {
+    "description": "Modern abstractive summarization models often generate summaries that contain hallucinated or contradictory information. In this paper, we propose a simple but effective contrastive learning framework that incorporates recent developments in reward learning and factuality metrics.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Modern abstractive summarization models often generate summaries that contain hallucinated or contradictory information. In this paper, we propose a simple but effective contrastive learning framework that incorporates recent developments in reward learning and factuality metrics. Empirical studies demonstrate that the proposed framework enables summarization models to learn from feedback of factuality metrics using contrastive reward learning, leading to more factual summaries by human evaluations.",
+      "Abstract page for arXiv paper 2307.04507: Improving Factuality of Abstractive Summarization via Contrastive Reward Learning",
+      "This suggests that further advances in learning and evaluation algorithms can feed directly into providing more factual summaries. From: I-Chun Chern [view email] [v1] Mon, 10 Jul 2023 12:01:18 UTC (7,011 KB) ... View a PDF of the paper titled Improving Factuality of Abstractive Summarization via Contrastive Reward Learning, by I-Chun Chern and 4 other authors"
+    ],
+    "title": "[2307.04507] Improving Factuality of Abstractive Summarization ...",
+    "url": "https://arxiv.org/abs/2307.04507"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "On Faithfulness and Factuality in Abstractive Summarization",
+    "url": "https://aclanthology.org/2020.acl-main.173.pdf"
+  },
+  {
+    "description": "Abstract. Despite the remarkable performance of generative large language models (LLMs) on abstractive summarization, they face two significant challenges: their considerable size and tendency to hallucinate. Hallucinations are concerning because they erode reliability and raise safety issues.",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Pruned models yield downstream task performance comparable to the original, making them ideal alternatives when operating on a limited budget. However, the effect that pruning has upon hallucinations in abstractive summarization with LLMs has yet to be explored. In this paper, we provide an extensive empirical study across five summarization datasets, two state-of-the-art pruning methods, and five instruction-tuned LLMs.",
+      "On faithfulness and factuality in abstractive summarization. In \u00b7 Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, pages ... Association for Computational Linguistics. ... Pointer sentinel mixture models. In \u00b7 International Conference on Learning Representations. ... Calvados at MEDIQA-chat 2023: Improving clinical note generation with multi-task instruction finetuning.",
+      "In abstractive summarization, model hallucinations are a thoroughly studied subject (Cao et al., 2020; Durmus et al., 2020; Raunak et al., 2021; Narayan et al., 2023; Laban et al., 2023). Similarly, the effect of pruning on model performance in abstractive summarization benchmarks was also explored more recently (Dun et al., 2023; Jaiswal et al., 2024).",
+      "For reproducibility and transparency, we include the full results (i.e., absolute hallucination risk scores) in thislink due to space constraints. ... From sparse to dense: GPT-4 summarization with chain of density prompting. In \u00b7 Proceedings of the 4th New Frontiers in Summarization Workshop, pages ... Association for Computational Linguistics. ... The Falcon series of open language models. ... Factual error correction for abstractive summarization models."
+    ],
+    "title": "Investigating Hallucinations in Pruned Large Language Models for ...",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00695/124459/Investigating-Hallucinations-in-Pruned-Large"
+  },
+  {
+    "description": "In recent years, the field of Natural Language Generation (NLG) has witnessed remarkable advancements, primarily attributed to the emergence of sequence-to-sequence deep learning technologies\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "In recent years, the field of Natural Language Generation (NLG) has witnessed remarkable advancements, primarily attributed to the\u2026",
+      "Semi-supervised metrics are trained on the synthetic data generated from summarization datasets. Trained on these task-specific corpora, models can judge whether the generated summaries are hallucinatory. Kryscinski et al. [13] propose a weakly supervised model named FactCC for evaluating factual consistency.",
+      "In the summarization task, this kind of hallucination could lead to better summaries. However, there is little work focused on evaluating factual hallucination explicitly. Fact-checking approaches could be potentially used in this regard. Extrinsic Hallucination Mitigation There has been little research on extrinsic hallucinations as it is more challenging to detect and mitigate content based on world knowledge. We believe it is worth exploring extrinsic hallucination in terms of evaluation metrics and mitigation methods.",
+      "This is based on the intuition that similar answers will be generated from a same question if the generation is factually consistent with the source reference. It is already put in use to evaluate hallucinations in many tasks, such as summarization [3, 4, 5], dialogue [6], and data2text generation [7]."
+    ],
+    "title": "Hallucinations in Abstractive Summarization | by Mukesh K | Medium",
+    "url": "https://medium.com/@mukesh.kr/hallucinations-in-abstractive-summarization-b5904bc1c5c5"
+  },
+  {
+    "description": "Request PDF | On Faithfulness and Factuality in Abstractive Summarization | It is well known that the standard likelihood training and approximate decoding objectives in neural text generation models lead to less... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "We conducted a large scale human evaluation of several neural abstractive summarization systems to better understand the types of hallucinations they produce. Our human annotators found substantial amounts of hallucinated content in all model generated summaries. However, our analysis does show that pretrained models are better summarizers not only in terms of raw metrics, i.e., ROUGE, but also in generating faithful and factual summaries as evaluated by humans.",
+      "Text summarization, as used in this study, requires summaries to be accurate repre-sentations of the source document \u00b7 ( Maynez et al., 2020 ). Notwithstanding the growing evidence that suggests PTLLMs outperform humans in text summarization, numerous researchers note that LLMs are prone to 'hallucinations', or generating summaries that misrepresent the original text ( Maynez et al., 2020 ;Pu et al., 2023 ).",
+      "The end-to-end models are shown to be able to extract complete sets of facts from datasets with full pages of text. We then analyse multiple models that estimate factual accuracy on a Wikipedia text summarization task, and show their efficacy compared to ROUGE and other model-free variants by conducting a human evaluation study.",
+      "We also describe analysis of 25-way annotations on 302 examples, giving insights into human variability on the annotation task. We introduce robust metrics for the purposes of evaluating question answering systems; demonstrate high human upper bounds on these metrics; and establish baseline results using competitive methods drawn from related literature. ... Peter J. Liu ... We propose a model-based metric to estimate the factual accuracy of generated text that is complementary to typical scoring schemes like ROUGE (Recall-Oriented Understudy for Gisting Evaluation) and BLEU (Bilingual Evaluation Understudy)."
+    ],
+    "title": "On Faithfulness and Factuality in Abstractive Summarization | Request ...",
+    "url": "https://www.researchgate.net/publication/341149086_On_Faithfulness_and_Factuality_in_Abstractive_Summarization"
+  },
+  {
+    "description": "Discussion of potential improvements in abstractive summarization: This study explores strategies to enhance abstractive summarization, for example, incorporating knowledge and various techniques to generate factually accurate and coherent summaries.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Attention mechanisms enable models to selectively focus on relevant parts of the input during the decoding phase, improving the generated summaries\u2019 quality. A novel neural attention model for abstractive sentence summarization was proposed by Rush et al. [48]. The task of creating a condensed version of an input sentence while maintaining its core meaning is called a single-sentence summary, which was the focus of this study.",
+      "The authors addressed multiple aspects of the model, such as the encoder, attention mechanisms, and the decoder, to improve the model\u2019s overall performance in generating abstractive summaries. They proposed several modifications to the encoder including the incorporation of a bidirectional RNN encoder to capture both forward and backward contexts in the input text. They also used a hybrid word-character encoder to handle out-of-vocabulary (OOV) words and improve generalization. The authors explored both local and global strategies for the attention mechanism that allowed the model to concentrate on relevant input while generating the summary.",
+      "Song et al. [110] proposed a novel LSTM-CNN based abstractive text summarization framework called ATSDL that generated summaries by exploring fine-grained semantic phrases rather than just sentences.",
+      "The authors concluded that the T5 model is effective in abstractive document summarization. They suggested that future research should explore the application of the Transformer method for multi-document summarization and test the T5 approach on other benchmark datasets. Lewis et al. [87] presented BART (Bidirectional and Auto-Regressive Transformers), a denoising Seq2Seq pre-training approach suitable for tasks such as natural language generation, translation, comprehension, and abstractive text summarization."
+    ],
+    "title": "Abstractive Text Summarization: State of the Art, Challenges, and ...",
+    "url": "https://arxiv.org/html/2409.02413v1"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.seas.upenn.edu&size=128",
+    "snippets": [],
+    "title": "Improving Faithfulness in Abstractive Summarization with ...",
+    "url": "https://www.seas.upenn.edu/~sihaoc/static/pdf/CZSR21.pdf"
+  },
+  {
+    "description": "Factual inconsistency with source documents in automatically generated summaries can lead to misinformation or pose risks. Existing factual consistenc\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Our findings reveal that despite proprietary models prevailing on the task, open-source LLMs lag behind. Nevertheless, there is potential for enhancing the performance of open-source LLMs through increasing model size, expanding pre-training data, and developing well-curated fine-tuning data. Experiments on TreatFact suggest that both previous methods and LLM-based evaluators are unable to capture factual inconsistencies in clinical summaries, posing a new challenge for FC evaluation.",
+      "Existing FC evaluation struggles with clinical summary inconsistencies. Factual inconsistency with source documents in automatically generated summaries can lead to misinformation or pose risks. Existing factual consistency (FC) metrics are constrained by their performance, efficiency, and explainability.",
+      "TreatFact: a clinical summary dataset annotated for factual consistency."
+    ],
+    "title": "Factual consistency evaluation of summarization in the Era of large ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0957417424013228"
+  },
+  {
+    "description": "FactPegasus Wan and Bansal (2022) enhances abstractive summarization by reducing hallucinations through factuality integration. It modifies sentence selection by combining ROUGE and FactCC, aiming for faithful summaries. FactPegasus employs fine-tuning with corrector, contrastor, and connector modules. Although it improves factual consistency, it lacks in informativeness. Our work proposes ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "FactPegasus Wan and Bansal (2022) enhances abstractive summarization by reducing hallucinations through factuality integration. It modifies sentence selection by combining ROUGE and FactCC, aiming for faithful summaries. FactPegasus employs fine-tuning with corrector, contrastor, and connector modules. Although it improves factual consistency, it lacks in informativeness. Our work proposes a more balanced abstractive summarization approach.",
+      "For instance, when the source text contains multiple pieces of information, summarizing them into a single sentence becomes a challenging task. We proposed a decoding strategy based on domain-conditional pointwise mutual information (PMI ... start_FLOATSUBSCRIPT DC end_FLOATSUBSCRIPT) to reduce hallucination in abstractive summarization. PMI ... start_FLOATSUBSCRIPT DC end_FLOATSUBSCRIPT penalizes the model\u2019s tendency to generate text inconsistent with the source document by considering the source text\u2019s domain.",
+      "Abstractive summarization is the task of generating a summary by interpreting and rewriting a source text. State-of-the-art pre-trained language models have achieved remarkable performance in this task Lewis et al. (2019); Zhang et al. (2020). However, upon closer examination, a common issue emerges: hallucination between the source document and the generated text. Prior studies have made efforts to enhance the faithfulness of the summary to the source text, yet hallucination remains a persistent challenge Maynez et al.",
+      "FactPEGASUS: Factuality-aware pre-training and fine-tuning for abstractive summarization. In Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 1010\u20131028, Seattle, United States. Association for Computational Linguistics. Xiao and Wang (2021) Yijun Xiao and William Yang Wang. 2021. On hallucination and predictive uncertainty in conditional language generation."
+    ],
+    "title": "Mitigating Hallucination in Abstractive Summarization with ...",
+    "url": "https://arxiv.org/html/2404.09480v1"
+  },
+  {
+    "description": "This work proposes a novel detection approach that separates factual from non-factual hallucinations of entities and uses this method as a reward signal to train a summarization system using an off-line reinforcement learning (RL) algorithm that can significantly improve the factuality of generated ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "This work proposes a novel detection approach that separates factual from non-factual hallucinations of entities and uses this method as a reward signal to train a summarization system using an off-line reinforcement learning (RL) algorithm that can significantly improve the factuality of generated summaries while maintaining the level of abstractiveness.Expand",
+      "This paper introduces a reliable and high-speed production system aimed at detecting and rectifying the hallucination issue within LLMs, which encompasses named entity recognition, natural language inference, span-based detection, and an intricate decision tree-based process to reliably detect a wide range of hallucinations in LLM responses.Expand ... Mengyao CaoYue DongJingyi HeJ. Cheung ... This work proposes a training objective for abstractive summarization based on rejection learning, in which the model learns whether or not to reject potentially noisy tokens, and proposes a regularized decoding objective that penalizes non-factual candidate summaries during inference by using the rejection probability learned during training.Expand",
+      "An automatic question answering (QA) based metric for faithfulness, FEQA, is proposed, which leverages recent advances in reading comprehension and has significantly higher correlation with human faithfulness scores, especially on highly abstractive summaries.Expand ... Mengyao CaoYue DongJiapeng WuJ. Cheung ... This work proposes a post-editing corrector module that is able to correct factual errors in summaries generated by other neural summarization models and outperforms previous models on factual consistency evaluation on the CNN/DailyMail dataset.Expand",
+      "Entity Chains (opens in a new tab)Dependency Arc Entailment (opens in a new tab)Extrinsic Hallucinations (opens in a new tab)Factual Hallucinations (opens in a new tab)Hallucination (opens in a new tab)Abstractive Summarization Systems (opens in a new tab)Factuality (opens in a new tab)Hallucinated (opens in a new tab)Entities (opens in a new tab)F1 Scores (opens in a new tab) ... Yue DongJ. WietingPat Verga ... It is shown that by utilizing an external knowledge base, one can improve the faithfulness of summaries without simply making them more extractive, and additionally, that external knowledge bases linked from the source can benefit the factuality of generated summaries.Expand"
+    ],
+    "title": "[PDF] Hallucinated but Factual! Inspecting the Factuality of ...",
+    "url": "https://www.semanticscholar.org/paper/Hallucinated-but-Factual!-Inspecting-the-Factuality-Cao-Dong/b808b6ddf511977e9a33dbe01b412a02b6092ae0"
+  },
+  {
+    "description": "Currently used metrics for assessing summarization algorithms do not account for whether summaries are factually consistent with source documents. We propose a weakly-supervised, model-based approach for verifying factual consistency and identifying conflicts between source documents and a ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Currently used metrics for assessing summarization algorithms do not account for whether summaries are factually consistent with source documents. We propose a weakly-supervised, model-based approach for verifying factual consistency and identifying conflicts between source documents and a generated summary.",
+      "Abstract page for arXiv paper 1910.12840: Evaluating the Factual Consistency of Abstractive Text Summarization",
+      "Additionally, human evaluation shows that the auxiliary span extraction tasks provide useful assistance in the process of verifying factual consistency. From: Wojciech Kry\u015bci\u0144ski [view email] [v1] Mon, 28 Oct 2019 17:51:44 UTC (51 KB) ... View a PDF of the paper titled Evaluating the Factual Consistency of Abstractive Text Summarization, by Wojciech Kry\\'sci\\'nski and 3 other authors",
+      "View a PDF of the paper titled Evaluating the Factual Consistency of Abstractive Text Summarization, by Wojciech Kry\\'sci\\'nski and 3 other authors View PDF"
+    ],
+    "title": "[1910.12840] Evaluating the Factual Consistency of Abstractive ...",
+    "url": "https://arxiv.org/abs/1910.12840"
+  },
+  {
+    "description": "One major hurdle in adopting AI for real life scenario is its inability to be accurate every time. There was a sudden \u201chope\u201d with the recent developments in GenAI, more specifically the openAI\u2019s\u2026",
+    "favicon_url": "https://you.com/favicon?domain=pradeepundefned.medium.com&size=128",
+    "snippets": [
+      "One major hurdle in adopting AI for real life scenario is its inability to be accurate every time. There was a sudden \u201chope\u201d with the\u2026",
+      "The accuracy problem (from traditional ML to complex GenAI) has taken another term called hallucination, when the LLMs (i.e. GenAI use-case for text generation and even other tasks) generate responses that are either factually incorrect or factually inconsistent. The hallucination problem is so much prevalent that there are at least 5 survey papers on hallucination detection that I came across in a span of 12 months, cited below. Recent studies show that up to 30% of summaries generated by abstractive models contain factual inconsistencies",
+      "Classifier based metrics involves utilising classifiers trained on comprising both task specific hallucinated and faithful content, as well as data from related tasks or synthetically generated data. Again, this can be further classified into two types \u2014 \u00b7 Entailment based techniques are a class of Natural Language Inference (NLI) techniques that evaluates if the faithful content is entailed by the corresponding source content. Some of the techniques under the umbrella of entailment based or NLI are: This paper by Google on faithful and factuality in abstractive summarisation focusses on extreme summarisation and claims that the facts based measures (eg.",
+      "Entailment based classifiers needs to be trained on task and problem specific data, i.e. the data should be from the similar domain and should ideally be useful for entailment detection. Kryscinski et. al, from Salesforce, in their paper titled \u201cEvaluating the Factual Consistency of Abstractive Text Summarisation\u201d talks about generating synthetic data to train a weakly-supervised model for verifying factual consistency."
+    ],
+    "title": "LLM Hallucination Detection: Background with Latest Techniques ...",
+    "url": "https://pradeepundefned.medium.com/llm-hallucination-detection-background-with-latest-techniques-9079b9e84d2e"
+  },
+  {
+    "description": "A commonly observed problem with the state-of-the art abstractive summarization models is that the generated summaries can be factually inconsistent with the input documents. The fact that automatic summarization may produce plausible-sounding yet inaccurate summaries is a major concern that ...",
+    "favicon_url": "https://you.com/favicon?domain=www.amazon.science&size=128",
+    "snippets": [
+      "A commonly observed problem with the state-of-the art abstractive summarization models is that the generated summaries can be factually inconsistent with the input documents. The fact that automatic summarization may produce plausible-sounding yet inaccurate summaries is a major concern that limits its wide application. In this paper we present an approach to address factual consistency in summarization. We first propose an efficient automatic evaluation metric to measure factual consistency; next, we propose a novel learning algorithm that maximizes the proposed metric during model training.",
+      "A commonly observed problem with the state-of-the art abstractive summarization models is that the generated summaries can be factually inconsistent with the input documents. The fact that automatic summarization may produce plausible-sounding yet inaccurate summaries is a major concern that limits\u2026",
+      "Prime members can customize their viewing experience and find their favorite movies, series, documentaries, and live sports \u2013 including Amazon MGM Studios-produced series and movies; licensed fan favorites; and programming from Prime Video add-on subscriptions such as Apple TV+, Max, Crunchyroll and MGM+. All customers, regardless of whether they have a Prime membership or not, can rent or buy titles via the Prime Video Store, and can enjoy even more content for free with ads.",
+      "We\u2019re looking for a Machine Learning Scientist in the Personalization team for our Edinburgh office experienced in generative AI and large models. You will be responsible for developing and disseminating customer-facing personalized recommendation models. This is a hands-on role with global impact working with a team of world-class engineers and scientists across the Edinburgh offices and wider organization."
+    ],
+    "title": "Improving factual consistency of abstractive summarization via ...",
+    "url": "https://www.amazon.science/publications/improving-factual-consistency-of-abstractive-summarization-via-question-answering"
+  },
+  {
+    "description": "Wojciech Kryscinski, Bryan McCann, Caiming Xiong, Richard Socher. Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP). 2020.",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [
+      "We propose a weakly-supervised, model-based approach for verifying factual consistency and identifying conflicts between source documents and generated summaries. Training data is generated by applying a series of rule-based transformations to the sentences of source documents. The factual consistency model is then trained jointly for three tasks: 1) predict whether each summary sentence is factually consistent or not, 2) in either case, extract a span in the source document to support this consistency prediction, 3) for each summary sentence that is deemed inconsistent, extract the inconsistent span from it.",
+      "@inproceedings{kryscinski-etal-2020-evaluating, title = \"Evaluating the Factual Consistency of Abstractive Text Summarization\", author = \"Kryscinski, Wojciech and McCann, Bryan and Xiong, Caiming and Socher, Richard\", editor = \"Webber, Bonnie and Cohn, Trevor and He, Yulan and Liu, Yang\", booktitle = \"Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)\", month = nov, year = \"2020\", address = \"Online\", publisher = \"Association for Computational Linguistics\", url = \"https://aclanthology.org/2020.emnlp-main.750/\", doi = \"10.18653/v1/2020.emnlp-main.750\",",
+      "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <modsCollection xmlns=\"http://www.loc.gov/mods/v3\"> <mods ID=\"kryscinski-etal-2020-evaluating\"> <titleInfo> <title>Evaluating the Factual Consistency of Abstractive Text Summarization</title> </titleInfo> <name type=\"personal\"> <namePart type=\"given\">Wojciech</namePart> <namePart type=\"family\">Kryscinski</namePart> <role> <roleTerm authority=\"marcrelator\" type=\"text\">author</roleTerm> </role> </name> <name type=\"personal\"> <namePart type=\"given\">Bryan</namePart> <namePart type=\"family\">McCann</namePart> <role> <roleTerm authority=\"marcrelator\" type=\"text\"",
+      "Evaluating the Factual Consistency of Abstractive Text Summarization (Kryscinski et al., EMNLP 2020) Wojciech Kryscinski, Bryan McCann, Caiming Xiong, and Richard Socher. 2020. Evaluating the Factual Consistency of Abstractive Text Summarization. In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 9332\u20139346, Online."
+    ],
+    "title": "Evaluating the Factual Consistency of Abstractive Text Summarization ...",
+    "url": "https://aclanthology.org/2020.emnlp-main.750/"
+  },
+  {
+    "description": "Hallucinations in LLM\u2019s generated content does presents a uphill challenge in ensuring the reliability and trustworthiness of the generated content. Traditional text evaluation metrics mostly relied\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Hallucinations in LLM\u2019s generated content does presents a uphill challenge in ensuring the reliability and trustworthiness of the generated\u2026",
+      "[9] Selfcheckgpt: Zero-resource black-box hallucination detection for generative large language models by Manakul et al. ArXiv preprint, abs/2303.08896 \u00b7 [10] Do language models know when they\u2019re hallucinating references? by Agrawal et al. ArXiv preprint,abs/2305.18248 \u00b7 [11] On faithfulness and factuality in abstractive summarization by Maynez et al.",
+      "[12] Entity level factual consistency of abstractive text summarization by Nan et al. In Proceedings of the 16th Conference of the European Chapter of the Association for Computational Linguistics: Main Volume, pages 2727\u20132733 \u00b7 [13] Assessing the factual accuracy of generated text. In Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining, KDD 2019 \u00b7 [14] Retrieval augmentation reduces hallucination in conversation.",
+      "[23] q2: Evaluating factual consistency in knowledge grounded dialogues via question generation and question answering. by Honovich et al. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing, pages 7856\u20137870 \u00b7 [24] Mutual information alleviates hallucinations in abstractive summarization."
+    ],
+    "title": "Detecting LLM Hallucinations: Strategies and Overview | by SACHIN ...",
+    "url": "https://medium.com/@techsachin/detecting-llm-hallucinations-strategies-and-overview-57eea69e6a07"
+  },
+  {
+    "description": "Specifically focusing on the landscape of abstractive text summarization, as opposed to extractive techniques, this survey presents a comprehensive ov\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Discussion of potential improvements in abstractive summarization: This study explores strategies to enhance abstractive summarization, for example, incorporating knowledge and various techniques to generate factually accurate and coherent summaries.",
+      "Exploration of future research directions: This study highlights emerging frontiers like personalized summarization, long-document summarization, multi-document summarization, multilingual capabilities, and improved evaluation metrics along with leveraging recent advances in Large Language Models (LLMs). It also highlights future directions to overcome limitations like inadequate representation of meaning, maintaining factual consistency, explainability and interpretability, ethical considerations and bias, and further related concepts to help advance the field.",
+      "Abstractive summarization encounters various challenges in its quest to generate new text for a condensed and cohesive summary of the original text. The resulting summary maintains the same style and tone as the original text while ensuring factual and grammatical accuracy, fluency, and coherence.",
+      "Section 4 explores model scalability and computational complexity in abstractive summarization. Section 5 addresses issues, challenges, and future directions for abstractive summarization. The concluding remarks are offered in Section 6. Automatic summarization is a technique used in Natural Language Processing (NLP) to generate a condensed version of a longer text document while retaining the most important information [4]. The aim of automatic summarization is to reduce the length of the text without losing the essence of the source content."
+    ],
+    "title": "Abstractive text summarization: State of the art, challenges, and ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231224010269"
+  }
+]

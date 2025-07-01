@@ -1,0 +1,236 @@
+[
+  {
+    "description": "Video Question Answering (VideoQA) emerges as a prominent trend in the domain of Artificial Intelligence, Computer Vision, and Natural Language Proces\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The key components of the Video Question Answering (VideoQA) framework include video feature extraction, question processing, reasoning, and response generation. It underscores the importance of datasets in shaping VideoQA research and the diversity of question types, from factual inquiries to spatial and temporal reasoning.",
+      "Video Question Answering (VideoQA) and Visual Question Answering (VQA) fulfill distinct purposes, each having unique strengths and applications. The selection between VideoQA and VQA is contingent upon the specific requirements of a given task or scenario. The reasons behind this are temporal understanding, richer context, camera surveillance and security, visual demonstration, real-world use cases, and contextual awareness.",
+      "Biomedical datasets are relatively scarce when it comes to video question answering. This underscores a particular temporal challenge within the domain of Video Question Answering (VideoQA) associated with the accessibility of pertinent data.",
+      "These methods can be combined and adapted to address various challenges in Image Question Answering. Visual Question Answering handles complex questions, reasoning over visual content on images, and improving the system\u2019s ability to provide accurate and contextually relevant answers."
+    ],
+    "title": "Video Question Answering: A survey of the state-of-the-art - ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1047320324002761"
+  },
+  {
+    "description": "To facilitate follow-up research, ... is particularly challenging for current KB-QA. As an additional contribution, we provide a concrete definition of a temporal question. Finally, through this benchmark, we call upon the community to build QA-systems that can handle open challenges like temporal intent, compositionality, and constraint-based reasoning. Abdalghani Abujabal, Mohamed Yahya, Mirek Riedewald, and Gerhard Weikum. 2017. Automated Template Generation for Question Answering over Knowledge ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "To facilitate follow-up research, we make results of two state-of-the-art systems on TempQuestions available with our release, and with thorough scrutiny, show that this benchmark is particularly challenging for current KB-QA. As an additional contribution, we provide a concrete definition of a temporal question. Finally, through this benchmark, we call upon the community to build QA-systems that can handle open challenges like temporal intent, compositionality, and constraint-based reasoning. Abdalghani Abujabal, Mohamed Yahya, Mirek Riedewald, and Gerhard Weikum. 2017. Automated Template Generation for Question Answering over Knowledge Graphs.",
+      "2.1), ordinal (containing an ordinal), and temporal answer which covers all questions asking for some kind of temporal information (e.g., when-questions). Existing KB-QA datasets [5, 7, 10] are mixed bags with several types of questions: simple, compositional, ordinal, temporal, and spatial, among others. While we have reasonable evidence of the presence of temporal questions across these benchmarks, the fraction in each dataset individually is small: as a result, systems that ignore temporal questions can still achieve acceptable performance on these benchmarks.",
+      "This raises the call for better systems tailored for handling temporal intent, while also addressing challenges raised by compositionality and reasoning constraints. Detailed results by question category are shown in Table 5. The sweeping observation is that while all categories reflect poor performance, questions with implicit temporal expressions are particularly challenging.",
+      "The benchmark proposed in this paper, called TempQuestions, consists of 1,271 temporal questions with gold-standard answers. This collection is derived by judiciously selecting time-related questions from the Free917, WebQuestions and ComplexQuestions sets, with additional curation and tagging of temporal cues. Our benchmark supports systematic testing and evaluation of how well QA systems can handle temporal questions that require decomposition and reasoning on sub-results."
+    ],
+    "title": "TempQuestions: A Benchmark for Temporal Question Answering",
+    "url": "https://dl.acm.org/doi/fullHtml/10.1145/3184558.3191536"
+  },
+  {
+    "description": "Request PDF | On Jan 1, 2020, Jie Lei and others published TVQA+: Spatio-Temporal Grounding for Video Question Answering | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "First, we propose three new tasks designed specifically for video VQA, which require spatio-temporal reasoning from videos to answer questions correctly. Next, we introduce a new large-scale dataset for video VQA named TGIF-QA that extends existing VQA work with our new tasks. Finally, we propose a dual-LSTM based approach with both spatial and temporal attention, and show its effectiveness over conventional VQA techniques through empirical evaluations. ... Tamara L. Berg \u00b7 Referring expressions are natural language constructions used to identify particular objects within a scene.",
+      "Recent advances have improved the spatial reasoning ability of Vision-Language Models (VLMs) by introducing large-scale data, but these models still struggle to analyze kinematic elements like traveled distance and speed of moving objects. To bridge this gap, we construct a spatio-temporal reasoning dataset and benchmark involving kinematic instruction tuning, referred to as STKit and STKit-Bench.",
+      "... Long Video Question Answering: Long-video question-answering benchmarks are constructed to specifically test strong causal and temporal reasoning [65] over long temporal windows [35]. Early works explore querying objects or events based on referential and spatial relations [69,79,82] followed by focus on temporal modeling of sequential events [20,27,",
+      "This paper introduces the Multi-Object Multi-Actor Question Answering (MOMA-QA) dataset, which is designed to address these shortcomings by emphasizing temporal localization, spatial relationship reasoning, and entity-centric queries. With ground truth scene graphs and temporal interval annotations, MOMA-QA is ideal for developing models for fine-grained video understanding."
+    ],
+    "title": "TVQA+: Spatio-Temporal Grounding for Video Question Answering | ...",
+    "url": "https://www.researchgate.net/publication/343300804_TVQA_Spatio-Temporal_Grounding_for_Video_Question_Answering"
+  },
+  {
+    "description": "Video Question Answering | Video QA | VQA. Contribute to chakravarthi589/Video-Question-Answering_Resources development by creating an account on GitHub.",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "The repository focuses on the intersection of computer vision and natural language processing, particularly how video data can be used to answer complex questions, offering a range of materials from introductory guides to advanced research. (Last Update on 12/14/2024) Video question answering (VideoQA), LLMs, Long video understanding, Spatial Reasoning, Temporal Reasoning, Multi-Choice QA, Open-Ended QA;",
+      "Open-Vocabulary Video Question Answering: A New Benchmark for Evaluating the Generalizability of Video Question Answering Models (CVPR) [Paper] ANetQA: A Large-Scale Benchmark for Fine-Grained Compositional Reasoning Over Untrimmed Videos (CVPR) [Paper] Mist: Multi-modal iterative spatial-temporal transformer for long-form video question answering (CVPR) [Paper]",
+      "This dataset consists of 7K videos with 1.3Million Questions offering spatial and temporal properties.It consist of Synthetic Videos ... The STAR is a dataset for Situated Reasoning, which provides challenging question-answering tasks, symbolic situation descriptions and logic-grounded diagnosis via real-world video situations.",
+      "STAIR: Spatial-Temporal Reasoning with Auditable Intermediate Results for Video Question Answering [Paper] STAR: A Benchmark for Situated Reasoning in Real-World Videos [Paper]"
+    ],
+    "title": "GitHub - chakravarthi589/Video-Question-Answering_Resources: Video ...",
+    "url": "https://github.com/chakravarthi589/Video-Question-Answering_Resources"
+  },
+  {
+    "description": "Video Question Answering (VQA) ... reasoning, integrating visual, temporal, and linguistic cues to achieve a deeper understanding of video content. ... In this paper, we study building a Perception Language Model (PLM) in a fully open and reproducible framework for transparent research in image and video understanding. ... We introduce EgoToM, a new video question-answering benchmark that extends ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Video Question Answering (VQA) inherently relies on multimodal reasoning, integrating visual, temporal, and linguistic cues to achieve a deeper understanding of video content. ... In this paper, we study building a Perception Language Model (PLM) in a fully open and reproducible framework for transparent research in image and video understanding. ... We introduce EgoToM, a new video question-answering benchmark that extends Theory-of-Mind (ToM) evaluation to egocentric domains.",
+      "Videos, with their unique temporal dimension, demand precise grounded understanding, where answers are directly linked to visual, interpretable evidence. ... Understanding fine-grained temporal dynamics is crucial in egocentric videos, where continuous streams capture frequent, close-up interactions with objects.",
+      "MLLMs have been widely studied for video question answering recently.",
+      "Recent advancements in Video Question Answering (VideoQA) have introduced LLM-based agents, modular frameworks, and procedural solutions, yielding promising results."
+    ],
+    "title": "Video Question Answering | Papers With Code",
+    "url": "https://paperswithcode.com/task/video-question-answering/latest"
+  },
+  {
+    "description": "Vision and language understanding has emerged as a subject undergoing intense study in Artificial Intelligence. Among many tasks in this line of research, visual question answering (VQA) has been one of the most successful ones, where the goal is to learn a model that understands visual content ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Vision and language understanding has emerged as a subject undergoing intense study in Artificial Intelligence. Among many tasks in this line of research, visual question answering (VQA) has been one of the most successful ones, where the goal is to learn a model that understands visual content at region-level details and finds their associations with pairs of questions and answers in the natural language form.",
+      "First, we propose three new tasks designed specifically for video VQA, which require spatio-temporal reasoning from videos to answer questions correctly. Next, we introduce a new large-scale dataset for video VQA named TGIF-QA that extends existing VQA work with our new tasks. Finally, we propose a dual-LSTM based approach with both spatial and temporal attention, and show its effectiveness over conventional VQA techniques through empirical evaluations.",
+      "View a PDF of the paper titled TGIF-QA: Toward Spatio-Temporal Reasoning in Visual Question Answering, by Yunseok Jang and 4 other authors View PDF"
+    ],
+    "title": "[1704.04497] TGIF-QA: Toward Spatio-Temporal Reasoning in Visual ...",
+    "url": "https://arxiv.org/abs/1704.04497"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "Video Question Answering: Datasets, Algorithms and ...",
+    "url": "https://aclanthology.org/2022.emnlp-main.432.pdf"
+  },
+  {
+    "description": "This paper strives to solve complex video question answering (VideoQA) which features long video containing multiple objects and events at different time. To tackle the challenge, we highlight the importance of identifying question-critical temporal moments and spatial objects from the vast ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "This paper strives to solve complex video question answering (VideoQA) which features long video containing multiple objects and events at different time. To tackle the challenge, we highlight the importance of identifying question-critical temporal moments and spatial objects from the vast amount of video content.",
+      "Abstract page for arXiv paper 2307.12058: Discovering Spatio-Temporal Rationales for Video Question Answering",
+      "To tackle the challenge, we highlight the importance of identifying question-critical temporal moments and spatial objects from the vast amount of video content. Towards this, we propose a Spatio-Temporal Rationalization (STR), a differentiable selection module that adaptively collects question-critical moments and objects using cross-modal interaction. The discovered video moments and objects are then served as grounded rationales to support answer reasoning.",
+      "We then conduct extensive studies to verify the importance of STR as well as the proposed answer interaction mechanism. With the success of TranSTR and our comprehensive analysis, we hope this work can spark more future efforts in complex VideoQA. Code will be released at this https URL. From: Yicong Li [view email] [v1] Sat, 22 Jul 2023 12:00:26 UTC (9,413 KB) ... View a PDF of the paper titled Discovering Spatio-Temporal Rationales for Video Question Answering, by Yicong Li and 4 other authors"
+    ],
+    "title": "[2307.12058] Discovering Spatio-Temporal Rationales for Video ...",
+    "url": "https://arxiv.org/abs/2307.12058"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Neural Reasoning, Fast and Slow, for Video Question ...",
+    "url": "https://arxiv.org/pdf/1907.04553"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "VideoQA-TA: Temporal-Aware Multi-Modal Video Question ...",
+    "url": "https://aclanthology.org/2025.coling-main.483.pdf"
+  },
+  {
+    "description": "PDF | Answering complex questions is one of the challenges that question-answering (QA) systems face today. While complexity has several facets,... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Domain-sensitive Temporal Tagging. Morgan & Claypool Publishers. ... Priyansh Trivedi, Gaurav Maheshwari, Mohnish Dubey, and Jens Lehmann. 2017. LC-QuAD: A Corpus for Complex Question Answering over Knowledge Graphs. ... Elena Cabrio, Philipp Cimiano, and Sebastian Walter. 2015. Question Answering ... Christina Unger, Andr\u00e9 Freitas, and Philipp Cimiano. 2014. An introduction to \u00b7 question answering over linked data. In Reasoning Web.",
+      "It is considered a more challenging problem than KGQA (Bhutani et al., 2019;Saxena et al., 2020), where questions are typically about persistent, non-temporal facts (e.g., place of birth), with only a small portion of the questions requiring any temporal reasoning ... ... Most KGQA systems have focused on answering questions from simple (i.e., 1-hop fact-based questions) (Berant et al., 2013) to multi-hop complex questions requiring multi-fact reasoning (Sun et al., 2019;Saxena et al., 2020).",
+      "TKGQA focuses on accurately understanding questions involving temporal constraints and retrieving accurate answers from knowledge graphs. In previous research, the hierarchical structure of question contexts and the constraints imposed by temporal information on different sentence components have been overlooked. In this paper, we propose a framework called \u201cSemantic-Enhanced Reasoning Question Answering\u201d (SERQA) to tackle this problem.",
+      "Therefore, this study proposes MATQA, a component based on multi-answer temporal question reasoning, using a re-validation framework to convert the Top-k answer list output by the QA system into a clear number of answer combinations, and a new multi-answer based evaluation index is proposed for this output form."
+    ],
+    "title": "(PDF) TempQuestions: A Benchmark for Temporal Question Answering",
+    "url": "https://www.researchgate.net/publication/324634108_TempQuestions_A_Benchmark_for_Temporal_Question_Answering"
+  },
+  {
+    "description": "However, models developed on these ... where temporal reasoning ability is required. To this end, we propose a new task named Video Text Visual Question Answering (ViteVQA in short) that aims at answering questions by reasoning texts and visual information spatiotemporally in a given video. In particular, on the one ...",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.neurips.cc&size=128",
+    "snippets": [
+      "However, models developed on these benchmarks cannot work effectively in many real-life scenarios (e.g. traffic monitoring, shopping ads and e-learning videos) where temporal reasoning ability is required. To this end, we propose a new task named Video Text Visual Question Answering (ViteVQA in short) that aims at answering questions by reasoning texts and visual information spatiotemporally in a given video. In particular, on the one hand, we build the first ViteVQA benchmark dataset named M4-ViteVQA --- the abbreviation of Multi-category Multi-frame Multi-resolution Multi-modal benchmark for ViteVQA, which contains 7,620 video clips of 9 categories (i.e., shopping, traveling, driving, vlog, sport, advertisement, movie, game and talking) and 3 kinds of resolutions (i.e., 720p, 1080p and 1176x664), and 25,123 question-answer pairs.",
+      "It first extracts optical character recognition (OCR) tokens, question features, and video representations via two OCR transformers, one language transformer and one video-language transformer, respectively. Then, a multimodal fusion transformer and an answer generation module are applied to fuse multimodal information and generate the final prediction."
+    ],
+    "title": "Towards Video Text Visual Question Answering: Benchmark and Baseline",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/e726197ffd401df4013cd9f81007b5cf-Abstract-Datasets_and_Benchmarks.html"
+  },
+  {
+    "description": "Visual question answering (VQA) is a dynamic field of research that aims to generate textual answers from given visual and question information. It is a multimodal field that has garnered significa...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Visual question answering (VQA) is a dynamic field of research that aims to generate textual answers from given visual and question information. It is a multimodal field that has garnered significant interest from the computer vision and natural language ...",
+      "The reason for the different distributions is to eliminate the language bias of ignoring visual information. If the answer distributions of the training and test are the same, there will be language bias in inferring the correct answer for a particular question without considering visual information.",
+      "CLEVR uses 3D shapes and simplified compositions to focus on reasoning, where answers can only be derived from the visual information in the image, avoiding surface-level shortcuts. It contains 100,000 images and 999,968 automatically generated questions across 90 categories. While effective for testing reasoning, CLEVR\u2019s lack of generic images makes it less suitable for general VQA tasks. Cornell Natural Language Visual Reasoning (NLVR) [141] is a benchmark that, given a synthesized image with several shapes and a sentence given as a description of the image, selects true/false whether the sentence correctly describes the image.",
+      "The significance of DocVQA is that it provides a benchmark in the field of DAR that allows researchers to move from modular to integrated reasoning. Lu et al. proposed the Icon Question Answering (IconQA) dataset [101], consisting of 107,439 Q&A pairs across three tasks: multiple-image-choice, multiple-choice, and filling-in-the-blank."
+    ],
+    "title": "Visual Question Answering: A Survey of Methods, Datasets, Evaluation, ...",
+    "url": "https://dl.acm.org/doi/10.1145/3728635"
+  },
+  {
+    "description": "With T-Former, we propose a new ... spatial features from input videos, Query to extract a fixed-size set of question-guided temporal visual features from the whole sequence, and Reason to integrate these extracted features with LLMs for generating answers, as illustrated ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "With T-Former, we propose a new LLM-based model, PQR, based on three core principles: Perceive to extract framewise question-guided spatial features from input videos, Query to extract a fixed-size set of question-guided temporal visual features from the whole sequence, and Reason to integrate these extracted features with LLMs for generating answers, as illustrated in Fig.",
+      "The Perceive stage employs a ViT encoder and a Q-Former to extract spatial visual features from each frame independently, conditioned on the input question. The Query stage introduces T-Former, our question-guided temporal querying Transformer that captures the most relevant temporal information conditioned on both the question and the visual context. Finally, in the Reason stage, the condensed visual-temporal features are integrated with the question and answer options before being fed into a frozen LLM as a reasoning agent to rationalize and answer the question.",
+      "[9] Difei Gao, Luowei Zhou, Lei Ji, Linchao Zhu, Yi Yang, and Mike Zheng Shou. Mist: Multi-modal iterative spatial-temporal transformer for long-form video question answering. In CVPR, 2023. [10] Madeleine Grunde-McLaughlin, Ranjay Krishna, and Maneesh Agrawala. Agqa: A benchmark for compositional spatio-temporal reasoning.",
+      "Our observations indicate that in the absence of visual information, LLM reasoners exhibit modest performance, comparable to a \u201cblind guess\u201d. This finding highlights the robustness of the video question-answering benchmarks, ensuring they are minimally influenced by linguistic bias. Notably, the performance gap between our model and LLM reasoners is even more pronounced in categories such as causal and temporal reasoning."
+    ],
+    "title": "Perceive, Query & Reason: Enhancing Video QA with Question-Guided ...",
+    "url": "https://arxiv.org/html/2412.19304v1"
+  },
+  {
+    "description": "Skip to yearly menu bar Skip to main content \u00b7 Main Navigation \u00b7 Help/FAQ \u00b7 Contact ICLR \u00b7 Downloads \u00b7 ICLR Blog \u00b7 Code of Conduct \u00b7 Create Profile \u00b7 Reset Password \u00b7 Journal To Conference Track",
+    "favicon_url": "https://you.com/favicon?domain=iclr.cc&size=128",
+    "snippets": [
+      "Answer, Assemble, Ace: Understanding How LMs Answer Multiple Choice Questions \u00b7 Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver \u00b7 Episodic Memories Generation and Evaluation Benchmark for Large Language Models \u00b7 Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks \u00b7 When Attention Sink Emerges in Language Models: An Empirical View \u00b7 Lawma: The Power of Specialization for Legal Annotation \u00b7 Do Vision-Language Models Represent Space and How? Evaluating Spatial Frame of Reference under Ambiguities",
+      "StructRAG: Boosting Knowledge Intensive Reasoning of LLMs via Inference-time Hybrid Information Structurization \u00b7 Rethinking Evaluation of Sparse Autoencoders through the Representation of Polysemous Words \u00b7 Super(ficial)-alignment: Strong Models May Deceive Weak Models in Weak-to-Strong Generalization ... From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+      "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution \u00b7 B-STaR: Monitoring and Balancing Exploration and Exploitation in Self-Taught Reasoners",
+      "CREMA: Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion \u00b7 NeuralPlane: Structured 3D Reconstruction in Planar Primitives with Neural Fields \u00b7 Compositional 4D Dynamic Scenes Understanding with Physics Priors for Video Question Answering"
+    ],
+    "title": "ICLR 2025 Schedule",
+    "url": "https://iclr.cc/virtual/2025/calendar"
+  },
+  {
+    "description": "While multiple early datasets focus ... based on referential and spatial relations [44, 51, 49], later tasks require explicit temporal understanding of sequential events [18, 19, 50]. More recent datasets focus on longer videos containing multiple actions and scenes spread over a wide time interval (termed long-form videos) [41, 20] with questions additionally requiring causal reasoning to correctly answer...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "While multiple early datasets focus on querying objects or events based on referential and spatial relations [44, 51, 49], later tasks require explicit temporal understanding of sequential events [18, 19, 50]. More recent datasets focus on longer videos containing multiple actions and scenes spread over a wide time interval (termed long-form videos) [41, 20] with questions additionally requiring causal reasoning to correctly answer.",
+      "We finally evaluate on the NExT-QA[41] dataset. This dataset has a particular focus on both temporal and casual reasoning based question-answer pairs. Our approach achives state-of-the-art performance on this benchmark outperforming prior work among the models utilizing approximately 12 captions.",
+      "Referred to as long-form video question answering (LVQA), these benchmarks are constructed to specifically test strong causal and temporal reasoning [41] over long temporal windows [24]. Some works tackling such casual video VQA tasks leverage graph networks to model cross object / event relations [14, 42, 43]. A more recent line of works integrate large-language models (LLMs) to tackle this task [52, 36, 16, 37, 30, 39, 9] utilizing the strong reasoning skills of the LLMs.",
+      "The recent popularity of vision-language models (VLMs), particularly approaches connecting large language models (LLMs) to vision architectures [23, 21, 7], has resulted in significant improvements across visual question answering (VQA) tasks. These models demonstrate exceptional performance within the image domain, and their video variants [47, 28, 27] perform similarly on shorter videos, yet demonstrating limited performance on long-form video benchmarks [24, 16, 30, 31]. This can be attributed to the nature of long-form video benchmarks, which require both temporal sequence awareness and causal reasoning."
+    ],
+    "title": "Too Many Frames, Not All Useful: Efficient Strategies for Long-Form ...",
+    "url": "https://arxiv.org/html/2406.09396v3"
+  },
+  {
+    "description": "This paper proposes three new tasks designed specifically for video VQA, which require spatio-temporal reasoning from videos to answer questions correctly and introduces a new large-scale dataset for videoVQA named TGIF-QA that extends existing VQ a work with its new tasks.",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "This paper proposes three new tasks designed specifically for video VQA, which require spatio-temporal reasoning from videos to answer questions correctly and introduces a new large-scale dataset for videoVQA named TGIF-QA that extends existing VQ a work with its new tasks.Expand",
+      "A semantic link between textual descriptions and image regions by object-level grounding enables a new type of QA with visual answers, in addition to textual answers used in previous work, and proposes a novel LSTM model with spatial attention to tackle the 7W QA tasks.Expand ... The hierarchical spatio-temporal attention network is proposed for learning the joint representation of the dynamic video contents according to the given question and the multi-step reasoning process for open-ended video question answering is developed.Expand",
+      "This paper proposes an instance-sequence reasoning network for video question answering with instance grounding and temporal localization and proposes graph causal convolution on graph-structured sequence with a large receptive field to capture more causal connections, which is vital for visual grounding and instance- sequence reasoning.Expand ... NExT-QA is introduced, a rigorously designed video question answering (VideoQA) benchmark to advance video understanding from describing to explaining the temporal actions, and it is found that top-performing methods excel at shallow scene descriptions but are weak in causal and temporal action reasoning.Expand",
+      "TGIF-QA (opens in a new tab)Visual Question Answering (opens in a new tab)Spatio-Temporal Reasoning (opens in a new tab)Large-scale Datasets (opens in a new tab)Video Domain (opens in a new tab)dual-LSTM (opens in a new tab)Video Question Answering (opens in a new tab)Language Understanding (opens in a new tab)Temporal Attention (opens in a new tab)Artificial Intelligence (opens in a new tab)"
+    ],
+    "title": "Video Question Answering with Spatio-Temporal Reasoning | Semantic ...",
+    "url": "https://www.semanticscholar.org/paper/Video-Question-Answering-with-Spatio-Temporal-Jang-Song/1e1bd132613866c176a8fc780cb1b9f9aa43feeb"
+  },
+  {
+    "description": "Request PDF | Video Question Answering via Hierarchical Spatio-Temporal Attention Networks | Open-ended video question answering is a challenging problem in visual information retrieval, which automatically generates the natural language... | Find, read and cite all the research you need on ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Request PDF | Video Question Answering via Hierarchical Spatio-Temporal Attention Networks | Open-ended video question answering is a challenging problem in visual information retrieval, which automatically generates the natural language... | Find, read and cite all the research you need on ResearchGate",
+      "Specifically, we propose a novel event-level visual question answering framework named Cross-Modal Causal RelatIonal Reasoning(CMCIR), to achieve robust causality-aware visual-linguistic question answering. To discover cross-modal causal structures, the Causality-aware Visual-Linguistic Reasoning (CVLR) module is proposed to collaboratively disentangle the visual and linguistic spuriouscorrelations via front-door and back-door causal interventions. To model the fine-grained interactions between linguistic semantics andspatial-temporal representations, we build a Spatial-Temporal Transformer (STT) that builds the multi-modal co-occurrence interactionsbetween visual and linguistic content.",
+      "The proposed framework has the following objectives: Firstly, we aim at deep semantic parsing of video and text that goes beyond the traditional bag-of-words approaches; Secondly, we perform parsing and reasoning across the spatial, temporal and causal dimensions based on the joint S/T/C-AOG representation; Thirdly, we show that deep joint parsing facilitates subsequent applications such as generating narrative text descriptions and answering queries in the forms of who, what, when, where and why.",
+      "We introduce NExT-QA, a rigorously designed video question answering (VideoQA) benchmark to advance video understanding from describing to explaining the temporal actions. Based on the dataset, we set up multi-choice and open-ended QA tasks targeting causal action reasoning, temporal action reasoning, and common scene comprehension."
+    ],
+    "title": "Video Question Answering via Hierarchical Spatio-Temporal Attention ...",
+    "url": "https://www.researchgate.net/publication/318830542_Video_Question_Answering_via_Hierarchical_Spatio-Temporal_Attention_Networks"
+  },
+  {
+    "description": "Yang WXu YLi YWang KHuang BChen L(2024)Continual Learning for Temporal-Sensitive Question Answering2024 International Joint Conference on Neural Networks (IJCNN)10.1109/IJCNN60899.2024.10651518(1-9)Online publication date: 30-Jun-2024 ... Yin BHu N(2024)Time-CoT for Enhancing Time Reasoning Factual ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Yang WXu YLi YWang KHuang BChen L(2024)Continual Learning for Temporal-Sensitive Question Answering2024 International Joint Conference on Neural Networks (IJCNN)10.1109/IJCNN60899.2024.10651518(1-9)Online publication date: 30-Jun-2024 ... Yin BHu N(2024)Time-CoT for Enhancing Time Reasoning Factual Question Answering in Large Language Models2024 International Joint Conference on Neural Networks (IJCNN)10.1109/IJCNN60899.2024.10650885(1-8)Online publication date: 30-Jun-2024",
+      "Jia ZChristmann PWeikum GChua TNgo CKa-Wei Lee RKumar RLauw H(2024)TIQ: A Benchmark for Temporal Question Answering with Implicit Time ConstraintsCompanion Proceedings of the ACM on Web Conference 202410.1145/3589335.3651895(1394-1399)Online publication date: 13-May-2024 ... Yuan CXie QHuang JAnaniadou SChua TNgo CKa-Wei Lee RKumar RLauw H(2024)Back to the Future: Towards Explainable Temporal Reasoning with Large Language ModelsProceedings of the ACM Web Conference 202410.1145/3589334.3645376(1963-1974)Online publication date: 13-May-2024",
+      "Answering complex questions is one of the challenges that question-answering (QA) systems face today. While complexity has several facets, question dimensions like temporal and spatial intents necessitate specialized treatment. Methods geared towards such questions need benchmarks that reflect the desired aspects and challenges.",
+      "Christina Unger, Andr\u00e9 Freitas, and Philipp Cimiano. 2014. An introduction to question answering over linked data Reasoning Web."
+    ],
+    "title": "TempQuestions | Companion Proceedings of the The Web Conference 2018",
+    "url": "https://dl.acm.org/doi/10.1145/3184558.3191536"
+  },
+  {
+    "description": "This paper proposes a question-answering (QA) benchmark for spatial reasoning on natural language text which contains more realistic spatial phenomena not covered by prior work and is challenging for state-of-the-art language models (LM). We propose",
+    "favicon_url": "https://you.com/favicon?domain=www.academia.edu&size=128",
+    "snippets": [
+      "This paper proposes a question-answering (QA) benchmark for spatial reasoning on natural language text which contains more realistic spatial phenomena not covered by prior work and is challenging for state-of-the-art language models (LM). We propose a distant supervision method to improve on this task.",
+      "First, we propose three new tasks designed specifically for video VQA, which require spatio-temporal reasoning from videos to answer questions correctly. Next, we introduce a new large-scale dataset for video VQA named TGIF-QA that extends existing VQA work with our new tasks. Finally, we propose a dual-LSTM based approach with both spatial and temporal attention, and show its effectiveness over conventional VQA techniques through empirical evaluations.",
+      "First, we propose three new tasks designed specifically for video VQA, which require spatio-temporal reasoning from videos to answer questions correctly. Next, we introduce a new large-scale dataset for video VQA named TGIF-QA that extends existing VQA work with our new tasks. Finally, we propose a dual-LSTM based approach with both spatial and temporal attention and show its effectiveness over conventional VQA techniques through empirical evaluations.",
+      "Answering such questions, and many others, require modeling relationships between entities in the spatial domain and evolution of those relationships in the temporal domain. We argue that current approaches have limited capacity to model such long-range spatial and temporal dependencies. To address these challenges, we present a novel spatio-temporal reasoning neural module which enables modeling complex multi-entity relationships in space and long-term ordered dependencies in time."
+    ],
+    "title": "(PDF) SPARTQA: A Textual Question Answering Benchmark for Spatial ...",
+    "url": "https://www.academia.edu/96555172/SPARTQA_A_Textual_Question_Answering_Benchmark_for_Spatial_Reasoning"
+  },
+  {
+    "description": "Video Question Answering (VideoQA) concerns the realization of models able to analyze a video, and produce a meaningful answer to visual content-related questions. To encode the given question, word embedding techniques are used to compute a representation of the tokens suitable for neural networks.",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Multimedia Tools and Applications - Video Question Answering (VideoQA) concerns the realization of models able to analyze a video, and produce a meaningful answer to visual content-related...",
+      "Video Question Answering (VideoQA) is a task that requires to analyze and jointly reason on both the given video data and a visual content-related question, to produce a meaningful and coherent answer to it [15]. By solving this task, a computational model could reach human-level capabilities when dealing with both complex video and textual data, since it would require learning to reason about the elements of interest in the video and their spatial and temporal interactions related to the given question.",
+      "As an example, questions asking to identify an object may require spatial features which are closely related to the objects shown in the video, while asking to recognize an action may shift the focus on temporal aspects. For this reason, we propose to incorporate the question type (as a classification objective) into the loss function we strive to optimize.",
+      "In ST-VQA, this is done through a Temporal Attention module, which weighs each visual features vector based on the aggregated textual representation; in CoMem, appearance and motion features are used to provide attention cues to each other by employing a Memory module; finally, a Reasoning module is used in HME-VQA to compute an aggregated representation of the output of the heterogeneous memory layer, while also employing two temporal attention modules to compute modality-independent attention-weighted vectors (see Section 3.2 for an in-depth explanation). The fused features are then used in the decisional process to predict a regression score for the candidate answer."
+    ],
+    "title": "Video question answering supported by a multi-task learning objective ...",
+    "url": "https://link.springer.com/article/10.1007/s11042-023-14333-0"
+  }
+]

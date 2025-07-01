@@ -1,0 +1,271 @@
+[
+  {
+    "description": "Pre-trained language models have achieved striking success in natural language processing (NLP), leading to a paradigm shift from supervised learning \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The NLP community has witnessed a surge of research interest in improving pre-trained models. This article presents a comprehensive review of representative work and recent progress in the NLP field and introduces the taxonomy of pre-trained models. We first give a brief introduction of pre-trained models, followed by characteristic methods and frameworks. We then introduce and analyze the impact and challenges of pre-trained models and their downstream applications."
+    ],
+    "title": "Pre-Trained Language Models and Their Applications - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2095809922006324"
+  },
+  {
+    "description": "Abstract. While pretrained language models (PLMs) have been shown to possess a plethora of linguistic knowledge, the existing body of research has largely neglected extralinguistic knowledge, which is generally difficult to obtain by pretraining on text alone.",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Adaptation can be seen as a special case of intermediate training, which aims at improving the target-task performance of PLMs by carrying out additional training between pretraining and fine-tuning (Phang et al., 2018; Vu et al., 2020; Glava\u0161 and Vuli\u0107, 2021). Intermediate training has also been conducted in a multi-task fashion, encompassing two or more training objectives (Liu et al., 2019a; Aghajanyan et al., 2021).",
+      "While pretrained language models (PLMs) have been shown to possess a plethora of linguistic knowledge, the existing body of research has largely neglected extralinguistic knowledge, which is generally difficult to obtain by pretraining on text alone. Here, we contribute to closing this gap by examining geolinguistic knowledge, i.e., knowledge about geographic variation in language. We introduce geoadaptation, an intermediate training step that couples language modeling with geolocation prediction in a multi-task learning setup.",
+      "Specifically, we conduct an intermediate training step (Glava\u0161 and Vuli\u0107, 2021) in the form of task-agnostic adaptation\u2014dubbed geoadaptation\u2014that couples language modeling with predicting the geographic location (i.e., longitude and latitude) on geolocated texts.",
+      "Results on zero-shot dialect feature prediction (ZS-Dialect), which is only conducted for BCMS. Measure: prediction accuracy."
+    ],
+    "title": "Geographic Adaptation of Pretrained Language Models | Transactions ...",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00652/120648/Geographic-Adaptation-of-Pretrained-Language"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=cdn.openai.com&size=128",
+    "snippets": [],
+    "title": "Improving Language Understanding by Generative Pre- ...",
+    "url": "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
+  },
+  {
+    "description": "In this study, we delve into the adaptation and effectiveness of Transformer-based, pre-trained Large Language Models (LLMs) within the biomedical dom\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Assessment of the impact of different data volumes on Fine-Tuning. ... Probing and analysis of LLMs\u2019 internal representations and attention mechanisms. ... Identification of key internal patterns linked to LLMs\u2019 performances. In this study, we delve into the adaptation and effectiveness of Transformer-based, pre-trained Large Language Models (LLMs) within the biomedical domain, a field that poses unique challenges due to its complexity and the specialized nature of its data.",
+      "Building on the foundation laid by the transformative architecture of Transformers, we investigate the nuanced dynamics of LLMs through a multifaceted lens, focusing on two domain-specific tasks, i.e., Natural Language Inference (NLI) and Named Entity Recognition (NER). Our objective is to bridge the knowledge gap regarding how these models\u2019 downstream performances correlate with their capacity to encapsulate task-relevant information.",
+      "To achieve this goal, we probed and analyzed the inner encoding and attention mechanisms in LLMs, both encoder- and decoder-based, tailored for either general or biomedical-specific applications. This examination occurs before and after the models are fine-tuned across various data volumes.",
+      "Our findings reveal that the models\u2019 downstream effectiveness is intricately linked to specific patterns within their internal mechanisms, shedding light on the nuanced ways in which LLMs process and apply knowledge in the biomedical context."
+    ],
+    "title": "From pre-training to fine-tuning: An in-depth analysis of Large ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0933365724002458"
+  },
+  {
+    "description": "This chapter describes a number of different approaches to improve the performance of Pre-trained Language Models (PLMs), i.e. variants of BERT, autoregressive language models similar to GPT, and sequence-to-sequence models like Transformers. First we may modify the...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The 176B BLOOM model has been trained using the Megatron-DeepSpeed library [26] offering different types of parallelism. The model can be evaluated on 8 large GPUs. Hence, BLOOM is one of the largest trained model available for research purposes. Some benchmark results are provided in Table 3.4. Gopher [168] employed the GPT-2 architecture with two modifications. For regularization the authors used RMSNorm (Sect. 2.4.2) instead of LayerNorm and they employed the relative positional encoding scheme [44] instead of absolute positional encoding.",
+      "The large 175B parameter model is only available to academic researchers upon request to discourage the production of fake news. The model can be trained and deployed on only 16 NVIDIA V100 GPUs. Some benchmark results are provided in Table 3.4. BLOOM [139] is an autoregressive large language model with 176B parameters. It has 70 layers with 112 attention-heads per layer and 2048 token sequence length.",
+      "Note that nearly all proposals may be combined for most model types, resulting in the vast number of model variants that is currently discussed. The basic BERT model [49] has two pre-training tasks: the prediction of masked tokens with the masked language model (MLM) and next sentence prediction (NSP) (Sect. 2.1). These tasks were chosen heuristically and there are many plausible loss functions and architectures. Researchers have investigated many alternative training objectives, model structures, and attention mechanisms.",
+      "The results are normalized with the softmax function and used for the computation of a weighted sum of value vectors. During optimization only the k optimal keys are affected reducing the training effort. The approach allows very large transformers to be defined with only a minimal computational overhead. With 12 layers the authors achieve the same performance as a 24 layer BERT model using only half of the computation time."
+    ],
+    "title": "Improving Pre-trained Language Models | SpringerLink",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-23190-2_3"
+  },
+  {
+    "description": "Large language models (LLMs) have demonstrated impressive capabilities in natural language processing. However, their internal mechanisms are still unclear and this lack of transparency poses unwan...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Large language models (LLMs) have demonstrated impressive capabilities in natural language processing. However, their internal mechanisms are still unclear and this lack of transparency poses unwanted risks for downstream applications. Therefore, ...",
+      "However, unlike digital circuits that have deterministic functions in each part, large-scale neural networks are more elastic and versatile in composition such as robust to remove entire layers [Veit et al. 2016; McGrath et al. 2023]. In addition, most existing hypotheses have not been examined on LLMs. Recently, Lieberum et al. [2023] explore scalability of circuit analysis in the 70B Chinchilla model. The result demonstrates activation patching [Meng et al.",
+      "Consequently, mitigation can be implemented by either data side such as improve fine-tuning datasets and add synthetic-data intervention [Wei et al. 2023a], or on the model side, such as different optimization approaches. There is also growing interest within the research community in quantifying the uncertainty of LLM predictions, to better understand the reliability and limitations of these powerful models.",
+      "Existing research is mainly post-hoc explanation on fully trained models. The lack of developmental investigation on training process can generate biased explanation by failing in targeting emerging abilities or vestigial parts that convergence counts on, namely, phase transitions. Besides, performing interventions on certain features fail to reflect interactions between features [Saphra 2022]. Therefore, there is a trend shifting from static, snapshot explainability analysis to dynamic, temporal analysis."
+    ],
+    "title": "Explainability for Large Language Models: A Survey | ACM Transactions ...",
+    "url": "https://dl.acm.org/doi/10.1145/3639372"
+  },
+  {
+    "description": "In subject area: Computer Science \u00b7 Pre-Trained Language Models (PLMs) refer to neural networks that are trained on large-scale unlabeled corpora and can be further fine-tuned for various downstream tasks. These models, such as those used in NLP, contain a significant amount of linguistic ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "As a result, two general frameworks for abstractive ATS, BERTSUMABS, and BERTSUMEXTABS, have been proposed. The former uses the pretrained BERTSUM encoder, and an untrained 6-layered Transformer decoder initialized randomly, using two separated optimizers to overcome the problem of fine-tuning instability.",
+      "Different from the standard Transformer encoder, the dense feed forward network layer is replaced by a sparse switch feed forward network layer. Although the proposed models are much larger than the previous ones, they successfully solved Transformers and other PTLMs problems by reducing computation and communication costs, increasing pre-training speed, and mitigating training instability. The researchers fine-tuned their proposed model to the abstractive ATS task, resulting in a ROUGE-2 score of 19.6 on the CNN/DM dataset, and 22.3 on the XSum corpus using Switch-Base and Switch-Large model, respectively.",
+      "Therefore, the pre-trained parameters at the bottom layer are generally used to initialize the network parameters of a new task. While the high-level features are more related to the task, fine-tuning technology can fine-tune the model. This approach is practical and can achieve good results. Researchers in the NLP field migrate the ideas of the Pre-trained Language Model (PLM) in the CV field.",
+      "This field of research has recently been enriched with more attempts. Xiao and Carenini [180] study repetition reduction in long documents achieving comparative results. Also, Pilault et al., [65] utilize the mixed extractive-abstractive approach using a single PTLM, GPT-2 [12], to generate the final abstractive summary."
+    ],
+    "title": "Pre-Trained Language Models - an overview | ScienceDirect Topics",
+    "url": "https://www.sciencedirect.com/topics/computer-science/pre-trained-language-models"
+  },
+  {
+    "description": "A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation. The largest and most capable LLMs are generative pretrained transformers (GPTs), which are ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "As a result their performance tends to be subpar on complex questions requiring (at least in humans) intermediate steps of thought. This deficiency has been overcome by breaking down the tasks into smaller steps for the LLM either manually or automatically.",
+      "OpenAI did not reveal the high-level architecture and the number of parameters of GPT-4. The release of ChatGPT led to an uptick in LLM usage across several research subfields of computer science, including robotics, software engineering, and societal impact work. In 2024 OpenAI released the reasoning model OpenAI o1, which generates long chains of thought before returning a final answer. Many LLMs with parameter counts comparable to those of OpenAI's GPT series have been developed.",
+      "A related concept is AI explainability, which focuses on understanding how an AI model arrives at a given result. Techniques such as partial dependency plots, SHAP (SHapley Additive exPlanations), and feature importance assessments allow researchers to visualize and understand the contributions of various input features to the model's predictions.",
+      "By integrating these techniques, researchers and practitioners can gain deeper insights into the operations of LLMs, fostering trust and facilitating the responsible deployment of these powerful models. In another example, the authors trained small transformers on modular arithmetic addition. The resulting models were reverse-engineered, and it turned out they used discrete Fourier transform.",
+      "The results demonstrated moderate proficiency, with GPT-4 achieving the highest accuracy at 71%, lagging behind human fact-checkers. An earlier standard tested using a portion of the evaluation dataset. It became more common to evaluate a pre-trained model directly through prompting techniques. Researchers vary in how they formulate prompts for particular tasks, particularly with respect to the number of correct examples attached to the prompt (i.e."
+    ],
+    "title": "Large language model - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Large_language_model"
+  },
+  {
+    "description": "Large-scale pre-trained models (PTMs) such as BERT and GPT have recently achieved great success and become a milestone in the field of artificial inte\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "These breakthroughs are driven by the surge of computational power and the increasing availability of data, towards four important directions: designing effective architectures, utilizing rich contexts, improving computational efficiency, and conducting interpretation and theoretical analysis. Finally, we discuss a series of open problems and research directions of PTMs, and hope our view can inspire and advance the future study of PTMs."
+    ],
+    "title": "Pre-trained models: Past, present and future - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666651021000231"
+  },
+  {
+    "description": "Pre-trained language models have brought significant performance improvements in many natural language understanding tasks. Domain-adaptive language models, which are trained with a specific domain corpus, exhibit high performance in their target domains. However, pre-training these models ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Pre-trained language models have brought significant performance improvements in many natural language understanding tasks. Domain-adaptive language models, which are trained with a specific domain corpus, exhibit high performance in their target domains. However, pre-training these models with a large amount of domain-specific data requires a substantial computational budget and resources, necessitating the development of efficient pre-training methods.",
+      "Scientific Reports - Subset selection for domain adaptive pre-training of language model",
+      "The experiments were conducted on 4 NVIDIA GeForce RTX 3090 GPUs. We compared the AlignSet with two rival methods: a randomly selected subset (RandomSet) and a subset obtained from the method of Suzuki et al. 13 (SuzukiSet). Table 2 summarizes the experimental results on multiple domains, where FullSet indicates the entire pre-training dataset \\(D_d\\).",
+      "During the training phase, \\(M_g\\) and \\(M_d\\) are frozen, and the parameters of the align-layer are updated. After training, the positive pairs are used to compute the self-similarity scores. Specifically, self-similarity scores for positive pairs can be obtained from the trained model\u2019s unified embedding space as an inference result."
+    ],
+    "title": "Subset selection for domain adaptive pre-training of language model ...",
+    "url": "https://www.nature.com/articles/s41598-025-94085-z"
+  },
+  {
+    "description": "Large language models are increasingly trained on corpora containing both natural language and non-linguistic data like source code. Aside from aiding programming-related tasks, anecdotal evidence suggests that including code in pretraining corpora may improve performance on other, unrelated ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The results presented above highlight particular cases where code mixture has a noticeable impact on performance, but how does code pretraining affect the remaining BigBench tasks? We want to know how code pretraining impacts performance in aggregate for two reasons. First, we want to know if adding code helps in general: is adding code helpful or harmful for most tasks? Second, since it\u2019s likely that following any type of intervention models will be better at some tasks and worse at others than before the intervention, we want to confirm if the effects of code we observe are statistically significant or could have arisen due to chance.",
+      "Several experimental studies on the impact of code pretraining have also been conducted.",
+      "Observational studies have looked at the impact of code on downstream performance post-hoc. Fu & Khot (2022) speculated that code pretraining is at least partially responsible for the improvement in capabilities between the -001 and -002 series of GPT-3(.5) models, specifically highlighting chain-of-thought reasoning, long-term dependency sensitivity, and \u201ccomplex reasoning\u201d as likely resulting from code pretraining.",
+      "On multiple-choice multi-digit arithmetic tasks from BigBench, increased code mixture has a generally positive impact on performance. In both competitive and additive settings, higher code mixture results in greater multiple-choice accuracy, with the impact growing more pronounced as the number of digits increases (see fig."
+    ],
+    "title": "How Does Code Pretraining Affect Language Model Task Performance?",
+    "url": "https://arxiv.org/html/2409.04556v1"
+  },
+  {
+    "description": "Training a deep neural network can be costly but training time is reduced when a pre-trained network can be adapted to different use cases. Ideally, only a small number of parameters needs to be changed in this process of fine-tuning, which can then be more easily distributed.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "With the prevalence of pre-trained language models (PLMs) and the pre-training\u2013fine-tuning paradigm, it has been continuously shown that larger models tend to yield better performance. However, as PLMs scale up, fine-tuning and storing all the parameters is prohibitively costly and eventually becomes practically infeasible.",
+      "Nature Machine Intelligence - Training a deep neural network can be costly but training time is reduced when a pre-trained network can be adapted to different use cases. Ideally, only a small...",
+      "From the results, we can see that: ... The structure of the delta-tuning methods could have a considerable impact on the time of a single forwards or backwards process. By greatly reducing the computations of the tunable parameters, the backwards time of delta-tuning methods is shorter than fine-tuning. ... As the adapter injects additional neural modules to each layer of the transformer model, the path of data flow becomes longer and further leads to inference latency (longer forwards time).",
+      "Notably, the increasing scale of PLMs (measured by the number of parameters) seems to be an irreversible trend, as constant empirical results show that larger models (along with more data) almost certainly lead to better performance. For example, with 175 billion parameters, Generative Pre-trained Transformer 3 (GPT-3)9 generates natural language of unprecedented quality and can conduct various desired zero-shot tasks with satisfactory results given appropriate prompts."
+    ],
+    "title": "Parameter-efficient fine-tuning of large-scale pre-trained language ...",
+    "url": "https://www.nature.com/articles/s42256-023-00626-4"
+  },
+  {
+    "description": "PDF | Understanding what defines a good representation in large language models (LLMs) is fundamental to both theoretical understanding and practical... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Preprints and early-stage research may not have been peer reviewed yet. ... Understanding what defines a good representation in large language models (LLMs) is fundamental to both theoretical understanding and practical applications. In this paper, we investigate the quality of intermediate representations in various LLM architectures, including Transformers and State Space Models (SSMs).",
+      "Overall, our results illuminate the internal mechanics of LLMs and guide strategies for architectural optimization and training. ... Content may be subject to copyright. Does Representation Matter? Exploring Intermediate ... LLM architectures, including Transformers and State Space Models (SSMs).",
+      "We use three models: Pythia 410M, Mamba 130M, and LLM2Vec-unsup- ... three architectures (Table 1). Selecting the best-performing intermediate layer yields at least a 2% improvement in average accuracy compared to using the last layer. While prior work (Fan et al., 2024) noted similar trends for generation tasks, our results extend this observation to embedding-based",
+      "These results demonstrate how the \u00b7 model\u2019s internal representations adapt to different types of input perturbations. Figure 3 displays both normalized and unnormalized prompt entropy across different layers for each \u00b7 type of extreme prompt. The key observations from this analysis are: 1. Increasing token repetition reduces entropy in intermediate layers."
+    ],
+    "title": "(PDF) Does Representation Matter? Exploring Intermediate Layers ...",
+    "url": "https://www.researchgate.net/publication/387053361_Does_Representation_Matter_Exploring_Intermediate_Layers_in_Large_Language_Models"
+  },
+  {
+    "description": "Finding that 70% of attention heads and 20% of feed-forward networks can be excised with minimal effect on in-context learning suggests that large language models are undertrained.",
+    "favicon_url": "https://you.com/favicon?domain=www.amazon.science&size=128",
+    "snippets": [
+      "A successful candidate has excellent technical depth, scientific vision, project management skills, great communication skills, and a drive to achieve results in a unified team environment. You should enjoy the process of solving real-world problems that, quite frankly, haven\u2019t been solved at scale anywhere before. Along the way, we guarantee you\u2019ll get opportunities to be a bold disruptor, prolific innovator, and a reputed problem solver\u2014someone who truly enables AI and robotics to significantly impact the lives of millions of consumers.",
+      "- Papers published in AI/ML venues of repute Preferred Qualifications: - Track record of diving into data to discover hidden patterns and conducting error/deviation analysis - Ability to develop experimental and analytic plans for data modeling processes, use of strong baselines, ability to accurately determine cause and effect relations - The motivation to achieve results in a fast-paced environment.",
+      "This also reinforces recent research that questions the efficacy of keeping the amount of pretraining data fixed when scaling models up, suggesting that the amount of pretraining data seen must be scaled hand-in-hand with the models themselves to attain optimal performance.",
+      "Large language models (LLMs) have been around for a while but have really captured the attention of the public this year, with the advent of ChatGPT. LLMs are typically pretrained on massive volumes of data; recent variants are additionally tuned to follow instructions and incorporate human feedback using reinforcement learning."
+    ],
+    "title": "Do large language models really need all those layers? - Amazon ...",
+    "url": "https://www.amazon.science/blog/do-large-language-models-really-need-all-those-layers"
+  },
+  {
+    "description": "Transformer-based language models are making an impact in the field of Natural Language Processing (NLP). As relevant parallels can be drawn between biological sequences and natural languages, the models used in NLP can be easily extended and ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "In this regard, T5 has achieved good results on many areas which encompass question answering, summarisation, text classification etc. To lower memory consumption and increase the training speed of BERT, two parameter reduction techniques - cross-layer parameter sharing and inter-sentence coherence loss - have been used in ALBERT [27]. These aforementioned breakthrough works have challenged many researchers to applying such methodologies in computational biology.",
+      "The authors have conducted the experiments both at the nucleotide and protein levels. Despite the desirable results shown by the authors in [65], the work has certain shortcomings. This work has considered only proteins of plasmids but not proteins specific to chromosomes. Considering such proteins may further improve the accuracy of the model. Also, predicting the functions of unannotated plasmid proteins may help the research community by studying the evolutionary as well as the ecological significance of plasmids.",
+      "The experimental results show that the model has commendable performance in 15 out of 18 downstream tasks using finetuning. DNABERT-2 which is an improvement over DNABERT is proposed in [78]. It uses byte-pair encoding and is pretrained with masked language modelling loss with a mask ratio of 15%. It has then been used for core promoter detection as well as other downstream tasks.",
+      "In this regard, iEnhancer-ELM [39], based on BERT-like enhancer language models, has been used to tokenize DNA sequences with multi-scale k-mers and extract contextual information through a multi-head attention mechanism. Initially, they have evaluated the performance of different scale k-mers that were later merged for improved enhancer identification. The final classification is performed using a 2-layer perceptron network. The results show that iEnhancer-ELM scores better than methods that do not use BERT."
+    ],
+    "title": "A review on the applications of Transformer-based language models ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11984569/"
+  },
+  {
+    "description": "AbstractSummary. The transformer-based language models, including vanilla transformer, BERT and GPT-3, have achieved revolutionary breakthroughs in the fie",
+    "favicon_url": "https://you.com/favicon?domain=academic.oup.com&size=128",
+    "snippets": [
+      "This model not only achieved state-of-the-art results on experimental datasets [the area under the precision-recall curve (auPRC) of TransEPI increased by an average of 28.1% compared to the second-best baseline] but has also been extended to the interpretation of disease-related non-coding mutations. Last but not least, Google\u2019s Andrew Carroll research group recently developed DeepConsensus, which uses the alignment-based loss to train gap-aware transformer-encoders for sequence correction (Baid et al., 2022).",
+      "Bioinformatics, an interdisciplinary research field, has become one of the most influential areas of life science research in a profound way. It is characterized by the demand to develop and utilize computational tools and methods to analyze huge amounts of biomedical data and translate them into knowledge for developing downstream applications. In recent years, natural language processing (NLP) (Nadkarni et al., 2011; Supplementary Table S1), a branch of artificial intelligence, has been increasingly showing a substantial impact in bioinformatics research fields (Han and Kwoh, 2019), ranging from DNA/RNA sequence analysis to computational biology (Iuchi et al., 2021; Zeng et al., 2018).",
+      "The input for the first transformer encoder layer is the sum of the input embedding and the position encoding. Using the components above, the encoder encodes the input sequence and passes the output intermediate sequence to the decoder, and the decoder decodes the intermediate sequence and outputs the sequence we need.",
+      "The decoder inserts one more attention sub-layer between the original two sub-layers to perform multi-head attention over the output of the encoder stack (Fig. 1C). Decoding the intermediate output of the encoder into a new sequence can be considered as a translation process."
+    ],
+    "title": "Applications of transformer-based language models in bioinformatics: ...",
+    "url": "https://academic.oup.com/bioinformaticsadvances/article/3/1/vbad001/6984737"
+  },
+  {
+    "description": "#3 best model for Natural Language Inference on SciTail (Accuracy metric)",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Cloze Test Document Classification Language Modeling Language Modelling Natural Language Inference Natural Language Understanding Question Answering Semantic Similarity Semantic Textual Similarity \u00b7 GLUE SST MultiNLI SST-2 SNLI QNLI MRPC RACE StoryCloze SciTail \u00b7 Ranked #3 on Natural Language Inference on SciTail Get a GitHub badge \u00b7 Adam \u2022 Attention \u2022 Attention Dropout \u2022 BPE \u2022 Cosine Annealing \u2022 Dense Connections \u2022 Discriminative Fine-Tuning \u2022 Dropout \u2022 GELU \u2022 GPT \u2022 Layer Normalization \u2022 Linear Layer \u2022 Linear Warmup With Cosine Annealing \u2022 Multi-Head Attention \u2022 Residual Connection \u2022 Softmax \u2022 Weight Decay",
+      "We demonstrate that large gains on these tasks can be realized by generative pre-training of a language model on a diverse corpus of unlabeled text, followed by discriminative fine-tuning on each specific task. In contrast to previous approaches, we make use of task-aware input transformations during fine-tuning to achieve effective transfer while requiring minimal changes to the model architecture.",
+      "We demonstrate the effectiveness of our approach on a wide range of benchmarks for natural language understanding. Our general task-agnostic model outperforms discriminatively trained models that use architectures specifically crafted for each task, significantly improving upon the state of the art in 9 out of the 12 tasks studied.",
+      "Include the markdown at the top of your GitHub README.md file to showcase the performance of the model."
+    ],
+    "title": "Papers with Code - Improving Language Understanding by Generative ...",
+    "url": "https://paperswithcode.com/paper/improving-language-understanding-by"
+  },
+  {
+    "description": "Understanding what defines a good representation in large language models (LLMs) is fundamental to both theoretical understanding and practical applications. In this paper, we investigate the quality of intermediate representations in various LLM architectures, including Transformers and State ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Understanding what defines a good representation in large language models (LLMs) is fundamental to both theoretical understanding and practical applications. In this paper, we investigate the quality of intermediate representations in various LLM architectures, including Transformers and State Space Models (SSMs).",
+      "Abstract page for arXiv paper 2412.09563: Does Representation Matter? Exploring Intermediate Layers in Large Language Models",
+      "Overall, our results illuminate the internal mechanics of LLMs and guide strategies for architectural optimization and training. From: Oscar Skean [view email] [v1] Thu, 12 Dec 2024 18:48:51 UTC (2,404 KB) ... View a PDF of the paper titled Does Representation Matter? Exploring Intermediate Layers in Large Language Models, by Oscar Skean and 3 other authors",
+      "Work on one of the world's most important websites and make an impact on open science. ... We gratefully acknowledge support from the Simons Foundation, member institutions, and all contributors. Donate ... View a PDF of the paper titled Does Representation Matter? Exploring Intermediate Layers in Large Language Models, by Oscar Skean and 3 other authors View PDF HTML (experimental)"
+    ],
+    "title": "[2412.09563] Does Representation Matter? Exploring Intermediate ...",
+    "url": "https://arxiv.org/abs/2412.09563"
+  },
+  {
+    "description": "Large language models (LLMs) are artificial intelligence (AI) based computational models designed to understand and generate human like text. With billions of training parameters, LLMs excel in identifying intricate language patterns, enabling remarkable performance across a variety of natural ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Large language models (LLMs) are artificial intelligence (AI) based computational models designed to understand and generate human like text. With billions of training parameters, LLMs excel in identifying intricate language patterns, enabling remarkable performance across a variety of natural language processing (NLP) tasks.",
+      "Scientific Reports - Industrial applications of large language models",
+      "They discuss the ethical concerns of using LLMs for grading, feedback, and question generation. The study addresses that these ethical concerns are obstacles for LLMs in education. Nadia et al.,69 discusses the impact of ChatGPT in education and teaching process. The study summarizes the research conducted after the introduction of ChatGPT.",
+      "The number of advancements and improvements in LLMs are growing day by day. The applications of LLMs in industries are also increasing in an unpredictable manner. Many research works have been conducted in the past to explore the LLMs and their applications in the industries."
+    ],
+    "title": "Industrial applications of large language models | Scientific Reports",
+    "url": "https://www.nature.com/articles/s41598-025-98483-1"
+  },
+  {
+    "description": "Request PDF | Intermediate-Task Transfer Learning with Pretrained Models for Natural Language Understanding: When and Why Does It Work? | While pretrained models such as BERT have shown large gains across natural language understanding tasks, their performance can be improved by...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Preprints and early-stage research may not have been peer reviewed yet. ... To read the file of this research, you can request a copy directly from the authors. While pretrained models such as BERT have shown large gains across natural language understanding tasks, their performance can be improved by further training the model on a data-rich intermediate task, before fine-tuning it on a target task.",
+      "SemEval-2012 Task 7 presented a deceptively simple challenge: given an English sentence as a premise, select the sentence amongst two alternatives that more plausibly has a causal relation to the premise. In this paper, we describe the development of this task and its motivation. We describe the two systems that competed in this task as part of SemEval-2012, and compare their results to those achieved in previously published research.",
+      "Multi-task learning (MTL) in deep neural networks for NLP has recently received increasing interest due to some compelling benefits, including its potential to efficiently regularize models and to reduce the need for labeled data. While it has brought significant improvements in a number of NLP tasks, mixed results have been reported, and little is known about the conditions under which MTL leads to gains in NLP.",
+      "To address this limitation, dozens of specialized meaning representation techniques such as sense or contextualized embeddings have been proposed. However, despite the popularity of research on this topic, very few evaluation benchmarks exist that specifically focus on the dynamic semantics of words."
+    ],
+    "title": "Intermediate-Task Transfer Learning with Pretrained Models for ...",
+    "url": "https://www.researchgate.net/publication/341148761_Intermediate-Task_Transfer_Learning_with_Pretrained_Models_for_Natural_Language_Understanding_When_and_Why_Does_It_Work"
+  },
+  {
+    "description": "Pre-trained language models has advanced the fields of natural language processing. The exceptional capabilities exhibited by PLMs in NLP tasks have b\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Notably, the words' attention networks from 8 to 10 layers in Chinese BERT and from 6 to 9 layers in English BERT exhibit more consistent characteristics. In summary, our contribution is twofold, encompassing both theoretical and practical dimensions. Theoretically, we can acquire about how language elements are organized in PLMs, which provides reference for the language research, and facilitates the intersection research between network science and deep learning. In the practical application, the property results of language attention networks can offer valuable insights for the internal evaluation of language models.",
+      "Therefore, we adopt complex networks to explore how language models organize the language system in our study. We first choose BERT [1] as the research object, due to its representativeness and wide applicability. Notably, BERT employs a multi-layer bidirectional Transformer architecture [34], where each attention head can determine which other tokens in the input sequence each token should focus on during processing [35]. That is to say, when a sequence is input into a BERT model, each attention head within BERT generates an attention matrix among tokens, which represents the attention scores between each token in the input sequence.",
+      "To address this, many research delve into the internals of models to make clear their operational mechanisms, commonly referred to as \"model probing\" [7]. For example, some studies aim to identify the knowledge of different linguistic aspects, including lexical semantics [8,9], syntax [[10], [11], [12]], common sense [[13], [14], [15]] and others [16,17]. Furthermore, other works focus on the evaluation of the models' performance across various downstream tasks, including text classification [18], question answering [19], and reading comprehension [20]. Although these works achieve many insightful findings, they fail to adopt a holistic and systematic view to analyze how these models process language. As a result, they fall short in explaining how PLMs understand and organize languages comprehensively.",
+      "Models To investigate how PLMs organize language systems, we first need to select suitable models as objects to study. As is well-known, BERT [1] is a discriminative language model with wide representativeness, and has been applied to various NLP tasks."
+    ],
+    "title": "What does the language system look like in pre-trained language ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S095070512400618X"
+  },
+  {
+    "description": "Pre-trained language models have achieved striking success in natural language processing (NLP), leading to a paradigm shift from supervised learning to pre-training followed by fine-tuning. The NLP community has witnessed a surge of research interest in improving pre-trained models.",
+    "favicon_url": "https://you.com/favicon?domain=www.engineering.org.cn&size=128",
+    "snippets": [
+      "The NLP community has witnessed a surge of research interest in improving pre-trained models. This article presents a comprehensive review of representative work and recent progress in the NLP field and introduces the taxonomy of pre-trained models. We first give a brief introduction of pre-trained models, followed by characteristic methods and frameworks. We then introduce and analyze the impact and challenges of pre-trained models and their downstream applications."
+    ],
+    "title": "Pre-Trained Language Models and Their Applications",
+    "url": "https://www.engineering.org.cn/engi/EN/10.1016/j.eng.2022.04.024"
+  },
+  {
+    "description": "Large Language Models (LLMs), such as ChatGPT and Bard, have revolutionized natural language understanding and generation. They possess deep language \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "In the meantime, LLMs have also gained traction in the security community, revealing security vulnerabilities and showcasing their potential in security-related tasks. This paper explores the intersection of LLMs with security and privacy. Specifically, we investigate how LLMs positively impact security and privacy, potential risks and threats associated with their use, and inherent vulnerabilities within LLMs.",
+      "For example, Research on model and parameter extraction attacks is limited and often theoretical, hindered by LLM parameter scale and confidentiality. Safe instruction tuning, a recent development, requires more exploration.",
+      "For example, LLMs have proven to enhance code security (code vulnerability detection) and data privacy (data confidentiality protection), outperforming traditional methods. However, they can also be harnessed for various attacks (particularly user-level attacks) due to their human-like reasoning abilities. We have identified areas that require further research efforts."
+    ],
+    "title": "A survey on large language model (LLM) security and privacy: The ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S266729522400014X"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=openai.com&size=128",
+    "snippets": [],
+    "title": "Improving language understanding with unsupervised ...",
+    "url": "https://openai.com/index/language-unsupervised/"
+  }
+]

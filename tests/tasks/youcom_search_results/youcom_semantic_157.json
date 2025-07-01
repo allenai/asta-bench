@@ -1,0 +1,271 @@
+[
+  {
+    "description": "Understand the latest techniques, models, and applications of image super-resolution in deep learning and computer vision. A comprehensive guide for research\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.digitalocean.com&size=128",
+    "snippets": [
+      "Post-upsampling SR tries to solve this by doing feature extraction in the lower resolution space, then doing upsampling only at the end, therefore significantly reducing computation. Also, instead of using simple bicubic interpolation for upsampling, a learned upsampling in deconvolution/sub-pixel convolution is used, thus making the network trainable end-to-end. Let\u2019s discuss a few popular techniques following this structure.",
+      "Pixels from multiple channels in a low-resolution image are rearranged into a single high-resolution image channel. For example, an input image of size 5\u00d75\u00d74 can rearrange the pixels in the final four channels to a single channel, resulting in a 10\u00d710 HR image. ... Let\u2019s now discuss a few more architectures which are based on the techniques from the figure below.",
+      "PSNR: Peak Signal to Noise Ratio is the most common technique used to determine the quality of results. It can be calculated directly from the MSE using the formula below, where L is the maximum pixel value possible (255 for an 8-bit image).",
+      "In the paper Fast, Accurate, and Lightweight Super-Resolution with Cascading Residual Network, the authors have proposed the following advancements on top of a traditional residual network: A cascading mechanism at both the local and global level, to incorporate features from multiple layers and allow the network to receive more information."
+    ],
+    "title": "A Complete Guide to Image Super-Resolution in Deep Learning and ...",
+    "url": "https://www.digitalocean.com/community/tutorials/image-super-resolution"
+  },
+  {
+    "description": "Until quite recently, the resolution ... and by image sensors. In the past few years, many exciting super-resolution approaches have emerged that demonstrate intriguing ways to bypass the classical limit in optics and detectors. More and more research groups are engaged in the study of advanced super-resolution schemes, devices, algorithms, systems, and applications [1-6]. Super-resolution techniques involve new methods in science and engineering of optics [7,8], measurements [9,10], chemistry ...",
+    "favicon_url": "https://you.com/favicon?domain=www.science.gov&size=128",
+    "snippets": [
+      "Until quite recently, the resolution of optical imaging instruments, including telescopes, cameras and microscopes, was considered to be limited by the diffraction of light and by image sensors. In the past few years, many exciting super-resolution approaches have emerged that demonstrate intriguing ways to bypass the classical limit in optics and detectors. More and more research groups are engaged in the study of advanced super-resolution schemes, devices, algorithms, systems, and applications [1-6]. Super-resolution techniques involve new methods in science and engineering of optics [7,8], measurements [9,10], chemistry [11,12] and information [13,14]. Promising applications, particularly in biomedical research and semiconductor industry, have been successfully demonstrated.",
+      "Remote sensing measures the electromagnetic radiations from the earth's surface and match the spectral similarity between the observed signature and the known standard signatures of the various targets. However, problem lies when image classification techniques assume pixels to be pure.",
+      "In image regions with severe registration errors, annoying artifacts usually appear in the produced super-resolution video. This paper proposes a robust video super-resolution technique that adapts itself to the spatially-varying registration efficiency. The reliability of each reference pixel is measured by the corresponding registration error and incorporated into the optimization objective function of SR reconstruction.",
+      "Capturing biological dynamics with high spatiotemporal resolution demands the advancement in imaging technologies. Super-resolution fluorescence microscopy offers spatial resolution surpassing the diffraction limit to resolve near-molecular-level details. While various strategies have been reported to improve the temporal resolution of super-resolution imaging, all super-resolution techniques are still fundamentally limited by the trade-off associated with the longer image acquisition time that is needed to achieve higher spatial information."
+    ],
+    "title": "pixel super-resolution algorithm: Topics by Science.gov",
+    "url": "https://www.science.gov/topicpages/p/pixel+super-resolution+algorithm"
+  },
+  {
+    "description": "Super-resolution imaging has, for more than seventy years, gradually evolved to produce advanced methods for enhancing the resolution of images beyond the diffraction limits. Notwithstanding its foreseeable practical capabilities, we noted that this technology has received undeserved attention.",
+    "favicon_url": "https://you.com/favicon?domain=asp-eurasipjournals.springeropen.com&size=128",
+    "snippets": [
+      "In 1952, the concept of super-resolution was conceived for the first time by Giuliano Toraldo di Francia [15]. The author\u2019s original idea was to improve the angular resolution of an optical system beyond its diffraction limit,Footnote 1 governed by uncertainty principle stating that [16] \u201ca wave cannot be localized much tighter than half of its vacuum wavelength.\u201d All developments in (optical) super-resolution imaging centers on addressing this limitation, and advanced techniques attempt to lower the pre-defined maximum threshold of the wavelength.",
+      "Generally, advancing the super-resolution imaging field globally requires coordinated plans and support from funding organizations. The target should be to implement super-resolution imaging algorithms into electronics devices, hence reducing their costs for accessibility by the developing world. In this respect, hardware and software developers may need to focus on four factors when designing super-resolution techniques: hardware resolution requirements, computational load (speed), algorithmic complexity, and overall product price.",
+      "The author attempted to recover some high frequency components from a single degraded image through an iterative phase retrieval technique. However, involving a single image in the reconstruction process fails to incorporate additional information into the final solution. In 1984, Tsai [24] proposed the first MSR method based on the frequency domain to improve the resolution of LandSat Thematic Mapper images [25]. This method allows quicker implementation and offers lower computational load. Since the work by Tsai, several advanced MSR methods have been proposed and applied in various fields [26,27,28,29,30,31].",
+      "Firstly, development of methods, algorithms, and techniques for resolution enhancement. Secondly, establishment of frameworks to address the super-resolution problem. Thirdly, practical applications and use cases of the super-resolution technology. Fourthly, development of quality assessment metrics for images generated through the super-resolution process. Researchers and practitioners should be guided by these directions to advance the super-resolution technology."
+    ],
+    "title": "Seven decades of image super-resolution: achievements, challenges, ...",
+    "url": "https://asp-eurasipjournals.springeropen.com/articles/10.1186/s13634-024-01170-y"
+  },
+  {
+    "description": "Do you have a digital photo that is important to you, but is in low-resolution because the image was taken when camera technologies were not as advanced as they are today? Are there ways to digitally\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Do you have a digital photo that is important to you, but is in low-resolution because the image was taken when camera technologies were\u2026",
+      "Original images (1024x1024 pixels) were downsized to 64x64 using OpenCV\u2019s JPEG compression and resize methods. The 64x64 downsized image was then upsampled using OpenCV\u2019s linear, bicubic and nearest neighbour interpolation methods. With the recent advancements of AI, deep learning-based super resolution models are actively researched on.",
+      "Do you have a digital photo that is important to you, but is in low-resolution because the image was taken when camera technologies were not as advanced as they are today? Are there ways to digitally enhance such an image to improve its image quality? The answer is yes. The process of enhancing a low-resolution to high-resolution image is known as Image Super Resolution. Image Super Resolution techniques have evolved over the years.",
+      "With recent advancements in AI techniques and their applications in image enhancement, the quality of generated high-resolution images has improved significantly."
+    ],
+    "title": "Image Super Resolution: A Comparison between Interpolation & Deep ...",
+    "url": "https://medium.com/htx-s-s-coe/image-super-resolution-a-comparison-between-interpolation-deep-learning-based-techniques-to-25e7531ab207"
+  },
+  {
+    "description": "Super-resolution imaging (SR) is a class of techniques that improve the resolution of an imaging system. In optical SR the diffraction limit of systems is transcended, while in geometrical SR the resolution of digital imaging sensors is enhanced. In some radar and sonar imaging applications ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Provided that there is enough light, this can be achieved with arbitrary precision, very much better than pixel width of the detecting apparatus and the resolution limit for the decision of whether the source is single or double. This technique, which requires the presupposition that all the light comes from a single source, is at the basis of what has become known as super-resolution microscopy, e.g.",
+      "In particular work has been demonstrated showing the transformation of a 20x microscope image of pollen grains into a 1500x scanning electron microscope image using it. While this technique can increase the information content of an image, there is no guarantee that the upscaled features exist in the original image and deep convolutional upscalers should not be used in analytical applications with ambiguous inputs.",
+      "Given a sufficient number of observation images, and if the set of observations vary in their phase (i.e. if the images of the scene are shifted by a sub-pixel amount), then the phase information can be used to separate the aliased high-frequency content from the true low-frequency content, and the full-resolution image can be accurately reconstructed.",
+      "Multiple-frame SR uses the sub-pixel shifts between multiple low resolution images of the same scene. It creates an improved resolution image fusing information from all low resolution images, and the created higher resolution images are better descriptions of the scene.",
+      "Information: When the term super-resolution is used in techniques of inferring object details from statistical treatment of the image within standard resolution limits, for example, averaging multiple exposures, it involves an exchange of one kind of information (extracting signal from noise) for another (the assumption that the target has remained invariant)."
+    ],
+    "title": "Super-resolution imaging - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Super-resolution_imaging"
+  },
+  {
+    "description": "In this guide to image super-resolution, we discuss different evaluation techniques, learning strategies, architectures, as well as supervision methods.",
+    "favicon_url": "https://you.com/favicon?domain=www.v7labs.com&size=128",
+    "snippets": [
+      "In this guide to image super-resolution, we discuss different evaluation techniques, learning strategies, architectures, as well as supervision methods. ... Work smarter with specialist AI co-pilots built for document reviews, data room analysis, online research, and 100+ other tasks. ... Work smarter with specialist AI co-pilots built for document reviews, data room analysis, online research, and 100+ other tasks. ... The resolution of an image is the number of pixels displayed per square inch (PPI) of a digital image.",
+      "This is because the pixel density in the zoomed region is just linear interpolation which is not enough to portray a clear image. Here\u2019s an example of SR aiming to obtain the HR image when given an LR image: Low Resolution image (LR) and High Resolution image (HR) counterparts \u00b7 Deep Learning techniques have been key to improving Super-Resolution technology due to their automatic feature extraction capabilities.",
+      "Peak Signal-to-Noise Ratio or PSNR is an objective metric that measures the quality of image reconstruction of a lossy transformation. Mathematically it is defined by the following: Here, \u201cMSE\u201d represents the pixel-wise Mean Squared Error between the images, and \u201cM\u201d is the maximum possible value of a pixel in an image (for 8-bit RGB images, we are used to M=255).",
+      "For example, even though we can detect far away stars and planets, we can only capture blurry images of them even using large telescopes like the Hubble Space Telescope. Due to the advancements in SR techniques, we have been able to get clearer pictures of the celestial bodies."
+    ],
+    "title": "Deep Learning for Image Super-Resolution [incl. Architectures]",
+    "url": "https://www.v7labs.com/blog/image-super-resolution-guide"
+  },
+  {
+    "description": "Exploring the Frontiers of Imaging Technology: How Super-Resolution Techniques Transform Low-Resolution Infrared Images into High-Definition Insights",
+    "favicon_url": "https://you.com/favicon?domain=www.nanomotion.com&size=128",
+    "snippets": [
+      "Super Resolution \u201cResolution\u201d is defined by the capability of an image sensor to observe or measure the smallest object clearly, based on distinct boundaries. This differs from a pixel, which is the unit of the digital image.",
+      "While the resolution is dependent on the pixel size, based on a given lens, the smaller the pixel the higher the resolution.\u201cSuper-Resolution\u201d refers to a variety of methods used to increase the resolution, within a given pixel size. Particularly with lower resolution infrared imaging, super-resolution works when several low resolution images contain slightly different perspectives of the same object.",
+      "Commonly, the process of mechanically shifting half a pixel in the X and Y axes can increase the functional resolution by a factor of 4. For example, on a standard 640 x 480 sensor, shifting half a pixel in each axis will generate a resolution of 1280 x 960, taking a .3m pixel image to a 1.2m pixel image.",
+      "At the recent Commercial UAV Expo, Nanomotion showcased its groundbreaking Velox payload and advances commercial sensing payload, a cutting-edge commercial sensing solution designed to"
+    ],
+    "title": "Super Resolution | NANOMOTION",
+    "url": "https://www.nanomotion.com/super-resolution/"
+  },
+  {
+    "description": "Workflow Automation With Generative AI \u00b7 LLM Powered Chatbots",
+    "favicon_url": "https://you.com/favicon?domain=dataforest.ai&size=128",
+    "snippets": [
+      "These metrics align more closely with human judgment than pixel-wise metrics. Super-resolution has broad applications, from enhancing consumer photos to supporting high-stakes domains like medical imaging, remote sensing, and video restoration. With advancements in deep learning, super-resolution continues to evolve, providing increasingly realistic high-resolution images while retaining computational efficiency.",
+      "PSNR is calculated as: `PSNR = 10 * log10((MAX_I^2) / MSE)` where `MAX_I` is the maximum possible pixel value of the image (e.g., 255 for an 8-bit image), and `MSE` represents the Mean Squared Error between the images. Structural Similarity Index (SSIM): SSIM measures perceptual similarity, focusing on structural differences that align more closely with human vision.",
+      "The technique requires solving an inverse problem: given the degraded, lower-resolution image, it reconstructs the high-resolution image by estimating the missing data. Low-Resolution Model: In a low-resolution image, details are limited due to fewer pixels representing the scene.",
+      "Transformer Models: Some recent approaches incorporate transformer models, which utilize self-attention mechanisms to capture global dependencies in the image. This can be particularly useful for enhancing textures and patterns in super-resolution tasks. To assess the performance of super-resolution models, several quantitative metrics are commonly used: Peak Signal-to-Noise Ratio (PSNR): This metric compares the pixel intensity differences between the super-resolved and the original high-resolution images, providing an indication of reconstruction accuracy."
+    ],
+    "title": "Super-resolution",
+    "url": "https://dataforest.ai/glossary/super-resolution"
+  },
+  {
+    "description": "In recent times, the need for effective super-resolution (SR) techniques has surged, especially for large-scale images ranging 2K to 8K resolutions. For DNN-based SISR, decomposing images into overlapping patches is typically necessary due to computational constraints.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2407.21448: Accelerating Image Super-Resolution Networks with Pixel-Level Classification",
+      "View a PDF of the paper titled Accelerating Image Super-Resolution Networks with Pixel-Level Classification, by Jinho Jeong and 3 other authors View PDF HTML (experimental) Abstract:In recent times, the need for effective super-resolution (SR) techniques has surged, especially for large-scale images ranging 2K to 8K resolutions.",
+      "View a PDF of the paper titled Accelerating Image Super-Resolution Networks with Pixel-Level Classification, by Jinho Jeong and 3 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+      "In such patch-decomposing scheme, one can allocate computational resources differently based on each patch's difficulty to further improve efficiency while maintaining SR performance. However, this approach has a limitation: computational resources is uniformly allocated within a patch, leading to lower efficiency when the patch contain pixels with varying levels of restoration difficulty."
+    ],
+    "title": "[2407.21448] Accelerating Image Super-Resolution Networks with ...",
+    "url": "https://arxiv.org/abs/2407.21448"
+  },
+  {
+    "description": "A new way to obtain high-resolution images over wide fields of view that involves scanning the wavelength has been demonstrated by a US team. The resolution of many imaging systems, particularly wide-field microscopes, is limited by undersampling and pixelation.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Undersampling and pixelation affect a number of imaging systems, limiting the resolution of the acquired images, which becomes particularly significant for wide-field microscopy applications. Various super-resolution techniques have been implemented to mitigate this resolution loss by utilizing sub-pixel displacements in the imaging system, achieved, for example, by shifting the illumination source, the sensor array and/or the sample, followed by digital synthesis of a smaller effective pixel by merging these sub-pixel-shifted low-resolution images.",
+      "Light: Science & Applications - Pixel super-resolution using wavelength scanning",
+      "Pixel super-resolution was originally developed in lens-based, point-to-point projection imaging systems2, 3, 4, 5, 6 and was later applied to lens-free and holographic imaging techniques7, 8, 9, 10, 11, 12 to significantly enhance the space-bandwidth product of the reconstructed images using both CCD and CMOS imager chips. In either implementation, lens-based or lens-free, this super-resolution framework requires low-resolution undersampled measurements to have sub-pixel shifts with respect to each other so that new and independent information can be exploited at each raw measurement (even though pixelated) to digitally synthesize a much smaller effective pixel size for the reconstructed image.",
+      "Compared with sub-pixel displacement or lateral shift-based super-resolution techniques, wavelength scanning introduces a uniform resolution improvement across all the directions on the sample plane and requires significantly fewer raw measurements to be made. Making fewer measurements without sacrificing performance could greatly benefit high-speed wide-field imaging, field-portable microscopy and telemedicine applications, which are all sensitive to data transmission and storage."
+    ],
+    "title": "Pixel super-resolution using wavelength scanning | Light: Science ...",
+    "url": "https://www.nature.com/articles/lsa201660"
+  },
+  {
+    "description": "Image super-resolution (SR) is the important process of recovering high-resolution (HR) images from low-resolution (LR) images.",
+    "favicon_url": "https://you.com/favicon?domain=www.analyticsvidhya.com&size=128",
+    "snippets": [
+      "In the super-resolution field, loss functions are used to measure reconstruction error and guide the model optimization. In early times, researchers usually employ the pixelwise L2 loss(mean squared error), but later discover that it cannot measure the reconstruction quality very accurately.",
+      "Therefore, a variety of loss functions (e.g., content loss, adversarial loss) are adopted for better measuring the reconstruction error and producing more realistic and higher-quality results. Pixelwise L1 loss \u2013 Absolute difference between pixels of ground truth HR image and the generated one.",
+      "PSNR \u2013 Peak Signal-to-Noise Ratio (PSNR) is a commonly used objective metric to measure the reconstruction quality of a lossy transformation. PSNR is inversely proportional to the logarithm of the Mean Squared Error (MSE) between the ground truth image and the generated image. In MSE, I is a noise-free m\u00d7n monochrome image (ground truth) and K is the generated image (noisy approximation). In PSNR, MAXI represents the maximum possible pixel value of the image.",
+      "It is an important class of image processing techniques in computer vision and image processing and enjoys a wide range of real-world applications, such as medical imaging, satellite imaging, surveillance and security, astronomical imaging, amongst others. With the advancement in deep learning techniques in recent years, deep learning-based SR models have been actively explored and often achieve state-of-the-art performance on various benchmarks of SR."
+    ],
+    "title": "Image Super Resolution | Deep Learning for Image Super Resolution",
+    "url": "https://www.analyticsvidhya.com/blog/2021/05/deep-learning-for-image-super-resolution/"
+  },
+  {
+    "description": "In subject area: Computer Science \u00b7 Super-resolution, in the context of Computer Science, refers to the process of enlarging digital photographs, increasing printer resolution, and converting video resolution from PAL or NTSC to HDTV resolution. It is a common process performed by devices ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "In general, we also consider that LR images are corrupted with an additive Gaussian noise. Considering Eq. (1), it is possible to propose an analytical model in order to express the steps previously described: ... 2 defines the blur of the optical system also called Point Spread Function (PSF). The matrix Xk-sized ... 2 is the decimation resulting in Ck. It corresponds to the reduction of the number of observed pixels in the measured image.",
+      "This paper aims to provide the detailed survey on recent advancements in image super-resolution in terms of traditional, deep learning and the latest transformer-based algorithms. The in-depth taxonomy of broadly classified super-resolution techniques within these categories has been broadly discussed.",
+      "Exceptional success of recent super resolution techniques has garnered in rapid growth for improving the quality and visual perception of the images in the field of computer visual and image processing. Beside impressive advancement in network architectures and learning mechanism, a diverse set of algorithms has been proposed recently.",
+      "Learning methods employ ML techniques estimate the HR details locally. These may be pixel-based, involving statistical learning [34,35], or patch-based involving dictionary based LR to HR correspondence [36] of squared pixel blocks (called patches). The latter ones, also called example-based methods [37,38], exploit internal similarities within the same image and may adopt various approaches, e.g."
+    ],
+    "title": "super resolution - an overview | ScienceDirect Topics",
+    "url": "https://www.sciencedirect.com/topics/computer-science/super-resolution"
+  },
+  {
+    "description": "Learn how super resolution enhances low-resolution images or videos for computer vision applications, and how it differs from interpolation.",
+    "favicon_url": "https://you.com/favicon?domain=www.linkedin.com&size=128",
+    "snippets": [
+      "While interpolation involves estimating pixel values between existing data points, essentially stretching the image, super resolution aims to generate new high-frequency details that are not present in the original low-resolution image. Super resolution methods leverage advanced algorithms and deep learning techniques to infer and reconstruct high-frequency information, resulting in a more authentic representation of fine details.",
+      "Furthermore, the technology contributes to advancements in fields like medical research, where enhanced imaging can lead to more accurate diagnoses and treatment planning. \u2026see more ... Interpolation is a simpler method of resizing images or videos, which involves filling in the missing pixels or frames by using the existing ones.",
+      "Super resolution works by using advanced algorithms to reconstruct high-resolution images or videos from low-resolution inputs, such as noisy, blurry, or compressed data. It can either use a single image or video frame (single-image super resolution) or multiple frames from different angles or times (multi-frame super resolution) as the input. The algorithms can be based on various techniques, such as deep learning, sparse representation, or self-similarity, to learn the features and patterns of the high-resolution output.",
+      "If you are interested in using super resolution in your computer vision projects, you can either use existing libraries or frameworks, such as OpenCV, TensorFlow, or PyTorch, which provide various super resolution algorithms and models, or create your own custom solutions by using online tutorials or courses, such as Coursera or Udemy, which teach you the basics and advanced concepts of super resolution. You can also find many examples and datasets of super resolution on platforms such as GitHub or Kaggle, which can help you practice and improve your skills. ... Integrating super resolution into your projects involves understanding the specific requirements of your application and choosing appropriate techniques or tools. : Define Your Project Requirements: Identify the type of images or videos you are working with."
+    ],
+    "title": "What are the applications and benefits of super resolution for ...",
+    "url": "https://www.linkedin.com/advice/0/what-applications-benefits-super-resolution-computer"
+  },
+  {
+    "description": "Mass spectrometry imaging (MSI) and histology are complementary analytical tools. Integration of the two imaging modalities can enhance the spatial resolution of the MSI beyond its experimental limits. Patch-based super resolution (PBSR) is a method where high spatial resolution features from ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Mass spectrometry imaging (MSI) and histology are complementary analytical tools. Integration of the two imaging modalities can enhance the spatial resolution of the MSI beyond its experimental limits. Patch-based super resolution (PBSR) is a method where high spatial resolution features from one image modality guide the reconstruction of a low resolution image from a second modality.",
+      "Scientific Reports - A patch-based super resolution algorithm for improving image resolution in clinical mass spectrometry",
+      "Therefore, we restricted ourselves to include the IF results for the comparisons that use only sub area of the images. In these profiles an intensity value per pixel is plotted across the image showing how well changes in intensity are captured. This measure provides information on the sharpness of the features within the images.",
+      "Even if one chooses to obtain the MSI data at the same resolution from two subsequent tissue sections, direct comparison using a numerical pixel by pixel measure is not feasible. That is because there are physiological differences between the subsequent tissue sections. These physiological differences would be classified as prediction errors, making it impossible to differentiate genuine prediction error from neighboring section-related differences. We were interested to preserve the cellular anatomical features and their biochemical composition."
+    ],
+    "title": "A patch-based super resolution algorithm for improving image ...",
+    "url": "https://www.nature.com/articles/s41598-019-38914-y"
+  },
+  {
+    "description": "Learn how to upscale images with super-resolution. Discover traditional algorithms and cutting-edge deep learning techniques.",
+    "favicon_url": "https://you.com/favicon?domain=pyimagesearch.com&size=128",
+    "snippets": [
+      "This tool uses the technique that we\u2019re discussing today. Image Super-Resolution is defined as the task of increasing the resolution of a source image by a constant scale or to a fixed new size. This process normally uses advanced Computer Vision or Machine Learning algorithms to find the best values, which can be used to \u201cfill in\u201d gaps between individual pixels once they are spaced out apart from each other.",
+      "These models were able to capture complex patterns and highly non-linear relationships between the pixels and give a higher-resolution image that was made on the addition and extrapolation of information already available within the image. This is a stark contrast compared to interpolation, wherein only replication took place with no new net information added. Today, Deep Learning techniques have advanced since their first application to this task.",
+      "Finally! We can now see how each technique performs compared to the original image. We can outright visually notice that the pixelation present in the original image has now been reduced by a large degree, with a higher overall quality.",
+      "This technique estimates the value of a certain pixel position based on the values of four points that make up a rectangular grid."
+    ],
+    "title": "Unlocking Image Clarity: A Comprehensive Guide to Super-Resolution ...",
+    "url": "https://pyimagesearch.com/2024/04/29/unlocking-image-clarity-a-comprehensive-guide-to-super-resolution-techniques/"
+  },
+  {
+    "description": "In an integrated system, the sample is measured by both microscopes simultaneously. Recently, owing to advancements in artificial intelligence computing, deep learning neural networks (GANs) have been used for super-resolution enhancing of photographic images extracted from optical microscopes, enhancing resolution from 40x to 100x. Resolution increases from 20x with an optical microscope to 1500x, comparable to a scanning electron microscope, via a neural lens. These techniques ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "In an integrated system, the sample is measured by both microscopes simultaneously. Recently, owing to advancements in artificial intelligence computing, deep learning neural networks (GANs) have been used for super-resolution enhancing of photographic images extracted from optical microscopes, enhancing resolution from 40x to 100x. Resolution increases from 20x with an optical microscope to 1500x, comparable to a scanning electron microscope, via a neural lens. These techniques have applications in super-resolving images from positron-emission tomography and fluorescence microscopy.",
+      "RIM is particularly advantageous for imaging thick, living samples due to its minimal phototoxicity and robust z-sectioning capabilities. Additionally, its resistance to optical aberrations makes it a highly effective tool for biological research. It is possible to circumvent the need for PSF fitting inherent in single molecule localization microscopy (SMLM) by directly computing the temporal autocorrelation of pixels. This technique is called super-resolution optical fluctuation imaging (SOFI) and has been shown to be more precise than SMLM when the density of concurrently active fluorophores is very high.",
+      "The advantage of this method, compared to other stochastic methods, is that in addition to obtaining the super-resolved image of the fixed target, it can measure the dynamic binding kinetics of the diffusing probe molecules, in solution, to the target. Combining 3D super-resolution technique (e.g.",
+      "Since the classical analysis methods and software suites used in the natural sciences are too slow to computationally solve these problems, often taking hours of computation for processing data measured in minutes, specialised software programs have been developed. Many of these localization software packages are open-source; they are listed at SMLM Software Benchmark. Once molecule positions have been determined, the locations need to be displayed and several algorithms for display have been developed. Random Illumination Microscopy (RIM) is a super-resolution imaging technique that employs random or pseudo-random wide-field illuminations generated by a laser.",
+      "Among techniques that rely on the latter are those that improve the resolution only modestly (up to about a factor of two) beyond the diffraction-limit, such as confocal microscopy with closed pinhole or aided by computational methods such as deconvolution or detector-based pixel reassignment (e.g."
+    ],
+    "title": "Super-resolution microscopy - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Super-resolution_microscopy"
+  },
+  {
+    "description": "For years, the trend in displays has driven relentlessly towards higher-resolution screens that feature an increasing number of smaller pixels, more densely packed together. Digital imagery went mainstream in the 1990s, and LCD screens with LED backlights took off in the early 2000s; sales ...",
+    "favicon_url": "https://you.com/favicon?domain=www.radiantvisionsystems.com&size=128",
+    "snippets": [
+      "We help world leaders in lighting, display, and device manufacturing ensure product quality with high-resolution automated visual inspection and measurement solutions that improve efficiencies, reduce costs, enhance customer satisfaction, and support... ... For years, the trend in displays has driven relentlessly towards higher-resolution screens that feature an increasing number of smaller pixels, more densely packed together. Digital imagery went mainstream in the 1990s, and LCD screens with LED backlights took off in the early 2000s; sales of LCD screens overtook older cathode ray tube (CRT) televisions in 2007.",
+      "In addition, Radiant has developed software algorithms and other techniques to maximize the performance of our cameras for distinguishing and measuring display pixels and subpixels with repeatable accuracy.  \u00b7 Radiant\u2019s product development team is continuously challenged to engineer our systems to strike just the right balance of imaging detail and imaging speed to ensure accuracy and efficiency for display inspection. This means producing higher-resolution imaging systems and more advanced image processing methods to keep up with the increasing resolution of emerging displays.",
+      "Of course, there are many other factors besides the sensor that contribute to the superior quality of Radiant\u2019s imaging systems including: Design and engineering of the electronics to control temperature and limit thermal noise. Lens selection and optical design to identify and eliminate issues such as stray light.  \u00b7 Lens calibration to eliminate distortion or \u201cfisheye\u201d effects from wide-angle optics. Integration of photopic and tristimulus color filters with advanced calibrations for accuracy to light-measurement standards (CIE color-matching functions).",
+      "When it comes to display quality, manufacturers have long relied on automated visual inspection solutions (AVI, also called automated optical inspection, AOI) such as cameras and imaging systems. Using these tools, each display panel can be quickly inspected to spot defects (such as dead pixels) and uniformity issues (or mura, from the Japanese word for \u201cblemish\u201d). Among display metrology providers like Radiant, there has been a parallel trend towards higher resolution specifications for inspection systems. Put simply, it takes a high-resolution system to measure a high-resolution display."
+    ],
+    "title": "Why Megapixels Matter: Measuring High-Resolution, Pixel-Dense ...",
+    "url": "https://www.radiantvisionsystems.com/blog/why-megapixels-matter-measuring-high-resolution-pixel-dense-displays"
+  },
+  {
+    "description": "We present a fast and simple algorithm for super-resolution with single images. It is based on penalized least squares regression and exploits the tensor structure of two-dimensional convolution. A ridge penalty and a difference penalty are combined; the former removes singularities, while ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "We present a fast and simple algorithm for super-resolution with single images. It is based on penalized least squares regression and exploits the tensor structure of two-dimensional convolution. A ridge penalty and a difference penalty are combined; the former removes singularities, while the latter eliminates ringing.",
+      "Scientific Reports - Fast and simple super-resolution with single images",
+      "These sub-diffraction-limit imaging techniques rely on digital image acquisition and deconvolution algorithms capable of localizing individual fluorescent probes in thousands of image frames and projecting the deconvolved images into a single plane. However, not all situations are amenable to super-resolution fluorescence imaging, because of computational limitations, or because one does not have access to advanced optical instruments and experienced personnel.",
+      "Patil, V. & Bormane, D. Interpolation for super resolution imaging. In Sobh, T. (ed.) Innovations and Advanced Techniques in Computer and Information Sciences and Engineering (Springer, Dordrecht, 2007)."
+    ],
+    "title": "Fast and simple super-resolution with single images | Scientific ...",
+    "url": "https://www.nature.com/articles/s41598-022-14874-8"
+  },
+  {
+    "description": "Answer (1 of 4): As with the multi-channel blind conversion, we assumed a similar buying pattern. For SR, however, during the calculation the picture is impaired by three factors: blurring, overcoming decimation, and noisy corruption. Various external factors such as atmospheric turbulence, came...",
+    "favicon_url": "https://you.com/favicon?domain=www.quora.com&size=128",
+    "snippets": [],
+    "title": "What is super resolution in image processing and computer vision?",
+    "url": "https://www.quora.com/What-is-super-resolution-in-image-processing-and-computer-vision"
+  },
+  {
+    "description": "Pixelation is common in quantum imaging systems and limit the image spatial resolution. Here, the authors introduce a pixel super-resolution approach based on measuring the full spatially-resolved joint probability distribution of spatially-entangled photons, and improve pixel resolution by ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Pixelation is common in quantum imaging systems and limit the image spatial resolution. Here, the authors introduce a pixel super-resolution approach based on measuring the full spatially-resolved joint probability distribution of spatially-entangled photons, and improve pixel resolution by a factor two.",
+      "Pixelation occurs in many imaging systems and limits the spatial resolution of the acquired images. This effect is notably present in quantum imaging experiments with correlated photons in which the number of pixels used to detect coincidences is often limited by the sensor technology or the acquisition speed.",
+      "Nature Communications - Pixelation is common in quantum imaging systems and limit the image spatial resolution. Here, the authors introduce a pixel super-resolution approach based on measuring the...",
+      "This effect is notably present in quantum imaging experiments with correlated photons in which the number of pixels used to detect coincidences is often limited by the sensor technology or the acquisition speed. Here, we introduce a pixel super-resolution technique based on measuring the full spatially-resolved joint probability distribution (JPD) of spatially-entangled photons."
+    ],
+    "title": "Pixel super-resolution with spatially entangled photons | Nature ...",
+    "url": "https://www.nature.com/articles/s41467-022-31052-6"
+  },
+  {
+    "description": "Image resolution is the level of detail of an image. The term applies to digital images, film images, and other types of images. \"Higher resolution\" means more image detail. Image resolution can be measured in various ways. Resolution quantifies how close lines can be to each other and still ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "The image has to be interpolated or demosaiced to produce all three colors for each output pixel. The terms blurriness and sharpness are used for digital images but other descriptors are used to reference the hardware capturing and displaying the images. Spatial resolution in radiology is the ability of the imaging modality to differentiate two objects. Low spatial resolution techniques will be unable to differentiate between two objects that are relatively close together. The measure of how closely lines can be resolved in an image is called spatial resolution, and it depends on properties of the system creating the image, not just the pixel resolution in pixels per inch (ppi).",
+      "The ground sample distance (GSD) of an image, the pixel spacing on the Earth's surface, is typically considerably smaller than the resolvable spot size. In astronomy, one often measures spatial resolution in data points per arcsecond subtended at the point of observation, because the physical distance between objects in the image depends on their distance away and this varies widely with the object of interest.",
+      "The term resolution is often considered equivalent to pixel count in digital imaging, though international standards in the digital camera field specify it should instead be called \"Number of Total Pixels\" in relation to image sensors, and as \"Number of Recorded Pixels\" for what is fully captured.",
+      "According to the same standards, the \"Number of Effective Pixels\" that an image sensor or digital camera has is the count of pixel sensors that contribute to the final image (including pixels not in said image but nevertheless support the image filtering process), as opposed to the number of total pixels, which includes unused or light-shielded pixels around the edges.",
+      "But when the pixel counts are referred to as \"resolution\", the convention is to describe the pixel resolution with the set of two positive integer numbers, where the first number is the number of pixel columns (width) and the second is the number of pixel rows (height), for example as 7680 \u00d7 6876."
+    ],
+    "title": "Image resolution - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Image_resolution"
+  },
+  {
+    "description": "In the fields of image processing, such as imaging and display as well as compression and transmission, we are developing a wide range of image quality enhancing technologies, including super-resolution, noise reduction, gradation and color conversion, and motion blur removal.",
+    "favicon_url": "https://you.com/favicon?domain=www.sony.com&size=128",
+    "snippets": [
+      "The real texture recreating technology was born out of the idea of restoring image aspects aside from resolution such as contrast, brightness, and color, just like the learning-based super-resolution technology creating 4K images out of 2K images through resolution and pixel number improvement.",
+      "One way to reduce calculation time is to reduce the size of the rendered image, and another is to reduce the number of light rays being traced. On the left side of the chart, an approach where the number of pixels is reduced (to 1K/2K level) and images rendered at the low resolution are enhanced using super-resolution technology is shown.",
+      "Sony is still among the world\u2019s leaders in image enhancing due to multiple patented core and associated technologies as well as a continuous evolution of the underlying techniques, which include image analysis and the mechanisms used to set up and prepare the training data in addition to making image quality adjustments.",
+      "In the fields of image processing, such as imaging and display as well as compression and transmission, we are pursuing the highest level of performance while developing cutting edge image quality enhancing technology that utilizes machine learning (AI)."
+    ],
+    "title": "Sony Group Portal | R&D Activities | Super-Resolution Technology",
+    "url": "https://www.sony.com/en/SonyInfo/research/technologies/super-resolution_technology/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Deep Learning for Image Super-resolution: A Survey",
+    "url": "https://arxiv.org/pdf/1902.06068"
+  }
+]

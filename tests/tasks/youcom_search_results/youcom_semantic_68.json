@@ -1,0 +1,292 @@
+[
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "It helps in transforming unstructured text into structured information which helps in tasks like text summarization, knowledge graph creation and question answering. NER helps in detecting specific information and sort it into predefined categories. It plays an important role in enhancing other NLP tasks like part-of-speech tagging and parsing. Examples of Common Entity Types: ... It helps in handling ambiguity by analyzing surrounding words, structure of sentence and the overall context to make the correct classification.",
+      "Word Embeddings: Captures the meaning of words in context. Automatic Learning: Deep models learn complex patterns without manual feature engineering. Higher Accuracy: Performs well on large varied datasets. Firts we need to install necessary libraries.",
+      "Adapting to New Contexts: A well-trained model can generalize to different languages, styles and unseen types of entities by learning from context.",
+      "Multi-Class Classification: Trains model on labeled examples where each entity is categorized. In addition to labelling model also requires a deep understanding of context which makes it a challenging task for a simple machine learning algorithm."
+    ],
+    "title": "Named Entity Recognition - GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/named-entity-recognition/"
+  },
+  {
+    "description": "Learn how Named Entity Recognition (NER) identifies and classifies entities. Explore labels and tagging schemes & annotation tools. | Encord",
+    "favicon_url": "https://you.com/favicon?domain=encord.com&size=128",
+    "snippets": [
+      "What is Named Entity Recognition? Named Entity Recognition (NER) is a fundamental task in Natural Language Processing (NLP) that involves locati",
+      "Refining the output to handle nested entities, resolve ambiguities, and ensure consistency. It can determine the correct entity type when a token could belong to multiple categories. For example \u00b7 \"Jordan\" could refer to a person's name or a country; context is used to decide the correct classification. Or, identified nested entities (entities within entities), such as a person's name within an organization. For example ... Producing the final annotated text with entities highlighted or in a structured format like JSON or XML.",
+      "Contextual Ambiguity: Entities that require surrounding text to determine their exact type. ... Jordan (First occurrence): Refers to a location (country). Jordan Shoes: Refers to an organization (brand name). Context-sensitive words require language models capable of understanding relationships in the text.",
+      "It helps in managing, annotating, and iterating on training data for machine learning tasks. Here is how Encord helps in the NER annotation: Encord offers a user-friendly text annotation interface, making it easy for annotators to highlight and label text spans as entities."
+    ],
+    "title": "What Is Named Entity Recognition? Selecting the Best Tool to ...",
+    "url": "https://encord.com/blog/named-entity-recognition/"
+  },
+  {
+    "description": "Ever wondered how a search engine pulls out exactly the right person, place, or company from a sea of words? Or how chatbots seem to understand which entities in your message are crucial? This is\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Ever wondered how a search engine pulls out exactly the right person, place, or company from a sea of words? Or how chatbots seem to\u2026",
+      "Words can have multiple meanings (e.g., \u201cApple\u201d as a fruit or a company), and contextual analysis helps the system decide which interpretation is correct based on the surrounding words. This final step refines the results by resolving ambiguities, merging multi-word entities, and validating the detected entities with external knowledge sources or databases to ensure accuracy.",
+      "This challenge highlights the importance of context-aware models like BERT, which consider the entire sentence structure. Identifying named entities becomes even more complex when dealing with multilingual text. Different languages have unique syntactic rules, entity formats, and even cultural differences in naming conventions.",
+      "For large datasets or complex tasks, consider deep learning models like BERT or LSTM-based architectures, which offer higher accuracy by learning context automatically \u00b7 Fine-tuning pre-trained models and leveraging transfer learning can greatly improve NER accuracy, especially in domains with limited data. Start with a pre-trained model like BERT or Flair and fine-tune it on your specific dataset. Use transfer learning to apply knowledge from a general NER model to a domain-specific one, saving time on training from scratch."
+    ],
+    "title": "Named Entity Recognition: A Comprehensive Guide to NLP\u2019s Key ...",
+    "url": "https://medium.com/@kanerika/named-entity-recognition-a-comprehensive-guide-to-nlps-key-technology-636a124eaa46"
+  },
+  {
+    "description": "Named-entity recognition (NER) (also known as (named) entity identification, entity chunking, and entity extraction) is a subtask of information extraction that seeks to locate and classify named entities mentioned in unstructured text into pre-defined categories such as person names (PER), ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "The main efforts are directed to reducing the annotations labor by employing semi-supervised learning, robust performance across domains and scaling up to fine-grained entity types. In recent years, many projects have turned to crowdsourcing, which is a promising solution to obtain high-quality aggregate human judgments for supervised and semi-supervised machine learning approaches to NER. Another challenging task is devising models to deal with linguistically complex contexts such as Twitter and search queries.",
+      "And some researchers recently proposed graph-based semi-supervised learning model for language specific NER tasks. A recently emerging task of identifying \"important expressions\" in text and cross-linking them to Wikipedia can be seen as an instance of extremely fine-grained named-entity recognition, where the types are the actual Wikipedia pages describing the (potentially ambiguous) concepts.",
+      "Since about 1998, there has been a great deal of interest in entity identification in the molecular biology, bioinformatics, and medical natural language processing communities. The most common entity of interest in that domain has been names of genes and gene products. There has been also considerable interest in the recognition of chemical entities and drugs in the context of the CHEMDNER competition, with 27 teams participating in this task.",
+      "into an annotated block of text that highlights the names of entities: [Jim]Person bought 300 shares of [Acme Corp.]Organization in [2006]Time. In this example, a person name consisting of one token, a two-token company name and a temporal expression have been detected and classified. In the expression named entity, the word named restricts the task to those entities for which one or many strings, such as words or phrases, stand (fairly) consistently for some referent.",
+      "Temporal expressions and some numerical expressions (e.g., money, percentages, etc.) may also be considered as named entities in the context of the NER task. While some instances of these types are good examples of rigid designators (e.g., the year 2001) there are also many invalid ones (e.g., I take my vacations in \u201cJune\u201d)."
+    ],
+    "title": "Named-entity recognition - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Named-entity_recognition"
+  },
+  {
+    "description": "This combination allows the model to effectively address ambiguity and entity comparison in real-time dialogue, showing the potential of integrating different LLM architectures to tackle specific NER tasks. In more specialized contexts, such as historical and multilingual NER, an evaluation has been done of the T0 multitask model (De Toni et al., 2022). This study highlights the unique challenges presented by historical texts, including language ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "This combination allows the model to effectively address ambiguity and entity comparison in real-time dialogue, showing the potential of integrating different LLM architectures to tackle specific NER tasks. In more specialized contexts, such as historical and multilingual NER, an evaluation has been done of the T0 multitask model (De Toni et al., 2022). This study highlights the unique challenges presented by historical texts, including language variations and inconsistent spellings.",
+      "This dependence on prompt quality introduces a degree of unpredictability and limits the scalability of LLMs, particularly in settings where consistent outputs across tasks are crucial. Lastly, LLMs face limitations in complex or ambiguous contexts. Although generally effective in standard NER tasks, models like ChatGPT struggle with more intricate scenarios, especially when dealing with nuanced or domain-specific entity types. These challenges are pronounced in tasks that require a deep understanding of specific domain knowledge, where generic LLMs may not capture subtle distinctions without extensive domain-specific training.",
+      "Using a multiview contrastive learning framework that aligns both semantic and relational spaces across languages, this model improves multilingual NER tasks. This evolution in NER methodologies highlights the importance of capturing more complex relationships between tokens, offering improved performance across different languages and contexts.",
+      "A versatile object-based architecture allowed the integration of a wide range of knowledge sources in order to make tagging decisions, and demonstrated of the effectiveness of MaxEnt models in handling NER tasks using diverse contextual information. CRFs are probabilistic models widely used for sequence labeling tasks, such as sentence annotation."
+    ],
+    "title": "Recent Advances in Named Entity Recognition: A Comprehensive Survey ...",
+    "url": "https://arxiv.org/html/2401.10825v3"
+  },
+  {
+    "description": "Named entity recognition (NER) is a component of natural language processing (NLP) that identifies predefined categories of objects in a body of text.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "The output of the NER model may need to undergo post-processing steps to refine results and/or add contextual information. You may need to complete tasks like entity linking, wherein the named entities are linked to knowledge bases or databases for further enrichment.",
+      "While NER has made a lot of progress for languages like English, it doesn\u2019t have the same level of accuracy for many others. This is often due to a lack of labeled data in these languages. Cross-lingual NER, which involves transferring knowledge from one language to another, is an active area of research that may help bridge the NET language gap.",
+      "Transformer networks, particularly the BERT (Bidirectional Encoder Representations from Transformers) model, have had a significant impact on NER. Using a self-attention mechanism that weighs the importance of different words, BERT accounts for the full context of a word by looking at the words that come before and after it. The first step of NER is to aggregate a dataset of annotated text.",
+      "The annotations can be done manually or using automated methods. Once the dataset is collected, the text should be cleaned and formatted. You may need to remove unnecessary characters, normalize the text and/or split text into sentences or tokens. During this stage, relevant features are extracted from the preprocessed text. These features can include part-of-speech tagging (POS tagging), word embeddings and contextual information, among others."
+    ],
+    "title": "What Is Named Entity Recognition? | IBM",
+    "url": "https://www.ibm.com/think/topics/named-entity-recognition"
+  },
+  {
+    "description": "This article explains what named entity recognition is, how it works, and how it is used in real life. Take a look for more info.",
+    "favicon_url": "https://you.com/favicon?domain=www.altexsoft.com&size=128",
+    "snippets": [
+      "Another example is the sentence \"Summer played amazing basketball,\" where \"Summer\" would be classified as a person due to the contextual clue provided by \"basketball.\" However, with no such clues present, \"Summer\" might also signify the season. Such ambiguities in natural language often necessitate linguistic analysis or advanced NER models trained on extensive datasets to differentiate between possible meanings.",
+      "The EntityRecognizer in spaCy is a transition-based component designed for named entity recognition, focusing on clear and distinct entity mentions. However, its design might not be optimal for tasks where entity definitions are ambiguous or when the key information is in the middle of entities. NLTK (Natural Language Toolkit) is a platform for building Python programs to work with human language data.",
+      "Deep learning shines with tasks that involve a high level of complexity and when you have a vast amount of data at your disposal. Unlike traditional machine learning, it can automatically discern and learn relevant features from the data, making it particularly effective in ambiguous or diverse contexts where entities can be multifaceted.",
+      "BRAT (Brat Rapid Annotation Tool) is a web-based software solution that allows users to annotate text, marking entities and their intricate relationships. Another consideration for developers is using application program interfaces (APIs). These provide a convenient way to tap into robust NER capabilities without delving into model training or backend complexities. Google Cloud NLP is Google's cloud offering for natural language processing tasks, which includes a robust named entity recognition system that can identify and classify entities within text."
+    ],
+    "title": "Named Entity Recognition: The Mechanism, Methods, Use Cases,",
+    "url": "https://www.altexsoft.com/blog/named-entity-recognition/"
+  },
+  {
+    "description": "Explore the intricacies of Named Entity Recognition (NER), a key component in Natural Language Processing (NLP)",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "Explore the intricacies of Named Entity Recognition (NER), a key component in Natural Language Processing (NLP). Learn about its methods, applications, and challenges, and discover how it's revolutionizing data analysis, customer support, and more. ... Get your team access to the full DataCamp for business platform. Named Entity Recognition (NER) is a sub-task of information extraction in Natural Language Processing (NLP) that classifies named entities into predefined categories such as person names, organizations, locations, medical codes, time expressions, quantities, monetary values, and more.",
+      "For instance, in the sentence \"Apple released a new iPhone\", the context helps the system recognize \"Apple\" as an organization rather than a fruit. Post-processing. After initial recognition and classification, post-processing might be applied to refine results. This could involve resolving ambiguities, merging multi-token entities, or using knowledge bases to enhance entity data.",
+      "Ambiguity. Words can be deceptive. A term like \"Amazon\" might refer to the river or the company, depending on the context, making entity recognition a tricky endeavor. Context dependency. Words often derive their meaning from surrounding text. The word \"Apple\" in a tech article likely refers to the corporation, while in a recipe, it's probably the fruit. Understanding such nuances is crucial for accurate entity recognition. Language variations.",
+      "Purpose: NER's primary objective is to comb through unstructured text and identify specific chunks as named entities, subsequently classifying them into predefined categories. This conversion of raw text into structured information makes data more actionable, facilitating tasks like data analysis, information retrieval, and knowledge graph construction."
+    ],
+    "title": "What is Named Entity Recognition (NER)? Methods, Use Cases, and ...",
+    "url": "https://www.datacamp.com/blog/what-is-named-entity-recognition-ner"
+  },
+  {
+    "description": "Named Entity Recognition, Entity Linking, and more - kaisugi/entity-related-papers",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "SAB at SemEval-2023 Task 2: Does Linguistic Information Aid in Named Entity Recognition? NLPeople at SemEval-2023 Task 2: A Staged Approach for Multilingual Named Entity Recognition \u00b7 IXA/Cogcomp at SemEval-2023 Task 2: Context-enriched Multilingual Named Entity Recognition Using Knowledge Bases \u00b7 MLlab4CS at SemEval-2023 Task 2: Named Entity Recognition in Low-resource Language Bangla Using Multilingual Language Models",
+      "PPORTAL_ner: An Annotated Corpus of Portuguese Literary Entities \u00b7 Topics as Entity Clusters: Entity-based Topics from Large Language Models and Graph Neural Networks \u00b7 TweetTER: A Benchmark for Target Entity Retrieval on Twitter without Knowledge Bases \u00b7 Evaluating LLMs for Temporal Entity Extraction from Pediatric Clinical Text in Rare Diseases Context",
+      "Ertim at SemEval-2023 Task 2: Fine-tuning of Transformer Language Models and External Knowledge Leveraging for NER in Farsi, English, French and Chinese \u00b7 SemEval-2023 Task 2: Fine-grained Multilingual Named Entity Recognition (MultiCoNER 2) MANER: Mask Augmented Named Entity Recognition for Extreme Low-Resource Languages \u00b7 Comparative evaluation of boundary-relaxed annotation for Entity Linking performance \u00b7 Towards Better Entity Linking with Multi-View Enhanced Distillation \u00b7 Direct Fact Retrieval from Knowledge Graphs without Entity Linking",
+      "Sartipi-Sedighin at SemEval-2023 Task 2: Fine-grained Named Entity Recognition with Pre-trained Contextual Language Models and Data Augmentation from Wikipedia \u00b7 SRCB at SemEval-2023 Task 2: A System of Complex Named Entity Recognition with External Knowledge \u00b7 PAI at SemEval-2023 Task 2: A Universal System for Named Entity Recognition with External Entity Information \u00b7 IITD at SemEval-2023 Task 2: A Multi-Stage Information Retrieval Approach for Fine-Grained Named Entity Recognition"
+    ],
+    "title": "GitHub - kaisugi/entity-related-papers: Named Entity Recognition, ...",
+    "url": "https://github.com/kaisugi/entity-related-papers"
+  },
+  {
+    "description": "PDF | Background: Understanding human language is a part of the research in Natural Language Processing (NLP) known as Natural Language Understanding... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "This process incorporates a shared encoder layer that captures the contextual information of the input text, followed \u00b7 by separate decoder layers for intent classification and entity recognition. This study investigates the utilization of \u00b7 multi-task learning for the purpose of performing two prevalent dialogue language understanding tasks, namely intent \u00b7 prediction, and entity prediction. This study builds on the shared knowledge across the tasks by conducting joint",
+      "A transfer learning strategy leverages knowledge from a ... The primary contribution of this study involves the development of a novel architecture as presented in Fig. 2 that \u00b7 is designed to address the challenge of understanding human language input, specifically in the context of natural",
+      "Intelligence systems on human language applications rely on Natural Language Understanding (NLU) to enable \u00b7 machines to understand context and information about human intention. NLU is important for various applications, including information retrieval systems, customer service automation, and virtual assistants, popularly known as",
+      "particularly in the context of the Indonesian language, which is considered a low-resource language. While the Fine- tuned BERT model leverages pre-trained knowledge, it may not fully adapt to domain-specific nuances."
+    ],
+    "title": "(PDF) Multi-task Learning for Named Entity Recognition and Intent ...",
+    "url": "https://www.researchgate.net/publication/390604482_Multi-task_Learning_for_Named_Entity_Recognition_and_Intent_Classification_in_Natural_Language_Understanding_Applications"
+  },
+  {
+    "description": "Entity linking makes content easy to organize and discover and transforms the information encoded in the text into structured knowledge.",
+    "favicon_url": "https://you.com/favicon?domain=www.ontotext.com&size=128",
+    "snippets": [
+      "We see how entity linking must deal with ambiguity and leverage contextual clues for disambiguation to accurately identify and link entities to their corresponding entries in a knowledge base. The entity linking process typically involves two main steps: Entity detection or Named Entity Recognition (NER): Identifying the spans of text that mention entities.",
+      "Unveiling what is entity linking, how it works, why it\u2019s vital for Natural Language Processing and why its synergy with knowledge graphs facilitates deeper understanding and processing of textual content ... Understanding text is a challenging task stemming from the complexities of language and communication. Lack of context, ambiguity, nuances and contextual differences, idioms and figurative language can be quite hard to master for both humans and machines.",
+      "While humans can rely on intuition and lived experience, machines require sophisticated Natural Language Processing (NLP) algorithms and large datasets to approximate this understanding. A central part of that involves identifying distinct entities (such as people, places, organizations, and concepts), mentioned in a text and linking them to a unique identifier in a knowledge base. This task is called entity linking and it is crucial for identifying the specific entities texts refer to, especially when they have ambiguous names or are mentioned in various forms.",
+      "Learn how knowledge graphs combined with the latest natural language processing technologies aid regulatory information extraction and processing from unstructured data. Go to page \u00b7 Learn how Graph RAG enhances AI by improving data precision and context for more accurate, reliable outputs in complex queries. Go to page \u00b7 Learn about knowledge graph embeddings and how they are used to predict missing links and facilitate machine learning tasks."
+    ],
+    "title": "What is Entity Linking | Ontotext Fundamentals",
+    "url": "https://www.ontotext.com/knowledgehub/fundamentals/what-is-entity-linking/"
+  },
+  {
+    "description": "Inspired by the powerful capabilities of large language models (LLMs), our work enhances the Named Entity Recognition (NER) task by incorporating exte\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "In order to better utilize LLMs for the NER task, a preliminary experiment is conducted to analyze the impact of the cross-sentence context from the original document. As illustrated in Fig. 1, the extraction model tends to capture the meaningful co-occurrences of entities in the context, and these entity-related expressions significantly aids the extraction process.",
+      "With the emergence of powerful capabilities in Large Language Models (LLMs), researchers have increasingly focused on integrating LLMs to assist with downstream tasks [1], [2]. A key task in information extraction, Named Entity Recognition (NER, Li et al., 2022) involves identifying pre-defined entities in input sentences (as shown in Fig. 1). In the context of LLMs, recent studies on the NER task [4], [5], [6], [7] have predominantly focused on constructing effective demonstrations for few-shot in-context learning, aiming to help LLMs make better predictions with limited data.",
+      "The rest of this paper is structured as follows. Section 2 reviews related work on the NER task in the context of large language models. In Section 3, we define our research problem. Section 4 details the process of generating external knowledge from LLM. Section 5 thoroughly discuss how to train the extraction model by effectively utilizing this external knowledge.",
+      "As mentioned in Section 2.2, there are three main directions to obtain the external context in the previous work: (1) cross-sentence context collected from the document; (2) domain-specific corpus collected from knowledge bases; (3) related knowledge retrieved through search engines. Based on the above different types of external context, we first provide the main results for validating the effectiveness of our framework in Section 6.2. Then, the further discussion is conducted for analyzing \u00b7 This work enhances the extraction model to understand the input sentence in the NER task, by providing external knowledge generated from the powerful LLM."
+    ],
+    "title": "Enhancing named entity recognition with external knowledge from ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0950705125005155"
+  },
+  {
+    "description": "Uncover the power of NLP's ability to identify and classify key information in text, enabling machines to understand and process human language more effectively.",
+    "favicon_url": "https://you.com/favicon?domain=www.ayadata.ai&size=128",
+    "snippets": [
+      "By processing and understanding entities, software systems gain knowledge meaning and context of names, whether that\u2019s a person\u2019s name, an organization, or a date or time. NER can be achieved using rule-based, statistical, or deep learning methods, with the latter two methods involving machine learning. Deep learning NER helps predict entities even when the language or context is unclear or ambiguous.",
+      "However, NER models, like any machine learning models, are imperfect and can make mistakes when encountering unseen entities or ambiguous contexts. There are various NER tools and libraries available that provide pre-trained models and APIs for NER tasks. ... The Natural Language Toolkit (NLTK) is a widely used Python library for NLP tasks, including NER.",
+      "Both are fundamental tasks in NLP for understanding language structure and content. NER or Named Entity Recognition, in NLP using NLTK (Natural Language Toolkit), is the process of identifying and classifying named entities present in text into predefined categories like person, organization or location. ... Agentic AI Agriculture AI Agents AI ethics AI Trends & Strategy Computer Vision Data Annotation Education Embracing AI Series Ethical AI Generative AI Geospatial AI Healthcare Human-in-the Loop Image Annotation iMerit LiDAR Machine Learning Natural Language Processing NLP Shaip Video Annotation",
+      "Language localization (e.g., differences between different versions of the same language, such as US English and UK English) also complicates NER and other NLP tasks. 4: Cultural and Linguistic Differences: Identifying entities depends on the entity itself and the surrounding text, i.e., the context."
+    ],
+    "title": "What Is Named Entity Recognition in NLP? - Aya Data",
+    "url": "https://www.ayadata.ai/what-is-named-entity-recognition-in-nlp/"
+  },
+  {
+    "description": "What is Named Entity Recognition, its importance in NLP, and how does it identify key entities in text for better data analysis and insights.",
+    "favicon_url": "https://you.com/favicon?domain=www.fastpix.io&size=128",
+    "snippets": [
+      "To achieve reliable results, customization is necessary. This often involves retraining the model using annotated datasets tailored to the industry\u2019s unique vocabulary and context. While pre-trained models are a helpful starting point, their effectiveness diminishes when accuracy and specificity are non-negotiable. ... NER isn\u2019t perfect, especially with ambiguous or complex text.",
+      "Combine with other tools: Pair NER with sentiment analysis or knowledge graphs for richer insights. For example, identifying entities in customer reviews and linking them to sentiment can help prioritize issues. Iterate and test: Regularly evaluate your model\u2019s performance and refine it using new data or updated algorithms. ... A complex language challenge in natural language processing that isn't fully solved by named entity recognition is understanding context and sentiment in ambiguous phrases.",
+      "SpaCy: Known for its speed and ease of use, SpaCy is great for general-purpose NER tasks and offers pre-trained models for multiple languages. Stanford NER: A reliable option for traditional NER, with support for customization using annotated datasets.",
+      "For example, the model learns to recognize that \"Apple\" may refer to a company or a fruit, depending on the context. ... NER systems use two main types of algorithms: rule-based and machine-learning algorithms. Rule-based algorithms rely on predefined patterns and linguistic rules to identify entities. While they can be effective for specific tasks, they often struggle with the variability and complexity of natural language."
+    ],
+    "title": "What is Named Entity Recognition (NER) and Its Uses",
+    "url": "https://www.fastpix.io/blog/what-is-named-entity-recognition-and-how-does-it-work"
+  },
+  {
+    "description": "Named entity recognition & text classification are used to help companies understand and process natural language automatically. Read on to learn how.",
+    "favicon_url": "https://you.com/favicon?domain=kili-technology.com&size=128",
+    "snippets": [
+      "A multinational news agency aims to identify and categorize entities such as people, locations, and organizations in news articles across multiple languages. They opt for a deep learning-based approach, utilizing a pre-trained BERT model. By fine-tuning the model on a training dataset containing labeled entities and leveraging BERT's word embeddings that capture semantic meanings and relationships between words, the system gains the ability to accurately recognize entities in news articles. The deep learning model's understanding of complex relationships and context enables it to function across various languages, enhancing the agency's global news analysis capabilities.",
+      "The combination of these techniques allows healthcare professionals to quickly retrieve relevant patient information, enhancing diagnosis accuracy and treatment efficiency. This integration is crucial in a field where timely access to accurate information can have a direct impact on patient outcomes. Named entity recognition (NER) and text classification are vital natural language processing (NLP) tasks that have greatly benefitted from the development of large language models (LLMs).",
+      "Context-based: Considers the surrounding words and context to identify entities. Pros: More flexible than dictionary-based, can capture variations. Cons: Requires expert knowledge to define rules, may become complex.",
+      "NER identifies specific entities such as companies, stock symbols, and dates, while Text Classification categorizes the reports into types like quarterly earnings, mergers, or market analysis. Together, they enable financial analysts to quickly access specific information and understand the context of reports, aiding in investment decisions."
+    ],
+    "title": "Understanding named entity recognition & text classification",
+    "url": "https://kili-technology.com/data-labeling/nlp/understanding-named-entity-recognition-text-classification"
+  },
+  {
+    "description": "PDF | Entity extraction is considered as a fundamental step in many text mining applications such as machine translation, text summarization and text... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "is, any natural language is not free from the ambiguity problem. On the other hand, IE is an effective way to populate the contents of a relational database. Its process turns the \u00b7 unstructured information embedded in texts into structured data. IE is a domain specific task; the important \u00b7 types of objects and events for one domain can be quite different from those in another domain [18]. Fundamental tasks in IE are named entity recognition and named entity relation extraction.",
+      "input can be unstructured documents like free text that are written in natural language or the semi-structured \u00b7 documents that are pervasive on the Web, such as tables or itemized and enumerated lists. Programs that \u00b7 perform the task of IE are referred to as extractors or wrappers [9]. The first step in most IE tasks is to detect \u00b7 and classify all the proper names mentioned in a text; a task generally referred to as named entity recognition",
+      "However, the major challenging issue inextracting the entity from a sentence is the ambiguity problem, namely lexical ambiguity. While a human has a cognitive capability to resolve the meaning easily based on his/her knowledge, it is very difficult for a machine to do so. This paper proposed a new technique for resolving the ambiguity problem through a fuzzy approach and context knowledge. The technique integrates subject and lexical knowledge, the possibility theory, and fuzzy sets into natural language processing.",
+      "refers to the combined task of finding spans of text that constitute proper names and then classifying the entities \u00b7 referred to according to their type. The IE tasks aim at finding specific data in natural language texts. With IE \u00b7 approach, events, facts and entities are extracted before the knowledge mining process is conducted. Consequently IE allows for mining the actual information presented in the texts, rather than the limited set of \u00b7 tags associated to the documents [27], [36]. Unlike information retrieval (IR), which concerns how to identify"
+    ],
+    "title": "(PDF) Resolving Ambiguous Entity through Context Knowledge and ...",
+    "url": "https://www.researchgate.net/publication/50247319_Resolving_Ambiguous_Entity_through_Context_Knowledge_and_Fuzzy_Approach"
+  },
+  {
+    "description": "After decades of massive digitisation, an unprecedented number of historical documents are available in digital format, along with their machine-readable texts. While this represents a major step f...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "After decades of massive digitisation, an unprecedented number of historical documents are available in digital format, along with their machine-readable texts. While this represents a major step forward with respect to preservation and accessibility, it ...",
+      "Typical NER features may be observed at three levels: words, close context or sentences, and document. These features can be absent or ambiguous, and none of them is systematically reliable; it is therefore necessary to combine them. Similarly to other NLP tasks, NER systems are developed according to three standard families of algorithms, namely rule-based, feature-based (traditional machine learning), and neural-based (deep learning).",
+      "In a feature learning context the crucial point is, by definition, the capacity of the model to learn or reuse appropriate knowledge for the task at hand. Given a situation of time and domain shifts and of resource scarcity, what is at stake for neural-based historical NER approaches is to capture historical language idiosyncrasies (including OCR noise) and to adequately leverage previously learned knowledge \u2014 a process made increasingly possible with the usage of pre-trained language models in a transfer learning context.",
+      "Finally, the HIPE-2022 corpus [63], prepared in the context of the HIPE-2022 shared task, consists of six NE-annotated datasets composed of historical newspapers and classical commentaries covering ca. 200 years. The datasets originate from several previous research projects, feature several languages and document types, and were annotated according to different typologies and annotation guidelines (the objective of HIPE-2022 was to foster transferability of approaches)."
+    ],
+    "title": "Named Entity Recognition and Classification in Historical Documents: ...",
+    "url": "https://dl.acm.org/doi/full/10.1145/3604931"
+  },
+  {
+    "description": "The number of scientific publications in the literature is steadily growing, containing our knowledge in the biomedical, health, and clinical sciences. Since there is currently no automatic archiving of the obtained results, much of this information ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "The number of scientific publications in the literature is steadily growing, containing our knowledge in the biomedical, health, and clinical sciences. Since there is currently no automatic archiving of the obtained results, much of this information remains buried in textual details not readily available for further usage or analysis. For this reason, natural language processing (NLP) and text mining methods are used for information extraction from such publications.",
+      "Thereafter, the models are fine-tuned using benchmark corpora, e.g., mentioned in Tables 1, 3. The authors of BioBERT states that for the benchmark corpora, the system achieves state-of-the-art (or near) precision, recall, and F1 scores in NER and RE tasks. We would like to highlight that a key difference between BERT, ELMo, or GPT-2 (Peters et al., 2018; Radford et al., 2019) and word2vec or GloVec is that the latter perform a context-independent word embedding whereas the former ones are context-dependent.",
+      "The main steps in BioNER include preprocessing, feature processing, model formulating/training, and post-processing, see Figure 4. In the preprocessing stage, data are cleaned, tokenized, and in some cases, normalized to reduce ambiguity at the feature processing step. Feature processing includes different methods that are used to extract features that will represent the classes in question the most, and then convert them into an appropriate representation as necessary to apply for modeling.",
+      "BERT/BioBERT: Bidirectional Encoder Representations for Transformers (BERT) (Devlin et al., 2018), is a more recent approach of text embedding that has been successfully applied to several biomedical text mining tasks (Peng et al., 2019). BERT uses the transformer learning model to learn contextual token embeddings of a given sentence bidirectionally (from both left and right and averaged over a sentence). This is done by using encoders and decoders of the transformer model in combination with Masked Language Modeling to train the network to predict the original text."
+    ],
+    "title": "Named Entity Recognition and Relation Detection for Biomedical ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7485218/"
+  },
+  {
+    "description": "The ever-growing usage of knowledge graphs (KGs) positions named entity disambiguation (NED) at the heart of designing accurate KG-driven systems such as query answering systems (QAS). According to the current research, most studies dealing with NED on ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "QALD-7 [59], QALD-8 [58], QALD-9 [57]: The Question Answering over Linked Data9 challenge provides datasets containing multilingual questions to benchmark natural language processing for QASs and also information retrieval. TREC 2014 Microblog: The Text REtrieval Conference (TREC) is a test collection that evaluates text retrieval. We use the TREC 2014 Microblog.10 We manually annotated the search queries used to gather microblogs. ERD14 [6]: the Entity Recognition and Disambiguation Challenge (ERD\u201914) aims to promote the recognition and the disambiguation of named entities in unstructured texts.",
+      "The NED task concerns both long and short texts. Several research efforts have focused on long texts [7, 19, 37, 40, 47, 49, 51, 60]. To choose the most relevant sense of a word, we generally refer to its context, i.e. the words surrounding the ambiguous word.",
+      "This textual context is exploitable to provide information about the ambiguous word and plays an important role in the disambiguation. Therefore, some approaches have analysed the entity\u2019s context to calculate the textual similarity score to remove ambiguity [40]. Other studies have measured the relationship between entities in the input text to link them collectively to the corresponding resources.",
+      "The similarity between the entity and candidate contexts is the most intuitive way to address the ambiguity problem. The context is defined as the textual information related to the entity mention (see Sect. 4.1.2) and the document associated with a candidate."
+    ],
+    "title": "Named entity disambiguation in short texts over knowledge graphs - PMC",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8722665/"
+  },
+  {
+    "description": "In natural language processing, Entity Linking, also referred to as named-entity disambiguation (NED), named-entity recognition and disambiguation (NERD), named-entity normalization (NEN), or Concept Recognition, is the task of assigning a unique identity to entities (such as famous individuals, ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Some of these are intrinsic to the task, such as text ambiguity. Others are relevant in real-world use, such as scalability and execution time. Name variations: the same entity might appear with textual representations. Sources of these variations include abbreviations (New York, NY), aliases (New York, Big Apple), or spelling variations and errors (New yokr). Ambiguity: the same mention can often refer to many different entities, depending on the context, as many entity names tend to be homonyms (the same sequence of letters applies to different concepts with distinct meanings, e.g., \"bank\" can mean a financial institution or the land immediately adjacent to a river) or polysemous.",
+      "The Entity Linking task is composed of 3 subtasks. Named Entity Recognition: Extraction of named entities from a text. Candidate Generation: For each named entity, select possible candidates from a Knowledge Base (e.g.",
+      "Wikification is the task of linking textual mentions to entities in Wikipedia (generally, limiting the scope to the English Wikipedia in case of cross-lingual wikification). Record linkage (RL) finds the same entity in multiple and often heterogeneous data-sets. It considered a broader concept than entity linking, and is a key process in digitalizing archives and joining of knowledge bases. Named-entity recognition (NER) locates and classifies named entities in unstructured text into pre-defined categories such as names, organizations, locations, and more.",
+      "In natural language processing, Entity Linking, also referred to as named-entity disambiguation (NED), named-entity recognition and disambiguation (NERD), named-entity normalization (NEN), or Concept Recognition, is the task of assigning a unique identity to entities (such as famous individuals, locations, or companies) mentioned in text.",
+      "Moreover, multilingual entity linking based on natural language processing (NLP) is difficult, because it requires either large text corpora, which are absent for many languages, or hand-crafted grammar rules, which are widely different between languages. Graph-based entity linking uses features of the graph topology or multi-hop connections between entities, which are hidden to simple text analysis. Han et al. propose the creation of a disambiguation graph (a subgraph of the knowledge base which contains candidate entities). This graph is used for collective ranking to select the best candida"
+    ],
+    "title": "Entity linking - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Entity_linking"
+  },
+  {
+    "description": "Explore expert strategies for named entity recognition labeling and enhance text annotation accuracy for superior NLP outcomes.",
+    "favicon_url": "https://you.com/favicon?domain=keylabs.ai&size=128",
+    "snippets": [
+      "It ought to have highlights, such as job-based admittance and adaptation control. Choosing an annotation tool depends heavily on the specific project requirements and the entities' complexity. ... Adequate text substance explanation vigorously depends on space specialists' feedback. They bring significant knowledge into explicit element types that ordinary annotators could miss. Their aptitude adjusts the comment task with certifiable applications, further developing NER model execution.",
+      "Models like BERT and GPT have set new benchmarks in understanding human language. Understanding entity types is key to accurate NER labeling. Adhering to specific guidelines and conducting regular reviews is also essential. This ensures high data quality and consistency. Common mistakes include inconsistent labeling and overlooking context.",
+      "Deep learning frameworks for NER have shown accomplishment across different areas. They limit the requirement to include designing. Early NER frameworks were rule-based. However, the shift towards AI models around 2007 checked critical headways. Today, dynamic, semi-regulated, and unaided learning methods offer similar outcomes to deep learning models. These progressions highlight the basic job of AI in element extraction and labeling.",
+      "In healthcare, NER models accurately identify symptoms, diseases, and chemicals in electronic health records, aiding in patient diagnosis."
+    ],
+    "title": "Named Entity Recognition: Text Annotation | Keylabs",
+    "url": "https://keylabs.ai/blog/named-entity-recognition-best-practices-for-text-annotation/"
+  },
+  {
+    "description": "The Ultimate Guide to Named Entity Recognition: Understand the Methods, Tools, and Practical Use Cases Across Key Industries",
+    "favicon_url": "https://you.com/favicon?domain=kairntech.com&size=128",
+    "snippets": [
+      "In today\u2019s rapidly evolving AI landscape, businesses are increasingly turning to Large Language Models (LLMs)\u2026 \u00b7 Retrieval-Augmented Generation (RAG) is an advanced AI architecture designed to provide accurate and contextually relevant\u2026 \u00b7 Conversational AI is quickly becoming a cornerstone of digital transformation. Yet effectively integrating Retrieval-Augmented Generation\u2026 ... We use cookies to optimize our website and our service. ... The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network.",
+      "Emotion or sentiment detection falls under sentiment analysis, which is a different NLP task often used in parallel with NER. As language models evolve, NER will become even more context-aware, multilingual, and domain-adaptable \u2014 unlocking deeper insights across complex, unstructured datasets.",
+      "In the NLP pipeline, NER typically comes after tasks like tokenization and part-of-speech (POS) tagging. It enriches the text by attaching semantic labels to words or phrases identified as entities. NER outputs can then be used by parsing systems, knowledge graphs, or information retrieval engines to enhance understanding and reasoning across documents.",
+      "For example, a rule like r\u201d\\b[A-Z][a-z]+ [A-Z][a-z]+\\b\u201d might capture person names like \u201cJohn Smith\u201d. These methods are simple but brittle when handling ambiguity or unseen terms. Statistical models such as Conditional Random Fields (CRF) and Support Vector Machines (SVM) treat NER as a sequence labeling problem. Trained on annotated datasets, these models learn contextual patterns to predict entity boundaries and types, offering more adaptability than rule-based systems."
+    ],
+    "title": "The Complete Guide to Named Entity Recognition (NER) - Kairntech",
+    "url": "https://kairntech.com/blog/articles/the-complete-guide-to-named-entity-recognition-ner/"
+  },
+  {
+    "description": "Named entity disambiguation is a method to understand the real meaning of words based on context. Learn about approaches, challenges, benefits & examples.",
+    "favicon_url": "https://you.com/favicon?domain=datavid.com&size=128",
+    "snippets": [
+      "Named entity disambiguation is a method to understand the real meaning of words based on context. Learn about approaches, challenges, benefits & examples. ... In the vast realm of language, every word carries a unique story, a hidden narrative waiting to be revealed.  \u00b7 However, the complexities of human communication often entangle these narratives, leaving us in a net of ambiguity and uncertainty.",
+      "It is a crucial task in natural language processing and information retrieval, as it helps to correctly interpret and extract information from text.  \u00b7 Named entity recognition (NER) is the process of identifying and categorising named entities in text, while named entity disambiguation goes a step further by resolving ambiguities in the identified entities and linking them to unique entities in a knowledge base or ontology.",
+      "It is a method to untangle language and reveal the real meaning of words based on contextual understanding and human cognition.  \u00b7 In this blog post, we will tackle the topic of named entity disambiguation (NED).  \u00b7 Named entity disambiguation is a natural language processing technique that aims to resolve the ambiguity that arises from named entities in text.  \u00b7 It comes into play after or during \u2013 depending on the approach - the named entity recognition process (NER), in which named entities are recognised and classified.",
+      "Using a shared dependency model, NED can use NER's outputs to establish links. Similarly, NED's ability to disambiguate named entities can refine the initial named entity recognition.  \u00b7 Together, they can deliver more efficient results.  ... Ambiguity. The same term can refer to different entities, depending on the context."
+    ],
+    "title": "Exploring named entity disambiguation",
+    "url": "https://datavid.com/blog/named-entity-disambiguation"
+  },
+  {
+    "description": "Uncover the hidden entities in your text data, from classic literature to customer feedback.",
+    "favicon_url": "https://you.com/favicon?domain=hex.tech&size=128",
+    "snippets": [
+      "Both libraries cater to different needs within the NLP and NER domains: SpaCy is tailored for streamlined, efficient processing with minimal setup, while NLTK provides comprehensive tools and resources for a more exploratory and customized approach to NER and other NLP tasks. Now that you have detailed knowledge about NER, it is time to see some practical implementation. In this section, you will perform a Comparative NER Analysis of Russian and American Literature using Python and Hex. Hex is a development environment that provides you with both code and no-code functionalities to create different apps and dashboards. It is a polyglot platform which means that you can use different programming languages in the same development environment.",
+      "It analyzes the entire sentence, considering the context and relationships between words. This helps it identify entities like \"former president\" (an organization role) and \"hometown\" (a location related to a person). SpaCy and NLTK are prominent Python libraries for natural language processing (NLP), including named entity recognition (NER), each with unique strengths: Purpose: Designed for production-level NLP tasks, emphasizing efficiency and accuracy.",
+      "NER proceeds to assign part-of-speech tags to each token, discerning their grammatical roles within the sentence. This step lays the foundation for understanding the contextual significance of each element. Here's what it finds: Classification: The detective now uses its knowledge (machine learning models or pre-defined rules) to analyze the clues and make deductions.",
+      "Finally, let's create different methods for getting the example text, sentences from the example text, and storing the examples. Then we will iterate over each entity type and will store the examples of different entities based on languages."
+    ],
+    "title": "Named Entity Recognition (with examples) | Hex",
+    "url": "https://hex.tech/templates/sentiment-analysis/named-entity-recognition/"
+  }
+]

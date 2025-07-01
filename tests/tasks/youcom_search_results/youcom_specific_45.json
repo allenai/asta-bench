@@ -1,0 +1,247 @@
+[
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "See our manuscript for details of the expanded model, now trained on ~104 million transcriptomes, and our continual learning, multitask learning, and quantization strategies. See geneformer.readthedocs.io for documentation.",
+      "Geneformer is a foundational transformer model pretrained on a large-scale corpus of single cell transcriptomes representing a broad range of human tissues. Geneformer V1 was originally pretrained in June 2021 on Genecorpus-30M, a corpus comprised of ~30 million human single cell transcriptomes.",
+      "We excluded cells with high mutational burdens (e.g. malignant cells and immortalized cell lines) that could lead to substantial network rewiring without companion genome sequencing to facilitate interpretation. The current updated Geneformer V2 is pretrained on ~104 million human single cell transcriptomes (non-cancer). The cancer continual learning V2 variant was continually pretrained on ~14 million cancer transcriptomes to yield a cancer domain-tuned model.",
+      "In silico treatment with limited patient data revealed candidate therapeutic targets for cardiomyopathy that we experimentally validated to significantly improve the ability of cardiomyocytes to generate contractile force in an induced pluripotent stem cell (iPSC) model of the disease. Overall, Geneformer represents a foundational AI model pretrained on a large-scale corpus human single cell transcriptomes to gain a fundamental understanding of gene network dynamics that can now be democratized to a vast array of downstream tasks to accelerate discovery of key network regulators and candidate therapeutic targets."
+    ],
+    "title": "ctheodoris/Geneformer \u00b7 Hugging Face",
+    "url": "https://huggingface.co/ctheodoris/Geneformer"
+  },
+  {
+    "description": "We are having trouble loading . Please try again later",
+    "favicon_url": "https://you.com/favicon?domain=www.aimodels.fyi&size=128",
+    "snippets": [],
+    "title": "Geneformer | AI Model Details",
+    "url": "https://www.aimodels.fyi/models/huggingFace/geneformer-ctheodoris"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Recently, transfer learning has revolutionized fields such as natural language understanding and computer vision by leveraging deep learning models pretrained on large-scale general datasets that can then be fine-tuned towards a vast array of downstream tasks with limited task-specific data. Here, we developed a context-aware, attention-based deep learning model, Geneformer, pretrained on a large-scale corpus of about 30 million single-cell transcriptomes to enable context-specific predictions in settings with limited data in network biology.",
+      "During pretraining, Geneformer gained a fundamental understanding of network dynamics, encoding network hierarchy in the attention weights of the model in a completely self-supervised manner. Fine-tuning towards a diverse panel of downstream tasks relevant to chromatin and network dynamics using limited task-specific data demonstrated that Geneformer consistently boosted predictive accuracy.",
+      "Overall, Geneformer represents a pretrained deep learning model from which fine-tuning towards a broad range of downstream applications can be pursued to accelerate discovery of key network regulators and candidate therapeutic targets.",
+      "Geneformer is a foundational transformer model pretrained on a large-scale corpus of single cell transcriptomes to enable context-aware predictions in settings with limited data in network biology."
+    ],
+    "title": "tdc/Geneformer \u00b7 Hugging Face",
+    "url": "https://huggingface.co/tdc/Geneformer"
+  },
+  {
+    "description": "Feature request is it possible to support GeneFormer model with BetterTransformer? https://huggingface.co/ctheodoris/Geneformer Motivation It's a new paper with an active community in the Huggi...",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Feature request is it possible to support GeneFormer model with BetterTransformer? https://huggingface.co/ctheodoris/Geneformer Motivation It's a new paper with an active community in the Hugging Face repository. The training and inferen...",
+      "is it possible to support GeneFormer model with BetterTransformer? https://huggingface.co/ctheodoris/Geneformer \u00b7 It's a new paper with an active community in the Hugging Face repository."
+    ],
+    "title": "Support BetterTransfomer for the GeneFormer model \u00b7 Issue #1286 ...",
+    "url": "https://github.com/huggingface/optimum/issues/1286"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Disclaimer: The team releasing Enformer did not write a model card for this model so this model card has been written by the Hugging Face team. Enformer is a neural network architecture based on the Transformer that led to greatly increased accuracy in predicting gene expression from DNA sequence. We refer to the paper published in Nature for details.",
+      "Enformer model. It was introduced in the paper Effective gene expression prediction from sequence by integrating long-range interactions. by Avsec et al."
+    ],
+    "title": "EleutherAI/enformer-preview \u00b7 Hugging Face",
+    "url": "https://huggingface.co/EleutherAI/enformer-preview"
+  },
+  {
+    "description": "With the development of gene sequencing technology, an explosive growth of gene data has been witnessed. And the storage of gene data has become an important issue. Traditional gene data compression methods rely on general software like G-zip, which fails to utilize the interrelation of nucleotide ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "With the development of gene sequencing technology, an explosive growth of gene data has been witnessed. And the storage of gene data has become an important issue. Traditional gene data compression methods rely on general software like G-zip, which fails to utilize the interrelation of nucleotide sequence.",
+      "Abstract page for arXiv paper 2212.08379: GeneFormer: Learned Gene Compression using Transformer-based Context Modeling",
+      "In this paper, we propose a transformer-based gene compression method named GeneFormer. Specifically, we first introduce a modified transformer structure to fully explore the nucleotide sequence dependency. Then, we propose fixed-length parallel grouping to accelerate the decoding speed of our autoregressive model.",
+      "View a PDF of the paper titled GeneFormer: Learned Gene Compression using Transformer-based Context Modeling, by Zhanbei Cui and 3 other authors View PDF"
+    ],
+    "title": "[2212.08379] GeneFormer: Learned Gene Compression using ...",
+    "url": "https://arxiv.org/abs/2212.08379"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "We refer to the paper published in Nature for details. Refer to the README of enformer-pytorch regarding usage. Avsec, \u00c5\u00bd., Agarwal, V., Visentin, D. et al. Effective gene expression prediction from sequence by integrating long-range interactions. Nat Methods 18, 1196\u00e2\u20ac\u201c1203 (2021). https://doi.org/10.1038/s41592-021-01252-x ... This model isn't deployed by any Inference Provider.",
+      "Enformer model. It was introduced in the paper Effective gene expression prediction from sequence by integrating long-range interactions. by Avsec et al."
+    ],
+    "title": "EleutherAI/enformer-official-rough \u00b7 Hugging Face",
+    "url": "https://huggingface.co/EleutherAI/enformer-official-rough"
+  },
+  {
+    "description": "Author summary Researchers have developed Geneformer, a powerful tool that utilizes advanced deep learning techniques and large-scale single-cell transcriptome data to analyze human cell genetic activity. However, given the extensive use of mice (Mus musculus) in medical and biology research, ...",
+    "favicon_url": "https://you.com/favicon?domain=journals.plos.org&size=128",
+    "snippets": [
+      "Author summary Researchers have developed Geneformer, a powerful tool that utilizes advanced deep learning techniques and large-scale single-cell transcriptome data to analyze human cell genetic activity. However, given the extensive use of mice (Mus musculus) in medical and biology research, there is a need for a similar tool tailored to this model organism.",
+      "The mouse-Genecorpus-20M dataset is formatted in Apache Arrow and is available for download from the repository (https://huggingface.co/datasets/MPRG/Mouse-Genecorpus-20M). It can be accessed using the Python library \u201cdatasets\u201d for downstream applications. Pretraining was conducted following the procedures described previously for the original human Geneformer [10], with some modifications.",
+      "To perform human cell type classification using mouse-Geneformer, human genes in the original datasets were converted to their mouse homologs as described in the previous section. The mouse-Geneformer and Geneformer were employed to classify each data, and their accuracies are compared. The Geneformer was a human-Geneformer model that we pre-trained using Genecorpus-30M (https://huggingface.co/datasets/ctheodoris/Genecorpus-30M).",
+      "Predicting disease-causing genes in mice using a human-based Geneformer is not straightforward. Therefore, a mouse version of Geneformer (mouse-Geneformer) is in high demand. This paper aims to construct a mouse version of Geneformer, a deep learning model trained on mouse scRNA-seq data."
+    ],
+    "title": "Mouse-Geneformer: A deep learning model for mouse single-cell ...",
+    "url": "https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1011420"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [],
+    "title": "Models - Hugging Face",
+    "url": "https://huggingface.co/models"
+  },
+  {
+    "description": "| First of all, congratulations to you. | I saw in InSilicoPerturber function, parameter model_type has three options {\"Pretrained\",\"GeneClassifier\",\"CellClassifier\"} , 'Pretrained' indicates that...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "The model I cloned from huggingface only contains the pre-trained model, right? | If I use silico perturbation, what is the result difference between the three models (\"Pretrained\",\"GeneClassifier\",\"CellClassifier\")? Would you provide a notebook that reproduces the article? Looking forward to your reply ... Thank you for your interest in Geneformer.",
+      "Could you provide notebook files of the results in the article for a better understanding of the model and how to use it? Now the code and notebook in the repository seem to be very unfriendly to reproduce the results of your article. ... Thank you for your question. The code in this repository is actually very friendly to using Geneformer. :) We have composed all the components into modules for easy use and reproduction, provided generalizable examples, and integrated with Huggingface so users can take advantage of their user-friendly infrastructure.",
+      "Geneformer is a foundation model pretrained on 30 million single cell transcriptomes to gain a fundamental understanding of network dynamics that can then be democratized to a multitude of downstream applications. The pretrained model can be used for inference directly with zero-shot learning, or the model can be fine-tuned for downstream applications with a task-specific learning objective and task-specific data.",
+      "For example, fine-tuning for gene or cell classification adds a head layer to the model so the number of total layers will be more than the pretrained model. It does not change the procedure of in silico deletion or activation. Please also refer to the code of the in silico perturber to understand the procedure. Geneformer applications demonstrated in the manuscript: Fine-tuning:"
+    ],
+    "title": "ctheodoris/Geneformer \u00b7 About silico perturbation",
+    "url": "https://huggingface.co/ctheodoris/Geneformer/discussions/46"
+  },
+  {
+    "description": "Hello, congratulations on your amazing work! I'm trying to reproduce the in silico fibroblast to iPSC conversion reported in your paper, was able to successfully tokenize the data from Xing et. al....",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Hugging Face \u00b7 Fill-Mask \u00b7 Transformers \u00b7 Safetensors \u00b7 ctheodoris/Genecorpus-30M \u00b7 bert \u00b7 single-cell \u00b7 genomics \u00b7 License: apache-2.0 \u00b7 Model card Files Files and versions Community \u00b7 538 \u00b7 Train \u00b7 Deploy \u00b7 Use this model \u00b7 #101 \u00b7 by Oskm - opened Jul 7, 2023 \u00b7 Discussion \u00b7 Oskm Jul 7, 2023 \u00b7 Hello, congratulations on your amazing work! I'm trying to reproduce the in silico fibroblast to iPSC conversion reported in your paper, was able to successfully tokenize the data from Xing et.",
+      "How many cells did you need to model to get statistical significance for OSKM reprogramming reported in the paper?",
+      "ispstats = InSilicoPerturberStats(mode=\"goal_state_shift\", combos=2, anchor_gene=\"ENSG00000136997\", cell_states_to_model={\"cell_type\":([\"D0\"],[\"D16_positive\"],[])}) ... Thank you for your interest in Geneformer! I updated the in silico perturber to allow for efficient modeling of a single perturbation in multiple cells as a batch.",
+      "isp = InSilicoPerturber(perturb_type=\"overexpress\", perturb_rank_shift=None, genes_to_perturb=[\"ENSG00000204531\", \"ENSG00000181449\", \"ENSG00000136826\"], combos=2, anchor_gene=\"ENSG00000136997\", model_type=\"Pretrained\", num_classes=0, emb_mode=\"cell\", cell_emb_style=\"mean_pool\", filter_data={}, cell_states_to_model={\"cell_type\":([\"D0\"],[\"D16_positive\"],[])}, max_ncells=1000, emb_layer=-1, forward_batch_size=50, nproc=1, save_raw_data=True, )"
+    ],
+    "title": "ctheodoris/Geneformer \u00b7 Question about reproducing in silico ...",
+    "url": "https://huggingface.co/ctheodoris/Geneformer/discussions/101"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Hugging Face \u00b7 Fill-Mask \u00b7 Transformers \u00b7 Safetensors \u00b7 ctheodoris/Genecorpus-30M \u00b7 bert \u00b7 single-cell \u00b7 genomics \u00b7 License: apache-2.0 \u00b7 Model card Files Files and versions Community \u00b7 547 \u00b7 Train \u00b7 Deploy \u00b7 Use this model \u00b7 main \u00b7 Geneformer \u00b7"
+    ],
+    "title": "ctheodoris/Geneformer at main",
+    "url": "https://huggingface.co/ctheodoris/Geneformer/tree/main"
+  },
+  {
+    "description": "Deep learning techniques are increasingly utilized to analyze large-scale single-cell RNA sequencing (scRNA-seq) data, offering valuable insights from complex transcriptome datasets. Geneformer, a pre-trained model using a Transformer Encoder ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Deep learning techniques are increasingly utilized to analyze large-scale single-cell RNA sequencing (scRNA-seq) data, offering valuable insights from complex transcriptome datasets. Geneformer, a pre-trained model using a Transformer Encoder architecture and human scRNA-seq datasets, has demonstrated remarkable success in human transcriptome analysis.",
+      "The mouse-Genecorpus-20M dataset is formatted in Apache Arrow and is available for download from the repository (https://huggingface.co/datasets/MPRG/Mouse-Genecorpus-20M). It can be accessed using the Python library \u201cdatasets\u201d for downstream applications. Pretraining was conducted following the procedures described previously for the original human Geneformer [10], with some modifications.",
+      "To perform human cell type classification using mouse-Geneformer, human genes in the original datasets were converted to their mouse homologs as described in the previous section. The mouse-Geneformer and Geneformer were employed to classify each data, and their accuracies are compared. The Geneformer was a human-Geneformer model that we pre-trained using Genecorpus-30M (https://huggingface.co/datasets/ctheodoris/Genecorpus-30M).",
+      "1. scGPT is an alternative to geneformer. could the authors give some brief discussions on the difference between scGPT and geneformer, and why to build their model based on geneformer instead of scGPT? 2. How are batch effect (e.g., platform) being handled in both training and inference stages? 3. The genetic difference and transcriptional difference of different mouse strains can be huge."
+    ],
+    "title": "Mouse-Geneformer: A deep learning model for mouse single-cell ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11964219/"
+  },
+  {
+    "description": "This post introduces high-level trends at the intersection of biology and AI, discusses new (and old) technical challenges in building reproducible and scalable systems for AI-driven computational biology, and how frameworks like Metaflow can help address them.",
+    "favicon_url": "https://you.com/favicon?domain=outerbounds.com&size=128",
+    "snippets": [
+      "Fine-tuning Geneformer for each unique organ in the dataset in parallel, reducing time to finish the job \u00b7 Data is loaded in scalable storage containers, such as AWS S3. Data is split and loaded quickly from storage to computers, such as GPU instances in the cloud. For each split, modelers can experiment with any Python code, such as HuggingFace transformers.",
+      "The Geneformer model and Genecorpus dataset are shared on Huggingface as open-source artifacts, significantly boosting the reach and engagement of the work.",
+      "Many recent state-of-the-art computational biology developments depend on transformer models. To understand this landscape, we collaborated with Nick Wisniewski, an expert data scientist and computational biologist. In this post, we discuss high-level trends at the intersection of biology and AI, new (and old) technical challenges in building reproducible and scalable systems for AI-driven computational biology, and how frameworks like Metaflow can help address them, using Geneformer as an example.",
+      "They are also much more capable and versatile than earlier models and algorithms in bioinformatics, making it possible to apply them in novel, more advanced use cases - when supported by proper frameworks. In the following sections, we\u2019ll take each concern - consistent environments, scalable compute, automated workflows, and reproducible science - and show how you can use Metaflow to help solve them. We\u2019ll then conclude with a case study of Geneformer, a foundation model announced in the journal Nature last year."
+    ],
+    "title": "Build Reproducible and Scalable Computational Biology Systems | ...",
+    "url": "https://outerbounds.com/blog/reproducible-scalable-computational-biology-systems"
+  },
+  {
+    "description": "Geneformer classifier \u00b7 Initialize Geneformer classifier",
+    "favicon_url": "https://you.com/favicon?domain=geneformer.readthedocs.io&size=128",
+    "snippets": [
+      "Initialize Geneformer classifier. ... Whether to fine-tune a cell state or gene classifier. ... Whether to fine-tune a quantized model.",
+      "If None, defaults will be inferred for 6 layer Geneformer.",
+      "Single-cell transcriptomes as Geneformer rank value encodings with cell state labels in Geneformer .dataset format (generated from single-cell RNAseq data by tokenizer.py)",
+      "Must have at least 2 states to model."
+    ],
+    "title": "geneformer.classifier - Read the Docs",
+    "url": "https://geneformer.readthedocs.io/en/latest/geneformer.classifier.html"
+  },
+  {
+    "description": "Contribute to microsoft/zero-shot-scfoundation development by creating an account on GitHub.",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "This repository contains the code that accompanies our paper, Assessing the limits of zero-shot foundation models in single-cell biology. You can find the preprint of the paper here. In this project, we assess two proposed foundation models in the context of single-cell RNA-seq: Geneformer (pub, code) and scGPT (pub, code).",
+      "Geneformer_zero_shot - notebook for running Geneformer zero-shot evaluation \u00b7 Baselines_HVG_and_scVI - notebook for running the baselines used in the paper, i.e.",
+      "In these tasks, we compare the performance of Geneformer and scGPT against two baselines: scVI (pub, code) and a heuristic method that selects highly variable genes (HVGs). We also investigate the performence of the models in reconstructing the gene expression profiles of cells, and compare it against the baselines - such as a mean expression value or average ranking.",
+      "To run notebooks you also need to have the weights of the models downloaded. scGPT weights are avaialble here and Geneformer weights are available in its repository."
+    ],
+    "title": "GitHub - microsoft/zero-shot-scfoundation",
+    "url": "https://github.com/microsoft/zero-shot-scfoundation"
+  },
+  {
+    "description": "In the future we will test the ... in the paper. The token loss in the following table is the mean cross entropy loss of the 15% of tokens included in the loss mask averaged across cells. As a baseline geneformer was downloaded from the ctheodoris/Geneformer page on hugging face on 2024/11/04 and applied to the same masking/unmasking problem on this dataset, but with model-specific cell ...",
+    "favicon_url": "https://you.com/favicon?domain=docs.nvidia.com&size=128",
+    "snippets": [
+      "In the future we will test the intended 80%/10%/10% mixture proposed in the paper. The token loss in the following table is the mean cross entropy loss of the 15% of tokens included in the loss mask averaged across cells. As a baseline geneformer was downloaded from the ctheodoris/Geneformer page on hugging face on 2024/11/04 and applied to the same masking/unmasking problem on this dataset, but with model-specific cell representations due to the updated tokenizer and medians dictionary used to train, and the update from training with 2048 tokens to 4096 tokens per cell.",
+      "Geneformer was recently updated on hugging face to a new version. In a future release we will make checkpoint conversion scripts available so that the public model can be ran directly.",
+      "It would be interesting to test even larger models to see if we continue to observe improved performance in larger models. ... As stated in the previous section, the figures are from our BioNeMo1 code base where these checkpoints were originally trained. As we release new checkpoints they will be trained on BioNeMo2. The following describes the bert MLM token loss. Like in the original BERT paper, and the geneformer paper, 15% of all tokens are included in the loss.",
+      "Benchmarks below are annotated with which version of bionemo generated them. Accuracy should be the same within a small epsilon since we have tests in place showing model equivalency between the two versions. Geneformer generates a dense representation of a sc-RNA cell by learning co-expression patterns within single cells."
+    ],
+    "title": "Geneformer - BioNeMo Framework",
+    "url": "https://docs.nvidia.com/bionemo-framework/latest/models/geneformer/"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "push_to_hub (bool, optional, defaults to False) \u2014 Whether or not to push your model to the Hugging Face model hub after saving it.",
+      "The configuration object instantiated from this pretrained model. Instantiate a GenerationConfig from a generation configuration file. ... >>> from transformers import GenerationConfig >>> # Download configuration from huggingface.co and cache. >>> generation_config = GenerationConfig.from_pretrained(\"openai-community/gpt2\") >>> # E.g.",
+      "It can be a branch name, a tag name, or a commit id, since we use a git-based system for storing models and other artifacts on huggingface.co, so revision can be any identifier allowed by git.",
+      "token (str or bool, optional) \u2014 The token to use as HTTP bearer authorization for remote files. If True, or not specified, will use the token generated when running huggingface-cli login (stored in ~/.huggingface). revision (str, optional, defaults to \"main\") \u2014 The specific model version to use."
+    ],
+    "title": "Generation",
+    "url": "https://huggingface.co/docs/transformers/en/main_classes/text_generation"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "This corpus was used for pretraining Geneformer and is compatible with pretraining or fine-tuning Geneformer or similar models. ... Genecorpus-30M is provided as tokenized data in the Huggingface Datasets structure, which is based on the Apache Arrow format. Each example within the dataset is composed of the rank value encoding for a single cell within the corpus.",
+      "We assembled a large-scale pretraining corpus, Genecorpus-30M, comprised of ~30 million human single cell transcriptomes from a broad range of tissues from publicly available data. This corpus was used for pretraining Geneformer, a pretrained transformer model that enables context-aware predictions in settings with limited data in network biology.",
+      "Recently, the concept of transfer learning has revolutionized fields such as natural language understanding and computer vision by leveraging deep learning models pretrained on large-scale general datasets that can then be fine-tuned towards a vast array of downstream tasks with limited task-specific data that would be insufficient to yield meaningful predictions when used in isolation. We therefore assembled Genecorpus-30M to allow the large-scale pretraining of Geneformer, a pretrained transformer model that enables context-aware predictions in settings with limited data in network biology.",
+      "Within our publication, we demonstrated that during pretraining, Geneformer gained a fundamental understanding of network dynamics, encoding network hierarchy in the model\u2019s attention weights in a completely self-supervised manner."
+    ],
+    "title": "ctheodoris/Genecorpus-30M \u00b7 Datasets at Hugging Face",
+    "url": "https://huggingface.co/datasets/ctheodoris/Genecorpus-30M"
+  },
+  {
+    "description": "In this post, we explore the foundational concepts behind fine-tuning pre-trained bio foundation models for single-cell genomics and provide a step-by-step example applying these techniques to cell\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "In this post, we explore the foundational concepts behind fine-tuning pre-trained bio foundation models for single-cell genomics and\u2026",
+      "Fine-tuning the Geneformer model on our prepared data and labels. Using our now fine-tuned classification bio foundation model to get predictions on unseen data. First, an easy import of the package with pip! ... Now we can import our desired bio foundation model and Hugging Face dataset loader.",
+      "# Geneformer v1: If you want to use Geneformer v2 look into the different model_names available # An example would be gf-12L-95M-i4096 for a v2 model geneformer_config = GeneformerConfig(device=\"cpu\", batch_size=10, model_name=\"gf-6L-30M-i2048\") geneformer = Geneformer(configurer = geneformer_config) We can now prepare our data for training and testing by loading a dataset from Hugging Face provided by Helical.",
+      "# Load the yolksac_human dataset from Helical's Hugging Face page hf_dataset = load_dataset(\"helical-ai/yolksac_human\", trust_remote_code=True, download_mode=\"reuse_cache_if_exists\") # Convert this to an AnnData format using Helical's conversion function ann_data = get_anndata_from_hf_dataset(hf_dataset[\"train\"]) ann_data_test = get_anndata_from_hf_dataset(hf_dataset[\"test\"]) # Process the AnnData file to get the correct format for training Geneformer train_dataset = geneformer.process_data(ann_data) # Process the test AnnData file to get the correct format for Geneformer test_dataset = geneformer.process_data(ann_data_test)"
+    ],
+    "title": "Fine-Tuning Single-Cell Bio Foundation Models: A Beginner\u2019s Guide ...",
+    "url": "https://medium.com/helical-ai/fine-tuning-single-cell-bio-foundation-models-a-beginners-guide-19e5a7494874"
+  },
+  {
+    "description": "Geneformer is a recently introduced and powerful AI model that learns gene network dynamics and interactions using transfer learning from vast single-cell transcriptome data.",
+    "favicon_url": "https://you.com/favicon?domain=developer.nvidia.com&size=128",
+    "snippets": [
+      "Geneformer is a recently introduced and powerful AI model that learns gene network dynamics and interactions using transfer learning from vast single-cell\u2026",
+      "As its various applications demonstrate (Figure 4), Geneformer can serve as a biological foundation model. These use cases span molecular to organismal-scale problems, making it a widely practical tool for biological research.  \u00b7 Many of these use cases are described in the model paper.",
+      "Developed by researchers at the Broad Institute of MIT and Harvard and their collaborators, the AI model Geneformer uses the highest-expressed genes in sc-RNA expression data to generate a dense representation of each cell, which can be used as features for various downstream predictive tasks.",
+      "Geneformer has a BERT-like transformer architecture and was pre-trained on data from about 30M single-cell transcriptomes across various human tissues. Its attention mechanism enables it to focus on the most relevant parts of the input data."
+    ],
+    "title": "Unlock Gene Networks Using Limited Data with AI Model Geneformer ...",
+    "url": "https://developer.nvidia.com/blog/unlock-gene-networks-using-limited-data-with-ai-model-geneformer/"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "In addition to the pretrained model, contained herein are functions for tokenizing and collating data specific to single cell transcriptomics, pretraining the model, fine-tuning the model, extracting and plotting cell embeddings, and performing in silico pertrubation with either the pretrained or fine-tuned models. To install: git clone https://huggingface.co/ctheodoris/Geneformer cd Geneformer pip install .",
+      "Log in or Sign Up to review the conditions and access this model content. Geneformer is a foundation transformer model pretrained on a large-scale corpus of ~30 million single cell transcriptomes to enable context-aware predictions in settings with limited data in network biology.",
+      "Geneformer is a foundation transformer model pretrained on Genecorpus-30M, a pretraining corpus comprised of ~30 million single cell transcriptomes from a broad range of human tissues. We excluded cells with high mutational burdens (e.g. malignant cells and immortalized cell lines) that could lead to substantial network rewiring without companion genome sequencing to facilitate interpretation.",
+      "Fine-tuning Geneformer towards a diverse panel of downstream tasks relevant to chromatin and network dynamics using limited task-specific data demonstrated that Geneformer consistently boosted predictive accuracy. Applied to disease modeling with limited patient data, Geneformer identified candidate therapeutic targets."
+    ],
+    "title": "jinbo1129/try1 \u00b7 Hugging Face",
+    "url": "https://huggingface.co/jinbo1129/try1"
+  }
+]

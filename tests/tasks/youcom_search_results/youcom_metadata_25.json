@@ -1,0 +1,1385 @@
+[
+  {
+    "description": "As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts.",
+      "Abstract page for arXiv paper 1910.01108: DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+      "From: Victor Sanh [view email] [v1] Wed, 2 Oct 2019 17:56:28 UTC (275 KB) [v2] Wed, 16 Oct 2019 14:52:02 UTC (275 KB) [v3] Fri, 24 Jan 2020 16:58:52 UTC (276 KB) [v4] Sun, 1 Mar 2020 02:57:50 UTC (276 KB) ... View a PDF of the paper titled DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter, by Victor Sanh and 3 other authors",
+      "View a PDF of the paper titled DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter, by Victor Sanh and 3 other authors View PDF"
+    ],
+    "title": "[1910.01108] DistilBERT, a distilled version of BERT: smaller, ...",
+    "url": "https://arxiv.org/abs/1910.01108"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "DistilBERT, a distilled version of BERT: smaller, faster, ...",
+    "url": "https://arxiv.org/pdf/1910.01108"
+  },
+  {
+    "description": "This work proposes a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can be fine-tuned with good performances on a wide range of tasks like its larger counterparts, and introduces a triple loss combining language modeling, distillation and ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "This work proposes a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can be fine-tuned with good performances on a wide range of tasks like its larger counterparts, and introduces a triple loss combining language modeling, distillation and cosine-distance losses.Expand",
+      "Several different distilled versions of the state-of-the-art Dutch RobBERT model are created and it is found that the larger DistilBERT architecture worked significantly better than the Bort hyperparametrization and that the distilled models exhibit less gender-stereotypical bias than its teacher model.Expand",
+      "This paper proposes to distill knowledge from BERT, a state-of-the-art language representation model, into a single-layer BiLSTM, as well as its siamese counterpart for sentence-pair tasks, and achieves comparable results with ELMo.Expand",
+      "@article{Sanh2019DistilBERTAD, title={DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter}, author={Victor Sanh and Lysandre Debut and Julien Chaumond and Thomas Wolf}, journal={ArXiv}, year={2019}, volume={abs/1910.01108}, url={https://api.semanticscholar.org/CorpusID:203626972} }"
+    ],
+    "title": "[PDF] DistilBERT, a distilled version of BERT: smaller, faster, ...",
+    "url": "https://www.semanticscholar.org/paper/DistilBERT,-a-distilled-version-of-BERT:-smaller,-Sanh-Debut/a54b56af24bb4873ed0163b77df63b92bd018ddc"
+  },
+  {
+    "description": "Download Citation | DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter | As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models... | Find, read and cite all the research you ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Download Citation | DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter | As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models... | Find, read and cite all the research you need on ResearchGate",
+      "A comprehensive comparative analysis of transformer models, including BERT and its variants, such as RoBerta, Albert, and DistilBert \u00b7 (Sanh et al., 2019), has been conducted to evaluate their performance in addressing long-form question-answering tasks. Among them, BERT and RoBerta proved to be the best performing models for this task, with accuracies of 87.2 and 86.4%, respectively (Nitish et al., 2022).",
+      "... Finally, we also generate predictions for 25 issues that might be mentioned in the ad text using a multilabel classification model. This model was trained with PyTorch and Hugging Face's DistilBERT \u00b7 (Sanh et al. 2020) on manually coded television campaign advertising data, Meta's general election advertising data, and Google's general election advertising data in 2022.",
+      "... In our experiments, we use the following popular PLMs: BERT (bert-base-uncased; Devlin et al., 2019), DistilBERT (distilbert-base-uncased; Sanh et al., 2019), and RoBERTa (roberta-base; Liu et al., 2019). We set the max sentence length to 50, and the batch size to 128."
+    ],
+    "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper ...",
+    "url": "https://www.researchgate.net/publication/336230729_DistilBERT_a_distilled_version_of_BERT_smaller_faster_cheaper_and_lighter"
+  },
+  {
+    "description": "All of the papers present a particular point of view of findings in the BERT utilization.",
+    "favicon_url": "https://you.com/favicon?domain=www.kdnuggets.com&size=128",
+    "snippets": [
+      "Authors propose a technique to pre-train a smaller general-purpose language representation model, termed DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts. While most prior works investigated the use of distillation for building task-specific models, we leverage knowledge distillation during the pre-training phase.",
+      "We show that it is possible to reduce the size of a BERT model by 40% while retaining 97% of its language understanding capabilities and being 60% faster. Loss is threefold, combining language modeling loss, distillation loss, and cosine-distance loss. The data used the same corpus as the original BERT model. Further, DistilBERT was trained on eight 16GB V100 GPUs for around 90 hours.",
+      "By Kumar Abhishek, Machine Learning Engineer at Expedia on September 6, 2022 in Natural Language Processing",
+      "DistilBERT, a distilled version of BERT: smaller, faster, cheaper, and lighter"
+    ],
+    "title": "8 Innovative BERT Knowledge Distillation Papers That Have Changed ...",
+    "url": "https://www.kdnuggets.com/2022/09/eight-innovative-bert-knowledge-distillation-papers-changed-nlp-landscape.html"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "It was introduced in this paper. The code for the distillation process can be found here. This model is uncased: it does not make a difference between english and English. DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a self-supervised fashion, using the BERT base model as a teacher.",
+      "DistilBERT pretrained on the same data as BERT, which is BookCorpus, a dataset consisting of 11,038 unpublished books and English Wikipedia (excluding lists, tables and headers).",
+      ">>> from transformers import pipeline >>> unmasker = pipeline('fill-mask', model='distilbert-base-uncased') >>> unmasker(\"Hello I'm a [MASK] model.\") [{'sequence': \"[CLS] hello i'm a role model. [SEP]\", 'score': 0.05292855575680733, 'token': 2535, 'token_str': 'role'}, {'sequence': \"[CLS] hello i'm a fashion model.",
+      "from transformers import DistilBertTokenizer, DistilBertModel tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased') model = DistilBertModel.from_pretrained(\"distilbert-base-uncased\") text = \"Replace me by any text you'd like.\" encoded_input = tokenizer(text, return_tensors='pt') output = model(**encoded_input)"
+    ],
+    "title": "distilbert/distilbert-base-uncased \u00b7 Hugging Face",
+    "url": "https://huggingface.co/distilbert/distilbert-base-uncased"
+  },
+  {
+    "description": "DistilBERT is a small, fast, cheap and light Transformer model based on the BERT architecture. Knowledge distillation is performed during the pre-training phase to reduce the size of a BERT model by 40%. To leverage the inductive biases learned by larger models during pre-training, the authors ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "DistilBERT is a small, fast, cheap and light Transformer model based on the BERT architecture. Knowledge distillation is performed during the pre-training phase to reduce the size of a BERT model by 40%. To leverage the inductive biases learned by larger models during pre-training, the authors introduce a triple loss combining language modeling, distillation and cosine-distance losses.",
+      "Knowledge distillation is performed during the pre-training phase to reduce the size of a BERT model by 40%. To leverage the inductive biases learned by larger models during pre-training, the authors introduce a triple loss combining language modeling, distillation and cosine-distance losses. Source: DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+      "Introduced by Sanh et al. in DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter"
+    ],
+    "title": "Papers with Code - DistilBERT Explained",
+    "url": "https://paperswithcode.com/method/distillbert"
+  },
+  {
+    "description": "DistilBERT maintains 97% of BERT's language understanding capabilities while being 40% small and 60% faster.",
+    "favicon_url": "https://you.com/favicon?domain=zilliz.com&size=128",
+    "snippets": [
+      "Here, BERT serves as the teacher, and DistilBERT is the student. Generally, the distillation procedure is applied during the pertaining but can also be used during the fine-tuning. Consider an example to understand knowledge distillation. Suppose a large, state-of-the-art image classification model, like ResNet-50, which has been trained on a large dataset.",
+      "To overcome these problems, DistilBERT was introduced as a smaller, faster, and distilled version of BERT. It maintains 97% of BERT's language understanding capabilities while being 40% small and 60% faster. This article will discuss the methodologies used in DistilBERT development, including the training approach and its results.",
+      "Computational Efficiency: While BERT requires more computational resources to operate due to its large number of parameters, ****DistilBERT reduces the size of a BERT model by 40%. It requires less computation and time, which is especially useful when working with large datasets.",
+      "The knowledge distillation process in DistilBERT uses the triple loss function. This loss function helps the student model (DistilBERT) learn from the knowledge and patterns of the teacher model (BERT). But before discussing loss functions in detail, it's necessary to understand the concept of softmax temperature (temperature in softmax function)."
+    ],
+    "title": "Distilbert: A Smaller, Faster, and Distilled BERT - Zilliz Learn",
+    "url": "https://zilliz.com/learn/distilbert-distilled-version-of-bert"
+  },
+  {
+    "description": "PDF | Machine Reading Comprehension (MRC) is a challenging task in the field of Natural Language Processing (NLP), where a machine is required to read a... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "This paper provides an overview of recent advances in MRC and highlights some of the key challenges and future directions of this research area. It also evaluates the performance of several baseline models on the dataset, evaluates the challenges that the dataset poses for existing MRC models, and introduces the DistilBERT model to improve the accuracy of the answer extraction process.",
+      "This paper provides an overview of recent advances in MRC \u00b7 and highlights some of the key challenges and future directions of this research area. It also evaluates the performance of several baseline \u00b7 models on the dataset, evaluates the challenges that the dataset poses for existing MRC models, and introduces the DistilBERT model to",
+      "was introduced by Google in 2018. DistilBERT was developed \u00b7 by Hugging Face, an AI startup company that specializes in \u00b7 natural language processing (NLP) and deep learning. It was \u00b7 introduced in the paper \"DistilBERT, a distilled version of",
+      "The supervised paradigm for training machine reading and comprehension models represents a practical path forward for creating comprehensive natural language understanding systems. To enhance the DistilBERT basic model's functionality, we have experimented with a variety of question heads that differ in the number of layers, activation function, and general structure."
+    ],
+    "title": "(PDF) The DistilBERT Model: A Promising Approach to Improve Machine ...",
+    "url": "https://www.researchgate.net/publication/374123033_The_DistilBERT_Model_A_Promising_Approach_to_Improve_Machine_Reading_Comprehension_Models"
+  },
+  {
+    "description": "Kumar and Sachdeva (2021) used a convolution neural network (ConvNet) to extract the image features. Maity et al. (2022) adopted ResNet-50 to extract image features and combined them with the text feature vector developed from BERT with GRU to form the combination of features.",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "DistilBERT and ALBERT, which focus on improving BERT\u2019s efficiency, achieve considerably lower results (4.67 and 3.00 of average rank). However, despite the average ranking datasets, ALBERT achieves top results on two tasks: Subjectivity and Scicite. In the last case, the model improves the absolute accuracy computed by the other methods by 2\u20133 points. Reasonably, BERT achieves median results (2.50 of average rank).",
+      "(2020) also experimented with the effectiveness of using static word embedding (i.e., GloVe, fastText) and contextual word embedding generated using BERT, DistilBERT, and Sentence BERT (SBERT). Kumar and Sachdeva (2022) decided to generate embeddings with Elmo instead of static embeddings as Elmo considers the context in the text representation.",
+      "Lastly, DistilBERT achieves the lowest performance, as expected. Fig. 6 shows the accuracy variability with respect to the learning rate. Note that, differently from what we observed on SQuAD, these tasks are very sensitive to the learning rate. We notice that our results are considerably different from those published in the reference transformer\u2019s paper in a few cases.",
+      "While word2vec and fastText are predictive feedforward neural networks, GloVe draws attention to the co-occurrence of the words over a corpus and then is a count-based model. Dharma, Gaol, Leslie, Warnars, and Soewito (2022) examined the performance of these word embedding models on a text classification task."
+    ],
+    "title": "DistilBERT - an overview | ScienceDirect Topics",
+    "url": "https://www.sciencedirect.com/topics/computer-science/distilbert"
+  },
+  {
+    "description": "The easiest way to keep your publications page up to date",
+    "favicon_url": "https://you.com/favicon?domain=bibbase.org&size=128",
+    "snippets": [
+      "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter. Sanh, V., Debut, L., Chaumond, J., & Wolf, T. In 5th Workshop on Energy Efficient Machine Learning and Cognitive Computing @ NeurIPS 2019, 2019. Paper abstract bibtex",
+      "@inproceedings{Sanh2019, abstract = {As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts.",
+      "- 2019 - DistilBERT, a distilled version of BERT smaller, faster, cheaper and lighter.pdf:pdf},\\nkeywords = {model},\\ntitle = {{DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter}},\\nurl = {http://arxiv.org/abs/1910.01108},\\nyear = {2019}\\n}\\n\",\"author_short\":[\"Sanh, V.\",\"Debut, L.\",\"Chaumond, J.\",\"Wolf, T.\"],\"key\":\"Sanh2019\",\"id\":\"Sanh2019\",\"bibbaseid\":\"sanh-debut-chaumond-wolf-distilbertadistilledversionofbertsmallerfastercheaperandlighter-2019\",\"role\":\"author\",\"urls\":{\"Paper\":\"http://arxiv.org/abs/1910.01108\"},\"keyword\":[\"model\"],\"metadata\":{\"authorlinks\":{}},\"dow",
+      "- 2019 - DistilBERT, a distilled version of BERT smaller, faster, cheaper and lighter.pdf:pdf}, keywords = {model}, title = {{DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter}}, url = {http://arxiv.org/abs/1910.01108}, year = {2019} }"
+    ],
+    "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper ...",
+    "url": "https://bibbase.org/network/publication/sanh-debut-chaumond-wolf-distilbertadistilledversionofbertsmallerfastercheaperandlighter-2019"
+  },
+  {
+    "description": "Posted by u/Individual_Coast8114 - 13 votes and 13 comments",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "- If the paper has 3+ authors, but citing it with the first author et al., only (like Krishnan et al.) does not create ambiguity (because say there is only one paper with Krishnan as the first author in that year) then you cite it as Krishnan et al. from the first citation \u00b7 - If the paper has 3+ authors and citing three authors is not ambiguous, cite three authors and et al. - If the paper has 3+ authors and citing three authors is ambiguous (like there are more than one paper that would all be Smith, Jones, Mailman et al., 2022) then you cite enough authors to eliminate the ambiguity",
+      "The in text citation can be just first author, et al. Though ... Nineteen?!? Somebody on the rule making committee must be the nineteenth author on a few papers. \ud83d\ude02 ... First Author Name, et al. ... \".et al\". I haven't looked at MLA in a few years but that should work. https://www.scribbr.com/citing-sources/et-al/ ... No you don't have to show all 50.",
+      "Note that in aPA 7 you dont list all 3 the first time now, just use et al from the first citation. ... So I think that is not super clear, so just to clarify in case someone else asks about this... - If the paper has one author, you cite it with one author.",
+      "If you are using APA, in the in-text citation, you use the first three and then et al. In the reference list, I know this is awful, but the official recommendation from the Style guide is to list the first 19 (nineteen) authors, then ellipsis (...) and then the final author's name."
+    ],
+    "title": "r/AcademicPsychology on Reddit: I found this paper that has more ...",
+    "url": "https://www.reddit.com/r/AcademicPsychology/comments/14a2vbs/i_found_this_paper_that_has_more_than_50_authors/"
+  },
+  {
+    "description": "Machine Reading Comprehension (MRC) is a challenging task in the field of Natural Language Processing (NLP), where a machine is required to read a given text passage and answer a set of questions based on it. This paper provides an overview of recent advances in MRC and highlights some of the ...",
+    "favicon_url": "https://you.com/favicon?domain=ijritcc.org&size=128",
+    "snippets": [
+      "This paper provides an overview of recent advances in MRC and highlights some of the key challenges and future directions of this research area. It also evaluates the performance of several baseline models on the dataset, evaluates the challenges that the dataset poses for existing MRC models, and introduces the DistilBERT model to improve the accuracy of the answer extraction process.",
+      "Sanh V, Debut L, Chaumond J, Wolf T. DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter. arXiv preprint arXiv:1910.01108. 2019 Oct 2. ... Call for Papers for the New Issue.",
+      "Kamfonas M, Alon G. What Can Secondary Predictions Tell Us? An Exploration on Question-Answering with SQuAD-v2. 0. arXiv preprint arXiv:2206.14348. 2022 Jun 29.",
+      "Sun T, He Z, Zhu Q, Qiu X, Huang X. Multi-Task Pre-Training of Modular Prompt for Few-Shot Learning. arXiv preprint arXiv:2210.07565. 2022 Oct 14."
+    ],
+    "title": "The DistilBERT Model: A Promising Approach to Improve Machine Reading ...",
+    "url": "https://ijritcc.org/index.php/ijritcc/article/view/7957"
+  },
+  {
+    "description": "This month, my aim was to explore the highly cited review articles published in 2022. What could have made these articles appeal to other researchers, from among the 44 review articles published in the journals in that same year, leading to the high number of citations?",
+    "favicon_url": "https://you.com/favicon?domain=pharmaceutical-journal.com&size=128",
+    "snippets": [
+      "The Pharmaceutical Journal from the Royal Pharmaceutical Society",
+      "After all, interest in medication adherence research has grown in abundance since first discussed some 50 years back.  \u00b7 Looking at the citations now, I can see that in fact most of the papers citing this review are about gout, which shows the relevance of the work within the therapeutic field.  \u00b7 ZZ: Finally, the most cited paper from 2022 published in JPHSR is entitled \u2018Analysis of cancer drug prices: a narrative review of literature\u2019 and was cited 5 times.",
+      "JPP has an impact factor of 2.8, so we would expect this review paper to receive at least 2.8 citations per year (rounded up to 3.0), or 5.6 citations (rounded up to 6.0) over the past two years. The fact that it has received 30 citations since its publication in August 2022 makes this a highly cited paper by objective measures.",
+      "ZZ: The most cited review paper published in IJPP in 2022 is entitled \u2018Clinical interventions to improve adherence to urate-lowering therapy in patients with gout: a systematic review\u2019, which received 13 cites."
+    ],
+    "title": "Why are some research papers cited more than others? - The ...",
+    "url": "https://pharmaceutical-journal.com/article/opinion/why-are-some-research-papers-cited-more-than-others"
+  },
+  {
+    "description": "A smaller, faster, and cheaper language model (DistilBERT) retains most of the language understanding capabilities of larger models by leveraging knowledge distillation during pre-training \u00b7 As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language ...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Join the discussion on this paper page",
+      "As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts.",
+      "A smaller, faster, and cheaper language model (DistilBERT) retains most of the language understanding capabilities of larger models by leveraging knowledge distillation during pre-training."
+    ],
+    "title": "Paper page - DistilBERT, a distilled version of BERT: smaller, ...",
+    "url": "https://huggingface.co/papers/1910.01108"
+  },
+  {
+    "description": "Citations are an important, but often overlooked, part of every scientific paper. They allow the reader to trace the flow of evidence, serving as a gateway to relevant literature. Most scientists are aware of citations errors, but few appreciate the ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Clin Sci (Lond). Author manuscript; available in PMC: 2022 Mar 12.",
+      "However, the generalizability of this finding was limited due to the fact that this study examined citations of a single article, which was selected because the authors were aware of the high rate of citation inaccuracies. Studies using the traditional journal based approach have reported that between 10% and 50% of papers contain citation inaccuracies (1,13)."
+    ],
+    "title": "How accurate are citations of frequently cited papers in biomedical ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8048031/"
+  },
+  {
+    "description": "Citations are widely considered in scientists\u2019 evaluation. As such, scientists may be incentivized to inflate their citation counts. While previous literature has examined self-citations and citation cartels, it remains unclear whether scientists can purchase citations.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Scientific Reports - Citation manipulation through citation mills and pre-print servers",
+      "Ertz, M. New scam: Do you want to be paid to cite others\u2019 research?, ResearchGate November 2022. Accessed June 7, 2023. Wang, D., Song, C. & Barab\u00e1si, A.-L. Quantifying long-term scientific impact. Science 342(6154), 127 (2013). ... Sekara, V. et al. The chaperone effect in scientific publishing. Proc. Natl. Acad. Sci. 115(50), 12603 (2018).",
+      "Teplitskiy, M., Duede, E., Menietti, M. & Lakhani, K. R. How status of research papers affects the way they are read and cited. Res. Policy 51(4), 104484 (2022). ... Haroon, M. et al. Auditing YouTube\u2019s recommendation system for ideologically congenial, extreme, and problematic recommendations. Proc. Natl. Acad. Sci. 120(50), e2213020120 (2023).",
+      "Ranking, S. ShanghaiRanking\u2019s Academic Ranking of World Universities Methodology (2022) C.L.L. QS World University Rankings Methodology: Using Rankings to Start Your University Search. Top Universities May 2023. T. H. Education. Methodology for overall and subject rankings for the times higher education world university rankings (2023) Chawla, D. S. Highly-cited chemist is suspended for claiming to be affiliated with Russian and Saudi universities (2023)."
+    ],
+    "title": "Citation manipulation through citation mills and pre-print servers ...",
+    "url": "https://www.nature.com/articles/s41598-025-88709-7"
+  },
+  {
+    "description": "As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train ...",
+    "favicon_url": "https://you.com/favicon?domain=typeset.io&size=128",
+    "snippets": [
+      "Abstract: As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts.",
+      "TL;DR: This work proposes a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can be fine-tuned with good performances on a wide range of tasks like its larger counterparts, and introduces a triple loss combining language modeling, distillation and cosine-distance losses.",
+      "DistilBERT's Tokenizer is based on WordPiece, enabling efficient tokenization for the smaller, faster, and lighter model while maintaining language understanding capabilities.",
+      "TL;DR: BERT as mentioned in this paper pre-trains deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers, which can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks....read moreread less"
+    ],
+    "title": "(Open Access) DistilBERT, a distilled version of BERT: smaller, ...",
+    "url": "https://typeset.io/papers/distilbert-a-distilled-version-of-bert-smaller-faster-483lsblpbn"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "How to Distill your BERT: An Empirical Study on the Impact ...",
+    "url": "https://aclanthology.org/2023.acl-short.157.pdf"
+  },
+  {
+    "description": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter DistilBERT, by Hugging Face 2019 NeurIPS Workshop, Over 1500 Citations (Sik-Ho Tsang @ Medium) Language Model, Natural Language Processing, NLP, BERT \u00b7 DistilBERT also compares surprisingly well to BERT, retaining ...",
+    "favicon_url": "https://you.com/favicon?domain=sh-tsang.medium.com&size=128",
+    "snippets": [
+      "[2019 NeurIPS Workshop] [DistilBERT] DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter Language/Sequence Model: 2007 [Bengio TNN\u201907] 2013 [Word2Vec] [NCE] [Negative\u2026",
+      "The student \u2014 DistilBERT \u2014 has the same general architecture as BERT.",
+      "DistilBERT is distilled on very large batches leveraging gradient accumulation (up to 4K examples per batch) using dynamic masking and without the next sentence prediction objective.",
+      "DistilBERT is trained on the same corpus as the original BERT model: a concatenation of English Wikipedia and Toronto Book Corpus."
+    ],
+    "title": "Review \u2014 DistilBERT, a distilled version of BERT: smaller, faster, ...",
+    "url": "https://sh-tsang.medium.com/review-distilbert-a-distilled-version-of-bert-smaller-faster-cheaper-and-lighter-5b3fa180169e"
+  },
+  {
+    "description": "Ever curious which retracted papers have been most cited by other scientists? Below, we present the list of the 10 most highly cited retractions as of May 23, 2025. Readers will see some familiar entries, such as the infamous Lancet paper by Andrew Wakefield that originally suggested a link ...",
+    "favicon_url": "https://you.com/favicon?domain=retractionwatch.com&size=128",
+    "snippets": [
+      "Ever curious which retracted papers have been most cited by other scientists? Below, we present the list of the 10 most highly cited retractions as of May 23, 2025. Readers will see some familiar entries, such as the infamous Lancet paper by Andrew Wakefield that originally suggested a link between autism and childhood vaccines.",
+      "Ever curious which retracted papers have been most cited by other scientists? Below, we present the list of the 10 most highly cited retractions as of May 23, 2025. Readers will see some familiar e\u2026",
+      "Readers will see some familiar entries, such as the infamous Lancet paper by Andrew Wakefield that originally suggested a link between autism and childhood vaccines. You\u2019ll note that some papers \u2014 including the #8 most cited paper \u2014 received more citations after they were retracted, which research has shown is an ongoing problem.",
+      "Note: To obtain the number of citations before and after a retraction was issued, we relied on the \u201cCitation index\u201d portion of Clarivate Analytics\u2019 Web of Science (WoS), which only adds up the number of citations from journals indexed by the WoS Core Collection."
+    ],
+    "title": "Top 10 most highly cited retracted papers \u2013 Retraction Watch",
+    "url": "https://retractionwatch.com/the-retraction-watch-leaderboard/top-10-most-highly-cited-retracted-papers/"
+  },
+  {
+    "description": "This work focuses on the efficiency of the knowledge distillation approach in generating a lightweight yet powerful BERT-based model for natural language processing (NLP) applications. After the model creation, we applied the resulting model, LastBERT, to a real-world taskclassifying severity ...",
+    "favicon_url": "https://you.com/favicon?domain=www.medrxiv.org&size=128",
+    "snippets": [
+      "This work focuses on the efficiency of the knowledge distillation approach in generating a lightweight yet powerful BERT-based model for natural language processing (NLP) applications. After the model creation, we applied the resulting model, LastBERT, to a real-world taskclassifying severity levels of Attention Deficit Hyperactivity Disorder (ADHD)-related concerns from social media text data.",
+      "On the CoLA dataset, LastBERT underperforms with a Matthews correlation coefficient of 0.17, compared to DistilBERTs 0.51 and MobileBERTs 0.50. BERT Base performs slightly better with a score of 0.52, while BERT Large achieves a 0.60 correlation. TinyBERT also matches DistilBERT with a 0.51 correlation.",
+      "Zhang YKim J, Park JH, Lee M, Mok WL, Choi JY, Lee S. Tutoring Helps Students Learn Better: Improving Knowledge Distillation for BERT with Tutor Network. In: Goldberg Y, Kozareva Z, Zhang Y, editors. Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing.",
+      "Abu Dhabi, United Arab Emirates: Association for Computational Linguistics; 2022."
+    ],
+    "title": "Larger models yield better results? Streamlined severity ...",
+    "url": "https://www.medrxiv.org/content/10.1101/2024.10.30.24316411v1.full"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=scispace.com&size=128",
+    "snippets": [],
+    "title": "DistilBERT, a distilled version of BERT: smaller, faster, ...",
+    "url": "https://scispace.com/papers/distilbert-a-distilled-version-of-bert-smaller-faster-483lsblpbn"
+  },
+  {
+    "description": "Implementation of paper \"DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter\" by Victor SANH, Lysandre DEBUT, Julien CHAUMOND, Thomas WOLF - askaydevs/di...",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Implementation of paper \"DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter\" by Victor SANH, Lysandre DEBUT, Julien CHAUMOND, Thomas WOLF - askaydevs/distillbert-qa",
+      "DistilBERT is a small, fast, cheap and light Transformer model based on Bert architecture. It has 40% less parameters than bert-base-uncased, runs 60% faster while preserving 97% of BERT's performance as measured on the GLUE language understanding benchmark. DistilBERT is trained using knowledge distillation, a technique to compress a large model called the teacher into a smaller model called the student.",
+      "By distillating Bert, we obtain a smaller Transformer model that bears a lot of similarities with the original BERT model while being lighter, smaller and faster to run. DistilBERT is thus an interesting option to put large-scaled trained Transformer model into production.",
+      "export SQUAD_DIR=/path/to/SQUAD python run_squad.py \\ --model_type distilbert \\ --model_name_or_path distilbert-base-uncased \\ --do_train \\ --do_eval \\ --do_lower_case \\ --train_file $SQUAD_DIR/train-v1.1.json \\ --predict_file $SQUAD_DIR/dev-v1.1.json \\ --per_gpu_train_batch_size 12 \\ --learning_rate 3e-5 \\ --num_train_epochs 2.0 \\ --max_seq_length 384 \\ --doc_stride 128 \\ --output_dir /tmp/debug_squad/"
+    ],
+    "title": "GitHub - askaydevs/distillbert-qa: Implementation of paper ...",
+    "url": "https://github.com/askaydevs/distillbert-qa"
+  },
+  {
+    "description": "This work focuses on the efficiency of the knowledge distillation approach in generating a lightweight yet powerful BERT-based model for natural language processing (NLP) applications. After the model creation, we applied the resulting model, LastBERT, to a real-world taskclassifying severity ...",
+    "favicon_url": "https://you.com/favicon?domain=www.medrxiv.org&size=128",
+    "snippets": [
+      "This work focuses on the efficiency of the knowledge distillation approach in generating a lightweight yet powerful BERT-based model for natural language processing (NLP) applications. After the model creation, we applied the resulting model, LastBERT, to a real-world taskclassifying severity levels of Attention Deficit Hyperactivity Disorder (ADHD)-related concerns from social media text data.",
+      "On the CoLA dataset, LastBERT underperforms with a Matthews correlation coefficient of 0.17, compared to DistilBERTs 0.51 and MobileBERTs 0.50. BERT Base performs slightly better with a score of 0.52, while BERT Large achieves a 0.60 correlation. TinyBERT also matches DistilBERT with a 0.51 correlation.",
+      "Zhang YKim J, Park JH, Lee M, Mok WL, Choi JY, Lee S. Tutoring Helps Students Learn Better: Improving Knowledge Distillation for BERT with Tutor Network. In: Goldberg Y, Kozareva Z, Zhang Y, editors. Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing.",
+      "Abu Dhabi, United Arab Emirates: Association for Computational Linguistics; 2022."
+    ],
+    "title": "Larger models yield better results? Streamlined severity ...",
+    "url": "https://www.medrxiv.org/content/10.1101/2024.10.30.24316411v1.full"
+  },
+  {
+    "description": "Ever curious which retracted papers have been most cited by other scientists? Below, we present the list of the 10 most highly cited retractions as of May 23, 2025. Readers will see some familiar entries, such as the infamous Lancet paper by Andrew Wakefield that originally suggested a link ...",
+    "favicon_url": "https://you.com/favicon?domain=retractionwatch.com&size=128",
+    "snippets": [
+      "Ever curious which retracted papers have been most cited by other scientists? Below, we present the list of the 10 most highly cited retractions as of May 23, 2025. Readers will see some familiar entries, such as the infamous Lancet paper by Andrew Wakefield that originally suggested a link between autism and childhood vaccines.",
+      "Ever curious which retracted papers have been most cited by other scientists? Below, we present the list of the 10 most highly cited retractions as of May 23, 2025. Readers will see some familiar e\u2026",
+      "Readers will see some familiar entries, such as the infamous Lancet paper by Andrew Wakefield that originally suggested a link between autism and childhood vaccines. You\u2019ll note that some papers \u2014 including the #8 most cited paper \u2014 received more citations after they were retracted, which research has shown is an ongoing problem.",
+      "Note: To obtain the number of citations before and after a retraction was issued, we relied on the \u201cCitation index\u201d portion of Clarivate Analytics\u2019 Web of Science (WoS), which only adds up the number of citations from journals indexed by the WoS Core Collection."
+    ],
+    "title": "Top 10 most highly cited retracted papers \u2013 Retraction Watch",
+    "url": "https://retractionwatch.com/the-retraction-watch-leaderboard/top-10-most-highly-cited-retracted-papers/"
+  },
+  {
+    "description": "PDF | Large language models (LLMs) have emerged as powerful tools for generating human-quality text, raising concerns about their potential for misuse... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Large language models (LLMs) have emerged as powerful tools for generating human-quality text, raising concerns about their potential for misuse in academic settings. This paper investigates the use of DistilBERT, a distilled version of BERT, for detecting LLM-generated text.",
+      "Dataset, achieving an average accuracy of around 94%. Our \ufb01ndings suggest that DistilBERT is a",
+      "Fig. 1 Architecture of DistilBERT",
+      "Figure 1. DistilBERT addresses these issues by"
+    ],
+    "title": "(PDF) DistilBERT: A Novel Approach to Detect Text Generated by ...",
+    "url": "https://www.researchgate.net/publication/377909511_DistilBERT_A_Novel_Approach_to_Detect_Text_Generated_by_Large_Language_Models_LLM"
+  },
+  {
+    "description": "A smaller, faster, and cheaper language model (DistilBERT) retains most of the language understanding capabilities of larger models by leveraging knowledge distillation during pre-training \u00b7 As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language ...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Join the discussion on this paper page",
+      "As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts.",
+      "A smaller, faster, and cheaper language model (DistilBERT) retains most of the language understanding capabilities of larger models by leveraging knowledge distillation during pre-training."
+    ],
+    "title": "Paper page - DistilBERT, a distilled version of BERT: smaller, ...",
+    "url": "https://huggingface.co/papers/1910.01108"
+  },
+  {
+    "description": "While thousands of papers cite themselves, the percentage that do so is relatively low. Haunschild & Bornmann/arXiv.org While using bibliometric techniques to measure how disruptive research pa\u2026",
+    "favicon_url": "https://you.com/favicon?domain=retractionwatch.com&size=128",
+    "snippets": [
+      "Haunschild and Bornmann \u2014 both information scientists at the Max Planck Institute for Solid State Research in Stuttgart, Germany \u2014 found these \u201cpaper self-citations\u201d in journals indexed by Clarivate\u2019s Web of Science since 1980.",
+      "St\u00e9phane Bonhomme, an economist at the University of Chicago who edits Quantitative Economics \u2014 the journal with the highest number of paper self-citations in study, 165 self-citing papers out of 416 studies in total \u2014 says he was surprised to see the numbers for his publication.",
+      "But after taking a closer look, Bonhomme said, he discovered that many paper self-citations were coming from the authors referencing their own appendices and supplementary materials that were published under different DOIs \u2014 a fairly common practice in economics, particularly with papers with long appendices or supplementary material.",
+      "King said she would like to see a larger sample that explores how many studies contain true paper self-citations versus how many are the result of mistakes in the database. \u201cThat\u2019s the remaining question in my mind,\u201d she said."
+    ],
+    "title": "Why do nearly 45,000 scholarly papers cite themselves? \u2013 Retraction ...",
+    "url": "https://retractionwatch.com/2025/03/19/paper-self-citations-bornmann-haunschild-bibliometrics/"
+  },
+  {
+    "description": "Although citations are widely used to measure the influence of scientific works, research shows that many citations serve rhetorical functions and ref\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Although citations are widely used to measure the influence of scientific works, research shows that many citations serve rhetorical functions and reflect little-to-no influence on the citing authors. If highly cited papers disproportionately attract rhetorical citations then their citation counts may reflect rhetorical usefulness more than influence.",
+      "Alternatively, researchers may perceive highly cited papers to be of higher quality and invest more effort into reading them, leading to disproportionately substantive citations. We test these arguments using data on 17,154 randomly sampled citations collected via surveys from 9,380 corresponding authors in 15 fields.",
+      "We find that most citations (54%) had little-to-no influence on the citing authors. However, citations to the most highly cited papers were 2\u20133 times more likely to denote substantial influence. Experimental and correlational data show a key mechanism: displaying low citation counts lowers perceptions of a paper's quality, and papers with poor perceived quality are read more superficially.",
+      "The results suggest that higher citation counts lead to more meaningful engagement from readers and, consequently, the most highly cited papers influence the research frontier much more than their raw citation counts imply."
+    ],
+    "title": "How status of research papers affects the way they are read and ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0048733322000129"
+  },
+  {
+    "description": "HuggingFace introduces DilBERT, a distilled and smaller version of Google AI\u2019s Bert model with strong performances on language understanding. DilBert s included in the pytorch-transformers library.",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "You can find the code to reproduce the training of DilBERT along with pre-trained weights for DilBERT here.",
+      "We further study the use of DistilBERT on downstream tasks under efficient inference constraints. We use our compact pre-trained language model by fine-tuning it a classification task. A nice way to actually mix distillation pre-training and transfer-learning! Extract from the IMDB Review dataset \u2014 Source: Kaggle \u00b7 We selected the IMDB Review Sentiment Classification which is composed of 50'000 reviews in English labeled as positive or negative: 25'000 for training and 25'000 for test (and with balanced classes).",
+      "We thus initialize our student, DistilBERT, from its teacher, BERT, by taking one layer out of two, leveraging the common hidden size between student and teacher. We also used a few training tricks from the recent RoBERTa paper which showed that the way BERT is trained is crucial for its final performance.",
+      "2019, October 3rd \u2014 Update: We are releasing our NeurIPS 2019 workshop paper describing our approach on DistilBERT with improved results: 97% of BERT\u2019s performance on GLUE (the results in the paper superseed the results presented here). The approach is slightly different from the one explained in this present blog post so this blog post should be a good entry point to the paper!"
+    ],
+    "title": "\ud83c\udfce Smaller, faster, cheaper, lighter: Introducing DistilBERT, ...",
+    "url": "https://medium.com/huggingface/distilbert-8cf3380435b5"
+  },
+  {
+    "description": "An official website of the United States government \u00b7 Official websites use .gov A .gov website belongs to an official government organization in the United States",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Received 2022 Jul 2; Accepted 2023 Jan 15; Issue date 2023 Jul. Copyright \u00a9 2023 Korean Society for Sexual Medicine and Andrology \u00b7 This is an Open Access article distributed under the terms of the Creative Commons Attribution Non-Commercial License (http://creativecommons.org/licenses/by-nc/4.0) which permits unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited.",
+      "9.Agarwal A, Saleh R, Boitrelle F, Cannarella R, Hamoda TAA, Durairajanayagam D, et al. The Global Andrology Forum (GAF): a world-wide, innovative, online initiative to bridge the gaps in research and clinical practice of male infertility and sexual health. World J Mens Health. 2022;40:537\u2013542.",
+      "Although it is recommended that the entire research paper is fully reviewed before being cited [2,3], it is a common experience that this is often not done, and it is reported that up to 80% of authors omit to read the full text of the research paper they are citing [3]. This omission can perpetuate significant errors within an article in the literature and mislead the research being reported [4,5].",
+      "The most common error was incorrect citation information (n=9), followed by unjustified extrapolation of the conclusion of the cited work (n=6), factual errors (n=5), incorrect interpretation of results (n=5), citing a secondary source (n=4), citing a wrong reference (n=2), ignoring more suitable reference (n=2), and citing an unreliable source (n=1)."
+    ],
+    "title": "Citation Errors in Scientific Research and Publications: Causes, ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10307651/"
+  },
+  {
+    "description": "Find it. Write it. Cite it. The Chicago Manual of Style Online is the venerable, time-tested guide to style, usage, and grammar in an accessible online format. \u00b6 It is the indispensable reference for writers, editors, proofreaders, indexers, copywriters, designers, and publishers, informing ...",
+    "favicon_url": "https://you.com/favicon?domain=www.chicagomanualofstyle.org&size=128",
+    "snippets": [
+      "Find it. Write it. Cite it. The Chicago Manual of Style Online is the venerable, time-tested guide to style, usage, and grammar in an accessible online format. \u00b6 It is the indispensable reference for writers, editors, proofreaders, indexers, copywriters, designers, and publishers, informing the editorial canon with sound, definitive advice.",
+      "Kwon, Hyeyoung. 2022. \u201cInclusion Work: Children of Immigrants Claiming Membership in Everyday Life.\u201d American Journal of Sociology 127 (6): 1818\u201359. https://doi.org/10.1086/720277. Lindquist, Benjamin. 2023. \u201cThe Art of Text-to-Speech.\u201d Critical Inquiry 50 (2): 225\u201351.",
+      "Note that a place of publication is no longer required in book citations (see CMOS 14.30). Binder, Amy J., and Jeffrey L. Kidder. 2022. The Channels of Student Activism: How the Left and Right Are Winning (and Losing) in Campus Politics Today.",
+      "2022. \u201cPre-Infection 25-Hydroxyvitamin D3 Levels and Association with Severity of COVID-19 Illness.\u201d PLOS ONE 17 (2): e0263069. https://doi.org/10.1371/journal.pone.0263069. ... For more details and examples, see CMOS 14.67\u201386. Articles from newspapers or news sites, magazines, blogs, and the like are cited similarly."
+    ],
+    "title": "The Chicago Manual of Style, 18th Edition",
+    "url": "https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html"
+  },
+  {
+    "description": "The proliferation of fake news has become a significant issue in today\u2019s society, affecting the public\u2019s perception of current events and causing harm to individuals and organizations. Therefore, the need for automated systems that can identify and flag fake news is critical.",
+    "favicon_url": "https://you.com/favicon?domain=ieeexplore.ieee.org&size=128",
+    "snippets": [],
+    "title": "DistilBERT and RoBERTa Models for Identification of Fake News | ...",
+    "url": "https://ieeexplore.ieee.org/document/10159740/"
+  },
+  {
+    "description": "111 votes, 19 comments. HuggingFace released their first NLP transformer model \"DistilBERT\", which is similar to the BERT architecture: only 6\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/jikkii - 111 votes and 19 comments",
+      "HuggingFace released their first NLP transformer model \"DistilBERT\", which is similar to the BERT architecture: only 66 million parameters (instead of 110 million) while keeping 95% of the performance on GLUE.",
+      "Try the Huggingface one, somehow it's super lightweight, not sure how they did it. I'm guessing distilBert will be super duper light weight.",
+      "lol it looks like they did initially name it DilBERT but changed their mind and switched it to DistilBERT instead :)"
+    ],
+    "title": "r/MachineLearning on Reddit: [R] DistilBERT: A smaller, faster, ...",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/cwm87b/r_distilbert_a_smaller_faster_cheaper_lighter/"
+  },
+  {
+    "description": "Distil Bert was introduced in paper DistilBERT, a distilled version of BERT: smaller,faster, cheaper by and lighter by victor,lysandre julien and thomas from hugging face. In the last few years\u2026",
+    "favicon_url": "https://you.com/favicon?domain=arunm8489.medium.com&size=128",
+    "snippets": [
+      "Distil Bert was introduced in paper DistilBERT, a distilled version of BERT: smaller,faster, cheaper by and lighter by victor,lysandre\u2026",
+      "Distil Bert was introduced in paper DistilBERT, a distilled version of BERT: smaller,faster, cheaper by and lighter by victor,lysandre julien and thomas from hugging face. In the last few years transfer learning is widely using the field of natural language processing and large pretrained models becomes a basic tool in many NLP tasks.",
+      "In DistilBERT paper, they showed that it is possible to reach similar performances on many downstream-tasks using much smaller language models pre-trained with knowledge distillation, resulting in models that are lighter and faster at inference time, while also requiring a smaller computational training budget.",
+      "DistilBERT is small, fast, cheaper, smaller and light transformer trained by distilling Bert base."
+    ],
+    "title": "Understanding Distil BERT In Depth | by Arun Mohan | Medium",
+    "url": "https://arunm8489.medium.com/understanding-distil-bert-in-depth-5f2ca92cf1ed"
+  },
+  {
+    "description": "As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or infer\u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts.",
+      "Student architecture In the present work, the student - DistilBERT - has the same general architecture as BERT. The token-type embeddings and the pooler are removed while the number of layers is reduced by a factor of 2.",
+      "Distillation We applied best practices for training BERT model recently proposed in Liu et al. (2019). As such, DistilBERT is distilled on very large batches leveraging gradient accumulation (up to 4K examples per batch) using dynamic masking and without the next sentence prediction objective.",
+      "Data and compute power We train DistilBERT on the same corpus as the original BERT model: a concatenation of English Wikipedia and Toronto Book Corpus (Zhu et al., 2015). DistilBERT was trained on 8 16GB V100 GPUs for approximately 90 hours."
+    ],
+    "title": "[1910.01108] DistilBERT, a distilled version of BERT: smaller, ...",
+    "url": "https://ar5iv.labs.arxiv.org/html/1910.01108"
+  },
+  {
+    "description": "Find it. Write it. Cite it. The Chicago Manual of Style Online is the venerable, time-tested guide to style, usage, and grammar in an accessible online format. \u00b6 It is the indispensable reference for writers, editors, proofreaders, indexers, copywriters, designers, and publishers, informing ...",
+    "favicon_url": "https://you.com/favicon?domain=www.chicagomanualofstyle.org&size=128",
+    "snippets": [
+      "Find it. Write it. Cite it. The Chicago Manual of Style Online is the venerable, time-tested guide to style, usage, and grammar in an accessible online format. \u00b6 It is the indispensable reference for writers, editors, proofreaders, indexers, copywriters, designers, and publishers, informing the editorial canon with sound, definitive advice.",
+      "Kwon, Hyeyoung. 2022. \u201cInclusion Work: Children of Immigrants Claiming Membership in Everyday Life.\u201d American Journal of Sociology 127 (6): 1818\u201359. https://doi.org/10.1086/720277. Lindquist, Benjamin. 2023. \u201cThe Art of Text-to-Speech.\u201d Critical Inquiry 50 (2): 225\u201351.",
+      "Note that a place of publication is no longer required in book citations (see CMOS 14.30). Binder, Amy J., and Jeffrey L. Kidder. 2022. The Channels of Student Activism: How the Left and Right Are Winning (and Losing) in Campus Politics Today.",
+      "2022. \u201cPre-Infection 25-Hydroxyvitamin D3 Levels and Association with Severity of COVID-19 Illness.\u201d PLOS ONE 17 (2): e0263069. https://doi.org/10.1371/journal.pone.0263069. ... For more details and examples, see CMOS 14.67\u201386. Articles from newspapers or news sites, magazines, blogs, and the like are cited similarly."
+    ],
+    "title": "The Chicago Manual of Style, 18th Edition",
+    "url": "https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-2.html"
+  },
+  {
+    "description": "\u202aHugging Face\u202c - \u202a\u202aCited by 22,210\u202c\u202c - \u202aNatural language processing\u202c - \u202aProbabilistic languages\u202c - \u202aTransfer learning\u202c",
+    "favicon_url": "https://you.com/favicon?domain=scholar.google.com&size=128",
+    "snippets": [
+      "This \"Cited by\" count includes citations to the following articles in Scholar."
+    ],
+    "title": "Julien Chaumond",
+    "url": "https://scholar.google.com/citations?user=pJOhH9EAAAAJ&hl=en"
+  },
+  {
+    "description": "Unlocking the secrets of BERT compression: a student-teacher framework for maximum efficiency",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "Below, we are going to discuss these loss components and undestand the necessity of each of them. Nevertheless, before diving into depth it is necessary to understand an important concept called temperature in softmax activation function. The temperature concept is used in the DistilBERT loss function.",
+      "DistilBERT made a huge step in BERT evolution by allowing it to significantly compress the model while achieving comparable performance on various NLP tasks. Apart from it, DistilBERT weighs only 207 MB making the integration on devices with restricted capacities easier.",
+      "In this article, we will understand the distillation mechanism applied to BERT which led to a new model called DistilBERT.",
+      "Similar to the teacher\u2019s model (BERT), during pretraining, the student (DistilBERT) learns language by making predictions for the masked language modeling task."
+    ],
+    "title": "Large Language Models: DistilBERT - Smaller, Faster, Cheaper and ...",
+    "url": "https://towardsdatascience.com/distilbert-11c8810d29fc/"
+  },
+  {
+    "description": "Small language models (SLMs) are artificial intelligence (AI) models capable of processing, understanding and generating natural language content. As their name implies, SLMs are smaller in scale and scope than large language models (LLMs).",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "DistilBERT is a lighter version of Google\u2019s pioneering BERT foundation model.",
+      "1 DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter, arXiv, 1 March 2020"
+    ],
+    "title": "What are Small Language Models (SLM)? | IBM",
+    "url": "https://www.ibm.com/think/topics/small-language-models"
+  },
+  {
+    "description": "In the context of everyday research assessment citation counts are often taken as a simple indicator of the influence of any particular paper. However, all citations are not the same and can be dep\u2026",
+    "favicon_url": "https://you.com/favicon?domain=blogs.lse.ac.uk&size=128",
+    "snippets": [],
+    "title": "Citation counts reinforce the influence of highly cited papers ...",
+    "url": "https://blogs.lse.ac.uk/impactofsocialsciences/2022/02/17/citation-counts-reinforce-the-influence-of-highly-cited-papers-and-nudges-us-towards-undervaluing-those-with-fewer/"
+  },
+  {
+    "description": "In a previous blog post, I suggested to my younger colleagues that while they should not care so much about the impact factor of the journals they published in (as long as these journals are well-read in their respective fields of research), they should care quite a lot about these papers being ...",
+    "favicon_url": "https://you.com/favicon?domain=lucbeaulieu.com&size=128",
+    "snippets": [
+      "In a previous blog post, I suggested to my younger colleagues that while they should not care so much about the impact factor of the journals they published in (as long as these journals are well-read in their respective fields of research), they should care quite a lot about these papers being cited, and cited\u2026",
+      "In a previous blog post, I suggested to my younger colleagues that while they should not care so much about the impact factor of the journals they published in (as long as these journals are well-r\u2026",
+      "So let say I have 50 citations in Google Scholar as of Feb 23, 2022. What would be the possible rank of mine considering published papers/patent/books?",
+      "If you have even 1 citations for a manuscript you are already (almost!) in the top half (top 55.8%). With 10 or more citations, your work is now in the top 24% of the most cited work worldwide; this increased to the top 1.8% as you reach 100 or more citations. Main take home message: the average citation per manuscript is clearly below 10! I also found a great blog post by Scott Weingart, which by restricting his analysis to a single journal, Scientometrics, got very similar results, with 50% of all published papers in that journal having fewer than 4 citations, 70% fewer than 7."
+    ],
+    "title": "How many citations are actually a lot of citations? | Ruminating\u2026",
+    "url": "https://lucbeaulieu.com/2015/11/19/how-many-citations-are-actually-a-lot-of-citations/"
+  },
+  {
+    "description": "Ranking of the most cited articles and scientific works of 2022. Most popular papers, journal articles, and dissertations cited on Grafiati.",
+    "favicon_url": "https://you.com/favicon?domain=www.grafiati.com&size=128",
+    "snippets": [
+      "Articles in scholarly journals are the most popular source type among the researchers, as such works undergo the peer review process and have a high degree of academic credibility. However, scientists are also citing other types of publications, and here are the top 10 works by number of citations in 2022:",
+      "The 5th position by number of citations belongs to the collection of published proceedings of the conference Cesta pozn\u00e1v\u00e1n\u00ed a vzd\u011bl\u00e1v\u00e1n\u00ed v o\u0161et\u0159ovatelstv\u00ed XI held in the Czech Republic in 2020.",
+      "MLA 9 citation generator online \u2013 NEW 2021!"
+    ],
+    "title": "Top 10 most cited papers in 2022 \u2013 Grafiati",
+    "url": "https://www.grafiati.com/en/blogs/most-cited-papers-in-2022/"
+  },
+  {
+    "description": "PDF | The ability of pre-trained BERT model to achieve outstanding performances on many Natural Language Processing (NLP) tasks has attracted the... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "The distilled models can be fine-tuned with great performance on a wider range of tasks, such as sentiment classification. This paper evaluates the performance of DistilBERT model and other pre-canned text classifiers on a Covid-19 online news binary classification dataset.",
+      "The analysis shows that despite having fewer trainable parameters than the BERT-based model, the DistilBERT model achieved an accuracy of 0.94 on the validation set after only two training epochs. The paper also highlights the usefulness of the ktrain library in facilitating the building, training, and application of state-of-the-art Machine Learning and Deep Learning models.",
+      "DistilBERT model on binary classification tasks suggests that it can generalize better than other pre- trained language representation models on a wide range of downstream NLP tasks [16]. This paper fine-tuned five different pre-canned text classifiers from the ktrain library on a binary",
+      "The main objective is to evaluate the performance of DistilBERT model \u00b7 in predicting the sentiment category for a given Covid-19 related online news. Our analysis also \u00b7 contributes to a better understanding of the usefulness of the ktrain library in developing and training \u00b7 Machine Learning and Deep Learning models for NLP tasks. The rest of the paper is structured"
+    ],
+    "title": "(PDF) Online News Sentiment Classification Using DistilBERT",
+    "url": "https://www.researchgate.net/publication/362675821_Online_News_Sentiment_Classification_Using_DistilBERT"
+  },
+  {
+    "description": "Y. Ding, J. Ma, and X. Luo, \"Applications of natural language processing in construction,\" Automation in Construction, vol. 136, p. 104169, 2022. ... V. Sanh, L. Debut, J. Chaumond, and T. Wolf, \"Distilbert, a distilled version of bert: smaller, faster, cheaper and lighter,\" arXiv preprint ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Y. Ding, J. Ma, and X. Luo, \"Applications of natural language processing in construction,\" Automation in Construction, vol. 136, p. 104169, 2022. ... V. Sanh, L. Debut, J. Chaumond, and T. Wolf, \"Distilbert, a distilled version of bert: smaller, faster, cheaper and lighter,\" arXiv preprint arXiv:1910.01108, 2019.",
+      "A. Noureddine, \"Powerjoular and joularjx: Multi-platform software power monitoring tools,\" in 2022 18th International Conference on Intelligent Environments (IE). IEEE, 2022, pp.",
+      "Your file of search results citations is now ready.Download now!",
+      "You will be notified whenever a record that you have chosen has been cited."
+    ],
+    "title": "The Impact of Knowledge Distillation on the Energy Consumption ...",
+    "url": "https://dl.acm.org/doi/10.1145/3644815.3644966"
+  },
+  {
+    "description": "Pre-train a smaller general-purpose language representation model,called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks",
+    "favicon_url": "https://you.com/favicon?domain=slogix.in&size=128",
+    "snippets": [
+      "As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts."
+    ],
+    "title": "DistilBERT,a distilled version of BERT | S-Logix",
+    "url": "https://slogix.in/machine-learning/distilbert-a-distilled-version-of-bert-smaller-faster-cheaper-and-lighter/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.scirp.org&size=128",
+    "snippets": [],
+    "title": "Sanh, V., Debut, L., Chaumond, J. and Wolf, T. (2019 ...",
+    "url": "https://www.scirp.org/reference/referencespapers?referenceid=3652617"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=repository.lsu.edu&size=128",
+    "snippets": [],
+    "title": "Lsu",
+    "url": "https://repository.lsu.edu/cgi/viewcontent.cgi?article=1719&context=geoanth_pubs"
+  },
+  {
+    "description": "The DistilBERT model was proposed in the blog post Smaller, faster, cheaper, lighter: Introducing DistilBERT, a distilled version of BERT, and the paper DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter. DistilBERT is a small, fast, cheap and light Transformer model ...",
+    "favicon_url": "https://you.com/favicon?domain=hyperight.com&size=128",
+    "snippets": [
+      "The DistilBERT model was proposed in the blog post Smaller, faster, cheaper, lighter: Introducing DistilBERT, a distilled version of BERT, and the paper DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter. DistilBERT is a small, fast, cheap and light Transformer model trained by distilling BERT base."
+    ],
+    "title": "DistilBERT - Hyperight",
+    "url": "https://hyperight.com/directory/distilbert/"
+  },
+  {
+    "description": "Explore essential data science papers reshaping AI and machine learning, featuring groundbreaking advancements from top researchers in the field.",
+    "favicon_url": "https://you.com/favicon?domain=www.analyticsinsight.net&size=128",
+    "snippets": [
+      "The field of data science is evolving rapidly, driven by cutting-edge research in machine learning, artificial intelligence, big data, and analytics. Staying up",
+      "XGBoost remains a top choice in Kaggle competitions and has over 10,000 citations. Its ability to handle large datasets efficiently makes it essential for data scientists focused on structured data analytics and predictive modelling. DistilBERT, introduced by Sanh et al., is a smaller and faster version of the original BERT model.",
+      "With over 1,200 citations, DistilBERT is highly relevant in environments where computational resources are limited.",
+      "The paper has over 50,000 citations, highlighting its influence across various AI and data science applications."
+    ],
+    "title": "Top 10 Data Science Research Papers to Read Before 2024 Ends",
+    "url": "https://www.analyticsinsight.net/data-science/top-10-data-science-research-papers-to-read-before-2024-ends"
+  },
+  {
+    "description": "This work proposes a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can be fine-tuned with good performances on a wide range of tasks like its larger counterparts, and introduces a triple loss combining language modeling, distillation and ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "This work proposes a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can be fine-tuned with good performances on a wide range of tasks like its larger counterparts, and introduces a triple loss combining language modeling, distillation and cosine-distance losses.Expand",
+      "Several different distilled versions of the state-of-the-art Dutch RobBERT model are created and it is found that the larger DistilBERT architecture worked significantly better than the Bort hyperparametrization and that the distilled models exhibit less gender-stereotypical bias than its teacher model.Expand",
+      "This paper proposes to distill knowledge from BERT, a state-of-the-art language representation model, into a single-layer BiLSTM, as well as its siamese counterpart for sentence-pair tasks, and achieves comparable results with ELMo.Expand",
+      "@article{Sanh2019DistilBERTAD, title={DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter}, author={Victor Sanh and Lysandre Debut and Julien Chaumond and Thomas Wolf}, journal={ArXiv}, year={2019}, volume={abs/1910.01108}, url={https://api.semanticscholar.org/CorpusID:203626972} }"
+    ],
+    "title": "[PDF] DistilBERT, a distilled version of BERT: smaller, faster, ...",
+    "url": "https://www.semanticscholar.org/paper/DistilBERT,-a-distilled-version-of-BERT:-smaller,-Sanh-Debut/9df8a296b4f414dfea1997d6662b812c9d626c38"
+  },
+  {
+    "description": "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. - transformers/docs/source/en/model_doc/distilbert.md at main \u00b7 huggingface/transformers",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "\ud83e\udd17 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. - huggingface/transformers",
+      "DistilBERT is pretrained by knowledge distillation to create a smaller model with faster inference and requires less compute to train.",
+      "Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model.",
+      "You can find all the original DistilBERT checkpoints under the DistilBERT organization."
+    ],
+    "title": "transformers/docs/source/en/model_doc/distilbert.md at main \u00b7 ...",
+    "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/distilbert.md"
+  },
+  {
+    "description": "A unique, visual tool to help researchers and applied scientists find and explore papers relevant to their field of work.",
+    "favicon_url": "https://you.com/favicon?domain=www.connectedpapers.com&size=128",
+    "snippets": [
+      "Connected Papers is a visual tool to help researchers and applied scientists find academic papers relevant to their field of work."
+    ],
+    "title": "Connected Papers | Find and explore academic papers",
+    "url": "https://www.connectedpapers.com/"
+  },
+  {
+    "description": "The COVID-19 pandemic saw a massive mobilization of the scientific workforce. We evaluated the citation impact of COVID-19 publications relative to all scientific work published in 2020 to 2021, finding that 20% of citations received to papers ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Copyright \u00a9 2022 the Author(s). Published by PNAS. This open access article is distributed under Creative Commons Attribution-NonCommercial-NoDerivatives License 4.0 (CC BY-NC-ND). ... The COVID-19 pandemic saw a massive mobilization of the scientific workforce. We evaluated the citation impact of COVID-19 publications relative to all scientific work published in 2020 to 2021, finding that 20% of citations received to papers published in 2020 to 2021 were to COVID-19\u2013related papers.",
+      "As of this writing (April 4, 2022), of the 100 most-cited articles published in 2022, 43 are COVID-19\u2013related. This is a substantial decline compared with the previous 2 y, but it still represents an inordinately large share across the entire scientific literature.",
+      "For each of the scientific fields that had published at least 50 COVID-19 publications in 2020, we assessed the ratio of mean citations to COVID-19 publications over mean citations to non\u2013COVID-19 publications. This analysis is slightly biased in favor of non\u2013COVID-19 publications, since very few COVID-19 publications appeared in the first 2 mo of 2020 and thus non\u2013COVID-19 publications had slightly more time available to be cited on average.",
+      "The average citations per paper were higher for COVID-19 papers than for non\u2013COVID-19 papers for 128 of the 129 scientific disciplines that published more than 50 COVID-19\u2013related papers in 2020 (with the exception of Computational Theory and Mathematics) (SI Appendix, Table S1)."
+    ],
+    "title": "Massive covidization of research citations and the citation elite ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9282275/"
+  },
+  {
+    "description": "The COVID-19 pandemic saw a massive mobilization of the scientific workforce. We evaluated the citation impact of COVID-19 publications relative to all scientific work published in 2020 to 2021, finding that 20% of citations received to papers ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Copyright \u00a9 2022 the Author(s). Published by PNAS. This open access article is distributed under Creative Commons Attribution-NonCommercial-NoDerivatives License 4.0 (CC BY-NC-ND). ... The COVID-19 pandemic saw a massive mobilization of the scientific workforce. We evaluated the citation impact of COVID-19 publications relative to all scientific work published in 2020 to 2021, finding that 20% of citations received to papers published in 2020 to 2021 were to COVID-19\u2013related papers.",
+      "As of this writing (April 4, 2022), of the 100 most-cited articles published in 2022, 43 are COVID-19\u2013related. This is a substantial decline compared with the previous 2 y, but it still represents an inordinately large share across the entire scientific literature.",
+      "For each of the scientific fields that had published at least 50 COVID-19 publications in 2020, we assessed the ratio of mean citations to COVID-19 publications over mean citations to non\u2013COVID-19 publications. This analysis is slightly biased in favor of non\u2013COVID-19 publications, since very few COVID-19 publications appeared in the first 2 mo of 2020 and thus non\u2013COVID-19 publications had slightly more time available to be cited on average.",
+      "The average citations per paper were higher for COVID-19 papers than for non\u2013COVID-19 papers for 128 of the 129 scientific disciplines that published more than 50 COVID-19\u2013related papers in 2020 (with the exception of Computational Theory and Mathematics) (SI Appendix, Table S1)."
+    ],
+    "title": "Massive covidization of research citations and the citation elite ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9282275/"
+  },
+  {
+    "description": "I'm currently reviewing a paper that has an uncommonly large number of references compared to the average number for that particular venue (more than 60 versus around 30). This is a regular paper, ...",
+    "favicon_url": "https://you.com/favicon?domain=academia.stackexchange.com&size=128",
+    "snippets": [
+      "There is probably some discipline influence at work. In the social sciences, it is not uncommon to have around 50 references in a journal paper.",
+      "This is a regular paper, not a survey one, and although there does not seem to be wrong references, it feels like some are not really necessary, and the fact that one particular author is cited more than 15 times makes me worry that this paper is used to inflate the number of citations of that author (the submission is anonymous).",
+      "For example, some authors cite very widely papers from all groups in their field, even when it is not really warranted, in an effort to help their chances at peer review: the idea is that the reviewer is less likely to be harsh to a manuscript that cites 5 of her own papers.",
+      "I do not think that there are inherent problems with citing some \"extra\" papers, if they are appropriately relevant. The purpose of citations is to help us form a network of research. If a paper is not cited, then it will not join that network."
+    ],
+    "title": "citations - Is there such thing as too many references for one paper?",
+    "url": "https://academia.stackexchange.com/questions/13570/is-there-such-thing-as-too-many-references-for-one-paper"
+  },
+  {
+    "description": "Unlocking the secrets of BERT compression: a student-teacher framework for maximum efficiency",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "Below, we are going to discuss these loss components and undestand the necessity of each of them. Nevertheless, before diving into depth it is necessary to understand an important concept called temperature in softmax activation function. The temperature concept is used in the DistilBERT loss function.",
+      "DistilBERT made a huge step in BERT evolution by allowing it to significantly compress the model while achieving comparable performance on various NLP tasks. Apart from it, DistilBERT weighs only 207 MB making the integration on devices with restricted capacities easier.",
+      "In this article, we will understand the distillation mechanism applied to BERT which led to a new model called DistilBERT.",
+      "Similar to the teacher\u2019s model (BERT), during pretraining, the student (DistilBERT) learns language by making predictions for the masked language modeling task."
+    ],
+    "title": "Large Language Models: DistilBERT - Smaller, Faster, Cheaper and ...",
+    "url": "https://towardsdatascience.com/distilbert-11c8810d29fc/"
+  },
+  {
+    "description": "An official website of the United States government \u00b7 Official websites use .gov A .gov website belongs to an official government organization in the United States",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "17.Bartoli E. Are there ways to improve the citations of a scientific paper? Eur. J. Intern. Med. 2018;50:3\u20135. doi: 10.1016/j.ejim.2017.12.006.",
+      "This can be described as the \u2018Matthew effect:\u2019 the more a paper is referenced, the more it will continue to be referenced [19,20]. This is concerning as citation rate of articles is not necessarily an indicator of quality or significance [21]. While papers with many citations continue to receive attention, less cited articles may be neglected, potentially hindering research advancements.",
+      "For example, an author's social media presence showed a positive correlation with the rate at which they were cited [22,23]. Another consideration for citation rate is the primacy effect, which describes how citations listed earlier in a study are used more frequently than those that appear toward the end of a study [24]. The reputation of the author(s), organization(s), journal, or country represented by a paper may also play a role in the number of times it is cited [25]. Some authors or groups of authors may receive an increased number of citations based on their production level or experience in the field of study [25]. Additionally, luck and last name may inevitably affect the rate at which someone is repeatedly cited.",
+      "Selective citation, whether purposeful or subconscious, is an endemic problem [11,26,27]. Studies showing positive results are cited more often than those with neutral or negative results, a phenomenon known as citation bias [26]. This gives readers a biased view and overrepresents positive findings [26]. Other common forms of improper citation usage include: secondary citation, incorrect/opposite conclusion, back door invention, fact not found, and inaccurate population."
+    ],
+    "title": "Significance and implications of accurate and proper citations ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8712974/"
+  },
+  {
+    "description": "Language model pre-training, such as BERT, has significantly improved the performances of many natural language processing tasks. However, pre-trained language models are usually computationally expensive, so it is difficult to efficiently execute them on resource-restricted devices.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 1909.10351: TinyBERT: Distilling BERT for Natural Language Understanding",
+      "From: Yichun Yin [view email] [v1] Mon, 23 Sep 2019 13:05:35 UTC (1,272 KB) [v2] Tue, 24 Sep 2019 12:39:36 UTC (1,274 KB) [v3] Tue, 3 Dec 2019 01:29:39 UTC (3,110 KB) [v4] Wed, 4 Dec 2019 01:50:34 UTC (3,110 KB) [v5] Fri, 16 Oct 2020 02:12:46 UTC (875 KB)"
+    ],
+    "title": "[1909.10351] TinyBERT: Distilling BERT for Natural Language ...",
+    "url": "https://arxiv.org/abs/1909.10351"
+  },
+  {
+    "description": "Pre-trained language models (PLMs) have recently shown great success in text representation field. However, the high computational cost and high-dimensional representation of PLMs pose significant challenges for practical applications. To make models more accessible, an effective method is ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Pre-trained language models (PLMs) have recently shown great success in text representation field. However, the high computational cost and high-dimensional representation of PLMs pose significant challenges for practical applications. To make models more accessible, an effective method is to distill large models into smaller representation models."
+    ],
+    "title": "Text Representation Distillation via Information Bottleneck Principle ...",
+    "url": "https://openreview.net/forum?id=5nHLFcj7Y9"
+  },
+  {
+    "description": "I am trying to find more information about pre-trained model distilbert-base-nli-mean-tokens. Can someone please point me to it's paper or documentation? Is it based on DistilBERT, a distilled vers...",
+    "favicon_url": "https://you.com/favicon?domain=datascience.stackexchange.com&size=128",
+    "snippets": [
+      "I am trying to find more information about pre-trained model distilbert-base-nli-mean-tokens. Can someone please point me to it's paper or documentation? Is it based on DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter paper? This is published in March 2020.",
+      "Original sentence-bert paper is published in Aug 2019. I wanted to try pre-trained model using S-BERT model and hence tried distilbert-base-nli-mean-tokens model. After implementation I found out that it's much faster than other pre-trained models available on sentence-transformer website.",
+      "The distilbert-base-nli-mean-tokens model is the DistilBERT base model for natural language inference (NLI) using the MEAN pooling strategy for CLS tokens. For more information on the DistilBERT base model, have a look at the original paper.",
+      "I found Making Monolingual Sentence Embeddings Multilingual using Knowledge Distillation this paper published by same author which do mention DistilmBERT but not DistilBert Can someone please help me solve this mystery?"
+    ],
+    "title": "nlp - Where can I find documentation or paper mentioning pre-trained ...",
+    "url": "https://datascience.stackexchange.com/questions/89915/where-can-i-find-documentation-or-paper-mentioning-pre-trained-distilbert-base-n"
+  },
+  {
+    "description": "citing, AMA, APA, MLA, works cited, references, reference page",
+    "favicon_url": "https://you.com/favicon?domain=nwtc.libguides.com&size=128",
+    "snippets": [
+      "Abstract Page: According to APA Style guidelines, \"Student papers generally do not include an abstract unless requested\" (APA, 2022).",
+      "Kowols, T. (2022, June 29). Sturgeon Bay Police issues warnings about fireworks. Door County Daily News.",
+      "Schaeffer, K. (2022, April 5). In CDC survey, 37% of U.S. high school students report regular mental health struggles during COVID-19. Pew Research Center.",
+      "National Heart, Lung, and Blood Institute. (2022, March 24). Heart treatments. U.S. Department of Health & Human Services, National Institutes of Health."
+    ],
+    "title": "APA Style: 7th edition - Citation Guide - LibGuides at Northeast ...",
+    "url": "https://nwtc.libguides.com/citations/APA7"
+  },
+  {
+    "description": "A paper that made the rounds last year for its blatantly \u201cirrelevant\u201d citations has now been retracted. Elsevier\u2019s International Journal of Hydrogen Energy published \u201cOrigin of the distinct site occupations of H atom in hcp Ti and Zr/Hf\u201d in November 2024.",
+    "favicon_url": "https://you.com/favicon?domain=retractionwatch.com&size=128",
+    "snippets": [
+      "A paper that made the rounds last year for its blatantly \u201cirrelevant\u201d citations has now been retracted. Elsevier\u2019s International Journal of Hydrogen Energy published \u201cOrigin of the distinct s\u2026",
+      "Paragraph seven of the introduction consists of a single sentence: \u201cAs strongly requested by the reviewers, here we cite some references [35-47] although they are completely irrelevant to the present work.\u201d One of the authors told us they included the references as a \u201cjoke\u201d after reviewers pressured them.",
+      "Was the associate editor/handling editor sleeping? It was his/her job to ensure that these irrelevant references don\u2019t get cited at the first place!"
+    ],
+    "title": "A \u2018joke\u2019: Paper with \u2018completely irrelevant\u2019 citations ...",
+    "url": "https://retractionwatch.com/2025/04/09/irrelevant-citations-journal-hydrogen-energy-elsevier-retraction/"
+  },
+  {
+    "description": "Despite superior performance on various natural language processing tasks, pre-trained models such as BERT are challenged by deploying on resource-con\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Degree with distinction in computer science from the University of Wales, Aberystwyth, U.K., in 2004 and 2005, respectively, and the Ph.D. degree in robotics from the Aberystwyth University, Wales, U.K. in 2009. He is currently an Associate Professor with the Cognitive Science Department, Xiamen University, China. Dr Chao has published more than 50 peer-reviewed journal and conference papers.",
+      "Given the substantial computational expense associated with executing all baseline methods (e.g., 720 GPU hours required for DistilBERT), we perform the experiments once and subsequently report the results, following the same settings as all baseline papers [5], [13], [20], [21], [43], [44]."
+    ],
+    "title": "You only compress once: Towards effective and elastic BERT ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231224009111"
+  },
+  {
+    "description": "Find it. Write it. Cite it. The Chicago Manual of Style Online is the venerable, time-tested guide to style, usage, and grammar in an accessible online format. \u00b6 It is the indispensable reference for writers, editors, proofreaders, indexers, copywriters, designers, and publishers, informing ...",
+    "favicon_url": "https://you.com/favicon?domain=www.chicagomanualofstyle.org&size=128",
+    "snippets": [
+      "Find it. Write it. Cite it. The Chicago Manual of Style Online is the venerable, time-tested guide to style, usage, and grammar in an accessible online format. \u00b6 It is the indispensable reference for writers, editors, proofreaders, indexers, copywriters, designers, and publishers, informing the editorial canon with sound, definitive advice.",
+      "Kwon, Hyeyoung. \u201cInclusion Work: Children of Immigrants Claiming Membership in Everyday Life.\u201d American Journal of Sociology 127, no. 6 (2022): 1818\u201359. https://doi.org/10.1086/720277. Lindquist, Benjamin. \u201cThe Art of Text-to-Speech.\u201d Critical Inquiry 50, no.",
+      "Note that a place of publication is no longer required in book citations (see CMOS 14.30). 1. Charles Yu, Interior Chinatown (Pantheon Books, 2020), 45. 2. Amy J. Binder and Jeffrey L. Kidder, The Channels of Student Activism: How the Left and Right Are Winning (and Losing) in Campus Politics Today (University of Chicago Press, 2022), 117\u201318.",
+      "University of Chicago Press, 2022. Yu, Charles. Interior Chinatown. Pantheon Books, 2020. For more details and examples, see CMOS 13.21\u201326 and 14.2\u201362. The page range for a chapter in a book is no longer required in bibliography entries (see CMOS 14.8). In a note, cite specific pages as applicable."
+    ],
+    "title": "The Chicago Manual of Style, 18th Edition",
+    "url": "https://www.chicagomanualofstyle.org/tools_citationguide/citation-guide-1.html"
+  },
+  {
+    "description": "A Nature analysis reveals the 25 highest-cited papers published this century and explores why they are breaking records.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "A Nature analysis reveals the 25 highest-cited papers published this century and explores why they are breaking records. A Nature analysis reveals the 25 highest-cited papers published this century and explores why they are breaking records.",
+      "Nature - A Nature analysis reveals the 25 highest-cited papers published this century and explores why they are breaking records.",
+      "That is one of the findings of an analysis by Nature\u2019s news team of the 25 most-cited papers published in the twenty-first century. The articles garnering the most citations report developments in artificial intelligence (AI); approaches to improve the quality of research or systematic reviews; cancer statistics; and research software.",
+      "Citations \u2014 the means by which authors acknowledge previous sources in the literature \u2014 are one measure of a paper\u2019s influence. But the most highly cited papers generally aren\u2019t the most famous scientific discoveries. Rather, these works tend to describe scientific methods or software, the workhorses on which scientists depend."
+    ],
+    "title": "Exclusive: the most-cited papers of the twenty-first century",
+    "url": "https://www.nature.com/articles/d41586-025-01125-9"
+  },
+  {
+    "description": "Recent advancements in natural language processing have given rise to numerous pre-training language models in question-answering systems. However, wi\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [],
+    "title": "DPAL-BERT: A Faster and Lighter Question Answering Model - ...",
+    "url": "https://www.sciencedirect.com/org/science/article/pii/S1526149224002352"
+  },
+  {
+    "description": "Massive scientific productivity accompanied the COVID-19 pandemic. We evaluated the citation impact of COVID-19 publications relative to all scient...",
+    "favicon_url": "https://you.com/favicon?domain=www.pnas.org&size=128",
+    "snippets": [
+      "Massive scientific productivity accompanied the COVID-19 pandemic. We evaluated the citation impact of COVID-19 publications relative to all scientific work published in 2020 to 2021 and assessed t...",
+      "Edited by Kenneth Wachter, University of California, Berkeley, CA; received March 7, 2022; accepted May 31, 2022 ... The COVID-19 pandemic saw a massive mobilization of the scientific workforce. We evaluated the citation impact of COVID-19 publications relative to all scientific work published in 2020 to 2021, finding that 20% of citations received to papers published in 2020 to 2021 were to COVID-19\u2013related papers. Across science, 98 of the 100 most-cited papers published in 2020 to 2021 were related to COVID-19.",
+      "As of this writing (April 4, 2022), of the 100 most-cited articles published in 2022, 43 are COVID-19\u2013related. This is a substantial decline compared with the previous 2 y, but it still represents an inordinately large share across the entire scientific literature.",
+      "Citation information is sourced from Crossref Cited-by service. ... A. Ioannidis, E. Bendavid, M. Salholz-Hillel, ... J. Baas, Massive covidization of research citations and the citation elite, Proc. Natl. Acad. Sci. U.S.A. 119 (28) e2204074119, https://doi.org/10.1073/pnas.2204074119 (2022)."
+    ],
+    "title": "Massive covidization of research citations and the citation elite ...",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.2204074119"
+  },
+  {
+    "description": "GitHub is where people build software. More than 100 million people use GitHub to discover, fork, and contribute to over 420 million projects.",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "python nlp praw hacktoberfest bert praw-reddit distilbert ... Get the top 5 Similar Research Papers and also the authors, published date, link to download the paper, Title and Abstract using this application.",
+      "DistilBERT, a distilled version of BERT (Bidirectional Encoder Representations from Transformers).",
+      "DistilBERT is known for its efficiency and reduced computational requirements while retaining significant language understanding capabilities.",
+      "This repository contains a number of experiments with Multi Lingual Transformer models (Multi-Lingual BERT, DistilBERT, XLM-RoBERTa, mT5 and ByT5) focussed on the Dutch language."
+    ],
+    "title": "distilbert \u00b7 GitHub Topics \u00b7 GitHub",
+    "url": "https://github.com/topics/distilbert?l=python&o=desc&s=updated"
+  },
+  {
+    "description": "DistilBERT is a compact, faster, and lighter model that is cheaper to pre-train and can easily be used for on-device applications.",
+    "favicon_url": "https://you.com/favicon?domain=www.scaler.com&size=128",
+    "snippets": [
+      "Let's consider an example to better understand knowledge distillation. Suppose we have a large, state-of-the-art image classification model, like ResNet-50, which has been trained on a massive dataset. We can use this model as the teacher network. Now, we want to deploy a smaller model on resource-constrained devices, such as smartphones, without sacrificing too much accuracy.",
+      "In this article, we will explore DistilBERT, a smaller, faster, and lighter version of the popular BERT model. We start with an overview of the topic, followed by an introduction to the need for a DistilBERT-like model. We then discuss the concept of knowledge distillation, which transfers knowledge from a large, complex model to a smaller, simpler one.",
+      "Comparable Performance: Despite its smaller size, DistilBERT aims to perform similarly to BERT in terms of accuracy and performance. It achieves this by distilling the knowledge from the larger BERT model into a more compact representation.",
+      "Transformer Encoder: Similar to BERT, DistilBERT is built using a transformer architecture. It comprises a stack of layers made up of transformer encoders. A feed-forward neural network and a multi-head self-attention mechanism are present in each layer."
+    ],
+    "title": "HuggingFace DistilBERT - Scaler Topics",
+    "url": "https://www.scaler.com/topics/nlp/distilbert/"
+  },
+  {
+    "description": "Citation metrics are widely used and misused. We have created a publicly available database of top-cited scientists that provides standardized information on citations, h-index, co-authorship adjusted hm-index, citations to papers in different authorship positions and a composite indicator ...",
+    "favicon_url": "https://you.com/favicon?domain=elsevier.digitalcommonsdata.com&size=128",
+    "snippets": [
+      "Citation metrics are widely used and misused. We have created a publicly available database of top-cited scientists that provides standardized information on citations, h-index, co-authorship adjusted hm-index, citations to papers in different authorship positions and a composite indicator (c-score).",
+      "Metrics with and without self-citations and ratio of citations to citing papers are given. Scientists are classified into 22 scientific fields and 176 sub-fields. Field- and subfield-specific percentiles are also provided for all scientists with at least 5 papers.",
+      "The c-score focuses on impact (citations) rather than productivity (number of publications) and it also incorporates information on co-authorship and author positions (single, first, last author). If you have additional questions, please read the 3 associated papers published in PLoS Biology that explain the development, validation and use of these metrics and databases."
+    ],
+    "title": "September 2022 data-update for \"Updated science-wide author databases ...",
+    "url": "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/4"
+  },
+  {
+    "description": "DistilBERT is a smaller, faster, and lighter version of the popular BERT (Bidirectional Encoder Representations from Transformers) model developed by Hugging Face. It was introduced in 2019.",
+    "favicon_url": "https://you.com/favicon?domain=iq.opengenus.org&size=128",
+    "snippets": [
+      "The main aim of DistilBERT is to achieve similar performance as BERT with fewer parameters and faster training times, making it more suitable for resource-constrained environments such as mobile devices and edge devices. The model has been trained on the same dataset as BERT, the BooksCorpus (800M words) and English Wikipedia (2,500M words), making it pre-trained on a large amount of general-purpose knowledge and capable of transfer learning to many NLP tasks.",
+      "The goal of DistilBERT is to provide a smaller and more efficient model that can achieve similar performance as the original BERT model while still retaining its ability to transfer learning to other NLP tasks. DistilBERT has been trained on the same dataset as BERT, the BooksCorpus (800M words) and English Wikipedia (2,500M words), making it pre-trained on a large amount of general-purpose knowledge.",
+      "\u201cDistilbert-base-cased \u00b7 Hugging Face.\u201d Huggingface, 3 Nov. 2022, huggingface.co/distilbert-base-cased.",
+      "DistilBERT is a distilled version of the popular BERT (Bidirectional Encoder Representations from Transformers) model that was developed by Hugging Face. BERT was introduced in 2018 and is considered one of the most powerful pre-trained models for natural language processing tasks."
+    ],
+    "title": "DistilBERT: The Compact NLP Powerhouse",
+    "url": "https://iq.opengenus.org/distilbert/"
+  },
+  {
+    "description": "Learn how to properly cite scientific papers with this comprehensive guide. Discover the best practices for referencing research in APA, MLA, Chicago, and other styles, ensuring accuracy and avoiding common citation mistakes.",
+    "favicon_url": "https://you.com/favicon?domain=consensus.app&size=128",
+    "snippets": [
+      "Parenthetical Citations: This format places the citation information, such as the individual author\u2019s surname and publication year, within parentheses at the end of the sentence. For instance, if you\u2019re referencing an article titled \u201cUnderstanding Quantum Mechanics\u201d by Smith (2022), your citation might look like this: (Smith, 2022).",
+      "Narrative Citations: In this format, the author\u2019s name is integrated directly into the text, with the publication year placed in parentheses immediately after. For example, you could write: \u201cSmith (2022) discusses the complexities of quantum mechanics in his article \u2018Understanding Quantum Mechanics\u2019.\u201d Narrative citations make the citation in prose more fluid and readable, often highlighting the title of the article and the level of citation.",
+      "Accurately citing scientific papers is crucial for maintaining credibility and avoiding plagiarism in academic writing. Whether you\u2019re referencing journal articles, books, conference papers, or unpublished papers, understanding the different citation styles and formatting ensures that your research is trustworthy and professional.",
+      "When you cite sources correctly, you maintain the credibility of your work, avoid plagiarism, and allow other researchers to build upon your findings. Proper citations form the backbone of social sciences, academic journals, and scientific journal publications."
+    ],
+    "title": "How to Cite Scientific Papers: A Complete Guide for Researchers ...",
+    "url": "https://consensus.app/home/blog/how-to-cite-scientific-papers-a-complete-guide-for-researchers/"
+  },
+  {
+    "description": "I want to cite this article in my thesis. Which date should I to use in my bibliography? At the beginning of the article, there are three dates Received 28 April 2021 Accepted: 5 November 2021 Pub...",
+    "favicon_url": "https://you.com/favicon?domain=academia.stackexchange.com&size=128",
+    "snippets": [
+      "This can be different from all three options the OP gave: a paper might have been received in 2020, accepted after revisions in 2022, published online in 2023 (typically as \"early online\", and then you would typically cite it as \"in press\" or \"early online\" or similar), and finally included in a journal issue that appeared only in 2024, after which point you would use the 2024 date.",
+      "The current norm is to use the publication date (\"print date\") which, in your case, would be 2022 (more precisely, Sept 2022, the date the issue came out).",
+      "Borsos, B., Kov\u00e1cs, A. & Tihanyi, N. Tight upper and lower bounds for the reciprocal sum of Proth primes. Ramanujan J 59, 181\u2013198 (2022).",
+      "Most articles will tell you how to cite them, in this case if you go to the webpage for the paper, and click \"cite this article\" it will take you to the citation - link.springer.com/article/10.1007/s11139-021-00536-2#citeas - which you may need to reformat to the preferred style of your university but should have the same list of authors, date, issue number, etc."
+    ],
+    "title": "citations - Which date (received, accepted, published) is relevant ...",
+    "url": "https://academia.stackexchange.com/questions/203192/which-date-received-accepted-published-is-relevant-when-citing-a-paper"
+  },
+  {
+    "description": "Follow the path of Language AI from Turing to the release of GPT....",
+    "favicon_url": "https://you.com/favicon?domain=deepgram.com&size=128",
+    "snippets": [
+      "Unlike how in the latter half of 2022\u2014when generative AI image models like DALL-E 2, Midjourney, Stable Diffusion, and others had a fleeting, if nonetheless exceedingly bright, moment in the spotlight\u2014interest in large language models has had a bit more of a long, slow burn before bursting into the public consciousness.",
+      "It\u2019s a wonder we\u2019ve only scratched the surface of what is to come. It\u2019s important to remember that ChatGPT, the language model that rocketed LLMs to the forefront of public discourse about the future of technology and artificial intelligence, was only released (at time of writing) about 7 months ago in November 2022."
+    ],
+    "title": "11 Papers that Shaped AI's Language Journey | Deepgram",
+    "url": "https://deepgram.com/learn/11-papers-that-shaped-language-ai"
+  },
+  {
+    "description": "Nature - Some highly cited academics seem to be heavy self-promoters \u2014 but researchers warn against policing self-citation.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Some highly cited academics seem to be heavy self-promoters \u2014 but researchers warn against policing self-citation. Some highly cited academics seem to be heavy self-promoters \u2014 but researchers warn against policing self-citation.",
+      "Vaidyanathan, a computer scientist at the Vel Tech R&D Institute of Technology, a privately run institute, is an extreme example: he has received 94% of his citations from himself or his co-authors up to 2017, according to a study in PLoS Biology this month1. He is not alone. The data set, which lists around 100,000 researchers, shows that at least 250 scientists have amassed more than 50% of their citations from themselves or their co-authors, while the median self-citation rate is 12.7%.",
+      "Nobel laureates and eminent polymaths rub shoulders with less familiar names, such as Sundarapandian Vaidyanathan from Chennai in India. What leaps out about Vaidyanathan and hundreds of other researchers is that many of the citations to their work come from their own papers, or from those of their co-authors.",
+      "The data are by far the largest collection of self-citation metrics ever published. And they arrive at a time when funding agencies, journals and others are focusing more on the potential problems caused by excessive self-citation. In July, the Committee on Publication Ethics (COPE), a publisher-advisory body in London, highlighted extreme self-citation as one of the main forms of citation manipulation."
+    ],
+    "title": "Hundreds of extreme self-citing scientists revealed in new database",
+    "url": "https://www.nature.com/articles/d41586-019-02479-7"
+  },
+  {
+    "description": "Resources to help you with grammar and compostion, scholarly writing, and APA.",
+    "favicon_url": "https://you.com/favicon?domain=academicguides.waldenu.edu&size=128",
+    "snippets": [
+      "Sources are cited in each sentence in which they are used.",
+      "All material that you cite should contribute to your main argument (also called a thesis or purpose statement)."
+    ],
+    "title": "Citations - Writing - Academic Guides at Walden University",
+    "url": "https://academicguides.waldenu.edu/writing/apa/citations"
+  },
+  {
+    "description": "Three advanced transformer-based deep learning models like BERT, DistilBERT, and RoBERTa are experimented with to perform the sentiment analysis and it can be seen that the BERT model outperforms the other two models. Sentiment analysis or opinion mining is a natural language processing (NLP) ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "Three advanced transformer-based deep learning models like BERT, DistilBERT, and RoBERTa are experimented with to perform the sentiment analysis and it can be seen that the BERT model outperforms the other two models. Sentiment analysis or opinion mining is a natural language processing (NLP) technique to identify, extract, and quantify the emotional tone behind a body of text.",
+      "Published in IEEE International Power and\u2026 16 December 2022 ... Three advanced transformer-based deep learning models like BERT, DistilBERT, and RoBERTa are experimented with to perform the sentiment analysis and it can be seen that the BERT model outperforms the other two models.Expand",
+      "This work proposes a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can be fine-tuned with good performances on a wide range of tasks like its larger counterparts, and introduces a triple loss combining language modeling, distillation and cosine-distance losses.Expand",
+      "@article{Joshy2022AnalyzingTP, title={Analyzing the Performance of Sentiment Analysis using BERT, DistilBERT, and RoBERTa}, author={Archa Joshy and Sumod Sundar}, journal={2022 IEEE International Power and Renewable Energy Conference (IPRECON)}, year={2022}, pages={1-6}, url={https://api.semanticscholar.org/CorpusID:257586186} }"
+    ],
+    "title": "Analyzing the Performance of Sentiment Analysis using BERT, ...",
+    "url": "https://www.semanticscholar.org/paper/Analyzing-the-Performance-of-Sentiment-Analysis-and-Joshy-Sundar/b39e0765bc063fdd41773e449deff133087173df"
+  },
+  {
+    "description": "Follow the path of Language AI from Turing to the release of GPT....",
+    "favicon_url": "https://you.com/favicon?domain=deepgram.com&size=128",
+    "snippets": [
+      "Unlike how in the latter half of 2022\u2014when generative AI image models like DALL-E 2, Midjourney, Stable Diffusion, and others had a fleeting, if nonetheless exceedingly bright, moment in the spotlight\u2014interest in large language models has had a bit more of a long, slow burn before bursting into the public consciousness.",
+      "It\u2019s a wonder we\u2019ve only scratched the surface of what is to come. It\u2019s important to remember that ChatGPT, the language model that rocketed LLMs to the forefront of public discourse about the future of technology and artificial intelligence, was only released (at time of writing) about 7 months ago in November 2022."
+    ],
+    "title": "11 Papers that Shaped AI's Language Journey | Deepgram",
+    "url": "https://deepgram.com/learn/11-papers-that-shaped-language-ai"
+  },
+  {
+    "description": "Nature - Some highly cited academics seem to be heavy self-promoters \u2014 but researchers warn against policing self-citation.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Some highly cited academics seem to be heavy self-promoters \u2014 but researchers warn against policing self-citation. Some highly cited academics seem to be heavy self-promoters \u2014 but researchers warn against policing self-citation.",
+      "Vaidyanathan, a computer scientist at the Vel Tech R&D Institute of Technology, a privately run institute, is an extreme example: he has received 94% of his citations from himself or his co-authors up to 2017, according to a study in PLoS Biology this month1. He is not alone. The data set, which lists around 100,000 researchers, shows that at least 250 scientists have amassed more than 50% of their citations from themselves or their co-authors, while the median self-citation rate is 12.7%.",
+      "Nobel laureates and eminent polymaths rub shoulders with less familiar names, such as Sundarapandian Vaidyanathan from Chennai in India. What leaps out about Vaidyanathan and hundreds of other researchers is that many of the citations to their work come from their own papers, or from those of their co-authors.",
+      "The data are by far the largest collection of self-citation metrics ever published. And they arrive at a time when funding agencies, journals and others are focusing more on the potential problems caused by excessive self-citation. In July, the Committee on Publication Ethics (COPE), a publisher-advisory body in London, highlighted extreme self-citation as one of the main forms of citation manipulation."
+    ],
+    "title": "Hundreds of extreme self-citing scientists revealed in new database",
+    "url": "https://www.nature.com/articles/d41586-019-02479-7"
+  },
+  {
+    "description": "Resources to help you with grammar and compostion, scholarly writing, and APA.",
+    "favicon_url": "https://you.com/favicon?domain=academicguides.waldenu.edu&size=128",
+    "snippets": [
+      "Sources are cited in each sentence in which they are used.",
+      "All material that you cite should contribute to your main argument (also called a thesis or purpose statement)."
+    ],
+    "title": "Citations - Writing - Academic Guides at Walden University",
+    "url": "https://academicguides.waldenu.edu/writing/apa/citations"
+  },
+  {
+    "description": "Three advanced transformer-based deep learning models like BERT, DistilBERT, and RoBERTa are experimented with to perform the sentiment analysis and it can be seen that the BERT model outperforms the other two models. Sentiment analysis or opinion mining is a natural language processing (NLP) ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "Three advanced transformer-based deep learning models like BERT, DistilBERT, and RoBERTa are experimented with to perform the sentiment analysis and it can be seen that the BERT model outperforms the other two models. Sentiment analysis or opinion mining is a natural language processing (NLP) technique to identify, extract, and quantify the emotional tone behind a body of text.",
+      "Published in IEEE International Power and\u2026 16 December 2022 ... Three advanced transformer-based deep learning models like BERT, DistilBERT, and RoBERTa are experimented with to perform the sentiment analysis and it can be seen that the BERT model outperforms the other two models.Expand",
+      "This work proposes a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can be fine-tuned with good performances on a wide range of tasks like its larger counterparts, and introduces a triple loss combining language modeling, distillation and cosine-distance losses.Expand",
+      "@article{Joshy2022AnalyzingTP, title={Analyzing the Performance of Sentiment Analysis using BERT, DistilBERT, and RoBERTa}, author={Archa Joshy and Sumod Sundar}, journal={2022 IEEE International Power and Renewable Energy Conference (IPRECON)}, year={2022}, pages={1-6}, url={https://api.semanticscholar.org/CorpusID:257586186} }"
+    ],
+    "title": "Analyzing the Performance of Sentiment Analysis using BERT, ...",
+    "url": "https://www.semanticscholar.org/paper/Analyzing-the-Performance-of-Sentiment-Analysis-and-Joshy-Sundar/b39e0765bc063fdd41773e449deff133087173df"
+  },
+  {
+    "description": "Citation metrics are widely used and misused. We have created a publicly available database of top-cited scientists that provides standardized information on citations, h-index, co-authorship adjusted hm-index, citations to papers in different authorship positions and a composite indicator ...",
+    "favicon_url": "https://you.com/favicon?domain=elsevier.digitalcommonsdata.com&size=128",
+    "snippets": [
+      "Citation metrics are widely used and misused. We have created a publicly available database of top-cited scientists that provides standardized information on citations, h-index, co-authorship adjusted hm-index, citations to papers in different authorship positions and a composite indicator (c-score).",
+      "Separate data are shown for career-long and, separately, for single recent year impact. Metrics with and without self-citations and ratio of citations to citing papers are given and data on retracted papers (based on Retraction Watch database) as well as citations to/from retracted papers have been added in the most recent iteration.",
+      "The selection is based on the top 100,000 scientists by c-score (with and without self-citations) or a percentile rank of 2% or above in the sub-field. This version (7) is based on the August 1, 2024 snapshot from Scopus, updated to end of citation year 2023.",
+      "The c-score focuses on impact (citations) rather than productivity (number of publications) and it also incorporates information on co-authorship and author positions (single, first, last author). If you have additional questions, see attached file on FREQUENTLY ASKED QUESTIONS."
+    ],
+    "title": "August 2024 data-update for \"Updated science-wide author databases ...",
+    "url": "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/7"
+  },
+  {
+    "description": "Resources to help you with grammar and compostion, scholarly writing, and APA.",
+    "favicon_url": "https://you.com/favicon?domain=academicguides.waldenu.edu&size=128",
+    "snippets": [
+      "Digital Learning in Higher Education (2022) presented evidence for hybrid models.",
+      "When authors publish more than one work in the same year, it's common for them to explore similar topics. This can lead to situations where you need to cite multiple sources by the same author (or authors) from the same year.",
+      "Personal communications may include private letters, memos, some electronic communications (like e-mails), personal interviews, and telephone conversations. The defining characteristic of personal communication is that readers cannot access it. Because of this, personal communication is cited in the text but not included in the references list.",
+      "You might come across the same information in multiple sources. In these cases, you may want to cite multiple works in one citation to show the various sources that have the information you\u2019re citing."
+    ],
+    "title": "Citations: Variations - Writing - Academic Guides at Walden University",
+    "url": "https://academicguides.waldenu.edu/writing/apa/citations/variations"
+  },
+  {
+    "description": "Nature - Some studies have received hundreds of thousands of citations, Nature\u2019s updated analysis shows.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Some studies have received hundreds of thousands of citations, Nature\u2019s updated analysis shows. Some studies have received hundreds of thousands of citations, Nature\u2019s updated analysis shows.",
+      "Overall, 16 papers from the twenty-first century now make it into the all-time top 50, although they have had much less time than older papers to garner citations. Software descriptions and computer-aided findings have made notable rises in the ranking.",
+      "The current list is an update of one that Nature published in 2014, which was topped by tools used in cell and molecular biology from the 1950s and 1970s (see Nature 514, 550\u2013553; 2014). About half of the papers in that top 100 have now changed as citations to newer papers have soared.",
+      "Nature\u2019s news team also analysed records from two large research databases \u2014 Dimensions and OpenAlex \u2014 because their public-facing versions allow analyses back to 1900. These give slightly different rankings and greater citation counts, but generally feature similar papers."
+    ],
+    "title": "These are the most-cited research papers of all time",
+    "url": "https://www.nature.com/articles/d41586-025-01124-w"
+  },
+  {
+    "description": "Upload an image to customize your repository\u2019s social media preview. Images should be at least 640\u00d7320px (1280\u00d7640px for best display) \u00b7 27 Oct 2022 \u00b7 Haihao Shen, Ofir Zafrir, Bo Dong, Hengyu Meng, Xinyu Ye, Zhe Wang, Yi Ding, Hanwen Chang, Guy Boudoukh, Moshe Wasserblat \u00b7 Edit social ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "We demonstrate the efficiency of our pipeline by creating a Fast DistilBERT model showing minimal accuracy loss on the question-answering SQuADv1.1 benchmark, and throughput results under typical production constraints and environments. Our results outperform existing state-of-the-art Neural Magic's DeepSparse runtime performance by up to 50% and up to 4.1x performance speedup over ONNX Runtime.",
+      "Implemented in one code library."
+    ],
+    "title": "Papers with Code - Fast DistilBERT on CPUs",
+    "url": "https://paperswithcode.com/paper/fast-distilbert-on-cpus"
+  },
+  {
+    "description": "This research provides insight into the complex relationship between open access, funding, and citation advantage. It presents an analysis of research\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Articles under the hybrid gold modality are cited on average twice as much as those in the gold modality, regardless of funding. Furthermore, we found that funded articles generally obtain 50 % more citations than unfunded ones within the same publication modality."
+    ],
+    "title": "Citation differences across research funding and access modalities ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0099133323000733"
+  },
+  {
+    "description": "Citations are important building blocks for status and success in science. We used a linked dataset of more than 4 million authors and 26 million s...",
+    "favicon_url": "https://you.com/favicon?domain=www.pnas.org&size=128",
+    "snippets": [
+      "Citations are important building blocks for status and success in science. We used a linked dataset of more than 4 million authors and 26 million scientific papers to quantify trends in cumulative ...",
+      "Publications and citations are critical building blocks for status and success in science (23, 24), and the scientific elite accounts for a large share of what is published and cited. In 1926, Lotka observed that the publication frequencies of chemists followed an inverse-square distribution, where the number of authors publishing N papers would be \u223c1/N2 of the number of authors publishing one paper (25). Building on Lotka\u2019s work, de Solla Price later went on to suggest that 50% of all publications were produced by a mere 6% of all scientists (26).",
+      "Compared to the 50th and 75th percentile, the citation elite has notably higher total (mean) rates of annual collaborators, and this number has escalated from 35 in 2000 to 111 in 2015 (Fig. 2E). However, the mean and median numbers of collaborators per paper remain lower for the citation elite than for the 50th and 75th percentiles of most-cited authors throughout the observation period (Fig.",
+      "2A plots the trend since 2000 in the citation elite\u2019s share of all published papers and shows an increase from 5 to 12% in fractionalized output and from 4 to 11% in full-count output. Fig. 2B displays developments in the mean, annual publication rates per author for the 50th, 75th, and 99th percentile of most-cited scientists and indicates an upward trend for the 99th percentile (i.e., the top 1%) in full counts, from 10.1 to 12.4, and a downward trend in fractional counts from 3.1 to 2.1."
+    ],
+    "title": "Global citation inequality is on the rise | PNAS",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.2012208118"
+  },
+  {
+    "description": "Nature explores the most-cited research of all time.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Yet none of the papers that announced them comes anywhere close to ranking among the 100 most highly cited papers of all time. Citations, in which one paper refers to earlier works, are the standard means by which authors acknowledge the source of their methods, ideas and findings, and are often used as a rough measure of a paper\u2019s importance.",
+      "Fifty years ago, Eugene Garfield published the Science Citation Index (SCI), the first systematic effort to track citations in the scientific literature. To mark the anniversary, Nature asked Thomson Reuters, which now owns the SCI, to list the 100 most highly cited papers of all time.",
+      "The exercise revealed some surprises, not least that it takes a staggering 12,119 citations to rank in the top 100 \u2014 and that many of the world\u2019s most famous papers do not make the cut. A few that do, such as the first observation1 of carbon nanotubes (number 36) are indeed classic discoveries. But the vast majority describe experimental methods or software that have become essential in their fields. The most cited work in history, for example, is a 1951 paper2 describing an assay to determine the amount of protein in a solution.",
+      "Thomson Reuter\u2019s Web of Science holds some 58 million items. If that corpus were scaled to Mount Kilimanjaro, then the 100 most-cited papers would represent just 1 centimetre at the peak. Only 14,499 papers \u2014 roughly a metre and a half\u2019s worth \u2014 have more than 1,000 citations (see \u2018The paper mountain\u2019)."
+    ],
+    "title": "The top 100 papers : Nature News & Comment",
+    "url": "https://www.nature.com/news/the-top-100-papers-1.16224"
+  },
+  {
+    "description": "Abstract Identifying factors that associate with more cited or higher quality research may be useful to improve science or to support research evaluation. This article reviews evidence for the exis...",
+    "favicon_url": "https://you.com/favicon?domain=asistdl.onlinelibrary.wiley.com&size=128",
+    "snippets": [
+      "Identifying factors that associate with more cited or higher quality research may be useful to improve science or to support research evaluation. This article reviews evidence for the existence of su...",
+      "Similarly, computer science journal articles and conference papers (1945\u20132014) received 16% more citations when including a question mark in their titles (Fiala et al., 2021) and another study supported the association between question marks in the titles and citations (regression coefficient: 0.414) in the field of Software Engineering (Graf-Vlachy et al., 2022).",
+      "This has been found for emergency medicine (Callaham et al., 2002), five General & Internal Medicine journals in 2006 (Falagas et al., 2013), six biomedical research topics within 1990\u20132018 (Urlings et al., 2021), geography and forestry articles (Slyder et al., 2011), social and personality psychology articles from 1998 (Haslam & Koval, 2010), environment and ecology articles 2006\u20132007 (Vanclay, 2013), demography articles 1990\u20131992 (van Dalen & Henkens, 2005), biomedicine (Bornmann & Daniel, 2006), clinical systematic reviews and meta-analyses in 2008 (Royle et al., 2013), Norwegian natu",
+      "Models with multiple years sometimes include the year as an input parameter or have a fixed or long citation window to compensate. Eighty-four papers (Saeed et al., 2008) to 420 papers (Ib\u00e1\u00f1ez et al., 2009) to 175,432 papers (Abrishami & Aliakbary, 2019) and 463,348 articles (Zhao & Feng, 2022)."
+    ],
+    "title": "Factors associating with or predicting more cited or higher quality ...",
+    "url": "https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.24810"
+  },
+  {
+    "description": "Provides guidelines on how to prepare, organize, and write a college-level research paper in the social and behavioral sciences, along with offering practical strategies for writing effectively and with confidence.",
+    "favicon_url": "https://you.com/favicon?domain=libguides.usc.edu&size=128",
+    "snippets": [
+      "7th edition. Boston, MA: Pearson, 2012; D'Angelo, Barbara J. \"Using Source Analysis to Promote Critical Thinking.\" Research Strategies 18 (Winter 2001): 303-309; Kwon, Diana. \u201cThe Rise of Citational Justice.\u201d Nature 603 (March 24, 2022): 568-572; Donthu, Naveen et al.",
+      "University of Canberra; Using Sources. Yale College Writing Center. Yale University; Vosburgh, Richard M. \"Closing the Academic-practitioner Gap: Research Must Answer the \u201cSO WHAT\u201d Question.\" Human Resource Management Review 32 (March 2022): 100633; When and Why to Cite Sources.",
+      "It refers to a source of information that supports a factual statement, proposition, argument, or assertion or any quoted text obtained from a book, article, web site, or any other type of print or online material. A citation can also refer to a non-textual source, such as, a photograph, map, chart, graph, etc., used in your paper.",
+      "In-text citations are embedded within the body of your paper and use a shorthand notation style that refers to a complete description of the item [i.e., the bibliographic information] in a list of references at the end of the paper. Materials cited at the end of a paper may be listed under the heading References, Sources, Works Cited, or Bibliography."
+    ],
+    "title": "11. Citing Sources - Organizing Your Social Sciences Research Paper ...",
+    "url": "https://libguides.usc.edu/writingguide/citingsources"
+  },
+  {
+    "description": "(1) Background: The main basis for the public recognition of the merits of scientists has always been the system of scientific publications and citations. Our goal is to identify and analyze the most cited articles in the Public, Environmental & ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Received 2022 Jul 13; Accepted 2022 Aug 2; Collection date 2022 Aug. ... Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/). ... (1) Background: The main basis for the public recognition of the merits of scientists has always been the system of scientific publications and citations.",
+      "To our knowledge, there is no study that bibliometrically analyzes high citation articles that evaluate the Public, Environmental & Occupational Health category. Therefore, this study aimed to identify and analyze the 100 most cited articles in the Public, Environmental & Occupational Health category to understand the historical perspective and promote discussion and scientific progress in this specialty. Bibliometric analysis was performed on 14 March 2022.",
+      "The study flowchart is shown in Figure 1, and included studies that were published from 1900 to 2022 for the Public, Environmental & Occupational Health category of Web of Science. The search topic, after applying the strategy, produced 926,665 documents. For the analysis of the study, only articles or review articles were taken into consideration, which led to the exclusion of 294,361 documents. Of the remaining 632,304, the 100 documents with the highest number of citations were considered for the study.",
+      "A third reason may be that larger universities provide greater opportunities for scientists to collaborate and work on similar topics, and co-authorship may lead to higher citation rates. Most items originated from two major advanced economies: North America and Western Europe. These are undoubtedly economically developed continents with more access to early research and they can support medical research [29]. This can be seen in the data published by WHO in a report published in 2020, in which high-income countries spend a higher percentage of GDP on R&D in the health sector [50]."
+    ],
+    "title": "The Top 100 Most Cited Scientific Papers in the Public, Environmental ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9368337/"
+  },
+  {
+    "description": "Download scientific diagram | Top 20 most cited papers published in each decade. from publication: A Retrospective Literature Review of Eating Disorder Research (1990-2021): Application of Bibliometrics and Topical Trends | Despite the growing importance of eating disorders in society and academic ...",
+    "favicon_url": "https://you.com/favicon?domain=researchgate.net&size=128",
+    "snippets": [
+      "Download scientific diagram | Top 20 most cited papers published in each decade. from publication: A Retrospective Literature Review of Eating Disorder Research (1990-2021): Application of Bibliometrics and Topical Trends | Despite the growing importance of eating disorders in society and academic literature, only a few bibliometric review studies using bibliometric analysis were available.",
+      "Results As a result, by February 26, 2024, 11,214 publications were identified, comprising articles (n = 10,746, 96%) and review articles (n = 468, 4%). Globally, the annual number of kaempferol publications surpassed 100 per year since 2000, exceeded 500 per year since 2018, and further crossed the threshold of 1,000 per year starting in 2022. The major contributing countries were China, the United States of America, and India, while the top three institutes of the citations of kaempferol were the Chinese Academy of Sciences, Consejo Superio de Investigaciones Cientficas, and Uniersidade do Porto.",
+      "Park & Kim (2022), Almenara (2022), Shah, Ahmad, Khan & Sun (2022), covering the last 40 years, highlighted that the diagnosis, epidemiology, course and outcome of ED are the priority components of ED research, and that the majority of the most highly-cited papers were related to either the development of assessment instruments or the course and outcome of ED.",
+      "Background Given that the circadian rhythm is intricately linked to cardiovascular physiological functions, the objective of this investigation was to employ bibliometric visualization analysis in order to scrutinize the trends, hotspots, and prospects of the circadian rhythm and cardiovascular disease (CVD) over the past two decades. Methods A thorough exploration of the literature related to the circadian rhythm and CVD was conducted via the Web of Science Core Collection database spanning the years 2002\u20132022."
+    ],
+    "title": "Top 20 most cited papers published in each decade. | Download ...",
+    "url": "https://researchgate.net/figure/Top-20-most-cited-papers-published-in-each-decade_tbl1_361890949"
+  },
+  {
+    "description": "Explore how citations and stature are evolving, and why assessing research impact now requires deeper, more nuanced metrics and interpretation.",
+    "favicon_url": "https://you.com/favicon?domain=clarivate.com&size=128",
+    "snippets": [
+      "As our methods have become more sophisticated, this has led to the exclusion of some 300 individuals from the 2021 list, 500 in 2022, about 1,000 in 2023 and slightly more than 2,000 this year. These checks and filters span a spectrum: from examination of the origins of citations to Highly Cited Papers\u2122, to verify whether they stem from a narrow or regional group or represent global uptake and influence, to identification of researchers and their co-authors involved in misconduct of many kinds \u2013 particularly those engaged in publishing and citation practices that depart from traditional norms.",
+      "Zhejiang University climbed 20 places, rising from thirty-second last year to twelfth (tie). Peking University also rose to twelfth (tie), up 13 places from twenty-fifth. Within the top 50 the City University of Hong Kong rose 15 places, from forty-fourth to twenty-ninth.",
+      "Since 2014 , the annual list of Highly Cited Researchers\u2122 has revealed individuals, institutions and nations demonstrating the greatest attention in the scientific and scholarly literature during the previous decade.",
+      "We will continue to improve our methodology to maintain the reliability and integrity of future Highly Cited Researchers lists and we continue to welcome feedback from our colleagues in the research community to help us improve our annual program."
+    ],
+    "title": "Citations and Stature: Rethinking Research Impact | Clarivate",
+    "url": "https://clarivate.com/academia-government/blog/citations-and-stature-not-so-simple-anymore/"
+  },
+  {
+    "description": "Iona University Libraries Research Guide on Citing Source",
+    "favicon_url": "https://you.com/favicon?domain=guides.iona.edu&size=128",
+    "snippets": [
+      "Guidelines on structuring and formatting academic papers, including instructions on title pages, headings, in-text citations, and reference lists, to ensure consistency and clarity in scholarly writing"
+    ],
+    "title": "Sample Research Papers and Formatting Guidelines - Citing Sources ...",
+    "url": "https://guides.iona.edu/citationguide/apa7researchpaper"
+  },
+  {
+    "description": "Review the top 100 most cited publications of all time.",
+    "favicon_url": "https://you.com/favicon?domain=www.genscript.com&size=128",
+    "snippets": [
+      "Nearly 50 years ago, Eugene Garfield, one of the founders of bibliometrics and scientometrics, published the Science Citation Index (SCI), the first systematic effort to track citations in scientific literature.",
+      "The reason that some world famous papers do not make it to this list is because they are often truly foundational discoveries that quickly become part of text books and daily lives becoming familiar terms that do not need a citation.",
+      "It takes a mammoth 12,119 citations to rank in the top 100 list.",
+      "After over half a century of citation indices, some key biological lab techniques emerge as the most cited work in scientific literature."
+    ],
+    "title": "Top 100 most cited publications",
+    "url": "https://www.genscript.com/top-100-most-cited-publications.html"
+  },
+  {
+    "description": "Struggling with citing your sources? Learn how to cite a research paper in this guide in basic formats (APA, MLA, Chicago & Harvard) with examples.",
+    "favicon_url": "https://you.com/favicon?domain=www.sharkpapers.com&size=128",
+    "snippets": [
+      "When citing sources, it\u2019s important to get the balance right. Too little citation, too much citation, or citing in the wrong way can lead to issues in your work. Let\u2019s break it down into three categories: undercitation, overcitation, and unethical citations.",
+      "Whether you\u2019re working on an academic assignment or a professional paper, proper citation is required to give credit to original authors and avoid plagiarism.",
+      "In this blog, we\u2019ll walk you through the fundamental citation formats like APA, MLA, Harvard, and Chicago.",
+      "We\u2019ll explain in-text citations, and help you create a perfect reference list."
+    ],
+    "title": "How To Cite A Research Paper in 2025 | APA, MLA, & More!",
+    "url": "https://www.sharkpapers.com/blog/research-paper-writing-guides/how-to-cite-a-research-paper"
+  },
+  {
+    "description": "In this documentation, we'll deep dive into a technique called knowledge distillation that's commonly used to compress large model, a.k.a. teacher model, into a smaller model, a.k.a student model. The hope is that these student models, which typically have fewer layers or/and fewer neurons ...",
+    "favicon_url": "https://you.com/favicon?domain=ethen8181.github.io&size=128",
+    "snippets": [
+      "initializing a BertForSequenceClassification model from a BertForPreTraining model). - This IS NOT expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).",
+      "Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.weight', 'pre_classifier.bias', 'classifier.weight'] You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.",
+      "student_checkpoint = 'distilbert-base-uncased' student_tokenizer = AutoTokenizer.from_pretrained(student_checkpoint) student_config = AutoConfig.from_pretrained( student_checkpoint, num_labels=teacher_model.config.num_labels, id2label=teacher_model.config.id2label, label2id=teacher_model.config.label2id )",
+      "Some weights of the model checkpoint at distilbert-base-uncased were not used when initializing DistilBertForSequenceClassification: ['vocab_transform.bias', 'vocab_layer_norm.weight', 'vocab_projector.weight', 'vocab_layer_norm.bias', 'vocab_transform.weight', 'vocab_projector.bias'] - This IS expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g."
+    ],
+    "title": "response_knowledge_distillation",
+    "url": "http://ethen8181.github.io/machine-learning/model_deployment/transformers/response_knowledge_distillation.html"
+  },
+  {
+    "description": "Here at Science we love ranking things, so we were thrilled with this list of the top 100 most-cited scientific papers, courtesy of Nature. Surprisingly absent are many of the landmark discoveries you might expect, such as the discovery of DNA's double helix structure.",
+    "favicon_url": "https://you.com/favicon?domain=www.science.org&size=128",
+    "snippets": [
+      "Surprisingly absent are many of the landmark discoveries you might expect, such as the discovery of DNA's double helix structure. Instead, most of these influential manuscripts are slightly more utilitarian in nature. For example, item No. 1, with more than 300,000 citations: Protein measurement with the folin phenol reagent."
+    ],
+    "title": "The 100 most-cited scientific papers | Science | AAAS",
+    "url": "https://www.science.org/content/article/100-most-cited-scientific-papers"
+  },
+  {
+    "description": "We study the distributions of citations received by a single publication within several disciplines, spanning broad areas of science. We show that ...",
+    "favicon_url": "https://you.com/favicon?domain=www.pnas.org&size=128",
+    "snippets": [
+      "We study the distributions of citations received by a single publication within several disciplines, spanning broad areas of science. We show that the probability that an article is cited c times h...",
+      "From this figure it is apparent that the chance of a publication being cited strongly depends on the category the article belongs to. For example, a publication with 100 citations is \u224850 times more common in Developmental Biology than in Aerospace Engineering.",
+      "We show that the probability that an article is cited c times has large variations between different disciplines, but all distributions are rescaled on a universal curve when the relative indicator cf = c/c0 is considered, where c0 is the average number of citations per article for the discipline.",
+      "Citation analysis has a very long history and many potential problems have been identified (7\u20139), the most critical being that often a citation does not\u2014nor it is intended to\u2014reflect the scientific merit of the cited work (in terms of quality or relevance)."
+    ],
+    "title": "Universality of citation distributions: Toward an objective measure ...",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.0806977105"
+  },
+  {
+    "description": "The majority of academic papers are scarcely cited while a few others are highly cited. A large number of studies indicate that there are many factors influencing the number of citations. An actual review is missing that provides a comprehensive review of the factors predicting the frequency ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The majority of academic papers are scarcely cited while a few others are highly cited. A large number of studies indicate that there are many factors influencing the number of citations. An actual review is missing that provides a comprehensive review of the factors predicting the frequency of citations.",
+      "Scientometrics - The majority of academic papers are scarcely cited while a few others are highly cited. A large number of studies indicate that there are many factors influencing the number of...",
+      "Bhandari, M., Busse, J., Devereaux, P. J., Montori, V. M., Swiontkowski, M., Tornetta Iii, P., & Schemitsch, E. H. (2007). Factors associated with citation rates in the orthopedic literature. Canadian Journal of Surgery, 50(2), 119\u2013123.",
+      "Hurley, L. A., Ogier, A. L., & Torvik, V. I. (2013). Deconstructing the collaborative impact: Article and author characteristics that influence citation count. Proceedings of the ASIST Annual Meeting, 50(1), 1\u201310."
+    ],
+    "title": "Factors affecting number of citations: a comprehensive review of ...",
+    "url": "https://link.springer.com/article/10.1007/s11192-016-1889-2"
+  },
+  {
+    "description": "An official website of the United States government \u00b7 Official websites use .gov A .gov website belongs to an official government organization in the United States",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Though citation analysis treats all references equally, it is important to weigh references in terms of their value to the paper.[11] While some references are worthy to be mentioned only once in the paper, some are very relevant to the study question and referred to on multiple occasions, and it is important to re-cite only the most relevant articles.[3] Referencing is not just about stating the publication source (providing relatedness), but also adds value to the paper in terms of representation on the subject and connectivity between knowledge sources (capture the \u201caboutness\u201d).[11] Ref",
+      "Review articles summarize a large body of literature and reduce the number of references; however they may be biased and may not reflect the original article accurately.[16] One should stick to the journal guidelines rigorously (in terms of style and number) to avoid rejection or delay in the processing of the manuscript.[6] Avoid citing conference abstracts as far as possible, as they provide incomplete or limited information on the subject and often lack an appropriate peer review.[16] Other sources which lack traditional review and thus may cite inappropriate, unchecked, or promotional cont",
+      "Citation consists of two components \u2013 the \u201cin-text citation\u201d and the \u201creference list.\u201d[7] In the in-text citation, quotation marks are used to cite an exact line/phrase from another source, specifically for definitions, examples, or explanations provided by another/earlier author/s.[13] To prevent plagiarism, it is suitable to interpret and then summarize the cited content in one's own words, referencing the source at the end of the sentence.[14]",
+      "The parts and order in the citation depend on the source which the author is referencing (journal, book, book chapter, or web source) and the journal guidelines. It is imperative to go through the target journal rules and follow the \u201cInstructions to Authors\u201d related to referencing guidelines (the style, punctuation, italics, abbreviations, issue number, volume number, and pages). All the references are generally cited and numbered as per the order in which they are mentioned in the text (and are to be inserted immediately after the source information and not necessarily at the end of the s"
+    ],
+    "title": "The art of referencing: Well begun is half done! - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9997612/"
+  },
+  {
+    "description": "Struggling with citing your sources? Learn how to cite a research paper in this guide in basic formats (APA, MLA, Chicago & Harvard) with examples.",
+    "favicon_url": "https://you.com/favicon?domain=www.sharkpapers.com&size=128",
+    "snippets": [
+      "When citing sources, it\u2019s important to get the balance right. Too little citation, too much citation, or citing in the wrong way can lead to issues in your work. Let\u2019s break it down into three categories: undercitation, overcitation, and unethical citations.",
+      "Whether you\u2019re working on an academic assignment or a professional paper, proper citation is required to give credit to original authors and avoid plagiarism.",
+      "In this blog, we\u2019ll walk you through the fundamental citation formats like APA, MLA, Harvard, and Chicago.",
+      "We\u2019ll explain in-text citations, and help you create a perfect reference list."
+    ],
+    "title": "How To Cite A Research Paper in 2025 | APA, MLA, & More!",
+    "url": "https://www.sharkpapers.com/blog/research-paper-writing-guides/how-to-cite-a-research-paper"
+  },
+  {
+    "description": "Review the top 100 most cited publications of all time.",
+    "favicon_url": "https://you.com/favicon?domain=www.genscript.com&size=128",
+    "snippets": [
+      "Nearly 50 years ago, Eugene Garfield, one of the founders of bibliometrics and scientometrics, published the Science Citation Index (SCI), the first systematic effort to track citations in scientific literature.",
+      "The reason that some world famous papers do not make it to this list is because they are often truly foundational discoveries that quickly become part of text books and daily lives becoming familiar terms that do not need a citation.",
+      "It takes a mammoth 12,119 citations to rank in the top 100 list.",
+      "After over half a century of citation indices, some key biological lab techniques emerge as the most cited work in scientific literature."
+    ],
+    "title": "Top 100 most cited publications",
+    "url": "https://www.genscript.com/top-100-most-cited-publications.html"
+  },
+  {
+    "description": "In this documentation, we'll deep dive into a technique called knowledge distillation that's commonly used to compress large model, a.k.a. teacher model, into a smaller model, a.k.a student model. The hope is that these student models, which typically have fewer layers or/and fewer neurons ...",
+    "favicon_url": "https://you.com/favicon?domain=ethen8181.github.io&size=128",
+    "snippets": [
+      "initializing a BertForSequenceClassification model from a BertForPreTraining model). - This IS NOT expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).",
+      "Some weights of DistilBertForSequenceClassification were not initialized from the model checkpoint at distilbert-base-uncased and are newly initialized: ['classifier.bias', 'pre_classifier.weight', 'pre_classifier.bias', 'classifier.weight'] You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.",
+      "student_checkpoint = 'distilbert-base-uncased' student_tokenizer = AutoTokenizer.from_pretrained(student_checkpoint) student_config = AutoConfig.from_pretrained( student_checkpoint, num_labels=teacher_model.config.num_labels, id2label=teacher_model.config.id2label, label2id=teacher_model.config.label2id )",
+      "Some weights of the model checkpoint at distilbert-base-uncased were not used when initializing DistilBertForSequenceClassification: ['vocab_transform.bias', 'vocab_layer_norm.weight', 'vocab_projector.weight', 'vocab_layer_norm.bias', 'vocab_transform.weight', 'vocab_projector.bias'] - This IS expected if you are initializing DistilBertForSequenceClassification from the checkpoint of a model trained on another task or with another architecture (e.g."
+    ],
+    "title": "response_knowledge_distillation",
+    "url": "http://ethen8181.github.io/machine-learning/model_deployment/transformers/response_knowledge_distillation.html"
+  },
+  {
+    "description": "The majority of academic papers are scarcely cited while a few others are highly cited. A large number of studies indicate that there are many factors influencing the number of citations. An actual review is missing that provides a comprehensive review of the factors predicting the frequency ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The majority of academic papers are scarcely cited while a few others are highly cited. A large number of studies indicate that there are many factors influencing the number of citations. An actual review is missing that provides a comprehensive review of the factors predicting the frequency of citations.",
+      "Scientometrics - The majority of academic papers are scarcely cited while a few others are highly cited. A large number of studies indicate that there are many factors influencing the number of...",
+      "Bhandari, M., Busse, J., Devereaux, P. J., Montori, V. M., Swiontkowski, M., Tornetta Iii, P., & Schemitsch, E. H. (2007). Factors associated with citation rates in the orthopedic literature. Canadian Journal of Surgery, 50(2), 119\u2013123.",
+      "Hurley, L. A., Ogier, A. L., & Torvik, V. I. (2013). Deconstructing the collaborative impact: Article and author characteristics that influence citation count. Proceedings of the ASIST Annual Meeting, 50(1), 1\u201310."
+    ],
+    "title": "Factors affecting number of citations: a comprehensive review of ...",
+    "url": "https://link.springer.com/article/10.1007/s11192-016-1889-2"
+  },
+  {
+    "description": "Here at Science we love ranking things, so we were thrilled with this list of the top 100 most-cited scientific papers, courtesy of Nature. Surprisingly absent are many of the landmark discoveries you might expect, such as the discovery of DNA's double helix structure.",
+    "favicon_url": "https://you.com/favicon?domain=www.science.org&size=128",
+    "snippets": [
+      "Surprisingly absent are many of the landmark discoveries you might expect, such as the discovery of DNA's double helix structure. Instead, most of these influential manuscripts are slightly more utilitarian in nature. For example, item No. 1, with more than 300,000 citations: Protein measurement with the folin phenol reagent."
+    ],
+    "title": "The 100 most-cited scientific papers | Science | AAAS",
+    "url": "https://www.science.org/content/article/100-most-cited-scientific-papers"
+  },
+  {
+    "description": "We study the distributions of citations received by a single publication within several disciplines, spanning broad areas of science. We show that ...",
+    "favicon_url": "https://you.com/favicon?domain=www.pnas.org&size=128",
+    "snippets": [
+      "We study the distributions of citations received by a single publication within several disciplines, spanning broad areas of science. We show that the probability that an article is cited c times h...",
+      "From this figure it is apparent that the chance of a publication being cited strongly depends on the category the article belongs to. For example, a publication with 100 citations is \u224850 times more common in Developmental Biology than in Aerospace Engineering.",
+      "We show that the probability that an article is cited c times has large variations between different disciplines, but all distributions are rescaled on a universal curve when the relative indicator cf = c/c0 is considered, where c0 is the average number of citations per article for the discipline.",
+      "Citation analysis has a very long history and many potential problems have been identified (7\u20139), the most critical being that often a citation does not\u2014nor it is intended to\u2014reflect the scientific merit of the cited work (in terms of quality or relevance)."
+    ],
+    "title": "Universality of citation distributions: Toward an objective measure ...",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.0806977105"
+  },
+  {
+    "description": "This article reviews self-citation practices in relation to scientific articles. It discusses their link to the journal impact factor, h-index, and peer review.",
+    "favicon_url": "https://you.com/favicon?domain=akjournals.com&size=128",
+    "snippets": [
+      "Citing the sources used in a paper is essential as it allows one to provide an opportunity for interested readers to check and gain a more in-depth understanding of the original works, as well as to give credit to the original authors of the cited works thereby staying away from plagiarism.",
+      "A good indicator of the relevance and quality of scientific results is their impact on follow-up research. Obviously, this can be measured by the frequency they get cited. This naturally led to using citation numbers as a main tool to evaluate scientific papers and even researchers themselves.",
+      "An editor or a reviewer often points out that some relevant publications are missing from the cited sources. Since their work is typically closely connected to the submitted article, it may happen that the given parties find that some of their own papers are missing from the references.",
+      "Honest explanations of such a high ratio can be that the author is indeed the most influential researcher of the subject or perhaps his research is somewhat isolated from others\u2019. However, it also may indicate excessive self-citation practices, which makes it highly likely that the given authors are associated with so-called citation farms, namely, small groups of researchers that cite each other\u2019s works extensively (Ioannidis et al., 2019)."
+    ],
+    "title": "Self-citation: why (or why not), how, and when?",
+    "url": "https://akjournals.com/page/self-citation/selfcitation-why-or-why-not-how-and-when"
+  },
+  {
+    "description": "Covid-19 has been front and center in the global landscape since the beginning of 2020. In response, the scientific field has dedicated enormous amounts of resources to researching the virus and its effects. The number of times Covid-19 publications ...",
+    "favicon_url": "https://you.com/favicon?domain=ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Collection date 2022. ... Reviewer #1: The scientific value of the research is low, but the authors followed a good research methodology, data analysis, as well as the unique research idea that enriched the article. ... 1. Judging in this research depends on the availability of data about scientific journals that have been cited, which supports the results, and therefore the authors must attach the list of scientific journals that were included in the study, (it will be useful if added to the methodology), even if that would benefit the journals but it is not considered advertisement for them, it is their right, and in the same time it is essential document for the publishing of this article.",
+      "PLoS One. 2022 Jul 27;17(7):e0271071.",
+      "Received 2022 Feb 26; Accepted 2022 Jun 22; Collection date 2022.",
+      "Please submit your revised manuscript by Jun 09 2022 11:59PM. If you will need more time than this to complete your revisions, please reply to this message or contact the journal office at plosone@plos.org."
+    ],
+    "title": "Comparison of citation rates between Covid-19 and non-Covid-19 ...",
+    "url": "https://ncbi.nlm.nih.gov/pmc/articles/PMC9328554"
+  },
+  {
+    "description": "An analysis for Nature reveals the studies that appear most in the reference lists of current publications.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "An analysis for Nature reveals the studies that appear most in the reference lists of current publications. An analysis for Nature reveals the studies that appear most in the reference lists of current publications.",
+      "Nature - An analysis for Nature reveals the studies that appear most in the reference lists of current publications.",
+      "The analysis reveals that work on AI published in the past decade was referenced the most. Nature found a similar pattern in a related exploration of the most-cited papers published in the twenty-first century. ... But some older AI studies were still citation magnets in 2023.",
+      "\u201cThe citations just grew and grew and grew,\u201d says physicist Kieron Burke, who co-authored the article with physicists John Perdew and Matthias Ernzerhof. In fact, one-quarter of the paper\u2019s total citations were garnered in the past two years, according to the Dimensions research database, and it is also the fourth most-cited paper of all time (see \u2018These are the most-cited research papers of all time\u2019)."
+    ],
+    "title": "Science\u2019s golden oldies: the decades-old research papers still ...",
+    "url": "https://www.nature.com/articles/d41586-025-01126-8"
+  },
+  {
+    "description": "In subject area: Computer Science \u00b7 A 'Highly Cited Paper' refers to a research article that has received a significant number of citations from other scientific publications. These papers are influential in their respective fields and contribute significantly to the advancement of knowledge",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "A 'Highly Cited Paper' refers to a research article that has received a significant number of citations from other scientific publications. These papers are influential in their respective fields and contribute significantly to the advancement of knowledge. AI generated definition based on: Computer Methods and Programs in Biomedicine, 2020 ... You might find these chapters and articles relevant to this topic. ... In terms of most cited papers published in CMPB, Table 2 presents the top 50 highly cited papers of all time.",
+      "Table 2. The 50 most cited documents in CMPB.",
+      "In Table 1 the 35 most highly cited reviewed items are displayed. For each item citation counts reported by WOS, Scopus and Google Scholar are displayed. The publications are arranged in decreasing order of the Scopus citation count, which is similar but slightly higher than the WOS citation count.",
+      "The citation counts reported by Google Scholar are usually much higher, but there are a few exceptions. Note that some of the highly cited items are not informetric papers per se, but discuss implications of informetric indicators (e.g., citation counts and impact factors)."
+    ],
+    "title": "Highly Cited Paper - an overview | ScienceDirect Topics",
+    "url": "https://www.sciencedirect.com/topics/computer-science/highly-cited-paper"
+  },
+  {
+    "description": "Citation metrics are widely used and misused. We have created a publicly available database of top-cited scientists that provides standardized information on citations, h-index, co-authorship adjusted hm-index, citations to papers in different authorship positions and a composite indicator ...",
+    "favicon_url": "https://you.com/favicon?domain=elsevier.digitalcommonsdata.com&size=128",
+    "snippets": [
+      "Citation metrics are widely used and misused. We have created a publicly available database of top-cited scientists that provides standardized information on citations, h-index, co-authorship adjusted hm-index, citations to papers in different authorship positions and a composite indicator (c-score).",
+      "Metrics with and without self-citations and ratio of citations to citing papers are given. Scientists are classified into 22 scientific fields and 174 sub-fields according to the standard Science-Metrix classification. Field- and subfield-specific percentiles are also provided for all scientists with at least 5 papers. Career-long data are updated to end-of-2022 and single recent year data pertain to citations received during calendar year 2022.",
+      "The selection is based on the top 100,000 scientists by c-score (with and without self-citations) or a percentile rank of 2% or above in the sub-field. This version (6) is based on the October 1, 2023 snapshot from Scopus, updated to end of citation year 2022.",
+      "The c-score focuses on impact (citations) rather than productivity (number of publications) and it also incorporates information on co-authorship and author positions (single, first, last author). If you have additional questions, please read the 3 associated PLoS Biology papers that explain the development, validation and use of these metrics and databases."
+    ],
+    "title": "October 2023 data-update for \"Updated science-wide author databases ...",
+    "url": "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/6"
+  },
+  {
+    "description": "A few weeks ago we had a discussion about citations, and how we can compare the citation impact of papers that were published in different y...",
+    "favicon_url": "https://you.com/favicon?domain=www.behind-the-enemy-lines.com&size=128",
+    "snippets": [
+      "75% line: These papers perform \"better,\" citation-wise than 75% of the remaining papers with the same age. Such papers get around 50 citations within 5 years, 100 citations within 10 years of publication, and around 200 citations in their lifetime.",
+      "50% line: The performance of a \"median\" paper. The median paper gets around 20 citations 5 years after publication, 50 citations within 10 years, and around 100 citations in its lifetime.",
+      "Milestone scores: 20,50,90",
+      "Milestone scores: 50,100,200"
+    ],
+    "title": "Distribution of paper citations over time | A Computer Scientist ...",
+    "url": "https://www.behind-the-enemy-lines.com/2018/11/distribution-of-paper-citations-over.html"
+  },
+  {
+    "description": "18 votes, 25 comments. I was scared and intimidated by the number of citations of top scientists when I used Google Scholar. Google Scholar shows the\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/Delicious_Maize9656 - 18 votes and 25 comments",
+      "There is a paper published in nature where it shows that in 1950s around 50 percent of published papers changed or created new directions of science that actually impacted the real world whereas now the percentage is less than 1%. Science now has been gamified. Apart from a few, these Professors have made a curtail where they cite each other, block their opponents to publish etc. Citations number doesn\u2019t sound much.",
+      "In my field there's a famous professor in China who about 50-60 faculty members work under. He gets his name on every single paper from any of them. So he's amassed over 100,000 citations and gets like 10k every year. The joke is that, if it's a decently high IF journal, he reads the abstract. Another example. We published a paper in Science a few years ago that is decently cited for the topic.",
+      "Speaking only for myself, I just want to make a living and do rewarding work. A few coauthored publications every year and I'm good. I'm in my 50s at an R1 FYI. ... Seriously. Who cares? Hiring and grant committees unfortunately. ... I have about 30 citations (I\u2019m 3 years post-PhD)."
+    ],
+    "title": "r/academia on Reddit: I was scared and intimidated by the number ...",
+    "url": "https://www.reddit.com/r/academia/comments/12xh6cl/i_was_scared_and_intimidated_by_the_number_of/"
+  },
+  {
+    "description": "FORMATTING ARTICLES ON YOUR REFERENCES PAGE \u00b7 Articles from Databases: In general, when you cite an article from a database, the format is the same as for a print article. At the end of the citation include the DOI (digital object identifier - a unique code for the article) number to indicate ...",
+    "favicon_url": "https://you.com/favicon?domain=butlercc.libguides.com&size=128",
+    "snippets": [
+      "Articles from Databases: In general, when you cite an article from a database, the format is the same as for a print article. At the end of the citation include the DOI (digital object identifier - a unique code for the article) number to indicate an online article.",
+      "Butler's guide to APA citations"
+    ],
+    "title": "Articles - APA Citation Guide - LibGuides at Butler Community College",
+    "url": "https://butlercc.libguides.com/c.php?g=220263&p=1458231"
+  },
+  {
+    "description": "Interdisciplinary research is of significance for creating breakthroughs and facilitating innovations and may achieve higher citation impact, although contrary results still exist. The current study looks into the relationship between interdisciplinarity and citation impact from a brand-new ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Interdisciplinary research is of significance for creating breakthroughs and facilitating innovations and may achieve higher citation impact, although contrary results still exist. The current study looks into the relationship between interdisciplinarity and citation impact from a brand-new perspective\u2014the process of citation accumulation\u2014by exploring how interdisciplinarity, as measured by Rao-Stirling and DIV, affects the accumulating process of citations, based on scientific papers published by Chinese or US authors in 2009\u20132011 in Chemistry.",
+      "Humanities and Social Sciences Communications - The relationship between interdisciplinarity and citation impact\u2014a novel perspective on citation accumulation",
+      "Highly cited papers often demonstrate a higher level of interdisciplinarity (Chen et al. 2015) or an elevated propensity for atypical linkages (Schilling and Green, 2011). Integrated interdisciplinarity indicators, such as the Rao-Stirling index and the Leinster\u2013Cobbold Diversity Index, have been empirically linked to a positive influence on citation impact (Chen et al. 2022).",
+      "Generally, both RS and DIV show a positive relationship with cumulative citations, indicating that papers with higher indicators tend to attract more citations and are cited more frequently. This finding is consistent with previous studies (Abramo et al. 2017; Chen et al. 2022)."
+    ],
+    "title": "The relationship between interdisciplinarity and citation impact\u2014a ...",
+    "url": "https://www.nature.com/articles/s41599-023-02475-3"
+  },
+  {
+    "description": "Abstract. Corona virus disease 2019 (COVID-19) pandemic, sparked by the emergence of a novel coronavirus in early 2020, has prompted a surge in published a",
+    "favicon_url": "https://you.com/favicon?domain=academic.oup.com&size=128",
+    "snippets": [
+      "These were cited by a total of 283 034 articles (median citation = 767), median impact factor of 66.9 and 72 articles with fundings. China (n = 44), USA (n = 19), and UK (n = 13) were the three highest contributors (n = 220 505). Most articles were level 5 evidence (n = 48), followed by level 3 (n = 28), 4 (n = 14), 2 (n = 7), and 1 (n = 3). The main subjects were mechanism of action and structures of SARS-CoV-2 virus (n = 18) and impact of COVID-19 on public health (n = 18). Publications in 2022 and 2023 predominantly focused on the impact of COVID-19.",
+      "Understandably that most of the articles were published in 2020 at the initial phase of the pandemic measuring up to 91 articles. Seven articles were published in 2021, while two articles were noted to be published in 2022. The 100 most-cited articles vary widely in terms of their locations with China producing the most papers (n = 44) followed by the USA (n = 19) and UK (n = 13).",
+      "Majority of these papers were published in New England Journal of Medicine (n = 13), followed by Nature (n = 7), and the third most frequently noted journal is shared between Cell (n = 6) and Lancet (n = 6). The impact factors for each of these journals in 2022 were 176.1, 69.5, 66.9, and 202.7, respectively.",
+      "The journal with the highest impact factor noted in our study was Lancet (202.7), and the journal with the lowest impact factor found was Pediatria I Medycyna Rodzinna \u2013 Paediatrics and Family Medicine (0.1). The published journals for each article with their corresponding impact factors (as of year 2022) can be found in Table 1. Seventy-two papers (72%) were found to have fundings from external sources."
+    ],
+    "title": "The 100 most-cited articles in COVID-19: a bibliometric analysis",
+    "url": "https://academic.oup.com/eurpub/article/34/4/744/7708746"
+  },
+  {
+    "description": "Recognising, publishing, and promoting excellence in science are part of our core values as a not-for-profit society publisher. To celebrate brilliant science and the researchers behind it, we're sharing the top-cited article from each of our journals in 2021.",
+    "favicon_url": "https://you.com/favicon?domain=royalsociety.org&size=128",
+    "snippets": [
+      "Proceedings A publishes articles across the chemical, computational, Earth, engineering, mathematical, and physical sciences. The articles published are high-quality, original, fundamental articles of interest to a wide range of scientists, and often have long citation half-lives.",
+      "Emphasis is placed on impact factor in measuring the success of journals and articles, however by signing up to DORA we\u2019re working to improve the ways in which the research we publish is evaluated by offering a variety of metrics, including citation data. Visit this blog post to find out more about our evolving publishing metrics.",
+      "Data from our Transformative Journal articles published in 2021 shows that open access papers received on average 29% more citations, 60% more downloads, and 34% higher Altmetric scores than subscription articles.",
+      "If you'd like to receive more citations, think about publishing open access. Authors who choose open access publication are likely to benefit from increased dissemination and citation."
+    ],
+    "title": "Celebrating the most cited papers from 2021 | Royal Society",
+    "url": "https://royalsociety.org/blog/2023/02/top-cited-papers-2021/"
+  },
+  {
+    "description": "I wrote earlier about the 50th anniversary of the Science Citation Index. Recently, Nature got together with Thomson-Reuters, the publishers of the Science Citation Index (now usually known as the Web of Science), to come up with a list of the 100 most-cited papers of all time.1 It\u2019s an ...",
+    "favicon_url": "https://you.com/favicon?domain=sites.ulethbridge.ca&size=128",
+    "snippets": [
+      "For my part, I\u2019m going to look at what this list tells us about citation patterns in different areas of science, focusing particularly on an area of science I know well, namely density functional theory, and one with which I have a tangential acquaintance, NMR.",
+      "Hopefully the code I\u2019m using here is clear enough: LYP 88, for example, is Lee, Yang and Parr (1988). The entries on the diagonal are the total numbers of citations to the corresponding papers. This matrix is necessarily symmetric about its diagonal, so I didn\u2019t fill in the entries below the diagonal.",
+      "Note that the total citations for each paper differ somewhat from those reported in Nature\u2018s spreadsheet because I performed my analysis at a later point in time, and these papers continue to accumulate citations at an astonishing rate.",
+      "One of the points made by the authors of the Nature article is that papers that describe methods get cited much more than papers that introduce new ideas into science. So why do the Kohn papers appear in this list? I would argue that this is due to a quirk of citation among people who do DFT calculations."
+    ],
+    "title": "The top 100 most-cited papers of all time | Marc Roussel's blog",
+    "url": "https://sites.ulethbridge.ca/roussel/2015/03/23/the-top-100-most-cited-papers-of-all-time/"
+  },
+  {
+    "description": "We ranked the most cited journal articles, books, and other scientific works in 2023, which includes sources of foreign and local authors.",
+    "favicon_url": "https://you.com/favicon?domain=www.grafiati.com&size=128",
+    "snippets": [
+      "NST Proceedings, 2022. https://doi.org/10.11594/nstp.2022.2613. We congratulate the authors whose scientific works have proven their relevance this year, and wish them to be popular among our users in the future! ... CSE 9th ed. reference generator ... MHRA 4th vs. 3rd Edition: List of All Changes ... DGPs (5th ed.) reference generator: Deutsche Gesellschaft f\u00fcr Psychologie \u2013 Richtlinien zur Manuskriptgestaltung (5. Aufl.) ... MLA 9 citation generator online \u2013 NEW 2021!",
+      "24, 2022. You can support the Ukrainian Army by following the link: https://u24.gov.ua/. Even the smallest donation is hugely appreciated! \u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430 Fran\u00e7ais Italiano Espa\u00f1ol Polski Portugu\u00eas Deutsch ... 2023 was a fruitful year for our users, who used our automatic citation service to cite a variety of sources on a daily basis.",
+      "5. Sim\u00f5es, Greice Dotto, Cain\u00e1 Corr\u00eaa do Amaral, Camila Perell\u00f3 Ferr\u00faa, Amanda de Lima Aldrighi, Karoline Brizola de Souza, Geovanna Peter Corr\u00eaa, Roberta Giorgi, and Fernanda Nedel. \"Kombucha Application in Health: Systematic Review.\" Acta Scientifci Nutritional Health 6, no. 8 (August 2022): 31\u201341.",
+      "3. Hytowitz, Allan N. \"Review of Using the Dyop Optotype for Acuity and Refractions.\" Journal of Optometry 16, no. 4 (2023): 317\u201318. https://doi.org/10.1016/j.optom.2022.12.002."
+    ],
+    "title": "Top 10: The Most Cited Scientific Sources in 2023 \u2013 Grafiati",
+    "url": "https://www.grafiati.com/en/blogs/most-cited-papers-in-2023/"
+  },
+  {
+    "description": "New research suggests papers with lower citation numbers cause readers to assume the paper is of a lower quality \u00b7 There\u2019s a presumption that highly cited journal articles are the most influential papers \u2014 the greater the number of times a paper has been cited, the higher the perceived quality.",
+    "favicon_url": "https://you.com/favicon?domain=socialsciences.uchicago.edu&size=128",
+    "snippets": [
+      "The study authors were able to underscore the polarizing effects of citation counts: Citations to already highly cited papers are two-to-three times more likely to reflect substantial intellectual influence, while papers with poor perceived quality (lower citations) are read more superficially and discovered later in the projects.",
+      "The relationship between the number of citations a paper has (i.e., its influence) and the influence of the work was first articulated by sociologist Robert K. Merton. The normative theory of citation suggests that researchers cite others to acknowledge the influence that they've had on their work.",
+      "It turns out there\u2019s literature to support this more rhetorical citation concept, which states that people cite other works not because it influenced them, but because the very existence of those works supports the claims they\u2019re trying to make.",
+      "The team turned its attention to research paper search engines, which rank results by relevance and prominence: If you search anything, it returns papers relevant to your search term and they\u2019re often ranked by the number of times they\u2019re cited."
+    ],
+    "title": "Research paper citation may skew its influence | The University ...",
+    "url": "https://socialsciences.uchicago.edu/news/research-paper-citation-may-skew-its-influence"
+  }
+]

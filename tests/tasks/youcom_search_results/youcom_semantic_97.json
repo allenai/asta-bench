@@ -1,0 +1,290 @@
+[
+  {
+    "description": "17 votes, 11 comments. Dense Passage Retrieval is a technique from a 2020 paper and it seems to make a lot of sense for RAG. In this technique two\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "DPR usually refers to the finetuning process too, not just the inference steps of encode the text and vector search. As for OP question about why DPR seems to be out of popularity, I think it is just that fine tuning in general is more difficult and time-consuming to get a result immediately so people just like to use pretrained model directly.",
+      "Moreover, in RAG pipeline I think there are a lot of ways to achieve a better result such as better data cleaning, chunking etc.. finetuning method like DPR is usually the last step to do to improve the performance. Here are some points I would like to note: DPR is a fine tuning method, so like you said people must have compute resources and not everybody have it. DPR requires training data with labels i.e question-passage pairs, and constructing the dataset can time consuming and costly. Compared that to directly using a pretrained model that are trained on billions of data by big companies, it is a much more complicated process.",
+      "And in most cases, a single encoder is good enough. I think DPR idea is still used a lot even nowadays. If you read the blog/paper of some of the most popular embeddings like Cohere or OpenAI, you would find that their method is the same as DPR, they just use a single model instead of 2 and train on much more data. There are also some variants of DPR, e.g. finetune an adapter on top of the pretrained model as question encoder and freeze the weight for passage encoder, that way you do not have to reindex the database every time you retrain the model.",
+      "I'm also curious why does your company use DPR, and what base model(s) are you finetuning your embeddings from? ... First I think you should have an evaluation metrics to judge how good the model is, usually recall is used as metrics. Then you should try some of the available pretrained model to see if it is good enough for your use case. If it is not good then you can try fine tune the model. In the fine tuning phase you can try using 2 encoders or single encoder, then you compare the 2 approaches to see which is better."
+    ],
+    "title": "r/LocalLLaMA on Reddit: Why don't people use Dense Passage Retrieval?",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1cx0wkr/why_dont_people_use_dense_passage_retrieval/"
+  },
+  {
+    "description": "This is the second part of series of articles \u201cDeep Learning in Information Retrieval\u201d. This series is for those who knows basics of deep learning and would like to deep dive into the field of modern\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "This is the second part of series of articles \u201cDeep Learning in Information Retrieval\u201d. This series is for those who knows basics of deep\u2026",
+      "AR2 consists of a dual-encoder retriever plus a highly-performant ranker. The two models are jointly optimized according to a minimax adversarial objective: the retriever learns to retrieve negative documents to cheat the ranker, while the ranker learns to rank a collection of candidates including both the ground-truth and the retrieved ones, as well as providing progressive direct feedback to the dual-encoder retriever.",
+      "At building of search index step trained encoder is used to obtain dense vectors for searchable entities (documents, passages). These vectors are stored in the index. At retrieval step trained encoder is used to produce dense vector of a query. Then this vector is used to calculate cosine distance between query vector and vectors of candidates from search index.",
+      "One of the earliest work which adopts large transformer-based models for dense retrieval is DPR (Dense Passage Retriever). In this work authors show that retrieval can be practically implemented using dense vectors, and qualitative embeddings of text passages can be learned from a small number of questions and passages by a bi-encoder type of model [2]."
+    ],
+    "title": "Deep Learning in Information Retrieval. Part II: Dense Retrieval ...",
+    "url": "https://medium.com/@aikho/deep-learning-in-information-retrieval-part-ii-dense-retrieval-1f9fecb47de9"
+  },
+  {
+    "description": "Abstract. We introduce ART, a new corpus-level autoencoding approach for training dense retrieval models that does not require any labeled training data. Dense retrieval is a central challenge for open-domain tasks, such as Open QA, where state-of-the-art methods typically require large supervised ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. We introduce ART, a new corpus-level autoencoding approach for training dense retrieval models that does not require any labeled training data. Dense retrieval is a central challenge for open-domain tasks, such as Open QA, where state-of-the-art methods typically require large supervised datasets with custom hard-negative mining and denoising of positive examples.",
+      "It also does not require cross-encoder finetuning and is thus faster to train. As generative language models continue to become more accurate (Chowdhery et al., 2022), we hypothesize that the performance gap between state-of-the-art supervised models and ART would further narrow down. Our results showcase that both the PLM scorers, T5-lm-adapt (11B) and T0 (3B), achieve strong results on the QA retrieval tasks, with T0 achieving higher performance gains.",
+      "This illustrates that the relevance score estimates of candidate passages obtained in the zero-shot cross-attention step are accurate enough to provide strong supervision for retriever training. We believe that this is a direct consequence of the knowledge stored in the PLM weights. While T5-lm-adapt\u2019s knowledge is obtained by training on unsupervised text corpora, T0 was further finetuned using instruction-prompted datasets of tasks such as summarization, QA, text classification, etc.4 Hence, in addition to learning from instructions, the performance gains from T0 can be attributed to the knowledge infused in its weights by (indirect) supervision from these manually curated datasets.",
+      "We compare across PLMs trained using three different objectives: (i) generative denoising of masked spans (T5 series; Raffel et al., 2020), (ii) further pre-training using autoregressive language modeling objective (T5-lm-adapt series; Lester et al., 2021), and (iii) finetuning T5-lm-adapt models on unrelated tasks using instructions (T0 series; Sanh et al., 2022). Our results in Table 8 highlight that PLM training methodology and model size can have a large effect on retrieval performance. T5 base model leads to low scores possibly because pre-training using predicting masked spans is not ideal for question reconstruction."
+    ],
+    "title": "Questions Are All You Need to Train a Dense Passage Retriever | ...",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00564/116466/Questions-Are-All-You-Need-to-Train-a-Dense"
+  },
+  {
+    "description": "We introduce ART, a new corpus-level autoencoding approach for training dense retrieval models that does not require any labeled training data. Dense retrieval is a central challenge for open-domain tasks, such as Open\u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "It also does not require cross-encoder finetuning and is thus faster to train. As generative language models continue to become more accurate Chowdhery et al. (2022), we hypothesize that the performance gap between state-of-the-art supervised models and ART would further narrow down. Our results showcase that both the PLM scorers, T5-lm-adapt (11B) and T0 (3B), achieve strong results on the QA retrieval tasks, with T0 achieving higher performance gains.",
+      "This illustrates that the relevance score estimates of candidate passages obtained in the zero-shot cross-attention step are accurate enough to provide strong supervision for retriever training. We believe that this is a direct consequence of the knowledge stored in the PLM weights. While T5-lm-adapt\u2019s knowledge is obtained by training on unsupervised text corpora, T0 was further finetuned using instruction-prompted datasets of tasks such as summarization, QA, text classification, etc.444However, we note that T0 was not finetuned on the question generation task and not trained on any of the datasets we have used in this work.",
+      "We compare across PLMs trained using three different objectives\u2014 (i) generative denoising of masked spans (T5 series; Raffel et al., 2020), (ii) further pre-training using autoregressive language modeling objective (T5-lm-adapt series; Lester et al., 2021), and (iii) finetuning T5-lm-adapt models on unrelated tasks using instructions (T0 series; Sanh et al., 2022). Our results in Table 8 highlight that PLM training methodology and model size can have a large effect on retrieval performance. T5 base model leads to low scores possibly because pre-training using predicting masked spans is not ideal for question reconstruction.",
+      "T5-lm-adapt models are more stable and lead to improved performance with the best result achieved by the 11B model. Instruction finetuned T0 models outperforms the T5-lm-adapt models. However, scaling up the size of T0 to 11B parameters does not result in meaningful improvements. While the previous experiments were conducted on QA datasets, here we examine the robustness of the ART model trained using questions to different ad-hoc retrieval tasks."
+    ],
+    "title": "[2206.10658] Questions Are All You Need to Train a Dense Passage ...",
+    "url": "https://ar5iv.labs.arxiv.org/html/2206.10658"
+  },
+  {
+    "description": "Now that we understood how the LLMs work in my previous article. In this article, we will examine how an LLM is pre-trained and fine-tuned.",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Now that we understood how the LLMs work in my previous article. In this article, we will examine how an LLM is pre-trained and fine-tuned. In the industry, companies often integrate pre-trained\u2026",
+      "Autoencoding models: Autoencoding models consist only of an encoder. Autoencoding models predict the masked word from the every preceding and following words in the sentence, therefore it is bi-directional. So the model has the knowledge of the entire context.",
+      "The choice between pre-training and fine-tuning depends on the specific application requirements, considering factors such as computational resources, task complexity, and the need for domain-specific expertise. [1] Generative AI with Large Language Models, DeepLearningAI, Coursera course \u00b7 [2] Finetuning Large Language Models, DeepLearningAI",
+      "After filtering the dirty data, the training can be started. There are three variances of a transformer model and each of them are trained with a different objective: encoder-only, decoder-only and encoder-decoder."
+    ],
+    "title": "Everything to learn about Large Language Models(Part 2/3 Pre-training ...",
+    "url": "https://medium.com/@aydinKerem/everything-to-learn-about-large-language-models-part-2-3-pre-training-and-fine-tuning-5fc68700701a"
+  },
+  {
+    "description": "In the realm of artificial intelligence, the battle between bi-directional and auto-regressive transformers is rewriting the rules of language modeling. Imagine a technology that can read and\u2026",
+    "favicon_url": "https://you.com/favicon?domain=yashvaantlakham73.medium.com&size=128",
+    "snippets": [
+      "Bidirectional and Auto-Regressive Transformers combines the strength of both BERT and GPT architectures. It has a bi-directional encoder and an autoregressive decoder, which allows the advantages of both BERT and GPT pre-training methods. The encoder and decoder architecture of BART is similar to the original transformer architecture.",
+      "Privacy and security \u2014 You can maintain control over sensitive data while not sacrificing the performance of NLP. Competitive advantage \u2014 The LLM tailored to your organization and industry can deliver insights and understanding that generic LLMs cannot. You will have a competitive advantage compared to industry peers. As we wrap up our exploration of bi-directional and auto-regressive transformers, it\u2019s evident that these models are not just technical marvels but game changers in the field of natural language processing.",
+      "While BERT excels at tasks requiring bidirectional context understanding and GPT is better suited for text generation tasks due to its auto-regressive nature, BART bridges the gap between these two models by combining their strengths. BART has been found to perform particularly well in the application areas.",
+      "In the realm of artificial intelligence, the battle between bi-directional and auto-regressive transformers is rewriting the rules of language modeling. Imagine a technology that can read and understand text from all directions simultaneously versus one that predicts the next word in a sequence with unmatched precision."
+    ],
+    "title": "Exploring Bi-Directional Vs Auto-Regressive Models | by A.I Hub ...",
+    "url": "https://yashvaantlakham73.medium.com/exploring-bi-directional-vs-auto-regressive-models-34788c9a294a"
+  },
+  {
+    "description": "The transformer architecture has ultimately become the dominant model in language processing, surpassing LSTM and other competing models. At its core, the transformer takes a sequence as input and\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Because of the powerful variation-generating capabilities, most modern generative language models use auto-regression along with probability-based selection techniques such as top-k or top-p sampling. We\u2019ve briefly explored the inference and training mechanisms of the encoder-decoder transformer model that uses auto-regression to generate text.",
+      "See the picture below for auto-regression in works. ... In autoregression, each pass through the model generates one word at a time. So, does this mean we have to train the model by generating one word, comparing it to the target, and repeating this for each word? While this is possible, it would be extremely inefficient for GPU usage. GPUs excel at performing many small calculations in parallel, not one-by-one sequential processing.",
+      "After the sentence has been fully generated, the <BOS> token is removed. This is because the model\u2019s output needs to be compared against the target answer, which doesn\u2019t include any special tokens like <BOS>. Therefore, the decoder and encoder are trained to not include the start token in the final output.",
+      "Encoder Input: \u201cThe sun is responsible for. Puppies learning new tricks. Children growing up and getting old. Flowers wilting in a vase. Plants sprouting, blooming, and wilting.\u201d"
+    ],
+    "title": "Understanding the Modern LLM \u2014 Part 2: Understanding Auto-Re...",
+    "url": "https://medium.com/@ikim1994914/understanding-the-modern-llm-part-2-understanding-auto-regression-and-auto-regression-training-5b255535f099"
+  },
+  {
+    "description": "Sentiment analysis is a well-known task that has been used to analyse customer feedback reviews and media headlines to detect the sentimental personality or polarisation of a given text. With the growth of social media and other online platforms, like Twitter (now branded as X), Facebook, blogs, ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "Sentiment analysis is a well-known task that has been used to analyse customer feedback reviews and media headlines to detect the sentimental personality or polarisation of a given text. With the growth of social media and other online platforms, like Twitter (now branded as X), Facebook, blogs, and others, it has been used in the investment community to monitor customer feedback, reviews, and news headlines about financial institutions\u2019 products and services to ensure business success and prioritise aspects of customer relationship management.",
+      "The retrieval process begins by encoding both the query and the document corpus into dense embeddings using a pre-trained embedding model (e.g., all-MiniLM-L6-v2). FAISS is then used to efficiently search the vector database, retrieving the top k relevant documents for each query.",
+      "The system uses similarity-based searching with FAISS to retrieve the top k documents related to a particular query, such as customer complaints and comments on banking services. The procedure begins with embedding creation, where fresh reviews are encoded into embeddings using a pre-trained embedding model (e.g., \u2018all-MiniLM-L6-v2\u2019), which is efficient in encoding semantic information into dense vectors.",
+      "Generation and document retrieval are critical processes in gathering the most relevant context for sentiment analysis. Pre-trained embedding models and FAISS [107] are used to efficiently index documents. The embedding generation stage converts both the query and the documents into dense vectors, obtaining the semantic information required to perform similarity matching."
+    ],
+    "title": "Fine-Tuning Retrieval-Augmented Generation with an Auto-Regressive ...",
+    "url": "https://www.mdpi.com/2076-3417/14/23/10782"
+  },
+  {
+    "description": "Dense retrieval models using a transformer-based bi-encoder architecture have emerged as an active area of research. In this article, we focus on the task of monolingual retrieval in a variety of t...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Dense retrieval models using a transformer-based bi-encoder architecture have emerged as an active area of research. In this article, we focus on the task of monolingual retrieval in a variety of typologically diverse languages using such an architecture. ...",
+      "A bi-encoder architecture provides an attractive alternative to the so-called cross-encoder architecture, whereby queries and documents are concatenated and fed into a transformer directly. Cross-encoders are only practical in a reranking setup, processing candidates generated by a first-stage retrieval system, whereas bi-encoders directly support single-stage retrieval (but, of course, can be further reranked by cross-encoders if desired).",
+      "Additional pretraining in the target language with MLM can be helpful in a more resource-constrained setting, but this approach forgoes the opportunity to exploit transfer effects from multiple languages in mMARCO. Independently, apply knowledge distillation from cross-encoders when possible. For retrieval, apply inference directly in the target language \\(\\mathcal {L}\\) in a zero-shot manner.",
+      "While there are additional studies examining multilingual pretrained models based on the encoder\u2013decoder transformer architecture [40, 61, 62], we do not discuss them here as the models are not used in this work. We base our retrieval models on DPR [26], a foundational and one of the earliest dense retrieval models. Given a question \\(q\\) and a passage \\(p\\), DPR generates representations, \\(E_Q(q)\\) and \\(E_P(p)\\), independently using question and passage encoders based on BERT by taking the representation of the [CLS] token in the final layer."
+    ],
+    "title": "Toward Best Practices for Training Multilingual Dense Retrieval ...",
+    "url": "https://dl.acm.org/doi/10.1145/3613447"
+  },
+  {
+    "description": "Whether you\u2019re a beginner or an experienced user, these tutorials will walk you through Haystack features and functionalities making it easy for you to understand and implement them \u00b7 A guided walkthrough to learn everything about evaluation",
+    "favicon_url": "https://you.com/favicon?domain=haystack.deepset.ai&size=128",
+    "snippets": [
+      "Learn how to use Haystack with our tutorials.",
+      "Whether you\u2019re a beginner or an experienced user, these tutorials will walk you through Haystack features and functionalities making it easy for you to understand and implement them.",
+      "Learn how to build a Haystack pipeline that uses an extractive model to display where the answer to your query is.",
+      "Type a keyword then click the \"Search\" button and we'll search through all tutorials."
+    ],
+    "title": "Training Your Own Dense Passage Retrieval Model - Haystack",
+    "url": "https://haystack.deepset.ai/tutorials/09_dpr_training"
+  },
+  {
+    "description": "In this blog post, I will be discussing the Autoregressive models. The models I will be discussing have been developed by OpenAI. First I will cover the basics of Autoregressive models which are\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "The Evolution of GPT: From GPT to GPT-2 to GPT-3",
+      "In the previous blog post Attention Is All You Need: The Core Idea of the Transformer, I discussed the self-attention mechanism and Transformer architecture. In this blog, I will be building upon the previous information. So if you haven\u2019t checked out the previous post, go check it out. Transformer architecture uses 6 encoders and 6 decoders as mentioned in the original paper.",
+      "GPT model consists of a 12-layer decoder-only transformer with masked self-attention heads (768 dimensional states and 12 attention heads). For the position-wise feed-forward networks, 3072-dimensional inner states were used. Adam optimizer, Byte pair encoding, and Gelu optimizer were used.",
+      "It is trained on a much larger unlabeled dataset (the larger the better). No fine-tuning is done in GPT-2. They have introduced the concept of zero-shot transfer. Zero-shot transfer refers to the scenario where a pre-trained model is directly applied to a new task or domain without any additional training on task-specific data."
+    ],
+    "title": "Autoregressive Models for Natural Language Processing | by Zain ...",
+    "url": "https://medium.com/@zaiinn440/autoregressive-models-for-natural-language-processing-b95e5f933e1f"
+  },
+  {
+    "description": "Fine-tuning in machine learning is the process of adapting a pre-trained model for specific tasks or use cases through further training on a smaller dataset.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "All links reside outside ibm.com 1 \"Big Self-Supervised Models are Strong Semi-Supervised Learners\", arXiv, 26 October 2020 2 \"CSS-LM: A Contrastive Framework for Semi-supervised Fine-tuning of Pre-trained Language Models\", arXiv, 2 March 2021 3 \"On the Effectiveness of Parameter-Efficient Fine-Tuning\", arXiv, 28 November 2022 4 \"BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models\", arXiv, 18 June 2021 (last updated 5 September 2022) 5 \"Scaling Sparse Fine-Tuning to Large Language Models\", arXiv, 2 February 2024 6 \"Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning\", arXiv, 28 March 2023 7 \"Parameter-Efficient Transfer Learning for NLP\", arXiv, 13 June 2019",
+      "Join our world-class panel of engineers, researchers, product leaders and more as they cut through the AI noise to bring you the latest in AI news and insights. ... Fine-tuning uses the weights of a pre-trained model as a starting point for further training on a smaller dataset of examples that more directly reflect the specific tasks and use cases the model will be utilized for.",
+      "LoRA eschews direct optimization of the matrix of model weights and instead optimizes a matrix of updates to model weights (or delta weights), which is inserted into the model. That matrix of weight updates is, in turn, represented as two smaller (i.e., lower rank) matrices, greatly reducing the number of parameters to be updated\u2014which, in turn, dramatically speeds up fine-tuning and reduces memory needed to store model updates.",
+      "The fine-tuning process thus serves a crucial role in not only tailoring foundation models for your or your business\u2019s unique tone and use cases, but in making them altogether suitable for practical usage. Instruction tuning is a subset of supervised fine-tuning (SFT), often used to fine-tune LLMs for chatbot usage, that primes the LLM to generate responses that more directly address user needs: in other words, to better follow instructions."
+    ],
+    "title": "What is Fine-Tuning? | IBM",
+    "url": "https://www.ibm.com/think/topics/fine-tuning"
+  },
+  {
+    "description": "When should your data team use RAG vs fine tuning for your generative AI initiative? We dive into the benefits and use cases of each.",
+    "favicon_url": "https://you.com/favicon?domain=www.montecarlodata.com&size=128",
+    "snippets": [
+      "For stable domains that change yearly or less frequently, fine-tuning offers better performance without the overhead of constant retrieval. Data privacy requirements may dictate your choice. Fine-tuning embeds data directly into model weights, which some organizations find concerning for sensitive information.",
+      "Fine-tuning becomes the superior choice when your application demands specialized expertise, consistent output formats, or operates under deployment constraints that prevent external data access. The following scenarios demonstrate where fine-tuning\u2019s ability to embed knowledge directly into model parameters provides distinct advantages over retrieval-based approaches.",
+      "RAG implementation requires database and retrieval expertise but uses existing models. Fine-tuning demands ML engineering skills, GPU access, and experience with training pipelines. Hybrid approaches need both skill sets. Desired level of model control affects your approach. Fine-tuning offers complete control over model behavior and output style. RAG provides less direct control but easier updates and corrections.",
+      "Every new document added to the knowledge base must be processed, embedded, and indexed without disrupting ongoing operations. Teams must balance retrieval accuracy with speed, often implementing caching strategies and query optimization techniques. Performance becomes particularly challenging at scale when dealing with millions of documents and hundreds of concurrent users."
+    ],
+    "title": "RAG Vs Fine Tuning: How To Choose The Right Method",
+    "url": "https://www.montecarlodata.com/blog-rag-vs-fine-tuning/"
+  },
+  {
+    "description": "Fine-tuning effective dense retrieval models is challenging. Bi-encoders (sentence transformers) are the current best models for dense retrieval in semantic search. Unfortunately, they\u2019re also notoriously data-hungry models that typically require a particular type of labeled training data.",
+    "favicon_url": "https://you.com/favicon?domain=www.pinecone.io&size=128",
+    "snippets": [
+      "For example, we may want to build a retriever model that encodes sentences (passages) for financial documents in German. In that case, any text from German financial documents is in-domain, and everything else is out-of-domain. For our target domain of German financial documents, anything that fits the topic and we would expect our model to encounter is in-domain. Anything else is out-of-domain. To achieve good performance with a language model (LM), we need to train (fine-tune) it on in-domain data.",
+      "Because of that, GenQ is prone to poor performance where the synthetic data is too noisy [1]. We have what should be a very large dataset of (query, passage) pairs. With this data, we can move on to fine-tuning the bi-encoder model. To fine-tune the bi-encoder (sentence transformer) we use Multiple Negatives Ranking (MNR) loss. MNR loss is ideal for training where our dataset consists of pairs of related sentences. For example, when training a QA retriever model, we can train with MNR loss if we have sets of (question, answer) pairs.",
+      "One of the most impressive is GenQ. This approach to building bi-encoder retrievers uses the latest text generation techniques to synthetically generate training data. In short, all we need are passages of text.",
+      "Using this approach, we can take passages of text, generate (query, passage) pairs, and use these pairs to train effective bi-encoder models ideal for asymmetric semantic search. GenQ is an excellent, low-effort technique enabling projects that focus or rely on retrieving passages of text from natural language queries."
+    ],
+    "title": "Unsupervised Training of Retrievers Using GenQ | Pinecone",
+    "url": "https://www.pinecone.io/learn/series/nlp/genq/"
+  },
+  {
+    "description": "Dense Passage Retriever (DPR). \u201cBrief Review \u2014 DPR: Dense Passage Retrieval for Open-Domain Question Answering\u201d is published by Sik-Ho Tsang.",
+    "favicon_url": "https://you.com/favicon?domain=sh-tsang.medium.com&size=128",
+    "snippets": [
+      "M can be very large, e.g.: 21M passages, and k is usually small, e.g.: 20\u2013100. Dense passage retriever (DPR) uses a dense encoder EP(.) which maps any text passage to a d-dimensional real-valued vectors and builds an index for all the M passages.",
+      "At run-time, DPR applies a different encoder EQ(.) that maps the input question to a d-dimensional vector, and retrieves k passages of which vectors are the closest to the question vector. The similarity between the question and the passage is using the dot product:",
+      "Two independent BERT are used. The representation at the [CLS] token is taken as the output. d=768. The passage encoder EP is applied to all the passages and index them using FAISS where FAISS is an extremely efficient, open-source library for similarity search. Given a question q at run-time, its embedding vq = EQ(q) and the top k passages with embeddings closest to vq are retrieved.",
+      "Retrieval can be practically implemented using dense representations alone, where embeddings are learned from a small number of questions and passages by a simple dual-encoder framework."
+    ],
+    "title": "Brief Review \u2014 DPR: Dense Passage Retrieval for Open-Domain ...",
+    "url": "https://sh-tsang.medium.com/brief-review-dpr-dense-passage-retrieval-for-open-domain-question-answering-9323cd8f85c4"
+  },
+  {
+    "description": "Dense Passage Retriever - is a set of tools and models for open domain Q&A task. - facebookresearch/DPR",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Regular NLL classification loss validation for bi-encoder training can be replaced with average rank evaluation. It aggregates passage and question vectors from the input data passages pools, does large similarity matrix calculation for those representations and then averages the rank of the gold passage for each question. We found this metric more correlating with the final retrieval performance vs nll classification loss.",
+      "A Bi-encoder model is trained from scratch using this new training data combined with our original NQ training data. This training scheme gives a nice retrieval performance boost.",
+      "If you're interesting in reproducing experimental results in the paper based on our model checkpoints (i.e., don't want to train the encoders from scratch), you might consider using the Pyserini toolkit, which has the experiments nicely packaged in via pip. Their toolkit also reports higher BM25 and hybrid scores. Dense retriever model is based on bi-encoder architecture.",
+      "New retrieval model checkpoint with better perfromance. A new bi-encoder model trained on NQ dataset only is now provided: a new checkpoint, training data, retrieval results and wikipedia embeddings. It is trained on the original DPR NQ train set and its version where hard negatives are mined using DPR index itself using the previous NQ checkpoint."
+    ],
+    "title": "GitHub - facebookresearch/DPR: Dense Passage Retriever - is a set ...",
+    "url": "https://github.com/facebookresearch/DPR"
+  },
+  {
+    "description": "For example, RepLLaMA (Ma et al., ... LM-based retrievers trained using complex training strategies. LLM2VEC (BehnamGhader et al., 2024; Lee et al., 2024) replaced the decoder-only unidirectional attention with bidirectional attention, further improving retrieval performance. Llama2Vec (Li et al., 2024) introduced two pre-training tasks (i.e., EBAE Embedding-based Auto-Encoding and Embedding-based Auto-Regression) for LLMs ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "For example, RepLLaMA (Ma et al., 2024) directly replaces the PLMs with LLMs to encode the representation of query and document, and empirical evidence shows that LLM-based retrievers trained using a simple fine-tuning strategy outperform LM-based retrievers trained using complex training strategies. LLM2VEC (BehnamGhader et al., 2024; Lee et al., 2024) replaced the decoder-only unidirectional attention with bidirectional attention, further improving retrieval performance. Llama2Vec (Li et al., 2024) introduced two pre-training tasks (i.e., EBAE Embedding-based Auto-Encoding and Embedding-based Auto-Regression) for LLMs to adapt LLMs properly so that they can be effectively initialized as the backbone encoder for dense retrieval.",
+      "Although leveraging the superior semantic understanding ability of LLMs for retrieval looks appealing, it is challenging to do so. Recent studies have attempted to repeat passages as input during encoding (Springer et al., 2024), to use a bidirectional attention mechanism for encoding during relevance matching fine-tuning (BehnamGhader et al., 2024), or pre-train LLMs to strengthen the global semantic representation capabilities (Li et al., 2024). Since LLMs are decoder-based language models (LMs), it is natural to think of adapting them to retrieval according to the classical language modeling approach to IR (Ponte and Croft, 2017), i.e., modeling the query likelihood (QL) given the LM of a document.",
+      "Pre-trained language models, e.g, BERT (Devlin, 2018), RoBERTa (Liu, 2019), and XLNET (Yang, 2019), have shown superior performance in various NLP tasks. Dense Passage Retrieval (DPR) (Karpukhin et al., 2020) firstly used the pre-trained language models to encode the representation vector of queries or documents.",
+      "In the early stages of retrieval, the focus was primarily on lexical matching between the terms of the query and the passage, with methods such as BM25 (Lin et al., 2021) and query likelihood (QL) model (Ponte and Croft, 2017). However, with the advent of pre-trained language models (PLMs) such as BERT (Devlin, 2018), representing passages or queries as dense vectors has gradually become the mainstream approach. These methods typically employ two separate encoders to represent the query and passage and are referred to as dual-encoder models."
+    ],
+    "title": "Unleashing the Power of LLMs in Dense Retrieval with Query Likelihood ...",
+    "url": "https://arxiv.org/html/2504.05216v1"
+  },
+  {
+    "description": "Text retrieval is a long-standing research topic on information seeking, where a system is required to return relevant information resources to user\u2019s queries in natural language. From heuristic-based retrieval methods to learning-based ranking functions, ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Order-disorder: Imitation adversarial attacks for black-box neural ranking models. Retrieved from https://abs/2209.06506 ... Jiduan Liu, Jiahao Liu, Yang Yang, Jingang Wang, Wei Wu, Dongyan Zhao, and Rui Yan. 2022. GNN-encoder: Learning a dual-encoder architecture via graph neural networks for passage retrieval.",
+      "Less is more: Pretrain a strong siamese encoder for dense text retrieval using a weak decoder. In Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP\u201921). 2780\u20132791. ... Yuxiang Lu, Yiding Liu, Jiaxiang Liu, Yunsheng Shi, Zhengjie Huang, Shikun Feng, Yu Sun, Hao Tian, Hua Wu, Shuaiqiang Wang, Dawei Yin, and Haifeng Wang. 2022. ERNIE-search: Bridging cross-encoder with dual-encoder via self on-the-fly distillation for dense passage retrieval.",
+      "Jianmo Ni, Chen Qu, Jing Lu, Zhuyun Dai, Gustavo Hern\u2019andez \u2019Abrego, Ji Ma, Vincent Zhao, Yi Luan, Keith Hall, Ming-Wei Chang, and Yinfei Yang. 2021. Large dual encoders are generalizable retrievers. Retrieved fromhttps://abs/2112.07899 ... Rodrigo Nogueira and Kyunghyun Cho. 2019. Passage re-ranking with BERT.",
+      "ConTextual mask auto-encoder for dense passage retrieval. Retrieved from https://arXiv:2208.07670 ... Chenyan Xiong, Zhuyun Dai, Jamie Callan, Zhiyuan Liu, and Russell Power. 2017. End-to-end neural ad hoc ranking with kernel pooling. In Proceedings of the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval. 55\u201364. ... Lee Xiong, Chenyan Xiong, Ye Li, Kwok-Fung Tang, Jialin Liu, Paul N. Bennett, Junaid Ahmed, and Arnold Overwijk."
+    ],
+    "title": "Dense Text Retrieval Based on Pretrained Language Models: A Survey ...",
+    "url": "https://dl.acm.org/doi/10.1145/3637870"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Open-domain question answering relies on efficient passage retrieval to select candidate contexts, where traditional sparse vector space models, such as TF-IDF or BM25, are the de facto method. In this work, we show that retrieval can be practically implemented using dense representations alone, where embeddings are learned from a small number of questions and passages by a simple dual-encoder framework.",
+      "Dense Passage Retrieval (DPR) is a set of tools and models for state-of-the-art open-domain Q&A research. It was introduced in Dense Passage Retrieval for Open-Domain Question Answering by Vladimir Karpukhin, Barlas O\u011fuz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, Wen-tau Yih.",
+      "When evaluated on a wide range of open-domain QA datasets, our dense retriever outperforms a strong Lucene-BM25 system largely by 9%-19% absolute in terms of top-20 passage retrieval accuracy, and helps our end-to-end QA system establish new state-of-the-art on multiple open-domain QA benchmarks. This model was contributed by lhoestq. The original code can be found here. ... Reader: extract the answer of the questions inside retrieved contexts, along with a relevance score (high if the inferred span actually answers the question).",
+      "questions (str or List[str]) \u2014 The questions to be encoded. You can specify one question for many passages. In this case, the question will be duplicated like [questions] * n_passages."
+    ],
+    "title": "DPR",
+    "url": "https://huggingface.co/docs/transformers/en/model_doc/dpr"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "For instance, when we pushed the model to the huggingface-course organization, we added hub_model_id=\"huggingface-course/distilbert-finetuned-imdb\" to TrainingArguments. By default, the repository used will be in your namespace and named after the output directory you set, so in our case it will be \"lewtun/distilbert-finetuned-imdb\".",
+      "For both auto-regressive and masked language modeling, a common preprocessing step is to concatenate all the examples and then split the whole corpus into chunks of equal size. This is quite different from our usual approach, where we simply tokenize individual examples.",
+      "In section 6 you\u2019ll learn how to train an auto-regressive model like GPT-2 from scratch; head over there if you\u2019d like to see how you can pretrain your very own Transformer model! \u270f\ufe0f Try it out! To quantify the benefits of domain adaptation, fine-tune a classifier on the IMDb labels for both the pretrained and fine-tuned DistilBERT checkpoints.",
+      "Since it expects a list of dicts, where each dict represents a single chunk of contiguous text, we first iterate over the dataset before feeding the batch to the collator. We remove the \"word_ids\" key for this data collator as it does not expect it: ... samples = [lm_datasets[\"train\"][i] for i in range(2)] for sample in samples: _ = sample.pop(\"word_ids\") for chunk in data_collator(samples)[\"input_ids\"]: print(f\"\\n'>>> {tokenizer.decode(chunk)}'\")"
+    ],
+    "title": "Fine-tuning a masked language model - Hugging Face LLM Course",
+    "url": "https://huggingface.co/learn/llm-course/en/chapter7/3"
+  },
+  {
+    "description": "Pre-trained language models (LM) have become go-to text representation encoders. Prior research used deep LMs to encode text sequences such as sentences and passages into single dense vector representations. These dense representations have been used in efficient text comparison and embedding-based ...",
+    "favicon_url": "https://you.com/favicon?domain=www.arxiv-vanity.com&size=128",
+    "snippets": [
+      "Pre-trained language models (LM) have become go-to text representation encoders. Prior research used deep LMs to encode text sequences such as sentences and passages into single dense vector representations. These dense representations have been used in efficient text comparison and embedding-based retrieval.",
+      "Read this arXiv paper as a responsive web page with clickable citations.",
+      "Compared to Wikipedia in Open QA, web search corpus covers a wider variety of passages from the web. The data set judgments are typically generated from user click information. As a result, both training and testing data will be noisier, containing a sizable number of false negatives and potentially also false positives. In this section, we examine how various bi-encoders work under these noises. Meanwhile, the retrieval results are commonly presented to the user or to a reranker for reranking. Note that direct comparison between open QA and web search results is less meaningful.",
+      "The latest dense encoders, or bi-encoders are fine-tuned from Transformer LMs to encode text into a single vector reimers-gurevych-2019-sentence; karpukhin-etal-2020-dense. Fine-tuning associates with vector similarities some practical semantics, e.g., textual similarity or relevance, and therefore the vectors can be used for efficient text comparison or retrieval by inner product. Despite their inference test efficiency, bi-encoders are not sample efficient, taking a big performance hit in low resource situations karpukhin-etal-2020-dense; thakur2020augmented."
+    ],
+    "title": "Is Your Language Model Ready for Dense Representation Fine-tuning?",
+    "url": "https://www.arxiv-vanity.com/papers/2104.08253/"
+  },
+  {
+    "description": "The key differences between RAG vs fine tuning LLMs: RAG leverages external data, while fine-tuning adapts models with specialized knowledge.",
+    "favicon_url": "https://you.com/favicon?domain=aisera.com&size=128",
+    "snippets": [
+      "By marrying the benefits of improving LLM performance with fine-tuned LLM and RAG, a holistic approach emerges that could address the user query more comprehensively. The fine-tuned LLM component recognizes \u201cdrug X\u201d, hypertension, and diabetes plus their related terminologies or abbreviations and anchors the context accordingly. Meanwhile, the RAG model retrieves relevant information about \u201cdrug X\u201d, its effects on hypertension and diabetes, and any contraindications for patients with these medical conditions, providing a detailed, nuanced response to the user\u2019s request.",
+      "This approach allows for surpassing individual limitations of the respective models, offering expertise in situations demanding extensive retrieval of specific data or understanding of specialized terms. Book an AI demo and explore Aisera\u2019s Enterprise LLM for your organization today! Fine-tuning: Best for training the model to understand and perform specific tasks more accurately.",
+      "RAG stands for Retrieval Augmented Generation and on the other hand, fine-tuning LLM stands for Large Language Model fine-tuning. Both of them fall under the wider range of AI approaches geared to improve how a trained language model AI model responds to user inputs.",
+      "The user query also implicitly seeks information about potential interactions between drug X and their existing hypertensive and diabetic medications, a complex question that demands extensive retrieval of healthcare data. Even with the best LLM strategy, this task can exceed a fine-tuned LLM\u2019s capacity, underscoring a limitation of this model."
+    ],
+    "title": "RAG vs Fine Tuning LLMs: The Right Approach for Generative AI",
+    "url": "https://aisera.com/blog/llm-fine-tuning-vs-rag/"
+  },
+  {
+    "description": "Walk through how to fine-tune a causal language model using the Hugging Face Trainer API, including full source code and explanation of the process.",
+    "favicon_url": "https://you.com/favicon?domain=www.bluelabellabs.com&size=128",
+    "snippets": [
+      "The DataCollator outputs the input IDs batch, label IDs batch, and attention masks, which are then used for training the causal language model. The model takes the input IDs and attention masks as input and learns to predict the corresponding label IDs. Next, I create the Trainer and TrainingArguments objects which will actually perform the training: from transformers import Trainer, TrainingArguments args = TrainingArguments( finetuned_modelname, evaluation_strategy=\"epoch\", save_strategy=\"epoch\", learning_rate=2e-5, num_train_epochs=3, weight_decay=0.01, fp16=is_gpu_available, push_to_hub=True, per_device_train_batch_size=4, per_device_eval_batch_size=4, hub_model_id=huggingface_reponame ) trainer = Trainer( model=model, tokenizer=tokenizer, args=args, data_collator=data_collator, train_dataset=tokenized_dataset[\"train\"], eval_dataset=tokenized_dataset[\"validation\"] )",
+      "A causal language model (causal, not casual!), also known as an \u2018auto-regressive\u2019 model, is a type of Transformer model trained to predict the next word (or token) in a sequence based on previous words (hence the \u2018causal\u2019), allowing them to generate coherent and contextually relevant text.",
+      "Every language model needs to be \u2018trained,\u2019 meaning it must be fed an enormous amount of data to learn by detecting patterns and relationships in that data. Thus, a language model can only reason using data it was trained on, or context that has been provided or retained during a conversation. The latter approach is the basis for Retrieval Augmented Generation, which I have previously explored here.",
+      "With the generative AI work we\u2019ve done at BlueLabel, we\u2019ve found that while the RAG approach does work, however we\u2019ve found that in general you can get better output through a fine-trained model than a general purpose model augmented with RAG. At a high level, the steps needed to fine-tune a causal language model consist of: Prepare and process a dataset for fine tuning. Select and load a pre-trained model. Tokenize and collate the dataset. Set up the Trainer. Evaluate the performance of the pre-trained model."
+    ],
+    "title": "How to Fine-Tune a Causal Language Model with Hugging Face | BlueLabel",
+    "url": "https://www.bluelabellabs.com/blog/how-to-fine-tune-a-causal-language-model-with-hugging-face/"
+  },
+  {
+    "description": "Open-domain question answering relies on efficient passage retrieval to select candidate contexts, where traditional sparse vector space models, such as TF-IDF or BM25, are the de facto method. In this work, we show that retrieval can be practically implemented using dense representations alone, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Open-domain question answering relies on efficient passage retrieval to select candidate contexts, where traditional sparse vector space models, such as TF-IDF or BM25, are the de facto method. In this work, we show that retrieval can be practically implemented using dense representations alone, where embeddings are learned from a small number of questions and passages by a simple dual-encoder framework.",
+      "Abstract page for arXiv paper 2004.04906: Dense Passage Retrieval for Open-Domain Question Answering",
+      "View a PDF of the paper titled Dense Passage Retrieval for Open-Domain Question Answering, by Vladimir Karpukhin and 7 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+      "Work on one of the world's most important websites and make an impact on open science. ... We gratefully acknowledge support from the Simons Foundation, member institutions, and all contributors. Donate ... Authors:Vladimir Karpukhin, Barlas O\u011fuz, Sewon Min, Patrick Lewis, Ledell Wu, Sergey Edunov, Danqi Chen, Wen-tau Yih \u00b7 View a PDF of the paper titled Dense Passage Retrieval for Open-Domain Question Answering, by Vladimir Karpukhin and 7 other authors View PDF"
+    ],
+    "title": "[2004.04906] Dense Passage Retrieval for Open-Domain Question ...",
+    "url": "https://arxiv.org/abs/2004.04906"
+  }
+]

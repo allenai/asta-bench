@@ -1,0 +1,272 @@
+[
+  {
+    "description": "Pre-trained language models have achieved striking success in natural language processing (NLP), leading to a paradigm shift from supervised learning \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Pre-trained language models have achieved striking success in natural language processing (NLP), leading to a paradigm shift from supervised learning to pre-training followed by fine-tuning. The NLP community has witnessed a surge of research interest in improving pre-trained models.",
+      "We first give a brief introduction of pre-trained models, followed by characteristic methods and frameworks. We then introduce and analyze the impact and challenges of pre-trained models and their downstream applications. Finally, we briefly conclude and address future research directions in this field."
+    ],
+    "title": "Pre-Trained Language Models and Their Applications - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2095809922006324"
+  },
+  {
+    "description": "In text classification tasks, useful information is encoded in the label names. Label semantic aware systems have leveraged this information for improved text classification performance during fine-tuning and prediction. However, use of label-semantics during pre-training has not been extensively ...",
+    "favicon_url": "https://you.com/favicon?domain=www.amazon.science&size=128",
+    "snippets": [
+      "In text classification tasks, useful information is encoded in the label names. Label semantic aware systems have leveraged this information for improved text classification performance during fine-tuning and prediction. However, use of label-semantics during pre-training has not been extensively explored.",
+      "In text classification tasks, useful information is encoded in the label names. Label semantic aware systems have leveraged this information for improved text classification performance during fine-tuning and prediction. However, use of label-semantics during pre-training has not been extensively\u2026",
+      "A day in the life - 6+ years of building machine learning models for retail application experience - PhD, or Master's degree and 6+ years of applied research experience - Experience programming in Java, C++, Python or related language - Experience with neural deep learning methods and machine learning - Demonstrated expertise in computer vision and machine learning techniques. Applied Scientist, Prime Video - Content Understanding and Enrichment ... Prime Video is a first-stop entertainment destination offering customers a vast collection of premium programming in one app available across thousands of devices.",
+      "However, use of label-semantics during pre-training has not been extensively explored. We therefore propose Label Semantic Aware Pre-training (LSAP) to improve the generalization and data efficiency of text classification systems. LSAP incorporates label semantics into pre-trained generative models (T5 in our case) by performing secondary pre-training on labeled sentences from a variety of domains."
+    ],
+    "title": "Label semantic aware pre-training for few-shot text classification ...",
+    "url": "https://www.amazon.science/publications/label-semantic-aware-pre-training-for-few-shot-text-classification"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Language Models are Few-Shot Learners",
+    "url": "http://arxiv.org/pdf/2005.14165"
+  },
+  {
+    "description": "Abstract. This paper studies the use of language models as a source of synthetic unlabeled text for NLP. We formulate a general framework called \u201cgenerate, annotate, and learn (GAL)\u201d to take advantage of synthetic text within knowledge distillation, self-training, and few-shot learning ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. This paper studies the use of language models as a source of synthetic unlabeled text for NLP. We formulate a general framework called \u201cgenerate, annotate, and learn (GAL)\u201d to take advantage of synthetic text within knowledge distillation, self-training, and few-shot learning applications.",
+      "GAL leverages advances in large pretrained language models to help supervised learning and can have implications for learning from limited labeled data. GAL significantly helps improve knowledge distillation and prompt-based few-shot learning. In addition, a concurrent work (Gowal et al., 2021) has shown that using generated images can enhance the robustness of images classifiers. We will explore this direction on NLP tasks in the future. Finally, we hope that GAL will stimulate new research on the evaluation and development of large language models.",
+      "We use the best available classifier to annotate synthetic text with soft pseudo labels for knowledge distillation and self-training, and use LMs to obtain hard labels for few-shot learning. We train new supervised models on the combination of labeled and pseudo-labeled data, which results in significant gains across several applications. We investigate key components of GAL and present theoretical and empirical arguments against the use of class-conditional LMs to generate synthetic labeled text instead of unlabeled text.",
+      "We then combine labeled data and pseudo-labeled data to train more effective supervised models, resulting in significant gains on a range of NLP tasks like KD and few-shot learning. We present a justification for GAL based on the empirical and vicinal risk minimization frameworks (Vapnik, 1992; Chapelle et al., 2001)."
+    ],
+    "title": "Generate, Annotate, and Learn: NLP with Synthetic Text | Transactions ...",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00492/112605/Generate-Annotate-and-Learn-NLP-with-Synthetic"
+  },
+  {
+    "description": "Large language models (LLMs) have tremendous potential for social science research as they are trained on vast amounts of text and can generalize to many tasks. We explore the use of LLMs for super...",
+    "favicon_url": "https://you.com/favicon?domain=journals.sagepub.com&size=128",
+    "snippets": [
+      "Large language models (LLMs) have tremendous potential for social science research as they are trained on vast amounts of text and can generalize to many tasks. We explore the use of LLMs for supervised text classification, specifically the application to stance detection, which involves detecting attitudes and opinions in texts.",
+      "We compare 10 models ranging in size from tens of millions to hundreds of billions of parameters and test four distinct training regimes: Prompt-based zero-shot learning and few-shot learning, fine-tuning, and instruction-tuning, which combines prompting and fine-tuning. The largest, most powerful models generally offer the best predictive performance even with little or no training examples, but fine-tuning smaller models is a competitive solution due to their relatively high accuracy and low cost.",
+      "\u201cImproving Language Understanding by Generative Pre-Training\u201d. ... Radford A., Wu J., Child R., Luan D., Amodei D., Sutskever I. 2019. \u201cLanguage Models are Unsupervised Multitask Learners.\u201d Technical report, OpenAI. ... Raffel C., Shazeer N., Roberts A., Lee K., Narang S., Matena M., Zhou Y., Li W., Liu P. J. 2020. \u201cExploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer.\u201d arXiv:1910.10683 [cs, stat].",
+      "\u201cCASM: A Deep-Learning Approach for Identifying Collective Action Events with Text and Image Data From Social Media.\u201d Sociological Methodology 49(1): 1\u201357. ... Zhao Z., Wallace E., Feng S., Klein D., Singh S. 2021. \u201cCalibrate Before Use: Improving Few-shot Performance of Language Models.\u201d Pp. 12697-12706 in Proceedings of the 38th International Conference on Machine Learning, volume 139 of Proceedings of Machine Learning Research, edited by M."
+    ],
+    "title": "Large Language Models for Text Classification: From Zero-Shot ...",
+    "url": "https://journals.sagepub.com/doi/10.1177/00491241251325243"
+  },
+  {
+    "description": "The prompt-tuning method demonstrates remarkable effectiveness in few-shot text classification tasks. However, the performance of the method depends t\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "In recent years, with the development of foundation model (FM), there has been a trend towards training on large corpora and fine-tuning on specific task datasets [1].This approach appears to significantly enhance the performance in text classification field. However, in many real-world application scenarios, the availability of labeled data is limited [2]. Annotating unlabeled samples can consume a lot of manpower and resources. Given this, the semi-supervised learning methods that predict novel classes are ineffective, making few-shot text classification worthy of attention.",
+      "Below is an overview of each dataset and the patterns used in the prompt learning, where \u00b7 We propose the TPT method for few-shot text classification tasks. Our approach uses topic model to extract more relevant label words and combines external knowledge to expand the verbalizer. Experiments on five datasets demonstrate that this method is highly versatile, showing excellent performance in both topic-based and sentiment text classification. Future work may focus on exploring general and efficient patterns construction methods, as well as investigating ways to combine automated and",
+      "Therefore, we aim to obtain part of label words from the actual training data. In terms of word number, more label words will consume more computational resource, or bring noise and reduce the performance. So, we hope to figure out how many words are appropriate. Specifically, in this work, we introduce a topic model [10] to enrich the label words.",
+      "The proposed approach uses 20 label words for each class, 10 from the topic model, and another 10 from the external knowledge base. ... We conduct the experiments on five datasets, and the results show the performance superiority of the TPT approach over the existing approaches. Topic modeling is an unsupervised learning method that automatically extracts topic information from a large corpus."
+    ],
+    "title": "An enhanced few-shot text classification approach by integrating ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231224018538"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.neurips.cc&size=128",
+    "snippets": [],
+    "title": "Language Models are Few-Shot Learners",
+    "url": "https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf"
+  },
+  {
+    "description": "Abstract. Large language models (LLMs) are sophisticated AI-driven models trained on vast sources of natural language data. They are adept at generating re",
+    "favicon_url": "https://you.com/favicon?domain=academic.oup.com&size=128",
+    "snippets": [
+      "For the sentence classification task focused on intrinsic factors that affect drug clinical exposure, a set of four sentences (two positive and two negative) was randomly selected from the manually constructed dataset (198 positive and 302 negative sentences, respectively) as a training sample. All remaining sentences were used for model validation/evaluation without undersampling. In parallel to our few-shot Learning scenario, we also explored zero-shot learning (Fig. 1). For zero-shot learning, the LLMs are directly prompted to predict or categorize the provided sentences, without the need to form a training sample.",
+      "Overview of the TAC 2019 Track on Drug-Drug Interaction Extraction from Drug Labels. ... A general procedure to select calibration drugs for lab-specific validation and calibration of proarrhythmia risk prediction models: an illustrative example using the CiPA model. ... Introducing FLAN: More Generalizable Language Models with Instruction Fine-Tuning. ... 2021. Available at: https://research.google/blog/introducing-flan-more-generalizable-language-models-with-instruction-fine-tuning/. ... Exploring the limits of transfer learning with a unified text-to-text transformer.",
+      "As a feasibility evaluation, we implemented a series of open-source LLMs within a regulatory agency\u2019s local network and assessed their performance on specific tasks involving extracting relevant clinical pharmacology information from regulatory drug labels. Our research shows that some models work well in the context of few- or zero-shot learning, achieving performance comparable, or even better than, neural network models that needed thousands of training samples. One of the models was selected to address a real-world issue of finding intrinsic factors that affect drugs' clinical exposure without any training or fine-tuning. In a dataset of over 700 000 sentences, the model showed a 78.5% accuracy rate.",
+      "Consequently, Flan-T5 was applied, without any training examples (zero-shot learning), to the real-world task: scanning all FDA prescription drug labels to identify intrinsic factors that can affect the clinical exposure of a selected list of drugs of interest. Even though it is difficult to fully evaluate the performance of Flan-T5 on such a huge unlabeled dataset, a thorough manual examination suggests it has a precision rate of 78.5%."
+    ],
+    "title": "Harnessing large language models\u2019 zero-shot and few-shot learning ...",
+    "url": "https://academic.oup.com/bib/article/25/5/bbae354/7739674"
+  },
+  {
+    "description": "Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples.",
+      "Abstract page for arXiv paper 2005.14165: Language Models are Few-Shot Learners",
+      "GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora.",
+      "View a PDF of the paper titled Language Models are Few-Shot Learners, by Tom B. Brown and 30 other authors View PDF \u00b7 Abstract:Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task."
+    ],
+    "title": "[2005.14165] Language Models are Few-Shot Learners",
+    "url": "https://arxiv.org/abs/2005.14165"
+  },
+  {
+    "description": "Aaron Mueller, Jason Krone, Salvatore Romeo, Saab Mansour, Elman Mansimov, Yi Zhang, Dan Roth. Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2022.",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [
+      "However, use of label-semantics during pre-training has not been extensively explored. We therefore propose Label Semantic Aware Pre-training (LSAP) to improve the generalization and data efficiency of text classification systems. LSAP incorporates label semantics into pre-trained generative models (T5 in our case) by performing secondary pre-training on labeled sentences from a variety of domains.",
+      "As domain-general pre-training requires large amounts of data, we develop a filtering and labeling pipeline to automatically create sentence-label pairs from unlabeled text. We perform experiments on intent (ATIS, Snips, TOPv2) and topic classification (AG News, Yahoo! Answers). LSAP obtains significant accuracy improvements over state-of-the-art models for few-shot text classification while maintaining performance comparable to state of the art in high-resource settings.\"",
+      "As domain-general pre-training requires large amounts of data, we develop a filtering and labeling pipeline to automatically create sentence-label pairs from unlabeled text. We perform experiments on intent (ATIS, Snips, TOPv2) and topic classification (AG News, Yahoo! Answers). LSAP obtains significant accuracy improvements over state-of-the-art models for few-shot text classification while maintaining performance comparable to state of the art in high-resource settings.</abstract> <identifier type=\"citekey\">mueller-etal-2022-label</identifier> <identifier type=\"doi\">10.18653/v1/2022.acl-long.570</identifier> <location> <url>https://aclanthology.org/2022.acl-long.570/</url> </location> <part> <date>2022-05</date> <extent unit=\"page\"> <start>8318</start> <end>8334</end> </extent> </part> </mods> </modsCollection>"
+    ],
+    "title": "Label Semantic Aware Pre-training for Few-shot Text Classification ...",
+    "url": "https://aclanthology.org/2022.acl-long.570/"
+  },
+  {
+    "description": "The advent of large language models marks a revolutionary breakthrough in artificial intelligence. With the unprecedented scale of training and model parameters, the capability of large language models has been dramatically improved, leading to human-like performances in understanding, language ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The advent of large language models marks a revolutionary breakthrough in artificial intelligence. With the unprecedented scale of training and model parameters, the capability of large language models has been dramatically improved, leading to human-like performances in understanding, language synthesizing, common-sense reasoning, etc.",
+      "World Wide Web - The advent of large language models marks a revolutionary breakthrough in artificial intelligence. With the unprecedented scale of training and model parameters, the capability of...",
+      "While the pre-trained language models empower the text understanding with the benefit of capturing world knowledge first, the development of pre-trained large language models provides great emergency ability in the fields of reasoning and generalization, as shown in Table 2. TALLRe [119] explores the ability of large language models for the sequential recommendation. They observe that original language models perform poorly in zero-shot and few-shot scenarios, while recommendation-specific instruction-tuned language models demonstrate superior performance in few-shot learning and cross-domain generalization.",
+      "These models, equipped with vast amounts of data and large-scale neural networks, exhibit impressive capabilities in comprehending human language and generating text that closely resembles our own. Among these abilities are reasoning [2], few-shot learning [3], and the incorporation of extensive world knowledge within pre-trained models [1]. This marks a significant breakthrough in the field of artificial intelligence, leading to a revolution in our interactions with machines."
+    ],
+    "title": "When large language models meet personalization: perspectives of ...",
+    "url": "https://link.springer.com/article/10.1007/s11280-024-01276-1"
+  },
+  {
+    "description": "This alert has been successfully added and will be sent to: \u00b7 You will be notified whenever a record that you have chosen has been cited",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Fair is better than sensational: Man is to doctor as woman is to doctor. arXiv preprint arXiv:1905.09866, 2019. ... University of Regensburg. Fascha, 2016. ... Jason Phang, Thibault F\u00e9vry, and Samuel R. Bowman. Sentence encoders on STILTs: Supplementary training on intermediate labeled-data tasks.",
+      "MASS: Masked sequence to sequence pre-training for language generation. arXiv preprint arXiv:1905.02450, 2019. ... Project Turing. Microsoft research blog, Feb 2020. ... Oriol Vinyals, Charles Blundell, Timothy Lillicrap, Daan Wierstra, et al. Matching Networks for One Shot Learning.",
+      "How much knowledge can you pack into the parameters of a language model? arXiv preprint arXiv:2002.08910, 2020. ... Colin Raffel, Noam Shazeer, Adam Roberts, Katherine Lee, Sharan Narang, Michael Matena, Yanqi Zhou, Wei Li, and Peter J. Liu. Exploring the limits of transfer learning with a unified text-to-text transformer, 2019.",
+      "Unsuper-vised data augmentation for consistency training, 2019. ... Zhilin Yang, Zihang Dai, Yiming Yang, Jaime Carbonell, Ruslan Salakhutdinov, and Quoc V. Le. XLNet: Generalized autoregressive pretraining for language understanding. arXiv preprint arXiv:1906.08237, 2019. ... Rowan Zellers, Ari Holtzman, Yonatan Bisk, Ali Farhadi, and Yejin Choi. Hellaswag: Can a machine really finish your sentence?"
+    ],
+    "title": "Language models are few-shot learners | Proceedings of the 34th ...",
+    "url": "https://dl.acm.org/doi/abs/10.5555/3495724.3495883"
+  },
+  {
+    "description": "Intent classification is a fundamental task in Natural Language Processing (NLP) that involves determining the underlying purpose or goal behind a given piece of text, with applications ranging fro...",
+    "favicon_url": "https://you.com/favicon?domain=www.tandfonline.com&size=128",
+    "snippets": [
+      "Intent classification is essential in Natural Language Processing, serving applications like virtual assistants and customer service by categorizing user inputs into predefined classes. Despite its...",
+      "Few-shot techniques involve designing a prompt with minimal examples of a particular task, and passing it to the LLM, enabling it to generalize to new, unseen examples with only a few instances provided. Zero-shot takes this a step further by prompting a model to perform tasks it has never seen during training. Leveraging these approaches with LLMs enables effective adaptation to specific intent classification tasks with limited labeled data. The application of LLMs for data augmentation has become a significant focus in recent research. By employing LLMs to generate diverse and contextually relevant synthetic data, researchers aim to supplement limited training datasets for intent classification models.",
+      "LLMs excel in few-shot learning scenarios by understanding the context of the problem and generating high-quality training data that goes beyond the provided seed. They leverage their vast pre-trained knowledge to create data that is contextually relevant and diverse, enhancing the learning experience for models.",
+      "Brown, T., B. Mann, N. Ryder, M. Subbiah, J. D. Kaplan, P. Dhariwal, A. Neelakantan, P. Shyam, G. Sastry, A. Askell, et al. 2020. Language models are few-shot learners. Advances in Neural Information Processing Systems 33:1877\u2013901. ... Casanueva, I., T. Temcinas, D. Gerzs, M. Henderson, and I. Vulic. 2020. Efficient intent detec- tion with dual sentence encoders."
+    ],
+    "title": "Full article: Enhancing Intent Classifier Training with Large ...",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/08839514.2024.2414483"
+  },
+  {
+    "description": "PDF | In text classification tasks, useful information is encoded in the label names. Label semantic aware systems have leveraged this information for... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Exploring \u00b7 the limits of transfer learning with a uni\ufb01ed text-to- ... Raghav Gupta, and Pranav Khaitan. 2019. Towards ... Schema-Guided Dialogue Dataset. In Proceedings \u00b7 of the AAAI Conference on Arti\ufb01cial Intelligence, Honolulu, Hawaii. Association for the Advancement ... Nils Reimers and Iryna Gurevych. 2019. Sentence-",
+      "However, use of label-semantics during pre-training has not been extensively explored. We therefore propose Label Semantic Aware Pre-training (LSAP) to improve the generalization and data efficiency of text classification systems. LSAP incorporates label semantics into pre-trained generative models (T5 in our case) by performing secondary pre-training on labeled sentences from a variety of domains.",
+      "However, these evaluations have focused on cross-lingual transfer with high-resource languages, covering only a third of the languages covered by mBERT. We explore how mBERT performs on a much wider set of languages, focusing on the quality of representation for low-resource languages, measured by within-language performance.",
+      "We further extend prototypical networks to the case of zero-shot learning and achieve state-of-the-art zero-shot results on the CU-Birds dataset. ... Web includes digital libraries and billions of text documents. A fast and simple search through this sizeable set is important for users and researchers."
+    ],
+    "title": "(PDF) Label Semantic Aware Pre-training for Few-shot Text ...",
+    "url": "https://www.researchgate.net/publication/359971164_Label_Semantic_Aware_Pre-training_for_Few-shot_Text_Classification"
+  },
+  {
+    "description": "Training a deep neural network can be costly but training time is reduced when a pre-trained network can be adapted to different use cases. Ideally, only a small number of parameters needs to be changed in this process of fine-tuning, which can then be more easily distributed.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "With the prevalence of pre-trained language models (PLMs) and the pre-training\u2013fine-tuning paradigm, it has been continuously shown that larger models tend to yield better performance. However, as PLMs scale up, fine-tuning and storing all the parameters is prohibitively costly and eventually becomes practically infeasible.",
+      "Nature Machine Intelligence - Training a deep neural network can be costly but training time is reduced when a pre-trained network can be adapted to different use cases. Ideally, only a small...",
+      "For instance, researchers find that the optimization problem of the adaptations for big models could be reparameterized into a low-dimensional \u2018intrinsic subspace\u201916,17 and various NLP tasks could be handled by tuning only very few parameters in the subspace. The empirical evidence takes us one step closer to understanding how pre-trained models work and may even spawn new theoretical questions that are worth exploring.",
+      "In International Conference on Learning Representations (2019). Schick, T. & Sch\u00fctze, H. Exploiting cloze-questions for few-shot text classification and natural language inference. In Proc. the 16th Conference of the European Chapter of the Association for Computational Linguistics. 255\u2013269 (2021). Socher, R. et al. Recursive deep models for semantic compositionality over a sentiment treebank."
+    ],
+    "title": "Parameter-efficient fine-tuning of large-scale pre-trained language ...",
+    "url": "https://www.nature.com/articles/s42256-023-00626-4"
+  },
+  {
+    "description": "Part of Advances in Neural Information Processing Systems 33 (NeurIPS 2020) \u00b7 Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared D Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, Sandhini Agarwal, Ariel Herbert-Voss, Gretchen Krueger, Tom ...",
+    "favicon_url": "https://you.com/favicon?domain=papers.nips.cc&size=128",
+    "snippets": [
+      "GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks. We also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora."
+    ],
+    "title": "Language Models are Few-Shot Learners",
+    "url": "https://papers.nips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html"
+  },
+  {
+    "description": "This paper studies the use of language models as a source of synthetic unlabeled text for NLP. We formulate a general framework called \u201cgenerate, annotate, and learn (GAL)\u201d to take advantage of synthetic text within kn\u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "GAL leverages advances in large pretrained language models to help supervised learning and can have implications for learning from limited labeled data. GAL significantly helps improve knowledge distillation and prompt-based few-shot learning. In addition, a concurrent work (Gowal et al., 2021) has shown that using generated images can enhance the robustness of images classifiers. We will explore this direction on NLP tasks in the future. Finally, We hope that GAL will stimulate new research on the evaluation and development of large language models.",
+      "We use the best available classifier to annotate synthetic text with soft pseudo labels for knowledge distillation and self-training, and use LMs to obtain hard labels for few-shot learning. We train new supervised models on the combination of labeled and pseudo-labeled data, which results in significant gains across several applications. We investigate key components of GAL and present theoretical and empirical arguments against the use of class-conditional LMs to generate synthetic labeled text instead of unlabeled text.",
+      "We then combine labeled data and pseudo-labeled data to train more effective supervised models, resulting in significant gains on a range of NLP tasks like KD and few-shot learning. We present a justification for GAL based on the empirical and vicinal risk minimization frameworks (Vapnik, 1992; Chapelle et al., 2001).",
+      "We present theoretical and empirical investigations for GAL, explaining why it works and why using class-conditional LMs to generate synthetic labeled data is not as effective. ... GAL advances KD for NLP and establishes a new SoTA result for a single 6-layer transformer on the GLUE test set. It further improves prompt-based few-shot learning, providing an average improvement of 1.3% on four 4-shot learning NLP tasks, outperforming GPT-3-6B111Code is available at: https://github.com/xlhex/gal_syntex. Data synthesis with large pre-trained language models is closely related to our work Kumar et al."
+    ],
+    "title": "[2106.06168] Generate, Annotate, and Learn: NLP with Synthetic Text",
+    "url": "https://ar5iv.labs.arxiv.org/html/2106.06168"
+  },
+  {
+    "description": "The collection and curation of high-quality training data is crucial for developing text classification models with superior performance, but it is often associated with significant costs and time investment. Researche\u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "Meanwhile, with the recent advancements in large language models (LLMs), researchers have started to explore the potential of utilizing LLMs for generating synthetic data tailored to specific tasks and augmenting the training data in low-resourced data settings Kumar et al. (2020); Yoo et al. (2021); Hartvigsen et al. (2022); Sahu et al. (2022). Most recently, a few studies also investigate into the feasibility of generating a synthetic dataset from scratch using LLMs to support zero-shot learning Ye et al.",
+      "We conduct two evaluation studies, each corresponding to one dimension of subjectivity\u2014the first study examines the effectiveness of the synthetic data on 10 types of classification tasks and explores how it varies with the task-level subjectivity (i.e., whether this type of classification task is subjective); the second study concerns that given a specific classification task, how the performance of a model trained on synthetic data changes with the instance-level subjectivity (i.e., whether people tend to disagree with each other on the label of this task instance). Our findings suggest th",
+      "In Table 1, we surprisingly find that on the Tweet irony detection tasks, models trained on the few-shot synthetic data even outperform models trained on the real-world data. One plausible explanation is that the nature of generating irony texts for social media involves a creative writing task with few language formality constraints, and recent research suggests that LLMs have the potential to exhibit comparable creativity with human writers in such task Franceschelli and Musolesi (2023).",
+      "We consider two data generation settings in this study, i.e., the zero-shot setting and the few-shot setting. Under the zero-shot synthetic data generation setting, given a text classification task, we assume that the real-world data in the form of \u201ctext-label pairs\u201d do not exist. Thus, in order to obtain synthetic training data for the text classification task, two sequential prompts are constructed and supplied to the pretrained large language model (i.e., the GPT-3.5-Turbo model)."
+    ],
+    "title": "[2310.07849] Synthetic Data Generation with Large Language Models ...",
+    "url": "https://ar5iv.labs.arxiv.org/html/2310.07849"
+  },
+  {
+    "description": "ruiboliu@google.com \u00b7 The success of AI models relies on the availability of large, diverse, and high-quality datasets, which can be challenging to obtain due to data scarcity, privacy concerns, and high costs. Synthetic data has emerged as a promising solution by generating artificial data ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Section 4 discusses the challenges and limitations of synthetic data, and in Section 5 we outline potential solutions and future research directions. Synthetic data, which is generated by mimicking authentic data collected from the real world, has proven to be an effective and relatively low-cost alternative of real data. This section explores several notable domains that leverage synthetic training data. Recent advancements in mathematical reasoning for language models (LMs) have led to the development of various approaches to improve performance on math-related tasks.",
+      "These proprietary benchmarks should be carefully safeguarded to prevent leakage and ensure the integrity of the evaluation process. As the field of synthetic data continues to evolve, there are several promising directions for future research and development. This section outlines three key areas that warrant further exploration: The impressive performance of many over-trained small language models (e.g., Mistral series models (Jiang et al., 2023), and Gemma series models (Gemma-Team et al., 2024), inter alia) demonstrates the necessity of training with large amount of tokens (even passing the compute-optimal chinchilla law (Rae et al., 2021)).",
+      "Future research should investigate the scaling laws for synthetic data and determine the optimal balance between the quantity and quality of synthetic samples. This exploration could help us understand the most effective strategies for leveraging synthetic data in training large-scale language models, potentially leading to more efficient and cost-effective approaches (Muennighoff et al., 2024).",
+      "Future research should focus on developing new advanced techniques (or based on existing ones such as Generative Adversarial Networks (GANs) (Goodfellow et al., 2020) or Diffusion Models (Ho et al., 2020), inter alia) that can control and manipulate specific attributes of the generated data, enabling the creation of diverse and customizable synthetic datasets. Additionally, researchers should explore methods that can incorporate domain-specific knowledge to ensure the generated data adheres to the underlying constraints and patterns present in the target domain (e.g., via Retrieval Augmented Generation (RAG) (Lewis et al., 2020; Borgeaud et al., 2022)) while maintaining the data quality."
+    ],
+    "title": "Best Practices and Lessons Learned on Synthetic Data for Language ...",
+    "url": "https://arxiv.org/html/2404.07503v1"
+  },
+  {
+    "description": "In the age of large language models (LLMs), the ability to perform complex tasks with minimal data is revolutionizing how we approach artificial intelligence. Few-shot and zero-shot learning are two\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "In the age of large language models (LLMs), the ability to perform complex tasks with minimal data is revolutionizing how we approach\u2026",
+      "Transfer Learning: Fine-tuning pre-trained models on a small dataset for a specific task. As fine-tuning BERT on a few labeled examples for text classification. Figuie 4. Pretraining + Fin-tuning is one of the best examples for Transfer Learning . Source: AIML.com ... The journey of few-shot and zero-shot learning begins with a simple yet profound question: How can machines learn like humans? For decades, artificial intelligence relied on vast datasets to recognize patterns, while humans effortlessly generalized from minimal examples \u2014 a toddler identifying a giraffe after seeing just one picture, or a linguist inferring grammar rules from sparse texts.",
+      "A model trained on multilingual texts, for instance, could infer translations between language pairs it never explicitly saw. Transformers revolutionized scalability. Their self-attention mechanism allowed models to dynamically focus on relevant context, mimicking how humans prioritize information. By pre-training on vast corpora, systems like GPT-3 internalized patterns \u2014 translation templates, summarization styles, logical chains \u2014 and replicated them during inference.",
+      "Generalize across tasks: The transformer\u2019s ability to model relationships between tokens, sentences, and even different tasks allows the model to apply general knowledge from pretraining to unseen tasks in zero-shot scenarios. Figure 5. Architecture of the standard Transformer (Vaswani et al., 2017) Few-shot and zero-shot learning are especially useful in environments where labeled data is scarce, or tasks are too diverse to train specific models."
+    ],
+    "title": "Few-Shot and Zero-Shot Learning : Unlocking Cross-Domain ...",
+    "url": "https://medium.com/@anicomanesh/mastering-few-shot-and-zero-shot-learning-in-llms-a-deep-dive-into-cross-domain-generalization-b33f779f5259"
+  },
+  {
+    "description": "Large language models (LLMs) have unlocked new possibilities for generating synthetic training data in both natural language and code domains. By producing artificial but task-relevant examples, these models can significantly augment or even substitute for real-world datasets, particularly ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The advent of large pre-trained language models brought synthetic data generation to a new level. Large Language Models (LLMs) (with billions of parameters, trained on vast corpora) are capable of producing high-quality, coherent text that often closely resembles human-written text [64]. Importantly, LLMs can be guided via prompts to generate data for specific tasks. For example, given a task description and a few examples (few-shot prompting), an LLM can generate additional plausible examples for that task [33]. Even without any examples (zero-shot), a well-crafted prompt can elicit relevant outputs for many tasks.",
+      "The concept of simulators for the world (e.g., using GPT to simulate dialogues or environments) could also aid reinforcement learning by generating scenarios for agents to train on. ... Enhancing Real Data with Synthetic Variants: Instead of generating entirely new data, an alternative is to generate variants of existing real data. For example, given a sentence, generate a paraphrase that changes some attributes (sentiment, tense, etc.). This can be more controlled than free generation. Future research might focus on attribute-conditioned generation: one explicitly sets what aspects to vary and what to keep.",
+      "Researchers predict that real text data available for training may plateau in coming decades [39], in which case synthetic data could play a crucial role in sustaining model improvements. ... Controllability: Unlike collected data, synthetic data generation can be tailored to specific needs.",
+      "Survey of Techniques: We review major approaches for LLM-driven data generation in text and code, including prompt-based augmentation, retrieval-augmented generation, self-instruct methods, and reinforcement learning with feedback. We categorize methods by their strategies (e.g., zero-shot vs. few-shot prompting, knowledge integration, iterative refinement) and discuss representative examples from recent literature [3] ... Advances in Text Data Generation: We explore how LLMs are used to create synthetic text datasets for tasks such as classification, question answering, and instruction-following."
+    ],
+    "title": "Synthetic Data Generation Using Large Language Models: Advances ...",
+    "url": "https://arxiv.org/html/2503.14023v1"
+  },
+  {
+    "description": "PDF | Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "language (e.g. \u201cplease tell me if this sentence describes something happy or something sad\u201d) or at most a tiny number \u00b7 of demonstrations (e.g. \u201chere are two examples of people acting brave; please give a third example of bravery\u201d) is often \u00b7 Figure 1.1: Language model meta-learning. During unsupervised pre-training, a language model develops a broad",
+      "that we will be evaluating GPT-3 on or could in principle evaluate GPT-3 on. These settings can be seen as lying on a \u00b7 spectrum of how much task-speci\ufb01c data they tend to rely on. Speci\ufb01cally, we can identify at least four points on this ... a pre-trained model by training on a supervised dataset speci\ufb01c to the desired task. Typically thousands to \u00b7 hundreds of thousands of labeled examples are used.",
+      "First, from a practical perspective, the need for a large dataset of labeled examples for every new task limits the \u00b7 applicability of language models. There exists a very wide range of possible useful language tasks, encompassing \u00b7 anything from correcting grammar, to generating examples of an abstract concept, to critiquing a short story. For many \u00b7 of these tasks it is dif\ufb01cult to collect a large supervised training dataset, especially when the process must be repeated",
+      "At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general. On TriviaQA GPT3's performance grows smoothly with model size, suggesting that language models continue to absorb knowledge as their capacity increases."
+    ],
+    "title": "(PDF) Language Models are Few-Shot Learners",
+    "url": "https://www.researchgate.net/publication/341724146_Language_Models_are_Few-Shot_Learners"
+  },
+  {
+    "description": "#6 best model for Zero-Shot Text Classification on AG News (Accuracy (%) metric)",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "The recent GPT-3 model (Brown et al., 2020) achieves remarkable few-shot performance solely by leveraging a natural-language prompt and a few task demonstrations as input context. Inspired by their findings, we study few-shot learning in a more practical scenario, where we use smaller language models for which fine-tuning is computationally efficient.",
+      "Our experiments demonstrate that our methods combine to dramatically outperform standard fine-tuning procedures in this low resource setting, achieving up to 30% absolute improvement, and 11% on average across all tasks. Our approach makes minimal assumptions on task resources and domain expertise, and hence constitutes a strong task-agnostic method for few-shot learning."
+    ],
+    "title": "Papers with Code - Making Pre-trained Language Models Better Few-shot ...",
+    "url": "https://paperswithcode.com/paper/making-pre-trained-language-models-better-few"
+  },
+  {
+    "description": "While large-language models demonstrate remarkable zero-shot capabilities, they still fall short on more complex tasks when using the zero-shot setting. Few-shot prompting can be used as a technique to enable in-context learning where we provide demonstrations in the prompt to steer the model ...",
+    "favicon_url": "https://you.com/favicon?domain=www.promptingguide.ai&size=128",
+    "snippets": [
+      "We can observe that the model has somehow learned how to perform the task by providing it with just one example (i.e., 1-shot). For more difficult tasks, we can experiment with increasing the demonstrations (e.g., 3-shot, 5-shot, 10-shot, etc.). Following the findings from Min et al. (2022) (opens in a new tab), here are a few more tips about demonstrations/exemplars when doing few-shot: \"the label space and the distribution of the input text specified by the demonstrations are both important (regardless of whether the labels are correct for individual inputs)\"",
+      "There is no consistency in the format above but the model still predicted the correct label. We have to conduct a more thorough analysis to confirm if this holds for different and more complex tasks, including different variations of prompts. ... Learn more about few-shot prompting and advanced prompting methods in our new AI courses.",
+      "A Comprehensive Overview of Prompt Engineering",
+      "We still get the correct answer, even though the labels have been randomized. Note that we also kept the format, which helps too. In fact, with further experimentation, it seems the newer GPT models we are experimenting with are becoming more robust to even random formats."
+    ],
+    "title": "Few-Shot Prompting | Prompt Engineering Guide",
+    "url": "https://www.promptingguide.ai/techniques/fewshot"
+  }
+]

@@ -1,0 +1,264 @@
+[
+  {
+    "description": "Request PDF | On Jan 1, 2019, Elena Voita and others published When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "They were designed for targeted evaluation of several discourse phenomena: deixis, ellipsis (two test sets for VP ellipsis and morphological inflection), and lexical cohesion. ... ... The translation system needs to select the one that it considers to be true, which is evaluated by accuracy.",
+      "(Voita et al., 2019b) that specifically targets discourse phenomena, such as deixis, ellipsis, and lexical cohesion. We use this dataset to further exploit models' capacity for modeling discourse knowledge. ... ... In order to verify whether LLMs truly learn to utilize the context to resolve discourse inconsistencies, we adopt the contrastive test sets proposed by \u00b7 Voita et al. (2019b). This dataset includes deixis, lexicon consistency, ellipsis (inflection), and ellipsis (verb phrase) for evaluating discourse phenomena in English-Russian translations.",
+      "That was the last straw, we need more: Are Translation Systems Sensitive to Disambiguating Context? ... Noah A. Smith ... ... \u2020 Corresponding author. from sentence-level MT, document-level MT considers a much larger inter-sentential context and models discourse dependence, such as anaphora, ellipsis, and lexical cohesion",
+      "[Show full abstract] consisted of complete documents while in most practical scenarios such document-level data constitutes only a fraction of the available parallel data. To address the first issue, we perform a human study on an English-Russian subtitles dataset and identify deixis, ellipsis and lexical cohesion as three main sources of inconsistency. We then create test sets targeting these phenomena."
+    ],
+    "title": "When a Good Translation is Wrong in Context: Context-Aware Machine ...",
+    "url": "https://www.researchgate.net/publication/335780507_When_a_Good_Translation_is_Wrong_in_Context_Context-Aware_Machine_Translation_Improves_on_Deixis_Ellipsis_and_Lexical_Cohesion"
+  },
+  {
+    "description": "Machine translation facilitates cross-linguistic communication by converting text between languages. However, producing contextually accurate translat\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "However, producing contextually accurate translations remains a challenge. This review explores the difficulties in achieving such accuracy, particularly in capturing contextual information, disambiguating polysemous words, and handling idiomatic expressions, cultural nuances, and domain-specific terms."
+    ],
+    "title": "Overview and challenges of machine translation for contextually ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2589004224021035"
+  },
+  {
+    "description": "Though machine translation errors caused by the lack of context beyond one sentence have long been acknowledged, the development of context-aware NMT systems is hampered by several problems. Firstly, standard metrics a\u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "Secondly, previous work on context-aware NMT assumed that the sentence-aligned parallel data consisted of complete documents while in most practical scenarios such document-level data constitutes only a fraction of the available parallel data. To address the first issue, we perform a human study on an English-Russian subtitles dataset and identify deixis, ellipsis and lexical cohesion as three main sources of inconsistency. We then create test sets targeting these phenomena.",
+      "The proposed test sets let us distinguish models which are otherwise identical in terms of BLEU: the performance of the baseline and CADec is the same when measured with BLEU, but very different in terms of handling contextual phenomena. Table 7: Accuracy for deixis and lexical cohesion. Table 8: Accuracy on ellipsis test set. Figure 5: BLEU and lexical cohesion accuracy on the development sets during CADec training. Figure 5 shows that for context-aware models, BLEU is not sufficient as a criterion for stopping: even when a model has converged in terms of BLEU, it continues to improve in terms of consistency.",
+      "Automatic evaluation of the discourse phenomena we consider is challenging. For lexical cohesion, Wong and Kit (2012) count the ratio between the number of repeated and lexically similar content words over the total number of content words in a target document.",
+      "We investigate which linguistic phenomena cause the inconsistencies using the OpenSubtitles Lison et al. (2018) corpus for the English-Russian language pair. We identify deixis, ellipsis and lexical cohesion as three main sources of the violations, together amounting to about 80% of the cases."
+    ],
+    "title": "[1905.05979] When a Good Translation is Wrong in Context: ...",
+    "url": "https://ar5iv.labs.arxiv.org/html/1905.05979"
+  },
+  {
+    "description": "PDF | Though machine translation errors caused by the lack of context beyond one sentence have long been acknowledged, the development of context-aware... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Table 7: Accuracy for deixis and lexical cohesion. ... Table 8: Accuracy on ellipsis test set. Figure 5: BLEU and lexical cohesion accuracy on the ... In concurrent work, Xiong et al. (2018) also pro- ... VIDI 639.022.518). Rico Sennrich acknowledges ... Ruchit Agrawal, Turchi Marco, and Negri Matteo. ... Barry Haddow. 2018. Evaluating Discourse Phe-",
+      "Secondly, previous work on context-aware NMT assumed that the sentence-aligned parallel data consisted of complete documents while in most practical scenarios such document-level data constitutes only a fraction of the available parallel data. To address the first issue, we perform a human study on an English-Russian subtitles dataset and identify deixis, ellipsis and lexical cohesion as three main sources of inconsistency. We then create test sets targeting these phenomena.",
+      "On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data. ... This paper proposes the utilization of lexical cohesion to facilitate evaluation of machine translation at the document level.",
+      "BLEU and lexical cohesion accuracy on the development sets during CADec training. ... Accuracy for deixis and lexical cohesion."
+    ],
+    "title": "(PDF) When a Good Translation is Wrong in Context: Context-Aware ...",
+    "url": "https://www.researchgate.net/publication/333130758_When_a_Good_Translation_is_Wrong_in_Context_Context-Aware_Machine_Translation_Improves_on_Deixis_Ellipsis_and_Lexical_Cohesion"
+  },
+  {
+    "description": "A survey of context in neural machine translation and its evaluation",
+    "favicon_url": "https://you.com/favicon?domain=www.cambridge.org&size=128",
+    "snippets": [
+      "Finally, another prevalent approach to evaluating translation quality at the document level involves the use of test suites, as they gauge the model\u2019s proficiency in translating specific discourse-level phenomena including but not limited to anaphora, deixis, ellipsis, lexical ambiguity and consistency (Rios Gonzales, Mascarell, and Sennrich, Reference Rios Gonzales, Mascarell, Sennrich, Bojar, Buck, Chatterjee, Federmann, Graham, Haddow, Huck, Yepes, Koehn and Kreutzer2017; Bawden et al., Reference Bawden, Sennrich, Birch, Haddow, Walker, Ji and Stent2018; Guillou et al., Reference Guillou,",
+      "Incorporating intersentential context or document context has the potential to provide discourse information such as disambiguation of pronouns, deixis, ellipsis, as well as general cohesion.",
+      "Other portions of the text may similarly be able to fill in the necessary blanks to resolve questions related to deixis or ellipsis. As for cohesion, this could be a matter of improving consistency of terminology (see also Section 2.4) or consistency in senses for polysemous terms, since a single discourse tends to make use of just one sense per polysemous word (Gale, Church, and Yarowsky, Reference Gale, Church and Yarowsky1992).",
+      "A careful evaluation of the methodologies required for evaluating context-aware systems is crucial as evaluation facilitates the identification of gains and shortcomings in these systems. But what is \u201ccontext\u201d? Some works refer to document-level translation and evaluation, while others discuss discourse phenomena, and yet others refer to context-aware translation."
+    ],
+    "title": "A survey of context in neural machine translation and its evaluation ...",
+    "url": "https://www.cambridge.org/core/journals/natural-language-processing/article/survey-of-context-in-neural-machine-translation-and-its-evaluation/875C3E2DEAAB8845A0F05988D5A18B55"
+  },
+  {
+    "description": "Though machine translation errors caused by the lack of context beyond one sentence have long been acknowledged, the development of context-aware NMT systems is hampered by several problems. Firstly, standard metrics are not sensitive to improvements in consistency in document-level translations.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 1905.05979: When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion",
+      "Secondly, previous work on context-aware NMT assumed that the sentence-aligned parallel data consisted of complete documents while in most practical scenarios such document-level data constitutes only a fraction of the available parallel data. To address the first issue, we perform a human study on an English-Russian subtitles dataset and identify deixis, ellipsis and lexical cohesion as three main sources of inconsistency. We then create test sets targeting these phenomena.",
+      "View a PDF of the paper titled When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion, by Elena Voita and 2 other authors View PDF"
+    ],
+    "title": "[1905.05979] When a Good Translation is Wrong in Context: ...",
+    "url": "https://arxiv.org/abs/1905.05979"
+  },
+  {
+    "description": "Elena Voita, Rico Sennrich, Ivan Titov. Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics. 2019.",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [
+      "Secondly, previous work on context-aware NMT assumed that the sentence-aligned parallel data consisted of complete documents while in most practical scenarios such document-level data constitutes only a fraction of the available parallel data. To address the first issue, we perform a human study on an English-Russian subtitles dataset and identify deixis, ellipsis and lexical cohesion as three main sources of inconsistency. We then create test sets targeting these phenomena.",
+      "2019. When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, pages 1198\u20131212, Florence, Italy.",
+      "When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion (Voita et al., ACL 2019)",
+      "[When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion](https://aclanthology.org/P19-1116/) (Voita et al., ACL 2019)"
+    ],
+    "title": "When a Good Translation is Wrong in Context: Context-Aware Machine ...",
+    "url": "https://aclanthology.org/P19-1116/"
+  },
+  {
+    "description": "Corpus-based translation studies (CBTS) have undergone significant evolution, transitioning from descriptive methodologies to theoretical and applied approaches in recent years. However, the analysis of corpus-based research outcomes is crucial, and the absence of a unified framework often ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Corpus-based translation studies (CBTS) have undergone significant evolution, transitioning from descriptive methodologies to theoretical and applied approaches in recent years. However, the analysis of corpus-based research outcomes is crucial, and the absence of a unified framework often leads to less experienced researchers overlooking critical factors.",
+      "Humanities and Social Sciences Communications - An analytical framework for corpus-based translation studies",
+      "These include phonological, morphological, lexical, syntactical, pragmatic, and discourse features. Here, pragmatic features involve the use of language in context, including implicature, speech acts, and politeness strategies, while discourse features are related to the use of coherence and cohesion devices like conjunctions, reference words, ellipsis, and discourse markers.",
+      "In Example 3, the first instance of say is transformed into an act of cognition \u8ba4\u4e3a (think) and the second instance is rendered as a discourse act \u8bf4 (say). The use of two distinct expressions in the TT likely reflects the translator\u2019s preference for lexical richness and linguistic beauty in the co-text. However, we do not include lexical richness as a variable in this case study as we find such examples to be infrequent upon examining all instances."
+    ],
+    "title": "An analytical framework for corpus-based translation studies | ...",
+    "url": "https://www.nature.com/articles/s41599-024-04250-4"
+  },
+  {
+    "description": "Though machine translation errors caused by the lack of context beyond one sentence have long been acknowledged, the development of context-aware NMT systems is hampered by several problems. Firstly, standard metrics a\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.arxiv-vanity.com&size=128",
+    "snippets": [
+      "Secondly, previous work on context-aware NMT assumed that the sentence-aligned parallel data consisted of complete documents while in most practical scenarios such document-level data constitutes only a fraction of the available parallel data. To address the first issue, we perform a human study on an English-Russian subtitles dataset and identify deixis, ellipsis and lexical cohesion as three main sources of inconsistency. We then create test sets targeting these phenomena.",
+      "The proposed test sets let us distinguish models which are otherwise identical in terms of BLEU: the performance of the baseline and CADec is the same when measured with BLEU, but very different in terms of handling contextual phenomena. Table 7: Accuracy for deixis and lexical cohesion. Table 8: Accuracy on ellipsis test set. Figure 5: BLEU and lexical cohesion accuracy on the development sets during CADec training. Figure 5 shows that for context-aware models, BLEU is not sufficient as a criterion for stopping: even when a model has converged in terms of BLEU, it continues to improve in terms of consistency.",
+      "Automatic evaluation of the discourse phenomena we consider is challenging. For lexical cohesion, Wong and Kit (2012) count the ratio between the number of repeated and lexically similar content words over the total number of content words in a target document.",
+      "We investigate which linguistic phenomena cause the inconsistencies using the OpenSubtitles Lison et al. (2018) corpus for the English-Russian language pair. We identify deixis, ellipsis and lexical cohesion as three main sources of the violations, together amounting to about 80% of the cases."
+    ],
+    "title": "Context-Aware Machine Translation Improves on Deixis, ...",
+    "url": "https://www.arxiv-vanity.com/papers/1905.05979/"
+  },
+  {
+    "description": "Machine translation facilitates cross-linguistic communication by converting text between languages. However, producing contextually accurate translations remains a challenge. This review explores the difficulties in achieving such accuracy, ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Context-aware translation enables the identification of relationships between technical terms, identification of modifiers or qualifiers, and maintaining the correct terminology hierarchy within the translation.101 \u00b7 Languages may have different lexical structures, word formations, or grammatical patterns for expressing specialized vocabulary.",
+      "Machine translation models can make more informed decisions in disambiguating polysemous words by capturing the local context, such as nearby words or syntactic structures.52 \u00b7 Lexical and syntactic cues can provide valuable clues for disambiguating polysemous words.",
+      "Lexical cues include collocations, semantic associations, and statistical patterns between words. For example, the word \"bank\" is more likely to be associated with words such as \"money\" or \"transaction\" in a financial context, while it may be associated with \"river\" or \"shore\" in a geographical context.",
+      "However, capturing context at the discourse level, where information from previous sentences or paragraphs is crucial, presents challenges. Long-range dependencies and understanding the overall discourse structure require more sophisticated techniques, such as attention mechanisms or memory-based approaches, to effectively capture and utilize relevant contextual information.116"
+    ],
+    "title": "Overview and challenges of machine translation for contextually ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11465115/"
+  },
+  {
+    "description": "Abstract. Despite significant improvements in enhancing the quality of translation, context-aware machine translation (MT) models underperform in many cases. One of the main reasons is that they fail to utilize the correct features from context when the context is too long or their models are ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. Despite significant improvements in enhancing the quality of translation, context-aware machine translation (MT) models underperform in many cases. One of the main reasons is that they fail to utilize the correct features from context when the context is too long or their models are overly complex.",
+      "Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4\u20139, 2017, Long Beach, CA, USA, pages ... A model-theoretic coreference scoring scheme. In \u00b7 Proceedings of the 6th Conference on Message Understanding, MUC 1995, Columbia, Maryland, USA, November 6\u20138, 1995, pages ... When a good translation is wrong in context: Context-aware machine translation improves on deixis, ellipsis, and lexical cohesion.",
+      "(2019), which contains human-labeled sentences to evaluate discourse phenomena and relies on the source text only, to verify whether our method can solve phenomena at the document level. Table 8 presents the results this experiment, which indicate that our system outperforms the Base Doc system in all aspects. These results demonstrate the significant contribution of the coreference explanation sub-model to the MT system. ... Experimental results on the contrastive test (Voita et al., 2019). D, EI, EV and L are abbreviations for Deixis, Ellipsis Infl, Ellipsis Vp and Lexical Cohesion, respectively.",
+      "While our proposed method and existing works enhance translation accuracy for certain linguistic phenomena, challenges persist, particularly in handling deixis."
+    ],
+    "title": "Context-Aware Machine Translation with Source Coreference Explanation ...",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00677/123652/Context-Aware-Machine-Translation-with-Source"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.cell.com&size=128",
+    "snippets": [],
+    "title": "Overview and challenges of machine translation for ...",
+    "url": "https://www.cell.com/iscience/pdf/S2589-0042(24)02103-5.pdf"
+  },
+  {
+    "description": "Extensive studies have described the linguistic features of human translations and verified the existence of the simplification translation universal. However, little has been known about the linguistic features of machine translations, although machine translation, as a unique modality of ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Extensive studies have described the linguistic features of human translations and verified the existence of the simplification translation universal. However, little has been known about the linguistic features of machine translations, although machine translation, as a unique modality of translation, has become an integral part of translation practice.",
+      "Humanities and Social Sciences Communications - Does simplification hold true for machine translations? A corpus-based analysis of lexical diversity in text varieties across genres",
+      "Frankenberg-Garcia A (2022) Can a corpus-driven lexical analysis of human and machine translation unveil discourse features that set them apart? Target 34(2):278\u2013308 ... Graesser AC, McNamara DS (2011) Computational analyses of multilevel discourse comprehension. Top Cogn Sci 3(2):371\u2013398 ... Graesser AC, McNamara DS, Louwerse MM et al. (2004) Coh-metrix: Analysis of text on cohesion and language.",
+      "McCarthy PM, Jarvis S (2010) MTLD, vocd-D, and HD-D: a validation study of sophisticated approaches to lexical diversity assessment. Behav Res Method 42(2):381\u2013392 ... McEnery T, Hardie A (2011) Corpus linguistics: Method, theory and practice. Cambridge University Press \u00b7 McNamara DS, Graesser AC, McCarthy PM et al. (2014) Automated evaluation of text and discourse with Coh-Metrix."
+    ],
+    "title": "Does simplification hold true for machine translations? A ...",
+    "url": "https://www.nature.com/articles/s41599-024-02986-7"
+  },
+  {
+    "description": "Annotating a broad range of anaphoric phenomena, in a variety of genres: the arrau corpus. Natural Language Engineering, 26(1):95\u2013128. Voita et al. (2019) Elena Voita, Rico Sennrich, and Ivan Titov. 2019. When a good translation is wrong in context: Context-aware machine translation improves on deixis, ellipsis, and lexical cohesion...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Repetition and synonyms are lexical cohesion. Non-adj means the cohesion phenomenon is annotated between non-adjacent sentences, while adj refers to cohesion between adjacent sentences. ... Some discourse cohesion phenomena have been applied in various NLP tasks. A thorough survey of related work on this is far beyond the scope of this paper. To name just a few, Voita et al. (2019) study repetition and ellipsis in machine translation; Geva et al.",
+      "Therefore, cohesion plays an important role in discourse. However, to our best knowledge, existing available resources either only provide annotations for one cohesive phenomenon or mainly focus on lexical cohesion. For example, Bos and Spenader (2011) annotate verbal phrase ellipsis; Mart\u00ednez et al. (2016) annotate lexical cohesion for both German and English texts. However, neither single cohesion phenomena nor just lexical cohesion can fully interpret the ability of models from the perspective of cohesion.",
+      "We study discourse cohesion for pre-trained language models, which has been under-studied in previous works on representation learning, but is critical to language understanding and generation. ... We propose a test suite of cohesion including both grammatical and lexical cohesion phenomena.",
+      "This indicates that the pre-training task of BART may not be very helpful for understanding discourse cohesion phenomena. From table 2, we can see that conjunction, substitution, synonym and ellipsis are more complicated cohesion types, because the pre-trained language models are not good at them, compared with other cohesion phenomena. With regard to synonyms, it requires that the models not only can identify the cohesion but also have awareness of paraphrasing, which makes it difficult for the models."
+    ],
+    "title": "Evaluating Discourse Cohesion in Pre-trained Language Models",
+    "url": "https://arxiv.org/html/2503.06137v1"
+  },
+  {
+    "description": "Artificial intelligence has advanced significantly in recent years, affecting multiple aspects of life. In particular, this has had an impact on the m\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Artificial intelligence (AI)-based translation software models have thus become widely available, and these now include Google Translate, Bing, Microsoft Translator, DeepL, Reverso, Systran Translate, and Amazon Translate. Several computer-aided translation (CAT) tools such as Memoq, Trados, Smartcat, Lokalise, Smartling, Crowdin, TextUnited, and Memsource are also available.",
+      "More recently, artificial intelligence has been applied in the development of applications such as ChatGPT, ChatSonic, GPT-3 Playground, Chat GPT 4 and YouChat, which simulate conversational responses to researchers' inquiries, mimicking human interactions more directly."
+    ],
+    "title": "Artificial intelligence and human translation: A contrastive study ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2405844024041379"
+  },
+  {
+    "description": "Current approaches to statistical machine translation assume that sentences in a text are independent, ignoring the property of connectedness present in virtually all discourse. We provide an extensive overview of the literature about statistical machine translation that can be related to discourse ...",
+    "favicon_url": "https://you.com/favicon?domain=journals.openedition.org&size=128",
+    "snippets": [
+      "Current approaches to statistical machine translation assume that sentences in a text are independent, ignoring the property of connectedness present in virtually all discourse. We provide an extensive overview of the literature about statistical machine translation that can be related to discourse phenomena and present a detailed investigation and discussion of existing research efforts on a particular discourse-related problem, the translation of anaphoric pronouns.",
+      "1. Introduction Machine translation (MT) researchers widely agree that translation is a complex task that cannot be solved by looking at words and their immediate loca...",
+      "Quite generally, considering the noise present in every step of a pronoun-aware SMT system and the number of steps involved, it may be necessary to design models that explicitly deal with the uncertainty present in each step, globally minimising the risk of choosing the wrong pronoun rather than putting together the one-best outputs of a large number of inaccurate components. 67In this article, we have presented an overview and survey of the existing literature dealing with discourse-level phenomena in the context of SMT.",
+      "Some work can be related to lexical cohesion even though most of it was written with domain adaptation or similar problems in mind. A number of researchers investigated WSD for SMT a few years ago. Their results underline the necessity of tight integration between the SMT system and the external discourse-related components. Explicit modeling of discourse phenomena for SMT has gained some attention recently with studies on pronominal anaphora and discourse connectives, but there are no strong results or proven methods available as yet."
+    ],
+    "title": "Discourse in Statistical Machine Translation",
+    "url": "https://journals.openedition.org/discours/8726"
+  },
+  {
+    "description": "Secondly, previous work on ... such document-level data constitutes only a fraction of the available parallel data. To address the first issue, we perform a human study on an English-Russian subtitles dataset and identify deixis, ellipsis and lexical cohesion as three main sources of inconsistency. We then create test sets targeting these phenomena...",
+    "favicon_url": "https://you.com/favicon?domain=dare.uva.nl&size=128",
+    "snippets": [
+      "Secondly, previous work on context-aware NMT assumed that the sentence-aligned parallel data consisted of complete documents while in most practical scenarios such document-level data constitutes only a fraction of the available parallel data. To address the first issue, we perform a human study on an English-Russian subtitles dataset and identify deixis, ellipsis and lexical cohesion as three main sources of inconsistency. We then create test sets targeting these phenomena.",
+      "When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion ... Though machine translation errors caused by the lack of context beyond one sentence have long been acknowledged, the development of context-aware NMT systems is hampered by several problems."
+    ],
+    "title": "When a Good Translation is Wrong in Context: Context-Aware Machine ...",
+    "url": "https://dare.uva.nl/search?identifier=7b5b6ea3-1907-451b-ae7d-2bc2eb31b51f"
+  },
+  {
+    "description": "Secondly, previous work on ... such document-level data constitutes only a fraction of the available parallel data. To address the first issue, we perform a human study on an English-Russian subtitles dataset and identify deixis, ellipsis and lexical cohesion as three main sources of inconsistency. We then create test sets targeting these phenomena...",
+    "favicon_url": "https://you.com/favicon?domain=www.research.ed.ac.uk&size=128",
+    "snippets": [
+      "Secondly, previous work on context-aware NMT assumed that the sentence-aligned parallel data consisted of complete documents while in most practical scenarios such document-level data constitutes only a fraction of the available parallel data. To address the first issue, we perform a human study on an English-Russian subtitles dataset and identify deixis, ellipsis and lexical cohesion as three main sources of inconsistency. We then create test sets targeting these phenomena.",
+      "T1 - When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion ... N2 - Though machine translation errors caused by the lack of context beyond one sentence have long been acknowledged, the development of context-aware NMT systems is hampered by several problems.",
+      "When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion. In A. Korhonen, D. Traum, & L. M\u00e0rquez (Eds.), Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (long papers) (pp.",
+      "Voita, Elena ; Sennrich, Rico ; Titov, Ivan. / When a Good Translation is Wrong in Context: Context-Aware Machine Translation Improves on Deixis, Ellipsis, and Lexical Cohesion. Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (long papers)."
+    ],
+    "title": "When a Good Translation is Wrong in Context: Context-Aware Machine ...",
+    "url": "https://www.research.ed.ac.uk/en/publications/when-a-good-translation-is-wrong-in-context-context-aware-machine"
+  },
+  {
+    "description": "Abstract There is still much to learn about the ways in which human and machine translation differ with regard to the contexts that regulate the production and interpretation of discourse. The present study explores whether a corpus-driven lexical analysis of human and machine translation can ...",
+    "favicon_url": "https://you.com/favicon?domain=www.jbe-platform.com&size=128",
+    "snippets": [
+      "Abstract There is still much to learn about the ways in which human and machine translation differ with regard to the contexts that regulate the production and interpretation of discourse. The present study explores whether a corpus-driven lexical analysis of human and machine translation can unveil discourse features that set the two apart.",
+      "The study shows that keyword analysis not only reiterates known problems of discourse in machine translation such as lexical inconsistency and pronoun resolution, but can also provide valuable insights regarding contextual aspects of translated discourse deserving further research.",
+      "1986 \u201cShifts of Cohesion and Coherence in Translation.\u201d InInterlingual and Intercultural Communication: Discourse and Cognition in Translation and Second Language Acquisition Studies, edited byJuliane House and Shoshana Blum-Kulka, 17\u201335. T\u00fcbingen: Gunter Narr.",
+      "Kilgarriff, Adam, Vit Baisa, Jan Bu\u0161ta, Milo\u0161 Jakub\u00ed\u010dek, Vojt\u011bch Kov\u00e1\u0159, Jan Michelfeit, Pavel Rychl\u00fd, and Vit Suchomel \u00b7 2014 \u201cThe Sketch Engine: Ten Years On.\u201d Lexicography1: 7\u201336."
+    ],
+    "title": "Can a corpus-driven lexical analysis of human and machine translation ...",
+    "url": "https://www.jbe-platform.com/content/journals/10.1075/target.20065.fra?crawler=true"
+  },
+  {
+    "description": "Though machine translation errors caused by the lack of context beyond one sentence have long been acknowledged, the development of context-aware NMT systems is hampered by several problems. Firstly, standard metrics are not sensitive to improvements in consistency in document-level translations.",
+    "favicon_url": "https://you.com/favicon?domain=www.groundai.com&size=128",
+    "snippets": [
+      "Though machine translation errors caused by the lack of context beyond one sentence have long been acknowledged, the development of context-aware NMT systems is hampered by several problems. Firstly, standard metrics are not sensitive to improvements in consistency in document-level \u2026 - 1905.05979",
+      "Automatic evaluation of the discourse phenomena we consider is challenging. For lexical cohesion, Wong and Kit (2012) count the ratio between the number of repeated and lexically similar content words over the total number of content words in a target document. However, Guillou (2013); Carpuat and Simard (2012) find that translations generated by a machine translation system tend to be similarly or more lexically consistent, as measured by a similar metric, than human ones, but this even holds for sentence-level systems, where the increased consistency is not due to improved cohesion, but accidental \u2013 Ott et al.",
+      "Secondly, previous work on context-aware NMT assumed that the sentence-aligned parallel data consisted of complete documents while in most practical scenarios such document-level data constitutes only a fraction of the available parallel data. To address the first issue, we perform a human study on an English-Russian subtitles dataset and identify deixis, ellipsis and lexical cohesion as three main sources of inconsistency. We then create test sets targeting these phenomena.",
+      "A context-agnostic NMT system would often produce plausible translations of isolated sentences, however, when put together in a document, these translations end up being inconsistent with each other. We investigate which linguistic phenomena cause the inconsistencies using the OpenSubtitles (Lison et al., 2018) corpus for the English-Russian language pair. We identify deixis, ellipsis and lexical cohesion as three main sources of the violations, together amounting to about 80% of the cases."
+    ],
+    "title": "When a Good Translation is Wrong in Context: Context-Aware Machine ...",
+    "url": "https://www.groundai.com/project/when-a-good-translation-is-wrong-in-context-context-aware-machine-translation-improves-on-deixis-ellipsis-and-lexical-cohesion/1"
+  },
+  {
+    "description": "Abstract. In this article, we explore the potential of using sentence-level discourse structure for machine translation evaluation. We first design discourse-aware similarity measures, which use all-subtree kernels to compare discourse parse trees in accordance with the Rhetorical Structure ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. In this article, we explore the potential of using sentence-level discourse structure for machine translation evaluation. We first design discourse-aware similarity measures, which use all-subtree kernels to compare discourse parse trees in accordance with the Rhetorical Structure Theory (RST).",
+      "The need to consider discourse phenomena in MT evaluation was also emphasized earlier by the Framework for Machine Translation Evaluation in ISLE (FEMTI) (Hovy, King, and Popescu-Belis, 2002), which defines quality models (i.e., desired MT system qualities and their metrics) based on the intended context of use.17 The suitability requirement of MT system in the FEMTI comprises discourse aspects including readability, comprehensibility, coherence, and cohesion. In Section 4, we have suggested some simple ways to create such metrics, and we have also shown that they yield better correlation with human judgments.",
+      "Recently, other discourse-related extensions of MT metrics (such as BLEU, TER, and Meteor) were proposed (Wong et al., 2011; Wong and Kit, 2012), which use document-level lexical cohesion (Halliday and Hasan, 1976). In that work, lexical cohesion is achieved using word repetitions and semantically similar words such as synonyms, hypernyms, and hyponyms.",
+      "Finally, there are metrics that combine several lexico-semantic aspects (Gim\u00e9nez and M\u00e0rquez, 2010b). As we mentioned earlier, one problem with discourse-related MT research is that it might need specialized evaluation metrics to measure progress. This is especially true for research focusing on relatively rare discourse-specific phenomena, as getting them right or wrong might be virtually \u201cinvisible\u201d to standard MT evaluation measures such as BLEU, even when manual evaluation does show improvements (Meyer et al., 2012; Taira, Sudoh, and Nagata, 2012; Nov\u00e1k, Nedoluzhko, and \u017dabokrtsk\u00fd, 2013)."
+    ],
+    "title": "Discourse Structure in Machine Translation Evaluation | Computational ...",
+    "url": "https://direct.mit.edu/coli/article/43/4/683/1580/Discourse-Structure-in-Machine-Translation"
+  },
+  {
+    "description": "This paper has emerged out of the conviction that linguistic theory has more to offer to translation theory than is so far recognized and vice versa. \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "However, two points must be emphasized: (1) although translation has existed for many centuries, it was not until the second half of this century that \u2018Translation Studies\u2019 developed into a discipline in its own right, and (2) although translation has taken on concepts and methods of other disciplines, \u201cit is still conceived as a subdiscipline of applied linguistics\u201d (Schaffner, 2004, p. 2). On the other hand, the past fifteen years or so have seen the focus of translation studies shift away from linguistics and increasingly to forms of cultural studies. There has also been a shift towards studies that have incorporated models from functional linguistics and Critical Discourse Analysis, locating the text within its sociocultural context."
+    ],
+    "title": "Towards an understanding of the distinctive nature of translation ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2210831910000056"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=ijoc.org&size=128",
+    "snippets": [],
+    "title": "The Impact of Translation Technologies on the Process ...",
+    "url": "https://ijoc.org/index.php/ijoc/article/viewFile/3499/1573"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=scholarsarchive.byu.edu&size=128",
+    "snippets": [],
+    "title": "A Comparative Analysis of Human and Machine ...",
+    "url": "https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=11535&context=etd"
+  }
+]

@@ -1,0 +1,248 @@
+[
+  {
+    "description": "SciGLM: Training Scientific Language Models with Self-Reflective Instruction Annotation and Tuning (NeurIPS D&B Track 2024) - THUDM/SciGLM",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "If you find our work helpful, please kindly cite our paper: @misc{zhang2024sciglm, title={SciGLM: Training Scientific Language Models with Self-Reflective Instruction Annotation and Tuning}, author={Dan Zhang and Ziniu Hu and Sining Zhoubian and Zhengxiao Du and Kaiyu Yang and Zihan Wang and Yisong Yue and Yuxiao Dong and Jie Tang}, year={2024}, eprint={2401.07950}, archivePrefix={arXiv}, primaryClass={cs.CL} }",
+      "SciGLM is a suite of scientific language models able to conduct college-level scientific reasoning. Central to our approach is a novel self-reflective instruction annotation framework to address the data scarcity challenge in the science domain. This framework leverages existing LLMs to generate step-by-step reasoning for unlabelled scientific questions, followed by a process of self-reflective critic-and-revise.",
+      "We release our data and model for public use. If you wish to use SciInstruct or SciGLM, you can download them from the following links.",
+      "cd /path/to/training LR=3e-6 WR=0.0 LST=linear epoch=2 MASTER_PORT=$(shuf -n 1 -i 10000-65535) /path/to/deepspeed --include=\"localhost:0,1,2,3\" --master_port $MASTER_PORT main.py \\ --deepspeed /path/to/deepspeed.json \\ --do_train \\ --train_file /path/to/SciInstruct.json \\ --eval_steps 200 \\ --prompt_column content \\ --response_column summary \\ --overwrite_cache \\ --model_name_or_path /path/to/ChatGLM3-6b-Base \\ --output_dir ./output/SciGLM-LR$LR-WR$WR-$LST-epoch$epoch \\ --overwrite_output_dir \\ --max_source_length 128 \\ --max_target_length 512 \\ --per_device_train_batch_size 4 \\ --per_device_eval_batch_size 4 \\ --gradient_accumulation_steps 2 \\ --predict_with_generate \\ --num_train_epochs $epoch \\ --logging_steps 20 \\ --save_strategy epoch \\ --learning_rate $LR \\ --lr_scheduler_type $LST \\ --warmup_ratio $WR \\ --fp16"
+    ],
+    "title": "GitHub - THUDM/SciGLM: SciGLM: Training Scientific Language Models ...",
+    "url": "https://github.com/THUDM/SciGLM"
+  },
+  {
+    "description": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+    "favicon_url": "https://you.com/favicon?domain=sciglm.github.io&size=128",
+    "snippets": [
+      "If you find our work helpful, please kindly cite our paper: @article{zhang2024sciglm, title={Sciglm: Training scientific language models with self-reflective instruction annotation and tuning}, author={Zhang, Dan and Hu, Ziniu and Zhoubian, Sining and Du, Zhengxiao and Yang, Kaiyu and Wang, Zihan and Yue, Yisong and Dong, Yuxiao and Tang, Jie}, journal={arXiv preprint arXiv:2401.07950}, year={2024} }",
+      "They show that after instruction-tuning, the SciGLM learns skills/behaviors to first analyze the knowledge required for each problem, and then step-by-step solve the problem with correct formula and calculations.",
+      "Some examples in SciBench that have been solved accurately with SciGLM (32B)."
+    ],
+    "title": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for ...",
+    "url": "https://sciglm.github.io/"
+  },
+  {
+    "description": "Large Language Models (LLMs) have shown promise in assisting scientific discovery. However, such applications are currently limited by LLMs' deficiencies in understanding intricate scientific concepts, deriving symbolic equations, and solving advanced numerical calculations.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2401.07950: SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "View a PDF of the paper titled SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models, by Dan Zhang and Ziniu Hu and Sining Zhoubian and Zhengxiao Du and Kaiyu Yang and Zihan Wang and Yisong Yue and Yuxiao Dong and Jie Tang View PDF HTML (experimental)",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2401.07950] SciInstruct: a Self-Reflective Instruction Annotated ...",
+    "url": "https://arxiv.org/abs/2401.07950"
+  },
+  {
+    "description": "For the benefit of the wider research community, we release SciInstruct, and SciGLM, alongside a self-reflective framework and fine-tuning code at https://github.com/THUDM/SciGLM. PDF Abstract ...  Submit results from this paper to get state-of-the-art GitHub badges and help the community compare ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "For the benefit of the wider research community, we release SciInstruct, and SciGLM, alongside a self-reflective framework and fine-tuning code at https://github.com/THUDM/SciGLM. PDF Abstract ...  Submit results from this paper to get state-of-the-art GitHub badges and help the community compare results to other papers.",
+      "Contact us on: hello@paperswithcode.com .",
+      "Papers With Code is a free resource with all data licensed under CC-BY-SA.",
+      "Implemented in one code library."
+    ],
+    "title": "SciGLM: Training Scientific Language Models with Self-Reflective ...",
+    "url": "https://paperswithcode.com/paper/sciglm-training-scientific-language-models"
+  },
+  {
+    "description": "SciGLM: Training Scientific Language Models with Self-Reflective Instruction Annotation and Tuning - SciGLM/README.md at main \u00b7 THUDM/SciGLM",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "SciGLM: Training Scientific Language Models with Self-Reflective Instruction Annotation and Tuning - THUDM/SciGLM",
+      "If you find our work helpful, please kindly cite our paper: @misc{zhang2024sciglm, title={SciGLM: Training Scientific Language Models with Self-Reflective Instruction Annotation and Tuning}, author={Dan Zhang and Ziniu Hu and Sining Zhoubian and Zhengxiao Du and Kaiyu Yang and Zihan Wang and Yisong Yue and Yuxiao Dong and Jie Tang}, year={2024}, eprint={2401.07950}, archivePrefix={arXiv}, primaryClass={cs.CL} }",
+      "SciGLM is a suite of scientific language models able to conduct college-level scientific reasoning. Central to our approach is a novel self-reflective instruction annotation framework to address the data scarcity challenge in the science domain. This framework leverages existing LLMs to generate step-by-step reasoning for unlabelled scientific questions, followed by a process of self-reflective critic-and-revise.",
+      "We release our data and model for public use. If you wish to use SciInstruct or SciGLM, you can download them from the following links."
+    ],
+    "title": "SciGLM/README.md at main \u00b7 THUDM/SciGLM",
+    "url": "https://github.com/THUDM/SciGLM/blob/main/README.md"
+  },
+  {
+    "description": "In the future, we aim to enhance ... (like academic papers and knowledge base) and exploring more advanced self-improving techniques to bootstrap LLM reasoning. In this section, we discuss more limitations during the research of SciInstruct and SciGLM....",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "In the future, we aim to enhance the model\u2019s capabilities by synthesizing data purely from unstructured data (like academic papers and knowledge base) and exploring more advanced self-improving techniques to bootstrap LLM reasoning. In this section, we discuss more limitations during the research of SciInstruct and SciGLM.",
+      "HTML conversions sometimes display errors due to content that did not convert correctly from the source. This paper uses the following packages that are not yet supported by the HTML conversion tool.",
+      "(2022) Zhengxiao Du, Yujie Qian, Xiao Liu, Ming Ding, Jiezhong Qiu, Zhilin Yang, and Jie Tang. 2022. Glm: General language model pretraining with autoregressive blank infilling. In Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 320\u2013335.",
+      "(2023b) Yifei Li, Zeqi Lin, Shizhuo Zhang, Qiang Fu, Bei Chen, Jian-Guang Lou, and Weizhu Chen. 2023b. Making language models better reasoners with step-aware verifier. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 5315\u20135333."
+    ],
+    "title": "SciGLM: Training Scientific Language Models with Self-Reflective ...",
+    "url": "https://arxiv.org/html/2401.07950v2"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "git clone https://github.com/THUDM/SciGLM.git cd SciGLM pip install -r requirements.txt \u00b7 To train the 6B model, run: bash /path/training/finetune.sh \u00b7 cd /path/to/inference python cli_demo.py \u00b7 If you find our work helpful, please kindly cite our paper: @article{zhang2024sciglm, title={Sciglm: Training scientific language models with self-reflective instruction annotation and tuning}, author={Zhang, Dan and Hu, Ziniu and Zhoubian, Sining and Du, Zhengxiao and Yang, Kaiyu and Wang, Zihan and Yue, Yisong and Dong, Yuxiao and Tang, Jie}, journal={arXiv preprint arXiv:2401.07950}, year={2024} } Downloads last month \u00b7",
+      "SciGLM is a suite of scientific language models able to conduct college-level scientific reasoning. Central to our approach is a novel self-reflective instruction annotation framework to address the data scarcity challenge in the science domain. This framework leverages existing LLMs to generate step-by-step reasoning for unlabelled scientific questions, followed by a process of self-reflective critic-and-revise.",
+      "We release our data and model for public use. If you wish to use SciInstruct or SciGLM, you can download them from the following links.",
+      "You can use the SciGLM model through Huggingface's Transformers library."
+    ],
+    "title": "zd21/SciGLM-6B \u00b7 Hugging Face",
+    "url": "https://huggingface.co/zd21/SciGLM-6B"
+  },
+  {
+    "description": "Generate a detailed summary of this paper with a premium account.",
+    "favicon_url": "https://you.com/favicon?domain=www.emergentmind.com&size=128",
+    "snippets": [
+      "We ran into a problem analyzing this paper.",
+      "This makes SciGLM a suitable foundational model to facilitate diverse scientific discovery tasks. For the benefit of the wider research community, we release SciInstruct, SciGLM, alongside a self-reflective framework and fine-tuning code at \\url{https://github.com/THUDM/SciGLM}. We're not able to analyze this paper right now due to high demand.",
+      "Analyze arXiv paper 2401.07950"
+    ],
+    "title": "2401.07950 - SciGLM: Training Scientific Language Models with ...",
+    "url": "https://www.emergentmind.com/papers/2401.07950"
+  },
+  {
+    "description": "PDF | Large Language Models (LLMs) have shown promise in assisting scientific discovery. However , such applications are currently limited by LLMs'... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "However , such applications are currently limited by LLMs' deficiencies in understanding intricate scientific concepts, deriving symbolic equations, and solving advanced numerical calculations. To bridge these gaps, we introduce SciGLM, a suite of scientific language models able to conduct college-level scientific reasoning.",
+      "We fine-tuned the Chat-GLM family of language models with SciIn-struct, enhancing their capabilities in scientific and mathematical reasoning. Remarkably , SciGLM consistently improves both the base model (ChatGLM3-6B-Base) and larger-scale models (12B and 32B), without sacrificing the language understanding capabilities of the base model.",
+      "This makes SciGLM a suitable foundational model to facilitate diverse scientific discovery tasks.",
+      "For the benefit of the wider research community, we release SciInstruct, SciGLM, alongside a self-reflective framework and fine-tuning code at https://github.com/THUDM/SciGLM."
+    ],
+    "title": "(PDF) SciGLM: Training Scientific Language Models with Self-Re...",
+    "url": "https://www.researchgate.net/publication/378490905_SciGLM_Training_Scientific_Language_Models_with_Self-Reflective_Instruction_Annotation_and_Tuning"
+  },
+  {
+    "description": "However, such applications are currently limited by LLMs' deficiencies in understanding intricate scientific concepts, deriving symbolic equations, and solving advanced numerical calculations. To bridge these gaps, we introduce SciGLM, a suite of scientific language models able to conduct ...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "For the benefit of the wider research community, we release SciInstruct, SciGLM, alongside a self-reflective framework and fine-tuning code at https://github.com/THUDM/SciGLM. View arXiv page View PDF Add to collection \u00b7 EditPreview \u00b7 Upload images, audio, and videos by dragging in the text input, pasting, or clicking here. Tap or paste here to upload images \u00b7 Comment \u00b7 \u00b7 Sign up or log in to comment \u00b7 Upvote \u00b7 4 \u00b7 No dataset linking this paper \u00b7",
+      "However, such applications are currently limited by LLMs' deficiencies in understanding intricate scientific concepts, deriving symbolic equations, and solving advanced numerical calculations. To bridge these gaps, we introduce SciGLM, a suite of scientific language models able to conduct college-level scientific reasoning.",
+      "We fine-tuned the ChatGLM family of language models with SciInstruct, enhancing their capabilities in scientific and mathematical reasoning. Remarkably, SciGLM consistently improves both the base model (ChatGLM3-6B-Base) and larger-scale models (12B and 32B), without sacrificing the language understanding capabilities of the base model.",
+      "This makes SciGLM a suitable foundational model to facilitate diverse scientific discovery tasks."
+    ],
+    "title": "Paper page - SciGLM: Training Scientific Language Models with ...",
+    "url": "https://huggingface.co/papers/2401.07950"
+  },
+  {
+    "description": "GSoLEN is pleased to partner with UNESCO in organizing the second annual meeting of the Global Alliance on the Science of Learning for Education. The meeting will be held on 11-12 December 2025 at UNESCO Headquarters in Paris \u00b7 To learn more about participants and registration, click here",
+    "favicon_url": "https://you.com/favicon?domain=gsolen.ucsd.edu&size=128",
+    "snippets": [],
+    "title": "Global Science of Learning Education Network",
+    "url": "https://gsolen.ucsd.edu/"
+  },
+  {
+    "description": "Large Language Models (LLMs) have shown promise in assisting scientific discovery. However, such applications are currently limited by LLMs' deficiencies in understanding intricate scientific concepts, deriving symbolic equations, and solving advanced numerical calculations.",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "This makes SciGLM a suitable foundational model to facilitate diverse scientific discovery tasks. For the benefit of the wider research community, we release SciInstruct, and SciGLM, alongside a self-reflective framework and fine-tuning code. Paper Type: long \u00b7",
+      "However, such applications are currently limited by LLMs' deficiencies in understanding intricate scientific concepts, deriving symbolic equations, and solving advanced numerical calculations. To bridge these gaps, we introduce SciGLM, a suite of scientific language models able to conduct college-level scientific reasoning.",
+      "We fine-tuned the ChatGLM family of language models with SciInstruct, enhancing their capabilities in scientific and mathematical reasoning. Remarkably, the SciGLM consistently improves both the base model (ChatGLM3-6B-Base) and larger-scale models (32B), without sacrificing the language understanding capabilities of the base model."
+    ],
+    "title": "SciGLM: Training Scientific Language Models with Self-Reflective ...",
+    "url": "https://openreview.net/forum?id=21YGU2l1kL"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [],
+    "title": "SciGLM: Training Scientific Language Models with Self- ...",
+    "url": "https://openreview.net/pdf/5d017b8eb8d925cfd59a23b7aa765be1f1e3f01e.pdf"
+  },
+  {
+    "description": "In this research work, scientists have developed a powerful language model called SciGLM to help with scientific discovery. They created a dataset called SciInstruct, which contains high-quality instructions for solving college-level science problems in subjects like math, physics, and chemistry.",
+    "favicon_url": "https://you.com/favicon?domain=bytez.com&size=128",
+    "snippets": [
+      "SciGLM: Training Scientific Language Models with Self-Reflective Instruction Annotation and Tuning \u00b7"
+    ],
+    "title": "SciGLM: Training Scientific Language Models with Self-Reflective ...",
+    "url": "https://bytez.com/docs/arxiv/2401.07950/paper"
+  },
+  {
+    "description": "I am a research scientist at Meta Fundamental AI Research (FAIR), New York. Before joining Meta, I was a postdoctoral scholar at Caltech, working with Pietro Perona, Yisong Yue, and Swarat Chaudhuri. I received my Ph.D. from Princeton University, where I was advised by Jia Deng and also worked ...",
+    "favicon_url": "https://you.com/favicon?domain=yangky11.github.io&size=128",
+    "snippets": [],
+    "title": "Kaiyu Yang",
+    "url": "https://yangky11.github.io/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [],
+    "title": "Activity \u00b7 THUDM/SciGLM",
+    "url": "https://github.com/THUDM/SciGLM/activity"
+  },
+  {
+    "description": "A Comprehensive Survey of Scientific Large Language Models and Their Applications in Scientific Discovery (EMNLP'24) - yuzhimanhua/Awesome-Scientific-Language-Models",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "The repository is part of our survey paper A Comprehensive Survey of Scientific Large Language Models and Their Applications in Scientific Discovery and will be continuously updated.",
+      "NOTE 2: In each subsection, papers are sorted chronologically. If a paper has a preprint (e.g., arXiv or bioRxiv) version, its publication date is according to the preprint service.",
+      "NOTE 3: We appreciate contributions. If you have any suggested papers, feel free to reach out to yuzhang@tamu.edu or submit a pull request.",
+      "For format consistency, we will include a paper after (1) it has a version with author names AND (2) its GitHub and/or Hugging Face links are available."
+    ],
+    "title": "GitHub - yuzhimanhua/Awesome-Scientific-Language-Models: A ...",
+    "url": "https://github.com/yuzhimanhua/Awesome-Scientific-Language-Models"
+  },
+  {
+    "description": "Regarding SciGLM-6B, we use the default repo of [SciGLM] to train the policy model and evaluate. We also implement self-rewarding as our baseline in ./self_train/self_train_dpo.py. ... Accuracy of Different Searches (we also provide the plot code in figures/plot_math_self_training.py): If you find our work helpful, please kindly cite our paper...",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Regarding SciGLM-6B, we use the default repo of [SciGLM] to train the policy model and evaluate. We also implement self-rewarding as our baseline in ./self_train/self_train_dpo.py. ... Accuracy of Different Searches (we also provide the plot code in figures/plot_math_self_training.py): If you find our work helpful, please kindly cite our paper:",
+      "$D_G$, we use three backbones (Llama3-8B-Instruct, Mistral-7b: MetaMATH, and SciGLM-6B) guided by MCTS* to generate synthetic data for policy model and value model. (See Algorithm 1 of [the paper] for more details.)",
+      "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search (NeurIPS 2024) - THUDM/ReST-MCTS",
+      "Considering the different dependency versions of transformers, Mistral-7B is adopted as the backbone of the value model when the policy model is [Llama3-8B-Instruct] or [Mistral-7B: MetaMATH]. When the policy model is [SciGLM-6B], we use [ChatGLM3-6B] as the backbone of the value model. Aiming to gather value train data for science, we integrate questions of a lean science dataset ... $D_{V_0}$. This dataset consists of 11,554 questions, where each question is paired with a correct step-by-step solution. (See Fine-grained dataset for science and math. in Section 4.1 of [the paper] for more details.)"
+    ],
+    "title": "GitHub - THUDM/ReST-MCTS: ReST-MCTS*: LLM Self-Training via Process ...",
+    "url": "https://github.com/THUDM/ReST-MCTS"
+  },
+  {
+    "description": "Single cell perturbation prediction. Contribute to theislab/scgen development by creating an account on GitHub.",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "We further recommend to use highly variable genes (HVG). For the most examples in the paper we used top ~7000 HVG.",
+      "In order to reproduce paper results visit here."
+    ],
+    "title": "GitHub - theislab/scgen: Single cell perturbation prediction",
+    "url": "https://github.com/theislab/scgen"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [],
+    "title": "Average accuracy on CEval-Sci and SciEval benchmarks of...",
+    "url": "https://www.researchgate.net/figure/Average-accuracy-on-CEval-Sci-and-SciEval-benchmarks-of-different-LLMs-Our-SciGLM-Models_fig1_378490905"
+  },
+  {
+    "description": "Accurately modeling cellular response to perturbations is a central goal of computational biology. While such modeling has been based on statistical, mechanistic and machine learning models in specific settings, no generalization of predictions to phenomena absent from training data (out-of-sample) ...",
+    "favicon_url": "https://you.com/favicon?domain=pubmed.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Accurately modeling cellular response to perturbations is a central goal of computational biology. While such modeling has been based on statistical, mechanistic and machine learning models in specific settings, no generalization of predictions to phenomena absent from training data (out-of-sample) \u2026"
+    ],
+    "title": "scGen predicts single-cell perturbation responses - PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31363220/"
+  },
+  {
+    "description": "We've been getting a lot of questions about how to run the code. There are quite a few misleading files in the source -- sorry about that. All you need to do to generate a paper is to run make-latex.pl (also look at make-latex.pl --help). You can also use scigen.pl to generate any arbitrary ...",
+    "favicon_url": "https://you.com/favicon?domain=pdos.csail.mit.edu&size=128",
+    "snippets": [
+      "We've been getting a lot of questions about how to run the code. There are quite a few misleading files in the source -- sorry about that. All you need to do to generate a paper is to run make-latex.pl (also look at make-latex.pl --help). You can also use scigen.pl to generate any arbitrary starting target.",
+      "As indicated above, one of our generated papers got accepted to WMSCI 2005. Our plan was to go there and give a completely randomly-generated talk, delivered entirely with a straight face. However, this is very expensive for grad students such as ourselves.",
+      "SCIgen is a program that generates random Computer Science research papers, including graphs, figures, and citations. It uses a hand-written context-free grammar to form all elements of the papers.",
+      "A prime example, which you may recognize from spam in your inbox, is SCI/IIIS and its dozens of co-located conferences (check out the very broad conference description on the WMSCI 2005 website). There's also a list of known bogus conferences. Using SCIgen to generate submissions for conferences like this gives us pleasure to no end. In fact, one of our papers was accepted to SCI 2005!"
+    ],
+    "title": "SCIgen - An Automatic CS Paper Generator",
+    "url": "https://pdos.csail.mit.edu/archive/scigen/"
+  },
+  {
+    "description": "Scientific papers are often structured chronologically, thus reflecting the progression of the research project. Still, effective papers typically break the chronology in several ways to present their content in the order in which the audience will most likely want to read it.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Scientific papers are for sharing your own original research work with other scientists or for reviewing the research conducted by others. As such, they are critical to the evolution of modern science, in which the work of one scientist builds upon that of others.",
+      "Scientific papers typically have two audiences: first, the referees, who help the journal editor decide whether a paper is suitable for publication; and second, the journal readers themselves, who may be more or less knowledgeable about the topic addressed in the paper.",
+      "To be accepted by referees and cited by readers, papers must do more than simply present a chronological account of the research work. Rather, they must convince their audience that the research presented is important, valid, and relevant to other scientists in the same field.",
+      "Papers that report experimental work are often structured chronologically in five sections: first, Introduction; then Materials and Methods, Results, and Discussion (together, these three sections make up the paper's body); and finally, Conclusion."
+    ],
+    "title": "Scientific Papers | Learn Science at Scitable",
+    "url": "https://www.nature.com/scitable/topicpage/scientific-papers-13815490/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [],
+    "title": "zd21/SciGLM-6B \u00b7 Discussions",
+    "url": "https://huggingface.co/zd21/SciGLM-6B/discussions"
+  }
+]

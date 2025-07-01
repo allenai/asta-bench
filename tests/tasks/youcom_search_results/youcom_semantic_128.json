@@ -1,0 +1,230 @@
+[
+  {
+    "description": "In this paper, we demonstrate the efficacy of transfer learning and continuous learning for various automatic speech recognition (ASR) tasks. We start with a pre-trained English ASR model and show that transfer learning can be effectively and easily performed on: (1) different English accents, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled Cross-Language Transfer Learning, Continuous Learning, and Domain Adaptation for End-to-End Automatic Speech Recognition, by Jocelyn Huang and 7 other authors View PDF \u00b7 Abstract:In this paper, we demonstrate the efficacy of transfer learning and continuous learning for various automatic speech recognition (ASR) tasks. We start with a pre-trained English ASR model and show that transfer learning can be effectively and easily performed on: (1) different English accents, (2) different languages (German, Spanish and Russian) and (3) application-specific domains.",
+      "Abstract page for arXiv paper 2005.04290: Cross-Language Transfer Learning, Continuous Learning, and Domain Adaptation for End-to-End Automatic Speech Recognition",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2005.04290] Cross-Language Transfer Learning, Continuous Learning, ...",
+    "url": "https://arxiv.org/abs/2005.04290"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Transfer Learning for Speech and Language Processing",
+    "url": "https://arxiv.org/pdf/1511.06066"
+  },
+  {
+    "description": "The performance of automatic speech recognition (ASR) may be degraded when accented speech is recognized because the speech has some linguistic differences from standard speech. Conventional accented speech recognition studies have utilized the accent embedding method, in which the accent embedding ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "The performance of automatic speech recognition (ASR) may be degraded when accented speech is recognized because the speech has some linguistic differences from standard speech. Conventional accented speech recognition studies have utilized the accent embedding method, in which the accent embedding features are directly fed into the ASR network.",
+      "The output features of the standalone network were then fed into the multi-task learning network as extra input feature vectors. The authors of [6] advanced the approach by applying an end-to-end method to the ASR model. In the real world, it is difficult to collect a large amount of accented speech data to train deep neural networks, which is one of the challenges of accented speech recognition. The domain adaptation technique can be a solution to this problem [7]. This technique aims to enhance less-trained target domain models that are constructed with a small amount of target domain data by utilizing the information learned from the source domain data that can be collected abundantly.",
+      "Figure 1. Architecture of the multi-task learning network and the standalone network in the accent embedding method. (A) Acoustic model; (B) Accent classifier; (C) Standalone network. Figure 2. Effect of domain adaptation.",
+      "This study applied the Domain Adversarial Neural Network (DANN) as a domain adaptation technique for accented speech recognition. It has been widely used for computer vision studies [8]. The goal of DANN is to learn domain-invariant features to reduce the distribution differences between the source and target domains with the help of domain adversarial training."
+    ],
+    "title": "Accented Speech Recognition Based on End-to-End Domain Adversarial ...",
+    "url": "https://www.mdpi.com/2076-3417/11/18/8412"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Deep Transfer Learning for Automatic Speech Recognition",
+    "url": "https://arxiv.org/pdf/2304.14535"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=scispace.com&size=128",
+    "snippets": [],
+    "title": "Deep Transfer Learning for Automatic Speech Recognition",
+    "url": "https://scispace.com/pdf/deep-transfer-learning-for-automatic-speech-recognition-202ykftf.pdf"
+  },
+  {
+    "description": "This paper demonstrates the efficacy of transfer learning and continuous learning for various automatic speech recognition (ASR) tasks using end-to-end models trained with CTC loss, and indicates that, for fine-tuning, larger pre-trained models are better than small pre- trained models, even ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "This paper demonstrates the efficacy of transfer learning and continuous learning for various automatic speech recognition (ASR) tasks using end-to-end models trained with CTC loss, and indicates that, for fine-tuning, larger pre-trained models are better than small pre- trained models, even if the dataset for Finetuning is small.Expand",
+      "This work introduced an adaptive activation network to the upper layers of ASR model, and applied different activation functions to different languages, and proposed two approaches to train the model: cross-lingual learning and multilingual learning, which could further improve the performance of multilingual speech recognition.Expand ... Daniel BermuthAlexander PoeppelW. Reif ... This paper presents Speech-to-Text models for German, as well as for Spanish and French with special features: small and run in real-time on microcontrollers like a RaspberryPi, and shows an optimized way for transfer-learning new languages using a pretrained model from another language with a similar alphabet.Expand",
+      "While many speech recognition applications are quite commonplace now a days, applicability of the recognition techniques to accented languages is still a major challenge. Here, in this paper we have\u2026",
+      "The main idea of this paper is to prove the feasibility of adapting the foreign speech recognition model to the Slovak ASR model, and the benefits of BPE tokenization in speech recognition, and a particular pre-trained model in terms of training speed and model quality.Expand"
+    ],
+    "title": "Cross-Language Transfer Learning and Domain Adaptation for End-to-End ...",
+    "url": "https://www.semanticscholar.org/paper/Cross-Language-Transfer-Learning-and-Domain-for-Luo-Wang/25a31ee11ab9a70f6cfb53b4203b3596d9809e29"
+  },
+  {
+    "description": "Infinite numbers of real-world applications use Machine Learning (ML) techniques to develop potentially the best data available for the users. Transfer learning (TL), one of the categories under ML, has received much attention from the research communities in the past few years.",
+    "favicon_url": "https://you.com/favicon?domain=journalofbigdata.springeropen.com&size=128",
+    "snippets": [
+      "Kouw WM, Loog M. A review of domain adaptation without target labels. IEEE Trans Pattern Anal Mach Intell. 2019;43(3):766\u201385. ... BaderLab: BaderLab/Transfer-Learning-BNER-Bioinformatics-2018: This repository contains supplementary data, and links to the model and corpora used for the paper: Transfer learning for biomedical named entity recognition with neural networks.",
+      "Kamath U, Liu J, Whitaker J. Transfer learning: Domain adaptation. In: Deep Learning for NLP and Speech Recognition. Springer; 2019, p.",
+      "Wang M, Deng W. Deep visual domain adaptation: a survey. Neurocomputing. 2018;312:135\u201353. ... Ad\u00e3o T, Hru\u0161ka J, P\u00e1dua L, Bessa J, Peres E, Morais R, Sousa JJ. Hyperspectral imaging: a review on uav-based sensors, data processing and applications for agriculture and forestry. Remote Sensing. 2017;9(11):1110. ... Gao Y, Mosalam KM. Deep transfer learning for image-based structural damage recognition.",
+      "This paper contributes to the domain and scope of TL, citing situational use based on their periods and a few of its applications. The paper provides an in-depth focus on the techniques; Inductive TL, Transductive TL, Unsupervised TL, which consists of sample selection, and domain adaptation, followed by contributions and future directions."
+    ],
+    "title": "Transfer learning: a friendly introduction | Journal of Big Data ...",
+    "url": "https://journalofbigdata.springeropen.com/articles/10.1186/s40537-022-00652-w"
+  },
+  {
+    "description": "Automatic speech recognition (ASR) has recently become an important challenge when using deep learning (DL). It requires large-scale training datasets\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "DTL can be seen as a type of information-fusion approach that merges and/or adapts knowledge from multiple domains to enhance the performance of a target task, particularly when labeled data in the target domain is scarce. Publications issued after 2015 were considered. These selected publications were divided into three categories: DTL-only and IDS-only works are examined in the introduction and background section, and DTL-based IDS papers are considered in the core section of this review.",
+      "Moreover, research can concentrate on handling the challenge of domain shift, where the distribution of data in the target domain varies significantly from the source domain. Methods such as domain adaptation, domain generalization, or domain robustness can be analyzed to mitigate the impact of domain shift and enhance ChatGPT\u2019s performance across diverse domains (Kheddar et al., 2023).",
+      "Fine-tuning and domain adaptation are effective transfer learning methods in ASR.",
+      "The methodology of conducting this survey is outlined in this section, where the search strategy is discussed first, followed by a section on study selection. The inclusion criteria is then described, including the keyword match, creativity and effect, and uniqueness. All these procedures contribute to the development of our paper quality assessment protocol. Overall, DTL consists of training a DL model on a specific domain (or task) and then transferring the acquired knowledge to a new, similar domain (or task)."
+    ],
+    "title": "Deep transfer learning for automatic speech recognition: Towards ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0950705123006019"
+  },
+  {
+    "description": "Highlights \u2022ASR can be improved through language model, acoustic model, and multi-task learning.\u2022Fine-tuning and domain adaptation are effective transfer learning methods in ASR.\u2022DTL can enhance AS...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Chen Y.-C., Hsu J.-Y., Lee C.-K., Lee H.-y., DARTS-ASR: Differentiable architecture search for multilingual speech recognition and adaptation, 2020, arXiv preprint arXiv:2005.07029. ... Sun S., Zhang B., Xie L., Zhang Y., An unsupervised deep domain adaptation approach for robust speech recognition, Neurocomputing 257 (2017) 79\u201387.",
+      "Khurana S., Laurent A., Glass J., Magic dust for cross-lingual adaptation of monolingual wav2vec-2.0, in: ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing, ICASSP, IEEE, 2022, pp. 6647\u20136651. ... Tachbelie M.Y., Abate S.T., Schultz T., Multilingual speech recognition for GlobalPhone languages, Speech Commun.",
+      "Panayotov V., Chen G., Povey D., Khudanpur S., Librispeech: an asr corpus based on public domain audio books, in: 2015 IEEE International Conference on Acoustics, Speech and Signal Processing, ICASSP, IEEE, 2015, pp. 5206\u20135210. ... Yu Q., Ma Y., Li Y., Enhancing speech recognition for Parkinson\u2019s disease patient using transfer learning technique, J. Shanghai Jiaotong Univ. (Sci.) 27 (1) (2022) 90\u201398. ... Di Gangi M.A., Cattoni R., Bentivogli L., Negri M., Turchi M., Must-c: a multilingual speech translation corpus, in: 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Association for Computational Linguistics, 2019, pp.",
+      "Himeur Y., Al-Maadeed S., Kheddar H., Al-Maadeed N., Abualsaud K., Mohamed A., Khattab T., Video surveillance using deep transfer learning and deep domain adaptation: Towards better generalization, Eng. Appl. Artif."
+    ],
+    "title": "Deep transfer learning for automatic speech recognition: : Towards ...",
+    "url": "https://dl.acm.org/doi/10.1016/j.knosys.2023.110851"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=jair.org&size=128",
+    "snippets": [],
+    "title": "Domain Adaptation and Multi-Domain ...",
+    "url": "https://jair.org/index.php/jair/article/download/13566/26851/32027"
+  },
+  {
+    "description": "Update ASR paper everyday. Contribute to halsay/ASR-TTS-paper-daily development by creating an account on GitHub.",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Prosodically Enhanced Foreign Accent Simulation by Discrete Token-based Resynthesis Only with Native Speech Corpora \u00b7 Kentaro Onda et.al. ... Selective Invocation for Multilingual ASR: A Cost-effective Approach Adapting to Speech Recognition Difficulty \u00b7 Hongfei Xue et.al. ... Ke Hu et.al. ... In-Context Learning Boosts Speech Recognition via Human-like Adaptation to Speakers and Language Varieties",
+      "An Efficient Solution for Self-Supervised Learning Models Unseen Languages Adaption in Low-Resource Scenario \u00b7 Shih-Heng Wang et.al. ... Thai-Binh Nguyen et.al. ... Wenyi Yu et.al. ... Fusion of Discrete Representations and Self-Augmented Representations for Multilingual Automatic Speech Recognition",
+      "Cross-lingual Embedding Clustering for Hierarchical Softmax in Low-Resource Multilingual Speech Recognition \u00b7 Zhengdong Yang et.al. ... RDMM: Fine-Tuned LLM Models for On-Device Robotic Decision Making with Enhanced Contextual Awareness in Specific Domains",
+      "Structured Speaker-Deficiency Adaptation of Foundation Models for Dysarthric and Elderly Speech Recognition \u00b7 Shujie Hu et.al. ... Karel Mundnich et.al. ... Trading Devil RL: Backdoor attack via Stock market, Bayesian Optimization and Reinforcement Learning"
+    ],
+    "title": "GitHub - halsay/ASR-TTS-paper-daily: Update ASR paper everyday",
+    "url": "https://github.com/halsay/ASR-TTS-paper-daily"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [],
+    "title": "Cross-Language Transfer Learning, Continuous ...",
+    "url": "https://www.researchgate.net/publication/341311448_Cross-Language_Transfer_Learning_Continuous_Learning_and_Domain_Adaptation_for_End-to-End_Automatic_Speech_Recognition"
+  },
+  {
+    "description": "Significant research has been conducted during the last decade on the application of machine learning for speech processing, particularly speech recog\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The paper surveys deep learning approaches in ASR, with a focus on E2E models. ... Highlights the advancements of multilingual ASR systems for low-resource languages. ... Attention-based models, like Transformers, enhance ASR accuracy across domains. ... Transfer learning on large datasets boosts ASR performance across domains.",
+      "This paper provides a thorough review of the numerous studies conducted since 2010, as well as an extensive comparison of the state-of-the-art methods that are now being used in this research area, with a special focus on the numerous deep learning models, along with an analysis of contemporary approaches for both monolingual and multilingual models. Deep learning approaches are data dependent and their accuracy varies on different datasets. In this paper, we have also analyzed the various models on publicly accessible speech datasets to understand model performance across diverse datasets for"
+    ],
+    "title": "Automatic Speech Recognition: A survey of deep learning techniques ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666307424000573"
+  },
+  {
+    "description": "Automatic speech recognition (ASR), commonly known as speech-to-text, is the process of transcribing audio recordings into text, i.e., transforming speech into the respective sequence of words. This paper presents a deep learning ASR system optimization and evaluation for the European Portuguese ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "Automatic speech recognition (ASR), commonly known as speech-to-text, is the process of transcribing audio recordings into text, i.e., transforming speech into the respective sequence of words. This paper presents a deep learning ASR system optimization and evaluation for the European Portuguese language. We present a pipeline composed of several stages for data acquisition, analysis, pre-processing, model creation, and evaluation. A transfer learning approach is proposed considering an English language-optimized model as starting point; a target composed of European Portuguese; and the contribution to the transfer process by a source from a different domain consisting of a multiple-variant Portuguese language dataset, essentially composed of Brazilian Portuguese.",
+      "Cho, J.; Baskar, M.K.; Li, R.; Wiesner, M.; Mallidi, S.; Yalta, N.; Karafi\u00e1t, M.; Watanabe, S.; Hori, T. Multilingual Sequence-to-Sequence Speech Recognition: Architecture, Transfer Learning, and Language Modeling. In Proceedings of the 2018 IEEE Spoken Language Technology Workshop (SLT), Athens, Greece, 18\u201321 December 2018; pp.",
+      "In the work presented in this paper, the training set of 100 h of \u201cclean\u201d speech of the LibriSpeech (https://www.openslr.org/resources/12/train-clean-100.tar.gz) (accessed on 12 December 2021) dataset was used as a control dataset for the English domain [29]. This control was meant to verify the performance of the transfer learning process, i.e., to verify if the models pre-trained in English were properly learning the Portuguese data. The 100 h set contains transcripts with a total of 990,101 words, from which 33,798 are unique words. Multilingual LibriSpeech (MLS) is an extension of LibriSpeech which increases the amount of English speech to 44,500 h of audio recordings and adds 6000 h of audio recordings from seven other languages, including Portuguese [30].",
+      "Following this transfer learning data-centric approach, the model was optimized, achieving a state-of-the-art word error rate (WER) of 0.0503. Keywords: machine learning; deep learning; deep neural networks; speech-to-text; automatic speech recognition; NVIDIA NeMo; GPUs; data-centric; Portuguese language"
+    ],
+    "title": "Domain Adaptation Speech-to-Text for Low-Resource European Portuguese ...",
+    "url": "https://www.mdpi.com/1999-5903/15/5/159"
+  },
+  {
+    "description": "Representation transfer learning has been widely used across a range of machine learning tasks. One such notable approach seen in the speech literatur\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "This approach is comprising the use of Automatic Speech Recognition (ASR) deep neural networks as feature extractors, the fusion of several extracted feature representations using Compact Bilinear Pooling (CBP), and finally inference via a specially optimised Recurrent Neural Network (RNN) classifier.",
+      "The rapid development of machine learning, and in particular deep learning, in the last decade has led to scientific breakthroughs in a wide range of tasks, be it Automatic Speech Recognition (ASR) (Hinton et al., 2012), object recognition (Szegedy et al., 2016), or even playing the highly complex strategy board game Go (Silver et al., 2016).",
+      "It is well established that Deep Neural Networks usually require vast amounts of training data in order to reach their full potential. For many speech processing tasks such as Automatic Speech Recognition (ASR), this is not an issue (Nassif et al., 2019). However, in other tasks such as the classification of different health states from speech, this is not the case (Cummins et al., 2018).",
+      "Our system will be tested on two speech-health conditions by utilising two databases: the iHEARu-EAT (EAT) database for food type recognition (Section 4.1), and the Alcohol Language Corpus (ALC) for detecting whether a speaker is intoxicated (Section 4.2)."
+    ],
+    "title": "Representation transfer learning from deep end-to-end speech ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0885230821000115"
+  },
+  {
+    "description": "Deep learning: from speech recognition to language and multimodal processing - Volume 5",
+    "favicon_url": "https://you.com/favicon?domain=www.cambridge.org&size=128",
+    "snippets": [
+      "A wide range of noise-robust techniques developed over past 30 years can be analyzed and categorized using five different criteria: (1) feature-domain versus model-domain processing, (2) the use of prior knowledge about the acoustic environment distortion, (3) the use of explicit environment-distortion models, (4) deterministic versus uncertainty processing, and (5) the use of acoustic models trained jointly with the same feature enhancement or model adaptation process used in the testing stage.",
+      "This invited paper, based on my keynote talk given at Interspeech conference in Singapore in September 2014, will first reflect on the historical path to this transformative success, after providing brief reviews of earlier studies on (shallow) neural networks and on (deep) generative models relevant to the introduction of deep neural networks (DNN) to speech recognition several years ago. The role of well-timed academic-industrial collaboration is highlighted, so are the advances of big data, big compute, and the seamless integration between the application-domain knowledge of speech and general principles of deep learning.",
+      "The remainder of this paper is organized as follows. In Section II, some brief history is provided on how deep learning made inroad into speech recognition, and a number of enabling factors are discussed. Outstanding achievements of deep learning both in academic world and in industry to date are reviewed in Section III, categorized into six major areas where speech recognition technology has been revolutionized within just past several years.",
+      "In summary, large-scale ASR is the first and the most convincing successful case of deep learning in the recent history, embraced by both industry and academia across the board. Between 2010 and 2015, the two major conferences on signal processing and ASR, IEEE-ICASSP and Interspeech, have seen near exponential growth in the numbers of accepted papers in their respective annual conferences on the topic of deep learning for ASR."
+    ],
+    "title": "Deep learning: from speech recognition to language and multimodal ...",
+    "url": "https://www.cambridge.org/core/journals/apsipa-transactions-on-signal-and-information-processing/article/deep-learning-from-speech-recognition-to-language-and-multimodal-processing/F1F1FDB71C597878FE31E5964CF5DFAE"
+  },
+  {
+    "description": "Multilingual large language models (MLLMs) leverage advanced large language models to process and respond to queries across multiple languages, achieving significant success in polyglot tasks. Despite these breakthroughs, a comprehensive survey ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "MTOP: A comprehensive multilingual task-oriented semantic parsing benchmark; pp. 2950\u20132962. [DOI] [Google Scholar] 132.Schuster S., Gupta S., Shah R., Lewis M. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers) Association for Computational Linguistics; 2019. Cross-lingual transfer learning for multilingual task oriented dialog; pp.",
+      "MasakhaNER: Named entity recognition for African languages. Trans. Assoc. Comput. Ling. 2021;9:1116\u20131131. [Google Scholar] 123.FitzGerald J., Hench C., Peris C., Mackie S., Rottmann K., Sanchez A., Nash A., Urbach L., Kakarala V., Singh R., et al. Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) Association for Computational Linguistics; 2023. MASSIVE: A 1M-example multilingual natural language understanding dataset with 51 typologically-diverse languages; pp.",
+      "MultiCoNER v2: a large multilingual dataset for fine-grained and noisy named entity recognition; pp. 2027\u20132051. [DOI] [Google Scholar] 126.Pan X., Gowda T., Ji H., May J., Miller S. Proceedings of the 2nd Workshop on Deep Learning Approaches for Low-Resource NLP (DeepLo 2019) Association for Computational Linguistics; 2019.",
+      "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) Association for Computational Linguistics; 2023. Crosslingual generalization through multitask finetuning; pp. 15991\u201316111. [DOI] [Google Scholar] 21.Shi F., Suzgun M., Freitag M., Wang X., Srivats S., Vosoughi S., Chung H.W., Tay Y., Ruder S., Zhou D., et al. The Eleventh International Conference on Learning Representations. 2023. Language models are multilingual chain-of-thought reasoners."
+    ],
+    "title": "A survey of multilingual large language models - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11783891/"
+  },
+  {
+    "description": "By transferring knowledge from abundant normal speech to limited dysarthric speech, dysarthric speech recognition (DSR) has witnessed significant progress. However, existing adaptation techniques mainly focus on the full leverage of normal speech, discarding the...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Gaur, N., et al.: Mixture of informed experts for multilingual speech recognition. In: Proceedings of ICASSP 2021, pp. 6234\u20136238, June 2021 ... Gauvain, J., Lee, C.: Maximum a posteriori estimation for multivariate gaussian mixture observations of markov chains. IEEE Trans. Speech Audio Process. 2(2), 291\u2013298 (1994) ... Ghahremani, P., Manohar, V., Hadian, H., Povey, D., Khudanpur, S.: Investigation of transfer learning for ASR using LF-MMI trained neural networks.",
+      "Sun, S., Zhao, J.: Pattern Recognition and Machine Learning. Tsinghua University Press, China (2020) ... Sun, S., Yeh, C., Hwang, M., Ostendorf, M., Xie, L.: Domain adversarial training for accented speech recognition. In: Proceedings of ICASSP 2018, pp.",
+      "In this paper, we present an effective domain adaptation framework to build robust DSR systems with scarce target data. Joint data preprocessing strategy is employed to alleviate the sparsity of dysarthric speech and close the gap between source and target domains. To enhance the adaptability of dysarthric speakers across different severity levels, the Domain-adapted Transformer model is devised to learn both domain-invariant and domain-specific features.",
+      "Wu, L., Zong, D., Sun, S., Zhao, J.: A sequential contrastive learning framework for robust dysarthric speech recognition. In: Proceedings of ICASSP 2021, pp. 7303\u20137307, June 2021 ... Xiong, F., Barker, J., Christensen, H.: Phonetic analysis of dysarthric speech tempo and applications to robust personalised dysarthric speech recognition. In: Proceedings of ICASSP 2019, pp. 5836\u20135840, May 2019 ... Xiong, F., Barker, J., Yue, Z., Christensen, H.: Source domain data selection for improved transfer learning targeting dysarthric speech recognition."
+    ],
+    "title": "Effective Domain Adaptation for Robust Dysarthric Speech Recognition ...",
+    "url": "https://link.springer.com/chapter/10.1007/978-981-99-8141-0_5"
+  },
+  {
+    "description": "Deep learning has emerged as a powerful tool in various domains, revolutionising machine learning research. However, one persistent challenge is the s\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "These approaches have demonstrated remarkable achievements, enabling breakthroughs in areas such as disease diagnosis, object recognition, and language understanding. However, while these methods offer numerous advantages, they also have limitations. For example, transfer learning may face domain mismatch issues between the pre-training and target domains, while self-supervised learning requires careful design of pretext tasks to ensure meaningful representations. This review paper explores the recent applications of these pre-training methods in various fields within the past three years."
+    ],
+    "title": "A comparison review of transfer learning and self-supervised ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0957417423033092"
+  },
+  {
+    "description": "A transfer learning-based end-to-end speech recognition approach is presented in two levels in our framework. Firstly, a feature extraction approach combining multilingual deep neural network (DNN) training with matrix factorization algorithm is introduced to extract high-level features.",
+    "favicon_url": "https://you.com/favicon?domain=asmp-eurasipjournals.springeropen.com&size=128",
+    "snippets": [
+      "To train multilingual DNNs, we first build their own GMMs. Each GMM is trained using linear discriminative analysis (LDA), maximum linear logistic transformation (MLLT), and speaker adaptive training (SAT) with 13 MFCC features. Then multilingual DNNs are trained with 40 filterbank features of four Voxforge languages simultaneously and are all supervised by alignments of senones generated by each GMM.",
+      "We use only a shallow bi-directional RNN instead of a complex encoder in [18]. To exploit as much similarities from multiple data sources as possible, both the end-to-end models and multilingual DNNs are trained in a phone level. Our paper is organized as follows.",
+      "In order to further alleviate the problem caused by limited training resource, we use multilingual training in feature extraction as data augmentation. Although multilingual training is trivial to directly apply on RNNs, it is useful to exploit acoustic similarities from shared layers.",
+      "We first train several target independent DNNs with shared hidden layers using multiple language resources. An example for DNN with multilingual training is shown in Fig. 1. Instead of restricted Boltzmann machine (RBM), we use maxout activation with dropout training to avoid over-fitting problem and to capture better generalities."
+    ],
+    "title": "Towards end-to-end speech recognition with transfer learning | ...",
+    "url": "https://asmp-eurasipjournals.springeropen.com/articles/10.1186/s13636-018-0141-9"
+  },
+  {
+    "description": "Audio forensics plays a major role in the investigation and analysis of audio recordings for legal and security purposes. The advent of audio fake attacks using speech combined with scene-manipulated audio represents a sophisticated challenge in fake audio detection.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Scientific Reports - Novel transfer learning based acoustic feature engineering for scene fake audio detection",
+      "Pattern Recognit. 152, 110468 (2024). ... Komatsu, T., Imoto, K. & Togami, M. Scene-dependent acoustic event detection with scene conditioning and fake-scene-conditioned loss. In ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 646\u2013650 (IEEE, 2020).",
+      "Camacho, S., Ballesteros, D. M. & Renza, D. Fake speech recognition using deep learning.",
+      "Unlike previous studies, which have mainly relied on traditional deep learning models or handcrafted feature extraction methods, our method improves feature representation using transfer learning, which further enhances performance and generalization. Unlike existing methods, which usually suffer from high computational costs or limited adaptability, MfC-RF balances accuracy and efficiency well, making it a practical solution for fake audio detection."
+    ],
+    "title": "Novel transfer learning based acoustic feature engineering for ...",
+    "url": "https://www.nature.com/articles/s41598-025-93032-2"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [],
+    "title": "Cross-Language Transfer Learning and Domain ...",
+    "url": "https://www.researchgate.net/publication/352997563_Cross-Language_Transfer_Learning_and_Domain_Adaptation_for_End-to-End_Automatic_Speech_Recognition"
+  }
+]

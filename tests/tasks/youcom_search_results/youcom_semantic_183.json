@@ -1,0 +1,268 @@
+[
+  {
+    "description": "To extend this scaling beyond the ... et al., 2024), input inversion (Min et al., 2022; Longpre et al., 2023a), and negative examples (Wang et al., 2022b) have successfully been used to further enrich the data variety. A number of works also increase data diversity by templatizing ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "To extend this scaling beyond the openly available data, data augmentation techniques such as translation (Muennighoff et al., 2022b; Yong et al., 2022; Dhole et al., 2021; Singh et al., 2024; \u00dcst\u00fcn et al., 2024), input inversion (Min et al., 2022; Longpre et al., 2023a), and negative examples (Wang et al., 2022b) have successfully been used to further enrich the data variety. A number of works also increase data diversity by templatizing data in multiple prompt formats, including zero-shot, few-shot, and chain-of-thought prompts (Chung et al., 2022; Iyer et al., 2022).",
+      "As larger and more diverse instruction tuning collections have become available, the benefits of scale seem to have diminished, and in response recent methods have explored a variety of utility functions aimed at improving data efficiency while focusing on quality, diversity, difficulty, and complexity as components of the utility. LIMA demonstrated strong results with only 1000 highly curated, diverse training instances meant to approximate real user prompts with high-quality responses (Zhou et al., 2023). Similarly, the best performing variants of Open Assistant are high-quality subsets, as graded by human reviewers (K\u00f6pf et al., 2023; Muennighoff et al., 2023a; Zhuo et al., 2024).",
+      "Language models can undergo multiple stages of training (pretraining (Peters et al., 2018; Radford & Narasimhan, 2018; Devlin et al., 2019; Raffel et al., 2020; Touvron et al., 2023a), instruction-tuning (Mishra et al., 2021; Sanh et al., 2022; Longpre et al., 2023a; Muennighoff et al., 2024), alignment (Ziegler et al., 2020; Bai et al., 2022b; Ouyang et al., 2022; Rafailov et al., 2023), etc.), and data selection plays an important role in each stage.",
+      "The current known best practices for heuristics have not changed significantly in the past few years. Soldaini et al. (2024) recently use a combination of the filters from MassiveText (Rae et al., 2022) and c4 (Raffel et al., 2020), while Penedo et al. (2023) also follow the rules defined for MassiveText (Rae et al., 2022)."
+    ],
+    "title": "A Survey on Data Selection for Language Models",
+    "url": "https://arxiv.org/html/2402.16827v1"
+  },
+  {
+    "description": "Skip to yearly menu bar Skip to main content \u00b7 Main Navigation \u00b7 Help/FAQ \u00b7 Contact ICML \u00b7 Downloads \u00b7 Code of Conduct \u00b7 Create Profile \u00b7 Journal To Conference Track \u00b7 Diversity & Inclusion \u00b7 Future Meetings",
+    "favicon_url": "https://you.com/favicon?domain=icml.cc&size=128",
+    "snippets": [],
+    "title": "ICML 2024 Papers",
+    "url": "https://icml.cc/virtual/2024/papers.html"
+  },
+  {
+    "description": "Abstract. Rapid advancements of large language models (LLMs) have enabled the processing, understanding, and generation of human-like text, with increasing integration into systems that touch our social sphere. Despite this success, these models can learn, perpetuate, and amplify harmful social ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. Rapid advancements of large language models (LLMs) have enabled the processing, understanding, and generation of human-like text, with increasing integration into systems that touch our social sphere. Despite this success, these models can learn, perpetuate, and amplify harmful social biases.",
+      "HeteroCorpus (V\u00e1squez et al.2022), for instance, contains examples of tweets labeled as non-heteronormative, heteronormative to assess negative impacts on the LGBTQ+ community, and FairPrism (Fleisig et al. 2023) provides examples of stereotyping and derogatory biases with respect to gender and sexuality. Such datasets can expand the flexibility of classifier-based evaluation. Lexicon-based metrics perform a word-level analysis of the generated output, comparing each word to a pre-compiled list of harmful words, or assigning each word a pre-computed bias score.",
+      "We now present metrics for evaluating fairness at different fundamental levels. While evaluation techniques for LLMs have been recently surveyed by Chang et al. (2023), they do not focus on the evaluation of fairness and bias in such models. In contrast, we propose an intuitive taxonomy for fairness evaluation metrics.",
+      "(2023b), and Meade, Poole-Dayan, and Reddy (2021) has focused on specific axes of bias evaluation and mitigation, such as extrinsic fairness metrics, empirical validation, and language generation interventions, our work provides increased breadth and depth. Specifically, we offer a comprehensive overview of bias evaluation and mitigation techniques across a wide range of NLP tasks and applications, synthesizing diverse bodies of work to surface unifying themes and overarching challenges."
+    ],
+    "title": "Bias and Fairness in Large Language Models: A Survey | Computational ...",
+    "url": "https://direct.mit.edu/coli/article/50/3/1097/121961/Bias-and-Fairness-in-Large-Language-Models-A"
+  },
+  {
+    "description": "Our categorization of intrinsic ... et al., 2024). We have evaluated a range of bias assessment techniques, from data-level analysis to human-involved methods, providing researchers with a diverse toolkit for bias evaluation (Liang et al., 2021). Our examination of mitigation strategies, encompassing pre-model, intra-model, and post-model approaches, highlights both promising developments and areas that require further research (Ferrara, 2023; Liu et al., 2022)...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Our categorization of intrinsic and extrinsic biases offers a structured approach to understanding their impact on various NLP tasks (Doan et al., 2024; Gallegos et al., 2024). We have evaluated a range of bias assessment techniques, from data-level analysis to human-involved methods, providing researchers with a diverse toolkit for bias evaluation (Liang et al., 2021). Our examination of mitigation strategies, encompassing pre-model, intra-model, and post-model approaches, highlights both promising developments and areas that require further research (Ferrara, 2023; Liu et al., 2022).",
+      "Calibration: This metric checks whether predicted probabilities align with actual occurrences, particularly across different demographic groups, ensuring that the model\u2019s confidence in its predictions is justified Doan et al. (2024); Esiobu et al. (2023). ... Interpretability Tools: Tools such as SHAP (Shapley Additive Explanations) Mosca et al. (2022) and LIME (Local Interpretable Model-agnostic Explanations) Wu et al.",
+      "For instance, internet-based datasets can include unmoderated, biased, or hateful content. Academic papers tend to be more neutral, but they often lack the diversity of language found in social media or everyday conversations (Gallegos et al., 2024; KUNTZ and SILVA, 2023; Qu and Wang, 2024).",
+      "Can llms recognize toxicity? structured toxicity investigation framework and semantic-based metric. arXiv preprint arXiv:2402.06900, 2024. Kotek et al. (2023) Hadas Kotek, Rikker Dockum, and David Sun. Gender bias and stereotypes in large language models. In Proceedings of the ACM collective intelligence conference, pages 12\u201324, 2023. KUNTZ and SILVA (2023) JESSICA B KUNTZ and ELISE C SILVA. Who authors the internet? Analyzing Gender Diversity in ChatGPT-3 Training Data."
+    ],
+    "title": "Bias in Large Language Models: Origin, Evaluation, and Mitigation",
+    "url": "https://arxiv.org/html/2411.10915v1"
+  },
+  {
+    "description": "A major factor in the recent success of large language models is the use of enormous and ever-growing text datasets for unsupervised pre-training. However, naively training a model on all available data may not be optimal (or feasible), as the quality of available text data can vary.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2402.16827: A Survey on Data Selection for Language Models",
+      "Additionally, throughout this review we draw attention to noticeable holes in the literature and conclude the paper by proposing promising avenues for future research. From: Alon Albalak [view email] [v1] Mon, 26 Feb 2024 18:54:35 UTC (1,308 KB) [v2] Fri, 8 Mar 2024 20:04:01 UTC (1,764 KB) [v3] Fri, 2 Aug 2024 17:59:31 UTC (1,771 KB)",
+      "View a PDF of the paper titled A Survey on Data Selection for Language Models, by Alon Albalak and 13 other authors View PDF HTML (experimental)",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2402.16827] A Survey on Data Selection for Language Models",
+    "url": "https://arxiv.org/abs/2402.16827"
+  },
+  {
+    "description": "The annotated samples are then ... et al., 2024b) are given a target task and retrieve relevant publicly available fine-tuning datasets, using an LLM to adapt the retrieved data to the format of the given task. Several papers (Viswanathan et al., 2023; Ding et al., 2023; Huang et al., 2022) use LLMs to generate labels for unlabeled datasets using self-consistency techniques. Lanchantin et al. (2023) annotates a pre-training dataset with self-notes improving the model\u2019s downstream ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The annotated samples are then used to construct a synthetic fine-tuning dataset. prompt2model (Viswanathan et al., 2023) and DataTune (Gandhi et al., 2024b) are given a target task and retrieve relevant publicly available fine-tuning datasets, using an LLM to adapt the retrieved data to the format of the given task. Several papers (Viswanathan et al., 2023; Ding et al., 2023; Huang et al., 2022) use LLMs to generate labels for unlabeled datasets using self-consistency techniques. Lanchantin et al. (2023) annotates a pre-training dataset with self-notes improving the model\u2019s downstream predictions.",
+      "In such cases, alternative metrics have been proposed. MAUVE (Pillutla et al., 2021; Ye et al., 2022a) proposes to approximate the area under the divergence curve between the given data and a reference dataset. Other works simply define quality as performance on a downstream benchmark: Zhou et al. (2023a); Viswanathan et al. (2023); Gandhi et al. (2024a). Neural measures: When training data is available, reward models can be trained and generalize to unseen samples.",
+      "Each of these methods utilize a neural network to embed the data, followed by some clustering and a removal of data within each cluster according to some similarity metric. In particular for pre-training where the downstream goals are not known, data deduplication reduces the risk of models overfitting to anything in particular, and has been shown to sometimes improve accuracy on downstream tasks (Tirumala et al., 2023). Additionally, a number of works have found that training on more diverse data can lead to improved performance (Lee et al., 2022; Tirumala et al., 2023). For example, Ye et al. (2024a) found that pretraining on datasets with higher diversity generally improves performance on downstream domains.",
+      "Aside from using a strong teacher model, the primary way quality is maintained during the synthetic data pipeline is through aggressive filtering with various quality metrics discussed in Section 2.1. Many works (Zhou et al., 2023a; Chen et al., 2024b; Cao et al., 2024) demonstrate quality filtering synthetic data generated by strong base models can further improve performance of the student. Some filtering can be done at the syntactic level to ensure generated outputs follow an expected structure. For example, Honovich et al. (2022) filter out all samples not in prompt response format."
+    ],
+    "title": "Surveying the Effects of Quality, Diversity, and Complexity in ...",
+    "url": "https://arxiv.org/html/2412.02980v2"
+  },
+  {
+    "description": "Abstract. Task semantics can be expressed by a set of input-output examples or a piece of textual instruction. Conventional machine learning approaches for natural language processing (NLP) mainly rely on the availability of large-scale sets of task-specific examples.",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "We report the cross-task generalization performances of two widely-adopted instruction-tuned LLMs, namely Flan-T5 and Flan-PaLM (Chung et al. 2022), where the source scores mainly come from (Wei et al. 2022a; Chung et al. 2022; Longpre et al. 2023). It is worth noting that different papers may utilize distinct evaluation benchmarks with various metrics.",
+      "In a word, the choice between human-annotated and LLM-synthetic datasets can also be regarded as a trade-off between data quality and diversity. Previous work has concluded that both factors affect the performance of the resulting models (Chung et al. 2022; Longpre et al. 2023)\u2014mixing human and machine data can lead to better results (Wang et al. 2023c; Yin et al. 2023a), while there is no concrete conclusion about which factor outweighs the other, which highly depends on the downstream tasks and application situations. How to evaluate an instruction-tuned model is also a crucial topic.",
+      "Based on the promising results of adopting CoT, more advanced variations were proposed for more accurate reasoning, such as program-of-thoughts (PoT) (Chen et al. 2022a), tree-of-thoughts (ToT) (Yao et al. 2023), graph-of-thoughts (GoT) (Besta et al. 2024), and CoT with self-consistency decoding augmentation (Wang et al.",
+      "Ouyang et al. (2022) defined \u201calignment\u201d with three criteria\u2014Helpful, Honest, and Harmless (HHH), which has been widely considered by the previous instruction tuning models and datasets (Bai et al. 2022b; Yin et al. 2023a; Wang et al. 2023c; Lou et al. 2024)."
+    ],
+    "title": "Large Language Model Instruction Following: A Survey of Progresses ...",
+    "url": "https://direct.mit.edu/coli/article/50/3/1053/121669/Large-Language-Model-Instruction-Following-A"
+  },
+  {
+    "description": "Abstract. This paper examines the comparative effectiveness of a specialized compiled language model and a general-purpose model such as OpenAI\u2019s GPT-3.5 in detecting sustainable development goals (SDGs) within text data. It presents a critical review of large language models (LLMs), addressing ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. This paper examines the comparative effectiveness of a specialized compiled language model and a general-purpose model such as OpenAI\u2019s GPT-3.5 in detecting sustainable development goals (SDGs) within text data. It presents a critical review of large language models (LLMs), addressing challenges related to bias and sensitivity.",
+      "In critical domains such as healthcare, where clinician oversight and autonomy are important, simpler, more transparent ML models may be preferable due to concerns around the interpretability and potential biases of large black-box models such as LLMs (Fisch et al., 2024; Huang et al., 2023; Reese et al., 2023; Takahashi et al., 2023). Our methodological contribution involves a comparative analysis between GPT-3.5 and the specialized SDG model, providing valuable insights into the strengths and weaknesses of both general and task-specific AI models. We not only assessed performance metrics but also scrutinized their usability, interpretability, and limitations.",
+      "This may be seen as wider detection ability, but it should also highlight the need for caution when relying on GPT-3.5 generated content for analyses requiring focused and robust detection. The role of human expertise in interacting with automated SDG classification models cannot be overstated. Despite the advances in AI and NLP, the SDGs lack unanimous interpretation, and some argue that the goals are too vague (Sianes et al., 2022; Spangenberg, 2017). Scholars have developed competing categorizations and indicators to enhance understanding of SDG application, suggesting a diversity of interpretation even among experts (Diaz-Sarachaga et al., 2018; Hametner & Kostetckaia, 2020; Lehtonen et al., 2016; Tremblay et al., 2020).",
+      "In contrast, specialized language models are tailored to specific domains, such as legal documents or biology, where utilizing in-domain text for training can enhance their performance (Quevedo et al., 2023). Recent advances in NLP have led to the development of powerful LLMs capable of performing a wide range of tasks. However, despite their impressive capabilities, general-purpose LLMs often struggle with domain-specific tasks that require specialized knowledge (Brown, Mann et al., 2020; Shen, Tenenholtz et al., 2024; Singhal, Azizi et al., 2023; Touvron, Lavril et al., 2023; Vinod, Chen, & Das, 2023)."
+    ],
+    "title": "A critical review of large language models: Sensitivity, bias, ...",
+    "url": "https://direct.mit.edu/qss/article/5/3/736/120940/A-critical-review-of-large-language-models"
+  },
+  {
+    "description": "Main: Generation Main-oral Paper \u00b7 \u00a9 2023 Association for Computational Linguistics",
+    "favicon_url": "https://you.com/favicon?domain=virtual2023.aclweb.org&size=128",
+    "snippets": [
+      "You can open the #paper-P3438 channel in a separate window. Abstract: Large language models (LLMs) can be used to generate text data for training and evaluating other models. However, creating high-quality datasets with LLMs can be challenging. In this work, we explore human-AI partnerships to facilitate high diversity and accuracy in LLM-based text data generation.",
+      "\ud83d\udcdd Paper Anthology Underline \ud83e\udea7 Poster \ud83d\udcfa Watch Video on Underline Add to Favorites ... TLDR: Large language models (LLMs) can be used to generate text data for training and evaluating other models. However, creating high-quality datasets with LLMs can be challenging.",
+      "To address this issue, we examined two human interventions, 1) label replacement (LR), correcting misaligned labels, and 2) out-of-scope filtering (OOSF), removing instances that are out of the user's domain of interest or to which no considered label applies. With oracle studies, we found that LR increases the absolute accuracy of models trained with diversified datasets by 14.4\\%. Moreover, we found that some models trained with data generated with LR interventions outperformed LLM-based few-shot classification.",
+      "In contrast, OOSF was not effective in increasing model accuracy, implying the need for future work in human-in-the-loop text data generation."
+    ],
+    "title": "ACL2023: Increasing Diversity While Maintaining Accuracy: Text ...",
+    "url": "https://virtual2023.aclweb.org/paper_P3438.html"
+  },
+  {
+    "description": "Large Language Models (LLMs) have drawn a lot of attention due to their strong performance on a wide range of natural language tasks, since the release of ChatGPT in November 2022. LLMs\u2019 ability of general-purpose language understanding and generation is acquired by training billions of model\u2019s ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The most important milestone of LLM development is the launch of ChatGPT (Chat Generative Pre-trained Transformer) [60] on November 30, 2022. ChatGPT is chatbot that enables users to steer a conversation to complete a wide range of tasks such as question answering, information seeking, text summarization, and more. ChatGPT is powered by GPT-3.5 (and later by GPT-4), a sibling model to InstructGPT, which is trained to follow an instruction in a prompt and provide a detailed response. GPT-4 [33] is the latest and most powerful LLM in the GPT family. Launched in March, 2023, GPT-4 is a multimodal LLM in that it can take image and text as inputs and produce text outputs.",
+      "The PaLM (Pathways Language Model) family are developed by Google. The first PaLM model [31] was announced in April 2022 and remained private until March 2023. It is a 540B parameter transformer-based LLM. The model is pre-trained on a high-quality text corpus consisting of 780 billion tokens that comprise a wide range of natural language tasks and use cases.",
+      "In the rest of this paper, Section II presents an overview of state of the art of LLMs, focusing on three LLM families (GPT, LLaMA and PaLM) and other representative models. Section III discusses how LLMs are built. Section IV discusses how LLMs are used, and augmented for real-world applications Sections V and VI review popular datasets and benchmarks for evaluating LLMs, and summarize the reported LLM evaluation results.",
+      "In this paper, we review some of the most prominent LLMs, including three popular LLM families (GPT, LLaMA, PaLM), and discuss their characteristics, contributions and limitations. We also give an overview of techniques developed to build, and augment LLMs. We then survey popular datasets prepared for LLM training, fine-tuning, and evaluation, review widely used LLM evaluation metrics, and compare the performance of several popular LLMs on a set of representative benchmarks."
+    ],
+    "title": "Large Language Models: A Survey",
+    "url": "https://arxiv.org/html/2402.06196v2"
+  },
+  {
+    "description": "Language is essentially a complex, intricate system of human expressions governed by grammatical rules. It poses a significant challenge to develop capable AI algorithms for comprehending and grasping a language. As a major approach, language modeling has been widely studied for language ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Language is essentially a complex, intricate system of human expressions governed by grammatical rules. It poses a significant challenge to develop capable AI algorithms for comprehending and grasping a language. As a major approach, language modeling has been widely studied for language understanding and generation in the past two decades, evolving from statistical language models to neural language models.",
+      "Abstract page for arXiv paper 2303.18223: A Survey of Large Language Models",
+      "From: Kun Zhou [view email] [v1] Fri, 31 Mar 2023 17:28:46 UTC (991 KB) [v2] Sun, 9 Apr 2023 15:49:09 UTC (1,306 KB) [v3] Tue, 11 Apr 2023 16:20:17 UTC (1,305 KB) [v4] Wed, 12 Apr 2023 16:13:54 UTC (1,310 KB) [v5] Sun, 16 Apr 2023 16:42:37 UTC (1,678 KB) [v6] Mon, 24 Apr 2023 16:53:57 UTC (2,528 KB) [v7] Tue, 25 Apr 2023 14:42:36 UTC (2,528 KB) [v8] Thu, 27 Apr 2023 15:54:48 UTC (2,533 KB) [v9] Fri, 28 Apr 2023 15:39:09 UTC (2,534 KB) [v10] Sun, 7 May 2023 17:59:15 UTC (2,031 KB) [v11] Thu, 29 Jun 2023 16:09:05 UTC (4,226 KB) [v12] Mon, 11 Sep 2023 15:13:59 UTC (4,687 KB) [v13] Fri, 24 Nov 2023 13:57:45 UTC (6,600 KB) [v14] Tue, 24 Sep 2024 07:02:59 UTC (5,852 KB) [v15] Sun, 13 Oct 2024 06:11:31 UTC (5,852 KB) [v16] Tue, 11 Mar 2025 16:51:11 UTC (7,340 KB) ... View a PDF of the paper titled A Survey of Large Language Models, by Wayne Xin Zhao and 20 other authors",
+      "View a PDF of the paper titled A Survey of Large Language Models, by Wayne Xin Zhao and 20 other authors View PDF HTML (experimental)"
+    ],
+    "title": "[2303.18223] A Survey of Large Language Models",
+    "url": "https://arxiv.org/abs/2303.18223"
+  },
+  {
+    "description": "A significant advancement in artificial intelligence is the development of large language models (LLMs). Despite opposition and explicit bans by some authorities, LLMs continue to play a transformative role, particularly in education, by improving language understanding and generation capabilities.",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Discover Sustainability - A significant advancement in artificial intelligence is the development of large language models (LLMs). Despite opposition and explicit bans by some authorities, LLMs...",
+      "ChatGPT and a new academic reality: artificial Intelligence- written research papers and the ethics of the large language models in scholarly publishing. J Am Soc Inf Sci. 2023;74(5):570\u201381. ... Du M, et al. Shortcut learning of large language models in natural language understanding: a survey. arXiv preprint arXiv:2208.11857, 2022.",
+      "Straka M, Hajic J, Strakova J. UDPipe: a trainable pipeline for processing CoNLL-U files performing tokenization, morphological analysis, pos tagging, and parsing. in Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC\u201916). 2016. Yang Z, et al. Xlnet: generalized autoregressive pretraining for language under- standing. Advances in neural information processing systems. 2019. 32. Hoffmann, J., et al., Training compute-optimal large language models. arXiv preprint arXiv:2203.15556, 2022. Zhao WX, et al. A survey of large language models. arXiv preprint arXiv:2303.18223, 2023.",
+      "A review on cultivating effective learning: synthesizing educational theories and virtual reality for enhanced educational experiences. PeerJ Comput Sci. 2024;10: e2000. https://doi.org/10.7717/peerj-cs.2000. ... Analytica O. GPT-4 underlines mismatch on AI policy and innovation. Emerald Expert Briefings, 2023(oxan-es)."
+    ],
+    "title": "A comprehensive review of large language models: issues and solutions ...",
+    "url": "https://link.springer.com/article/10.1007/s43621-025-00815-8"
+  },
+  {
+    "description": "Large language models (LLMs) can be used to generate text data for training and evaluating other models. However, creating high-quality datasets with LLMs can be challenging. In this work, we explore human-AI partnerships to facilitate high diversity and accuracy in LLM-based text data generation.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2306.04140: Increasing Diversity While Maintaining Accuracy: Text Data Generation with Large Language Models and Human Interventions",
+      "In contrast, OOSF was not effective in increasing model accuracy, implying the need for future work in human-in-the-loop text data generation. From: John Chung [view email] [v1] Wed, 7 Jun 2023 04:27:09 UTC (1,074 KB) ... View a PDF of the paper titled Increasing Diversity While Maintaining Accuracy: Text Data Generation with Large Language Models and Human Interventions, by John Joon Young Chung and 2 other authors",
+      "View a PDF of the paper titled Increasing Diversity While Maintaining Accuracy: Text Data Generation with Large Language Models and Human Interventions, by John Joon Young Chung and 2 other authors View PDF \u00b7 Abstract:Large language models (LLMs) can be used to generate text data for training and evaluating other models.",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2306.04140] Increasing Diversity While Maintaining Accuracy: Text ...",
+    "url": "https://arxiv.org/abs/2306.04140"
+  },
+  {
+    "description": "Large language models (LLMs) are gaining increasing popularity in both academia and industry, owing to their unprecedented performance in various applications. As LLMs continue to play a vital role in both research and daily use, their evaluation becomes ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "The development of standardized benchmarks for evaluating LLMs on diverse tasks has been an important research focus. MMLU [70] provides a comprehensive suite of tests for assessing text models in multi-task contexts. AlpacaEval [112] stands as an automated evaluation benchmark, which places its focus on assessing the performance of LLMs across various natural language processing tasks. It provides a range of metrics, robustness measures, and diversity evaluations to gauge the capabilities of LLMs.",
+      "Some work focuses on other trustworthiness problems in addition to robustness and ethics.3 In their 2023 study, DecodingTrust, Wang et al. [201] offered a multifaceted exploration of trustworthiness vulnerabilities in the GPT models, especially GPT-3.5 and GPT-4.",
+      "Trend of LLMs evaluation papers over time (2020 - Jun. 2023, including Jul.",
+      "2023.) This paper serves as the first comprehensive survey on the evaluation of large language models. As depicted in Fig. 1, we explore existing work in three dimensions: 1) What to evaluate, 2) Where to evaluate, and 3) How to evaluate."
+    ],
+    "title": "A Survey on Evaluation of Large Language Models | ACM Transactions ...",
+    "url": "https://dl.acm.org/doi/full/10.1145/3641289"
+  },
+  {
+    "description": "Since then, additional metrics ... et al., 2022), and syntactic diversity metrics derived from n-grams of Part-of-Speech (POS) tags (Giulianelli et al., 2023) or graph similarity kernels of syntax trees (Guo et al., 2024b). Diverging from the above research focused on developing methods to evaluate linguistic ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Since then, additional metrics have been proposed to capture linguistic diversity, including semantic diversity metrics based on natural language inference (Stasaski and Hearst, 2022) or semantic entropy (Han et al., 2022), and syntactic diversity metrics derived from n-grams of Part-of-Speech (POS) tags (Giulianelli et al., 2023) or graph similarity kernels of syntax trees (Guo et al., 2024b). Diverging from the above research focused on developing methods to evaluate linguistic diversity, another line of work explores the the impact of LLMs on both human and model generated text, often demonstrating a decline in diversity.",
+      "Currently, a principled and comprehensive evaluation framework for linguistic diversity is lacking in the literature (Shaib et al., 2024a). While some studies on Natural Language Generation (NLG) report diversity metrics, they typically focus on a single diversity aspect (e.g., lexical diversity (Chakrabarty et al., 2022)), often experimenting within a single domain and task (e.g., news summarization (Shaib et al., 2024a)).",
+      "Recent Large Language Models (LLMs) have exhibited outstanding capabilities in generating both natural and formal language (Brown et al., 2020; Touvron et al., 2023), while also achieving human-level performance in language understanding, commonsense reasoning, and various other tasks (Hendrycks et al., 2020). This has led to evaluations that predominantly focus on these specific abilities (Wang et al., 2024).",
+      "Figure 3: Pearson correlation matrix between different diversity metrics. Large language models. We evaluate the following families of models: Llama (Dubey et al., 2024), Mistral (Jiang et al., 2023), Olmo (Groeneveld et al., 2024), Gemma (Team et al., 2024), Qwen (Yang et al., 2024), Falcon (Almazrouei et al., 2023)."
+    ],
+    "title": "Benchmarking Linguistic Diversity of Large Language Models",
+    "url": "https://arxiv.org/html/2412.10271"
+  },
+  {
+    "description": "The rise of Large Language Models (LLMs) like ChatGPT marks a pivotal advancement in artificial intelligence, reshaping the landscape of data analysis and processing. By simulating public opinion, ChatGPT shows promise in facilitating public policy development.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Humanities and Social Sciences Communications - Performance and biases of Large Language Models in public opinion simulation",
+      "Our findings align with recent studies that underscore the challenges in using LLMs to simulate diverse human survey responses. Liu et al. (2022) and Liang et al. (2021), Alon-Barkat and Busuioc (2023), consistently show that GPT models tend to overrepresent perspectives aligned with liberal, higher-income, and well-educated demographics. Bisbee et al. (2024) found that LLM-generated outputs often lack diversity and exhibit more bias than actual survey data, particularly underrepresenting minority opinions.",
+      "Boelaert J, Coavoux S, Ollion E, Petev ID, Pr\u00e4g P (2024) Machine Bias. Generative Large Language Models Have a View of Their Own. OSF. https://doi.org/10.31235/osf.io/r2pnb \u00b7 Brand J, Israeli A, Ngwe D (2023) Using GPT for Market Research (SSRN Scholarly Paper 4395751).",
+      "Cowen T, Tabarrok AT (2023) How to Learn and Teach Economics with Large Language Models, Including GPT (SSRN Scholarly Paper 4391863). https://doi.org/10.2139/ssrn.4391863 \u00b7 Davis J, Bulck LV, Durieux BN, Lindvall C (2024) The temperature feature of ChatGPT: modifying creativity for clinical research."
+    ],
+    "title": "Performance and biases of Large Language Models in public opinion ...",
+    "url": "https://www.nature.com/articles/s41599-024-03609-x"
+  },
+  {
+    "description": "Large language models (LLMs) are gaining increasing popularity in both academia and industry, owing to their unprecedented performance in various applications. As LLMs continue to play a vital role in both research and daily use, their evaluation becomes increasingly critical, not only at the ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Large language models (LLMs) are gaining increasing popularity in both academia and industry, owing to their unprecedented performance in various applications. As LLMs continue to play a vital role in both research and daily use, their evaluation becomes increasingly critical, not only at the task level, but also at the society level for better understanding of their potential risks.",
+      "Abstract page for arXiv paper 2307.03109: A Survey on Evaluation of Large Language Models",
+      "From: Jindong Wang [view email] [v1] Thu, 6 Jul 2023 16:28:35 UTC (117 KB) [v2] Sun, 9 Jul 2023 12:31:50 UTC (114 KB) [v3] Wed, 12 Jul 2023 15:43:03 UTC (116 KB) [v4] Thu, 13 Jul 2023 12:33:20 UTC (117 KB) [v5] Tue, 18 Jul 2023 08:11:21 UTC (118 KB) [v6] Wed, 2 Aug 2023 07:39:17 UTC (121 KB) [v7] Mon, 28 Aug 2023 05:50:53 UTC (123 KB) [v8] Tue, 17 Oct 2023 06:28:04 UTC (145 KB) [v9] Fri, 29 Dec 2023 02:12:03 UTC (151 KB) ... View a PDF of the paper titled A Survey on Evaluation of Large Language Models, by Yupeng Chang and 15 other authors",
+      "Over the past years, significant efforts have been made to examine LLMs from various perspectives. This paper presents a comprehensive review of these evaluation methods for LLMs, focusing on three key dimensions: what to evaluate, where to evaluate, and how to evaluate."
+    ],
+    "title": "[2307.03109] A Survey on Evaluation of Large Language Models",
+    "url": "https://arxiv.org/abs/2307.03109"
+  },
+  {
+    "description": "Data selection is of great significance in pretraining large language models, given the variation in quality within the large-scale available training corpora. To achieve this, researchers are currently investigating the use of data influence to measure the importance of data instances, $i.e.,$ ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Data selection is of great significance in pretraining large language models, given the variation in quality within the large-scale available training corpora. To achieve this, researchers are currently investigating the use of data influence to measure the importance of data instances, $i.e.,$ a high influence score indicates that incorporating this instance to the training set is likely to enhance the model performance.",
+      "For each cluster, if we opt to select data from it, we take some samples to evaluate the influence to prevent processing all instances. Overall, we favor clusters with highly influential instances (ensuring high quality) or clusters that have been selected less frequently (ensuring diversity), thereby well balancing between quality and diversity. Experiments on Slimpajama and FineWeb over 7B large language models demonstrate that $\\texttt{Quad}$ significantly outperforms other data selection methods with a low FLOPs consumption.",
+      "(2) The selected data instances are not diverse enough, which may hinder the pretrained model's ability to generalize effectively to various downstream tasks. In this paper, we introduce $\\texttt{Quad}$, a data selection approach that considers both quality and diversity by using data influence to achieve state-of-the-art pretraining results.",
+      "Primary Area: foundation or frontier models, including LLMs"
+    ],
+    "title": "Harnessing Diversity for Important Data Selection in Pretraining ...",
+    "url": "https://openreview.net/forum?id=bMC1t7eLRc"
+  },
+  {
+    "description": "Abstract. Large language models (LLMs) are capable of successfully performing many language processing tasks zero-shot (without training data). If zero-shot LLMs can also reliably classify and explain social phenomena like persuasiveness and political ideology, then LLMs could augment the ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. Large language models (LLMs) are capable of successfully performing many language processing tasks zero-shot (without training data). If zero-shot LLMs can also reliably classify and explain social phenomena like persuasiveness and political ideology, then LLMs could augment the computational social science (CSS) pipeline in important ways.",
+      "2023). Combining LLMs with true human samples is essential to avoid an algorithmic monoculture and could lead to fragile findings covering only the limited perspectives represented (Kleinberg and Raghavan 2021; Bommasani et al. 2022). Evaluation will need to adapt if blended methods create a new CSS paradigm. Accuracy-based metrics were ideal for fixed-taxonomy classification tasks in the era of NLP benchmarking.",
+      "Caleb ran the OpenAI and Flan-T5/UL2 prompt perturbation experiments and few-shot experiments. Zhehao was responsible for all baseline experiments. Caleb managed the human evaluations. All authors contributed to discussion, results, error analysis, and paper writing. ... Computational Linguistics (2024) 50 (1): 237\u2013291.",
+      "2022; Saldias and Roy 2020; Boyd, Blackburn, and Pennebaker 2020). Settings can be identified using named entity recognition (Brooke, Hammond, and Baldwin 2016) and toponym resolution (DeLozier et al. 2016), which are already demonstrably solved by prompted models like GPT 3.5 Turbo (Qin et al. 2023). Themes are typically the subject of topic modeling, which is outside the scope of LLMs. Instead we focus on NLP for narrative analysis."
+    ],
+    "title": "Can Large Language Models Transform Computational Social Science?",
+    "url": "https://direct.mit.edu/coli/article/50/1/237/118498/Can-Large-Language-Models-Transform-Computational"
+  },
+  {
+    "description": "Social identity biases, particularly the tendency to favor one\u2019s own group (ingroup solidarity) and derogate other groups (outgroup hostility), are deeply rooted in human psychology and social behavior. However, it is unknown if such biases are also present in artificial intelligence systems.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Nature Computational Science - Researchers show that large language models exhibit social identity biases similar to humans, having favoritism toward ingroups and hostility toward outgroups. These...",
+      "Researchers show that large language models exhibit social identity biases similar to humans, having favoritism toward ingroups and hostility toward outgroups. These biases persist across models, training data and real-world human\u2013LLM conversations.",
+      "Preprint at https://arxiv.org/abs/2311.08596 (2024). Feng, S., Park, C. Y., Liu, Y. & Tsvetkov, Y. From pretraining data to language models to downstream tasks: tracking the trails of political biases leading to unfair NLP models. In Proc. 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) 11737\u201311762 (ACL, 2023); https://aclanthology.org/2023.acl-long.656",
+      "Webb, T., Holyoak, K. J. & Lu, H. Emergent analogical reasoning in large language models. Nat. Hum. Behav. 7, 1526\u20131541 (2023). ... Kosinski, M. Evaluating large language models in theory of mind tasks. Proc. Natl Acad. Sci. USA 121, e2405460121 (2024)."
+    ],
+    "title": "Generative language models exhibit social identity biases | Nature ...",
+    "url": "https://www.nature.com/articles/s43588-024-00741-1"
+  },
+  {
+    "description": "Boost Your LLM Success! Discover the Essential Things to Consider for Data Collection and Preprocessing. Don't Miss Out!",
+    "favicon_url": "https://you.com/favicon?domain=www.labellerr.com&size=128",
+    "snippets": [
+      "Language-based filtering removes texts in languages irrelevant to the LLM's tasks, while metric-based filtering uses evaluation metrics like perplexity to detect unnatural sentences. Statistic-based filtering measures text quality based on statistical features of the corpus, while keyword-based filtering removes noisy or unuseful elements based on specific keyword sets, such as HTML tags, hyperlinks, boilerplates, and offensive words. Previous research has shown that having duplicate data in a pre-training corpus can reduce the diversity of language models, potentially leading to instability during training and negatively impacting the model's performance.",
+      "This section focuses on the acquisition and processing of pretraining data, which includes the sources of data, methods for preprocessing, and an analysis of how pretraining data affects the performance of LLMs. Data collection for AI is a foundational step that directly influences the success of training Large Language Models. Gathering diverse, high-quality text data from multiple sources ensures that AI models learn a broad range of language patterns and knowledge.",
+      "Given LLMs' various opportunities and challenges, focusing on research and development in this area is important. In this article, we\u2019ll learn about the key components of successful data preparation, including recent advancements in pre-training methods, adaptation tuning for improved effectiveness and safety, practical utilization for diverse applications, and robust capability evaluation techniques.",
+      "Most LLMs use general data, such as web pages, books, and conversations, as their pre-training corpus because it is abundant, diverse, and easily accessible. This helps improve their language modeling and generalization skills."
+    ],
+    "title": "Data Collection and Preprocessing for LLMs [Updated]",
+    "url": "https://www.labellerr.com/blog/data-collection-and-preprocessing-for-large-language-models/"
+  },
+  {
+    "description": "NLP systems generally suffer from ... et al., 2022; Navigli et al., 2023; Luo et al., 2024). Social bias can be introduced at various points during the development and deployment of NLP systems (Hovy and Prabhumoye, 2021), but given the unsupervised nature of language modeling, training corpora are a key source of social bias in LLMs (Bender et al., 2021; Ferrara, 2023). While bias in NLP systems can harm people in various ways (Blodgett et al., 2020), in this section, we primarily focus on two common ...",
+    "favicon_url": "https://you.com/favicon?domain=www.frontiersin.org&size=128",
+    "snippets": [
+      "NLP systems generally suffer from social bias: their real-world application leads to outcomes that unfairly disadvantage or harm specific social groups (Shah et al., 2020; Blodgett et al., 2020; Dev et al., 2022; Navigli et al., 2023; Luo et al., 2024). Social bias can be introduced at various points during the development and deployment of NLP systems (Hovy and Prabhumoye, 2021), but given the unsupervised nature of language modeling, training corpora are a key source of social bias in LLMs (Bender et al., 2021; Ferrara, 2023). While bias in NLP systems can harm people in various ways (Blodgett et al., 2020), in this section, we primarily focus on two common harmful outcomes of social bias.",
+      "Despite increasing concerns about the risks of LLMs (Bender et al., 2021), experts across many fields believe they will have a major impact on society, including in medicine (Thirunavukarasu et al., 2023; Huang Y. et al., 2024), education (Kasneci et al., 2023; Yigci et al., 2024), computer programming (Li et al., 2022; Wang et al., 2024), journalism (Pavlik, 2023; Li et al., 2024), economics (Horton, 2023; Guo and Yang, 2024), and technical writing (Lund et al., 2023; Cruz-Castro et al., 2024).",
+      "Researchers in this emerging field have stressed for the past decade that the performance of NLP systems generally varies for people from different social groups and have called for engagement with description and theory from sociolinguistics to help address this basic form of social bias (e.g., Hovy and S\u00f8gaard, 2015; J\u00f3rgensen et al., 2015; Blodgett and O'Connor, 2017; Jurgens et al., 2017; Schramowski et al., 2022; Hofmann et al., 2024). Second, social bias can be characterized by systems that produce outputs that directly harm or discriminate against certain social groups even when they are not directly engaging with these systems themselves. For example, when prompted, ChatGPT might be more likely to produce negative portrayals of certain ethnicities and genders, no matter who is doing the prompting (Bommasani et al., 2021; Lahoti et al., 2023).",
+      "In practice, further pretraining has been proven to be an effective way of improving the performance of LLMs across a wide range of downstream tasks, including medical text processing (Lehman et al., 2023; Nazi and Peng, 2024), cross-lingual transfer (Aggarwal et al., 2024), and named-entity recognition in low-resources domains (Mahapatra et al., 2022)."
+    ],
+    "title": "Frontiers | The sociolinguistic foundations of language modeling",
+    "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2024.1472411/full"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "Increasing Diversity While Maintaining Accuracy: Text Data ...",
+    "url": "https://aclanthology.org/2023.acl-long.34.pdf"
+  }
+]

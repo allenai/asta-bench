@@ -1,0 +1,283 @@
+[
+  {
+    "description": "Adversarial prompting is an important topic in prompt engineering as it could help to understand the risks and safety issues involved with LLMs. It's also an important discipline to identify these risks and design techniques to address the issues \u00b7 The community has found many different types ...",
+    "favicon_url": "https://you.com/favicon?domain=www.promptingguide.ai&size=128",
+    "snippets": [
+      "Adversarial prompting is an important topic in prompt engineering as it could help to understand the risks and safety issues involved with LLMs. It's also an important discipline to identify these risks and design techniques to address the issues.",
+      "While ChatGPT prevents a lot of these adversarial prompting techniques, it's not perfect and there are still many new and effective adversarial prompts that break the model. One disadvantage with ChatGPT is that because the model has all of these guardrails, it might prevent certain behaviors that are desired but not possible given the constraints. There is a tradeoff with all these model types and the field is constantly evolving to better and more robust solutions. Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations (opens in a new tab) (Jan 2024)",
+      "So it's harder to jailbreak them but they still have flaws and we are learning new ones as people experiment with these systems in the open. LLMs like ChatGPT includes guardrails limiting the model from outputting harmful, illegal, unethical, or violent content of any kind. However, users on Reddit found a jailbreaking technique that allows a user to bypass the model rules and creating a character called DAN (Do Anything Now) that forces the model to comply with any request leading the system to generate unfiltered responses.",
+      "A Comprehensive Overview of Prompt Engineering"
+    ],
+    "title": "Adversarial Prompting in LLMs | Prompt Engineering Guide",
+    "url": "https://www.promptingguide.ai/risks/adversarial"
+  },
+  {
+    "description": "The following are the latest papers (sorted by release date) on prompt engineering for large language models (LLMs). We update the list of papers on a daily/weekly basis",
+    "favicon_url": "https://you.com/favicon?domain=www.promptingguide.ai&size=128",
+    "snippets": [
+      "MvP: Multi-view Prompting Improves Aspect Sentiment Tuple Prediction (opens in a new tab) (May 2023) Learning Interpretable Style Embeddings via Prompting LLMs (opens in a new tab) (May 2023)",
+      "Are LLMs All You Need for Task-Oriented Dialogue? (opens in a new tab) (April 2023) HiPrompt: Few-Shot Biomedical Knowledge Fusion via Hierarchy-Oriented Prompting (opens in a new tab) (April 2023) Approximating Human Evaluation of Social Chatbots with Prompting (opens in a new tab) (April 2023) Automated Reading Passage Generation with OpenAI's Large Language Model (opens in a new tab) (April 2023) WebBrain: Learning to Generate Factually Correct Articles for Queries by Grounding on Large Web Corpus (opens in a new tab) (April 2023)",
+      "A Comprehensive Overview of Prompt Engineering",
+      "The following are the latest papers (sorted by release date) on prompt engineering for large language models (LLMs). We update the list of papers on a daily/weekly basis. The Prompt Report: A Systematic Survey of Prompting Techniques (opens in a new tab) (June 2024)"
+    ],
+    "title": "Papers | Prompt Engineering Guide",
+    "url": "https://www.promptingguide.ai/papers"
+  },
+  {
+    "description": "Future research and development ... protect LLMs from emerging threats and ensure their safe deployment. Adversarial example generation is a fundamental technique in AI security, designed to test and enhance the robustness of machine learning models. By creating inputs that intentionally mislead models into making incorrect predictions, researchers ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Future research and development should focus on advancing these practices to protect LLMs from emerging threats and ensure their safe deployment. Adversarial example generation is a fundamental technique in AI security, designed to test and enhance the robustness of machine learning models. By creating inputs that intentionally mislead models into making incorrect predictions, researchers can identify vulnerabilities and develop strategies to mitigate them.",
+      "Similarly, in finance, LLMs assist in fraud detection and risk assessment; vulnerabilities in these systems could result in significant financial losses and undermine trust in automated financial services [175]. Therefore, ensuring the security of LLMs is critical to their safe and effective deployment. Adversarial attacks involve the deliberate manipulation of input data to deceive a machine learning model into making incorrect predictions.",
+      "Recent research has highlighted various techniques and impacts of adversarial attacks on LLMs. For instance, adversarial demonstration attacks can mislead models into making incorrect predictions even with subtle changes in the input data [179]. Similarly, methods to automatically generate readable and strategic prompts show the ease with which adversarial examples can be crafted [180].",
+      "Researchers demonstrated how, through a series of carefully crafted prompts, they could extract significant portions of the model\u2019s architecture and parameters, effectively creating a replica of the original model [200]. Another incident involved adversaries using prompt engineering techniques to replicate commercial LLMs used in customer service, resulting in substantial intellectual property theft and financial losses for the companies involved [201]. Numerous studies have explored the effectiveness of model stealing through prompt engineering. For instance, the paper \u201dPrompt Stealing At"
+    ],
+    "title": "Unleashing the potential of prompt engineering: a comprehensive review",
+    "url": "https://arxiv.org/html/2310.14735v3"
+  },
+  {
+    "description": "Adversarial attacks involve the deliberate manipulation of input data to deceive a machine learning model into making incorrect predictions. In the context of LLMs, these attacks can take the form of subtly altered prompts or inputs that cause the model to produce unintended or harmful outputs.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Recent research has highlighted various techniques and impacts of adversarial attacks on LLMs. Adversarial demonstration attacks, for instance, can mislead models into making incorrect predictions with only subtle changes in the input data, effectively manipulating erroneous outputs across various scenarios [254]. These incorrect predictions were verified to be due to the input data changes, and not due to the inherent randomness of the models.",
+      "The development of Artificial Intelligence (AI), from its inception in the 1950s to the emergence of advanced neural networks and deep learning architectures, has made a breakthrough in LLMs, with models such as GPT-4o and Claude-3, and in Vision-Language Models (VLMs), with models such as CLIP and ALIGN. Prompt engineering is the process of structuring inputs, which has emerged as a crucial technique to maximize the utility and accuracy of these models. This paper explores both foundational and advanced methodologies of prompt engineering, including techniques such as self-consistency, chain-of-thought, and generated knowledge, which significantly enhance model performance.",
+      "This is particularly true in critical sectors such as healthcare, finance, and cybersecurity, where prompt attacks against LLMs could lead to significant breaches of sensitive information or disrupt essential services [247]. For example, adversarial attacks can manipulate model outputs to spread harmful or misleading information [3], while data poisoning during training can corrupt the model\u2019s learning process, leading to unreliable outputs.",
+      "In healthcare, such attacks could mislead models into providing incorrect medical advice, jeopardizing patient safety [257]. These examples highlight the need for effective defenses against adversarial attacks to ensure the safe and reliable deployment of LLMs for such critical applications. Data poisoning involves the injection of malicious data into the training set, compromising the integrity of the model. This type of attack can significantly distort the learning process, leading to erroneous outputs once the model is deployed."
+    ],
+    "title": "Unleashing the potential of prompt engineering in Large Language ...",
+    "url": "https://arxiv.org/html/2310.14735v5"
+  },
+  {
+    "description": "The wide-ranging applications of large language models (LLMs), especially in safety-critical domains, necessitate the proper evaluation of the LLM's adversarial robustness. This paper proposes an efficient tool to audit the LLM's adversarial robustness via a prompt-based adversarial attack ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The wide-ranging applications of large language models (LLMs), especially in safety-critical domains, necessitate the proper evaluation of the LLM's adversarial robustness. This paper proposes an efficient tool to audit the LLM's adversarial robustness via a prompt-based adversarial attack (PromptAttack).",
+      "Abstract page for arXiv paper 2310.13345: An LLM can Fool Itself: A Prompt-Based Adversarial Attack",
+      "Comprehensive empirical results using Llama2 and GPT-3.5 validate that PromptAttack consistently yields a much higher attack success rate compared to AdvGLUE and AdvGLUE++. Interesting findings include that a simple emoji can easily mislead GPT-3.5 to make wrong predictions. From: Xilie Xu [view email] [v1] Fri, 20 Oct 2023 08:16:46 UTC (1,123 KB) ... View a PDF of the paper titled An LLM can Fool Itself: A Prompt-Based Adversarial Attack, by Xilie Xu and 6 other authors",
+      "View a PDF of the paper titled An LLM can Fool Itself: A Prompt-Based Adversarial Attack, by Xilie Xu and 6 other authors View PDF \u00b7 Abstract:The wide-ranging applications of large language models (LLMs), especially in safety-critical domains, necessitate the proper evaluation of the LLM's adversarial robustness."
+    ],
+    "title": "[2310.13345] An LLM can Fool Itself: A Prompt-Based Adversarial Attack",
+    "url": "https://arxiv.org/abs/2310.13345"
+  },
+  {
+    "description": "IBM Developer is your one-stop location for getting hands-on training and learning in-demand skills on relevant technologies such as generative AI, data science, AI, and open source.",
+    "favicon_url": "https://you.com/favicon?domain=developer.ibm.com&size=128",
+    "snippets": [],
+    "title": "Adversarial prompting - Testing and strengthening the security ...",
+    "url": "https://developer.ibm.com/tutorials/awb-adversarial-prompting-security-llms/"
+  },
+  {
+    "description": "Adversarial attacks involve the deliberate manipulation of input data to deceive a machine learning model into making incorrect predictions. In the context of LLMs, these attacks can take the form of subtly altered prompts or inputs that cause the model to produce unintended or harmful outputs.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Recent research has highlighted various techniques and impacts of adversarial attacks on LLMs. Adversarial demonstration attacks, for instance, can mislead models into making incorrect predictions with only subtle changes in the input data, effectively manipulating erroneous outputs across various scenarios [254]. These incorrect predictions were verified to be due to the input data changes, and not due to the inherent randomness of the models.",
+      "The development of Artificial Intelligence (AI), from its inception in the 1950s to the emergence of advanced neural networks and deep learning architectures, has made a breakthrough in LLMs, with models such as GPT-4o and Claude-3, and in Vision-Language Models (VLMs), with models such as CLIP and ALIGN. Prompt engineering is the process of structuring inputs, which has emerged as a crucial technique to maximize the utility and accuracy of these models. This paper explores both foundational and advanced methodologies of prompt engineering, including techniques such as self-consistency, chain-of-thought, and generated knowledge, which significantly enhance model performance.",
+      "This is particularly true in critical sectors such as healthcare, finance, and cybersecurity, where prompt attacks against LLMs could lead to significant breaches of sensitive information or disrupt essential services [247]. For example, adversarial attacks can manipulate model outputs to spread harmful or misleading information [3], while data poisoning during training can corrupt the model\u2019s learning process, leading to unreliable outputs.",
+      "In healthcare, such attacks could mislead models into providing incorrect medical advice, jeopardizing patient safety [257]. These examples highlight the need for effective defenses against adversarial attacks to ensure the safe and reliable deployment of LLMs for such critical applications. Data poisoning involves the injection of malicious data into the training set, compromising the integrity of the model. This type of attack can significantly distort the learning process, leading to erroneous outputs once the model is deployed."
+    ],
+    "title": "Unleashing the potential of prompt engineering for large language ...",
+    "url": "https://arxiv.org/html/2310.14735v6"
+  },
+  {
+    "description": "This review explores the role of prompt engineering in unleashing the capabilities of large language models (LLMs). Prompt engineering is the process \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Both foundational and advanced prompt engineering methodologies\u2014including techniques such as self-consistency, chain of thought, and generated knowledge, which can significantly enhance the performance of models\u2014are explored in this paper. Additionally, the prompt methods for vision language models (VLMs) are examined in detail. Prompt methods are evaluated with subjective and objective metrics, ensuring a robust analysis of their efficacy. Critical to this discussion is the role of prompt engineering in artificial intelligence (AI) security, particularly in terms of defending against adversarial attacks that exploit vulnerabilities in LLMs."
+    ],
+    "title": "Unleashing the potential of prompt engineering for large language ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666389925001084"
+  },
+  {
+    "description": "Prompt Engineering, also known as In-Context Prompting, refers to methods for how to communicate with LLM to steer its behavior for desired outcomes without updating the model weights. It is an empirical science and the effect of prompt engineering methods can vary a lot among models, thus ...",
+    "favicon_url": "https://you.com/favicon?domain=lilianweng.github.io&size=128",
+    "snippets": [
+      "Prompt Engineering, also known as In-Context Prompting, refers to methods for how to communicate with LLM to steer its behavior for desired outcomes without updating the model weights. It is an empirical science and the effect of prompt engineering methods can vary a lot among models, thus requiring heavy experimentation and heuristics.",
+      "Select: Apply a variance-reduced policy gradient strategy to learn the probability distribution over selected examples, while considering the probability distribution over examples as policy and the validation set accuracy as reward. Zhang et al. (2023) instead adopted clustering techniques to sample questions and then generates chains. They observed that LLMs tend to make certain types of mistakes.",
+      "[My personal spicy take] In my opinion, some prompt engineering papers are not worthy 8 pages long, since those tricks can be explained in one or a few sentences and the rest is all about benchmarking. An easy-to-use and shared benchmark infrastructure should be more beneficial to the community. Iterative prompting or external tool use would not be trivial to set up. Also non-trivial to align the whole research community to adopt it. Zero-shot and few-shot learning are two most basic approaches for prompting the model, pioneered by many LLM papers and commonly used for benchmarking LLM performance.",
+      "Lazaridou et al. (2022) studied how to use Google Search for document retrieval to augment LLMs. Given a question $q$, clean text is extracted out of 20 URLs returned by Google, resulting in a set of documents. Because these documents are long, each document is split into paragraphs of 6 sentences, $\\{p\\}$. Paragraphs are ranked by TF-IDF based cosine similarity between evidence paragraphs and the query."
+    ],
+    "title": "Prompt Engineering | Lil'Log",
+    "url": "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/"
+  },
+  {
+    "description": "Efficient prompt engineering can assist the development of safe, intuitive, and widely applicable AI by enhancing human-AI interactions. In this review, the authors explore in detail a wide range of prompt engineering methods, including strategies for both large language models and multimodal ...",
+    "favicon_url": "https://you.com/favicon?domain=www.cell.com&size=128",
+    "snippets": [
+      "Efficient prompt engineering can assist the development of safe, intuitive, and widely applicable AI by enhancing human-AI interactions. In this review, the authors explore in detail a wide range of prompt engineering methods, including strategies for both large language models and multimodal large models, and discuss the important role of prompt engineering in AI security.",
+      "Both foundational and advanced prompt engineering methodologies\u2014including techniques such as self-consistency, chain of thought, and generated knowledge, which can significantly enhance the performance of models\u2014are explored in this paper. Additionally, the prompt methods for vision language models (VLMs) are examined in detail. Prompt methods are evaluated with subjective and objective metrics, ensuring a robust analysis of their efficacy. Critical to this discussion is the role of prompt engineering in artificial intelligence (AI) security, particularly in terms of defending against adversarial attacks that exploit vulnerabilities in LLMs.",
+      "Using the transformer architecture,1 LLMs are trained on extensive datasets that can include web-based text, books, and other diverse sources. Central to their design is a self-supervised learning objective, often predicting the subsequent words in a sequence (casual language modeling) or filling in masked words (masked language modeling).",
+      "LLMs operate by encoding input text into high-dimensional vector representations, where the contextual and semantic relationships between words and phrases are captured through multilayer transformer architectures. Responses are generated by predicting the next token in an autoregressive manner, where the process is guided by the learned statistical patterns."
+    ],
+    "title": "Unleashing the potential of prompt engineering for large language ...",
+    "url": "https://www.cell.com/patterns/fulltext/S2666-3899(25)00108-4"
+  },
+  {
+    "description": "Adversarial prompts exploit LLM vulnerabilities, causing harmful outputs. This article covers their types, impacts, and defenses.",
+    "favicon_url": "https://you.com/favicon?domain=adasci.org&size=128",
+    "snippets": [
+      "Adversarial prompts exploit LLM vulnerabilities, causing harmful outputs. This article covers their types, impacts, and defenses. ... Large language models (LLMs) such as GPT-4, LLaMA, and Mistral have become integral to many applications, including chatbots, virtual assistants, and content generation platforms.",
+      "Jailbreaking is a technique designed to bypass the safety and ethical guidelines embedded in LLMs. These models are typically programmed with constraints to prevent them from generating inappropriate or harmful content. However, jailbreaking attempts to trick the model into disregarding these safeguards. A well-crafted adversarial prompt might cause an LLM to ignore ethical boundaries and produce content it was explicitly trained not to generate, such as harmful advice, biased opinions, or offensive language.",
+      "Implementing strong guardrails, such as content filters, ethical guidelines, and continuous monitoring, can help prevent LLMs from producing harmful outputs. However, these guardrails must be continuously updated to adapt to new adversarial techniques.",
+      "To ensure the safe and responsible use of LLMs, developers must invest in robust defense strategies, from fine-tuning models for adversarial detection to implementing strong ethical guardrails. The evolving nature of adversarial techniques means that ongoing research and collaboration are crucial to maintaining the integrity and trustworthiness of LLMs across various applications."
+    ],
+    "title": "Adversarial Prompts in LLMs - A Comprehensive Guide",
+    "url": "https://adasci.org/adversarial-prompts-in-llms-a-comprehensive-guide/"
+  },
+  {
+    "description": "Prompt design and engineering has rapidly become essential for maximizing the potential of large language models. In this paper, we introduce core concepts, advanced techniques like Chain-of-Thought and Reflection, and the principles behind building LLM-based agents.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "On the other hand, traditional engineering practices such as version control and regression testing need to be adapted to this new paradigm just like they were adapted to other machine learning approaches [1]. This paper aims to delve into this burgeoning field, exploring both its foundational aspects and its advanced applications. We will focus on the applications of prompt engineering to LLM. However, most techniques can find applications in multimodal generative AI models too. Large Language Models (LLMs), including those based on the Transformer architecture[2], have become pivotal in advancing natural language processing.",
+      "Building on the foundational concepts introduced earlier, the Chain of Thought (CoT) technique, as delineated in \"Chain-of-Thought Prompting Elicits Reasoning in Large Language Models\" by Google researchers[6], marks a significant leap in harnessing the reasoning capabilities of Large Language Models (LLMs). This technique capitalizes on the premise that, while LLMs excel at predicting sequences of tokens, their design does not inherently facilitate explicit reasoning processes.",
+      "These models, pre-trained on vast datasets to predict subsequent tokens, exhibit remarkable linguistic capabilities. However, despite their sophistication, LLMs are constrained by inherent limitations that affect their application and effectiveness. ... Transient State: LLMs inherently lack persistent memory or state, necessitating additional software or systems for context retention and management.",
+      "One of the most useful abilities of LLMs is the fact that they can learn from what they are being fed in the prompt. This is the so-called zero-shot learning ability."
+    ],
+    "title": "Prompt Design and Engineering: Introduction and Advanced Methods",
+    "url": "https://arxiv.org/html/2401.14423v4"
+  },
+  {
+    "description": "Explore the latest techniques in red teaming large language models (LLMs) and crafting adversarial prompts. Learn how to evaluate and improve AI safety through automated testing methods, benchmark datasets, and robust defense strategies.",
+    "favicon_url": "https://you.com/favicon?domain=kili-technology.com&size=128",
+    "snippets": [
+      "In the following sections, we will explore various techniques for red teaming LLMs, focusing on using adversarial prompts, to help machine learning engineers better understand and implement effective safety measures for LLMs.",
+      "Red teaming for Large Language Models (LLMs) involves several key concepts that machine learning engineers should understand to effectively evaluate and improve model safety. This section will cover the fundamental ideas of threat models, attack surfaces, and evaluation metrics. A threat model in the context of LLM red teaming is a structured approach to identifying potential security risks and vulnerabilities. It helps in understanding how an adversary might attempt to exploit the system.",
+      "Understanding adversarial prompts and their implications is crucial for machine learning engineers working on LLM safety. As models become more advanced and widely deployed, developing robust defenses against these types of attacks will be essential to ensure the responsible and safe use of AI technology. As the sophistication of attacks on large language models (LLMs) continues to grow, so too does the importance of developing robust defensive measures and mitigation strategies.",
+      "Disclaimer: This section contains examples of adversarial prompts that may be considered offensive or harmful. These are provided solely for educational purposes to illustrate the challenges in AI safety. The intent is to promote responsible development and use of AI systems, not to encourage misuse. Red teaming techniques for Large Language Models (LLMs) can be broadly categorized into manual, automated, and hybrid approaches. Generally, prompt engineering is the most common approach, and well-crafted prompts are used to attack models."
+    ],
+    "title": "The Ultimate Guide to Red Teaming LLMs and Adversarial Prompts ...",
+    "url": "https://kili-technology.com/large-language-models-llms/red-teaming-llms-and-adversarial-prompts"
+  },
+  {
+    "description": "The previous section introduced a basic example of how to prompt LLMs \u00b7 This section will provide more examples of how to use prompts to achieve different tasks and introduce key concepts along the way. Often, the best way to learn concepts is by going through examples.",
+    "favicon_url": "https://you.com/favicon?domain=www.promptingguide.ai&size=128",
+    "snippets": [
+      "The previous section introduced a basic example of how to prompt LLMs. This section will provide more examples of how to use prompts to achieve different tasks and introduce key concepts along the way. Often, the best way to learn concepts is by going through examples. The few examples below illustrate how you can use well-crafted prompts to perform different types of tasks. ... Learn more about prompting techniques and examples in our new AI courses.",
+      "Author-contribution statements and acknowledgements in research papers should state clearly and specifically whether, and to what extent, the authors used AI technologies such as ChatGPT in the preparation of their manuscript and analysis. They should also indicate which LLMs were used.",
+      "A Comprehensive Overview of Prompt Engineering",
+      "There have been some improvements in tasks involving mathematical capabilities. That said, it's important to note that current LLMs struggle to perform reasoning tasks so this requires even more advanced prompt engineering techniques. We will cover these advanced techniques in the next guide."
+    ],
+    "title": "Examples of Prompts | Prompt Engineering Guide",
+    "url": "https://www.promptingguide.ai/introduction/examples"
+  },
+  {
+    "description": "In the ever-evolving landscape of artificial intelligence, prompting has emerged as a transformative technique that bridges human intentions and machine understanding. At its core, prompting is the\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "The Gemini temperature setting works similarly to softmax in machine learning, where lower values emphasize certainty, and higher values allow for greater variability, making it useful for creative tasks. Mistral\u2019s LLMs utilize the temperature parameter to balance output determinism and creativity. Lower values result in focused and predictable responses, suitable for tasks requiring accuracy.",
+      "This seemingly simple interaction encapsulates the essence of human-AI collaboration, enabling users to unlock the vast potential of LLMs without extensive programming or fine-tuning. While the \u201cLanguage Models are Few-Shot Learners\u201d (2020) paper brought the concept of few-shot, one-shot, and zero-shot learning to the forefront of public and academic attention, the concept of using carefully crafted input (prompting) to guide machine behavior predates GPT-3 and this paper, early AI systems like ELIZA in the 1960s already demonstrated the need for tailored input phrasing to achieve specific outputs.",
+      "However, what the 2020 OpenAI paper truly established was the realization of zero-shot learning in practice, enabled by the unprecedented scale and generalization capabilities of models like GPT-3. It demonstrated that prompt engineering \u2014 or crafting prompts to guide these models effectively \u2014 could unlock powerful task-solving abilities without additional fine-tuning. This paper highlighted the centrality of prompting to modern LLMs and spurred a surge of interest in prompt design as a field of study.",
+      "LLMs do not formally predict a single token. Rather, LLMs predict probabilities for what the next token could be, with each token in the LLM\u2019s vocabulary getting a probability. Those token probabilities are then sampled to determine what the next produced token will be."
+    ],
+    "title": "A Dive Into LLM Output Configuration, Prompt Engineering Techniques ...",
+    "url": "https://medium.com/@anicomanesh/a-dive-into-advanced-prompt-engineering-techniques-for-llms-part-i-23c7b8459d51"
+  },
+  {
+    "description": "Prompt engineering is the process of structuring or crafting an instruction in order to produce the best possible output from a generative artificial intelligence (AI) model. A prompt is natural language text describing the task that an AI should perform. A prompt for a text-to-text language ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Prompt injection is a cybersecurity exploit in which adversaries craft inputs that appear legitimate but are designed to cause unintended behavior in machine learning models, particularly large language models (LLMs). This attack takes advantage of the model's inability to distinguish between developer-defined prompts and user inputs, allowing adversaries to bypass safeguards and influence model behaviour.",
+      "Training models to perform in-context learning can be viewed as a form of meta-learning, or \"learning to learn\". Self-consistency decoding performs several chain-of-thought rollouts, then selects the most commonly reached conclusion out of all the rollouts. Tree-of-thought prompting generalizes chain-of-thought by generating multiple lines of reasoning in parallel, with the ability to backtrack or explore other paths. It can use tree search algorithms like breadth-first, depth-first, or beam. Research consistently demonstrates that LLMs are highly sensitive to subtle variations in prompt formatting, structure, and linguistic properties.",
+      "According to Google Research, chain-of-thought (CoT) prompting is a technique that allows large language models (LLMs) to solve a problem as a series of intermediate steps before giving a final answer. In 2022, Google Brain reported that chain-of-thought prompting improves reasoning ability by inducing the model to answer a multi-step problem with steps of reasoning that mimic a train of thought.",
+      "Retrieval-augmented generation (RAG) is a technique that enables generative artificial intelligence (Gen AI) models to retrieve and incorporate new information. It modifies interactions with a large language model (LLM) so that the model responds to user queries with reference to a specified set of documents, using this information to supplement information from its pre-existing training data. This allows LLMs to use domain-specific and/or updated information.",
+      "According to Ars Technica, \"RAG is a way of improving LLM performance, in essence by blending the LLM process with a web search or other document look-up process to help LLMs stick to the facts.\" This method helps reduce AI hallucinations, which have led to real-world issues like chatbots inventing policies or lawyers citing nonexistent legal cases. By dynamically retrieving information, RAG enables AI to provide more accurate responses without frequent retraining. GraphRAG (coined by Microsoft Research) is a technique that extends RAG with the use of a knowledge graph (usually, LLM-generated) to allow the model to connect disparate pieces of information, synthesize insights, and holistically understand summarized semantic concepts over large data collections."
+    ],
+    "title": "Prompt engineering - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prompt_engineering"
+  },
+  {
+    "description": "Prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models ...",
+    "favicon_url": "https://you.com/favicon?domain=www.promptingguide.ai&size=128",
+    "snippets": [
+      "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering.",
+      "A Comprehensive Overview of Prompt Engineering",
+      "Researchers use prompt engineering to improve the capacity of LLMs on a wide range of common and complex tasks such as question answering and arithmetic reasoning. Developers use prompt engineering to design robust and effective prompting techniques that interface with LLMs and other tools.",
+      "Prompt engineering is a relatively new discipline for developing and optimizing prompts to efficiently use language models (LMs) for a wide variety of applications and research topics. Prompt engineering skills help to better understand the capabilities and limitations of large language models (LLMs)."
+    ],
+    "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+    "url": "https://www.promptingguide.ai/"
+  },
+  {
+    "description": "I\u2019m currently the Chief Evangelist @ HumanFirst. I explore & write about all things at the intersection of AI & language; ranging from LLMs, Chatbots, Voicebots, Development Frameworks, Data-Centric\u2026",
+    "favicon_url": "https://you.com/favicon?domain=cobusgreyling.medium.com&size=128",
+    "snippets": [
+      "Prompt Engineering can be described as an art form, creating input requests for Large Language Models (LLMs) that will lead to a envisaged\u2026",
+      "With humans the tight synergy between reasoning & acting allows for humans to learn new tasks quickly and perform robust reasoning and decision making. We can perform this even when unforeseen circumstances, information or uncertainties are faced. LLMs have demonstrated impressive results in chain-of-thought reasoning(CoT) and prompting, and acting (generation of action plans).",
+      "I\u2019m currently the Chief Evangelist @ HumanFirst. I explore & write about all things at the intersection of AI & language; ranging from LLMs, Chatbots, Voicebots, Development Frameworks, Data-Centric latent spaces & more.",
+      "The process of inference is reaching a conclusion based on evidence and reasoning. And in turn reasoning can be engendered with LLMs by providing the LLM with a few examples on how to reason and use evidence."
+    ],
+    "title": "12 Prompt Engineering Techniques. Prompt Engineering can be described ...",
+    "url": "https://cobusgreyling.medium.com/12-prompt-engineering-techniques-644481c857aa"
+  },
+  {
+    "description": "Practical techniques for improving prompt quality without manual effort...",
+    "favicon_url": "https://you.com/favicon?domain=cameronrwolfe.substack.com&size=128",
+    "snippets": [
+      "WARP addresses the problem of adapting a language model to several downstream tasks by learning task-specific word embeddings that can be concatenated to the model\u2019s input to solve different tasks. P-Tuning addresses the instability of prompt engineering by concatenating a series of trainable embeddings with the model\u2019s prompt, where the model can either be finetuned along with the added embeddings or kept frozen. PADA improves the ability of LLMs to adapt to new domains by training a language model to first predict a domain-specific prompt for solving a problem, then use this generated prompt to actually solve the problem.",
+      "The reparameterization approach used by prefix tuning adds additional learnable parameters to the model. Each prefix has an additional feed-forward neural network, which has parameters of its own, associated with it! ... This work is an early exploration of optimizing prompts in a discrete manner using gradient-based techniques. However, there are other works that came before it; e.g., this paper explores similar techniques for discovering \u201ctrigger tokens\u201d in LLMs.",
+      "Sebastian Rashka wrote a detailed explanation of prompt and prefix tuning, while Lilian Weng explores this topic in both her text generation and prompt engineering posts. ... As we have seen, soft prompts have limitations in terms of interpretability, reusability across models, and applicability to API-based LLMs. Unfortunately, these limitations destroy several key benefits of prompting. With this in mind, we might wonder whether we can automatically optimize a prompt while maintaining some of these properties. During the early days of prompting, papers were published on the idea of finding discrete \u201ctrigger\" tokens that can be included in a model\u2019s prompt to help with solving certain problems.",
+      "LLMs are good prompt engineers. One of the primary takeaways from recent prompt optimization papers is the fact that LLMs are good at writing prompts. Assuming we provide the right information as context, we can create surprisingly powerful prompt optimization algorithms by just iteratively prompting an LLM to critique and improve a prompt."
+    ],
+    "title": "Automatic Prompt Optimization - by Cameron R. Wolfe, Ph.D.",
+    "url": "https://cameronrwolfe.substack.com/p/automatic-prompt-optimization"
+  },
+  {
+    "description": "Understand prompt engineering by defining a prompt, learning how prompt engineering works, and exploring common prompt engineering techniques used in generative AI and large language models....",
+    "favicon_url": "https://you.com/favicon?domain=www.elastic.co&size=128",
+    "snippets": [
+      "LLMs are the backbone of natural language in AI. They enable any text-related applications: analysis, synthesis, translation, recognition, and generation. Large language models are trained on large bodies of information, often text, and learn patterns from this text, which enables them to generate predictions or outputs when queried.",
+      "Understanding the predictive aspect of LLMs is key to understanding how prompt engineering works: You enter an input\u2014the prompt. It may include an output indicator, letting the model know what format the response generated should take. The model 'thinks' by using the deductions and patterns (in the form of numbers) learned from the training data.",
+      "As research into generative AI and large language models continues, various new prompt engineering techniques will emerge. Although prompt engineering helps get the most out of generative AI technology, it also presents some challenges and limitations related to adversarial prompting, factuality, and biases.",
+      "There are various documented types of adversarial prompting, including prompt leaking and jailbreaking\u2014techniques that aim to get the large language model to do what it was never intended to do. Such behavior is often harmful."
+    ],
+    "title": "What is Prompt Engineering? | A Comprehensive Prompt Engineering ...",
+    "url": "https://www.elastic.co/what-is/prompt-engineering"
+  },
+  {
+    "description": "A Prompt Injection Vulnerability occurs when user prompts alter the LLM\u2019s behavior or output in unintended ways. These inputs can affect the model even if they are imperceptible to humans, therefore prompt injections do not need to be human-visible/readable, as long as the content is parsed ...",
+    "favicon_url": "https://you.com/favicon?domain=genai.owasp.org&size=128",
+    "snippets": [
+      "A Prompt Injection Vulnerability occurs when user prompts alter the LLM\u2019s behavior or output in unintended ways. These inputs can affect the model even if they are imperceptible to humans, therefore prompt injections do not need to be human-visible/readable, as long as the content is parsed by the model.",
+      "Exploiting Programmatic Behavior of LLMs: Dual-Use Through Standard Security Attacks \u00b7 Universal and Transferable Adversarial Attacks on Aligned Language Models (arxiv.org)",
+      "Multimodal models may also be susceptible to novel cross-modal attacks that are difficult to detect and mitigate with current techniques. Robust multimodal-specific defenses are an important area for further research and development. Prompt injection vulnerabilities are possible due to the nature of generative AI. Given the stochastic influence at the heart of the way models work, it is unclear if there are fool-proof methods of prevention for prompt injection.",
+      "The system prompt leakage vulnerability in LLMs refers to the risk that the system prompts or instructions used to..."
+    ],
+    "title": "LLM01:2025 Prompt Injection - OWASP Gen AI Security Project",
+    "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
+  },
+  {
+    "description": "Master advanced prompt engineering techniques to improve LLM output quality, security, and reliability\u2014featuring real-world use cases and expert tips.",
+    "favicon_url": "https://you.com/favicon?domain=www.lakera.ai&size=128",
+    "snippets": [
+      "With models like GPT-4o, Claude 4, and Gemini 1.5 Pro, prompt engineering now spans everything from formatting techniques to reasoning scaffolds, role assignments, and even adversarial exploits. ... You\u2019ll learn how to write prompts that consistently improve output across top models.",
+      "This is a critical lesson: sometimes, adversarial prompting doesn\u2019t require clever tricks. If the model isn\u2019t properly aligned or restricted, asking nicely is enough to leak sensitive information. By Level 3, direct requests are blocked. That\u2019s where attackers begin to experiment with more indirect phrasing: ... This reframes the task, slipping past defenses by presenting it as a multilingual challenge. It mirrors real-world exploits where LLMs are weaker in non-English languages\u2014a vulnerability documented in actual jailbreak attempts.",
+      "The techniques we\u2019ve explored\u2014scaffolding, anchoring, few-shot prompting, adversarial testing, multilingual probing\u2014aren\u2019t just tips; they\u2019re tools for building more robust, transparent, and trustworthy AI systems. As models continue to grow in capability and complexity, the gap between \u201cgood enough\u201d prompting and truly effective prompting will only widen. Use that gap to your advantage. And remember: every prompt is a test, a lens, and sometimes even a threat. Treat it accordingly. Learn how to protect against the most common LLM vulnerabilities",
+      "Thousands of players actively probe for weaknesses, surfacing new bypass techniques, multilingual exploits, and PII leakage attempts in real time. What starts as a clever prompt in a game often mirrors the tactics used to compromise AI systems in production\u2014making prompt injections one of the most urgent and visible challenges in modern AI security. One of the most effective ways to grasp how adversarial prompting works is to experience it firsthand."
+    ],
+    "title": "The Ultimate Guide to Prompt Engineering in 2025 | Lakera \u2013 ...",
+    "url": "https://www.lakera.ai/blog/prompt-engineering-guide"
+  },
+  {
+    "description": "35 votes, 21 comments. I've often used the LLM to create better prompts for moderate to more complicated queries. This is the prompt I use to prepare\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/Current-District8504 - 35 votes and 21 comments",
+      "Automated Prompt Refinement: Uses techniques like reinforcement learning and Bayesian optimization to automatically improve prompts. Functionality: This module addresses security vulnerabilities and ensures prompt robustness. ... Prompt Injection Detection: Detects and mitigates prompt injection attacks. Adversarial Testing: Tests prompts against adversarial inputs to identify vulnerabilities.",
+      "Adaptability: The framework should be adaptable to different LLMs, tasks, and data modalities. Robustness: The framework should generate prompts that are resistant to adversarial attacks and produce reliable outputs even under challenging conditions.",
+      "This subreddit focuses solely on AWS Certifications. Bring in your discussions, questions , opinions, news and comments around AWS certifications areas like prep tips, clarifications, lessons learned. ... How to get LLMs to rewrite system prompts without following them?!"
+    ],
+    "title": "r/PromptEngineering on Reddit: Prompt Engineering of LLM Prompt ...",
+    "url": "https://www.reddit.com/r/PromptEngineering/comments/1hv1ni9/prompt_engineering_of_llm_prompt_engineering/"
+  },
+  {
+    "description": "Explore essential guardrails for safe AI implementation in LLMs. Discover best practices to mitigate risks and ensure responsible use. Read the article now.",
+    "favicon_url": "https://you.com/favicon?domain=kili-technology.com&size=128",
+    "snippets": [
+      "The paper \u201cFrom Representational Harms to Quality-of-Service Harms: A Case Study on Llama 2 Safety Safeguards\u201d evaluates how LLMs\u2019 safety responses can encode harmful assumptions, illustrating the importance of addressing multilingual and cultural factors in safety measures. Additionally, Kili Technology\u2019s study assessed three prominent models\u2014CommandR+, Llama 3.2, and GPT4o\u2014using adversarial prompts in both English and French.",
+      "Now, let's have a look at the new and existing studies that serve to combat these adversarial prompting techniques. As Large Language Models (LLMs) become increasingly integrated into applications and services, the security of these systems has emerged as a critical concern.",
+      "We recently released our red teaming study diving into adversarial prompt injection techniques and the harm categories that LLMs are most vulnerable to.",
+      "The paper \u201cJailbroken: How Does LLM Safety Training Fail?\u201d examines the vulnerabilities of safety-trained LLMs from OpenAI and Anthropic, demonstrating the need for advanced red teaming techniques to identify and mitigate potential failures in safety training."
+    ],
+    "title": "Ultimate Guide: Preventing Adversarial Prompt Injections with LLM ...",
+    "url": "https://kili-technology.com/large-language-models-llms/preventing-adversarial-prompt-injections-with-llm-guardrails"
+  }
+]

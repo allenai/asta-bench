@@ -1,0 +1,242 @@
+[
+  {
+    "description": "Internal normalization is faster ... the network converges faster. SELU is a relatively newer activation function and needs more papers on architectures such as CNNs and RNNs, where it is comparatively explored. There are two challenges you might encounter when training your deep neural ...",
+    "favicon_url": "https://you.com/favicon?domain=www.v7labs.com&size=128",
+    "snippets": [
+      "Internal normalization is faster than external normalization, which means the network converges faster. SELU is a relatively newer activation function and needs more papers on architectures such as CNNs and RNNs, where it is comparatively explored. There are two challenges you might encounter when training your deep neural networks.",
+      "A neural network activation function is a function that is applied to the output of a neuron. Learn about different types of activation functions and how they work.",
+      "It\u2019s the final layer of the network that brings the information learned through the hidden layer and delivers the final value as a result.  \u00b7 All hidden layers usually use the same activation function. However, the output layer will typically use a different activation function from the hidden layers. The choice depends on the goal or type of prediction made by the model. When learning about neural networks, you will come across two essential terms describing the movement of information\u2014feedforward and backpropagation.",
+      "If it can be any numeric value (as in case of the regression problem) you can use the linear activation function or ReLU.  \u00b7 Use Softmax or Sigmoid function for the classification problems. ... Pragati is a software developer at Microsoft, and a deep learning enthusiast. She writes about the fundamental mathematics behind deep neural networks."
+    ],
+    "title": "Activation Functions in Neural Networks [12 Types & Use Cases]",
+    "url": "https://www.v7labs.com/blog/neural-networks-activation-functions"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.ijeast.com&size=128",
+    "snippets": [],
+    "title": "ACTIVATION FUNCTIONS IN NEURAL NETWORKS",
+    "url": "https://www.ijeast.com/papers/310-316,Tesma412,IJEAST.pdf"
+  },
+  {
+    "description": "Abstract page for arXiv paper 2101.09957: Activation Functions in Artificial Neural Networks: A Systematic Overview",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Activation functions shape the outputs of artificial neurons and, therefore, are integral parts of neural networks in general and deep learning in particular. Some activation functions, such as logistic and relu, have been used for many decades. But with deep learning becoming a mainstream research topic, new activation functions have mushroomed, leading to confusion in both theory and practice. This paper provides an analytic yet up-to-date overview of popular activation functions and their properties, which makes it a timely resource for anyone who studies or applies neural networks.",
+      "View a PDF of the paper titled Activation Functions in Artificial Neural Networks: A Systematic Overview, by Johannes Lederer View PDF",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[2101.09957] Activation Functions in Artificial Neural Networks: ...",
+    "url": "https://arxiv.org/abs/2101.09957"
+  },
+  {
+    "description": "View a PDF of the paper titled Activation Functions in Deep Learning: A Comprehensive Survey and Benchmark, by Shiv Ram Dubey and 2 other authors View PDF \u00b7 Abstract:Neural networks have shown tremendous growth in recent years to solve numerous problems. Various types of neural networks have ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled Activation Functions in Deep Learning: A Comprehensive Survey and Benchmark, by Shiv Ram Dubey and 2 other authors View PDF \u00b7 Abstract:Neural networks have shown tremendous growth in recent years to solve numerous problems. Various types of neural networks have been introduced to deal with different types of problems.",
+      "However, the main goal of any neural network is to transform the non-linearly separable input data into more linearly separable abstract features using a hierarchy of layers. These layers are combinations of linear and nonlinear functions. The most popular and common non-linearity layers are activation functions (AFs), such as Logistic Sigmoid, Tanh, ReLU, ELU, Swish and Mish. In this paper, a comprehensive overview and survey is presented for AFs in neural networks for deep learning.",
+      "Neural networks have shown tremendous growth in recent years to solve numerous problems. Various types of neural networks have been introduced to deal with different types of problems. However, the main goal of any neural network is to transform the non-linearly separable input data into more linearly separable abstract features using a hierarchy of layers.",
+      "Abstract page for arXiv paper 2109.14545: Activation Functions in Deep Learning: A Comprehensive Survey and Benchmark"
+    ],
+    "title": "[2109.14545] Activation Functions in Deep Learning: A Comprehensive ...",
+    "url": "https://arxiv.org/abs/2109.14545"
+  },
+  {
+    "description": "Deep neural networks have gained remarkable achievements in many research areas, especially in computer vision, and natural language processing. The great successes of deep neural networks depend on several aspects in which the development of activation function is one of the most important ...",
+    "favicon_url": "https://you.com/favicon?domain=ieeexplore.ieee.org&size=128",
+    "snippets": [
+      "Deep neural networks have gained remarkable achievements in many research areas, especially in computer vision, and natural language processing. The great successes of deep neural networks depend on several aspects in which the development of activation function is one of the most important elements."
+    ],
+    "title": "Activation functions and their characteristics in deep neural ...",
+    "url": "https://ieeexplore.ieee.org/document/8407425/"
+  },
+  {
+    "description": "However, the main goal of any neural network is to transform the non-linearly separable input data into more linearly separable abstract features using a hierarchy of layers. These layers are combinations of linear and nonlinear functions. The most popular and common non-linearity layers are activation functions (AFs), such as Logistic Sigmoid, Tanh, ReLU, ELU, Swish and Mish. In this paper...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "However, the main goal of any neural network is to transform the non-linearly separable input data into more linearly separable abstract features using a hierarchy of layers. These layers are combinations of linear and nonlinear functions. The most popular and common non-linearity layers are activation functions (AFs), such as Logistic Sigmoid, Tanh, ReLU, ELU, Swish and Mish. In this paper, a comprehensive overview and survey is presented for AFs in neural networks for deep learning.",
+      "An extensive and up to date survey of activation functions is conducted in this paper. Different types of AFs are considered, including Logistic Sigmoid and Tanh based, ReLU based, ELU based, and Learning based. However, the main focus is given to the recent developments in AFs in view of the deep learning applications of neural networks.",
+      "The effects of different memristors on the dynamics of Hopfield neural networks have been studied by many researchers. However, less attention has been paid to the activation function. In this paper, we present a heterogeneous memristive Hopfield neural network with neurons using different activation functions.",
+      "Neural networks have shown tremendous growth in recent years to solve numerous problems. Various types of neural networks have been introduced to deal\u2026"
+    ],
+    "title": "Activation functions in deep learning: A comprehensive survey and ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231222008426"
+  },
+  {
+    "description": "To understand the role of activation functions in neural networks, it's important first to understand the basic elements of the network's architecture. The architecture of neural networks is made of three core layers: ... The input layer is where the raw data/datasets are received. In the case of computer vision neural network projects, this could be image or video-based datasets. There isn\u2019t anything complex about ...",
+    "favicon_url": "https://you.com/favicon?domain=encord.com&size=128",
+    "snippets": [
+      "To understand the role of activation functions in neural networks, it's important first to understand the basic elements of the network's architecture. The architecture of neural networks is made of three core layers: ... The input layer is where the raw data/datasets are received. In the case of computer vision neural network projects, this could be image or video-based datasets. There isn\u2019t anything complex about this layer, and there isn\u2019t any computation at this stage.",
+      "In every neural network, different nodes and neurons are characterized (and perform tasks) based on their specific activation function, weight, and bias. The specific activation function you use for AI, ML, CV, or DL models depends entirely on the specific model, problem, and challenge that needs solving. It isn\u2019t always obvious how to go about this, so a trial and error or training period is often needed to find an activation function that does the job.",
+      "15 examples of activation functions in neural networks, including linear and non-linear | Encord",
+      "Activation functions play a crucial role in neural networks, performing a vital function in hidden layers to solve complex problems and to analyze and transmit data throughout deep learning algorithms."
+    ],
+    "title": "Activation Functions in Neural Networks: 15 examples | Encord",
+    "url": "https://encord.com/blog/activation-functions-neural-networks/"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "While building a neural network, one key decision is selecting the Activation Function for both the hidden layer and the output layer. It is a mathematical function applied to the output of a neuron. It introduces non-linearity into the model, allowing the network to learn and represent complex patterns in the data.",
+      "Without this non-linearity feature a neural network would behave like a linear regression model no matter how many layers it has. Activation function decides whether a neuron should be activated by calculating the weighted sum of inputs and adding a bias term.",
+      "Modeling functions that are not linearly separable. Increasing the capacity of the network to form multiple decision boundaries based on the combination of weights and biases. Neural networks consist of neurons that operate using weights, biases and activation functions.",
+      "Without non-linearity even deep networks would be limited to solving only simple, linearly separable problems. Activation functions help neural networks to model highly complex data distributions and solve advanced deep learning tasks."
+    ],
+    "title": "Activation functions in Neural Networks - GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/activation-functions-neural-networks/"
+  },
+  {
+    "description": "Hi, I am new to the fascinating world of Machine Learning and would like to ask some questions. From many articles as well as lectures, it was\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/Loud_Sport9371 - 7 votes and 2 comments",
+      "From many articles as well as lectures, it was explained that the purpose of activation functions in a Neural Network is to allow the Neural Network to model non-linear relationships in the data.",
+      "Welcome to r/learnmachinelearning - a community of learners and educators passionate about machine learning! This is your space to ask questions, share resources, and grow together in understanding ML concepts - from basic principles to advanced techniques. Whether you're writing your first neural network or diving into transformers, you'll find supportive peers here.",
+      "Feel free to post demonstrations of interesting mathematical phenomena, questions about what is happening in a graph, or just cool things you've found while playing with the calculator. Reply to people with commands! For example, \"!fp\" explains what floating point arithmetic is. Try out commands at https://redd.it/1ixvsgi ... Pytorch is an open source machine learning framework with a focus on neural networks."
+    ],
+    "title": "r/MLQuestions on Reddit: Purpose of Activation Functions in Neural ...",
+    "url": "https://www.reddit.com/r/MLQuestions/comments/13j1g1y/purpose_of_activation_functions_in_neural_network/"
+  },
+  {
+    "description": "The value of a node in the network is given by the following formula: ... Keras provides out-of-the-box support for many activation functions. That said, we still recommend starting with ReLU. The following video provides a recap of everything you've learned thus far about how neural networks ...",
+    "favicon_url": "https://you.com/favicon?domain=developers.google.com&size=128",
+    "snippets": [
+      "The value of a node in the network is given by the following formula: ... Keras provides out-of-the-box support for many activation functions. That said, we still recommend starting with ReLU. The following video provides a recap of everything you've learned thus far about how neural networks are constructed:",
+      "Learn how activation functions enable neural networks to learn nonlinearities, and practice building your own neural network using the interactive exercise.",
+      "Here, the sigmoid serves as an activation function for the neural network, a nonlinear transform of a neuron's output value before the value is passed as input to the calculations of the next layer of the neural network.",
+      "A set of learned weights and biases representing the connections between each neural network layer and the layer beneath it. The layer beneath may be another neural network layer, or some other kind of layer. An activation function that transforms the output of each node in a layer. Different layers may have different activation functions."
+    ],
+    "title": "Neural networks: Activation functions | Machine Learning | Google ...",
+    "url": "https://developers.google.com/machine-learning/crash-course/neural-networks/activation-functions"
+  },
+  {
+    "description": "This study also compares performance on two benchmark datasets using cutting-edge activation functions with various types of deep neural networks. The following is the order of the paper: Section 2 follows with a discussion of relevant works and the importance of some typical activation functions.",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "In recent years, various deep neural networks with different learning paradigms have been widely employed in various applications, including medical diagnosis, image analysis, self-driving vehicles and others. The activation functions employed in deep neural networks have a huge impact on the training model and the reliability of the model.",
+      "This causes neurons to die (dying ReLU) and a shift in bias. However, unlike ReLU activation functions, Swish activation functions do not remain stable or move in a single direction. This research proposes a new activation function named NIPUNA for deep neural networks.",
+      "We test this activation by training on customized convolutional neural networks (CCNN). On benchmark datasets (Fashion MNIST images of clothes, MNIST dataset of handwritten digits), the contributions are examined and compared to various activation functions.",
+      "The proposed activation function can outperform traditional activation functions. Keywords: convolutional neural networks; deep neural networks; NIPUNA; periodic function"
+    ],
+    "title": "NIPUNA: A Novel Optimizer Activation Function for Deep Neural Networks",
+    "url": "https://www.mdpi.com/2075-1680/12/3/246"
+  },
+  {
+    "description": "Understanding deep neural networks and their significance in the modern deep learning world of artificial intelligence ... Learn how multilayer perceptrons work in deep learning. Understand layers, activation functions, backpropagation, and SGD with practical guidance. ... A complete guide to understanding CNNs, their impact on image analysis, and some key strategies to combat overfitting for robust CNN vs deep learning applications. ... Learn about ...",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "Understanding deep neural networks and their significance in the modern deep learning world of artificial intelligence ... Learn how multilayer perceptrons work in deep learning. Understand layers, activation functions, backpropagation, and SGD with practical guidance. ... A complete guide to understanding CNNs, their impact on image analysis, and some key strategies to combat overfitting for robust CNN vs deep learning applications. ... Learn about loss functions in machine learning, including the difference between loss and cost functions, types like MSE and MAE, and their applications in ML tasks.",
+      "Learn to navigate the landscape of common activation functions\u2014from the steadfast ReLU to the probabilistic prowess of the softmax.",
+      "Softmax is typically used in the output layer of a neural network when the task involves classifying an input into one of several (more than two) possible categories (multi-class classification). The probabilities produced by the softmax function can be interpreted as confidence scores for each class, providing insight into the model's certainty about its predictions.",
+      "Activation functions are an integral building block of neural networks that enable them to learn complex patterns in data. They transform the input signal of a node in a neural network into an output signal that is then passed on to the next layer. Without activation functions, neural networks would be restricted to modeling only linear relationships between inputs and outputs."
+    ],
+    "title": "Introduction to Activation Functions in Neural Networks | DataCamp",
+    "url": "https://www.datacamp.com/tutorial/introduction-to-activation-functions-in-neural-networks"
+  },
+  {
+    "description": "Learn about the importance of activation functions in neural networks and how they enable handling intricate tasks with non-linear computations.",
+    "favicon_url": "https://you.com/favicon?domain=www.analyticsvidhya.com&size=128",
+    "snippets": [
+      "The activation functions are also referred to as transfer functions in some literature. These can either be linear or nonlinear depending on the function it represents and is used to control the output of neural networks across different domains. Checkout this guide about the Activation Functions",
+      "A. In deep learning, an activation function in neural networks is like a switch. It decides if a neuron should be turned on or off based on the input it gets. This switch adds twists and turns to the network\u2019s thinking, letting it understand and work with complicated patterns in data. This article talks about different activation functions in machine learning to help you choose the best one for your neural network.",
+      "Applications of Deep LearningMulti Layer PerceptronVisualizing the Neural NetworkUnderstanding Decision BoundaryForward and Backward Propagation Intuition \u00b7 Gradient Descent AlgorithmVariants of Gradient Descent Algorithm \u00b7 Introduction to Loss FunctionBinary and Categorical Cross Entropy \u00b7 Why Do We Need Activation Functions?Linear Activation FunctionSigmoid and Tanh FunctionSoftmaxHow to Select Right Activation Function?",
+      "In the domain of deep learning, a neural network absent of an activation function resembles a linear regression model. These functions drive a neural network\u2019s ability to handle intricate tasks by performing crucial non-linear computations."
+    ],
+    "title": "Activation Functions in Neural Network - Analytics Vidhya",
+    "url": "https://www.analyticsvidhya.com/blog/2021/04/activation-functions-and-their-derivatives-a-quick-complete-guide/"
+  },
+  {
+    "description": "When the activation function is non-linear, then a two-layer neural network can be proven to be a universal function approximator. This is known as the Universal Approximation Theorem. The identity activation function does not satisfy this property.",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Folding activation functions are extensively used in the pooling layers in convolutional neural networks, and in output layers of multiclass classification networks. These activations perform aggregation over the inputs, such as taking the mean, minimum or maximum.",
+      "The following table lists activation functions that are not functions of a single fold x from the previous layer or layers: ... {\\displaystyle j} could be iterating through the number of kernels of the previous neural network layer while",
+      "In quantum neural networks programmed on gate-model quantum computers, based on quantum perceptrons instead of variational quantum circuits, the non-linearity of the activation function can be implemented with no need of measuring the output of each perceptron at each layer.",
+      "The activation function of a node in an artificial neural network is a function that calculates the output of the node based on its individual inputs and their weights. Nontrivial problems can be solved using only a few nodes if the activation function is nonlinear."
+    ],
+    "title": "Activation function - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Activation_function"
+  },
+  {
+    "description": "By the end of this comprehensive ... your network. Sources and related papers are listed throughout the guide, and I\u2019d recommend reading them to know more about those activation functions. Towards the end, some heuristics are also provided for chosing activation functions. As a refresher, let\u2019s establish an understanding of what activation functions are and why they are essential. During a forward pass of a neural network, at ...",
+    "favicon_url": "https://you.com/favicon?domain=sites.gatech.edu&size=128",
+    "snippets": [
+      "By the end of this comprehensive guide, you will have a clearer understanding of when to employ each activation function to get better results from your network. Sources and related papers are listed throughout the guide, and I\u2019d recommend reading them to know more about those activation functions. Towards the end, some heuristics are also provided for chosing activation functions. As a refresher, let\u2019s establish an understanding of what activation functions are and why they are essential. During a forward pass of a neural network, at each neuron, the weighted sum of its inputs is calculated, along with the bias.",
+      "By allowing negative values, LeakyReLU can also have faster convergence since the mean of outputs shifts towards 0. The performance of the network with leaky ReLU depends on the parameter \u03b1, which must be carefully chosen or the performance can be worse than with ReLU activations. Given its efficacy, LeakyReLU is widely used in Convolutional Neural Networks (CNNs) like the YOLO object detection model and in Generative Adversarial Networks (GANs) like DCGAN. PReLU proposed in He et al. (2015) turns the slope parameter in Leaky ReLU into a trainable parameter a\u1d62, i being the channel number of the CNN used in the original paper.",
+      "Activation functions are crucial in neural networks, introducing non-linearity and enabling the modeling of complex patterns across varied tasks. This guide delves into the evolution, characteristics, and applications of state-of-the-art activation functions, illustrating their role in enhancing neural network performance.",
+      "Concluding with practical heuristics for selecting activation functions, the article emphasizes the importance of considering network architecture and task specifics, highlighting the rich diversity of activation functions available for optimizing neural network designs."
+    ],
+    "title": "Navigating Neural Networks: Exploring State-of-the-Art Activation ...",
+    "url": "https://sites.gatech.edu/omscs7641/2024/01/31/navigating-neural-networks-exploring-state-of-the-art-activation-functions/"
+  },
+  {
+    "description": "Abstract page for arXiv paper 2010.09458: Review and Comparison of Commonly Used Activation Functions for Deep Neural Networks",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The primary neural networks decision-making units are activation functions. Moreover, they evaluate the output of networks neural node; thus, they are essential for the performance of the whole network. Hence, it is critical to choose the most appropriate activation function in neural networks calculation.",
+      "View a PDF of the paper titled Review and Comparison of Commonly Used Activation Functions for Deep Neural Networks, by Tomasz Szanda{\\l}a View PDF",
+      "Hence, it is critical to choose the most appropriate activation function in neural networks calculation. Acharya et al. (2018) suggest that numerous recipes have been formulated over the years, though some of them are considered deprecated these days since they are unable to operate properly under some conditions. These functions have a variety of characteristics, which are deemed essential to successfully learning.",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[2010.09458] Review and Comparison of Commonly Used Activation ...",
+    "url": "https://arxiv.org/abs/2010.09458"
+  },
+  {
+    "description": "We used a variety of activation functions in deep learning. Activation functions are the most important aspect of any neural network in deep learning. Image classification, language translation\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Activation functions are the most important aspect of any neural network in deep learning. Image classification, language translation, object recognition, and other complex tasks in deep learning require the use of neural networks and activation functions to solve.",
+      "They are used to determine the output of deep learning models, the performance efficiency of the training model, and its accuracy, which can design or split a massive neural network. The Activation functions have a significant impact on the ability and speed with which neural networks converge.",
+      "The Activation Function is a non linear modification used to each neuron in a hidden layer to get output in a normalized form (or in a certain range or scale). To produce the desired outcome, they simply determine whether to deactivate or activate neurons. It also applies a nonlinear adjustment to the input in order to improve the performance of a sophisticated neural network.",
+      "The activation function also aids in the normalization of any input\u2019s output in the range between 1 to -1. Because the neural network is occasionally trained on millions of data points, the activation function must be efficient and should reduce the computation time."
+    ],
+    "title": "Activation Function in Neural Network | by Sumeet Agrawal | Medium",
+    "url": "https://medium.com/@Sumeet_Agrawal/activation-function-in-neural-network-dc5e51c80ce8"
+  },
+  {
+    "description": "A wide variety of activation functions have been proposed for neural networks. The Rectified Linear Unit (ReLU) is especially popular today. There are many practical reasons that motivate the use of the ReLU. This paper provides new theoretical characterizations that support the use of the ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:A wide variety of activation functions have been proposed for neural networks. The Rectified Linear Unit (ReLU) is especially popular today. There are many practical reasons that motivate the use of the ReLU. This paper provides new theoretical characterizations that support the use of the ReLU, its variants such as the leaky ReLU, as well as other activation functions in the case of univariate, single-hidden layer feedforward neural networks.",
+      "Abstract page for arXiv paper 1910.02333: The Role of Neural Network Activation Functions",
+      "In particular, we show how neural network training problems are related to infinite-dimensional optimizations posed over Banach spaces of functions whose solutions are well-known to be fractional and polynomial splines, where the particular Banach space (which controls the order of the spline) depends on the choice of activation function. From: Rahul Parhi [view email] [v1] Sat, 5 Oct 2019 21:57:32 UTC (603 KB) [v2] Mon, 27 Jul 2020 17:26:37 UTC (30 KB) [v3] Fri, 16 Oct 2020 14:37:26 UTC (30 KB) ... View a PDF of the paper titled The Role of Neural Network Activation Functions, by Rahul Parhi and Robert D.",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[1910.02333] The Role of Neural Network Activation Functions",
+    "url": "https://arxiv.org/abs/1910.02333"
+  },
+  {
+    "description": "Thus, this paperr aims at discussing the fundamentals of neural networks and how they work. The paper includes a brief discussion on functionality of neural network, role of activation functions, backpropagation algorithm, loss function calculations, and optimizers for neural networks.",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "The paper also includes a case study on intrusion detection model building using neural network. The demystifying neural network is the first stride towards understanding DNN. ... ... Activation functions introduce non-linearity into the neural network, allowing it to learn complex patterns.",
+      "Since many implementations of neural network are based on digital hardware, performing the selected activation function through a lookup-table (LUT), it could be interesting to study neural networks whose neurons have adaptable LUT-based activation functions. In this way, after learning, the neurons will present arbitrary activation functions which can also be efficiently implemented with digital technologies. In this paper a preliminary study of the adaptive LUT-based neuron (L-neuron) is presented, together with some experimental results on canonical problems.",
+      "Multistability of Discrete-Time Recurrent Neural Networks With Unsaturating Piecewise Linear Activation Functions ... This paper studies the multistability of a class of discrete-time recurrent neural networks with unsaturating piecewise linear activation functions.",
+      "Request PDF | On May 10, 2020, Siddharth Sharma and others published ACTIVATION FUNCTIONS IN NEURAL NETWORKS | Find, read and cite all the research you need on ResearchGate"
+    ],
+    "title": "ACTIVATION FUNCTIONS IN NEURAL NETWORKS | Request PDF",
+    "url": "https://www.researchgate.net/publication/342195376_ACTIVATION_FUNCTIONS_IN_NEURAL_NETWORKS"
+  },
+  {
+    "description": "A wide variety of activation functions have been proposed for neural networks. The Rectified Linear Unit (ReLU) is especially popular today. There are many practical reasons that motivate the use of the ReLU. This paper provides new theoretical characterizations that support the use of the ...",
+    "favicon_url": "https://you.com/favicon?domain=ieeexplore.ieee.org&size=128",
+    "snippets": [
+      "A wide variety of activation functions have been proposed for neural networks. The Rectified Linear Unit (ReLU) is especially popular today. There are many practical reasons that motivate the use of the ReLU. This paper provides new theoretical characterizations that support the use of the ReLU, its variants such as the leaky ReLU, as well as other activation functions in the case of univariate, single-hidden layer feedforward neural networks."
+    ],
+    "title": "The Role of Neural Network Activation Functions | IEEE Journals ...",
+    "url": "https://ieeexplore.ieee.org/document/9209059/"
+  },
+  {
+    "description": "Abstract page for arXiv paper 2402.09092: Three Decades of Activations: A Comprehensive Survey of 400 Activation Functions for Neural Networks",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Neural networks have proven to be a highly effective tool for solving complex problems in many areas of life. Recently, their importance and practical usability have further been reinforced with the advent of deep learning. One of the important conditions for the success of neural networks is the choice of an appropriate activation function introducing non-linearity into the model.",
+      "View a PDF of the paper titled Three Decades of Activations: A Comprehensive Survey of 400 Activation Functions for Neural Networks, by Vladim\\'ir Kunc and 1 other authors View PDF",
+      "The absence of this overview, even in our experience, leads to redundancy and the unintentional rediscovery of already existing activation functions. To bridge this gap, our paper presents an extensive survey involving 400 activation functions, which is several times larger in scale than previous surveys.",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[2402.09092] Three Decades of Activations: A Comprehensive Survey ...",
+    "url": "https://arxiv.org/abs/2402.09092"
+  }
+]

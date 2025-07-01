@@ -1,0 +1,264 @@
+[
+  {
+    "description": "[TMLR] A curated list of language modeling researches for code (and other software engineering activities), plus related datasets. - codefuse-ai/Awesome-Code-LLM",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "\ud83d\udd25 [2024/09/06] Our survey has been accepted for publication by Transactions on Machine Learning Research (TMLR). If you find a paper to be missing from this repository, misplaced in a category, or lacking a reference to its journal/conference information, please do not hesitate to create an issue. ... We list several recent surveys on similar topics. While they are all about language models for code, 1-2 focus on NLP side; 3-6 focus on SE side; 7-11 are released after ours.",
+      "\"Software Engineering and Foundation Models: Insights from Industry Blogs Using a Jury of Foundation Models\" [2024-10] [paper]",
+      "DeepSeek: \"DeepSeek LLM: Scaling Open-Source Language Models with Longtermism\" [2024-01] [paper] [repo]",
+      "DeepSeekMoE: \"DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models\" [2024-01] [paper] [repo]"
+    ],
+    "title": "GitHub - codefuse-ai/Awesome-Code-LLM: [TMLR] A curated list of ...",
+    "url": "https://github.com/codefuse-ai/Awesome-Code-LLM"
+  },
+  {
+    "description": "The rapid advances of large language models (LLMs), such as ChatGPT, are revolutionizing data science and statistics. These state-of-the-art tools can streamline complex processes such as data cleaning, model building, interpretation, and report writing. As a result, they reshape the role of ...",
+    "favicon_url": "https://you.com/favicon?domain=hdsr.mitpress.mit.edu&size=128",
+    "snippets": [
+      "It is apparent that the development of truly secure and ethically grounded LLMs will continue to be a vibrant and crucial area of research. Enhancing comprehension of this research is essential. Thus, the arrangement of workshops, seminars, and group discussions focusing on ethical decision-making in data science can be highly beneficial.",
+      "\u00a92024 Xinming Tu, James Zou, Weijie Su, and Linjun Zhang.",
+      "A robust grounding in coding, statistics, and mathematical problem-solving is crucial for students to critically evaluate the accuracy and relevance of outputs produced by LLMs, which need to be fostered in the elementary and early stage of the educational process.",
+      "LLMs can also play a significant role in the classroom as interactive teaching and learning tools, contributing to personalized education and enriched learning experiences. This article discusses the opportunities, resources, and open challenges for each of these directions."
+    ],
+    "title": "What Should Data Science Education Do With Large Language Models?",
+    "url": "https://hdsr.mitpress.mit.edu/pub/pqiufdew/release/2"
+  },
+  {
+    "description": "A language model is a model of natural language. Language models are useful for a variety of tasks, including speech recognition, machine translation, natural language generation (generating more human-like text), optical character recognition, route optimization, handwriting recognition, grammar ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "A language model is a model of natural language. Language models are useful for a variety of tasks, including speech recognition, machine translation, natural language generation (generating more human-like text), optical character recognition, route optimization, handwriting recognition, grammar induction, and information retrieval."
+    ],
+    "title": "Papers with Code - Language Modelling",
+    "url": "https://paperswithcode.com/task/language-modelling"
+  },
+  {
+    "description": "Abstract Large language models (LLMs) are a type of artificial intelligence (AI) that can perform various natural language processing tasks. The adoption of LLMs has become increasingly prominent i...",
+    "favicon_url": "https://you.com/favicon?domain=besjournals.onlinelibrary.wiley.com&size=128",
+    "snippets": [
+      "Large language models (LLMs) are a type of artificial intelligence (AI) that can perform various natural language processing tasks. The adoption of LLMs has become increasingly prominent in scient...",
+      "This facility may be particularly valuable for neurodivergent students or students whose first language is not English (or whatever the working language of the class in question is) and naturally shy students (e.g. Liu et al., 2024; Box 2). Two especially helpful features are that most LLMs can readily provide answers in multiple languages and they can quickly summarise or translate text from user manuals or help forums. One commonly asked question when discussing LLMs and coding is whether we still need to teach coding skills or learn them as researchers, or if we should just outsource the process to AIs.",
+      "There has been much public concern about the effects of AI on academic integrity but there has been far less discussion about the direct and indirect environmental impacts of AI (Jay et al., 2024; Rillig et al., 2023; van Wynsberghe, 2021).",
+      "We provide recommendations for publishing research that has used \u2018LLMs\u2019, which we take herein to include LLMs and comparable generative AI tools, but not more widely used aids such as spell-checkers, Grammarly and Writefull. Artificial intelligence (AI) is the ability of a machine, generally a computer or robot, to perform tasks normally associated with intelligent humans (for an extended discussion of the merits of calling AI \u2018intelligent\u2019, which is well outside the bounds of this perspective; see Searle, 1997)."
+    ],
+    "title": "Harnessing large language models for coding, teaching and inclusion ...",
+    "url": "https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14325"
+  },
+  {
+    "description": "The ICLR Logo above may be used on presentations. Right-click and choose download. It is a vector graphic and may be used at any scale \u00b7 2710 E Corridor Dr, Appleton WI 54913",
+    "favicon_url": "https://you.com/favicon?domain=iclr.cc&size=128",
+    "snippets": [
+      "Rethinking Channel Dimensions to Isolate Outliers for Low-bit Weight Quantization of Large Language Models \u00b7 Rephrase, Augment, Reason: Visual Grounding of Questions for Vision-Language Models",
+      "A Unified Sampling Framework for Solver Searching of Diffusion Probabilistic Models \u00b7 Masked Completion via Structured Diffusion with White-Box Transformers \u00b7 GTMGC: Using Graph Transformer to Predict Molecule\u2019s Ground-State Conformation",
+      "LMUFormer: Low Complexity Yet Powerful Spiking Model With Legendre Memory Units \u00b7 Achieving Human Parity in Content-Grounded Datasets Generation",
+      "Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs \u00b7 Towards Understanding Sycophancy in Language Models"
+    ],
+    "title": "ICLR 2024 Schedule",
+    "url": "https://iclr.cc/virtual/2024/calendar"
+  },
+  {
+    "description": "Abstract. Large language models (LLMs) are capable of successfully performing many language processing tasks zero-shot (without training data). If zero-shot LLMs can also reliably classify and explain social phenomena like persuasiveness and political ideology, then LLMs could augment the ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. Large language models (LLMs) are capable of successfully performing many language processing tasks zero-shot (without training data). If zero-shot LLMs can also reliably classify and explain social phenomena like persuasiveness and political ideology, then LLMs could augment the computational social science (CSS) pipeline in important ways.",
+      "Caleb ran the OpenAI and Flan-T5/UL2 prompt perturbation experiments and few-shot experiments. Zhehao was responsible for all baseline experiments. Caleb managed the human evaluations. All authors contributed to discussion, results, error analysis, and paper writing. ... Computational Linguistics (2024) 50 (1): 237\u2013291.",
+      "Our attention is more carefully focused on the affordances of LLMs for social science.1 Our tasks are field-specific and come with the field-specific challenges of expert taxonomies, large label spaces, temporal grounding, and domain-specific parsing schemes (see Section 7.6).",
+      "The corpus was designed to disentangle a speaker\u2019s overall partisanship from the particular ideological beliefs that are reflected in an individual utterance. Thus labels reflect perceived ideology according to annotators and not the speaker\u2019s ground truth partisan affiliation."
+    ],
+    "title": "Can Large Language Models Transform Computational Social Science?",
+    "url": "https://direct.mit.edu/coli/article/50/1/237/118498/Can-Large-Language-Models-Transform-Computational"
+  },
+  {
+    "description": "With Apple Intelligence, we're integrating powerful generative AI right into the apps and experiences people use every day, all while\u2026",
+    "favicon_url": "https://you.com/favicon?domain=machinelearning.apple.com&size=128",
+    "snippets": [
+      "At the 2024 Worldwide Developers Conference, we introduced Apple Intelligence, a personal intelligence system integrated deeply into iOS 18, iPadOS 18, and macOS Sequoia.",
+      "High-quality caption data and grounded captions: We employed Contrastive Language-Image Pre-training (CLIP) models and Optical Character Recognition (OCR) tools as filters to obtain high-quality images from the aforementioned synthetic image caption data.",
+      "We scaled our Supervised Fine-Tuning (SFT) by combining human-written demonstrations and synthetic data, with an emphasis on core vision capabilities. This included general knowledge, reasoning, text-rich image understanding, text and visual grounding, and multi-image reasoning.",
+      "Then, we utilized an in-house grounding model to localize the nouns in the captions and append the coordinates after the nouns to form grounded captions."
+    ],
+    "title": "Updates to Apple's On-Device and Server Foundation Language Models ...",
+    "url": "https://machinelearning.apple.com/research/apple-foundation-models-2025-updates"
+  },
+  {
+    "description": "Large Language Models (LLMs) have garnered remarkable advancements across diverse code-related tasks, known as Code LLMs, particularly in code generation that generates source code with LLM from natural language descriptions. This burgeoning field has captured significant interest from both ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The advent of Large Language Models (LLMs) such as ChatGPT111https://chat.openai.com (OpenAI, 2022) has profoundly transformed the landscape of automated code-related tasks (Chen et al., 2021), including code completion (Wang and Li, 2021; Lu et al., 2022; Guo et al., 2023; Wu et al., 2024), code translation (Lachaux et al., 2020; Szafraniec et al., 2022; Chen et al., 2018), and code repair (Jiang et al., 2021; Olausson et al., 2023; Parasaram et al., 2024).",
+      "One remarkable aspect of LLMs is their capability to follow instructions (Wei et al., 2022a; Ouyang et al., 2022; Xu et al., 2023; Muennighoff et al., 2023; Chung et al., 2024), enabling even novice programmers to write code by simply articulating their requirements.",
+      "The performance of LLMs on code generation tasks has seen remarkable improvements, as illustrated by the HumanEval leaderboard555https://paperswithcode.com/sota/code-generation-on-humaneval, which showcases the evolution from PaLM 8B (Chowdhery et al., 2023) of 3.6% to LDB (Zhong et al., 2024) of 95.1% on Pass@1 metrics.",
+      "To offer a comprehensive chronological evolution, we present an overview of the development of LLMs for code generation, as illustrated in Figure 1. The landscape of LLMs for code generation is characterized by a spectrum of models, with certain models like ChatGPT (Ouyang et al., 2022), GPT4 (Achiam et al., 2023), LLaMA (Touvron et al., 2023a, b), and Claude 3 (Anthropic, 2024) serving general-purpose applications, while others such as StarCoder (Li et al., 2023a; Lozhkov et al., 2024), Code LLaMA (Roziere et al., 2023), DeepSeek-Coder (Guo et al., 2024), and Code Gemma (CodeGemma Team et al., 2024) are tailored specifically for code-centric tasks."
+    ],
+    "title": "A Survey on Large Language Models for Code Generation",
+    "url": "https://arxiv.org/html/2406.00515v1"
+  },
+  {
+    "description": "Information Extraction (IE) aims to extract structural knowledge from plain natural language texts. Recently, generative Large Language Models (LLMs) have demonstrated remarkable capabilities in text understanding and generation. As a result, numerous works have been proposed to integrate LLMs ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Information Extraction (IE) aims to extract structural knowledge from plain natural language texts. Recently, generative Large Language Models (LLMs) have demonstrated remarkable capabilities in text understanding and generation. As a result, numerous works have been proposed to integrate LLMs for IE tasks based on a generative paradigm.",
+      "Frontiers of Computer Science - Information Extraction (IE) aims to extract structural knowledge from plain natural language texts. Recently, generative Large Language Models (LLMs) have...",
+      "Keloth V K, Hu Y, Xie Q, Peng X, Wang Y, Zheng A, Selek M, Raja K, Wei C H, Jin Q, Lu Z, Chen Q, Xu H. Advancing entity recognition in biomedicine via instruction tuning of large language models. Bioinformatics, 2024, 40(4): btae163 ... Kim S, Seo K, Chae H, Yeo J, Lee D. VerifiNER: verification-augmented NER via knowledge-grounded reasoning with large language models.",
+      "Xie T, Zhang J, Zhang Y, Liang Y, Li Q, Wang H. Retrieval augmented instruction tuning for open ner with large language models. 2024, arXiv preprint arXiv:2406.17305 \u00b7 Li J, Li H, Sun D, Wang J, Zhang W, Wang Z, Pan G. LLMs as bridges: reformulating grounded multimodal named entity recognition."
+    ],
+    "title": "Large language models for generative information extraction: a ...",
+    "url": "https://link.springer.com/article/10.1007/s11704-024-40555-y"
+  },
+  {
+    "description": "Large language models (LLMs) have unlocked new possibilities for generating synthetic training data in both natural language and code domains. By producing artificial but task-relevant examples, these models can significantly augment or even substitute for real-world datasets, particularly ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Mitigations: As discussed, integrating retrieval to ground text generation [3] and execution to validate code [37] are primary ways to tackle this. Another line of defense is using evaluation metrics or critics. For example, using perplexity under a strong language model as a proxy for quality: if a GPT-4 model finds a GPT-3.5-generated sentence to be very unlikely, that sentence might be of low quality.",
+      "Model collapse is a more theoretical but increasingly relevant concern: this is the idea that if models are trained on their own outputs repeatedly, the quality degenerates over generations. Think of it as making a copy of a copy of a copy\u2026 eventually, the content might become nonsensical. Some studies in 2023-2024 (e.g., [18]) have investigated this by simulating multiple rounds of training a model on its predecessor\u2019s outputs.",
+      "RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning, February 2025. arXiv:2410.02089 [cs]. [18] Matthias Gerstgrasser, Rylan Schaeffer, Apratim Dey, Rafael Rafailov, Henry Sleight, John Hughes, Tomasz Korbak, Rajashree Agrawal, Dhruv Pai, Andrey Gromov, Daniel A. Roberts, Diyi Yang, David L. Donoho, and Sanmi Koyejo. Is Model Collapse Inevitable? Breaking the Curse of Recursion by Accumulating Real and Synthetic Data, April 2024.",
+      "[2] Federico Cassano, John Gouwar, Francesca Lucchetti, Claire Schlesinger, Anders Freeman, Carolyn Jane Anderson, Molly Q. Feldman, Michael Greenberg, Abhinav Jangda, and Arjun Guha. Knowledge Transfer from High-Resource to Low-Resource Programming Languages for Code LLMs, September 2024."
+    ],
+    "title": "Synthetic Data Generation Using Large Language Models: Advances ...",
+    "url": "https://arxiv.org/html/2503.14023v1"
+  },
+  {
+    "description": "[Paper List] Papers integrating knowledge graphs (KGs) and large language models (LLMs) - zjukg/KG-LLM-Papers",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "[arxiv] Harnessing the Power of Large Language Model for Uncertainty Aware Graph Processing. 2024.04 \u00b7 [arxiv] EventGround: Narrative Reasoning by Grounding to Eventuality-centric Knowledge Graphs.",
+      "2025-02 We preprint our Paper K-ON: Stacking Knowledge On the Head Layer of Large Language Model (AAAI 2025 Oral) [Repo]. 2025-01 We preprint our Paper Have We Designed Generalizable Structural Knowledge Promptings? Systematic Evaluation and Rethinking [Repo]. 2024-12 We preprint our Paper TrustUQA: A Trustful Framework for Unified Structured Data Question Answering (AAAI 2025) [Repo].",
+      "2024-02 We preprint our Survey Knowledge Graphs Meet Multi-Modal Learning: A Comprehensive Survey [Repo]. 2023-06 We create this repository to maintain a paper list on Intergrating Knowledge Graphs and Large Language Models.",
+      "[arxiv] OntoTune: Ontology-Driven Self-training for Aligning Large Language Models. 2025.2 \u00b7 [EMNLP 2024 findings] Question-guided Knowledge Graph Re-scoring and Injection for Knowledge Graph Question Answering."
+    ],
+    "title": "GitHub - zjukg/KG-LLM-Papers: [Paper List] Papers integrating ...",
+    "url": "https://github.com/zjukg/KG-LLM-Papers"
+  },
+  {
+    "description": "Get a roundup of technical trends and what happened in the world of language models in 2024.",
+    "favicon_url": "https://you.com/favicon?domain=blog.dataiku.com&size=128",
+    "snippets": [
+      "With powerful models and features released at breathtaking speeds and a competitive playing field denser than ever before, 2024 was a dizzying year in the field of large language models (LLMs). It also ended with a raft of spectacular announcements. In this blog post, we review the most significant technological trends of the past year and discuss how practitioners can take advantage of them.",
+      "In particular, we discuss: ... Our recommendations for practitioners in light of these evolutions. OpenAI's leadership faced stiff competition with GPT-4 by the end of 2024. GPT-4o is today tied with o1 \u2014 another OpenAI model \u2014 and two versions of Google\u2019s Gemini model for the first place of the LMSYS Chatbot Arena leaderboard.",
+      "In September 2024, OpenAI unveiled o1, a series of experimental models that were specifically fine-tuned to generate chains of thoughts before providing an answer. These models scored particularly high in math, coding, and science benchmarks. Interestingly, the performance of o1 increases with both train-time compute (i.e., the computations required to fine-tune the model) and test-time compute (i.e., the computations needed to generate answers and the associated chains of thoughts once the model has been finetuned).",
+      "OpenAI\u2019s rivals, either established companies like Google, Anthropic and Meta, or newcomers, such as 01.ai, X.ai, and DeepSeek founded in 2023, make available powerful models which surpass the version of GPT-4 available in early 2024."
+    ],
+    "title": "A Dizzying Year for Language Models: 2024 in Review",
+    "url": "https://blog.dataiku.com/a-dizzying-year-for-language-models-2024-in-review"
+  },
+  {
+    "description": "A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation. The largest and most capable LLMs are generative pretrained transformers (GPTs), which are ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "OpenAI did not reveal the high-level architecture and the number of parameters of GPT-4. The release of ChatGPT led to an uptick in LLM usage across several research subfields of computer science, including robotics, software engineering, and societal impact work. In 2024 OpenAI released the reasoning model OpenAI o1, which generates long chains of thought before returning a final answer.",
+      "The largest models, such as Google's Gemini 1.5, presented in February 2024, can have a context window sized up to 1 million (context window of 10 million was also \"successfully tested\"). Other models with large context windows includes Anthropic's Claude 2.1, with a context window of up to 200k tokens.",
+      "In late 2024, a new direction emerged in LLM development with models specifically designed for complex reasoning tasks. These \"reasoning models\" were trained to spend more time generating step-by-step solutions before providing final answers, similar to human problem-solving processes.",
+      "OpenAI introduced this trend with their o1 model in September 2024, followed by o3 in December 2024. These models showed significant improvements in mathematics, science, and coding tasks compared to traditional LLMs.",
+      "The American Sunlight Project coined this technique \"LLM grooming\", and pointed to it as a new tool of weaponizing AI to spread disinformation and harmful content. Similarly, Yongge Wang illustrated in 2024 how a potential criminal could potentially bypass ChatGPT 4o's safety controls to obtain information on establishing a drug trafficking operation."
+    ],
+    "title": "Large language model - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Large_language_model"
+  },
+  {
+    "description": "Agent-based modeling and simulation have evolved as a powerful tool for modeling complex systems, offering insights into emergent behaviors and interactions among diverse agents. Recently, integrating large language models into agent-based modeling and simulation presents a promising avenue ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Agent-based modeling and simulation have evolved as a powerful tool for modeling complex systems, offering insights into emergent behaviors and interactions among diverse agents. Recently, integrating large language models into agent-based modeling and simulation presents a promising avenue for enhancing simulation capabilities.",
+      "Humanities and Social Sciences Communications - Large language models empowered agent-based modeling and simulation: a survey and perspectives",
+      "The mechanisms and cooperative frameworks designed for these agents can enable them to work together efficiently toward achieving goals. COLA (Lan et al., 2024) proposed to organize LLM agents to discuss and finally decide the stance on social media text, with three role-played agents: analyzer, debater, and summarizer.",
+      "The representative works include (Gao et al., 2023), ChatDev (Qian et al., 2024), and Humanoid agents (Wang et al., 2023c). ... The part discusses whether LLM Agents, due to their human-like behavior, can be used to recreate and validate established social laws and patterns."
+    ],
+    "title": "Large language models empowered agent-based modeling and simulation: ...",
+    "url": "https://www.nature.com/articles/s41599-024-03611-3"
+  },
+  {
+    "description": "A Survey on Large Language Models for Software Engineering - iSEngLab/AwesomeLLM4SE",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "\ud83d\udd25PyGen: A Collaborative Human-AI Approach to Python Package Creation \u2014\u2014Package Creation [2024-arXiv]",
+      "\ud83d\udd25Code-mixed LLM: Improve Large Language Models' Capability to Handle Code-Mixing through Reinforcement Learning from AI Feedback [2024-arXiv]",
+      "\ud83d\udd25Fuzzing Robotic Software Using HPC [2024-arXiv]",
+      "\ud83d\udd25InfiBench: Evaluating the Question-Answering Capabilities of Code Large Language Models [2024-NeurIPS]"
+    ],
+    "title": "GitHub - iSEngLab/AwesomeLLM4SE: A Survey on Large Language Models ...",
+    "url": "https://github.com/iSEngLab/AwesomeLLM4SE"
+  },
+  {
+    "description": "Large language models (LLMs) have demonstrated impressive capabilities in natural language processing. However, their internal mechanisms are still unclear and this lack of transparency poses unwan...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Large language models (LLMs) have demonstrated impressive capabilities in natural language processing. However, their internal mechanisms are still unclear and this lack of transparency poses unwanted risks for downstream applications. Therefore, ...",
+      "This auto-generated natural language provides intuitive insight into the emergent inner computations and feature representations in GPT-2 XL. A common limitation in explaining individual components of LLMs is the lack of ground-truth explanation annotations for individual components.",
+      "Ground truth explanations for LLMs are usually inaccessible. For example, there are currently no benchmark datasets to evaluate the global explanation of individual components captured by LLMs. This presents two main challenges. First, it is difficult to design explanation algorithms that accurately reflect an LLM\u2019s decision-making process.",
+      "Second, the lack of ground truth makes evaluating explanation faithfulness and fidelity problematic. It is also challenging to select a suitable explanation among various methods in the absence of ground truth guidance."
+    ],
+    "title": "Explainability for Large Language Models: A Survey | ACM Transactions ...",
+    "url": "https://dl.acm.org/doi/10.1145/3639372"
+  },
+  {
+    "description": "The ICML Logo above may be used on presentations. Right-click and choose download. It is a vector graphic and may be used at any scale \u00b7 ICML Proceedings at PMLR",
+    "favicon_url": "https://you.com/favicon?domain=icml.cc&size=128",
+    "snippets": [
+      "2nd Workshop on Advancing Neural Network Training : Computational Efficiency, Scalability, and Resource Optimization (WANT@ICML 2024) 2nd Workshop on Generative AI and Law (GenLaw \u201924) 3D Geometric Shape Assembly via Efficient Point Cloud Matching \u00b7 3D-VLA: A 3D Vision-Language-Action Generative World Model",
+      "GPT-4V(ision) is a Generalist Web Agent, if Grounded ... Gradient Compressed Sensing: A Query-Efficient Gradient Estimator for High-Dimensional Zeroth-Order Optimization \u00b7 Gradual Divergence for Seamless Adaptation: A Novel Domain Incremental Learning Method \u00b7 Graph2Tac: Online Representation Learning of Formal Math Concepts ... GroupCover: A Secure, Efficient and Scalable Inference Framework for On-device Model Protection based on TEEs",
+      "An Independence-promoting Loss for Music Generation with Language Models \u00b7 An Infinite-Width Analysis on the Jacobian-Regularised Training of a Neural Network \u00b7 An Information-Theoretic Analysis of In-Context Learning \u00b7 An Information Theoretic Approach to Interaction-Grounded Learning",
+      "Accelerating Convergence of Score-Based Diffusion Models, Provably"
+    ],
+    "title": "Downloads 2024",
+    "url": "https://icml.cc/Downloads/2024"
+  },
+  {
+    "description": "Abstract. Recently, large language models (LLMs), especially those that are pretrained on code, have demonstrated strong capabilities in generating programs from natural language inputs. Despite promising results, there is a notable lack of a comprehensive evaluation of these models\u2019 ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. Recently, large language models (LLMs), especially those that are pretrained on code, have demonstrated strong capabilities in generating programs from natural language inputs. Despite promising results, there is a notable lack of a comprehensive evaluation of these models\u2019 language-to-code generation capabilities.",
+      "It has also served as a great testbed for evaluating various language understanding capabilities of NLP systems, such as logical and math reasoning (Gao et al., 2023; Han et al., 2022), grounded language understanding (Xie et al., 2022; Huang et al., 2023), and tool use (Schick et al., 2024; Paranjape et al., 2023).",
+      "We discuss the limitation of greedy decoding in \u00a7 4. ... See \u00a7 4 for the limitations of execution-based evaluation. ... While more challenging datasets exists for textto-SQL (e.g., BIRD-SQL (Li et al., 2024)), we believe the observations should be generalizable due to the similar task format.",
+      "Transactions of the Association for Computational Linguistics (2024) 12: 1311\u20131329. ... Ansong Ni, Pengcheng Yin, Yilun Zhao, Martin Riddell, Troy Feng, Rui Shen, Stephen Yin, Ye Liu, Semih Yavuz, Caiming Xiong, Shafiq Joty, Yingbo Zhou, Dragomir Radev, Arman Cohan, Arman Cohan; L2CEval: Evaluating Language-to-Code Generation Capabilities of Large Language Models."
+    ],
+    "title": "L2CEval: Evaluating Language-to-Code Generation Capabilities of ...",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00705/124835/L2CEval-Evaluating-Language-to-Code-Generation"
+  },
+  {
+    "description": "With the advent of models such as ChatGPT and other models, large language models (LLMs) have demonstrated unprecedented capabilities in understanding and generating natural language, presenting novel opportunities and challenges within the medicine domain. While there have been many studies ...",
+    "favicon_url": "https://you.com/favicon?domain=www.oaepublish.com&size=128",
+    "snippets": [
+      "With the advent of models such as ChatGPT and other models, large language models (LLMs) have demonstrated unprecedented capabilities in understanding and generating natural language, presenting novel opportunities and challenges within the medicine domain. While there have been many studies focusing on the employment of LLMs in medicine, comprehensive reviews of the datasets utilized in this field remain scarce.",
+      "Intell Robot 2024;4(4):457-78.",
+      "4. Ji S, Zhang T, Yang K, et al. Domain-specific continued pretraining of language models for capturing long context in mental health; 2023. Available from: https://arxiv.org/abs/2304.10447. [Last accessed on 12 Dec 2024].",
+      "6. Devlin J, Chang MW, Lee K, Toutanova K. BERT: pre-training of deep bidirectional transformers for language understanding; 2019. Available from: https://arxiv.org/abs/1810.04805. [Last accessed on 12 Dec 2024]."
+    ],
+    "title": "A survey of datasets in medicine for large language models",
+    "url": "https://www.oaepublish.com/articles/ir.2024.27"
+  },
+  {
+    "description": "General large language models (LLMs), represented by ChatGPT, have demonstrated significant potential in software engineering tasks such as code generation. This led to the development of specialized LLMs for software engineering, called Code LLMs. Further, Code LLMs are often derived from ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The paper highlights that training code generation models with causal masking objectives can achieve strong zero-shot performance on challenging and practically meaningful code completion and editing tasks. It also lays the groundwork for future work on supervised filling and editing via model fine-tuning and iterative decoding.",
+      "Three experienced researchers, including one non-coauthors, independently conducted a thorough review of the search engine results from the four databases. After individually organizing the papers, they engaged in a collaborative discussion to align their findings.",
+      "On the other hand, Codex exhibits relatively significant differences between its two versions: 2.5B and 12B. The marginal effect of model parameter size on performance and the sensitivity of different models to parameter size are important factors worth discussing.",
+      "On the other hand, the variations between the two versions of Codex, 2.5B and 12B, are relatively larger. Therefore, for Code LLMs, the marginal effect of model parameter size on performance and the sensitivity of different models to parameter size could be a topic worth discussing."
+    ],
+    "title": "A Survey of Large Language Models for Code: Evolution, Benchmarking, ...",
+    "url": "https://arxiv.org/html/2311.10372v2"
+  },
+  {
+    "description": "In this work we systematically review the recent advancements in software engineering with language models, covering 70+ models, 40+ evaluation tasks, 180+ datasets, and 900 related works. Unlike previous works, we integrate software engineering (SE) with natural language processing (NLP) by ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The application of pretrained Transformers in software engineering, however, can be traced back to dates before decoder-only autoregressive models became dominant (Feng et al., 2020; Liu et al., 2020), and also goes beyond code processing (Arora et al., 2023; Feng et al., 2024; Ma et al., 2024).",
+      "We observe that advanced topics from language modeling have been recently introduced into code processing, including instruction tuning (Honovich et al., 2023; Xu et al., 2024; Luo et al., 2023), infilling objectives (Tay et al., 2023b; Li et al., 2023h; Rozi\u00e8re et al., 2023), recontemplation of scaling laws (Hoffmann et al., 2022; Gunasekar et al., 2023; Li et al., 2023i), architectural improvements (Shazeer, 2019; Su et al., 2024; Dao et al., 2022), and autonomous agents (Qian et al., 2023; Hong et al., 2023), while in return SE requirements, represented by programming (Chen et al., 2021b), are providing real-world testbeds for these technologies and driving the development of LLMs forward into production and deployment.",
+      "However, a major difference between NLP and SE is that in NLP, low-resource languages are often spoken by few people or even endangered, while in SE low-resource languages are often designed for specific domains and purposes, and thus have an active user community. Verilog, a hardware description language, is one such example, for which code modeling research is quite abundant (Thakur et al., 2023a; b; Lu et al., 2023b; Liu et al., 2023g; Tsai et al., 2023; Thorat et al., 2023; Liu et al., 2023h; Nadimi & Zheng, 2024).",
+      "From a different perspective, most of these popular languages are imperative languages, while few works have studied NLP and LLM applications in declarative or functional languages, except those concerning SQL and one recent work on Haskell (van Dam et al., 2024). However, research has shown that declarative languages are more aligned for optimization since they describe the \u201cwhat\u201d and not \u201chow\u201d in programming (Marcus et al., 2019; 2020), thus they are worth more attention in the future research. Similar to NLP, many works in code modeling have studied the transfer of model capability across languages."
+    ],
+    "title": "Unifying the Perspectives of NLP and Software Engineering: A Survey ...",
+    "url": "https://arxiv.org/html/2311.07989v7"
+  },
+  {
+    "description": "Posted by Jeff Dean, Senior Fellow and SVP of Google Research, on behalf of the Google Research community Today we kick off a series of blog posts ...",
+    "favicon_url": "https://you.com/favicon?domain=research.google&size=128",
+    "snippets": [
+      "All of these factors together have given rise to a range of models able to generate high-resolution images with strong adherence even to very detailed and fantastic prompts. We focus here on two recent advances from teams in Google Research, Imagen and Parti. Imagen is based on the Diffusion work discussed above.",
+      "Although language models are trained on surprisingly simple objectives, like predicting the next token in a sequence of text given the preceding tokens, when large models are trained on sufficiently large and diverse corpora of text, the models can generate coherent, contextual, natural-sounding responses, and can be used for a wide range of tasks, such as generating creative content, translating between languages, helping with coding tasks, and answering questions in a helpful and informative way. Our ongoing work on LaMDA explores how these models can be used for safe, grounded, and high-quality dialog to enable contextual multi-turn conversations.",
+      "In a similar vein, our work on FindIt enables natural language questions about visual images to be answered through a unified, general-purpose and multitask visual grounding model that can flexibly answer different types of grounding and detection queries.",
+      "Intentionally apply our AI Principles (which are grounded in beneficial uses and avoidance of harm), processes, and governance to guide our work in AI, from research priorities to productization and uses."
+    ],
+    "title": "Google Research, 2022 & beyond: Language, vision and generative models",
+    "url": "https://research.google/blog/google-research-2022-beyond-language-vision-and-generative-models/"
+  }
+]

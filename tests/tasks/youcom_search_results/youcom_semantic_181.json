@@ -1,0 +1,259 @@
+[
+  {
+    "description": "Claims are a fundamental unit of scientific discourse. The exponential growth in the number of scientific publications makes automatic claim extraction an important problem for researchers who are overwhelmed by this information overload. Such an automated claim extraction system is useful ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Claims are a fundamental unit of scientific discourse. The exponential growth in the number of scientific publications makes automatic claim extraction an important problem for researchers who are overwhelmed by this information overload. Such an automated claim extraction system is useful for both manual and programmatic exploration of scientific knowledge.",
+      "Abstract page for arXiv paper 1907.00962: Claim Extraction in Biomedical Publications using Deep Discourse Model and Transfer Learning",
+      "Such an automated claim extraction system is useful for both manual and programmatic exploration of scientific knowledge. In this paper, we introduce a new dataset of 1,500 scientific abstracts from the biomedical domain with expert annotations for each sentence indicating whether the sentence presents a scientific claim.",
+      "View a PDF of the paper titled Claim Extraction in Biomedical Publications using Deep Discourse Model and Transfer Learning, by Titipat Achakulvisut and 3 other authors View PDF"
+    ],
+    "title": "[1907.00962] Claim Extraction in Biomedical Publications using ...",
+    "url": "https://arxiv.org/abs/1907.00962"
+  },
+  {
+    "description": "Levy et al. (2014) Ran Levy, Yonatan Bilu, Daniel Hershcovich, Ehud Aharoni, and Noam Slonim. 2014. Context dependent claim detection. In Proceedings of COLING 2014, the 25th International Conference on Computational Linguistics: Technical Papers, pages 1489\u20131500.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "However, existing claim extraction approaches focus more on identifying and extracting claims from individual sentences, e.g., identifying whether a sentence contains a claim or the exact boundaries of the claim within a sentence. In this paper, we propose a method for document-level claim extraction for fact-checking, which aims to extract check-worthy claims from documents and decontextualise them so that they can be understood out of context.",
+      "This supports our conclusion that the document-level check-worthy claims extracted by our method are the claims that the public is more interested in knowing the truth. Table 7: Results of different methods for identifying check-worthy claims on the dev set of subtask 1B. This paper presented a document-level claim extraction framework for fact-checking, aiming to extract salient check-worthy claims from documents that can be understood out of context.",
+      "We would also like to thank the anonymous reviewers for their helpful questions and comments that helped us improve the paper. While our method has demonstrated superiority in extracting salient check-worthy claims and improving evidence retrieval, we recognize that our method is not able to decontextualise all ambiguous sentences, particularly those that lack the necessary context in the",
+      "We convert AVeriTeC, a recently proposed dataset for real-world claim extraction and verification Schlichtkrull et al. (2023), into AVeriTeC-DCE, a dataset for the document-level CE task. AVeriTeC is collected from 50 different fact-checking organizations and contains 4568 real-world claims."
+    ],
+    "title": "Document-level Claim Extraction and Decontextualisation for ...",
+    "url": "https://arxiv.org/html/2406.03239v1"
+  },
+  {
+    "description": "We propose a framework for evaluating claim extraction and introduce Claimify, an LLM-based method that outperforms prior solutions.",
+    "favicon_url": "https://you.com/favicon?domain=www.microsoft.com&size=128",
+    "snippets": [
+      "Claim extraction is a key step in fact-checking LLM-generated content. Claimify outperforms prior techniques, ensuring that extracted claims are accurate, verifiable, and preserve critical context. Paper: Towards Effective Extraction and Evaluation of Factual Claims Blog post: Claimify: Extracting high-quality claims from language model outputs Opens in a new tab",
+      "We also introduce Claimify, an LLM-based claim extraction method, and demonstrate that it outperforms existing methods under our evaluation framework. A key feature of Claimify is its ability to handle ambiguity and extract claims only when there is high confidence in the correct interpretation of the source text."
+    ],
+    "title": "Towards Effective Extraction and Evaluation of Factual Claims - ...",
+    "url": "https://www.microsoft.com/en-us/research/publication/towards-effective-extraction-and-evaluation-of-factual-claims/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Extracting Core Claims from Scientific Articles",
+    "url": "https://arxiv.org/pdf/1707.07678"
+  },
+  {
+    "description": "Extracting scientific claims from biomedical abstracts (powered by AllenNLP) - titipata/detecting-scientific-claim",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Achakulvisut, Titipat, Chandra Bhagavatula, Daniel Acuna, and Konrad Kording. \"Claim Extraction in Biomedical Publications using Deep Discourse Model and Transfer Learning.\" arXiv preprint arXiv:1907.00962 (2019).",
+      "We use transfer learning with fine tuning to train claim extraction model from pre-trained discourse model.",
+      "Expertly annotated dataset We release the dataset of annotated 1,500 abstracts containing 11,702 sentences (2,276 annotated as claim sentences) sampled from 110 biomedical journals. The final dataset are the majority vote from three experts.",
+      "Detecting claim from scientific publication using discourse model and transfer learning."
+    ],
+    "title": "GitHub - titipata/detecting-scientific-claim: Extracting scientific ...",
+    "url": "https://github.com/titipata/detecting-scientific-claim"
+  },
+  {
+    "description": "Information Extraction (IE) aims to extract structural knowledge from plain natural language texts. Recently, generative Large Language Models (LLMs) have demonstrated remarkable capabilities in text understanding and generation. As a result, numerous works have been proposed to integrate LLMs ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Information Extraction (IE) aims to extract structural knowledge from plain natural language texts. Recently, generative Large Language Models (LLMs) have demonstrated remarkable capabilities in text understanding and generation. As a result, numerous works have been proposed to integrate LLMs for IE tasks based on a generative paradigm.",
+      "Frontiers of Computer Science - Information Extraction (IE) aims to extract structural knowledge from plain natural language texts. Recently, generative Large Language Models (LLMs) have...",
+      "Zhou S, Yu B, Sun A, Long C, Li J, Sun J. A survey on neural open information extraction: current status and future directions. In: Proceedings of the 31st International Joint Conference on Artificial Intelligence. 2022, 5694\u20135701 ... OpenAI, Achiam J, Adler S, Agarwal S, Ahmad L, et al. GPT-4 technical report.",
+      "Hsu I H, Xie Z, Huang K, Natarajan P, Peng N. AMPERE: AMR-aware prefix for generation-based event argument extraction model. In: Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics. 2023, 10976\u201310993 ... Duan J, Liao X, An Y, Wang J. KeyEE: enhancing low-resource generative event extraction with auxiliary keyword sub-prompt."
+    ],
+    "title": "Large language models for generative information extraction: a ...",
+    "url": "https://link.springer.com/article/10.1007/s11704-024-40555-y"
+  },
+  {
+    "description": "Claims are a fundamental unit of scientific discourse. The exponential growth in the number of scientific publications makes automatic claim extraction an important problem for researchers who are overwhelmed by this i\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.arxiv-vanity.com&size=128",
+    "snippets": [
+      "Automatically extracting claims made in scientific articles is becoming increasingly important for information retrieval task. In this paper, we present a novel annotated dataset for claim extraction from the biomedical domain and several claim extraction models drawing from recent developments in weak supervision and transfer learning.",
+      "Such an automated claim extraction system is useful for both manual and programmatic exploration of scientific knowledge. In this paper, we introduce a new dataset of 1,500 scientific abstracts from the biomedical domain with expert annotations for each sentence indicating whether the sentence presents a scientific claim.",
+      "It would be beneficial to produce larger datasets with more standard tooling to explore more sophisticated automated claim extraction methods with machine learning and deep learning. In this paper, we introduce a scientific claim extraction method and a dataset of 1,500 scientific papers with expertly annotated claims.",
+      "We make the code for claim extraction, our dataset, and our annotation tool publicly available to the community 111https://github.com/titipata/detecting-scientific-claim. We discuss how to extend this framework to work with larger bodies of texts and other domains. Figure 1: Example of annotated claims for a paper in our dataset."
+    ],
+    "title": "[1907.00962] Claim Extraction in Biomedical Publications using ...",
+    "url": "https://www.arxiv-vanity.com/papers/1907.00962/"
+  },
+  {
+    "description": "Key Information Extraction (KIE) is aimed at extracting structured information (e.g. key-value pairs) from form-style documents (e.g. invoices), which makes an important step towards intelligent document understanding.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "In order to roundly evaluate our proposed method as well as boost the future research, we release a new dataset named WildReceipt, which is collected and annotated tailored for the evaluation of key information extraction from document images of unseen templates in the wild. ... Our experiments show that CRF with visual features outperformed both a heuristic and a CRF model with only text-based features. ... On the other hand, this paper tackles the problem by going back to the basic: effective combination of text and layout. ... Recent years have witnessed the rise and success of pre-training techniques in visually-rich document understanding.",
+      "Use these libraries to find Key Information Extraction models and implementations ... See all 6 libraries. ... Collapse 6 libraries. ... In this paper, we propose the \\textbf{LayoutLM} to jointly model interactions between text and layout information across scanned document images, which is beneficial for a great number of real-world document image understanding tasks such as information extraction from scanned documents.",
+      "These leaderboards are used to track progress in Key Information Extraction"
+    ],
+    "title": "Papers with Code - Key Information Extraction",
+    "url": "https://paperswithcode.com/task/key-information-extraction"
+  },
+  {
+    "description": "Claims are a fundamental unit of scientific discourse. The exponential growth in the number of scientific publications makes automatic claim extraction an important problem for researchers who are overwhelmed by this i\u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "Automatically extracting claims made in scientific articles is becoming increasingly important for information retrieval task. In this paper, we present a novel annotated dataset for claim extraction from the biomedical domain and several claim extraction models drawing from recent developments in weak supervision and transfer learning.",
+      "Such an automated claim extraction system is useful for both manual and programmatic exploration of scientific knowledge. In this paper, we introduce a new dataset of 1,500 scientific abstracts from the biomedical domain with expert annotations for each sentence indicating whether the sentence presents a scientific claim.",
+      "It would be beneficial to produce larger datasets with more standard tooling to explore more sophisticated automated claim extraction methods with machine learning and deep learning. In this paper, we introduce a scientific claim extraction method and a dataset of 1,500 scientific papers with expertly annotated claims.",
+      "We make the code for claim extraction, our dataset, and our annotation tool publicly available to the community 111https://github.com/titipata/detecting-scientific-claim. We discuss how to extend this framework to work with larger bodies of texts and other domains. Figure 1: Example of annotated claims for a paper in our dataset."
+    ],
+    "title": "[1907.00962] Claim Extraction in Biomedical Publications using ...",
+    "url": "https://ar5iv.labs.arxiv.org/html/1907.00962"
+  },
+  {
+    "description": "The exponential growth of scientific articles has presented challenges in information organization and extraction. Automation is urgently needed to streamline literature reviews and enhance insight extraction. We explore the potential of Large Language Models (LLMs) in key-insights extraction ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "The exponential growth of scientific articles has presented challenges in information organization and extraction. Automation is urgently needed to streamline literature reviews and enhance insight extraction. We explore the potential of Large Language Models (LLMs) in key-insights extraction from scientific articles, including OpenAI\u2019s GPT-4.0, MistralAI\u2019s Mixtral 8 \u00d7 7B, 01AI\u2019s Yi, and InternLM\u2019s InternLM2.",
+      "Scientific Reports - A scientific-article key-insight extraction system based on multi-actor of fine-tuned open-source large language models",
+      "Additionally, the execution efficiency of the system is still a concern due to the collaboration of multiple LLMs involved. The extraction of key-insights such as \u201climitations\u201d that may not exist in the article or appear in an ambiguous form requires further research. Compared to the arXiv papers used in this study, more rigorous peer-reviewed papers may avoid this problem.",
+      "In this paper, it is shown that we can extract key-insights from scientific articles only using open-source LLMs. Our findings affirm the critical role of fine-tuning in enhancing the proficiency of LLMs for extracting key-insights, with InternLM2 FT showcasing remarkable improvements after fine-tuning."
+    ],
+    "title": "A scientific-article key-insight extraction system based on ...",
+    "url": "https://www.nature.com/articles/s41598-025-85715-7"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=ceur-ws.org&size=128",
+    "snippets": [],
+    "title": "Scientific Claim Extraction with Supervised Contrastive ...",
+    "url": "https://ceur-ws.org/Vol-3451/paper11.pdf"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=scispace.com&size=128",
+    "snippets": [],
+    "title": "AI-Powered Data Extraction from Research PDFs",
+    "url": "https://scispace.com/extract-data"
+  },
+  {
+    "description": "Extracting structured knowledge from scientific text remains a challenging task for machine learning models. Here, we present a simple approach to joint named entity recognition and relation extraction and demonstrate how pretrained large language models (GPT-3, Llama-2) can be fine-tuned to ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Extracting structured knowledge from scientific text remains a challenging task for machine learning models. Here, we present a simple approach to joint named entity recognition and relation extraction and demonstrate how pretrained large language models (GPT-3, Llama-2) can be fine-tuned to extract useful records of complex scientific knowledge.",
+      "Extracting scientific data from published research is a complex task required specialised tools. Here the authors present a scheme based on large language models to automatise the retrieval of information from text in a flexible and accessible manner.",
+      "Nature Communications - Extracting scientific data from published research is a complex task required specialised tools. Here the authors present a scheme based on large language models to...",
+      "Their approach employed a \u201cquestion and answer\" (Q/A) approach that extracted limited device-level information (e.g., \u201cWhat is the cathode?\", \u201cWhat is the anode?\", \u201cWhat is the electrolyte?\") in tandem with conventional information extraction methods11. We note that this approach cannot be used on passages that contain information about more than one device, and it required the BERT language model to be trained on hundreds of thousands of battery research papers before being fine-tuned on the Q/A task. More recently, Zheng et al.44 designed a prompt-engineering approach (ChemPrompt w/ ChatGPT45) for extracting data from scientific papers."
+    ],
+    "title": "Structured information extraction from scientific text with large ...",
+    "url": "https://www.nature.com/articles/s41467-024-45563-x"
+  },
+  {
+    "description": "There has been a growing effort to replace manual extraction of data from research papers with automated data extraction based on natural language processing, language models, and recently, large language models (LLMs). Although these methods enable efficient extraction of data from large sets ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "There has been a growing effort to replace manual extraction of data from research papers with automated data extraction based on natural language processing, language models, and recently, large language models (LLMs). Although these methods enable efficient extraction of data from large sets of research papers, they require a significant amount of up-front effort, expertise, and coding.",
+      "Efficient data extraction from research papers accelerates science and engineering. Here, the authors develop an automated approach which uses conversational large language models to achieve high precision and recall in extracting materials data.",
+      "Nature Communications - Efficient data extraction from research papers accelerates science and engineering. Here, the authors develop an automated approach which uses conversational large language...",
+      "This first prompt is meant to provide information whether the sentence is relevant at all for further analysis, i.e., whether it contains the data for the property in question (value and units). This classification is crucial because, even in papers that have been extracted to be relevant by an initial keyword search, the ratio of relevant to irrelevant sentences is typically about 1:100."
+    ],
+    "title": "Extracting accurate materials data from research papers with ...",
+    "url": "https://www.nature.com/articles/s41467-024-45914-8"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=scispace.com&size=128",
+    "snippets": [],
+    "title": "How Do I Extract Key Data from Research Papers?",
+    "url": "https://scispace.com/help/en/articles/10673503-how-do-i-extract-key-data-from-research-papers-extracting-data-from-research-papers-with-scispace-ai"
+  },
+  {
+    "description": "A new dataset of 1,500 scientific abstracts from the biomedical domain with expert annotations for each sentence indicating whether the sentence presents a scientific claim is introduced, and a new model for claim extraction is introduced and compared to several baseline models including rule-based ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "A new dataset of 1,500 scientific abstracts from the biomedical domain with expert annotations for each sentence indicating whether the sentence presents a scientific claim is introduced, and a new model for claim extraction is introduced and compared to several baseline models including rule-based and deep learning techniques.Expand ... Xiangci Li, Gully A. Burns, Nanyun Peng ... The capability of automatically extracting text fragments from primary research papers that describe the evidence presented in that paper\u2019s figures is presented, which arguably provides the raw material of any scientific argument made within the paper.Expand",
+      "This work develops baseline models which detect tweets that contain a claim automatically and annotates a corpus of 1200 tweets for implicit and explicit biomedical claims, revealing that biomedical tweets are densely populated with claims.Expand ... This paper introduces the task of automatically identifying the contribution type and their corresponding arguments and proposes a joint framework named SciContriExt for the scientific contribution extraction task, i.e., classifying the contributiontype and extracting corresponding fine-grained arguments.Expand",
+      "This paper introduces a new publicly available dataset for verification against textual sources, FEVER, which consists of 185,445 claims generated by altering sentences extracted from Wikipedia and subsequently verified without knowledge of the sentence they were derived from.Expand",
+      "The authors' contrastive-learning-based model ClaimDistiller has the highest performance, boosting the F1 score of the base models by 3\u20134%, and achieved an F1=87.45%, improving the state-of-the-art by more than 7% on the same benchmark data previously used for this task.Expand ... Xiangci Li, Gully A. Burns, Nanyun Peng ... This paper improves the current state-of-the-art clause-level sequence tagging over text clauses for a set of discourse types on scientific paragraphs and applies richly contextualized deep representation learning to the analysis of scientific discourse structures as a clause-tagging task.Expand"
+    ],
+    "title": "[PDF] Claim Extraction in Biomedical Publications using Deep ...",
+    "url": "https://www.semanticscholar.org/paper/e432248e83d468edb65eefb532f27955f7997746"
+  },
+  {
+    "description": "Paper tables with annotated results for Document-level Claim Extraction and Decontextualisation for Fact-Checking",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [],
+    "title": "Papers with Code - Paper tables with annotated results for ...",
+    "url": "https://paperswithcode.com/paper/document-level-claim-extraction-and/review/"
+  },
+  {
+    "description": "The reliable and usable (semi) automation of data extraction can support the field of systematic review by reducing the workload required to gather information about the conduct and results of the included studies. This living systematic review ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Changes to data extraction items: For update 2 we added data extraction items specific to LLM automation, including prompt development, reproducibility of LLM output, strategies of applying LLMs, and a question about whether the paper describes a study within a review.",
+      "They conclude that tools facilitating screening are widely accessible and usable, while data extraction tools are still at piloting stages or require a higher amount of human input. A systematic review of machine-learning for systematic review automation, published in Portuguese in 2020, included 35 publications. The authors examined journals in which publications about systematic review automation are published, and conducted a term-frequency and citation analysis. They categorised papers by systematic review task, and provided a brief overview of data extraction methods.",
+      "For update 2 we added data extraction items specific to LLM automation, including prompt development, reproducibility, strategies of applying LLMs, and a question about whether the paper describes a study within a review.",
+      "This helps to avoid over-fitting and over-estimating extraction performance. However, the often smaller zero-shot LLM publications seemed to have lower quality of reporting standards. Out of 13 papers that explored zero-shot data extraction, six provided insufficient information about prompt development."
+    ],
+    "title": "Data extraction methods for systematic review (semi)automation: ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8361807/"
+  },
+  {
+    "description": "Answers to commonly asked questions about Semantic Scholar.",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "Semantic Scholar is a free, AI-powered search and discovery tool that helps researchers discover and understand scientific literature that's most relevant to their work. Semantic Scholar uses machine learning techniques to extract meaning and identify connections from within papers, then surfaces these insights to help scholars gain an in-depth understanding quickly.",
+      "Ask This Paper is designed to work on questions which can be answered by the current paper. There are a few predefined questions that we find generally work well, however, we encourage you to try new questions. We are always learning more about the abilities of this experimental system. ... When you click on an underlined term in the Semantic Reader, we ask ChatGPT to provide a definition for the given term in the context it appears in. ... We identify scientific terms by extracting noun-phrases from the text.",
+      "Topic pages aim to help scholars quickly understand a field by synthesizing concepts from several papers that mention or explain the topic with generative AI, including: ... Currently, only topics in the Computer Science field are available. To see if a topic is available, you can directly search for it from the search bar on any Topic page. ... We use large language models (LLMs) to extract a list of topics from the title and abstract of a paper.",
+      "Semantic Scholar automatically identifies citing papers for each publication based on the data available in our corpus. Note: Published academic articles and preprints are our primary focus. Book coverage is very limited and patents are not included. Because of this, you may notice differences in counts when comparing against other websites. Our site features over two billion citations and we\u2019re continuously working to add citation data through enhanced PDF extraction models and publisher partnerships."
+    ],
+    "title": "Semantic Scholar | Frequently Asked Questions",
+    "url": "https://www.semanticscholar.org/faq"
+  },
+  {
+    "description": "Selecting which claims to check is a time-consuming task for human fact-checkers, especially from documents consisting of multiple sentences and containing multiple claims. However, existing claim extraction approaches focus more on identifying and extracting claims from individual sentences, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Selecting which claims to check is a time-consuming task for human fact-checkers, especially from documents consisting of multiple sentences and containing multiple claims. However, existing claim extraction approaches focus more on identifying and extracting claims from individual sentences, e.g., identifying whether a sentence contains a claim or the exact boundaries of the claim within a sentence.",
+      "Abstract page for arXiv paper 2406.03239: Document-level Claim Extraction and Decontextualisation for Fact-Checking",
+      "However, existing claim extraction approaches focus more on identifying and extracting claims from individual sentences, e.g., identifying whether a sentence contains a claim or the exact boundaries of the claim within a sentence. In this paper, we propose a method for document-level claim extraction for fact-checking, which aims to extract check-worthy claims from documents and decontextualise them so that they can be understood out of context.",
+      "Evaluation with both automatic metrics and a fact-checking professional shows that our method is able to extract check-worthy claims from documents more accurately than previous work, while also improving evidence retrieval. From: Zhenyun Deng [view email] [v1] Wed, 5 Jun 2024 13:16:46 UTC (593 KB) [v2] Wed, 12 Jun 2024 11:11:48 UTC (593 KB) ... View a PDF of the paper titled Document-level Claim Extraction and Decontextualisation for Fact-Checking, by Zhenyun Deng and 2 other authors"
+    ],
+    "title": "[2406.03239] Document-level Claim Extraction and Decontextualisation ...",
+    "url": "https://arxiv.org/abs/2406.03239"
+  },
+  {
+    "description": "The growth of scientific papers in the past decades calls for effective claim extraction tools to automatically and accurately locate key claims from unstructured text. Such claims will benefit content-wise aggregated exploration of scientific knowledge beyond the metadata level.",
+    "favicon_url": "https://you.com/favicon?domain=digitalcommons.odu.edu&size=128",
+    "snippets": [
+      "CEUR Workshop Proceedings: EEKE-All2023: Extraction and Evaluation of Knowledge Entities from Scientific Documents (EEKE2023) and AI + Informetrics (All2023): Proceedings of Joint Workshop of the 4th Extraction and Evaluation of Knowledge Entities from Scientific Documents (EEKE2023) and the 3rd AI + Informetrics (All2023) co-located with the JCDL 2023, 3451, 65-77. https://ceur-ws.org/Vol-3451/paper11.pdf \u00b7 Wei, X., Hoque, M. R. U., Wu, J., & Li, J. (2023) ClaimDistiller: Scientific claim extraction with supervised contrastive learning.",
+      "In this paper, we compared transfer learning and contrastive learning frameworks in terms of performance, time and training data size. We found contrastive learning has better performance at a lower cost of data across all models. Our contrastive-learning-based model ClaimDistiller has the highest performance, boosting the F1 score of the base models by 3\u20134%, and achieved an F1=87.45%, improving the state-of-the-art by more than 7% on the same benchmark data previously used for this task.",
+      "The same phenomenon is observed on another benchmark dataset, and ClaimDistiller consistently has the best performance. Qualitative assessment on a small sample of out-of-domain data indicates that the model generalizes well.",
+      "Article states: Our source codes and datasets can be found here: https://github.com/lamps-lab/sci-claim-distiller."
+    ],
+    "title": "\"ClaimDistiller: Scientific Claim Extraction with Supervised ...",
+    "url": "https://digitalcommons.odu.edu/computerscience_fac_pubs/288/"
+  },
+  {
+    "description": "SAE Technical Papers provide professionals and students with the latest advances in mobility research.",
+    "favicon_url": "https://you.com/favicon?domain=www.sae.org&size=128",
+    "snippets": [
+      "Supporting the automotive, aerospace, and commercial vehicle sectors, SAE Technical Papers help guide engineers, designers, and researchers through their project challenges and establish leadership in a competitive landscape.",
+      "From combustion processes to simulation and modeling to test procedures, Technical Papers contain in-depth test results, comparative studies, and methodologies on a variety of topics including connected and automated vehicles, accident reconstruction, environmental impact and emissions, energy efficiency and fuels, and more.",
+      "Subscribers receive access to a continually updated library of papers that empower engineers to advance their work. ... SAE's Technical Papers are all peer reviewed by leading industry experts to ensure high quality and dependable information for your organization.",
+      "Find cutting-edge applied research, with new papers added throughout the year. ... Access complimentary research covering the past 16 years and current advancements in the engineering and technology of Military Ground Vehicles. Explore on SAE Mobilus ... Industry experts and world-renowned university researchers write, review, and publish technical papers exclusive to SAE every year."
+    ],
+    "title": "Technical Papers - Publications - Publications",
+    "url": "https://www.sae.org/publications/technical-papers"
+  },
+  {
+    "description": "AbstractObjective. To automate scientific claim verification using PubMed abstracts.Materials and Methods. We developed CliVER, an end-to-end scientific Cl",
+    "favicon_url": "https://you.com/favicon?domain=academic.oup.com&size=128",
+    "snippets": [
+      "For instance, FEVER is a general-domain fact-checking dataset created by re-writing Wikipedia sentences into atomic claims, verified against Wikipedia articles.11 PUBHEALTH gathered public health claims from fact-checking websites (eg, Snopes) and verified them against news articles with gold-standard labels crafted by journalists.26 ManConCorpus is a manually annotated corpus containing pairs of claims and sentences from 259 abstracts associated with 24 systematic reviews on cardiovascular disease.27 HealthVer28 focused on COVID-related claims, obtained by rewriting answers to questions from",
+      "Extracting chemical\u2013protein relations with ensembles of SVM and deep learning models. ... 2019. Roberta: a robustly optimized bert pretraining approach. arXiv, arXiv:1907.11692, preprint: not peer reviewed. ... Domain-specific language model pretraining for biomedical natural language processing. ACM Trans Comput Healthc. ... The well-built clinical question: a key to evidence-based decisions.",
+      "In an era of exponential growth of clinical publication, it has been increasingly challenging to identify the most relevant articles and extract relevant information for a given scientific claim.1 For example, LitCovid, the primary bibliographic database to track up-to-date published research on COVID-19 and SARS-CoV-2 on PubMed, has grown to more than 300 000 relevant articles in about 2 years and continues proliferating with \u223c10 000 new articles added each month.2 This rapid growth, coupled with unvetted pre-prints, which have been included in PubMed as of June 2021,3 further compounds the difficulty of both evidence screening4 and evidence appraisal since evidence from pre-print publications can be more challenging to appraise than papers with formal peer review.",
+      "From the top-10 returned studies (latest first), a study was manually selected (JP and HL) if its\u2019 abstract includes a conclusion about the drug effects or comparison for the queried claim. Later, the corresponding sentence that provides the most relevant evidence to the claim in each abstract was identified based on the consensus of two annotators (SL and MB) following the same annotation guide in ManConCorpus.27 A total of 96 abstracts were selected for 15 claims, and their most relevant sentences were extracted and used to form the sentence-claim pairs."
+    ],
+    "title": "Retrieval augmented scientific claim verification | JAMIA Open ...",
+    "url": "https://academic.oup.com/jamiaopen/article/7/1/ooae021/7612234"
+  },
+  {
+    "description": "A unique, visual tool to help researchers and applied scientists find and explore papers relevant to their field of work.",
+    "favicon_url": "https://you.com/favicon?domain=www.connectedpapers.com&size=128",
+    "snippets": [
+      "Connected Papers is a visual tool to help researchers and applied scientists find academic papers relevant to their field of work."
+    ],
+    "title": "Connected Papers | Find and explore academic papers",
+    "url": "https://www.connectedpapers.com/"
+  }
+]

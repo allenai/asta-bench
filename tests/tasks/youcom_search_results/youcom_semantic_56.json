@@ -1,0 +1,260 @@
+[
+  {
+    "description": "A sentence transformer is a neural network model designed to generate dense vector representations (embeddings) for sentences, enabling tasks such as semantic similarity comparison, clustering, and search within text data.",
+    "favicon_url": "https://you.com/favicon?domain=www.marqo.ai&size=128",
+    "snippets": [
+      "Unlike BERT, SBERT allowed for efficient storage and comparison of sentence embeddings, making it highly scalable. ... SBERT is fine-tuned on sentence pairs using a siamese architecture. This means we have two of the exact same BERT sentence transformer networks connected. This can be seen in the Figure below where two separate sentences are passed through the same architecture. In the original SBERT paper, they tested three different pooling methods (mean, max and [CLS]) and mean pooling performed best.",
+      "In the rapidly evolving field of Natural Language Processing (NLP), Sentence Transformers have emerged as a powerful tool for encoding sentences into high-dimensional vectors (also known as embeddings), which can then be used for various tasks such as semantic search, clustering, and sentence similarity.",
+      "Traditional word embeddings like Word2Vec or GloVe focus on representing individual words in a continuous vector space, capturing semantic relationships between words. However, these models often fall short when dealing with longer texts or sentences, as they do not consider the context in which words appear. Sentence transformers address this limitation by encoding entire sentences or text fragments into fixed-size vectors, preserving this contextual meaning.",
+      "Figure 5: The simplest form of a sentence transformer. Pass a sentence through BERT to produce word vectors. Aggregate these word vectors into a single sentence vector by mean pooling. Okay great! Well\u2026not so great. The output sentence produced here is actually really poor quality. So poor that you might be better to take the average of GloVe embeddings and not even use BERT!"
+    ],
+    "title": "What is a Sentence Transformer?",
+    "url": "https://www.marqo.ai/course/introduction-to-sentence-transformers"
+  },
+  {
+    "description": "Once you learn about and generate sentence embeddings, combine them with the Pinecone vector database to easily build applications like semantic search, deduplication, and multi-modal search. Try it now for free.",
+    "favicon_url": "https://you.com/favicon?domain=www.pinecone.io&size=128",
+    "snippets": [
+      "Finding the most similar sentence pair from 10K sentences took 65 hours with BERT. With SBERT, embeddings are created in ~5 seconds and compared with cosine similarity in ~0.01 seconds. Since the SBERT paper, many more sentence transformer models have been built using similar concepts that went into training the original SBERT.",
+      "Using a loss function such as softmax loss, multiple negatives ranking loss, or MSE margin loss, these models are optimized to produce similar embeddings for similar sentences, and dissimilar embeddings otherwise. Now you have some context behind sentence transformers, where they come from, and why they\u2019re needed. Let\u2019s dive into how they work. [3] The SBERT paper covers many of the statements, techniques, and numbers from this section.",
+      "The fact that this training approach works is not particularly intuitive and indeed has been described by Reimers as coincidentally producing good sentence embeddings [5]. Since the original paper, further work has been done in this area. Many more models such as the latest MPNet and RoBERTa models trained on 1B+ samples (producing much better performance) have been built.",
+      "The siamese BERT outputs our pooled sentence embeddings. There were the results of three different pooling methods in the SBERT paper. Those are mean, max, and [CLS]-pooling."
+    ],
+    "title": "Sentence Transformers: Meanings in Disguise | Pinecone",
+    "url": "https://www.pinecone.io/learn/series/nlp/sentence-embeddings/"
+  },
+  {
+    "description": "Pre-trained transformer models shine in many natural language processing tasks and therefore are expected to bear the representation of the input sentence or text meaning. These sentence-level embeddings are also important in retrieval-augmented generation. But do commonly used plain averaging ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "Pre-trained transformer models shine in many natural language processing tasks and therefore are expected to bear the representation of the input sentence or text meaning. These sentence-level embeddings are also important in retrieval-augmented generation. But do commonly used plain averaging or prompt templates sufficiently capture and represent the underlying meaning?",
+      "Note, however, that our main contribution here is not the methods, as we reuse most of them from the existing works, but the combinations of them on the transformer model and extensive evaluation on multiple tasks. We thoroughly describe the techniques used (and minor extensions) for token aggregation in Section 3.3 and post-processing of embeddings in Section 3.4. We have noticed that most works confine themselves to a small subset of evaluation tasks, which limits their results\u2019 comparability to others. Papers from top conferences always include classification tasks on top of semantic textual similarity, which is usually the only evaluation.",
+      "The Z-score describes the position of a point in terms of its distance from the mean when measured in units of standard deviation (in the distribution of the target samples). Z-score normalization, also called standardization, transforms the distribution of embeddings to have a zero mean and a unit standard deviation in all dimensions.",
+      "We propose two competitive and simple static token models as baselines: random embeddings and averaged representations (\u201cAvg\u201d). We propose an improvement for BERT: the BERT + Avg combined model. We experimentally test many weights and layers of how the representations of BERT and Avg can be most effectively mixed. The rest of this paper is organized as follows."
+    ],
+    "title": "Extracting Sentence Embeddings from Pretrained Transformer Models",
+    "url": "https://www.mdpi.com/2076-3417/14/19/8887"
+  },
+  {
+    "description": "In the following you find models tuned to be used for sentence / text embedding generation. They can be used with the sentence-transformers package.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "SentenceTransformers \ud83e\udd17 is a Python framework for state-of-the-art sentence, text and image embeddings.",
+      "These datasets all have \"english\" and \"non_english\" columns for numerous datasets. They can be used to make embedding models multilingual.",
+      "from sentence_transformers import SentenceTransformer # 1. Load a pretrained Sentence Transformer model model = SentenceTransformer(\"all-MiniLM-L6-v2\") # The sentences to encode sentences = [ \"The weather is lovely today.\", \"It's so sunny outside!\", \"He drove to the stadium.\", ] # 2. Calculate embeddings by calling model.encode() embeddings = model.encode(sentences) print(embeddings.shape) # [3, 384] # 3.",
+      "Calculate the embedding similarities similarities = model.similarity(embeddings, embeddings) print(similarities) # tensor([[1.0000, 0.6660, 0.1046], # [0.6660, 1.0000, 0.1411], # [0.1046, 0.1411, 1.0000]])"
+    ],
+    "title": "sentence-transformers (Sentence Transformers)",
+    "url": "https://huggingface.co/sentence-transformers"
+  },
+  {
+    "description": "The world\u2019s leading publication for data science, AI, and ML professionals \u00b7 Convert BERT to an efficient sentence transformer",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "This would compute the accuracy as total number of corrected predictions divided by number of test data points. In this post, we looked at sentenceTransformer library and paper and we saw how it addresses the problem of computing sentence embedding from BERT.",
+      "In this post, we look at SentenceTransformer [1] which was published in 2019. SentenceTransformer has a bi-encoder architecture and adapts BERT to produce efficient sentence embeddings. BERT (Bidirectional Encoder Representation of Transformers) is built with the ideology that all NLP tasks rely on the meaning of tokens/words.",
+      "Then at inference time, we pass the query sentence through the same model, get the embedding and then retrieve K nearest neighbors of this sentence from the index data structure. The metric for similarity of KNN is often cosine similarity. Let\u2019s use mrpc (Microsoft Paraphrasing Corpus) [4] to train a sentence transformer.",
+      "In this code, we are using BERT model as the transformer. Then we use the CLS token in the pooling layer to get the embedding."
+    ],
+    "title": "SentenceTransformer: A Model For Computing Sentence Embedding | ...",
+    "url": "https://towardsdatascience.com/sentencetransformer-a-model-for-computing-sentence-embedding-e8d31d9e6a8f/"
+  },
+  {
+    "description": "I want to get sentence embeddings of transformer-based models (Bert, Roberta, Albert, Electra...). I plan on doing mean pooling on the hidden states of the second last layer just as what bert-as-se...",
+    "favicon_url": "https://you.com/favicon?domain=datascience.stackexchange.com&size=128",
+    "snippets": [
+      "Since the input_mask_expanded is 0 for PAD tokens the resulting mean excludes these tokens when calculating sum_embeddings = torch.sum(token_embeddings * input_mask_expanded, 1). A concrete example is discussed here on the SBERT Github repository.",
+      "One approach to derive sentence embeddings by mean pooling excluding padding tokens can be taken from Sentence Transformers. In their pooling source code you can see that they use the attention mask to exclude padding tokens.",
+      "8 Bert-Transformer : Why Bert transformer uses [CLS] token for classification instead of average over all tokens? 1 why is the BERT NSP task useful for sentence classification tasks? 1 How can I use contextual embeddings with BERT for sentiment analysis/classification",
+      "So should I average the embeddings of first 300 tokens or the embeddings of whole 512 tokens?"
+    ],
+    "title": "nlp - Get sentence embeddings of transformer-based models - Data ...",
+    "url": "https://datascience.stackexchange.com/questions/107212/get-sentence-embeddings-of-transformer-based-models"
+  },
+  {
+    "description": "State-of-the-Art Text Embeddings. Contribute to UKPLab/sentence-transformers development by creating an account on GitHub.",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "This framework provides an easy method to compute embeddings for accessing, using, and training state-of-the-art embedding and reranker models. It compute embeddings using Sentence Transformer models (quickstart) or to calculate similarity scores using Cross-Encoder (a.k.a.",
+      "A wide selection of over 10,000 pre-trained Sentence Transformers models are available for immediate use on \ud83e\udd17 Hugging Face, including many of the state-of-the-art models from the Massive Text Embeddings Benchmark (MTEB) leaderboard.",
+      "Additionally, it is easy to train or finetune your own embedding models or reranker models using Sentence Transformers, enabling you to create custom models for your specific use cases.",
+      "First download a pretrained embedding a.k.a."
+    ],
+    "title": "GitHub - UKPLab/sentence-transformers: State-of-the-Art Text ...",
+    "url": "https://github.com/UKPLab/sentence-transformers"
+  },
+  {
+    "description": "548 votes, 58 comments. 3M subscribers in the MachineLearning community. Beginners -> /r/mlquestions or /r/learnmachinelearning , AGI -> /r/singularity, career advices -> /r/cscareerquestions, datasets -> r/datasets",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Frankly if it doesn\u2019t out perform sentence transformers I would be a bit disappointed given the larger size and all. ... I think it might be easier to compare if you flip the vertical axis on one of them. you can just negate the values of the component, won't change the topology (the relations of the points relative to each other). ... If you ever want to use one of the Massive Text Embedding Benchmark (MTEB) Leaderboard models, consider checking out https://embaas.io.",
+      "You might also want to look into SentEval, which can help you test the embedding performance on a variety of tasks: https://github.com/facebookresearch/SentEval ... Yesterday I set up a paid account at OpenAI. I have been using the free sentence-transformers library and models for many months with good results.",
+      "I was lazy and used the model they show in their code example found here https://platform.openai.com/docs/guides/embeddings/what-are-embeddings. Also on that page, they show that Ada outperform Davinci (BEIR score) and is cheaper to use. ... Thanks, I\u2019m more interested in real world examples of how these two models compare. If sentence transformers can give me the same kind of embedding a, why am I paying OpenAI for the ada embeddings?",
+      "I ran each model ten times for the two embeddings, fitting with EarlyStopping, and evaluating with hold out data. The average results were HF 89% and OpenAI 91.1%. This is not rigorous or conclusive, but for my purposes I'm happy sticking with SentenceTransformers. If I need to chase decimal points of performance, I will use OpenAi."
+    ],
+    "title": "r/MachineLearning on Reddit: [Discussion] Compare OpenAI and ...",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/11okrni/discussion_compare_openai_and_sentencetransformer/"
+  },
+  {
+    "description": "In this post, we look at SentenceTransformer [1] which was published in 2019. SentenceTransformer has a bi-encoder architecture and adapts BERT to produce efficient sentence embeddings. BERT\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "In this post, we look at SentenceTransformer [1] which was published in 2019. SentenceTransformer has a bi-encoder architecture and adapts BERT to produce efficient sentence embeddings. BERT (Bidirectional Encoder Representation of Transformers) is built with the ideology that all NLP tasks rely on the meaning of tokens/words.",
+      "Since BERT produces token embedding, one way to get sentence embedding out of BERT is to average the embedding of all tokens. The SentenceTransformer paper [1] showed this produces very low quality sentence embeddings almost as bad as getting GLOVE embeddings.",
+      "Convert BERT to an efficient sentence transformer"
+    ],
+    "title": "SentenceTransformer: A Model For Computing Sentence Embedding | ...",
+    "url": "https://medium.com/data-science/sentencetransformer-a-model-for-computing-sentence-embedding-e8d31d9e6a8f"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "Sentence Transformers enables the transformation of sentences into vector spaces. They represent sentences as dense vector embeddings that can be used in a variety of applications such as semantic search, clustering, and information retrieval more efficiently than traditional methods.",
+      "The Sentence-BERT (SBERT) model, introduced by Nils Reimers and Iryna Gurevych in 2019, is one of the most well-known implementations of sentence transformers. SBERT is built upon BERT and fine-tuned for the task of producing sentence embeddings that are not only contextually accurate but also computationally efficient for tasks like semantic textual similarity (STS) and information retrieval.",
+      "This is typically achieved through siamese and triplet network structures that are trained to bring semantically similar sentences closer together in the embedding space, while pushing dissimilar sentences apart.",
+      "Early approaches to sentence embeddings typically involved simple techniques such as averaging the word vectors in a sentence, derived from models like Word2Vec or GloVe."
+    ],
+    "title": "Sentence Transformer - GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/nlp/sentence-transformer/"
+  },
+  {
+    "description": "Text embeddings are numerical representations of text that capture semantic meaning in a way that machines can understand and process. These embeddings have revolutionized natural language processing by enabling computers to work with text more meaningfully than traditional bag-of-words or ...",
+    "favicon_url": "https://you.com/favicon?domain=machinelearningmastery.com&size=128",
+    "snippets": [
+      "Text embeddings are numerical representations of text that capture semantic meaning in a way that machines can understand and process. These embeddings have revolutionized natural language processing by enabling computers to work with text more meaningfully than traditional bag-of-words or one-hot encoding approaches.",
+      "The [CLS] token, for example, was proposed in its original paper for a classification task. Therefore, it may not be the best choice for generating sentence embeddings. You may find the embedding vectors generated do not exhibit the properties you expect, such as the cosine similarity between sentences not reflecting their semantic similarity. Indeed, nothing prevents you from fine-tuning the BERT model or any other transformer model to produce a better sentence embedding.",
+      "Text Embedding Generation with Transformers Photo by Greg Rivers. Some rights reserved. ... Text embeddings are to use numerical vectors to represent text. A trivial way to represent text is to find all words in the dictionary and assign a unique number to each word. Then, you can represent each word as a one-hot vector or a sentence as a bag-of-words vector: the number in each position means how many times the word appears in the sentence.",
+      "For example, \u201cbear\u201d can be a verb or a noun; the word vector cannot tell their difference but is important for the context. Representing the semantic meaning of a sentence into a vector is very useful for many NLP tasks. Transformer models can generate such contextual embeddings by processing the entire sequence of words at once."
+    ],
+    "title": "Text Embedding Generation with Transformers - MachineLearningM...",
+    "url": "https://machinelearningmastery.com/text-embedding-generation-with-transformers/"
+  },
+  {
+    "description": "Discussions: Hacker News (65 points, 4 comments), Reddit r/MachineLearning (29 points, 3 comments) Translations: Arabic, Chinese (Simplified) 1, Chinese (Simplified) 2, French 1, French 2, Italian, Japanese, Korean, Persian, Russian, Spanish 1, Spanish 2, Vietnamese Watch: MIT\u2019s Deep Learning ...",
+    "favicon_url": "https://you.com/favicon?domain=jalammar.github.io&size=128",
+    "snippets": [
+      "Discussions: Hacker News (65 points, 4 comments), Reddit r/MachineLearning (29 points, 3 comments) Translations: Arabic, Chinese (Simplified) 1, Chinese (Simplified) 2, French 1, French 2, Italian, Japanese, Korean, Persian, Russian, Spanish 1, Spanish 2, Vietnamese Watch: MIT\u2019s Deep Learning State of the Art lecture referencing this post Featured in courses at Stanford, Harvard, MIT, Princeton, CMU and others Update: This post has now become a book!",
+      "Every row in the X matrix corresponds to a word in the input sentence. We again see the difference in size of the embedding vector (512, or 4 boxes in the figure), and the q/k/v vectors (64, or 3 boxes in the figure) Finally, since we\u2019re dealing with matrices, we can condense steps two through six in one formula to calculate the outputs of the self-attention layer. ... The paper further refined the self-attention layer by adding a mechanism called \u201cmulti-headed\u201d attention.",
+      "The decoder has both those layers, but between them is an attention layer that helps the decoder focus on relevant parts of the input sentence (similar what attention does in seq2seq models). Now that we\u2019ve seen the major components of the model, let\u2019s start to look at the various vectors/tensors and how they flow between these components to turn the input of a trained model into an output. As is the case in NLP applications in general, we begin by turning each input word into a vector using an embedding algorithm.",
+      "The abstraction that is common to all the encoders is that they receive a list of vectors each of the size 512 \u2013 In the bottom encoder that would be the word embeddings, but in other encoders, it would be the output of the encoder that\u2019s directly below. The size of this list is hyperparameter we can set \u2013 basically it would be the length of the longest sentence in our training dataset."
+    ],
+    "title": "The Illustrated Transformer \u2013 Jay Alammar \u2013 Visualizing machine ...",
+    "url": "https://jalammar.github.io/illustrated-transformer/"
+  },
+  {
+    "description": "In this article, we will learn about embedding models, how they work and different features of sentence transformers. Using sentence transformers, we will fine-tune a bert base model using triplets and snli dataset and then we will also evaluate our model performance after fine-tuning.",
+    "favicon_url": "https://you.com/favicon?domain=www.ionio.ai&size=128",
+    "snippets": [
+      "The sentence transformer library has made it easy to train or fine-tune your own embedding model. In this blog, we will first learn about the sentence transformer library and then we will train our model from scratch. \ud83d\udca1 You can get the full source code discussed in this blog from our github repo",
+      "Now let\u2019s define our loss function. We can use \u201closses\u201d class from sentence transformers which allows us to get different loss functions that we discussed above.",
+      "As you can see in the diagram, the similar sentences will be closer to each other in vector space which makes it easy to get the similar sentences for a given sentence. Also feel free to check out my other blog in which I explained the vector embeddings in more detail. ... Sentence transformers is a library specifically created to create and fine-tune embedding models for sentences.",
+      "Let\u2019s see some of the features of sentence transformers in action! Let\u2019s first try converting a given text into embeddings."
+    ],
+    "title": "Fine Tuning Embedding Models using Sentence Transformers: Code ...",
+    "url": "https://www.ionio.ai/blog/fine-tuning-embedding-models-using-sentence-transformers-code-included"
+  },
+  {
+    "description": "Updated 8 months ago \u00b7 A sentence embedding operator generates one embedding vector in ndarray for each input text. The embedding represents the semantic information of the whole input text as one vector. This operator is implemented with pre-trained models from Huggingface Transformers",
+    "favicon_url": "https://you.com/favicon?domain=towhee.io&size=128",
+    "snippets": [
+      "Training Text Embeddings with Jina AI - Zilliz blog: In a recent talk by Bo Wang, he discussed the creation of Jina text embeddings for modern vector search and RAG systems.",
+      "A sentence embedding operator generates one embedding vector in ndarray for each input text. The embedding represents the semantic information of the whole input text as one vector. This operator is implemented with pre-trained models from Huggingface Transformers.",
+      "The method to tokenize input text, defaults to None. If None, the operator will use default tokenizer by model_name from HuggingFace transformers. ... The flag to return token usage with call method, defaults to False. If True, call method will return a dictionary containing data (embedding).",
+      "Or your can refer to the original hugging face transformers training examples. All-Mpnet-Base-V2: Enhancing Sentence Embedding with AI - Zilliz blog: Delve into one of the deep learning models that has played a significant role in the development of sentence embedding: MPNet."
+    ],
+    "title": "sentence-embedding/transformers - transformers - Towhee",
+    "url": "https://towhee.io/sentence-embedding/transformers"
+  },
+  {
+    "description": "255 papers with code \u2022 0 benchmarks \u2022 11 datasets \u00b7 UKPLab/sentence-transformers \u2022 \u2022 IJCNLP 2019",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "We present an approach based on multilingual sentence embeddings to automatically extract parallel sentences from the content of Wikipedia articles in 85 languages, including several dialects or low-resource languages.",
+      "While BERT is an effective method for learning monolingual sentence embeddings for semantic similarity and embedding based transfer learning (Reimers and Gurevych, 2019), BERT based cross-lingual sentence embeddings have yet to be explored.",
+      "This paper presents SimCSE, a simple contrastive learning framework that greatly advances state-of-the-art sentence embeddings.",
+      "Despite the fast developmental pace of new sentence embedding methods, it is still challenging to find comprehensive evaluations of these different techniques."
+    ],
+    "title": "Sentence Embeddings | Papers With Code",
+    "url": "https://paperswithcode.com/task/sentence-embeddings"
+  },
+  {
+    "description": "Sentence Transformer \u00b7 Sentence Transformers v4.1 just released, bringing the ONNX and OpenVINO backends to CrossEncoder (a.k.a. reranker) models. Read Cross Encoder > Usage > Speeding up Inference to read more about the performance boosts that you can expect",
+    "favicon_url": "https://you.com/favicon?domain=sbert.net&size=128",
+    "snippets": [
+      "Sentence Transformers (a.k.a. SBERT) is the go-to Python module for accessing, using, and training state-of-the-art embedding and reranker models. It can be used to compute embeddings using Sentence Transformer models (quickstart) or to calculate similarity scores using Cross-Encoder (a.k.a.",
+      "A wide selection of over 10,000 pre-trained Sentence Transformers models are available for immediate use on \ud83e\udd17 Hugging Face, including many of the state-of-the-art models from the Massive Text Embeddings Benchmark (MTEB) leaderboard.",
+      "Additionally, it is easy to train or finetune your own embedding models or reranker models using Sentence Transformers, enabling you to create custom models for your specific use cases.",
+      "@inproceedings{reimers-2019-sentence-bert, title = \"Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\", author = \"Reimers, Nils and Gurevych, Iryna\", booktitle = \"Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing\", month = \"11\", year = \"2019\", publisher = \"Association for Computational Linguistics\", url = \"https://arxiv.org/abs/1908.10084\", }"
+    ],
+    "title": "SentenceTransformers Documentation \u2014 Sentence Transformers ...",
+    "url": "https://sbert.net/"
+  },
+  {
+    "description": "Learn what transformers are, their building blocks, and why they work so well, thanks to their advanced attention model.",
+    "favicon_url": "https://you.com/favicon?domain=www.baeldung.com&size=128",
+    "snippets": [
+      "They were presented in the popular paper Attention Is All You Need, named like that because of the new attention model proposed in it. Let\u2019s imagine we want to translate \u201cMy tailor is rich\u201d from English to Spanish. Then, the transformer would look like this: As mentioned before, it is a big encoder-decoder model where the input sequence gets into a big encoding block, obtaining rich embeddings for each token, which will feed the decoding block to obtain an output.",
+      "The default strategy is the first one, though some papers suggest the other two work best for other tasks. In this tutorial, we learned what transformers are, their building blocks, and why they work so well, thanks to their advanced attention model. Finally, we briefly knew what BERT is and how we can obtain text embedding vectors by using it.",
+      "After that, tokens are converted into embedding vectors by using a fixed representation like word2vec or any other. But, because we are processing the sequence all at once, how can we know the position of tokens in the sequence? To address this problem, the transformer adds a positional encoding vector to each token embedding, obtaining a special embedding with positional information.",
+      "The last decoder is connected to the output layers (we\u2019ll get into that soon), generating the next output token. The process continues until the generated token is a special one meaning \u201cend of the sentence\u201d."
+    ],
+    "title": "Transformer Text Embeddings | Baeldung on Computer Science",
+    "url": "https://www.baeldung.com/cs/transformer-text-embeddings"
+  },
+  {
+    "description": "1 code implementation in PyTorch. Word embeddings that consider context have attracted great attention for various natural language processing tasks in recent years. In this paper, we utilize contextualized word embeddings with the transformer encoder for sentence similarity modeling in the ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "1 code implementation in PyTorch. Word embeddings that consider context have attracted great attention for various natural language processing tasks in recent years. In this paper, we utilize contextualized word embeddings with the transformer encoder for sentence similarity modeling in the answer selection task.",
+      "In the feature-based approach, we utilize two types of contextualized embeddings, namely the Embeddings from Language Models (ELMo) and the Bidirectional Encoder Representations from Transformers (BERT) and integrate each of them with the transformer encoder. We find that integrating these contextual embeddings with the transformer encoder is effective to improve the performance of sentence similarity modeling.",
+      "Absolute Position Encodings \u2022 Adam \u2022 Attention Dropout \u2022 BERT \u2022 BPE \u2022 Dense Connections \u2022 Dropout \u2022 GELU \u2022 Label Smoothing \u2022 Layer Normalization \u2022 Linear Layer \u2022 Linear Warmup With Linear Decay \u2022 Multi-Head Attention \u2022 Position-Wise Feed-Forward Layer \u2022 ReLU \u2022 Residual Connection \u2022 Scaled Dot-Product Attention \u2022 Softmax \u2022 Transformer \u2022 Weight Decay \u2022 WordPiece"
+    ],
+    "title": "Papers with Code - Contextualized Embeddings based Transformer ...",
+    "url": "https://paperswithcode.com/paper/contextualized-embeddings-based-transformer"
+  },
+  {
+    "description": "PDF | Analyses of transformer-based models have shown that they encode a variety of linguistic information from their textual input. While these... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Analyses of transformer-based models have shown that they encode a variety of linguistic information from their textual input. While these analyses have shed a light on the relation between linguistic information on one side, and internal architecture and parameters on the other, a question remains unanswered: how is this linguistic information reflected in sentence embeddings?",
+      "Our results show that such information is not distributed over the entire sentence embedding, but rather it is encoded in specific regions. Understanding how the information from an input text is compressed into sentence embeddings helps understand current transformer models and help build future explainable neural models.",
+      "Tracking linguistic information in transformer-based sentence embeddings"
+    ],
+    "title": "(PDF) Tracking linguistic information in transformer-based sentence ...",
+    "url": "https://www.researchgate.net/publication/382560032_Tracking_linguistic_information_in_transformer-based_sentence_embeddings_through_targeted_sparsification"
+  },
+  {
+    "description": "If you are interested in the state-of-the-art AI solutions, get more in the article Understanding the Power of Transformers: A Guide to Sentence Embeddings in Spark NLP",
+    "favicon_url": "https://you.com/favicon?domain=www.johnsnowlabs.com&size=128",
+    "snippets": [
+      "There is also a short section about generating sentence embeddings from Bert word embeddings, focusing specifically on the average-based transformation technique. Let us start with a short Spark NLP introduction and then discuss the details of producing sentence embeddings with transformers with some solid results.",
+      "Spark NLP has multiple solutions for producing sentence embeddings with transformers for longer pieces of text. In this article, we will discuss using state-of-the-art transformer-based models for this task.",
+      "Sentence embeddings are a powerful tool in natural language processing that helps analyze and understand language. Transformers, a type of neural network architecture, are a popular method for generating these embeddings.",
+      "Sentence embeddings with Transformers are a powerful natural language processing (NLP) technique that use deep learning models known as Transformers to encode sentences into fixed-length vectors that can be used for a variety of NLP tasks."
+    ],
+    "title": "Understanding the Power of Transformers: A Guide to Sentence ...",
+    "url": "https://www.johnsnowlabs.com/understanding-the-power-of-transformers-a-guide-to-sentence-embeddings-in-spark-nlp/"
+  },
+  {
+    "description": "pip install sentence-transformers Copy PIP instructions \u00b7 Released: Apr 15, 2025",
+    "favicon_url": "https://you.com/favicon?domain=pypi.org&size=128",
+    "snippets": [
+      "This framework provides an easy method to compute embeddings for accessing, using, and training state-of-the-art embedding and reranker models. It compute embeddings using Sentence Transformer models (quickstart) or to calculate similarity scores using Cross-Encoder (a.k.a.",
+      "A wide selection of over 10,000 pre-trained Sentence Transformers models are available for immediate use on \ud83e\udd17 Hugging Face, including many of the state-of-the-art models from the Massive Text Embeddings Benchmark (MTEB) leaderboard.",
+      "Additionally, it is easy to train or finetune your own embedding models or reranker models using Sentence Transformers, enabling you to create custom models for your specific use cases.",
+      "First download a pretrained embedding a.k.a."
+    ],
+    "title": "sentence-transformers\u00b7PyPI",
+    "url": "https://pypi.org/project/sentence-transformers/"
+  },
+  {
+    "description": "Discover how Cohere's model evaluates sentence embeddings, enhancing text similarity and search capabilities.",
+    "favicon_url": "https://you.com/favicon?domain=cohere.com&size=128",
+    "snippets": [
+      "Dive into the world of Sentence Transformers with Nils Reimers, creator of Sentence-BERT and expert in NLP. Join the conversation as he shares his experience in developing this popular tool and his insights on evaluating embeddings through works like MTEB & BEIR."
+    ],
+    "title": "Sentence Transformers and Embedding Evaluation - Talking Language AI",
+    "url": "https://cohere.com/blog/sentence-transformers-embedding-evaluation"
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "description": "Abstract page for arXiv paper 1910.01108: DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter, by Victor Sanh and 3 other authors View PDF",
+      "Abstract:As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts.",
+      "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "Work on one of the world's most important websites and make an impact on open science."
+    ],
+    "title": "[1910.01108] DistilBERT, a distilled version of BERT: smaller, ...",
+    "url": "https://arxiv.org/abs/1910.01108"
+  },
+  {
+    "description": "It was introduced in this paper. The code for the distillation process can be found here. This model is uncased: it does not make a difference between english and English. DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a self-supervised ...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "It was introduced in this paper. The code for the distillation process can be found here. This model is uncased: it does not make a difference between english and English. DistilBERT is a transformers model, smaller and faster than BERT, which was pretrained on the same corpus in a self-supervised fashion, using the BERT base model as a teacher.",
+      "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+      "Note that this model is primarily aimed at being fine-tuned on tasks that use the whole sentence (potentially masked) to make decisions, such as sequence classification, token classification or question answering. For tasks such as text generation you should look at model like GPT2. You can use this model directly with a pipeline for masked language modeling: >>> from transformers import pipeline >>> unmasker = pipeline('fill-mask', model='distilbert-base-uncased') >>> unmasker(\"Hello I'm a [MASK] model.\") [{'sequence': \"[CLS] hello i'm a role model.",
+      "Here is how to use this model to get the features of a given text in PyTorch: from transformers import DistilBertTokenizer, DistilBertModel tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased') model = DistilBertModel.from_pretrained(\"distilbert-base-uncased\") text = \"Replace me by any text you'd like.\" encoded_input = tokenizer(text, return_tensors='pt') output = model(**encoded_input)"
+    ],
+    "title": "distilbert/distilbert-base-uncased \u00b7 Hugging Face",
+    "url": "https://huggingface.co/distilbert/distilbert-base-uncased"
+  },
+  {
+    "description": "We thus initialize our student, DistilBERT, from its teacher, BERT, by taking one layer out of two, leveraging the common hidden size between student and teacher. We also used a few training tricks from the recent RoBERTa paper which showed that the way BERT is trained is crucial for its final ...",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "We thus initialize our student, DistilBERT, from its teacher, BERT, by taking one layer out of two, leveraging the common hidden size between student and teacher. We also used a few training tricks from the recent RoBERTa paper which showed that the way BERT is trained is crucial for its final performance.",
+      "2019, October 3rd \u2014 Update: We are releasing our NeurIPS 2019 workshop paper describing our approach on DistilBERT with improved results: 97% of BERT\u2019s performance on GLUE (the results in the paper superseed the results presented here). The approach is slightly different from the one explained in this present blog post so this blog post should be a good entry point to the paper!",
+      "HuggingFace introduces DilBERT, a distilled and smaller version of Google AI\u2019s Bert model with strong performances on language understanding. DilBert s included in the pytorch-transformers library.",
+      "You can find the code to reproduce the training of DilBERT along with pre-trained weights for DilBERT here."
+    ],
+    "title": "\ud83c\udfce Smaller, faster, cheaper, lighter: Introducing DistilBERT, ...",
+    "url": "https://medium.com/huggingface/distilbert-8cf3380435b5"
+  },
+  {
+    "description": "Knowledge distillation is performed ... the authors introduce a triple loss combining language modeling, distillation and cosine-distance losses. Source: DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter ... This feature is experimental; we are continuously improving our matching algorithm. ... Contact us on: hello@paperswithcode.com ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Knowledge distillation is performed during the pre-training phase to reduce the size of a BERT model by 40%. To leverage the inductive biases learned by larger models during pre-training, the authors introduce a triple loss combining language modeling, distillation and cosine-distance losses. Source: DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter ... This feature is experimental; we are continuously improving our matching algorithm. ... Contact us on: hello@paperswithcode.com .",
+      "DistilBERT is a small, fast, cheap and light Transformer model based on the BERT architecture. Knowledge distillation is performed during the pre-training phase to reduce the size of a BERT model by 40%. To leverage the inductive biases learned by larger models during pre-training, the authors introduce a triple loss combining language modeling, distillation and cosine-distance losses.",
+      "Introduced by Sanh et al. in DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter"
+    ],
+    "title": "Papers with Code - DistilBERT Explained",
+    "url": "https://paperswithcode.com/method/distillbert"
+  },
+  {
+    "description": "This paper provides an overview of recent advances in MRC and highlights some of the key challenges and future directions of this research area. It also evaluates the performance of several baseline models on the dataset, evaluates the challenges that the dataset poses for existing MRC models, and introduces the DistilBERT ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "This paper provides an overview of recent advances in MRC and highlights some of the key challenges and future directions of this research area. It also evaluates the performance of several baseline models on the dataset, evaluates the challenges that the dataset poses for existing MRC models, and introduces the DistilBERT model to improve the accuracy of the answer extraction process.",
+      "This paper provides an overview of recent advances in MRC \u00b7 and highlights some of the key challenges and future directions of this research area. It also evaluates the performance of several baseline \u00b7 models on the dataset, evaluates the challenges that the dataset poses for existing MRC models, and introduces the DistilBERT model to",
+      "was introduced by Google in 2018. DistilBERT was developed \u00b7 by Hugging Face, an AI startup company that specializes in \u00b7 natural language processing (NLP) and deep learning. It was \u00b7 introduced in the paper \"DistilBERT, a distilled version of",
+      "PDF | Machine Reading Comprehension (MRC) is a challenging task in the field of Natural Language Processing (NLP), where a machine is required to read a... | Find, read and cite all the research you need on ResearchGate"
+    ],
+    "title": "(PDF) The DistilBERT Model: A Promising Approach to Improve Machine ...",
+    "url": "https://www.researchgate.net/publication/374123033_The_DistilBERT_Model_A_Promising_Approach_to_Improve_Machine_Reading_Comprehension_Models"
+  },
+  {
+    "description": "Badges are live and will be dynamically ... of this paper. ... As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Badges are live and will be dynamically updated with the latest ranking of this paper. ... As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts.",
+      "Adam \u2022 Attention \u2022 Attention Dropout \u2022 BERT \u2022 Dense Connections \u2022 DistilBERT \u2022 Dropout \u2022 GELU \u2022 Knowledge Distillation \u2022 Layer Normalization \u2022 Linear Layer \u2022 Linear Warmup With Linear Decay \u2022 Multi-Head Attention \u2022 Residual Connection \u2022 Softmax \u2022 Weight Decay \u2022 WordPiece \u00b7 Contact us on: hello@paperswithcode.com .",
+      "#2 best model for Only Connect Walls Dataset Task 1 (Grouping) on OCW (Wasserstein Distance (WD) metric)",
+      "Include the markdown at the top of your GitHub README.md file to showcase the performance of the model."
+    ],
+    "title": "Papers with Code - DistilBERT, a distilled version of BERT: smaller, ...",
+    "url": "https://paperswithcode.com/paper/distilbert-a-distilled-version-of-bert"
+  },
+  {
+    "description": "Using knowledge distillation, DistilBERT is 40% smaller and 60% faster than the equivalent BERT model, while retaining 97% of BERT's understanding capabilities, which can be a compelling option for edge applications (Sanh et al, 2019). ... ... The last notable BERT variant that will be reviewed in this paper ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Using knowledge distillation, DistilBERT is 40% smaller and 60% faster than the equivalent BERT model, while retaining 97% of BERT's understanding capabilities, which can be a compelling option for edge applications (Sanh et al, 2019). ... ... The last notable BERT variant that will be reviewed in this paper is DistilBERT, which was open sourced in 2019 (Sanh et al, 2019).",
+      "Download Citation | DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter | As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models... | Find, read and cite all the research you need on ResearchGate",
+      "As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remain challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts.",
+      "We used this dataset to train several machine learning models including Multinomial Naive Bayes, Support Vector Machines (SVM), K Nearest Neighbor, Random Forest, and a number of state-of-the-art deep learning models including a baseline Bidirectional Long Short Term Memory (BiLSTM) model, DistilBERT"
+    ],
+    "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper ...",
+    "url": "https://www.researchgate.net/publication/336230729_DistilBERT_a_distilled_version_of_BERT_smaller_faster_cheaper_and_lighter"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "DistilBERT, a distilled version of BERT: smaller, faster, ...",
+    "url": "https://arxiv.org/pdf/1910.01108"
+  },
+  {
+    "description": "Implementation of paper \"DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter\" by Victor SANH, Lysandre DEBUT, Julien CHAUMOND, Thomas WOLF - askaydevs/di...",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Implementation of paper \"DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter\" by Victor SANH, Lysandre DEBUT, Julien CHAUMOND, Thomas WOLF - askaydevs/distillbert-qa",
+      "DistilBERT is a small, fast, cheap and light Transformer model based on Bert architecture. It has 40% less parameters than bert-base-uncased, runs 60% faster while preserving 97% of BERT's performance as measured on the GLUE language understanding benchmark. DistilBERT is trained using knowledge distillation, a technique to compress a large model called the teacher into a smaller model called the student.",
+      "By distillating Bert, we obtain a smaller Transformer model that bears a lot of similarities with the original BERT model while being lighter, smaller and faster to run. DistilBERT is thus an interesting option to put large-scaled trained Transformer model into production.",
+      "Training on one Tesla V100 16GB GPU, each epoch took around 9 minutes to complete, in comparison training on a single Quadro M4000 the time for each epoch took over 2 hours, so don't be alarmed if your training isn't lightning fast. export SQUAD_DIR=/path/to/SQUAD python run_squad.py \\ --model_type distilbert \\ --model_name_or_path distilbert-base-uncased \\ --do_train \\ --do_eval \\ --do_lower_case \\ --train_file $SQUAD_DIR/train-v1.1.json \\ --predict_file $SQUAD_DIR/dev-v1.1.json \\ --per_gpu_train_batch_size 12 \\ --learning_rate 3e-5 \\ --num_train_epochs 2.0 \\ --max_seq_length 384 \\ --doc_stride 128 \\ --output_dir /tmp/debug_squad/"
+    ],
+    "title": "GitHub - askaydevs/distillbert-qa: Implementation of paper ...",
+    "url": "https://github.com/askaydevs/distillbert-qa"
+  },
+  {
+    "description": "This work proposes a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can be fine-tuned with good performances on a wide range of tasks like its larger counterparts, and introduces a triple loss combining language modeling, distillation and ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "This work proposes a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can be fine-tuned with good performances on a wide range of tasks like its larger counterparts, and introduces a triple loss combining language modeling, distillation and cosine-distance losses.Expand",
+      "Several different distilled versions of the state-of-the-art Dutch RobBERT model are created and it is found that the larger DistilBERT architecture worked significantly better than the Bort hyperparametrization and that the distilled models exhibit less gender-stereotypical bias than its teacher model.Expand",
+      "A novel Transformer distillation method that is specially designed for knowledge distillation (KD) of the Transformer-based models is proposed and, by leveraging this new KD method, the plenty of knowledge encoded in a large \u201cteacher\u201d BERT can be effectively transferred to a small \u201cstudent\u201d TinyBERT.Expand ... Raphael TangYao LuLinqing LiuLili MouOlga VechtomovaJimmy J. Lin ... This paper proposes to distill knowledge from BERT, a state-of-the-art language representation model, into a single-layer BiLSTM, as well as its siamese counterpart for sentence-pair tasks, and achieves comparable results with ELMo.Expand",
+      "MixKD is proposed, a data-agnostic distillation framework that leverages mixup, a simple yet efficient data augmentation approach, to endow the resulting model with stronger generalization ability, and it is proved, from a theoretical perspective, that under reasonable conditions MixKD gives rise to a smaller gap between the generalization error and the empirical error.Expand"
+    ],
+    "title": "[PDF] DistilBERT, a distilled version of BERT: smaller, faster, ...",
+    "url": "https://www.semanticscholar.org/paper/DistilBERT,-a-distilled-version-of-BERT:-smaller,-Sanh-Debut/a54b56af24bb4873ed0163b77df63b92bd018ddc"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model. You can find all the original DistilBERT checkpoints under the DistilBERT organization.",
+      "This is the configuration class to store the configuration of a DistilBertModel or a TFDistilBertModel. It is used to instantiate a DistilBERT model according to the specified arguments, defining the model architecture.",
+      "Read the documentation from PretrainedConfig for more information. ... >>> from transformers import DistilBertConfig, DistilBertModel >>> # Initializing a DistilBERT configuration >>> configuration = DistilBertConfig() >>> # Initializing a model (with random weights) from the configuration >>> model = DistilBertModel(configuration) >>> # Accessing the model configuration >>> configuration = model.config",
+      "If this option is not specified, then it will be determined by the value for lowercase (as in the original BERT). clean_up_tokenization_spaces (bool, optional, defaults to True) \u2014 Whether or not to cleanup spaces after decoding, cleanup consists in removing potential artifacts like extra spaces. Construct a DistilBERT tokenizer."
+    ],
+    "title": "DistilBERT",
+    "url": "https://huggingface.co/docs/transformers/en/model_doc/distilbert"
+  },
+  {
+    "description": "DistilBERT maintains 97% of BERT's language understanding capabilities while being 40% small and 60% faster.",
+    "favicon_url": "https://you.com/favicon?domain=zilliz.com&size=128",
+    "snippets": [
+      "Additionally, at just 207 MB, it becomes much easier to integrate on devices with limited resources. While knowledge distillation is the primary technique, DistilBERT can be further compressed through methods like quantization or pruning algorithms for even greater efficiency. DistilBERT paper: Distilled version of BERT \u00b7",
+      "DistilBERT was introduced as a smaller, faster, and distilled version of BERT. It maintains 97% of BERT's language understanding capabilities while being 40% small and 60% faster. ... Advancements in transformer-based language models have significantly changed natural language processing (NLP). BERT, or Bidirectional Encoder Representations Transformers, is one of the most influential language models, introduced in 2018.",
+      "To overcome these problems, DistilBERT was introduced as a smaller, faster, and distilled version of BERT. It maintains 97% of BERT's language understanding capabilities while being 40% small and 60% faster. This article will discuss the methodologies used in DistilBERT development, including the training approach and its results.",
+      "DistilBERT pre-trains a smaller and faster general-purpose language representation model, which can be fine-tuned with good performance on many downstream tasks. The primary motivation behind DistilBERT is the need for compact and more efficient models for NLP applications that operate in real-time on edge devices."
+    ],
+    "title": "Distilbert: A Smaller, Faster, and Distilled BERT - Zilliz Learn",
+    "url": "https://zilliz.com/learn/distilbert-distilled-version-of-bert"
+  },
+  {
+    "description": "Distil Bert was introduced in paper DistilBERT, a distilled version of BERT: smaller,faster, cheaper by and lighter by victor,lysandre julien and thomas from hugging face. In the last few years\u2026",
+    "favicon_url": "https://you.com/favicon?domain=arunm8489.medium.com&size=128",
+    "snippets": [
+      "Distil Bert was introduced in paper DistilBERT, a distilled version of BERT: smaller,faster, cheaper by and lighter by victor,lysandre julien and thomas from hugging face. In the last few years transfer learning is widely using the field of natural language processing and large pretrained models becomes a basic tool in many NLP tasks.",
+      "Distil Bert was introduced in paper DistilBERT, a distilled version of BERT: smaller,faster, cheaper by and lighter by victor,lysandre\u2026",
+      "3. Model distillation: where a large complex model(teacher) distils its knowledge and passes it to train a smaller network(student) to match the output. In DistilBERT paper, they showed that it is possible to reach similar performances on many downstream-tasks using much smaller language models pre-trained with knowledge distillation, resulting in models that are lighter and faster at inference time, while also requiring a smaller computational training budget.",
+      "DistilBERT is small, fast, cheaper, smaller and light transformer trained by distilling Bert base. It has 40% less parameters than Bert-base-uncased, runs 60% faster while preserving over 95% of BERT\u2019s performances. In machine learning knowledge distillation refers to the process of compressing and transferring knowledge from a computationally expensive large model(teacher model) to a smaller model(student model) by maintaining validity."
+    ],
+    "title": "Understanding Distil BERT In Depth | by Arun Mohan | Medium",
+    "url": "https://arunm8489.medium.com/understanding-distil-bert-in-depth-5f2ca92cf1ed"
+  },
+  {
+    "description": "All of the papers present a particular point of view of findings in the BERT utilization. DistilBERT, a distilled version of BERT: smaller, faster, cheaper, and lighter",
+    "favicon_url": "https://you.com/favicon?domain=www.kdnuggets.com&size=128",
+    "snippets": [
+      "Authors propose a technique to pre-train a smaller general-purpose language representation model, termed DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts. While most prior works investigated the use of distillation for building task-specific models, we leverage knowledge distillation during the pre-training phase.",
+      "We show that it is possible to reduce the size of a BERT model by 40% while retaining 97% of its language understanding capabilities and being 60% faster. Loss is threefold, combining language modeling loss, distillation loss, and cosine-distance loss. The data used the same corpus as the original BERT model. Further, DistilBERT was trained on eight 16GB V100 GPUs for around 90 hours.",
+      "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter \u00b7 As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP)\u2026arxiv.org \u00b7 TinyBERT: Distilling BERT for Natural Language Understanding \u00b7 Language model pre-training, such as BERT, has significantly improved the performances of many natural language\u2026arxiv.org",
+      "Key takeaway: This is an online distillation technique where the teacher and student models are trained. Distilling Knowledge Learned in BERT for Text Generation \u00b7 This paper presents a generic technique for using pre-trained language models to further refine text generation, excluding the specific parameter sharing, feature extraction, or augmenting with auxiliary tasks."
+    ],
+    "title": "8 Innovative BERT Knowledge Distillation Papers That Have Changed ...",
+    "url": "https://www.kdnuggets.com/2022/09/eight-innovative-bert-knowledge-distillation-papers-changed-nlp-landscape.html"
+  },
+  {
+    "description": "As Transfer Learning from large-scale ... in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can ...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "As Transfer Learning from large-scale pre-trained models becomes more prevalent in Natural Language Processing (NLP), operating these large models in on-the-edge and/or under constrained computational training or inference budgets remains challenging. In this work, we propose a method to pre-train a smaller general-purpose language representation model, called DistilBERT, which can then be fine-tuned with good performances on a wide range of tasks like its larger counterparts.",
+      "A smaller, faster, and cheaper language model (DistilBERT) retains most of the language understanding capabilities of larger models by leveraging knowledge distillation during pre-training.",
+      "Upload images, audio, and videos by dragging in the text input, pasting, or clicking here.",
+      "Join the discussion on this paper page"
+    ],
+    "title": "Paper page - DistilBERT, a distilled version of BERT: smaller, ...",
+    "url": "https://huggingface.co/papers/1910.01108"
+  },
+  {
+    "description": "Lastly, DistilBERT achieves the lowest performance, as expected. Fig. 6 shows the accuracy variability with respect to the learning rate. Note that, differently from what we observed on SQuAD, these tasks are very sensitive to the learning rate. We notice that our results are considerably different from those published in the reference transformer\u2019s paper ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Lastly, DistilBERT achieves the lowest performance, as expected. Fig. 6 shows the accuracy variability with respect to the learning rate. Note that, differently from what we observed on SQuAD, these tasks are very sensitive to the learning rate. We notice that our results are considerably different from those published in the reference transformer\u2019s paper in a few cases.",
+      "DistilBERT refers to a model that is an approximation of the BERT model. It reduces the size of the BERT model by 40% while maintaining 97% of its performance. This approximation process is known as distillation, which involves using a smaller network to approximate the output distributions of a larger network.",
+      "You might find these chapters and articles relevant to this topic. ... DistilBERT proposed by (Sanh et al. 2019) [56] approximates the BERT model by not including token-type embeddings and pooler allowing DistilBERT to reduce the size of BERT by 40% while retaining 97% of the performance of BERT.",
+      "This is somewhat similar to posterior approximation and one of the main optimization techniques used is the inclusion of Kulback Leiber divergence. DistilBERT also implements some techniques used in RoBERTa like training very large batches leveraging gradient accumulation (up to 4000 examples per batch), with dynamic masking and removing the next sentence prediction objective, further optimizing the speed of training and inference."
+    ],
+    "title": "DistilBERT - an overview | ScienceDirect Topics",
+    "url": "https://www.sciencedirect.com/topics/computer-science/distilbert"
+  },
+  {
+    "description": "The DistilBERT model was proposed in the blog post Smaller, faster, cheaper, lighter: Introducing DistilBERT, a distilled version of BERT, and the paper DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter. DistilBERT is a small, fast, cheap and light Transformer model ...",
+    "favicon_url": "https://you.com/favicon?domain=hyperight.com&size=128",
+    "snippets": [
+      "The DistilBERT model was proposed in the blog post Smaller, faster, cheaper, lighter: Introducing DistilBERT, a distilled version of BERT, and the paper DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter. DistilBERT is a small, fast, cheap and light Transformer model trained by distilling BERT base.",
+      "This website uses cookies to improve your experience while you navigate through the website. Out of these, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyze and understand how you use this website.",
+      "We use cookies on our website to give you the most relevant experience by remembering your preferences and repeat visits.",
+      "By clicking \u201cAccept\u201d, you consent to the use of ALL the cookies."
+    ],
+    "title": "DistilBERT - Hyperight",
+    "url": "https://hyperight.com/directory/distilbert/"
+  },
+  {
+    "description": "Unlocking the secrets of BERT compression: a student-teacher framework for maximum efficiency",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "Generally, the distillation procedure is applied during the pretaining but can be applied during the fine-tuning as well. DistilBERT learns from BERT and updates its weights by using the loss function which consists of three components:",
+      "Below, we are going to discuss these loss components and undestand the necessity of each of them. Nevertheless, before diving into depth it is necessary to understand an important concept called temperature in softmax activation function. The temperature concept is used in the DistilBERT loss function.",
+      "According to them, reducing the number of total layers has a much higher impact. DistilBERT is trained on the same corpus of data as BERT which contains BooksCorpus (800M words) English Wikipedia (2500M words).",
+      "Here are the facts important to retain: During inference, DistilBERT is 60% faster than BERT."
+    ],
+    "title": "Large Language Models: DistilBERT - Smaller, Faster, Cheaper and ...",
+    "url": "https://towardsdatascience.com/distilbert-11c8810d29fc/"
+  },
+  {
+    "description": "\ud83e\udd17 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. - huggingface/transformers",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "\ud83e\udd17 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX. - transformers/docs/source/en/model_doc/distilbert.md at main \u00b7 huggingface/transformers",
+      "Through a triple loss objective during pretraining, language modeling loss, distillation loss, cosine-distance loss, DistilBERT demonstrates similar performance to a larger transformer language model. You can find all the original DistilBERT checkpoints under the DistilBERT organization.",
+      "Click on the DistilBERT models in the right sidebar for more examples of how to apply DistilBERT to different language tasks.",
+      "DistilBERT doesn't have token_type_ids, you don't need to indicate which token belongs to which segment. Just separate your segments with the separation token tokenizer.sep_token (or [SEP])."
+    ],
+    "title": "transformers/docs/source/en/model_doc/distilbert.md at main \u00b7 ...",
+    "url": "https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/distilbert.md"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Model Description: This model is a fine-tune checkpoint of DistilBERT-base-uncased, fine-tuned on SST-2. This model reaches an accuracy of 91.3 on the dev set (for comparison, Bert bert-base-uncased version reaches an accuracy of 92.7). Developed by: Hugging Face \u00b7 Model Type: Text Classification \u00b7 Language(s): English \u00b7 License: Apache-2.0 \u00b7 Parent Model: For more details about DistilBERT, we encourage users to check out this model card. Resources for more information: Model Documentation \u00b7 DistilBERT paper \u00b7",
+      "import torch from transformers import DistilBertTokenizer, DistilBertForSequenceClassification tokenizer = DistilBertTokenizer.from_pretrained(\"distilbert-base-uncased-finetuned-sst-2-english\") model = DistilBertForSequenceClassification.from_pretrained(\"distilbert-base-uncased-finetuned-sst-2-english\") inputs = tokenizer(\"Hello, my dog is cute\", return_tensors=\"pt\") with torch.no_grad(): logits = model(**inputs).logits predicted_class_id = logits.argmax().item() model.config.id2label[predicted_class_id] This model can be used for topic classification. You can use the raw model for either masked language modeling or next sentence prediction, but it's mostly intended to be fine-tuned on a downstream task.",
+      "For instance, for sentences like This film was filmed in COUNTRY, this binary classification model will give radically different probabilities for the positive label depending on the country (0.89 if the country is France, but 0.08 if the country is Afghanistan) when nothing in the input indicates such a strong semantic shift.",
+      "See the model hub to look for fine-tuned versions on a task that interests you."
+    ],
+    "title": "distilbert/distilbert-base-uncased-finetuned-sst-2-english \u00b7 Hugging ...",
+    "url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english"
+  },
+  {
+    "description": "These scores are within 1% of the values quoted in the DistilBERT paper, and probably due to slightly different choices of the hyperparameters.",
+    "favicon_url": "https://you.com/favicon?domain=lewtun.github.io&size=128",
+    "snippets": [
+      "This neat idea comes from the DistilBERT paper, where the authors found that including a \"second step of distillation\" produced a student that performed better than simply fine-tuning the distilled language model:",
+      "A partial reimplementation of DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter by Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf [arXiv:1910.01108] The goal of this notebook is to explore task-specific knowledge distillation, where a teacher is used to augment the cross-entropy loss of the student during fine-tuning:",
+      "We also studied whether we could add another step of distillation during the adaptation phase by fine-tuning DistilBERT on SQuAD using a BERT model previously fine-tuned on SQuAD as a teacher for an additional term in the loss (knowledge distillation). In this setting, there are thus two successive steps of distillation, one during the pre-training phase and one during the adaptation phase.",
+      "As a simple benchmark, here we compare the time it takes for our teacher and student to generate 1,000 predictions on a CPU (to simulate a production environment). First, we load our fine-tuned models: student_model_ckpt = 'lewtun/distilbert-base-uncased-distilled-squad-v1' teacher_model_ckpt = 'lewtun/bert-base-uncased-finetuned-squad-v1' student_tokenizer = AutoTokenizer.from_pretrained(student_model_ckpt) student_model = AutoModelForQuestionAnswering.from_pretrained(student_model_ckpt).to('cpu') teacher_tokenizer = AutoTokenizer.from_pretrained(teacher_model_ckpt) teacher_model = AutoModelForQuestionAnswering.from_pretrained(teacher_model_ckpt).to('cpu')"
+    ],
+    "title": "DistilBERT | transformerlab",
+    "url": "https://lewtun.github.io/transformerlab/experiments.distilbert.html"
+  },
+  {
+    "description": "111 votes, 19 comments. HuggingFace released their first NLP transformer model \"DistilBERT\", which is similar to the BERT architecture: only 6\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "HuggingFace released their first NLP transformer model \"DistilBERT\", which is similar to the BERT architecture: only 66 million parameters (instead of 110 million) while keeping 95% of the performance on GLUE.",
+      "Try the Huggingface one, somehow it's super lightweight, not sure how they did it. I'm guessing distilBert will be super duper light weight.",
+      "Do you have any idea how to reduce the size of the tensorflow model to remove Adam averages in tensorflow version 2 ... Heres a paper where they make it 100x smaller.",
+      "lol it looks like they did initially name it DilBERT but changed their mind and switched it to DistilBERT instead :)"
+    ],
+    "title": "r/MachineLearning on Reddit: [R] DistilBERT: A smaller, faster, ...",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/cwm87b/r_distilbert_a_smaller_faster_cheaper_lighter/"
+  },
+  {
+    "description": "DistilBERT is a lightweight, efficient version of the BERT language model, designed for faster training and inference while maintaining competitive performance in natural language processing tasks.",
+    "favicon_url": "https://you.com/favicon?domain=www.activeloop.ai&size=128",
+    "snippets": [
+      "DistilBERT, a distilled version of the BERT language model, has gained popularity due to its efficiency and performance in various natural language processing (NLP) tasks. It retains much of BERT's capabilities while significantly reducing the number of parameters, making it faster and more resource-friendly.",
+      "A company case study involving DistilBERT is HLE-UPC's submission to SemEval-2021 Task 5: Toxic Spans Detection. They used a multi-depth DistilBERT model to estimate per-token toxicity in text, achieving improved performance compared to single-depth models.",
+      "In conclusion, DistilBERT offers a lightweight and efficient alternative to larger language models like BERT, making it an attractive choice for developers working with limited resources or deploying models in real-world applications. Its success in various NLP tasks demonstrates its potential for broader adoption and continued research in the field.",
+      "This is achieved by removing some of the transformer layers, using knowledge distillation techniques, and employing other optimizations to make the model more efficient. DistilBERT is significantly faster than BERT, both in terms of training and inference. It has 40% fewer parameters than BERT, which results in faster training times and reduced memory requirements."
+    ],
+    "title": "What is DistilBERT",
+    "url": "https://www.activeloop.ai/resources/glossary/distil-bert/"
+  }
+]

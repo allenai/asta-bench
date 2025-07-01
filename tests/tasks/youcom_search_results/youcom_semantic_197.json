@@ -1,0 +1,38 @@
+[
+  {
+    "description": "The notion of a prompt is not new. This idea of offering a prompt permeates many disciplines: arts (to spur a writer or to speak spontaneously); science (to commence an experiment); criminal\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Better prompts is all you need for better responses",
+      "Context: additional information or context that can guide\u2019s a model\u2019s response \u00b7 Input Data: expressed as input or question for a model to respond to \u00b7 Output and Style Format: the type or format of the output, for example, JSON, how many lines or paragraphs. Prompts are associated with roles, and roles inform an LLM who is interacting with it and what the interactive behavior ought to be.",
+      "At the same time, the OpenAI guide also advised what prompts not to use. Incorporating above principles, we discussed the CO-STAR prompt framework and provided a couple of examples on how to use this prompting framework. Finally, we linked prompt types to common tasks for LLMs and offered a set of illustrative notebook examples for each type of task. All the above serve a helpful first step into your journey into crafting and curating effective prompts for LLMs and obtaining the best response.",
+      "To communicate with LLM with precise and task-specific instructions prompts, Bsharat et.al [3] present a comprehensive principled instructions and guidelines to improve the quality of prompts for LLMs. The study suggests that because LLMs exhibit an impressive ability and quality in understanding natural language and in carrying out tasks in various domains such as answering questions, mathematical reasoning, code generation, translation and summarization of tasks, etc., a principled approach to curate various prompt types and techniques immensely improves a generated response."
+    ],
+    "title": "Best Prompt Techniques for Best LLM Responses | by Jules S. Damji ...",
+    "url": "https://medium.com/the-modern-scientist/best-prompt-techniques-for-best-llm-responses-24d2ff4f6bca"
+  },
+  {
+    "description": "Enhance your skills in prompt engineering with essential techniques for effective LLM usage. Learn to craft prompts that yield better results. Read more!",
+    "favicon_url": "https://you.com/favicon?domain=www.codesmith.io&size=128",
+    "snippets": [
+      "It's especially helpful when asking for formats like JSON or bulleted lists. OpenAI\u2019s chat-based LLMs use messages with roles to distinguish between different parts of a conversation: System: Describes the assistant\u2019s behavior (e.g., \u201cYou are a helpful assistant that always responds in JSON.\u201d)",
+      "The persona could be a seasoned social marketing expert with 12 years of experience who is witty. Or we can name a specific famous individual (real or fictional), such as Steve Jobs or Wonder Woman. Specification for the format and style of the LLM output. We can tell the LLM to \u201cgenerate 3 business names that are composed of 2 words.\u201d Jeff Su provided the following format prompt: \u201cAnalyze collected feedback based on the responsible team (sales, support, or product) and output in table format with column headers: Feedback, Team, and Priority.\u201d Some common formats include emails, bullet points, tables, code blocks, markdown, JSON, and paragraphs.",
+      "In prompt engineering, LLMs are guided using carefully crafted prompts to produce accurate, relevant, and task-specific outputs. System prompts are high-level instructions provided to an LLM that help define its behavior. These prompts set parameters such as tone, domain expertise, response format, or limitations.",
+      "The request or task that the LLM should perform. This is usually an action verb. For example, we can instruct the model to \u201canalyze\u201d collected feedback, \u201csummarize\u201d a report, \u201cclassify\u201d sentiment, or \u201cgenerate\u201d headlines. It is important to use separate instructions for clarity. This helps in effectively organizing the prompt by delineating different types of content such as instructions, examples, and questions."
+    ],
+    "title": "Mastering LLM Prompts: How to Structure Your Queries for Better ...",
+    "url": "https://www.codesmith.io/blog/understanding-the-anatomies-of-llm-prompts"
+  },
+  {
+    "description": "Master role prompting in AI to enhance style, accuracy, and depth in LLM outputs. Learn best practices, understand limitations, and optimize your language model interactions effectively.",
+    "favicon_url": "https://you.com/favicon?domain=learnprompting.org&size=128",
+    "snippets": [
+      "Just like you don't need to know how the kitchen cooks your meal, you don't need to know how the program works inside\u2014just how to ask for what you want using the API. It makes it easy for different apps or websites to talk to each other and share information. Looks more comprehensive and digestible. Now the LLM also included an analogy with a menu in a restaurant which is very helpful to grasp the key idea of the API. Researchers also tried out framing prompts as a teacher-student dialogue instead of just telling an LLM to be thorough and simple",
+      "You go to your favorite LLM for help. Here's what you'll get if you write a simple prompt: ... Write a quick outreach email to [person] about partnering up. ... I hope this email finds you well. I\u2019m reaching out to explore potential collaboration opportunities between our teams. I believe there\u2019s a strong alignment between our goals and expertise, and I\u2019m confident we could create something impactful together.",
+      "Role prompting is a powerful technique that guides LLM's behavior by assigning it specific roles, enhancing the style, accuracy, and depth of its outputs. Whether you're aiming for a certain tone, improving clarity, or eliciting complex and nuanced responses, role prompting can be of help.",
+      "Second, write your question or task for the LLM. We summarize these best practices in one example with an employee-boss setting and a task to craft an elevator pitch. ... You're an employee who thrives on generating new ideas and always knows how to present them effectively. I'm your boss, who listens to your ideas and decides whether to implement them."
+    ],
+    "title": "Role Prompting: Guide LLMs with Persona-Based Tasks",
+    "url": "https://learnprompting.org/docs/advanced/zero_shot/role_prompting"
+  }
+]

@@ -1,0 +1,270 @@
+[
+  {
+    "description": "The human lung plays vital roles in respiration, host defense, and basic physiology. Recent technological advancements such as single-cell RNA sequenc\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The human lung plays vital roles in respiration, host defense, and basic physiology. Recent technological advancements such as single-cell RNA sequencing and genetic lineage tracing have revealed novel cell types and enriched functional properties of existing cell types in lung. The time has come to take a new census. Initiated by members of the NHLBI-funded LungMAP Consortium and aided by experts in the lung biology community, we synthesized current data into a comprehensive and practical cellular census of the lung.",
+      "Identities of cell types in the normal lung are captured in individual cell cards with delineation of function, markers, developmental lineages, heterogeneity, regenerative potential, disease links, and key experimental tools. This publication will serve as the starting point of a live, up-to-date guide for lung research at https://www.lungmap.net/cell-cards/. We hope that Lung CellCards will promote the community-wide effort to establish, maintain, and restore respiratory health."
+    ],
+    "title": "A census of the lung: CellCards from LungMAP - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1534580721008923"
+  },
+  {
+    "description": "Single-cell technologies have transformed our understanding of human tissues. Yet, studies typically capture only a limited number of donors and disagree on cell type definitions. Integrating many single-cell datasets can address these limitations of individual studies and capture the variability ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Single-cell technologies have transformed our understanding of human tissues. Yet, studies typically capture only a limited number of donors and disagree on cell type definitions. Integrating many single-cell datasets can address these limitations of individual studies and capture the variability present in the population.",
+      "A single-cell atlas of the human lungs, integrating data from 2.4 million cells from 486 individuals and including samples from healthy and diseased lungs, provides a roadmap for the generation of organ-scale cell atlases.",
+      "Nature Medicine - A single-cell atlas of the human lungs, integrating data from 2.4 million cells from 486 individuals and including samples from healthy and diseased lungs, provides a...",
+      "All relevant ethical regulations for work with human participants were complied with. For ref. 66, donor lung samples were provided through the federal United Network for Organ Sharing via the National Disease Research Interchange and International Institute for the Advancement of Medicine and entered into the NHLBI LungMAP BRINDL at the University of Rochester Medical Center, overseen by the IRB as RSRB00047606."
+    ],
+    "title": "An integrated cell atlas of the lung in health and disease | Nature ...",
+    "url": "https://www.nature.com/articles/s41591-023-02327-2"
+  },
+  {
+    "description": "We demonstrate the accuracy and ... normal and diseased lungs using multiple independent methods and testing data. We develop user-friendly web interfaces for easy access and maximal utilization of the LungMAP CellRefs. Accurate cell-type identification is vital for single-cell ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Accurate cell type identification is a key and rate-limiting step in single-cell data analysis. Single-cell references with comprehensive cell types, reproducible and functionally validated cell identities, and common nomenclatures are much needed by the research community for automated cell type annotation, data integration, and data sharing.",
+      "Accurate cell-type identification is vital for single-cell analysis. Here, the authors develop a computational pipeline called \u201cLungMAP CellRef\u201d for efficient, automated cell-type annotation of normal and disease human and mouse lung single-cell datasets.",
+      "Nature Communications - Accurate cell-type identification is vital for single-cell analysis. Here, the authors develop a computational pipeline called \u201cLungMAP CellRef\u201d for efficient,...",
+      "We develop user-friendly web interfaces for easy access and maximal utilization of the LungMAP CellRefs. ... Single-cell RNA-seq (scRNA-seq) analysis is being widely applied in biomedical research, enabling the study of complex organs, such as the lung, at unprecedented scale and resolution, and transforming our understanding of organ development and disease1,2,3,4. Accurate cell type identification is a necessary step in single-cell data analysis that usually requires time-consuming processes to optimize computational parameters followed by manual inspection that requires domain expertise."
+    ],
+    "title": "Guided construction of single cell reference for human and mouse ...",
+    "url": "https://www.nature.com/articles/s41467-023-40173-5"
+  },
+  {
+    "description": "Minzhe Guo, Michael P. Morley, ... Salomonis, Xin Sun, Edward E. Morrisey, Jeffrey A. Whitsett, NHLBI LungMAP Consortium, Yan Xu Guided construction of single cell reference for human and mouse lung....",
+    "favicon_url": "https://you.com/favicon?domain=research.cchmc.org&size=128",
+    "snippets": [
+      "Minzhe Guo, Michael P. Morley, Cheng Jiang, Yixin Wu, Guangyuan Li, Yina Du, Shuyang Zhao, Andrew Wagner, Adnan Cihan Cakar, Michal Kouril, Kang Jin, Nathan Gaddis, Joseph A. Kitzmiller, Kathleen Stewart, Maria C. Basil, Susan M. Lin, Yun Ying, Apoorva Babu, Kathryn A. Wikenheiser-Brokamp, Kyu Shik Mun, Anjaparavanda P. Naren, Geremy Clair, Joshua N. Adkins, Gloria S. Pryhuber, Ravi S. Misra, Bruce J. Aronow, Timothy L. Tickle, Nathan Salomonis, Xin Sun, Edward E. Morrisey, Jeffrey A. Whitsett, NHLBI LungMAP Consortium, Yan Xu Guided construction of single cell reference for human and mouse lung.",
+      "Query cell signatures: Query cell specific signatures Query gene expression: Query gene expression and statistics"
+    ],
+    "title": "LungMAP Single Cell Reference (v1)",
+    "url": "https://research.cchmc.org/pbge/lunggens/CellRef/LungMapCellRef.html"
+  },
+  {
+    "description": "Download scientific diagram | Cell type annotation and evaluation using the LungMAP Human Lung CellRef A Schematic workflow of the automated cell type annotation and evaluation pipeline. B Distributions of cell type prediction scores in each test data. Prediction scores using CellRef Seed (yellow ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Download scientific diagram | Cell type annotation and evaluation using the LungMAP Human Lung CellRef A Schematic workflow of the automated cell type annotation and evaluation pipeline. B Distributions of cell type prediction scores in each test data. Prediction scores using CellRef Seed (yellow bars) are comparable to those using the complete CellRef (blue bars).",
+      "Multiple machine learning and artificial intelligence methods, including pre-trained and fine-tuned models on large-scale atlas data, are publicly available for the single cell community users to computationally annotate and match their cell clusters to the reference atlas. Results This study benchmarks four computational tools for cell type annotation and matching \u2013 Azimuth, CellTypist, scArches, and FR-Match \u2013 using two lung atlas datasets, the Human Lung Cell Atlas (HLCA) and the LungMAP single-cell reference (CellRef).",
+      "... The LungMAP single-cell reference (CellRef) is a reference atlas for both normal human and mouse lungs developed using a guided approach for atlas construction",
+      "These studies have identified marker gene signatures for rare or novel cell types and enhanced the understanding of lineage trajectories in the healthy lung. ... ... The feature plots in Fig. 1B show one marker for each cluster and the dot plot in Fig. S3 A further confirms cluster identity. For additional validation of cluster assignment we referred to LungMAP"
+    ],
+    "title": "Cell type annotation and evaluation using the LungMAP Human Lung...",
+    "url": "https://www.researchgate.net/figure/Cell-type-annotation-and-evaluation-using-the-LungMAP-Human-Lung-CellRef-A-Schematic_fig5_372750604"
+  },
+  {
+    "description": "The human lung plays vital roles in respiration, host defense and basic physiology. Recent technological advancements such as single-cell RNA sequencing and genetic lineage tracing have revealed novel cell types and enriched functional properties of ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "The human lung plays vital roles in respiration, host defense and basic physiology. Recent technological advancements such as single-cell RNA sequencing and genetic lineage tracing have revealed novel cell types and enriched functional properties of existing cell types in lung. The time has come to take a new census. Initiated from members of the NHLBI-funded LungMAP Consortium and aided by experts in the lung biology community, we synthesized current data into a comprehensive and practical cellular census of the lung.",
+      "This publication will serve as the starting point of a live, up-to-date guide for lung research at https://lungmap.net/cell-cards-browser/. We hope that this Lung CellCards will promote the community-wide effort to establish, maintain and restore respiratory health. Sun et al. takes a cellular census of the normal human lung by accounting for not only the recent explosion of single cell datasets, but also by annotating function and developmental origin.",
+      "While the datasets reported in these studies are critical to our understanding of normal lung development and the response to injury and disease, there remains a significant need for conformational studies to better support and understand these findings. One of the core directives of the LungMAP Consortium is to utilize single cell techniques to map and characterize human lung cell lineages across the lifespan.",
+      "While this document initiated from LungMAP investigators, the product is the result of a community-wide effort with extensive inputs from numerous leaders of lung biology. We have chosen to use a \u201ccell cards\u201d format, with the intent to provide comprehensive, streamlined, and easy-to-update information for practical assessment of lung cell types. Data are derived from both mouse and human lungs."
+    ],
+    "title": "A Census of the Lung: CellCards from LungMAP - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9202574/"
+  },
+  {
+    "description": "In Sun et al., the CellCards initiative integrates functional and emerging single cell genomic datasets for an accurate and evolvable annotation of important cell lineages within the respiratory system. Integration of functional characteristics is critical to properly delineate cell lineages ...",
+    "favicon_url": "https://you.com/favicon?domain=www.cell.com&size=128",
+    "snippets": [
+      "In Sun et al., the CellCards initiative integrates functional and emerging single cell genomic datasets for an accurate and evolvable annotation of important cell lineages within the respiratory system. Integration of functional characteristics is critical to properly delineate cell lineages at homeostasis and provide a baseline dataset for comparison to disease states.",
+      "The human lung plays vital roles in respiration, host defense, and basic physiology. Recent technological advancements such as single-cell RNA sequencing and genetic lineage tracing have revealed novel cell types and enriched functional properties of existing cell types in lung. The time has come to take a new census. Initiated by members of the NHLBI-funded LungMAP Consortium and aided by experts in the lung biology community, we synthesized current data into a comprehensive and practical cellular census of the lung.",
+      "This publication will serve as the starting point of a live, up-to-date guide for lung research at https://www.lungmap.net/cell-cards/. We hope that Lung CellCards will promote the community-wide effort to establish, maintain, and restore respiratory health. ... The human lung is vital for survival starting at first breath.",
+      "While the datasets reported in these studies are critical to our understanding of normal lung development and the response to injury and disease, there remains a significant need for conformational studies to better support and understand these findings. One of the core directives of the LungMAP Consortium is to utilize single-cell techniques to map and characterize human lung cell lineages across the lifespan."
+    ],
+    "title": "A census of the lung: CellCards from LungMAP: Developmental Cell",
+    "url": "https://www.cell.com/developmental-cell/fulltext/S1534-5807(21)00892-3"
+  },
+  {
+    "description": "Lung disease accounts for every sixth death globally. Profiling the molecular state of all lung cell types in health and disease is currently revolutionizing the identification of disease mechanisms and will aid the design of novel diagnostic and ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Lung disease accounts for every sixth death globally. Profiling the molecular state of all lung cell types in health and disease is currently revolutionizing the identification of disease mechanisms and will aid the design of novel diagnostic and personalized therapeutic regimens.",
+      "In addition, it will provide specific and critical data allowing long-standing hypotheses regarding the recapitulation of developmental mechanisms in repair and disease states to be tested. Although the initial focus of the Human Lung Cell Atlas is on adult lung, it will integrate data from the Pediatric Cell Atlas (24) and initiatives focused on lung development, such as LungMAP or the recent National Institutes of Health (NIH)-funded DEVMAP.",
+      "For example, in the specific area of the lung, the NIH has actively supported these efforts through programs, including LungMAP (94) in the healthy lung, and disease-focused programs, in particular the Cancer Moonshot Human Tumor Atlas Network (http://bit.ly/NCI-HumanTumorAtlas).",
+      "Dendritic cells and monocytes with distinct inflammatory responses reside in lung mucosa of healthy humans. J Immunol. 2016;196:4498\u20134509. doi: 10.4049/jimmunol.1600071. [DOI] [PubMed] [Google Scholar] 94.Ardini-Poleske ME, Clark RF, Ansong C, Carson JP, Corley RA, Deutsch GH, et al. LungMAP Consortium."
+    ],
+    "title": "The Human Lung Cell Atlas: A High-Resolution Reference Map of the ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6604220/"
+  },
+  {
+    "description": "Donor tissue supplied through the US DHHS Donation and Transplantation Network, the National Disease Research Interchange and the International Institute for Advancement of Medicine, organizations that link donor families to the scientific community \u00b7 We are extremely grateful to the families ...",
+    "favicon_url": "https://you.com/favicon?domain=www.lungmap.net&size=128",
+    "snippets": [
+      "Explore cell cards of the human lung and annotate your own single-cell data."
+    ],
+    "title": "LungMAP - Home",
+    "url": "https://www.lungmap.net/"
+  },
+  {
+    "description": "Eight normal human lungs obtained from patients dying from causes not related to the lung were subjected to morphometric analysis to determine the number of cells in the alveolar region and their mean volume and surface characteristics. The age range was 19 to 40 yr, average body weight was ...",
+    "favicon_url": "https://you.com/favicon?domain=pubmed.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Eight normal human lungs obtained from patients dying from causes not related to the lung were subjected to morphometric analysis to determine the number of cells in the alveolar region and their mean volume and surface characteristics. The age range was 19 to 40 yr, average body weight was 74 kg, a \u2026",
+      "Eight normal human lungs obtained from patients dying from causes not related to the lung were subjected to morphometric analysis to determine the number of cells in the alveolar region and their mean volume and surface characteristics. The age range was 19 to 40 yr, average body weight was 74 kg, and the average fixed lung volume was 4,300 ml.",
+      "Seven percent of the alveolar surface was covered by alveolar type II cells, which make up 16% of the total alveolar cells and have a mean volume that is half that of the type I pneumocyte. Capillary endothelial cells make up 30% of the lung cells and were significantly smaller in both size and average surface area than the alveolar type I cells.",
+      "An interspecies comparison of characteristics of cells from the alveolar regions of normal lungs from humans, baboons, and rats showed that proportions of cells in the alveolar region and their average thickness, size, and surface areas were relatively constant."
+    ],
+    "title": "Cell number and cell characteristics of the normal human lung - PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/7103258/"
+  },
+  {
+    "description": "Although single-cell RNA sequencing studies have begun to provide compendia of cell expression profiles1\u20139, it has been difficult to systematically identify and localize all molecular cell types in individual organs to create a full molecular cell atlas. Here, using droplet- and plate-based ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Although single-cell RNA sequencing studies have begun to provide compendia of cell expression profiles1\u20139, it has been difficult to systematically identify and localize all molecular cell types in individual organs to create a full molecular cell atlas. Here, using droplet- and plate-based single-cell RNA sequencing of approximately 75,000 human cells across all lung tissue compartments and circulating blood, combined with a multi-pronged cell annotation approach, we create an extensive cell atlas of the human lung.",
+      "Nature - Expression profiling on 75,000 single cells creates a comprehensive cell atlas of the human lung that includes 41 out of 45 previously known cell types and 14 new ones.",
+      "Although single-cell RNA sequencing studies have begun to provide compendia of cell expression profiles1,2,3,4,5,6,7,8,9, it has been difficult to systematically identify and localize all molecular cell types in individual organs to create a full molecular cell atlas. Here, using droplet- and plate-based single-cell RNA sequencing of approximately 75,000 human cells across all lung tissue compartments and circulating blood, combined with a multi-pronged cell annotation approach, we create an extensive cell atlas of the human lung.",
+      "We define the gene expression profiles and anatomical locations of 58 cell populations in the human lung, including 41 out of 45 previously known cell types and 14 previously unknown ones. This comprehensive molecular atlas identifies the biochemical functions of lung cells and the transcription factors and markers for making and monitoring them; defines the cell targets of circulating hormones and predicts local signalling interactions and immune cell homing; and identifies cell types that are directly affected by lung disease genes and respiratory viruses."
+    ],
+    "title": "A molecular cell atlas of the human lung from single-cell RNA ...",
+    "url": "https://www.nature.com/articles/s41586-020-2922-4"
+  },
+  {
+    "description": "The human lung plays vital roles in respiration, host defense and basic physiology. Recent technological advancements such as single-cell RNA sequencing and genetic lineage tracing have revealed novel cell types and enriched functional properties of existing ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "The human lung plays vital roles in respiration, host defense and basic physiology. Recent technological advancements such as single-cell RNA sequencing and genetic lineage tracing have revealed novel cell types and enriched functional properties of existing cell types in lung. The time has come to take a new census. Initiated from members of the NHLBI-funded LungMAP Consortium and aided by experts in the lung biology community, we synthesized current data into a comprehensive and practical cellular census of the lung.",
+      "This publication will serve as the starting point of a live, up-to-date guide for lung research at https://lungmap.net/cell-cards-browser/. We hope that this Lung CellCards will promote the community-wide effort to establish, maintain and restore respiratory health. Sun et al. takes a cellular census of the normal human lung by accounting for not only the recent explosion of single cell datasets, but also by annotating function and developmental origin.",
+      "While the datasets reported in these studies are critical to our understanding of normal lung development and the response to injury and disease, there remains a significant need for conformational studies to better support and understand these findings. One of the core directives of the LungMAP Consortium is to utilize single cell techniques to map and characterize human lung cell lineages across the lifespan.",
+      "While this document initiated from LungMAP investigators, the product is the result of a community-wide effort with extensive inputs from numerous leaders of lung biology. We have chosen to use a \u201ccell cards\u201d format, with the intent to provide comprehensive, streamlined, and easy-to-update information for practical assessment of lung cell types. Data are derived from both mouse and human lungs."
+    ],
+    "title": "A Census of the Lung: CellCards from LungMAP - PMC",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9202574/"
+  },
+  {
+    "description": "The human lung plays vital roles in respiration, host defense, and basic physiology. Recent technological advancements such as single-cell RNA sequencing and genetic lineage tracing have revealed novel cell types and enriched functional properties of existing cell types in lung.",
+    "favicon_url": "https://you.com/favicon?domain=pubmed.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "The human lung plays vital roles in respiration, host defense, and basic physiology. Recent technological advancements such as single-cell RNA sequencing and genetic lineage tracing have revealed novel cell types and enriched functional properties of existing cell types in lung. The time has come to take a new census. Initiated by members of the NHLBI-funded LungMAP Consortium and aided by experts in the lung biology community, we synthesized current data into a comprehensive and practical cellular census of the lung.",
+      "Keywords: COVID; CellCards; LungMAP; cell cards; disease; lung; regeneration; repair; resource; single cell. ... Declaration of interests X.S. and E.E.M. are members of the advisory board for Developmental Cell. Figure 1:. Overall lung structure and regional\u2026 \u00b7 Figure 1:. Overall lung structure and regional niches. ... Figure 1:. Overall lung structure and regional niches. (A) Computer tomography of an intact human lung with the trachea and conducting airways highlighted.",
+      "Ardini-Poleske ME, Clark RF, Ansong C, Carson JP, Corley RA, Deutsch GH, Hagood JS, Kaminski N, Mariani TJ, Potter SS, Pryhuber GS, Warburton D, Whitsett JA, Palmer SM, Ambalavanan N; LungMAP Consortium. Ardini-Poleske ME, et al. Am J Physiol Lung Cell Mol Physiol. 2017 Nov 1;313(5):L733-L740. doi: 10.1152/ajplung.00139.2017. Epub 2017 Aug 10. Am J Physiol Lung Cell Mol Physiol. 2017. PMID: 28798251 Free PMC article. Review. Guided construction of single cell reference for human and mouse lung.",
+      "Figure 6.. Immune cells of the human lung. (A) Depiction of lung immune cell types featured in CellCards. They can be delineated based on surface protein expression, with all immune cells expressing CD45. Macrophages are CD11b+; dendritic cells are CD11c+; T cells are CD3+ and B cells are CD19+. Specialized T and B cell states can be identified using additional markers."
+    ],
+    "title": "A census of the lung: CellCards from LungMAP - PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34936882/"
+  },
+  {
+    "description": "Using total of 20 testing data ... of both normal and disease lungs. User-friendly web interfaces were developed to support easy access and maximal utilization of the LungMAP CellRefs. LungMAP CellRefs are freely available to the pulmonary research community through fast interactive web interfaces to facilitate hypothesis generation, research discovery, and identification of cell type ...",
+    "favicon_url": "https://you.com/favicon?domain=data-browser.lungmap.net&size=128",
+    "snippets": [
+      "Using total of 20 testing data from five independent studies, we demonstrated the utility of our CellRefs for automated cell type annotation analysis of both normal and disease lungs. User-friendly web interfaces were developed to support easy access and maximal utilization of the LungMAP CellRefs. LungMAP CellRefs are freely available to the pulmonary research community through fast interactive web interfaces to facilitate hypothesis generation, research discovery, and identification of cell type alterations in disease conditions."
+    ],
+    "title": "Human Lung Reference Cell Atlas version 1.0 - Overview - LungMAP ...",
+    "url": "https://data-browser.lungmap.net/projects/6135382f-487d-4adb-9cf8-4d6634125b68"
+  },
+  {
+    "description": "PDF | The human lung plays vital roles in respiration, host defense, and basic physiology. Recent technological advancements such as single-cell RNA... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "This publication will serve as the starting point of a live, up-to-date guide for lung research at https://www.lungmap.net/cell-cards/. We hope that Lung CellCards will promote the community-wide effort to establish, maintain, and restore respiratory health. Overall lung structure and regional niches. (A) Computer tomography of an intact human lung with the trachea and conducting airways highlighted. (B) A tile scan of a section of the normal human lung after alcian blue staining identifies proximal airway structures.",
+      "The human lung plays vital roles in respiration, host defense and basic physiology. Recent \u00b7 technological advancements such as single-cell RNA sequencing and genetic lineage tracing have \u00b7 revealed novel cell types and enriched functional properties of existing cell types in lung. The \u00b7 time has come to take a new census. Initiated from members of the NHLBI-funded LungMAP",
+      "Immune cells of the human lung. (A) Depiction of lung immune cell types featured in CellCards. They can be delineated based on surface protein expression, with all immune cells expressing CD45. Macrophages are CD11b+; dendritic cells are CD11c+; T cells are CD3+ and B cells are CD19+. Specialized T and B cell states can be identified using additional markers.",
+      "Warburton D, Mariani TJ, et al. (2019). Integration of transcriptomic and proteomic data identifies \u00b7 biological functions in cell populations from human infant lung."
+    ],
+    "title": "(PDF) A census of the lung: CellCards from LungMAP",
+    "url": "https://www.researchgate.net/publication/357232932_A_census_of_the_lung_CellCards_from_LungMAP"
+  },
+  {
+    "description": "The National Heart, Lung, and Blood Institute is funding an effort to create a molecular atlas of the developing lung (LungMAP) to serve as a research resource and public education tool. The lung is a complex organ with lengthy development time driven by interactive gene networks and dynamic ...",
+    "favicon_url": "https://you.com/favicon?domain=journals.physiology.org&size=128",
+    "snippets": [
+      "The National Heart, Lung, and Blood Institute is funding an effort to create a molecular atlas of the developing lung (LungMAP) to serve as a research resource and public education tool. The lung is a complex organ with lengthy development time driven by interactive gene networks and dynamic cross talk among multiple cell types to control and coordinate lineage specification, cell proliferation, differentiation, migration, morphogenesis, and injury repair.",
+      "The Human Tissue Core (HTC) identifies and manages tissue sources to meet the overall goal of LungMAP to build an open-access comprehensive molecular atlas of the late-stage developing lung. The HTC procures, processes, stores, and distributes normal late-gestation, neonatal, and early childhood human lung tissue and dissociated cells for the Research Centers, networking with the United Network for Organ Sharing and their partners.",
+      "These files include Human Alveolar Stage, Mouse E16.5 (early canicular stage), Mouse E18.5 [early saccular stage, Mouse P0\u2013P03 (mid-to-late saccular stage], Mouse P04\u2013P36 (alveolar stage), Cell Ontology for Mouse Lung Maturation, and Cell Ontology for Human Lung Maturation. These documents are flat file views providing the LungMAP identification numbers for each term within the current deployed ontology (Human Version 1.7, Mouse Version 2.9).",
+      "This group is identifying these epigenetic, RNA, and protein changes in samples from laser capture microdissection (LCM) of developing alveoli and sorted lung cells collected at tight intervals to allow detailed analysis. LCM is done at UAB, with samples distributed to Yale University for miRNA and mRNA analysis, UCSD for DNA methylation, and UAB for proteomics. Data integration and computational model development is conducted at CMU to identify regulatory \u201ccontrol points\u201d in alveolar development (9). The Saban Research Institute at Children\u2019s Hospital of Los Angeles is the LungMAP 3D-imaging Research Center (RC), which is investigating alveolar development in unique ways that are leading to new insights (23)."
+    ],
+    "title": "LungMAP: The Molecular Atlas of Lung Development Program | American ...",
+    "url": "https://journals.physiology.org/doi/full/10.1152/ajplung.00139.2017"
+  },
+  {
+    "description": "Supported by the National Heart, Lung, and Blood Institute of the National Institutes of Health under Award Number U24HL148865 \u00a92022 CCHMC based upon \u00a92017 RTI International",
+    "favicon_url": "https://you.com/favicon?domain=www.lungmap.net&size=128",
+    "snippets": [
+      "C1 Chromium Single Cell Gene Expression Drop-Seq Infinium MethylationEPIC BeadChip Mass Spectrometry NanoDrop",
+      "Human: Neonate Human: Infant Human: Child Human: Adolescent Human: Adult Mouse: E12.5 Mouse: E14.5 Mouse: E15.5 Mouse: E16.5-E17.5 Mouse: E17.5-E19.5 Mouse: P0-P3 Mouse: P4-P36 Rhesus: Saccular"
+    ],
+    "title": "LungMAP - View All Datasets",
+    "url": "https://www.lungmap.net/explore-data/visualize-data/"
+  },
+  {
+    "description": "The lungs are a pair of primary respiration organs located in the thoracic cavity on either side of the mediastinum. These organs are covered by a thin, double-layered serous membrane called the pleura.[1] The respiratory system consists of 2 components\u2014the conducting and respiratory portions.",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Brush cells, occasionally called type III pneumocyte cells, are sparsely distributed in all areas of respiratory mucosa.[11] These cells may be columnar- or flask-shaped and are identified by their short microvilli-covered apical layer, resembling a push broom or, appropriately, a brush.",
+      "The bronchial mucosa also contains a small cluster of neuroendocrine cells,[16] also known as small granules or Kulchitsky cells, which can secrete several factors, including catecholamines and polypeptide hormones, such as calcitonin, serotonin, and gastrin-releasing peptide (bombesin)  \u00b7 The pulmonary epithelium serves as the first line of defense for inhaled air.[17] Proper ethical approval is obtained before collecting the lung tissue. The lung is identified, dissected en-block, weighed, and labeled.",
+      "If the identified lesions are large or small, they can be isolated and embedded separately. Including the sections of associated lymph nodes is essential for histological evaluation, as this helps assess the extent of metastasis in lung tumors.[18] ... Histochemical analyses of lung tissues can be conducted using lectin histochemistry or immunohistochemistry. Both techniques can be applied to tissue slides. Normal lung cells can be classified into type I and type II pneumocytes based on histochemical analyses using lectin typing (glycotyping).[17] Alveolar macrophages in the normal lung are positive for several N-linked saccharides, including N-acetylgalactosamine, N-acetylglucosamine, terminal \u03b2-D-galactose, and sialyl groups.",
+      "Some specific lectins can be used as a marker for cell types, such as Dolichos biflorus agglutinin for bronchial epithelial cells, Triticum Vulgaris (succinylated) for type I pneumocytes, and Hippeastrum hybrid or Maclura pomifera lectins for type II pneumocytes. Alveolar macrophages test positive for anti-CD68, and the alveolar lining shows positivity for cytokeratin. Immunohistochemistry and lectin histochemistry can provide substantial insights into obstructive and restrictive pathologies and lung cancer diagnosis. Adenocarcinomas can be identified using differentiation markers such as TTF-1 and NapsinA."
+    ],
+    "title": "Histology, Lung - StatPearls - NCBI Bookshelf",
+    "url": "https://www.ncbi.nlm.nih.gov/books/NBK534789/"
+  },
+  {
+    "description": "Multiomic analysis of human fetal lungs from 5\u201322 post-conception weeks unveils cell-lineage trajectories across different cell types during development and will provide fresh insights into lung disease progression in adults.",
+    "favicon_url": "https://you.com/favicon?domain=www.cell.com&size=128",
+    "snippets": [
+      "We present a multiomic cell atlas of human lung development that combines single-cell RNA and ATAC sequencing, high-throughput spatial transcriptomics, and single-cell imaging. Coupling single-cell methods with spatial analysis has allowed a comprehensive cellular survey of the epithelial, mesenchymal, endothelial, and erythrocyte/leukocyte compartments from 5\u201322 post-conception weeks. We identify previously uncharacterized cell states in all compartments.",
+      "Moreover, there are developmental-specific cell states that do not exist in the adult. A high-resolution cell atlas of the embryonic and fetal human lung will identify developmental precursors and progenitors and predict differentiation trajectories and potential gene regulatory networks.",
+      "The more mature cells, which exited the tip first, are more proximal, whereas the most immature cell states, which exited the tip recently, are found in the tip-adjacent (stalk) regions.10 In other words, space reflects time in lung development. Therefore, coupling single-cell state analysis to in vivo spatial visualization can provide high confidence in the identification of novel progenitor cells in the developing lung.",
+      "We have generated a high-resolution single-cell atlas of human lung development using a combination of scRNA-seq, scATAC-seq, Visium Spatial Transcriptomics, and mRNA in situ hybridization using hybridization chain reaction (HCR).11 Combining these data sources has allowed us to identify 144 cell states/types in 5\u201322 pcw lung samples."
+    ],
+    "title": "A human fetal lung cell atlas uncovers proximal-distal gradients ...",
+    "url": "https://www.cell.com/cell/fulltext/S0092-8674(22)01415-5"
+  },
+  {
+    "description": "The National Heart, Lung, and Blood Institute is funding an effort to create a molecular atlas of the developing lung (LungMAP) to serve as a research resource and public education tool. The lung is a complex organ with lengthy development time ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "The Human Tissue Core (HTC) identifies and manages tissue sources to meet the overall goal of LungMAP to build an open-access comprehensive molecular atlas of the late-stage developing lung. The HTC procures, processes, stores, and distributes normal late-gestation, neonatal, and early childhood human lung tissue and dissociated cells for the Research Centers, networking with the United Network for Organ Sharing and their partners.",
+      "These files include Human Alveolar Stage, Mouse E16.5 (early canicular stage), Mouse E18.5 [early saccular stage, Mouse P0\u2013P03 (mid-to-late saccular stage], Mouse P04\u2013P36 (alveolar stage), Cell Ontology for Mouse Lung Maturation, and Cell Ontology for Human Lung Maturation. These documents are flat file views providing the LungMAP identification numbers for each term within the current deployed ontology (Human Version 1.7, Mouse Version 2.9).",
+      "This group is identifying these epigenetic, RNA, and protein changes in samples from laser capture microdissection (LCM) of developing alveoli and sorted lung cells collected at tight intervals to allow detailed analysis. LCM is done at UAB, with samples distributed to Yale University for miRNA and mRNA analysis, UCSD for DNA methylation, and UAB for proteomics. Data integration and computational model development is conducted at CMU to identify regulatory \u201ccontrol points\u201d in alveolar development (9). The Saban Research Institute at Children\u2019s Hospital of Los Angeles is the LungMAP 3D-imaging Research Center (RC), which is investigating alveolar development in unique ways that are leading to new insights (23).",
+      "The LungMAP consortium has created a library of lung images using multiple imaging technologies that span from anatomic to molecular. To enrich understanding of these visual data, it was necessary to have a mechanism for identifying specific areas of an image to highlight the structures and labeling of the tissue, including proteins, cells, and larger anatomic features such as bronchioles and vessels that develop at certain time points."
+    ],
+    "title": "LungMAP: The Molecular Atlas of Lung Development Program - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5792185/"
+  },
+  {
+    "description": "The integrated Human Lung Cell Atlas (HLCA) represents the first large-scale, integrated single-cell reference atlas of the human lung. It consists of over 2 million cells from the respiratory tract of 486 individuals and includes 49 different datasets. It is split into the fully integrated ...",
+    "favicon_url": "https://you.com/favicon?domain=data.humancellatlas.org&size=128",
+    "snippets": [
+      "The HLCA core includes data of healthy lung tissue from 107 individuals and includes manual cell type annotations based on consensus across six independent experts, as well as demographic, biological, and technical metadata. The datasets in the HLCA core were integrated using scANVI.",
+      "The full HLCA includes 35 further datasets that include donors with various lung diseases.",
+      "Detailed information about all metadata in the objects, as well as further HLCA-related information, can be found on the HLCA landing page: https://github.com/LungCellAtlas/HLCA."
+    ],
+    "title": "The integrated Human Lung Cell Atlas (HLCA) v1.0 - Overview - HCA ...",
+    "url": "https://data.humancellatlas.org/hca-bio-networks/lung/atlases/lung-v1-0"
+  },
+  {
+    "description": "The National Heart, Lung, and Blood Institute is funding an effort to create a molecular atlas of the developing lung (LungMAP) to serve as a research resource and public education tool. The lung is a complex organ with lengthy development time driven ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "The Human Tissue Core (HTC) identifies and manages tissue sources to meet the overall goal of LungMAP to build an open-access comprehensive molecular atlas of the late-stage developing lung. The HTC procures, processes, stores, and distributes normal late-gestation, neonatal, and early childhood human lung tissue and dissociated cells for the Research Centers, networking with the United Network for Organ Sharing and their partners.",
+      "These files include Human Alveolar Stage, Mouse E16.5 (early canicular stage), Mouse E18.5 [early saccular stage, Mouse P0\u2013P03 (mid-to-late saccular stage], Mouse P04\u2013P36 (alveolar stage), Cell Ontology for Mouse Lung Maturation, and Cell Ontology for Human Lung Maturation. These documents are flat file views providing the LungMAP identification numbers for each term within the current deployed ontology (Human Version 1.7, Mouse Version 2.9).Unique LungMAP Tools",
+      "This group is identifying these epigenetic, RNA, and protein changes in samples from laser capture microdissection (LCM) of developing alveoli and sorted lung cells collected at tight intervals to allow detailed analysis. LCM is done at UAB, with samples distributed to Yale University for miRNA and mRNA analysis, UCSD for DNA methylation, and UAB for proteomics. Data integration and computational model development is conducted at CMU to identify regulatory \u201ccontrol points\u201d in alveolar development (9). The Saban Research Institute at Children\u2019s Hospital of Los Angeles is the LungMAP 3D-imaging Research Center (RC), which is investigating alveolar development in unique ways that are leading to new insights (23).",
+      "The LungMAP consortium has created a library of lung images using multiple imaging technologies that span from anatomic to molecular. To enrich understanding of these visual data, it was necessary to have a mechanism for identifying specific areas of an image to highlight the structures and labeling of the tissue, including proteins, cells, and larger anatomic features such as bronchioles and vessels that develop at certain time points."
+    ],
+    "title": "Translational Physiology: LungMAP: The Molecular Atlas of Lung ...",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5792185/"
+  },
+  {
+    "description": "Lung Fibroblasts, smooth muscle cells, microvascular; small airway, lobar, bronchial/tracheal, laryngeal epithelial cells.",
+    "favicon_url": "https://you.com/favicon?domain=www.lifelinecelltech.com&size=128",
+    "snippets": [
+      "Lifeline\u00ae Primary Human Lung-Airway cells include normal and diseased cells:",
+      "Smooth Muscle Cells \u2013 Bronchial/Tracheal Smooth Muscle Cells, Lung Smooth Muscle Cells"
+    ],
+    "title": "Primary Human Lung Cells for Cell Culture",
+    "url": "https://www.lifelinecelltech.com/product-category/tissue-type/lung-airway-tissue/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=hms.harvard.edu&size=128",
+    "snippets": [],
+    "title": "Listening In on Lung Cells | Harvard Medical School",
+    "url": "https://hms.harvard.edu/news/listening-lung-cells"
+  }
+]

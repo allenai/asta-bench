@@ -1,0 +1,290 @@
+[
+  {
+    "description": "Learn how RAG pipelines improve LLM output using real-time data and find out how to build and optimize one step-by-step.",
+    "favicon_url": "https://you.com/favicon?domain=lakefs.io&size=128",
+    "snippets": [
+      "By doing this, you can ensure that your huge language model will always have the context needed to appropriately reply to user queries that require information from external knowledge sources. A vector database is where the pipeline ends. A variety of transformation and document preprocessing stages along the way also help to achieve a scalable, dependable RAG architecture.",
+      "What is a RAG pipeline and how do you manage it to stay in line with machine learning best practices? Keep reading to find out! Retrieval augmented generation (RAG) is a technique of optimizing the output of a large language mode whereby the model consults a reliable knowledge base outside of its training data sources before producing a response.",
+      "RAG extends the already powerful capabilities of LLMs to specific domains or an organization\u2019s own knowledge base without requiring the model to be retrained. It\u2019s a reasonably priced method of improving LLM output to ensure that it stays relevant, accurate, and useful in a range of contexts thanks to relevant information. A RAG pipeline uses unstructured data as the source that may be stored in a variety of different formats across databases and data lakes.",
+      "This lightweight system combines pre-trained language models with efficient retrieval algorithms to createrelevant and coherent RAG pipelines. It abstracts the difficulties of retrieval and generation while stressing modularity and ease of use. The framework\u2019s architecture is adaptable and flexible, allowing users to test out various retrieval techniques and generation models. RAGatouille supports a wide range of data sources, including text documents, databases, and knowledge graphs, and it is adaptable to a wide range of domains and use cases, making it an ideal choice for anyonelooking to implement RAG activities rapidly"
+    ],
+    "title": "RAG Pipeline: Example, Tools & How to Build It",
+    "url": "https://lakefs.io/blog/what-is-rag-pipeline/"
+  },
+  {
+    "description": "Large Language Models (LLMs) are highly capable but encounter several issues like creating inaccurate or irrelevant content (hallucinations), using outdated information, and operating in ways that\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "This step is about identifying relevant knowledge chunks. 2. Generation: The LLM model takes the user\u2019s question and the relevant information retrieved from the vector database to create a response. This process combines the question with the identified data to generate an answer. You can create a Basic RAG Pipeline in a few lines of code!",
+      "Large Language Models (LLMs) are highly capable but encounter several issues like creating inaccurate or irrelevant content (hallucinations), using outdated information, and operating in ways that are not transparent (blackbox reasoning). Retrieval-Augmented Generation (RAG) is a technique to solve these problems by augmenting LLM knowledge with additional domain specific data.",
+      "A key use of LLMs is in advanced question-answering (Q&A) chatbots. To create a chatbot that can understand and respond to queries about private or specific topics, it\u2019s necessary to expand the knowledge of LLMs with the particular data needed. This is where the RAG can help.",
+      "What\u2019s RAG in LLMs"
+    ],
+    "title": "How I built a Simple Retrieval-Augmented Generation (RAG) Pipeline ...",
+    "url": "https://medium.com/@drjulija/what-is-retrieval-augmented-generation-rag-938e4f6e03d1"
+  },
+  {
+    "description": "Large language models (LLMs) have impressed the world with their unprecedented capabilities to comprehend and generate human-like responses.",
+    "favicon_url": "https://you.com/favicon?domain=developer.nvidia.com&size=128",
+    "snippets": [
+      "Large language models (LLMs) have impressed the world with their unprecedented capabilities to comprehend and generate human-like responses. Their chat functionality provides a fast and natural\u2026",
+      "With RAG, companies can build a chat experience that\u2019s highly specific to their product. For example, questions about product specifications could easily be answered.  \u00b7 Customer service: Companies can empower live service representatives to easily answer customer questions with precise, up-to-date information. Enterprise search: Businesses have a wealth of knowledge across the organization, including technical documentation, company policies, IT support articles, and code repositories.",
+      "This post explains the benefits of using the RAG technique when building an LLM application, along with the components of a RAG pipeline. For more information after you finish this post, see RAG 101: Retrieval-Augmented Generation Questions Answered. ... Data is constantly changing in an enterprise. AI solutions that use LLMs can remain up-to-date and current with RAG, which facilitates direct access to additional data resources.",
+      "A typical RAG pipeline consists of several phases. The process of document ingestion occurs offline, and when an online query comes in, the retrieval of relevant documents and the generation of a response occurs."
+    ],
+    "title": "RAG 101: Demystifying Retrieval-Augmented Generation Pipelines ...",
+    "url": "https://developer.nvidia.com/blog/rag-101-demystifying-retrieval-augmented-generation-pipelines/"
+  },
+  {
+    "description": "RAG process, its components & comprehensive evaluation.",
+    "favicon_url": "https://you.com/favicon?domain=masteringllm.medium.com&size=128",
+    "snippets": [
+      "Over the past few years, RAG has matured and multiple studies has been done to understand pattern and behaviors which can result in low\u2026",
+      "Implementing RAG also involves deciding how to break down documents into chunks, choosing the right embeddings for understanding the text\u2019s meaning, selecting a suitable vector database for storing features efficiently, and finding ways to fine-tune language models, as shown in Figure 1. ... Not all questions require additional retrieval because LLMs have built-in knowledge.",
+      "Results of the search for optimal RAG practices. Modules enclosed in a boxed module are under investigation to determine the best method. The underlined method represents the selected implementation. The \u201cAvg\u201d (average score) is calculated based on the Acc, EM, and RAG scores for all tasks, while the average latency is measured in seconds per query.",
+      "Over the past few years, RAG has matured and multiple studies has been done to understand pattern and behaviors which can result in low cost with high accuracy."
+    ],
+    "title": "Best Practices for RAG Pipelines | Medium",
+    "url": "https://masteringllm.medium.com/best-practices-for-rag-pipeline-8c12a8096453"
+  },
+  {
+    "description": "One of the most powerful applications enabled by LLMs is sophisticated question-answering (Q&A) chatbots. These are applications that can answer questions about specific source information. These applications use a technique known as Retrieval Augmented Generation, or RAG.",
+    "favicon_url": "https://you.com/favicon?domain=python.langchain.com&size=128",
+    "snippets": [
+      "A typical RAG application has two main components: Indexing: a pipeline for ingesting data from a source and indexing it.",
+      "We can create a simple indexing pipeline and RAG chain to do this in ~50 lines of code.",
+      "Although vector stores and retrieval can provide access to a larger knowledge pool, their representation power is not as powerful as full attention.\\n\\n\\nChallenges in long-term planning and task decomposition: Planning over a lengthy history and effectively exploring the solution space remain challenging.",
+      "Part 1 (this guide) introduces RAG and walks through a minimal implementation. Part 2 extends the implementation to accommodate conversation-style interactions and multi-step retrieval processes. This tutorial will show how to build a simple Q&A application over a text data source. Along the way we\u2019ll go over a typical Q&A architecture and highlight additional resources for more advanced Q&A techniques."
+    ],
+    "title": "Build a Retrieval Augmented Generation (RAG) App: Part 1 | ...",
+    "url": "https://python.langchain.com/docs/tutorials/rag/"
+  },
+  {
+    "description": "Dive into our comprehensive guide for RAG pipeline and discover how to enhance AI accuracy and relevance. Explore benefits, process, and challenges.",
+    "favicon_url": "https://you.com/favicon?domain=www.signitysolutions.com&size=128",
+    "snippets": [
+      "On the other hand, the Retrieval-Augmented Generation pipeline addresses this problem by combining information retrieval and response generation. Retrieval augmented generation services help generate the perfect response by searching external knowledge sources to find relevant data and using large language models to produce accurate responses. This blog will help you understand everything about RAG, from its components to benefits and challenges, as well as how to build a RAG pipeline.",
+      "RAG, or Retrieval-Augmented Generation pipeline, is a method in Artificial Intelligence that combines two steps: retrieving information and generating responses. In simple terms, it first searches a knowledge source to find relevant information based on the users\u2019 questions.",
+      "The RAG pipeline uses document extraction to locate and leverage specific pieces of information from large datasets to ensure accurate responses even for detailed, domain-specific queries. By retrieving external data as context, the pipeline enables domain-specific question-answering tailored to particular industries or knowledge areas, making it a highly versatile solution for specialized use cases.",
+      "Also, ensure that chunks are the right size and experiment with these to see which balance works best with your knowledge base. Next, keep a continuous feedback loop as it allows for regular improvements by adjusting the RAG pipeline based on user interaction and responses."
+    ],
+    "title": "A Comprehensive Guide for RAG Pipeline",
+    "url": "https://www.signitysolutions.com/blog/rag-pipeline"
+  },
+  {
+    "description": "At inference time, we can search ... this knowledge base and add it to the LLM\u2019s prompt. Then, the LLM can use its in context learning abilities to leverage this added context and produce a more factual/grounded output. Simple implementation: We can create a minimal RAG pipeline using a pretrained ...",
+    "favicon_url": "https://you.com/favicon?domain=stackoverflow.blog&size=128",
+    "snippets": [
+      "At inference time, we can search for relevant textual context within this knowledge base and add it to the LLM\u2019s prompt. Then, the LLM can use its in context learning abilities to leverage this added context and produce a more factual/grounded output. Simple implementation: We can create a minimal RAG pipeline using a pretrained embedding model and LLM by:",
+      "We can solve this by creating a data preprocessing or cleaning pipeline (either manually or by using LLM-as-a-judge) that properly standardizes, filters, and extracts data for RAG. (3) Prompt engineering: Successfully applying RAG is not just a matter of retrieving the correct context\u2014prompt engineering plays a massive role. Once we have the relevant data, we must craft a prompt that i) includes this context and ii) formats it in a way that elicits a grounded output from the LLM.",
+      "Retrieval-augmented generation (RAG) is one of the best (and easiest) ways to specialize an LLM over your own data, but successfully applying RAG in practice involves more than just stitching together pretrained models. ... At the highest level, RAG is a combination of a pretrained LLM with an external (searchable) knowledge base.",
+      "1. Separating the knowledge base into fixed-size chunks. 2. Vectorizing each chunk with an embedding model. 3. Vectorizing the input/query at inference time and using vector search to find relevant chunks. 4. Adding relevant chunks into the LLM\u2019s prompt. This simple approach works, but building a high-performing RAG application requires much more. Here are five avenues we can follow to refine our RAG pipeline."
+    ],
+    "title": "Practical tips for retrieval-augmented generation (RAG) - Stack ...",
+    "url": "https://stackoverflow.blog/2024/08/15/practical-tips-for-retrieval-augmented-generation-rag/"
+  },
+  {
+    "description": "The information retrieval stage is the backbone of the RAG pipeline, responsible for sourcing relevant information from external data sources or databases. The retrieved information serves as the contextual input for the generative model. Understanding Query: The input query is encoded into a vector representation. This vector is then used for semantic matching with stored knowledge ...",
+    "favicon_url": "https://you.com/favicon?domain=encord.com&size=128",
+    "snippets": [
+      "The information retrieval stage is the backbone of the RAG pipeline, responsible for sourcing relevant information from external data sources or databases. The retrieved information serves as the contextual input for the generative model. Understanding Query: The input query is encoded into a vector representation. This vector is then used for semantic matching with stored knowledge embeddings.",
+      "AI has come a long way in terms of how we interact with it. However, even the most advanced large language models (LLMs) have their limitations - ranging from outdated knowledge to hallucinations. Enter Retrieval Augmented Generation (RAG) pipelines - a method to build more reliable AI systems.",
+      "Learn about RAG pipelines, the key to building adaptable AI systems, their capabilities, and how to build these retrieval augmented generation systems. | Encord",
+      "RAG bridges the gap between generative AI and real-world knowledge by combining two powerful elements: retrieval and generation. This helps the models to fetch relevant and up-to-date information from external sources and integrate it to their outputs. Whether it\u2019s answering real-time queries or improving decision-making, RAG pipelines are quickly becoming essential for building intelligent AI applications like chatbots."
+    ],
+    "title": "Everything You Need to Know About RAG Pipelines for Smarter AI Models",
+    "url": "https://encord.com/blog/rag-pipelines/"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "In this article, we will explore how integrating Retrieval-Augmented Generation (RAG) pipelines can enhance the capabilities of LLMs by incorporating external knowledge sources. We will discuss the core concepts behind LLMs, RAG, and how they work together in a RAG pipeline.",
+      "They often generate responses based on patterns learned from historical data, making it difficult to answer real-time or highly specific queries. This is where the integration of external knowledge sources, such as a RAG pipeline, can significantly enhance their functionality.",
+      "The key advantage of RAG is that it allows the model to access up-to-date, domain-specific, or niche knowledge that it might not have encountered during training, blending retrieval with generation to produce more informative and precise responses. A RAG pipeline consists of three key components: retrieval, augmentation, and generation, each playing an essential role in generating accurate, context-aware outputs.",
+      "By synthesizing the new external context with its own pre-trained knowledge, the model produces a more precise and informative answer. This step allows the RAG system to generate answers that are both grammatically correct and highly relevant to the user's query. The first stage of a RAG pipeline involves gathering unstructured data from various sources, such as documents, online articles, databases, and emails."
+    ],
+    "title": "How to Build RAG Pipelines for LLM Projects? - GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/blogs/how-to-build-rag-pipelines-for-llm-projects/"
+  },
+  {
+    "description": "RAG: fundamentals to advanced (hybrid search, parent, contextual retrieval). Build production pipelines using MLOps orchestration frameworks and vector dbs.",
+    "favicon_url": "https://you.com/favicon?domain=decodingml.substack.com&size=128",
+    "snippets": [
+      "RAG works by combining external knowledge with an LLM's internal training through three simple modules: Ingestion Pipeline: The system gathers and processes data from various sources.",
+      "In this lesson, you learned the key components of an advanced RAG feature pipeline. ... How RAG works and why it matters, demonstrating how external knowledge enhances LLM performance and reduces hallucinations.",
+      "The final output of the pipeline is a structured knowledge base where each chunk is indexed and ready to be used in the retrieval and response generation phase of RAG.",
+      "Note that this represents only one resource. During this course, we will process more than 400 similar documents. The first step of the RAG feature pipeline is preparing the raw data."
+    ],
+    "title": "Build RAG Pipelines for AI Assistants That Actually Work",
+    "url": "https://decodingml.substack.com/p/build-rag-pipelines-that-actually"
+  },
+  {
+    "description": "Learn about Retrieval Augmented Generation (RAG), including architecture, use cases, implementation, and evaluation.",
+    "favicon_url": "https://you.com/favicon?domain=weaviate.io&size=128",
+    "snippets": [
+      "Common use cases for RAG include retrieving up-to-date information, accessing specialized domain knowledge, and answering complex, data-driven queries. The basic parts of a RAG pipeline can be broken down into three components: an external knowledge source, a prompt template, and a generative model.",
+      "Without access to external knowledge, a generative model is limited to generating responses based only on its parametric knowledge, which is learned during the model training phase. With RAG, we have the opportunity to incorporate external knowledge sources, also referred to as non-parametric knowledge, in our pipeline.",
+      "To take a closer look at a RAG pipeline that incorporates agents, check out this blog on Agentic RAG. While traditional RAG excels at simple question answering tasks that can be resolved by retrieval alone, it is unable to answer questions and draw conclusions over an entire external knowledge base.",
+      "Graph RAG aims to solve this by using a generative model to create a knowledge graph that extracts and stores the relationships between key entities and can then be added as a data source to the RAG pipeline."
+    ],
+    "title": "Introduction to Retrieval Augmented Generation (RAG) | Weaviate",
+    "url": "https://weaviate.io/blog/introduction-to-rag"
+  },
+  {
+    "description": "Retrieval-Augmented Generation (RAG) pipelines are an essential component of systems that aim to deliver accurate, contextually relevant responses by leveraging both retrieval mechanisms and generation models. These pipelines bridge the gap between unstructured data sources, retrieval systems, ...",
+    "favicon_url": "https://you.com/favicon?domain=docs.vectorize.io&size=128",
+    "snippets": [
+      "Retrieval-Augmented Generation (RAG) pipelines are an essential component of systems that aim to deliver accurate, contextually relevant responses by leveraging both retrieval mechanisms and generation models. These pipelines bridge the gap between unstructured data sources, retrieval systems, and language models (LLMs), ensuring that generated content is based on factual and up-to-date information.",
+      "Source Connectors: RAG pipelines support various connectors to ingest data from different sources. These could be Amazon S3 buckets, Google Cloud Storage, or other knowledge bases, file systems, or SaaS platforms.",
+      "One of the critical aspects of a successful RAG pipeline is ensuring that the vector search indexes are regularly updated with the latest information. If indexes are not kept up-to-date, users might receive outdated responses, leading to hallucinations (incorrect or irrelevant responses from the LLM). For instance, if a company\u2019s knowledge base is updated frequently, but the vector index isn\u2019t refreshed, the RAG system may pull from old, irrelevant data, causing the LLM to generate inaccurate answers.",
+      "RAG Pipelines allow organizations to turn this unstructured data into a format that can be easily searched and retrieved. They do this by transforming unstructured data into vector embeddings, which represent the semantic meaning of the data."
+    ],
+    "title": "What is a RAG Pipeline? | Vectorize Docs",
+    "url": "https://docs.vectorize.io/concepts/rag-pipelines/"
+  },
+  {
+    "description": "Building a RAG pipeline doesn't have to be complicated. Let this guide simplify the process and help you achieve your pipeline goals.",
+    "favicon_url": "https://you.com/favicon?domain=www.chatbees.ai&size=128",
+    "snippets": [
+      "In Customer Care, a RAG-enabled Q&A chatbot with an existing knowledge base can be utilized to answer customer queries. ... RAG pipelines and RAG with LlamaIndex simplify complex information by using colors like red, amber, and green to represent status updates.",
+      "These embeddings are essential for the processing and retrieval of information from the stored documents. By using advanced deep learning techniques, the Embedding Model can accurately represent the content of the documents in a format that is easily interpretable by other components of the RAG pipeline.",
+      "RAG pipelines and RAG with LlamaIndex can be integrated into reports to visually represent progress and risks.",
+      "Ready to ditch Nuclia? Discover the best alternatives for RAG-as-a-Service in this list of top-performing platforms that will meet all your needs. ... Set up your AWS Bedrock Knowledge Base with this guide."
+    ],
+    "title": "In-Depth Step-By-Step Guide for Building a RAG Pipeline",
+    "url": "https://www.chatbees.ai/blog/rag-pipeline"
+  },
+  {
+    "description": "RAG pipelines are the key to providing your LLM-powered apps with fresh, accurate data. In this guide, we explore best practices and antipatterns.",
+    "favicon_url": "https://you.com/favicon?domain=vectorize.io&size=128",
+    "snippets": [
+      "And along the way, there are a number of transformation and document pre processing steps that help to achieve a scalable, robust RAG architecture. The primary goal of a RAG pipeline is to create a reliable vector search index, populated with factual knowledge and relevant context.",
+      "In this way, you can ensure that anytime a user query requires information from an external knowledge source to generate an accurate response, your large language model will have the necessary context to respond the user query correctly. A RAG pipeline typically follows a standard sequence of steps to convert unstructured into an optimized vector index in your vector database.",
+      "To build a RAG pipeline, you must first understand the sources of domain specific, external knowledge that you want to ingest data from. This could be a knowledge base, web pages, or custom datasets sourced from SaaS platforms.",
+      "Because many sources of unstructured data require some processing to retrieve the natural language text data contained inside them, we need to include extraction logic in our RAG pipeline. Data extracted from data sources may or may not be immediately useful. For example, PDF documents in particular are notoriously tricky to convert into useful text. Document pre processing with open source libraries work in simple cases. However, for complex PDFs you may need to rely on something more purpose built for knowledge intensive NLP tasks to arrange the extracted natural language into a form that more closely resembles the way a human would read the document."
+    ],
+    "title": "How to build a better RAG pipeline \u2013 Vectorize",
+    "url": "https://vectorize.io/how-to-build-a-rag-pipeline/"
+  },
+  {
+    "description": "Explore the potential of the RAG pipeline with Llama Index. Learn to set up environments, load documents, and explore real-life use cases.",
+    "favicon_url": "https://you.com/favicon?domain=www.analyticsvidhya.com&size=128",
+    "snippets": [
+      "The ideal way to make LLMs learn about personal documents and reduce hallucinations is to augment the LLMs with retrieved documents from knowledge bases. RAG llmindex stands for Retrieval Augmented Generation. RAG is used to augment LLM with information from knowledge bases from custom documents. Embeddings are numerical representations of text data in high-dimensional vector space.",
+      "Also, there is no way GPT can learn about your private files. So, how can we make the model aware of the knowledge it does not possess yet? The answer is a Retrieval Augmented Generation Pipeline. In this article, we will learn about the RAG (Retrieval Augmented Generation) pipeline and build one using the LLama Index.",
+      "The above picture is of a typical RAG process. We have documents (PDFs, Web Pages, Docs), a tool to split large text into smaller chunks, embedding models to get vector representation of text chunks, Vector stores as knowledge bases, and an LLM to get answers from text chunks.",
+      "The texts extracted from the knowledge sources need to be stored somewhere. But in RAG-based applications, we need the embeddings of the data. These embeddings are floating point numbers representing data in a high-dimensional vector space. To store and operate on them, we need vector databases."
+    ],
+    "title": "Build a RAG Pipeline With the LLama Index - Analytics Vidhya",
+    "url": "https://www.analyticsvidhya.com/blog/2023/10/rag-pipeline-with-the-llama-index/"
+  },
+  {
+    "description": "RAG (retrieval-augmented generation) is a key technology to build accurate LLMs apps. Here\u2019s what it is, how it works, and why it matters.",
+    "favicon_url": "https://you.com/favicon?domain=codingscape.com&size=128",
+    "snippets": [
+      "Instead of paying to finetune the LLM, which is time consuming and expensive, you can build RAG pipelines to get these kinds of results faster: LLMs that answer complex questions: RAG allows LLMs to tap into external knowledge bases and specific bodies of information to answer challenging questions with precision and detail.",
+      "Loading: This involves importing your data into the RAG pipeline \u2013 e.g. text files, PDFs, websites, databases, APIs, etc. LlamaHub offers an extensive array of connectors for this purpose. Indexing: At this stage, you're developing a data structure conducive to data querying. For Large Language Models (LLMs), this typically involves generating vector embeddings, which are numerical representations of your data's meaning.",
+      "It\u2019s easy to build a simple RAG pipeline from tutorials you find online. But, production-ready enterprise RAG applications are a different beast. If you want to know more watch this video on production-ready RAG applications.",
+      "You\u2019ve probably heard of RAG (Retrieval-Augmented Generation) by now, but might not know what it is or how it works. RAG expands the knowledge of large language models (LLMs) from their initial training data to external datasets you provide."
+    ],
+    "title": "RAG 101: What is RAG and why does it matter?",
+    "url": "https://codingscape.com/blog/rag-101-what-is-rag-and-why-does-it-matter"
+  },
+  {
+    "description": "RAG Evaluation tells you how your pipeline is performing, before your customers have a bad experience and complain. By implementing these information retrieval metrics and leveraging open-source or proprietary frameworks, you can ensure your Retrieval Augmented Generation workflows always meet ...",
+    "favicon_url": "https://you.com/favicon?domain=www.pinecone.io&size=128",
+    "snippets": [
+      "RAG Evaluation tells you how your pipeline is performing, before your customers have a bad experience and complain. By implementing these information retrieval metrics and leveraging open-source or proprietary frameworks, you can ensure your Retrieval Augmented Generation workflows always meet your performance goals.",
+      "Normalized Discounted Cumulative Gain scores range from 0 to 1, meaning that we can now fairly compare the relative quality of queries even when our result sets differ in length, and we can also see that this metric provides a more intuitive representation of which result set is more relevant. RAG evaluation frameworks range from proprietary paid solutions to open-source tools. Selecting the right solution requires balancing considerations around ease of maintenance and operational burden, plus how well the metrics observed by the tool map to your Retrieval Augmented Generation pipeline\u2019s use case.",
+      "RAG evaluation quantifies the accuracy of your retrieval phrase by calculating metrics on the top results your system returns, enabling you to programmatically monitor your pipeline\u2019s precision, recall ability, and faithfulness to facts.",
+      "Your RAG pipeline is only as performant as your retrieval phase is accurate."
+    ],
+    "title": "RAG Evaluation: Don\u2019t let customers tell you first | Pinecone",
+    "url": "https://www.pinecone.io/learn/series/vector-databases-in-production-for-busy-engineers/rag-evaluation/"
+  },
+  {
+    "description": "Retrieval augmented generation or RAG is an architectural approach that pulls your data as context for large language models (LLMs) to improve relevancy.",
+    "favicon_url": "https://you.com/favicon?domain=www.databricks.com&size=128",
+    "snippets": [
+      "This is done by retrieving data/documents relevant to a question or task and providing them as context for the LLM. RAG has shown success in support chatbots and Q&A systems that need to maintain up-to-date information or access domain-specific knowledge. ... A must-read for ML engineers and data scientists seeking a better way to do MLOps.",
+      "An easy and popular way to use your own data is to provide it as part of the prompt with which you query the LLM model. This is called retrieval augmented generation (RAG), as you would retrieve the relevant data and use it as augmented context for the LLM. Instead of relying solely on knowledge derived from the training data, a RAG workflow pulls relevant information and connects static LLMs with real-time data retrieval.",
+      "Model Serving: In the case of RAG using a third-party API, one key architectural change is that the LLM pipeline will make external API calls, from the Model Serving endpoint to internal or third-party LLM APIs. It should be noted that this adds complexity, potential latency and another layer of credential management.",
+      "There are many different use cases for RAG. The most common ones are: Question and answer chatbots: Incorporating LLMs with chatbots allows them to automatically derive more accurate answers from company documents and knowledge bases."
+    ],
+    "title": "What is Retrieval Augmented Generation (RAG)? | Databricks",
+    "url": "https://www.databricks.com/glossary/retrieval-augmented-generation-rag"
+  },
+  {
+    "description": "Learn how to build an effective RAG pipeline in 2025 with best practices, advanced techniques, and proven strategies for accurate AI-driven information retrieval.",
+    "favicon_url": "https://you.com/favicon?domain=www.dhiwise.com&size=128",
+    "snippets": [
+      "Struggling with AI systems that fail to retrieve accurate, domain-specific data? A well-built RAG pipeline is the solution. This guide shows you how to do it right in 2025. Have you been struggling to build an AI system that can accurately retrieve and generate information from your organization's vast knowledge base?",
+      "This guide isn't just another theoretical overview\u2014it's your practical roadmap to building a RAG pipeline that actually works. We've distilled insights from successful implementations across industries, cutting through the noise to give you actionable strategies that deliver results. Retrieval-Augmented Generation (RAG) combines the power of large language models with the precision of information retrieval systems. Unlike standalone LLMs that rely solely on their pre-trained knowledge, RAG pipelines dynamically fetch relevant information from your custom knowledge base before generating responses.",
+      "Modern RAG pipelines employ two primary retrieval paradigms, often in combination: Dense Retrieval uses neural network embeddings to capture semantic meaning, excelling at: Understanding conceptual similarity beyond keyword matching ... Recent studies show dense retrieval outperforming sparse methods by 15-25% on general knowledge queries, while sparse methods sometimes excel for highly technical content with specific terminology.",
+      "Data sources play a vital role in the RAG pipeline, as they provide the raw data that is used to create the vector search index. Common data sources include databases, documents, live feeds, and external knowledge bases."
+    ],
+    "title": "Complete Guide to Building a Robust RAG Pipeline 2025",
+    "url": "https://www.dhiwise.com/post/build-rag-pipeline-guide"
+  },
+  {
+    "description": "Learn how to build a RAG pipeline to deploy customized LLM applications in less time.",
+    "favicon_url": "https://you.com/favicon?domain=www.intel.com&size=128",
+    "snippets": [
+      "In this article, you\u2019ll learn how to set up key components of your RAG implementation, from choosing your hardware and software foundations to building your knowledge base and optimizing your application in production. We\u2019ll also share tools and resources that can help you get the most power and efficiency out of each phase of the pipeline.",
+      "Because RAG does not involve fine-tuning and your knowledge base exists outside the model, RAG allows you to quickly replace your LLM with a new model to support faster inference. RAG can help you deploy customized LLM applications quickly and cost-effectively without requiring fine-tuning. With the right building blocks, you can set up an optimized RAG pipeline in just a few steps.",
+      "RAG is an ideal approach for your LLM application if you don\u2019t have the time or budget for fine-tuning. Choose a compute platform that can power the full pipeline, including demanding LLM inferencing workloads.",
+      "This makes choosing your compute platform one of the most important decisions you\u2019ll make as you seek to support the pipeline from end to end. Intel\u00ae Xeon\u00ae processors enable you to power and manage the full RAG pipeline on a single platform, streamlining development, deployment, and maintenance."
+    ],
+    "title": "How to Implement Retrieval-Augmented Generation (RAG) \u2013 Intel",
+    "url": "https://www.intel.com/content/www/us/en/goal/how-to-implement-rag.html"
+  },
+  {
+    "description": "Imagine if machines could tap into an endless library of knowledge, finding and delivering precise answers in seconds. That\u2019s the promise of Retrieval-Augmented Generation (RAG). By blending the art\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Imagine if machines could tap into an endless library of knowledge, finding and delivering precise answers in seconds. That\u2019s the promise\u2026",
+      "Imagine if machines could tap into an endless library of knowledge, finding and delivering precise answers in seconds. That\u2019s the promise of Retrieval-Augmented Generation (RAG). By blending the art of searching vast information repositories with the intelligence of modern text generation, RAG redefines how we interact with machines. This guide takes you on a journey through the heart of RAG pipelines, breaking down each component and revealing how they work together to create smarter, more context-aware responses.",
+      "This article explores the architecture of a RAG pipeline, breaking down each component for better understanding. For YouTube video tutorial, watch this: Click here! RAG leverages a pre-trained language model, such as GPT (Generative Pre-trained Transformer), alongside a retriever module to answer queries using both retrieval and generation processes. Here\u2019s a breakdown: Retrieval: The retriever searches through a vast knowledge base to find relevant information based on the user\u2019s query.",
+      "The RAG pipeline consists of several critical components, each playing a distinct role in transforming user queries into insightful responses. The architecture diagram below outlines these components: ... The pipeline begins with a vast repository of information, often referred to as the knowledge base."
+    ],
+    "title": "A Comprehensive Guide to Retrieval-Augmented Generation (RAG) ...",
+    "url": "https://medium.com/@yashpaddalwar/a-comprehensive-guide-to-retrieval-augmented-generation-rag-pipelines-4a39d7bd366f"
+  },
+  {
+    "description": "Do you ever find it frustrating when trying to get ChatGPT to provide specific responses, but it ends up giving you nonsense instead? Wouldn't it b...",
+    "favicon_url": "https://you.com/favicon?domain=eagerworks.com&size=128",
+    "snippets": [
+      "In general, most of the RAG pipelines store and split the documents into smaller chunks to then generate a vector (embedding) that represents what that chunk speaks about.",
+      "RAG, short for Retrieval-Augmented Generation, is a pioneering approach within the field of Natural Language Processing (NLP) that transforms how text is generated. Unlike traditional methods that involve training a language model (LLM) from scratch, the RAG framework revolutionizes text generation by seamlessly integrating existing knowledge with user prompts.",
+      "RAG utilizes this contextual information to generate text that aligns with the user's input and the retrieved data, ensuring coherence and relevance. Through this interplay of retrieval and generation, RAG transforms text generation by combining existing knowledge with user prompts, pushing the limits of natural language processing.",
+      "Upon identifying the best pieces of information, RAG integrates them back into the original question to enhance the prompt. This provides RAG with additional context to better understand and respond to the query, as it ensures its answer isn't just based on pre-existing knowledge but also tailored with up-to-date and specific information."
+    ],
+    "title": "An introduction to RAG: Retrieval Augmented Generation explained",
+    "url": "https://eagerworks.com/blog/retrieval-augmented-generation"
+  },
+  {
+    "description": "Retrieval Augmented Generation ... and AI agents. This deep dive covers RAG, its pipeline mechanics, and key benefits. LLMs are trained on a vast amount of textual data, and their capabilities are based on the knowledge they acquire from this data....",
+    "favicon_url": "https://you.com/favicon?domain=www.vectara.com&size=128",
+    "snippets": [
+      "Retrieval Augmented Generation (RAG) is a method for building Generative AI applications on private datasets, increasingly popular in enterprises for use in building AI assistants and AI agents. This deep dive covers RAG, its pipeline mechanics, and key benefits. LLMs are trained on a vast amount of textual data, and their capabilities are based on the knowledge they acquire from this data.",
+      "RAG is one of the best ways to accomplish this task. When RAG employs an accurate retrieval mechanism to match facts with queries, it effectively enhances the LLM with relevant information, leading to precise answers to user queries. RAG enhances LLMs with additional facts, allowing them to generate responses based on data from documents, JSON, or databases. Figure 1 demonstrates the steps involved in building a RAG pipeline:",
+      "With Vectara, developers can focus on application specifics like data ingestion and user experience while Vectara handles the underlying complexity. Vectara\u2019s RAG implementation optimizes chunking, pre-processing, embedding, retrieval, and summarization, offering a streamlined start and avoiding the pitfalls of do-it-yourself experimentation.",
+      "Fine-tuning helps adapt an LLM to a different task, but it\u2019s less effective for learning new information. RAG is a better approach in such cases."
+    ],
+    "title": "RAG: Everything you need to know",
+    "url": "https://www.vectara.com/retrieval-augmented-generation-everything-you-need-to-know"
+  },
+  {
+    "description": "Retrieval-augmented generation (RAG) is a technique for enhancing the accuracy and reliability of generative AI models with facts fetched from external sources.",
+    "favicon_url": "https://you.com/favicon?domain=blogs.nvidia.com&size=128",
+    "snippets": [
+      "In fact, almost any business can turn its technical or policy manuals, videos or logs into resources called knowledge bases that can enhance LLMs. These sources can enable use cases such as customer or field support, employee training and developer productivity. The broad potential is why companies including AWS, IBM, Glean, Google, Microsoft, NVIDIA, Oracle and Pinecone are adopting RAG. The NVIDIA AI Blueprint for RAG helps developers build pipelines to connect their AI applications to enterprise data using industry-leading technology.",
+      "This reference architecture provides developers with a foundation for building scalable and customizable retrieval pipelines that deliver high accuracy and throughput. The blueprint can be used as is, or combined with other NVIDIA Blueprints for advanced use cases including digital humans and AI assistants. For example, the blueprint for AI assistants empowers organizations to build AI agents that can quickly scale their customer service operations with generative AI and RAG.",
+      "Once companies get familiar with RAG, they can combine a variety of off-the-shelf or custom LLMs with internal or external knowledge bases to create a wide range of assistants that help their employees and customers.",
+      "PCs equipped with NVIDIA RTX GPUs can now run some AI models locally. By using RAG on a PC, users can link to a private knowledge source \u2013 whether that be emails, notes or articles \u2013 to improve responses."
+    ],
+    "title": "What Is Retrieval-Augmented Generation aka RAG | NVIDIA Blogs",
+    "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/"
+  }
+]

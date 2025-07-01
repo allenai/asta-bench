@@ -1,0 +1,279 @@
+[
+  {
+    "description": "Learn how Quantization Aware Training (QAT) improves large language model efficiency by simulating low-precision effects during training. Explore QAT steps, implementations in PyTorch and TensorFlow, and key use cases that help deploy accurate, optimized models on edge and resource-limited devices.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "It inserts fake quantization operations into the computation graph, which mimic how weights and activations would behave under reduced precision (for example, 8-bit or 4-bit). By introducing quantization effects during training, QAT enables the model to optimize its parameters with awareness of reduced numerical precision, leading to better performance under quantized inference. In QAT, the standard quantizer function transforms continuous, high-precision values into discrete, lower-precision representations by applying an elementwise operation to weight tensors.",
+      "While QAT yields improved performance outcomes, it requires significant computational resources and needs access to representative datasets for training purposes.1 \u00b7 Quantization is a machine learning compression technique that when applied to LLMs converts high-precision data formats (like 32-bit or 16-bit floating point numbers) to lower-precision formats (such as 8-bit or even 4-bit integers).",
+      "This projection step ensures that the updated quantized weights adhere to the quantization scheme (for example, 8-bit or 4-bit). The model parameters remain in floating-point precision during training to avoid issues like underflow from small gradient updates. Learning quantization parameters: In some advanced versions of QAT, the quantization parameters (such as clipping ranges or step sizes) are learned during training.",
+      "By shrinking the number of bits that need to be processed during each model run, quantization significantly decreases computational costs and allows LLMs to generate responses more quickly, making it a valuable optimization strategy for deployment.2 \u00b7 Discover expertly curated insights and news on AI, cloud and more in the weekly Think Newsletter. ... Quantization aware training (QAT) works by simulating the effects of low-precision arithmetic during training."
+    ],
+    "title": "What is Quantization Aware Training? | IBM",
+    "url": "https://www.ibm.com/think/topics/quantization-aware-training"
+  },
+  {
+    "description": "Quantization is a technique for deploying large neural networks efficiently, enabling faster inference and reduced memory footprint. It involves converting the model\u2019s weights and activations from\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Smaller models => Faster inference => Better outcomes",
+      "After this, you can fine-tune on the full data, or even a small subset if the model is well adapted to quantization. Representative datasets help in better generalization and reduce over-adaptation. If the dataset is small-medium, QAT can be performed during training directly. PTQ is a conversion technique applied to a pre-trained model to reduce model size and improve inference speed without requiring retraining. It lowers model weight and activation precisions to 8 bits (INT8), which for an FP16 model is just a half of the original footprint, leading to a significant improvement in inference speed.",
+      "Low bit quantization: Low bit quantization like 2/4 bit. Large model size: When retraining is impractical or computational resources are limited. Accuracy sensitivity: When a slight reduction in accuracy is acceptable. A well-tuned PTQ model can be a good base for subsequent QAT fine-tuning. Combining PTQ and QAT to get best of both worlds is an area of active research. ... Start with a pre-trained, full-precision model. Apply PTQ to quantize the model (weights, or both weights and activations) to the desired lower precision (e.g.",
+      "PTQ with QAT Fine-tuning leverages strengths of both the techniques \u2014 improved accuracy and is faster and cheaper than full QAT. RecSys models often involve large embedding tables to represent categorical features, making them memory-intensive. PTQ can be a good starting point for quantizing embedding tables, especially for 8-bit quantization or when resources are limited. However, for lower bit precision (2/4 bit) or when accuracy is paramount, QAT or more sophisticated quantization techniques are generally preferred."
+    ],
+    "title": "Quantization Aware Training (QAT) vs. Post-Training Quantization ...",
+    "url": "https://medium.com/better-ml/quantization-aware-training-qat-vs-post-training-quantization-ptq-cd3244f43d9a"
+  },
+  {
+    "description": "Optimize AI models for edge devices with Quantization-Aware Training (QAT), ensuring high accuracy and efficiency in resource-limited environments.",
+    "favicon_url": "https://you.com/favicon?domain=www.ultralytics.com&size=128",
+    "snippets": [
+      "Unlike methods that quantize a model after it has been fully trained, QAT integrates the simulation of quantization effects directly into the training process. It introduces operations called 'fake quantization' nodes within the model architecture during training. These nodes mimic the effect of lower precision (e.g., INT8 precision) on model weights and activations during the forward pass, rounding values as they would be in a truly quantized model. However, during the backward pass (where the model learns via backpropagation), gradients are typically calculated and updates applied using standard high-precision floating-point numbers.",
+      "Quantization-Aware Training (QAT) is a powerful technique used to optimize deep learning (DL) models, like Ultralytics YOLO models, for deployment on devices with limited computational resources, such as mobile phones or embedded systems. Standard models often use high-precision numbers (like 32-bit floating-point or FP32) for calculations, which demand significant processing power and memory.",
+      "Mixed Precision training primarily aims to speed up the training process itself and reduce memory usage during training by using a combination of lower-precision (e.g., 16-bit float or FP16) and standard-precision (32-bit float) formats for computations and storage. QAT specifically focuses on optimizing the model for efficient inference using low-precision integer formats (like INT8) after model deployment. While mixed precision helps during training, QAT ensures the final model performs well under the constraints of quantized inference hardware, such as NPUs (Neural Processing Units) or TPUs. Quantization-Aware Training is vital for deploying sophisticated AI models in resource-constrained environments where efficiency is key.",
+      "This allows the model's parameters to adapt and learn to be robust to the precision loss that will occur during actual quantized inference. By \"seeing\" the effects of quantization during training, the model minimizes the accuracy drop often associated with deploying models in low-precision formats, a key aspect discussed in model optimization strategies. Frameworks like TensorFlow Lite and PyTorch provide tools to implement QAT."
+    ],
+    "title": "Quantization-Aware Training (QAT) | Ultralytics",
+    "url": "https://www.ultralytics.com/glossary/quantization-aware-training-qat"
+  },
+  {
+    "description": "Note that an alternative to QAT ... even at lower bit-widths. We added an initial QAT flow in torchao under prototype here. Currently we support int8 dynamic per-token activations + int4 grouped per-channel weights (abbreviated 8da4w) for linear layers. These settings are motivated by a combination of kernel availability on edge backends and prior research on LLM quantization, which found ...",
+    "favicon_url": "https://you.com/favicon?domain=pytorch.org&size=128",
+    "snippets": [
+      "Note that an alternative to QAT is quantized training, which actually casts the values to lower bit dtypes during training, but prior efforts have only seen success up to 8-bits, whereas QAT is effective even at lower bit-widths. We added an initial QAT flow in torchao under prototype here. Currently we support int8 dynamic per-token activations + int4 grouped per-channel weights (abbreviated 8da4w) for linear layers. These settings are motivated by a combination of kernel availability on edge backends and prior research on LLM quantization, which found that per-token activation and per-group weight quantization achieves the best model quality for LLMs compared to other quantization schemes.",
+      "Quantization-Aware Training (QAT) is a common quantization technique for mitigating model accuracy/perplexity degradation that arises from quantization. This is achieved by simulating quantization numerics during training while keeping the weights and/or activations in the original data type, typically float, effectively \u201cfake quantizing\u201d the values instead of actually casting them to lower bit-widths:",
+      "We demonstrate how QAT in PyTorch can recover up to 96% of the accuracy degradation on hellaswag and 68% of the perplexity degradation on wikitext for Llama3 compared to post-training quantization (PTQ). We present the QAT APIs in torchao and showcase how users can leverage them for fine-tuning in torchtune. Figure 1: Llama3-8B fine-tuned on the C4 dataset (en subset) with and without QAT using int8 per token dynamic activations + int4 grouped per channel weights, evaluated on hellaswag and wikitext on a A100 GPU. Note the log scale for wikitext (lower is better). To demonstrate the effectiveness of QAT in an end-to-end flow, we further lowered the quantized model to XNNPACK, a highly optimized neural network library for backends including iOS and Android, through executorch.",
+      "Figure 4b: Llama3-8B 8da4w quantization with and without QAT, evaluated on wikitext (lower is better) We further extended the torchao QAT flow to 2-bit and 3-bit weight only quantization and repeated the same experiments for Llama3-8B."
+    ],
+    "title": "Quantization-Aware Training for Large Language Models with PyTorch ...",
+    "url": "https://pytorch.org/blog/quantization-aware-training/"
+  },
+  {
+    "description": "Understanding post-training quantization, quantization-aware training, and the straight through estimator",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "This is called Quantization Aware Training (QAT). Since quantization involves replacing high-precision 32-bit floating point weights with 8-bit, 4-bit, or even binary weights, it inevitably results in a loss of model accuracy. The challenge, therefore, is how to quantize models, while minimizing the drop in accuracy. Because it is an evolving field, researchers and developers often adopt new and innovative approaches.",
+      "They quantized weights during the forward pass and unquantized weights during the backpropagation (section 2.3). Jacob et al, then working at Google explain the idea of QAT, in their 2017 paper titled Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference (section 3). They do not explicitly use the phrase Quantization Aware Training but call it simulated quantization instead. The steps below present the important parts of the QAT process, based on the papers referenced earlier. Note that other researchers and developers have adopted variations of these steps, but the overall principle remains the same. Maintain an unquantized copy of the weights throughout the process.",
+      "Training a Quantized Model \u2013 Quantization Aware Training (QAT) Conventionally, AI models have been trained using 32-bit floating point weights. There is already a large library of pre-trained models. These trained models can be quantized to lower precision. After quantizing the trained model, one can choose to further fine-tune it using additional data, calibrate the model\u2019s parameters using a small dataset, or just use the quantized model as-is.",
+      "In many cases, the starting point for QAT is not an untrained model with random weights but rather a pre-trained model. Such approaches are often adopted in extreme quantization situations. The BinaryBERT model discussed later in this series in the article Extreme Quantization: 1-bit AI Models applies a similar approach. The advantage of QAT is the model performs better because the inference process uses weights of the same precision as was used during the forward pass of the training."
+    ],
+    "title": "Quantizing Neural Network Models | Towards Data Science",
+    "url": "https://towardsdatascience.com/quantizing-neural-network-models-8ce49332f1d3/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.mlr.press&size=128",
+    "snippets": [],
+    "title": "Overcoming Oscillations in Quantization-Aware Training",
+    "url": "https://proceedings.mlr.press/v162/nagel22a/nagel22a.pdf"
+  },
+  {
+    "description": "Weights & Biases, developer tools for machine learning",
+    "favicon_url": "https://you.com/favicon?domain=wandb.ai&size=128",
+    "snippets": [],
+    "title": "Quantization-Aware Training (QAT): A step-by-step guide ...",
+    "url": "https://wandb.ai/byyoung3/Generative-AI/reports/Quantization-Aware-Training-QAT-A-step-by-step-guide-with-PyTorch--VmlldzoxMTk2NTY2Mw"
+  },
+  {
+    "description": "During the QAT process, quantization ... representations throughout training. Table 3 [35] presents a comparison of various quantization techniques under different precision settings for weights, activations, and Key-Value (KV) pairs in the cache. The results demonstrate that, among Round-To-Nearest (RTN), SmoothQuant, and LLM-QAT, the accuracy of LLM-QAT surpasses the other two techniques when the quantization precision drops below 8 bits...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "During the QAT process, quantization is applied to the activation tensors associated with both the keys and values, enabling the model to adapt to the quantized representations throughout training. Table 3 [35] presents a comparison of various quantization techniques under different precision settings for weights, activations, and Key-Value (KV) pairs in the cache. The results demonstrate that, among Round-To-Nearest (RTN), SmoothQuant, and LLM-QAT, the accuracy of LLM-QAT surpasses the other two techniques when the quantization precision drops below 8 bits.",
+      "Overall, GPTQ successfully introduces an effective approach for quantizing Large Language Models (LLMs), enabling the accurate quantization of the largest public models to 3-bit and 4-bit precision with minimal accuracy loss. While the research demonstrates superior performance in Post-Training Quantization (PTQ), its focus is limited to generative tasks, with no exploration of activation quantization. TABLE I: BLOOM perplexity results for WikiText2. LLM-QAT, Key-Value Data-Free Quantization Aware Training, is a specialized quantization technique designed to reduce quantization errors in the Key-Value (KV) caches of Large Language Models (LLMs).",
+      "In addition, LLM-QAT demonstrates better accuracy with a configuration of 4-bit weights, 4-bit KV caches, and 8-bit activations, compared to a uniform 4-bit setting across all precision [35]. To maximize the performance of a given quantization technique, developers must carefully select appropriate precision settings. Future research on quantization techniques could further explore the impact of precision configuration, potentially leading to more refined and efficient quantization strategies.",
+      "While there are various quantization techniques, the two most notable types used in LLM are Post-Traning Quantization(PTQ) and Quantization-Aware Training(QAT). PTQ refers to a technique used to reduce the size and computational demands of a machine learning model after it has been trained and it only affects the inference state. The research work SmoothQuant[25] introduces a PTQ solution aimed at reducing hardware costs and democratizes LLMs. SmoothQuant enables 8-bit weight, 8-bit activation(W8A8) quantization for LLMs and it smooths the activation outliers by offline migrating the quantization difficulty with a mathematically equivalent transformation given that weighs are easy to quantize but activations are not."
+    ],
+    "title": "A Comprehensive Study on Quantization Techniques for Large Language ...",
+    "url": "https://arxiv.org/html/2411.02530v1"
+  },
+  {
+    "description": "The article explores the concept of quantization in machine learning, detailing how it reduces the bit representation of data in models, thus enhancing computational efficiency and reducing memory footprint. We are announcing our latest patch that supports this in-platform.",
+    "favicon_url": "https://you.com/favicon?domain=datature.io&size=128",
+    "snippets": [
+      "Quantization is the process of reducing the number of bits that represent a number. In the context of machine learning models, these numbers are represented by tensors such as weights and biases, which are typically floating-point values with 32 bits of precision (FLOAT32).",
+      "Quantization errors are modeled in both the forward and backward passes using fake-quantization modules. This helps the model to learn representations that are more robust to the eventual reduction in precision. How fake quantization nodes are added into the QAT pipeline in bothforward and backward passes (source).",
+      "Energy Efficiency: Reduced computational resources directly translates to lower energy consumption, which is advantageous for battery-powered edge devices such as legged robots and drones to improve their operating duration. There are various methods of model quantization that fall under two broad categories, Quantization-Aware Training (or Training-Time Quantization), and Post-Training Model Quantization. QAT is a technique that is employed during model training to prepare the model for quantization.",
+      "Only the forward pass is supported for quantized operators. Lowering the precision and number of bits used to represent each value in a tensor provides a few significant benefits, typically to enhance compatibility with edge devices and hardware accelerators: Reduced Memory Footprint: Each weight and activation is now compressed, leading to a smaller memory footprint."
+    ],
+    "title": "Introducing Post-Training Model Quantization Feature and Mechanics ...",
+    "url": "https://datature.io/blog/introducing-post-training-quantization-feature-and-mechanics-explained"
+  },
+  {
+    "description": "Making Sense of Big Data A guide for Deeper Understanding of an Efficient Model Optimization technique Photo by Kevin Ku on Unsplash Introduction Real-world applications of Deep Neural Networks are increasing by the day as we are learning to make use of Artificial Intelligence to accomplish ...",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "Making Sense of Big Data A guide for Deeper Understanding of an Efficient Model Optimization technique Photo by Kevin Ku on Unsplash Introduction Real-world applications of Deep Neural Networks are increasing by the day as we are learning to make use of Artificial Intelligence to accomplish various simple and complex tasks.",
+      "Scales and Zero-points of weights are determined simply as discussed in the previous section. To determine scales and zero-points of activations we need to maintain an exponential moving average of the max and min values of the activation in the floating-point domain so that our parameters are smoothened over the data obtained from many images. So the fake quantize operations are inserted in the graph as shown below. Figure 2. Visual Representation of a Quant-Aware training graph.",
+      "On the other hand, zero-point is a low precision value that represents the quantized value that will represent the real value 0. The advantage of zero-point is that we can have a wider range for integer values even for skewed tensors. So real values (r) could be derived from quantized values (q) in the following way:",
+      "Figure 3. Representation of Quant-Inference Graph. Source: Image by Author \u00b7 It is up to us if we want to take the quantized range as signed or unsigned. In the above graph, it is considered unsigned. As we already know the importance of quantization and also knowing that Post-Quantization could be very lossy sometimes, Quantization-Aware training is our best bet."
+    ],
+    "title": "Inside Quantization Aware Training | Towards Data Science",
+    "url": "https://towardsdatascience.com/inside-quantization-aware-training-4f91c8837ead/"
+  },
+  {
+    "description": "For all of you who don\u2019t know quantization, it is nothing but performing computation and storing their values in lower precision than the floating-point which is the general case. The reason for this\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "For all of you who don\u2019t know quantization, it is nothing but performing computation and storing their values in lower precision than the\u2026",
+      "The capability of training model weights and activation values with a lower bit precision allows the following potential advantages: ... Researchers can use this to model and evaluate new accelerators with emerging memory technologies which may not have the capability to hold floating-point precision but have prolific benefits over conventional accelerator( This led me to explore Quantization) Now we know what is the motivation behind QAT, do we have any deep learning framework which provides this feature?",
+      "Quantization Aware Training: With QAT, all weights and activations are \u201cfake quantized\u201d during both the forward and backward passes of training: that is, float values are rounded to mimic int8 values. This generally gives the least accuracy drop compared to other techniques. Below is the link to the tutorial on how to quantize a model on different techniques.",
+      "Quantization comes with a side effect of reducing the \u201cAccuracy\u201d of the model. I want to introduce a framework built on PyTorch which is much simpler, modular and has support to decrease the precision to 4-bit and 2-bit. Brevitas is a framework being developed by Xilinx to support quantization aware training for precision up to 2 bit. It can quantize both weights and activation function values."
+    ],
+    "title": "Quantization Aware Training(QAT). For all of you who don\u2019t know\u2026",
+    "url": "https://medium.com/@sairamvgraju/quantization-aware-training-qat-80da675902a3"
+  },
+  {
+    "description": "Explore the intricacies of Model Quantization revealing the key strategies and techniques for efficient large-scale deployment of AI models.",
+    "favicon_url": "https://you.com/favicon?domain=www.analyticsvidhya.com&size=128",
+    "snippets": [
+      "Quantization converts a model\u2019s high-precision floating-point weights and activations into lower-precision fixed-point values. The \u201cquantization level\u201d refers to the number of bits representing these fixed-point values. Typical quantization levels are 8-bit, 16-bit, and even binary (1-bit) quantization. Choosing an appropriate quantization level depends on the trade-off between model accuracy and memory, storage, and computation efficiency. Quantization-aware training (QAT) is a technique used during the training of neural networks to prepare them for quantization.",
+      "We focus on quantization, examining the role of number representation in optimizing models for mobile and embedded platforms. Understand the concept of model quantization in AI. Learn about typical quantization levels and their trade-offs. Differentiate between Quantization-Aware Training (QAT) and Post-training Quantization (PTQ). Explore the advantages of model quantization, including memory efficiency and energy savings.",
+      "PTQ and QAT are two distinct approaches to model quantization, each with its advantages and implications. PTQ is a quantization technique applied after a model has undergone full training with standard precision, typically in floating-point representation. In PTQ, the model\u2019s weights and activations are quantized into lower-precision formats, such as 8-bit integers or 16-bit floats, to reduce memory usage and improve inference speed.",
+      "QAT optimizes model weights to emulate inference-time quantization accurately. During training, it employs \u201cfake\u201d quantization modules to mimic the testing or inference phase behavior, where weights are rounded or clamped to low-precision representations. This approach leads to higher accuracy during real-world inference, as the model is aware of quantization from the outset."
+    ],
+    "title": "A Deep Dive into Model Quantization for Large-Scale Deployment ...",
+    "url": "https://www.analyticsvidhya.com/blog/2023/11/model-quantization-for-large-scale-deployment/"
+  },
+  {
+    "description": "Quantization reduces the precision of the weights and activations to lower bits. Quantizing a model after training once usually leads to lower performance in smaller models. For increasing its\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Train the model taking quantization into consideration",
+      "The quantized values of weights & activations are stored in nodes and gradients are passed through them during training. Once the model is trained only the quantized model is used for inference. Quantization Aware Training can improve the accuracy of the model. It becomes robust to quantization as well as gets improved performance in low-power devices. QAT can also be easily integrated into the TensorFlow or Pytorch training pipeline.",
+      "For increasing its performance at lower bit width, models can be trained/finetuned with quantized weights and activations."
+    ],
+    "title": "Quantization Aware Training. Train the model taking quantization\u2026",
+    "url": "https://medium.com/@curiositydeck/quantization-aware-training-b80272380098"
+  },
+  {
+    "description": "The capabilities of Large Language Models (LLMs) have grown in leaps and bounds in recent years, making them more user-friendly and applicable in a growing number of use cases. However, as LLMs have increased in intelligence and complexity, the number of parameters, or weights and activations, ...",
+    "favicon_url": "https://you.com/favicon?domain=symbl.ai&size=128",
+    "snippets": [
+      "The capabilities of Large Language Models (LLMs) have grown in leaps and bounds in recent years, making them more user-friendly and applicable in a growing number of use cases. However, as LLMs have increased in intelligence and complexity, the number of parameters, or weights and activations, i.e., its capacity to learn from and process data, [\u2026]",
+      "PTQ is easier to implement than QAT, as it requires less training data and is faster. However, it can also result in reduced model accuracy from lost precision in the value of the weights.  \u00b7 Quantization-Aware Training (QAT): this refers to methods of fine-tuning on data with quantization in mind.",
+      "In this guide, we explore the concept of quantization, including how it works, why it is important and advantageous, and different techniques for quantizing language models. Quantization is a model compression technique that converts the weights and activations within an LLM from a high-precision data representation to a lower-precision data representation, i.e., from a data type that can hold more information to one that holds less. A typical example of this is the conversion of data from a 32-bit floating-point number (FP32) to an 8-bit or 4-bit integer (INT4 or INT8).",
+      "In contrast to PTQ techniques, QAT integrates the weight conversion process, i.e., calibration, range estimation, clipping, rounding, etc., during the training stage. This often results in superior model performance, but is more computationally demanding.  \u00b7 Let us look at the pros and cons of quantization. Smaller Models: by reducing the size of their weights, quantization results in smaller models."
+    ],
+    "title": "A Guide to Quantization in LLMs | Symbl.ai",
+    "url": "https://symbl.ai/developers/blog/a-guide-to-quantization-in-llms/"
+  },
+  {
+    "description": "List of papers related to neural network quantization in recent AI conferences and journals. - Zhen-Dong/Awesome-Quantization-Papers",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "\"OWQ: Outlier-Aware Weight Quantization for Efficient Fine-Tuning and Inference of Large Language Models\", AAAI, 2024. [paper] \"Norm Tweaking: High-Performance Low-Bit Quantization of Large Language Models\", AAAI, 2024. [paper] \"Agile-Quant: Activation-Guided Quantization for Faster Inference of LLMs on the Edge\", AAAI, 2024. [paper] \"Exploring Post-training Quantization in LLMs from Comprehensive Study to Low Rank Compensation\", AAAI, 2024.",
+      "\"OWQ: Lessons learned from activation outliers for weight quantization in large language models\", arXiv, 2023. [paper] [PTQ] \"PreQuant: A Task-agnostic Quantization Approach for Pre-trained Language Models\", arXiv, 2023. [paper] \"AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration\", arXiv, 2023. [paper] [PTQ] \"LLM-QAT: Data-Free Quantization Aware Training for Large Language Models\", arXiv, 2023.",
+      "\"APTQ: Attention-aware Post-Training Mixed-Precision Quantization for Large Language Models\", arXiv, 2024.",
+      "\"EdgeQAT: Entropy and Distribution Guided Quantization-Aware Training for the Acceleration of Lightweight LLMs on the Edge\", arXiv, 2024."
+    ],
+    "title": "GitHub - Zhen-Dong/Awesome-Quantization-Papers: List of papers ...",
+    "url": "https://github.com/Zhen-Dong/Awesome-Quantization-Papers"
+  },
+  {
+    "description": "\u25cb TensorRT is an SDK for high-performance deep learning inference and with TensorRT 8.0, you can import models trained using Quantization Aware Training (QAT) to run inference in INT8 precision\u2026",
+    "favicon_url": "https://you.com/favicon?domain=developer.nvidia.com&size=128",
+    "snippets": [
+      "\u25cb TensorRT is an SDK for high-performance deep learning inference and with TensorRT 8.0, you can import models trained using Quantization Aware Training (QAT)\u2026",
+      "The challenge is that simply rounding the weights after training may result in a lower accuracy model, especially if the weights have a wide dynamic range. This post provides a simple introduction to quantization-aware training (QAT), and how to implement fake-quantization during training, and perform inference with NVIDIA TensorRT 8.0. Model quantization is a popular deep learning optimization method in which model data\u2014both network parameters and activations\u2014are converted from a floating-point representation to a lower-precision representation, typically using 8-bit integers.",
+      "These techniques can be classified as belonging to one of two categories: post-training quantization (PTQ) or quantization-aware training (QAT). As the name suggests, PTQ is performed after a high-precision model has been trained. With PTQ, quantizing the weights is easy. You have access to the weight tensors and can measure their distributions. Quantizing the activations is more challenging because the activation distributions must be measured using real input data. To do this, the trained floating-point model is evaluated using a small dataset representative of the task\u2019s real input data, and statistics about the interlayer activation distributions are collected.",
+      "This process is calibration and the representative dataset used is the calibration-dataset. Sometimes PTQ is not able to achieve acceptable task accuracy. This is when you might consider using QAT. The idea behind QAT is simple: you can improve the accuracy of quantized models if you include the quantization error in the training phase. It enables the network to adapt to the quantized weights and activations."
+    ],
+    "title": "Achieving FP32 Accuracy for INT8 Inference Using Quantization Aware ...",
+    "url": "https://developer.nvidia.com/blog/achieving-fp32-accuracy-for-int8-inference-using-quantization-aware-training-with-tensorrt/"
+  },
+  {
+    "description": "Large AI models are resource-intensive. This makes them expensive to use and very expensive to train. A current area of active research, therefore, is about reducing the size of these models while\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Understanding post-training quantization, quantization-aware training, and the straight through estimator",
+      "This is called Quantization Aware Training (QAT). Since quantization involves replacing high-precision 32-bit floating point weights with 8-bit, 4-bit, or even binary weights, it inevitably results in a loss of model accuracy. The challenge, therefore, is how to quantize models, while minimizing the drop in accuracy. Because it is an evolving field, researchers and developers often adopt new and innovative approaches.",
+      "They quantized weights during the forward pass and unquantized weights during the backpropagation (section 2.3). Jacob et al, then working at Google explain the idea of QAT, in their 2017 paper titled Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference (section 3). They do not explicitly use the phrase Quantization Aware Training but call it simulated quantization instead. The steps below present the important parts of the QAT process, based on the papers referenced earlier. Note that other researchers and developers have adopted variations of these steps, but the overall principle remains the same. Maintain an unquantized copy of the weights throughout the process.",
+      "Training a Quantized Model \u2014 Quantization Aware Training (QAT) Conventionally, AI models have been trained using 32-bit floating point weights. There is already a large library of pre-trained models. These trained models can be quantized to lower precision. After quantizing the trained model, one can choose to further fine-tune it using additional data, calibrate the model\u2019s parameters using a small dataset, or just use the quantized model as-is."
+    ],
+    "title": "Quantizing Neural Network Models. Understanding post-training\u2026",
+    "url": "https://medium.com/data-science/quantizing-neural-network-models-8ce49332f1d3"
+  },
+  {
+    "description": "Large language models (LLMs) are crucial in modern natural language processing and artificial intelligence. However, they face challenges in managing their significant memory requirements. Although quantization-aware training (QAT) offers a solution by reducing memory consumption through low-bit ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Large language models (LLMs) are crucial in modern natural language processing and artificial intelligence. However, they face challenges in managing their significant memory requirements. Although quantization-aware training (QAT) offers a solution by reducing memory consumption through low-bit representations with minimal accuracy loss, it is impractical due to substantial training resources.",
+      "Abstract page for arXiv paper 2407.11062: EfficientQAT: Efficient Quantization-Aware Training for Large Language Models",
+      "To address this, we propose Efficient Quantization-Aware Training (EfficientQAT), a more feasible QAT algorithm. EfficientQAT involves two consecutive phases: Block-wise training of all parameters (Block-AP) and end-to-end training of quantization parameters (E2E-QP). To the best of our knowledge, Block-AP is the first method to enable direct training of all parameters in a block-wise manner, reducing accuracy loss in low-bit scenarios by enhancing the solution space during optimization.",
+      "E2E-QP then trains only the quantization parameters (step sizes) end-to-end, further improving the performance of quantized models by considering interactions among all sub-modules. Extensive experiments demonstrate that EfficientQAT outperforms previous quantization methods across a range of models, including base LLMs, instruction-tuned LLMs, and multimodal LLMs, with scales from 7B to 70B parameters at various quantization bits."
+    ],
+    "title": "[2407.11062] EfficientQAT: Efficient Quantization-Aware Training ...",
+    "url": "https://arxiv.org/abs/2407.11062"
+  },
+  {
+    "description": "A list of papers, docs, codes about model quantization. This repo is aimed to provide the info for model quantization research, we are continuously improving the project. Welcome to PR the works (papers, repositories) that are missed by the repo. - Efficient-ML/Awesome-Model-Quantization",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "New Outlooks for Low-Bit Quantization on Large Language Models. [arXiv] LUT-GEMM: Quantized Matrix Multiplication based on LUTs for Efficient Inference in Large-Scale Generative Language Models \u00b7 [arXiv] SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression [code] [arXiv] Quantized Distributed Training of Large Models with Convergence Guarantees \u00b7 [arXiv] LLM-QAT: Data-Free Quantization Aware Training for Large Language Models",
+      "[ECCV] [145:fire:] Bi-Real Net: Enhancing the Performance of 1-bit CNNs With Improved Representational Capability and Advanced Training Algorithm. [bnn] [torch] [120:star:] [ECCV] Quantization Mimic: Towards Very Tiny CNN for Object Detection. [qnn] [FCCM] ReBNet: Residual Binarized Neural Network. [bnn] [tensorflow] [FPL] FBNA: A Fully Binarized Neural Network Accelerator. [hardware] [ICLR] [65:fire:] Loss-aware Weight Quantization of Deep Networks.",
+      "[arXiv] L4Q: Parameter Efficient Quantization-Aware Training on Large Language Models via LoRA-wise LSQ",
+      "[EANN] A Robust, Quantization-Aware Training Method for Photonic Neural Networks."
+    ],
+    "title": "GitHub - Efficient-ML/Awesome-Model-Quantization: A list of papers, ...",
+    "url": "https://github.com/Efficient-ML/Awesome-Model-Quantization"
+  },
+  {
+    "description": "Deep neural network (DNN) models are routinely used in applications requiring analysis of video stream content. These may include object detection, classification, and segmentation. Typically\u2026",
+    "favicon_url": "https://you.com/favicon?domain=developer.nvidia.com&size=128",
+    "snippets": [
+      "Deep neural network (DNN) models are routinely used in applications requiring analysis of video stream content. These may include object detection\u2026",
+      "In this post, you learn about training models that are optimized for INT8 weights. During training, the system is aware of this desired outcome, called quantization-aware training (QAT). Quantization is the process of transforming deep learning models to use parameters and computations at a lower precision. Traditionally, DNN training and inference have relied on the IEEE single-precision floating-point format, using 32 bits to represent the floating-point model weights and activation tensors.",
+      "To maintain accuracy during inferences at lower precision, it is important to try and mitigate errors arising due to this loss of information. NVIDIA TAO Toolkit attempts to model this loss of information due to quantization in two ways: post-training quantization (PTQ) and QAT. This method, as the name suggests, is applied to a model after it has been trained in TAO Toolkit. The training happens with weights and activations represented as 32-bit floating-point numbers.",
+      "To help reduce the compute budget, while not compromising on the structure and number of parameters in the model, you can run inference at a lower precision. Initially, quantized inferences were run at half-point precision with tensors and weights represented as 16-bit floating-point numbers. While this resulted in compute savings of about 1.2\u20131.5x, there was still some compute budget and memory bandwidth that could be leveraged."
+    ],
+    "title": "Improving INT8 Accuracy Using Quantization Aware Training and the ...",
+    "url": "https://developer.nvidia.com/blog/improving-int8-accuracy-using-quantization-aware-training-and-tao-toolkit/"
+  },
+  {
+    "description": "Maintained by TensorFlow Model Optimization \u00b7 There are two forms of quantization: post-training quantization and quantization aware training. Start with post-training quantization since it's easier to use, though quantization aware training is often better for model accuracy",
+    "favicon_url": "https://you.com/favicon?domain=www.tensorflow.org&size=128",
+    "snippets": [
+      "Quantization aware training emulates inference-time quantization, creating a model that downstream tools will use to produce actually quantized models. The quantized models use lower-precision (e.g. 8-bit instead of 32-bit float), leading to benefits during deployment.",
+      "Eventually, latency improvements can be seen on compatible machine learning accelerators, such as the EdgeTPU and NNAPI. The technique is used in production in speech, vision, text, and translate use cases. The code currently supports a subset of these models. Users can configure the quantization parameters (e.g. number of bits) and to some degree, the underlying algorithms.",
+      "Note that with these changes from the API defaults, there is currently no supported path for deployment to a backend. For instance, TFLite conversion and kernel implementations only support 8-bit quantization.",
+      "Start with post-training quantization since it's easier to use, though quantization aware training is often better for model accuracy."
+    ],
+    "title": "Quantization aware training | TensorFlow Model Optimization",
+    "url": "https://www.tensorflow.org/model_optimization/guide/quantization/training"
+  },
+  {
+    "description": "94 votes, 17 comments. Paper: https://arxiv.org/abs/2305.17888 Some excerpts: As a result, we are able to distill the 7B, 13B and 30B LLaMA models\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/FrequentVariety4414 - 94 votes and 17 comments",
+      "As a result, we are able to distill the 7B, 13B and 30B LLaMA models with weights and KV cache quantized down to 4-bits. In this regard, our approach exhibits significant enhancements in quality compared to post-training quantization. Notably, larger models employing QAT outperform smaller models utilizing floating-point 16-bit representations, despite having similar model sizes.",
+      "In summary, we present the first application of QAT to LLMs, resulting in the first accurate 4-bit quantized LLMs. llama.cpp Q5_1, Q5_0, Q4_1, Q4_0 are joke for you, Meta? ... Yes, a joke. The difference here is that llama.cpp implements post-training quantization, while quantization-aware training fuses these two steps. The relevant difference is that the model will definitely no longer contain constructions like \"adding two binary numbers with a DAC\" that require very precise weights and would break down if post-training quantization is used.",
+      "In the 4-8-4 setting, where both weights and the KV cache are quantized to 4 bits, all PTQ methods produce poor results, whereas LLM-QAT achieves 69.9, only trailing the full precision model by 1.5 points on average. One important question for practitioners is whether to use a small model at full precision, or a larger quantized model of similar inference cost. First, 8-bit quantization should be preferred over smaller full precision models. An 8-8-8 30B quantized model outperforms a 13B model of similar size, and should have lower latency and higher throughput in practice."
+    ],
+    "title": "r/LocalLLaMA on Reddit: Meta experiments with quantization aware ...",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/13wx4q0/meta_experiments_with_quantization_aware_training/"
+  },
+  {
+    "description": "In this article, we will explore a widely used technique for reducing the size and computational demands of LLMs in order to deploy these models to edge devi\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.digitalocean.com&size=128",
+    "snippets": [
+      "Dynamic Quantization: Only weights are quantized, while activations remain in higher precision during inference. The activations are quantized dynamically based on their observed range during runtime. Quantization-aware training (QAT) integrates quantization into the training process itself.",
+      "Model quantization involves transforming the parameters of a neural network, such as weights and activations, from high-precision (e.g., 32-bit floating point) representations to lower-precision (e.g., 8-bit integer) formats.",
+      "This often results in higher accuracy compared to post-training quantization because the model can better compensate for the quantization errors. QAT involves adding extra steps during training to mimic how the model will perform when it\u2019s compressed. This means tweaking the model to handle this mimicry accurately. These extra steps and adjustments make the training process more computationally demanding.",
+      "One of the main issues is the accuracy trade-off, as reducing the precision of the model\u2019s numerical data can decrease its performance, especially for tasks requiring high precision. To manage this, techniques like quantization-aware training, hybrid approaches that mix different precision levels, and iterative optimization of quantization parameters are employed to preserve accuracy."
+    ],
+    "title": "Understanding Model Quantization in Large Language Models | ...",
+    "url": "https://www.digitalocean.com/community/tutorials/model-quantization-large-language-models"
+  },
+  {
+    "description": "Explore Gemma 3 models now offering state-of-the-art AI performance on consumer GPUs with new int4 quantized versions optimized with Quantization Aware Training (QAT).",
+    "favicon_url": "https://you.com/favicon?domain=developers.googleblog.com&size=128",
+    "snippets": [
+      "Using int4 means each number is represented using only 4 bits \u2013 a 4x reduction in data size compared to BF16. Quantization can often lead to performance degradation, so we\u2019re excited to release Gemma 3 models that are robust to quantization. We released several quantized variants for each Gemma 3 model to enable inference with your favorite inference engine, such as Q4_0 (a common quantization format) for Ollama, llama.cpp, and MLX. How do we maintain quality? We use QAT.",
+      "To make Gemma 3 even more accessible, we are announcing new versions optimized with Quantization-Aware Training (QAT) that dramatically reduces memory requirements while maintaining high quality.",
+      "The impact of int4 quantization is dramatic. Look at the VRAM (GPU memory) required just to load the model weights: Gemma 3 27B: Drops from 54 GB (BF16) to just 14.1 GB (int4) Gemma 3 12B: Shrinks from 24 GB (BF16) to only 6.6 GB (int4) Gemma 3 4B: Reduces from 8 GB (BF16) to a lean 2.6 GB (int4) Gemma 3 1B: Goes from 2 GB (BF16) down to a tiny 0.5 GB (int4) Note: This figure only represents the VRAM required to load the model weights.",
+      "It means that the model parameters are represented with 16 bits of precision. Using BF16 for all models helps us to make an apples-to-apples comparison of models in a common inference setup. This allows us to compare the inherent capabilities of the models themselves, removing variables like different hardware or optimization techniques like quantization, which we'll discuss next."
+    ],
+    "title": "Gemma 3 QAT Models: Bringing state-of-the-Art AI to consumer GPUs ...",
+    "url": "https://developers.googleblog.com/en/gemma-3-quantized-aware-trained-state-of-the-art-ai-to-consumer-gpus/"
+  }
+]

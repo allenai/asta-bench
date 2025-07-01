@@ -1,0 +1,276 @@
+[
+  {
+    "description": "I'm an LLM Research Engineer with over a decade of experience in artificial intelligence. My work bridges academia and industry, with roles including senior staff at an AI company and a statistics professor. My expertise lies in LLM research and the development of high-performance AI systems, ...",
+    "favicon_url": "https://you.com/favicon?domain=sebastianraschka.com&size=128",
+    "snippets": [
+      "I'm an LLM Research Engineer with over a decade of experience in artificial intelligence. My work bridges academia and industry, with roles including senior staff at an AI company and a statistics professor. My expertise lies in LLM research and the development of high-performance AI systems, with a deep focus on practical, code-driven implementations.",
+      "Stronger reasoning skills allow LLMs to tackle more complex problems, making them more capable across a wide range of tasks users care about. In the last few weeks, researchers have shared a large number of new strategies to improve reasoning, including scaling inference-time compute, reinforcement learning, supervised fine-tuning, and distillation. And many approaches combine these techniques for greater effect. This article explores recent research advancements in reasoning-optimized LLMs, with a particular focus on inference-time compute scaling that have emerged since the release of DeepSeek R1.",
+      "Different search-based methods rely on a process-reward-based model to select the best answer. Annotated figure from the LLM Test-Time Compute paper, https://arxiv.org/abs/2408.03314 \u00b7 The remainder of this article will be focused on the recent research advances in the inference-time scaling category for improving reasoning capabilities of LLMs.",
+      "For example, OpenAI developed its o1 model using reinforcement learning and then additionally leveraged inference-time compute scaling. Interestingly, as I discussed in my previous article on reasoning models (Understanding Reasoning LLMs), the DeepSeek R1 paper explicitly categorized common inference-time scaling methods (such as Process Reward Model-based and Monte Carlo Tree Search-based approaches) under \u201cunsuccessful attempts.\u201d This suggests that DeepSeek did not explicitly use these techniques beyond the R1 model\u2019s natural tendency to generate longer responses, which serves as an implicit form of inference-time scaling over the V3 base model."
+    ],
+    "title": "Inference-Time Compute Scaling Methods to Improve Reasoning Models",
+    "url": "https://sebastianraschka.com/blog/2025/state-of-llm-reasoning-and-inference-scaling.html"
+  },
+  {
+    "description": "Generally speaking, we need a ... various inference-time methods (e.g., best-of- ... italic_n, majority voting (Wang et al., 2022a; Li et al., 2023)) trade off between performance and cost. To improve our understanding, this paper presents a thorough empirical evaluation with careful analysis over various configurations of representative LLMs and inference ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Generally speaking, we need a comprehensive understanding of how various inference-time methods (e.g., best-of- ... italic_n, majority voting (Wang et al., 2022a; Li et al., 2023)) trade off between performance and cost. To improve our understanding, this paper presents a thorough empirical evaluation with careful analysis over various configurations of representative LLMs and inference algorithms.",
+      "Sampling algorithms (e.g., temperature sampling (Ackley et al., 1985)) can produce a diverse set of results which are then aggregated to achieve higher accuracy (e.g., via majority voting (Wang et al., 2022a)). Recent methods combine search algorithms with LLMs, including breadth-first or depth-first search (Yao et al., 2023), Monte-Carlo Tree Search (MCTS) (Zhang et al., 2023; Zhou et al., 2023; Liu et al., 2024; Choi et al., 2023), and guided beam search (Xie et al., 2023). All of these methods show that using search at inference time can lead to performance gains in various tasks.",
+      "Mathematical problem solving is a key task for measuring LLM reasoning abilities (Cobbe et al., 2021a; Hendrycks et al., 2021b). Ling et al. (2017) first developed the method of producing step by step solutions that lead to the final answer. Later, (Cobbe et al., 2021b) extended the work by training a verifier for evaluating and ranking solutions. Subsequent research (e.g., Lewkowycz et al. (2022)) has shown the performance benefits of inference-time techniques such as majority voting (Wang et al., 2022a) and weighted majority voting (Li et al., 2023).",
+      "We analyze the performance of fine-tuned models of various sizes given different inference FLOPs on mathematical reasoning benchmarks (e.g., GSM8K test set (Cobbe et al., 2021a) and MATH500 test set (Hendrycks et al., 2021b; Lightman et al., 2023b)). Our experiments cover several model families, including general-purpose LLMs (e.g., Pythia (Biderman et al., 2023) & Mistral (Jiang et al., 2023)) as well as math-specialized ones (e.g., Llemma (Azerbayev et al., 2023)). Our results on Pythia (Fig. 1) illustrate how performance scales with increased inference compute across various model sizes."
+    ],
+    "title": "Inference Scaling Laws: An Empirical Analysis of Compute-Optimal ...",
+    "url": "https://arxiv.org/html/2408.00724v2"
+  },
+  {
+    "description": "Enabling LLMs to improve their outputs by using more test-time computation is a critical step towards building generally self-improving agents that can operate on open-ended natural language. In this paper, we study the scaling of inference-time computation in LLMs, with a focus on answering ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Enabling LLMs to improve their outputs by using more test-time computation is a critical step towards building generally self-improving agents that can operate on open-ended natural language. In this paper, we study the scaling of inference-time computation in LLMs, with a focus on answering the question: if an LLM is allowed to use a fixed but non-trivial amount of inference-time compute, how much can it improve its performance on a challenging prompt?",
+      "Abstract page for arXiv paper 2408.03314: Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+      "Answering this question has implications not only on the achievable performance of LLMs, but also on the future of LLM pretraining and how one should tradeoff inference-time and pre-training compute. Despite its importance, little research attempted to understand the scaling behaviors of various test-time inference methods. Moreover, current work largely provides negative results for a number of these strategies. In this work, we analyze two primary mechanisms to scale test-time computation: (1) searching against dense, process-based verifier reward models; and (2) updating the model's distribution over a response adaptively, given the prompt at test time.",
+      "View a PDF of the paper titled Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters, by Charlie Snell and 3 other authors View PDF HTML (experimental)"
+    ],
+    "title": "[2408.03314] Scaling LLM Test-Time Compute Optimally can be More ...",
+    "url": "https://arxiv.org/abs/2408.03314"
+  },
+  {
+    "description": "While the scaling laws of large language models (LLMs) training have been extensively studied, optimal inference configurations of LLMs remain underexplored. We study inference scaling laws (aka test-time scaling laws) and compute-optimal inference, focusing on the trade-offs between model ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Abstract: While the scaling laws of large language models (LLMs) training have been extensively studied, optimal inference configurations of LLMs remain underexplored. We study inference scaling laws (aka test-time scaling laws) and compute-optimal inference, focusing on the trade-offs between model sizes and generating additional tokens with different inference strategies.",
+      "For example, the Llemma-7B model, when paired with our novel tree search algorithm, consistently outperforms the Llemma-34B model across all tested inference strategies on the MATH benchmark. We hope these insights contribute to a deeper understanding of inference scaling laws (test-time scaling laws) for LLMs.",
+      "TL;DR: We study inference scaling laws and compute-optimal inference of LLMs on mathematical problem solving."
+    ],
+    "title": "Inference Scaling Laws: An Empirical Analysis of Compute-Optimal ...",
+    "url": "https://openreview.net/forum?id=VNckp7JEHn"
+  },
+  {
+    "description": "Different search-based methods rely on a process-reward-based model to select the best answer. Annotated figure from the LLM Test-Time Compute paper, https://arxiv.org/abs/2408.03314 \u00b7 The remainder of this article will be focused on the recent research advances in the inference-time scaling ...",
+    "favicon_url": "https://you.com/favicon?domain=magazine.sebastianraschka.com&size=128",
+    "snippets": [
+      "Different search-based methods rely on a process-reward-based model to select the best answer. Annotated figure from the LLM Test-Time Compute paper, https://arxiv.org/abs/2408.03314 \u00b7 The remainder of this article will be focused on the recent research advances in the inference-time scaling category for improving reasoning capabilities of LLMs.",
+      "Inference-Time Compute Scaling Methods to Improve Reasoning Models",
+      "For example, OpenAI developed its o1 model using reinforcement learning and then additionally leveraged inference-time compute scaling. Interestingly, as I discussed in my previous article on reasoning models (Understanding Reasoning LLMs), the DeepSeek R1 paper explicitly categorized common inference-time scaling methods (such as Process Reward Model-based and Monte Carlo Tree Search-based approaches) under \"unsuccessful attempts.\"",
+      "However, the end goal is actively controlling the reasoning behavior through inference-time scaling; hence, I considered this paper for the \"1. Inference-time compute scaling\" category. ... Create a curated SFT dataset with 1k training examples that include reasoning traces. ... a) Appending \"Wait\" tokens to get the LLM to generate longer responses, self-verify, and correct itself, or"
+    ],
+    "title": "The State of LLM Reasoning Model Inference",
+    "url": "https://magazine.sebastianraschka.com/p/state-of-llm-reasoning-and-inference-scaling"
+  },
+  {
+    "description": "The Snell et al. paper above (1.) calls this the \u201cProposer and Verifier\u201d perspective. Today we draw inference scaling laws assuming single pass per token (a recent change as llm applications emerge, called \u201covertraining\u201d). This could change again if it turns out it\u2019s easier to get intelligence at inference time ...",
+    "favicon_url": "https://you.com/favicon?domain=www.interconnects.ai&size=128",
+    "snippets": [
+      "The Snell et al. paper above (1.) calls this the \u201cProposer and Verifier\u201d perspective. Today we draw inference scaling laws assuming single pass per token (a recent change as llm applications emerge, called \u201covertraining\u201d). This could change again if it turns out it\u2019s easier to get intelligence at inference time than by scaling pre training compute.",
+      "OpenAI\u2019s Strawberry, LM self-talk, inference scaling laws, and spending more on inference. Coming waves in LLMs.",
+      "OpenAI\u2019s Strawberry method, LM self-talk, inference scaling laws, and spending more on inference",
+      "In that time, we\u2019ve gotten a large uptick in research output in inference-time optimization. We\u2019re still early. ... Large Language Monkeys: Scaling Inference Compute with Repeated Sampling. I wanted to highlight a result from the last paper, Large Language Monkeys, as to why inference time compute is feasible."
+    ],
+    "title": "OpenAI\u2019s Strawberry and inference scaling laws",
+    "url": "https://www.interconnects.ai/p/openai-strawberry-and-inference-scaling-laws"
+  },
+  {
+    "description": "Enabling LLMs to improve their outputs by using more test-time computation is a critical step towards building generally self-improving agents that can operate on open-ended natural language. In this paper, we study the scaling of inference-time computation in LLMs, with a focus on answering ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Enabling LLMs to improve their outputs by using more test-time computation is a critical step towards building generally self-improving agents that can operate on open-ended natural language. In this paper, we study the scaling of inference-time computation in LLMs, with a focus on answering the question: if an LLM is allowed to use a fixed but non-trivial amount of inference-time compute, how much can it improve its performance on a challenging prompt?",
+      "Answering this question has implications not only on the achievable performance of LLMs, but also on the future of LLM pretraining and how one should tradeoff inference-time and pre-training compute. Despite its importance, little research attempted to understand the scaling behaviors of various test-time inference methods. Moreover, current work largely provides negative results for a number of these strategies. In this work, we analyze two primary mechanisms to scale test-time computation: (1) searching against dense, process-based verifier reward models; and (2) updating the model\u2019s distribution over a response adaptively, given the prompt at test time.",
+      "In addition, such a capability at test-time also has the potential to unlock new avenues in agentic and reasoning tasks [34, 47, 28]. For instance, if pre-trained model size can be traded off for additional computation during inference, this would enable LLM deployment in use-cases where smaller on-device models could be used in place of datacenter scale LLMs.",
+      "Beyond chinchilla-optimal: Accounting for inference in language model scaling laws, 2023. Saunders et al. [2022] W. Saunders, C. Yeh, J. Wu, S. Bills, L. Ouyang, J. Ward, and J. Leike. Self-critiquing models for assisting human evaluators, 2022. Setlur et al. [2024] A. Setlur, S. Garg, X. Geng, N. Garg, V. Smith, and A. Kumar. Rl on incorrect synthetic data scales the efficiency of llm math reasoning by eight-fold."
+    ],
+    "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than ...",
+    "url": "https://arxiv.org/html/2408.03314v1"
+  },
+  {
+    "description": "While the scaling laws of large language models (LLMs) training have been extensively studied, optimal inference configurations of LLMs remain underexplored. We study inference scaling laws (aka test-time scaling laws) and compute-optimal inference, focusing on the trade-offs between model ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models, by Yangzhen Wu and 4 other authors View PDF HTML (experimental) Abstract:While the scaling laws of large language models (LLMs) training have been extensively studied, optimal inference configurations of LLMs remain underexplored. We study inference scaling laws (aka test-time scaling laws) and compute-optimal inference, focusing on the trade-offs between model sizes and generating additional tokens with different inference strategies.",
+      "Abstract page for arXiv paper 2408.00724: Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models",
+      "We hope these insights contribute to a deeper understanding of inference scaling laws (test-time scaling laws) for LLMs. From: Yangzhen Wu [view email] [v1] Thu, 1 Aug 2024 17:16:04 UTC (3,555 KB) [v2] Mon, 14 Oct 2024 13:41:35 UTC (5,181 KB) [v3] Mon, 3 Mar 2025 07:53:32 UTC (4,266 KB) ... View a PDF of the paper titled Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models, by Yangzhen Wu and 4 other authors",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2408.00724] Inference Scaling Laws: An Empirical Analysis of ...",
+    "url": "https://arxiv.org/abs/2408.00724"
+  },
+  {
+    "description": "With \"Mind Evolution\" LLMs can use search and genetic algorithms to generate and combine different solutions and find the optimal one.",
+    "favicon_url": "https://you.com/favicon?domain=venturebeat.com&size=128",
+    "snippets": [
+      "Inference-time scaling is one of the big themes of artificial intelligence in 2025, and AI labs are attacking it from different angles. In its latest research paper, Google DeepMind introduced the concept of \u201cMind Evolution,\u201d a technique that optimizes responses of large language models (LLMs) for planning and reasoning tasks.",
+      "Inference-time scaling techniques try to improve LLMs\u2019 performance by allowing them to \u201cthink\u201d more when generating their answers. Practically, this means that instead of generating its answer in one go, a model is allowed to generate several answers, review and correct its answers, and explore different ways to solve the problem. Mind Evolution relies on two key components: search and genetic algorithms. Search algorithms are a common component in many inference-time scaling techniques.",
+      "Mind Evolution starts by creating a population of candidate solutions expressed in natural language. The solutions are generated by an LLM that has been given a description of the problem along with useful information and instructions. The LLM then evaluates each candidate and improves it if it does not meet the criteria for the solution.",
+      "This allows the system to avoid formalizing problems, as long as a programmatic solution evaluator is available. It also provides textual feedback in addition to a numerical score, which allows the LLM to understand specific issues and make targeted improvements."
+    ],
+    "title": "DeepMind\u2019s new inference-time scaling technique improves planning ...",
+    "url": "https://venturebeat.com/ai/deepmind-new-inference-time-scaling-technique-improves-planning-accuracy-in-llms/"
+  },
+  {
+    "description": "Enabling LLMs to improve their outputs by using more test-time compute is a critical step towards building self-improving agents that can operate on open-ended natural language. In this paper, we scale up inference-time computation in LLMs, with a focus on answering: if an LLM is allowed to ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Abstract: Enabling LLMs to improve their outputs by using more test-time compute is a critical step towards building self-improving agents that can operate on open-ended natural language. In this paper, we scale up inference-time computation in LLMs, with a focus on answering: if an LLM is allowed to use a fixed but non-trivial amount of inference-time compute, how much can it improve its performance on a challenging prompt?",
+      "Answering this question has implications not only on performance, but also on the future of LLM pretraining and how to tradeoff inference-time and pre-training compute. Little research has attempted to understand the scaling behaviors of test-time inference methods, with current work largely providing negative results for a number of these strategies. In this work, we analyze two primary mechanisms to scale test-time computation: (1) searching against dense, process-based verifier reward models (PRMs); and (2) updating the model's distribution over a response adaptively, given the prompt at test time.",
+      "Primary Area: foundation or frontier models, including LLMs"
+    ],
+    "title": "Scaling LLM Test-Time Compute Optimally Can be More Effective than ...",
+    "url": "https://openreview.net/forum?id=4FWAwZtd2n"
+  },
+  {
+    "description": "Enabling LLMs to improve their outputs by using more test-time computation is a critical step towards building generally self-improving agents that can operate on open-ended natural language. In this paper, we study the scaling of inference-time computation in LLMs, with a focus on answering ...",
+    "favicon_url": "https://you.com/favicon?domain=www.aimodels.fyi&size=128",
+    "snippets": [
+      "Enabling LLMs to improve their outputs by using more test-time computation is a critical step towards building generally self-improving agents that can operate on open-ended natural language. In this paper, we study the scaling of inference-time computation in LLMs, with a focus on answering the question: if an LLM is allowed to use a fixed but non-trivial amount of inference-time compute, how much can it improve its performance on a challenging prompt?",
+      "The paper proposes a unified perspective on test-time computation, considering both the proposer and verifier roles \u00b7 Experiments show that optimizing test-time compute can lead to better performance compared to scaling model size \u00b7 When it comes to large language models (LLMs), the researchers found that optimizing the compute used during the testing or \"inference\" phase can be more effective than simply increasing the size of the model itself.",
+      "This suggests that the compute used during the testing or inference phase is a critical factor in the performance of LLMs, and that carefully managing and optimizing this compute can lead to more efficient and effective models. The paper presents a unified perspective on test-time computation, considering both the proposer (who generates the output) and the verifier (who evaluates the output).",
+      "Specifically, the paper investigates the relationship between test-time compute and model performance, and demonstrates that optimizing the compute used during the testing or inference phase can lead to better results than just increasing the model size. The paper provides a nuanced and thoughtful perspective on the role of test-time compute in the performance of large language models. While the findings are compelling, it's important to note that the research was conducted in a specific experimental setting, and the results may not necessarily generalize to all LLM applications or deployment scenarios."
+    ],
+    "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than ...",
+    "url": "https://www.aimodels.fyi/papers/arxiv/scaling-llm-test-time-compute-optimally-can"
+  },
+  {
+    "description": "Understanding the current state of LLM scaling and the future of AI research...",
+    "favicon_url": "https://you.com/favicon?domain=cameronrwolfe.substack.com&size=128",
+    "snippets": [
+      "Now, let\u2019s take a more practical look at power laws by learning about one of the first papers to study them in the context of LLM scaling [1]. In the early days of language models, we did not yet understand the impact of scale on performance. Language models were a promising area of research, but the current generation of models (e.g., the original GPT) at that time had limited capabilities.",
+      "To scale up LLM pretraining, we must increase both model and dataset size. Earlier research [1] seemed to indicate that the amount of data was not as important as the size of the model, but we see with Chinchilla [6] that dataset size is equally important. Plus, more recent work argues that most researchers prefer to \u201covertrain\u201d their models\u2014or pretrain them on datasets that go beyond Chinchilla-optimality in size\u2014to save on inference costs [7].",
+      "This is to be expected because these models use zero-shot inference and are not finetuned at all on any of the downstream tasks. ... By an \u201cemergent\u201d ability, we mean a skill possessed by the LLM that only emerges after a certain scale has been reached (e.g., a sufficiently large model).",
+      "The two quantities being studied here are x and y, while a and p are constants that describe the relationship between these quantities. If we plot this power law function2, we get the figure shown below. We provide plots in both normal and log scale because most papers that study LLM scaling use a log scale."
+    ],
+    "title": "Scaling Laws for LLMs: From GPT-3 to o3",
+    "url": "https://cameronrwolfe.substack.com/p/llm-scaling-laws"
+  },
+  {
+    "description": "Expand Test-Time Scaling (TTS) ... Models (LLMs) by using additional computation during the inference phase. However, current studies do not systematically analyze how policy models, Process Reward Models (PRMs), and problem difficulty influence TTS. This lack of analysis limits the understanding and practical use of TTS methods. In this paper, we focus on two core questions: (1) What is the optimal approach to scale test-time ...",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Expand Test-Time Scaling (TTS) is an important method for improving the performance of Large Language Models (LLMs) by using additional computation during the inference phase. However, current studies do not systematically analyze how policy models, Process Reward Models (PRMs), and problem difficulty influence TTS. This lack of analysis limits the understanding and practical use of TTS methods. In this paper, we focus on two core questions: (1) What is the optimal approach to scale test-time computation across different policy models, PRMs, and problem difficulty levels?",
+      "Our findings offer critical insights into the scalability of LLM reasoning, highlight fundamental limitations, and outline potential directions for improvement. \ud83d\udd39 Sample, Scrutinize and Scale: Effective Inference-Time Search by Scaling Verification ... Expand Sampling-based search, a simple paradigm for utilizing test-time compute, involves generating multiple candidate responses and selecting the best one -- typically by verifying each response for correctness. In this paper, we study the scaling trends governing sampling-based search.",
+      "Recent large language models (LLMs) have boosted performance by scaling test-time computation through long chain-of-thought reasoning. However, transformer-based models are inherently limited in extending context length due to their quadratic computational complexity and linear memory requirements. In this paper, we introduce a novel hybrid linear RNN reasoning model, M1, built on the Mamba architecture, which allows memory-efficient inference.",
+      "Additionally, we demonstrate that RBF with VP-SDE achieves the best performance, outperforming all previous inference-time scaling approaches. \ud83d\udd39 Video-T1: Test-Time Scaling for Video Generation ... Expand With the scale capability of increasing training data, model size, and computational cost, video generation has achieved impressive results in digital creation, enabling users to express creativity across various domains. Recently, researchers in Large Language Models (LLMs) have expanded the scaling to test-time, which can significantly improve LLM performance by using more inference-time computation."
+    ],
+    "title": "GitHub - ThreeSR/Awesome-Inference-Time-Scaling: Paper List of ...",
+    "url": "https://github.com/ThreeSR/Awesome-Inference-Time-Scaling"
+  },
+  {
+    "description": "Stacking transformer layers to create large models results in better accuracies, few-shot learning capabilities, and even near-human emergent abilities on a wide range of language tasks.",
+    "favicon_url": "https://you.com/favicon?domain=developer.nvidia.com&size=128",
+    "snippets": [
+      "Stacking transformer layers to create large models results in better accuracies, few-shot learning capabilities, and even near-human emergent abilities on a\u2026",
+      "TensorRT-LLM also powers NVIDIA NeMo, which provides an end-to-end cloud-native enterprise framework for developers to build, customize, and deploy generative AI models with billions of parameters. Get started with NeMo. DLI course: Deploying a Model for Inference at Production Scale",
+      "They can help scale and reduce the per-GPU memory footprint of LLMs, but there are also optimization techniques specifically for the attention module. The scaled dot-product attention (SDPA) operation maps query and key-value pairs to an output, as described in Attention Is All You Need.  \u00b7 As an enhancement to the SDPA, executing the attention layer multiple times in parallel with different, learned projections of the Q, K, and V matrices, enables the model to jointly attend to information from different representational subspaces at different positions.",
+      "Speculative inference involves executing multiple different steps of the sequence in parallel to try to save time.  \u00b7 LLMs have some unique execution characteristics that can make it difficult to effectively batch requests in practice. A single model can be used simultaneously for a variety of tasks that look very different from one another."
+    ],
+    "title": "Mastering LLM Techniques: Inference Optimization | NVIDIA Technical ...",
+    "url": "https://developer.nvidia.com/blog/mastering-llm-techniques-inference-optimization/"
+  },
+  {
+    "description": "AI scaling laws describe how model performance improves as the size of training data, model parameters or computational resources increases.",
+    "favicon_url": "https://you.com/favicon?domain=blogs.nvidia.com&size=128",
+    "snippets": [
+      "The recent rise of test-time scaling \u2014 applying more compute at inference time to improve accuracy \u2014 has enabled AI reasoning models, a new class of large language models (LLMs) that perform multiple inference passes to work through complex problems, while describing the steps required to solve a task.",
+      "This AI reasoning process can take multiple minutes, or even hours \u2014 and can easily require over 100x compute for challenging queries compared to a single inference pass on a traditional LLM. This test-time compute capability enables AI models to explore different solutions to a problem and break down complex requests into multiple steps \u2014 in many cases, showing their work to the user as they reason.",
+      "On tasks like generating complex, customized code for developers, this AI reasoning process can take multiple minutes, or even hours \u2014 and can easily require over 100x compute for challenging queries compared to a single inference pass on a traditional LLM, which would be highly unlikely to produce a correct answer in response to a complex problem on the first try.",
+      "Reinforcement learning, or RL, is a machine learning technique that uses a reward model to train an agent to make decisions that align with a specific use case. The agent aims to make decisions that maximize cumulative rewards over time as it interacts with an environment \u2014 for example, a chatbot LLM that is positively reinforced by \u201cthumbs up\u201d reactions from users."
+    ],
+    "title": "How Scaling Laws Drive Smarter, More Powerful AI | NVIDIA Blog",
+    "url": "https://blogs.nvidia.com/blog/ai-scaling-laws/"
+  },
+  {
+    "description": "An overview of recent research on scaling test-time compute in large language models (LLMs) including CoT, STaR, ReST, RISE, ORMs, PRMs and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.jonvet.com&size=128",
+    "snippets": [
+      "It's a combination of many things: new and old techniques from the Reinforcement Learning field being applied to LLM training, bigger and better data sets with human annotations, methods that are easier to scale because remove the need for human annotations, and the list goes on. This blog post should be seen as a snapshot in time, as the field is moving very fast. Consider it a literature review, which doesn't aim to be exhaustive, but gives an overview of interesting papers on test-time compute for LLMs. Test time compute refers to the amount of compute that is used to generate completions from a language model (LLM) at test or inference time.",
+      "As I mentioned in the beginning, the field is moving very fast right now. If you need more pointers, here are some more papers that I didn't cover in this blog post, but that are also worth checking out: Adaptive Inference-Time Compute:LLMs Can Predict if They Can Do Better, Even Mid-Generation [paper]",
+      "I'll close this blog post on a positive note, with a short excerpt of a talk by Noam Brown (Research Scientist at OpenAI) who talks about how we can hopefully push LLM performance further using inference compute. Fingers crossed. Loading Tweet Video... If you liked this article, you might also enjoy my blog post on generating synthetic data for LLMs post-training. I hope you found this article helpful - see you next time! [1] K. Cobbe, V. Kosaraju, M. Bavarian, M. Chen, H. Jun, L. Kaiser, M. Plappert, J. Tworek, J. Hilton, R. Nakano, C. Hesse, and J. Schulman. Training verifiers to solve math word problems, 2021. [paper]",
+      "But that's not the only reason to scale test-time compute. For example, we know that LLMs often give wrong answers or hallucinate. Letting LLMs \"think\" for longer and revise their answers can help mitigate this. Another reason is that training and inference time compute can be traded off to a certain extent."
+    ],
+    "title": "Scaling LLM Test Time Compute",
+    "url": "https://www.jonvet.com/blog/llm-test-time-compute"
+  },
+  {
+    "description": "Generative models have made significant ... to scale during training by increasing data, computational resources, and model size, a phenomenon characterized by the scaling laws. Recent research has begun to explore inference-time scaling behavior in Large Language Models (LLMs), revealing ...",
+    "favicon_url": "https://you.com/favicon?domain=inference-scale-diffusion.github.io&size=128",
+    "snippets": [
+      "Generative models have made significant impacts across various domains, largely due to their ability to scale during training by increasing data, computational resources, and model size, a phenomenon characterized by the scaling laws. Recent research has begun to explore inference-time scaling behavior in Large Language Models (LLMs), revealing how performance can further improve with additional computation during inference.",
+      "Unlike LLMs, diffusion models inherently possess the flexibility to adjust inference-time computation via the number of denoising steps, although the performance gains typically flatten after a few dozen. In this work, we explore the inference-time scaling behavior of diffusion models beyond increasing denoising steps and investigate how the generation performance can further improve with increased computation.",
+      "Performances of Search with FLUX.1-dev at inference-time. We fix the search budget to be 3840 NFEs with random search, and demonstrate the relative performance gain with generation without any search budget. DrawBench. As shown above, and as indicated by the LLM Grader, searching with all verifiers generally improves sample quality, while specific improvement behaviors vary across different setups:",
+      "Considering the usage of Verifier Ensemble, we additionally introduce an LLM grader as a neutral evaluator for assessing sample qualities. We prompt the Gemini-1.5 model to assess synthesized images from five different perspectives: Accuracy to Prompt, Originality, Visual Quality, Internal Consistency, and Emotional Resonance. Each perspective is rated on a scale from 0 to 100, and the averaged overall score is used as the final metric."
+    ],
+    "title": "Inference-Time Scaling for Diffusion Models beyond Scaling ...",
+    "url": "https://inference-scale-diffusion.github.io/"
+  },
+  {
+    "description": "The following papers were recommended by the Semantic Scholar API \u00b7 An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models (2024) Large Language Monkeys: Scaling Inference Compute with Repeated Sampling (2024) LiteSearch: Efficacious Tree Search for LLM (2024) RL on Incorrect Synthetic Data Scales ...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "The following papers were recommended by the Semantic Scholar API \u00b7 An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models (2024) Large Language Monkeys: Scaling Inference Compute with Repeated Sampling (2024) LiteSearch: Efficacious Tree Search for LLM (2024) RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold (2024)",
+      "Enabling LLMs to improve their outputs by using more test-time computation is a critical step towards building generally self-improving agents that can operate on open-ended natural language. In this paper, we study the scaling of inference-time computation in LLMs, with a focus on answering the question: if an LLM is allowed to use a fixed but non-trivial amount of inference-time compute, how much can it improve its performance on a challenging prompt?",
+      "Also you need more OOMs on inference-time search. N>=500 i'd guess. Dont let them tell you the MCTS model isnt worth training based on these results. These results are NOT a good forecast. It will massively overperform. Train the MCTS+LLM model. ... This is an automated message from the Librarian Bot. I found the following papers similar to this paper.",
+      "Answering this question has implications not only on the achievable performance of LLMs, but also on the future of LLM pretraining and how one should tradeoff inference-time and pre-training compute. Despite its importance, little research attempted to understand the scaling behaviors of various test-time inference methods. Moreover, current work largely provides negative results for a number of these strategies. In this work, we analyze two primary mechanisms to scale test-time computation: (1) searching against dense, process-based verifier reward models; and (2) updating the model's distribution over a response adaptively, given the prompt at test time."
+    ],
+    "title": "Paper page - Scaling LLM Test-Time Compute Optimally can be More ...",
+    "url": "https://huggingface.co/papers/2408.03314"
+  },
+  {
+    "description": "AI Megacycle Of System 1 And System 2 Applications",
+    "favicon_url": "https://you.com/favicon?domain=www.akashbajwa.co&size=128",
+    "snippets": [
+      "Pre-training scaling laws may soon hit a data wall, but OpenAI\u2019s o1 model has revealed an entirely new scaling law: inference time scaling. Until very recently, most of the focus in LLM scaling was on pre-training. With compute capacity used for training doubling every 6 months for the last 14 years. ... Despite the hundreds of billions of capex going into AI data centres, we\u2019re likely to hit a data wall in 2027/28. There\u2019s this big debate in the AI field about what are the rate-limiters on progress, and the scaling purists think we need more scale, more compute.",
+      "Even if we scale up inference time compute by the orders of magnitude Eric is implying, it\u2019d still be much cheaper than human workers, as Ben Thompson pointed out:",
+      "There\u2019s some early evidence that applying the right RL + CoT techniques can yield similar levels of performance from other frontier models that haven\u2019t fully exploited inference time scaling, likely owing to some hidden chain of thought tokens.",
+      "As the other labs collectively channel their resources towards inference time scaling, we\u2019ll see use cases and capabilities flourish. The early high-ROI use cases of code generation and customer service will benefit from system 2 reasoning, becoming capable of replacing more experienced workers."
+    ],
+    "title": "Inference Time Scaling Laws - by Akash Bajwa",
+    "url": "https://www.akashbajwa.co/p/inference-time-scaling-laws"
+  },
+  {
+    "description": "Optimize large language models with adaptive test-time compute strategies, boosting efficiency over 4x and outperforming larger models on challenging prompts.",
+    "favicon_url": "https://you.com/favicon?domain=hub.athina.ai&size=128",
+    "snippets": [
+      "Enabling LLMs to improve their outputs by using more test-time computation is a critical step towards building generally self-improving agents that can operate on open-ended natural language. In this paper, we study the scaling of inference-time computation in LLMs, with a focus on answering the question: if an LLM is allowed to use a fixed but non-trivial amount of inference-time compute, how much can it improve its performance on a challenging prompt?",
+      "This human-like approach can be instilled in LLMs to improve their accuracy on challenging prompts by using additional computation at test time. This paper delves into the potential of scaling inference-time computation and asks: Can a fixed but non-trivial amount of test-time compute significantly enhance an LLM's performance on difficult tasks?",
+      "Answering this question has implications not only on the achievable performance of LLMs, but also on the future of LLM pretraining and how one should tradeoff inference-time and pre-training compute. Despite its importance, little research attempted to understand the scaling behaviors of various test-time inference methods. Moreover, current work largely provides negative results for a number of these strategies. In this work, we analyze two primary mechanisms to scale test-time computation: (1) searching against dense, process-based verifier reward models; and (2) updating the model's distribution over a response adaptively, given the prompt at test time.",
+      "The findings suggest a paradigm shift in the approach to enhancing LLM performance: Efficient Deployment: Smaller, on-device models could be used in place of larger datacenter-scale models by leveraging additional test-time compute. Self-Improving Agents: Automating the generation of improved outputs during inference paves the way for creating self-improving AI agents with reduced human supervision."
+    ],
+    "title": "Scaling Inference-Time Compute in LLMs for Improved Output",
+    "url": "https://hub.athina.ai/research-papers/scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model-parameters/"
+  },
+  {
+    "description": "Role of inference-time scaling in enhancing AI performance. Learn how this strategy optimizes model efficiency and accelerates AI results.",
+    "favicon_url": "https://you.com/favicon?domain=www.ve3.global&size=128",
+    "snippets": [
+      "However, a new paradigm is emerging: inference-time scaling. This approach suggests that increasing compute resources during test time\u2014when a model is generating responses\u2014can significantly enhance its accuracy and reasoning capabilities. When presented with a query, conventional large language models (LLMs) generate responses sequentially, predicting the next token without backtracking or reconsidering intermediate steps.",
+      "One of the simplest methods of scaling inference-time compute is increasing the number of samples generated per query. This approach, explored in the research paper Large Language Monkeys, leverages the infinite monkey theorem\u2014where randomly generating enough text eventually produces the correct answer.",
+      "Inference-time scaling is not a novel concept. The idea of leveraging additional computational resources at decision time has been instrumental in strategic games like chess, poker, and Go. One of the most famous examples is AlphaGo, DeepMind\u2019s Go-playing AI, which used Monte Carlo Tree Search (MCTS) during inference to evaluate multiple possible moves before selecting the best one.",
+      "Without MCTS, AlphaGo\u2019s Elo rating drops from approximately 5,200 to 3,000\u2014a drastic decline that places it below top human players (~3,800 Elo). This example underscores the importance of inference-time compute in achieving superhuman performance."
+    ],
+    "title": "Inference-Time Scaling: The Next Frontier in AI Performance",
+    "url": "https://www.ve3.global/inference-time-scaling-the-next-frontier-in-ai-performance/"
+  },
+  {
+    "description": "Learn best practices for optimizing LLM inference performance on Databricks, enhancing the efficiency of your machine learning models.",
+    "favicon_url": "https://you.com/favicon?domain=www.databricks.com&size=128",
+    "snippets": [
+      "Continuous batching: The idea of batching requests together as they arrive was introduced in this excellent paper and is currently the SOTA method. Instead of waiting for all sequences in a batch to finish, it groups sequences together at the iteration level. It can achieve 10x-20x better throughput than dynamic batching. Figure 6: Different types of batching with LLM serving. Batching is an effective way of improving the efficiency of inference.",
+      "We are often asked by prospective customers to provide an average inference latency. We recommend that before you anchor yourself to specific latency targets (\"we need less than 20 ms per token\"), you should spend some time characterizing your expected input and desired output lengths. Optimizing LLM inference benefits from general techniques such as:",
+      "As briefly explained earlier, inference for LLMs at smaller batch sizes\u2014especially at decode time\u2014is bottlenecked on how quickly we can load model parameters from the device memory to the compute units. Memory bandwidth dictates how quickly the data movement happens.",
+      "Pay attention to the components of latency: For interactive applications time-to-first-token drives how responsive your service will feel and time-per-output-token determines how fast it will feel. Memory bandwidth is key: Generating the first token is typically compute-bound, while subsequent decoding is memory-bound operation. Because LLM inference often operates in memory-bound settings, MBU is a useful metric to optimize for and can be used to compare the efficiency of inference systems."
+    ],
+    "title": "LLM Inference Performance Engineering: Best Practices | Databricks ...",
+    "url": "https://www.databricks.com/blog/llm-inference-performance-engineering-best-practices"
+  },
+  {
+    "description": "Although eventually one response ... by the LLM is not equal to the amount shown, and this is what OpenAI has marketingly named Thinking. The question that arises here is what are these selection mechanisms? About a month ago, DeepMind published a paper in which for the first time, the rule of Inference time scale was discussed, ...",
+    "favicon_url": "https://you.com/favicon?domain=esmln.medium.com&size=128",
+    "snippets": [
+      "Although eventually one response is shown to the user, the amount of tokens produced by the LLM is not equal to the amount shown, and this is what OpenAI has marketingly named Thinking. The question that arises here is what are these selection mechanisms? About a month ago, DeepMind published a paper in which for the first time, the rule of Inference time scale was discussed, and various selection mechanisms were examined (previously, I wrote about the scale rule of LLMs here).",
+      "Revolutionizing LLM Efficiency; Paradigm Shifts in Model Inference and Scalability",
+      "Until now, the norm has been that the computational and processing budget for LLMs is primarily spent on the Pre-training phase, or the construction of LLMs, and a significant budget for Inference is\u2026",
+      "This means that with the same previous model, GPT4, up to 14 times more intelligence can be obtained. These are the amazing results that OpenAI realized much sooner than others, and now we are feeling what we read on DeepMind\u2019s papers in ChatGPT. The article also mentions that for very difficult tasks, it is more cost-effective to give the most processing budget to Pre-training, but for other tasks, the assumption is that a significant amount of the computational budget will be for Inference time."
+    ],
+    "title": "Model o1 and Introducing a New Paradigm for Inference Scaling | ...",
+    "url": "https://esmln.medium.com/model-o1-and-introducing-a-new-paradigm-for-inference-scaling-9a6a26774176"
+  }
+]

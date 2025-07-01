@@ -1,0 +1,274 @@
+[
+  {
+    "description": "I am starting as a PhD student and we want to find appropriate materials (with certain qualities) from basic chemical properties like charge, etc. There are a lot of models and datasets in similar ...",
+    "favicon_url": "https://you.com/favicon?domain=datascience.stackexchange.com&size=128",
+    "snippets": [
+      "But Boosting is able to work with a small number of observations, with highly correlated features, and it often works well with highly non-linear problems. There are LightGBM or Catboost as possible Python packages. Find some minimal examples here. With II) and III) you will find that you are not really able to \u201eset aside\u201c a number of observations to check if your models work (because you don\u2019t have much data). You could use cross validation (Ch.",
+      "There are a lot of models and datasets in similar works, but since our work is pretty novel, we have to make and test each data sample ourselves. This makes the data acquisition very very slow and very expensive. Our estimated samples will be 10-15 samples for some time, until we can expand it. Now I want to use this samples to make a basic predictive model, but with as much 'good generalization' as possible.",
+      "Now I clearly don't expect performances anywhere near 95% or so, but I want a working model with predictive capability that will actually help me to find some of the best probable material candidates, so we can expand our work. I am uncertain if I can (or rather should) use some of regular ML methods like dataset splitting and cross-validation.",
+      "3- Using algos that arrive at the minimum periphery faster. I would appreciate any suggestions on how I can improve this model as much as possible, to reach the best generalization performance. I have also thought about synthetic data generation a lot. Do you have any suggestions on how I can go about it? ... $\\begingroup$ how many features (aka $x$-variables)? How does correlation look like between the $x$ $\\endgroup$ ... $\\begingroup$ We're still testing, so I dont have the full data yet, but we are measuring 5 properties."
+    ],
+    "title": "machine learning - How can I improve my model on a very very small ...",
+    "url": "https://datascience.stackexchange.com/questions/74118/how-can-i-improve-my-model-on-a-very-very-small-dataset"
+  },
+  {
+    "description": "Explore 3 effective dataset splitting methods, avoid common mistakes, and discover how to use Encord for optimized dataset management in computer vision.",
+    "favicon_url": "https://you.com/favicon?domain=encord.com&size=128",
+    "snippets": [
+      "Properly splitting your machine learning datasets into training, validation, and test sets is essential for building robust and accurate models.",
+      "The test set is the set of data used to evaluate the final performance of a trained model. It serves as an unbiased measure of how well the model generalizes to unseen data, assessing its generalization capabilities in real-world scenarios. By keeping the test set separate throughout the development process, we obtain a reliable benchmark of the model\u2019s performance. The test dataset also helps gauge the trained model's ability to handle new data.",
+      "You can either download the subset in CSV or COCO format, or use it in the Encord Platform to train and evaluate your machine learning model. Similar to the training subset, create a validation set and test set. Remember to choose the same features but filter by different values to avoid data leakage. Check out our curated lists of open-source datasets for various sectors, including Top 10 Free Healthcare Datasets for Computer Vision, Top 8 Free Datasets for Human Pose Estimation in Computer Vision, and Best Datasets for Computer Vision | Industry Breakdown.",
+      "There are some common pitfalls that data scientists and ML engineers make when splitting datasets for model training. Insufficient sample size in the training, validation, or test sets can lead to unreliable model performance metrics. If the training set is too small, the model may not capture enough patterns or generalize well. Similarly, if the validation set or test set is too small, the performance evaluation may lack statistical significance."
+    ],
+    "title": "How to Split Machine Learning Datasets: Training, Validation, & ...",
+    "url": "https://encord.com/blog/train-val-test-split/"
+  },
+  {
+    "description": "LLM benchmarks are standardized tests for LLM evaluations. This guide covers 20 benchmarks from MMLU to Chatbot Arena, with links to datasets and leaderboards.",
+    "favicon_url": "https://you.com/favicon?domain=www.evidentlyai.com&size=128",
+    "snippets": [
+      "While LLM benchmarks help compare LLMs, they are not suitable for evaluating LLM-based products, which require custom datasets and criteria tailored to the use case. ... Test fast, ship faster. Evidently Cloud gives you reliable, repeatable evaluations for complex systems like RAG and agents \u2014 so you can iterate quickly and ship with confidence. ... LLM benchmarks are sets of tests that help assess the capabilities of a given LLM model. They answer questions like: can this LLM handle coding tasks well?",
+      "We put together database of 100+ LLM benchmarks and datasets you can use to evaluate the performance of language models. Bookmark the list \u27f6 \u00b7 LLM benchmarks vary in difficulty. Early ones focused on basic tasks like classifying text or completing sentences, which worked well for evaluating smaller models like BERT. Now, with powerful models like GPT, Claude, or LLaMA, benchmarks have become more sophisticated and often include complex tasks requiring multi-step reasoning.",
+      "Each benchmark includes a scoring mechanism to quantify how well an LLM performs, with different evaluation methods suited to different task types. Here are some examples: Classification Metrics like accuracy. These metrics are ideal for tasks with a single correct answer. For instance, the MMLU benchmark uses multiple-choice questions, allowing us to simply calculate the percentage of correct responses across the dataset.",
+      "We will cover some of the commonly used ones. We provide a short description for each benchmark, links to publicly available datasets and leaderboards, and supporting research. Assets: ARC dataset (HuggingFace), ARC leaderboard Research: Think you have Solved Question Answering? Try ARC, the AI2 Reasoning Challenge by Clark et al. (2018) The AI2 Reasoning Challenge (ARC) benchmark evaluates the ability of AI models to answer complex science questions that require logical reasoning beyond pattern matching."
+    ],
+    "title": "20 LLM evaluation benchmarks and how they work",
+    "url": "https://www.evidentlyai.com/llm-guide/llm-benchmarks"
+  },
+  {
+    "description": "Background The selection, development, or comparison of machine learning methods in data mining can be a difficult task based on the target problem and goals of a particular study. Numerous publicly available real-world and simulated benchmark datasets have emerged from different sources, but ...",
+    "favicon_url": "https://you.com/favicon?domain=biodatamining.biomedcentral.com&size=128",
+    "snippets": [
+      "Background The selection, development, or comparison of machine learning methods in data mining can be a difficult task based on the target problem and goals of a particular study. Numerous publicly available real-world and simulated benchmark datasets have emerged from different sources, but their organization and adoption as standards have been inconsistent.",
+      "For example, the GAMETES genetic-data simulation software generates epistatic patterns of association in \u2018mock\u2019 single nucleotide polymorphism (SNP) data [3, 4]. The third form is toy data, which we will define here as data that is also artificially generated with a known embedded pattern but without an emphasis on representing real-world data, e.g., the parity or multiplexer problems [5, 6]. It is worth noting that the term \u2018toy dataset\u2019 has often been used to describe a small and simple dataset such as the examples included with algorithm software. While some benchmark repositories and datasets have emerged as more popular than others, ML still lacks a central, comprehensive, and concise set of benchmark datasets that accentuate the strengths and weaknesses of established ML methods.",
+      "Dataset cluster 3 is the only cluster to contain a single dataset, the parity5 problem, corresponding to dataset 66 in Fig. 4. This is a unique problem in which a ML method must be able to quantify whether the number of features with a given binary value is even or odd in order to correctly classify each instance. As a result, methods that consider the main effect of features independently are not able to solve it (e.g. the Na\u00efve Bayes methods). In contrast, methods with high capacity for interactions between features do well (e.g.",
+      "The complete code for running the experiment is available onlineFootnote 3. It should be noted that due to the different number of parameters for each algorithm, not every algorithm had the same number of evaluations. In order to characterize the datasets in PMLB, they are clustered based on their meta-features in \u201cDataset meta-features\u201d section. We then analyze the datasets based on ML performance in \u201cModel-dataset biclustering\u201d section, which identifies which datasets can be solved with high or low accuracy, as well as which datasets are appear universally easy or hard for the set of different ML algorithms to model accurately versus which ones appear to be particularly useful for highlighting differential ML algorithm performance."
+    ],
+    "title": "PMLB: a large benchmark suite for machine learning evaluation and ...",
+    "url": "https://biodatamining.biomedcentral.com/articles/10.1186/s13040-017-0154-4"
+  },
+  {
+    "description": "Last week I mentioned that we need more open benchmark datasets in geoscience. I think benchmarks are important for researchers to work on, as a teaching aid, and as a way for us to objectively measure how well we\u2019re doing on a particular problem. How else can we know how we\u2019re doing, or ...",
+    "favicon_url": "https://you.com/favicon?domain=agilescientific.com&size=128",
+    "snippets": [
+      "Last week I mentioned that we need more open benchmark datasets in geoscience. I think benchmarks are important for researchers to work on, as a teaching aid, and as a way for us to objectively measure how well we\u2019re doing on a particular problem. How else can we know how we\u2019re doing, or compare Co",
+      "It\u2019s also much harder to get a big dataset into shape than a smaller one. A few thousand records, maybe 100,000 in some cases, is probably plenty. It should be clean, but not too clean. No-one wants to spend hours processing a dataset before it can be used, or \u2014 worse \u2014 be bitten by some esoteric data problem only a domain expert would spot. But, on the other hand, a dataset with no issues at all might be a bit boring. And, in subsurface at least, completely unrepresentative! It should be well documented.",
+      "As well as some interesting features, the dataset must have some interpretive information with high information value (e.g. seismic facies, lithologies, deposotional environment, sequence boundaries, EURs, and so on). Usually, these are expensive to acquire (which is partly why we\u2019d like to be able to predct them). It should name suitable prediction error evaluation methods, with reference implementations, for the intended task.",
+      "I know a small army of people that would love to help get it into the open, and into the hands of machine learning researchers all over the world. The thumbnail image for this post was adapted from an image by user arg_flickr on Flickr, licensed CC-BY. Thanks to several people on Software Underground, for the discussion on this topic. In particular, Justin Gosses and Lukas Mosser pointed out the need for transparent error evaluation."
+    ],
+    "title": "What makes a good benchmark dataset? \u2014 Agile",
+    "url": "https://agilescientific.com/blog/2019/4/3/what-makes-a-good-benchmark-dataset"
+  },
+  {
+    "description": "In Machine Learning, benchmark is a type of model used to compare performance of other models. There are different types of benchmarks. Sometimes, it is a",
+    "favicon_url": "https://you.com/favicon?domain=www.mim.ai&size=128",
+    "snippets": [
+      "In Machine Learning, benchmark is a type of model used to compare performance of other models. There are different types of benchmarks. Sometimes, it is a so-called state-of-the-art model, i.e. the best one on a given dataset for a given problem.",
+      "Remember that, when deployed, our model needs to collect features in real time, so all merges can drastically increase inference time. Choosing only a small subset of features can also allow the model to be much smaller, faster and easier to interpret.  Methods which I showed so far can be easily used in most standard ML problems.",
+      "From a business perspective, it\u2019s not important how we achieve a business goal (e.g. with what model), but IF we achieve it. Another reason is that benchmarks can show us what we can achieve with simplicity. I saw multiple projects in which someone started with neural networks and ended up surprised that linear regression works exactly the same, being multiple times smaller and faster. You will be considered more expert if you always check it yourself.",
+      "However, not everyone knows that it also provides 2 simple classes for benchmarking: Dummy Regressor and Dummy Classifier. DummyRegressor is a model which returns a fixed value for a given regression problem. We can use an average, median or quantile calculated based on a training dataset or some arbitrarily selected constant."
+    ],
+    "title": "What is a benchmark and why do you need it? - MIM SOLUTIONS - We ...",
+    "url": "https://www.mim.ai/what-is-a-benchmark-and-why-do-you-need-it/"
+  },
+  {
+    "description": "A fundamental assumption in evaluating active learning strategies is that there exists a labelled subset of a training dataset that allows a model to perform as well (on the holdout test set) as using the entire training set. In evaluating an AL strategy we are interested in finding this subset ...",
+    "favicon_url": "https://you.com/favicon?domain=pyrelational.readthedocs.io&size=128",
+    "snippets": [
+      "A fundamental assumption in evaluating active learning strategies is that there exists a labelled subset of a training dataset that allows a model to perform as well (on the holdout test set) as using the entire training set. In evaluating an AL strategy we are interested in finding this subset efficiently, and maximising performance in an efficient manner. To help users benchmark their strategies and active learning pipelines we have collected a range of datasets that have been used for benchmarking strategies in AL literature [1] .",
+      "Additionally we provide utilities to help create cold and warm start label initialisations corresponding to different active learning tasks to also help evaluate your strategy in these scenarios. More on these on the respective sections below. This short tutorial will cover using the datasets subpackage containing classes that will download and process raw data into PyTorch Datasets that are ready for use with our DataManager classes. These extend completely standard PyTorch Dataset objects and can be used for normal ML experimentation as well.",
+      "We hope that this resource helps make horizontal analysis of AL strategies across a range of datasets and AL tasks easier. Better yet, lets hope it will garner interest in establishing a set of challening active learning benchmarks and tasks that can set a standard for the AL field. In this example we will look at the Wisconsin Breast Cancer (diagnostic) dataset [2] .",
+      "Where the n_splits argument specifies the number of train-test splits should be computed. For classification datasets the splits will be stratified by class."
+    ],
+    "title": "Benchmark datasets and AL task configurations \u2014 PyRelationAL ...",
+    "url": "https://pyrelational.readthedocs.io/en/latest/notes/benchmark_datasets.html"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "Wrapper-based methods: Use a machine learning model with different feature subsets and evaluate their performance to determine the optimal subset. Techniques like forward selection, backward elimination, or recursive feature elimination fall under this category. Embedded methods: Incorporate feature selection as part of the model training process. Algorithms like Lasso (L1 regularization) and Ridge (L2 regularization) can automatically select relevant features during model training. ... Split the dataset into training and validation sets.",
+      "Once the optimal feature subset is selected, train the final machine learning model on the entire training dataset using the selected features. Evaluate the model's performance on an independent test dataset to assess its generalization ability.",
+      "Even after all these steps, there are some few more steps. You can understand it by the following flowchart: ... After the successful completion of this cycle, we get the desired features, and we have finally tested them also. The feature subset selection process involves identifying and selecting a subset of relevant features from a given dataset. It aims to improve model performance, reduce overfitting, and enhance interpretability.",
+      "Also, a model built on an extremely high number of features may be very difficult to understand. For these reasons, it is necessary to take a subset of the features instead of the full set. So we can deduce that the objectives of feature selection are: Having a faster and more cost-effective (less need for computational resources) learning model"
+    ],
+    "title": "Feature Subset Selection Process | GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/feature-subset-selection-process/"
+  },
+  {
+    "description": "A benchmark dataset is a standard set of data used to evaluate the performance of machine learning models. These dataset",
+    "favicon_url": "https://you.com/favicon?domain=zilliz.com&size=128",
+    "snippets": [
+      "A benchmark dataset is a standard set of data used to evaluate the performance of machine learning models. These datasets are crucial because they provide a consistent way to measure how well a model performs on specific tasks. By using benchmark datasets, developers can compare their models against others that have been trained on the same data, allowing for fair assessments.",
+      "For instance, if a new deep learning architecture achieves better accuracy on the ImageNet dataset, it can be easily compared to existing models, helping the developer community stay updated on advancements. Additionally, benchmark datasets help in setting standards for model evaluation.",
+      "For example, if a developer notices that their model performs well on a benchmark dataset but poorly in real-world scenarios, it provides a clear direction for further investigations. Overall, benchmark datasets play a vital role in the iterative process of model development and deployment."
+    ],
+    "title": "What is a benchmark dataset, and why is it important for model ...",
+    "url": "https://zilliz.com/ai-faq/what-is-a-benchmark-dataset-and-why-is-it-important-for-model-evaluation"
+  },
+  {
+    "description": "Guide to comparing machine learning models and algorithms, focusing on the challenge of selection and parameters comparison.",
+    "favicon_url": "https://you.com/favicon?domain=neptune.ai&size=128",
+    "snippets": [
+      "It can be applied to most generic problems but is not very useful when it comes to unbalanced datasets. For instance, if we\u2019re detecting fraud in bank data, the ratio of fraud to non-fraud cases can be 1:99. In such cases, if accuracy is used, the model will turn out to be 99% accurate just by predicting all the test cases as non-fraud.  \u00b7 This is not desirable since for new samples, the model would not generalize well (failing to detect fraud in new data).",
+      "We need to narrow down our techniques by thoroughly comparing machine learning models with parallel experiments. A well-planned approach is necessary to understand how to choose the right combination of algorithms and the data at hand. So, in this article, we will explore how to approach comparing ML models and algorithms.",
+      "Validation learning curve \u2013 In this curve, the evaluation metric score is plotted against time on the validation set.  \u00b7 Sometimes the training curve might show an improvement but the validation curve shows stunted performance. This may indicate that the model is overfitting and needs to be reverted to the previous iterations. In other words, the validation learning curve identifies how well the model is generalizing.",
+      "Let\u2019s dive right into analyzing and understanding how to compare the different characteristics of algorithms that can be used to sort and choose the best machine learning models. I divided the comparable parameters into two high-level categories: ... On a fundamental level, machine learning models are statistical equations that run at great speed on multiple data points to arrive at a conclusion. Therefore, conducting statistical tests on the algorithms is critical to set them right and also to understand if the model\u2019s equation is the right fit for the dataset at hand."
+    ],
+    "title": "How to Compare Machine Learning Models and Algorithms",
+    "url": "https://neptune.ai/blog/how-to-compare-machine-learning-models-and-algorithms"
+  },
+  {
+    "description": "Posted by u/SignificanceLivid974 - 1 vote and 5 comments",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Sorry if this question is stupid but can anyone tell me what benchmark means in ML? is it equal to dataset? paper link\u2026",
+      "Sorry if this question is stupid but can anyone tell me what benchmark means in ML? is it equal to dataset? paper link: https://arxiv.org/abs/1902.10811 Share ... You are basically correct, though I would not call any dataset a benchmark. Benchmarks are usually few selected datasets that have been used many times to measure the performance of new models and especially to compare them to previous approaches.",
+      "Beginners -> /r/mlquestions or /r/learnmachinelearning , AGI -> /r/singularity, career advices -> /r/cscareerquestions, datasets -> r/datasets ... Ask a question about statistics (other than homework). Don't solicit academic misconduct. Don't ask people to contact you externally to the subreddit. Use informative titles.",
+      "in machine learning research, a \"benchmark\" usually refers to a process for evaluating what the current state of the art is (best algorithm or sometimes even best specific checkpoint) for accomplishing a particular task. this generally includes specifying a dataset, but also a particular task or set of tasks to be performed on the dataset and specifications for how to score the result."
+    ],
+    "title": "r/MLQuestions on Reddit: benchmark = dataset?",
+    "url": "https://www.reddit.com/r/MLQuestions/comments/12bddpw/benchmark_dataset/"
+  },
+  {
+    "description": "In subject area: Computer Science \u00b7 A benchmarking dataset refers to a set of protein-ligand complexes used to evaluate and compare the performance of computational methods in predicting protein structures and interactions",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "(12), the quality of the synthetic hazy image is highly correlated to the accuracy of scene depth. Consequently, acquiring depth information becomes an essential problem for hazy image synthesis. Some datasets are built upon other datasets that contain indoor depth information. For instance, the D-HAZY dataset [213] uses the clean images with depth information in Middlebury [221] and NYU-Depth V2 [176] to synthesize hazy images. The ITS subset of RESIDE [211] is built upon the NYU- Depth V2 [222]. An advantage of using indoor images is that the depth information measured by the depth camera is relatively more accurate in the indoor environment.",
+      "Consequently, the images solely trained on synthetic images often generalize poorly on real hazy images (see Table 3). ... This section provides an overview about the basic resources that are used to evaluate and compare ATS systems. These resources include the well-known and standard datasets besides the manual criteria and automatic summary evaluation tools.",
+      "To get access to these datasets, it is required to complete some application forms that exist on the DUC website.1 These datasets are usually used to evaluate the ATS systems but they do not provide enough data to train the neural networks models (Lin & Ng, 2019).",
+      "However, human efforts are still needed by the automated evaluation metrics because they depend on the comparison of system-generated summaries with one or more human-created model summaries (Lloret et al., 2017). ... In Dernoncourt et al. (2018), Dernoncourt et al. provide an overview of many corpora that have been used in the summarization tasks. This survey presents the most common benchmarking datasets which have been used for the ATS systems evaluation as shown in Table 5 including:"
+    ],
+    "title": "Benchmarking Dataset - an overview | ScienceDirect Topics",
+    "url": "https://www.sciencedirect.com/topics/computer-science/benchmarking-dataset"
+  },
+  {
+    "description": "A concise explanation of the differences between ML training, validation and test sets | How to include enough data to train machine learning models.",
+    "favicon_url": "https://you.com/favicon?domain=kili-technology.com&size=128",
+    "snippets": [
+      "Still, in most practical applications, validation sets play a crucial role in ensuring the model's robustness and performance. The final step is to use a test set to verify the model's functionality. Some publications refer to the validation dataset as a test set, especially if there are only two subsets instead of three. Similarly, if records in this final test set have not formed part of a previous evaluation or cross-validation, they might also constitute a holdout set.",
+      "In contrast, validation datasets contain different samples to evaluate trained ML models. It is still possible to tune and control the model at this stage. Working on validation data is used to assess the model performance and fine-tune the parameters of the model. This becomes an iterative process wherein the model learns from the training data and is then validated and fine-tuned on the validation set. A validation dataset tells us how well the model is learning and adapting, allowing for adjustments and optimizations to be made to the model's parameters or hyperparameters before it's finally put to the test.",
+      "Accurate training data helps the model learn the right patterns, validation data helps developers fine-tune the model correctly, and test data provides trustworthy metrics so they can confidently deploy their AI solution. Training, validation, and test data sets are three subsets of data used in machine learning. Training data set: This is the largest subset used to train the model by adjusting its parameters. It helps the model learn the underlying patterns in the data. Validation data set: We use this set to provide an unbiased evaluation of the model during the training phase.",
+      "Other methods of cross-validation are Stratified K-Fold cross-validation to guarantee a suitable representation of each class and avoid bias, Leave-P-Out cross-validation, which is ideally used for smaller sample sizes because of its high computational demands, and Rolling cross-validation for time series-based data. Like other areas of IT, machine learning algorithms follow the time-tested principle of GIGO: garbage in, garbage out. So, to ensure reliable and robust algorithms, the following three components are necessary: Quantity. Sufficient data is important for the model to learn how to interact with users."
+    ],
+    "title": "The Differences Between Training, Validation & Test Datasets",
+    "url": "https://kili-technology.com/training-data/training-validation-and-test-sets-how-to-split-machine-learning-data"
+  },
+  {
+    "description": "Hi all, I\u2019m using the run_mlm.py script. My evaluation set is \u201ctoo large\u201d (i.e., takes too long to run through the entire evaluation set, every n steps of training); so I was hoping to sub-sample from the evaluation set during training. Is there a simple way to extend or use the Trainer ...",
+    "favicon_url": "https://you.com/favicon?domain=discuss.huggingface.co&size=128",
+    "snippets": [
+      "Hi all, I\u2019m using the run_mlm.py script. My evaluation set is \u201ctoo large\u201d (i.e., takes too long to run through the entire evaluation set, every n steps of training); so I was hoping to sub-sample from the evaluation set during training. Is there a simple way to extend or use the Trainer with custom logic for sub-sampling examples from the provided eval_dataset?",
+      "Hi all, I\u2019m using the run_mlm.py script. My evaluation set is \u201ctoo large\u201d (i.e., takes too long to run through the entire evaluation set, every n steps of training); so I was hoping to sub-sample from the evaluation se\u2026"
+    ],
+    "title": "Evaluate subset of data during training - \ud83e\udd17Transformers - Hugging ...",
+    "url": "https://discuss.huggingface.co/t/evaluate-subset-of-data-during-training/10952"
+  },
+  {
+    "description": "Research on different machine learning (ML) has become incredibly popular during the past few decades. However, for some researchers not familiar with statistics, it might be difficult to understand how to evaluate the performance of ML models and compare them with each other.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Scientific Reports - Evaluation metrics and statistical tests for machine learning",
+      "In a regression problem, a model is used predict instances whose values are real numbers rather than categorical. This is the case when predicting, for instance, height, stock prices, voter turnout, or rainfall amount. Here, we denote the real value of the ith instance in a test set of n instances by \\(x_i\\) and its predicted value by \\(y_i\\) for \\(i=1,\\ldots ,n\\). One way to evaluate the model is to measure correlation between the real and the predicted values12. The most well-known method for this is Pearson\u2019s correlation coefficient, defined as",
+      "The choice of the exact test depends the task of the models, the evaluation metric used, and the number of test sets available. As some metrics produce only one value from a single test set and there might be only one data set, some type of resampling, such as repeated cross-validation, is often necessary. Because of this, the well-known tests such the paired t-test underestimate variance and do not produce reliable results.",
+      "A model that consistently obtains high values in some evaluation metric is better than a model whose performance varies greatly on different iteration rounds. However, it must be taken into careful consideration here how the multiple values of the evaluation metric are obtained before considering their variance. For instance, if we use repeated cross-validation, we will not obtain a realistic estimate how the performance of a model would vary over different data sets."
+    ],
+    "title": "Evaluation metrics and statistical tests for machine learning | ...",
+    "url": "https://www.nature.com/articles/s41598-024-56706-x"
+  },
+  {
+    "description": "While this study presented an exhaustive evaluation of the different models over 111 datasets, it still has several limitations. First, the choice to include diverse datasets, in contrast to several previous benchmarks, has many advantages but also some disadvantages. For example, including small datasets could introduce more noise into the results. In addition, including many types of datasets inevitably means each type will have fewer instances...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The original and revised rankings for these 10 datasets are summarized in Table 7. While the ranking of some DL models (AutoGluon-DL and ResNet) improves in the smaller datasets, TE models still dominate this set. Although this is a relatively small sample of 10 datasets, it provides further evidence that sample size is an important factor but does not determine which model will have the best performance by itself.",
+      "Ensuring their inclusion allows our benchmark to accurately reflect real-world complexities and facilitates an assessment of how well different models handle such features. Moreover, we ensured that our dataset selection varies in terms of difficulty, with some datasets presenting straightforward predictive tasks while others pose more complex challenges with respect to model prediction accuracy. This varying degree of difficulty ensures that our benchmark can comprehensively evaluate and differentiate model performance across simpler as well as more challenging predictive tasks.",
+      "We evaluate 20 different model configurations, including 7 DL-based models, 7 Tree-based Ensemble models (TE), and 6 classical ML-based models, to ascertain their performance on tabular data. Based on these results, we adopted a meta-learning approach, profiling the properties of datasets where DL outperforms ML models. Our results reveal complex patterns while generic behavior like a small number of rows and a large number of columns as well as large kurtosis results in DL models outperforming ML models.",
+      "Provided detailed insights into the comparative performance of DL and ML models on a diverse set of tabular datasets. The remainder of this paper is structured as follows: Section 2 describes the datasets and methodologies used in our benchmarking experiments as well as the evaluation strategy and profiling method."
+    ],
+    "title": "A Comprehensive Benchmark of Machine and Deep Learning Across Diverse ...",
+    "url": "https://arxiv.org/html/2408.14817v1"
+  },
+  {
+    "description": "\u25b6\ufe0fYour comprehensive guide to machine learning datasets: definition, features, sources, and collection strategies.",
+    "favicon_url": "https://you.com/favicon?domain=labelyourdata.com&size=128",
+    "snippets": [
+      "Splitting your machine learning datasets into these three subsets is crucial for accurate model evaluation: ... Keep these subsets diverse and balanced to ensure your model learns and performs well across different scenarios. ... Finding the best datasets for machine learning can be challenging, but knowing where to look makes it easier. Below is a curated list of dataset sources, categorized by type and paired with practical use cases.",
+      "Testing: Unseen data evaluates the model's ability to generalize. Without the right data, even the best-designed algorithm won\u2019t work effectively. ... Organized into tables or rows, such as numerical values or categories. Example: sales data. Includes text, images, video, or audio. Example: social media posts or medical datasets for machine learning containing X-ray images. Choosing the right type depends on your project\u2019s goals. For instance, image recognition models require unstructured data, while forecasting tasks often rely on structured datasets.",
+      "The AI training dataset is the largest subset and forms the foundation of model development. The model uses this data to identify patterns, relationships, and trends. ... Large size for better learning opportunities. Diversity to avoid bias and improve generalization. Well-labeled for supervised learning tasks. Example: AI training datasets with annotated images train models to recognize objects like cars and animals. Purpose: To fine-tune the model. Validation datasets evaluate the model during training, helping you adjust parameters like learning rates or weights to prevent overfitting.",
+      "Government and open data are reliable for specific domains, but may not be comprehensive for advanced tasks. Corporate/domain-specific datasets are perfect for niche applications but can be expensive and restricted. Identify the type of data and the level of annotation required for your model. For smaller projects, start with open-source repositories."
+    ],
+    "title": "Machine Learning Datasets: A Complete 2025 Guide | Label Your Data",
+    "url": "https://labelyourdata.com/articles/machine-learning/datasets"
+  },
+  {
+    "description": "I am working on a breast cancer dataset (http://kdd.org/kdd-cup/view/kdd-cup-2008). I need to perform classification on the data using C4.5 algorithm, after doing any necessary pre-processing. A",
+    "favicon_url": "https://you.com/favicon?domain=datascience.stackexchange.com&size=128",
+    "snippets": [
+      "I am working on a breast cancer dataset (http://kdd.org/kdd-cup/view/kdd-cup-2008). I need to perform classification on the data using C4.5 algorithm, after doing any necessary pre-processing. A section of the report that I have to write is \"benchmark models\" and I have no idea what that means. I googled the term and it doesn't seem to be something well defined in data mining.",
+      "If the field is well studied, you should probably benchmark against the current published state of the art (and possibly against human performance when relevant). ... Find the answer to your question by asking. Ask question ... See similar questions with these tags. ... Inviting more thoughts: Do these challenges resonate beyond Stack Overflow?... Two New Chat Rooms Experiment Geared Towards New Users ... 2 Manually creating plants images dataset for machine learning plant type classification and leaf segmentation",
+      "0 How to improve the accuracy of my MLP (Current benchmark 77%) 1 Machine Learning - Input Prepocessing - NLP email classification model \u00b7 1 what happens to the sample points on pruned leaves ... Is it a conflict of interest to write a paper for research done with an organization you are head of? Why does my 3 year old custard apple tree keep dropping flowers without setting fruit? Who does fermata give more power to, the soloist or the conductor?"
+    ],
+    "title": "data mining - What is a benchmark model? - Data Science Stack Exchange",
+    "url": "https://datascience.stackexchange.com/questions/8785/what-is-a-benchmark-model"
+  },
+  {
+    "description": "Discover how benchmark datasets drive AI innovation by enabling fair model evaluation, reproducibility, and progress in machine learning.",
+    "favicon_url": "https://you.com/favicon?domain=www.ultralytics.com&size=128",
+    "snippets": [
+      "Test Data: Used after the model is fully trained to provide a final, unbiased evaluation of its performance on unseen data. Benchmark datasets often serve as standardized test sets for comparing different models developed independently. While a benchmark dataset can be used as a test set, its primary purpose is broader: to provide a common standard for comparison across the entire research community, often facilitated by public leaderboards associated with challenges like the ImageNet Large Scale Visual Recognition Challenge (ILSVRC).",
+      "A benchmark dataset is a standardized collection of data used to evaluate and compare the performance of machine learning (ML) models. These datasets are crucial in artificial intelligence (AI) development, providing a consistent and objective baseline for measuring how well different algorithms perform on specific tasks.",
+      "Clear Annotations: The data must be accurately and consistently labeled (data labeling) according to well-defined guidelines. Standardized Evaluation Metrics: Benchmarks usually come with specific metrics (e.g., accuracy, mAP, IoU) and evaluation protocols to ensure consistent comparisons. Accessibility: They should be readily available to the research community, often through public repositories or challenges. Benchmark datasets are widely used across various AI and deep learning (DL) tasks, including:",
+      "Object Detection: Datasets like COCO, PASCAL VOC, and Open Images V7 are standard for evaluating models that locate and classify objects in images. Image Classification: ImageNet is perhaps the most famous benchmark, driving significant advances in classifying images into predefined categories. Others include CIFAR-10 and MNIST. Instance Segmentation: Tasks requiring pixel-level object outlines often use benchmarks like COCO or LVIS."
+    ],
+    "title": "Benchmark Datasets: ML Model Evaluation | Ultralytics",
+    "url": "https://www.ultralytics.com/glossary/benchmark-dataset"
+  },
+  {
+    "description": "Warm-Start Your Vision Project: 10 Robust Datasets for Pre-Fine-Tuning",
+    "favicon_url": "https://you.com/favicon?domain=scale.com&size=128",
+    "snippets": [
+      "Pont-Tuset, J., Perazzi, F., Caelles, S., Arbel\u00e1ez, P., Sorkine-Hornung, A., & Van Gool, L. (2017). The 2017 davis challenge on video object segmentation. arXiv preprint arXiv:1704.00675. ... DAVIS stands for Densely Annotated VIdeo Segmentation and comprises a data set of 150 videos split into training, evaluation and testing. It is a state of the art benchmark dataset for object segmentation in videos and has been part of several challenges.",
+      "The dataset contains 150 short scenes with about 13,000 individual frames that are split into training, validation and testing. Challenge evaluations are available for supervised (human annotated), semi-supervised and unsupervised approaches. ... Song, S., Lichtenberg, S. P., & Xiao, J. (2015). Sun rgb-d: A rgb-d scene understanding benchmark suite.",
+      "The dataset came to prominence in 2012 when AlexNet achieved a top-5 error rate at 16% in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC). This was almost 11% better than the closest competitor and made headlines as it became clear that neural networks might soon be able to outperform human perception on object recognition tasks. Today, ImageNet is still used as a common benchmark for any researcher or practitioner working on visual object detection.",
+      "This practice of systematically building datasets to achieve better model performance is often referred to as data-centric AI. In the beginning however, most users don't have a lot of data on their own. So how can you get started? A good place to kick-off is typically a large public dataset.  \u00b7 However, there are thousands of amazing public datasets available to choose from, which is why we took it upon ourselves to curate the best public datasets for the most common problems and tasks in machine learning."
+    ],
+    "title": "Warm-Start Vision Projects with Robust Pre-Fine-Tuning Data | Scale",
+    "url": "https://scale.com/blog/best-10-public-datasets-object-detection"
+  },
+  {
+    "description": "In this session we will learn about benchmarks, which are experiments designed to measure the performance of algorithms, methodologies or statistical models. In particular, we will focus on classification problems. These are problems where data instances are assigned to a set of classes.",
+    "favicon_url": "https://you.com/favicon?domain=eead-csic-compbio.github.io&size=128",
+    "snippets": [
+      "Below, dataset B is split in three parts, with train + validation using during cross-validation and a test set to evaluate the final model: Cross-validation: model validation procedure based on repeatedly spliting a dataset in training and validation subsets. Partitions can be done in various ways, such as 80% training and validation, or P/P. A test set can still be used to independently measure performance on an independent dataset. Imbalanced dataset: Occurs when the number of data instances in each class is not balanced in the training dataset.",
+      "You shall write a R markdown report with source code and answers to the following questions: ... Do a 3-cross-validation benchmark as follows. Randomly split the data in two parts: 80% cross-validation (dataCV) + 20% test (dataT) With dataCV compute 3 iterations of cross-validation ... With dataT do a final benchmark and produce a table with AUC values from all iterations plus the final test \u00b7 Test and benchmark the final trained model with the dataset of white wines at test_data/white_wine_quality.csv .",
+      "Test set: Independent set of data used to measure the performance of a trained model or algorithm. If only one dataset is available then test and validations sets might be the same.",
+      "Data instance: individual observation within a data class. Example: a phenotype measurement on a plant, or from a single leaf. Training set: Set of data used to train a model or algorithm."
+    ],
+    "title": "Session 4: Benchmarks",
+    "url": "https://eead-csic-compbio.github.io/bioinformatics/session4.html"
+  },
+  {
+    "description": "Computational Intelligence Laboratory | Department of Informatics | Nicolaus Copernicus University \u00b7 Before using any new dataset it should be described here! Results from the Statlog project are here. Logical rules derived for data are here",
+    "favicon_url": "https://you.com/favicon?domain=www.is.umk.pl&size=128",
+    "snippets": [
+      "Magnus Stensmo and Terrence J. Sejnowski, A Mixture Model System for Medical and Machine Diagnosis, Advances in Neural Information Processing Systems 7 (1995) 1077-1084 \u00b7 Kristin P. Bennett, J. Blue, A Support Vector Machine Approach to Decision Trees, R.P.I Math Report No. 97-100, Rensselaer Polytechnic Institute, Troy, NY, 1997 \u00b7 Other results for this dataset (methodology sometimes uncertain): D.",
+      "Even the best accuracy and variance estimation is not sufficient, since performance cannot be characterized by a single number. It should be much better to provide full Receiver Operator Curves (ROC). Combining ROC with variance estimation would be ideal. Unfortunately this still remains to be done. All we can do now is to collect some numbers in tables.",
+      "Source: UCI, described in Forina, M. et al, PARVUS - An Extendible Package for Data Exploration, Classification and Correlation. Institute of Pharmaceutical and Food Analysis and Technologies, Via Brigata Salerno, 16147 Genoa, Italy. These data are the results of a chemical analysis of wines grown in the same region in Italy but derived from three different cultivars.",
+      "Leave-one-out tests have been criticized as a basis for accuracy evaluation, the conclusion is that crossvalidation is safer, cf: Kohavi, R. (1995). A study of cross-validation and bootstrap for accuracy estimation and model selection. In: Proc. of the 14th Int."
+    ],
+    "title": "Benchmark datasets used for classification: comparison of results",
+    "url": "http://www.is.umk.pl/~duch/projects/projects/datasets.html"
+  },
+  {
+    "description": "Learn how to create a selection of benchmark models for both classification and regression problems",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "Aside from accuracy, I included metrics that help to evaluate the performance in case of a class imbalance (the list is by no means exhaustive). For this article, I use the famous Iris dataset. To simplify the problem even further, I transform the multi-class problem into a binary classification, at the same time introducing class imbalance. The goal of the exercise will be to predict if a given plant belongs to the Versicolour class or \"other\" (Setosa or Virginica).",
+      "The results of the 'prior' and 'most_frequent' strategies are the same, so I do not show them again for brevity. It is worth mentioning that for all strategies the predict method completely ignores the input data, the values that will be used as predictions were determined during the fitting stage (or provided by us when using the 'constant' strategy). Having experimented with multiple strategies for creating a benchmark model, it is time to train a simple classifier and evaluate if it outperforms the benchmarks.",
+      "In this short article, I show how to use the DummyClassifier and explain the available heuristics. ... For this article, I write a simple function printing a few selected evaluation metrics to assess the model\u2019s performance.",
+      "Arguably the simplest variant of the dummy classifier. The idea is to replace all labels with a single value. A possible use case for this variant is when we want to evaluate a potential estimator in terms of the F1 Score, which is the harmonic mean of precision and recall."
+    ],
+    "title": "Creating benchmark models the scikit-learn way | Towards Data Science",
+    "url": "https://towardsdatascience.com/creating-benchmark-models-the-scikit-learn-way-af227f6ea977/"
+  }
+]

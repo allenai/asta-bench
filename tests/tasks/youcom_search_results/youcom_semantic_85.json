@@ -1,0 +1,282 @@
+[
+  {
+    "description": "Deep learning relies on learning from extensive data to generate prediction results. This approach may inadvertently capture spurious correlations within the data, leading to models that lack inter...",
+    "favicon_url": "https://you.com/favicon?domain=spj.science.org&size=128",
+    "snippets": [
+      "Deep learning relies on learning from extensive data to generate prediction results. This approach may inadvertently capture spurious correlations within the data, leading to models that lack interpretability and robustness. Researchers have developed ...",
+      "The importance of causal inference lies in its capacity to assist systems in gaining a better understanding of the relationships between events, discerning the causes and effects of events rather than solely focusing on the correlations between variables. For instance, in the context of autonomous driving tasks, when faced with accidents during autonomous driving tests, a model may analyze various variables contributing to the occurrence of accidents, such as road conditions, vehicle speed, and positions of other objects, and identify their correlations.",
+      "We analyzed various tasks based on deep learning and found that existing methods may face challenges such as poor generalization ability and low robustness [45], leading to reduced predictive performance in complex and novel datasets. The main reason for these issues is that most current learning models rely heavily on correlations between data rather than learning the causality within the data.",
+      "However, this learning approach is susceptible to learning spurious correlations within the data, thereby disregarding intrinsic causal relationships. Consequently, the accuracy and robustness of the model\u2019s discernment are compromised, impeding its ability to generalize across different domains."
+    ],
+    "title": "Causal Inference Meets Deep Learning: A Comprehensive Survey | ...",
+    "url": "https://spj.science.org/doi/10.34133/research.0467"
+  },
+  {
+    "description": "HTML conversions sometimes display errors due to content that did not convert correctly from the source. This paper uses the following packages that are not yet supported by the HTML conversion tool. Feedback on these issues are not necessary; they are known and are being worked on \u00b7 Authors: ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "A significant challenge in causal inference is discerning the distinct effects of concurrent actions. A key deterrent to determining causation is the assumption that causal effects cannot be reliably evaluated statistically [2], on account of the impracticality of knowing possible outcomes in the event of an alternative course of action.",
+      "We conclude the review with insights into potential challenges and promising avenues for future exploration in this rapidly evolving field of machine learning. Graph, Causality, Causal Learning, Graph Neural Networks, Causal Inference, Causal Discovery \u00b7 Exploration of causality is a foundation of machine learning, aiming to uncover the intricate relationships embedded within data features. Predominantly, the focus has been on identifying correlations and associations, such as the links between lifestyle choices and health outcomes.",
+      "Adversarial Learning (AL) is a machine learning technique that examines and devises defenses against adversarial attacks on models. Based on adversarial capability, attacks may be of the poisoning or evasion kinds. Poisoning attacks involve training time attacks that affect networks such as GNN through data poisoning.",
+      "This survey delivered a thorough examination of the state-of-the-art GNNs in the domain of causal learning. In recent years, there has been a surge in the use of GNN-based methods for causal learning, which has revolutionized the field. Drawing from our thorough research of peer-reviewed publications, it is evident that these GNN-based methods have amplified the efficiency, resilience, and versatility of causal learning."
+    ],
+    "title": "Exploring Causal Learning through Graph Neural Networks: An In-depth ...",
+    "url": "https://arxiv.org/html/2311.14994"
+  },
+  {
+    "description": "ABSTRACT In machine learning, exploring data correlations to predict outcomes is a fundamental task. Recognizing causal relationships embedded within data is pivotal for a comprehensive understandi...",
+    "favicon_url": "https://you.com/favicon?domain=wires.onlinelibrary.wiley.com&size=128",
+    "snippets": [
+      "We conclude the review with insights into potential challenges and promising avenues for future exploration in this rapidly evolving field of machine learning. Graphical abstract of the survey with a taxonomical approach to causal learning with graph neural networks. Exploration of causality forms the foundation of machine learning, aiming to uncover the intricate relationships embedded within data features. Predominantly, the focus has been on identifying correlations and associations, such as the links between lifestyle choices and health outcomes.",
+      "A significant challenge in causal inference is discerning the distinct effects of concurrent actions. A key deterrent to determining causation is the assumption that causal effects cannot be reliably evaluated statistically (Pearl 2000), on account of the impracticality of knowing possible outcomes in the event of an alternative course of action.",
+      "Linking correlation and causation in GNNs: A key challenge in using GNNs for causal learning is distinguishing between correlation and causation. Correlation alone is insufficient to establish causality; it requires both correlation and the assumption of a directed cause\u2013effect relationship.",
+      "To address this, methods such as structural equation modeling (SEM), causal graph learning, and do-calculus-based interventions can be integrated into GNNs (Jiao et al. 2024), enabling them to move from correlation to causation and improve causal modeling."
+    ],
+    "title": "Exploring Causal Learning Through Graph Neural Networks: An ...",
+    "url": "https://wires.onlinelibrary.wiley.com/doi/10.1002/widm.70024"
+  },
+  {
+    "description": "Deep learning relies on learning from extensive data to generate prediction results. This approach may inadvertently capture spurious correlations within the data, leading to models that lack interpretability and robustness. Researchers have ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "The importance of causal inference lies in its capacity to assist systems in gaining a better understanding of the relationships between events, discerning the causes and effects of events rather than solely focusing on the correlations between variables. For instance, in the context of autonomous driving tasks, when faced with accidents during autonomous driving tests, a model may analyze various variables contributing to the occurrence of accidents, such as road conditions, vehicle speed, and positions of other objects, and identify their correlations.",
+      "We analyzed various tasks based on deep learning and found that existing methods may face challenges such as poor generalization ability and low robustness [45], leading to reduced predictive performance in complex and novel datasets. The main reason for these issues is that most current learning models rely heavily on correlations between data rather than learning the causality within the data.",
+      "However, this learning approach is susceptible to learning spurious correlations within the data, thereby disregarding intrinsic causal relationships. Consequently, the accuracy and robustness of the model\u2019s discernment are compromised, impeding its ability to generalize across different domains.",
+      "Traditional approaches to real-world causal problems can be categorized into 2 types: statistics-based causality and logic-based causality [138]. Statistics-based causality is a data-driven approach that focuses on numerical relationships and correlations between variables. It infers causality by examining the statistical properties of these relationships and usually uses causal graphs to represent them."
+    ],
+    "title": "Causal Inference Meets Deep Learning: A Comprehensive Survey - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11384545/"
+  },
+  {
+    "description": "Learn how causal AI changes decision-making by revealing cause-and-effect relationships, enabling smarter, more strategic choices in healthcare, finance, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.neilsahota.com&size=128",
+    "snippets": [
+      "They have no self-reporting mechanisms and no way to scrutinize the increasingly complex algorithms behind their outputs. This \u201cblack box\u201d nature makes it challenging to discern the factors influencing individual results, leading to difficulty fully trusting AI outputs.",
+      "Currently, its technology faces higher error rates, especially in areas with insufficient training data, but these are expected to decrease as it matures. A significant challenge in decision-making is achieving rapid, intuitive thinking while ensuring actions are well-grounded.",
+      "Causal AI can significantly enhance treatment selection processes within healthcare systems by analyzing patient outcomes from different medications over time. It examines historical records of individuals with similar health conditions who received various treatments.",
+      "Knowing which steps to take now to optimize future outcomes is incredibly valuable but challenging, requiring AI technology with human-like reasoning. Current models rely heavily on correlations, which aren\u2019t enough to understand the impact of potential actions on our goals."
+    ],
+    "title": "Causal AI: Bridging the Gap Between Correlation and Causation \u00b7 ...",
+    "url": "https://www.neilsahota.com/causal-ai-bridging-the-gap-between-correlation-and-causation/"
+  },
+  {
+    "description": "Most machine learning-based methods predict outcomes rather than understanding causality. Machine learning methods have been proved to be efficient in findin...",
+    "favicon_url": "https://you.com/favicon?domain=www.frontiersin.org&size=128",
+    "snippets": [
+      "Corrigendum: Machine Learning for Causal Inference in Biological Networks: Perspectives of This Challenge ... Most machine learning-based methods predict outcomes rather than understanding causality. Machine learning methods have been proved to be efficient in finding correlations in data, but unskilful to determine causation.",
+      "Drug Repurposing Using Biological Networks. Processes 9, 1057. doi:10.3390/pr9061057 ... Spirtes, P., Glymour, C., and Scheines, R. (1993). Causation, Prediction, and Search, Second Edition. Cambridge, MA: MIT Press, 543. ... Sun, Y. V., and Kardia, S. L. (2008). Imputing Missing Genotypic Data of Single-Nucleotide Polymorphisms Using Neural Networks.",
+      "Given the increasing popularity of machine learning techniques in computational biology and the recent literature proposing the use of machine learning techniques for the inference of biological networks, we would like to present the challenges that mathematics and computer science research faces in generalising machine learning to an approach capable of understanding causal relationships, and the prospects that achieving this will open up for the medical application domains of systems biology, the main paradigm of which is precisely network biology at any physical scale.",
+      "These are the challenges of current machine learning approaches and should be distinguished from the challenges faced by users of these approaches, such as for instance: ... Not in all areas of application of computational biology, we can count among the challenges of relevance to the user of machine learning, the collection of high-dimensional data samples, as this is not always experimentally feasible and could often be very expensive. For this reason, when dealing with biological networks, which can be not only gene networks (where indeed in the last decade the volume and heterogeneity of t"
+    ],
+    "title": "Frontiers | Machine Learning for Causal Inference in Biological ...",
+    "url": "https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2021.746712/full"
+  },
+  {
+    "description": "Correlation does not imply causation; but often, observational data are the only option, even though the research question at hand involves causality. This arti...",
+    "favicon_url": "https://you.com/favicon?domain=journals.sagepub.com&size=128",
+    "snippets": [
+      "Correlation does not imply causation; but often, observational data are the only option, even though the research question at hand involves causality. This article discusses causal inference based ...",
+      "Correlation and causation in the study of personality. European Journal of Personality, 26, 372\u2013390. ... Mohan K., Pearl J., Tian J. (2013). Graphical models for inference with missing data. In Burges C. J. C., Bottou L., Welling M., Ghahramani Z., Weinberger K. Q. (Eds.), Advances in Neural Information Processing Systems 26 (NIPS 2013) (pp.",
+      "Parachute use to prevent death and major trauma related to gravitational challenge: Systematic review of randomised controlled trials. British Medical Journal, 327, Article 1459. ... Spector P. E., Brannick M. T. (2011). Methodological urban legends: The misuse of statistical control variables. Organizational Research Methods, 14, 287\u2013305. ... Spirtes P., Glymour C. N., Scheines R. (2000). Causation, prediction, and search.",
+      "From this DAG, various paths can be discerned by traveling along arrows from node to node. In the simplest case, a path leads just from one node to the next one; an example is the path intelligence \u2192 income. Paths can also include multiple nodes. For example, intelligence and income are additionally connected by the paths intelligence \u2192 educational attainment \u2192 income and intelligence \u2192 grades \u2192 educational attainment \u2192 income."
+    ],
+    "title": "Thinking Clearly About Correlations and Causation: Graphical Causal ...",
+    "url": "https://journals.sagepub.com/doi/full/10.1177/2515245917745629"
+  },
+  {
+    "description": "Semiparametric efficient estimation of various multi-valued causal effects, including quantile treatment effects, is important in economic, biomedical\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [],
+    "title": "Causal inference of general treatment effects using neural networks ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0304407623002713"
+  },
+  {
+    "description": "Physics is a field of science that has traditionally used the scientific method to answer questions about why natural phenomena occur and to make test\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "This review demonstrates that discovering fundamental laws and causal relations by observing natural phenomena is revolutionised with the efficient exploitation of observational data and simulations, modern machine learning algorithms and the combination with domain knowledge. Exciting times are ahead with many challenges and opportunities to improve our understanding of complex systems.",
+      "With the advent of big data and data-driven methods, the fields of causal and equation discovery have developed and accelerated progress in computer science, physics, statistics, philosophy, and many applied fields. This paper reviews the concepts, methods, and relevant works on causal and equation discovery in the broad field of physics and outlines the most important challenges and promising future lines of research."
+    ],
+    "title": "Discovering causal relations and equations from data - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0370157323003411"
+  },
+  {
+    "description": "Causal learning is a key challenge in scientific artificial intelligence as it allows researchers to go beyond purely correlative or predictive analyses towards learning underlying cause-and-effect relationships, which are important for scientific understanding as well as for a wide range of ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Causal learning is a key challenge in scientific artificial intelligence as it allows researchers to go beyond purely correlative or predictive analyses towards learning underlying cause-and-effect relationships, which are important for scientific understanding as well as for a wide range of downstream tasks. Here, motivated by emerging biomedical questions, we propose a deep neural architecture for learning causal relationships between variables from a combination of high-dimensional data and prior causal knowledge.",
+      "Learning causal relationships between variables in large datasets is an outstanding challenge in various scientific applications. Lagemann et al. introduce a deep neural network approach combining convolutional and graph models intended for causal learning in high-dimensional biomedical problems.",
+      "Nature Machine Intelligence - Learning causal relationships between variables in large datasets is an outstanding challenge in various scientific applications. Lagemann et al. introduce a deep...",
+      "Scaling causal structure learning to larger problems has been facilitated by reformulation as a continuous optimization problem11, and recent neural approaches, such as SDI12, DCDI13, DCD-FG14 and ENCO15, have demonstrated state-of-the-art performance (Supplementary section 1 provides a detailed discussion). However, learning causal structures from data remains nontrivial and continues to pose challenges, particularly under the conditions (high dimensionality, limited data sizes and hidden variables, for example) seen in many real-world problems. In biomedicine, causal networks representing the interplay between entities such as genes or proteins play a central conceptual and practical role."
+    ],
+    "title": "Deep learning of causal structures in high dimensions under data ...",
+    "url": "https://www.nature.com/articles/s42256-023-00744-z"
+  },
+  {
+    "description": "Using artificial intelligence to predict behavior can lead to devastating policy mistakes. Health and development programs must learn to apply causal models that better explain why people behave the way they do to help identify the most effective levers for change.",
+    "favicon_url": "https://you.com/favicon?domain=ssir.org&size=128",
+    "snippets": [
+      "But for black patients, higher rates of illness did not in general lead to higher costs, and the algorithm would not accurately predict their future health-care needs. There was correlation but not causation. This matters as the world increasingly turns to AI to help solve pressing health and development challenges.",
+      "And by integrating causal AI with human expertise, programs can avoid the mistakes that arise when people\u2014or the machines or software that they create\u2014ignore crucial context or fall into the trap of mistaking correlation for causation. Ultimately, knowing the \u201cwhy\u201d behind complex problems helps us to understand how the world really operates and, in turn, to identify the right actions to achieve desired outcomes. We may yet find that an ounce of causal AI is worth a pound of prediction. Support SSIR\u2019s coverage of cross-sector solutions to global challenges.",
+      "We then used a causal Bayesian network to discover the variables driving this behavior and identify which were the most promising targets for a public health intervention. A broad set of variables was correlated with delivering in a health-care facility, but causal AI identified the direct causes. To our surprise, and counter to common belief, the mother\u2019s proximity to a health-care facility was not one of them\u2014but access to transportation was. This suggested that the government should solve transportation issues rather than building more health facilities closer to families.",
+      "In theory, the score makes it possible for a judge to focus on incarcerating those more likely to commit additional crimes, and it should even help to remove potential bias in sentencing. But recidivism scores are inherently faulty because they are based on risk-assessment tools that pick up statistical correlations rather than causations."
+    ],
+    "title": "The Case for Causal AI (SSIR)",
+    "url": "https://ssir.org/articles/entry/the_case_for_causal_ai"
+  },
+  {
+    "description": "Neural networks have revolutionized computer science by modeling complex data relationships, yet the need to elucidate their predictions and understand underlying causality grows increasingly\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Moreover, employing do-calculus exposes GNNs\u2019 limitations in discerning precise causal relationships, underscoring the importance of causal inference for improving neural networks\u2019 predictive power. This study advocates for deeper integration of causal inference into neural network research to foster more interpretable and reliable AI systems, suggesting future exploration of diverse datasets and model architectures to validate and extend these findings.",
+      "As these networks continue to proliferate in decision-making processes, output explanation and gaining a deeper understanding of the causality behind their predictions become increasingly essential. The distinction between correlation and causation is not merely philosophical; it creates the foundation for building robust, interpretable, and ethically sound AI systems.",
+      "Graph Neural Networks and Bayesian Networks perform well when handling complex structured data that consists of underlying causal relationships and do calculus operations. By examining these models more closely, we can assess their predictive power in capturing these underlying do-calculus operations.",
+      "This project seeks to examine how neural networks can be used to perform do-calculus and causal inference. Graph neural networks have gained significant popularity in their ability to handle complex relationships and capture meaningful node representations. These networks achieve successful results in both computational efficiency and accuracy, with a Transformer convolutional layer model leading in performance."
+    ],
+    "title": "Causal Inference with Graph Neural Networks | by Dallin Stewart ...",
+    "url": "https://medium.com/@dallinpstewart/causal-inference-with-graph-neural-networks-92a9b83c382c"
+  },
+  {
+    "description": "Research into the neural underpinning of intelligence has mainly adopted a construct perspective: trying to find structural and functional brain chara\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "IQ biomarkers based on the j-function and metastable brain states are suggested. Research into the neural underpinning of intelligence has mainly adopted a construct perspective: trying to find structural and functional brain characteristics that would accommodate the psychological concept of g.",
+      "Correlational studies have adopted two approaches: (1) individuals are examined at rest, and correlation analyses are used to examine associations between different measures of brain structure (obtained with Magnetic Resonance Imaging \u2013 MRI, PET, Diffusion Tensor Imaging \u2013 DTI) and IQ test measures.",
+      "Whenever writing about predictions in science, the first landing on the Moon pops into my mind. Why? Because it is a scholarly example of false predictions. In 1969 it was seriously estimated that by the end of the century we will face lunar colonies living in bases build on the Moon, and missions to orbit or even land on Mars.",
+      "Based on functional studies of the brain intelligence relationship three theories have been put forward: the neural efficiency, the P-FIT and the multi demand (MD) system theory. On the other hand, The Network Neuroscience Theory of g, based on methods from mathematics, physics, and computer science, is an example for the brain perspective on neurobiological underpinning of intelligence."
+    ],
+    "title": "The neural code of intelligence: From correlation to causation ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1571064519301563"
+  },
+  {
+    "description": "Observational studies using causal inference frameworks can provide a feasible alternative to randomized controlled trials. Advances in statistics, machine learning, and access to big data facilitate unraveling complex causal relationships from observational data across healthcare, social sciences, ...",
+    "favicon_url": "https://you.com/favicon?domain=bmcmedresmethodol.biomedcentral.com&size=128",
+    "snippets": [
+      "Observational studies using causal inference frameworks can provide a feasible alternative to randomized controlled trials. Advances in statistics, machine learning, and access to big data facilitate unraveling complex causal relationships from observational data across healthcare, social sciences, and other fields.",
+      "On the other hand, the POF framework (also known as the counterfactual framework) examines outcomes that would have likely been observed had the treatment differed, representing the counterfactual or the missing outcome. Other frameworks such as instrumental variables, mediation analysis, and Bayesian networks are also noteworthy in causal inference research [6].",
+      "Advances in statistics, machine learning, and access to big data facilitate unraveling complex causal relationships from observational data across healthcare, social sciences, and other fields. However, challenges like evaluating models and bias amplification remain.",
+      "Numerous real-world scenarios entail complex systems comprising multiple interacting variables. Advances in causal inference are instrumental in unraveling causal relationships in such systems. The availability of large-scale datasets presents both opportunities and challenges for causal inference."
+    ],
+    "title": "Causal inference and observational data | BMC Medical Research ...",
+    "url": "https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-023-02058-5"
+  },
+  {
+    "description": "Research into the neural underpinning of intelligence has mainly adopted a construct perspective: trying to find structural and functional brain characteristics that would accommodate the psychological concept of g. Few attempts have been made to explain intelligence exclusively based on brain ...",
+    "favicon_url": "https://you.com/favicon?domain=pubmed.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Research into the neural underpinning of intelligence has mainly adopted a construct perspective: trying to find structural and functional brain characteristics that would accommodate the psychological concept of g. Few attempts have been made to explain intelligence exclusively based on brain chara \u2026",
+      "Based on functional studies of the brain intelligence relationship three theories have been put forward: the neural efficiency, the P-FIT and the multi demand (MD) system theory. On the other hand, The Network Neuroscience Theory of g, based on methods from mathematics, physics, and computer science, is an example for the brain perspective on neurobiological underpinning of intelligence.",
+      "To date the best consensus based on the diversity of results reported would be that g is predominantly determined by lateral prefrontal attentional control of structured sensory episodes in posterior brain areas. The capacity of flexible transitions between these network states represents the essence of intelligence - g.",
+      "In this framework network flexibility and dynamics provide the foundation for general intelligence."
+    ],
+    "title": "The neural code of intelligence: From correlation to causation ...",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31706924/"
+  },
+  {
+    "description": "Individual Treatment Effect Estimation using a Residual Neural Network Architecture",
+    "favicon_url": "https://you.com/favicon?domain=humboldt-wi.github.io&size=128",
+    "snippets": [
+      "In both of these parts, two-model approaches using Random Forest Models, regression or neural networks will compared to the Residual model, that will be introduced in chapter 4.3. Additionally, this Residual model is adapted for the task to predict the probability of customers conversion in chapter 5.2. To show, that the model examines treatment effects, a placebo experiment will be showed in chapter 6, before the results of our tests will be summarized in the last part of our blogpost. Despite all the aggravating circumstances we face, there are several ways to estimate individual treatment effects.",
+      "To examine, whether our model really is able to detect causal effects, we did a placebo experiment as described in Farrell, Liang and Misra (2019). So for the test, we selected all customers without a treatment and randomly assigned them to a group $T=0$ or $T=1$, which is our placebo group in this experiment.",
+      "Afterwards the residual model was again trained on predicting the individual treatment effect considering the checkout amount. One can see easily in the plot beneath on the right side, that the Residual model that was trained on the placebo group examined, that there was no treatment effect.",
+      "In the last part of our blogpost, to prove that the Residual Model really examines individual treatment effects, we showed a placebo experiment, where we trained the Residual Model on a dataset where no customer was treated."
+    ],
+    "title": "Causal Neural Networks",
+    "url": "https://humboldt-wi.github.io/blog/research/information_systems_1920/group5_causal_neural_networks/"
+  },
+  {
+    "description": "Two or more variables considered to be related, in a statistical context, if their values change so that as the value of one variable increases or decreases so does the value of the other variable (although it may be in the opposite direction) \u00b7 For example, for the two variables \"hours worked\" ...",
+    "favicon_url": "https://you.com/favicon?domain=www.abs.gov.au&size=128",
+    "snippets": [
+      "The correlation coefficient should not be used to say anything about cause and effect relationship. By examining the value of 'r', we may conclude that two variables are related, but that 'r' value does not tell us if one variable was the cause of the change in the other.",
+      "Causation indicates that one event is the result of the occurrence of the other event; i.e. there is a causal relationship between the two events.",
+      "Due to ethical reasons, there are limits to the use of controlled studies; it would not be appropriate to use two comparable groups and have one of them undergo a harmful activity while the other does not. To overcome this situation, observational studies are often used to investigate correlation and causation for the population of interest."
+    ],
+    "title": "Correlation and causation | Australian Bureau of Statistics",
+    "url": "https://www.abs.gov.au/statistics/understanding-statistics/statistical-terms-and-concepts/correlation-and-causation"
+  },
+  {
+    "description": "Correlation means there is a statistical association between variables. Causation means that a change in one variable causes a change in another variable.",
+    "favicon_url": "https://you.com/favicon?domain=www.scribbr.com&size=128",
+    "snippets": [
+      "Correlation means variables are statistically associated. Causation means that a change in one variable causes a change in another.",
+      "In research, you might have come across the phrase \u201ccorrelation doesn\u2019t imply causation.\u201d Correlation and causation are two related ideas, but understanding their differences will help you critically evaluate sources and interpret scientific research.",
+      "The Theory of the Stork draws a simple causal link between the variables to argue that storks physically deliver babies. This satirical study shows why you can\u2019t conclude causation from correlational research alone.",
+      "While causation and correlation can exist simultaneously, correlation does not imply causation. In other words, correlation is simply a relationship where A relates to B\u2014but A doesn\u2019t necessarily cause B to happen (or vice versa)."
+    ],
+    "title": "Correlation vs. Causation | Difference, Designs & Examples",
+    "url": "https://www.scribbr.com/methodology/correlation-vs-causation/"
+  },
+  {
+    "description": "Abstract Causal inference is a key step in many research endeavors in cognitive science and neuroscience, and particularly cognitive neuroscience. Statistical knowledge is sufficient for prediction...",
+    "favicon_url": "https://you.com/favicon?domain=wires.onlinelibrary.wiley.com&size=128",
+    "snippets": [
+      "Argument for using better causal inference methods.",
+      "Nonetheless, it captures much of what matters about causation in the cognitive and neural sciences, including for (many) explanations, predictions, and both laboratory and clinical interventions. All causal knowledge, including this relatively agnostic type, can be notoriously difficult to acquire. As every statistics course emphasizes, correlations are insufficient for causal knowledge.",
+      "For example, if we are interested in determining the neural basis of risky decision-making, then we need to know whether to use localized activity within a particular region, or connections between active regions, or networks of regions, or network types distributed throughout the brain, or some other variables (i.e., we face the problem of identifying the correct ontology). In response, we might first conjecture some plausible causal factors involved in risky decision-making (based on our prior knowledge), and attempt to infer a causal structure using those factors. On the basis of various \u201cfailures of fit\u201d for the causal structure, we can then examine specific causal factors to try to improve our measure or understanding of them.",
+      "Deep learning in neuroimaging: Overcoming challenges with emerging approaches. Frontiers in Psychiatry, 13. ... Spirtes, P., Glymour, C., & Scheines, R. (1993). Causation, prediction, and search. The MIT Press. ... Tom, S. M., Fox, C. R., Trepel, C., & Poldrack, R. A. (2007). The neural basis of loss aversion in decision-making under risk."
+    ],
+    "title": "Causal inference in cognitive neuroscience - Danks - 2023 - WIREs ...",
+    "url": "https://wires.onlinelibrary.wiley.com/doi/10.1002/wcs.1650"
+  },
+  {
+    "description": "Deep Neural Networks (DNNs) are often examined at the level of their response to input, such as analyzing the mutual information between nodes and data sets. Yet DNNs can also be examined at the level of causation, exploring \u201cwhat does what\u201d within ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Deep Neural Networks (DNNs) are often examined at the level of their response to input, such as analyzing the mutual information between nodes and data sets. Yet DNNs can also be examined at the level of causation, exploring \u201cwhat does what\u201d within the layers of the network itself.",
+      "I, which is explicitly a measure of correlation [29], all mutual bits with a noise injection will necessarily be caused by that noise. Additionally, as the maximally-informative intervention (in terms of its entropy), ... I represents the information resulting from the randomization of a variable, which is the gold standard for causation in the sciences [30], with the number of bits revealing the strength of the causal relationship.",
+      "We introduce tools to explore the hypothesis that the generalizability of DNNs is a matter of how their causal structures differentiate to fit the tasks they are trained on (all code is publicly available, see https://github.com/ei-research-group/deep-ei). To investigate this issue, we make use of a formal approach widely used to study causation where interventions are represented as the application of a",
+      "All of these may help understand why certain network architectures generalize and why some do not. In the future, these techniques also open the possibility for direct measurement of individual instances of causation in DNNs [36]."
+    ],
+    "title": "Examining the Causal Structures of Deep Neural Networks Using ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7766755/"
+  },
+  {
+    "description": "Abstract. A fundamental goal of scientific research is to learn about causal relationships. However, despite its critical role in the life and social sciences, causality has not had the same importance in Natural Language Processing (NLP), which has traditionally placed more emphasis on predictive ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. A fundamental goal of scientific research is to learn about causal relationships. However, despite its critical role in the life and social sciences, causality has not had the same importance in Natural Language Processing (NLP), which has traditionally placed more emphasis on predictive tasks.",
+      "Deep neural networks detect suicide risk from textual facebook posts.",
+      "Causal abstractions of neural networks. Advances in Neural Information Processing Systems, ... Christopher W. ... Social pressure and voter turnout: Evidence from a large-scale field experiment. ... Domain generalization for object recognition with multi- task autoencoders. In \u00b7 Proceedings of the IEEE International Conference on Computer Vision, pages ... Intrinsic bias metrics do not correlate with application bias.",
+      "At a first glance, NLP may appear to have little need for causal ideas. The field has achieved remarkable progress from the use of increasingly high-capacity neural architectures to extract correlations from large-scale datasets (Peters et al., 2018; Devlin et al., 2019; Liu et al., 2019)."
+    ],
+    "title": "Causal Inference in Natural Language Processing: Estimation, ...",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00511/113490/Causal-Inference-in-Natural-Language-Processing"
+  },
+  {
+    "description": "Causal reasoning can shed new light on the major challenges in machine learning for medical imaging: scarcity of high-quality annotated data and mismatch between the development dataset and the target environment. A causal perspective on these issues allows decisions about data collection, ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Causal reasoning can shed new light on the major challenges in machine learning for medical imaging: scarcity of high-quality annotated data and mismatch between the development dataset and the target environment. A causal perspective on these issues allows decisions about data collection, annotation, preprocessing, and learning strategies to be made and scrutinized more transparently, while providing a detailed categorisation of potential biases and mitigation techniques.",
+      "Scarcity of high-quality annotated data and mismatch between the development dataset and the target environment are two of the main challenges in developing predictive tools from medical imaging. In this Perspective, the authors show how causal reasoning can shed new light on these challenges.",
+      "Nature Communications - Scarcity of high-quality annotated data and mismatch between the development dataset and the target environment are two of the main challenges in developing predictive tools...",
+      "Perhaps surprisingly, causal theory also suggests that the common task of semantic segmentation may not fundamentally benefit from unannotated images via semi-supervision. This possibly controversial conclusion may prompt empirical research into validating the feasibility and practical limitations of this approach. Other advanced topics could be worth exploring in future work for causally expressing more subtle facets of predictive modelling workflows."
+    ],
+    "title": "Causality matters in medical imaging | Nature Communications",
+    "url": "https://www.nature.com/articles/s41467-020-17478-w"
+  },
+  {
+    "description": "When reasoning about science studies, people often make causal theory errors by inferring or accepting a causal claim based on correlational evidence. While humans naturally think in terms of causal relationships, reasoning about science findings requires understanding how evidence supports\u2014or ...",
+    "favicon_url": "https://you.com/favicon?domain=cognitiveresearchjournal.springeropen.com&size=128",
+    "snippets": [
+      "When reasoning about science studies, people often make causal theory errors by inferring or accepting a causal claim based on correlational evidence. While humans naturally think in terms of causal relationships, reasoning about science findings requires understanding how evidence supports\u2014or fails to support\u2014a causal claim.",
+      "How do science students reason about causal claims from correlational evidence? And can their reasoning be improved through instruction clarifying the nature of causal theory error? We examined these questions through a series of written reasoning exercises given to advanced college students over three weeks within a psychology methods course. In a pretest session, students critiqued study quality and support for a causal claim from a brief media report suggesting an association between two variables.",
+      "This study examines an example-based intervention to guide students in reasoning about plausible alternative causal theories consistent with the correlational evidence. Following the intervention, advanced college students in a research methods course offered more critiques of causal claims and generated more alternative theories, and then maintained these gains a week later. Our results suggest that causal theory error is common even in college science courses, but interventions focusing on considering alternative theories to a presented causal claim may be helpful.",
+      "Causal inference from descriptions of experimental and non-experimental research: Public understanding of correlation-versus-causation. Journal of General Psychology, 142(1), 48\u201370. ... Bobek, E., & Tversky, B. (2016). Creating visual explanations improves learning. Cognitive Research: Principles and Implications, 1, 27. https://doi.org/10.1186/s41235-016-0031-6 ... Bott, L., Bratton, L., Diaconu, B., Adams, R. C., Challenger, A., Boivin, J., Williams, A., & Sumner, P."
+    ],
+    "title": "Causal theory error in college students\u2019 understanding of science ...",
+    "url": "https://cognitiveresearchjournal.springeropen.com/articles/10.1186/s41235-021-00347-5"
+  },
+  {
+    "description": "Correlations in observational studies are commonly misinterpreted as causation. Although correlation is necessary to establish a causal relationship between two variables, correlations may also arise due to chance, reverse causality, or confounding. ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Correlations in observational studies are commonly misinterpreted as causation. Although correlation is necessary to establish a causal relationship between two variables, correlations may also arise due to chance, reverse causality, or confounding. There are several methods available to orthopaedic researchers to determine whether the observed correlations are causal.",
+      "Reverse causality is common in studies of examining lifestyle factors (e.g., body mass index [BMI], bone mineral density, alcohol intake, vitamins, diet) as the exposure [2,3]. For instance, very low BMI is associated with a higher risk of short-term mortality in TJA patients, but this is in part due to reverse causality where low BMI simply reflects underlying poor health status [4]. Another example is alcohol consumption and the risk of perioperative complications and mortality.",
+      "In cohort studies, reverse causality can be minimized through longer follow-up, or by removing patients who have prevalent disease at baseline or those who experienced the outcome soon after baseline. For example, in a study examining the association between BMI and mortality in TJA, frail patients who have cancer, heart failure or other major comorbidities, as well as early deaths that occur soon after surgery, are excluded from the analysis.",
+      "However, this is not always feasible when the follow-up duration is short, and the number of outcome events is low. Reverse causality can also arise in studies examining the cumulative effect of an exposure on time to occurrence of an outcome and it is known that the exposure changes with the onset of the outcome."
+    ],
+    "title": "How to Distinguish Correlation from Causation in Orthopaedic Research ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10010939/"
+  }
+]

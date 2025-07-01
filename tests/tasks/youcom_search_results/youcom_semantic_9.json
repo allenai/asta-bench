@@ -1,0 +1,256 @@
+[
+  {
+    "description": "In many applications of Reinforcement Learning (RL), it is critically important that the algorithm performs safely, such that instantaneous hard constraints are satisfied at each step, and unsafe states and actions are avoided. However, existing algorithms for ''safe'' RL are often designed ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "In many applications of Reinforcement Learning (RL), it is critically important that the algorithm performs safely, such that instantaneous hard constraints are satisfied at each step, and unsafe states and actions are avoided. However, existing algorithms for ''safe'' RL are often designed under constraints that either require expected cumulative costs to be bounded or assume all states are safe.",
+      "Abstract page for arXiv paper 2302.04375: A Near-Optimal Algorithm for Safe Reinforcement Learning Under Instantaneous Hard Constraints",
+      "However, existing algorithms for ''safe'' RL are often designed under constraints that either require expected cumulative costs to be bounded or assume all states are safe. Thus, such algorithms could violate instantaneous hard constraints and traverse unsafe states (and actions) in practice. Therefore, in this paper, we develop the first near-optimal safe RL algorithm for episodic Markov Decision Processes with unsafe states and actions under instantaneous hard constraints and the linear mixture model. It not only achieves a regret $\\tilde{O}(\\frac{d H^3 \\sqrt{dK}}{\\Delta_c})$ that tightly ma",
+      "We also provide a lower bound $\\tilde{\\Omega}(\\max\\{dH \\sqrt{K}, \\frac{H}{\\Delta_c^2}\\})$, which indicates that the dependency on $\\Delta_c$ is necessary. Further, both our algorithm design and regret analysis involve several novel ideas, which may be of independent interest. From: Ming Shi [view email] [v1] Wed, 8 Feb 2023 23:42:04 UTC (47 KB) ... View a PDF of the paper titled A Near-Optimal Algorithm for Safe Reinforcement Learning Under Instantaneous Hard Constraints, by Ming Shi and 2 other authors"
+    ],
+    "title": "[2302.04375] A Near-Optimal Algorithm for Safe Reinforcement Learning ...",
+    "url": "https://arxiv.org/abs/2302.04375"
+  },
+  {
+    "description": "Related papers for reinforcement learning, including classic papers and latest papers in top conferences - yingchengyang/Reinforcement-Learning-Papers",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "consider offline model-based optimization (MBO, optimize an unknown function only with some samples); add a regularizer (resemble adversarial training methods) to the objective forlearning conservative objective models \u00b7 COMBO: Conservative Offline Model-Based Policy Optimization ... try to optimize a lower bound of performance without considering uncertainty quantification; extend CQL with model-based methods \u00b7 Weighted Model Estimation for Offline Model-Based Reinforcement Learning",
+      "Safe Reinforcement Learning in Constrained Markov Decision Processes ... formalize adversarial attack on state observation as SA-MDP; propose some novel attack methods: Robust SARSA and Maximal Action Difference; propose a defence framework and some practical methods: SA-DQN, SA-PPO and SA-DDPG",
+      "Robust Deep Reinforcement Learning through Adversarial Loss ... propose a robust rl framework, which penalizes the overlap between output bounds of actions; propose a more efficient evaluation method (GWC) to measure attack agnostic robustness",
+      "Policy Smoothing for Provably Robust Reinforcement Learning ... present a framework of Certifying Robust Policies for RL (CROP) against adversarial state perturbations with two certification criteria: robustness of per-state actions and lower bound of cumulative rewards; theoretically prove the certification radius; conduct experiments to provide certification for six empirically robust RL algorithms on Atari"
+    ],
+    "title": "GitHub - yingchengyang/Reinforcement-Learning-Papers: Related papers ...",
+    "url": "https://github.com/yingchengyang/Reinforcement-Learning-Papers"
+  },
+  {
+    "description": "Help | Advanced Search \u00b7 arXiv Operational Status Get status notifications via email or slack",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Catchup results for stat from Wed, 8 Nov 2023",
+    "url": "https://arxiv.org/catchup?num=2000&archive=stat&smonth=11&group=grp_&sday=8&order=reverse&method=without&syear=2023"
+  },
+  {
+    "description": "This study tackles the challenges ... reinforcement learning (RL), where the transition dynamics can be corrupted by an adversary. Existing studies on corruption-robust RL mostly focus on the setting of model-free RL, where robust least-square regression is often employed for value function estimation. However, these techniques cannot be directly applied to model-based RL. In this paper, we focus ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "This study tackles the challenges of adversarial corruption in model-based reinforcement learning (RL), where the transition dynamics can be corrupted by an adversary. Existing studies on corruption-robust RL mostly focus on the setting of model-free RL, where robust least-square regression is often employed for value function estimation. However, these techniques cannot be directly applied to model-based RL. In this paper, we focus on model-based RL and take the maximum likelihood estimation (MLE) approach to learn transition model.",
+      "He et al., (2022) first achieved a regret bound that matches the lower bound by utilizing a uncertainty weighting technique. Turning to MDPs, the corruption in transitions triggers considerable interest. Wu et al., (2021) first studied corruption on rewards and corruption simultaneously for tabular MPDs. Later, a unified framework to deal with unknown corruption was established by Wei et al., (2022), involving a weak adversary who decides the corruption amount for each action before observing the agent\u2019s action.",
+      "Subsequently, Ye et al., 2023a ; Ye et al., 2023b extended the uncertainty weighting technique from He et al., (2022) to RL with general function approximation for both and offline settings respectively, aligning with the lower bound in terms of the corruption-related term. However, previous works all focused on the model-free setting, where models are learned via regression. Notably, corruption in the model-based setting, where the models are learned via maximum likelihood estimation (MLE), remains an unexplored area in the literature. Model-Based RL. There is an emerging body of literature addressing model-based RL problems, from tabular MDPs (Kearns and Singh,, 2002; Brafman and Tennenholtz,, 2002; Auer et al.,, 2008) to rich observation spaces with linear function approximation (Yang and Wang,, 2020; Ayoub et al.,, 2020).",
+      "Particularly, Liu et al., 2023a also defines the TV-eluder condition. The distinction lies in their consideration of a sequence of policies, while we focus on a sequence of state-action samples. In Theorems D.1 and D.2, we offer examples of tabular and linear MDPs where the TV-eluder dimension can be bounded."
+    ],
+    "title": "Towards Robust Model-Based Reinforcement Learning Against Adversarial ...",
+    "url": "https://arxiv.org/html/2402.08991v2"
+  },
+  {
+    "description": "Work on one of the world's most important websites and make an impact on open science \u00b7 arXiv Is Hiring a DevOps Engineer",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Catchup results for stat from Tue, 4 Apr 2023",
+    "url": "https://arxiv.org/catchup?smonth=4&sday=4&group=grp_&archive=stat&num=2000&order=reverse&method=without&syear=2023"
+  },
+  {
+    "description": "Work on one of the world's most important websites and make an impact on open science \u00b7 arXiv Is Hiring a DevOps Engineer",
+    "favicon_url": "https://you.com/favicon?domain=www.arxiv.org&size=128",
+    "snippets": [
+      "Title: Sample and Oracle Efficient Reinforcement Learning for MDPs with Linearly-Realizable Value Functions",
+      "Title: VFLGAN-TS: Vertical Federated Learning-based Generative Adversarial Networks for Publication of Vertically Partitioned Time-Series Data",
+      "Title: Limited but consistent gains in adversarial robustness by co-training object recognition models with human EEG",
+      "Comments: This revision adds sharper convergence results based on shadowing properties, along with a substantial Section 5 containing their proofs. The material in this paper extends the authors' earlier results reported in arXiv:2408.16262 and arXiv:2312.15091."
+    ],
+    "title": "Machine Learning Sep 2024",
+    "url": "http://www.arxiv.org/list/cs.LG/2024-09?show=2000&skip=115"
+  },
+  {
+    "description": "A deep reinforcement learning (DRL) agent observes its states through observations, which may contain natural measurement errors or adversarial noises. Since the observations deviate from the true states, they can mislead the agent into making suboptimal actions.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2003.08938: Robust Deep Reinforcement Learning against Adversarial Perturbations on State Observations",
+      "We show that naively applying existing techniques on improving robustness for classification tasks, like adversarial training, is ineffective for many RL tasks. We propose the state-adversarial Markov decision process (SA-MDP) to study the fundamental properties of this problem, and develop a theoretically principled policy regularization which can be applied to a large family of DRL algorithms, including proximal policy optimization (PPO), deep deterministic policy gradient (DDPG) and deep Q networks (DQN), for both discrete and continuous action control problems.",
+      "View a PDF of the paper titled Robust Deep Reinforcement Learning against Adversarial Perturbations on State Observations, by Huan Zhang and 6 other authors View PDF",
+      "We significantly improve the robustness of PPO, DDPG and DQN agents under a suite of strong white box adversarial attacks, including new attacks of our own. Additionally, we find that a robust policy noticeably improves DRL performance even without an adversary in a number of environments."
+    ],
+    "title": "[2003.08938] Robust Deep Reinforcement Learning against Adversarial ...",
+    "url": "https://arxiv.org/abs/2003.08938"
+  },
+  {
+    "description": "Inspired by UC-O-REPS and UOB-REPS algorithms in [22] and [23] respectively, we adopt the concept of occupancy measure in our paper for non-adversarial setting. In this work, we devise a reinforcement learning algorithm for episodic MDPs which achieves a regret bound of",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The proposed algorithm, which is based on the concept of \u201coptimism in the face of uncertainty\u201d, maintains confidence sets of transition and reward functions and uses occupancy measures to connect the online MDP with linear programming. It achieves a tighter regret bound compared to the existing works that use a similar confidence set framework and improves computational effort compared to those that use a different framework but with a slightly tighter regret bound. \u2013Keywords: Markov decision process, online learning, reinforcement learning, regret minimization, occupation measure, linear programming.",
+      "In this paper, we devise an efficient algorithm for reinforcement learning in episodic MDP which achieves ... over~ start_ARG italic_O end_ARG ( italic_L italic_X square-root start_ARG italic_T italic_A end_ARG ) regret and requires at most ... italic_X italic_A roman_log italic_T times of solving a linear program for its policy updates. The algorithm maintains confidence sets and solves linear optimization on polytope of occupancy measure which can be accomplished by standard linear programming solvers.",
+      "In [20], the authors present a posterior-sampling-based learning algorithm that achieves a regret bound of ... over~ start_ARG italic_O end_ARG ( italic_L square-root start_ARG italic_T italic_X italic_A end_ARG ). Recently, several works have extended the approach of confidence sets to adversarial MDPs. In adversarial MDP, the reward functions can change arbitrarily between episodes as if they were chosen by an adversary, whereas the environment dynamics still remain fixed. [21, 22, 23] tackle the reinforcement learning in episodic adversarial MDPs and apply online mirror descent on the space of occupancy measures instead of optimizing policies directly.",
+      "The main algorithm we propose is called \u201cUpper Confidence Reinforcement Learning using Linear Programming\u201d (UCRL-LP) algorithm and is presented in Algorithm 1. The proposed algorithm is mainly inspired by UCRL [15] and UCRL2 [16] algorithms which use upper confidence bounds to determine an optimistic policy and O-REPS [21], and UC-O-REPS [22] and UOB-REPS [23] algorithms which solve online convex optimization on the occupancy measure space. The algorithm consists of two main parts: maintaining confidence sets for transition and reward functions (estimation) and solving a linear program for occupancy measure update (optimization)."
+    ],
+    "title": "Online Reinforcement Learning in Markov Decision Process Using ...",
+    "url": "https://arxiv.org/html/2304.00155v3"
+  },
+  {
+    "description": "Furthermore, even in the simple ... MDPs. Such robust offline evaluation from transition data was considered in recent work [59, 12]. We build on this recent work by focusing the question of statistically efficient and robust estimation of the sharp bounds (i.e., the tightest possible given the data). Previous work focused on evaluation using only the Q-function under the worst-case environment (in some cases under a relaxation of the adversary, leading to ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Furthermore, even in the simple case with no unmeasured confounding, in a notable departure from standard ORL, the problem can be difficult even if the logging and evaluation policies are the same (the usually easy on-policy setting), since the policy can induce very different visitation distributions in the original and perturbed MDPs. Such robust offline evaluation from transition data was considered in recent work [59, 12]. We build on this recent work by focusing the question of statistically efficient and robust estimation of the sharp bounds (i.e., the tightest possible given the data). Previous work focused on evaluation using only the Q-function under the worst-case environment (in some cases under a relaxation of the adversary, leading to loose bounds).",
+      "This may occur, e.g., due to general distributional shifts in the environment over time, unobserved confounding in the observed historical data, or adversarial elements of the environment (such as other agents) that may react when the agent is deployed. While standard OPE in offline reinforcement learning (ORL) accounts for the change between the logging and evaluation policies, it may overlook the fact that the Markov decision process (MDP) too has changed.",
+      "Robust MDPs [34, 56] model unknown environments by allowing an adversary to choose from any one environment in a set. Therefore, they offer a natural model for unknown environment shifts by simply considering all environments to which we could possibly shift. A variety of work addresses questions such as planning in a known robust MDP [80, 51, 30] as well as online learning [6, 79]. Here we focus on a purely statistical estimation question: given observations of transitions from some unknown transition kernel, we wish to estimate the worst-case (or best-case) value of a given evaluation policy in a robust MDP, defined by a set of MDPs whose transition functions are centered around the observed transition kernel.",
+      "We derive the sharp and efficient estimator for the robust policy value, which is optimal in the local-minimax sense and is the gold standard in semiparametric estimation (Section 5). ... We empirically validate the efficiency and sharpness of our approach (Section 6). Unobserved Confounding in Sequential Decision-Making. OPE in robust MDPs is related to OPE bounds in confounded MDPs, where the behavior policy and the transition kernel are influenced by unobserved confounders."
+    ],
+    "title": "Efficient and Sharp Off-Policy Evaluation in Robust Markov Decision ...",
+    "url": "https://arxiv.org/html/2404.00099v2"
+  },
+  {
+    "description": "Subjects: Machine Learning (cs.LG); Artificial Intelligence (cs.AI); General Economics (econ.GN); Numerical Analysis (math.NA) \u00b7 Subjects: Machine Learning (cs.LG); Optimization and Control (math.OC); Machine Learning (stat.ML) \u00b7 Subjects: Machine Learning (cs.LG); Artificial Intelligence ...",
+    "favicon_url": "https://you.com/favicon?domain=web3.arxiv.org&size=128",
+    "snippets": [
+      "Title: Optimizing Age of Information in Vehicular Edge Computing with Federated Graph Neural Network Multi-Agent Reinforcement Learning \u00b7 Wenhua Wang, Qiong Wu, Pingyi Fan, Nan Cheng, Wen Chen, Jiangzhou Wang, Khaled B. Letaief \u00b7 Comments: This paper has been submitted to IEEE Journal.",
+      "Title: Addressing Prediction Delays in Time Series Forecasting: A Continuous GRU Approach with Derivative Regularization ... Title: Combinations of distributional regression algorithms with application in uncertainty estimation of corrected satellite precipitation products",
+      "Comments: Published in the First Reinforcement Learning Conference (RLC 2024).",
+      "Comments: MICS 2024 1st Place Paper, MSOE AI-Club Research Group \u00b7 Subjects: Machine Learning (cs.LG); Artificial Intelligence (cs.AI); General Economics (econ.GN); Numerical Analysis (math.NA) ... Title: Directly Handling Missing Data in Linear Discriminant Analysis for Enhancing Classification Accuracy and Interpretability"
+    ],
+    "title": "Machine Learning Jul 2024",
+    "url": "https://web3.arxiv.org/list/cs.LG/2024-07?skip=60&show=1000"
+  },
+  {
+    "description": "Tighter Problem-Dependent Regret Bounds in Reinforcement Learning without Domain Knowledge using Value Function Bounds \u00b7 Concurrent/\u201dLow-Switch\u201d/\u201dDeployment-efficient\u201d PAC-RL ... Apart from value/policy iteration, Linear Programming (LP) is another standard method for solving MDPs. The LP formulation also reveals many interesting properties of MDPs (e.g., the dual formulation has occupancy ...",
+    "favicon_url": "https://you.com/favicon?domain=nanjiang.cs.illinois.edu&size=128",
+    "snippets": [
+      "Tighter Problem-Dependent Regret Bounds in Reinforcement Learning without Domain Knowledge using Value Function Bounds \u00b7 Concurrent/\u201dLow-Switch\u201d/\u201dDeployment-efficient\u201d PAC-RL ... Apart from value/policy iteration, Linear Programming (LP) is another standard method for solving MDPs. The LP formulation also reveals many interesting properties of MDPs (e.g., the dual formulation has occupancy measure as its decision variables).",
+      "Tensorplan and the few actions lower bound for planning in mdps under linear realizability of optimal value functions ... Model-based RL in Contextual Decision Processes: PAC bounds and Exponential Improvements over Model-free Approaches \u00b7 Bilinear Classes: A Structural Framework for Provable Generalization in RL \u00b7 Bellman Eluder Dimension: New Rich Classes of RL Problems, and Sample-Efficient Algorithms \u00b7 Non-Linear Reinforcement Learning in Large Action Spaces: Structural Conditions and Sample-efficiency of Posterior Sampling",
+      "Reinforcement Learning from Partial Observation: Linear Function Approximation with Provable Sample Efficiency \u00b7 When Is Partially Observable Reinforcement Learning Not Scary? PAC Reinforcement Learning for Predictive State Representations \u00b7 Learning in pomdps is sample-efficient with hindsight observability \u00b7 Optimistic MLE: A Generic Model-Based Algorithm for Partially Observable Sequential Decision Making \u00b7 RL in Latent MDPs is Tractable: Online Guarantees via Off-Policy Evaluation",
+      "Exponential lower bounds for batch reinforcement learning: Batch rl can be exponentially harder than online rl \u00b7 Offline Reinforcement Learning: Role of State Aggregation and Trajectory Data ... How to estimate the performance of a policy using data collected from a different policy?"
+    ],
+    "title": "Project",
+    "url": "https://nanjiang.cs.illinois.edu/cs598project/"
+  },
+  {
+    "description": "Kirandeep Kour, Sergey Dolgov, Martin Stoll, Peter Benner; (4):1\u221222, 2023. [abs][pdf][bib] [code] \u00b7 Arthur Leroy, Pierre Latouche, Benjamin Guedj, Servane Gey; (5):1\u221249, 2023. [abs][pdf][bib] [code] \u00b7 Haifeng Jin, Fran\u00e7ois Chollet, Qingquan Song, Xia Hu; (6):1\u22126, 2023.",
+    "favicon_url": "https://you.com/favicon?domain=www.jmlr.org&size=128",
+    "snippets": [
+      "Radial Basis Approximation of Tensor Fields on Manifolds: From Operator Estimation to Manifold Learning \u00b7 John Harlim, Shixiao Willing Jiang, John Wilson Peoples; (345):1\u221285, 2023. [abs][pdf][bib] Linear Partial Monitoring for Sequential Decision Making: Algorithms, Regret Bounds and Applications",
+      "Reinforcement Learning for Joint Optimization of Multiple Rewards \u00b7 Mridul Agarwal, Vaneet Aggarwal; (49):1\u221241, 2023. [abs][pdf][bib] Convergence Rates of a Class of Multivariate Density Estimation Methods Based on Adaptive Partitioning",
+      "MALib: A Parallel Framework for Population-based Multi-agent Reinforcement Learning \u00b7 Ming Zhou, Ziyu Wan, Hanjing Wang, Muning Wen, Runzhe Wu, Ying Wen, Yaodong Yang, Yong Yu, Jun Wang, Weinan Zhang; (150):1\u221212, 2023. (Machine Learning Open Source Software Paper) [abs][pdf][bib] [code] Generalization error bounds for multiclass sparse linear classifiers",
+      "Generalization Bounds for Adversarial Contrastive Learning"
+    ],
+    "title": "Journal of Machine Learning Research",
+    "url": "https://www.jmlr.org/papers/v24/"
+  },
+  {
+    "description": "Work on one of the world's most important websites and make an impact on open science \u00b7 arXiv Is Hiring a DevOps Engineer",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Title: Hierarchical Generative Adversarial Imitation Learning with Mid-level Input Generation for Autonomous Driving on Urban Environments",
+      "Subjects: Machine Learning (cs.LG); Emerging Technologies (cs.ET) ... Title: Improving the Generalizability of Collaborative Dialogue Analysis with Multi-Feature Embeddings ... Comments: To be published in the 17th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2023) ... Title: Computers as Bad Social Actors: Dark Patterns and Anti-Patterns in Interfaces that Act Socially ... Comments: Accepted paper for the 2024 ACM SIGCHI Conference on Computer-Supported Cooperative Work & Social Computing (CSCW)",
+      "Comments: This paper is accepted by 2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE) ... Title: ShapeWordNet: An Interpretable Shapelet Neural Network for Physiological Signal Classification ... Title: Feature Decomposition for Reducing Negative Transfer: A Novel Multi-task Learning Method for Recommender System",
+      "Subjects: Machine Learning (cs.LG); Artificial Intelligence (cs.AI); Quantitative Methods (q-bio.QM); Machine Learning (stat.ML) ... Title: SoK: A Data-driven View on Methods to Detect Reflective Amplification DDoS Attacks Using Honeypots \u00b7 Marcin Nawrocki, John Kristoff, Raphael Hiesgen, Chris Kanich, Thomas C. Schmidt, Matthias W\u00e4hlisch ... Title: Robust Question Answering against Distribution Shifts with Test-Time Adaptation: An Empirical Study ... Title: Employing Channel Probing to Derive End-of-Life Service Margins for Optical Spectrum Services."
+    ],
+    "title": "Computer Science Feb 2023",
+    "url": "http://arxiv.org/list/cs/2023-02?skip=1830&show=2000"
+  },
+  {
+    "description": "Adversarial machine learning is the study of the attacks on machine learning algorithms, and of the defenses against such attacks. A survey from May 2020 revealed practitioners' common feeling for better protection of machine learning systems in industrial applications.",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "While some methods have been proposed to overcome these susceptibilities, in the most recent studies it has been shown that these proposed solutions are far from providing an accurate representation of current vulnerabilities of deep reinforcement learning policies. Adversarial attacks on speech recognition have been introduced for speech-to-text applications, in particular for Mozilla's implementation of DeepSpeech. There are a large variety of different adversarial attacks that can be used against machine learning systems. Many of these work on both deep learning systems as well as traditional machine learning models such as SVMs and linear regression.",
+      "To find such example, Square Attack utilizes the iterative random search technique to randomly perturb the image in hopes of improving the objective function. In each step, the algorithm perturbs only a small square section of pixels, hence the name Square Attack, which terminates as soon as an adversarial example is found in order to improve query efficiency. Finally, since the attack algorithm uses scores and not gradient information, the authors of the paper indicate that this approach is not affected by gradient masking, a common technique formerly used to prevent evasion attacks.",
+      "adversarial training of a linear regression model with input perturbations restricted by the 2-norm closely resembles Ridge regression. Adversarial deep reinforcement learning is an active area of research in reinforcement learning focusing on vulnerabilities of learned policies.",
+      "Most common attacks in adversarial machine learning include evasion attacks, data poisoning attacks, Byzantine attacks and model extraction. At the MIT Spam Conference in January 2004, John Graham-Cumming showed that a machine-learning spam filter could be used to defeat another machine-learning spam filter by automatically learning which words to add to a spam email to get the email classified as not spam. In 2004, Nilesh Dalvi and others noted that linear classifiers used in spam filters could be defeated by simple \"evasion attacks\" as spammers inserted \"good words\" into their spam emails.",
+      "As late as 2013 many researchers continued to hope that non-linear classifiers (such as support vector machines and neural networks) might be robust to adversaries, until Battista Biggio and others demonstrated the first gradient-based attacks on such machine-learning models (2012\u20132013)."
+    ],
+    "title": "Adversarial machine learning - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Adversarial_machine_learning"
+  },
+  {
+    "description": "In this paper, we study the dynamics of temporal difference learning with neural network-based value function approximation over a general state space, namely, \\emph{Neural TD learning}. We consider two practically used algorithms, projection-free and max-norm regularized Neural TD learning, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:In this paper, we study the dynamics of temporal difference learning with neural network-based value function approximation over a general state space, namely, \\emph{Neural TD learning}. We consider two practically used algorithms, projection-free and max-norm regularized Neural TD learning, and establish the first convergence bounds for these algorithms.",
+      "Abstract page for arXiv paper 2103.01391: Sample Complexity and Overparameterization Bounds for Temporal Difference Learning with Neural Network Approximation",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "View a PDF of the paper titled Sample Complexity and Overparameterization Bounds for Temporal Difference Learning with Neural Network Approximation, by Semih Cayci and 3 other authors View PDF"
+    ],
+    "title": "[2103.01391] Sample Complexity and Overparameterization Bounds ...",
+    "url": "https://arxiv.org/abs/2103.01391"
+  },
+  {
+    "description": "In just 3 minutes help us improve arXiv: \u00b7 Help | Advanced Search",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Catchup results for stat from Sat, 21 Jan 2023",
+    "url": "https://arxiv.org/catchup?smonth=1&sday=21&group=grp_&archive=stat&num=2000&order=reverse&method=without&syear=2023"
+  },
+  {
+    "description": "Help | Advanced Search \u00b7 Clinical decision-making is inherently complex, often influenced by cognitive biases, incomplete information, and case ambiguity. Large Language Models (LLMs) have shown promise as tools for supporting clinical decision-making, yet their typical one-shot or ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "We prove generalization bounds and convergence rates under finite data discretizations and restricted training data subspaces by analyzing the training dynamics and deriving optimal parameters for both a white-box differential equation discovery method and a black-box linear model.",
+      "The analytically derived generalization bounds are replicated empirically. Similar lack of generalization is empirically demonstrated for deep linear models, shallow neural networks, and physics-specific DeepONets and Neural Operators. We theoretically and empirically demonstrate that generalization to the true physical equation is not guaranteed in each explored case.",
+      "Reliable and accurate estimation of the error of an ML model in unseen test domains is an important problem for safe intelligent systems. Prior work uses disagreement discrepancy (DIS^2) to derive practical error bounds under distribution shifts. It optimizes for a maximally disagreeing classifier on the target domain to bound the error of a given source classifier.",
+      "By sparsifying and smoothing attribution maps, we reformulate the task as a segmentation problem and certify each pixel's importance against $\\ell_2$-bounded perturbations. We further propose three evaluation metrics to assess certified robustness, localization, and faithfulness. An extensive evaluation of 12 attribution methods across 5 ImageNet models shows that our certified attributions are robust, interpretable, and faithful, enabling reliable use in downstream tasks. Our code is at this https URL. ... Title: Insights on Adversarial Attacks for Tabular Machine Learning via a Systematic Literature Review"
+    ],
+    "title": "Machine Learning",
+    "url": "https://arxiv.org/list/cs.LG/new"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.jmlr.org&size=128",
+    "snippets": [],
+    "title": "Learning to Optimize: A Primer and A Benchmark",
+    "url": "https://www.jmlr.org/papers/volume23/21-0308/21-0308.pdf"
+  },
+  {
+    "description": "Continual Learning papers list, curated by ContinualAI - ContinualAI/continual-learning-papers",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "A Meta-MDP Approach to Exploration for Lifelong Reinforcement Learning by Francisco M Garcia and Philip S Thomas.",
+      "Continual Learning in Generative Adversarial Nets by Ari Seff, Alex Beatson, Daniel Suo and Han Liu. arXiv, 1--9, 2017.",
+      "Explainability in Deep Reinforcement Learning by Alexandre Heuillet, Fabien Couthouis and Natalia D\u00edaz-Rodr\\\u01f5uez.",
+      "Reinforced Continual Learning by Ju Xu and Zhanxing Zhu. Advances in Neural Information Processing Systems, 899--908, 2018."
+    ],
+    "title": "GitHub - ContinualAI/continual-learning-papers: Continual Learning ...",
+    "url": "https://github.com/ContinualAI/continual-learning-papers"
+  },
+  {
+    "description": "Help | Advanced Search \u00b7 arXiv Operational Status Get status notifications via email or slack",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Catchup results for eess from Sat, 7 Oct 2023",
+    "url": "https://arxiv.org/catchup?smonth=10&group=grp_&sday=7&num=2000&archive=eess&order=reverse&method=without&syear=2023"
+  },
+  {
+    "description": "An introduction to Reinforcement Learning and a look of two of the most important papers",
+    "favicon_url": "https://you.com/favicon?domain=adeshpande3.github.io&size=128",
+    "snippets": [
+      "This is the 2nd installment of a new series called Deep Learning Research Review. Every couple weeks or so, I\u2019ll be summarizing and explaining research papers in specific subfields of deep learning. This week focuses on Reinforcement Learning. Last time was Generative Adversarial Networks ICYMI",
+      "To understand MDP free evaluation and improvement methods, topics such as Monte Carlo Learning, Temporal Difference Learning, and SARSA would require whole blogs just themselves (If you are interested, though, please take a listen to David Silver\u2019s Lecture 4 and Lecture 5). Right now, however, I\u2019m going to jump ahead to value function approximation and the methods discussed in the AlphaGo and Atari Papers, and hopefully that should give a taste of modern RL techniques.",
+      "Once the loss function is computed, the derivatives are taken w.r.t the theta values (or the w vector). These values are then updated so as to minimize the loss function. ...  One of my favorite parts about the paper is this visualization it gives of the value function during certain points of the game.",
+      "Now, this whole RL environment can be described with a Markov Decision Process. For those that haven\u2019t heard the term before, an MDP is a framework for modeling an agent\u2019s decision making. It contains a finite set of states (and value functions for those states), a finite set of actions, a policy, and a reward function."
+    ],
+    "title": "Deep Learning Research Review Week 2&#58 Reinforcement Learning",
+    "url": "https://adeshpande3.github.io/Deep-Learning-Research-Review-Week-2-Reinforcement-Learning"
+  },
+  {
+    "description": "The arXiv Privacy Policy has changed. By continuing to use arxiv.org, you are agreeing to the privacy policy \u00b7 Help | Advanced Search",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Catchup results for cs from Tue, 2 Jan 2024",
+    "url": "https://arxiv.org/catchup?smonth=1&sday=2&group=grp_&archive=cs&num=50&method=without&syear=2024"
+  },
+  {
+    "description": "Nathan Kallus [nah-tahn kah-loosh]Associate Professor Cornell Tech, Cornell University Field member: ORIE, CS, Econ, Stats, CAM \u00b7 Research Director Machine Learning & Inference Research, Netflix",
+    "favicon_url": "https://you.com/favicon?domain=nathankallus.com&size=128",
+    "snippets": [
+      "Nonetheless, the regret (as a random variable) for any switchback policy suffers a high variance, as it does not account for N . We propose a cluster randomization policy whose regret (i) is optimal in expectation and (ii) admits a high probability bound that vanishes in N. ... Low-Rank MDPs with Continuous Action Spaces, with A. Bennett and M. Oprescu. Proceedings of the 27th International Conference on Artificial Intelligence and Statistics (AISTATS), 2024. ... Abstract: Low-Rank Markov Decision Processes (MDPs) have recently emerged as a promising framework within the domain of reinforcement learning (RL), as they allow for provably approximately correct (PAC) learning guarantees while also incorporating ML algorithms for representation learning.",
+      "Abstract: In this paper, we study risk-sensitive Reinforcement Learning (RL), focusing on the objective of Conditional Value at Risk (CVaR) with risk tolerance \u03c4. Starting with multi-arm bandits (MABs), we show the minimax CVaR regret rate is \u03a9(\u221a(AK/\u03c4)), where A is the number of actions and K is the number of episodes, and that it is achieved by an Upper Confidence Bound algorithm with a novel Bernstein bonus. For online RL in tabular Markov Decision Processes (MDPs), we show a minimax regret lower bound of \u03a9(\u221a(SAK/\u03c4)) (with normalized cumulative rewards), where S is the number of states, and we propose a novel bonus-driven Value Iteration procedure.",
+      "To relax this requirement and extend DRL, we study efficient inference on linear functionals of the Q-function (of which policy value is a special case) in infinite-horizon, time-invariant MDPs under semiparametric restrictions on the Q-function. These restrictions can reduce the overlap requirement and lower the efficiency bound, yielding more precise estimates.",
+      "We demonstrate the efficacy of our approach via a case study of 123 historical A/B tests at Netflix, where we used it to show that a new decision rule would increase cumulative returns to the north star metric by an estimated 33%, leading directly to the adoption of the new rule. ... Automatic Double Reinforcement Learning in Semiparametric Markov Decision Processes with Applications to Long-Term Causal Inference, with L. van der Laan, D. Hubbard, A. Tran, and A. Bibaut. ... Abstract: Double reinforcement learning (DRL) enables statistically efficient inference on the value of a policy in a nonparametric Markov Decision Process (MDP) given trajectories generated by another policy."
+    ],
+    "title": "Nathan Kallus",
+    "url": "https://nathankallus.com/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=rltheorybook.github.io&size=128",
+    "snippets": [],
+    "title": "Github",
+    "url": "https://rltheorybook.github.io/rltheorybook_AJKS.pdf"
+  }
+]

@@ -1,0 +1,253 @@
+[
+  {
+    "description": "Each conversation was obtained by pairing two crowd-workers: a speaker and a listener. The speaker is asked to talk about the personal emotional feelings. The listener infers the underlying emotion through what the speaker says and responds empathetically. The dataset provides 32 evenly distributed emotion labels. ... Ubuntu Dialogue Corpus (UDC) is a dataset containing almost 1 million multi-turn dialogues, with a total of over 7 million utterances ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Each conversation was obtained by pairing two crowd-workers: a speaker and a listener. The speaker is asked to talk about the personal emotional feelings. The listener infers the underlying emotion through what the speaker says and responds empathetically. The dataset provides 32 evenly distributed emotion labels. ... Ubuntu Dialogue Corpus (UDC) is a dataset containing almost 1 million multi-turn dialogues, with a total of over 7 million utterances and 100 million words.",
+      "The ConvAI2 NeurIPS competition aimed at finding approaches to creating high-quality dialogue agents capable of meaningful open domain conversation. The ConvAI2 dataset for training models is based on the PERSONA-CHAT dataset. The speaker pairs each have assigned profiles coming from a set of 1155 possible personas (at training time), each consisting of at least 5 profile sentences, setting aside 100 never seen before personas for validation.",
+      "Specifically, that authors construct a dialog grammar that is grounded in the scene graphs of the images from the CLEVR dataset. This combination results in a dataset where all aspects of the visual dialog are fully annotated. In total, CLEVR-Dialog contains 5 instances of 10-round dialogs for about 85k CLEVR images, totaling to 4.25M question-answer pairs. ... Coached Conversational Preference Elicitation is a dataset consisting of 502 English dialogs with 12,000 annotated utterances between a user and an assistant discussing movie preferences in natural language.",
+      "This is a high-quality dataset consisting of 14.8M utterances in English, extracted from processed dialogues from publicly available online books."
+    ],
+    "title": "Papers with Code - Machine Learning Datasets",
+    "url": "https://paperswithcode.com/datasets?mod=dialog"
+  },
+  {
+    "description": "Each dialogue in PersonaChat consists of two human speakers trying to know each other, and about five persona descriptive sentences are provided to each speaker. The FoCus dataset Jang et al. (2022) introduced persona grounding, indicating the specific persona sentence to which each utterance is ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Each dialogue in PersonaChat consists of two human speakers trying to know each other, and about five persona descriptive sentences are provided to each speaker. The FoCus dataset Jang et al. (2022) introduced persona grounding, indicating the specific persona sentence to which each utterance is anchored.",
+      "They consider the same user\u2019s utterances to contain implicit personal information, and personalization can be measured by the similarity between the generated response and the ground-truth response. Personalized dialogue generation is an open-domain task: Human speakers are allowed to talk about whatever topics they like. However, through the literature survey, we found that there are domain differences between datasets.",
+      "Note that a dataset with persona-grounding labels - each utterance associated with a specific persona attribute - is usually required to learn relevant persona selection. ... italic_P is not explicitly given, the personal information could be extracted from dialogue histories of the speaker (",
+      "Each agent is given two persona sentences and each utterance is labeled with the type of bias they were grounded on (persona, KG, or EMP). The Persona-based Empathetic Conversation (PEC) dataset Zhong et al. (2020) also investigated the impact of persona on empathetic responding. PEC differs from BST in extracting personas from Reddit. The MPChat dataset Ahn et al. (2023) introduced the first multi-modal persona, where the persona is not only text descriptions but also paired with an image."
+    ],
+    "title": "Recent Trends in Personalized Dialogue Generation: A Review of ...",
+    "url": "https://arxiv.org/html/2405.17974v1"
+  },
+  {
+    "description": "Nonetheless, as shown in Figure ... datasets consist of less than the average 2.8 images per dialogue and the average 1.4 images per utterance. (3) Generalization. A model trained with conventional datasets can be overfitted by memorizing low-quality and limited pairs of images ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Nonetheless, as shown in Figure 1 (# images / dialog and # images / utterance), existing datasets consist of less than the average 2.8 images per dialogue and the average 1.4 images per utterance. (3) Generalization. A model trained with conventional datasets can be overfitted by memorizing low-quality and limited pairs of images and dialogues, which can hinder its ability to handle unseen dialogue scenarios effectively by its lack of generalization.",
+      "U./D. denotes utterances by a dialogue. Table 8 presents a comprehensive comparison of the statistics for DialogCC against existing datasets, namely PhotoChat, MMDD, and MMDialog. DialogCC is constructed from five source dialogue datasets: Persona-Chat, EmpatheticDialogues, Blended Skill Talk, DailyDialog, and Wizard-of-Wikipedia. As a result, DialogCC consists of five sub-datasets: BlendedCC, DailyCC, EmpathyCC, PersonaCC, and KnowledgeCC.",
+      "In this paper, we propose an automated pipeline to construct a multi-modal dialogue dataset, ensuring both dialogue quality and image diversity without requiring minimum human effort. In our pipeline, to guarantee the coherence between images and dialogue, we prompt GPT-4 to infer potential image-sharing moments - specifically, the utterance, speaker, rationale, and image description. Furthermore, we leverage CLIP similarity to maintain consistency between aligned multiple images to the utterance.",
+      "To maintain single-turn image consistency, we introduce a straightforward algorithm based on pairwise similarity comparisons through CLIP. Nevertheless, our approach currently overlooks cross-turn image inconsistencies within the same dialogue, and addressing this challenge is part of our future objectives. Our dataset aims to enhance generalization performance by mapping multiple images to a single utterance."
+    ],
+    "title": "DialogCC: An Automated Pipeline for Creating High-Quality Multi-Modal ...",
+    "url": "https://arxiv.org/html/2212.04119v2"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=scholar.harvard.edu&size=128",
+    "snippets": [],
+    "title": "Emotional Dialogue Generation using Image-Grounded ...",
+    "url": "https://scholar.harvard.edu/files/bhb/files/huber2018chiigc.pdf"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=cdn.aaai.org&size=128",
+    "snippets": [],
+    "title": "Dual Task Framework for Improving Persona-Grounded ...",
+    "url": "https://cdn.aaai.org/ojs/21338/21338-13-25351-1-2-20220628.pdf"
+  },
+  {
+    "description": "Let's Go Real Talk: Spoken Dialogue Model for Face-to-Face Conversation",
+    "favicon_url": "https://you.com/favicon?domain=multidialog.github.io&size=128",
+    "snippets": [
+      "We had an annotator go through the audio-visual recordings to manually adjust the misalignments by sliding the start time. We segmented the recordings into conversations and turns based on the recorded timesteps of each turn. The MultiDialog dataset consists of approximately 340 hours of audio-visual videos of 9,000 dialogues between 6 pairs of conversation partners.",
+      "We gathered 12 fluent English speakers, with varying gender, age, and nationality. The participants, aged 20 to 25, came from six different countries, with six female and six male actors. We derived dialogue scripts from the open-domain dialogue dataset, TopicalChat which is a rich knowledge-grounded dataset collected from real human-human conversations.",
+      "We then concatenate the pair to construct both audio-visual speech recognition (AVSR) and text-to-speech generation (TTS) training objectives. Only the embedding layer and the projection layer are trained, which guides the LLM to understand and generate AV speech tokens while retaining the given LLM knowledge needed for dialogue generation. The second stage is jointly learning the text and AV speech token-based dialogue. We select either one of the speakers as the AI which the model aims to predict and indicate the start of the response with additional speaker prefix tokens.",
+      "We pretrain the entire model at this stage and we later finetune on pure AV speech token-based dialogue. ... The AV speech tokens are used to generate a response in the form of a talking face video. The audio-visual generator includes a length predictor, a token-based speech decoder, and a token-based face decoder. The token-based speech decoder and face decoder, adapted from the existing speech generator and face generator, process AV speech tokens instead of raw audio. Speaker identity information is incorporated through speaker embedding extraction, and the target identity's face and pose prior are utilized to enable generation with the desired identity."
+    ],
+    "title": "MultiDialog",
+    "url": "https://multidialog.github.io/"
+  },
+  {
+    "description": "Conversational agents are gaining huge popularity in industrial applications such as digital assistants, chatbots, and particularly systems for natural language understanding (NLU). However, a major drawback is the unavailability of a common metric to evaluate the replies against human judgement ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "Conversational agents are gaining huge popularity in industrial applications such as digital assistants, chatbots, and particularly systems for natural language understanding (NLU). However, a major drawback is the unavailability of a common metric to evaluate the replies against human judgement for conversational agents.",
+      "The dataset creation is performed in the following steps: First, we used simple random sampling to select 4750 dialogue contexts from the Cornell movie dataset in which each dialogue is divided into utterances. Since the dataset contains human\u2013human dialogues, we assigned each utterance alternatively as Speaker 1 and Speaker 2 as shown in Figure 1. The dataset consists of multi-turn dialogues ranging from two to the maximum of seven turns.",
+      "It is crucial to take into account the number of low scores in positive replies and high scores in negative replies which introduce noise in the dataset. Thus, it is important to get human judgments even for positive pairs. The negative training data can be even harmful for binary text classification [30], which may occur in the case of next utterance classification in dialogue settings.",
+      "Existing methods [31,32] which perform well in PU Learning problems can also be applied to next utterance classification for dialogues. The human generated replies of HUMOD dataset are highly relevant since users were asked to provide relevant replies for the given dialogue context during data collection. However, in order to perform initial evaluation on human generated replies, we randomly selected 30 dialogue reply pairs with six diverse replies of different turns (for example, five dialogues for each turn i.e., 2-turn, 3-turn, 4-turn, 5-turn, 6-turn, 7-turn) from the HUMOD dataset."
+    ],
+    "title": "Human Annotated Dialogues Dataset for Natural Conversational Agents",
+    "url": "https://www.mdpi.com/2076-3417/10/3/762"
+  },
+  {
+    "description": "As sharing images in an instant message is a crucial factor, there has been active research on learning a image-text multi-modal dialogue model. However, training a well-generalized multi-modal dialogue model is challe\u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "Nonetheless, as shown in Figure 1 (# images / dialog and # images / utterances), existing datasets consist of less than the average 3 images per dialogue and the average 1.7 images per utterance. A model trained with such datasets can be overfitted by memorizing those pairs of images and dialogues, resulting in a lack of generalization.",
+      "In real-life scenarios, people can share images with different styles, views, or objects for the same dialogue and context. However, as shown in Table 1, the existing datasets include few images per dialogue and utterance. This does not reflect real-life scenarios and can cause an overfitting problem by forcing a model to memorize the pairs of images and dialogues.",
+      "As shown in Figure 8, we confirm that the overall tendency of the model performance to increase the maximum number of images mostly increases across metrics (R@{1,5,10}). This demonstrates that showing various images per utterance enables the model to learn the semantic relationship between images and utterances rather than memorizing a pair of an image and an utterance, resulting in better generalization performance.",
+      "Next, we combine two similarity types for each computed by utterance-image and utterance-caption. We then remove unrelated images from the matched results. In this section, we propose DialogCC, which is a large-scale multi-modal dialogue dataset. In order to construct DialogCC, we introduce an automatic pipeline, which consists of two steps: (1) source data filtering, (2) multi-modal dialogue filtering."
+    ],
+    "title": "[2212.04119] DialogCC: Large-scale Multi-Modal Dialogue Dataset",
+    "url": "https://ar5iv.labs.arxiv.org/html/2212.04119"
+  },
+  {
+    "description": "Most existing dialogue systems fail to respond properly to potentially unsafe user utterances by either ignoring or passively agreeing with them. ... PersonalDialog is a large-scale multi-turn dialogue dataset containing various traits from a large number of speakers. The dataset consists of 20.83M ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Most existing dialogue systems fail to respond properly to potentially unsafe user utterances by either ignoring or passively agreeing with them. ... PersonalDialog is a large-scale multi-turn dialogue dataset containing various traits from a large number of speakers. The dataset consists of 20.83M sessions and 56.25M utterances from 8.47M speakers.",
+      "DialogSum is a large-scale dialogue summarization dataset, consisting of 13,460 dialogues with corresponding manually labeled summaries and topics. ... OpenDialKG contains utterance from 15K human-to-human role-playing dialogs is manually annotated with ground-truth reference to corresponding entities and paths from a large-scale KG with 1M+ facts.",
+      "Large-scale LMs can generate dialogues with a specific personality, given a prompt consisting of a brief description of the chatbot\u2019s properties and few dialogue examples. We use this method to build the entire dataset. ... The Arabic-TOD dataset is based on the BiToD dataset. Of the 3,689 BiToD-English dialogues, 1,500 dialogues (30,000 utterances) were translated into Arabic.",
+      "Ubuntu Dialogue Corpus (UDC) is a dataset containing almost 1 million multi-turn dialogues, with a total of over 7 million utterances and 100 million words. This provides a unique resource for research into building dialogue managers based on neural language models that can make use of large amounts of unlabeled data. The dataset has both the multi-turn property of conversations in the Dialog State Tracking Challenge datasets, and the unstructured nature of interactions from microblog services such as Twitter. ... For goal-oriented document-grounded dialogs, it often involves complex contexts for identifying the most relevant information, which requires better understanding of the inter-relations between conversations and documents."
+    ],
+    "title": "32 dataset results for Dialogue Generation",
+    "url": "https://paperswithcode.com/datasets?task=dialogue-generation"
+  },
+  {
+    "description": "A large multimedia corpus advances the scientific study of human communication and social interaction.",
+    "favicon_url": "https://you.com/favicon?domain=www.science.org&size=128",
+    "snippets": [
+      "People spend a substantial portion of their lives engaged in conversation, and yet, our scientific understanding of conversation is still in its infancy. Here, we introduce a large, novel, and mult...",
+      "Short gaps are consistently the most common type of turn transition in naturally occurring conversation. The brief interval between turns is particularly notable because the length of these intervals is much shorter than the time it takes a person to react and produce a spontaneous utterance. This means that listeners must be predicting the end of a speaker\u2019s turn in advance.",
+      "Backchannels, the short words and utterances that listeners use to respond to speakers without taking the floor (e.g., \u201cyeah,\u201d \u201cmhm,\u201d and \u201cexactly\u201d), represent a third basic feature of the turn-taking system.",
+      "An additional recommendation for future research is to explore the notable diversity in our participant pool, which represents a broad cross section of the United States, particularly in cases where dissimilar participants were paired, resulting in countless intergroup conversations. For example, in one conversation, our qualitative reviewer noted that \u201c\u2026 [speakers are] a white man and a black woman, begins off very reticent and one-sided, rapport develops slowly with the help of a kind and talkative partner.\u201d In a different conversation, \u201c\u2026 [speakers are a] 40-year-old mother of 3 in Louisiana and 20-ish daughter of Polish immigrants located in Chicago."
+    ],
+    "title": "The CANDOR corpus: Insights from a large multimodal dataset of ...",
+    "url": "https://www.science.org/doi/10.1126/sciadv.adf3197"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "An Information-Seeking Dialogue Dataset Grounded on ...",
+    "url": "https://aclanthology.org/2022.findings-acl.41.pdf"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "MMDialog: A Large-scale Multi-turn Dialogue Dataset ...",
+    "url": "https://aclanthology.org/2023.acl-long.405.pdf"
+  },
+  {
+    "description": "Persona-grounded dialogue systems aim to enhance the quality of AI agent responses by bolstering persona consistency and promoting response diversity.\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "In this context, Persona-Chat (PC) (Zhang et al., 2018) was introduced, demonstrating that employing an utterance infused with a specific persona as the gold label assists AI agents in generating responses consistent with the given persona. Nevertheless, the diversity of predefined personas in the dataset remains insufficient to encompass the spectrum of personalities and characteristics present in the real world.",
+      "In the context of persona grounding (Li, Galley, Brockett, Spithourakis, et al., 2016), Zhang et al. (2018) introduced a data composition approach in which utterances incorporating persona attributes are utilized as gold labels. This data composition has demonstrated efficacy in addressing persona consistency issues and has been utilized in various studies (Kim et al., 2022, Lee et al., 2024, Li et al., 2023, Son and Kim, 2024, Wang et al., 2021).",
+      "This framework (1) creates a background skeleton from the original gold labels, masking persona-related elements, (2) infuses the background skeleton with expanded-persona features, generating synthetic gold labels, (3) identifies the most appropriate synthetic gold labels among the candidates, and (4) merges them into persona-grounded dialogue dataset. Through extensive experiments on the Persona-Chat, we demonstrate that the proposed framework effectively integrates the content of expanded personas to generate synthetic gold labels suitable for the dialogue context. Furthermore, response generation experiments using the Optimized Persona-Chat show that our framework significantly enhances AI agents\u2019 performance in terms of persona consistency and response diversity.",
+      "Along with this trend, research using various aspects such as personas (Zhang et al., 2018), emotions (Zhou et al., 2018), images (Shuster, Humeau, Bordes, & Weston, 2020), external knowledge sources like Wikipedia (Dinan et al., 2019, Jang et al., 2022), and commonsense graphs (Sap et al., 2019, Speer et al., 2017) have been explored to create high-quality training datasets for conversational AI. In contrast to goal-oriented conversations, maintaining consistency in open-domain conversations is challenging for AI agents due to the vast range of topics, which makes it difficult to sustain user engagement (Liu et al., 2020, Qian et al., 2018, Song, Wang, Zhang, Zhang, and Liu, 2020)."
+    ],
+    "title": "Optimizing training data for persona-grounded dialogue via Synthetic ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417424026630"
+  },
+  {
+    "description": "Speech encompasses a wealth of information, including but not limited to content, paralinguistic, and environmental information. This comprehensive nature of speech significantly impacts communication and is crucial for human-computer interaction. Chat-Oriented Large Language Models (LLMs), ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The ultimate goal of SD-Eval is to create a benchmark dataset for speech-to-speech conversation system development. As an initial step, SD-Eval focuses on speech-to-text dialogue. The initial version of SD-Eval consists of four sub-tasks, each focusing on evaluating responses to input utterances with different emotions, accents, ages, and background sounds.",
+      "To assess the system\u2019s upper bound upon the speech transcript, we also provide paralinguistic or environmental information as an additional label to the frozen LLM with LoRA for model finetuning. The input format is a concatenation of ground-truth transcripts and labels. For instance, \u201cHow are you?<Emotion:Happy>\u201d is the input of an utterance.",
+      "Options include \u201cASR\u201d (generated by an ASR model) and \u201cGT\u201d (ground-truth transcript). \u201cEmotion Label\u201d indicates the source of the speech emotion label for the utterance, either \u201cSER\u201d (produced by a speech emotion recognition model) or \u201cGT\u201d (ground-truth label).",
+      "We use LibriSpeech test-clean for evaluation, which contains 40 distinct speakers. Following [54, 22], we randomly select one sentence for each speaker as the target and a 3-second clip as the prompt from the same speaker\u2019s speech. Figure 6: The prompt used to generate responses of utterances for training set related to emotion."
+    ],
+    "title": "SD-Eval: A Benchmark Dataset for Spoken Dialogue Understanding ...",
+    "url": "https://arxiv.org/html/2406.13340v1"
+  },
+  {
+    "description": "We have reviewed ParlAI, recent research papers, and other sources to select the most popular dialog datasets.",
+    "favicon_url": "https://you.com/favicon?domain=www.topbots.com&size=128",
+    "snippets": [
+      "Thus, the dialogs are human-written, focus on a certain topic in a certain context (e.g., shopping), and include a reasonable number of speaker turns. DailyDialog dataset also has strong annotations for topic, emotion, and utterance act.  ... To build this dataset, the developers first crowdsourced a set of 1155 possible personas, each consisting of at least 5 profile sentences. Then, they paired crowdworkers, assigned them each a random persona, and asked them to chat.",
+      "Considering that the original Persona-Chat test set was released publicly, the developers of the ConvAI2 task crowdsourced further data for a hidden test set with 100 new personas and over 1,015 dialogs. They also extended the training set by rephrasing, generalizing, or specializing the original utterances. ... This dataset spans over 1300 diverse topics and includes conversations directly grounded with knowledge retrieved from Wikipedia.",
+      "This dataset is grounded in emotional situations to facilitate training and evaluation of empathy in dialog agents. It was collected via crowdsourcing, where one participant (speaker) selects the emotion word, describes the corresponding situation and discusses it with another participant (listener). Each conversation is allowed to be 4-8 utterances long, and the average is 4.31 utterances per conversation.",
+      "This dataset is explicitly designed to exhibit multiple conversation modes: displaying personality, showing empathy, and demonstrating knowledge. It was collected via human-to-human conversations with one \u2018unguided\u2019 speaker and one \u2018guided\u2019 speaker. The last one is shown three suggested responses in each turn. The responses are generated by models trained on the ConvAI, Wizard of Wikipedia, or EmpatheticDialogues tasks, and a speaker is free to either use and modify or ignore those responses."
+    ],
+    "title": "Key Dialog Datasets: Overview and Critique",
+    "url": "https://www.topbots.com/key-dialog-datasets/"
+  },
+  {
+    "description": "Dialogue datasets are essential for advancing natural language processing (NLP) tasks. However, many existing datasets lack integrated annotations for personality and emotion, limiting models\u2019 ability to effectively capture these aspects and generate personalized, human-like dialogues, which ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Dialogue datasets are essential for advancing natural language processing (NLP) tasks. However, many existing datasets lack integrated annotations for personality and emotion, limiting models\u2019 ability to effectively capture these aspects and generate personalized, human-like dialogues, which ultimately impact user experience.",
+      "Scientific Data - Bilingual Dialogue Dataset with Personality and Emotion Annotations for Personality Recognition in Education",
+      "Integration of emotion annotations alongside fine-grained Big Five personality traits, thereby facilitating the creation of emotionally aware systems capable of automatically detecting personality traits in speakers. Adopt LLMs to evaluate the fluency and coherence of the dialogue, validate consistency between utterances and personality traits, and demonstrate the impact of personality traits on emotional expression.",
+      "En-Profile.json: Containing structured English role information files that serve as profiles for generating utterances. Prompts.csv: A CSV file that stores the prompts used in generating the dialogues by the LLMs. These prompts provide instructions and guidelines for initiating conversations between the personas agent and user within the context of dialogue. Zh-Dialogues.csv: A CSV file contains the actual dialogues generated by Qwen2-70b. Each dialogue entry consists of conversational turns between the specific personas agent and the user."
+    ],
+    "title": "Bilingual Dialogue Dataset with Personality and Emotion Annotations ...",
+    "url": "https://www.nature.com/articles/s41597-025-04836-w"
+  },
+  {
+    "description": "In subject area: Computer Science \u00b7 Dialogue modeling refers to the process of organizing information in a conversation, where each event updates the current state of the dialogue based on the contents of the event",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The personal utterance history serves as a personal mask to influence the context-response matching matrix. Human cognitive process is multi-modality in nature and bringing together vision and language in one intelligent conversational system has been one of the longest running goals of NLP (Shuster et al., 2020; Alamri et al., 2019). Grounding dialogue with an image or video clip is an intriguing and challenging task.",
+      "Dialogue grounded by user profile or persona is also referred to as personalized dialogue modeling. As the famous maxim by Shakespeare, there are a thousand Hamlet in a thousand people\u2019s eyes. Considering the profile of interlocutors help to promote the persona consistency of a dialogue system.",
+      "Dissimilar to the works mentioned above, Li et al. (2021a) tackle the personalized dialogue from a different perspective. Instead of encoding the explicit profile into a vector, it gathers all the utterance history of a speaker as his/her implicit persona. The advantage of this method lies in its practicality since the utterance history is much easier to obtain compared with user profile.",
+      "A large body of works in personal dialogue leaves it to be self-evident that people are eager to show their persona intensively in dialogue. Zheng et al. (2020) doubt this assumption and believe that there is a persona-sparse issue: real-world dialogue data only contains a limited amount of utterance that correlates with the persona of a speaker."
+    ],
+    "title": "Dialogue Modeling - an overview | ScienceDirect Topics",
+    "url": "https://www.sciencedirect.com/topics/computer-science/dialogue-modeling"
+  },
+  {
+    "description": "Chatbots allow computer programs to interact naturally with a user. However, they remain limited due to their lack of sensitivity to the user\u2019s state \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Our modified cost function takes into account the EmotionLines utterances where the annotators are not unanimous.",
+      "We are interested in text-embedding based models. The general idea is to analyze the meaning of the utterance to verify if it conveys an emotion.",
+      "To reduce the variability of the metrics, we set up a cross validation (with 4 blocks); To manage the imbalance of the classes, we weight the error by class. For the test set, we built two reference sets: an all set consisting of all translations (Google Translate, English/French Scripts and augmented data) and",
+      "Different methods to represent emotions exist, as classes [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11], [12], [13], [14], [15], [16] or as a vector [17]. We represent emotions based on a modified discrete representation of Ekman [3]. This representation consists of three explicit classes: joy, anger, sadness; neutral (no emotion) and other (another emotion: surprise, disgust, fear, \u2026)."
+    ],
+    "title": "French translation of a dialogue dataset and text-based emotion ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0169023X22000908"
+  },
+  {
+    "description": "Call for contributions! We're always looking for more datasets. Feel free to send us a pull request \u00b7 During the past decade, several areas of speech and language understanding have witnessed substantial breakthroughs from the use of data-driven models. In the area of dialogue systems, the ...",
+    "favicon_url": "https://you.com/favicon?domain=breakend.github.io&size=128",
+    "snippets": [
+      "Triangle (\\triangle) indicates lower and upper bounds computed using average words per utterance estimated on a similar Reddit corpus Schrading [2015]. Square ([ \u00af]) indicates estimates based only on English part of the corpus. Note that 2.1M dialogues from the Movie Dialog dataset (\\blacktriangledown) are in the form of simulated QA pairs.",
+      "TV show datasets were adjusted based on the ratio of average film runtime (112 minutes) to average TV show runtime (36 minutes). This data was scraped from the IMBD database (http://www.imdb.com/interfaces). ( Starred (*) quantities are estimated based on the average number of words and utterances per film, and the average lengths of films and TV shows.",
+      "Table 1: Human-machine dialogue datasets. Starred (*) numbers are approximated based on the average number of words per utterance.",
+      "Nevertheless, several recent results suggest that data-driven approaches are feasible and quite promising. To facilitate research in this area, we have carried out a wide survey of publicly available datasets suitable for data-driven learning of dialogue systems."
+    ],
+    "title": "A Survey of Available Corpora for Building Data-Driven Dialogue ...",
+    "url": "https://breakend.github.io/DialogDatasets/"
+  },
+  {
+    "description": "To achieve the long-term goal of machines being able to engage humans in conversation, our models should captivate the interest of their speaking partners. Communication grounded in images, whereby a dialogue is conduc\u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "Note, given that not all utterances should directly reference an image property or invoke the style, we do not expect 100%. The overall dataset statistics are given in Table 1. This is a fairly large dialogue dataset compared to other existing publicly available datasets. For example, PersonaChat Zhang et al. (2018) (which is not grounded in images) consists of 162k utterances, while IGC Mostafazadeh et al.",
+      "We test a set of neural architectures using state-of-the-art image and text representations, considering various ways to fuse the components. To test such models, we collect a dataset of grounded human-human conversations, where speakers are asked to play roles given a provided emotional mood or style, as the use of such traits is also a key factor in engagingness Guo et al. (2019). Our dataset, Image-Chat, consists of 202k dialogues over 202k images using 215 possible style traits.",
+      "The Image-Chat dataset is a large collection of (image, style trait for speaker A, style trait for speaker B, dialogue between A & B) tuples that we collected using crowd-workers, Each dialogue consists of consecutive turns by speaker A and B. No particular constraints are placed on the kinds of utterance, only that we ask the speakers to both use the provided style trait, and to respond to the given image and dialogue history in an engaging way.",
+      "(2017) (grounded in images) consists of 4k of validation and test set examples only, compared to over 400k utterances in Image-Chat. Table 1: Image-Chat dataset statistics. We consider two major types of dialogue model: retrieval and generative. Both approaches make use of the same components as building blocks. We use three sub-networks for the three modalities of input: (i) an image encoder, (ii) a dialogue history encoder; and (iii) a style encoder."
+    ],
+    "title": "[1811.00945] Image-Chat: Engaging Grounded Conversations",
+    "url": "https://ar5iv.labs.arxiv.org/html/1811.00945"
+  },
+  {
+    "description": "Discourse parsing for multiparty dialogue aims to detect the discourse structure and relations in a dialogue to obtain a discourse dependency graph. E\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "In our model, we explicitly learn speaker representations by aggregating information of its relevant utterance nodes using a heterogeneous graph transformer. We also proposed two control models to exploit the effect of different speaker modeling. Experiments on existing large-scale English discourse parsing Molweni dataset prove the effectiveness of our method for incorporating speaker \u00b7 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.",
+      "Liu and Chen (2021) uses Transformer (Vaswani et al., 2017) to encode utterances and gain domain integration via using language backbone, cross-domain pre-training and cross-domain vocabulary refinement. However, explicitly learning the representations of speakers has not been exploited yet. In this paper, we propose a speaker-aware heterogeneous graph network to predict discourse dependency links and classify discourse relations. Our model consists of three modules, including sequential modeling, graph modeling, and discourse parsing module.",
+      "An example in the Molweni dataset (Li et al., 2020) is shown in Fig. 1. The left side of the figure shows a multiparty dialogue, and the right side of the figure provides the ground truth of the dialogue discourse structure of the dialogue. In the dialogue, there are four interlocutors, including nbx909, likwidoxigen, babo and nuked. Four speakers sent seven utterances in total.",
+      "After heterogeneous graph modeling, we get the final representations of utterances and speakers and concatenate them to classify whether there is a discourse dependency relation between two nodes and recognize the specific discourse relation type using the popular dependency parser Biaffine module (Dozat & Manning, 2016). To evaluate the performance of our proposed model, we perform experiments on existing two dialogue discourse parsing datasets the STAC (Asher et al., 2016) and the Molweni dataset (Li et al., 2020) and the results prove effects of our speaker-aware model."
+    ],
+    "title": "A speaker-aware multiparty dialogue discourse parser with ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1389041723000013"
+  },
+  {
+    "description": "to the website of the Dialogue Modelling Group in Amsterdam \u00b7 We carry out research at the interface of computational linguistics, cognitive modelling and artificial intelligence. Our aim is to understand how we use language to communicate with each other in situated environments and how dialogue ...",
+    "favicon_url": "https://you.com/favicon?domain=dmg-illc.github.io&size=128",
+    "snippets": [
+      "MALeViC: Modeling Adjectives Leveraging Visual Contexts Dataset of synthetic images with pairs of statements and truth values related to size adjectives, as well as code repository for several experiments and analyses that leverage this dataset. The PhotoBook Dataset: Building Common Ground through Visually Grounded Dialogue A large-scale collection of 2,500 human-human, visually-grounded and goal-oriented English conversations between pairs of participants.",
+      "VISTA: Visually Grounded Talking Agents Code and overview of research on visually-grounded language in interactive settings presented in a series of papers led jointly with Raffaella Bernardi. DUPS: Diachronic Usage Pair Similarity Dataset of similarity judgements of English word usage pairs from different time periods, as described by Giulianelli et al.",
+      "Some datasets, code, and other publicly available resources developed by the Dialogue Modelling Group. See also the links provided with each publication. TRADE: TRuly ADversarial ad understanding Evaluation A new diagnostic test set consisting of 300 randomly selected image-based advertisements from the Pitt Ads dataset.",
+      "These are some of the topics we work on: Computational semantics and pragmatics, LLM evaluation, visually grounded language, conversational agents and learning from interaction, uncertainty in language understanding and generation, language variation and change in communities of speakers, safety in conversational AI."
+    ],
+    "title": "Dialogue Modelling Group",
+    "url": "https://dmg-illc.github.io/dmg/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "Aclanthology",
+    "url": "https://aclanthology.org/2025.coling-main.470.pdf"
+  }
+]

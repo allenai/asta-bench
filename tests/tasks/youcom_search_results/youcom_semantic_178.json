@@ -1,0 +1,284 @@
+[
+  {
+    "description": "As language models hype \"openness\", this article proposes key criteria to evaluate true transparency balanced with safety.",
+    "favicon_url": "https://you.com/favicon?domain=promptengineering.org&size=128",
+    "snippets": [
+      "Over the past months, there has been a slew of language models touted as \u201copen-source\u201d led by Meta\u2019s LLama model and most recently Mistral\u2019s Mixtral. However, brewing contention questions if these models qualify as fully open source.",
+      "As advanced language models like LLama and Mixtral demonstrate unprecedented capabilities, providing transparency into their development processes becomes critical. By clearly delineating the differences between open weights versus full open source access, I establish a framework for evaluating claims of openness.",
+      "Mapping models onto this landscape provides dimensionality to navigate tradeoffs. Rather than binary \"open or closed\" thinking, we can reason about degrees of openness related to responsible oversight.",
+      "In contrast, releasing a model as open source would entail providing the full source code and information required for retraining the model from scratch. This includes the model architecture code, training methodology and hyperparameters, the original training dataset, documentation, and other relevant details."
+    ],
+    "title": "Openness in Language Models: Open Source vs Open Weights vs ...",
+    "url": "https://promptengineering.org/llm-open-source-vs-open-weights-vs-restricted-weights/"
+  },
+  {
+    "description": "LLM (Large Language Model) benchmarks are standardized tests or datasets used to evaluate the performance of large language models. These benchmarks help researchers and developers understand the strengths and weaknesses of their models and compare them with other models in a systematic way.",
+    "favicon_url": "https://you.com/favicon?domain=docs.mistral.ai&size=128",
+    "snippets": [
+      "The company reports benchmark results on popular public benchmarks such as MMLU (Massive Multitask Language Understanding), MT-bench, and others. You can find the benchmark results in the following blog posts: Magistral Medium: Our frontier-class reasoning model built on top of Mistral Medium 3, offering state-of-the-art reasoning capabilities for enterprise use cases. Magistral Small: Our small reasoning model built on top of Mistral Small 3, a compact open model with high-performance reasoning.",
+      "Mixtral 8x22B: our most performant open model. It handles English, French, Italian, German, Spanish and performs strongly on code-related tasks. Natively handles function calling. Mixtral 8x7B: outperforms Llama 2 70B on most benchmarks with 6x faster inference and matches or outperforms GPT3.5 on most standard benchmarks.",
+      "This model has high agentic capabilities, performing well with OpenHands and SWE-agent code agent frameworks. Mistral Saba: A powerful and efficient text generation model trained extensively on languages from the Middle East and South Asia, achieving state-of-the-art quality comparable to much larger models.",
+      "Mistral Large performs exceptionally well in code and Spanish, outperforming Llama 3 405B in these areas. Artificial Analysis compares and evaluates AI models across key performance metrics, including quality, price, output speed, latency, context window, and others."
+    ],
+    "title": "Benchmarks | Mistral AI",
+    "url": "https://docs.mistral.ai/getting-started/models/benchmark/"
+  },
+  {
+    "description": "Announced May 2022, Gato is ... not just text but other modalities (images, Atari games and more) and perform multiple tasks such as image captioning and even controlling a robotic arm! Although the model itself hasn\u2019t been released there is an open source project aiming ...",
+    "favicon_url": "https://you.com/favicon?domain=www.vectara.com&size=128",
+    "snippets": [
+      "Announced May 2022, Gato is deepmind\u2019s multimodal model which,like GPT-4, is a single generalist model that can work on not just text but other modalities (images, Atari games and more) and perform multiple tasks such as image captioning and even controlling a robotic arm! Although the model itself hasn\u2019t been released there is an open source project aiming to imitate its capabilities.",
+      "Given the quality Mistral 7B is able to achieve with a relatively small size that doesn\u2019t require monstrous GPUs to host, Mistral 7B is our pick for the best overall self-hosted model for commercial and research purposes. Open AI, 175 billion parameters, Not Open Source, API Access Only \u00b7 Announced in June 2020, GPT-3 is pre-trained on a large corpus of text data, and then it is fine-tuned on a particular task. Given a text or sentence GPT-3 returns the text completion in natural language. GPT-3 exhibits impressive few-shot as well as zero-shot performance on NLP tasks such as translation, question-answering, and text completion.",
+      "It can perform a lot of the text-based functions that GPT-4 can, albeit GPT-4 usually exhibits better performance. ChatGPT is a sibling model to InstructGPT. InstructGPT itself was specifically trained to receive prompts and provide detailed responses that follow specific instructions, while ChatGPT is designed to engage in natural language conversations. OpenAI frequently pushes updates and new features such as the recently announced ChatGPT plugins which unlock even more LLM use cases.",
+      "It generates text in 46 natural languages and 13 programming languages, and while the project shares the scope of other large-scale language models like GPT-3, it specifically aims to develop a more transparent and interpretable model. BLOOM can act as an instruction-following model to perform general text tasks that were not necessarily part of its training. Google, 173 billion parameters, Not Open Source, No API or Downloads"
+    ],
+    "title": "Top Large Language Models (LLMs): GPT-4, LLaMA 2, Mistral 7B, ...",
+    "url": "https://www.vectara.com/blog/top-large-language-models-llms-gpt-4-llama-gato-bloom-and-when-to-choose-one-over-the-other"
+  },
+  {
+    "description": "Delve into the world of openness in language models and discover the differences between open source, open weights, and restricted weights.",
+    "favicon_url": "https://you.com/favicon?domain=itlawco.com&size=128",
+    "snippets": [
+      "By offering unprecedented capabilities in natural language processing, text generation, and more. However, the degree of openness in these models\u2014whether open source, open weights, or restricted weights\u2014significantly impacts their accessibility, usage, and development.",
+      "Open-weight LLMs, while not necessarily open source, make their pre-trained model weights publicly accessible. These weights represent the learned parameters that define the model\u2019s behaviour and performance.",
+      "Open-weight LLMs often fall into a legal grey area, as the model weights themselves may not be copyrightable, but the underlying training data and code might be. This raises questions about ownership, usage rights, and potential liabilities for unintended consequences.",
+      "While open weights can be a valuable resource for research and development, their commercial use might be restricted by the terms of the original model\u2019s licence or by separate agreements with the model provider."
+    ],
+    "title": "Openness in language models: open source, open weights & restricted ...",
+    "url": "https://itlawco.com/openness-in-language-models-open-source-open-weights-restricted-weights/"
+  },
+  {
+    "description": "We have evaluated 26 of our BLING/DRAGON fine-tuned models from 0.5B \u2014 9B parameters, built on a wide range of underlying base models, including: llama-2, llama-3, mistral, phi-3, phi-2, phi-1.5\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "When we started in early 2023 instruct training small models to read contracts, we found that the models were generally very poor at \u201cevery day\u201d common-sense set of math/logic questions in the test set, even when provided a reasonable amount of fine-tuned samples, the models seemed lack solid pattern recognition to answer basic questions such as \u201cIf the payment is due in 3 days, and it is currently January 15, when is the payment due?\u201d or answering basic sorting and ranking questions. This is one of the bigger changes in capability in small models over the last year. Yi and Qwen2 are stand-outs with notably strong performance in this area, including table-reading (complex/specialized questions), while we observed virtually no positive changes for Mistral or Llama.",
+      "Mistral 0.3 compared to Mistral 0.1 version: +3% increase in overall accuracy, from 96.5% to 99.5%, although notably other dimensions were unchanged or potentially even slightly worse in the original v0.1 finetune from 2023. yi-9b (v1.5) is an awesome model, but slightly less accurate then the yi-6b (v1.0 in 2023). phi-3.0 scores as well as phi-3.5 \u2014 no clear benefit in testing to phi-3.5 (although performance is comparable \u2014 no notable regressions either). llama-2 outperforms llama-3 on most dimensions of our testing.",
+      "We have evaluated 26 of our BLING/DRAGON fine-tuned models from 0.5B \u2014 9B parameters, built on a wide range of underlying base models, including: llama-2, llama-3, mistral, phi-3, phi-2, phi-1.5, stablelm, red-pajama, deci, yi, qwen, falcon, tiny-llama, sheared-llama, cerebras and pythia \u2014 and like a chef taste-testing his new creations, we have subjected all of these models to a RAG benchmark test, and are now publishing the results.",
+      "Generally, small model accuracy and capabilities have improved over the last 12 months. Of the top 6 best performing models, 5 were based on foundation models released in 2024 \u2014 phi-3-mini (3.8b), phi-3.5-mini (3.8b), qwen-2\u20137b, mistral-0.3\u20137b and 01-ai-9b."
+    ],
+    "title": "Best Small Language Models for Accuracy and Enterprise Use Cases ...",
+    "url": "https://medium.com/@darrenoberst/best-small-language-models-for-accuracy-and-enterprise-use-cases-benchmark-results-cf71964759c8"
+  },
+  {
+    "description": "Mistral AI released three open-weight language models: Mistral NeMo, a 12B parameter general-purpose LLM; Codestral Mamba, a 7B parameter code-generation model; and Mathstral, a 7B parameter model fine-tuned for math and reasoning. All three models are available under the Apache 2.0 license.",
+    "favicon_url": "https://you.com/favicon?domain=www.infoq.com&size=128",
+    "snippets": [
+      "Mistral AI released three open-weight language models: Mistral NeMo, a 12B parameter general-purpose LLM; Codestral Mamba, a 7B parameter code-generation model; and Mathstral, a 7B parameter model fine-tuned for math and reasoning. All three models are available under the Apache 2.0 license. Mistral AI calls NeMo their \"new best small model.\"",
+      "Mistral NeMO supports multiple languages, with \"strong\" performance on 11 languages including Chinese, Japanese, Arabic, and Hindi. Mistral developed a new tokenizer for the model, called Tekken, which has more efficient compression of source code and natural language. On LLM benchmarks such as MMLU and Winogrande, Mistral NeMO outperforms similarly-sized models, including Gemma 2 9B and Llama 3 8B.",
+      "Mistral touts their model's ability to provide users with \"quick responses, irrespective of the input length\" and performance \"on par\" with larger Transformer-based models such as CodeLlama 34B. Mathstral was developed in collaboration with Project Numina, a non-profit organization dedicated to fostering AI for mathematics. It is based on the Mistral 7B model and is fine-tuned for performance in STEM subjects. According to Mistral AI, Mathstral \"achieves state-of-the-art reasoning capacities in its size category\" on several benchmarks, including 63.47% on MMLU and 56.6% on MATH.",
+      "Other users pointed out that, at release time, the model was not supported by the popular Ollama framework, because Mistral NeMo used a new tokenizer."
+    ],
+    "title": "Mistral AI Releases Three Open-Weight Language Models - InfoQ",
+    "url": "https://www.infoq.com/news/2024/08/mistral-ai-models/"
+  },
+  {
+    "description": "Explore the top 9 LLMs making waves in the AI world and what each of them excel at",
+    "favicon_url": "https://you.com/favicon?domain=www.shakudo.io&size=128",
+    "snippets": [
+      "It processes approximately 150 tokens per second, making it over three times faster than Llama 3.3 70B on the same hardware. This new model is ideal for applications requiring quick, accurate responses with low latency, such as virtual assistants, real-time data processing, and on-device command and control. Its smaller size allows for deployment on devices with limited computational resources. Mistral Small 3 is currently open-source under the Apache 2.0 license.",
+      "The initial duo\u2014Llama 4 Scout and Llama 4 Maverick\u2014are open-weight, natively multimodal models that ingest text, images and short video, and extend context windows up to 256 000 tokens. LlaMA 3.3 improves on previous models with a longer context window of up to 128,000 tokens and an optimized transformer architecture. With a parameter of 70 billion, this model outperforms open-source and proprietary alternatives in areas such as multilingual dialogue, reasoning, and coding.",
+      "In May 2025 DeepSeek rolled out an R1-0528 refresh and introduced DeepSeek-V3, which now tops the Chatbot Arena open-source leaderboard with an Elo score of 1 382, nudging past Qwen 3 and other rivals. The DeepSeek-R1 is a 671B parameter Mixture-of-Experts (MoE) model with 37B activated parameters per token, trained through large-scale reinforcement learning with a strong focus on reasoning capabilities. The model excels at understanding and handling long-form content and demonstrates superior performance in complex tasks such as mathematics and code generation.",
+      "Unlike ChatGPT models, LlaMA 3 is open-source, giving users the flexibility to access and deploy freely on their cloud depending on the specific requirements of their infrastructure, security preferences, or customization needs. We recommend this model to businesses looking for advanced content generation and language understanding, such as those in customer service, education, marketing, and consumer markets."
+    ],
+    "title": "Top 9 Large Language Models as of June 2025 | Shakudo",
+    "url": "https://www.shakudo.io/blog/top-9-large-language-models"
+  },
+  {
+    "description": "A regularly updated list of LLMs disrupting the artificial intelligence space.",
+    "favicon_url": "https://you.com/favicon?domain=explodingtopics.com&size=128",
+    "snippets": [
+      "What is it? Llama 3, the predecessor to Llama 3.1, was available in both 70B and 8B versions that outperformed other open-source models like Mistral 7B and Google's Gemma 7B on MMLU, reasoning, coding, and math benchmarks.",
+      "It's designed to bring Mistral up to speed with the latest competing LLMs from Meta and OpenAI. It was also fine-tuned to reduce the number of hallucinations. Large 2 is multilingual and has a 128k context window. Benchmarking suggests that Mistral Large 2 outperforms Llama 3.1 405B in Python, C++, Java, PHP, and C# coding tasks.",
+      "In addition to Falcon 40B, it also outperforms other large language models like GPT-3.5 and LLaMA 2 on tasks such as reasoning, question answering, and coding.",
+      "Plus, Meta added eight additional languages for this model. The increased size of this model makes it the largest open-source model released to date. Customers can still access its predecessor, Llama 2, which is available in three versions: 7 billion, 13 billion, and 70 billion parameters."
+    ],
+    "title": "Best 44 Large Language Models (LLMs) in 2025",
+    "url": "https://explodingtopics.com/blog/list-of-llms"
+  },
+  {
+    "description": "PDF | Recent developments in artificial intelligence have ushered in a new era of language models, with capabilities that are rapidly advancing the... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "The present research conducts a detailed comparative analysis of three prominent large language models\u2014ChatGPT, Mistral, and Llama\u2014utilizing the Hugging Face platform to benchmark their performance across multiple dimensions, including computational efficiency, linguistic accuracy, and ethical alignment.",
+      "Mistral Ethical Alignment Bias Detection 85.3% 3 87% Llama Ethical Alignment Bias Detection 90.5% 1 87% Table 4 Detailed Performance Analysis across Models and Metrics",
+      "optimizations. Mistral, while presenting lower scores in both linguistic accuracy and \u00b7 ethical alignment compared to its counterparts, o\ufb00ered valuable insights into potential \u00b7 optimization areas for non-mainstream models. The balanced performance of Llama",
+      "Mistral Linguistic Accuracy Grammar Correctness 91.2% 3 92% Llama Computational E\ufb03ciency Response Time 76 ms 1 80 ms"
+    ],
+    "title": "(PDF) Benchmarking of Commercial Large Language Models: ChatGPT, ...",
+    "url": "https://www.researchgate.net/publication/380421448_Benchmarking_of_Commercial_Large_Language_Models_ChatGPT_Mistral_and_Llama"
+  },
+  {
+    "description": "Recent developments in artificial intelligence have ushered in a new era of language models, with capabilities that are rapidly advancing the frontiers of technology and communication. The present research conducts a detailed comparative analysis of three prominent large language models\u2014ChatGP...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchsquare.com&size=128",
+    "snippets": [
+      "The present research conducts a detailed comparative analysis of three prominent large language models\u2014ChatGPT, Mistral, and Llama\u2014utilizing the Hugging Face platform to benchmark their performance across multiple dimensions, including computational efficiency, linguistic accuracy, and ethical alignment."
+    ],
+    "title": "Benchmarking of Commercial Large Language Models: ChatGPT, Mistral, ...",
+    "url": "https://www.researchsquare.com/article/rs-4376810/v1"
+  },
+  {
+    "description": "Discover these top 11 open-source LLMs and build advanced AI workflows with n8n LangChain integration.",
+    "favicon_url": "https://you.com/favicon?domain=blog.n8n.io&size=128",
+    "snippets": [
+      "In this article, we've highlighted that the best open-source LLM depends on your specific use case, as models like Llama3, Mistral, and Falcon 3 excel in different areas such as speed, accuracy, or resource efficiency.",
+      "Llama 3 is Meta\u2019s latest generation of open-source large language models, offering high performance across a wide range of tasks. The latest Llama 3.3 70B model offers performance comparable to the 405B parameter model at a fraction of the computational cost, making it an attractive option for developers and researchers. ... Mistral AI, a French startup, has rapidly become a major player in the open-source LLM space.",
+      "Finally, there are several nodes to other providers, such as HuggingFace, and even a custom HTTP Request node. Thanks to the straightforward user interface in n8n, your LLM-powered workflow automations and AI-agents remain the same when you switch between models. To easily deploy a local model, begin with a \u00b7 n8n\u2019s self-hosted AI starter kit with Ollama integration. Open-source LLMs offer several advantages beyond publicly available model weights and increased transparency:",
+      "Some models use permissive licenses (like Apache 2.0), others have non-commercial restrictions, and some (like Meta Llama 3) include specific terms for commercial usage. ... There is no single best open-source LLM.  \u00b7 And here\u2019s why. There are many benchmarks for rating the models, and various research groups decide which benchmarks are suitable. This makes objective comparison rather non-trivial. ... performs tests on 6 key benchmarks using the Eleuther AI Language Model Evaluation Harness."
+    ],
+    "title": "The 11 best open-source LLMs for 2025 \u2013 n8n Blog",
+    "url": "https://blog.n8n.io/open-source-llm/"
+  },
+  {
+    "description": "An In-Depth Comparison of Mistral 7B vs Mixtral 8x7B vs Llama 2 vs Gemma",
+    "favicon_url": "https://you.com/favicon?domain=www.gpu-mart.com&size=128",
+    "snippets": [
+      "The fine-tuned LLM (called Llama-2-Chat) outperforms open-source chat models on most test benchmarks and is comparable to popular closed-source models such as ChatGPT and PaLM in terms of usefulness and security. Llama 2 is intended for English-language business and research use. The tuned model is designed for assistant-style chat, while the pre-trained model can be applied to a variety of natural language generation tasks. Mixtral 8x7B, a cutting-edge sparse model mixture of experts (SMoE) with open weights.",
+      "In particular, ChatGPT is powered by GPT-4, a LLM developed and owned by OpenAI, while Google Bard is based on Google\u2019s PaLM 2 model. ChatGPT and Bard, as well as many other popular chatbots, have in common that their underlying LLM are proprietary. This article aims to explore the top open-source LLMs available in 2024. Mistral LLM refers to the Large Language Model developed by Mistral AI.",
+      "Llama 2 is an open-source large language model (LLM) developed by Meta, formerly known as Facebook. It is a response to OpenAI's GPT models and Google's AI models like PaLM 2. Llama 2 is made available for research and commercial purposes, unlike many other large language models that are closed source.",
+      "Smaller versions like 7B and 13B are optimized for speed and can run efficiently on lower-spec hardware, albeit with slightly less effectiveness in generating plausible or accurate text compared to larger models. 4. Optimized for Dialogue: Some versions of Llama 2, such as Llama-2-chat, are fine-tuned specifically for chatbot-like dialogue, similar to how ChatGPT is optimized for conversational interactions. 5. Availability: Llama 2 is available through various platforms, including AWS, Hugging Face, and others, allowing developers to integrate it into their projects and utilize its capabilities. Gemma is a family of four large language models developed by Google, based on the Gemini models."
+    ],
+    "title": "Top Open-Source LLMs for 2024",
+    "url": "https://www.gpu-mart.com/blog/top-open-source-llms-for-2024"
+  },
+  {
+    "description": "The best 7B model to date, Apache 2.0 \u00b7 Mistral AI team is proud to release Mistral 7B, the most powerful language model for its size to date",
+    "favicon_url": "https://you.com/favicon?domain=mistral.ai&size=128",
+    "snippets": [
+      "For all metrics, all models were re-evaluated with our evaluation pipeline for accurate comparison. Mistral 7B significantly outperforms Llama 2 13B on all metrics, and is on par with Llama 34B (since Llama 2 34B was not released, we report results on Llama 34B). It is also vastly superior in code and reasoning benchmarks. ... Commonsense Reasoning: 0-shot average of Hellaswag, Winogrande, PIQA, SIQA, OpenbookQA, ARC-Easy, ARC-Challenge, and CommonsenseQA.",
+      "An interesting metric to compare how models fare in the cost/performance plane is to compute \u201cequivalent model sizes\u201d. On reasoning, comprehension and STEM reasoning (MMLU), Mistral 7B performs equivalently to a Llama 2 that would be more than 3x its size.",
+      "Mistral 7B is easy to fine-tune on any task. As a demonstration, we're providing a model fine-tuned for chat, which outperforms Llama 2 13B chat.",
+      "Mistral AI team is proud to release Mistral 7B, the most powerful language model for its size to date."
+    ],
+    "title": "Mistral 7B | Mistral AI",
+    "url": "https://mistral.ai/news/announcing-mistral-7b"
+  },
+  {
+    "description": "Koala [64] is yet another ... built on LLaMA, but with a specific focus on interaction data that include user inputs and responses generated by highly capable closed-source chat models such as ChatGPT. The Koala-13B model performs competitively with state-of-the-art chat models according to human evaluation based on real-world user prompts. Mistral-7B [65] is a 7B-parameter language model engineered for superior performance and efficiency. Mistral-7B outperforms the best open-source 13B ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Koala [64] is yet another instruction-following language model built on LLaMA, but with a specific focus on interaction data that include user inputs and responses generated by highly capable closed-source chat models such as ChatGPT. The Koala-13B model performs competitively with state-of-the-art chat models according to human evaluation based on real-world user prompts. Mistral-7B [65] is a 7B-parameter language model engineered for superior performance and efficiency. Mistral-7B outperforms the best open-source 13B model (LLaMA-2-13B) across all evaluated benchmarks, and the best open-source 34B model (LLaMA-34B) in reasoning, mathematics, and code generation.",
+      "On the other hand, while users pay for each call, how to use the predictions is limited, for example, OpenAI prohibits usage of its API to create LLMs that later will be used to compete with it. The main value in such case is training data. deep learning in its core, is a set of mathematical functions applied to matrices, with a specific precision for model weights.",
+      "In what follows, we review three LLM families: GPT, LLaMA, and PaLM, as illustrated in Fig 8. Figure 8: Popular LLM Families. Generative Pre-trained Transformers (GPT) are a family of decoder-only Transformer-based language models, developed by OpenAI. This family consists of GPT-1, GPT-2, GPT-3, InstrucGPT, ChatGPT, GPT-4, CODEX, and WebGPT. Although early GPT models, such as GPT-1 and GPT-2, are open-source, recent models, such as GPT-3 and GPT-4, are close-source and can only be accessed via APIs.",
+      "LLaMA is a collection of foundation language models, released by Meta. Unlike GPT models, LLaMA models are open-source, i.e., model weights are released to the research community under a noncommercial license."
+    ],
+    "title": "Large Language Models: A Survey",
+    "url": "https://arxiv.org/html/2402.06196v2"
+  },
+  {
+    "description": "Learn about the top 15 small language models of 2025, including Llama 3.1 8B, Gemma2, Qwen 2, Mistral Nemo, Phi-3.5, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "With 12 billion parameters, Mistral Nemo 12B model is great for complex NLP tasks like language translation and real-time dialogue systems. It competes with models like Falcon 40B and Chinchilla 70B, but it can still run locally without a massive infrastructure setup. It\u2019s one of those models that balances complexity with practicality. ... Learn to build AI applications using the OpenAI API. ... Moving on to Llama 3.1 8B, this model has 8 billion parameters, and it provides an amazing balance between power and efficiency.",
+      "Despite its smaller size, it performs on par with much larger models like Mistral-7B and LLaMA 7B. It\u2019s particularly optimized for language processing in both English and Chinese, which makes it a highly capable, lightweight alternative for environments where computational resources are limited. If you're working in a resource-constrained setting but still need solid language processing, MiniCPM offers an excellent solution. ... OpenELM is a flexible and adaptable model with a parameter range from 270 million to 3 billion.",
+      "If you're looking for something lightweight but capable, especially for mobile or edge use, OpenELM is a great fit. ... Let\u2019s break down DCLM, a model with 1 billion parameters that\u2019s designed specifically for common-sense reasoning. It performs well in real-world tasks where understanding and making logical deductions are key. DCLM is good for language understanding and reasoning, especially with its 7-billion-parameter version. It competes with models like LLaMA 2 (7B) and Mistral 7B, performing just as well in tasks like commonsense reasoning and logical deduction.",
+      "It\u2019s multilingual too, which makes it a strong competitor against models like Llama 13B and GPT-3.5, but with much lower computational demands. This model is great for document summarization, multilingual tasks, and logical reasoning. ... Open source: Yes, for research purposes only."
+    ],
+    "title": "Top 15 Small Language Models for 2025 | DataCamp",
+    "url": "https://www.datacamp.com/blog/top-small-language-models"
+  },
+  {
+    "description": "LLaMA vs. Mistral: Which language model is a better choice? This comparison evaluates their performance and capabilities to help you make an informed decision.",
+    "favicon_url": "https://you.com/favicon?domain=www.autonomous.ai&size=128",
+    "snippets": [
+      "Here\u2019s how Mistral vs. Llama compare: Designed as a versatile, general-purpose language model, LLaMA excels in NLP tasks such as content generation, translation, and chatbot development. Its open-source architecture allows developers to fine-tune and scale the model for a wide variety of applications.",
+      "Mistral is a relatively new entrant in the large language model space. It is a cutting-edge generative AI designed for developers and businesses looking for open, portable, and highly efficient AI models. With a focus on open-weight models, Mistral allows users to customize, deploy, and fine-tune AI systems according to their needs.",
+      "The Mistral 7B model, for instance, has garnered attention for its ability to deliver high performance in tasks like natural language understanding, text generation, and even coding tasks, competing directly with CodeLlama-7B. Its compact size (13.4 GB) allows it to run efficiently on standard machines, giving developers access to powerful AI without the need for expensive, resource-intensive infrastructure. ... Mistral releases models with open weights, allowing users to download and deploy them on their own infrastructure.",
+      "Developers can fine-tune the model for their specific needs, and the flexibility of the LLaMA framework makes it ideal for a wide range of applications. Whether for research or enterprise, LLaMA\u2019s ability to adapt is one of its strongest features. While Mistral offers customization options through its open-weight models, it\u2019s designed to be more streamlined and efficient."
+    ],
+    "title": "Llama vs. Mistral: Which Performs Better and Why?",
+    "url": "https://www.autonomous.ai/ourblog/llama-vs-mistral-which-performs-better"
+  },
+  {
+    "description": "The Mistral AI models, developed by Mistral AI, are open-source, large language models designed to handle a variety of NLP tasks. These models stand out for their transparency, portability, and ease\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "The Mistral AI models, developed by Mistral AI, are open-source, large language models designed to handle a variety of NLP tasks. These models stand out for their transparency, portability, and ease of customisation, making them flexible and adaptable to different user needs.",
+      "Discover the Power of Mistral Models Today",
+      "Running Mistral Models with Hugging Face or Ollama: A detailed introduction to the different models under Mistral AI and their distinctions, along with step-by-step instructions on how to install and use them.",
+      "Introducing Mistral NeMo: It focuses on the Mistral NeMo model and its usage details."
+    ],
+    "title": "Mistral Models vs. Competitors: A Performance Showdown Across NLP, ...",
+    "url": "https://medium.com/@researchgraph/mistral-models-vs-competitors-a-performance-showdown-across-nlp-code-and-multilingual-tasks-af2f901455bc"
+  },
+  {
+    "description": "Open source LLMs like Gemma 2, Llama 3.1, and Command R+ are bringing advanced AI capabilities into the public domain. This guide explores the best open source LLMs and variants for capabilities like chat, reasoning, and coding while outlining options to test models online or run them locally ...",
+    "favicon_url": "https://you.com/favicon?domain=klu.ai&size=128",
+    "snippets": [
+      "Open source LLMs like Gemma 2, Llama 3.1, and Command R+ are bringing advanced AI capabilities into the public domain. This guide explores the best open source LLMs and variants for capabilities like chat, reasoning, and coding while outlining options to test models online or run them locally and in production.",
+      "This section provides a comprehensive guide on how to run some of the most popular open source LLMs on your local machine. We will cover models such as Ollama, LM Studio, and others, providing step-by-step instructions and tips for a smooth and successful setup. Ollama is a user-friendly tool designed to run large language models (LLMs) locally on a computer. It supports a variety of AI models including Llama-2, uncensored Llama, CodeLlama, Falcon, Mistral, Vicuna model, WizardCoder, and Wizard uncensored.",
+      "Vicuna, the brainchild of the Large Model Systems Organization, brings new ideas to the accessibility of Large Language Models (LLMs). Designed as an open source chatbot, Vicuna finds its root in fine-tuning the Llama 2 model using user-generated conversations obtained via ShareGPT (a means to share OpenAI's GPT-3.5 and GPT-4 conversations). Its unique approach allows it to outperform other models such as Llama 1 and Stanford Alpaca (a fine-tuned version of Llama).",
+      "PPLX API is a fast and efficient API for open source LLMs developed by Perplexity Labs. It provides ease of use, blazing fast inference, and a battle-tested infrastructure. It supports models such as Mistral 7B, Llama2 13B, Code Llama 34B, Llama2 70B, and replit-code-v1.5-3b."
+    ],
+    "title": "Best Open Source LLMs of 2025 \u2014 Klu",
+    "url": "https://klu.ai/blog/open-source-llm-models"
+  },
+  {
+    "description": "Gain an in-depth understanding of open source data layer technologies on the Instaclustr managed platform at our education Hub.",
+    "favicon_url": "https://you.com/favicon?domain=www.instaclustr.com&size=128",
+    "snippets": [
+      "Large Language Models (LLMs) are machine learning models that can understand and generate human language based on large-scale datasets. Unlike proprietary models developed by companies like OpenAI and Google, open source LLMs are licensed to be freely used, modified, and distributed by anyone.",
+      "Usage: While versatile, GPT-NeoX-20B is not fine-tuned for consumer-facing tasks like chatbots and may require supervision when used in such settings. Vicuna-13B is an open source chatbot model developed by fine-tuning the LLaMA model with user-shared conversations from ShareGPT. It has achieved over 90% of the quality of OpenAI\u2019s ChatGPT, based on preliminary evaluations using GPT-4 as a judge. The development cost of Vicuna-13B was approximately $300, and both the code and weights are publicly available for non-commercial use.",
+      "Integrate with complementary tools: Combine LLMs with other AI tools such as vector databases for improved search capabilities or knowledge graphs for enhanced reasoning and contextualization. Implement differential privacy: Apply differential privacy techniques to ensure that the model does not inadvertently expose sensitive information from the training data, enhancing data security. Meta developed the LLaMA 3 family of large language models, which includes a collection of pretrained and instruction-tuned generative text models available in 8 billion (8B) and 70 billion (70B) parameter sizes.",
+      "In my experience, here are tips that can help you better leverage open source large language models (LLMs): Optimize for hardware compatibility: While deploying LLMs, ensure you tailor model configurations to leverage the specific capabilities of your hardware, such as GPUs or TPUs, to achieve maximum efficiency."
+    ],
+    "title": "Top 10 open source LLMs for 2025",
+    "url": "https://www.instaclustr.com/education/open-source-ai/top-10-open-source-llms-for-2025/"
+  },
+  {
+    "description": "Today, the team is proud to release ... Apache 2.0. Mixtral outperforms Llama 2 70B on most benchmarks with 6x faster inference. It is the strongest open-weight model with a permissive license and the best model overall regarding cost/performance trade-offs....",
+    "favicon_url": "https://you.com/favicon?domain=mistral.ai&size=128",
+    "snippets": [
+      "Today, the team is proud to release Mixtral 8x7B, a high-quality sparse mixture of experts model (SMoE) with open weights. Licensed under Apache 2.0. Mixtral outperforms Llama 2 70B on most benchmarks with 6x faster inference. It is the strongest open-weight model with a permissive license and the best model overall regarding cost/performance trade-offs.",
+      "Overall, Mixtral displays more positive sentiments than Llama 2 on BOLD, with similar variances within each dimension. Language. Mixtral 8x7B masters French, German, Spanish, Italian, and English. We release Mixtral 8x7B Instruct alongside Mixtral 8x7B. This model has been optimised through supervised fine-tuning and direct preference optimisation (DPO) for careful instruction following. On MT-Bench, it reaches a score of 8.30, making it the best open-source model, with a performance comparable to GPT3.5.",
+      "It, therefore, processes input and generates output at the same speed and for the same cost as a 12.9B model. Mixtral is pre-trained on data extracted from the open Web \u2013 we train experts and routers simultaneously. We compare Mixtral to the Llama 2 family and the GPT3.5 base model.",
+      "Mistral AI continues its mission to deliver the best open models to the developer community. Moving forward in AI requires taking new technological turns beyond reusing well-known architectures and training paradigms."
+    ],
+    "title": "Mixtral of experts | Mistral AI",
+    "url": "https://mistral.ai/news/mixtral-of-experts"
+  },
+  {
+    "description": "LLM benchmarks are standardized tests for LLM evaluations. This guide covers 20 benchmarks from MMLU to Chatbot Arena, with links to datasets and leaderboards.",
+    "favicon_url": "https://you.com/favicon?domain=www.evidentlyai.com&size=128",
+    "snippets": [
+      "Now, with powerful models like GPT, Claude, or LLaMA, benchmarks have become more sophisticated and often include complex tasks requiring multi-step reasoning. LLM benchmarks are created by research groups, universities, tech companies, and open-source communities.",
+      "How SWE-bench works.Credit: SWE-bench: Can Language Models Resolve Real-World GitHub Issues? Assets: Chatbot Arena dataset, Chatbot Arena leaderboard Paper: Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference by Chiang et al.",
+      "Assets: FinBen dataset Paper: FinBen: A Holistic Financial Benchmark for Large Language Models by Xie et al. (2024) FinBen is an open-source benchmark designed to evaluate LLMs in the financial domain. It includes 36 datasets that cover 24 tasks in seven financial domains: information extraction, text analysis, question answering, text generation, risk management, forecasting, and decision-making.",
+      "Language skills, including logical inference and text comprehension. Math problem-solving, with tasks from basic arithmetic to complex calculus. Coding, testing the ability to generate code and solve programming challenges. Conversation, assessing the quality of responses in a dialogue. Safety, checking if models avoid harmful responses and resist manipulation. Domain-specific knowledge, such as for fields like law and finance."
+    ],
+    "title": "20 LLM evaluation benchmarks and how they work",
+    "url": "https://www.evidentlyai.com/llm-guide/llm-benchmarks"
+  },
+  {
+    "description": "A large language model (LLM) is a type of machine learning model designed for natural language processing tasks such as language generation. LLMs are language models with many parameters, and are trained with self-supervised learning on a vast amount of text.",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "^ This is the license of the pre-trained model weights. In almost all cases the training code itself is open-source or can be easily replicated."
+    ],
+    "title": "List of large language models - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/List_of_large_language_models"
+  },
+  {
+    "description": "In-depth analysis comparing top LLMs, including OpenAI and its exciting contenders like Deepseek, LangChain, Anthropic, Cohere, Google, and so on.",
+    "favicon_url": "https://you.com/favicon?domain=mindsdb.com&size=128",
+    "snippets": [
+      "Some of Mistral's models can operate locally, featuring open weights that can be freely downloaded and utilized with fewer restrictions compared to closed AI models from competitors like OpenAI. Mistral 7B is a 7.3 billion-parameter model that showcases strong performance across various benchmarks. Notably, it outperforms Llama 2 13B on all benchmarks and surpasses Llama 1 34B on many.",
+      "Users can download and use it locally, deploy it on cloud platforms like AWS, GCP, or Azure, and access it on HuggingFace. Additionally, Mistral 7B is easily fine-tuned for various tasks, demonstrated by a chat model that outperforms Llama 2 13B in chat-related applications. Mixtral 8x7B is a Sparse Mixture of Experts model (SMoE) with open weights, licensed under Apache 2.0.",
+      "With extensive training data and state-of-the-art techniques, the Code Llama models demonstrate exceptional performance across a range of programming languages and tasks. From code completion to bug detection, these models provide accurate and efficient solutions to programming challenges. Mistral AI, a Paris-based AI company, has recently gained prominence in the AI sector. Positioned as a French counterpart to OpenAI, Mistral distinguishes itself by emphasizing smaller models with impressive performance metrics.",
+      "With remarkable capabilities, Mixtral outperforms Llama 2 70B on most benchmarks, offering 6x faster inference and establishing itself as the strongest open-weight model with an advantageous cost/performance profile. Particularly noteworthy is its competitive performance against GPT3.5 on standard benchmarks. Mixtral has been pre-trained on data from the open web. It excels in handling a context of 32k tokens and supports multiple languages, including English, French, Italian, German, and Spanish."
+    ],
+    "title": "Updated January 2025: a Comparative Analysis of Leading Large ...",
+    "url": "https://mindsdb.com/blog/navigating-the-llm-landscape-a-comparative-analysis-of-leading-large-language-models"
+  },
+  {
+    "description": "Explore the rivalry between Google's Gemma 7B and Mistral AI's Mistral 7B in the open-source LLM space, highlighting their unique strengths and applications.",
+    "favicon_url": "https://you.com/favicon?domain=www.ankursnewsletter.com&size=128",
+    "snippets": [
+      "This also means that the company cannot reinforce its safety and privacy standards as strictly as Google can with the Gemma open models since Gemma does require accepting user terms before enabling weights access. Complex Text Generation: Gemma 7B excels in generating coherent and contextually relevant text, making it ideal for applications such as content creation, storytelling, and automated journalism. Question-Answering: Mistral 7B might be a better option to serve question-answering applications. Translation: Gemma 7B's language capabilities extend to translation tasks, where it can be used to translate texts between multiple languages with high accuracy.",
+      "Fully Open-Source: Mistral AI provides access to the model's weights and training code, allowing the developer community to use, modify, and improve the model. Performance: According to the official paper, \u201cMistral 7B outperforms the previous best 13B model (Llama 2) across all tested benchmarks, and surpasses the best 34B model (LLaMa 34B) in mathematics and code generation.",
+      "Furthermore, Mistral 7B approaches the coding performance of Code-Llama 7B, without sacrificing performance on non-code related benchmarks.\u201d \u00b7 Google compared the performance of Gemma 7B to all other major open-source LLMs, including Mistral 7B. It should be noted that individual developers and testers who compared the two models experienced different results, which we will explore in a moment.",
+      "Mistral 7B is one of their first LLMs and it was made open-source. Model Size: Mistral 7B is a 7-billion-parameter model, similar in scale to Gemma 7B, making it capable of handling complex language tasks. Training Data: The model is trained on a diverse dataset, including a wide range of text from the internet, academic papers, and other sources."
+    ],
+    "title": "Comparative Analysis: Gemma 7B vs. Mistral 7B",
+    "url": "https://www.ankursnewsletter.com/p/comparative-analysis-gemma-7b-vs"
+  }
+]

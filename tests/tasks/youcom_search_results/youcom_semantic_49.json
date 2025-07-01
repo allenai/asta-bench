@@ -1,0 +1,257 @@
+[
+  {
+    "description": "Sign language pre-training has ... to enhance performance across various sign language understanding (SLU) tasks. ... The human body communicates through various meaningful gestures, with sign language using hands being a prominent example. ... In this work, we propose a novel method combining joint CTC/Attention and transfer learning. ... Sign language translation, especially in gloss-free paradigm, ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Sign language pre-training has gained increasing attention for its ability to enhance performance across various sign language understanding (SLU) tasks. ... The human body communicates through various meaningful gestures, with sign language using hands being a prominent example. ... In this work, we propose a novel method combining joint CTC/Attention and transfer learning. ... Sign language translation, especially in gloss-free paradigm, is confronting a dilemma of impracticality and unsustainability due to growing resource-intensive methodologies.",
+      "This paper presents the first comprehensive interpretability analysis of a Transformer-based Sign Language Translation (SLT) model, focusing on the translation from video-based Greek Sign Language to glosses and text. ... This project explores methods to enhance sign language translation of German sign language, specifically focusing on disambiguation of homonyms. ... The limited amount of labeled data for training the Brazilian Sign Language (Libras) to Portuguese Translation models is a challenging problem due to video collection and annotation costs. ... Based on this dataset and several other large-scale datasets, we propose a novel baseline method that fully leverages the Mamba model's ability to integrate temporal information of CNN features, resulting in improved sign language translation outcomes.",
+      "Given a video containing sign language, the task is to predict the translation into (written) spoken language. Image credit: [How2Sign](https://how2sign.github.io/)"
+    ],
+    "title": "Sign Language Translation | Papers With Code",
+    "url": "https://paperswithcode.com/task/sign-language-translation/latest"
+  },
+  {
+    "description": "Technology to support human communication by sign language may address a growing social need and is interesting from an engineering perspective, considering multimodal information processing with p...",
+    "favicon_url": "https://you.com/favicon?domain=www.tandfonline.com&size=128",
+    "snippets": [
+      "1. Sign language (SL) has evolved as a fundamental means of communication within the deaf and hard of hearing (DHH) community embodying the linguistic properties found in spoken languages [1]. Whil...",
+      "Sign sequences may involve highly specific and fine-grained movements, such as facial expressions or finger spelling, whereas general human action includes broader body motions exemplifying the unique challenges of CSLR. Also, due to the lack of gloss-level annotations in most datasets, CSLR is often framed as a weakly supervised learning problem, further complicating its development and evaluation. SLT methods aim to convert SL videos into corresponding spoken language text.",
+      "Since SL grammar differs from spoken language, glosses help models achieve better performance. Currently, gloss-based approaches outperform gloss-free methods. SLG, also referred to as sign language production, involves translating text or speech into SL. This technology is essential for facilitating communication between hearing individuals with limited SL knowledge and members of the DHH community. Also, it enhances accessibility by converting text documents into SL, which is beneficial since reading text is challenging for DHH individuals due to the lack of association of spoken text with SL like how hearing individual associate text with sound first, a direct link between text and SL [Citation76]. SLG systems take input and produce outputs as either 3D skeleton poses, images, or videos [Citation8]. Figure 3 illustrates the SLG process.",
+      "Recent advances in deep learning and generative AI technologies have markedly improved the performance of image and natural language processing. This paper surveys sign language recognition, translation, and generation, dedicating a section to research using large language models, which represents a novel approach to sign language processing (SLP). We also review currently available datasets, focusing on their applicability to SLP. Key findings include demonstrating the limitations of gloss-based approaches in capturing non-verbal cues and the wide variability across datasets, which impede the development of robust SLP systems."
+    ],
+    "title": "Full article: A review of deep learning-based approaches to sign ...",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/01691864.2024.2442721"
+  },
+  {
+    "description": "We also propose a novel pretraining strategy that directs our encoder to learn sign representations from automatically extracted pseudo-glosses without requiring gloss order information or annotations. We evaluate our approach on two public benchmark sign language translation datasets, namely RWTH-PHOENIX-Weather 2014T and CSL-Daily, and improve on state-of-the-art gloss-free translation performance ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "We also propose a novel pretraining strategy that directs our encoder to learn sign representations from automatically extracted pseudo-glosses without requiring gloss order information or annotations. We evaluate our approach on two public benchmark sign language translation datasets, namely RWTH-PHOENIX-Weather 2014T and CSL-Daily, and improve on state-of-the-art gloss-free translation performance with a significant margin.",
+      "Figure 1: Overview of Sign2GPT, which consists of a pretraining stage that makes use of pseudo-glosses and downstream translation that leverages a frozen GPT model. In this paper, we propose Sign2GPT for sign language translation to address the aforementioned challenges. As depicted in Figure 1, Sign2GPT utilizes pretrained large vision (Oquab et al., 2023) and language models (Lin et al., 2021), benefiting from their extensive training on large-scale datasets to improve sign language translation performance.",
+      "Our method, Sign2GPT, demonstrates significant performance improvements over existing state-of-the-art techniques on the Phoenix14T and CSL-Daily datasets. We introduce a novel pretraining strategy that learns from pseudo-glosses which are generated automatically to learn word-level sign features, thereby allowing our sign encoder to be effectively pretrained without the use of manually annotated glosses. Moreover, the proposed Sign2GPT architecture presents a promising direction for the exploration of fusing visual features to spoken language models for sign language recognition and translation tasks.",
+      "We take an alternative approach by automatically creating pseudo-glosses from the spoken language sentences. By using sentences and sign language priors, we automatically generate pseudo-glosses, overcoming limitations associated with pretrained sign spotting models and manually annotated labels. While techniques for verifying the existence of words exist (Zhao et al., 2021), they utilize separate models for each vocabulary item and two-stage translation system, incurring high training costs. In contrast, we propose a singular model that efficiently determines both the localization and existence of pseudo-glosses."
+    ],
+    "title": "Sign2GPT: Leveraging Large Language Models for Gloss-Free Sign ...",
+    "url": "https://arxiv.org/html/2405.04164v1"
+  },
+  {
+    "description": "This paper proposes a simple transfer learning baseline for sign language translation. Existing sign language datasets (e.g. PHOENIX-2014T, CSL-Daily) contain only about 10K-20K pairs of sign videos, gloss annotations \u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "This paper proposes a simple transfer learning baseline for sign language translation. Existing sign language datasets (e.g. PHOENIX-2014T, CSL-Daily) contain only about 10K-20K pairs of sign videos, gloss annotations and texts, which are an order of magnitude smaller than typical parallel data for training spoken language translation models.",
+      "For PHOENIX-2014T [4] dataset, we use gloss representations (see Figure 3 of the paper) as the input of V-L Mapper. In CSL-Daily [49] dataset, we observe that the gloss annotations almost contain all language information for generating the text, i.e., in many cases spoken text can be accurately predicted by simply reordering, or even copying, the gloss sequence. Therefore in CSL-Daily, the glosses\u2019 linguistic semantics are more helpful than their visual semantics for translation task (Sign2Text).",
+      "Surprisingly, our joint Sign2Text training with gloss representations and with gloss logits outperforms not only Sign2Gloss2Text, but also the Gloss2Text upper bound, which demonstrates the effectiveness of our progressive pretraining and the proposed multi-modality transfer learning. We present a simple yet effective multi-modality transfer learning baseline for sign language translation. To alleviate the data scarcity issue, we exploit large-scale external knowledge from human action and spoken language by progressively pretraining visual and language modules from general domains to within the target domains.",
+      "Data is thus a bottleneck for training effective sign language translation models. To mitigate this problem, we propose to progressively pretrain the model from general-domain datasets that include a large amount of external supervision to within-domain datasets. Concretely, we pretrain the sign-to-gloss visual network on the general domain of human actions and the within-domain of a sign-to-gloss dataset, and pretrain the gloss-to-text translation network on the general domain of a multilingual corpus and the within-domain of a gloss-to-text corpus."
+    ],
+    "title": "[2203.04287] Towards Learning Effective Visual-language ...",
+    "url": "https://ar5iv.labs.arxiv.org/html/2203.04287"
+  },
+  {
+    "description": "Individuals with hearing impairment encounter various types and levels of difficulties, highlighting the need for more research to provide effective s\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Combined sign language techniques of multiple modalities are relatively limited. ... Shortage of benchmark datasets remains a primary challenge in the field. ... Scarcity of software and applications for sign language recognition and translation is still apparent.",
+      "In this study, we emphasize the importance of sign language recognition and translation and provide a comprehensive review of relevant research conducted in this field. Our examination encompasses multiple perspectives, including sign language recognition, translation, and the availability of datasets."
+    ],
+    "title": "A survey on sign language literature - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666827023000579"
+  },
+  {
+    "description": "Sign Languages (SLs) are employed by deaf and hard-of-hearing (DHH) people to communicate on a daily basis. However, the communication with hearing pe\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Sign language translation datasets are summarised. ... Sign language translation challenges and future lines of research are analysed. Sign Languages (SLs) are employed by deaf and hard-of-hearing (DHH) people to communicate on a daily basis. However, the communication with hearing people still faces some barriers, mainly because of the scarce knowledge about SLs among hearing people. Hence, tools to allow the communication between users of either sign or spoken languages must be encouraged.",
+      "A stepping stone in this direction is the research of the sign language translation (SLT) task, which aims to produce a spoken language translation of a sign language video or vice versa. By implementing these types of translators in portable devices, we will make considerable progress towards a barrier-free communication between DHH and hearing people. That is why, in this work, we focus on reviewing the literature on SLT and provide the necessary background about SLs. Besides, we summarise the available datasets and the results found in the literature for one of the most used datasets, the RWTH-PHOENIX-2014T.",
+      "Results from the literature for the RWTH-PHOENIX-2014T dataset are provided."
+    ],
+    "title": "A survey on Sign Language machine translation - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0957417422020115"
+  },
+  {
+    "description": "CSL-Daily (Chinese Sign Language Corpus) is a large-scale continuous SLT dataset. It provides both spoken language translations and gloss-level annotations.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "To the best of our knowledge, it is the first and largest translation dataset for continuous Indian Sign Language with corresponding English transcripts. We provide a detailed analysis of the dataset and examine the distribution of words and phrases covered in the proposed dataset. To validate the performance of existing end-to-end Sign language to spoken language translation systems, w",
+      "Over a period of three years (2009 - 2011) the daily news and weather forecast airings of the German public tv-station PHOENIX featuring sign language interpretation have been recorded and the weather forecasts of a subset of 386 editions have been transcribed using gloss notation. Furthermore, we used automatic speech recognition with manual cleaning to transcribe the original German speech. As such, this corpus allows to train end-to-end sign language translation systems from sign language video input to spoken language.",
+      "The primary purpose of the dataset is to be used as a benchmark and analysis dataset for (gloss-free) sign language translation. ... LSA-T is the first continuous Argentinian Sign Language (LSA) dataset. It contains 14,880 sentence level videos of LSA extracted from the CN Sordos YouTube channel with labels and keypoints annotations for each signer.",
+      "It contains isolated videos of Turkish Sign Language glosses from three different domains: Health, finance and commonly used everyday signs. Videos in this dataset were performed by six native signers, which makes this dataset valuable for user independent sign language studies. ... Content4All is a collection of six open research datasets aimed at automatic sign language translation research."
+    ],
+    "title": "Papers with Code - Machine Learning Datasets",
+    "url": "https://paperswithcode.com/datasets?task=sign-language-translation"
+  },
+  {
+    "description": "Sign Language Processing (SLP) is a field of artificial intelligence concerned with automatic processing and analysis of sign language content. This project aims to organize the sign language processing literature, datasets, and tasks.",
+    "favicon_url": "https://you.com/favicon?domain=research.sign.mt&size=128",
+    "snippets": [
+      "In parallel with the advancements in spoken language machine translation, Yin and Read (2020) proposed replacing the RNN with a Transformer (Vaswani et al. 2017) encoder-decoder model, showing improvements on both RWTH-PHOENIX-Weather-2014T (DGS) and ASLG-PC12 (ASL) datasets both using a single model and ensemble of models. Interestingly, in gloss-to-text, they show that using the sign language recognition (video-to-gloss) system output outperforms using the gold annotated glosses.",
+      "In the finetuning stage, they replace the shallow translation module used in pretraining with a pretrained translation module. This skeleton-based approach achieves state-of-the-art results on the RWTH-PHOENIX-Weather-2014T (Camg\u00f6z et al. 2018), CSL-Daily (Zhou et al. 2021), OpenASL (Shi et al. 2022), and How2Sign (Duarte et al. 2021) datasets without relying on gloss annotations. Text-to-Pose, also known as sign language production, is the task of producing a sequence of poses that adequately represent a spoken language text in sign language, as an intermediate representation to overcome challenges in animation.",
+      "Video-to-text, also known as sign language translation, is the task of translating a raw video to spoken language text. N. C. Camg\u00f6z et al. (2020b) proposed a single architecture to perform this task that can use both the sign language gloss and the spoken language text in joint supervision.",
+      "They conclude that this approach is on-par with previous approaches requiring glosses, and so they have broken the dependency upon costly annotated gloss information in the video-to-text task. Shi et al. (2022) introduce OpenASL, a large-scale American Sign Language (ASL) - English dataset collected from online video sites (e.g., YouTube), and then propose a set of techniques including sign search as a pretext task for pre-training and fusion of mouthing and handshape features to improve translation quality in the absence of glosses and in the presence of visually challenging data."
+    ],
+    "title": "Sign Language Processing",
+    "url": "https://research.sign.mt/"
+  },
+  {
+    "description": "This alert has been successfully added and will be sent to: \u00b7 You will be notified whenever a record that you have chosen has been cited",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Enhancing Gloss -Based Corpora with Facial Features Using Active Appearance Models. In International Symposium on Sign Language Translation and Avatar Technology, Vol. 2. Chicago, IL, USA. ... Christoph Schmidt, Oscar Koller, Hermann Ney, Thomas Hoyoux, and Justus Piater. 2013b. Using Viseme Recognition to Improve a Sign Language Translation System. In International Workshop on Spoken Language Translation.",
+      "Toward the study of sign language coarticulation: methodology proposal. In Proceedings of the Second International Conferences on Advances in Computer-Human Interactions, Cancun, 2009. 369--374. https://doi.org/10.1109/ACHI.2009.25 ... B. Shi, A. M. Del Rio, J. Keane, J. Michaux, D. Brentari, G. Shakhnarovich, and K. Livescu. 2018. American Sign Language Fingerspelling Recognition in the Wild. In 2018 IEEE Spoken Language Technology Workshop (SLT ).",
+      "This paper presents the results of that interdisciplinary workshop, providing key background that is often overlooked by computer scientists, a review of the state-of-the-art, a set of pressing challenges, and a call to action for the research community. ... Nicoletta Adamo-Villani and Ronnie B. Wilbur. 2015. ASL-Pro: American Sign Language Animation with Prosodic Elements. In Universal Access in Human-Computer Interaction.",
+      "Studies in linguistics: Occasional papers 8 (1960). ... W. C. Stokoe, D. Casterline, and C. Croneberg. 1965. A Dictionary of American Sign Language on Linguistic Principles. Linstok Press. ... Jesus Suarez and Robin R Murphy. 2012. Hand Gesture Recognition with Depth Images: A Review. In 2012 IEEE RO-MAN: the 21st IEEE international symposium on robot and human interactive communication."
+    ],
+    "title": "Sign Language Recognition, Generation, and Translation | Proceedings ...",
+    "url": "https://dl.acm.org/doi/10.1145/3308561.3353774"
+  },
+  {
+    "description": "Word-level sign language recognition (WSLR) is the backbone for continuous sign language recognition (CSLR) that infers glosses from sign videos. Finding the relevant gloss from the sign sequence and detecting explicit boundaries of the glosses from ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Glosses are words associated with a specific sign, also known as a label [25]. The structure of glosses differs from that of spoken languages. They serve as the foundation of complete sign sequence translation. For example, if a signer performs a sign sequence for the phrase \u201cThe weather is too cold today\u201d, the sign translation model suggests the relevant glosses, such as \u201cweather\u201d, \u201ccold\u201d, and \u201ctoday\u201d. In this paper, we focus on enhancing gloss prediction accuracy in isolated SLR by reducing computational and timing complexities.",
+      "Though this model concentrates on both spatial and temporal fusion extraction, combining a pose-based approach with image-based features will further enhance model performance. On the other hand, Cui et al. [39] proposed a model for real-time CSLR where they used RNN to address mapping issues with relevant glosses by designing a weakly supervised detection network using a connectionist temporal and alignment proposal for continuous spoken sentence translation.",
+      "Initially, the system is validated using the WLASL [60] dataset for word-level gloss videos using a sign-to-gloss network translation protocol. As stated in Section 2.1, the proposed model can enhance the efficiency of a two-stage SLT system, reducing the need for a large, annotated vocabulary.",
+      "This section briefly elaborates on the key components and steps of the proposed Sign2Pose Gloss prediction transformer. We have a wide variety of gestural corpora because sign language is not a universal language. For example, the Chalearn synthetic hand [61] dataset contains realistic 3D human male hand gestures, InterHand 2.6 M [62] is a 3D representation of interacting hands, and the TheRusLan [63] data corpus contains 22,200 audio samples with text annotations."
+    ],
+    "title": "Sign2Pose: A Pose-Based Approach for Gloss Prediction Using a ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10007493/"
+  },
+  {
+    "description": "Sign language translation systems are complex and require many components. As a result, it is very hard to compare methods across publications. We present an open-source implementation of a text-to-gloss-to-pose-to-video pipeline approach, demonstrating conversion from German to Swiss German ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Sign language translation systems are complex and require many components. As a result, it is very hard to compare methods across publications. We present an open-source implementation of a text-to-gloss-to-pose-to-video pipeline approach, demonstrating conversion from German to Swiss German Sign Language, French to French Sign Language of Switzerland, and Italian to Italian Sign Language of Switzerland. We propose three different components for the text-to-gloss translation: a lemmatizer, a rule-based word reordering and dropping component, and a neural machine translation system.",
+      "Abstract page for arXiv paper 2305.17714: An Open-Source Gloss-Based Baseline for Spoken to Signed Language Translation",
+      "View a PDF of the paper titled An Open-Source Gloss-Based Baseline for Spoken to Signed Language Translation, by Amit Moryossef and 5 other authors View PDF",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2305.17714] An Open-Source Gloss-Based Baseline for Spoken to ...",
+    "url": "https://arxiv.org/abs/2305.17714"
+  },
+  {
+    "description": "The construction of the CE-CSL ... language performers, including both professional sign language interpreters and hearing-impaired individuals, who jointly undertake the task of translating spoken language into sign glosses. This process involves a deep understanding of spoken language sentences, followed by their reformation into expressions that conform to sign language grammar, which are then solidified through video demonstrations. All videos and their corresponding annotations are subject ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The construction of the CE-CSL dataset relies on 12 professional sign language performers, including both professional sign language interpreters and hearing-impaired individuals, who jointly undertake the task of translating spoken language into sign glosses. This process involves a deep understanding of spoken language sentences, followed by their reformation into expressions that conform to sign language grammar, which are then solidified through video demonstrations. All videos and their corresponding annotations are subject to comprehensive review and correction by experienced sign language interpreters after individual tasks are completed, ensuring the accuracy and consistency of the dataset.",
+      "TABLE IV: Partial Annotations of Continuous Sign Language Videos. \u201dSigners\u201d indicates the signer\u2019s identifier, \u201dChinese Sentences\u201d represents the unsegmented spoken language translation, \u201dGloss\u201d denotes the segmented sign gloss, and \u201dNote\u201d specifies which words use regional sign language.",
+      "The result indicates that combining the CTC loss function with the time-frequency domain sequence feature VAE loss functions can significantly enhance the performance of CSLR systems. In this paper, we introduce a novel CE-CSL dataset designed for complex environments, aiming to facilitate the transition of CSLR from laboratory settings to real-life scenarios.",
+      "Additionally, our proposed method has also yielded highly competitive results when applied to three publicly available continuous sign language datasets. In summary, the main contributions of this paper are as follows: ... We have constructed a Chinese Continuous Sign Language dataset CE-CSL dataset oriented towards practical application environments. This dataset, with its rich content and precise annotations, aims to provide a robust foundational resource for the advancement of CSLR technology."
+    ],
+    "title": "A Chinese Continuous Sign Language Dataset Based on Complex ...",
+    "url": "https://arxiv.org/html/2409.11960v1"
+  },
+  {
+    "description": "Machine learning models fundamentally rely on large quantities of high-quality data. Collecting the necessary data for these models can be challenging due to cost, scarcity, and privacy restrictions. Signed languages are visual languages used by the deaf community and are considered low-resource ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Machine learning models fundamentally rely on large quantities of high-quality data. Collecting the necessary data for these models can be challenging due to cost, scarcity, and privacy restrictions. Signed languages are visual languages used by the deaf community and are considered low-resource languages.",
+      "Abstract page for arXiv paper 2506.09643: Using Sign Language Production as Data Augmentation to enhance Sign Language Translation",
+      "Sign Language Production is the task of generating sign language videos from spoken language sentences, while Sign Language Translation is the reverse translation task. Here, we propose leveraging recent advancements in Sign Language Production to augment existing sign language datasets and enhance the performance of Sign Language Translation models.",
+      "Our results demonstrate that the proposed methods can effectively augment existing datasets and enhance the performance of Sign Language Translation models by up to 19%, paving the way for more robust and accurate Sign Language Translation systems, even in resource-constrained environments. From: Maksym Ivashechkin [view email] [v1] Wed, 11 Jun 2025 11:56:51 UTC (3,690 KB) ... View a PDF of the paper titled Using Sign Language Production as Data Augmentation to enhance Sign Language Translation, by Harry Walsh and Maksym Ivashechkin and Richard Bowden"
+    ],
+    "title": "[2506.09643] Using Sign Language Production as Data Augmentation ...",
+    "url": "https://arxiv.org/abs/2506.09643"
+  },
+  {
+    "description": "With the growing Deaf and Hard of Hearing population worldwide and the persistent shortage of certified sign language interpreters, there is a pressing need for an efficient, signs-driven, integrated end-to-end translation system, from sign to gloss to text and vice-versa.",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Artificial Intelligence Review - With the growing Deaf and Hard of Hearing population worldwide and the persistent shortage of certified sign language interpreters, there is a pressing need for an...",
+      "Computer vision algorithms can perform this transformation by incorporating data augmentation to enhance the dataset, pre-processing to clean and prepare the data for further analysis, and feature extraction to acquire the glosses for translation (Stahlberg 2020). Stage 3: Translation to Text. NLP models translate sign language gloss to spoken language text through G2T translation.",
+      "Section 6 provides the public sign language datasets. Section 7 discusses the performance evaluation metrics. SLMT algorithms and taxonomy are presented in Sect. 8. Section 9 presents the taxonomy of transformer architecture. A case study of translating gloss to text is presented in Sect. 10. Section 11 presents the challenges and proposed solutions. Section 12 proposes future research directions. Lastly, Sect. 13 concludes the paper.",
+      "In this case study, we consider sign language gloss to spoken language text (G2T) machine learning translation. We use the largest publicly available sign language PHOENIX-2014T dataset (Camgoz et al. 2018). It consists of 8,257 weather-related sentences in German sign language. To assess the impact of a small dataset on the comparative performance of the different transformer architectures, we employ random 500 unique sentences of PHOENIX-2014T dataset."
+    ],
+    "title": "From rule-based models to deep learning transformers architectures ...",
+    "url": "https://link.springer.com/article/10.1007/s10462-024-10895-z"
+  },
+  {
+    "description": "Automatic translation from signed to spoken languages is an interdisciplinary research domain on the intersection of computer vision, machine translation (MT), and linguistics. While the domain is growing in terms of popularity\u2014the majority of scientific papers on sign language (SL) translation ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Automatic translation from signed to spoken languages is an interdisciplinary research domain on the intersection of computer vision, machine translation (MT), and linguistics. While the domain is growing in terms of popularity\u2014the majority of scientific papers on sign language (SL) translation have been published in the past five years\u2014research in this domain is performed mostly by computer scientists in isolation.",
+      "Universal Access in the Information Society - Automatic translation from signed to spoken languages is an interdisciplinary research domain on the intersection of computer vision, machine...",
+      "In the analysis, papers are classified based on tasks, datasets, methods and evaluation techniques. ... The earlier papers on SLT all propose Statistical Machine Translation (SMT) models, but since 2018, NMT has become the dominant variant ... The early work on MT from signed to spoken languages is based entirely on statistical methods [5, 50,51,52,53,54,55,56,57,58]. These works focus on gloss based translation.",
+      "For MT between spoken languages, datasets typically contain several millions of sentences, for example the Paracrawl corpus [273]. It is clear that compared to spoken language datasets, sign language datasets lack labeled data. In other words, SLT is a low-resource MT task. Table 2 Statistics of the datasets that are used in more than one paper ... A total of 20 papers report on a Gloss2Text model [5, 6, 37, 51, 52, 54,55,56,57,58, 60, 61, 63, 65, 68, 70, 71, 74, 91, 100]. Sign2Gloss2Text models are proposed in five papers [6, 37, 65, 77, 94] and (Sign2Gloss, Gloss2Text) models also in five [6, 37, 50, 51, 65]. Sign2(Gloss+Text) models are found eight times within the reviewed papers [37, 38, 78, 80, 88, 89, 92, 99] and Sign2Text models 30 times [6, 35,36,37, 62, 64, 66, 67, 69, 72, 73, 75, 76, 79, 81,82,83,84,85,86,87,88, 90, 92, 93, 95,96,97,98,99]."
+    ],
+    "title": "Machine translation from signed to spoken languages: state of the ...",
+    "url": "https://link.springer.com/article/10.1007/s10209-023-00992-1"
+  },
+  {
+    "description": "Abstract \u2014 Sign language, a profound mode of communication, plays a crucial role in enabling interaction for the deaf and hard of hearing community. The integration of technology, particularly\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Abstract \u2014 Sign language, a profound mode of communication, plays a crucial role in enabling interaction for the deaf and hard of hearing\u2026",
+      "The integration of technology into sign language recognition systems has gained substantial momentum, aiming to bridge the communication gap between sign language users and those who communicate using spoken language. The paper by Fernandes et al., \u201cConvolutional Neural Network based Bidirectional Sign Language Translation System,\u201d introduces a bidirectional translation system for sign language communication [4]. This innovative system integrates both hardware and software components to capture and recognize hand gestures.",
+      "The chosen categorical cross-entropy loss measures differences between predicted and actual classes. Accuracy evaluates prediction correctness. Augmentation techniques (shearing, zooming, flipping) enhance dataset diversity. This approach uses specific parameters for robust performance.",
+      "The relatively low off-diagonal values imply the model\u2019s accurate performance with the provided dataset. During the analysis of pre-trained models for comparison, we determined that MobileNet exhibited strong performance in terms of validation accuracy. Consequently, I endeavored to conduct some fine-tuning to ascertain whether there would be any enhancements or reductions in its validation accuracy."
+    ],
+    "title": "Optimization of Deep Learning Models for Real-Time Sign Language ...",
+    "url": "https://medium.com/@jamescheriyan93/optimization-of-deep-learning-models-for-real-time-sign-language-to-text-conversion-6f9c2de67401"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=repository.rit.edu&size=128",
+    "snippets": [],
+    "title": "Rit",
+    "url": "https://repository.rit.edu/cgi/viewcontent.cgi?article=12625&context=theses"
+  },
+  {
+    "description": "This analysis underscores the significant enhancements brought by SignCL in terms of both efficiency and effectiveness in SLT frameworks. Table 1: Comparative analysis of representation density and performance on the PHOENIX-2014T dataset. \"+SignCL\" indicates the inclusion of the proposed contrastive learning strategy during VLP (Video Language Processing) feature extraction or SLT (Sign Language Translation) training processes. WERs (Word Error Rates) in the gloss...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "This analysis underscores the significant enhancements brought by SignCL in terms of both efficiency and effectiveness in SLT frameworks. Table 1: Comparative analysis of representation density and performance on the PHOENIX-2014T dataset. \"+SignCL\" indicates the inclusion of the proposed contrastive learning strategy during VLP (Video Language Processing) feature extraction or SLT (Sign Language Translation) training processes. WERs (Word Error Rates) in the gloss-free set are derived from an independent SLR (Sign Language Recognition) task, used specifically for probing the quality of sign features.",
+      "Despite their effectiveness, creating SLT datasets with gloss annotations is resource-intensive and time-consuming. Gloss-free methods have emerged as a promising alternative, as they do not rely on gloss annotations during training, making them more generalizable. And recently, a growing body of literature has promoted the gloss-free SLT, such as GASLT Yin et al., (2023) proposed local gloss attention to mimic gloss assistant, GFSLT Zhou et al., (2023) adapted CLIP to do visual-language pretraining, and Sign2GPT Wong et al., (2024) promoted performance by making use of large-scale pre-trained vision and language models.",
+      "We find that the representation density problem poses a significant challenge for the gloss-free SLT. ... We propose a simple but effective contrastive learning strategy, namely SignCL, to address the representation density problem. Our experiments demonstrate that SignCL can significantly enhance various well-known SLT frameworks. Specifically, SignCL yields a 39% BLEU score improvement for the Sign Language Transformer Camgoz et al., 2020a and a 46% BLEU increase for GFSLT-VLP Zhou et al., 2021a on the CSL-Daily dataset.",
+      "To address the representation density problem, we introduce a simple but effective contrastive learning strategy, namely SignCL, which encourages gloss-free models to learn more discriminative feature representation in a self-supervised manner. Our experiments demonstrate that the proposed SignCL can significantly reduce the representation density and improve performance across various translation frameworks. Specifically, SignCL achieves a significant improvement in BLEU score for the Sign Language Transformer and GFSLT-VLP on the CSL-Daily dataset by 39% and 46%, respectively, without any increase of model parameters."
+    ],
+    "title": "Improving Gloss-free Sign Language Translation by Reducing ...",
+    "url": "https://arxiv.org/html/2405.14312v2"
+  },
+  {
+    "description": "Each reference sentence was performed by four different signers, resulting in multiple video samples per sentence to enhance the richness of the dataset. ... Data Cleaning: Our data cleaning process consists of two main steps. ... Three sign language linguistics experts reviewed all gloss annotations. Utilizing their expertise, they identified equivalent gloss combinations...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Each reference sentence was performed by four different signers, resulting in multiple video samples per sentence to enhance the richness of the dataset. ... Data Cleaning: Our data cleaning process consists of two main steps. ... Three sign language linguistics experts reviewed all gloss annotations. Utilizing their expertise, they identified equivalent gloss combinations, including one-to-one, one-to-many, and many-to-one relationships.",
+      "Figure 1: (a) Our SCOPE dataset contains rich contextual information and sign language videos. (b) Our SCOPE framework is a robust context-aware sign language recognition/translation model capable of recognizing dialogue-based sign language gestures, predicting glosses, and generating spoken sentences with the aid of LLMs.",
+      "Both our benchmark dataset and baseline approach will be made publicly available. Figure 2: Overview of SCOPE framework. Our Embedding Alignment Encoder captures holistic linguistic information from the whole motion sequence. Aligning embedding space to match a frozen LLM enables integrating previous context information for SLR. Finally, Q-LoRA fine-tuning fits an LLM for translating predicted glosses with context into spoken language.",
+      "Details of SCOPE dataset will be further presented in the Dataset section. Fig. 2 demonstrates the structure of our SCOPE framework. Our Embedding Alignment Encoder transforms motion features into an embedding that captures the linguistic information of the whole motion sequence. Aligning embedding space to a frozen LLM enables integrating contextual information of previous sentences to recognize glosses. Finally, Q-LoRA fine-tuning fits an LLM for translating predicted glosses into spoken language with the assistance of context information."
+    ],
+    "title": "SCOPE: Sign Language Contextual Processing with Embedding from LLMs",
+    "url": "https://arxiv.org/html/2409.01073v1"
+  },
+  {
+    "description": "As a result, linguists have proposed several annotation systems that operate on the gloss or sub-unit level; however, these resources are notably irregular and scarce. Sign Language Production (SLP) aims to automatically translate spoken language sentences into continuous sequences of sign language. However, current state-of-the-art approaches rely on scarce linguistic resources to work. This has limited progress in the field. This paper ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "As a result, linguists have proposed several annotation systems that operate on the gloss or sub-unit level; however, these resources are notably irregular and scarce. Sign Language Production (SLP) aims to automatically translate spoken language sentences into continuous sequences of sign language. However, current state-of-the-art approaches rely on scarce linguistic resources to work. This has limited progress in the field. This paper introduces an innovative solution by transforming the continuous pose generation problem into a discrete sequence generation problem.",
+      "Thus, overcoming the need for costly annotation. Although, if available, we leverage the additional information to enhance our approach. By applying Vector Quantisation (VQ) to sign language data, we first learn a codebook of short motions that can be combined to create a natural sequence of sign. Where each token in the codebook can be thought of as the lexicon of our representation. Then using a transformer we perform a translation from spoken language text to a sequence of codebook tokens.",
+      "For example, mDGS has only 50k parallel sentences with gloss and HamNoSys annotations [27]. These annotation systems are time-consuming and costly to create, and this has limited the size of the available datasets. Therefore, in this paper, we propose learning a representation from 3D pose data that can be used as a substitute for gloss or HamNoSys.",
+      "Between Table VI rows 1 and 2, we see a small decrease in BLEU-1 and ROUGE of 1.69 and 0.29, on the Dev set respectively. However, applying the enhanced codebook to the PHOENIX14T dataset recovered the majority of the lost performance. TABLE VII: The results of translating from Gloss-to-Pose on the RWTH-PHOENIX-Weather-2014T dataset."
+    ],
+    "title": "A Data-Driven Representation for Sign Language Production",
+    "url": "https://arxiv.org/html/2404.11499v1"
+  },
+  {
+    "description": "**Sign Language Recognition** is a computer vision and natural language processing task that involves automatically recognizing and translating sign language gestures into written or spoken language. The goal of sign language recognition is to develop algorithms that can understand and interpret ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "**Sign Language Recognition** is a computer vision and natural language processing task that involves automatically recognizing and translating sign language gestures into written or spoken language. The goal of sign language recognition is to develop algorithms that can understand and interpret sign language, enabling people who use sign language as their primary mode of communication to communicate more easily with non-signers.",
+      "Concretely, we pretrain the sign-to-gloss visual network on the general domain of human actions and the within-domain of a sign-to-gloss dataset, and pretrain the gloss-to-text translation network on the general domain of a multilingual corpus and the within-domain of a gloss-to-text corpus. ... Based on this new large-scale dataset, we are able to experiment with several deep learning methods for word-level sign recognition and evaluate their performances in large scale scenarios.",
+      "Visualizations demonstrate the effects of CorrNet on emphasizing human body trajectories across adjacent frames. ... We propose a novel deep learning approach to solve simultaneous alignment and recognition problems (referred to as \"Sequence-to-sequence\" learning). ... In this paper we focus on recognition of fingerspelling sequences in American Sign Language (ASL) videos collected in the wild, mainly from YouTube and Deaf social media. ... We report state-of-the-art sign language recognition and translation results achieved by our Sign Language Transformers.",
+      "Sign language translation (SLT) aims to interpret sign video sequences into text-based natural language sentences."
+    ],
+    "title": "Sign Language Recognition | Papers With Code",
+    "url": "https://paperswithcode.com/task/sign-language-recognition"
+  },
+  {
+    "description": "While machine translation for spoken language has advanced significantly, research on sign language translation (SLT) for deaf individuals remains limited. Obtaining annotations, such as gloss, can be expensive and time-consuming. To address these challenges, we propose a new sign language ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "While machine translation for spoken language has advanced significantly, research on sign language translation (SLT) for deaf individuals remains limited. Obtaining annotations, such as gloss, can be expensive and time-consuming. To address these challenges, we propose a new sign language video-processing method for SLT without gloss annotations.",
+      "This experiment proves that we achieve greater performance when using customized normalization and the greatest performance when using SASS. This paper presents a keypoint-based sign language translation (SLT) model that does not utilize glosses and a novel video processing method that is optimal for this model. We introduce a novel normalization method for keypoint vector processing in sign language videos that are based on human joint positions. Additionally, we propose a method for improving the robustness of our model across multiple datasets by determining the appropriate number of input frames for each dataset rather than using a fixed number of frames for all datasets.",
+      "In this paper, we apply the Sign2Text method to the dataset without gloss and propose a frame-processing method that can perform well even in cases where the video resolution differs. For sign language translation, we use the Gated Recurrent Unit (GRU) [11]-based Sequence-to-Sequence (Seq2Seq) model [12] with the Attention of Bahdanau et al.",
+      "Most existing deep-learning-based SLT methods rely on gloss annotations, a minimum vocabulary set of expressions that follow the sign language sequence and grammar, to translate the sign language into spoken language. However, collecting gloss annotations can be costly and time-consuming, and there is a need for SLT methods that do not require them. The state-of-the-art study [4] attempted to perform translation without glosses, but came across two major limitations."
+    ],
+    "title": "Preprocessing for Keypoint-Based Sign Language Translation without ...",
+    "url": "https://www.mdpi.com/1424-8220/23/6/3231"
+  }
+]

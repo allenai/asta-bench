@@ -1,0 +1,212 @@
+[
+  {
+    "description": "**Machine translation** is the task of translating a sentence in a source language to a different target language. Approaches for machine translation can range from rule-based to statistical to neural-based. More recently, encoder-decoder attention-based architectures like BERT have attained ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "**Machine translation** is the task of translating a sentence in a source language to a different target language. Approaches for machine translation can range from rule-based to statistical to neural-based. More recently, encoder-decoder attention-based architectures like BERT have attained major improvements in machine translation.",
+      "Neural machine translation is a recently proposed approach to machine translation. ... Our method uses a multilayered Long Short-Term Memory (LSTM) to map the input sequence to a vector of a fixed dimensionality, and then another deep LSTM to decode the target sequence from the vector. ... Transfer learning, where a model is first pre-trained on a data-rich task before being fine-tuned on a downstream task, has emerged as a powerful technique in natural language processing (NLP).",
+      "The prevalent approach to sequence to sequence learning maps an input sequence to a variable length output sequence via recurrent neural networks."
+    ],
+    "title": "Papers with Code - Machine Translation",
+    "url": "https://paperswithcode.com/task/machine-translation"
+  },
+  {
+    "description": "3441 papers with code \u2022 11 benchmarks \u2022 17 datasets \u00b7 tensorflow/tensor2tensor \u2022 \u2022 NeurIPS 2017",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Image-to-image translation is a class of vision and graphics problems where the goal is to learn the mapping between an input image and an output image using a training set of aligned image pairs. ... Neural machine translation is a recently proposed approach to machine translation.",
+      "Recurrent neural networks (RNNs), such as long short-term memory networks (LSTMs), serve as a fundamental building block for many sequence learning tasks, including machine translation, language modeling, and question answering."
+    ],
+    "title": "Translation | Papers With Code",
+    "url": "https://paperswithcode.com/task/translation"
+  },
+  {
+    "description": "Code translation is the process of converting code written in one programming language to another programming language while maintaining the same functionality. This process is also known as code conversion, source-to-source translation, or transpilation. Code translation is often performed ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Code translation is the process of converting code written in one programming language to another programming language while maintaining the same functionality. This process is also known as code conversion, source-to-source translation, or transpilation. Code translation is often performed when developers want to take advantage of new programming languages, improve code performance, or maintain legacy systems.",
+      "To achieve this goal, we introduce InterTrans, an LLM-based automated code translation approach that, in contrast to existing approaches, leverages intermediate translations across PLs to bridge the syntactic and semantic gaps between source and target PLs.",
+      "We introduce \\approach, a technique to adapt large models for downstream code tasks using Code Property Graphs (CPGs).",
+      "This paper investigates diverse LLMs and learning-based transpilers for automated code translation tasks, finding that: although certain LLMs have outperformed current transpilers, they still have some accuracy issues, where most of the failures are induced by a lack of comprehension of source programs, missing clear instructions on I/O types in translation, and ignoring discrepancies between source and target programs."
+    ],
+    "title": "Papers with Code - Code Translation",
+    "url": "https://paperswithcode.com/task/code-translation/latest"
+  },
+  {
+    "description": "Machine translation is the task of automatically converting source text in one language to text in another language. Given a sequence of text in a source language, there is no one single best\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "The key limitations of the classical machine translation approaches are both the expertise required to develop the rules, and the vast number of rules and exceptions required. Statistical machine translation, or SMT for short, is the use of statistical models that learn to translate text from a source language to a target language gives a large corpus of examples.",
+      "Neural machine translation, or NMT for short, is the use of neural network models to learn a statistical model for machine translation. The key benefit to the approach is that a single system can be trained directly on source and target text, no longer requiring the pipeline of specialized systems used in statistical machine learning.",
+      "A Statistical Approach to Machine Translation, 1990. Review Article: Example-based Machine Translation, 1999. Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation, 2014.",
+      "Practical training of neural machine translation models requires GPUs which are well suited to the high degree of parallelism inherent in these deep learning models (just think of the many matrix multiplications). To increase parallelism even more, we process several sentence pairs (say, 100) at once."
+    ],
+    "title": "Neural Machine Translation with Code | by Umer Farooq | Medium",
+    "url": "https://medium.com/@umerfarooq_26378/neural-machine-translation-with-code-68c425044bbd"
+  },
+  {
+    "description": "Upload an image to customize your repository\u2019s social media preview. Images should be at least 640\u00d7320px (1280\u00d7640px for best display) \u00b7 EACL 2017 \u00b7 Jiatao Gu, Graham Neubig, Kyunghyun Cho, Victor O. K. Li \u00b7 Edit social preview",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "We propose a neural machine translation (NMT) framework for simultaneous translation in which an agent learns to make decisions on when to translate from the interaction with a pre-trained NMT environment. To trade off quality and delay, we extensively explore various targets for delay and design a method for beam-search applicable in the simultaneous MT setting.",
+      "Translating in real-time, a.k.a. simultaneous translation, outputs translation words before the input sentence ends, which is a challenging problem for conventional machine translation methods.",
+      "Implemented in one code library."
+    ],
+    "title": "Papers with Code - Learning to Translate in Real-time with Neural ...",
+    "url": "https://paperswithcode.com/paper/learning-to-translate-in-real-time-with"
+  },
+  {
+    "description": "Unsupervised machine translation is the task of doing machine translation without any translation resources at training time. ( Image credit: [Phrase-Based & Neural Unsupervised Machine Translation](https://arxiv.org/pdf/1804.07755v2.pdf) )",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "To bridge this gap, we propose a new training approach, Break-It-Fix-It (BIFI), which has two key ideas: (i) we use the critic to check a fixer's output on real bad inputs and add good (fixed) outputs to the training data, and (ii) we train a breaker to generate realistic bad code from good code. ... This work focuses on comparing different solutions for machine translation on low resource language pairs, namely, with zero-shot transfer learning and unsupervised machine translation.",
+      "Neural machine translation (NMT) has progressed rapidly over the past several years, and modern models are able to achieve relatively high quality using only monolingual text data, an approach dubbed Unsupervised Machine Translation (UNMT).",
+      "Numerous recent work on unsupervised machine translation (UMT) implies that competent unsupervised translations of low-resource and unrelated languages, such as Nepali or Sinhala, are only possible if the model is trained in a massive multilingual environment, where these low-resource languages are mixed with high-resource counterparts."
+    ],
+    "title": "Unsupervised Machine Translation | Papers With Code",
+    "url": "https://paperswithcode.com/task/unsupervised-machine-translation/latest"
+  },
+  {
+    "description": "Dataset Description The dataset used in this study comprises bug reports extracted from the Visual Studio Code GitHub repository, specifically focusing on those labeled with the english-please tag. This label indicates that the original submission was written in a language other than English, ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Current approaches to context-aware MT rely on a set of surface heuristics to translate pronouns, which break down when translations require real reasoning.",
+      "83 datasets \u2022 159643 papers with code.",
+      "AR Semantic Segmentation 8 Medical Image Registration 8 Multi-Label Learning 8 Multi-agent Reinforcement Learning 8 Music Classification 8 Music Source Separation 8 Online Multi-Object Tracking 8 Passage Retrieval 8 Person Identification 8 Person Search 8 Remote Sensing Image Classification 8 Robust classification 8 Satellite Image Classification 8 Scene Segmentation 8 Sequential Recommendation 8 Shadow Removal 8 Sound Event Localization and Detection 8 Table Detection 8 Temporal Tagging 8 Text-to-Code Generation 8 Token Classification 8 Unsupervised Object Detection 8 Unsupervised Video Objec",
+      "The GATITOS (Google's Additional Translations Into Tail-languages: Often Short) dataset is a high-quality, multi-way parallel dataset of tokens and short phrases, intended for training and improving machine translation models. This dataset consists in 4,000 English segments (4,500 tokens) that have been translated into each of 26 low-resource languages, as well as three higher-resource pivot languages (es, fr, hi)."
+    ],
+    "title": "Papers with Code - Machine Learning Datasets",
+    "url": "https://paperswithcode.com/datasets?v=lst&o=newest&task=machine-translation&page=1"
+  },
+  {
+    "description": "Papers With Code highlights trending Machine Learning research and the code to implement it.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [],
+    "title": "The latest in Machine Learning | Papers With Code",
+    "url": "https://paperswithcode.com/"
+  },
+  {
+    "description": "In this paper, we leverage low-level compiler intermediate representations (IR) to improve code translation. Traditional transpilers rely on syntactic information and handcrafted rules, which limits their applicability and produces unnatural-looking code. Applying neural machine translation ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:In this paper, we leverage low-level compiler intermediate representations (IR) to improve code translation. Traditional transpilers rely on syntactic information and handcrafted rules, which limits their applicability and produces unnatural-looking code. Applying neural machine translation (NMT) approaches to code has successfully broadened the set of programs on which one can get a natural-looking translation.",
+      "Abstract page for arXiv paper 2207.03578: Code Translation with Compiler Representations",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "View a PDF of the paper titled Code Translation with Compiler Representations, by Marc Szafraniec and 5 other authors View PDF"
+    ],
+    "title": "[2207.03578] Code Translation with Compiler Representations",
+    "url": "https://arxiv.org/abs/2207.03578"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "In machine translation, the original text is decoded and then encoded into the target language through two step process that involves various approaches employed by language translation technology to facilitate the translation mechanism.",
+      "Hybrid machine translation tools integrate multiple machine translation models within a single software application, leveraging a combination of approaches to enhance the overall effectiveness of a singular translation model.",
+      "While AI and machine translation systems continue to improve, the goal should be seen as augmentation rather than replacement. Many applications benefit from a collaborative approach where AI tools assist human translators in their work, improving efficiency and consistency.",
+      "Machine translation of languages refers to the use of artificial intelligence (AI) and machine learning algorithms to automatically translate text or speech from one language to another. This technology has been developed over the years and has become increasingly sophisticated, with the ability to produce accurate translations across a wide range of languages."
+    ],
+    "title": "Machine Translation in AI - GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/machine-translation-of-languages-in-artificial-intelligence/"
+  },
+  {
+    "description": "We present a converter software program that automatically translates Python-based machine learning algorithms into Structured Text codes. This tool e\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "We present a converter software program that automatically translates Python-based machine learning algorithms into Structured Text codes. This tool empowers engineers to efficiently generate machine learning models in a programming language widely used in industrial controllers.",
+      "It supports the conversion of decision tree and multilayer perceptron models built using scikit-learn library. Moreover, the generated Structure Text code is compatible with ABB\u2019s Industrial IT 800xA DCS syntax."
+    ],
+    "title": "A conversion tool for translating Python-based machine learning ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2352711024003753"
+  },
+  {
+    "description": "#3 best model for Cross-Lingual Bitext Mining on BUCC French-to-English (F1 score metric)",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "In contrast to previous work, which combines NMT models with separately trained language models, we note that encoder-decoder NMT architectures already have the capacity to learn the same information as a language model, and we explore strategies to train with monolingual data without changing the neural network architecture."
+    ],
+    "title": "Papers with Code - Improving Neural Machine Translation Models ...",
+    "url": "https://paperswithcode.com/paper/improving-neural-machine-translation-models"
+  },
+  {
+    "description": "MIT and IBM Research are two of the top research organizations in the world. Academic papers written by researchers at the MIT-IBM Watson AI Lab are regularly accepted into leading AI conferences.",
+    "favicon_url": "https://you.com/favicon?domain=mitibmwatsonailab.mit.edu&size=128",
+    "snippets": [
+      "ConCerNet: A Contrastive Learning Based Framework for Automated Conservation Law Discovery and Trustworthy Dynamical System Prediction",
+      "A Theoretical Understanding of Shallow Vision Transformers: Learning, Generalization, and Sample Complexity",
+      "Revisiting Contrastive Learning through the Lens of Neighborhood Component Analysis: an Integrated Framework",
+      "GLIB: Efficient Exploration for Relational Model-Based Reinforcement Learning via Goal-Literal Babbling"
+    ],
+    "title": "Papers + Code - MIT-IBM Watson AI Lab",
+    "url": "https://mitibmwatsonailab.mit.edu/research/papers-code/"
+  },
+  {
+    "description": "16 papers with code \u2022 1 benchmarks \u2022 1 datasets \u00b7 eleanorjiang/blonde \u2022 NAACL 2022",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [],
+    "title": "Papers with Code - Document Level Machine Translation",
+    "url": "https://paperswithcode.com/task/document-level-machine-translation"
+  },
+  {
+    "description": "ACM Comput. Surv., Vol. 53, No. 5, Article 99, Publication date: September 2020. DOI: https://doi.org/10.1145/3406095 \u00b7 Wepresent a survey on multilingual neural machine translation (MNMT), which has gained a lot of traction in recent years. MNMT has been useful in improving translation quality ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "[54] proposed to achieve better transfer of syntax-sensitive contextual representations from parents using a mixture of language experts network. Results from the above-mentioned approaches show that, in many cases, transfer learning benefits the child language pair even if the parent and child languages are not related.",
+      "Furthermore, depending on the similarity between languages or lack thereof, it might be important to consider a hybrid architecture (mixing RNN, CNN, and FFN) for best performance. Representation Bottleneck. Recent works on massively multilingual NMT have shown that existing approaches are unable to successfully incorporate more than 100 language pairs and at the same time improve translation quality, especially for the resource-rich languages (which tend to suffer).",
+      "MNMT has been useful in improving translation quality as a result of translation knowledge transfer (transfer learning). MNMT is more promising and interesting than its statistical machine translation counterpart, because end-to-end modeling and distributed representations open new avenues for research on machine translation. Many approaches have been proposed to exploit multilingual parallel corpora for improving translation quality.",
+      "Another consideration during training is the tuning of hyperparameters such as learning rate, hidden dimension size, number of layers, and so on. Researchers often train a wide variety of models, an approach known as hyperparameter search, and choose a model with the best performance."
+    ],
+    "title": "A Survey of Multilingual Neural Machine Translation",
+    "url": "https://dl.acm.org/doi/fullHtml/10.1145/3406095"
+  },
+  {
+    "description": "Generative machine learning models have recently been applied to source code, for use cases including translating code between programming languages, creating documentation from code, and auto-completing methods. Yet, state-of-the-art models often produce code that is erroneous or incomplete.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2202.07682: Better Together? An Evaluation of AI-Supported Code Translation",
+      "View a PDF of the paper titled Better Together? An Evaluation of AI-Supported Code Translation, by Justin D. Weisz and 7 other authors View PDF \u00b7 Abstract:Generative machine learning models have recently been applied to source code, for use cases including translating code between programming languages, creating documentation from code, and auto-completing methods.",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "In a controlled study with 32 software engineers, we examined whether such imperfect outputs are helpful in the context of Java-to-Python code translation. When aided by the outputs of a code translation model, participants produced code with fewer errors than when working alone."
+    ],
+    "title": "[2202.07682] Better Together? An Evaluation of AI-Supported Code ...",
+    "url": "https://arxiv.org/abs/2202.07682"
+  },
+  {
+    "description": "Let's take a first look at the 20 top-cited machine translation papers from 2018 and 2019.",
+    "favicon_url": "https://you.com/favicon?domain=marian-nmt.github.io&size=128",
+    "snippets": [
+      "Competence-based Curriculum Learning for Neural Machine Translation. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), pages 1162\u20131172, Minneapolis, Minnesota. Association for Computational Linguistics. Citations: 112 \u00b7 Mikel Artetxe, Gorka Labaka, and Eneko Agirre. 2019. An Effective Approach to Unsupervised Machine Translation.",
+      "Michele Tufano, Jevgenija Pantiuchina, Cody Watson, Gabriele Bavota and Denys Poshyvanyk. 2019. On Learning Meaningful Code Changes Via Neural Machine Translation. 2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE).",
+      "Elena Voita, Pavel Serdyukov, Rico Sennrich, and Ivan Titov. 2018. Context-Aware Neural Machine Translation Learns Anaphora Resolution. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 1264\u20131274, Melbourne, Australia.",
+      "Myle Ott, Michael Auli, David Grangier, Marc\u2019Aurelio Ranzato. 2018. Analyzing Uncertainty in Neural Machine Translation. Proceedings of the 35th International Conference on Machine Learning, PMLR 80:3956-3965."
+    ],
+    "title": "Marian :: The 20 top-cited Machine Translation* papers of 2018 ...",
+    "url": "https://marian-nmt.github.io/2022/05/29/top-cited-2018-2019.html"
+  },
+  {
+    "description": "\ud83c\udfc6 SOTA for Machine Translation on 20NEWS (1-of-100 Accuracy metric)",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [],
+    "title": "Papers with Code - Neural Machine Translation",
+    "url": "https://paperswithcode.com/paper/neural-machine-translation"
+  },
+  {
+    "description": "Browse 716 tasks \u2022 2199 datasets \u2022 2423",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Browse SoTA > Natural Language Processing > Machine Translation"
+    ],
+    "title": "Papers with Code - Natural Language Processing",
+    "url": "https://paperswithcode.com/area/natural-language-processing/machine-translation"
+  },
+  {
+    "description": "Research on machine learning for source code \u00b7 Search related work Go",
+    "favicon_url": "https://you.com/favicon?domain=ml4code.github.io&size=128",
+    "snippets": [
+      "Search across all paper titles, abstracts, authors by using the search field.",
+      "Please consider contributing by updating the information of existing papers or adding new work."
+    ],
+    "title": "Search all Publications on Machine Learning for Source Code \u00b7 ...",
+    "url": "https://ml4code.github.io/papers.html"
+  }
+]

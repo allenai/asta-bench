@@ -1,0 +1,278 @@
+[
+  {
+    "description": "The large language models, as predicted by scaling law forecasts, have made groundbreaking progress in many fields, particularly in natural language generation tasks, where they have approached or even surpassed human levels. However, the unprecedented scale of their parameters brings significant ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The large language models, as predicted by scaling law forecasts, have made groundbreaking progress in many fields, particularly in natural language generation tasks, where they have approached or even surpassed human levels. However, the unprecedented scale of their parameters brings significant computational and storage costs.",
+      "Artificial Intelligence Review - The large language models, as predicted by scaling law forecasts, have made groundbreaking progress in many fields, particularly in natural language generation...",
+      "Based on where and how these additional trainable parameters are incorporated into the model\u2019s architecture, there are primarily three types of additive PEFT techniques: Adapter, Soft Prompt, and Scale and Shift. We will delve into some of the principal studies on these techniques.",
+      "While the article spans multiple visual tasks, the experiments are primarily focused on several common tasks and do not fully encompass the broader range of potential application scenarios. Han et al. (2024) provide a detailed classification of PEFT approaches and explores the application of PEFT techniques across various model architectures and downstream tasks, as well as the systematic design challenges of PEFT methods."
+    ],
+    "title": "Parameter-efficient fine-tuning in large language models: a survey ...",
+    "url": "https://link.springer.com/article/10.1007/s10462-025-11236-4"
+  },
+  {
+    "description": "Large Language Models (LLMs) are gaining significant popularity in recent years for specialized tasks using prompts due to their low computational cost. Standard methods like prefix tuning utilize special, modifiable tokens that lack semantic meaning and require extensive training for best ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Large Language Models (LLMs) are gaining significant popularity in recent years for specialized tasks using prompts due to their low computational cost. Standard methods like prefix tuning utilize special, modifiable tokens that lack semantic meaning and require extensive training for best performance, often falling short.",
+      "Scientific Reports - Parameter-efficient fine-tuning of large language models using semantic knowledge tuning",
+      "In a similar vein,19 explored the use of low-rank factorization techniques to compress model parameters effectively while preserving model accuracy. Collectively, these innovations contribute to the deployment of large-scale models on resource-limited devices, ensuring computational efficiency and maintaining optimal performance.",
+      "P tuning: This method91 introduces an optimized prompt tuning method, which exhibits efficacy across a diverse spectrum of model scales and natural language tasks. The method addresses the suboptimal performance associated with prompt tuning when applied to pretrained models of typical size. Moreover, it endeavors to rectify the limitations observed in the performance of prompt tuning, particularly its inefficacy in challenging sequence labeling tasks. LoRA: LoRA20 (Low-Rank Adaptation) is a parameter-efficient fine-tuning technique that involves learning low-rank matrices to adapt the model while freezing most of its original parameters in a fixed state."
+    ],
+    "title": "Parameter-efficient fine-tuning of large language models using ...",
+    "url": "https://www.nature.com/articles/s41598-024-75599-4"
+  },
+  {
+    "description": "Prompt tuning is a technique used to improve the performance of a pre-trained language model without modifying the model\u2019s internal architecture.",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "This technique, applied to already trained foundational models, enhances performance without the high computational costs associated with traditional model training. In this article, we\u2019ll explore the fundamentals of prompt tuning, compare it to fine-tuning and prompt engineering, and discuss its significant benefits. We'll also provide a practical example utilizing HuggingFace\u2019s platform, where we Prompt tune a bloomz-560m model.",
+      "\", 100) print(\"Tuned model output:\", tuned_output) ... As you can see now, the model knows what the logistician does. Feel free to experiment with different prompts, models and datasets! Prompt tuning is a powerful tool to make large language models more efficient on a specific task. We have explored prompt tuning by first explaining what it is and how it operates. Then we compared it to other similar techniques: fine tuning and prompt engineering.",
+      "For this guide, we'll apply prompt tuning to BigScience's bloomz-560m model. We'll be working within the Hugging Face ecosystem using the PEFT (Parameter-Efficient Fine-Tuning) library. Although we'll focus on the causal language modeling task here, the PEFT library supports various tasks, models, and tuning techniques.",
+      "Fine-tuning teaches these models how to function as digital assistants, making them significantly more useful than a generally trained model. Prompt tuning adjusts a set of extra parameters, known as \"soft prompts,\" which are integrated into the model's input processing. This method modifies how the model interprets input prompts without a complete overhaul of its weights, offering a balance between performance enhancement and resource efficiency."
+    ],
+    "title": "Understanding Prompt Tuning: Enhance Your Language Models with ...",
+    "url": "https://www.datacamp.com/tutorial/understanding-prompt-tuning"
+  },
+  {
+    "description": "Large language models (LLMs) are a type of artificial intelligence, which operate by predicting and assembling sequences of words that are statistical\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Fine-tuning is a process in which a pretrained model, such as an LLM, is further trained on a custom data set to adapt it for specialized tasks or domains. In this review, we outline some of the major methodologic approaches and techniques that can be used to fine-tune LLMs for specialized use cases and enumerate the general steps required for carrying out LLM fine-tuning.",
+      "We then illustrate a few of these methodologic approaches by describing several specific use cases of fine-tuning LLMs across medical subspecialties. Finally, we close with a consideration of some of the benefits and limitations associated with fine-tuning LLMs for specialized use cases, with an emphasis on specific concerns in the field of medicine. ... No articles found."
+    ],
+    "title": "Fine-Tuning Large Language Models for Specialized Use Cases - ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2949761224001147"
+  },
+  {
+    "description": "Explore prompt & prefix tuning: efficient methods for model finetuning! While soft prompt tuning adjusts input embeddings, prefix tuning modifies transformer blocks. Both techniques offer parameter savings over full finetuning.",
+    "favicon_url": "https://you.com/favicon?domain=magazine.sebastianraschka.com&size=128",
+    "snippets": [
+      "Last week, I shared an overview of different Large Language Model (LLM) finetuning techniques. In a series of short articles, I am planning to discuss a selection of the most relevant techniques one by one.",
+      "A selection of parameter-efficient finetuning techniques covered in this article. The original concept of prompt tuning refers to techniques that vary the input prompt to achieve better modeling results. For example, suppose we are interested in translating an English sentence into German."
+    ],
+    "title": "Understanding Parameter-Efficient LLM Finetuning: Prompt Tuning ...",
+    "url": "https://magazine.sebastianraschka.com/p/understanding-parameter-efficient"
+  },
+  {
+    "description": "Additionally, HuggingFace provides ... large-scale training and inference simple, efficient, and adaptable. Low-Rank Adaptation (LoRA)[62] is a technique designed for fine-tuning large language models, which modifies the fine-tuning process by freezing the original model weights and applying changes to a separate set of weights, added to the original parameters...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Additionally, HuggingFace provides built-in support to run the fine-tuning process across any distributed configuration using Accelerate222https://huggingface.co/docs/accelerate/en/index, making large-scale training and inference simple, efficient, and adaptable. Low-Rank Adaptation (LoRA)[62] is a technique designed for fine-tuning large language models, which modifies the fine-tuning process by freezing the original model weights and applying changes to a separate set of weights, added to the original parameters.",
+      "Figure 6.1: Comprehensive Taxonomy of Parameter-Efficient Fine-Tuning (PEFT) Methods for Large Language Models (LLMs). This figure categorises various PEFT techniques, highlighting their distinct approaches, from additive and selective fine-tuning to reparameterised and hybrid methods. It details specific strategies within each category, such as Adapter-Based Fine-Tuning, Soft Prompt-Based Fine-Tuning, and their respective sub-techniques like LoRA and its derivatives, showcasing the diverse and evolving landscape of LLM fine-tuning.",
+      "Tools such as Optuna, Hyperopt, and Ray Tune can automate this process and help in efficiently exploring the hyperparameter space [49]. ... Data Parallelism and Model Parallelism: For large-scale training, consider using data parallelism or model parallelism techniques to distribute the training workload across multiple GPUs or TPUs.",
+      "Key considerations include data collection strategies, handling of imbalanced datasets, model initialisation, and optimisation techniques, with a particular focus on hyperparameter tuning. The report also highlights parameter-efficient fine-tuning methods such as Low-Rank Adaptation (LoRA) and Half Fine-Tuning, which balance resource constraints with optimal model performance. The exploration extends to advanced fine-tuning techniques and configurations like memory fine-tuning, Mixture of Experts (MoE) and Mixture of Agents (MoA), demonstrating how these methods harness specialised networks and multi-agent collaboration for improved outcomes."
+    ],
+    "title": "The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: ...",
+    "url": "https://arxiv.org/html/2408.13296v1"
+  },
+  {
+    "description": "Training a deep neural network can be costly but training time is reduced when a pre-trained network can be adapted to different use cases. Ideally, only a small number of parameters needs to be changed in this process of fine-tuning, which can then be more easily distributed.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "With the prevalence of pre-trained language models (PLMs) and the pre-training\u2013fine-tuning paradigm, it has been continuously shown that larger models tend to yield better performance. However, as PLMs scale up, fine-tuning and storing all the parameters is prohibitively costly and eventually becomes practically infeasible.",
+      "Nature Machine Intelligence - Training a deep neural network can be costly but training time is reduced when a pre-trained network can be adapted to different use cases. Ideally, only a small...",
+      "We also explore the effects of manual templates and compare the generalization gap of different delta-tuning methods. Furthermore, we investigate (3) the scaling law and (4) the transferability of delta-tuning methods among different downstream tasks. The implementation details and tasks are described in Supplementary Sections 3 and 4. We evaluate vanilla fine-tuning (FT) and four representative delta-tuning methods, including prompt-tuning (PT), prefix-tuning (PF), LoRA (LR) and adapter (AP).",
+      "Besides, we also encourage future research explorations to systematically report the performance of their proposed delta-tuning methods on various PLM backbones under different settings thoroughly. With the scale of the backbone PLM growing, prompt-tuning becomes more and more competitive in performance, and would even achieve comparable performance to fine-tuning for a PLM with over 10 billion parameters19, and the convergence speed of prompt-tuning benefits from the scaling law."
+    ],
+    "title": "Parameter-efficient fine-tuning of large-scale pre-trained language ...",
+    "url": "https://www.nature.com/articles/s42256-023-00626-4"
+  },
+  {
+    "description": "Parameter-efficient fine-tuning (PEFT) is a method of improving the performance of pretrained large language models (LLMs) and neural networks for specific tasks or data sets.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "IBM\u00ae Granite\u2122 is our family of open, performant and trusted AI models tailored for business and optimized to scale your AI applications. Explore language, code, time series and guardrail options.",
+      "PEFT works by freezing most of the pretrained language model\u2019s parameters and layers while adding a few trainable parameters, known as adapters, to the final layers for predetermined downstream tasks. The fine-tuned models retain all the learning gained during training while specializing in their respective downstream tasks. Many PEFT methods further enhance efficiency with gradient checkpointing, a memory-saving technique that helps models learn without storing as much information at once.",
+      "Specifically created for natural language generation (NLG) models, prefix-tuning appends a task-specific continuous vector, known as a prefix, to each transformer layer while keeping all parameters frozen. As a result, prefix-tuned models store over a thousandfold fewer parameters than fully fine-tuned models with comparable performance. Prompt-tuning simplifies prefix-tuning and trains models by injecting tailored prompts into the input or training data.",
+      "P-tuning is a variation of prompt-tuning designed for natural language understanding (NLU) tasks. Rather than use manually created prompts, P-tuning introduced automated prompt training and generation that leads to more impactful training prompts over time. ... Learn how to confidently incorporate generative AI and machine learning into your business. ... Train, validate, tune and deploy generative AI, foundation models and machine learning capabilities with IBM watsonx.ai, a next-generation enterprise studio for AI builders."
+    ],
+    "title": "What is parameter-efficient fine-tuning (PEFT)? | IBM",
+    "url": "https://www.ibm.com/think/topics/parameter-efficient-fine-tuning"
+  },
+  {
+    "description": "Discover Parameter-efficient Fine-tuning for AI models: cut computational costs, ensure portability and maintain high performance with minimal parameter updates.",
+    "favicon_url": "https://you.com/favicon?domain=www.leewayhertz.com&size=128",
+    "snippets": [
+      "This is where Parameter-efficient Fine-tuning (PEFT) comes in as an alternative paradigm to prompting. PEFT aims to fine-tune only a small subset of the model\u2019s parameters, achieving comparable performance to full fine-tuning while significantly reducing computational requirements. This article will discuss the PEFT method in detail, exploring its benefits and how it has become an efficient way to fine-tune LLMs on downstream tasks. ... Few-shot in-context learning vs. parameter-efficient fine-tuning ... LLM models: Large Language Models or LLMs are a type of machine learning models that can learn the underlying structure and semantics of text data for NLP tasks.",
+      "Prompt tuning is another PEFT technique for adapting pre-trained language models to specific downstream tasks. Unlike the traditional \u201cmodel tuning\u201d approach, where all the pre-trained model parameters are tuned for each task, prompt tuning involves learning soft prompts through backpropagation that can be fine-tuned for specific tasks by incorporating labeled examples.",
+      "Additionally, the fact that only the prefix embeddings are fine-tuned means that there is a lower risk of overfitting to the training data, thereby producing more robust and generalizable models. P-tuning can improve the performance of language models such as GPTs in Natural Language Understanding (NLU) tasks. Traditional fine-tuning techniques have not been effective for GPTs, but P-tuning uses trainable continuous prompt embeddings to improve their performance.",
+      "Optimize AI model performance on any task with PEFT, without the need for extensive retraining or large-scale parameter updates \u00b7 In our example, we will use LoRA to fine-tune a pre-trained sequence-to-sequence language model to generate text for a specific task, in this case, for Twitter complaints. First, let us import all the necessary libraries, modules and other dependencies, like AutoModelForSeq2SeqLM, PeftModel, torch, the datasets and AutoTokenizer, among others. The line of codes would be something like this:"
+    ],
+    "title": "Parameter-efficient Fine-tuning (PEFT): Overview, benefits, ...",
+    "url": "https://www.leewayhertz.com/parameter-efficient-fine-tuning/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
+    "url": "https://aclanthology.org/2021.emnlp-main.243.pdf"
+  },
+  {
+    "description": "As code review is a tedious and costly software quality practice, researchers have proposed several machine learning-based methods to automate the process. The primary focus has been on accuracy, t...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "As code review is a tedious and costly software quality practice, researchers have proposed several machine learning-based methods to automate the process. The primary focus has been on accuracy, that is, how accurately the algorithms are able to detect ...",
+      "Automating code review activities by large-scale pre-training. In the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, 1035\u20131047. ... Junyi Lu, Lei Yu, Xiaojia Li, Li Yang, and Chun Zuo. 2023. LLaMA-Reviewer: Advancing code review automation with large language models through parameter-efficient fine-tuning.",
+      "However, such large language model-based code generation techniques face the risk of introducing security vulnerabilities to codebases. In this work, we ... ... Li YWu YWang ZHuang LWang JLi JHuang M(2025)CodeDoctor: multi-category code review comment generationAutomated Software Engineering10.1007/s10515-025-00491-y32:1Online publication date: 27-Feb-2025 ... Check if you have access through your login credentials or your institution to get full access on this article.Sign in",
+      "In this article, we contribute Comprehensibility of Automated Code Review using Large Language Models (Carllm), a novel fine-tuned LLM that has the ability to improve not only the accuracy but, more importantly, the comprehensibility of automated code review, as compared to state-of-the-art pre-trained models and general LLMs."
+    ],
+    "title": "Fine-Tuning Large Language Models to Improve Accuracy and ...",
+    "url": "https://dl.acm.org/doi/10.1145/3695993"
+  },
+  {
+    "description": "To develop soft prompt-based learning architecture for large language models (LLMs), examine prompt-tuning using frozen/unfrozen LLMs, and assess thei\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "We developed a soft prompt-based learning architecture and compared 4 strategies including (1) fine-tuning without prompts; (2) hard-prompting with unfrozen LLMs; (3) soft-prompting with unfrozen LLMs; and (4) soft-prompting with frozen LLMs. We evaluated GatorTron, a clinical LLM with up to 8.9 billion parameters, and compared GatorTron with 4 existing transformer models for clinical concept and relation extraction on 2 benchmark datasets for adverse drug events and social determinants of health (SDoH).",
+      "When LLMs are unfrozen, GatorTron-3.9B with soft prompting achieves the best strict F1-scores of 0.9118 and 0.8604 for concept extraction, outperforming the traditional fine-tuning and hard prompt-based models by 0.6 \u223c 3.1 % and 1.2 \u223c 2.9 %, respectively; GatorTron-345 M with soft prompting achieves the best F1-scores of 0.8332 and 0.7488 for end-to-end relation extraction, outperforming other two models by 0.2 \u223c 2 % and 0.6 \u223c 11.7 %, respectively. When LLMs are frozen, small LLMs have a big gap to be competitive with unfrozen models; scaling LLMs up to billions of parameters makes frozen LLMs competitive with unfrozen models.",
+      "We demonstrate that (1) machines can learn soft prompts better than hard prompts composed by human, (2) frozen LLMs have good few-shot learning ability and generalizability for cross-institution applications, (3) frozen LLMs reduce computing cost to 2.5 \u223c 6 % of previous methods using unfrozen LLMs, and (4) frozen LLMs require large models (e.g., over several billions of parameters) for good performance. ... No articles found."
+    ],
+    "title": "Model tuning or prompt Tuning? a study of large language models ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1532046424000480"
+  },
+  {
+    "description": "To develop soft prompt-based learning architecture for large language models (LLMs), examine prompt-tuning using frozen/unfrozen LLMs, and assess their abilities in transfer learning and few-shot learning. We developed a soft prompt-based learning ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "P-tuning: Prompt tuning can be comparable to fine-tuning across scales and tasks. In: Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers). Stroudsburg, PA, USA: : Association for Computational Linguistics; 2022. doi: 10.18653/v1/2022.acl-short.8 [DOI] [Google Scholar] 3.Lester B, Al-Rfou R, Constant N. The power of scale for parameter-efficient prompt tuning.",
+      "We mainly focus on encoder-only LLMs based on the BERT architecture [43], future studies should examine the generative LLMs based on decoder architectures such as GPT-3 model and encoder-decoder models such as T5 [44]. In addition, it\u2019s of great value to explore parameter-efficient model tuning approaches as fine-tuning LLMs is computationally expensive and larger LLMs may be overkill for some clinical applications.",
+      "[1\u20133] At present, the performance of prompt-based learning highly depends on (1) the selection of the prompt types, i.e., hard/discrete prompts (manually crafted clear text) or soft/continuous prompts (trainable continuous embeddings), [1] and (2) the algorithms to adopt LLMs for downstream tasks, i.e., model tuning - updating the parameters of LLM models in finetuning, or prompt tuning - only updating the parameters of prompts while keep LLM parameters unchanged (i.e., frozen) in finetuning. Prompt tuning algorithms could unload researchers from labor-intensive prompt engineering and reduce computing costs by keeping LLMs frozen. Nevertheless, most existing works in clinical NLP are based on hard prompts using model-tuning; there is a lack of studies exploring the use of soft prompts and prompt-tuning.",
+      "The experimental results show that the proposed soft prompting method achieved state-of-the-art performance for extracting relations of drugs and ADEs as well as SDoH, outperforming traditional fine-tuning models and hard prompt-based models. This study shows that machines could learn better \u201csoft prompts\u201d that outperform hard prompts composed by humans, demonstrating the efficiency of using soft prompts to adopt LLMs."
+    ],
+    "title": "Model Tuning or Prompt Tuning? A Study of Large Language Models ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11065560/"
+  },
+  {
+    "description": "Large language models (LLMs) demonstrate impressive capabilities to generate accurate code snippets given natural language intents in a zero-shot manner, i.e., without the need for specific fine-tu...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Large language models (LLMs) demonstrate impressive capabilities to generate accurate code snippets given natural language intents in a zero-shot manner, i.e., without the need for specific fine-tuning. While prior studies have highlighted the advantages of fine-tuning LLMs, this process incurs high computational costs, making it impractical in resource-scarce environments, particularly for models with billions of parameters. To address these challenges, previous research explored in-context learning (ICL) and retrieval-augmented generation (RAG) as strategies to guide the LLM generative process with task-specific prompt examples.",
+      "Takeshi Kojima, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa. 2022. Large language models are zero-shot reasoners. Advances in neural information processing systems 35 (2022), 22199\u201322213. ... Brian Lester, Rami Al-Rfou, and Noah Constant. 2021. The Power of Scale for Parameter-Efficient Prompt Tuning.",
+      "Delta tuning: A comprehensive study of parameter efficient methods for pre-trained language models. arXiv preprint arXiv:2203.06904 (2022). ... Ning Ding, Yujia Qin, Guang Yang, Fuchao Wei, Zonghan Yang, Yusheng Su, Shengding Hu, Yulin Chen, Chi-Min Chan, Weize Chen, et al. 2023. Parameter-efficient fine-tuning of large-scale pre-trained language models.",
+      "Christel Chappuis, Val\u00e9rie Zermatten, Sylvain Lobry, Bertrand Le Saux, and Devis Tuia. 2022. Prompt-RSVQA: Prompting visual context to a language model for remote sensing visual question answering. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition."
+    ],
+    "title": "Exploring Parameter-Efficient Fine-Tuning Techniques for Code ...",
+    "url": "https://dl.acm.org/doi/10.1145/3714461"
+  },
+  {
+    "description": "Dive into LLM fine-tuning: its importance, types, methods, and best practices for optimizing language model performance.",
+    "favicon_url": "https://you.com/favicon?domain=www.superannotate.com&size=128",
+    "snippets": [
+      "As we look ahead, the continuous exploration and innovation in LLM and the right GenAI fine-tuning tools will undoubtedly pave the way for smarter, more efficient, and contextually aware AI systems. ... Learn practical methods to evaluate your retrieval-augmented generation (RAG) system effectively, ensuring accuracy, reliability, and real-world impact. ... Learn how Direct Preference Optimization (DPO) streamlines language model tuning, offering a stable and cost-effective alternative to traditional RLHF methods. ... Explore how chain-of-thought (CoT( prompting enhances AI reasoning, offering a step-by-step guide to ensure more accurate and transparent LLM outcomes.",
+      "Let's explore some of the notable methods for fine-tuning LLMs and LLM agents. One strategy used to improve a model's performance on various tasks is instruction fine-tuning. It's about training the machine learning model using examples that demonstrate how the model should respond to the query. The dataset you use for fine-tuning large language models has to serve the purpose of your instruction. For example, suppose you fine-tune your model to improve its summarization skills.",
+      "In many cases, adapting a pre-existing model is efficient, but some instances require fine-tuning with a new model. 3. Model's performance and adjustment: After preparing your model, you need to assess its performance. If it\u2019s unsatisfactory, try prompt engineering or further fine-tuning.",
+      "This transfer learning technique chooses specific model components and \"freezes\" the rest of the parameters. The result is logically having a much smaller number of parameters than in the original model (in some cases, just 15-20% of the original weights; LoRA can reduce the number of trainable parameters by 10,000 times)."
+    ],
+    "title": "Fine-tuning large language models (LLMs) in 2025 | SuperAnnotate",
+    "url": "https://www.superannotate.com/blog/llm-fine-tuning"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "LoRA: LORA: LOW-RANK ADAPTATION OF LARGE LANGUAGE MODELS \u00b7 Prefix Tuning: P-Tuning v2: Prompt Tuning Can Be Comparable to Fine-tuning Universally Across Scales and Tasks \u00b7 Prompt Tuning: The Power of Scale for Parameter-Efficient Prompt Tuning ... We explore many interesting use cases here.",
+      "Large Language Models (LLMs) based on the transformer architecture, like GPT, T5, and BERT have achieved state-of-the-art results in various Natural Language Processing (NLP) tasks. They have also started foraying into other domains, such as Computer Vision (CV) (VIT, Stable Diffusion, LayoutLM) and Audio (Whisper, XLS-R). The conventional paradigm is large-scale pretraining on generic web-scale data, followed by fine-tuning to downstream tasks.",
+      "However, as models get larger and larger, full fine-tuning becomes infeasible to train on consumer hardware. In addition, storing and deploying fine-tuned models independently for each downstream task becomes very expensive, because fine-tuned models are the same size as the original pretrained model.",
+      "PEFT approaches only fine-tune a small number of (extra) model parameters while freezing most parameters of the pretrained LLMs, thereby greatly decreasing the computational and storage costs. This also overcomes the issues of catastrophic forgetting, a behaviour observed during the full finetuning of LLMs."
+    ],
+    "title": "Parameter-Efficient Fine-Tuning using \ud83e\udd17 PEFT",
+    "url": "https://huggingface.co/blog/peft"
+  },
+  {
+    "description": "Download Citation | On Jan 1, 2021, Brian Lester and others published The Power of Scale for Parameter-Efficient Prompt Tuning | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "We then highlight the unique machine learning paradigms by introducing the neural scaling laws and emerging capabilities of foundation models. We explore the landscape of foundation models through the lens of the AI lifecycle and common practices, and present some canonical examples of foundation models. Finally, we provide our perspective on foundation models. ... Optimizing large language models (LLMs) for downstream use cases often involves the customization of pre-trained LLMs through further fine-tuning.",
+      "The dataset presents two key challenges: (1) high false positive rates caused by pseudo-smoke interference, including non-fire conditions like cooking smoke and industrial emissions, and (2) significant regional data imbalances, influenced by varying human activity intensities and terrain features, which impair the generalizability of traditional pre-train\u2013fine-tune strategies. To address these challenges, we explore the use of visual language models to differentiate between true alarms and false alarms.",
+      "Additionally, we explore strategies for combining parameters of multiple learned personal concepts, finding that parameter addition is effective. To evaluate how well general knowledge is preserved in a finetuned representation, we introduce a metric that measures image retrieval accuracy based on captions generated by a vision language model (VLM).",
+      "Fine-tuning large models involves intensive matrix operations from backpropagation and gradient updates, which require extensive power and memory usage. In order to explore the range of performance optimization opportunities available to improve the LLM fine-tuning runtime, we understand the impact of techniques like activation checkpointing, low-rank adaptation, and operation fusion on LLM fine-tuning runtime optimization."
+    ],
+    "title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
+    "url": "https://www.researchgate.net/publication/357122604_The_Power_of_Scale_for_Parameter-Efficient_Prompt_Tuning"
+  },
+  {
+    "description": "Learn how fine-tuning large language models (LLMs) improves their performance in tasks like language translation, sentiment analysis, and text generation.",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "Fine-Tuning LLaMA 2: A Step-by-Step Guide to Customizing the Large Language Model ... Yes, fine-tuning can be performed with small datasets using techniques like few-shot learning or low-rank adaptation (LoRA), which optimize a subset of the model\u2019s parameters.",
+      "Read this article to discover the basics of large language models, the key technology that is powering the current AI revolution ... Learn how to fine-tune LLMs on custom datasets, evaluate performance, and seamlessly export and serve models using the LLaMA-Factory's low/no-code framework. ... Learn how to fine-tune Llama-2 on Colab using new techniques to overcome memory and computing limitations to make open-source large language models more accessible.",
+      "Always explore various settings for learning rates, batch sizes, and the number of training epochs to identify the best setup for your project. Precise adjustments are key to ensuring the model learns efficiently and adapts well to unseen data, avoiding the pitfall of overfitting.",
+      "To prevent catastrophic forgetting, you can use techniques such as freezing the lower layers of the model, applying regularization, or leveraging methods like Elastic Weight Consolidation (EWC) to preserve the knowledge learned during pre-training while fine-tuning on new tasks. Fine-tuning LLMs typically requires access to GPUs or TPUs with high memory capacity (e.g., 16GB or more per GPU) to handle large model sizes and batch processing efficiently."
+    ],
+    "title": "Fine-Tuning LLMs: A Guide With Examples | DataCamp",
+    "url": "https://www.datacamp.com/tutorial/fine-tuning-large-language-models"
+  },
+  {
+    "description": "Transformer-based models have consistently demonstrated superior accuracy compared to various traditional models across a range of downstream tasks. H\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "We have broadly categorized these techniques into six key areas: Changes in Training Method, Changes in Adapter, Quantization, Parameter Selection, Mixture of Experts, and Application based methods. We collated the results of various techniques on common benchmarks and also evaluated their performance on different datasets and base models. ... No articles found.",
+      "Overview of trends in fine-tuning that enhance scalability and efficiency of LLMs. Transformer-based models have consistently demonstrated superior accuracy compared to various traditional models across a range of downstream tasks. However, due to their large nature, training or fine-tuning them for specific tasks has heavy computational and memory demands."
+    ],
+    "title": "The fine art of fine-tuning: A structured review of advanced LLM ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2949719125000202"
+  },
+  {
+    "description": "Copyright Continuum Labs - 2023 \u00b7 Last updated 1 year ago",
+    "favicon_url": "https://you.com/favicon?domain=training.continuumlabs.ai&size=128",
+    "snippets": [
+      "This highly cited September 2021 paper introduced \"prompt tuning,\" a method for adapting large pre-trained language models to perform specific downstream tasks by learning \"soft prompts\" that condition the model's behaviour. Prompt tuning was one of the first concepts around parameter efficient fine tuning",
+      "Prompt tuning enables efficient \"prompt ensembling\" by learning multiple prompts for the same task while sharing the core language model parameters. This improves performance and reduces storage and inference costs compared to traditional model ensembling. ... Prompt ensembling is a technique that involves training multiple sets of soft prompts for the same task using a single frozen pre-trained language model.",
+      "Prompt ensembling is a technique that leverages the parameter efficiency of prompt tuning to create multiple task-specific models while sharing the same core language model.",
+      "Prompt tuning keeps the pre-trained language model frozen and only tunes the soft prompts."
+    ],
+    "title": "The Power of Scale for Parameter-Efficient Prompt Tuning | Continuum ...",
+    "url": "https://training.continuumlabs.ai/training/the-fine-tuning-process/parameter-efficient-fine-tuning/p-tuning/the-power-of-scale-for-parameter-efficient-prompt-tuning"
+  },
+  {
+    "description": "Brian Lester, Rami Al-Rfou, Noah Constant. Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 2021.",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [
+      "%0 Conference Proceedings %T The Power of Scale for Parameter-Efficient Prompt Tuning %A Lester, Brian %A Al-Rfou, Rami %A Constant, Noah %Y Moens, Marie-Francine %Y Huang, Xuanjing %Y Specia, Lucia %Y Yih, Scott Wen-tau %S Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing %D 2021 %8 November %I Association for Computational Linguistics %C Online and Punta Cana, Dominican Republic %F lester-etal-2021-power %X In this work, we explore \u201cprompt tuning,\u201d a simple yet effective mechanism for learning \u201csoft prompts\u201d to condition frozen language models to perform specific downstream tasks. Unlike the discrete text prompts used by GPT-3, soft prompts are learned through backpropagation and can be tuned to incorporate signals from any number of labeled examples.",
+      "@inproceedings{lester-etal-2021-power, title = \"The Power of Scale for Parameter-Efficient Prompt Tuning\", author = \"Lester, Brian and Al-Rfou, Rami and Constant, Noah\", editor = \"Moens, Marie-Francine and Huang, Xuanjing and Specia, Lucia and Yih, Scott Wen-tau\", booktitle = \"Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing\", month = nov, year = \"2021\", address = \"Online and Punta Cana, Dominican Republic\", publisher = \"Association for Computational Linguistics\", url = \"https://aclanthology.org/2021.emnlp-main.243/\", doi = \"10.18653/v1/2021.emnlp-main.243",
+      "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <modsCollection xmlns=\"http://www.loc.gov/mods/v3\"> <mods ID=\"lester-etal-2021-power\"> <titleInfo> <title>The Power of Scale for Parameter-Efficient Prompt Tuning</title> </titleInfo> <name type=\"personal\"> <namePart type=\"given\">Brian</namePart> <namePart type=\"family\">Lester</namePart> <role> <roleTerm authority=\"marcrelator\" type=\"text\">author</roleTerm> </role> </name> <name type=\"personal\"> <namePart type=\"given\">Rami</namePart> <namePart type=\"family\">Al-Rfou</namePart> <role> <roleTerm authority=\"marcrelator\" type=\"text\">author</roleTerm> </role> <",
+      "Finally, we show that conditioning a frozen model with soft prompts confers benefits in robustness to domain transfer and enables efficient \u201cprompt ensembling.\u201d We release code and model checkpoints to reproduce our experiments. ... Brian Lester, Rami Al-Rfou, and Noah Constant. 2021. The Power of Scale for Parameter-Efficient Prompt Tuning. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing, pages 3045\u20133059, Online and Punta Cana, Dominican Republic."
+    ],
+    "title": "The Power of Scale for Parameter-Efficient Prompt Tuning - ACL ...",
+    "url": "https://aclanthology.org/2021.emnlp-main.243/"
+  },
+  {
+    "description": "This article explores the universe of Parameter-Efficient Fine-Tuning (PEFT) techniques\u2014a set of approaches that enable the adaptation of large language models (LLMs) more efficiently in terms of memory and computational performance. Drawing from the paper \u201c[2303.15647] Scaling Down to Scale ...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "This article explores the universe of Parameter-Efficient Fine-Tuning (PEFT) techniques\u2014a set of approaches that enable the adaptation of large language models (LLMs) more efficiently in terms of memory and computational performance. Drawing from the paper \u201c[2303.15647] Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning\u201d and the PEFT library, integrated with Hugging Face's Transformers, this study delves into the key concepts and methodologies that facilitate fine-tuning language models without the need to train all of their billions of parameters.",
+      "Introduced by Dettmers et al., 2023, QLoRA combines the efficiency of quantization with the low-rank adaptation approach of LoRA, further optimizing fine-tuning for large-scale language models. This technique allows models with up to 65 billion parameters to be fine-tuned on limited GPUs (such as a single 48GB GPU), while preserving the performance of traditional 16-bit fine-tuning methods.",
+      "This article provides an introduction to the main PEFT techniques, describing how they work and highlighting their characteristics and potential applications for fine-tuning language models, with a focus on maximizing memory efficiency and training time performance. And also a notebook performing fine-tuning of a model for summarizing customer service conversations, using Full Fine-Tune, LoRA, QLoRA and IA3",
+      "Its main contribution was mathematically demonstrating that efficient fine-tuning in low-dimensional subspaces is not only possible but an intrinsic property of large-scale models. This discovery paved the way for a new generation of efficient fine-tuning techniques, significantly influencing the direction of research in language model adaptation."
+    ],
+    "title": "PEFT: Parameter-Efficient Fine-Tuning Methods for LLMs",
+    "url": "https://huggingface.co/blog/samuellimabraz/peft-methods"
+  },
+  {
+    "description": "In this work, we explore \"prompt tuning\", a simple yet effective mechanism for learning \"soft prompts\" to condition frozen language models to perform specific downstream tasks. Unlike the discrete text prompts used by GPT-3, soft prompts are learned through backpropagation and can be tuned ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:In this work, we explore \"prompt tuning\", a simple yet effective mechanism for learning \"soft prompts\" to condition frozen language models to perform specific downstream tasks. Unlike the discrete text prompts used by GPT-3, soft prompts are learned through backpropagation and can be tuned to incorporate signal from any number of labeled examples.",
+      "Abstract page for arXiv paper 2104.08691: The Power of Scale for Parameter-Efficient Prompt Tuning",
+      "More remarkably, through ablations on model size using T5, we show that prompt tuning becomes more competitive with scale: as models exceed billions of parameters, our method \"closes the gap\" and matches the strong performance of model tuning (where all model weights are tuned).",
+      "Our method can be seen as a simplification of the recently proposed \"prefix tuning\" of Li and Liang (2021), and we provide a comparison to this and other similar approaches. Finally, we show that conditioning a frozen model with soft prompts confers benefits in robustness to domain transfer, as compared to full model tuning."
+    ],
+    "title": "[2104.08691] The Power of Scale for Parameter-Efficient Prompt Tuning",
+    "url": "http://arxiv.org/abs/2104.08691"
+  },
+  {
+    "description": "The emerging large language models (LLMs) are actively evaluated in various fields including healthcare. Most studies have focused on established benchmarks and standard parameters; however, the variation and impact of prompt engineering and ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "The emerging large language models (LLMs) are actively evaluated in various fields including healthcare. Most studies have focused on established benchmarks and standard parameters; however, the variation and impact of prompt engineering and fine-tuning strategies have not been fully explored.",
+      "Large Language Models (LLMs) are transforming many fields1\u20132. Built on the Transformer architecture3, these models employ billions, sometimes, trillions, of tokens and parameters, enabling them to accomplish a range of tasks that were previously considered unattainable. From answering straightforward questions to handling complex reasoning tasks, their performance is often astonishing. Inspired by the scaling law4, which revealed a positive correlation between model performance and the number of parameters employed, tech companies are increasingly investing in these models using their proprietary training sets and massive computing power.",
+      "Technically, we further employ approaches such as Parameter-Efficient Fine-Tuning (PEFT)26, 4-bit floating-point quantization27, and low-rank adaptation (LoRA)28 in our fine-tuning process to make it more efficient. The number of fine-tuning epochs in our experiment is setting to be 3. And the batch size is 8. Within the optimization phase, we have chosen the AdamW(32-bit) optimizer, a widely adopted selection for fine-tuning large language models.",
+      "We explored the impact of temperature settings, ranging from 0.1 to 1, on the performance of the model. Interestingly, we did not observe any variation in performance as we varied the temperature settings. This stability suggests that the reasoning task required for metastatic cancer identification is robust to such parameter adjustments."
+    ],
+    "title": "Comparison of Prompt Engineering and Fine-Tuning Strategies in ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10871377/"
+  }
+]

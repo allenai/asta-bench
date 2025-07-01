@@ -1,0 +1,279 @@
+[
+  {
+    "description": "In this article, we will first understand the core concepts behind Active Learning and then we will look into sampling strategies used in Active Learning. In a fully supervised learning approach, we\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "A comprehensive introduction to Active Learning Sampling Strategies",
+      "The active learning technique aims to select this type of informative data samples which can improve the learning of the model and enhance the discriminative and predictive ability of the model. According to the literature on active learning, there are three different learning scenarios for the active learner : Membership Query Synthesis: In this, the active learning algorithm generates a new unlabeled instance within the input space and queries the oracle for labeling.",
+      "If we have n different models in the committee then we can have n predictions for one data sample. The data sample is considered as most informative if there is maximum disagreement in predictions from the committee. The disagreement in the committee of models can be measured by functions given below :",
+      "Active learner determines to query the oracle for labeling a data sample if it produces most disagreement in terms of predictions. This can be measured by the methods shown above (Entropy and KL-Divergence). QBC can be also used for regression-based models, where disagreement refers to the \u201cvariance\u201d among the committee members\u2019 output predictions."
+    ],
+    "title": "Active Learning Sampling Strategies | by Hardik Dave | Medium",
+    "url": "https://medium.com/@hardik.dave/active-learning-sampling-strategies-f8d8ac7037c8"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=uca.edu&size=128",
+    "snippets": [],
+    "title": "Ch7-Sampling-Techniques.pdf",
+    "url": "https://uca.edu/psychology/files/2013/08/Ch7-Sampling-Techniques.pdf"
+  },
+  {
+    "description": "Recurrent Neural Networks are currently one of the most powerful Machine Learning models. They are the method behind many advances in speech recognition, machine translation and natural language\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Recurrent Neural Networks are currently one of the most powerful Machine Learning models. They are the method behind many advances in\u2026",
+      "A Recurrent Neural Network learns to predict the next words or characters given some input. From a high level, this works like in the following picture: In the example, first the word The is the most likely. Then, given **The**, the word Cat is most likely. Then, given The Cat, The Cat Is is most likely, etc. However, when learning, the output of an RNN is a probability distribution instead of one word.",
+      "I walked you through some different popular sampling strategies for Recurrent Neural Networks. It would be interesting to see whether there are better techniques than these methods that are often used. Probably, we currently miss some part and need also to learn a grader, or something like Generative Adversial Networks. Who knows, I\u2019ll write about it in some next article!",
+      "Now on to random sampling. Random search works by selecting the next word with the probabilities of each word taken from the output of the model (the probability distribution). For example: the word The has probability 0.8, so 8 out of 10 times the next word is The, 2 out of 10 times it will generate another word."
+    ],
+    "title": "Sampling Strategies for Recurrent Neural Networks | by Dani\u00ebl ...",
+    "url": "https://medium.com/machine-learning-at-petiteprogrammer/sampling-strategies-for-recurrent-neural-networks-9aea02a6616f"
+  },
+  {
+    "description": "Purposeful sampling is widely used in qualitative research for the identification and selection of information-rich cases related to the phenomenon of interest. Although there are several different purposeful sampling strategies, criterion sampling ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "In such designs, qualitative methods are used to explore and obtain depth of understanding as to the reasons for success or failure to implement evidence-based practice or to identify strategies for facilitating implementation while quantitative methods are used to test and confirm hypotheses based on an existing conceptual model and obtain breadth of understanding of predictors of successful implementation (Teddlie & Tashakkori, 2003). Sampling strategies for quantitative methods used in mixed methods designs in implementation research are generally well-established and based on probability theory. In contrast, sampling strategies for qualitative methods in implementation studies are less explicit and often less evident.",
+      "In all three instances, the sampling strategy employed for the implementation study may vary based on the priority assigned to that study relative to the effectiveness trial. For instance, purposeful sampling for a Hybrid Type 1 design may give higher priority to variation and comparison to understand the parameters of implementation processes or context as a contribution to an understanding of effectiveness outcomes (i.e., using qualitative data to expand upon or explain the results of the effectiveness trial), In effect, these process measures could be seen as modifiers of innovation/EBP outcome.",
+      "Although the samples for qualitative inquiry are generally assumed to be selected purposefully to yield cases that are \u201cinformation rich\u201d (Patton, 2001), there are no clear guidelines for conducting purposeful sampling in mixed methods implementation studies, particularly when studies have more than one specific objective. Moreover, it is not entirely clear what forms of purposeful sampling are most appropriate for the challenges of using both quantitative and qualitative methods in the mixed methods designs used in implementation research. Such a consideration requires a determination of the objectives of each methodology and the potential impact of selecting one strategy to achieve one objective on the selection of other strategies to achieve additional objectives.",
+      "We begin with a review of the principles and practice of purposeful sampling in implementation research, a summary of the types and categories of purposeful sampling strategies, and a set of recommendations for matching the appropriate single strategy or multistage strategy to study aims and quantitative method designs."
+    ],
+    "title": "Purposeful sampling for qualitative data collection and analysis ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4012002/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.khanacademy.org&size=128",
+    "snippets": [],
+    "title": "Types of sampling methods | Statistics (article)",
+    "url": "https://www.khanacademy.org/math/statistics-probability/designing-studies/sampling-methods-stats/a/sampling-methods-review"
+  },
+  {
+    "description": "To draw valid conclusions, you must carefully choose a sampling method. Sampling allows you to make inferences about a larger population.",
+    "favicon_url": "https://you.com/favicon?domain=www.scribbr.com&size=128",
+    "snippets": [
+      "When you conduct research about a group of people, it\u2019s rarely possible to collect data from every person in that group. Instead, you select a sample. The",
+      "The sample is the specific group of individuals that you will collect data from. The population can be defined in terms of geographical location, age, income, or many other characteristics. It can be very broad or quite narrow: maybe you want to make inferences about the whole adult population of your country; maybe your research focuses on customers of a certain company, patients with a specific health condition, or students in a single school.",
+      "This can certainly give you some insight into the topic, but the people who responded are more likely to be those who have strong opinions about the student support services, so you can\u2019t be sure that their opinions are representative of all students. This type of sampling, also known as judgement sampling, involves the researcher using their expertise to select a sample that is most useful to the purposes of the research.",
+      "Example: Purposive samplingYou want to know more about the opinions and experiences of disabled students at your university, so you purposefully select a number of students with different support needs in order to gather a varied range of data on their experiences with student services."
+    ],
+    "title": "Sampling Methods | Types, Techniques & Examples",
+    "url": "https://www.scribbr.com/methodology/sampling-methods/"
+  },
+  {
+    "description": "Clinical research usually involves patients with a certain disease or a condition. The generalizability of clinical research findings is based on multiple factors related to the internal and external validity of the research methods. The main ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "If we are conducting a study on patients with ischemic stroke, it will be difficult to include the whole population of ischemic stroke all over the world. It is difficult to locate the whole population everywhere and to have access to all the population. Therefore, the practical approach in clinical research is to include a part of this population, called \u201csample population\u201d. The whole population is sometimes called \u201ctarget population\u201d while the sample population is called \u201cstudy population.",
+      "However, in this method, the whole population is divided into homogeneous strata or subgroups according a demographic factor (e.g. gender, age, religion, socio-economic level, education, or diagnosis etc.). Then, the researchers select draw a random sample from the different strata [3,4]. The advantages of this method are: (1) it allows researchers to obtain an effect size from each strata separately, as if it was a different study.",
+      "This method is called multistage because the selection passed with two stages: firstly, the selection of eligible clusters, then, the selection of sample from individuals of these clusters. An example for this, if we are conducting a research project on primary school students from Iran.",
+      "It will be very difficult to get a list of all primary school students all over the country. In this case, a list of primary schools is made and the researcher randomly picks up a number of schools, then pick a random sample from the eligible schools [3]."
+    ],
+    "title": "Sampling methods in Clinical Research; an Educational Review - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5325924/"
+  },
+  {
+    "description": "In this statistics, quality assurance, and survey methodology, sampling is the selection of a subset or a statistical sample (termed sample for short) of individuals from within a statistical population to estimate characteristics of the whole population. The subset is meant to reflect the ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "For example, researchers might be interested in examining whether cognitive ability as a predictor of job performance is equally applicable across racial groups. Simple random sampling cannot accommodate the needs of researchers in this situation, because it does not provide subsamples of the population, and other sampling strategies, such as stratified sampling, can be used instead. Systematic sampling (also known as interval sampling) relies on arranging the study population according to some ordering scheme, and then selecting elements at regular intervals through that ordered list.",
+      "Choice-based sampling or oversampling is one of the stratified sampling strategies. In choice-based sampling, the data are stratified on the target and a sample is taken from each stratum so that rarer target classes will be more represented in the sample. The model is then built on this biased sample. The effects of the input variables on the target are often estimated with more precision with the choice-based sample even when a smaller overall sample size is taken, compared to a random sample.",
+      "Alexander Ivanovich Chuprov introduced sample surveys to Imperial Russia in the 1870s. In the US, the 1936 Literary Digest prediction of a Republican win in the presidential election went badly awry, due to severe bias [1]. More than two million people responded to the study with their names obtained through magazine subscription lists and telephone directories.",
+      "In such cases, sampling theory may treat the observed population as a sample from a larger 'superpopulation'. For example, a researcher might study the success rate of a new 'quit smoking' program on a test group of 100 patients, in order to predict the effects of the program if it were made available nationwide.",
+      "The population from which the sample is drawn may not be the same as the population from which information is desired. Often there is a large but not complete overlap between these two groups due to frame issues etc. (see below). Sometimes they may be entirely separate \u2013 for instance, one might study rats in order to get a better understanding of human health, or one might study records from people born in 2008 in order to make predictions about people born in 2009."
+    ],
+    "title": "Sampling (statistics) - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Sampling_(statistics)"
+  },
+  {
+    "description": "Defining positive and negative labels for a retrieval task in a search ranking system is a non-trivial problem. This article goes over various sampling strategies for creating negative and positive pairs for effective representation learning. It introduces the concept of mining hard examples, ...",
+    "favicon_url": "https://you.com/favicon?domain=blog.reachsumit.com&size=128",
+    "snippets": [
+      "Defining positive and negative labels for a retrieval task in a search ranking system is a non-trivial problem. This article goes over various sampling strategies for creating negative and positive pairs for effective representation learning. It introduces the concept of mining hard examples, followed by various strategies to sample hard positive and hard negative pairs.",
+      "The first-stage retriever usually has to look through a large corpus to find the appropriate negative samples, whereas the reranker at a later stage can simply select the irrelevant examples from the previous retrieval stage to be the negative samples7. There are different sampling strategies based on heuristics or empirical results that have been adopted in industrial and academic projects.",
+      "Through experiments, they found that the model trained using non-click impressions as negative has significantly worse model recall compared to using random negative. The authors hypothesized that the random documents can be completely irrelevant to the query and do not produce hard enough negative examples. So the resulting dataset would not be challenging enough for the model. Another way to sample negative documents is to take the top documents returned by BM25 which do not contain the answer, but still match the input query tokens.",
+      "This approach can still suffer from false positives as a lot of negative samples could actually be unlabeled positive samples. In Facebook Search2, the authors used the in-batch negatives to first get a set of candidate negative documents. Next, they used an approximate nearest neighbor (ANN) approach on the query and this set of negatives to find the negative closest to the input query."
+    ],
+    "title": "Positive and Negative Sampling Strategies for Representation Learning ...",
+    "url": "https://blog.reachsumit.com/posts/2023/03/pairing-for-representation/"
+  },
+  {
+    "description": "Discover the different ways you can find a representative sample from a population \u2013 and how to choose the best sampling method for your research.",
+    "favicon_url": "https://you.com/favicon?domain=www.qualtrics.com&size=128",
+    "snippets": [
+      "Sampling strategies in research vary widely across different disciplines and research areas, and from study to study.",
+      "Although the idea of sampling is easiest to understand when you think about a very large population, it makes sense to use sampling methods in research studies of all types and sizes. After all, if you can reduce the effort and cost of doing a study, why wouldn\u2019t you?",
+      "It\u2019s a useful method for researchers wanting to determine what aspects of a sample are highly correlated with what\u2019s being measured. They can then decide how to subdivide (stratify) it in a way that makes sense for the research. For example, you want to measure the height of students at a college where 80% of students are female and 20% are male.",
+      "We know that gender is highly correlated with height, and if we took a simple random sample of 200 students (out of the 2,000 who attend the college), we could by chance get 200 females and not one male. This would bias our results and we would underestimate the height of students overall."
+    ],
+    "title": "Your guide to sampling techniques and best practices",
+    "url": "https://www.qualtrics.com/experience-management/research/sampling-methods/"
+  },
+  {
+    "description": "Part 4 of our guide to sampling in research explores different sampling methods in research and walks through the pros and cons of each.",
+    "favicon_url": "https://you.com/favicon?domain=www.cloudresearch.com&size=128",
+    "snippets": [
+      "Hence, when using judgment sampling, researchers exert some effort to ensure their sample represents the population being studied. Efficiency: Judgment sampling is often used when the population of interest is rare or hard to find. By exercising judgment in who to sample, the researcher is able to save time and money when compared to broader sampling strategies.",
+      "Strong external validity: Allows researchers to generalize results from the sample to the entire population being studied. Relative speed and efficiency compared to the census: A simple random sample allows researchers to learn about an entire population much faster and more efficiently than collecting data from every member of the population.",
+      "In addition to these tools, we can provide expert advice to ensure you select a sampling approach fit for your research purposes. Contact us today to learn how we can connect you to the right sample for your research project. ... If you were a researcher studying human behavior 30 years ago, your options for identifying participants for your studies were limited.",
+      "Non-random: A snowball sample will likely provide results that are hard to generalize beyond the sample studied. Slow: Because snowball sampling relies on each participant to recommend others, the data collection process is typically slow when compared to other methods."
+    ],
+    "title": "Pros & Cons of Different Sampling Methods | CloudResearch",
+    "url": "https://www.cloudresearch.com/resources/guides/sampling/pros-cons-of-different-sampling-methods/"
+  },
+  {
+    "description": "Sampling is a process used in statistical analysis in which a group of observations are extracted from a larger population.",
+    "favicon_url": "https://you.com/favicon?domain=www.investopedia.com&size=128",
+    "snippets": [
+      "Market research: Companies use sampling to understand consumer preferences and predict demand. By analyzing a sample of their target audiences, companies can determine product fit, gauge the interest in new items, and refine marketing strategies.",
+      "Sampling helps companies make better decisions, from predicting customer behavior to identifying fraud.",
+      "If the sample is an accurate representation of the larger population, Company XYZ can conclude that the average spend of its customers for every store visit is $50. This information can help XYZ set pricing strategies, make marketing decisions, and improve inventory management, all without having to perform a costly and time-intensive analysis of all 2 million transactions.",
+      "Choose a sampling method: Different methods can be used depending on the study's objectives."
+    ],
+    "title": "Sampling: What It Is, Different Types, and How Auditors and Marketers ...",
+    "url": "https://www.investopedia.com/terms/s/sampling.asp"
+  },
+  {
+    "description": "Sampling is the statistical process of selecting a subset (called a \u201csample\u201d) of a population of interest for purposes of making observations and statistical inferences about that population. Social science research is generally about inferring patterns of behaviors within specific populations.",
+    "favicon_url": "https://you.com/favicon?domain=courses.lumenlearning.com&size=128",
+    "snippets": [
+      "Matched-pairs sampling. Sometimes, researchers may want to compare two subgroups within one population based on a specific criterion. For instance, why are some firms consistently more profitable than other firms? To conduct such a study, you would have to categorize a sampling frame of firms into \u201chigh profitable\u201d firms and \u201clow profitable firms\u201d based on gross margins, earnings per share, or some other measure of profitability.",
+      "Sampling techniques can be grouped into two broad categories: probability (random) sampling and non-probability sampling. Probability sampling is ideal if generalizability of results is important for your study, but there may be unique circumstances where non-probability sampling can also be justified. These techniques are discussed in the next two sections.",
+      "Simple random sampling involves randomly selecting respondents from a sampling frame, but with large sampling frames, usually a table of random numbers or a computerized random number generator is used. For instance, if you wish to select 200 firms to survey from a list of 1000 firms, if this list is entered into a spreadsheet like Excel, you can use Excel\u2019s RAND() function to generate random numbers for each of the 1000 clients on that list. Next, you sort the list in increasing order of their corresponding random number, and select the first 200 clients on that sorted list.",
+      "At other times, the target population may be a little harder to understand. If you wish to identify the primary drivers of academic learning among high school students, then what is your target population: high school students, their teachers, school principals, or parents?"
+    ],
+    "title": "Chapter 8 Sampling | Research Methods for the Social Sciences",
+    "url": "https://courses.lumenlearning.com/suny-hccc-research-methods/chapter/chapter-8-sampling/"
+  },
+  {
+    "description": "This blog introduces sampling methods, with examples, and potential sampling errors to avoid when we are conducting medical research.",
+    "favicon_url": "https://you.com/favicon?domain=s4be.cochrane.org&size=128",
+    "snippets": [
+      "Is this study valid? Can I trust this study\u2019s methods and design? Can I apply the results of this study to other contexts? Learn more about internal and external validity in research to help you answer these questions when you next look at a paper.",
+      "Nevertheless, this approach has to be taken only after careful thoughts. Representativeness of the study samples have to be checked at the end or during reporting by comparing it to the published larger studies or register of some kind in/from the local population.",
+      "really helps! am an ecology student preparing to write my lab report for sampling. 21st April 2023 at 9:01 am Reply to Emma ... I learned a lot to the given presentation.. It\u2019s very comprehensive\u2026 Thanks for sharing\u2026",
+      "Non-random sampling methods are liable to bias, and common examples include: convenience, purposive, snowballing, and quota sampling. For the purposes of this blog we will be focusing on random sampling methods. Example: We want to conduct an experimental trial in a small population such as: employees in a company, or students in a college."
+    ],
+    "title": "What are sampling methods and how do you choose the best one? - ...",
+    "url": "https://s4be.cochrane.org/blog/2020/11/18/what-are-sampling-methods-and-how-do-you-choose-the-best-one/"
+  },
+  {
+    "description": "An appropriate sampling technique with the exact determination of sample size involves a very vigorous selection process, which is actually vital for \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The paper contributes both theoretical guidance and practical tools that researchers need in choosing appropriate strategies for sampling and validating methodologically appropriate sample size calculations. In sum, such a paper sets the standard for best practice in research methodology that will drive reliability, validity, and empirical rigor across diverse studies.",
+      "This article offers practical guidance for researchers on how to determine sample size calculations for their studies."
+    ],
+    "title": "How to choose a sampling technique and determine sample size for ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2772906024005089"
+  },
+  {
+    "description": "An appropriate sample size is essential for obtaining a precise and reliable outcome of a study. In machine learning (ML), studies with inadequate samples suffer from overfitting of data and have a lower probability of producing true effects, while the increment in sample size increases the ...",
+    "favicon_url": "https://you.com/favicon?domain=bmcbioinformatics.biomedcentral.com&size=128",
+    "snippets": [
+      "Background An appropriate sample size is essential for obtaining a precise and reliable outcome of a study. In machine learning (ML), studies with inadequate samples suffer from overfitting of data and have a lower probability of producing true effects, while the increment in sample size increases the accuracy of prediction but may not cause a significant change after a certain sample size.",
+      "Langarizadeh M, Moghbeli F. Applying Naive Bayesian networks to disease prediction: a systematic review. Acta Inform Med. 2016;24(5):364\u20139. ... Shapiro SS, Wilk MB, Chen HJ. A comparative study of various tests for normality. J Am Stat Assoc.",
+      "They reported that small sample sizes resulted in higher accuracy (> 95%), whereas large sample sizes (100\u20131000) substantially decreased the accuracy between 60 and 70%. By contrast, Cui and Gong [13] found that the increment in sample size (ranging from 20 to 700) increased prediction accuracy using MRI data. In fact, Faber and Fonseca [14] demonstrated that increasing sample size beyond a range might not significantly improve results. Taken together, a small training sample size may exaggerate the accuracy of ML due to overfitting or random effects, whereas large-scale studies require more financial resources and consume more time [7, 12, 13]. Therefore, an adequate sample size is required for a reliable and efficient outcome of a study, but there is no practical guideline to evaluate the sample size, especially, under the conditions of ML performance.",
+      "Given that the effect size is data-dependent, methods like the sub-modular selection can serve as a pre-process procedure before checking the sample size using the proposed criteria. Furthermore, we investigated simulated (good) and two publically available datasets in this study: arrhythmia and heart attack. Several studies have used these datasets to develop efficient neural network and ML models for predicting cardiovascular diseases [37,38,39,40]. For instance, Kim et al."
+    ],
+    "title": "Evaluation of a decided sample size in machine learning applications ...",
+    "url": "https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-023-05156-9"
+  },
+  {
+    "description": "Understand the pros and cons of different sampling techniques and how to choose the right one for your qualitative research project.",
+    "favicon_url": "https://you.com/favicon?domain=sago.com&size=128",
+    "snippets": [
+      "First, we\u2019ll provide a comprehensive overview of four standard sampling techniques in qualitative research. and then compare and contrast these techniques to provide guidance on choosing the most appropriate method for a particular study. Additionally, you\u2019ll find best practices for sampling and learn about ethical considerations researchers need to consider in selecting a sample.",
+      "Theoretical sampling is used when researchers conduct grounded theory research and have developed an initial theory or conceptual framework. In a study examining cancer survivors\u2019 experiences, for example, theoretical sampling may be used to identify and recruit participants who can provide new insights into the coping strategies of survivors.",
+      "If you\u2019re interested in improving your research and sampling methods, Sago offers a variety of solutions. Our qualitative research platforms, such as QualBoard and QualMeeting, can assist you in conducting research studies with precision and efficiency. Our robust global panel and recruitment options help you reach the right people. We also offer qualitative and quantitative research services to meet your research needs. Contact us today to learn more about how we can help improve your research outcomes.",
+      "Purposive sampling is used when researchers seek to identify individuals or groups with particular knowledge, skills, or experiences relevant to the research question. For instance, in a study examining the experiences of cancer patients undergoing chemotherapy, purposive sampling may be used to recruit participants who have undergone chemotherapy in the past year."
+    ],
+    "title": "Different Types of Sampling Techniques in Qualitative Research | Sago",
+    "url": "https://sago.com/en/resources/blog/different-types-of-sampling-techniques-in-qualitative-research/"
+  },
+  {
+    "description": "Online active learning is a paradigm in machine learning that aims to select the most informative data points to label from a data stream. The problem of minimizing the cost associated with collecting labeled observations has gained a lot of attention in recent years, particularly in real-world ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Online active learning is a paradigm in machine learning that aims to select the most informative data points to label from a data stream. The problem of minimizing the cost associated with collecting labeled observations has gained a lot of attention in recent years, particularly in real-world applications where data is only available in an unlabeled form.",
+      "Machine Learning - Online active learning is a paradigm in machine learning that aims to select the most informative data points to label from a data stream. The problem of minimizing the cost...",
+      "They extend the pre-clustering approach (Nguyen & Smeulders, 2004), which had been previously studied in the pool-based scenario, to the stream-based case. The sampling strategy takes into account an extra-cluster metric, to sort the clusters, and an intra-cluster one, to sort the observations within each cluster. When a new batch arrives, observations are clustered, and clusters are sorted based on the homogeneity of the clusters, which is measured taking into account the number of (predicted) classes within each cluster.",
+      "In this context, confirmatory bias refers to the student model tendency to reproduce the predictions of the teacher model, even when the teacher predictions are incorrect. This can happen when the student model is trained to mimic the teacher model output too closely, without considering the underlying errors. To mitigate this, active distillation techniques use sample selection methods that encourage the student model to learn from data points where the teacher model makes errors, rather than just reproducing the teacher model predictions."
+    ],
+    "title": "Active learning for data streams: a survey | Machine Learning",
+    "url": "https://link.springer.com/article/10.1007/s10994-023-06454-2"
+  },
+  {
+    "description": "Clinical research usually involves patients with a certain disease or a condition. The generalizability of clinical research findings is based on multiple factors related to the internal and external validity of the research methods. The main methodological ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "If we are conducting a study on patients with ischemic stroke, it will be difficult to include the whole population of ischemic stroke all over the world. It is difficult to locate the whole population everywhere and to have access to all the population. Therefore, the practical approach in clinical research is to include a part of this population, called \u201csample population\u201d. The whole population is sometimes called \u201ctarget population\u201d while the sample population is called \u201cstudy population.",
+      "However, in this method, the whole population is divided into homogeneous strata or subgroups according a demographic factor (e.g. gender, age, religion, socio-economic level, education, or diagnosis etc.). Then, the researchers select draw a random sample from the different strata [3,4]. The advantages of this method are: (1) it allows researchers to obtain an effect size from each strata separately, as if it was a different study.",
+      "This method is called multistage because the selection passed with two stages: firstly, the selection of eligible clusters, then, the selection of sample from individuals of these clusters. An example for this, if we are conducting a research project on primary school students from Iran.",
+      "It will be very difficult to get a list of all primary school students all over the country. In this case, a list of primary schools is made and the researcher randomly picks up a number of schools, then pick a random sample from the eligible schools [3]."
+    ],
+    "title": "Sampling methods in Clinical Research; an Educational Review - PMC",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5325924/"
+  },
+  {
+    "description": "ContentsToggle Main Menu 1 Sampling 2 Random Sampling2.1 Advantages2.2 Disadvantages 3 Stratified Sampling3.1 Advantages3.2 Disadvantages 4 Worked Example 5 Cluster Sampling5.1 Advantages5.2 Disadvantages 6 Systematic Sampling6.1 Advantages6.2 Disadvantages 7 Convenience Sampling7.1 Advantage7.2 ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncl.ac.uk&size=128",
+    "snippets": [
+      "Strata can be proportionally represented in the final sample. It is easy to compare subgroups. Information must be gathered before being able to divide the population into subgroups. A school of $1000$ students are classified as follows:",
+      "Find a stratified sample of $200$ students for this population. Suppose we are interested in how each of these groups will react to this statement: everyone in this school has an equal chance of success. Relying on a random sample may under-represent the minority populations of the school (people with blonde hair). By grouping our population by hair colour, we can choose a sample ensuring each group is represented according to its proportion of the population.",
+      "May be biased where the pattern used for the samples coincides with a pattern in the population. In a class of 14 students, 4 names are chosen out of the hat for an assignment.",
+      "Systematically sampling them would mean choosing every 3rd student in the class."
+    ],
+    "title": "Types of Sampling",
+    "url": "https://www.ncl.ac.uk/webtemplate/ask-assets/external/maths-resources/statistics/sampling/types-of-sampling.html"
+  },
+  {
+    "description": "Purposeful sampling is widely used in qualitative research for the identification and selection of information-rich cases related to the phenomenon of interest. Although there are several different purposeful sampling strategies, criterion sampling appears ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "In such designs, qualitative methods are used to explore and obtain depth of understanding as to the reasons for success or failure to implement evidence-based practice or to identify strategies for facilitating implementation while quantitative methods are used to test and confirm hypotheses based on an existing conceptual model and obtain breadth of understanding of predictors of successful implementation (Teddlie & Tashakkori, 2003). Sampling strategies for quantitative methods used in mixed methods designs in implementation research are generally well-established and based on probability theory. In contrast, sampling strategies for qualitative methods in implementation studies are less explicit and often less evident.",
+      "In all three instances, the sampling strategy employed for the implementation study may vary based on the priority assigned to that study relative to the effectiveness trial. For instance, purposeful sampling for a Hybrid Type 1 design may give higher priority to variation and comparison to understand the parameters of implementation processes or context as a contribution to an understanding of effectiveness outcomes (i.e., using qualitative data to expand upon or explain the results of the effectiveness trial), In effect, these process measures could be seen as modifiers of innovation/EBP outcome.",
+      "Although the samples for qualitative inquiry are generally assumed to be selected purposefully to yield cases that are \u201cinformation rich\u201d (Patton, 2001), there are no clear guidelines for conducting purposeful sampling in mixed methods implementation studies, particularly when studies have more than one specific objective. Moreover, it is not entirely clear what forms of purposeful sampling are most appropriate for the challenges of using both quantitative and qualitative methods in the mixed methods designs used in implementation research. Such a consideration requires a determination of the objectives of each methodology and the potential impact of selecting one strategy to achieve one objective on the selection of other strategies to achieve additional objectives.",
+      "We begin with a review of the principles and practice of purposeful sampling in implementation research, a summary of the types and categories of purposeful sampling strategies, and a set of recommendations for matching the appropriate single strategy or multistage strategy to study aims and quantitative method designs."
+    ],
+    "title": "Purposeful sampling for qualitative data collection and analysis ...",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4012002/"
+  },
+  {
+    "description": "We know that statistical research helps in drawing several conclusions based on the requirement of the experts. This uses the data collected for a specific purpose. We can collect the data using various sampling methods in statistics. However, the type of sampling method is chosen based on ...",
+    "favicon_url": "https://you.com/favicon?domain=byjus.com&size=128",
+    "snippets": [
+      "We can collect the data using various sampling methods in statistics. However, the type of sampling method is chosen based on the objective of the statistical research. The statistical research is of two forms: In the first form, each domain is studied, and the result can be obtained by computing the sum of all units.",
+      "In the systematic sampling method, the items are selected from the target population by selecting the random selection point and selecting the other methods after a fixed sample interval. It is calculated by dividing the total population size by the desired population size. ... Suppose the names of 300 students of a school are sorted in the reverse alphabetical order.",
+      "To select a sample in a systematic sampling method, we have to choose some 15 students by randomly selecting a starting number, say 5. From number 5 onwards, will select every 15th person from the sorted list.",
+      "The group has similar significatory characteristics. Also, they have an equal chance of being a part of the sample. This method uses simple random sampling for the cluster of population. ... An educational institution has ten branches across the country with almost the number of students."
+    ],
+    "title": "Sampling Methods",
+    "url": "https://byjus.com/maths/sampling-methods/"
+  },
+  {
+    "description": "PLEASE NOTE: We are currently in the process of updating this chapter and we appreciate your patience whilst this is being completed.",
+    "favicon_url": "https://you.com/favicon?domain=www.healthknowledge.org.uk&size=128",
+    "snippets": [
+      "It would normally be impractical to study a whole population, for example when doing a questionnaire survey. Sampling is a method that allows researchers to infer information about a population based on results from a subset of the population, without having to investigate every individual.",
+      "Reducing the number of individuals in a study reduces the cost and workload, and may make it easier to obtain high quality information, but this has to be balanced against having a large enough sample size with enough power to detect a true association.",
+      "If a sample is to be used, by whatever method it is chosen, it is important that the individuals selected are representative of the whole population. This may involve specifically targeting hard to reach groups. For example, if the electoral roll for a town was used to identify participants, some people, such as the homeless, would not be registered and therefore excluded from the study by default.",
+      "In probability (random) sampling, you start with a complete sampling frame of all eligible individuals from which you select your sample. In this way, all eligible individuals have a chance of being chosen for the sample, and you will be more able to generalise the results from your study."
+    ],
+    "title": "Methods of sampling from a population | Health Knowledge",
+    "url": "https://www.healthknowledge.org.uk/public-health-textbook/research-methods/1a-epidemiology/methods-of-sampling-population"
+  },
+  {
+    "description": "Discover the different ways you can find a representative sample from a population \u2013 and how to choose the best sampling method for your research.",
+    "favicon_url": "https://you.com/favicon?domain=www.qualtrics.com&size=128",
+    "snippets": [
+      "Researchers use a variety of sampling methods and techniques. \u2713 Learn how sampling works, best practices, and the best type to use for your next survey.",
+      "Sampling strategies in research vary widely across different disciplines and research areas, and from study to study.",
+      "Although the idea of sampling is easiest to understand when you think about a very large population, it makes sense to use sampling methods in research studies of all types and sizes. After all, if you can reduce the effort and cost of doing a study, why wouldn\u2019t you?",
+      "It\u2019s a useful method for researchers wanting to determine what aspects of a sample are highly correlated with what\u2019s being measured. They can then decide how to subdivide (stratify) it in a way that makes sense for the research. For example, you want to measure the height of students at a university where 80% of students are female and 20% are male."
+    ],
+    "title": "Sampling Methods: Types, Techniques & Best Practices",
+    "url": "https://www.qualtrics.com/en-au/experience-management/research/sampling-methods/"
+  }
+]

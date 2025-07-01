@@ -1,0 +1,258 @@
+[
+  {
+    "description": "The key approach of VAB is that rather than working with raw video frames and audio data, VAB performs representation learning and generative modeling within latent spaces. In particular, VAB uses a pre-trained audio tokenizer and an image encoder to obtain audio tokens and visual features, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The key approach of VAB is that rather than working with raw video frames and audio data, VAB performs representation learning and generative modeling within latent spaces. In particular, VAB uses a pre-trained audio tokenizer and an image encoder to obtain audio tokens and visual features, respectively.",
+      "At its core, this framework involves a pre-training task of predicting masked audio from visual inputs. In order to facilitate the learning of audio-visual representation and audio generation, we perform the pre-training task within the latent space instead of using raw images and audio spectrograms.",
+      "At this stage VAB establishes its representation and learns to generate audio for video. In a subsequent stage, we elaborate on how the pre-trained VAB model is leveraged for vision-to-audio generation and fine-tuning across various downstream tasks. There are two primary motivations for converting audio and video frames into latent spaces. First, prior research [40, 12, 49] indicates that performing generative modeling within latent spaces enhances training convergence and facilitates the generation of high-quality audio samples.",
+      "The state-of-the-art audio generative frameworks [40, 12, 49], on the other hand, usually perform modeling on the latent space and sophisticated models are often essential to generate high-quality audio, requiring multi-stage modeling [15, 22, 1]. It remains uncertain whether we can employ similar self-supervised representation learning techniques in the latent space while consistently producing high-quality audio."
+    ],
+    "title": "From Vision to Audio and Beyond: A Unified Model for Audio-Visual ...",
+    "url": "https://arxiv.org/html/2409.19132v1"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.neurips.cc&size=128",
+    "snippets": [],
+    "title": "Large-Scale Adversarial Training for Vision-and-Language ...",
+    "url": "https://proceedings.neurips.cc/paper/2020/file/49562478de4c54fafd4ec46fdb297de5-Paper.pdf"
+  },
+  {
+    "description": "In this paper, we investigate the potential effect of the adversarially training on the robustness of six advanced deep neural networks against a variety of targeted and non-targeted adversarial attacks. We firstly show that, the ResNet-56 model trained on the 2D representation of the discrete ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:In this paper, we investigate the potential effect of the adversarially training on the robustness of six advanced deep neural networks against a variety of targeted and non-targeted adversarial attacks. We firstly show that, the ResNet-56 model trained on the 2D representation of the discrete wavelet transform appended with the tonnetz chromagram outperforms other models in terms of recognition accuracy.",
+      "View a PDF of the paper titled Adversarially Training for Audio Classifiers, by Raymel Alfonso Sallo and 2 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "View a PDF of the paper titled Adversarially Training for Audio Classifiers, by Raymel Alfonso Sallo and 2 other authors View PDF"
+    ],
+    "title": "[2008.11618] Adversarially Training for Audio Classifiers",
+    "url": "https://arxiv.org/abs/2008.11618"
+  },
+  {
+    "description": "We present VILLA, the first known effort on large-scale adversarial training for vision-and-language (V+L) representation learning. VILLA consists of two training stages: (i) task-agnostic adversarial pre-training; followed by (ii) task-specific adversarial finetuning.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2006.06195: Large-Scale Adversarial Training for Vision-and-Language Representation Learning",
+      "View a PDF of the paper titled Large-Scale Adversarial Training for Vision-and-Language Representation Learning, by Zhe Gan and 5 other authors View PDF",
+      "We apply VILLA to current best-performing V+L models, and achieve new state of the art on a wide range of tasks, including Visual Question Answering, Visual Commonsense Reasoning, Image-Text Retrieval, Referring Expression Comprehension, Visual Entailment, and NLVR2. From: Zhe Gan [view email] [v1] Thu, 11 Jun 2020 05:14:35 UTC (6,244 KB) [v2] Thu, 22 Oct 2020 18:12:53 UTC (6,244 KB) ... View a PDF of the paper titled Large-Scale Adversarial Training for Vision-and-Language Representation Learning, by Zhe Gan and 5 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[2006.06195] Large-Scale Adversarial Training for Vision-and-Language ...",
+    "url": "https://arxiv.org/abs/2006.06195"
+  },
+  {
+    "description": "Vision-language pre-training models have achieved significant success in the field of medical imaging but have exhibited vulnerability to adversarial examples. Although adversarial attacks are harmful, they are valuable in revealing the weaknesses of VLP models and enhancing their robustness.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Scientific Reports - Boosting adversarial transferability in vision-language models via multimodal feature heterogeneity",
+      "Follow-up studies have further refined this paradigm: GLIP39 achieved fine-grained semantic alignment through sophisticated contrastive learning strategies, while SigLIP40 innovatively optimized training with a Sigmoid loss function, significantly enhancing zero-shot learning performance while preserving CLIP\u2019s architectural advantages. This paper focuses on analyzing these two prevalent VLP architectures. Notably, following the emergence of ChatGPT, researchers have integrated visual encoders with large language models (LLMs) to create multimodal LLMs. Representative examples include MiniGPT-441 and LLaVA-Med16, which demonstrate enhanced cross-modal understanding capabilities through novel fusion mechanisms between visual representations and linguistic reasoning.",
+      "Chen, T., Kornblith, S., Norouzi, M. & Hinton, G. A simple framework for contrastive learning of visual representations. In International Conference on Machine Learning, 1597\u20131607 (PMLR, 2020). He, K., Fan, H., Wu, Y., Xie, S. & Girshick, R. Momentum contrast for unsupervised visual representation learning. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 9729\u20139738 (2020). Wang, X. & He, K. Enhancing the transferability of adversarial attacks through variance tuning.",
+      "Finally, through extensive experiments on standard datasets and exploration of black-box LVLMs, our experimental results substantiate both the resilience and cross-model applicability of the proposed adversarial techniques across diverse multimodal architectures, while simultaneously exposing critical vulnerabilities inherent in current LVLM systems. Within the domain of multimodal representation learning, conventional approaches predominantly depend on pre-trained object detection frameworks, notably faster R-CNN33, coupled with high-definition image inputs34,35 for feature acquisition."
+    ],
+    "title": "Boosting adversarial transferability in vision-language models ...",
+    "url": "https://www.nature.com/articles/s41598-025-91802-6"
+  },
+  {
+    "description": "In recent years, there has been notable progress in the development of audio classification models, yet they remain vulnerable to adversarial attacks. While research into attack methodologies pertaining to images has experienced significant advancements,...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Durand, T., Mehrasa, N., Mori, G.: Learning a deep convnet for multi-label classification with partial labels. In: CVPR (2019) ... Goodfellow, I.J., Shlens, J., Szegedy, C.: Explaining and harnessing adversarial examples. In: ICLR (2015) ... Grosse, K., Trost, T.A., Mosbach, M., Backes, M., Klakow, D.: Adversarial initialization - when your network performs the way I want.",
+      "Empirical evaluations demonstrate that the magnitude of the adversarial perturbation generated by MU2A represents only 0.625% of the clean example, rendering the resulting adversarial examples acoustically indistinguishable to human perception. This is a preview of subscription content, log in via an institution to check access. ... Ant\u00f3n, S.D., Kanoor, S., Fraunholz, D., Schotten, H.D.: Evaluation of machine learning-based anomaly detection algorithms on an industrial modbus/tcp data set.",
+      "Koerich, K.M., Esmailpour, M., Abdoli, S., Jr., A.S.B., Koerich, A.L.: Cross-representation transferability of adversarial attacks: from spectrograms to audio waveforms. In: IJCNN (2020) ... Krizhevsky, A., Sutskever, I., Hinton, G.E.: Imagenet classification with deep convolutional neural networks. In: NIPS (2012) ... Kurakin, A., Goodfellow, I.J., Bengio, S.: Adversarial machine learning at scale.",
+      "Lin, J., Song, C., He, K., Wang, L., Hopcroft, J.E.: Nesterov accelerated gradient and scale invariance for improving transferability of adversarial examples. In: ICLR (2020) ... Liu, S., Liu, S., Cai, W., Pujol, S., Kikinis, R., Feng, D.: Early diagnosis of Alzheimer\u2019s disease with deep learning."
+    ],
+    "title": "Generate Unnoticeable Adversarial Examples on Audio Classification ...",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-74443-3_20"
+  },
+  {
+    "description": "OpenVIS (Guo et al., 2023) adapts the pre-trained CLIP with instance guidance attention and generates object proposals and the corresponding classes. Moreover, a rollout association mechanism is designed to associate instances of any categories across frames thereby improving tracking performance. In this paper, we extend open-vocabulary learning ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "OpenVIS (Guo et al., 2023) adapts the pre-trained CLIP with instance guidance attention and generates object proposals and the corresponding classes. Moreover, a rollout association mechanism is designed to associate instances of any categories across frames thereby improving tracking performance. In this paper, we extend open-vocabulary learning to audio-visual semantic segmentation: segmenting and classifying sound-producing objects of arbitrary open-set categories simultaneously.",
+      "For problem \u2777, we present an audio-conditioned Transformer decoder to establish frame-by-frame relationships and capture audio-visual dependencies in the temporal dimension. Specifically, a set of learnable object queries is first fed into the decoder and performs the cross- and self-attention sequentially to obtain object-centric representations, following Mask2Former (Cheng et al., 2022).",
+      "This is a more challenging task that requires recognizing all categories, even those that have never been seen nor heard during training. Moreover, we propose the first open-vocabulary AVSS framework, OV-AVSS, which mainly consists of two parts: 1) a universal sound source localization module to perform audio-visual fusion and locate all potential sounding objects and 2) an open-vocabulary classification module to predict categories with the help of the prior knowledge from large-scale pre-trained vision-language models.",
+      "Table 2. Comparison of AVSS performance on AVSBench-OV between closed-set and open-vocabulary methods. We use both ResNet-50 (He et al., 2016) and Swin-B (Liu et al., 2021) as the image encoders and VGGish (Gemmeke et al., 2017) as the audio encoder. Parameters in the audio encoder, CLIP image encoder and CLIP text encoder are frozen during the training. For each video clip, we set the total number of video frames"
+    ],
+    "title": "Open-Vocabulary Audio-Visual Semantic Segmentation",
+    "url": "https://arxiv.org/html/2407.21721v1"
+  },
+  {
+    "description": "#7 best model for Visual Entailment on SNLI-VE val (Accuracy metric)",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Include the markdown at the top of your GitHub README.md file to showcase the performance of the model. Badges are live and will be dynamically updated with the latest ranking of this paper. ... NeurIPS 2020 \u00b7 Zhe Gan, Yen-Chun Chen, Linjie Li, Chen Zhu, Yu Cheng, Jingjing Liu \u00b7 Edit social preview \u00b7 We present VILLA, the first known effort on large-scale adversarial training for vision-and-language (V+L) representation learning.",
+      "We apply VILLA to current best-performing V+L models, and achieve new state of the art on a wide range of tasks, including Visual Question Answering, Visual Commonsense Reasoning, Image-Text Retrieval, Referring Expression Comprehension, Visual Entailment, and NLVR2. PDF Abstract NeurIPS 2020 PDF NeurIPS 2020 Abstract ... Image-text Retrieval Question Answering Referring Expression Referring Expression Comprehension Representation Learning Retrieval Text Retrieval Visual Commonsense Reasoning Visual Entailment Visual Question Answering Visual Question Answering (VQA) Visual Reasoning"
+    ],
+    "title": "Papers with Code - Large-Scale Adversarial Training for ...",
+    "url": "https://paperswithcode.com/paper/large-scale-adversarial-training-for-vision"
+  },
+  {
+    "description": "As audio-visual systems are being deployed for safety-critical tasks such as surveillance and malicious content filtering, their robustness remains an under-studied area. Existing published work on robustness either does not scale to large-scale dataset, or does not deal with multiple modalities.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2203.12122: On Adversarial Robustness of Large-scale Audio Visual Learning",
+      "We also observe our mix-up trained method could achieve as much protection as traditional adversarial training, offering a computationally cheap alternative. Implementation: this https URL \u00b7 From: Juncheng Li [view email] [v1] Wed, 23 Mar 2022 01:31:17 UTC (4,553 KB) [v2] Thu, 21 Apr 2022 06:35:14 UTC (4,553 KB) ... View a PDF of the paper titled On Adversarial Robustness of Large-scale Audio Visual Learning, by Juncheng B Li and 4 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+      "View a PDF of the paper titled On Adversarial Robustness of Large-scale Audio Visual Learning, by Juncheng B Li and 4 other authors View PDF",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[2203.12122] On Adversarial Robustness of Large-scale Audio Visual ...",
+    "url": "https://arxiv.org/abs/2203.12122"
+  },
+  {
+    "description": "AuthorFeedback Bibtex MetaReview Metadata Paper Reviews Supplemental ... Adversarially trained generative models (GANs) have recently achieved compelling image synthesis results. But despite early successes in using GANs for unsupervised representation learning, they have since been superseded by approaches based on self-supervision. In this work we show that progress in image generation quality translates to substantially improved representation learning performance...",
+    "favicon_url": "https://you.com/favicon?domain=papers.nips.cc&size=128",
+    "snippets": [],
+    "title": "Large Scale Adversarial Representation Learning",
+    "url": "https://papers.nips.cc/paper/9240-large-scale-adversarial-representation-learning"
+  },
+  {
+    "description": "Adversarial machine learning is the study of the attacks on machine learning algorithms, and of the defenses against such attacks. A survey from May 2020 revealed practitioners' common feeling for better protection of machine learning systems in industrial applications.",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "In addition, researchers such as Google Brain's Nicholas Frosst point out that it is much easier to make self-driving cars miss stop signs by physically removing the sign itself, rather than creating adversarial examples. Frosst also believes that the adversarial machine learning community incorrectly assumes models trained on a certain data distribution will also perform well on a completely different data distribution.",
+      "In this research area, some studies initially showed that reinforcement learning policies are susceptible to imperceptible adversarial manipulations. While some methods have been proposed to overcome these susceptibilities, in the most recent studies it has been shown that these proposed solutions are far from providing an accurate representation of current vulnerabilities of deep reinforcement learning policies.",
+      "A 2019 study reported that humans can guess how machines will classify adversarial images. Researchers discovered methods for perturbing the appearance of a stop sign such that an autonomous vehicle classified it as a merge or speed limit sign. A data poisoning filter called Nightshade was released in 2023 by researchers at the University of Chicago. It was created for use by visual artists to put on their artwork to corrupt the data set of text-to-image models, which usually scrape their data from the internet without the consent of the image creator.",
+      "As a score based black box attack, this adversarial approach is able to query probability distributions across model output classes, but has no other access to the model itself. According to the paper's authors, the proposed Square Attack required fewer queries than when compared to state-of-the-art score-based black box attacks at the time.",
+      "In each step, the algorithm perturbs only a small square section of pixels, hence the name Square Attack, which terminates as soon as an adversarial example is found in order to improve query efficiency. Finally, since the attack algorithm uses scores and not gradient information, the authors of the paper indicate that this approach is not affected by gradient masking, a common technique formerly used to prevent evasion attacks."
+    ],
+    "title": "Adversarial machine learning - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Adversarial_machine_learning"
+  },
+  {
+    "description": "Upload an image to customize your repository\u2019s social media preview. Images should be at least 640\u00d7320px (1280\u00d7640px for best display) \u00b7 NeurIPS 2020 \u00b7 Pedro Morgado, Yi Li, Nuno Vasconcelos \u00b7 Edit social preview",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "While these approaches learn high-quality representations for downstream tasks such as action recognition, their training objectives disregard spatial cues naturally occurring in audio and visual signals. To learn from these spatial cues, we tasked a network to perform contrastive audio-visual spatial alignment of 360{\\deg} video and spatial audio.",
+      "No code available yet."
+    ],
+    "title": "Papers with Code - Learning Representations from Audio-Visual Spatial ...",
+    "url": "https://paperswithcode.com/paper/learning-representations-from-audio-visual"
+  },
+  {
+    "description": "Task reformulation is a ... learning, where NLP tasks are reimagined as instructions or prompts to a large language model (LLM). This paradigm allows a wide range of NLP tasks, such as translation, summarization, and question answering, to be represented uniformly in a chat message format [20]. By doing so, it leverages the generalization capabilities of large pre-trained models, enabling them to perform multiple tasks ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Task reformulation is a well-established paradigm in natural language processing (NLP) that facilitates multitask learning by transforming diverse tasks into a common format [19]. A prominent example is prompt-based learning, where NLP tasks are reimagined as instructions or prompts to a large language model (LLM). This paradigm allows a wide range of NLP tasks, such as translation, summarization, and question answering, to be represented uniformly in a chat message format [20]. By doing so, it leverages the generalization capabilities of large pre-trained models, enabling them to perform multiple tasks with minimal task-specific customization.",
+      "We train our model on each dataset independently, with no language model or image pretraining, in order to determine the feasibility of our task reformulation approach with no latent performance benefits from transferring existing learned representations.",
+      "The main contributions of this paper are as follows: ... We propose a task-reformulation method and show how to represent a range of multimodal tasks as next-frame prediction. ... We explore how this reformulation allows a single transformer-based model to solve text, image, video, and audio processing tasks without any modality-specific encoders. ... Experimental results show our model achieves comparable performance to single-task models which haven\u2019t been pretrained on additional data.",
+      "These modality-specific encoders are then fused at a later stage, typically via concatenation or attention mechanisms, to enable the model to perform joint reasoning over the encoded representations. While effective, this paradigm has inherent limitations. It necessitates careful design choices for each modality and often struggles with scalability and flexibility, especially when extending to new combinations of modalities or tasks not seen during training."
+    ],
+    "title": "Everything is a Video: Unifying Modalities through Next-Frame ...",
+    "url": "https://arxiv.org/html/2411.10503v1"
+  },
+  {
+    "description": "Given the rise of deep learning and its inherent black-box nature, the desire to interpret these systems and explain their behaviour became increasingly more prominent. The main idea of so-called explainers is to identify which features of particular samples have the most influence on a ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Given the rise of deep learning and its inherent black-box nature, the desire to interpret these systems and explain their behaviour became increasingly more prominent. The main idea of so-called explainers is to identify which features of particular samples have the most influence on a classifier\u2019s prediction, and present them as explanations.",
+      "Neural Computing and Applications - Given the rise of deep learning and its inherent black-box nature, the desire to interpret these systems and explain their behaviour became increasingly more...",
+      "In: Proceedings of the 6th international conference on learning representations, ICLR \u00b7 Prinz K, Flexer A, Widmer G (2021) On end-to-end white-box adversarial attacks in music information retrieval. Trans Int Soc Music Inf Retr 4(1):93\u2013104. https://doi.org/10.5334/tismir.85 ... Carlini N, Wagner DA (2018) Audio adversarial examples: targeted attacks on speech-to-text.",
+      "Praher V, Prinz K, Flexer A, Widmer G (2021) On the veracity of local, model-agnostic explanations in audio classification: targeted investigations with adversarial examples. In: Proceedings of the 22nd international society for music information retrieval conference, ISMIR, pp. 531\u2013538. https://doi.org/10.5281/zenodo.5624471 \u00b7 Samek W, Binder A, Montavon G, Lapuschkin S, M\u00fcller K (2017) Evaluating the visualization of what a deep neural network has learned."
+    ],
+    "title": "Constructing adversarial examples to investigate the plausibility ...",
+    "url": "https://link.springer.com/article/10.1007/s00521-022-07918-7"
+  },
+  {
+    "description": "Enhancing Neural Subset Selection: ... into Set Representations \u00b7 Enhancing Neural Training via a Correlated Dynamics Model \u00b7 Enhancing One-Shot Federated Learning Through Data and Ensemble Co-Boosting \u00b7 Enhancing Small Medical Learners with Privacy-preserving Contextual Prompting \u00b7 Enhancing Tail Performance in Extreme Classifiers by Label Variance Reduction \u00b7 Enhancing Transferable Adversarial Attacks on ...",
+    "favicon_url": "https://you.com/favicon?domain=iclr.cc&size=128",
+    "snippets": [
+      "Enhancing Neural Subset Selection: Integrating Background Information into Set Representations \u00b7 Enhancing Neural Training via a Correlated Dynamics Model \u00b7 Enhancing One-Shot Federated Learning Through Data and Ensemble Co-Boosting \u00b7 Enhancing Small Medical Learners with Privacy-preserving Contextual Prompting \u00b7 Enhancing Tail Performance in Extreme Classifiers by Label Variance Reduction \u00b7 Enhancing Transferable Adversarial Attacks on Vision Transformers through Gradient Normalization Scaling and High-Frequency Adaptation",
+      "An operator preconditioning perspective on training in physics-informed machine learning \u00b7 AntGPT: Can Large Language Models Help Long-term Action Anticipation from Videos? An Unforgeable Publicly Verifiable Watermark for Large Language Models \u00b7 AnyText: Multilingual Visual Text Generation and Editing \u00b7 A Paradigm Shift in Machine Translation: Boosting Translation Performance of Large Language Models \u00b7 A path-norm toolkit for modern networks: consequences, promises and challenges ... A Progressive Training Framework for Spiking Neural Networks with Learnable Multi-hierarchical Model",
+      "A Multi-Level Framework for Accelerating Training Transformer Models \u00b7 A Mutual Information Perspective on Federated Contrastive Learning \u00b7 An Agnostic View on the Cost of Overfitting in (Kernel) Ridge Regression \u00b7 Analysis of Learning a Flow-based Generative Model from Limited Sample Complexity \u00b7 Analytically Tractable Hidden-States Inference in Bayesian Neural Networks \u00b7 Analyzing and Improving Optimal-Transport-based Adversarial Networks",
+      "Learning Robust Generalizable Radiance Field with Visibility and Feature Augmented Point Representation \u00b7 Learning Semantic Proxies from Visual Prompts for Parameter-Efficient Fine-Tuning in Deep Metric Learning \u00b7 Learning semilinear neural operators: A unified recursive framework for prediction and data assimilation."
+    ],
+    "title": "Downloads",
+    "url": "https://iclr.cc/Downloads/2024"
+  },
+  {
+    "description": "We propose \u201cVisual-adaptive Audio Spectrogram Generation\u201d (VASG), which is an innovative audio feature generation method preserving the Mel-spectrogra\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "To effectively increase the discriminability of the encoded audio feature, we introduce a novel audio-visual correlation learning loss, named \u201cBatch-wise Correlation Transfer\u201d loss, that aligns inter-correlation between audio and visual modality. When applying pre-trained VASG to convert environmental sound classification benchmarks, we observed performance improvements in various audio classification models.",
+      "Extensive experiments and ablation studies on various acoustic classification datasets, including ESC50 [10] and UrbanSound8K (US8K) [11], demonstrate that our new audio representation achieves state-of-the-art performance across multiple baselines. Our contributions are summarized as follows: ... To the best of our knowledge, we are the first to introduce an enhanced spectrogram-like audio feature, which can be easily employed in previous studies using spectrogram. ... We introduce a novel generative framework that uses unlabeled video data to effectively generate audio representations with improved discriminability by incorporating audiovisual correspondence into audio.",
+      "In the field of audio recognition, the Mel-spectrogram is one of the most extensively employed feature representations for audio data [1], [2], [3], [4], [5], [6]. The Mel-spectrogram\u2019s utility lies in its remarkable capacity to capture both the temporal and frequency characteristics of audio data within a matrix format [3]. Based on the structural similarity between the Mel-spectrogram and image data, in the field of audio recognition, the Mel-spectrogram representation has been widely integrated with the neural network architectures developed for computer vision tasks, which show state-of-the-art performance [2], [6], [7]. However, the Mel-spectrogram, derived from frequency-level attributes, can sometimes cause semantically distinct sounds to be recognized as similar due to their frequency-level resemblance, as illustrated in Fig.",
+      "VASG enhances audio spectrograms used as inputs for downstream tasks and is composed of a generation module and an audiovisual correlation learning module. VASG receives a Mel-spectrogram as input and generates an enhanced Mel-spectrogram that better separates different classes while maintaining the same structure, as illustrated in Fig. 1(b). The generation module is trained to reproduce the input spectrogram, while the audiovisual correlation learning module aligns image and audio features to encourage the generation of discriminative spectrograms."
+    ],
+    "title": "Generating visual-adaptive audio representation for audio recognition ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167865525001126"
+  },
+  {
+    "description": "Automatic music transcription is considered to be one of the hardest problems in music information retrieval, yet recent deep learning approaches have achieved substantial improvements on transcription performance. These approaches commonly employ supervised learning models that predict various ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Automatic music transcription is considered to be one of the hardest problems in music information retrieval, yet recent deep learning approaches have achieved substantial improvements on transcription performance. These approaches commonly employ supervised learning models that predict various time-frequency representations, by minimizing element-wise losses such as the cross entropy function. However, applying the loss in this manner assumes conditional independence of each label given the input, and thus cannot accurately express inter-label dependencies. To address this issue, we introduce an adversarial training scheme that operates directly on the time-frequency representations and makes the output distribution closer to the ground-truth.",
+      "Abstract page for arXiv paper 1906.08512: Adversarial Learning for Improved Onsets and Frames Music Transcription",
+      "Our results show that adversarial learning can significantly reduce the error rate while increasing the confidence of the model estimations. Our approach is generic and applicable to any transcription model based on multi-label predictions, which are very common in music signal analysis. From: Jong Wook Kim [view email] [v1] Thu, 20 Jun 2019 09:17:36 UTC (1,171 KB) ... View a PDF of the paper titled Adversarial Learning for Improved Onsets and Frames Music Transcription, by Jong Wook Kim and 1 other authors",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[1906.08512] Adversarial Learning for Improved Onsets and Frames ...",
+    "url": "https://arxiv.org/abs/1906.08512"
+  },
+  {
+    "description": "Figure from our paper: given any waveform, we can modify it slightly to produce another (similar) waveform that transcribes as any different target phrase \u00b7 We have constructed targeted audio adversarial examples on speech-to-text transcription neural networks: given an arbitrary waveform, ...",
+    "favicon_url": "https://you.com/favicon?domain=nicholas.carlini.com&size=128",
+    "snippets": [
+      "Figure from our paper: given any waveform, we can modify it slightly to produce another (similar) waveform that transcribes as any different target phrase. We have constructed targeted audio adversarial examples on speech-to-text transcription neural networks: given an arbitrary waveform, we can make a small perturbation that when added to the original waveform causes it to transcribe as any phrase we choose.",
+      "As an evaluation dataset in our paper, we use the first 100 test instances of the Mozilla Common Voice datset. For convenience, we make just these samples directly available for download. ... Below are examples of our attacks at three different distortion levels. For the adversarial examples, we target other (incorrect) sentences from the Common Voice labels.",
+      "This attack extends a long line of work on adversarial machine learning, and in particular adversarial examples; we rely on a strong attack algorithm we developed in prior work.",
+      "Not only can we make speech recognize as a different phrase, we can also make non-speech recognize as speech. Below is a four second clip from Bach's Cello Suite 1 (that transcribes to nothing), along with an adversarial example that again transcribes as \u201cspeech can be embedded in music\u201d."
+    ],
+    "title": "Audio Adversarial Examples",
+    "url": "https://nicholas.carlini.com/code/audio_adversarial_examples/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [],
+    "title": "Large-scale adversarial training for vision-and-language ...",
+    "url": "https://dl.acm.org/doi/10.5555/3495724.3496279"
+  },
+  {
+    "description": "In our paper, we propose adversarial curriculum training to enhance the performance of adversarial training. This approach includes both data-level and model-level strategies.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "This framework addresses key challenges in vanilla adversarial training by incorporating efficient adversarial perturbation crafting tailored to multi-modal data and an adversarial curriculum strategy. Extensive experiments in the Kinetics-Sounds dataset demonstrate that our proposed temporal and modality-based attacks in degrading model performance can achieve state-of-the-art performance, while our adversarial training defense largely improves the adversarial robustness as well as the adversarial training efficiency.",
+      "As shown in section 3, random masking of audio-visual data slightly affects model performance yet boosts adversarial transferability. Additionally, recent studies (Kim et al., 2023) demonstrate that the universal adversarial perturbation of a single image model can be used to fool the video model. These findings indicate that an effective strategy should reduce the computational overhead of adversarial training by generating temporal universal adversarial perturbations instead of frame-specific perturbations.",
+      "Figure 9: Ablation study of the sampling ratio on the performance of adversarial training. We use our proposed TMA to generate the adversarial example for adversarial training. On the sampling ratio for the adversarial training. In our approaches, we propose to sample a ratio of frames to generate the temporal-universal adversarial perturbation for efficient adversarial training.",
+      "At the same time, a larger sampling ratio does not improve the adversarial robustness much but introduces more time consumption, and a smaller sampling ratio harms defense performance. In this work, we developed two efficient audio-visual adversarial attack methods: the temporal invariance-based attack and the modality misalignment-based attack. We also introduced an adversarial training framework with strategies for efficient perturbation crafting and curriculum training to reduce time and improve robustness."
+    ],
+    "title": "Rethinking Audio-Visual Adversarial Vulnerability from Temporal ...",
+    "url": "https://arxiv.org/html/2502.11858v3"
+  },
+  {
+    "description": "21 papers with code \u2022 0 benchmarks \u2022 4 datasets \u00b7 guyyariv/AudioToken \u2022 \u2022 Interspeech 2023",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "In this paper, we propose a novel method utilizing latent diffusion models trained for text-to-image-generation to generate images conditioned on audio recordings. ... AML aims to generate a modality-independent representation for each person in each modality via adversarial learning, while simultaneously learns a robust similarity measure for cross-modality matching via metric learning.",
+      "Specifically, we explore the effects of pre-trained models on two audio-visual learning scenarios: cross-modal initialization and multi-modal joint learning."
+    ],
+    "title": "audio-visual learning | Papers With Code",
+    "url": "https://paperswithcode.com/task/audio-visual-learning"
+  },
+  {
+    "description": "Enhancing Adversarial Robustness in SNNs with Sparse Gradients \u00b7 Enhancing Class-Imbalanced Learning with Pre-Trained Guidance through Class-Conditional Knowledge Distillation \u00b7 Enhancing Cross-Modal Fine-Tuning with Gradually Intermediate Modality Generation \u00b7 Enhancing Implicit Shape Generators Using Topological Regularizations \u00b7 Enhancing Size Generalization in Graph Neural Networks through Disentangled Representation ...",
+    "favicon_url": "https://you.com/favicon?domain=icml.cc&size=128",
+    "snippets": [
+      "Enhancing Adversarial Robustness in SNNs with Sparse Gradients \u00b7 Enhancing Class-Imbalanced Learning with Pre-Trained Guidance through Class-Conditional Knowledge Distillation \u00b7 Enhancing Cross-Modal Fine-Tuning with Gradually Intermediate Modality Generation \u00b7 Enhancing Implicit Shape Generators Using Topological Regularizations \u00b7 Enhancing Size Generalization in Graph Neural Networks through Disentangled Representation Learning",
+      "Consistent Diffusion Meets Tweedie: Training Exact Ambient Diffusion Models with Noisy Data \u00b7 Consistent Long-Term Forecasting of Ergodic Dynamical Systems ... Contamination-Resilient Anomaly Detection via Adversarial Learning on Partially-Observed Normal and Anomalous Data \u00b7 Context-Guided Diffusion for Out-of-Distribution Molecular and Protein Design \u00b7 ConTextual: Evaluating Context-Sensitive Text-Rich Visual Reasoning in Large Multimodal Models",
+      "EquiAV: Leveraging Equivariance for Audio-Visual Contrastive Learning ... Estimating Distributional Treatment Effects in Randomized Experiments: Machine Learning for Variance Reduction \u00b7 Estimating the Permanent by Nesting Importance Sampling \u00b7 Estimating Unknown Population Sizes Using the Hypergeometric Distribution \u00b7 ETHER: Efficient Finetuning of Large-Scale Models with Hyperplane Reflections \u00b7 Et Tu Certifications: Robustness Certificates Yield Better Adversarial Examples",
+      "Refined Coreset Selection: Towards Minimal Coreset Size under Model Performance Constraints \u00b7 Refining Minimax Regret for Unsupervised Environment Design ... Reinforcement Learning from Reachability Specifications: PAC Guarantees with Expected Conditional Distance \u00b7 Reinforcement Learning within Tree Search for Fast Macro Placement \u00b7 Reinformer: Max-Return Sequence Modeling for Offline RL \u00b7 Rejuvenating image-GPT as Strong Visual Representation Learners"
+    ],
+    "title": "Downloads",
+    "url": "https://icml.cc/Downloads/2024"
+  },
+  {
+    "description": "Audio-visual speech recognition is the task of transcribing a paired audio and visual stream into text.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "A recently proposed multimodal fusion strategy, AV Align, based on state-of-the-art sequence to sequence neural networks, attempts to model this relationship by explicitly aligning the acoustic and visual representations of speech. ... The audio-visual speech fusion strategy AV Align has shown significant performance improvements in audio-visual speech recognition (AVSR) on the challenging LRS2 dataset.",
+      "In recent years, Automatic Speech Recognition (ASR) technology has approached human-level performance on conversational speech under relatively clean listening conditions. ... Audio-based automatic speech recognition (ASR) degrades significantly in noisy environments and is particularly vulnerable to interfering speech, as the model cannot determine which speaker to transcribe. ... With the rise of deep learning and intelligent vehicle, the smart assistant has become an essential in-car component to facilitate driving and provide extra functionalities.",
+      "In this work, we present a hybrid CTC/Attention model based on a ResNet-18 and Convolution-augmented transformer (Conformer), that can be trained in an end-to-end manner. ... Vision is often used as a complementary modality for audio speech recognition (ASR), especially in the noisy environment where performance of solo audio modality significantly deteriorates.",
+      "Recently, the performance of automatic, visual, and audio-visual speech recognition (ASR, VSR, and AV-ASR, respectively) has been substantially improved, mainly due to the use of larger models and training sets."
+    ],
+    "title": "Papers with Code - Audio-Visual Speech Recognition",
+    "url": "https://paperswithcode.com/task/audio-visual-speech-recognition"
+  }
+]

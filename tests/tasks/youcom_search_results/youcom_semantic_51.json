@@ -1,0 +1,277 @@
+[
+  {
+    "description": "The automatic extraction of key information is necessary for knowledge discovery in this era of rapid knowledge growth. The extraction of key informat\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "We present a novel unsupervised algorithm called ISKE to help researchers quickly auto-extract keyphrases from documents. Our proposed method is a graph-based algorithm that focuses on both words and sentences. In contrast to traditional graph-based algorithms, our method iterates sentences instead of words.",
+      "Depending on whether an external resource is used, the existing algorithms can be divided into two parts: within-collection, which uses only the text, and external resources, which uses external resources, such as Wikipedia. Recently, a new idea, the addition of word embedding to algorithms, has been widely applied to unsupervised algorithms. Mahata et al. [18] used phrase embeddings to score the weight of a phrase and ranked phrases to obtain a candidate keyphrase list.",
+      "In previous unsupervised keyphrase extraction schemes, there has been no discussion about the influence of sentences on words. Studies tend to focus only on which words affect documents and how they do so, whereas sentences are not typically considered. Both graph-based and non-graph-based schemes focus on word components, and only the scores of words are iterated.",
+      "The architecture of C-Decay includes the keyphrase pool, the gain vector and the decay factor, where the keyphrase pool is designed to realize an autoregressive structure and the gain vector and the decay factor are the optimization operator. Herein, we examine three graph-based models integrated with C-Decay, and the experiment is conducted on four datasets KDD, Semeval, Nguyen, and Krapivin."
+    ],
+    "title": "ISKE: An unsupervised automatic keyphrase extraction approach using ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S095070512100277X"
+  },
+  {
+    "description": "A review of unsupervised keyphrase extraction methods.",
+    "favicon_url": "https://you.com/favicon?domain=encyclopedia.pub&size=128",
+    "snippets": [
+      "Encyclopedia is a user-generated content hub aiming to provide a comprehensive record for scientific developments. All content free to post, read, share and reuse.",
+      "The first school mainly extracts keyphrases by analyzing texts using linguistic methods, among which the most common method is to analyze the topic distribution of articles, such as KeyCluster[8] and CommunityCluster[9]. The statistical school mainly analyzes an article\u2019s probability features such as KP-Miner[10]and YAKE[11] based on TF-IDF, TextRank[12], or SingleRank[13]. The linguistic school and statistical school have been influencing and promoting each other. As time has passed, researchers have proposed new methods to cross-utilize the two schools\u2019 knowledge, such as TopicRank based on clustering (linguistic school) and graphs (statistical school). The mainstream unsupervised keyphrase extraction methods are divided into four categories: statistics-based method, graph-based method, topic-based method, and language model-based method.",
+      "We provide professional Video Production Services to translate complex research into visually appealing presentations. Would you like to try it? ... If you have any further questions, please contact Encyclopedia Editorial Office. Select a Style ... Sun, C.; Hu, L.; Li, S.; Li, T.; Li, H.; Chi, L. Unsupervised Keyphrase Extraction.",
+      "Gollapalli; Sujatha, D.; Cornelia, C. Extracting Keyphrases from Research Papers Using Citation Networks. In Proceedings of the Twenty-Eighth AAAI Conference on Artificial Intelligence, Qu\u00e9bec City, QC, Canada, 27\u201331 July 2014; pp."
+    ],
+    "title": "Unsupervised Keyphrase Extraction | Encyclopedia MDPI",
+    "url": "https://encyclopedia.pub/entry/3541"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "Simple Unsupervised Keyphrase Extraction using ...",
+    "url": "https://aclanthology.org/K18-1022.pdf"
+  },
+  {
+    "description": "Keyphrase extraction is the task of automatically selecting a small set of phrases that best describe a given free text document. Supervised keyphrase extraction requires large amounts of labeled training data and generalizes very poorly outside the domain of the training data.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 1801.04470: Simple Unsupervised Keyphrase Extraction using Sentence Embeddings",
+      "Supervised keyphrase extraction requires large amounts of labeled training data and generalizes very poorly outside the domain of the training data. At the same time, unsupervised systems have poor accuracy, and often do not generalize well, as they require the input document to belong to a larger corpus also given as input.",
+      "Addressing these drawbacks, in this paper, we tackle keyphrase extraction from single documents with EmbedRank: a novel unsupervised method, that leverages sentence embeddings. EmbedRank achieves higher F-scores than graph-based state of the art systems on standard datasets and is suitable for real-time processing of large amounts of Web data.",
+      "View a PDF of the paper titled Simple Unsupervised Keyphrase Extraction using Sentence Embeddings, by Kamil Bennani-Smires and 4 other authors View PDF"
+    ],
+    "title": "[1801.04470] Simple Unsupervised Keyphrase Extraction using Sentence ...",
+    "url": "https://arxiv.org/abs/1801.04470"
+  },
+  {
+    "description": "Existing unsupervised keyphrase extraction methods typically emphasize the importance of the candidate keyphrase itself, ignoring other important fact\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "To our knowledge, our work is the first attempt to exploit the salience of sentences for unsupervised keyphrase extraction by modeling hierarchical multi-granularity features. ... Our empirical study shows positive synergy between the salient sentence extraction task and the keyphrase extraction task, suggesting that better integration of these two tasks is a promising research direction.",
+      "Existing unsupervised keyphrase extraction methods typically emphasize the importance of the candidate keyphrase itself, ignoring other important factors such as the influence of uninformative sentences. We hypothesize that the salient sentences of a document are particularly important as they are most likely to contain keyphrases, especially for long documents.",
+      "To our knowledge, our work is the first attempt to exploit sentence salience for unsupervised keyphrase extraction by modeling hierarchical multi-granularity features. Specifically, we propose a novel position-aware graph-based unsupervised keyphrase extraction model, which includes two model variants.",
+      "In particular, for the SemEval 2010 dataset consisting of long documents, our joint model outperforms the strongest baseline UKERank by 3.48%, 3.69% and 4.84% in terms of F1@5, F1@10 and F1@15, respectively. We also conduct qualitative experiments to validate the effectiveness of our model components."
+    ],
+    "title": "Improving unsupervised keyphrase extraction by modeling hierarchical ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0306457323000936"
+  },
+  {
+    "description": "Keyphrase extraction is an important part of natural language processing (NLP) research, although little research is done in the domain of web pages. The World Wide Web contains billions of pages that are potentially interesting for various NLP tasks, yet it remains largely untouched in scientific ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "Keyphrase extraction is an important part of natural language processing (NLP) research, although little research is done in the domain of web pages. The World Wide Web contains billions of pages that are potentially interesting for various NLP tasks, yet it remains largely untouched in scientific research.",
+      "The WebEmbedRank method is described in Section 3, followed by an explanation of how the method was implemented and evaluated in Section 4. We present our results and findings in Section 5 and conduct a final discussion in Section 6. In general, keyphrase extraction can be divided into supervised and unsupervised methods. The supervised field usually treats keyphrase extraction as a binary classification problem, where a set of candidate phrases are classified as either a keyphrase or a non-keyphrase [8]. An example of this is the research by Yih et al., who proposed a supervised approach to extract keyphrases from web pages [10]. Their system classified keyphrases based on several features in order to show more relevant advertisements to the user, using a manually annotated dataset as training data.",
+      "Although previous research on unsupervised keyphrase extraction from web pages is limited, it has repeatedly been shown that the HTML element in which a word or phrase appears correlates with its relevance for the topic of a page [11,12,13]. Thomaidou and Vazirgiannis proposed an unsupervised keyphrase recommendation system for web pages that used hypertext location information [14]. Their extraction method calculated a relevance score for each phrase, which was based on word frequency information and an additional weighting scheme considering the element it was extracted from.",
+      "While the EmbedRank method has been shown to be capable of extracting state-of-the art keyphrases, it does not use the positional information from the text. In the original proposal, the method is implemented for extracting keyphrases from scientific documents and news articles. As documents from these domains consist of a single segment of continuous text, there is limited structural information available."
+    ],
+    "title": "Unsupervised Keyphrase Extraction for Web Pages",
+    "url": "https://www.mdpi.com/2414-4088/3/3/58"
+  },
+  {
+    "description": "PDF | State-of-the-art approaches for unsupervised keyphrase extraction are typically evaluated on a single dataset with a single parameter setting.... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Consequently, it is unclear how effective these approaches are on a new dataset from a different domain, and how sensitive they are to changes in parameter settings. To gain a better understanding of state-of-the-art unsupervised keyphrase extraction algorithms, we conduct a systematic evaluation and analysis of these algorithms on a variety of standard evaluation datasets.",
+      "Taking the above into account, the contribution of this review is fourfold: (i) we analyze the state-of-the-art keyphrase extraction approaches and categorize them upon their employed techniques; (ii) we provide a comparative evaluation of these approaches, using well-known datasets of the literature and popular evaluation metrics, such as the F1 score; (iii) we provide a series of insights on various keyphrase extraction issues, including alternative approaches and future research directions; (iv) we make the datasets and code used in our experiments public, aiming to further increase the reproducibility of this work and facilitate future research in the field. ... [24][25]; there has been rare research on generating absent keyphrase.",
+      "Evaluation using five benchmark datasets shows that our model significantly outperforms the state-of-the-art ones currently in the research field. ... ... Overall, the KPE methods described in the literature can be divided into two main categories: supervised and unsupervised, each with pros and cons of its own. Compared to unsupervised techniques, supervised procedures have a major limitation in that they depend on a substantial amount of training data that has been annotated by human experts",
+      "... The unsupervised methods mentioned above are efficient and competitive with the supervised methods [32, 33], and therefore have become more usable today. The PageRank algorithm [22] is a very useful tool for extracting keyphrases in advanced models. ... Extraction of time-related expressions using text mining with application to Hebrew ... In this research, we extract time-related expressions from a rabbinic text in a semi-automatic manner."
+    ],
+    "title": "(PDF) Conundrums in Unsupervised Keyphrase Extraction: Making Sense ...",
+    "url": "https://www.researchgate.net/publication/221101542_Conundrums_in_Unsupervised_Keyphrase_Extraction_Making_Sense_of_the_State-of-the-Art"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [],
+    "title": "A Review of Unsupervised Keyphrase Extraction Methods ...",
+    "url": "https://www.mdpi.com/2073-8994/12/11/1864/pdf"
+  },
+  {
+    "description": "Keyphrase extraction is a subtask of natural language processing referring to the automatic extraction of salient terms that semantically capture the key themes and topics of a document. Earlier literature reviews focus on classical approaches that employ various statistical or graph-based ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Keyphrase extraction is a subtask of natural language processing referring to the automatic extraction of salient terms that semantically capture the key themes and topics of a document. Earlier literature reviews focus on classical approaches that employ various statistical or graph-based techniques; these approaches miss important keywords/keyphrases, due to their inability to fully utilize context (that is present or not) in a document, thus achieving low F1 scores.",
+      "Knowledge and Information Systems - Keyphrase extraction is a subtask of natural language processing referring to the automatic extraction of salient terms that semantically capture the key themes...",
+      "Multi-document KE approaches also exist in the literature [3], where keyphrases are extracted from a list of documents, but fall out of the scope of this review. KE approaches that have been proposed so far in the literature can be divided into two major categories, namely unsupervised and supervised ones, both demonstrating certain benefits and drawbacks.",
+      "Discover the latest articles and news from researchers in related subjects, suggested using machine learning. ... Avoid common mistakes on your manuscript. Keyphrase extraction (KE) is a fundamental subtask of natural language processing (NLP); it has been defined as the process of extracting keyphrases from a document, i.e., a set of phrases consisting of one or more words that are considered to be meaningful and representative for a document [1]. Various information retrieval (IR) and NLP tasks, such as text classification, text categorization, text summarization and generation of recommendations based on textual descriptions, greatly benefit from the use of KE methods [2]. When searching publications in the literature, the prevalent usage of the term KE refers to single documents."
+    ],
+    "title": "Deep learning and embeddings-based approaches for keyphrase ...",
+    "url": "https://link.springer.com/article/10.1007/s10115-024-02164-w"
+  },
+  {
+    "description": "This alert has been successfully added and will be sent to: \u00b7 You will be notified whenever a record that you have chosen has been cited",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "This paper presents a multilingual unsupervised approach to key-phrase extraction, improving upon previous methods in several ways (e.g., using representations from pre-trained Transformer models, while supporting the processing of long documents). Experimental results on datasets covering multiple languages and domains attest to the quality of the results. ... Ahmad, W., Bai, X., Lee, S., Chang, K.W.: Select, extract and generate: neural keyphrase generation with layer-wise coverage attention.",
+      "Diao, S., Song, Y., Zhang, T.: Keyphrase generation with cross-document attention. arXiv preprint arXiv:2004.09800 (2020) ... Ding, H., Luo, X.: AttentionRank: unsupervised keyphrase extraction using self and cross attentions.",
+      "Kim, S.N., Medelyan, O., Kan, M.Y., Baldwin, T.: SemEval-2010 task 5: automatic keyphrase extraction from scientific articles. In: Proceedings of the International Workshop on Semantic Evaluation (2010) ... Liang, X., Wu, S., Li, M., Li, Z.: Unsupervised keyphrase extraction by jointly modeling local and global context.",
+      "Shapira, O., Pasunuru, R., Dagan, I., Amsterdamer, Y.: Multi-document keyphrase extraction: a literature review and the first dataset. arXiv preprint arXiv:2110.01073 (2021) ... Shen, X., Wang, Y., Meng, R., Shang, J.: Unsupervised deep keyphrase generation."
+    ],
+    "title": "Unsupervised Key-Phrase Extraction from Long Texts with Multilingual ...",
+    "url": "https://dl.acm.org/doi/10.1007/978-3-031-45275-8_10"
+  },
+  {
+    "description": "Recent technological advancements have led to a significant increase in digital documents. A document\u2019s key information is generally represented by the keyphrases that provide the abstract description contained therein. With traditional keyphrase techniques, however, it is difficult to identify ...",
+    "favicon_url": "https://you.com/favicon?domain=journalofbigdata.springeropen.com&size=128",
+    "snippets": [
+      "Recent technological advancements have led to a significant increase in digital documents. A document\u2019s key information is generally represented by the keyphrases that provide the abstract description contained therein. With traditional keyphrase techniques, however, it is difficult to identify relevant information based on context.",
+      "Zhang Z, Liang X, Zuo Y, Lin C. Improving unsupervised keyphrase extraction by modeling hierarchical multi-granularity features. Inform Process Manag. 2023;60(4): 103356. ... We would like to thank Sharon Boswell, Paul Lancaster, and Reynalyn Hayes from Defence Science and Technology Group (DSTG), Australia for their support and feedback. This is part of a collaborative research initiative between the Applied Artificial Intelligence Institute (A2I2) at Deakin University and the Defence Science and Technology Group (DSTG), Australia.",
+      "Using the set of words, a phrase is then constructed by applying the following techniques: N-Gram methods, Part-Of-Speech (POS) based methods or both [4]. An N-Gram method aims to extract N consecutive words, whereas a POS tag of a word such as a noun, a verb, an adjective, and others is used to form a linguistic pattern of a phrase. As the importance of an extracted phrase has not yet been determined, the phrase is referred to as a keyphrase candidate. To estimate such importance, supervised or unsupervised techniques are utilised.",
+      "However, annotating exemplar keyphrases from the same context as the document, to improve the classifier\u2019s performance, requires considerable human effort. Furthermore, it is impractical to process documents with domain-specific keyphrases that are not labelled at the outset. Due to these challenges, existing approaches in the literature have largely been focused on the development of unsupervised techniques."
+    ],
+    "title": "Contextual topic discovery using unsupervised keyphrase extraction ...",
+    "url": "https://journalofbigdata.springeropen.com/articles/10.1186/s40537-023-00833-1"
+  },
+  {
+    "description": "This alert has been successfully added and will be sent to: \u00b7 You will be notified whenever a record that you have chosen has been cited",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "You will be notified whenever a record that you have chosen has been cited. To manage your alert preferences, click on the button below.Manage my Alerts ... Keyphrase extraction aims to provide readers with high-level information about the central ideas or important topics described in a given source text. Recent advances in embedding-based models have made remarkable progress on unsupervised keyphrase extraction, demonstrated through improved quality metrics such as F1-score.",
+      "Specifically, DiversityRank jointly considers phrase-document relevance and cross-phrase similarities to select candidate keyphrases that are document-relevant and diverse. Results demonstrate that our re-ranking strategy outperforms the state-of-the-art unsupervised keyphrase extraction baselines on three benchmark datasets.",
+      "Kamil Bennani-Smires, Claudiu Musat, Andreea Hossmann, Michael Baeriswyl, and Martin Jaggi. 2018. Simple Unsupervised Keyphrase Extraction using Sentence Embeddings. In CoNLL, Anna Korhonen and Ivan Titov (Eds.). Association for Computational Linguistics, 221--229.",
+      "Mingyang Song, Yi Feng, and Liping Jing. 2022c. Utilizing BERT Intermediate Layers for Unsupervised Keyphrase Extraction. In 5th International Conference on Natural Language and Speech Processing, ICNLSP 2022, Trento, Italy, December 16--17, 2022, Mourad Abbas and Abed Alhakim Freihat (Eds.)."
+    ],
+    "title": "Improving Diversity in Unsupervised Keyphrase Extraction with ...",
+    "url": "https://dl.acm.org/doi/10.1145/3583780.3615141"
+  },
+  {
+    "description": "This study mainly analyzed the keyword extraction of English text. First, two commonly used algorithms, the term frequency\u2013inverse document frequency (TF\u2013IDF) algorithm and the keyphrase extraction algorithm (KEA), were introduced. Then, an improved TF\u2013IDF algorithm was designed, which ...",
+    "favicon_url": "https://you.com/favicon?domain=www.degruyterbrill.com&size=128",
+    "snippets": [
+      "This study mainly analyzed the keyword extraction of English text. First, two commonly used algorithms, the term frequency\u2013inverse document frequency (TF\u2013IDF) algorithm and the keyphrase extraction algorithm (KEA), were introduced. Then, an improved TF\u2013IDF algorithm was designed, which improved the calculation of word frequency, and it was combined with the position weight to improve the performance of keyword extraction.",
+      "Machine learning is a science of artificial intelligence, and its theory and method have been extensively applied in solving complex problems in the engineering application and science field; moreover, it also has good applications in natural language processing [13]. With the explosive growth of information, how to find out the needed information rapidly has become more and more difficult; thus, research on keyword extraction becomes increasingly important. This study compared three keyword extraction algorithms, the term frequency\u2013inverse document frequency (TF\u2013IDF) algorithm, keyphrase extraction algorithm (KEA), and the improved TF\u2013IDF algorithm, and made an experimental analysis in the corpus to verify the effectiveness of the improved algorithm.",
+      "[10] studied the extraction of Twitter keywords, proposed an unsupervised graph-based method, extracted keywords using the collective node weight, carried out experiments on five data sets, and found that this method was better than other methods. Hu et al. [11] designed a patent keyword extraction algorithm based on a distributed skip-gram model and conducted experiments on standard data sets and self-made data sets.",
+      "Research on the emotional tendency of web texts based on long short-term memory network \u00b7 Design and analysis of quantum powered support vector machines for malignant breast cancer diagnosis \u00b7 Application of clustering algorithm in complex landscape farmland synthetic aperture radar image segmentation"
+    ],
+    "title": "A comparative study of keyword extraction algorithms for English texts",
+    "url": "https://www.degruyterbrill.com/document/doi/10.1515/jisys-2021-0040/html"
+  },
+  {
+    "description": "An essential part of a text generation task is to extract critical information from the text. People usually obtain critical information in the text via manual extraction; however, the asymmetry between the ability to process information manually and the speed of information growth makes it ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "An essential part of a text generation task is to extract critical information from the text. People usually obtain critical information in the text via manual extraction; however, the asymmetry between the ability to process information manually and the speed of information growth makes it impossible.",
+      "Based on the features of the unsupervised keyphrase extraction methods selected by researchers, unsupervised methods can be divided into the statistics-based method, graph-based method, topic-based method, language model-based method, and these methods can be classified into two schools: the linguistic school and the statistical school.",
+      "As time has passed, researchers have proposed new methods to cross-utilize the two schools\u2019 knowledge, such as TopicRank based on clustering (linguistic school) and graphs (statistical school). In the above discussion, we divide keyphrase extraction into the linguistic school and the statistical school. We continue this classification method to divide commonly used metrics, features that affect keyphrase extraction, and mainstream unsupervised keyphrase extraction methods, making the structure and development path of the entire field look clear.",
+      "As stated in Section 2.3.2, for texts with a fixed format, such as scientific research papers, if a word often appears in abstract and introduction, it is more likely to be a keyphrase. This section introduces the classification of unsupervised keyphrase extraction methods (Section 3.1)."
+    ],
+    "title": "A Review of Unsupervised Keyphrase Extraction Methods Using ...",
+    "url": "https://www.mdpi.com/2073-8994/12/11/1864"
+  },
+  {
+    "description": "Unsupervised keyphrase extraction (UKE) aims to detect out a set of keyphrases of a document without using any annotation signal for training the UKE \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "We in this section further conduct some in-depth analyses and present more insights into our proposed method for better understanding its strengths. In this paper we propose a novel model for unsupervised keyphrase extraction (UKE). We model the task as a fully generative process with an encoder\u2013decoder framework so as to unify the prediction of both the present and absent keyphrases in an end-to-end manner.",
+      "(1) The keyphrase relevance reflects the extent on capturing the semantics of the document text. Especially in the unsupervised learning scenario, the topic information is much vital to UKE (Bougouin et al., 2013, Zhao et al., 2011, Teneva and Cheng, 2017, Wang et al., 2018). The ideal keyphrases should well describes the relevant topics of the document at the semantic level.",
+      "Unsupervised keyphrase extraction (UKE) aims to detect out a set of keyphrases of a document without using any annotation signal for training the UKE model. Existing UKE models however either fail to solve the issue of low keyphrase relevance, or suffer from the problem of unsatisfactory keyphrase coverage.",
+      "We accelerate the decoding by installing a non-autoregressive decoder, which yields all keyphrase extraction in parallel fast. To enhance the keyphrase relevance, we investigate a neural topic module that unsupervisingly learns the latent topic information, aiding the semantic understanding of the input document."
+    ],
+    "title": "Generative non-autoregressive unsupervised keyphrase extraction ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0952197623001185"
+  },
+  {
+    "description": "Several methods have been explored for automating parts of Systematic Mapping (SM) and Systematic Review (SR) methodologies. Challenges typically evolve around the gaps in semantic understanding of text, as well as lack of domain and background knowledge necessary to bridge that gap.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2101.09990: Unsupervised Key-phrase Extraction and Clustering for Classification Scheme in Scientific Publications",
+      "View a PDF of the paper titled Unsupervised Key-phrase Extraction and Clustering for Classification Scheme in Scientific Publications, by Xiajing Li and 1 other authors View PDF \u00b7 Abstract:Several methods have been explored for automating parts of Systematic Mapping (SM) and Systematic Review (SR) methodologies.",
+      "Specifically, we explore the effect of ensemble scores measure in key-phrase extraction, we explore semantic network based word embedding in embedding representation of phrase semantics and finally we also explore how clustering can be used to group related key-phrases. The evaluation is conducted on a dataset of publications pertaining the domain of \"Explainable AI\" which we constructed using standard publicly available digital libraries and sets of indexing terms (keywords)."
+    ],
+    "title": "[2101.09990] Unsupervised Key-phrase Extraction and Clustering ...",
+    "url": "https://arxiv.org/abs/2101.09990"
+  },
+  {
+    "description": "Automatic keyphrase extraction algorithms aim to identify words and phrases that contain the core information in documents. As online scholarly resour\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Therefore, information extraction, including keyphrase extraction, has become a topic of considerable research interest. Many outstanding keyphrase extraction algorithms have been developed in recent years. These algorithms are generally classified into supervised and unsupervised approaches.",
+      "The keyphrase coverage score evaluates the breadth of content in documents that the extracted keyphrases can express. We found \u00b7 Our experiments used four datasets: Knowledge Discovery and Data Mining (KDD), World Wide Web Conference (WWW), Inspec, and Document Understanding Conference (DUC) [15]. KDD and WWW [29] are compiled from the CiteSeerX digital library and include research papers from the two ACM conferences by Gollapalli and Caragea. Inspec [30] has been a dataset used in science and technology literature since 1898.",
+      "As online scholarly resources have become widespread in recent years, better keyphrase extraction techniques are required to improve search efficiency. We present two features, keyphrase semantic diversity and keyphrase coverage, to overcome limitations of existing methods for unsupervised keyphrase extraction.",
+      "Keyphrase coverage refers to candidates\u2019 representativeness of other words in documents. We propose an unsupervised keyphrase extraction method called TripleRank, which evaluates three features: word position (a sensitive feature for academic documents) and two innovative features mentioned above."
+    ],
+    "title": "TripleRank: An unsupervised keyphrase extraction algorithm - ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S095070512100109X"
+  },
+  {
+    "description": "The keyphrases of a text entity are a set of words or phrases that concisely describe the main content of that text. Automatic keyphrase extraction pl\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Typically, automatic keyphrase extraction task is performed in two main steps: (1) determining a set of appropriate phrases as candidate keyphrases, and (2) extracting final keyphrases from the set of candidates by means of a supervised or unsupervised approach.",
+      "At the second set of experiments, TSAKE is compared with some other keyphrase extraction methods in terms of precision and recall of the reported keyphrases. Finally, the last set of our experiments \u00b7 In this paper, we propose TSAKE, an unsupervised keyphrase extraction model using the integration of semantic and structural information.",
+      "Moreover, while TNG represents the general topics of the language, TSAKE applies network analysis techniques to each topical graph to detect finer grained sub-topics and extract more important words of each sub-topic. The use of these informative words in the ranking process of the candidate keyphrases improves the quality of the final keyphrases proposed by TSAKE. The results of our experiment studies conducted on three manually annotated datasets show the superiority of the proposed model over three baseline techniques and six state-of-the-art models.",
+      "The keyphrase extraction process of TSAKE for an input text is then performed in four steps. At the first step, the co-occurrence graph of the input text's \u00b7 To evaluate the performance of TSAKE, three types of experiments are conducted and the results are reported in this section."
+    ],
+    "title": "TSAKE: A topical and structural automatic keyphrase extractor - ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1568494617302673"
+  },
+  {
+    "description": "PDF | Keyphrase extraction is the task of automatically selecting a small set of phrases that best describe a given free text document. Supervised... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "This person is not on ResearchGate, or hasn't claimed this research yet. ... Keyphrase extraction is the task of automatically selecting a small set of phrases that best describe a given free text document. Supervised keyphrase extraction requires large amounts of labeled training data and generalizes very poorly outside the domain of the training data. At the same time, unsupervised systems have poor accuracy, and often do not generalize well, as they require the input document to belong to a larger corpus also given as input.",
+      "... In this paper, we focus on the unsupervised keyphrase extraction (UKE) model. UKE has been widely studied (Mihalcea, 2004;Wan and Xiao, 2008a;Bougouin et al., 2013;Boudin, 2018;",
+      "To evaluate how FSIST can effectively support instructors, we conducted a user study with three English instructors. Results show that the browsing interactions provided in FSIST support instructors to efficiently find parts of videos that show example usages of FSs.-Read more ... Join ResearchGate to find the people and research you need to help your work.",
+      "Addressing these drawbacks,in this paper, we tackle keyphrase extraction from single documents with EmbedRank: a novel unsupervised method, that leverages sentence embeddings. EmbedRank achieves higher F-scores than graph-based state of the art systems on standard datasets and is suitable for real-time processing of large amounts of Web data."
+    ],
+    "title": "(PDF) Simple Unsupervised Keyphrase Extraction using Sentence ...",
+    "url": "https://www.researchgate.net/publication/322517880_Simple_Unsupervised_Keyphrase_Extraction_using_Sentence_Embeddings"
+  },
+  {
+    "description": "Learn about unsupervised algorithms for automatically extracting representative keyword and phrases from documents",
+    "favicon_url": "https://you.com/favicon?domain=amitness.com&size=128",
+    "snippets": [
+      "This method takes into account both how frequent the keyphrase is and also how rare it is across the documents.",
+      "It\u2019s pretty common to get similar candidates when extracting keyphrases.",
+      "Unsupervised algorithms for keyword extraction don\u2019t need to be trained on the corpus and don\u2019t need any pre-defined rules, dictionary, or thesaurus. They can use statistical features from the text itself and as such can be applied to large documents easily without re-training.",
+      "In this post, I will provide an overview of the general pipeline of keyword extraction and explain the working mechanism of various unsupervised algorithms for this."
+    ],
+    "title": "Unsupervised Keyphrase Extraction",
+    "url": "https://amitness.com/posts/keyword-extraction"
+  },
+  {
+    "description": "The exponential growth of textual data poses a monumental challenge for extracting meaningful knowledge. Manually identifying descriptive keywords or \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The exponential growth of textual data poses a monumental challenge for extracting meaningful knowledge. Manually identifying descriptive keywords or keyphrases for each document is infeasible given the massive daily generated text. Automatic keyphrase extraction is, therefore, essential.",
+      "However, current techniques struggle with learning the most salient semantic features from lengthy documents. This hybrid keyphrase extraction framework uniquely combines the complementary strengths of graph-based and textual feature methods. Our approach demonstrates improved performance over relying solely on statistical or graphical.",
+      "Graph-based systems leverage word co- occurrence networks to score importance. Textual methods extract keyphrases using linguistic properties. Together, these complementary techniques overcome the limitations of relying on any strategy. The hybrid approach is evaluated on standard SemEval 2017 Task 10 and SemEval 2010 Task 5 benchmark datasets for scientific paper keyphrase extraction.",
+      "Performance is quantified using the F1 score relative to human-annotated ground truth keyphrase. Results will quantify effectiveness on long documents with thousands of terms where only a few keywords represent salient concepts. Results show our technique effectively identifies the most salient semantic keywords, overcoming limitations of current techniques that struggle to mix features of graphical or statistical methods."
+    ],
+    "title": "Hybrid Approach To Unsupervised Keyphrase Extraction - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1877050924008172"
+  },
+  {
+    "description": "Keyphrases of a given document represent its main topic and they are used as a simple method to represent the document. Statistical and graph-based mo\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Keyphrases of a given document represent its main topic and they are used as a simple method to represent the document. Statistical and graph-based models as unsupervised approaches have been mainly studied. The statistical models have some difficulty in extracting keyphrases from a single document because most statistical ones generally require statistical information from a large corpus.",
+      "A new scoring method for keyphrase candidates is developed by the graph-based model and the scores calculated by the new method are applied to the modified C-value method to estimate the final importance scores of the keyphrase candidates. Subsequently, the proposed model is evaluated using two datasets, SemEval 2010 and Inspec, and its results outperformed the state-of-the-art model among unsupervised models and the existing graph-based ranking models."
+    ],
+    "title": "Unsupervised-learning-based keyphrase extraction from a single ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S088523081830408X"
+  },
+  {
+    "description": "Papers about keyphrase generation and extraction. Contribute to uclanlp/awesome-keyphrase-papers development by creating an account on GitHub.",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "SaSAKE: Syntax and Semantics Aware Keyphrase Extraction from Research Papers (Santosh et al., COLING 2020) KeyGames: A Game Theoretic Approach to Automatic Keyphrase Extraction (Saxena et al., COLING 2020) A Joint Learning Approach based on Self-Distillation for Keyphrase Extraction from Scientific Documents (Lai et al., COLING 2020) SIFRank: a new baseline for unsupervised keyphrase extraction based on pre-trained language model.",
+      "Salience Rank: Efficient Keyphrase Extraction with Topic Modeling (Teneva & Cheng, ACL 2017) Multi-Task Learning of Keyphrase Boundary Classification (Augenstein & S\u00f8gaard, ACL 2017) PositionRank: An Unsupervised Approach to Keyphrase Extraction from Scholarly Documents (Florescu & Caragea, ACL 2017)",
+      "Learning Feature Representations for Keyphrase Extraction (Florescu and Jin, AAAI 2018) Simple Unsupervised Keyphrase Extraction using Sentence Embeddings (Bennani-Smires et al., CoNLL 2018)",
+      "Yake! collection-independent automatic keyword extractor (Campos et al., ECIR 2018) Unsupervised Keyphrase Extraction with Multipartite Graphs (Boudin, NAACL 2018)"
+    ],
+    "title": "GitHub - uclanlp/awesome-keyphrase-papers: Papers about keyphrase ...",
+    "url": "https://github.com/uclanlp/awesome-keyphrase-papers"
+  },
+  {
+    "description": "A classic task to extract salient phrases that best summarize a document, which essentially has two stages: candidate generation and keyphrase ranking.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Keyphrase provides highly-condensed information that can be effectively used for understanding, organizing and retrieving text content. ... EmbedRank achieves higher F-scores than graph-based state of the art systems on standard datasets and is suitable for real-time processing of large amounts of Web data. ... Previous researches found that in-context learning is an effective approach to exploiting LLM, by using a few task-related labeled data as demonstration examples to construct a few-shot prompt for answering new questions.",
+      "This paper studies keyphrase extraction in real-world scenarios where documents are from diverse domains and have variant content quality.",
+      "Open-domain KeyPhrase Extraction (KPE) aims to extract keyphrases from documents without domain or quality restrictions, e.",
+      "These leaderboards are used to track progress in Keyphrase Extraction"
+    ],
+    "title": "Papers with Code - Keyphrase Extraction",
+    "url": "https://paperswithcode.com/task/keyphrase-extraction"
+  }
+]

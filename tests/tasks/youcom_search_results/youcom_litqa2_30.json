@@ -1,0 +1,265 @@
+[
+  {
+    "description": "Whether you're doing qPCR, cloning, or constructing a cDNA library, follow our 5 tips and tricks to optimise your cDNA synthesis.",
+    "favicon_url": "https://you.com/favicon?domain=pcrbio.com&size=128",
+    "snippets": [
+      "If your RTase mix does not include an RNase inhibitor, add an exogenous one to your cDNA synthesis reaction mix, to ensure RNA integrity is protected. ... If you want to use cDNA for quantification of multiple transcript targets via qPCR or for cDNA library construction, getting a representative number of first strand cDNAs for every transcript is paramount.",
+      "If cloning or quantification of only a specific transcript is desired, then acquiring full length transcript coverage is more important than representation. Choose oligo-dT, or gene-specific primers (GSPs), to ensure your target transcript is reverse transcribed in full. In rare instances where you desire 3\u2019 enrichment of cDNAs, use oligo-dT primers for eukaryotic and archaeal transcripts.",
+      "If all the above steps have been carried out and you still suspect DNA contamination of your samples, validate total gDNA removal by running a PCR or qPCR on a genomic DNA target. Include a positive gDNA sample as a control and make sure your RNA samples do not have detectable levels of contaminating gDNA. Depending on the application you have in mind for the resulting cDNA, you may require an enzyme with specific characteristics.",
+      "You can compare this value to previous batches of cDNA and dilute your samples appropriately to ensure all samples contain comparable concentrations of cDNA, if required. This approach may not be suitable to confirm successful reverse transcription of long transcripts, because qPCR targets are kept < 0.2 kb. Thus, if you need to ensure presence of long transcripts >0.5 kb, run 2nd strand DNA synthesis (usually standard PCR with appropriate primers) and run part of your cDNA sample on an agarose gel."
+    ],
+    "title": "Tips and tricks for cDNA synthesis | PCR Biosystems",
+    "url": "https://pcrbio.com/usa/tips-and-tricks-for-cdna-synthesis/"
+  },
+  {
+    "description": "Explore the intricacies of cDNA synthesis, a vital process in molecular biology, facilitating RNA sequencing, gene expression studies, and pathogen characterization. Delve into methodologies, influencing factors, and practical applications for insightful research.",
+    "favicon_url": "https://you.com/favicon?domain=www.cd-genomics.com&size=128",
+    "snippets": [
+      "3. Filter the reaction mixture through glass fiber filter paper, wash with cold 5% TCA three times (each time with 5 mL TCA), followed by a rinse with 5 mL anhydrous ethanol. These samples represent spiked radioactive activity. 4. Measure the intensities of both total radioactive activity and spiked radioactive activity using a Geiger counter or liquid scintillation counter. 5. First-strand cDNA synthesis product quantification:",
+      "RNA integrity directly affects the length of synthesized cDNA, thereby influencing downstream cloning experiments and the accuracy of quantitative gene expression assays. The presence of gDNA in total RNA can lead to false-positive results in downstream qPCR experiments, as gDNA can serve as a template for PCR amplification.",
+      "Gene-specific primers (GSPs) are designed to specifically complement the target mRNA sequence, resulting in highly targeted cDNA synthesis, particularly suitable for subsequent PCR amplification of known target sequences. These primers are commonly employed in one-step RT-PCR reactions.",
+      "The process of cDNA synthesis has a range of applications in lab workflows, such as sequencing, qRT-PCR, gene expression studies, cDNA library preparation, gene cloning, and gene discovery studies."
+    ],
+    "title": "Overview of cDNA Synthesis - CD Genomics",
+    "url": "https://www.cd-genomics.com/resource-overview-cdna-synthesis.html"
+  },
+  {
+    "description": "Mix cDNA with qPCR reagents, then aliquot a standard volume of this \u201cmaster mix\u201d into each reaction well containing a standard volume of specific primers. Set up reactions in a clean environment free of dust, preferably under a positive airflow hood. Routinely check for DNA contamination of primer and reagent stocks by performing PCR reactions on no template (water) controls. (8) For relative quantification ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Mix cDNA with qPCR reagents, then aliquot a standard volume of this \u201cmaster mix\u201d into each reaction well containing a standard volume of specific primers. Set up reactions in a clean environment free of dust, preferably under a positive airflow hood. Routinely check for DNA contamination of primer and reagent stocks by performing PCR reactions on no template (water) controls. (8) For relative quantification of transcript levels, design and test gene-specific primers for at least four potential reference genes selected from the literature (e.g., Czechowski et al., 2005) or from your own experience that are likely to be stably expressed throughout all organs and treatments to be compared.",
+      "Check RNA quality using an Agilent 2100 Bioanalyzer (RNA integrity number, RIN > 7 and ideally > 9) or by electrophoretic separation on a high-resolution agarose gel (look for sharp ethidium bromide\u2013stained rRNA bands) and spectrophotometry (A260/A280 > 1.8 and A260/A230 > 2.0). Quantify RNA using A260 values. (3) Digest purified RNA with DNase I to remove contaminating genomic DNA, which can act as template during PCR and lead to spurious results. Subsequently, perform PCR on the treated RNA, using gene-specific primers, to confirm absence of genomic DNA. (4) Perform RT reactions with a robust reverse transcriptase with no RNaseH activity (like SuperScriptIII from Invitrogen or ArrayScript from Ambion) to maximize cDNA length and yield.",
+      "Threshold cycle (Ct) values should be within the range mean \u00b11 for each reference gene across all samples to ensure similar cDNA yield from each RT reaction. Quality of cDNA can be assessed using two pairs of primers for a reference gene that are \u223c1 kb apart.",
+      "Validate reference genes in preliminary experiments on the range of tissues and treatments you wish to compare using a foreign cRNA added to each RNA sample prior to RT-PCR to normalize data for reference gene transcripts prior to assessment of their expression stability (Czechowski et al., 2005). (9) Perform real-time PCR on test and reference genes in parallel for each sample to capture fluorescence data on dsDNA after each cycle of amplification. Also, perform dsDNA melting curve analysis at the end of the PCR run. When relying on nonspecific DNA binding fluorophors, such as SYBR Green, to quantify relative dsDNA amount, ensure that only a single PCR amplicon of the expected length and melting temperature is produced using gel electrophoresis and PCR amplicon melting curve data, respectively."
+    ],
+    "title": "Eleven Golden Rules of Quantitative RT-PCR - PMC",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2518243/"
+  },
+  {
+    "description": "Five steps to achieve effective cDNA synthesis through optimized sample preparation, genomic DNA removal, and reverse transcriptase enzyme selection.",
+    "favicon_url": "https://you.com/favicon?domain=www.thermofisher.com&size=128",
+    "snippets": [
+      "In contrast, an engineered reverse transcriptase with high processivity may take as little as ten minutes to complete cDNA synthesis. Learn more: Reverse transcription troubleshooting guide Explore: Five step workflows ... Reverse transcription education PCR education Real-Time PCR (qPCR) learning center Cloning education Microarrays and RNA sequencing education RNA/DNA quantification",
+      "Total RNA is routinely used in cDNA synthesis for downstream applications such as RT-(q)PCR, whereas specific types of RNA (e.g., messenger RNA (mRNA) and small RNAs such as miRNA) may be enriched for certain applications like cDNA library construction and miRNA profiling.",
+      "The traditional method of gDNA removal is the addition of DNase I to preparations of isolated RNA. However, DNase I must be removed prior to cDNA synthesis since any residual enzyme would degrade single-stranded DNA, compromising RT-PCR results.",
+      "We have compiled a list of five critical steps to help ensure your cDNA synthesis is as efficient as possible. cDNA synthesis, is the process of creating complementary DNA (cDNA) from an RNA template through reverse transcription. It is a crucial first step in many molecular biology protocols."
+    ],
+    "title": "Five Steps to Optimal cDNA Synthesis | Thermo Fisher Scientific - US",
+    "url": "https://www.thermofisher.com/us/en/home/life-science/pcr/reverse-transcription/5steps-cDNA.html"
+  },
+  {
+    "description": "Gene expression analysis by quantitative PCR in skeletal muscle is routine in exercise studies. The reproducibility and reliability of the data fundamentally depend on how the experiments are performed and interpreted. Despite the popularity of the assay, ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "The sequential stages of the quantitative real-time PCR workflow. Skeletal muscle samples are cleaned quickly and snap-frozen in liquid nitrogen after the muscle biopsy, and then stored at -80\u00b0C until RNA extraction. RNA is extracted using TRIzol or another Tri-reagent, and assessed for concentration and quality. RNA that passes the quality test is used to synthesise cDNA, which is used as template in the final qPCR assay.",
+      "In addition, the detection method of qPCR is more sensitive and specific compared to the other assays [4]. It, therefore, provides scientists with the ability to perform accurate high-throughput mRNA quantification over a wide dynamic range [5]. The workflow of gene expression analysis using the qPCR technique is based around seven key steps: (1) acquisition and handling of the experimental samples; (2) extraction of total RNA from experimental samples; (3) assessment of RNA concentration and quality; (4) synthesis of cDNA from extracted total RNA through reverse transcription; (5) optimising conditions for the qPCR assay; (6) running the qPCR reaction under optimised conditions to measure the expression level of target genes; and (7) data analysis using appropriate normalisation methods (Fig 2).",
+      "We recommend using RefFinder to assess the stability of reference genes, as it runs four well-established algorithms simultaneously. Other than the stability of the reference gene, the amplification efficiency of the reference genes should be similar to the target genes. Finding stable reference genes is a challenge when performing qPCR, and researchers have been seeking alternative methods such as quantifying cDNA.",
+      "Priming was performed at 25\u00b0C for 5 min and reverse transcription for 30 min at 42\u00b0C using a mixture of oligo-dT primers and random primers. The cDNA was then stored at -20\u00b0C for subsequent analysis. The cDNA concentration of a subset of the samples, including -RT, was quantified using Quant-iT\u2122 OliGreen ssDNA Reagent (Applied Biosystems, Foster City, CA) according to the manufacturer\u2019s instructions."
+    ],
+    "title": "An overview of technical considerations when using quantitative ...",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5944930/"
+  },
+  {
+    "description": "A novel strategy for amplification full-length cDNA and promoter sequences has been developed using bioinformatics technology and multiplexed PCR methods in this study. The amplification of 3\u2032 ends of cDNA is performed according to the modified classic 3\u2032 RACE techniques, therein the more ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "A novel strategy for amplification full-length cDNA and promoter sequences has been developed using bioinformatics technology and multiplexed PCR methods in this study. The amplification of 3\u2032 ends of cDNA is performed according to the modified classic 3\u2032 RACE techniques, therein the more efficient and effective oligo(dT)-anchor primer with hairpin structure is specially designed.",
+      "Scientific Reports - An efficient full-length cDNA amplification strategy based on bioinformatics technology and multiplexed PCR methods",
+      "The Cap-switching RACE (Cap finder) is performed by moloney murine leukemia virus (MMLV) reverse transcriptase to add extra 2-4 cytosines to the 3\u2032 ends of newly synthesized first-strand cDNAs after reaching the cap structure of the 5\u2032 end of mRNAs5,6. Then an anchor primer with multiple guanine residues (poly(G)) is added to the reaction mixture and primarily annealed to the exposed poly(C) in the 3\u2032 ends of first-strand cDNA, introducing an adaptor to the first-strand cDNA terminus. Since the cytosine addition is cap-dependent, the anchor primer is only appended to the 3\u2032 ends of full-length cDNA. Actually, the poly(G) primer can also bind to other C-rich sequences of cDNA. The method has further been developed into inverse PCR, T-RACE and step-out PCR10,11,12.",
+      "For the amplification of 5\u2032 ends of cDNA, two or three-round TAIL-PCR or touch-down PCR using arbitrary degenerate (AD) and sequence-specific reverse (SPR) primers is performed until the 5\u2032 sequence of multi-assembled fragment reaches the exon1 region identified by aligning this fragment to reference genome database."
+    ],
+    "title": "An efficient full-length cDNA amplification strategy based on ...",
+    "url": "https://www.nature.com/articles/srep19420"
+  },
+  {
+    "description": "Gene expression analysis by quantitative PCR in skeletal muscle is routine in exercise studies. The reproducibility and reliability of the data fundamentally depend on how the experiments are performed and interpreted. Despite the popularity of the ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "In addition, the detection method of qPCR is more sensitive and specific compared to the other assays [4]. It, therefore, provides scientists with the ability to perform accurate high-throughput mRNA quantification over a wide dynamic range [5]. The workflow of gene expression analysis using the qPCR technique is based around seven key steps: (1) acquisition and handling of the experimental samples; (2) extraction of total RNA from experimental samples; (3) assessment of RNA concentration and quality; (4) synthesis of cDNA from extracted total RNA through reverse transcription; (5) optimising conditions for the qPCR assay; (6) running the qPCR reaction under optimised conditions to measure the expression level of target genes; and (7) data analysis using appropriate normalisation methods (Fig 2).",
+      "RNA is extracted using TRIzol or another Tri-reagent, and assessed for concentration and quality. RNA that passes the quality test is used to synthesise cDNA, which is used as template in the final qPCR assay. The conditions of the final qPCR assay must be optimised for each experiment, and the data should be processed using the correct analysis methods. Even though qPCR is considered one of the most effective methods to quantify gene expression, capable of detecting mRNA with low expression levels [6], the quality of the results can be affected by variations in how the workflow described above is implemented by different laboratories.",
+      "We recommend using RefFinder to assess the stability of reference genes, as it runs four well-established algorithms simultaneously. Other than the stability of the reference gene, the amplification efficiency of the reference genes should be similar to the target genes. Finding stable reference genes is a challenge when performing qPCR, and researchers have been seeking alternative methods such as quantifying cDNA.",
+      "Priming was performed at 25\u00b0C for 5 min and reverse transcription for 30 min at 42\u00b0C using a mixture of oligo-dT primers and random primers. The cDNA was then stored at -20\u00b0C for subsequent analysis. The cDNA concentration of a subset of the samples, including -RT, was quantified using Quant-iT\u2122 OliGreen ssDNA Reagent (Applied Biosystems, Foster City, CA) according to the manufacturer\u2019s instructions."
+    ],
+    "title": "An overview of technical considerations when using quantitative ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5944930/"
+  },
+  {
+    "description": "Amplification of a cDNA product by quantitative PCR (qPCR) is monitored by a fluorescent signal proportional to the amount of produced amplicon. The qPCR amplification curve usually displays an exponential phase followed by a non-exponential phase, ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "It follows that the absolute target cDNA concentration initially engaged in the qPCR can be directly estimated from the fluorescence data, with no need to refer to any calibration with known concentrations of target DNA. Quantitative real-time PCR (qPCR) is widely used for absolute or relative quantification of gene expression, and is a critical tool for basic research, biotechnology and genetic diagnostics (1\u20133).",
+      "Quantitative real-time PCR is a tool of choice to estimate the absolute or relative amount of a target cDNA. Up to now, an absolute quantification, when needed, required the construction of a calibration curve based on PCR results obtained with samples for which the amount of target DNA is known (13).",
+      "The enzyme was activated by heating for 10 min at 95\u00b0C. A two-step PCR procedure was used, 60 s at 60\u00b0C and 15 s at 95\u00b0C for 50 cycles in a PCR mix containing 2 \u00b5l of cDNA template, 1\u00d7 qPCR Mastermix (RT-QP2X-03, Eurogentec), 300 nM of each primer and 100 nM probe in a total volume of 30 \u00b5l (except where otherwise stated).",
+      "This methodology is particularly suited because of its conceptual simplicity and practical ease (4). The interpretation of amplification curves rests on the existence of an exponentially growing phase in which the PCR efficiency E (here defined as the factor by which the amplicon concentration is multiplied at each cycle) should be theoretically constant and equal to 2. For some undemonstrated reasons, the efficiency is, in most systems, significantly lower than 2. Current methods for relative and absolute quantification in qPCR have been developed to take this deviation into account (5\u20137)."
+    ],
+    "title": "Instant evaluation of the absolute initial number of cDNA copies ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC390378/"
+  },
+  {
+    "description": "I understand that it is not necessary to purify cDNA for real time PCR (as I had some good results previously) but still I want to be really sure.",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "I understand that it is not necessary to purify cDNA for real time PCR (as I had some good results previously) but still I want to be really sure. ... Mushtak T. S. Al-Ouqaili ... I will be very grateful if some one share with me a protocol of cDNA clean up.",
+      "Read 10 answers by scientists with 1 recommendation from their colleagues to the question asked by Nidhi Sharma on Oct 2, 2013",
+      "I mean how to purify cDNA from free nucleotide and primer. ... Spark Therapeutics, Inc. ... Join ResearchGate to ask questions, get input, and advance your work. ... The quickest/easiest is a Qiaquick PCR purification kit (or equivalent). Macherey-Nagel sells a good kit as well (NucleoSpin Gel and PCR Clean-up). In general it will take you 10 minutes total. ... Thanks Dr. Livingstone. I did it by PCR Clean up kit. Then I quantified cDNA by nanodrop and I found that A260/280 is 2 (and not 1.8 that is the value for DNA) in all cases and A260/230 is less than A260/280 (ideally it should be more than A260/280 for DNA and RNA).",
+      "However, we lately had problems with variation in technical replicates and in this case the cDNA cleanup really helped a lot. I can recommend a column-based PCR clean-up kit for cDNA cleanup. We use Genomed's JetQUick PCR Purification kit, but any other should work."
+    ],
+    "title": "Can any one tell me the best way to purify cDNA? Is it by column ...",
+    "url": "https://www.researchgate.net/post/Can-any-one-tell-me-the-best-way-to-purify-cDNA-Is-it-by-column-or-precipitation-with-sodium-acetate-and-ethanol"
+  },
+  {
+    "description": "To prepare cDNA, I took the equal concentrations of RNA of both control and experiment samples. The volume of control and experiment samples during cDNA preparation was kept equal. Do I need to...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Read 7 answers by scientists to the question asked by Avinash Sharma on Mar 23, 2017",
+      "My problem with using this method to quantify is that 1). nanodrop is extremely variable and 2). I don't believe 100% RT efficiency ever happens... While I am using a validated endogenous control (18S) to normalize Ct values, I believe there is too much variability in cDNA concentration to give accurate results. One thought I have is to amplify my cDNA by PCR, purifying the PCR products (QIAGEN PCR Cleanup) and quantifying the purified product using PICO Green for double stranded DNA.",
+      "My concern is that I see the difference in beta-actin levels of control and experiment samples after semi-quantitative PCR even I took the equal volume of cDNA (1ul) for both the samples. Please give me your opinions. Thanks in advance. ... Not necessarily, if you are using the same amount of RNA at the beginning. But if you need to quantify cDNA, what are you going to use as the blank?",
+      "Procotol describing RNA extraction from dissected human tissue followed by reverse transcription to cDNA, PCR for detection of TMSB4X and separation of PCR products by agarose gel."
+    ],
+    "title": "Is it required to quantify cDNA concentration before going for ...",
+    "url": "https://www.researchgate.net/post/Is_it_required_to_quantify_cDNA_concentration_before_going_for_semi-quantitative_PCR_of_any_particular_gene"
+  },
+  {
+    "description": "Learn about the process of cDNA Synthesis, the generation of complementary DNA (cDNA) from an RNA template by reverse transcription.",
+    "favicon_url": "https://you.com/favicon?domain=www.neb.com&size=128",
+    "snippets": [
+      "Reverse transcriptases (RTs) use an RNA template and a primer complementary to the 3\u2032 end of the RNA to direct the synthesis of the first strand cDNA, which can be used directly as a template for the Polymerase Chain Reaction (PCR).",
+      "This combination of reverse transcription and PCR (RT-PCR) allows the detection of low abundance RNAs in a sample, and production of the corresponding cDNA, thereby facilitating the cloning of low copy genes. Alternatively, the first-strand cDNA can be made double-stranded using DNA Polymerase I and DNA Ligase.",
+      "Avian Myeloblastosis Virus (AMV) Reverse Transcriptase and Moloney Murine Leukemia Virus (M-MuLV, MMLV) Reverse Transcriptase are RTs that are commonly used in molecular biology workflows. ProtoScript\u00ae II Reverse Transcriptase is a recombinant M-MuLV reverse transcriptase with reduced RNase H activity and increased thermostability. It can be used to synthesize first strand cDNA at higher temperatures than the wild-type M-MuLV.",
+      "The use of the more thermostable RTs, where reactions are performed at higher temperatures, may be helpful for reverse transcription of RNA that containing secondary structure. For help comparing the RTs and cDNA Synthesis reagents available, view our RT/cDNA Synthesis selection chart."
+    ],
+    "title": "RT-PCR & cDNA Synthesis | NEB",
+    "url": "https://www.neb.com/en-us/applications/dna-amplification-pcr-and-qpcr/rt-pcr-and-cdna-synthesis"
+  },
+  {
+    "description": "The fastest and simplest protocol for full-length cDNA - Offering highest yield - Higher yields than traditional cDNA synthesis - Splice variants & fusion transcripts - Compatible with R9.4.1 flow cells For Research Use Only __This is a Legacy product__ This kit is soon to be discontinued and ...",
+    "favicon_url": "https://you.com/favicon?domain=nanoporetech.com&size=128",
+    "snippets": [
+      "The fastest and simplest protocol for full-length cDNA - Offering highest yield - Higher yields than traditional cDNA synthesis - Splice variants & fusion transcripts - Compatible with R9.4.1 flow cells For Research Use Only __This is a Legacy product__ This kit is soon to be discontinued and we recommend all customers to upgrade to the latest chemistry for their relevant kit which is available on the Store.",
+      "Remove and retain the eluate which contains the cDNA library in a clean 1.5 ml Eppendorf DNA LoBind tube",
+      "This protocol describes how to carry out sequencing of cDNA using a strand-switching method and the cDNA-PCR Sequencing Kit (SQK-PCS111). During the strand-switching step, a UMI is incorporated, before the double-stranded cDNA is amplified by PCR using primers containing 5' tags.",
+      "The RNA Control Expansion (EXP-RCS001) provides users with RNA Control Sample (RCS) to replace their sample input when performing a control experiment for troubleshooting purposes in the cDNA-PCR Sequencing (SQK-PCS111) and the PCR-cDNA Barcoding Kit (SQK-PCB111.24)."
+    ],
+    "title": "cDNA-PCR Sequencing (SQK-PCS111)",
+    "url": "https://nanoporetech.com/document/pcr-cdna-sequencing-sqk-pcs111"
+  },
+  {
+    "description": "The cDNA synthesis and amplification protocol contains two steps. In the first step, cDNA is synthesized using an RT primer that contains an adaptor of known sequence at the 5\u2032 end",
+    "favicon_url": "https://you.com/favicon?domain=www.neb.com&size=128",
+    "snippets": [
+      "Home Protocols cDNA Synthesis and Amplification Protocol using the Template Switching RT Enzyme Mix (NEB #M0466)"
+    ],
+    "title": "cDNA Synthesis and Amplification Protocol using the Template ...",
+    "url": "https://www.neb.com/en/protocols/2019/05/09/cdna-synthesis-and-amplification-protocol-using-the-template-switching-rt-enzyme-mix-neb-m0466"
+  },
+  {
+    "description": "Consider RNA purity, reverse transcriptase choice, RNA primers used, reaction components, and reaction conditions for optimal reverse transcription reaction setup.",
+    "favicon_url": "https://you.com/favicon?domain=www.thermofisher.com&size=128",
+    "snippets": [
+      "Zhang J, Byrne CD (1999) Differential priming of RNA templates during cDNA synthesis markedly affects both accuracy and reproducibility of quantitative competitive reverse-transcriptase PCR. Biochem J 337 (Pt 2):231\u2013241. Chen C, Ridzon DA, Broomer AJ et al. (2005) Real-time quantification of microRNAs by stem-loop RT-PCR.",
+      "Gubler U, Hoffman BJ (1983) A simple and very efficient method for generating cDNA libraries. Gene 25(2-3):263\u2013269. ... Reverse transcription education PCR education Real-Time PCR (qPCR) learning center Cloning education Microarrays and RNA sequencing education RNA/DNA quantification",
+      "Increasing the concentration of random hexamers in reverse transcription reactions improves cDNA yield but results in shorter cDNA fragments due to increased binding at multiple sites on the same template (Figure 4). Moreover, use of random hexamer primers only may not be ideal for some RT-PCR applications. For instance, overestimation of mRNA copy number is one concern [3]. A mixture of oligo(dT) and random RNA primers is often used in two-step RT-PCR to achieve the benefits of each primer type.",
+      "DNase I is commonly added to the isolated RNA to eliminate gDNA. DNase I must be removed completely prior to RT-PCR, since any residual enzyme would degrade single-stranded DNA, including primers and synthesized cDNA."
+    ],
+    "title": "Reverse Transcription Reaction Setup | Thermo Fisher Scientific - US",
+    "url": "https://www.thermofisher.com/us/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/rt-education/reverse-transcription-setup.html"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.fda.gov&size=128",
+    "snippets": [],
+    "title": "Guidelines for the Validation of Analytical Methods Using ...",
+    "url": "https://www.fda.gov/media/121751/download"
+  },
+  {
+    "description": "I am fairly new to Real Time PCR and have some questions regarding the protocol. Question 1 - When should input RNA and/or cDNA be normalized? I was told that one should normalize the RNA...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Read 21 answers by scientists with 2 recommendations from their colleagues to the question asked by Aaron Owji on Aug 10, 2013",
+      "My problem with using this method to quantify is that 1). nanodrop is extremely variable and 2). I don't believe 100% RT efficiency ever happens... While I am using a validated endogenous control (18S) to normalize Ct values, I believe there is too much variability in cDNA concentration to give accurate results. One thought I have is to amplify my cDNA by PCR, purifying the PCR products (QIAGEN PCR Cleanup) and quantifying the purified product using PICO Green for double stranded DNA.",
+      "I was told that one should normalize the RNA concentration prior to making cDNA, and then ALSO, normalize the cDNA concentrations prior to performing Real Time PCR. We use Nanodropper to read OD and get nucleotide concentrations, but is the ND accurate enough? The Reverse transcriptase master mix contains high concentration of dNTP's and primers, so are these readings of cDNA to be trusted?",
+      "Using a representative mixture of samples as the standard curve material should show you what you are dealing with for each target, and once that is empirically viewed, one then chooses a singular point within the good proven range at which to assess each target in each sample against the backdrop of the standard curve constructed over an appropriate dynamic dilution range relevant to the target being assessed."
+    ],
+    "title": "Whether to quantify cDNA prior to Real Time PCR, and different ...",
+    "url": "https://www.researchgate.net/post/Whether_to_quantify_cDNA_prior_to_Real_Time_PCR_and_different_dCt_values_on_standard_curve2"
+  },
+  {
+    "description": "Get insights into PCR components and key considerations for achieving optimal results. Master your experiments today!",
+    "favicon_url": "https://you.com/favicon?domain=www.thermofisher.com&size=128",
+    "snippets": [
+      "A PCR template for replication can be of any DNA source, such as genomic DNA (gDNA), complementary DNA (cDNA), and plasmid DNA. Nevertheless, the composition or complexity of the DNA contributes to optimal input amounts for PCR amplification. For example, 0.1\u20131 ng of plasmid DNA is sufficient, while 5\u201350 ng of gDNA may be required as a starting amount in a 50 \u00b5L PCR.",
+      "Besides gDNA, cDNA, and plasmid DNA, it is also possible to re-amplify PCR products to obtain a higher yield of the target. Although unpurified products may be directly used as a template, carryover reaction components such as primers, dNTPs, salts, and by-products can adversely affect amplification.",
+      "To avoid such inhibition, a general recommendation is to dilute the reaction in water prior to the next round of PCR. For best results, PCR amplicons should be purified before re-amplification. With optimized PCR purification kits, the PCR clean-up procedure can be performed in as little as 5 minutes.",
+      "Mg2+ ions are commonly delivered as a MgCl2 solution to the PCR mixture. However, some polymerases such as Pfu DNA polymerase prefer MgSO4, since sulfate helps ensure more robust and reproducible performance under certain circumstances."
+    ],
+    "title": "PCR Setup\u2014Six Critical Components to Consider | Thermo Fisher ...",
+    "url": "https://www.thermofisher.com/us/en/home/life-science/cloning/cloning-learning-center/invitrogen-school-of-molecular-biology/pcr-education/pcr-reagents-enzymes/pcr-component-considerations.html"
+  },
+  {
+    "description": "Learn about the process of cDNA Synthesis, the generation of complementary DNA (cDNA) from an RNA template by reverse transcription.",
+    "favicon_url": "https://you.com/favicon?domain=www.neb.com&size=128",
+    "snippets": [
+      "This combination of reverse transcription and PCR (RT-PCR) allows the detection of low abundance RNAs in a sample, and production of the corresponding cDNA, thereby facilitating the cloning of low copy genes. Alternatively, the first-strand cDNA can be made double-stranded using DNA Polymerase I and DNA Ligase.",
+      "WarmStart RTx Reverse Transcriptase is a unique, in silico-designed RNA-directed DNA polymerase coupled with a reversibly-bound aptamer that inhibits enzyme activity below 40\u00b0C. This enzyme can synthesize a complementary DNA strand initiating from a primer using RNA (cDNA synthesis) or single-stranded DNA as a template. RTx is a robust enzyme for RNA detection in amplification reactions and is particularly well suited for use in LAMP (loop-mediated isothermal amplification). The Template Switching RT Enzyme Mix features an RT that adds a few non-templated nucleotides after it reaches the 5\u2032 end of the RNA template, enabling efficient template switching activity in a RT reaction.",
+      "cDNA Synthesis describes the generation of complementary DNA (cDNA) from an RNA template by reverse transcription. Reverse transcriptases (RTs) use an RNA template and a primer complementary to the RNA to direct the synthesis of the first strand cDNA, which can be used directly as a template for the Polymerase Chain Reaction (PCR).",
+      "Home Applications DNA Amplification, PCR and qPCR RT-PCR & cDNA Synthesis cDNA Synthesis"
+    ],
+    "title": "cDNA Synthesis | NEB",
+    "url": "https://www.neb.com/en-us/applications/dna-amplification-pcr-and-qpcr/rt-pcr-and-cdna-synthesis/cdna-synthesis"
+  },
+  {
+    "description": "From portable to high-throughput benchtop devices, real-time nanopore sensing is a new generation of technology uncovering new biology across multiple sectors \u00b7 Find all the documentation needed for your nanopore experiments, including protocols and device manuals",
+    "favicon_url": "https://you.com/favicon?domain=store.nanoporetech.com&size=128",
+    "snippets": [],
+    "title": "Nanopore store: cDNA-PCR Sequencing Kit V14",
+    "url": "https://store.nanoporetech.com/cdna-pcr-sequencing-kit-v14.html"
+  },
+  {
+    "description": "The fastest and simplest protocol for targeted cDNA sequencing - Higher yields than traditional cDNA synthesis - Splice variants and fusion transcripts - Compatible with R9.4.1 flow cells For Research Use Only __This is a Legacy product__ This kit is soon to be discontinued and we recommend ...",
+    "favicon_url": "https://you.com/favicon?domain=nanoporetech.com&size=128",
+    "snippets": [
+      "The fastest and simplest protocol for targeted cDNA sequencing - Higher yields than traditional cDNA synthesis - Splice variants and fusion transcripts - Compatible with R9.4.1 flow cells For Research Use Only __This is a Legacy product__ This kit is soon to be discontinued and we recommend all customers to upgrade to the latest chemistry for their relevant kit which is available on the Store.",
+      "Remove and retain the eluate which contains the cDNA library in a clean 1.5 ml Eppendorf DNA LoBind tube",
+      "This protocol outlines a targeted cDNA sequencing method using the cDNA-PCR Sequencing Kit (SQK-PCS111) and a user-defined sequence-specific primer. You can swap out the cDNA RT Adapter (CRTA) and design your own primer to target a specific RNA sequence during reverse transcription.",
+      "During the strand-switching step, a UMI is incorporated before the double-stranded cDNA is amplified by PCR using primers containing rapid attachment chemistry."
+    ],
+    "title": "cDNA-PCR sequencing - sequence-specific (SQK-PCS111)",
+    "url": "https://nanoporetech.com/document/cdna-pcr-sequencing-sequence-specific-sqk-pcs111"
+  },
+  {
+    "description": "5\u00b4 RACE System for Rapid Amplification of cDNA Ends",
+    "favicon_url": "https://you.com/favicon?domain=www.thermofisher.com&size=128",
+    "snippets": [
+      "Rapid Amplification of cDNA Ends (RACE) is a procedure for amplification of nucleic acid sequences from a messenger RNA template between a defined internal site and unknown sequences at either the 3' or the 5' -end of the mRNA (1). This methodology of amplification with single-sided specificity has been described by others as \u201cone-sided\u201d PCR (2) or \u201canchored\u201d PCR (3). In general, PCR amplification of relatively few target molecules in a complex mixture requires two sequence-specific primers that flank the region of sequence to be amplified (4,5).",
+      "In the original protocol, tailed cDNA is then amplified by PCR using a mixture of three primers: a nested gene-specific primer (GSP2), which anneals 3' to GSP1; and a combination of a complementary homopolymer-containing anchor primer and corresponding adapter primer which permit amplification from the homopolymeric tail.",
+      "The UAP, the 5' RACE Anchor Primer or any dUMP-containing primer should not be used to prime DNA synthesis with any archaeobacterial polymerase (Pfu DNA Polymerase, Pwo DNA Polymerase, etc.), including long PCR enzyme mixtures (28,29), because dUMP inhibits these polymerase activities. First strand cDNA synthesis from total RNA The capture of mRNA 5'-ends is dependent on complete cDNA synthesis.",
+      "TdT does not use RNA as a substrate (32); however, RNA may inhibit tailing and subsequent PCR of the cDNA (33). Use of the RNase Mix upon completion of first strand synthesis is crucial to the efficiency of the tailing reaction because TdT exhibits a marked preference for single-stranded substrates (34,35)."
+    ],
+    "title": "5\u00b4 RACE System for Rapid Amplification of cDNA Ends | Thermo Fisher ...",
+    "url": "https://www.thermofisher.com/us/en/home/references/protocols/nucleic-acid-amplification-and-expression-profiling/cdna-protocol/5-race-system-for-rapid-amplification-of-cdna-ends.html"
+  },
+  {
+    "description": "Symbols This is a point where you can safely stop the protocol and store the samples prior to proceeding to the next step in the protocol",
+    "favicon_url": "https://you.com/favicon?domain=www.neb.com&size=128",
+    "snippets": [
+      "For the various inputs listed above, the recommended PCR cycles will typically result in cDNA yields between 5\u201315 ng. We recommend quantifying the cDNA after the cleanup (Section 1.6) before proceeding to the library preparation (Sections 1.8\u20131.13). The total RNA used for the above recommendations is Universal Human Reference (UHR) RNA.",
+      "Mix well by pipetting up and down 10 times, or on a vortex mixer. Incubate for at least 2 minutes at room temperature. If necessary, quickly spin the sample to collect the liquid from the sides of the tube or plate wells before placing back on the magnetic stand. 1.6.20. Place the tube/plate on the magnetic stand. After 5 minutes (or when the solution is clear), transfer 30 \u00b5l to a new PCR tube.  Safe Stopping Point: Samples can be safely stored overnight at 4\u00b0C or \u201320\u00b0C. 1.7. Assess Amplified cDNA Quality and Quantity on a Bioanalyzer",
+      "Mix well by pipetting up and down 10 times, or on a vortex mixer. Incubate for at least 2 minutes at room temperature. If necessary, quickly spin the sample to collect the liquid from the sides of the tube or plate wells before placing back on the magnetic stand. 1.12.11. Place the tube/plate on the magnetic stand. After 5 minutes (or when the solution is clear), transfer 30 \u00b5l to a new PCR tube. Libraries can be stored at -20\u00b0C. 1.13. Assess Library Quality and Quantity on a Bioanalyzer",
+      "Note: If a peak ~80 bp (primers) or 128 bp (adaptor-dimer) is visible in the Bioanalyzer trace, bring up the sample volume (from Step 1.12.11.) to 50 \u00b5l with 0.1X TE Buffer and repeat the cleanup of PCR Reaction as described in Section 1.12. You may see adaptor-dimer when starting with inputs \u2264 1 ng. Figure 1.13.1: Example of final library size distribution on a Bioanalyzer. HeLa single cell cDNA was used in library preparation."
+    ],
+    "title": "Protocol for Cells: cDNA Synthesis, Amplification and Library ...",
+    "url": "https://www.neb.com/en/protocols/2018/04/25/protocol-for-cells-cdna-synthesis-amplification-and-library-generation-e6420"
+  },
+  {
+    "description": "cDNA synthesis is a process of producing complementary DNA (cDNA) by using an RNA template and reverse transcriptase enzyme. Discover more here.",
+    "favicon_url": "https://you.com/favicon?domain=www.excedr.com&size=128",
+    "snippets": [
+      "The cDNA synthesis is the first step in many in vitro life sciences and molecular biology lab workflows, such as gene cloning, qRT-PCR, creating cDNA libraries, RT-qPCR, and quantifying gene expression analysis using real-time PCR (or RT-PCR).",
+      "The synthesized cDNA products are used as a template to produce the second DNA strands using the PCR (Polymerase chain reaction) assays.",
+      "The combination of PCR and reverse transcription helps to detect the low abundance of RNA. Thus, the production of cDNA using such RNAs facilitates cloning the low copy genes.",
+      "However, cDNA can also be generated without using PCR. This is done by using DNA Polymerase I and DNA Ligase."
+    ],
+    "title": "cDNA Synthesis: Overview & Applications",
+    "url": "https://www.excedr.com/resources/cdna-synthesis-overview"
+  }
+]

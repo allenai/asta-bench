@@ -1,0 +1,274 @@
+[
+  {
+    "description": "In a 1984 paper he extended this to continuous activation functions. It became a standard model for the study of neural networks through statistical mechanics. Modern RNN networks are mainly based on two architectures: LSTM and BRNN. At the resurgence of neural networks in the 1980s, recurrent networks were studied again. They were sometimes called \"iterated nets\". Two early influential works were the Jordan network (1986) and the Elman ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "In a 1984 paper he extended this to continuous activation functions. It became a standard model for the study of neural networks through statistical mechanics. Modern RNN networks are mainly based on two architectures: LSTM and BRNN. At the resurgence of neural networks in the 1980s, recurrent networks were studied again. They were sometimes called \"iterated nets\". Two early influential works were the Jordan network (1986) and the Elman network (1990), which applied RNN to study cognitive psychology.",
+      "It requires stationary inputs and is thus not a general RNN, as it does not process sequences of patterns. However, it guarantees that it will converge. If the connections are trained using Hebbian learning, then the Hopfield network can perform as robust content-addressable memory, resistant to connection alteration. An Elman network is a three-layer network (arranged horizontally as x, y, and z in the illustration) with the addition of a set of context units (u in the illustration).",
+      "Later, in Principles of Neurodynamics (1961), he described \"closed-loop cross-coupled\" and \"back-coupled\" perceptron networks, and made theoretical and experimental studies for Hebbian learning in these networks, and noted that a fully cross-coupled perceptron network is equivalent to an infinitely deep feedforward network. Similar networks were published by Kaoru Nakano in 1971,Shun'ichi Amari in 1972, and William A. Little in 1974, who was acknowledged by Hopfield in his 1982 paper. Another origin of RNN was statistical mechanics.",
+      "The idea of encoder-decoder sequence transduction had been developed in the early 2010s. The papers most commonly cited as the originators that produced seq2seq are two papers from 2014. A seq2seq architecture employs two RNN, typically LSTM, an \"encoder\" and a \"decoder\", for sequence transduction, such as machine translation.",
+      "The fixed back-connections save a copy of the previous values of the hidden units in the context units (since they propagate over the connections before the learning rule is applied). Thus the network can maintain a sort of state, allowing it to perform tasks such as sequence-prediction that are beyond the power of a standard multilayer perceptron. Jordan networks are similar to Elman networks."
+    ],
+    "title": "Recurrent neural network - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Recurrent_neural_network"
+  },
+  {
+    "description": "In the same paper, Elman showed that the internal (hidden) representations learned by the network grouped into meaningful categories, this is, semantically similar words group together when analyzed with hierarchical clustering. This was remarkable as demonstrated the utility of RNNs as a model ...",
+    "favicon_url": "https://you.com/favicon?domain=pabloinsente.github.io&size=128",
+    "snippets": [
+      "In the same paper, Elman showed that the internal (hidden) representations learned by the network grouped into meaningful categories, this is, semantically similar words group together when analyzed with hierarchical clustering. This was remarkable as demonstrated the utility of RNNs as a model of cognition in sequence-based problems.",
+      "In addition to vanishing and exploding gradients, we have the fact that the forward computation is slow, as RNNs can\u2019t compute in parallel: to preserve the time-dependencies through the layers, each layer has to be computed sequentially, which naturally takes more time. Elman networks proved to be effective at solving relatively simple problems, but as the sequences scaled in size and complexity, this type of network struggle.",
+      "There are two mathematically complex issues with RNNs: (1) computing hidden-states, and (2) backpropagation. The rest are common operations found in multilayer-perceptrons. LSTMs and its many variants are the facto standards when modeling any kind of sequential problem. Elman networks can be seen as a simplified version of an LSTM, so I\u2019ll focus my attention on LSTMs for the most part.",
+      "Note: we call it backpropagation through time because of the sequential time-dependent structure of RNNs. Recall that each layer represents a time-step, and forward propagation happens in sequence, one layer computed after the other. Hence, when we backpropagate, we do the same but backward (i.e., \u201cthrough time\u201d). ... I reviewed backpropagation for a simple multilayer perceptron here. Nevertheless, I\u2019ll sketch BPTT for the simplest case as shown in Figure 7, this is, with a generic non-linear hidden-layer similar to Elman network without \u201ccontext units\u201d (some like to call it \u201cvanilla\u201d RNN, which I avoid because I believe is derogatory against vanilla!)."
+    ],
+    "title": "The Recurrent Neural Network - Theory and Implementation of the ...",
+    "url": "https://pabloinsente.github.io/the-recurrent-net"
+  },
+  {
+    "description": "The Simple Recurrent Network (SRN) was conceived and first used by Jeff Elman, and was first published in a paper entitled Finding structure in time (Elman, 1990). The paper was ground-breaking for many cognitive scientists and psycholinguists, since it was the first to completely break away ...",
+    "favicon_url": "https://you.com/favicon?domain=web.stanford.edu&size=128",
+    "snippets": [
+      "The Simple Recurrent Network (SRN) was conceived and first used by Jeff Elman, and was first published in a paper entitled Finding structure in time (Elman, 1990). The paper was ground-breaking for many cognitive scientists and psycholinguists, since it was the first to completely break away from a prior commitment to specific linguistic units (e.g.",
+      "The first of these (Elman, 1991) explored the learning of sentences with embedded clauses, illustrating that this was possible in this simple network architecture, even though the network did not rely on the computational machinery (an explicitly recursive computational structure, including the ability to \u2018call\u2019 a computational process from within itself) usually thought to be required to deal with imbeddings. A subsequent and highly influential paper (Elman, 1993) reported that success in learning complex embedded structures depended on starting small \u2013 either starting with simple sentences, and gradually increasing the number of complex ones, or limiting the network\u2019s ability to exploit context over long sequences by clearing the context layer after every third element of the training sequence.",
+      "Elman continued his work on SRN\u2019s through a series of additional important and interesting papers.",
+      "In Elman\u2019s subsequent work he stepped back a little from the raw-stimulus approach used in this initial unpublished simulation, but he retained the fundamental commitment to the notion that the real structure is not in the symbols we as researchers use but in the input stream itself."
+    ],
+    "title": "7 The Simple Recurrent Network: A Simple Model that Captures the ...",
+    "url": "http://web.stanford.edu/group/pdplab/pdphandbook/handbookch8.html"
+  },
+  {
+    "description": "What is the Elman neural network?Elman Neural Network is a recurrent neural network (RNN) designed to capture and store contextual information in a hidden l",
+    "favicon_url": "https://you.com/favicon?domain=spotintelligence.com&size=128",
+    "snippets": [
+      "Elman Neural Network is a recurrent neural network (RNN) designed to capture and store contextual information in a hidden layer. Jeff Elman introduced it in 1990. It has three layers: an input layer, a hidden layer, and an output layer. The hidden layer is connected to the input and output layers.",
+      "The hidden layer stores information about the context by sending the activation values back to itself over several steps. This allows the network to maintain information about the previous inputs over time, enabling it to process data sequences such as time series or natural language. ... Speech recognition is a common application of Elman RNNs.",
+      "Pattern recognition: Elman RNNs have been used to recognise patterns in sequential data, such as handwritten characters and gestures, and to detect anomalies in time series data. These are just a few examples of the many applications of Elman RNNs.",
+      "Elman RNNs can be used for a variety of NLP tasks, such as: Sentiment Analysis: The network can learn to predict the sentiment of a sentence based on its words and phrases."
+    ],
+    "title": "Understanding Elman RNN \u2014 Uniqueness & How To Implement In Python ...",
+    "url": "https://spotintelligence.com/2023/02/01/elman-rnn/"
+  },
+  {
+    "description": "Please note that I am taking about RNN before LSTM and GRU. They are out of comparison. ... The architectures in your second and third pictures are identical because the link $I$ from the hidden units to the context units in the Elman's network is not trainable. It is always equal to 1. In his paper ...",
+    "favicon_url": "https://you.com/favicon?domain=datascience.stackexchange.com&size=128",
+    "snippets": [
+      "Please note that I am taking about RNN before LSTM and GRU. They are out of comparison. ... The architectures in your second and third pictures are identical because the link $I$ from the hidden units to the context units in the Elman's network is not trainable. It is always equal to 1. In his paper [1], Elman first provides the Jordan's architecture, then introduces his own network but does not discuss why his one is better.",
+      "In the Jordan's network, the output of the whole network directly influences the hidden layer's input, so the learned representation is split between the hidden layer and the output layer. Elman's network allows more separation of features by levels of abstraction. Elman spends most of his paper trying to understand the features his neurons have learned even for those tasks where his network does not perform well.",
+      "As far as I know for history, the Jordan network was proposed first in 1986 as a form of RNN with this diagram: Actually, this is the solution that makes sense when thinking about sequence data that the current output is an input in the next time (with some weight and activation as shown in figure). However, after this in 1990, Elman network was proposed with feeding back the hidden state not the output like this?",
+      "Elman, J.L. (1990), Finding Structure in Time. Cognitive Science, 14: 179-211. doi:10.1207/s15516709cog1402_1 ... Find the answer to your question by asking. Ask question ... See similar questions with these tags. ... How Can We Bring More Fun to the Stack Ecosystem? Community Ideas Welcome! Two New Chat Rooms Experiment Geared Towards New Users \u00b7 5 How/What to initialize the hidden states in RNN sequence-to-sequence models?"
+    ],
+    "title": "Difference between Jordan, Elman and normal RNN - Data Science ...",
+    "url": "https://datascience.stackexchange.com/questions/82416/difference-between-jordan-elman-and-normal-rnn"
+  },
+  {
+    "description": "However, LSTM cells and its variants like gated recurrent units (GRU), simplified LSTMs (SLSTM) have complicated structure and are computationally expensive compared to the simple recurrent architecture like Elman RNN. In this paper, we explore deep Elman RNNs for SPSS and compare their ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "However, LSTM cells and its variants like gated recurrent units (GRU), simplified LSTMs (SLSTM) have complicated structure and are computationally expensive compared to the simple recurrent architecture like Elman RNN. In this paper, we explore deep Elman RNNs for SPSS and compare their effectiveness against deep gated RNNs.",
+      "To alleviate this discrepancy two novel ways of addressing this problem are proposed in the literature: (1) modifying the cost function to take trajectory error into consideration as opposed to the conventionally used framewise error as in Wu and King (2016a) and Fan et al. (2015) or (2) using RNNs. We note here that although RNNs indeed predict temporally continuous parameter sequence, applying MLPG is still beneficial (this observation was made in Zen and Sak (2015)). In this paper, we propose to use deep Elman RNNs (ERNN) for SPSS.",
+      "Specifically, we perform experiments to show that (1) Deep Elman RNNs are better suited for acoustic modeling in SPSS when compared to DNNs and perform competitively to deep SLSTMs, GRUs and LSTMs, (2) Context representation learning using Elman RNNs improves neural network acoustic models for SPSS, and (3) Elman RNN based duration model is better than the DNN based counterpart.",
+      "Owing to the success of deep learning techniques in automatic speech recognition, deep neural networks (DNNs) have been used as acoustic models for st\u2026"
+    ],
+    "title": "Deep Elman recurrent neural networks for statistical parametric ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167639316303818"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=core.ac.uk&size=128",
+    "snippets": [],
+    "title": "MLP and Elman Recurrent Neural Network Modelling for ...",
+    "url": "https://core.ac.uk/download/pdf/300382399.pdf"
+  },
+  {
+    "description": "Heart failure (HF) is one of the most prevalent life-threatening cardiovascular diseases in which 6.5 million people are suffering in the USA and more than 23 million worldwide. Mechanical circulatory support of HF patients can be achieved by implanting a left ventricular assist device (LVAD) ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Heart failure (HF) is one of the most prevalent life-threatening cardiovascular diseases in which 6.5 million people are suffering in the USA and more than 23 million worldwide. Mechanical circulatory support of HF patients can be achieved by implanting a left ventricular assist device (LVAD) into HF patients as a bridge to transplant, recovery or destination therapy and can be controlled by measurement of normal and abnormal pulmonary arterial wedge pressure (PAWP).",
+      "Abstract page for arXiv paper 2301.07710: Fully Elman Neural Network: A Novel Deep Recurrent Neural Network Optimized by an Improved Harris Hawks Algorithm for Classification of Pulmonary Arterial Wedge Pressure",
+      "View a PDF of the paper titled Fully Elman Neural Network: A Novel Deep Recurrent Neural Network Optimized by an Improved Harris Hawks Algorithm for Classification of Pulmonary Arterial Wedge Pressure, by Masoud Fetanat and 4 other authors View PDF",
+      "While there are no commercial long-term implantable pressure sensors to measure PAWP, real-time non-invasive estimation of abnormal and normal PAWP becomes vital. In this work, first an improved Harris Hawks optimizer algorithm called HHO+ is presented and tested on 24 unimodal and multimodal benchmark functions. Second, a novel fully Elman neural network (FENN) is proposed to improve the classification performance."
+    ],
+    "title": "[2301.07710] Fully Elman Neural Network: A Novel Deep Recurrent ...",
+    "url": "https://arxiv.org/abs/2301.07710"
+  },
+  {
+    "description": "Elman proposed a simple recurrent network (SRN), later known as the Elman Network in his paper- Finding Structure in Time (Elman, 1990). It was developed to address the need for temporal processing in connectionist models, especially for tasks involving sequences.",
+    "favicon_url": "https://you.com/favicon?domain=trendspider.com&size=128",
+    "snippets": [
+      "Further details are discussed in the section- RNN Architecture below.  ... From the early work on Hopfield and Elman networks to the development of LSTMs and GRUs, each advancement has contributed to the ability of RNNs to capture and utilize temporal dependencies.",
+      "A Recurrent Neural Network (RNN) is a type of artificial neural network where the output of certain layers is stored and fed back into the input. This mecha ...",
+      "The following are the components of the Elman Network:  \u00b7 Input Layer: This layer receives the initial data or sequence. For example, in a language task, the input might be a series of words or letters. Hidden Layer: This layer processes the input data and captures patterns. In the Elman Network, the hidden layer not only processes current inputs but also retains information from previous time steps.",
+      "This might be a prediction or classification relevant to the task at hand. Michael I. Jordan introduced another type of recurrent network, similar to Elman Networks, where the context units were fed from the output layer instead of the hidden layer (Jordan, 1986)."
+    ],
+    "title": "Recurrent Neural Networks (RNN) | TrendSpider Learning Center",
+    "url": "https://trendspider.com/learning-center/recurrent-neural-networks-rnn/"
+  },
+  {
+    "description": "Download scientific diagram | Elman style first-order RNN architecture (Elman 1990) from publication: Adapting modularity during learning in cooperative co-evolutionary recurrent neural networks | Adaptation during evolution has been an important focus of research in training neural networks.",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Through combination of both of the problem decomposition methods, the individual problem decomposition methods can share its strengths to solve the problem at hand better. In this paper, a recently proposed problem decomposition method known as Neuron-Synapse problem decomposition method is modified for Elman recurrent neural networks.",
+      "In this paper, we present a Bayesian optimisation framework for deep neuroevolution over a distributed architecture to provide computational efficiency in training. Our results demonstrate promising results for simple to deep neural network model such as convolutional neural network which motivates further applications. ... ... As an important subtopic of soft computing, neural networks, especially recurrent neural networks (RNNs), due to their power in addressing problems in a parallel fashion, have been widely utilized to solve various problems (Chandra 2014; Xu et al.",
+      "Background: Conventional methods of motor imagery brain computer interfaces (MI-BCIs) suffer from the limited number of samples and simplified features, so as to produce poor performances with spatial-frequency features and shallow classifiers. Methods: Alternatively, this paper applies a deep recurrent neural network (RNN) with a sliding window cropping strategy (SWCS) to signal classification of MI-BCIs.",
+      "The Elman architecture (Elman 1990) employs the context layer which makes a copy of the hidden layer outputs in the previous time steps as shown in Fig. 1. They are composed of an input layer, a context layer which provides state information, a hidden layer and an output layer as shown in Fig."
+    ],
+    "title": "Elman style first-order RNN architecture (Elman 1990) | Download ...",
+    "url": "https://www.researchgate.net/figure/Elman-style-first-order-RNN-architecture-Elman-1990_fig1_224895012"
+  },
+  {
+    "description": "Elman neural network (ENN) is one of recurrent neural networks (RNNs). Comparing to traditional neural networks, ENN has additional inputs from the hidden layer, which forms a new layer\u2013the context layer. So the standard back-propagation (BP) algorithm used in ENN is called Elman back-propagation ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Elman neural network (ENN) is one of recurrent neural networks (RNNs). Comparing to traditional neural networks, ENN has additional inputs from the hidden layer, which forms a new layer\u2013the context layer. So the standard back-propagation (BP) algorithm used in ENN is called Elman back-propagation algorithm (EBP).",
+      "The local RNN can be divided into two categories: a network with external time delay feedback and a network with internal delay feedback. RNN with external time delay feedback is called as Jordan neural network, which feeds the output at previous moment back to the hidden-layer current input. RNN with internal time delay feedback is presented by Elman [20], which is named Elman neural network.",
+      "Elman neural network (ENN) is one of recurrent neural networks (RNNs). Comparing to traditional neural networks, ENN has additional inputs from the hi\u2026",
+      "Furthermore, the contrast experiment is utilized to demonstrate the effectiveness of the proposed scheme from the aspects of convergence speed and consumption time with some popular schemes such as the original ENN, and PSO\u2013ENN which uses PSO algorithm to search the best structure of ENN. The experience shows that the modified method proposed in this paper works best. Elman neural network (ENN) is a subclass of neural networks (NNs), which are constituted by a large number of neuron cell models according by a certain rules."
+    ],
+    "title": "A modified Elman neural network with a new learning rate scheme ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231218300717"
+  },
+  {
+    "description": "I'm quiet new to TF's RNN and curious about meaning of outputs, and state. I'm following stanford's tensorflow tutorial but there seems no detailed explanation so I'm asking here. After testing, I think state is hidden state after sequence calculation and outputs is array of hidden states after each time steps. so I want to make it clear. outputs and state are just hidden state vectors so to fully implement Elman ...",
+    "favicon_url": "https://you.com/favicon?domain=stackoverflow.com&size=128",
+    "snippets": [
+      "I'm quiet new to TF's RNN and curious about meaning of outputs, and state. I'm following stanford's tensorflow tutorial but there seems no detailed explanation so I'm asking here. After testing, I think state is hidden state after sequence calculation and outputs is array of hidden states after each time steps. so I want to make it clear. outputs and state are just hidden state vectors so to fully implement Elman network, I have to make V matrix in the picture and do matrix multiplication again.",
+      "Explain the nomative-theory meaning of \u201call-things-considered\u201d to a high school philosophy student? ... My paper was submitted without my consent, accepted, then replaced by substantially different camera-ready version when I complained",
+      "Q: Is Tensorflow RNN implemented to ouput Elman Network's hidden state? cells = tf.contrib.rnn.BasicRNNCell(4) outputs, state = tf.nn.dynamic_rnn(cell=cells, etc...) I'm quiet new to TF's RNN and",
+      "Finally, we need to decide what we\u2019re going to output. This output will be based on our cell state, but will be a filtered version. First, we run a sigmoid layer which decides what parts of the cell state we\u2019re going to output."
+    ],
+    "title": "Is Tensorflow RNN implements Elman network fully? - Stack Overflow",
+    "url": "https://stackoverflow.com/questions/43839701/is-tensorflow-rnn-implements-elman-network-fully"
+  },
+  {
+    "description": "The Recurrent Neural Network (RNN) applications are developed and tested for both the simulated reactor data and the electric motor data. In a recent paper (\u015eeker et al., 2003) Elman and Jordan's RNN together with feed forward neural network was implemented for the identification of physical ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The Recurrent Neural Network (RNN) applications are developed and tested for both the simulated reactor data and the electric motor data. In a recent paper (\u015eeker et al., 2003) Elman and Jordan's RNN together with feed forward neural network was implemented for the identification of physical parameters of the HTTR, since Elman's RNN is a powerful network to extract the informative feature related to the dynamic system in its hidden layer.",
+      "In the first application, the study addresses the use of RNN for detecting anomalies introduced from the simulated power operation of a high-temperature gas cooled nuclear reactor. In the second, it is used to detect the motor bearing damage using a coherence function approach, which is defined between the motor current and vibration signals, for induction motors. Hence, the high performance of Elman's RNN was shown by means of two different applications.",
+      "This property of the Elman type RNN provides very important advantage, especially, in real time applications to follow the dynamical change in the considered system.",
+      "The purpose of this study is to show the capability of recurrent neural nets (RNN) for condition monitoring and diagnosis in nuclear power plant syste\u2026"
+    ],
+    "title": "Elman's recurrent neural network applications to condition monitoring ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0952197603001325"
+  },
+  {
+    "description": "This chapter presents an introduction to recurrent neural networks for readers familiar with artificial neural networks in general, and multi-layer perceptrons trained with gradient descent algorithms (back-propagation) in particular. A recurrent neural network (RNN)...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Part of the book series: Intelligent Systems Reference Library ((ISRL,volume 49)) ... This chapter presents an introduction to recurrent neural networks for readers familiar with artificial neural networks in general, and multi-layer perceptrons trained with gradient descent algorithms (back-propagation) in particular. A recurrent neural network (RNN) is an artificial neural network with internal loops.",
+      "Elman, J.L.: Distributed representations, simple recurrent networks and grammatical structure. Machine Learning 7, 195\u2013225 (1991) ... Fahlman, S.E., Lebiere, C.: The cascade-correlation learning architecture.",
+      "Elman, J.L.: Finding structure in time.",
+      "Shannon, C.E.: Communication in the presence of noise. Proc. Institute of Radio Engineers 37(1), 10\u201321 (1949); reprinted as classic paper in: Proc."
+    ],
+    "title": "Recurrent Neural Networks | SpringerLink",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-642-36657-4_2"
+  },
+  {
+    "description": "(Q&A) Elman and Jordan context values during training for neural network \u00b7 According to the first resource, the weights from hidden to context / context to hidden layers are not updated. From the second resource, it also set these updates to 0, which means it doesn't updates the weights. But from the third resource on Stackoverflow, the user claimed that \"The context neurons neuron values themselves ...",
+    "favicon_url": "https://you.com/favicon?domain=stackoverflow.com&size=128",
+    "snippets": [
+      "(Q&A) Elman and Jordan context values during training for neural network \u00b7 According to the first resource, the weights from hidden to context / context to hidden layers are not updated. From the second resource, it also set these updates to 0, which means it doesn't updates the weights. But from the third resource on Stackoverflow, the user claimed that \"The context neurons neuron values themselves are not updated as training progresses.",
+      "Find centralized, trusted content and collaborate around the technologies you use most. Learn more about Collectives ... Connect and share knowledge within a single location that is structured and easy to search. Learn more about Teams ... I've just started look into recurrent neural network. I found three sources of information on Elman's network(Elman 1991). (Example and code) http://mnemstudio.org/neural-networks-elman.htm \u00b7 (Paper) http://www.sysc.pdx.edu/classes/Werbos-Backpropagation through time.pdf",
+      "I've just started look into recurrent neural network. I found three sources of information on Elman's network(Elman 1991). (Example and code) http://mnemstudio.org/neural-networks-elman.htm (Paper)...",
+      "However, the weights from context layer back to hidden layer will get updated. How else would the network otherwise learn what to do with past values? If they would not change, what would be the right value to initialise them with?"
+    ],
+    "title": "machine learning - Recurrent Neural Network (Elman Network). Context ...",
+    "url": "https://stackoverflow.com/questions/19109746/recurrent-neural-network-elman-network-context-to-hidden-hidden-to-context"
+  },
+  {
+    "description": "This research proposed Elman Recurrent Neural Network (ERNN) to forecast the Mackey-Glass time series elements and experimental results show that this scheme outperforms other state-of-art studies. Forecasting is an important data analysis technique that aims to study historical data in order ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "This research proposed Elman Recurrent Neural Network (ERNN) to forecast the Mackey-Glass time series elements and experimental results show that this scheme outperforms other state-of-art studies. Forecasting is an important data analysis technique that aims to study historical data in order to explore and predict its future values.",
+      "To automate the electron beam welding process, the identification of its contributing parameters is a must, for which it is required to establish the input\u2013output correlations in both forward and\u2026 Expand ... Elman Recurrent Neural Network (ERNN) was used to predict active cases of Covid-19 and showed that MAPE value which is less than 10% indicates that ERNN has very good predictive ability.Expand",
+      "The current research aimed to apply the simplest recurrent neural network model, namely the Elman recurrent Neural network (ERNN) model, to the consumer price index (CPI) of education, recreation, and sports data in Yogyakarta, finding that the first model is more appropriate than the second one in testing data.Expand",
+      "This research proposed Elman Recurrent Neural Network (ERNN) to forecast the Mackey-Glass time series elements and experimental results show that this scheme outperforms other state-of-art studies.Expand"
+    ],
+    "title": "[PDF] Forecasting Using Elman Recurrent Neural Network | Semantic ...",
+    "url": "https://www.semanticscholar.org/paper/Forecasting-Using-Elman-Recurrent-Neural-Network-Krichene-Masmoudi/90013bb67dc9f00797a67948bf103ad85297dad3"
+  },
+  {
+    "description": "Renewable sources like biofuels have gained significant attention to meet the rising demands of energy supply. Biofuels find useful in several domains of energy generation such as electricity, power, or transportation. Due to the environmental benefits of biofuel, it has gained significant ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Renewable sources like biofuels have gained significant attention to meet the rising demands of energy supply. Biofuels find useful in several domains of energy generation such as electricity, power, or transportation. Due to the environmental benefits of biofuel, it has gained significant attention in the automotive fuel market.",
+      "At this stage, the ERNN model receives the input and predicts the actual production of biofuels. The ERNN has been simple RNN is established by Elman in 199023. Already known, are current network is a few benefits like consuming time series and non-linear forecast abilities, faster convergence, and further accurate mapping capability.",
+      "Scientific Reports - Design of optimal Elman Recurrent Neural Network based prediction approach for biofuel production",
+      "Another results analysis of the OERNN-BPP technique takes place interms of biofuel production cost for certain duration in Fig. 5. The figure portrayed that the OERNN-BPP technique has depicted effective performance with as light difference in the actual and predicted data. At the same time, the GWO based LSTM-RNN model has tried to demonstrate reasonable outcomes."
+    ],
+    "title": "Design of optimal Elman Recurrent Neural Network based prediction ...",
+    "url": "https://www.nature.com/articles/s41598-023-34764-x"
+  },
+  {
+    "description": "As of now, we only considered inputs that were fixed in size and matched the dimension of the matrices that made up our architecture (either in a fully connected MLP or in Conv NN). Let us relax that\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "As of now, we only considered inputs that were fixed in size and matched the dimension of the matrices that made up our architecture\u2026",
+      "generally speaking, we can think of this model as some generic predictor \u210eh that is constantly receiving inputs and constantly predicts outputs, or (unfolding) as a sequence of predictors, as the below figure describes. This model is known as the Elman network.",
+      "notice that every input xi\u200b and every output oi\u200b are of constant size, yet the number of such inputs and outputs is unknown and isn\u2019t necessarily constant. usually, we will look only at the output at the very end, and back to our Google Translate example, this is intuitively clear as a portion of a sentence may not have any meaning up until it is finished. ... One key feature of Elman\u2019s network model is that we have the freedom to play with the number of inputs/outputs.",
+      "for example, Google Translate receives its input as a sequence signal, as the translation of some sentences relies on the words that were previously inserted, and the sentence provided could be of any length."
+    ],
+    "title": "What is a Recurrent Neural Network \u2014 Elman Net (Part 1) | by ...",
+    "url": "https://medium.com/@hadarsharvit/what-is-a-recurrent-neural-network-elman-net-part-1-d9a70d8e0b95"
+  },
+  {
+    "description": "Elman's work was highly significant to our understanding of how languages are acquired and also, once acquired, how sentences are comprehended. Sentences in natural languages are composed of sequences of words that are organized in phrases and hierarchical structures. The Elman network provides ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Elman's work was highly significant to our understanding of how languages are acquired and also, once acquired, how sentences are comprehended. Sentences in natural languages are composed of sequences of words that are organized in phrases and hierarchical structures. The Elman network provides an important hypothesis for how such structures might be learned and processed.",
+      "Elman nets are used in a number of fields, including cognitive science, psychology, economics and physics, among many others. In 1996, he co-authored (with Annette Karmiloff-Smith, Elizabeth Bates, Mark H. Johnson, Domenico Parisi, and Kim Plunkett), the book Rethinking Innateness, which argues against a strong nativist (innate) view of development.",
+      "Elman was an Inaugural Fellow of the Cognitive Science Society, and also was its president, from 1999 to 2000. He was awarded an honorary doctorate from the New Bulgarian University, and was the 2007 recipient of the David E. Rumelhart Prize for Theoretical Contributions to Cognitive Science.",
+      "He was founding co-director of the Kavli Institute for Brain and Mind at UC San Diego, and held the Chancellor's Associates Endowed Chair. He was Dean of Social Sciences at UCSD from 2008 until June 2014. Elman was also a founding co-director of the UCSD Hal\u0131c\u0131o\u011flu Data Science Institute, announced March 1, 2018.",
+      "Elman's letter suggested that Biernacki's criticism of the UCSD colleague constituted \"harassment\" and threatened Biernacki with censure, salary reduction or dismissal if he tried to publish his work. In addition, the letter threatened Biernacki with termination were he to request data from the National Science Foundation."
+    ],
+    "title": "Jeffrey Elman - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Jeffrey_Elman"
+  },
+  {
+    "description": "Time underlies many interesting human behaviors. Thus, the question of how to represent time in connectionist models is very important. One approach is to represent time implicitly by its effects o...",
+    "favicon_url": "https://you.com/favicon?domain=onlinelibrary.wiley.com&size=128",
+    "snippets": [
+      "Time underlies many interesting human behaviors. Thus, the question of how to represent time in connectionist models is very important. One approach is to represent time implicitly by its effects on ...",
+      "Jeffrey L. Elman \u00b7 University of California, San DiegoCenter for Research in Language, C-008, University of California, La Jolla, CA 92093Search for more papers by this author ... Time underlies many interesting human behaviors. Thus, the question of how to represent time in connectionist models is very important.",
+      "Aspects of the theory of syntax. Cambridge , MA : MIT Press. ... Cottrell, G.W., Munro, P.W., & Zipser, D. (1987). Image compression by back propagation: A demonstration of extensional programming. In N.E. Sharkey (Ed.), Advances in cognitive science (Vol. 2). Chichester , England : Ellis Horwood. ... Elman, J.L.",
+      "Elman, J.L., & Zipser, D. (1988). Discovering the hidden structure of speech."
+    ],
+    "title": "Finding Structure in Time - Elman - 1990 - Cognitive Science - ...",
+    "url": "https://onlinelibrary.wiley.com/doi/abs/10.1207/s15516709cog1402_1"
+  },
+  {
+    "description": "The Elman network is a well-known recurrent neural network. In this paper, an overview of the structure of the Elman neural network and its modified form are presented. Both have trainable feed-forward connections. Then, by comparing with the discrete PID control algorithm, their dynamic ...",
+    "favicon_url": "https://you.com/favicon?domain=ieeexplore.ieee.org&size=128",
+    "snippets": [
+      "The Elman network is a well-known recurrent neural network. In this paper, an overview of the structure of the Elman neural network and its modified form are presented. Both have trainable feed-forward connections. Then, by comparing with the discrete PID control algorithm, their dynamic characteristics are fully discussed using the z transform function.",
+      "A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity. \u00a9 Copyright 2025 IEEE - All rights reserved.",
+      "Use of this web site signifies your agreement to the terms and conditions."
+    ],
+    "title": "Dynamic properties of Elman and modified Elman neural network | ...",
+    "url": "https://ieeexplore.ieee.org/document/1174413/"
+  },
+  {
+    "description": "Elman initially trained the simple recurrent network with the standard BP learning algorithm, by which mistakes are determined, and masses or weights could be changed on every stage. The conventional BP is not as efficient as the learning BP algorithm, where an error sign can be spread over time, as shown in the work of (Ilin, Kozma, & Werbos, 2008). Furthermore, some RNN ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Elman initially trained the simple recurrent network with the standard BP learning algorithm, by which mistakes are determined, and masses or weights could be changed on every stage. The conventional BP is not as efficient as the learning BP algorithm, where an error sign can be spread over time, as shown in the work of (Ilin, Kozma, & Werbos, 2008). Furthermore, some RNN dimensions make many of the algorithms less efficient or use a massive quantity of time to organize a medium-size network.",
+      "There have been several kinds of research on dynamic system modeling with an RNN to address the shortcomings of this algorithm. The potential of dynamic modeling method formulates a type of NN that is greater than traditional feedforward NN since the approach yields a function of both the current inputs and their internal state (Seera et al., 2017, Cali and Sharma, 2019). The work of (Cheng & Shen, 2010) has suggested an improved Elman RNN for the calculation of radio transmission losses, using a three-dimensional parabolic equation approach to minimize calculation time and increase network approximation efficiency.",
+      "The PCA efficiently speeds up the ERNN's input parameters and avoids local minima problems. The study uses the suggested LM algorithm for the 2009\u20132011 annual peak loading of Java, Madura, and Bali interconnections based on the RNN of Elman and Jordan (Tanoto, Ongsakul, & Marpaung, 2011).",
+      "The findings of the experiments show that the suggested algorithm has successfully prohibited the training mechanism from sticking to local minima and also increase the efficiency relative to both the BP and PSO training algorithms. A Biogeography-Based Optimization (BBO) learning algorithm is integrated with the ERNN to form a BBO Trained Elman RNN model."
+    ],
+    "title": "Integrating Elman recurrent neural network with particle swarm ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417421008551"
+  },
+  {
+    "description": "RNNs have sequences as inputs in the training phase and have memory elements which are basically the output of the hidden layers. These so-called memory elements serve as the input during the next training step. Elman Network is the most basic three-layer neural network with feedback that serves ...",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "RNNs have sequences as inputs in the training phase and have memory elements which are basically the output of the hidden layers. These so-called memory elements serve as the input during the next training step. Elman Network is the most basic three-layer neural network with feedback that serves as memory inputs.",
+      "Output of RNN. Source Udacity. [5] The reason why unfolded models are commonly used is we can easily visualize the same for better understanding. Let us look at the folded and unfolded Elman Network.",
+      "In this article, we will go over the architecture of RNNs, with just enough math by taking the example of Elman Network.",
+      "An introduction to what are Recurrent Neural Networks and how they work."
+    ],
+    "title": "Recurrent Neural Networks | Analytics Vidhya",
+    "url": "https://medium.com/analytics-vidhya/understanding-rnns-652b7d77500e"
+  }
+]

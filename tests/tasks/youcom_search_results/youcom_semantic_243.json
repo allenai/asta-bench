@@ -1,0 +1,271 @@
+[
+  {
+    "description": "Machine learning has profoundly influenced various aspects of our lives. However, privacy breaches have caused significant unease and concern among the general public. Preserving the privacy of sen...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Machine learning has profoundly influenced various aspects of our lives. However, privacy breaches have caused significant unease and concern among the general public. Preserving the privacy of sensitive data during the training and inference phases of ...",
+      "Safeguarding cryptographic keys. In Proc. of MARK, 313\u2013313. ... Fabian Boemer, Rosario Cammarota, Daniel Demmler, Thomas Schneider, and Hossein Yalame. 2020. MP2ML: A mixed-protocol machine learning framework for private inference. In Proc. of ARES, 1\u201310. ... Dan Bogdanov, Sven Laur, and Jan Willemson. 2008. Sharemind: A framework for fast privacy-preserving computations.",
+      "We also discuss the challenges in the field of crypto-based PPML, including aspects of security and privacy, efficiency, and availability and usability. Finally, we offer an outlook on future research directions, aiming to provide valuable insights for both scholars and practitioners.",
+      "In Proc. of CRYPTO, 94\u2013124. ... Bita Darvish Rouhani, M. Sadegh Riazi, and Farinaz Koushanfar. 2018. DeepSecure: Scalable provably-secure deep learning. In Proc. of DAC, 1\u20136. ... Wenqiang Ruan, Mingxin Xu, Wenjing Fnag, Li Wang, Lei Wang, and Weili Han. 2023. Private, efficient, and accurate: Protecting models trained by multi-party learning with differential privacy."
+    ],
+    "title": "Privacy-Preserving Machine Learning Based on Cryptography: A Survey ...",
+    "url": "https://dl.acm.org/doi/10.1145/3729234"
+  },
+  {
+    "description": "The wide adoption of Machine Learning to solve a large set of real-life problems came with the need to collect and process large volumes of data, some\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "He worked as a researcher on several areas, such as mathematical analysis of the security systems, genome sequencing, and bioinformatics. His main research interests include cryptology with a specific focus on design and analysis of symmetric encryption systems, lightweight and wireless security, bioinformatics, NGS data analysis and genomic privacy and authentication systems.",
+      "By offering a framework in which to discuss privacy and confidentiality risks for data owners and by identifying and assessing privacy-preserving countermeasures for machine learning, this work could facilitate the discussion about compliance with EU regulations and directives. We discuss current challenges and research questions that are still unsolved in the field.",
+      "Soumia Zohra El Mestari: Soumia received her Master's along with her engineering degrees from the Ecole Superieure d'informatique (Sidi Bel Abbes, Algeria), in 2020. Her research interests are in Machine Learning, Trust and Transparency in data-driven tools and Privacy-Preserving machine learning.",
+      "Heads the Interdisciplinary Research group in Sociotechnical Security (IRiSC). Lenzini has more than 15 years of experience in the design and analysis of security and private systems, a topic addressed using a toolkit of different research methods, formal and experimental."
+    ],
+    "title": "Preserving data privacy in machine learning systems - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0167404823005151"
+  },
+  {
+    "description": "PySyft aims to provide tools and ... privacy-preserving, and distributed ML. It does so by using advanced cryptographic techniques, such as SMC, HE, and FL. PySyft\u2019s main objective is to make PPML widely applicable and usable so that businesses are able to safeguard private information and adhere to privacy standards without sacrificing access to the advantages of AI and ML. TF-Encrypted is an open-source library for PPML based on TensorFlow [341]. Developed by researchers at the OpenMined ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "PySyft aims to provide tools and infrastructure for secure, privacy-preserving, and distributed ML. It does so by using advanced cryptographic techniques, such as SMC, HE, and FL. PySyft\u2019s main objective is to make PPML widely applicable and usable so that businesses are able to safeguard private information and adhere to privacy standards without sacrificing access to the advantages of AI and ML. TF-Encrypted is an open-source library for PPML based on TensorFlow [341]. Developed by researchers at the OpenMined community, TF-Encrypted enables secure computation on encrypted data, allowing multiple parties to collaborate on ML models without revealing their private data.",
+      "To address the issues, researchers have focused on privacy-preserving data mining, PPML in general, and recently, PPDL [60] in particular. In the following section, we review the studies in this field. ... This paper delves into the transformative role of machine learning (ML) techniques in revolutionizing the security of electric and flying vehicles (EnFVs). By exploring key domains such as predictive maintenance, cyberattack detection, and intelligent decision-making, the study uncovers pivotal insights that will shape the future of this technology.",
+      "Microsoft SEAL (Simple Encrypted Arithmetic Library) is an open-source library for HE developed by Microsoft Research [351]. HE is a cryptographic technique that allows computation to be performed directly on encrypted data without the need for decryption. SEAL provides a set of tools and APIs for implementing HE schemes, enabling users to perform privacy-preserving computations on encrypted data.",
+      "SEAL is widely used in various privacy-preserving applications, including secure ML and data analysis. HElib is an open-source library for HE developed by researchers at IBM Research [352]. It is a cryptographic technique that enables computation on encrypted data, allowing for privacy-preserving data analysis and ML."
+    ],
+    "title": "Privacy Preserving Machine Learning - an overview | ScienceDirect ...",
+    "url": "https://www.sciencedirect.com/topics/computer-science/privacy-preserving-machine-learning"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Privacy Preserving Machine Learning: Threats and Solutions",
+    "url": "https://arxiv.org/pdf/1804.11238"
+  },
+  {
+    "description": "Sections 7 and 8 focus on the possible solutions to preserve privacy in such a domain. Section 9 is devoted to the analysis of several application scenarios that benefit from Blockchain-enabled FL (such as Healthcare, Industrial IoT (IIoT), and the Internet of Vehicles). In Section 10, we explore various unresolved challenges and provide insights for potential areas of future research...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Therefore, integrating this strategy with Blockchain technology has been consolidated as a preferred choice to ensure the privacy and security of participants. This paper explores the research efforts carried out by the scientific community to define privacy solutions in scenarios adopting Blockchain-Enabled FL.",
+      "Finally, it discusses the future direction in these areas, primarily focusing on enhancing BCFL\u2019s privacy. To acquire pertinent information concerning Federated Learning based on Blockchain, we devised a search plan in line with our research objectives. We started by thoroughly exploring Google Scholar and Web of Science.",
+      "Additionally, they used the Cheon-Kim-Kim-Song (CKKS) scheme based on fully homomorphic encryption to safeguard privacy and encrypt local gradients. Furthermore, it significantly decreased the computation and communication overheads. In [51], researchers utilized a similar approach to safeguard the local model from inference attacks. Chen et al. [53] also an effective non-interactive designated decryptor function encryption method as a novel lightweight cryptography tool.",
+      "This section explores strategies and techniques to address the challenges of ensuring privacy and security in FL empowered by Blockchain. These architectures guarantee user data protection while enabling collaborative machine learning within the Blockchain ecosystem."
+    ],
+    "title": "Privacy-preserving in Blockchain-based Federated Learning Systems",
+    "url": "https://arxiv.org/html/2401.03552v1"
+  },
+  {
+    "description": "Machine learning (ML) is increasingly being adopted in a wide variety of application domains. Usually, a well-performing ML model relies on a large volume of training data and high-powered computational resources. Such a need for and the use of huge volumes of data raise serious privacy concerns ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Machine learning (ML) is increasingly being adopted in a wide variety of application domains. Usually, a well-performing ML model relies on a large volume of training data and high-powered computational resources. Such a need for and the use of huge volumes of data raise serious privacy concerns because of the potential risks of leakage of highly privacy-sensitive information; further, the evolving regulatory environments that increasingly restrict access to and use of privacy-sensitive data add significant challenges to fully benefiting from the power of ML for data-driven applications.",
+      "Abstract page for arXiv paper 2108.04417: Privacy-Preserving Machine Learning: Methods, Challenges and Directions",
+      "Hence, well-designed privacy-preserving ML (PPML) solutions are critically needed for many emerging applications. Increasingly, significant research efforts from both academia and industry can be seen in PPML areas that aim toward integrating privacy-preserving techniques into ML pipeline or specific algorithms, or designing various PPML architectures.",
+      "In particular, existing PPML research cross-cut ML, systems and applications design, as well as security and privacy areas; hence, there is a critical need to understand state-of-the-art research, related challenges and a research roadmap for future research in PPML area. In this paper, we systematically review and summarize existing privacy-preserving approaches and propose a Phase, Guarantee, and Utility (PGU) triad based model to understand and guide the evaluation of various PPML solutions by decomposing their privacy-preserving functionalities."
+    ],
+    "title": "[2108.04417] Privacy-Preserving Machine Learning: Methods, Challenges ...",
+    "url": "https://arxiv.org/abs/2108.04417"
+  },
+  {
+    "description": "Machine Learning (ML) is rapidly advancing, enabling various applications that improve people\u2019s work and daily lives. However, this technical progress brings privacy concerns, leading to the emergence of Privacy-Preserving Machine Learning (PPML) as a popular research topic.",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Artificial Intelligence Review - Machine Learning (ML) is rapidly advancing, enabling various applications that improve people\u2019s work and daily lives. However, this technical progress brings...",
+      "With the deepening of its research, it also shows very good performance in text processing. In Walch et al. (2022), the authors observed that for some application scenarios lacking data support, Transfer Learning (TL) is generally used for these scenarios, but TL (Fuzhen et al. 2021) also suffers from privacy leakage in some application scenarios, such as model inversion attacks (He et al. 2019). For this reason, the authors proposed CryptoTL mainly containing two models, the server side model and the client side model.",
+      "There are also related works that synthesize a variety of techniques used to protect the privacy of ML, including the work proposed by Liu et al., which introduces a variety of methods for protecting the privacy of ML, such as HE, Secure Multi-Party Computation (SMPC), DP, and Federated Learning (FL) (Liu et al. 2021). There is a relatively small amount of review works on HE and PPML, which are the closest to the topic explored in our work. Wood et al. introduced HE and ML, and presented their applications in the medical and bioinformatics fields (Wood et al. 2020). In addition, Sousa and Kern",
+      "As a result, Privacy-Preserving Machine Learning (PPML) services have emerged and are gradually becoming a new trend in MLaaS (Hesamifard et al. 2018; Wang et al. 2023). PPML services strengthen the privacy-preserving mechanism throughout the entire process of data collection, storage, processing, and transmission to prevent the leakage and abuse of users\u2019 private data."
+    ],
+    "title": "Approximate homomorphic encryption based privacy-preserving machine ...",
+    "url": "https://link.springer.com/article/10.1007/s10462-024-11076-8"
+  },
+  {
+    "description": "Machine learning (ML) offers tremendous opportunities to increase productivity. However, ML systems are only as good as the quality of the data that informs the training of ML models. And training ML models requires a significant amount of data, more than a single individual or organization ...",
+    "favicon_url": "https://you.com/favicon?domain=www.microsoft.com&size=128",
+    "snippets": [
+      "Machine learning (ML) offers tremendous opportunities to increase productivity. However, ML systems are only as good as the quality of the data that informs the training of ML models. And training ML models requires a significant amount of data, more than a single individual or organization can contribute.",
+      "Please visit our Privacy Preserving Machine Learning Group page and learn more about the holistic approach we\u2019re taking to unlock the full potential of enterprise data for intelligent features while honoring our commitment to keep customer data private. For the latest discussions and developments on privacy and security, you can view parts 1 (opens in new tab) and 2 (opens in new tab) of the Future of Privacy and Security track on-demand from Microsoft Research Summit (opens in new tab).",
+      "This helps ensure that our use of data protects people\u2019s privacy and the data is utilized in a safe fashion, avoiding leakage of confidential and private information. This blog post discusses emerging research on combining techniques to ensure privacy and confidentiality when using sensitive data to train ML models.",
+      "Recent research has shown that deploying ML models can, in some cases, implicate privacy in unexpected ways. For example, pretrained public language models that are fine-tuned on private data can be misused to recover private information (opens in new tab), and very large language models have been shown to memorize training examples (opens in new tab), potentially encoding personally identifying information (PII)."
+    ],
+    "title": "Privacy Preserving Machine Learning: Maintaining confidentiality ...",
+    "url": "https://www.microsoft.com/en-us/research/blog/privacy-preserving-machine-learning-maintaining-confidentiality-and-preserving-trust/"
+  },
+  {
+    "description": "Artificial intelligence is progressing rapidly. Systems based on machine learning algorithms approach and sometimes even exceed the abilities of human experts. Applications of machine learning involve almost every aspect of our lives, from health care and DNA sequence classification, to financial ...",
+    "favicon_url": "https://you.com/favicon?domain=crypto-ppml.github.io&size=128",
+    "snippets": [
+      "Much of the research in this paper has been inspired by the contested decision to apply differential privacy to the 2020 United States census algorithms, driven by the belief that additional exploratory research and software systems development can be a helpful force for understanding the nuances of applying privacy-preserving technologies to national censuses.",
+      "We do so by using efficient cryptographic techniques, namely \\emph{packed secret sharing}. We perform experiments to assess the utility and concrete costs of our techniques. There will be a session of contributed talks. We encourage submissions exploring a range of techniques and applications for privacy preserving machine learning, including, but not limited to:",
+      "Centrally differentially private algorithms can allow significantly better utility but require a trusted curator. This gap has led to significant interest in the design and implementation of simple cryptographic primitives, that can allow central-like utility guarantees without having to trust a central server.",
+      "Theoretically, secure multi-party computation (MPC) can help overcome these barriers - however, much work is needed to make it practically deployable primarily in terms of handling scale, performance, and usability. In this talk, I will provide an overview of these challenges and present recent cryptographic techniques based on the paradigm of function secret sharing that help us build end-to-end MPC based solutions for secure inference as well as private benchmarking."
+    ],
+    "title": "Privacy-Preserving Machine Learning Workshop 2024",
+    "url": "https://crypto-ppml.github.io/2024/"
+  },
+  {
+    "description": "Machine learning is one of the most widely used technologies in the field of Artificial Intelligence. As machine learning applications become increasingly ubiquitous, concerns about data privacy and security have also grown. The work in this paper presents a broad theoretical landscape concerning ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Machine learning is one of the most widely used technologies in the field of Artificial Intelligence. As machine learning applications become increasingly ubiquitous, concerns about data privacy and security have also grown. The work in this paper presents a broad theoretical landscape concerning the evolution of machine learning and deep learning from centralized to distributed learning, first in relation to privacy-preserving machine learning and secondly in the area of privacy-enhancing technologies.",
+      "Artificial Intelligence Review - Machine learning is one of the most widely used technologies in the field of Artificial Intelligence. As machine learning applications become increasingly...",
+      "In addition, to complete the landscape of tools that, when used in combination, allow building privacy-preserving machine learning applications, different cryptographic tools with emphasis on covering the HE domain, as well as libraries for differential privacy, are described and analyzed. This detailed and comprehensive analysis of the landscape allows users and researchers to have a clear reference to make decisions regarding the tools and techniques needed to build their ML/DL applications with special attention to privacy.",
+      "The unlimited explosion of new information through the Internet and other media has inaugurated a new era of research in which data mining algorithms should be considered from the point of view of privacy preservation, called privacy-preserving data mining, which is with ML at its core (Privacy-Preserving Machine Learning - PPML). The ubiquitous applications of data mining and ML algorithms allow malicious users to employ data mining to obtain private information, and hence raise the following question: will data mining compromise privacy?"
+    ],
+    "title": "Landscape of machine learning evolution: privacy-preserving federated ...",
+    "url": "https://link.springer.com/article/10.1007/s10462-024-11036-2"
+  },
+  {
+    "description": "The article deals with the problems of cryptographic protection of data processing algorithms and techniques. They are novel techniques allowing to pr\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The article deals with the problems of cryptographic protection of data processing algorithms and techniques. They are novel techniques allowing to process private information without disclosing it to persons engaged in processing.",
+      "We review important building blocks for cryptographic protection of data processing, such as zero-knowledge proofs, secure multi-party computations, and homomorphic encryption. Often, personalized information services are based on data mining and machine learning, so privacy-preserved machine learning is a very important building block for them.",
+      "We analyze the concept of differential privacy which serves as the basis for privacy-preserving machine learning and some other cryptographic schemes."
+    ],
+    "title": "Privacy-Preserving Machine Learning as a Tool for Secure Personalized ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1877050920303598"
+  },
+  {
+    "description": "Artificial intelligence is progressing rapidly. Systems based on machine learning algorithms approach and sometimes even exceed the abilities of human experts. Applications of machine learning involve almost every aspect of our lives, from health care and DNA sequence classification, to financial ...",
+    "favicon_url": "https://you.com/favicon?domain=crypto.iacr.org&size=128",
+    "snippets": [
+      "We show that by adopting differential obliviousness with reasonable choices of \u03f5 and \u03b4, not only can one circumvent several impossibilities pertaining to the classical obliviousness notion, but also in several cases, obtain meaningful privacy with little overhead relative to the non-private baselines (i.e., having privacy \"almost for free''). On the other hand, we show that for very demanding choices of \u03f5 and \u03b4, the same lower bounds for oblivious algorithms would be preserved for (\u03f5,\u03b4)-differential obliviousness.",
+      "The scope includes privacy preserving techniques for training, inference, and disclosure. The workshop will consist of few invited talks, together with contributed talks. ... Abstracts appear on the bottom of the page. ... Abstract: The increasing reach of algorithmic classification and decision making into our daily lives \u2014 from advertising to candidate filtering for jobs to incarceration \u2014 has given rise to an explosion of research into the ethics embodied by these algorithms; in a word, are they \u201cfair\u201d? But what is fairness?",
+      "In this paper, we want to discuss state-of-the-art of Privacy-Preserving Deep Learning, evaluate all methods, compare pros and cons of each approach, and address challenges and issues in the field of privacy-preserving by deep learning. Nishanth Chandran; Nishant Kumar Mayank Rathee; Divya Gupta; Aseem Rastogi; Rahul Sharma (Microsoft Research)",
+      "Abstract: Differential privacy is a mathematical technique that provides strong theoretical privacy guarantees by ensuring statistical indistinguishability of individuals in a dataset. It has become the de -acto framework for providing privacy-preserving data analysis over statistical datasets. Differential privacy has garnered significant attention from researchers and privacy experts due to its strong privacy guarantees."
+    ],
+    "title": "Crypto 2018 - Privacy Preserving Machine Learning Workshop 2019",
+    "url": "https://crypto.iacr.org/2019/affevents/ppml/page.html"
+  },
+  {
+    "description": "At Apple, we believe privacy is a fundamental human right. It\u2019s also one of our core values, influencing both our research and the design of\u2026",
+    "favicon_url": "https://you.com/favicon?domain=machinelearning.apple.com&size=128",
+    "snippets": [
+      "This two-day hybrid event brought together Apple and members of the broader research community to discuss the state of the art in privacy-preserving machine learning. In this post, we share highlights from workshop discussions and recordings of select talks. ... Workshop presenters explored advances in federated learning (FL), the associated differentially private algorithms for ML optimization, and its widespread impact via practical deployment.",
+      "Cryptographic tools like secure multiparty computation can provide privacy guarantees. Typically, these tools are used to implement a few primitives, on top of which richer functionalities are built. In private learning and statistics, shuffling and aggregation are versatile primitives that support a wide range of private algorithms. Researchers have proposed implementing these primitives under various trust models.",
+      "This follows the open sourcing of the FLAIR dataset, which was shared at the Workshop on Privacy Preserving Machine Learning in 2022. As discussed in pfl-research: Simulation Framework for Accelerating Research in Private Federated Learning, the key differentiators of pfl-research are:",
+      "It splits the domain-specific dataset into subsets, runs a query for each subset, and privately aggregates the responses. Papernot demonstrated how this approach allows data scientists to answer domain-specific queries with strong privacy guarantees, while achieving nearly the same accuracy as the original non\u2013privacy-preserving approach. Privacy-preserving learning and applications of LLMs are becoming a key focus of research in academia and industry, and we look forward to continue to actively participate in this research."
+    ],
+    "title": "Apple Workshop on Privacy-Preserving Machine Learning 2024 - Apple ...",
+    "url": "https://machinelearning.apple.com/updates/ppml-workshop-2024"
+  },
+  {
+    "description": "Recent advances in hardware and information technology have accelerated the proliferation of smart and interconnected devices facilitating the rapid development of the Internet of Things (IoT). IoT applications and services are widely adopted in ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Model owners, in turn, are reluctant to reveal the information of the classification model as it is a valuable asset. Therefore, to protect privacy in both sides, classification protocols apply ML classifiers over encrypted data. Initial works explore the usage of generic classifiers to construct privacy-preserving classification schemes.",
+      "The framework obtains an accuracy above 80%. A different approach was conducted by Fu et al. [112]. In this case, they explored encryption techniques to securely aggregate gradients. They proposed a verifiable FL (VFL) privacy-preserving framework for efficient and secure model training for big data.",
+      "Finally, Section 5 concludes the survey, and discusses challenges and future directions for privacy preservation in IoT systems. In recent years, privacy, ML, and IoT have crossed paths. Given the significance of ML and cybersecurity in IoT environments, several researchers have conducted surveys and tutorials (listed in Table 1) to provide a practical guide to address cybersecurity threats and a roadmap for future solutions.",
+      "Indirect attacks, which usually occur at the application layer, are classified in six main groups: membership inference, model inversion, model stealing, property inference, re-identification, and impersonation. In this survey, we analyzed ML-based privacy preservation works addressing IoT privacy attacks. This work provides a knowledge base for future technologists and researchers working in this area."
+    ],
+    "title": "A Survey of Machine and Deep Learning Methods for Privacy Protection ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9921397/"
+  },
+  {
+    "description": "I have a bit of a cybersecurity background, so a year or two ago I started paying attention to how often data breaches happen - and I noticed something depressing: they happen literally 3+ times each day on average in the United States alone! (For a particularly sobering review check out this ...",
+    "favicon_url": "https://you.com/favicon?domain=blog.fastforwardlabs.com&size=128",
+    "snippets": [
+      "I have a bit of a cybersecurity background, so a year or two ago I started paying attention to how often data breaches happen - and I noticed something depressing: they happen literally 3+ times each day on average in the United States alone! (For a particularly sobering review check out this blog post.)",
+      "If you\u2019re a regular reader of our newsletter, you likely noticed that we\u2019ve been searching for new research engineers to join the Cloudera Fast Forward Labs team. ... The NLP task of text style transfer (TST) aims to automatically control the style attributes of a piece of text while preserving the content, which is an important consideration for making NLP more user-centric. In this report, we explore text style transfer through an applied use case \u2014 neutralizing subjectivity bias in free text.",
+      "New Research! Ethical Considerations When Designing an NLG System In the final post of our blog series on Text Style Transfer, we discuss some ethical considerations when working with natural language generation systems, and describe the design of our prototype application: Exploring Intelligent Writing Assistance.",
+      "More policies will pass as the notions of individual privacy and data rights are explored, defined, and refined. ... Machine learning algorithms are known to be data-hungry, with more sophisticated ML models requiring ever more data in order to learn their objectives (caveat: your ML model may be learning some unintentional things, too!). With the need for so much data, what happens to the privacy of data as it is processed through an ML workflow? Can data stay private?"
+    ],
+    "title": "Privacy-Preserving Machine Learning: A Primer",
+    "url": "https://blog.fastforwardlabs.com/2019/11/21/privacy-preserving-machine-learning-a-primer.html"
+  },
+  {
+    "description": "For privacy concerns to be addressed adequately in current machine learning systems, the knowledge gap between the machine learning and privacy communities must be bridged. This article aims to provide an introduction to the intersection of both fields with special emphasis on the techniques ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "For privacy concerns to be addressed adequately in current machine learning systems, the knowledge gap between the machine learning and privacy communities must be bridged. This article aims to provide an introduction to the intersection of both fields with special emphasis on the techniques used to protect the data.",
+      "Abstract page for arXiv paper 1804.11238: Privacy Preserving Machine Learning: Threats and Solutions",
+      "View a PDF of the paper titled Privacy Preserving Machine Learning: Threats and Solutions, by Mohammad Al-Rubaie and 1 other authors View PDF"
+    ],
+    "title": "[1804.11238] Privacy Preserving Machine Learning: Threats and ...",
+    "url": "https://arxiv.org/abs/1804.11238"
+  },
+  {
+    "description": "Notably, FHE over the Torus (TFHE) was integrated with graph-based machine learning using Zama Concrete ML. The research contributes two key privacy-preserving pipelines. First, the development of a privacy-preserving Graph Neural Network (GNN) pipeline was explored.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "This paper presents a novel privacy-preserving AML approach using TFHE to enable secure data sharing and collaboration between financial institutions while protecting data privacy. To the best of my knowledge, while there are recent research works that have conducted separate explorations of graph-based machine learning for AML (section 2.1), Gradient-Boosting Tree (GBT) for AML (section 2.2), privacy-preserving technologies (PPTs) for collaborative AML and privacy-preserving machine learning respectively (section 2.3), none have combined these areas of study to explore the use of GNN or GBT with FHE in AML, all the less so with the TFHE scheme.",
+      "Privacy-Preserving Technologies (PETs) have emerged as a promising approach to protect sensitive information and enable secure data computation and analysis while preserving privacy in various domains, including finance applications [24]. The integration of PETs with AML efforts is a relatively new and active area of research. One notable industry-led proof-of-concept is Project Aurora by the Bank for International Settlements [25], which explored the use of different PET combinations, along with machine learning and network analysis, to detect money laundering across siloed, national, and cross-border payment data.",
+      "Future research could focus on optimizing model performance for imbalanced scenarios. This paper proposed a novel privacy-preserving approach for collaborative AML detection using FHE. Two key pipelines were developed: ... A privacy-preserving GNN pipeline that explored the integration of GIN with TFHE, where optimization techniques like quantization and pruning were used in attempts to render the GNN FHE-compatible.",
+      "Proceedings of Machine Learning Research. New York, New York, USA: PMLR, 20\u201322 Jun 2016. [30] Ahmad Al Badawi, Jovan Jovi\u0107, Chai Kiat Yeo, Chen-Mou Cheng, and Radu Sion. Towards the AlexNet Moment for Homomorphic Encryption: HCNN, the First Homomorphic CNN on Encrypted Data with GPUs. Cryptology ePrint Archive, Paper 2018/1056. 2018. DOI: 10.1109/TETC.2020.3014636. [31] Alon Brutzkus, Oren Elisha, and Ran Gilad-Bachrach. Low Latency Privacy Preserving Inference."
+    ],
+    "title": "Privacy-Preserving Graph-Based Machine Learning with Fully ...",
+    "url": "https://arxiv.org/html/2411.02926v1"
+  },
+  {
+    "description": "Artificial intelligence is progressing rapidly. Systems based on machine learning algorithms approach and sometimes even exceed the abilities of human experts. Applications of machine learning involve almost every aspect of our lives, from health care and DNA sequence classification, to financial ...",
+    "favicon_url": "https://you.com/favicon?domain=crypto-ppml.github.io&size=128",
+    "snippets": [
+      "For a link, visit CRYPTO 2022. ... The time displayed is in Pacific Daylight Time (GMT-7). Abstract: In this talk I will discuss the algorithmic research that led to the deployment of the first production ML model using federated learning with a rigorous differential privacy guarantee. Along the way, I will highlight the systemic challenges that drove the algorithmic design. The talk will primarily focus on the DP-FTRL algorithm (a differentially private variant of follow-the-regularized-leader), that was developed during this research effort.",
+      "For a class of useful computational tasks, the shuffle model allows us to achieve privacy-utility tradeoff similar to those in the central model, while shifting the trust from a central data curator to a ``trusted shuffle\u2019\u2019 which can be implemented through either trusted hardware or cryptography. Very recently, several works explored cryptographic instantiations of a new type of shuffle with relaxed security, called differentially oblivious (DO) shuffles}. These works demonstrate that by relaxing the shuffler\u2019s security from simulation-style secrecy to differential privacy, we can achieve asymptotical efficiency improvements.",
+      "In this paper, we prove an optimal privacy amplification theorem by composing any locally differentially private (LDP) mechanism with a DO-shuffler, achieving parameters that tightly match the shuffle model. Our result asymptotically improves the recent work of Gordon et al., who initiated the study of distributed DP mechanisms in the DO-shuffle model. We also explore multi-message protocols in the DO-shuffle model, and construct mechanisms for the real summation and histogram problems.",
+      "Abstract Comparisons are an essential component of Rectified Linear Unit functions (ReLU\u2019s), ever more present in Machine Learning, specifically in Neural Networks. Motivated by the increasing interest in privacy-preserving Artificial Intelligence, we explore the current state of the art in Multi-Party Computation (MPC) protocols for privacy preserving comparisons."
+    ],
+    "title": "Privacy-Preserving Machine Learning Workshop 2022",
+    "url": "https://crypto-ppml.github.io/2022/"
+  },
+  {
+    "description": "Differential privacy has become a widely popular method for data protection in machine learning, especially since it allows formulating strict mathematical privacy guarantees. This survey provides ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Differential privacy has become a widely popular method for data protection in machine learning, especially since it allows formulating strict mathematical privacy guarantees. This survey provides an overview of the state of the art of differentially ...",
+      "Fifth, by default, synthetic data is not privacy preserving, and differentially private synthetic data requires more research. Sixth, ambiguously used terms lead to confusion in the research field, and a coherent taxonomy is needed. In summary, we explored the advancements, remaining challenges, and future prospects of integrating mathematical privacy guarantees into DL models.",
+      "In contrast, this survey goes beyond the basic methods and systematically investigates advances and new paths explored in the field since 2019. We provide the reader with advanced understanding of the state-of-the-art methods, the challenges, and opportunities of DP-DL. ... Additional to the reviews mentioned in Table 1, a range of broader reviews exist, such as those about differentially private machine learning (without focusing on DL) [22, 64, 151], privacy-preserving DL (without focusing on DP) [24, 32, 68, 89, 117, 124], or privacy-preserving machine learning in general [82, 135]. These works give a good overview, whereas our survey follows a more detailed approach focusing on recent developments of DP in centralized DL.",
+      "Differentially private empirical risk minimization. Journal of Machine Learning Research 12, 3 (2011), 1069\u20131109. ... Chaochao Chen, Huiwen Wu, Jiajie Su, Lingjuan Lyu, Xiaolin Zheng, and Li Wang. 2022. Differential private knowledge transfer for privacy-preserving cross-domain recommendation."
+    ],
+    "title": "Recent Advances of Differential Privacy in Centralized Deep Learning: ...",
+    "url": "https://dl.acm.org/doi/10.1145/3712000"
+  },
+  {
+    "description": "Access to large datasets, the rise of the Internet of Things (IoT) and the ease of collecting personal data, have led to significant breakthroughs in machine learning. However, they have also raised new concerns about privacy data protection. Controversies like the Facebook-Cambridge Analytica ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Access to large datasets, the rise of the Internet of Things (IoT) and the ease of collecting personal data, have led to significant breakthroughs in machine learning. However, they have also raised new concerns about privacy data protection. Controversies like the Facebook-Cambridge Analytica scandal highlight unethical practices in today\u2019s digital landscape.",
+      "Ethics and Information Technology - Access to large datasets, the rise of the Internet of Things (IoT) and the ease of collecting personal data, have led to significant breakthroughs in machine...",
+      "To meaningfully assess the question of privacy preservation, we must first understand the concept of privacy itself. This concept is complex, multi-faceted and context-dependent, having been explored extensively among disciplines such as social science, law, and computer science.",
+      "This is explored in more detail in Townend, D (2024) \u201cBig Data Research: can confidentiality and fiduciary duties fill the gaps in privacy and data protection?\u201d Townend (2025)."
+    ],
+    "title": "A critique of current approaches to privacy in machine learning ...",
+    "url": "https://link.springer.com/article/10.1007/s10676-025-09843-4"
+  },
+  {
+    "description": "One solution to this problem is employing Privacy-Preserving Machine Learning (PPML). PPML ensures that the use of data protects user privacy and that data is utilized in a safe fashion, avoiding leakage of confidential and private information. To this end, researchers have proposed and implemented various PPML-achieving techniques, varying from secure cryptographic ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "One solution to this problem is employing Privacy-Preserving Machine Learning (PPML). PPML ensures that the use of data protects user privacy and that data is utilized in a safe fashion, avoiding leakage of confidential and private information. To this end, researchers have proposed and implemented various PPML-achieving techniques, varying from secure cryptographic schemes to distributed, hybrid, and data modification approaches.",
+      "Khoa Nguyen Department of Computing Sciences Tampere University Tampere, Finland khoa.nguyen@tuni.fi Mindaugas Budzys Department of Computing Sciences Tampere University Tampere, Finland mindaugas.budzys@tuni.fi Eugene Frimpong {@IEEEauthorhalign} Tanveer Khan Department of Computing Sciences Tampere University Tampere, Finland eugene.frimpong@tuni.fi Department of Computing Sciences Tampere University Tampere, Finland tanveer.khan@tuni.fi Antonis Michalas Department of Computing Sciences Tampere University, Tampere, Finland and RISE Research Institutes of Sweden antonios.michalas@tuni.fi \u00b7 M",
+      "[7] O. Cosseron, C. Hoffmann, P. M\u00e9aux, and F.-X. Standaert, \u201cTowards case-optimized hybrid homomorphic encryption: Featuring the elisabeth stream cipher,\u201d in Advances in Cryptology \u2013 ASIACRYPT 2022, p. 32\u201367, Springer-Verlag, 2023. [8] E. Frimpong, K. Nguyen, M. Budzys, T. Khan, and A. Michalas, \u201cGuardml: Efficient privacy-preserving machine learning services through hybrid homomorphic encryption,\u201d in Proceedings of the 39th ACM/SIGAPP Symposium on Applied Computing, SAC \u201924, p.",
+      "[22] T. Khan, M. Budzys, K. Nguyen, and A. Michalas, \u201cSok: Wildest dreams: Reproducible research in privacy-preserving neural network training,\u201d Proceedings on Privacy Enhancing Technologies, vol. 2024, no. 3, 2024. [23] I. Chillotti, N. Gama, M. Georgieva, and M. Izabachene, \u201cFaster fully homomorphic encryption: Bootstrapping in less than 0.1 seconds,\u201d in Advances in Cryptology\u2013ASIACRYPT 2016, pp."
+    ],
+    "title": "A Pervasive, Efficient and Private Future: Realizing Privacy-P...",
+    "url": "https://arxiv.org/html/2409.06422v1"
+  },
+  {
+    "description": "In this blog series, we\u2019ll explain common topics in privacy-preserving data science, from a single sentence to code examples. We hope these posts serve as a useful resource for you to figure out the best techniques for your organization.",
+    "favicon_url": "https://you.com/favicon?domain=blog.openmined.org&size=128",
+    "snippets": [
+      "To perform data science in domains that require private data while abiding data privacy laws and minimizing risks, machine learning researchers have harnessed solutions from privacy and security research, developing the field of private and secure data science. Private and secure machine learning (ML) is heavily inspired by cryptography and privacy research.",
+      "In short: CrypTen is a framework developed by Facebook Research for Privacy Preserving Machine Learning built on PyTorch.",
+      "Traditionally, PySyft has been used to facilitate federated learning. However, we can also leverage the tools included in this framework to implement distributed neural networks. These allow for researchers to process data held remotely and compute predictions in a radically decentralised way. For more information and a code demonstration, see What is a Split Neural Network? In short: PyVertical uses private set intersection (PSI) to link datasets in a privacy-preserving way.",
+      "Python has incredible adoption around the world and has become a tool of choice by many data scientists and machine learning experts. Making differential privacy accessible to their ecosystem is a priority for OpenMined. The library provides a set of \u03b5-differentially private algorithms, which can be used to produce aggregate statistics over numeric data sets containing private or sensitive information."
+    ],
+    "title": "Privacy-Preserving Data Science, Explained \u2013 OpenMined",
+    "url": "https://blog.openmined.org/private-machine-learning-explained/"
+  },
+  {
+    "description": "As the value of data increases, it becomes increasingly important to protect data in-use to perform computations. Privacy-preserving computation refers to a set of techniques and algorithms that\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "She has worked on processor architectures for secure and privacy-preserving computation, including designs that support secure enclaves, trusted execution environments, and cryptographic primitives. Victor Costan: Costan is a computer scientist who has worked on hardware security and privacy-preserving computation. He has researched and developed systems that use hardware-based security mechanisms, such as Intel SGX, to facilitate secure and private computations.",
+      "Additionally, they should pursue strategic partnerships and collaborations to gain access to valuable resources, expertise, and market prospects, developing privacy-preserving solutions tailored to specific industry needs and challenges. The potential impact of emerging technologies on the privacy computation market should also be taken into account. The privacy computation market presents numerous opportunities and challenges for businesses, investors, and researchers. As the field continues to evolve, it is essential to stay informed about the latest developments and trends, and to explore new opportunities for innovation and collaboration.",
+      "Future research should focus on advancing privacy-preserving algorithms and hardware, exploring the intersection of privacy computation with emerging technologies, and developing industry standards to drive wider adoption of privacy-preserving solutions.",
+      "Silvio Micali: The Ford Professor of Engineering at MIT, Silvio Micali is a Turing Award-winning computer scientist specializing in cryptography, including the development of zero-knowledge proofs and secure multi-party computation. His research has had a profound impact on privacy-preserving computation and secure data collaboration."
+    ],
+    "title": "Privacy-Preserving Machine Learning | by Jacky Kwok | Medium",
+    "url": "https://medium.com/@jackykwok/privacy-preserving-machine-learning-9d4b051d9468"
+  }
+]

@@ -1,0 +1,271 @@
+[
+  {
+    "description": "This review explores the role of prompt engineering in unleashing the capabilities of large language models (LLMs). Prompt engineering is the process \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "AI can assist in generating research output, understanding complex biological processes such as protein folding, and creating diverse forms of multimedia content from simple prompts, which are natural language instructions between humans and AI agents. By enhancing human-AI interactions, efficient prompt engineering can catalyze the development of safe, intuitive, and widely applicable tools across diverse fields. As AI continues to evolve and become more sophisticated, the ability to design clear, concise, and effective prompts, which is known as prompt engineering, is likely to become an essential competency for future scientists, profoundly transforming the scientific discovery process and practical applications.",
+      "Critical to this discussion is the role of prompt engineering in artificial intelligence (AI) security, particularly in terms of defending against adversarial attacks that exploit vulnerabilities in LLMs. Strategies for minimizing these risks and improving the robustness of models are thoroughly reviewed. Finally, we provide a perspective for future research and applications."
+    ],
+    "title": "Unleashing the potential of prompt engineering for large language ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666389925001084"
+  },
+  {
+    "description": "Since AutoPrompt already does the ... discrete tokens to continuous \"soft prompts\"? For example, Zhong et al. (2021) and Qin and Eisner (2021) propose to use \"soft prompts\" for knowledge probing tasks (LAMA etc.) and have achieved considerable improvements over discrete prompts. The idea is so simple\u2014just putting some random vectors (not tied ...",
+    "favicon_url": "https://you.com/favicon?domain=thegradient.pub&size=128",
+    "snippets": [
+      "Since AutoPrompt already does the gradient-based search for prompts, why not move on from discrete tokens to continuous \"soft prompts\"? For example, Zhong et al. (2021) and Qin and Eisner (2021) propose to use \"soft prompts\" for knowledge probing tasks (LAMA etc.) and have achieved considerable improvements over discrete prompts. The idea is so simple\u2014just putting some random vectors (not tied to specific word embeddings from the vocabulary) in the input sequence and tuning them, with other parts of the pre-trained models fixed.",
+      "Scao and Rush (2021) show that a prompt may be worth 100 conventional data points, suggesting that prompts can bring a giant leap in sample efficiency. There are two different paradigms in the research of prompts, and they share different views: Inspired by the PET papers (Schick and Sch\u00fctze, 2021a, b), prompt-based fine-tuning (the critical point is that we still further optimize the parameters) is regarded as a path towards better few-shot learners for small language models (by small, I mean millions instead of billions of parameters, like BERT or RoBERTa); For super-large models like 175B",
+      "Several recent papers follow this line of approaches by adjusting the objective (Tam et al., 2021) or formulating tasks in a unified form, like question answering (Zhong et al., 2021) or textual entailment (Wang et al., 2021). In all those models, prompts are in natural language and are composed of discrete tokens from the vocabulary.",
+      "The searched templates considerably improve the LAMA performance; they also achieve surprising accuracies in sentiment classification and natural language inference tasks using the full dataset (still, lower than the fine-tuning paradigm). Taking a look at the searched discrete (but not natural-language anymore) prompts, you can find explanations for some of the \"trigger tokens\", but many others are just peculiarities."
+    ],
+    "title": "Prompting: Better Ways of Using Language Models for NLP Tasks",
+    "url": "https://thegradient.pub/prompting/"
+  },
+  {
+    "description": "Efficient prompt engineering can assist the development of safe, intuitive, and widely applicable AI by enhancing human-AI interactions. In this review, the authors explore in detail a wide range of prompt engineering methods, including strategies for both large language models and multimodal ...",
+    "favicon_url": "https://you.com/favicon?domain=www.cell.com&size=128",
+    "snippets": [
+      "Efficient prompt engineering can assist the development of safe, intuitive, and widely applicable AI by enhancing human-AI interactions. In this review, the authors explore in detail a wide range of prompt engineering methods, including strategies for both large language models and multimodal large models, and discuss the important role of prompt engineering in AI security.",
+      "Advances in prompt engineering have enabled more effective adaptations of pretrained VLMs to a wide range of downstream tasks. A promising approach in this domain is the use of continuous prompt vectors to fine-tune models such as CLIP for complex video understanding tasks.",
+      "Unlike traditional hand-made prompts, which require expert knowledge and manual effort, continuous prompt vectors135 are learned during the training process, allowing for a more flexible and efficient model adaptation strategy. This method involves appending or prepending sequences of random vectors to the input text, which the model then interprets as part of its textual input.",
+      "The PromptAgent method frames prompt optimization as a strategic planning problem, with its central mechanism being a Monte Carlo tree search (MCTS),101 which is a principled planning algorithm that systematically navigates the space of expert-level prompts. Unlike conventional approaches that generate prompts through local variations or heuristic sampling, PromptAgent employs a self-reflective trial-and-error mechanism inspired by human problem-solving strategies. This process enables the utilized model to iteratively refine the given prompts by generating error feedback and using this feedback to simulate and prioritize high-reward paths."
+    ],
+    "title": "Unleashing the potential of prompt engineering for large language ...",
+    "url": "https://www.cell.com/patterns/fulltext/S2666-3899(25)00108-4"
+  },
+  {
+    "description": "To develop soft prompt-based learning architecture for large language models (LLMs), examine prompt-tuning using frozen/unfrozen LLMs, and assess their abilities in transfer learning and few-shot learning. We developed a soft prompt-based learning ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "There are two main types of prompts including (1) \u201chard prompts\u201d (or discrete prompts) \u2013 a piece of manually crafted text that contains specific instruction/information about the NLP tasks. The use of hard prompts to instruct LLMs to generate answers of interest is referred to as hard prompting; and (2) \u201csoft prompts\u201d (or continuous prompts) \u2013 a continuous vector (of virtual tokens) that was added into the input.",
+      "No prompt: No prompt was added to the input; Hard prompt: discrete prompts designed by researchers as clear text; Soft prompts: a trainable continuous vector; Model-tuning: the parameters of LLMs are updated in fine-tuning; Prompt-tuning: the trainable continuous vectors of soft prompts are updated in the fine-tuning.",
+      "Similar to our previous MRC model [18], we applied two binary classifiers, one to predict whether each token is the start index or not and the other to predict the end index. A third classifier was used to match the start index to the corresponding end index when there are multiple answers in a sentence. The detailed model architecture and loss functions are provided in the supplementary material. ... Overview of soft prompt-based transformer architecture for clinical concept extraction and end-to-end relation extraction.",
+      "Corresponding author: Yonghui Wu, PhD, Clinical and Translational Research Building, 2004 Mowry Road, PO Box 100177, Gainesville, FL, USA, 32610, yonghui.wu@ufl.edu \u00b7 Issue date 2024 May. ... To develop soft prompt-based learning architecture for large language models (LLMs), examine prompt-tuning using frozen/unfrozen LLMs, and assess their abilities in transfer learning and few-shot learning."
+    ],
+    "title": "Model Tuning or Prompt Tuning? A Study of Large Language Models ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11065560/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "RLPROMPT: Optimizing Discrete Text Prompts with ...",
+    "url": "https://aclanthology.org/2022.emnlp-main.222.pdf"
+  },
+  {
+    "description": "The wayward quality of continuous prompts stresses the importance of their interpretability as unexpected and unpredictable behaviors appear following training, especially in the context of large language models automa\u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "The wayward quality of continuous prompts stresses the importance of their interpretability as unexpected and unpredictable behaviors appear following training, especially in the context of large language models automating people-sensitive tasks such as resume screening. In this paper we present a novel method of constructing continuous prompts via discrete prompt embeddings and evaluate improvements to continuous prompt interpretability and inference accuracy. For a set of manually designed discrete prompts ... \\mathcal{D}, which we tokenize each into tensor form, we train a model to predict the weights such that the linear combinations of those prompts correspond to higher performance on natural language understanding tasks.",
+      "To address these limitations of discrete prompting, continuous prompts were introduced. More specifically, a continuous prompt is represented as a learnable tensor that is known to guide a pre-trained language model towards specific behaviors that cumulatively accomplish a task with greater accuracy. What makes continuous prompts notably powerful is that they can be optimized through efficient back-propagation because they are not restricted to a latent token space, as in the case of natural language.",
+      "It\u2019s shown that continuous prompts can be decomposed into discrete prompt elements et Al (2023). We train a feed-forward neural network to learn how to combine our vectors in ... \\mathcal{D}. Our approach involves training a model on a classification task dataset.",
+      "A discrete prompt is a human-readable string that guides a pre-trained language model towards specific behaviors that on average, help it perform better on language modeling tasks. A famous case et al. (2023) found that prepending a \u2019Take a deep breath and work on this problem step-by-step\u2019 to a reasoning task prompt enhanced model performance."
+    ],
+    "title": "[2312.10323] Continuous Prompt Generation from Linear Combination ...",
+    "url": "https://ar5iv.labs.arxiv.org/html/2312.10323"
+  },
+  {
+    "description": "Practical techniques for improving prompt quality without manual effort...",
+    "favicon_url": "https://you.com/favicon?domain=cameronrwolfe.substack.com&size=128",
+    "snippets": [
+      "Researchers began studying this problem as soon as the idea of a prompt was introduced. In this section, we will study some of the early work on prompt optimization, which was applied to both encoder-only variants of language models as well as GPT-style LLMs. This work inspired later techniques for prompt optimization that are commonly used today. As mentioned above, directly optimizing a prompt is difficult due to the discrete nature of tokens within the prompt.",
+      "Instead of solving this problem, prompt and prefix tuning eliminate the constraint of our prompt being discrete / text-based. The \u201cprompt\u201d discovered by these techniques is just a continuous vector learned via gradient-based optimization. Similarly to any other model parameter, this vector is not human-interpretable and cannot be transferred for use with another LLM.",
+      "This approach is called \u201chard\u201d prompt tuning3, as we are explicitly changing the words (or tokens) present within the prompt in a discrete manner; see above. However, hard prompt tuning is not the only tool available to use\u2014we can explore soft, continuous updates to the prompt. \u201cUnlike prompting, the prefix consists entirely of free parameters which do not correspond to real tokens.\u201d - from [4] Prefix tuning [4] was one of the first papers to explore continuous updates to the prompt of an LLM. While traditional model finetuning trains all of a model\u2019s parameters over a downstream dataset, prefix tuning leaves nearly all of the model\u2019s parameters fixed.",
+      "We have seen a wide variety of prompt optimization techniques in this overview, including methods that learn soft prompts directly from data, leverage LLMs as gradient-free optimizers, use RL to train models that are better at generating prompts, and more. We outline the key takeaways from all of this research below. Why is prompt optimization hard? As we have seen, prompt optimization is not a normal optimization problem for a few reasons: The prompt we are trying to optimize is made up of discrete tokens."
+    ],
+    "title": "Automatic Prompt Optimization - by Cameron R. Wolfe, Ph.D.",
+    "url": "https://cameronrwolfe.substack.com/p/automatic-prompt-optimization"
+  },
+  {
+    "description": "The following are the latest papers (sorted by release date) on prompt engineering for large language models (LLMs). We update the list of papers on a daily/weekly basis",
+    "favicon_url": "https://you.com/favicon?domain=www.promptingguide.ai&size=128",
+    "snippets": [
+      "Hard Prompts Made Easy: Gradient-Based Discrete Optimization for Prompt Tuning and Discovery (opens in a new tab) (February 2023) Multimodal Chain-of-Thought Reasoning in Language Models (opens in a new tab) (February 2023) Large Language Models Can Be Easily Distracted by Irrelevant Context (opens in a new tab) (February 2023) Synthetic Prompting: Generating Chain-of-Thought Demonstrations for Large Language Models (opens in a new tab) (February 2023) Progressive Prompts: Continual Learning for Language Models (opens in a new tab) (January 2023)",
+      "The Capacity for Moral Self-Correction in Large Language Models (opens in a new tab) (February 2023) SwitchPrompt: Learning Domain-Specific Gated Soft Prompts for Classification in Low-Resource Domains (opens in a new tab) (February 2023) Evaluating the Robustness of Discrete Prompts (opens in a new tab) (February 2023)",
+      "This Prompt is Measuring <MASK>: Evaluating Bias Evaluation in Language Models (opens in a new tab) (May 2023) Enhancing Cross-lingual Natural Language Inference by Soft Prompting with Multilingual Verbalizer (opens in a new tab) (May 2023) Evaluating Prompt-based Question Answering for Object Prediction in the Open Research Knowledge Graph (opens in a new tab) (May 2023)",
+      "Query Rewriting for Retrieval-Augmented Large Language Models (opens in a new tab) (May 2023) Discrete Prompt Optimization via Constrained Generation for Zero-shot Re-ranker (opens in a new tab) (May 2023)"
+    ],
+    "title": "Papers | Prompt Engineering Guide",
+    "url": "https://www.promptingguide.ai/papers"
+  },
+  {
+    "description": "Pre-trained Language Models (PLMs) have demonstrated remarkable performance in Natural Language Understanding (NLU) tasks, with continuous prompt-base\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Continuous prompts are sequences of continuous vectors learned during the tuning process and added to input embeddings before being fed into the model, allowing the model to adapt based on the learned continuous prompt. Continuous prompt optimization is more straightforward, as it is differentiable and enables gradient-based optimization techniques. This makes continuous prompt-tuning generally more efficient and easier to implement than discrete prompt-tuning.",
+      "The history of PLMs can be traced to the study of static word vectors, which originated from one-hot vectors, bag-of-words models (Le & Mikolov, 2014), and TF\u2013IDF. Later approaches, such as Word2Vec (Mikolov, Sutskever, Chen, Corrado, & In this section, we provide a detailed explanation of our proposed model inspired by AutoPrompt (Shin et al., 2020), which aims to improve soft prompt initialization to better harness the abundant knowledge embedded within large-scale PLMs. Our method leverages the benefits of both discrete and continuous prompts; while eliminating their drawbacks.",
+      "To address these limitations, this study introduces an innovative AutoPrompt-based Prompt Tuning (APT) approach. APT optimizes the initialization of continuous prompts by employing a gradient-guided automatic search to generate ideal discrete templates and identify trigger tokens.",
+      "k trigger tokens generate the best discrete prompts and initialize actual words into continuous vector parameters corresponding to virtual words. Finally, contextual and predictive targets and trainable, continuous vector parameters serve as the prompt template for PLM input, optimizing continuous prompts."
+    ],
+    "title": "Eliciting knowledge from language models with automatically generated ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423028294"
+  },
+  {
+    "description": "Prompting has become a mainstream paradigm for adapting large language models (LLMs) to specific natural language processing tasks. While this approach opens the door to in-context learning of LLMs, it brings the additional computational burden of model inference and human effort of manual-designed ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "In essence, the primary objective of prompting is to achieve effective few-shot learning in place of the unnecessary resource consumption of full parameter fine-tuning. Prompt expressions can be categorized into two main types, as illustrated in Figure 2: discrete natural language prompts (referred to as hard prompts) and continuous learnable vectors (referred to as soft prompts).",
+      "(2023) propose a gradient-based discrete prompt optimization algorithm called PEZ, to discretize the continuous space by a projection function. PEZ first projects the learnable embeddings into discrete vectors then computes their gradients for updating the continuous iterations (i.e., regarding soft prompts as intermediate variables), and finally maps them into hard prompts.",
+      "It is well known that the precondition for using the gradient-descent algorithm in continuous optimization space (i.e., language models) is that the objective function is differentiable. However, the hard prompt mentioned in this paper is discrete, which leads to a contradiction between the optimization object and the optimization space. Therefore, researchers have investigated suitable gradient-based optimization frameworks for open-source and closed-source models separately.",
+      "Extensive research (Lester et al., 2021) in the initial stages has demonstrated significant advantages in model performance afforded by the implementation of soft prompts, there are still some efforts on how to optimize hard prompts with soft prompt tuning. Scholars have developed various strategies that fundamentally translate discrete space into continuous space so that discrete prompt optimization can be performed based on real-gradient tuning."
+    ],
+    "title": "Efficient Prompting Methods for Large Language Models: A Survey",
+    "url": "https://arxiv.org/html/2404.01077v1"
+  },
+  {
+    "description": "Prompting as searching through a space of vector programs",
+    "favicon_url": "https://you.com/favicon?domain=fchollet.substack.com&size=128",
+    "snippets": [
+      "You can see a LLM as analogous to a database: it stores information, which you can retrieve via prompting. But there are two important differences between LLMs and databases. The first difference is that a LLM is a continuous, interpolative kind of database. Instead of being stored as a set of discrete entries, your data is stored as a vector space \u2014 a curve.",
+      "A more common one, but less illuminating, is to think of LLMs as autoregressive text generators that output one of the most likely word sequences that could follow your prompt given the training data distribution \u2014 i.e. focusing on the task that LLMs were optimized on. You\u2019ll understand LLMs better if you keep in mind a diversity of ways to model what they do \u2014 hopefully you\u2019ll find this new one useful. Remember, this \u201cprogram database\u201d is continuous and interpolative \u2014 it\u2019s not a discrete set of programs.",
+      "Illustration: a 2D embedding space such that the vector linking \u201cwolf\u201d to \u201cdog\u201d is the same as the vector linking \u201ctiger\u201d to \u201ccat\u201d. Fast forward ten years \u2014 we are now in the age of LLMs. On the surface, modern LLMs couldn\u2019t seem any further from the primitive word2vec model. They generate perfectly fluent language \u2014 a feat word2vec was entirely incapable of \u2014 and seem knowledgeable about any topic. And yet, they actually have a lot in common with good old word2vec. Both are about embedding tokens (words or sub-words) in a vector space.",
+      "How self-attention works: here attention scores are computed between \u201cstation\u201d and every other word in the sequence, and they are then used to weight a sum of word vectors that becomes the new \u201cstation\u201d vector. Self-attention confers Transformers with two crucial properties: The embedding spaces they learn are semantically continuous, i.e. moving a bit in an embedding spaces only changes the human-facing meaning of the corresponding tokens by a bit."
+    ],
+    "title": "How I think about LLM prompt engineering",
+    "url": "https://fchollet.substack.com/p/how-i-think-about-llm-prompt-engineering"
+  },
+  {
+    "description": "The advent of large language models marks a revolutionary breakthrough in artificial intelligence. With the unprecedented scale of training and model parameters, the capability of large language models has been dramatically improved, leading to human-like performances in understanding, language ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The advent of large language models marks a revolutionary breakthrough in artificial intelligence. With the unprecedented scale of training and model parameters, the capability of large language models has been dramatically improved, leading to human-like performances in understanding, language synthesizing, common-sense reasoning, etc.",
+      "World Wide Web - The advent of large language models marks a revolutionary breakthrough in artificial intelligence. With the unprecedented scale of training and model parameters, the capability of...",
+      "By carefully tailoring the prompts, researchers and practitioners can guide the model to produce outputs that better cater to personalized applications, thereby maximizing performance and effectiveness. Large language models have a limitation on the maximum number of input tokens they can handle, typically constrained by the context window size, e.g., 4096 for ChatGPT.",
+      "Statistical models like TF-IDF, Minimum Description Length (MDL) [86], and bag-of-words have been traditionally used to encode textual data such as news articles and documents into continuous value vectors. However, with the advancement of deep learning techniques, researchers have explored various neural network architectures to learn more expressive content representations."
+    ],
+    "title": "When large language models meet personalization: perspectives of ...",
+    "url": "https://link.springer.com/article/10.1007/s11280-024-01276-1"
+  },
+  {
+    "description": "Gain valuable insights into essential topics such as LLM training, prompt engineering, concerns, applications, and more.",
+    "favicon_url": "https://you.com/favicon?domain=rbcborealis.com&size=128",
+    "snippets": [
+      "2022) trained a reward model with 6 billion parameters using used 50,000 prompts, each having four to nine associated responses (see Huyen, 2023). We have already seen how LLMs generate responses one token at a time. Each step depends on the previous output token, which was chosen using (controlled) random sampling. This poses a problem as gradient descent via backpropagation doesn\u2019t work here; a small change to the model parameters does not map to a small change in the output because of the intervening discrete sampling steps.",
+      "The process of generating a response is similar to how a chess game is played. Both involve a series of discrete steps (generating tokens vs. making chess moves) and a quality assessment at the end (good or bad response of the reward model vs. win/lose/draw the game).",
+      "The pre-trained LLM is then used to generate a series of prompts similar to the example prompts and the corresponding responses to these generated prompts. Once the demonstration data is prepared by one of these three methods, instruction fine-tuning typically follows a similar training process as pre-training. The objective is to optimize the model to correctly predict each sequential token of the response.",
+      "As long as model responses are desirable, there is no absolute need for prompts to be interpretable. Hence, instead of optimizing words used in a prompt, we can also optimize the token embeddings that are fed to the model."
+    ],
+    "title": "A High-level Overview of Large Language Models - Research Blog ...",
+    "url": "https://rbcborealis.com/research-blogs/a-high-level-overview-of-large-language-models/"
+  },
+  {
+    "description": "HTML conversions sometimes display errors due to content that did not convert correctly from the source. This paper uses the following packages that are not yet supported by the HTML conversion tool. Feedback on these issues are not necessary; they are known and are being worked on \u00b7 Authors: ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "ToT excelled in the Game of 24 tasks, achieving a 74% success rate compared to CoT\u2019s 4%. Additionally, in word-level tasks, ToT outperformed CoT with a 60% success rate versus 16%. The inherent non-linear nature of human thought processes challenges the conventional sequential approach of CoT prompting.",
+      "Rather than updating the model parameters, prompts allow seamless integration of pre-trained models into downstream tasks by eliciting desired model behaviors solely based on the given prompt. Prompts can be natural language instructions that provide context to guide the model or learned vector representations that activate relevant knowledge.",
+      "Notably, the implementation of CoS significantly elevates ChatGPT\u2019s performance, boosting accuracy from 31.8% to an impressive 92.6% on Brick World tasks. Moreover, CoS achieves up to a 65.8% reduction in prompt tokens, streamlining the process while maintaining high accuracy.",
+      "Combining CodeNet and single-line datasets yields the highest performance, achieving 26.6% correct final outputs and 24.6% perfect traces. Scratchpad prompting technique faces limitations, including a fixed context window size of 512 tokens and a dependency on supervised learning for scratchpad utilization."
+    ],
+    "title": "A Systematic Survey of Prompt Engineering in Large Language Models: ...",
+    "url": "https://arxiv.org/html/2402.07927v1"
+  },
+  {
+    "description": "Check out our deep dive on the latest meta prompting methods, like DSPy and TEXTGRAD, and the best prompt generator tools out there.",
+    "favicon_url": "https://you.com/favicon?domain=www.prompthub.us&size=128",
+    "snippets": [
+      "In this article, we\u2019ll dive into how meta prompting works, breaking down some of the latest and most popular methods from recent research papers. We\u2019ll cover plenty of examples so you can start using these techniques in your workflows and apps right away. Plus, you\u2019ll be able to see how we\u2019ve integrated meta prompting into PromptHub to make the prompt engineering process extremely efficient. ... Meta prompting is a prompt engineering method that uses large language models (LLMs) to create and refine prompts.",
+      "LCP instructs the LLM to compare good prompts against bad ones, allowing the model to identify what is working and what isn\u2019t. Based on this comparison, the LLM generates a new, refined prompt and continues to iteratively improve it.",
+      "This diversity enables exploration of the prompt space, preventing the model from getting trapped in a local minimum. ... High costs and latencies due to the need to generate, evaluate, and contrast multiple prompts in each iteration. The framework requires consistent feedback and evaluation to adapt effectively \u00b7 Here are the LCP prompt templates straight from the research paper:",
+      "Instead of focusing on quantitative scoring, it uses textual gradients\u2014natural language feedback\u2014to improve prompts. The LLM or a human provides feedback on the outputs, which highlights areas for improvement. This feedback is then used to refine the original prompt. We\u2019ll wrap up by mentioning some tools that can help with meta prompting: PromptHub\u2019s Prompt Generator: This tool generates prompts tailored to the model provider you're using."
+    ],
+    "title": "PromptHub Blog: A Complete Guide to Meta Prompting",
+    "url": "https://www.prompthub.us/blog/a-complete-guide-to-meta-prompting"
+  },
+  {
+    "description": "Discover the benefits of prompt tuning over model fine-tuning. Learn how prompt tuning and soft prompts work with Large Language Models.",
+    "favicon_url": "https://you.com/favicon?domain=learnprompting.org&size=128",
+    "snippets": [
+      "Additionally, soft prompts trained for a single model across multiple tasks will often be of the same token length. ... . In model tuning, you finetune the same model on different tasks. This gives you a few different models, with which you can't necessarily batch inputs easily. Unlike traditional text-based prompts, which are discrete strings of text, soft prompts are continuous vectors (embeddings) that are learned during training.",
+      "These vectors of values can be considered as model parameters. The model can be further trained, only adjusting the weights of these prompts. Prompt tuning performs better with larger models. Larger models also require fewer soft prompt tokens. Regardless, more than 20 tokens do not yield significant performance gains. Prompt tuning is a scalable and efficient alternative to full fine-tuning for adapting large language models.",
+      "Begin with a large pre-trained language model (e.g., T5, GPT) that has been trained on a vast dataset. The main model parameters are kept fixed. A small set of soft prompt embeddings is added to the input. These are trainable vectors that serve as task-specific instructions. The soft prompt embeddings are appended to the tokenized representation of the input text.",
+      "To understand the basic logic behind soft prompting, let's think about how model inference works on a given prompt: ... It might be tokenized as What, 's, 2, +, 2, ?. Then, each token will be converted to a vector of values."
+    ],
+    "title": "Prompt Tuning with Soft Prompts",
+    "url": "https://learnprompting.org/docs/trainable/soft_prompting"
+  },
+  {
+    "description": "Visual prompt engineering is a fundamental methodology in the field of visual and image artificial general intelligence. As the development of large v\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "We present influential large models in the visual domain and a range of prompt engineering methods employed on these models. It is our hope that this review provides a comprehensive and systematic description of prompt engineering methods based on large visual models, offering valuable insights for future researchers in their exploration of this field.",
+      "Visual prompt engineering is a fundamental methodology in the field of visual and image artificial general intelligence. As the development of large vision models progresses, the importance of prompt engineering becomes increasingly evident. Designing suitable prompts for specific visual tasks has emerged as a meaningful research direction.",
+      "Emphasize the growing role of visual prompt engineering in artificial intelligence.",
+      "Provide an overview of key vision models and the latest prompt methods in artificial intelligence."
+    ],
+    "title": "Review of large vision models and visual prompt engineering - ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2950162823000474"
+  },
+  {
+    "description": "An official website of the United States government \u00b7 Official websites use .gov A .gov website belongs to an official government organization in the United States",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "When collecting research data, ensure that it is properly de-identified and consult the institutional data review board. Separate the data used for prompt optimization from the test data to ensure a fair evaluation of LLM performance. If data is limited, one may consider creating synthetic data for prompt optimization and reserve real data for testing.",
+      "Top-k sampling limits the options for the next token in a model\u2019s response to the top-k most probable tokens at each step [7]. Setting the temperature to zero or top-k sampling to one will make the model select the most likely token, making model operation essentially deterministic [8]. However, note that this randomness is not completely avoidable [9,10]. One method to handle stochastic models is to perform multiple runs using the API. Locally downloadable models can be set to a completely deterministic behavior by using greedy sampling [11]. Here, we present additional tips on prompt optimization acquired from a recent study (Fig.",
+      "Therefore, developing effective strategies to optimize the prompting process and transparently reporting these methods is crucial for successful clinical research studies involving LLMs [1]. A substantial body of literature exists on \u2018prompt engineering\u2019, many of which present innovative techniques or variations for prompting.",
+      "This article aims to introduce the basic methods for optimizing prompting and to serve as a quick-start manual for clinical researchers, recounting our recent experience [2]. We begin with a general overview of prompt engineering, abstaining from deep dives into specific techniques, and invite our readers to explore further resources for a comprehensive understanding."
+    ],
+    "title": "How to Optimize Prompting for Large Language Models in Clinical ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11444847/"
+  },
+  {
+    "description": "A generative AI (gen AI) model, such as ChatGPT, is trained using a variety of text from the internet. However, artificial intelligence (AI) doesn't have specific information about particular documents or sources used during its training.",
+    "favicon_url": "https://you.com/favicon?domain=www.redhat.com&size=128",
+    "snippets": [
+      "In a recent research paper titled Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, Jason Wei and his team aimed to mimic reasoning abilities within an LLM. Departing from the conventional practice of using direct prompts, the team employs a series of interconnected prompts that form what they call a chain-of-thought.",
+      "After producing each token, the model reviews the entire sequence it has generated so far and processes it again to generate the next token. This recursive process continues until the final token completes the generated text. This means that the quality of the AI's response depends on the prompt or instruction that a user provides.",
+      "The way these models operate is based on the concept of tokens, which are discrete units of language ranging from individual characters to whole words.",
+      "Instead, there's an inherent restriction on the size of the prompt you can construct and input. This limitation has profound implications for how you formulate and utilize prompts effectively. An LLM has a maximum token capacity encompassing both the prompt and the ensuing response."
+    ],
+    "title": "Tips for generative AI large language model (LLM) prompt patterns",
+    "url": "https://www.redhat.com/en/blog/tips-for-gen-ai-prompts"
+  },
+  {
+    "description": "Discrete and continuous representations of content (e.g., of language or images) have interesting properties to be explored for the understanding of o\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Discrete and continuous representations of content (e.g., of language or images) have interesting properties to be explored for the understanding of or reasoning with this content by machines. This position paper puts forward our opinion on the role of discrete and continuous representations and their processing in the deep learning field. Current neural network models compute continuous-valued data.",
+      "By stark contrast, humans use discrete symbols in their communication with language. Such symbols represent a compressed version of the world that derives its meaning from shared contextual information. Additionally, human reasoning involves symbol manipulation at a cognitive level, which facilitates abstract reasoning, the composition of knowledge and understanding, generalization and efficient learning. Motivated by these insights, in this paper we argue that combining discrete and continuous representations and their processing will be essential to build systems that exhibit a general form of intelligence.",
+      "We suggest and discuss several avenues that could improve current neural networks with the inclusion of discrete elements to combine the advantages of both types of representations."
+    ],
+    "title": "Discrete and continuous representations and processing in deep ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666651021000206"
+  },
+  {
+    "description": "Background: Large language models (LLMs) have shown remarkable capabilities in natural language processing (NLP), especially in domains where labeled data are scarce or expensive, such as the clinical domain. However, to unlock the clinical knowledge hidden in these LLMs, we need to design ...",
+    "favicon_url": "https://you.com/favicon?domain=medinform.jmir.org&size=128",
+    "snippets": [
+      "Background: Large language models (LLMs) have shown remarkable capabilities in natural language processing (NLP), especially in domains where labeled data are scarce or expensive, such as the clinical domain. However, to unlock the clinical knowledge hidden in these LLMs, we need to design effective prompts that can guide them to perform specific clinical NLP tasks without any task-specific training data.",
+      "It reduces the cost and time in the initial phases of clinical NLP application development, where prompt-based methods offer a streamlined alternative to the conventional data preparation and model training processes. It is flexible and adaptable, as it can be applied to various clinical NLP tasks with different prompt types and LLMs. It is interpretable and explainable, as it uses natural language prompts that can be easily understood and modified by humans.",
+      "To the best of our knowledge, this is one of the first works on the empirical evaluation of different prompt engineering approaches for clinical NLP in this era of generative artificial intelligence, and we hope that it will inspire and inform future research in this area. JMIR Med Inform 2024;12:e55318 doi:10.2196/55318 \u00b7 large language model; LLM; LLMs; natural language processing; NLP; in-context learning; prompt engineering; evaluation; zero-shot; few shot; prompting; GPT; language model; language; models; machine learning; clinical data; clinical information; extraction; BARD; Gemini; LLaMA-2; heuristic; prompt; prompts; ensemble",
+      "Table 3. Performance comparison of different prompt types and language models. aBest performance on a task regardless of the model (ie, for each GPT-3.5 or Gemini or LLaMA-2 triple)."
+    ],
+    "title": "JMIR Medical Informatics - An Empirical Evaluation of Prompting ...",
+    "url": "https://medinform.jmir.org/2024/1/e55318"
+  },
+  {
+    "description": "1]Guangdong Provincial Key Laboratory of Interdisciplinary Research and Application for Data Science, \\orgnameBNU-HKBU United International College, \\orgaddress\\cityZhuhai \\postcode519087, \\stateGuangdong, \\countryChina 2]\\orgnameResearch Center for Mathematics, Beijing Normal University, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Unlike traditional handcrafted prompts, which require expert knowledge and manual effort, continuous prompt vectors [134] are learned during the training process, allowing for more flexible and efficient model adaptation. This method involves appending or prepending sequences of random vectors to the input text, which the model then interprets as part of its textual input.",
+      "They found that a customized prompt significantly improved the model\u2019s ability with fine-tuning, and demonstrated a significant advantage by generating substantially fewer errors in reasoning. In another research, [47] observed that solely using zero-shot CoT prompting leads to a significant enhancement in the performance of GPT-3 and PaLM when compared to the conventional zero-shot and few-shot prompting methods.",
+      "Contemporary prompt engineering encompasses a spectrum of techniques, ranging from foundational approaches such as role-prompting [25] to more sophisticated methods such as chain-of-thought prompting [23]. The domain remains dynamic, with emergent research continually unveiling novel techniques and applications in prompt engineering. The importance of prompt engineering is accentuated by its ability to guide model responses, thereby amplifying the versatility and relevance of LLMs in various sectors.",
+      "Similarly, in finance, compromised models could result in significant financial losses and undermine trust in automated financial services [248]. Consequently, there is a critical need for continuous and in-depth research in prompt engineering security to fully realize its benefits and address emerging challenges."
+    ],
+    "title": "Unleashing the potential of prompt engineering in Large Language ...",
+    "url": "https://arxiv.org/html/2310.14735v5"
+  },
+  {
+    "description": "Prompt engineering is the process of structuring or crafting an instruction in order to produce the best possible output from a generative artificial intelligence (AI) model. A prompt is natural language text describing the task that an AI should perform. A prompt for a text-to-text language ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "An earlier result uses the same idea of gradient descent search, but is designed for masked language models like BERT, and searches only over token sequences, rather than numerical vectors.",
+      "Some approaches augment or replace natural language text prompts with non-text input. For text-to-image models, textual inversion performs an optimization process to create a new word embedding based on a set of example images. This embedding vector acts as a \"pseudo-word\" which can be included in a prompt to express the content or style of the examples. In 2023, Meta's AI research released Segment Anything, a computer vision model that can perform image segmentation by prompting.",
+      "Prompting a text-to-image model may involve adding, removing, or emphasizing words to achieve a desired subject, style, layout, lighting, and aesthetic. In 2018, researchers first proposed that all previously separate tasks in natural language processing (NLP) could be cast as a question-answering problem over a context.",
+      "According to Google Research, chain-of-thought (CoT) prompting is a technique that allows large language models (LLMs) to solve a problem as a series of intermediate steps before giving a final answer. In 2022, Google Brain reported that chain-of-thought prompting improves reasoning ability by inducing the model to answer a multi-step problem with steps of reasoning that mimic a train of thought.",
+      "CoT examples can be generated by LLM themselves. In \"auto-CoT\", a library of questions are converted to vectors by a model such as BERT. The question vectors are clustered. Questions close to the centroid of each cluster are selected, in order to have a subset of diverse questions."
+    ],
+    "title": "Prompt engineering - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Prompt_engineering"
+  }
+]

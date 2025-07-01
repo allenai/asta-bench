@@ -1,0 +1,251 @@
+[
+  {
+    "description": "Learn how to use HumanEval to evaluate your LLM on code generation capabilities with the Hugging Face Evaluate library.",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "Additionally, there are concerns about overfitting, as models might be trained on similar datasets, which could lead to improved performance on HumanEval specifically.  \u00b7 Therefore, when evaluating large language models (LLMs) for code generation capabilities, it's essential to consider multiple performance metrics, such as MBPP (Mostly Basic Python Problems), ClassEval, DevQualityEval, and others.",
+      "This dataset contains 164 Python programming problems and includes English natural text found in comments and docstrings.  \u00b7 We will also load the code_eval evaluation metric, enabling us to run the HumanEval benchmark.",
+      "This is the main section where the magic happens. We will run the HumanEval for five samples per problem, with a total of 164 problems to evaluate. The outer loop will extract the prompt and test from the dataset. Using the prompt, it will generate five different samples for the same problem.",
+      "HumanEval is a benchmark dataset developed by OpenAI that evaluates the performance of large language models (LLMs) in code generation tasks."
+    ],
+    "title": "HumanEval: A Benchmark for Evaluating LLM Code Generation ...",
+    "url": "https://www.datacamp.com/tutorial/humaneval-benchmark-for-evaluating-llm-code-generation-capabilities"
+  },
+  {
+    "description": "This is an evaluation harness for the HumanEval problem solving dataset described in the paper \"Evaluating Large Language Models Trained on Code\". It used to measure functional correctness for synthesizing programs from docstrings. It consists of 164 original programming problems, assessing ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "This is an evaluation harness for the HumanEval problem solving dataset described in the paper \"Evaluating Large Language Models Trained on Code\". It used to measure functional correctness for synthesizing programs from docstrings. It consists of 164 original programming problems, assessing language comprehension, algorithms, and simple mathematics, with some comparable to simple software interview questions.",
+      "Introduced by Chen et al. in Evaluating Large Language Models Trained on Code",
+      "Source: Evaluating Large Language Models Trained on Code."
+    ],
+    "title": "Papers with Code - HumanEval Dataset",
+    "url": "https://paperswithcode.com/dataset/humaneval"
+  },
+  {
+    "description": "Code for the paper \"Evaluating Large Language Models Trained on Code\" - openai/human-eval",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "This is an evaluation harness for the HumanEval problem solving dataset described in the paper \"Evaluating Large Language Models Trained on Code\".",
+      "{\"task_id\": \"Corresponding HumanEval task ID\", \"completion\": \"Completion only without the prompt\"}"
+    ],
+    "title": "GitHub - openai/human-eval: Code for the paper \"Evaluating Large ...",
+    "url": "https://github.com/openai/human-eval"
+  },
+  {
+    "description": "The benchmark consists of around 1,000 crowd-sourced Python programming problems, designed to be solvable by entry-level programmers, covering programming fundamentals, standard library functionality, and so on. Each problem consists of a task description, code solution and 3 automated test cases.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [],
+    "title": "Papers with Code - MBPP Dataset",
+    "url": "https://paperswithcode.com/dataset/mbpp"
+  },
+  {
+    "description": "57 votes, 22 comments. Hi all! Everyone is very excited about the Code Llama fine tunes beating GPT-4 in HumanEval, so I would like to share a bit\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/hackerllama - 57 votes and 22 comments",
+      "How do I run benchmark evaluation? Is there any standard procedure? ... One promising approach is Leetcode-Hard Gym: https://github.com/GammaTauAI/leetcode-hard-gym - while it might not be standardized it will give you a great way of doing shootoffs or testing claims (eg high HumanEval scores).",
+      "One of the reasons humanEval was created was that these LLMs are trained on all leetcode datasets. So using leetcode examples will lead to data leakage (thats what the paper says). ... I'm running the zero-shot-replication results right now on WizardCoder-34B and Phind CodeLLama right now (using the same LeetCode sampling) and it seems to mirror the published results (2.1% acceptance on the Hard questions) so if there is leakage, it's not very good.",
+      "it's possible that the models didn't actually learn to answer hard problems well, even if they have seen the problems. One of the issues in HumanEval is that the tasks are not all equally difficult. Still, with your reported findings, it sounds like this dataset is a good option to validate if the model can manage, even if there is some leakage."
+    ],
+    "title": "r/LocalLLaMA on Reddit: HumanEval as an accurate code benchmark",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/161waft/humaneval_as_an_accurate_code_benchmark/"
+  },
+  {
+    "description": "The current state-of-the-art on HumanEval is LLaMA 3. See a full comparison of 5 papers with code.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [],
+    "title": "Papers with Code - HumanEval Benchmark (Code Generation)",
+    "url": "https://paperswithcode.com/sota/code-generation-on-humaneval"
+  },
+  {
+    "description": "A framework for the evaluation of autoregressive code generation language models. - bigcode-evaluation-harness/docs/README.md at main \u00b7 bigcode-project/bigcode-evaluation-harness",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "A framework for the evaluation of autoregressive code generation language models. - bigcode-project/bigcode-evaluation-harness",
+      "Adapt max_length_generation based on your model's context size and task, by default it is 512. This value is enough for tasks like HumanEval and MBPP but some tasks such as APPS require a larger value because the prompts are long, you can use the full model's context size.",
+      "We also give the option to include a code solution in the prompt, just set include_solution_mbpp to True. We use single generations per problem (pass@1), where the model is only given one chance to solve each problem. But we still follow Chen et al. approach similarily to HumanEval for pass@k estimation, we generate",
+      "Recode proposes a set of code and natural language transformations to evaluate the robustness of code-generation models. The perturbations can be applied to any code-generation benchmark. Specifically, they release perturbed versions of HumanEval and MBPP."
+    ],
+    "title": "bigcode-evaluation-harness/docs/README.md at main \u00b7 bigcode-p...",
+    "url": "https://github.com/bigcode-project/bigcode-evaluation-harness/blob/main/docs/README.md"
+  },
+  {
+    "description": "CrossCodeEval benchmark specially targets to address the gap that \"existing code completion datasets such as HumanEval and MBPP mostly focus on single-file tasks, neglecting the real-world complexity of multi-file software projects\". To achieve this goal, CrossCodeEval uses a static-analysis-based ...",
+    "favicon_url": "https://you.com/favicon?domain=tabby.tabbyml.com&size=128",
+    "snippets": [
+      "CrossCodeEval benchmark specially targets to address the gap that \"existing code completion datasets such as HumanEval and MBPP mostly focus on single-file tasks, neglecting the real-world complexity of multi-file software projects\". To achieve this goal, CrossCodeEval uses a static-analysis-based method to strictly require cross-file context for accurate code completion.",
+      "Limited coverage in programming languages. This one is obvious as HumanEval only includes Python code. We \u2764\ufe0f all programming languages! MBPP is another popular benchmark for code generation. Researchers from Google introduced it in the paper Program Synthesis with Large Language Models in August 2021, one month after the release of HumanEval.",
+      "Unlike HumanEval, MBPP targets basic tasks commonly encountered by engineers, such as string manipulation, simple arithmetic, and basic data structure operations.",
+      "It's one of the most important concepts in your Machine Learning 101 course. Yet often times it gets so basic that folks neglect the challenges to ensure it in real-world applications over time. For example, HumanEval started as a manually drafted dataset to firmly ensure the data separation."
+    ],
+    "title": "Cracking the Coding Evaluation | Tabby AI coding assistant",
+    "url": "https://tabby.tabbyml.com/blog/2023/11/13/model-evaluation/"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "To assess LLM performance, we use Pass@1 with greedy decoding, measuring the percentage of tasks correctly solved with the first generated code snippet via curated test cases. This approach aligns with benchmarks like HumanEval and MBPP. We address LLMs' tendency to skip long code prompts by adding missing setups (e.g., import statements, global constants) during Pass@1 evaluation, referred to as calibrated Pass@1.",
+      "We make BigCodeBench easily accessible to the community by providing a simple and user-friendly evaluation framework, which can be downloaded via PyPI. The prototype of the evaluation framework is based on EvalPlus for the HumanEval+ and MBPP+ benchmarks.",
+      "However, there are growing concerns about its effectiveness in evaluating the programming capabilities of LLMs, and the main concern is that tasks in HumanEval are too simple and may not be representative of real-world programming tasks. Compared to the algorithm-oriented tasks in HumanEval, real-world software development often involves diverse libraries and function calls.",
+      "HumanEval is a reference benchmark for evaluating large language models (LLMs) on code generation tasks, as it makes the evaluation of compact function-level code snippets easy."
+    ],
+    "title": "BigCodeBench: The Next Generation of HumanEval",
+    "url": "https://huggingface.co/blog/leaderboard-bigcodebench"
+  },
+  {
+    "description": "The HumanEval benchmark is a dataset designed to evaluate the code generation capabilities of large language models (LLMs). It consists of 164 hand-crafted programming challenges, each including a function signature, docstring, body, and several unit tests, averaging 7.7 tests per problem.",
+    "favicon_url": "https://you.com/favicon?domain=klu.ai&size=128",
+    "snippets": [
+      "Codex, a GPT model fine-tuned on GitHub code, powers GitHub Copilot and solves 28.8% of the original evaluation problems, outperforming GPT-3 and GPT-J. With repeat sampling, its success rate increases to 70.2%. However, it struggled with complex docstrings and variable bindings, raising concerns about safety, security, and economic impacts. The HumanEval benchmark is a dataset designed to evaluate the code generation capabilities of large language models (LLMs).",
+      "While HumanEval is crucial for evaluating code generation, it doesn't cover all potential applications like code explanation or docstring generation, indicating the need for broader benchmarking efforts. HumanEval's scope extends beyond Python, with versions available for other programming languages, enhancing its utility in code generation research. HumanEval is a benchmark dataset designed to evaluate the functional correctness of code generated by large language models (LLMs).",
+      "This benchmark was created to prevent data leakage by ensuring the problems were not included in the training sets of code generation models, thus providing a fair assessment of a model's ability to generate novel code. The HumanEval dataset has become a popular tool for assessing the progress and capabilities of code generation models since its inception in mid-2021.",
+      "The HumanEval benchmark was introduced in the paper \"Evaluating Large Language Models Trained on Code\" by OpenAI, and the evaluation harness for the dataset is available on GitHub."
+    ],
+    "title": "HumanEval Benchmark \u2014 Klu",
+    "url": "https://klu.ai/glossary/humaneval-benchmark"
+  },
+  {
+    "description": "With MosaicML, you can now evaluate LLMs and Code Generation Models on code generation tasks (such as HumanEval, with MBPP and APPS coming soon), with an effortless, end-to-end secure code evaluation framework. We handle all the requirements of sandboxing serverless compute, making code evaluation ...",
+    "favicon_url": "https://you.com/favicon?domain=www.databricks.com&size=128",
+    "snippets": [
+      "With MosaicML, you can now evaluate LLMs and Code Generation Models on code generation tasks (such as HumanEval, with MBPP and APPS coming soon), with an effortless, end-to-end secure code evaluation framework. We handle all the requirements of sandboxing serverless compute, making code evaluation a seamless new feature in the MosaicML platform.",
+      "With increased demand for model-generated code comes an equal need for metrics to evaluate model performance on these tasks. These evaluations come in various forms, such as the open-source HumanEval dataset.",
+      "And on the MosaicML platform, with our existing In-Context Learning stack, our forthcoming code evaluation feature will even spin up and set up the Lambdas on behalf of the user, requiring no additional overhead beyond the user\u2019s path to the desired dataset. The magic is all managed for you! For the user, it\u2019s as easy as opening your logger of choice and seeing the graph pop up immediately, just like in Figure 2. Figure 2 \u2013 Live Evaluation of HumanEval during Finetuning.",
+      "Not only is our secure code evaluation platform seamlessly integrated with our stack, we have benchmarked it on the HumanEval dataset to ensure that our implementation is consistent with the current industry standard."
+    ],
+    "title": "End-to-End Secure Evaluation of Code Generation Models | Databricks ...",
+    "url": "https://www.databricks.com/blog/secure-code-evaluation"
+  },
+  {
+    "description": "Benchmarks are used by researchers to evaluate and compare the relative performance of LLMs. Although there is no replacement for trying out LLMs yourself while coding to figure out which one works best for you, benchmarks and popularity rankings can help determine which LLMs are worth trying.",
+    "favicon_url": "https://you.com/favicon?domain=blog.continue.dev&size=128",
+    "snippets": [
+      "In contrast, HumanEval varies in the number and formatting of the input/output examples in a way that mimics real-world software. Description: The Mostly Basic Programming Problems (MBPP) dataset contains 974 programming tasks, designed to be solvable by entry-level programmers.",
+      "Motivation: MBPP is similar to the HumanEval benchmark, but differs in the formatting of prompts. It consistently contains three input/output examples, written as assert statements.",
+      "Motivation: To extend the HumanEval benchmark and MBPP benchmark to 18 languages that encompass a range of programming paradigms and popularity",
+      "Description: HumanEval is a benchmark for measuring functional correctness for synthesizing programs from docstrings. It consists of 164 Python programming problems. Each problem includes a function signature, docstring, body, and several unit tests, with an average of 7.7 tests per problem."
+    ],
+    "title": "An introduction to code LLM benchmarks for software engineers",
+    "url": "https://blog.continue.dev/an-introduction-to-code-llm-benchmarks-for-software-engineers/"
+  },
+  {
+    "description": "These cases are strategically designed, ... to evaluating the robustness of solutions against corner values. The average word count for each problem in the NCB is 78.3. Compared with Other Benchmark. Table 1 compares NCB to other benchmarks. It is noteworthy that our benchmark offers a substantial supplement to current benchmarks in terms of both problem and data types. Unlike Humaneval and MBPP, which consist ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "These cases are strategically designed, with about 60% focused on enhancing statement and branch coverage, and the remaining 40% dedicated to evaluating the robustness of solutions against corner values. The average word count for each problem in the NCB is 78.3. Compared with Other Benchmark. Table 1 compares NCB to other benchmarks. It is noteworthy that our benchmark offers a substantial supplement to current benchmarks in terms of both problem and data types. Unlike Humaneval and MBPP, which consist of 96.9% and 89.5% algorithmic and basic programming problems respectively, our benchmark features a more balanced distribution across each domain.",
+      "A leading and extensively researched benchmark in this domain is HumanEval [13], which features 164 Python function signatures accompanied by docstrings and corresponding test cases for validating correctness. Additionally, each problem in HumanEval includes a reference solution. The MBPP [7] dataset, another Python-centric collection, was developed by having participants contribute 974 programming challenges.",
+      "Large language models (LLMs) have manifested strong ability to generate codes for productive activities. However, current benchmarks for code synthesis, such as HumanEval, MBPP, and DS-1000, are predominantly oriented towards introductory tasks on algorithm and data science, insufficiently satisfying challenging requirements prevalent in real-world coding.",
+      "Our systematic experiments on 39 LLMs find that performance gaps on NCB between models with close HumanEval scores could still be significant, indicating a lack of focus on practical code synthesis scenarios or over-specified optimization on HumanEval. On the other hand, even the best-performing GPT-4 is still far from satisfying on NCB. The evaluation toolkit and development set are available at https://github.com/THUDM/NaturalCodeBench."
+    ],
+    "title": "NaturalCodeBench: Examining Coding Performance Mismatch on HumanEval ...",
+    "url": "https://arxiv.org/html/2405.04520v1"
+  },
+  {
+    "description": "Each prompt went through additional ... hard, and unambiguous. Around a third of the suggested prompts were disqualified for one of these reasons. All annotators were paid above minimum wage in their respective countries, and all final prompt-completion pairs were manually reviewed by the authors. This adversarial collection resulted in more difficult problems, with most models solving less than ... Table 2: Pass@1 results across popular models for zero-shot HumanEval, MBPP and ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Each prompt went through additional review to ensure that they were original, hard, and unambiguous. Around a third of the suggested prompts were disqualified for one of these reasons. All annotators were paid above minimum wage in their respective countries, and all final prompt-completion pairs were manually reviewed by the authors. This adversarial collection resulted in more difficult problems, with most models solving less than ... Table 2: Pass@1 results across popular models for zero-shot HumanEval, MBPP and LBPP.",
+      "Measuring recent progress in code generation has relied on few, critical benchmarks to judge performance between model families and checkpoints. While many recent sophisticated evaluation datasets have been proposed (Jain et al., 2024; Jimenez et al., 2024), the community largely relies on HumanEval (Chen et al., 2021) and MBPP (Austin et al., 2021) to judge a new model\u2019s code capability.",
+      "In fact, all major announcements in 2023-2024 claiming advanced code capabilities\u2014from either academic or industry labs\u2014boast one or both of these datasets. Practically, reporting HumanEval and MBPP is mandatory for a model to report competitive code generation.",
+      "LBPP is similar in size to HumanEval and MBPP, but designed to be more complex using model in the loop filtering. LBPP is also designed to share no inspiration or sources with existing training and evaluation datasets, presenting a novel generalization challenge to contemporary LLMs."
+    ],
+    "title": "On Leakage of Code Generation Evaluation Datasets",
+    "url": "https://arxiv.org/html/2407.07565v3"
+  },
+  {
+    "description": "Dive into the HumanEval dataset and the pass@k metric, revolutionizing the evaluation of Large Language Models in code generation tasks....",
+    "favicon_url": "https://you.com/favicon?domain=deepgram.com&size=128",
+    "snippets": [
+      "However, evaluating the quality of the generated code presents a unique set of challenges. Traditional metrics like BLEU score, which measures text similarity, are only sometimes suitable for assessing the functional correctness of the code, an aspect that is paramount for any programming task. Enter the HumanEval dataset and the pass@k metric.",
+      "This hand-crafted dataset, consisting of 164 programming challenges, and the novel evaluation metric, designed to assess the functional correctness of the generated code, have revolutionized how we measure the performance of LLMs in code generation tasks. This article delves into the intricacies of the HumanEval dataset, the limitations of traditional evaluation methods, the workings of the pass@k metric, and the implications of this novel approach on the ongoing development of code generation models.",
+      "The dataset was meticulously crafted to prevent data leakage, as the Codex model and many more large language models released later contain training data from websites like GitHub. Before introducing the immensely popular HumanEval benchmark, most evaluation methods for generated code involved comparing the produced solution with the ground-truth code.",
+      "Since its inception in mid-2021, the HumanEval benchmark has not only become immensely popular but has also emerged as a quintessential evaluation tool for measuring the performance of LLMs in code generation tasks."
+    ],
+    "title": "HumanEval: LLM Benchmark for Code Generation | Deepgram",
+    "url": "https://deepgram.com/learn/humaneval-llm-benchmark"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "CoderEval: A Benchmark of Pragmatic Code Generation ...",
+    "url": "https://arxiv.org/pdf/2302.00288"
+  },
+  {
+    "description": "Explore the HumanEval Benchmark, a key metric for assessing LLMs' code generation capabilities. Learn how it measures accuracy, efficiency, and creativity.",
+    "favicon_url": "https://you.com/favicon?domain=metaschool.so&size=128",
+    "snippets": [
+      "The HumanEval dataset is a collection of different problems designed to assess the code generation capabilities of large language models. Each problem in this dataset is structured to provide comprehensive information, ensuring that the model is evaluated on syntactical accuracy as well as functional correctness.",
+      "This structure ensures that models are evaluated not just on code syntax but also on their ability to produce semantically correct and functional code solutions. By encompassing function signatures, descriptive docstrings, implementation bodies, and rigorous unit tests, the HumanEval dataset provides a robust framework for assessing the practical coding proficiency of language models.",
+      "The HumanEval benchmark is a dataset developed by OpenAI to assess the code generation capabilities of large language models (LLMs). It comprises 164 hand-crafted programming problems, each accompanied by a function signature, docstring, body, and multiple unit tests, averaging 7.7 tests per problem.",
+      "The dataset focuses on functional correctness rather than textual similarity, making it a more practical measure of a model\u2019s problem-solving abilities in programming contexts. Yes, the original HumanEval dataset is designed exclusively for Python. All 164 programming problems are written in Python, and the unit tests are tailored to evaluate Python code."
+    ],
+    "title": "HumanEval Benchmark: Evaluating LLM Code Generation Capability",
+    "url": "https://metaschool.so/articles/humaneval-benchmark-for-llm-code-generation"
+  },
+  {
+    "description": "CrossCodeEval benchmark specially targets to address the gap that \"existing code completion datasets such as HumanEval and MBPP mostly focus on single-file tasks, neglecting the real-world complexity of multi-file software projects\". To achieve this goal, CrossCodeEval uses a static-analysis-based ...",
+    "favicon_url": "https://you.com/favicon?domain=www.tabbyml.com&size=128",
+    "snippets": [
+      "CrossCodeEval benchmark specially targets to address the gap that \"existing code completion datasets such as HumanEval and MBPP mostly focus on single-file tasks, neglecting the real-world complexity of multi-file software projects\". To achieve this goal, CrossCodeEval uses a static-analysis-based method to strictly require cross-file context for accurate code completion.",
+      "Limited coverage in programming languages. This one is obvious as HumanEval only includes Python code. We \u2764\ufe0f all programming languages! MBPP is another popular benchmark for code generation. Researchers from Google introduced it in the paper Program Synthesis with Large Language Models in August 2021, one month after the release of HumanEval.",
+      "Unlike HumanEval, MBPP targets basic tasks commonly encountered by engineers, such as string manipulation, simple arithmetic, and basic data structure operations.",
+      "It's one of the most important concepts in your Machine Learning 101 course. Yet often times it gets so basic that folks neglect the challenges to ensure it in real-world applications over time. For example, HumanEval started as a manually drafted dataset to firmly ensure the data separation."
+    ],
+    "title": "Cracking the Coding Evaluation | Tabby AI coding assistant",
+    "url": "https://www.tabbyml.com/blog/model-evaluation"
+  },
+  {
+    "description": "The current state-of-the-art on MBPP is EG-CFG (DeepSeek-V3-0324). See a full comparison of 97 papers with code.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [],
+    "title": "Papers with Code - MBPP Benchmark (Code Generation)",
+    "url": "https://paperswithcode.com/sota/code-generation-on-mbpp"
+  },
+  {
+    "description": "It is designed to evaluate the problem-solving and functional correctness capabilities of large language models (LLMs), particularly in handling complex algorithmic tasks. This dataset was used to assess the Reflexion framework, which leverages verbal reinforcement learning to improve LLM performance on difficult coding problems. ... Extension test cases of HumanEval, as well as generated code. ... Extension test cases of MBPP...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "It is designed to evaluate the problem-solving and functional correctness capabilities of large language models (LLMs), particularly in handling complex algorithmic tasks. This dataset was used to assess the Reflexion framework, which leverages verbal reinforcement learning to improve LLM performance on difficult coding problems. ... Extension test cases of HumanEval, as well as generated code. ... Extension test cases of MBPP, as well as generated code.",
+      "HumanEval-X is a benchmark for evaluating the multilingual ability of code generative models. It consists of 820 high-quality human-crafted data samples (each with test cases) in Python, C++, Java, JavaScript, and Go, and can be used for various tasks, such as code generation and translation. ... LeetCode-Hard is a benchmark dataset for code generation, consisting of 40 challenging LeetCode \"hard-level\" questions across 19 programming languages.",
+      "BigCodeBench is an easy-to-use benchmark for code generation with practical and challenging programming tasks\u00b9. It aims to evaluate the true programming capabilities of large language models (LLMs) in a more realistic setting\u00b9. The benchmark is designed for HumanEval-like function-level code generation tasks, but with much more complex instructions and diverse function calls\u00b9.",
+      "Third, based on DSEval and the four benchmarks, we conduct a comprehensive evaluation of various data science agents from different aspects. Our findings reve ... We introduce HumanEval-XL, a massively multilingual code generation benchmark specifically crafted to address this deficiency."
+    ],
+    "title": "Papers with Code - Machine Learning Datasets",
+    "url": "https://paperswithcode.com/datasets?q=&v=lst&o=newest&task=code-generation&page=1"
+  },
+  {
+    "description": "CodeContests is a competitive programming dataset for machine-learning. This dataset was used when training AlphaCode. It consists of programming problems, from a variety of sources. Problems include test cases in the form of paired inputs and outputs, as well as both correct and incorrect ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "CodeContests is a competitive programming dataset for machine-learning. This dataset was used when training AlphaCode. It consists of programming problems, from a variety of sources. Problems include test cases in the form of paired inputs and outputs, as well as both correct and incorrect human solutions in a variety of languages."
+    ],
+    "title": "Papers with Code - CodeContests Dataset",
+    "url": "https://paperswithcode.com/dataset/codecontests"
+  },
+  {
+    "description": "Collection of Papers on Code Evaluation (from code generation language models)",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Note contamination directly: every humaneval problem is at least 43 times on github contamination indirectly: high similarity with synthetic rephrases for instruction learning overfitting on benchmarks: humaneval and MBPP should be considered \"dev sets\" also add LBPP (less basic ....)",
+      "Note HumanEvalPlus with additional test cases has a great figure to rank HumanEval problems on passrate, showcasing that some of them are much easier than others.",
+      "Note introduces Mostly Basic Programming Problems (MBPP)"
+    ],
+    "title": "Code Evaluation - a Vipitis Collection",
+    "url": "https://huggingface.co/collections/Vipitis/code-evaluation-6530478d8e4767ecfe1bc489"
+  },
+  {
+    "description": "Difficulty Level Diversity: In ... levels: Easy, Medium, and Hard, based on their individual expertise and experience. Figure 2: Average number of problems in each of the programming concepts for two benchmarks, HumanEval and MBPP....",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Difficulty Level Diversity: In this study, each annotator categorized the problems into three distinct difficulty levels: Easy, Medium, and Hard, based on their individual expertise and experience. Figure 2: Average number of problems in each of the programming concepts for two benchmarks, HumanEval and MBPP.",
+      "Finally, the Advance category contains 1.09% and 3.04% problems in HumanEval and MBPP, respectively. Diversity in the Difficulty level: Here, we report the difficulty level assigned to a problem using majority voting among the annotators. In HumanEval, 84.8% of the problems were classified as Easy, 14.6% as Medium, and only 0.6% as Hard.",
+      "Whereas in MBPP, 89.6% and 10.4% of problems were categorized as Easy, and Medium, respectively. No problem in MBPP was labeled as Hard. Here, we achieved significant consensus among the annotators. For example, in HumanEval, we find complete agreement among five annotators on 39% of the problems.",
+      "Consequently, HumanEval (Chen et al., 2021), MBPP (Austin et al., 2021), APPS (Hendrycks et al., 2021), and DS-1000 (Lai et al., 2023) have emerged as prominent benchmarks, leveraging data curated from popular coding platforms like GitHub (GitHub, 2024), LeetCode (GeeksForGeeks, 2023), and Codeforces (Codeforces, 2024) and crowdsourcing efforts. These benchmarks offer a diverse range of programming challenges, with sizes ranging from a few hundred instances in HumanEval (Chen et al., 2021)) to several thousand instances in datasets like APPS (Hendrycks et al., 2021) and MBPP (Austin et al., 2021)."
+    ],
+    "title": "PythonSaga: Redefining the Benchmark to Evaluate Code Generating LLMs",
+    "url": "https://arxiv.org/html/2401.03855v4"
+  }
+]

@@ -1,0 +1,235 @@
+[
+  {
+    "description": "Papers by Furu Wei with links to code and results.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "We propose to pre-train a unified language model for both autoencoding and partially autoregressive language modeling tasks using a novel training procedure, referred to as a pseudo-masked language model (PMLM). ... no code implementations \u2022 EACL (AdaptNLP) 2021 \u2022 Tianyu Chen, Shaohan Huang, Furu Wei, JianXin Li",
+      "In unsupervised domain adaptation, we aim to train a model that works well on a target domain when provided with labeled source samples and unlabeled target samples. ... no code implementations \u2022 Findings (ACL) 2021 \u2022 Yu Tang, Long Zhou, Ambrosio Blanco, Shujie Liu, Furu Wei, Ming Zhou, Muyun Yang",
+      "We introduce BitNet b1. 58 2B4T, the first open-source, native 1-bit Large Language Model (LLM) at the 2-billion parameter scale. ... no code implementations \u2022 27 Mar 2025 \u2022 Jingye Chen, Yuzhong Zhao, Yupan Huang, Lei Cui, Li Dong, Tengchao Lv, Qifeng Chen, Furu Wei",
+      "Leveraging these high-quality synthetic and labeled datasets, we train a multimodal multilingual E5 model mmE5. ... Our model achieves FVD scores of 103. 3 on UCF101 and 25. 5 on K600, outperforming the vanilla NTP model by an average of 4. 4. ... no code implementations \u2022 24 Jan 2025 \u2022 Liang Wang, Haonan Chen, Nan Yang, Xiaolong Huang, Zhicheng Dou, Furu Wei"
+    ],
+    "title": "Papers with Code - Furu Wei",
+    "url": "https://paperswithcode.com/search?q=author:Furu+Wei"
+  },
+  {
+    "description": "We evaluate a number of design decisions when pretraining BERT models and propose an improved recipe that achieves state-of-the-art results on many natural language understanding tasks.",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "TL;DR: We evaluate a number of design decisions when pretraining BERT models and propose an improved recipe that achieves state-of-the-art results on many natural language understanding tasks.",
+      "These results highlight the importance of previously overlooked design choices, and raise questions about the source of recently reported improvements. We release our models and code. Community Implementations: [![CatalyzeX](/images/catalyzex_icon.svg) 31 code implementations](https://www.catalyzex.com/paper/roberta-a-robustly-optimized-bert-pretraining/code)"
+    ],
+    "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach | OpenReview",
+    "url": "https://openreview.net/forum?id=SyxS0T4tvS"
+  },
+  {
+    "description": "Language model pretraining has led to significant performance gains but careful comparison between different approaches is challenging. Training is computationally expensive, often done on private datasets of different sizes, and, as we will show, hyperparameter choices have significant impact ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Language model pretraining has led to significant performance gains but careful comparison between different approaches is challenging. Training is computationally expensive, often done on private datasets of different sizes, and, as we will show, hyperparameter choices have significant impact on the final results.",
+      "Abstract page for arXiv paper 1907.11692: RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+      "We gratefully acknowledge support from the Simons Foundation, member institutions, and all contributors. Donate ... Authors:Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, Veselin Stoyanov \u00b7 View a PDF of the paper titled RoBERTa: A Robustly Optimized BERT Pretraining Approach, by Yinhan Liu and 9 other authors View PDF",
+      "These results highlight the importance of previously overlooked design choices, and raise questions about the source of recently reported improvements. We release our models and code. From: Myle Ott [view email] [v1] Fri, 26 Jul 2019 17:48:29 UTC (45 KB) ... View a PDF of the paper titled RoBERTa: A Robustly Optimized BERT Pretraining Approach, by Yinhan Liu and 9 other authors"
+    ],
+    "title": "[1907.11692] RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+    "url": "https://arxiv.org/abs/1907.11692"
+  },
+  {
+    "description": "It is found that BERT was significantly undertrained, and can match or exceed the performance of every model published after it, and the best model achieves state-of-the-art results on GLUE, RACE and SQuAD. Language model pretraining has led to significant performance gains but careful comparison ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "It is found that BERT was significantly undertrained, and can match or exceed the performance of every model published after it, and the best model achieves state-of-the-art results on GLUE, RACE and SQuAD. Language model pretraining has led to significant performance gains but careful comparison between different approaches is challenging.",
+      "Mandar JoshiDanqi ChenYinhan LiuDaniel S. WeldLuke ZettlemoyerOmer Levy",
+      "The benefits of supplementary training with further training on data-rich supervised tasks, such as natural language inference, obtain additional performance improvements on the GLUE benchmark, as well as observing reduced variance across random restarts in this setting.Expand",
+      "RoBERTa (opens in a new tab)ReAding Comprehension From Examinations (opens in a new tab)XLNet (opens in a new tab)Bidirectional Encoder Representations From Transformers (opens in a new tab)Dynamic Masking (opens in a new tab)General Language Understanding Evaluation (opens in a new tab)Uniform Resource Location (opens in a new tab)OPENWEBTEXT (opens in a new tab)Uncompressed Text (opens in a new tab)Static Masking (opens in a new tab)"
+    ],
+    "title": "[PDF] RoBERTa: A Robustly Optimized BERT Pretraining Approach | ...",
+    "url": "https://www.semanticscholar.org/paper/RoBERTa:-A-Robustly-Optimized-BERT-Pretraining-Liu-Ott/077f8329a7b6fa3b7c877a57b81eb6c18b5f87de"
+  },
+  {
+    "description": "Promoting openness in scientific communication and the peer-review process",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Enter your feedback below and we'll get back to you as soon as possible."
+    ],
+    "title": "Furu Wei | OpenReview",
+    "url": "https://openreview.net/profile?id=~Furu_Wei1"
+  },
+  {
+    "description": "Liu, Y., Ott, M., Goyal, N., et al. (2020) RoBERTa A Robustly Optimized BERT Pretraining Approach.",
+    "favicon_url": "https://you.com/favicon?domain=www.scirp.org&size=128",
+    "snippets": [],
+    "title": "Liu, Y., Ott, M., Goyal, N., et al. (2020) RoBERTa A Robustly ...",
+    "url": "https://www.scirp.org/reference/referencespapers?referenceid=3023380"
+  },
+  {
+    "description": "Bibliographic details on RoBERTa: A Robustly Optimized BERT Pretraining Approach.",
+    "favicon_url": "https://you.com/favicon?domain=dblp.org&size=128",
+    "snippets": [
+      "For some weeks now, the dblp team has been receiving an exceptionally high number of support and error correction requests from the community. While we are grateful and happy to process all incoming emails, please assume that it will currently take us several weeks to read and address your request.",
+      "To protect your privacy, all features that rely on external API calls from your browser are turned off by default. You need to opt-in for them to become active. All settings here will be stored as cookies with your web browser.",
+      "Privacy notice: By enabling the option above, your browser will contact the API of unpaywall.org to load hyperlinks to open access articles. Although we do not have any reason to believe that your call will be tracked, we do not have any control over how the remote server uses your data.",
+      "Privacy notice: By enabling the option above, your browser will contact the API of archive.org to check for archived content of web pages that are no longer available. Although we do not have any reason to believe that your call will be tracked, we do not have any control over how the remote server uses your data."
+    ],
+    "title": "dblp: RoBERTa: A Robustly Optimized BERT Pretraining Approach.",
+    "url": "https://dblp.org/rec/journals/corr/abs-1907-11692.html"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Arxiv",
+    "url": "https://arxiv.org/pdf/1907.11692"
+  },
+  {
+    "description": "The blue social bookmark and publication sharing system.",
+    "favicon_url": "https://you.com/favicon?domain=www.bibsonomy.org&size=128",
+    "snippets": [
+      "These results highlight the importance of previously overlooked design choices, and raise questions about the source of recently reported improvements. We release our models and code. ... RoBERTa ist die Architektur auf der das in der Ausarbeitung beschriebene KEPLER Modell basiert.",
+      "%0 Generic %1 liu2019roberta %A Liu, Yinhan %A Ott, Myle %A Goyal, Naman %A Du, Jingfei %A Joshi, Mandar %A Chen, Danqi %A Levy, Omer %A Lewis, Mike %A Zettlemoyer, Luke %A Stoyanov, Veselin %D 2019 %K %T RoBERTa: A Robustly Optimized BERT Pretraining Approach %U http://arxiv.org/abs/1907.11692 %X Language model pretraining has led to significant performance gains but careful comparison between different approaches is challenging. Training is computationally expensive, often done on private datasets of different sizes, and, as we will show, hyperparameter choices have significant impact on the final results.",
+      "We present a replication study of BERT pretraining (Devlin et al., 2019) that carefully measures the impact of many key hyperparameters and training data size. We find that BERT was significantly undertrained, and can match or exceed the performance of every model published after it.",
+      "Our best model achieves state-of-the-art results on GLUE, RACE and SQuAD. These results highlight the importance of previously overlooked design choices, and raise questions about the source of recently reported improvements. We release our models and code."
+    ],
+    "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach | BibSonomy",
+    "url": "https://www.bibsonomy.org/bibtex/040474bcd625e7dcc649bb20c81104d2"
+  },
+  {
+    "description": "\ud83c\udfc6 SOTA for Only Connect Walls Dataset Task 1 (Grouping) on OCW (Wasserstein Distance (WD) metric)",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Language model pretraining has led to significant performance gains but careful comparison between different approaches is challenging. Training is computationally expensive, often done on private datasets of different sizes, and, as we will show, hyperparameter choices have significant impact on the final results.",
+      "We present a replication study of BERT pretraining (Devlin et al., 2019) that carefully measures the impact of many key hyperparameters and training data size. We find that BERT was significantly undertrained, and can match or exceed the performance of every model published after it.",
+      "Our best model achieves state-of-the-art results on GLUE, RACE and SQuAD. These results highlight the importance of previously overlooked design choices, and raise questions about the source of recently reported improvements. We release our models and code."
+    ],
+    "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach | Papers ...",
+    "url": "https://paperswithcode.com/paper/roberta-a-robustly-optimized-bert-pretraining"
+  },
+  {
+    "description": "PDF | Introduction Several attempts have been made to enhance text-based sentiment analysis\u2019s performance. The classifiers and word embedding models... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Methods In this paper, we present a hybrid model based on the transformer model and deep learning models to enhance sentiment classification process. Robustly optimized BERT (RoBERTa) was selected for the representative vectors of the input sentences and the Long Short-Term Memory (LSTM) model in conjunction with the Convolutional Neural Networks (CNN) model was used to improve the suggested model\u2019s ability to comprehend the semantics and context of each input sentence.",
+      "We propose using word embeddings in conjunction with the SMOTE technique to overcome the challenge of imbalanced classes of the Twitter dataset. Results With an accuracy of 96.28% on the IMDb reviews dataset and 94.2% on the Twitter reviews dataset, the hybrid model that has been suggested outperforms the standard methods. Discussion It is clear from these results that the proposed hybrid RoBERTa\u2013(CNN+ LSTM) method is an effective model in sentiment classification.",
+      "RoBERTa (Robustly Optimized BERT Pre-training Approach). These models can selectively weigh distinct segments of the",
+      "Figure 1, we show the framework of our proposed model. ... Optimized BERT Pretraining Approach. The transformers family \u00b7 includes RoBERTa and BERT (Liao et al., 2021)."
+    ],
+    "title": "(PDF) Improving sentiment classification using a RoBERTa-based ...",
+    "url": "https://www.researchgate.net/publication/377082051_Improving_sentiment_classification_using_a_RoBERTa-based_hybrid_model"
+  },
+  {
+    "description": "Papers is your award winning reference manager that will improve the way you find, access, organize, read, cite and share scholarly research.",
+    "favicon_url": "https://you.com/favicon?domain=www.papersapp.com&size=128",
+    "snippets": [
+      "Say goodbye to desktop clutter, random folders and clunky shared drives. Papers reference management software can organize it all.",
+      "Papers reference manager with AI helps you discover and engage with research like never before.",
+      "Chat with a PDF Interrogate your papers with our Chat with a PDF functionality that gives you the power to ask the AI Assistant questions about your literature and receive contextual answers."
+    ],
+    "title": "Reference Management Software for Students, Academic & Corporate ...",
+    "url": "https://www.papersapp.com/"
+  },
+  {
+    "description": "Several attempts have been made to enhance text-based sentiment analysis\u2019s performance. The classifiers and word embedding models have been among the most prominent attempts. This work aims to develop a hybrid deep learning approach that combines ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "In this paper, we present a hybrid model based on the transformer model and deep learning models to enhance sentiment classification process. Robustly optimized BERT (RoBERTa) was selected for the representative vectors of the input sentences and the Long Short-Term Memory (LSTM) model in conjunction with the Convolutional Neural Networks (CNN) model was used to improve the suggested model\u2019s ability to comprehend the semantics and context of each input sentence.",
+      "Text embedding with transformers can be highly expressive, capture contextual relationships, and produce more accurate representations than traditional embedding techniques. Most studies employed hybrid models, which combined CNNs with LSTM or Bi-LSTM architecture. In this paper, we will combine the RoBERTa model with the hybrid deep learning model (CNN+LSTM).",
+      "In this paper, we suggest a model for sentiment analysis based on two English datasets. The use of a transformer for sentiment analysis is limited. So, the proposed framework is based on a transformer called the RoBERTa and the usage of hybrid learning-based deep neural networks, namely LSTM and CNN, which combine a model called the RoBERTa-(CNN+LSTM).",
+      "We propose using word embeddings in conjunction with the SMOTE technique to overcome the challenge of imbalanced classes of the Twitter dataset. With an accuracy of 96.28% on the IMDb reviews dataset and 94.2% on the Twitter reviews dataset, the hybrid model that has been suggested outperforms the standard methods. It is clear from these results that the proposed hybrid RoBERTa\u2013(CNN+ LSTM) method is an effective model in sentiment classification."
+    ],
+    "title": "Improving sentiment classification using a RoBERTa-based hybrid ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10733963/"
+  },
+  {
+    "description": "Transformers models such as BERT, RoBERTa, and DeBERTa have revolutionized the field of Natural Language Processing in recent years with substantial improvements in the contextual understanding of text. While political scientists have begun adopting these models, their performance differences ...",
+    "favicon_url": "https://you.com/favicon?domain=www.journals.uchicago.edu&size=128",
+    "snippets": [
+      "Transformers models such as BERT, RoBERTa, and DeBERTa have revolutionized the field of Natural Language Processing in recent years with substantial improvements in the contextual understanding of text. While political scientists have begun adopting these models, their performance differences are not well understood, especially in cross-lingual applications.",
+      "This article introduces Transformers models, compares their performance using three different text-as-data political science projects, and shows how to fine-tune them to fit the specific needs of the researcher. We find that RoBERTa and DeBERTa greatly outperform BERT in certain circumstances, and that further training boosts performance in specialized text."
+    ],
+    "title": "BERT, RoBERTa, or DeBERTa? Comparing Performance Across Transformers ...",
+    "url": "https://www.journals.uchicago.edu/doi/10.1086/730737"
+  },
+  {
+    "description": "BERT (Devlin et. al.) is a pioneering Language Model that is pretrained for a Denoising Autoencoding objective to produce state of the art results in many NLP tasks. However, there is still room for\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "If I were to summarize the RoBERTa paper in one line:",
+      "In this article we\u2019ll be discussing RoBERTa: Robustly Optimized BERT-Pretraining Approach proposed in Liu et. al. which is an extension to the original BERT model.",
+      "However, there is still room for improvement in the original BERT model w.r.t its pretraining objectives, the data on which it is trained, the duration for which it is trained, etc. These issues were identified by Facebook AI Research (FAIR), and hence, they proposed an \u2018optimized\u2019 and \u2018robust\u2019 version of BERT.",
+      "Understanding Transformer-Based Self-Supervised Architectures"
+    ],
+    "title": "RoBERTa: Robustly Optimized BERT-Pretraining Approach | by Rohan ...",
+    "url": "https://medium.com/dataseries/roberta-robustly-optimized-bert-pretraining-approach-d033464bd946"
+  },
+  {
+    "description": "A replication study of BERT pretraining reveals that careful hyperparameter tuning and increased training can achieve state-of-the-art performance on GLUE, RACE, and SQuAD \u00b7 Language model pretraining has led to significant performance gains but careful comparison between different approaches ...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Language model pretraining has led to significant performance gains but careful comparison between different approaches is challenging. Training is computationally expensive, often done on private datasets of different sizes, and, as we will show, hyperparameter choices have significant impact on the final results.",
+      "We present a replication study of BERT pretraining (Devlin et al., 2019) that carefully measures the impact of many key hyperparameters and training data size. We find that BERT was significantly undertrained, and can match or exceed the performance of every model published after it.",
+      "Our best model achieves state-of-the-art results on GLUE, RACE and SQuAD. These results highlight the importance of previously overlooked design choices, and raise questions about the source of recently reported improvements. We release our models and code.",
+      "Join the discussion on this paper page"
+    ],
+    "title": "Paper page - RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+    "url": "https://huggingface.co/papers/1907.11692"
+  },
+  {
+    "description": "Not a month goes by without a new language model announcing to surpass the good old BERT (oh my god, it\u2019s still 9-months old) in one aspect or another. We saw XLNet, KERMIT, ERNIE, MT-DNN and so on\u2026",
+    "favicon_url": "https://you.com/favicon?domain=moocaholic.medium.com&size=128",
+    "snippets": [
+      "Hardly a month comes without a new language model announces to surpass the good old (oh my god, it\u2019s still 9-months old) BERT in one\u2026",
+      "Not a month goes by without a new language model announcing to surpass the good old BERT (oh my god, it\u2019s still 9-months old) in one aspect or another. We saw XLNet, KERMIT, ERNIE, MT-DNN and so on. Now he/she strikes back. Meet RoBERTa (for Robustly optimized BERT approach).",
+      "The only problem with RoBERTa seems to be there is no such character in the Sesame Street show\u2026 \u00b7 P.S. Let\u2019s guess which other names will we see soon. UmBERTo, BERTie, RoBERT, \u2026?",
+      "SpanBERT adds the new span-boundary objective (SBO) to train the model to predict the entire masked span from the observed tokens at its boundary (and get rid of NSP objective as RoBERTa): SpanBERT reaches substantially better performance on span selection tasks in particular. In GLUE benchmark the main gains from SpanBERT are in the SQuAD-based QNLI dataset and in RTE: ... Yet SpanBERT\u2019s results are weaker than RoBERTa\u2019s ones."
+    ],
+    "title": "[papers] RoBERTa: A Robustly Optimized BERT Pretraining Approach ...",
+    "url": "https://moocaholic.medium.com/papers-roberta-a-robustly-optimized-bert-pretraining-approach-7449bc5423e7"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "A list of official Hugging Face and community (indicated by \ud83c\udf0e) resources to help you get started with RoBERTa. If you\u2019re interested in submitting a resource to be included here, please feel free to open a Pull Request and we\u2019ll review it!",
+      "Check out the from_pretrained() method to load the model weights. RoBERTa Model with a language modeling head on top for CLM fine-tuning.",
+      "Cross attentions weights after the attention softmax, used to compute the weighted average in the cross-attention heads. past_key_values (Cache, optional, returned when use_cache=True is passed or when config.use_cache=True) \u2014 It is a Cache instance. For more details, see our kv cache guide. Contains pre-computed hidden-states (key and values in the attention blocks) that can be used (see past_key_values input) to speed up sequential decoding. The RobertaForCausalLM forward method, overrides the __call__ special method.",
+      "Check out the from_pretrained() method to load the model weights. The Roberta Model with a language modeling head on top.\u201d"
+    ],
+    "title": "RoBERTa",
+    "url": "https://huggingface.co/docs/transformers/en/model_doc/roberta"
+  },
+  {
+    "description": "Liu Zhuang, Lin Wayne, Shi Ya, Zhao Jun. Proceedings of the 20th Chinese National Conference on Computational Linguistics. 2021.",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [
+      "In the paper we present a \u2018pre-training\u2019+\u2018post-training\u2019+\u2018fine-tuning\u2019 three-stage paradigm which is a supplementary framework for the standard \u2018pre-training\u2019+\u2018fine-tuning\u2019 languagemodel approach. Furthermore based on three-stage paradigm we present a language modelnamed PPBERT.",
+      "%0 Conference Proceedings %T A Robustly Optimized BERT Pre-training Approach with Post-training %A Zhuang, Liu %A Wayne, Lin %A Ya, Shi %A Jun, Zhao %Y Li, Sheng %Y Sun, Maosong %Y Liu, Yang %Y Wu, Hua %Y Liu, Kang %Y Che, Wanxiang %Y He, Shizhu %Y Rao, Gaoqi %S Proceedings of the 20th Chinese National Conference on Computational Linguistics %D 2021 %8 August %I Chinese Information Processing Society of China %C Huhhot, China %G eng %F zhuang-etal-2021-robustly %X In the paper we present a \u2018pre-training\u2019+\u2018post-training\u2019+\u2018fine-tuning\u2019 three-stage paradigm which is a supplementary framework for the standard \u2018pre-training\u2019+\u2018fine-tuning\u2019 languagemodel approach.",
+      "@inproceedings{zhuang-etal-2021-robustly, title = \"A Robustly Optimized {BERT} Pre-training Approach with Post-training\", author = \"Zhuang, Liu and Wayne, Lin and Ya, Shi and Jun, Zhao\", editor = \"Li, Sheng and Sun, Maosong and Liu, Yang and Wu, Hua and Liu, Kang and Che, Wanxiang and He, Shizhu and Rao, Gaoqi\", booktitle = \"Proceedings of the 20th Chinese National Conference on Computational Linguistics\", month = aug, year = \"2021\", address = \"Huhhot, China\", publisher = \"Chinese Information Processing Society of China\", url = \"https://aclanthology.org/2021.ccl-1.108/\", pages = \"1218--1227\", language = \"eng\", abstract = \"In the paper we present a `pre-training'+{`}post-training'+{`}fine-tuning' three-stage paradigm which is a supplementary framework for the standard `pre-training'+{`}fine-tuning' languagemodel approach.",
+      "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <modsCollection xmlns=\"http://www.loc.gov/mods/v3\"> <mods ID=\"zhuang-etal-2021-robustly\"> <titleInfo> <title>A Robustly Optimized BERT Pre-training Approach with Post-training</title> </titleInfo> <name type=\"personal\"> <namePart type=\"given\">Liu</namePart> <namePart type=\"family\">Zhuang</namePart> <role> <roleTerm authority=\"marcrelator\" type=\"text\">author</roleTerm> </role> </name> <name type=\"personal\"> <namePart type=\"given\">Lin</namePart> <namePart type=\"family\">Wayne</namePart> <role> <roleTerm authority=\"marcrelator\" type=\"text\">author</roleTerm> <"
+    ],
+    "title": "A Robustly Optimized BERT Pre-training Approach with Post-training ...",
+    "url": "https://aclanthology.org/2021.ccl-1.108/"
+  },
+  {
+    "description": "Learn about key techniques used for BERT optimisation",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "Throughout this article, we will be referring to the official RoBERTa paper which contains in-depth information about the model. In simple words, RoBERTa consists of several independent improvements over the original BERT model \u2013 all of the other principles including the architecture stay the same.",
+      "The problem arises when we reach the end of a document. In this aspect, researchers compared whether it was worth stopping sampling sentences for such sequences or additionally sampling the first several sentences of the next document (and adding a corresponding separator token between documents). The results showed that the first option is better. Ultimately, for the final RoBERTa implementation, the authors chose to keep the first two aspects and omit the third one.",
+      "The fine-tuning process in RoBERTa is similar to the BERT\u2019s. In this article, we have examined an improved version of BERT which modifies the original training procedure by introducing the following aspects:",
+      "As a reminder, the BERT base model was trained on a batch size of 256 sequences for a million steps. The authors tried training BERT on batch sizes of 2K and 8K and the latter value was chosen for training RoBERTa."
+    ],
+    "title": "Large Language Models: RoBERTa - A Robustly Optimized BERT Approach ...",
+    "url": "https://towardsdatascience.com/roberta-1ef07226c8d8/"
+  },
+  {
+    "description": "Language model pretraining has led to significant performance gains but careful comparison between different approaches is challenging. Training is computationally expensive, often done on private datasets of different sizes, and, as we will show, hyperparameter choices have significant impact ...",
+    "favicon_url": "https://you.com/favicon?domain=typeset.io&size=128",
+    "snippets": [
+      "Abstract: Language model pretraining has led to significant performance gains but careful comparison between different approaches is challenging. Training is computationally expensive, often done on private datasets of different sizes, and, as we will show, hyperparameter choices have significant impact on the final results.",
+      "We present a replication study of BERT pretraining (Devlin et al., 2019) that carefully measures the impact of many key hyperparameters and training data size. We find that BERT was significantly undertrained, and can match or exceed the performance of every model published after it.",
+      "Our best model achieves state-of-the-art results on GLUE, RACE and SQuAD. These results highlight the importance of previously overlooked design choices, and raise questions about the source of recently reported improvements. We release our models and code.",
+      "TL;DR: GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic....read moreread less"
+    ],
+    "title": "(PDF) RoBERTa: A Robustly Optimized BERT Pretraining Approach (2019) ...",
+    "url": "https://typeset.io/papers/roberta-a-robustly-optimized-bert-pretraining-approach-2rj0bdyhim"
+  }
+]

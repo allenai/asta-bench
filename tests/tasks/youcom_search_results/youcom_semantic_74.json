@@ -1,0 +1,288 @@
+[
+  {
+    "description": "Training a deep neural network can be costly but training time is reduced when a pre-trained network can be adapted to different use cases. Ideally, only a small number of parameters needs to be changed in this process of fine-tuning, which can then be more easily distributed.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "With the prevalence of pre-trained language models (PLMs) and the pre-training\u2013fine-tuning paradigm, it has been continuously shown that larger models tend to yield better performance. However, as PLMs scale up, fine-tuning and storing all the parameters is prohibitively costly and eventually becomes practically infeasible.",
+      "Nature Machine Intelligence - Training a deep neural network can be costly but training time is reduced when a pre-trained network can be adapted to different use cases. Ideally, only a small...",
+      "On the basis of this hypothesis, it is proposed to optimize the low-rank decomposition for the change of original weight matrices in the self-attention modules. In deployment, the optimized low-rank decomposition matrices are multiplied to obtain the delta of self-attention weight matrices.",
+      "In each block, the adapter modules are separately inserted after the multi-head self-attention and the feed-forward network sublayers, which reduces the tunable parameters per layer to 2 \u00d7 (2dr (projectionmatrices) + d (residualconnection) + r (biasterm)). Practically, about 0.5\u20138% of parameters of the whole model13 could be involved in the tuning process under such a strategy. Although an adapter works with much fewer tunable parameters than vanilla fine-tuning, some work attempts a more rigorous saving strategy by introducing inductive biases into the structure of the adapter layer."
+    ],
+    "title": "Parameter-efficient fine-tuning of large-scale pre-trained language ...",
+    "url": "https://www.nature.com/articles/s42256-023-00626-4"
+  },
+  {
+    "description": "Aman's AI Journal | Course notes and learning material for Artificial Intelligence and Deep Learning Stanford classes.",
+    "favicon_url": "https://you.com/favicon?domain=aman.ai&size=128",
+    "snippets": [
+      "Deciding whether to fine-tune the attention layers or the feed-forward (MLP) layers in a model adapted using LoRA involves several considerations. These include the nature of the task, the model architecture, and the distribution of parameters between attention and feed-forward layers. Note that the LoRA paper originally only adapted the attention weights for downstream tasks and froze the MLP modules (so they are not trained in downstream tasks) both for simplicity and parameter-efficiency.",
+      "In LoRA, low-rank matrices are introduced to fine-tune large language models with fewer trainable parameters. Here\u2019s how it works: Adding Low-Rank Matrices: LoRA adds small, low-rank matrices to the model\u2019s layers (typically linear or attention layers). These matrices serve as \u201cadaptation\u201d layers that adjust the original layer\u2019s output. Freezing the Original Weights: The original model weights remain frozen during fine-tuning.",
+      "Learnable Adaption Prompts: The method involves appending a set of learnable adaption prompts to the input instruction tokens in the higher transformer layers of LLaMA. These prompts are designed to adaptively inject new instructions into the frozen LLaMA while preserving its pre-trained knowledge, effectively guiding the subsequent contextual response generation. Zero-initialized Attention Mechanism: To avoid disturbances from randomly initialized adaption prompts, which can harm fine-tuning stability and effectiveness, the paper proposes a zero-initialized attention mechanism with a learnable gating factor.",
+      "The LoRA paper explores the adaptation of various weight matrices within the self-attention module of GPT-3 under a limited parameter budget."
+    ],
+    "title": "Aman's AI Journal \u2022 Primers \u2022 Parameter Efficient Fine-Tuning",
+    "url": "https://aman.ai/primers/ai/parameter-efficient-fine-tuning/"
+  },
+  {
+    "description": "Discover Parameter-efficient Fine-tuning for AI models: cut computational costs, ensure portability and maintain high performance with minimal parameter updates.",
+    "favicon_url": "https://you.com/favicon?domain=www.leewayhertz.com&size=128",
+    "snippets": [
+      "A standard fine-tuning process involves adjusting the hidden representations (h) extracted by transformer models to enhance their performance in downstream tasks. These hidden representations refer to any features the transformer architecture extracts, such as the output of a transformer layer or a self-attention layer.",
+      "Additionally, both LoRA and IA3 prioritize maintaining model performance, ensuring that fine-tuned models remain competitive with fully fine-tuned ones. Furthermore, their capacity to merge adapter weights without adding inference latency contributes to their versatility and practicality for real-time applications and various downstream tasks. ... IA3 optimizes the fine-tuning process by rescaling the inner activations of a pre-trained model using learned vectors. These learned vectors are incorporated into the attention and feedforward modules within a standard transformer-based architecture.",
+      "The key innovation of IA3 is that it freezes the original pre-trained weights of the model, making only the introduced learned vectors trainable during fine-tuning. This drastic reduction in the number of trainable parameters significantly improves the efficiency of fine-tuning without compromising model performance. IA3 is compatible with various downstream tasks, maintains inference speed, and can be applied to specific layers of a neural network, making it a valuable tool for efficient model adaptation and deployment.",
+      "However, it\u2019s important to note that the specific implementation details and techniques used in PEFT can vary across research papers as well as applications.These steps provide a foundational framework for deploying a PEFT model effectively. PEFT, or Parameter-efficient Fine-tuning, is a natural language processing technique used to improve the performance of pre-trained language models on specific downstream tasks. It involves freezing some of the layers of the pre-trained model and only fine-tuning the last few layers that are specific to the downstream task."
+    ],
+    "title": "Parameter-efficient Fine-tuning (PEFT): Overview, benefits, ...",
+    "url": "https://www.leewayhertz.com/parameter-efficient-fine-tuning/"
+  },
+  {
+    "description": "The large language models, as predicted by scaling law forecasts, have made groundbreaking progress in many fields, particularly in natural language generation tasks, where they have approached or even surpassed human levels. However, the unprecedented scale of their parameters brings significant ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "The large language models, as predicted by scaling law forecasts, have made groundbreaking progress in many fields, particularly in natural language generation tasks, where they have approached or even surpassed human levels. However, the unprecedented scale of their parameters brings significant computational and storage costs.",
+      "Artificial Intelligence Review - The large language models, as predicted by scaling law forecasts, have made groundbreaking progress in many fields, particularly in natural language generation...",
+      "Formally, given a pre-trained model with \\(L\\) layers, the output \\(\\textbf{h}^{(l)}_i\\) of each layer \\(l\\) for token \\(i\\) is used to compute a weighted sum \\(\\textbf{r}_i = \\sum_{l=1}^{L} \\alpha ^{(l)}_i \\textbf{h}^{(l)}_i\\), where \\(\\alpha ^{(l)}_i\\) represents the attention weight for layer \\(l\\) on token \\(i\\). Reparameterization is a technique for improving the training efficiency and performance of a model by transforming its parameters. In the context of PEFT, the transformation involves low-rank parameterization, which entails constructing a low-rank learnable parameter matrix to adapt to specific downstream tasks. During training, only the low-rank parameter matrix is fine-tuned, and at inference time, the learned matrix is combined with the pre-trained parameters to ensure that inference speed is not affected.",
+      "5b) employs a weight vector and a bias vector, applying the Hadamard product (element-wise multiplication) and element-wise addition to the self-attention outputs, resulting in new self-attention outputs. Compacter (Karimi Mahabadi et al. 2021) incorporates concepts from adapters, low-rank methods, and hypercomplex multiplication layers."
+    ],
+    "title": "Parameter-efficient fine-tuning in large language models: a survey ...",
+    "url": "https://link.springer.com/article/10.1007/s10462-025-11236-4"
+  },
+  {
+    "description": "Large Language Models (LLMs) are gaining significant popularity in recent years for specialized tasks using prompts due to their low computational cost. Standard methods like prefix tuning utilize special, modifiable tokens that lack semantic meaning and require extensive training for best ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Large Language Models (LLMs) are gaining significant popularity in recent years for specialized tasks using prompts due to their low computational cost. Standard methods like prefix tuning utilize special, modifiable tokens that lack semantic meaning and require extensive training for best performance, often falling short.",
+      "Scientific Reports - Parameter-efficient fine-tuning of large language models using semantic knowledge tuning",
+      "Low-rank adaptation (LoRA) first proposed by20, is a fine-tuning technique designed to optimize memory usage and has received considerable attention in the research community since its inception. The latest developments have expanded the range of applications for LoRA, particularly in the area of multitask learning, as illustrated by research conducted by33,34, and35.",
+      "We established the following baseline methods to evaluate the performance of our proposed approach: Full fine-tuning: This methodology88 involves the adjustment of all parameters within the pretrained language model to adapt it to the specific task at hand. It functions as a comprehensive adaptation approach; however, it can be computationally intensive. Prefix tuning: This lightweight method89 introduces trainable continuous vectors termed \u201cprefixes\u201d to the input of each transformer layer, while the original model parameters remain fixed."
+    ],
+    "title": "Parameter-efficient fine-tuning of large language models using ...",
+    "url": "https://www.nature.com/articles/s41598-024-75599-4"
+  },
+  {
+    "description": "Large models represent a groundbreaking advancement in multiple application fields, enabling remarkable achievements across various tasks. However, their unprecedented scale comes with significant computational costs. These models, often consisting of billions of parameters, require vast amounts ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Large models represent a groundbreaking advancement in multiple application fields, enabling remarkable achievements across various tasks. However, their unprecedented scale comes with significant computational costs. These models, often consisting of billions of parameters, require vast amounts of computational resources for execution.",
+      "Abstract page for arXiv paper 2403.14608: Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey",
+      "View a PDF of the paper titled Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey, by Zeyu Han and 4 other authors View PDF HTML (experimental)",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2403.14608] Parameter-Efficient Fine-Tuning for Large Models: ...",
+    "url": "https://arxiv.org/abs/2403.14608"
+  },
+  {
+    "description": "Derive relative gradients by dividing ... by its weight magnitude. Normalize these relative gradients across layers, ranking them between 0 to 1. Assign learning rates for layers based on their normalized relative gradient value during training. Based on the findings in this paper, here are some tips for determining which layers to fine-tune when adapting ...",
+    "favicon_url": "https://you.com/favicon?domain=vinija.ai&size=128",
+    "snippets": [
+      "Derive relative gradients by dividing the layer\u2019s gradient by its weight magnitude. Normalize these relative gradients across layers, ranking them between 0 to 1. Assign learning rates for layers based on their normalized relative gradient value during training. Based on the findings in this paper, here are some tips for determining which layers to fine-tune when adapting a pretrained model to a new target distribution:",
+      "Learnable Adaption Prompts: The method involves appending a set of learnable adaption prompts to the input instruction tokens in the higher transformer layers of LLaMA. These prompts are designed to adaptively inject new instructions into the frozen LLaMA while preserving its pre-trained knowledge, effectively guiding the subsequent contextual response generation. Zero-initialized Attention Mechanism: To avoid disturbances from randomly initialized adaption prompts, which can harm fine-tuning stability and effectiveness, the paper proposes a zero-initialized attention mechanism with a learnable gating factor.",
+      "In a transformer block (left), the adapter is applied directly to the outputs of each of the layers (attention and feedforward). The size \\(m\\) in the Adapter module determines the no. of optimizable parameters and hence poses a parameter vs performance tradeoff. The original paper experimentally investigates that the performance remains fairly stable across varying Adapter sizes m and hence for a given model a fixed size can be used for all downstream tasks.",
+      "During fine-tuning, only the weights of the adapter are learned, while the pre-trained model\u2019s parameters remain fixed. When to use: When you need to fine-tune multiple downstream tasks on the same pre-trained model. Additionally, Adapters are flexible and can be quickly and easily plugged into different parts of the pre-trained model without requiring major modifications. What: LoRA (Low-Rank Adaptation) is a technique that modifies the pre-trained LLM\u2019s attention mechanism during fine-tuning by introducing a low-rank matrix factorization that learns task-specific attention patterns."
+    ],
+    "title": "Vinija's Notes \u2022 Primers \u2022 Parameter Efficient Fine-Tuning",
+    "url": "https://vinija.ai/nlp/parameter-efficient-fine-tuning/"
+  },
+  {
+    "description": "We propose a novel model to efficiently finetune pretrained Text-to-Image models by introducing additional image prompts. The model integrates informa\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "We also apply Low-Rank Adaptation (LoRA) to restrict the trainable parameters in the self-attention layers. Furthermore, the network is optimized alongside a text embedding that serves as an object identifier to generate contextually relevant visual content. Our model is simple and effective, with a small memory footprint, yet can achieve comparable performance to a fully fine-tuned T2I model in both qualitative and quantitative evaluations.",
+      "We apply Low-Rank Adaptation (LoRA) to restrict trainable parameters in the self-attention layers and learn the new concept tokens in the embedding space of the frozen T2I model to capture high level semantic features. Although our model is simple with only a small number of training parameters and 4\u20135 training examples, it's very effective and achieves comparable performance to a fully fine-tuned T2I model.",
+      "For our experiments, we utilized Stable Diffusion v1.5 as the pretrained model. This model comprises 16 self-attention layers that we fine-tuned. Our method was implemented using the HuggingFace diffusers library, with the incorporation of mixed precision to optimize memory usage.",
+      "Restrict the trainable parameters in the self-attention layers using Low-Rank Adaptation. We propose a novel model to efficiently finetune pretrained Text-to-Image models by introducing additional image prompts."
+    ],
+    "title": "Parameter efficient finetuning of text-to-image models with trainable ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0262885624004013"
+  },
+  {
+    "description": "Introduction Categories of PEFT Methods Adapters Soft Prompts Prompt Tuning Prefix Tuning P-tuning (IA)\u00b3 Intrinsic SAID Low-Rank Adaptation (LoRA) Quantized Low-Rank Adaptation (QLoRA) Initialization Merge LoRA Adapter Variations KronA Concept Implementation Efficiency/Performance Applications ...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "In either case, adapters are typically small but demonstrate performance comparable to fully fine-tuned models, enabling the training of larger models with fewer resources. The concept of adapters was initially developed for multi-domain image classification (Rebuffi et al., 2017, 2018) and involved adding domain-specific layers between neural network modules. Houlsby et al. (2019) adapted this idea for NLP. They proposed adding fully connected networks after the attention and FFN layers in the Transformer architecture.",
+      "The \"trainable parameters\" count specifically refers to the parameters adjusted by a gradient optimization algorithm, distinguishing them from \"modified parameters,\" which indicate changes relative to the original model. For reparameterization-based methods, the table reports the parameters both before and after reparameterization. Adapter-based methods add extra trainable parameters after the attention and fully connected layers of a frozen pre-trained model to reduce memory usage and accelerate training. The specific implementation of the adapter may vary; it can be a simple extra layer or involve expressing weight updates \u2206W as a low-rank decomposition of the weight matrix.",
+      "This approach keeps most model weights frozen, drastically reducing the number of trainable parameters. ... (IA)\u00b3 injects these learned vectors into attention (key and value layers) and the second feedforward layer within each transformer block. The vectors are the only trainable parameters during fine-tuning, making the process parameter-efficient. The method maintains the original model architecture and incurs only minimal computational overhead, specifically from the rescaling operations performed by lf.",
+      "Paper code: GitHub - benzakenelad/BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models ... DiffPruning, a technique proposed by Guo et al. (2020), is an efficient fine-tuning technique aimed at updating neural network weights sparsely."
+    ],
+    "title": "PEFT: Parameter-Efficient Fine-Tuning Methods for LLMs",
+    "url": "https://huggingface.co/blog/samuellimabraz/peft-methods"
+  },
+  {
+    "description": "Parameter-efficient fine-tuning (PEFT) is a method of improving the performance of pretrained large language models (LLMs) and neural networks for specific tasks or data sets.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "QLoRA is an extended version of LoRA that quantizes or standardizes the weight of each pretrained parameter to just 4 bits from the typical 32-bit weight. As such, QLoRA offers significant memory savings and makes it possible to run an LLM on just one GPU. Specifically created for natural language generation (NLG) models, prefix-tuning appends a task-specific continuous vector, known as a prefix, to each transformer layer while keeping all parameters frozen. As a result, prefix-tuned models store over a thousandfold fewer parameters than fully fine-tuned models with comparable performance.",
+      "Researchers strove to overcome the challenge of training a model for multiple downstream tasks while minimizing model weights. Adapter modules were the answer: small add-ons that insert a handful of trainable, task-specific parameters into each transformer layer of the model.",
+      "Also, each fine-tuned model is the same size as the original. All these models take up significant amounts of storage space, further driving up costs for the organizations that use them. While fine-tuning does create more efficient machine learning (ML), the process of fine-tuning LLMs has itself become inefficient. PEFT adjusts the handful of parameters that are most relevant to the model\u2019s intended use case to deliver specialized model performance while reducing model weights for significant computational cost and time savings.",
+      "PEFT works by freezing most of the pretrained language model\u2019s parameters and layers while adding a few trainable parameters, known as adapters, to the final layers for predetermined downstream tasks. The fine-tuned models retain all the learning gained during training while specializing in their respective downstream tasks."
+    ],
+    "title": "What is parameter-efficient fine-tuning (PEFT)? | IBM",
+    "url": "https://www.ibm.com/think/topics/parameter-efficient-fine-tuning"
+  },
+  {
+    "description": "HTML conversions sometimes display errors due to content that did not convert correctly from the source. This paper uses the following packages that are not yet supported by the HTML conversion tool. Feedback on these issues are not necessary; they are known and are being worked on \u00b7 Authors: ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Partial fine-tuning methods aim to reduce the number of fine-tuned parameters by selecting a subset of pre-trained parameters that are critical to downstream tasks while discarding unimportant ones. We categorize partial fine-tuning methods into three groups: Bias Update [34, 35], in which only the bias term in the attention layer, feed-forward layer and layer normalization of the transformer is updated, Pretrained Weight Masking [36, 37], where the pretrained weights are masked using various pruning criterion, and Delta Weight Masking [38, 39, 40, 41], in which delta weights are masked via pruning techniques and optimization approximation.",
+      "Moreover, the Tiny-Attn Adapter regards its multiple attention heads as a mixture of experts and averages their weights to further reduce inference costs. Akin to the sequential adapter, the Tiny-Attn Adapter is also injected right after the multi-head attention layer. AdapterFusion [19] integrates multiple task-specific adapters into a single adapter module, allowing for effective knowledge transfer across related tasks without modifying the original pretrained model.",
+      "Unlike LoRA, which operates on the query (Q), key (K), and value (V) projection modules of the attention layer, the parameter updates are applied to all linear layers in IncreLoRA. LoRA-guided Pretrained Weight Update. Delta-LoRA [47] updates the pretrained weight ... italic_W start_POSTSUBSCRIPT italic_u italic_p end_POSTSUBSCRIPT, while using the same memory as the original LoRA.",
+      "italic_b start_POSTSUBSCRIPT 2 end_POSTSUBSCRIPT are the weight matrices of two linear transformations. Most PEFT methods primarily focus on the self-attention layer and FFN layer, allowing models like encoder-based RoBERTa [2], encoder-decoder-based T5 [4], and decoder-based LLaMA [7] to leverage relevant techniques for parameters reduction."
+    ],
+    "title": "Parameter-Efficient Fine-Tuning Methods for Pretrained Language ...",
+    "url": "https://arxiv.org/html/2312.12148v1"
+  },
+  {
+    "description": "Fine-tuning can be done on the ... case the layers that are not being fine-tuned are \"frozen\" (i.e., not changed during backpropagation). A model may also be augmented with \"adapters\" that consist of far fewer parameters than the original model, and fine-tuned in a parameter-efficient way by tuning the weights of the adapters and leaving the rest of the model's weights frozen. For some architectures, ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Fine-tuning can be done on the entire neural network, or on only a subset of its layers, in which case the layers that are not being fine-tuned are \"frozen\" (i.e., not changed during backpropagation). A model may also be augmented with \"adapters\" that consist of far fewer parameters than the original model, and fine-tuned in a parameter-efficient way by tuning the weights of the adapters and leaving the rest of the model's weights frozen. For some architectures, such as convolutional neural networks, it is common to keep the earlier layers (those closest to the input layer) frozen, as they capture lower-level features, while later layers often discern high-level features that can be more related to the task that the model is trained on.",
+      "Representation fine-tuning (ReFT) is a technique developed by researchers at Stanford University aimed at fine-tuning large language models (LLMs) by modifying less than 1% of their representations. Unlike parameter-efficient fine-tuning (PEFT) methods, which mainly focus on updating weights, ReFT targets representations, suggesting that modifying representations might be a more effective strategy than updating weights.",
+      "One mitigation is to linearly interpolate a fine-tuned model's weights with the weights of the original model, which can greatly increase out-of-distribution performance while largely retaining the in-distribution performance of the fine-tuned model. Low-rank adaptation (LoRA) is an adapter-based technique for efficiently fine-tuning models.",
+      "Models that are pre-trained on large, general corpora are usually fine-tuned by reusing their parameters as a starting point and adding a task-specific layer trained from scratch.",
+      "A language model with billions of parameters may be LoRA fine-tuned with only several millions of parameters. LoRA-based fine-tuning has become popular in the Stable Diffusion community. Support for LoRA was integrated into the diffusers library from Hugging Face. Support for LoRA and similar techniques is also available for a wide range of other models through Hugging Face's parameter-efficient fine-tuning (PEFT) package."
+    ],
+    "title": "Fine-tuning (deep learning) - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning)"
+  },
+  {
+    "description": "The scaling parameters are added separately for the self-attention and the FFN layers. The pseudocode for the scaling is as follows: ... The authors conduct experiments focused on diffusion models and show that DiffFit outperforms other PEFT approaches. In addition, due to the minor overhead of the scaling parameters, DiffFit provides faster tuning speed and minimal degradation in inference and storage efficiency. These methods use the idea of reparametrizing the weights ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The scaling parameters are added separately for the self-attention and the FFN layers. The pseudocode for the scaling is as follows: ... The authors conduct experiments focused on diffusion models and show that DiffFit outperforms other PEFT approaches. In addition, due to the minor overhead of the scaling parameters, DiffFit provides faster tuning speed and minimal degradation in inference and storage efficiency. These methods use the idea of reparametrizing the weights of the network using a low-rank transformation.",
+      "For more details on Fastfood, we refer the reader to the original paper by Le et al. (2013). LoRA Hu et al. (2022) takes inspiration from Intrinsic SAID and proposes a simpler way to perform low-rank fine-tuning. Parameter update for a weight matrix in LoRA is decomposed into a product of two low-rank matrices:",
+      "(2021) proposes to only fine-tune the biases of the network. That is, for every layer, ... BitFit only updates about 0.05% of the model parameters. The original paper demonstrated that the method achieves similar or better performance than full fine-tuning in low- and medium-data scenarios for BERT models (less than 1B parameters).",
+      "(2022) selects columns of parameter matrices to train and reconfigures linear layers into trainable and frozen components. The method operates in two stages. In the first stage, the most important rows of parameter matrices are identified for updating. This process is similar to structured pruning and can use any pruning method. In their paper, the authors fine-tune the model on a percentage of the data and select the top- ... italic_L start_POSTSUBSCRIPT 1 end_POSTSUBSCRIPT distance between the fine-tuned and original models."
+    ],
+    "title": "Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning",
+    "url": "https://arxiv.org/html/2303.15647v2"
+  },
+  {
+    "description": "The concept of adapters in the ... the self-attention layer and the other after the FFN layer, respectively. Subsequent research has aimed to address the additional computational cost associated with adapter layers. A modified framework AdapterFusion [35] was proposed, where adapter ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The concept of adapters in the field of NLP was initially introduced by Serial Adapter [31] as shown in Figure 5 (a). In their approach, each Transformer block is enhanced by adding two adapter modules, with one positioned after the self-attention layer and the other after the FFN layer, respectively. Subsequent research has aimed to address the additional computational cost associated with adapter layers. A modified framework AdapterFusion [35] was proposed, where adapter layers are inserted only after the \u2019Add & Norm\u2019 step following the FFN layer to enhance the computational efficiency.",
+      "To address this, LongLoRA [177] proposes to fine-tune a pre-trained LLM using LoRA to enlarge the context size. To reduce the perplexity gap between LoRA tuning and full fine-tuning, LongLoRA also opens embedding and normalization layers for training. In order to further improve training efficiency in a long context scenario, LongLoRA further introduces a novel shifted sparse attention (",
+      "Similar to Bitfit that fine-tunes a specific module in Transformer, Xattn Tuning [73] fine-tunes only the cross-attention layers. SPT (sensitivity-aware visual parameter-efficient fine-tuning) [74] first identifies the sensitive parameters measured by the loss reduction when being tuned. This sensitivity is calculated using a first-order Taylor expansion, derived from a single forward and backward pass before fine-tuning in one shot. Next, SPT finds the weight matrices whose number of sensitive parameters exceeds a pre-defined threshold and then applies a selected PEFT technique (e.g., LoRA and Adapter) to these targeted weights to achieve structural tuning.",
+      "To adapt the recently prevalent LLaMA model, LLaMA-Adapter [164] prepends a set of learnable prompts (similar to prefix tuning) to the input tokens in LLaMA\u2019s higher transformer layers. To avoid the unstable fine-tuning with large loss values at early training stages, instead of the randomly initialized weights of other PEFT methods, LLaMA-Adapter adopts a zero-initialized attention mechanism, which learns a zero-initialized gating factor to adaptively control the contribution of adaptation prompts to the word tokens. This can maintain the fine-tuning starting point the same as the original model and progressively inject new knowledge into the model, where a similar idea can be found in MEFT [134] and LoftQ [125] discussed earlier."
+    ],
+    "title": "Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive ...",
+    "url": "https://arxiv.org/html/2403.14608v7"
+  },
+  {
+    "description": "Parameter-Efficient Fine-Tuning (PEFT) is a technique used to adapt pre-trained models to new tasks with minimal changes to the model's parameters. This approach is particularly useful in scenarios where computational resources are limited or when it is desirable to maintain the original model's ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Parameter-Efficient Fine-Tuning (PEFT) is a technique used to adapt pre-trained models to new tasks with minimal changes to the model's parameters. This approach is particularly useful in scenarios where computational resources are limited or when it is desirable to maintain the original model's performance on the initial task.",
+      "This approach is particularly useful in scenarios where computational resources are limited or when it is desirable to maintain the original model's performance on the initial task. These leaderboards are used to track progress in parameter-efficient fine-tuning \u00b7 Use these libraries to find parameter-efficient fine-tuning models and implementations ... See all 19 libraries. ... Collapse 19 libraries. ... We propose Low-Rank Adaptation, or LoRA, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks.",
+      "For example, training on the context length of 8192 needs 16x computational costs in self-attention layers as that of 2048."
+    ],
+    "title": "parameter-efficient fine-tuning | Papers With Code",
+    "url": "https://paperswithcode.com/task/parameter-efficient-fine-tuning"
+  },
+  {
+    "description": "Fine-tuning in machine learning is the process of adapting a pre-trained model for specific tasks or use cases through further training on a smaller dataset.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "Fast and efficient, prompt tuning allows for models to more easily switch between specific tasks, albeit with a tradeoff in interpretability. Another subset of additive fine-tuning injects adapter modules\u2014new, task-specific layers added to the neural network\u2014and trains these adapter modules in lieu of fine-tuning any of the pre-trained model weights (which are frozen). According to the original paper, which measured results on the BERT masked language model, adapters attained performance equivalent to that of full fine-tuning while training only 3.6% as many parameters.7",
+      "Other partial fine-tuning methods including updating only the layer-wide bias terms of the model (rather than the node-specific weights)4 and \u201csparse\u201d fine-tuning methods that update only a select subset of overall weights throughout the model.5 \u00b7 Rather than fine-tuning the existing parameters of a pre-trained model, additive methods add extra parameters or layers to the model, freeze the existing pre-trained weights, and train only those new components.",
+      "Fine-tuning can be used to update the weights of the entire network, but for practical reasons this is not always the case. There exist a wide variety of alternate fine-tuning methods, often referred to under the umbrella term of parameter-efficient fine-tuning (PEFT), that update only a select subset of model parameters.",
+      "To avoid destabilizing changes from the fine-tuning process, certain hyperparameters\u2014model attributes that influence the learning process but are not themselves learnable parameters\u2014might be adjusted relative to their specifications during pre-training: for example, a smaller learning rate (which reduces the magnitude of each update to model weights) is less likely to lead to catastrophic forgetting. Full fine-tuning, like the pre-training process it resembles, is very computationally demanding. For modern deep learning models with hundreds of millions or even many billions of parameters, it\u2019s often prohibitively costly and impractical. Parameter efficient fine-tuning (PEFT) encompasses a range of methods to reduce the number of trainable parameters that need to be updated in order to effectively adapt a large pre-trained model to specific downstream applications."
+    ],
+    "title": "What is Fine-Tuning? | IBM",
+    "url": "https://www.ibm.com/think/topics/fine-tuning"
+  },
+  {
+    "description": "Parameter Efficient Fine-Tuning (PEFT) does serves as an efficient way for adaptation of various language models across wide variety of downstream tasks. As part of these techniques, it helps in\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Parameter Efficient Fine-Tuning (PEFT) does serves as an efficient way for adaptation of various language models across wide variety of\u2026",
+      "\u25b9 FAR [17] : this approach fine-tunes BERT models by grouping weights of the FFN in Transformer blocks into nodes, then rank and select the learner nodes using L1 norm \u00b7 \u25b9Bitfit [18] : finetunes the bias parameters of each DNN layer for smaller models \u00b7 \u25b9Xattn Tuning[19] : finetunes only the cross-attention layers",
+      "For inference, the model can be converted to its original weight parameterization, ensuring unchanged inference speed. ... \u25b9 Intrinsic SAID [21]: An objective function\u2019s intrinsic dimension measures the minimum number of parameters needed to reach satisfactory solutions to the respective objective. As part of this algorithm, it proposes compression based generalization bounds can be applied to our intrinsic dimension framework to provide generalization bounds for large pre-trained models independent of the pre-trained model parameter count.",
+      "This approach involves insertion of small adapter layers within Transformer blocks. Since during fine-tuning, only a minimal number of trainable parameters that are strategically positioned within the model architecture are updated , that results in reduction of storage, memory and compute requirements. ... where, Wdown represents the down-projection matrix, Wup being up-projection matrix and \u03c3 denotes . Some of the notable algorithms proposed for this paradigm are:"
+    ],
+    "title": "Parameter-Efficient Fine-Tuning for Models: Categories and Algorithms ...",
+    "url": "https://medium.com/@techsachin/parameter-efficient-fine-tuning-for-models-categories-and-algorithms-4481fb2bdef0"
+  },
+  {
+    "description": "The outputs of the network are ... final layer, facilitating the resolution of various tasks. Furthermore, SAN Xu and et al. (2023b) proposes a two-branch side adapter network. One branch is dedicated to predicting mask proposals, while the other focuses on predicting attention biases that are applied to the self-attention ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The outputs of the network are summed with the representations from the PVMs in the final layer, facilitating the resolution of various tasks. Furthermore, SAN Xu and et al. (2023b) proposes a two-branch side adapter network. One branch is dedicated to predicting mask proposals, while the other focuses on predicting attention biases that are applied to the self-attention blocks for mask class recognition.",
+      "However, random initialization may bring random noise, impacting the convergence of the fine-tuning downstream tasks. To address this, PATT Yu and et al. (2022) proposes a parallel attention mechanism to the original attention module without random initialization and uses two linear layers (with parameters",
+      "Instead, it targets the bias term at the MLP layer by using a linear layer with a weight ... Instead of tuning bias terms, LN-Tune Basu and et al. (2024) introduces a strong PEFT baseline that fine-tunes only the LayerNorm parameters of the PVMs. Reparameter tuning methods also introduce new learnable parameters during the training stage, while these parameters can be integrated into the original PVMs through reparameterization during the inference phase.",
+      "Delving deeper, FacT Jie and Deng (2023) proposes a tensorization-decomposition framework, which involves tensorizing the weights of PVMs into a single 3D tensor and then decomposing their increments into lightweight factors. This approach efficiently stores weight increments, offering a novel way to handle the parameters of PVMs. Following FacT, EFFT Chen (2023) aims to minimize redundancies both within and across layers, without increasing computational latency."
+    ],
+    "title": "Parameter-Efficient Fine-Tuning for Pre-Trained Vision Models: ...",
+    "url": "https://arxiv.org/html/2402.02242v1"
+  },
+  {
+    "description": "Dive into LLM fine-tuning: its importance, types, methods, and best practices for optimizing language model performance.",
+    "favicon_url": "https://you.com/favicon?domain=www.superannotate.com&size=128",
+    "snippets": [
+      "While full LLM fine-tuning updates every model's weight during the supervised learning process, PEFT methods only update a small set of parameters. This transfer learning technique chooses specific model components and \"freezes\" the rest of the parameters. The result is logically having a much smaller number of parameters than in the original model (in some cases, just 15-20% of the original weights; LoRA can reduce the number of trainable parameters by 10,000 times).",
+      "SuperAnnotate's LLM tool provides a cutting-edge approach for designing optimal training data to fine-tune language models. Enterprises building AI solutions, like Databricks, choose SuperAnnotate to help them build training data. Jonathan Frankle from Databricks shares why they chose us: 'We reviewed several companies in this space and selected SuperAnnotate due to the high quality of their data. I'm very glad we did \u2013 they continue to stand out for their data quality, attention to detail, and fantastic communication.",
+      "The process results in a new version of the model with updated weights. It is important to note that just like pre-training, full fine-tuning requires enough memory and compute budget to store and process all the gradients, optimizers, and other components being updated during training. Training a language model is a computationally intensive task. For a full LLM fine-tuning, you need memory not only to store the model, but also the parameters that are necessary for the training process.",
+      "Hyperparameters are tunable variables that play a key role in the model training process. Learning rate, batch size, number of epochs, weight decay, and other parameters are the key hyperparameters to adjust that find the optimal configuration for your task."
+    ],
+    "title": "Fine-tuning large language models (LLMs) in 2025 | SuperAnnotate",
+    "url": "https://www.superannotate.com/blog/llm-fine-tuning"
+  },
+  {
+    "description": "With the continuous growth in the number of parameters of transformer-based pretrained language models (PLMs), particularly the emergence of large language models (LLMs) with billions of parameters, many natural language processing (NLP) tasks have demonstrated remarkable success.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2312.12148: Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment",
+      "Parameter Efficient Fine-Tuning (PEFT) offers an effective solution by reducing the number of fine-tuning parameters and memory usage while achieving comparable performance to full fine-tuning. The demands for fine-tuning PLMs, especially LLMs, have led to a surge in the development of PEFT methods, as depicted in Fig. 1. In this paper, we present a comprehensive and systematic review of PEFT methods for PLMs.",
+      "View a PDF of the paper titled Parameter-Efficient Fine-Tuning Methods for Pretrained Language Models: A Critical Review and Assessment, by Lingling Xu and 4 other authors View PDF HTML (experimental)",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2312.12148] Parameter-Efficient Fine-Tuning Methods for Pretrained ...",
+    "url": "https://arxiv.org/abs/2312.12148"
+  },
+  {
+    "description": "To reduce the computational cost, various parameter-efficient fine-tuning (PEFT) methods have been proposed [5, 17, 21, 22, 18], which only fine-tune a small number of (extra) model parameters. A fundamental component of transformers is the attention mechanism, particularly the interactions ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "To reduce the computational cost, various parameter-efficient fine-tuning (PEFT) methods have been proposed [5, 17, 21, 22, 18], which only fine-tune a small number of (extra) model parameters. A fundamental component of transformers is the attention mechanism, particularly the interactions among the query matrix",
+      "However, fine-tuning these models for specific tasks remains resource-intensive due to their extensive parameterization. In this paper, we investigate two remarkable phenomena observed during the fine-tuning of LLMs, particularly focusing on the attention mechanism: (1) Different Impact, optimizing the ... bold_W start_POSTSUBSCRIPT italic_v end_POSTSUBSCRIPT matrix significantly improves performance over optimizing the ... bold_W start_POSTSUBSCRIPT italic_v end_POSTSUBSCRIPT matrices is computationally efficient, delivering results that are comparable to, or even better than, fine-tuning all three matrices",
+      "bold_W start_POSTSUBSCRIPT italic_k end_POSTSUBSCRIPT to facilitate efficient convergence (Section 4). While certain empirical guidelines, such as the original Low-Rank Adaptation (LoRA) [18], explore which weight matrices in transformers are suitable for the application of LoRA, comprehensive theoretical analyses of these phenomena are still limited. This includes aspects such as selecting appropriate weight types for fine-tuning and optimizing learning rate settings. In this paper, we seek to explore the issue from the following two aspects.",
+      "bold_W start_POSTSUBSCRIPT italic_v end_POSTSUBSCRIPT improves generalization bounds, enhances memory efficiency, and (ii) Optimization, where we emphasize that the feature learning of the attention mechanism is efficient, particularly when using distinct learning rates for the matrices, which leads to more effective fine-tuning. Building on these insights, we propose a new strategy that improves fine-tuning efficiency in terms of both storage and time."
+    ],
+    "title": "Theoretical Insights into Fine-Tuning Attention Mechanism: ...",
+    "url": "https://arxiv.org/html/2410.02247v1"
+  },
+  {
+    "description": "Large language models (LLMs) have achieved state-of-the-art results on a wide range of natural language processing (NLP) tasks. However, they are often computationally expensive to train and\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Large language models (LLMs) have achieved state-of-the-art results on a wide range of natural language processing (NLP) tasks. However\u2026",
+      "They are used to fine-tune the layer on the new task. The original weight matrix A is not fine-tuned. In the example above, we only used the first 5 singular values and corresponding singular vectors to form A_low_rank and B_low_rank.",
+      "We have seen how LoRA PEFT works by decomposing the weight matrices of the self-attention layers into low-rank matrices. We have also seen how this can help to reduce the computational cost of fine-tuning while still maintaining the performance of the original model.",
+      "LoRA works by approximating the model\u2019s weight matrices with low-rank matrices. This reduces the number of parameters that need to be fine-tuned, which makes the fine-tuning process faster and more efficient. LoRA was first proposed by researchers at Microsoft in 2022."
+    ],
+    "title": "LoRA Parameter-Efficient Tuning with Understanding of Self-Attention ...",
+    "url": "https://medium.com/datadreamers/exploring-lora-unveiling-parameter-efficient-tuning-and-self-attention-mechanisms-in-depth-58e4c3b5ce30"
+  },
+  {
+    "description": "Transformer-based models have consistently demonstrated superior accuracy compared to various traditional models across a range of downstream tasks. H\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Overview of trends in fine-tuning that enhance scalability and efficiency of LLMs.",
+      "In this study, we will be reviewing the types of techniques developed, their impacts and benefits concerning performance and resource usage along with the latest developments in the domain. We have broadly categorized these techniques into six key areas: Changes in Training Method, Changes in Adapter, Quantization, Parameter Selection, Mixture of Experts, and Application based methods."
+    ],
+    "title": "The fine art of fine-tuning: A structured review of advanced LLM ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2949719125000202"
+  },
+  {
+    "description": "A conceptual survey of PEFT methods used by Hugging Face, Google's Vertex AI, and eventually OpenAI",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "We also introduce one other learnable column vector l_{ff} that is added to the feed forward layers as follow: In this example, gamma is the activation function applied to the product between the weights and input. Here is some pseudo code for (IA)\u00b3: def self_attention_ia3(x): k = x @ W_k q = x @ W_q v = x @ W_v k = l_k @ k # ia3 v = l_v @ v # ia3 return softmax(q @ k.T) @ v def transformer_block_ia3(x): \"\"\"Pseudo code from [2]\"\"\" residual = x x = self_attention_ia3(x) x = layer_norm(x + residual) residual = x x = x @ W_1 # normal transformer x = l_ff * gelu(x) # ia3 x = x @ W_2 x = layer_norm(x + residual) return x",
+      "These adaption prompts are inserted in the L topmost of the N transformer layers. The authors also introduce zero initialized attention. With additive methods we introduce a new set of parameters that have some random initialization over the weights. Because of this random noise added to the LM, we can potentially experience unstable fine-tuning which can cause a problem with large loss values at the early stages.",
+      "All functions from that pseudo code are as described in Vaswani et al. The FFN is a Feed Forward Network, which is 2 layers for our purposes. Many PEFT techniques that follow make changes to the transformer block or to self-attention, so I\u2019ll reference and change this pseudo code as we move through the guide.",
+      "Using these three matrices we can reconstruct an approximation of our vector space Delta as P Lambda Q. The benefit of using SVD is the singular values represent the importance of the vector in this lower dimensional space. The contribution of this paper is applying some efficiency implementations to use an SVD related approach to consider importance around which weights should be optimized."
+    ],
+    "title": "Parameter-Efficient Fine-Tuning (PEFT) for LLMs: A Comprehensive ...",
+    "url": "https://towardsdatascience.com/parameter-efficient-fine-tuning-peft-for-llms-a-comprehensive-introduction-e52d03117f95/"
+  }
+]

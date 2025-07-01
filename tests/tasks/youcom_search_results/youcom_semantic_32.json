@@ -1,0 +1,281 @@
+[
+  {
+    "description": "Learn about natural language processing, how it works and its uses. Examine its pros and cons as well as its history.",
+    "favicon_url": "https://you.com/favicon?domain=www.techtarget.com&size=128",
+    "snippets": [
+      "Part-of-speech tagging. Words are tagged based on which part of speech they correspond to -- such as nouns, verbs or adjectives.",
+      "Syntax NLP techniques include the following: This is the grammatical analysis of a sentence. For example, a natural language processing algorithm is fed the sentence, \"The dog barked.\" Parsing involves breaking this sentence into parts of speech -- i.e., dog = noun, barked = verb.",
+      "Voice assistants on a customer service phone line can use speech recognition to understand what the customer is saying, so that it can direct their call correctly. Automatic translation. Tools such as Google Translate, Bing Translator and Translate Me can translate text, audio and documents into another language.",
+      "NLP uses many different techniques to enable computers to understand natural language as humans do. Whether the language is spoken or written, natural language processing can use AI to take real-world input, process it and make sense of it in a way a computer can understand. Just as humans have different sensors -- such as ears to hear and eyes to see -- computers have programs to read and microphones to collect audio."
+    ],
+    "title": "What is Natural Language Processing (NLP)? | Definition from ...",
+    "url": "https://www.techtarget.com/searchenterpriseai/definition/natural-language-processing-NLP"
+  },
+  {
+    "description": "Context analysis in NLP involves extracting n-grams, noun phrases, themes, and facets. This article explains the value of context and how we extract it.",
+    "favicon_url": "https://you.com/favicon?domain=www.lexalytics.com&size=128",
+    "snippets": [
+      "Verb and adjective phrases serve well in analyzing sentiment. But nouns are the most useful in understanding the context of a conversation. If you want to know \u201cwhat\u201d is being discussed, nouns are your go-to. Verbs help with understanding what those nouns are doing to each other, but in most cases it is just as effective to only consider noun phrases. Noun phrase extraction takes part of speech type into account when determining relevance.",
+      "This means that facets are primarily useful for review and survey processing, such as in Voice of Customer and Voice of Employee analytics. Noun phrase extraction relies on part-of-speech phrases in general, but facets are based around \u201cSubject Verb Object\u201d (SVO) parsing.",
+      "So, \u201cred dog\u201d is an adjective-noun part of speech pattern. \u201cCavorting green elk\u201d is a verb-adjective-noun pattern.",
+      "Many stop words are removed simply because they are a part of speech that is uninteresting for understanding context. Stop lists can also be used with noun phrases, but it\u2019s not quite as critical to use them with noun phrases as it is with n-grams. ... Noun phrases are one step in context analysis. But as we\u2019ve just shown, the contextual relevance of each noun phrase itself isn\u2019t immediately clear just by extracting them."
+    ],
+    "title": "Context Analysis in NLP: Why It's Valuable and How It's Done - ...",
+    "url": "https://www.lexalytics.com/blog/context-analysis-nlp/"
+  },
+  {
+    "description": "For any given question, it's likely that someone has written the answer down somewhere. The amount of natural language text that is available in electronic form is truly staggering, and is increasing every day. However, the complexity of natural language can make it very difficult to access ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nltk.org&size=128",
+    "snippets": [
+      "Investigate other models of the context, such as the n-1 previous part-of-speech tags, or some combination of previous chunk tags along with previous and following part-of-speech tags. \u2605 Consider the way an n-gram tagger uses recent tags to inform its tagging choice. Now observe how a chunker may re-use this sequence information. For example, both tasks will make use of the information that nouns tend to follow adjectives (in English).",
+      "We demonstrate this approach using an example sentence that has been part-of-speech tagged in 2.2. In order to create an NP-chunker, we will first define a chunk grammar, consisting of rules that indicate how sentences should be chunked. In this case, we will define a simple grammar with a single regular-expression rule . This rule says that an NP chunk should be formed whenever the chunker finds an optional determiner (DT) followed by any number of adjectives (JJ) and then a noun (NN).",
+      "To perform the first three tasks, we can define a simple function that simply connects together NLTK's default sentence segmenter , word tokenizer , and part-of-speech tagger : ... Remember that our program samples assume you begin your interactive session or your program with: import nltk, re, pprint \u00b7 Next, in named entity detection, we segment and label the entities that might participate in interesting relations with one another. Typically, these will be definite noun phrases such as the knights who say \"ni\", or proper names such as Monty Python.",
+      "In 2 we saw how we could interrogate a tagged corpus to extract phrases matching a particular sequence of part-of-speech tags. We can do the same work more easily with a chunker, as follows: ... Your Turn: Encapsulate the above example inside a function find_chunks() that takes a chunk string like \"CHUNK: {<V.*> <TO> <V.*>}\" as an argument. Use it to search the corpus for several other patterns, such as four or more nouns in a row, e.g."
+    ],
+    "title": "7. Extracting Information from Text",
+    "url": "https://www.nltk.org/book/ch07.html"
+  },
+  {
+    "description": "Natural language processing (NLP) is a subfield of artificial intelligence (AI) that uses machine learning to help computers communicate with human language.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "Text analysis involves interpreting and extracting meaningful information from text data through various computational techniques. This process includes tasks such as part-of-speech (POS) tagging, which identifies grammatical roles of words and named entity recognition (NER), which detects specific entities like names, locations and dates. Dependency parsing analyzes grammatical relationships between words to understand sentence structure, while sentiment analysis determines the emotional tone of the text, assessing whether it is positive, negative or neutral.",
+      "Dependency parsing looks at the relationships between words, such as identifying nouns and verbs, while constituency parsing then builds a parse tree (or syntax tree): a rooted and ordered representation of the syntactic structure of the sentence or string of words. The resulting parse trees underly the functions of language translators and speech recognition. Ideally, this analysis makes the output either text or speech understandable to both NLP models and people.",
+      "Developed later, statistical NLP automatically extracts, classifies and labels elements of text and voice data and then assigns a statistical likelihood to each possible meaning of those elements. This relies on machine learning, enabling a sophisticated breakdown of linguistics such as part-of-speech tagging. Statistical NLP introduced the essential technique of mapping language elements, such as words and grammatical rules to a vector representation so that language can be modeled by using mathematical (statistical) methods, including regression or Markov models.",
+      "Also called grammatical tagging, this is the process of determining which part of speech a word or piece of text is, based on its use and context. For example, part-of-speech identifies \u201cmake\u201d as a verb in \u201cI can make a paper plane,\u201d and as a noun in \u201cWhat make of car do you own?\u201d"
+    ],
+    "title": "What Is NLP (Natural Language Processing)? | IBM",
+    "url": "https://www.ibm.com/think/topics/natural-language-processing"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "By leveraging techniques such as Named Entity Recognition, Relationship Extraction, and Event Extraction, IE enables efficient data processing and supports decision-making across various industries. Despite challenges such as language ambiguity and the need for domain-specific adaptation, advancements in machine learning and integration with other NLP technologies promise a bright future for IE. ... Relationship extraction in natural language processing (NLP) is a technique that helps understand the connections between entities mentioned in text.",
+      "Unsupervised noun extraction is a technique in Natural Language Processing (NLP) used to identify and extract nouns from text without relying on labelled training data. Instead, it leverages statistical and linguistic patterns to detect noun phrases. This approach is particularly valuable for proces",
+      "Supporting Decision-Making: Extracted information can be used for decision-making in various domains such as healthcare, finance, and customer service, providing actionable insights from large datasets.",
+      "Advanced Machine Learning Models: The use of advanced models, such as transformers and deep learning techniques, is expected to enhance the accuracy and capability of IE systems."
+    ],
+    "title": "Information Extraction in NLP - GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/nlp/information-extraction-in-nlp/"
+  },
+  {
+    "description": "Answer (1 of 3): There are a couple of online tools, such as Parts-of-Speech.info, and Open Xerox that should get you started. I\u2019m not sure what you mean by \u201ccustom input key phrases\u201d, but each tool\u2019s capabilities and limitations will be evident when you exercise them.",
+    "favicon_url": "https://you.com/favicon?domain=www.quora.com&size=128",
+    "snippets": [],
+    "title": "Is there a program or application that highlights parts of speech ...",
+    "url": "https://www.quora.com/Is-there-a-program-or-application-that-highlights-parts-of-speech-such-as-nouns-verbs-and-adjectives-as-well-as-custom-input-key-phrases-of-a-text"
+  },
+  {
+    "description": "Learn more about Natural Language Processing (NLP) in this in-depth article. In which industries is it applied, how does it work and what are the benefits?",
+    "favicon_url": "https://you.com/favicon?domain=www.hyperscience.com&size=128",
+    "snippets": [
+      "Parsing Parsing involves analyzing the structure of sentences to understand their meaning. It involves breaking down a sentence into its constituent parts of speech and identifying the relationships between them. For example, in the sentence \u201cThe cat chased the mouse,\u201d parsing would involve identifying that \u201ccat\u201d is the subject, \u201cchased\u201d is the verb, and \u201cmouse\u201d is the object. It would also involve identifying that \u201cthe\u201d is a definite article and \u201ccat\u201d and \u201cmouse\u201d are nouns.",
+      "In this section, we will explore some of the most common applications of NLP and how they are being used in various industries. In financial services, NLP is being used to automate tasks such as fraud detection, customer service, and even day trading. For example, JPMorgan Chase developed a program called COiN that uses NLP to analyze legal documents and extract important data, reducing the time and cost of manual review.",
+      "It can help improve accessibility for individuals with hearing or speech impairments, and can also improve efficiency in industries such as healthcare, finance, and transportation. No surprises here; summarization is the process of using NLP to generate a shorter version of a longer piece of text while retaining the most important information.Summarization can be carried out using several techniques, including extractive summarization and abstractive summarization.",
+      "It can be used to automatically categorize text as positive, negative, or neutral, or to extract more nuanced emotions such as joy, anger, or sadness. Sentiment analysis can help businesses better understand their customers and improve their products and services accordingly. Speech recognition, also known as automatic speech recognition (ASR), is the process of using NLP to convert spoken language into text."
+    ],
+    "title": "Natural Language Processing (NLP) - What is it and how is it used?",
+    "url": "https://www.hyperscience.com/knowledge-base/natural-language-processing/"
+  },
+  {
+    "description": "Part-of-speech (POS) tagging is a process in natural language processing (NLP) where each word in a text is labeled with its corresponding part of speech. This can include nouns, verbs, adjectives, and other grammatical categories.",
+    "favicon_url": "https://you.com/favicon?domain=www.shiksha.com&size=128",
+    "snippets": [
+      "Part-of-speech (POS) tagging is a process in natural language processing (NLP) where each word in a text is labeled with its corresponding part of speech. This can include nouns, verbs, adjectives, and other grammatical categories. POS tagging is useful for a variety of NLP tasks, such as information extraction, named entity recognition, and machine translation.",
+      "Apple | PROPN | proper noun | NNP noun, proper singular is | AUX | auxiliary | VBZ verb, 3rd person singular present planning | VERB | verb | VBG verb, gerund or present participle to | PART | particle | TO infinitival \"to\" buy | VERB | verb | VB verb, base form Indian | ADJ | adjective | JJ adjective (English), other noun-modifier (Chinese) startup | NOUN | noun | NN noun, singular or mass for | ADP | adposition | IN conjunction, subordinating or preposition $ | SYM | symbol | $ symbol, currency 1 | NUM | numeral | CD cardinal number billion | NUM | numeral | CD cardinal number",
+      "In the sentence \u201cThe cat sat on the mat,\u201d the word \u201csat\u201d would be changed from a verb to a noun based on the first rule. In the sentence \u201cThe red cat sat on the mat,\u201d the word \u201cred\u201d would be changed from an adjective to a noun based on the second rule.",
+      "POS tagging is the process of labeling words in a text with their corresponding parts of speech (e.g., noun, verb, adjective)."
+    ],
+    "title": "Understanding Part-of-Speech Tagging in NLP: Techniques and ...",
+    "url": "https://www.shiksha.com/online-courses/articles/pos-tagging-in-nlp/"
+  },
+  {
+    "description": "Natural Language Processing is the discipline of building machines that can manipulate language in the way that it is written, spoken, and organized",
+    "favicon_url": "https://you.com/favicon?domain=www.deeplearning.ai&size=128",
+    "snippets": [
+      "The result generally consists of a word index and tokenized text in which words may be represented as numerical tokens for use in various deep learning methods. A method that instructs language models to ignore unimportant tokens can improve efficiency.  \u00b7 Feature extraction: Most conventional machine-learning techniques work on the features \u2013 generally numbers that describe a document in relation to the corpus that contains it \u2013 created by either Bag-of-Words, TF-IDF, or generic feature engineering such as document length, word polarity, and metadata (for instance, if the text has associated tags or scores).",
+      "NLP models work by finding relationships between the constituent parts of language \u2014 for example, the letters, words, and sentences found in a text dataset. NLP architectures use various methods for data preprocessing, feature extraction, and modeling. Some of these processes are:  \u00b7 Data preprocessing: Before a model processes text for a specific task, the text often needs to be preprocessed to improve model performance or to turn words and characters into a format the model can understand.",
+      "Specializing in NLP requires a working knowledge of things like neural networks, frameworks like PyTorch and TensorFlow, and various data preprocessing techniques. The transformer architecture, which has revolutionized the field since it was introduced in 2017, is an especially important architecture. NLP is an exciting and rewarding discipline, and has potential to profoundly impact the world in many positive ways. Unfortunately, NLP is also the focus of several controversies, and understanding them is also part of being a responsible practitioner.",
+      "Named entity recognition aims to extract entities in a piece of text into predefined categories such as personal names, organizations, locations, and quantities. The input to such a model is generally text, and the output is the various named entities along with their start and end positions."
+    ],
+    "title": "Natural Language Processing (NLP) [A Complete Guide]",
+    "url": "https://www.deeplearning.ai/resources/natural-language-processing/"
+  },
+  {
+    "description": "We offer you the best service \u00b7 Digital research in the archive made easy",
+    "favicon_url": "https://you.com/favicon?domain=intrafind.com&size=128",
+    "snippets": [
+      "To clarify, pure stemming cannot be used to reduce the word \u201cbetter\u201d to the root \u201cgood,\u201d or to convert verbs in the past tense to the present tense (e.g., \u201cgo\u201d to \u201cwent\u201d). Lemmatization easily accomplishes this based on linguistic knowledge. Thus, the NLP model learns that all these words are similar and are used in a similar context. Lemmatization also considers the context of a word to solve problems such as disambiguation. By specifying a part-of-speech parameter for a word (e.g., whether it is a noun or a verb), it is possible to identify the role of that word in the sentence and eliminate disambiguation.",
+      "POS gives each word a part-of-speech tag that defines its function in the example: \u201cPeter\u201d has a PROPN tag, which means that it is a proper noun, and \u201cbought\u201d the VERB tag, which means this is action. The \u201claptop\u201d and the \u201cApple Store\u201d are the nouns. POS tags can be used for various NLP tasks and are extremely useful because they provide linguistic information about how a word is used in a phrase, sentence, or document.",
+      "Human language is complicated, and the process of understanding language is highly complex. Therefore, applying and combining different NLP techniques is common to overcome various challenges. It involves several steps of decomposing human text and speech data to enable computers to extract and process structured data from natural language.",
+      "Like the word \u201cdrop\u201d as a verb: \u201cDon\u2019t drop your books\u201d; or as a noun: \u201cEnjoy every drop of your drink.\u201d \u00b7 Even if lemmatization seems to be closely related to stemming, it uses a different approach to identify the root forms of words. A good introduction to the topic is provided by the article ... With part-of-speech tagging (POS), also called grammatical tagging, a word or portion of text is tagged based on its grammatical usage and context."
+    ],
+    "title": "Natural Language Processing \u2013 Best Practice | IntraFind",
+    "url": "https://intrafind.com/en/blog/natural-language-processing-best-practice-en"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=education.indiana.edu&size=128",
+    "snippets": [],
+    "title": "Indiana",
+    "url": "https://education.indiana.edu/students/undergraduates/clinical-experiences/_docs/Academic%20Language.pdf"
+  },
+  {
+    "description": "The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text \u00b7 The intent of this success ...",
+    "favicon_url": "https://you.com/favicon?domain=www.w3.org&size=128",
+    "snippets": [
+      "Each numbered item in this section represents a technique or combination of techniques that the Accessibility Guidelines Working Group deems sufficient for meeting this Success Criterion. A technique may go beyond the minimum requirement of the criterion. There may be other ways of meeting the criterion not covered by these techniques.",
+      "hardware and/or software that acts as a user agent, or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents ... functionality provided by assistive technology includes alternative presentations (e.g., as synthesized speech or magnified content), alternative input methods (e.g., voice), additional navigation or orientation mechanisms, and content transformations (e.g., to make tables more accessible).",
+      "people who find it difficult to read written material with fluency and accuracy, such as recognizing characters and alphabets, decoding words, and understanding words and phrases; people with certain cognitive, language and learning disabilities who use text-to-speech software;",
+      "Most professions require frequent use of technical terms which may originate from a foreign language. Such terms are usually not translated to all languages."
+    ],
+    "title": "Understanding Success Criterion 3.1.2: Language of Parts | WAI | W3C",
+    "url": "https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html"
+  },
+  {
+    "description": "Natural language processing (NLP) is a subfield of computer science and especially artificial intelligence. It is primarily concerned with providing computers with the ability to process data encoded in natural language and is thus closely related to information retrieval, knowledge representation ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "In languages such as Turkish or Meitei, a highly agglutinated Indian language, however, such an approach is not possible, as each dictionary entry has thousands of possible word forms. ... Given a sentence, determine the part of speech (POS) for each word. Many words, especially common ones, can serve as multiple parts of speech. For example, \"book\" can be a noun (\"the book on the table\") or verb (\"to book a flight\"); \"set\" can be a noun, verb or adjective; and \"out\" can be any of at least five different parts of speech.",
+      "For example, German capitalizes all nouns, regardless of whether they are names, and French and Spanish do not capitalize names that serve as adjectives. Another name for this task is token classification. Sentiment analysis (see also Multimodal sentiment analysis) Sentiment analysis is a computational method used to identify and classify the emotional intent behind text. This technique involves analyzing text to determine whether the expressed sentiment is positive, negative, or neutral.",
+      "Models for sentiment classification typically utilize inputs such as word n-grams, Term Frequency-Inverse Document Frequency (TF-IDF) features, hand-generated features, or employ deep learning models designed to recognize both long-term and short-term dependencies in text sequences. The applications of sentiment analysis are diverse, extending to tasks such as categorizing customer reviews on various online platforms. ... The goal of terminology extraction is to automatically extract relevant terms from a given corpus.",
+      "Symbolic approach, i.e., the hand-coding of a set of rules for manipulating symbols, coupled with a dictionary lookup, was historically the first approach used both by AI in general and by NLP in particular: such as by writing grammars or devising heuristic rules for stemming. Machine learning approaches, which include both statistical and neural networks, on the other hand, have many advantages over the symbolic approach: both statistical and neural networks methods can focus more on the most common cases extracted from a corpus of texts, whereas the rule-based approach needs to provide rules for both rare cases and common ones equally.",
+      "Intermediate tasks (e.g., part-of-speech tagging and dependency parsing) are not needed anymore. Neural machine translation, based on then-newly invented sequence-to-sequence transformations, made obsolete the intermediate steps, such as word alignment, previously necessary for statistical machine translation."
+    ],
+    "title": "Natural language processing - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Natural_language_processing"
+  },
+  {
+    "description": "Learn the basics of what Information Extraction is and what advantages Semantic Technology adds to its process.",
+    "favicon_url": "https://you.com/favicon?domain=www.ontotext.com&size=128",
+    "snippets": [
+      "Data-driven activities such as mining for patterns and trends, uncovering hidden relationships, etc. There are many subtleties and complex techniques involved in the process of information extraction, but a good start for a beginner is to remember:",
+      "Pre-processing of the text \u2013 this is where the text is prepared for processing with the help of computational linguistics tools such as tokenization, sentence splitting, morphological analysis, etc.",
+      "The automation of tasks such as smart content classification, integrated search, management and delivery;",
+      "Extending the existing practices of information extraction, semantic information extraction enables new types of applications such as:"
+    ],
+    "title": "What Is Information Extraction? | Ontotext Fundamentals",
+    "url": "https://www.ontotext.com/knowledgehub/fundamentals/information-extraction/"
+  },
+  {
+    "description": "Choose a natural language processing service for sentiment analysis, topic and language detection, key phrase extraction, and document categorization.",
+    "favicon_url": "https://you.com/favicon?domain=learn.microsoft.com&size=128",
+    "snippets": [
+      "Download Microsoft Edge More info about Internet Explorer and Microsoft Edge ... Access to this page requires authorization. You can try signing in or changing directories. Access to this page requires authorization. You can try changing directories. ... Natural language processing has many applications, such as sentiment analysis, topic detection, language detection, key phrase extraction, and document categorization.",
+      "Recent advancements that support quantization, such as optimizations in Spark NLP architectures like Llama 2, help streamline these intensive tasks by allocating resources more efficiently. Standardization: Without a standardized document format, it can be difficult to achieve consistently accurate results when you use free-form text processing to extract specific facts from a document. For example, extracting the invoice number and date from various invoices poses challenges.",
+      "The relationship between natural language processing and language models demonstrates that language models enhance natural language processing processes through superior language understanding and generation capabilities. Business scenarios that can benefit from custom natural language processing include: Document intelligence for handwritten or machine-created documents in finance, healthcare, retail, government, and other sectors. Industry-agnostic natural language processing tasks for text processing, such as named-entity recognition (NER), classification, summarization, and relation extraction.",
+      "Natural language processing is a comprehensive field that encompasses various techniques for processing human language. In contrast, language models are a specific subset of natural language processing. They focus on deep learning to perform high-level language tasks. Language models enhance natural language processing by providing advanced text generation and understanding capabilities, but they aren't synonymous with natural language processing."
+    ],
+    "title": "Natural Language Processing Technology - Azure Architecture Center ...",
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing"
+  },
+  {
+    "description": "Explore what is NLP and how NLP techniques can boost growth. Discover key natural language processing techniques and applications from real-world examples.",
+    "favicon_url": "https://you.com/favicon?domain=www.revuze.it&size=128",
+    "snippets": [
+      "Parsing is the process of figuring out the grammatical structure of a sentence, determining which words belong together as phrases and which are the subject or object of a verb. This NLP technique offers additional context about a text in order to help with processing and analyzing it accurately. Named entity recognition (NER) is a type of information extraction that locates and tags \u201cnamed entities\u201d with predefined keywords such as names, locations, dates, events, and more.",
+      "As one of the most important NLP techniques for text classification, sentiment analysis is commonly used for applications such as analyzing user-generated content. It can be used on a variety of text types, including reviews, comments, tweets, and articles. The Revuze platform employs sentiment analysis to understand how customers feel about various aspects of products.",
+      "It isn\u2019t a necessary step of every NLP use case, but it can help with things such as text classification. Examples from geeksforgeeks of what short phrases look like with the stop words removed. Text classification is an umbrella term for any technique used to organize large quantities of raw text data. Sentiment analysis, topic modeling, and keyword extraction are all different types of text classification.",
+      "It is used to automatically extract the most frequently used and essential words and phrases from a document, helping to summarize it and identify what it\u2019s about. This is highly useful for any situation in which you want to identify a topic of interest in a textual dataset, such as whether there is a problem that comes up again and again in customer emails."
+    ],
+    "title": "Natural Language Processing Techniques & Examples",
+    "url": "https://www.revuze.it/blog/natural-language-processing-techniques/"
+  },
+  {
+    "description": "The goal of this study was to determine whether positive treatment effects of a modified constraint-induced language therapy focused on verb production would generalize to unpracticed items and tasks. Four individuals participated in a ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Published in final edited form as: Am J Speech Lang Pathol. 2014 Aug 1;23(3):407\u2013420. doi: 10.1044/2014_AJSLP-13-0004 ... Correspondence to Kristen K. Maul, who is now with Gallaudet University: kristen.maul@gallaudet.edu ... The goal of this study was to determine whether positive treatment effects of a modified constraint-induced language therapy focused on verb production would generalize to unpracticed items and tasks. Four individuals participated in a single-subject treatment design protocol.",
+      "The additional task demands that may impede sentence grammaticality when people with aphasia attempt to produce segments that are longer than a single sentence may include paralinguistic abilities, such as working memory (e.g., Martin & Reilly, 2012). Whereas this is beyond the scope of the present paper, it is a fertile realm for future research. An understanding of the source of the added difficulty in the transition from single sentences to connected language production may be key to improving the quality of communication in aphasia.",
+      "Elements of form included: correct tense, verb tense in the response matched tense required by the question; accurate parts of speech, all minimal required parts of speech were present (e.g., Why do people go to college? requires a verb, as in to learn); subject, the response contained a subject if required by the question (e.g., Why was Frank Sinatra so popular? requires a response with a subject as in he sang). Elements of content included: accurate subject, the response contained the correct noun or pronoun (e.g., How do Americans celebrate Christmas?",
+      "Accumulation of data from a larger group of participants will allow greater generalization to the population at large. Although we have focused this study on verb retrieval, it is an open question of how well these methods can be adapted to other aspects of language (e.g., nouns, specific sentence structures). Additionally, our measures of generalization to functional communication, although chosen to elicit connected speech and simulate conversational interaction, do not go far enough in assessing functional outcomes in discourse."
+    ],
+    "title": "Using Informative Verbal Exchanges to Promote Verb Retrieval in ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4119506/"
+  },
+  {
+    "description": "Information extraction is the process of filtering through unstructured data and extracting crucial information into more editable and organized data forms. Here are a few NLP techniques.",
+    "favicon_url": "https://you.com/favicon?domain=www.analyticssteps.com&size=128",
+    "snippets": [
+      "All tokens in text data are classified into distinct word categories, such as nouns, verbs, adjectives, prepositions, determiners, and so on, in parts of speech tagging.",
+      "It pulls comprehensive information from the text when used in combination with sentiment analysis. Part-of-speech tagging is one of the simplest ways of aspect mining. There is no such thing as one optimum approach to complete a task in the realm of Natural Language Processing and Machine Learning, and this is true for Information Extraction tasks as well.",
+      "Deep Learning and NLP techniques like Named Entity Recognition may be used to extract information from text input. If we're starting from scratch, though, we should evaluate the sort of data we'll be dealing with, such as bills or medical records.",
+      "It's one of the most time-consuming data preparation tasks. It entails identifying important information in a text and categorizing it into a set of predetermined categories. Named entity recognition (NER) extracts entities from text such as individuals, places, organizations, dates, and so on."
+    ],
+    "title": "8 NLP Techniques to Extract Information | Analytics Steps",
+    "url": "https://www.analyticssteps.com/blogs/nlp-techniques-extract-information"
+  },
+  {
+    "description": "This article covers the word classes and Part-of-Speech Tagging in NLP with examples and explanations on Scaler Topics, read to know more.",
+    "favicon_url": "https://you.com/favicon?domain=www.scaler.com&size=128",
+    "snippets": [
+      "Commonly listed English parts of speech are nouns, verbs, adjectives, adverbs, pronouns, prepositions, conjunction, interjection, numeral, article, and determiners. These can be further categorized into open and closed classes. Closed classes are those with a relatively fixed/number of words, and we rarely add new words to these POS, such as prepositions.",
+      "Nouns: computer, board, peace, school Verbs: say, walk, run, belong Adjectives: clean, quick, rapid, enormous Adverbs: quickly, softly, enormously, cheerfully \u00b7 The problem is (as discussed above) many words belong to more than one word class. And to do POS tagging, a standard set needs to be chosen. We Could pick very simple/coarse tagsets such as Noun (NN), Verb (VB), Adjective (JJ), Adverb (RB), etc.",
+      "Part-of-speech (POS) tagging is an important Natural Language Processing (NLP) concept that categorizes words in the text corpus with a particular part of speech tag (e.g., Noun, Verb, Adjective, etc.) POS tagging could be the very first task in text processing for further downstream tasks in NLP, like speech recognition, parsing, machine translation, sentiment analysis, etc. The particular POS tag of a word can be used as a feature by various Machine Learning algorithms used in Natural Language Processing.",
+      "Let\u2019s say we found 100 such NVD sequences. Out of these - 10 sequences have the POS of the next word is NOUN 90 sequences have the POS of the next word is VERB ... The main drawback of this technique is that sometimes the predicted sequence is not Grammatically correct."
+    ],
+    "title": "Word Classes and Part-of-Speech Tagging in NLP - Scaler Topics",
+    "url": "https://www.scaler.com/topics/nlp/word-classes-and-part-of-speech-tagging-in-nlp/"
+  },
+  {
+    "description": "Due to the development of e-commerce and web technology, most of online Merchant sites are able to write comments about purchasing products for customer. Customer reviews expressed opinion about products or services which are collectively referred to ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "POS tagging is important as it allow us to generate general language patterns. We use Stanford-POS tagger to parse each sentence and yield the part-of-speech tag of each word (whether the word is a noun, adjective, verb, adverb, etc.) and identify simple noun and verb groups (syntactic chunking), for instance,",
+      "Therefore, efficient method and techniques are needed to extract opinions from reviews. In this paper, we proposed a novel idea to find opinion words or phrases for each feature from customer reviews in an efficient way. Our focus in this paper is to get the patterns of opinion words/phrases about the feature of product from the review text through adjective, adverb, verb, and noun.",
+      "extracting opinion words or phrases through adjective, adverb, verb, and noun and determining the orientation; ... We use a part-of-speech tagger to identify phrases in the input text that contains adjective or adverb or verb or nouns as opinion phrases.",
+      "Moreover, both adjective and adverb are good indicators of subjectivity and opinions. Therefore, we need to extract phrases containing adjective, adverb, verb, and noun that imply opinion. We also consider some verbs (like, recommend, prefer, appreciate, dislike, and love) as opinion words."
+    ],
+    "title": "Extracting Product Features and Opinion Words Using Pattern Knowledge ...",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3888732/"
+  },
+  {
+    "description": "Adjectives and adverbs are modifying words \u00b7 Incorrect: She did good on her exam",
+    "favicon_url": "https://you.com/favicon?domain=www.niu.edu&size=128",
+    "snippets": [
+      "If the word modified is a noun or a pronoun, use an adjective. If the word modified is a verb, an adjective, or another adverb, use an adverb to modify it. Sometimes an adverb is confused with an adjective similar in meaning. Bad is an adjective used with linking verbs such as feel, seem, be, look, etc. Incorrect: I feel badly that he is not taking part in the game.",
+      "In the sentence above, the verb did is modified by an adjective good, when it should be modified by an adverb well. Correct: She did well on her exam. Many adverbs are formed by adding a suffix -ly at the end of an adjective: ... An adjective is a part of speech that modifies a noun or pronoun.",
+      "Adjectives usually tell what kind, how many, or which about nouns or pronouns. An adverb is a part of speech that modifies a another adverb, a verb, or an adjective.",
+      "Correct: I feel bad that he is not taking part in the game. Badly is an adverb used to modify action verbs. Incorrect: Sometimes Hollywood romance ends bad. Correct: Sometimes Hollywood romance ends badly. Calm is an adjective, and it is used to modify nouns and pronouns. It is also used with linking verbs. Incorrect: She appeared calmly after the accident. Correct: She appeared calm after the accident. Calmly is an adverb that modifies verbs."
+    ],
+    "title": "Adjective or Adverb | Effective Writing Practices Tutorial | Northern ...",
+    "url": "https://www.niu.edu/writing-tutorial/grammar/adjective-or-adverb.shtml"
+  },
+  {
+    "description": "Improve your English by mastering the parts of speech! Learn about nouns, verbs, adjectives, adverbs, and more in our latest article. #EnglishGrammar #PartsOfSpeech #LearnEnglish",
+    "favicon_url": "https://you.com/favicon?domain=englishpluspodcast.com&size=128",
+    "snippets": [
+      "Improve your English with our latest article on the parts of speech! Learn about nouns, verbs, adjectives, adverbs, and more. #EnglishGrammar #PartsOfSpeech #LearnEnglish",
+      "In this article, we'll take a closer look at the most important parts of speech: nouns, verbs, adjectives, adverbs, and more.",
+      "In this article, we\u2019ll take a closer look at the most important parts of speech: nouns, verbs, adjectives, adverbs, and more. A noun is a word that refers to a person, place, thing, or idea. Nouns are one of the most common parts of speech, and they are used in almost every sentence. Some examples of nouns include \u201ccat,\u201d \u201cbook,\u201d \u201cteacher,\u201d \u201ccity,\u201d and \u201clove.\u201d \u00b7 Nouns can be classified in different ways. For example, proper nouns refer to specific people, places, or things and are always capitalized, such as \u201cNew York City\u201d or \u201cJohn Smith.\u201d Common nouns, on the other hand, refer to general people, places, or things, such as \u201ccity\u201d or \u201cbook.\u201d",
+      "For example, transitive verbs require an object, such as \u201cShe ate an apple,\u201d while intransitive verbs do not, such as \u201cShe slept.\u201d Verbs can also be regular or irregular, and they can be used in different tenses to indicate the time of the action or state of being. An adjective is a word that describes or modifies a noun or pronoun."
+    ],
+    "title": "Understanding Parts of Speech: Nouns, Verbs, Adjectives, Adverbs, ...",
+    "url": "https://englishpluspodcast.com/understanding-parts-of-speech-nouns-verbs-adjectives-adverbs-and-more/"
+  },
+  {
+    "description": "Learn the difference between adjectives and adverbs with these rules and examples. Discover how to identify adjectives vs. adverbs and use them correctly.",
+    "favicon_url": "https://you.com/favicon?domain=www.grammarly.com&size=128",
+    "snippets": [
+      "An adjective is a word that describes nouns, such as large or beautiful, and an adverb is a word that describes verbs, adjectives, and other\u2026",
+      "Adjectives, such as big or smart, are words that describe nouns. Adverbs, such as quickly or very, are words that describe verbs, adjectives, or other adverbs. Aside from both words starting with ad-, adjectives and adverbs both represent words that describe other words. Both adjectives and adverbs are used to add more details to a sentence beyond simply who did what.",
+      "Sometimes, multiple words work together to describe a noun. This is called an adjective phrase, and you can treat these groups of words the same as individual adjectives. Quantum physics is too complicated to understand. Adverbs commonly describe verbs. They add details to show how an action is done, such as with the adverbs quickly or slowly, or the frequency of the action, such as with the adverbs often or sometimes.",
+      "An adjective is a word that describes nouns, such as large or beautiful, and an adverb is a word that describes verbs, adjectives, and other adverbs, such as silently or really."
+    ],
+    "title": "Adjectives and Adverbs: What's the Difference? | Grammarly",
+    "url": "https://www.grammarly.com/blog/parts-of-speech/adjectives-and-adverbs/"
+  },
+  {
+    "description": "This book provides an overview of the field of natural language processing and recently developed methods, presuming only knowledge of computing with data structures.",
+    "favicon_url": "https://you.com/favicon?domain=wisconsin.pressbooks.pub&size=128",
+    "snippets": [
+      "Ranking is a critical component, as it has been shown that many users never look beyond the first page results and instead will try a different query when the results do not appear to match their need[7]. Thus, many methods focus solely on the task of reranking the results of a less complex retrieval method. A display of results presents the ranked results, along with other information about them. The information to be displayed is selected and formatted to help the user understand the result, such as what the document might contain and why it was ranked highly.",
+      "In legal terms, the primary statement being asserted is the \u201cclaim\u201d and the other statements are known as \u201cpremises\u201d. The relevant statutes would be the \u201cwarrant\u201d. The structure of such arguments is similar to the type of discourse-level analysis provide by Rhetorical Structure Theory[25]. In particular graphs are used to represent the supporting and attacking relationships between statements of an argument. Potential applications of AM are still emerging, such as to gain a deeper understanding of reviews of products and services or to better understand how the general public perceives important issues of the day and what arguments would be most persuasive to changing damaging behavior.",
+      "The QA pipeline shown in Figure 8.2 begins with classification to determine the question and answer types, which may require subtasks of \u201cfeature engineering\u201d to identify important noun phrases (using named entity recognition), important relations between verbs and nouns (using semantic role labelling, or relation extraction) or to build vector representations (of the words or the whole question).",
+      "Information extraction finds a specific answer to address the focus of a question. Information extraction methods can also be applied to find all possible properties or relations mentioned in a text, either based on the main verb, or on predefined entity types, such as person, location, and time."
+    ],
+    "title": "Question Answering, Text Retrieval, Information Extraction, & ...",
+    "url": "https://wisconsin.pressbooks.pub/naturallanguage/chapter/information-retrieval/"
+  }
+]

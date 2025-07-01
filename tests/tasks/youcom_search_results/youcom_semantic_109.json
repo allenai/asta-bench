@@ -1,0 +1,270 @@
+[
+  {
+    "description": "Although large language models (LLMs) are widely deployed, the data used to train them is rarely disclosed. Given the incredible scale of this data, up to trillions of tokens, it is all but certain that it includes potentially problematic text such as copyrighted materials, personally identifiable ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled Detecting Pretraining Data from Large Language Models, by Weijia Shi and 7 other authors View PDF HTML (experimental) Abstract:Although large language models (LLMs) are widely deployed, the data used to train them is rarely disclosed. Given the incredible scale of this data, up to trillions of tokens, it is all but certain that it includes potentially problematic text such as copyrighted materials, personally identifiable information, and test data for widely reported reference benchmarks.",
+      "Abstract page for arXiv paper 2310.16789: Detecting Pretraining Data from Large Language Models",
+      "View a PDF of the paper titled Detecting Pretraining Data from Large Language Models, by Weijia Shi and 7 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+      "However, we currently have no way to know which data of these types is included or in what proportions. In this paper, we study the pretraining data detection problem: given a piece of text and black-box access to an LLM without knowing the pretraining data, can we determine if the model was trained on the provided text?"
+    ],
+    "title": "[2310.16789] Detecting Pretraining Data from Large Language Models",
+    "url": "https://arxiv.org/abs/2310.16789"
+  },
+  {
+    "description": "Although large language models (LLMs) are widely deployed, the data used to train them is rarely disclosed. Given the incredible scale of this data, up to trillions of tokens, it is all but certain that it includes potentially problematic text such as copyrighted materials, personally identifiable ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Although large language models (LLMs) are widely deployed, the data used to train them is rarely disclosed. Given the incredible scale of this data, up to trillions of tokens, it is all but certain that it includes potentially problematic text such as copyrighted materials, personally identifiable information, and test data for widely reported reference benchmarks.",
+      "Code Of Ethics: I acknowledge that I and all co-authors of this work have read and commit to adhering to the ICLR Code of Ethics. Keywords: Large language models, detecting pretraining data",
+      "However, we currently have no way to know which data of these types is included or in what proportions. In this paper, we study the pretraining data detection problem: given a piece of text and black-box access to an LLM without knowing the pretraining data, can we determine if the model was trained on the provided text?",
+      "MIN-K PROB can be applied without any knowledge about the pretrainig corpus or any additional training, departing from previous detection methods that require training a reference model on data that is similar to the pretraining data. Moreover, our experiments demonstrate that MIN-K PROB achieves a 7.4% improvement on WIKIMIA over these previous methods. We apply MIN-K PROB to two real-world scenarios, copyrighted book detection and contaminated downstream example detection, and find that it to be a consistently effective solution. Anonymous Url: I certify that there is no URL (e.g., github page) that could be used to find authors' identity."
+    ],
+    "title": "Detecting Pretraining Data from Large Language Models | OpenReview",
+    "url": "https://openreview.net/forum?id=zWqr3MQuNs"
+  },
+  {
+    "description": "It has become common to publish large (billion parameter) language models that have been trained on private datasets. This paper demonstrates that in such settings, an adversary can perform a training data extraction attack to recover individual training examples by querying the language model.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:It has become common to publish large (billion parameter) language models that have been trained on private datasets. This paper demonstrates that in such settings, an adversary can perform a training data extraction attack to recover individual training examples by querying the language model.",
+      "Abstract page for arXiv paper 2012.07805: Extracting Training Data from Large Language Models",
+      "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[2012.07805] Extracting Training Data from Large Language Models",
+    "url": "https://arxiv.org/abs/2012.07805"
+  },
+  {
+    "description": "Detecting Pretraining Data from Large Language Models",
+    "favicon_url": "https://you.com/favicon?domain=swj0419.github.io&size=128",
+    "snippets": [
+      "Auditing machine unlearning with Min-K% Prob The unlearned model LLaMA2-7B-WhoIsHarryPotter answers the questions related to Harry Potter correctly. We manually cross-checked these responses against the Harry Potter book series for verification. @misc{shi2023detecting, title={Detecting Pretraining Data from Large Language Models}, author={Weijia Shi and Anirudh Ajith and Mengzhou Xia and Yangsibo Huang and Daogao Liu and Terra Blevins and Danqi Chen and Luke Zettlemoyer}, year={2023}, eprint={2310.16789}, archivePrefix={arXiv}, primaryClass={cs.CL} }",
+      "Compute their average log likelihood. If the average log likelihood is high, the text is likely in the pretraining data. \u2705 See more results in our paper \u00b7 Machine Unlearning Recent work from MSR shows how LLMs can unlearn copyrighted training data via strategic fine-tuning.",
+      "Given the incredible scale of this data, up to trillions of tokens, it's nearly certain it includes potentially problematic text such as copyrighted materials, personally identifiable information, and test data for widely reported reference benchmarks. However, we currently lack knowledge on which data of these types is included or in what proportions. Pretraining Ddata detection problem.",
+      "This is built on a straightforward hypothesis: an unobserved example is more likely to have a few outlier words with low probabilities under the LLM, while a recognized example is less inclined to contain words with such reduced probabilities. Min-K% Prob operates without any insight into the pretraining corpus or any extra training, distinguishing it from past detection strategies that necessitate educating a reference model on data analogous to the pretraining data."
+    ],
+    "title": "Detecting Pretraining Data from Large Language Models",
+    "url": "https://swj0419.github.io/detect-pretrain.github.io/"
+  },
+  {
+    "description": "HTML conversions sometimes display errors due to content that did not convert correctly from the source. This paper uses the following packages that are not yet supported by the HTML conversion tool. Feedback on these issues are not necessary; they are known and are being worked on \u00b7 Authors: ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Other approaches try to detect contamination without access to pretraining corpora. Sainz et al. (2023) simply prompts ChatGPT to generate examples from a dataset by providing the dataset\u2019s name and split. They found that the models generate verbatim instances from NLP datasets. Golchin & Surdeanu (2023) extends this framework to extract more memorized instances by incorporating partial instance content into the prompt.",
+      "This paper uses the following packages that are not yet supported by the HTML conversion tool. Feedback on these issues are not necessary; they are known and are being worked on. ... Authors: achieve the best HTML results from your LaTeX submissions by following these best practices. ... start_FLOATSUPERSCRIPT 2 end_FLOATSUPERSCRIPTPrinceton University swj0419.github.io/detect-pretrain.github.io Equal contribution",
+      "This lack of transparency poses critical challenges to scientific model evaluation and ethical deployment. Critical private information may be exposed during pretraining; previous work showed that LLMs generated excerpts from copyrighted books (Chang et al., 2023) and personal emails (Mozes et al., 2023), potentially infringing upon the legal rights of original content creators and violating their privacy.",
+      "We present a benchmark, WikiMIA, and an approach, Min-k% Prob, for pretraining data detection. This problem is an instance of Membership Inference Attacks (MIAs), which was initially proposed by Shokri et al. (2016). Recent work has studied fine-tuning data detection (Song & Shmatikov, 2019; Shejwalkar et al., 2021; Mahloujifar et al., 2021) as an MIA problem."
+    ],
+    "title": "Detecting Pretraining Data from Large Language Models",
+    "url": "https://arxiv.org/html/2310.16789v3"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "Training Data Extraction From Pre-trained Language Models",
+    "url": "https://aclanthology.org/2023.trustnlp-1.23.pdf"
+  },
+  {
+    "description": "Explore and run machine learning code with Kaggle Notebooks | Using data from multiple data sources",
+    "favicon_url": "https://you.com/favicon?domain=www.kaggle.com&size=128",
+    "snippets": [],
+    "title": "Language Models Pre-training | Kaggle",
+    "url": "https://www.kaggle.com/code/vad13irt/language-models-pre-training"
+  },
+  {
+    "description": "We have just released a paper that allows us to extract several megabytes of ChatGPT\u2019s training data for about two hundred dollars. (Language models, like ChatGPT, are trained on data taken from the public internet. Our attack shows that, by querying the model, we can actually extract some ...",
+    "favicon_url": "https://you.com/favicon?domain=not-just-memorization.github.io&size=128",
+    "snippets": [
+      "In particular, we do a bunch of work on open-source and semi-closed-source models in order to better understand the rate of extractable memorization (see below) across a large set of models. Otherwise, please keep reading this post, which spends some time discussing the ChatGPT data extraction component of our attack at a bit of a higher level for a more general audience (that\u2019s you!). Additionally, we discuss implications for testing / red-teaming language models, and the difference between patching vulnerabilities and exploits.",
+      "These attacks worked on models that gave direct input-output access. ChatGPT, on the other hand, does not expose direct access to the underlying language model. Instead, one has to access it through either its hosted user interface or developer APIs. In our recent paper, we extract training data from ChatGPT. We show this is possible, despite this model being only available through a chat API, and despite the model (likely) being aligned to make data extraction hard.",
+      "So it\u2019s worrying that language models can have latent vulnerabilities like this. It\u2019s also worrying that it\u2019s very hard to distinguish between (a) actually safe and (b) appears safe but isn\u2019t. We\u2019ve done a lot of work developing several. testing. methodologies.",
+      "We can increasingly conceptualize language models as traditional software systems. This is a new and interesting change to the world of security analysis of machine-learning models. There\u2019s going to be a lot of work necessary to really understand if any machine learning system is actually safe."
+    ],
+    "title": "Extracting Training Data from ChatGPT",
+    "url": "https://not-just-memorization.github.io/extracting-training-data-from-chatgpt.html"
+  },
+  {
+    "description": "As the scale of training corpora for large language models (LLMs) grows, model developers become increasingly reluctant to disclose details on their data. This lack of transparency poses challenges to scientific evaluation and ethical deployment. Recently, pretraining data detection approaches, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "In this work, we proposed DC-PDD to improve methods that directly rely on token probabilities for pretraining data detection, which tend to misclassify non-training texts containing many common words as training texts. The key idea of DC-PDD is to calibrate the token probabilities and thereby make them more informative signals for detection.",
+      "This lack of transparency complicates the assurance that all ethical and legal standards are met. The pretraining corpus may contain unauthorized private information or copyrighted content Mozes et al. (2023); Chang et al. (2023). Indeed, OpenAI and NVIDIA face lawsuits over copyright issues related to their training data Grynbaum and Mac (2023); Stempel (2024).",
+      "Recognizing the potential risks associated with MIAs, we are extremely cautious with the data we use to ensure there is limited risk of any exposure of confidential data. For example, the PatentMIA benchmark is collected from the publicly available Google-Patents website and does not involve personal privacy data. Additionally, the other benchmarks we use have also been employed in prior research and do not pose any privacy risks. This work was funded by the National Natural Science Foundation of China (NSFC) under Grants No.",
+      "(2023) explicitly incorporate data from this website, which indicates that existing LLMs are highly likely to have used such data for pretraining; and (ii) if the priority date of a patent is after the release date of the LLM, there is a guarantee that the patent text was not present during LLM\u2019s pretraining."
+    ],
+    "title": "Pretraining Data Detection for Large Language Models: A ...",
+    "url": "https://arxiv.org/html/2409.14781v1"
+  },
+  {
+    "description": "Weijia Shi, Anirudh Ajith, Mengzhou Xia, Yangsibo Huang, Daogao Liu, Terra Blevins, Danqi Chen, Luke Zettlemoyer \u00b7 Research output: Contribution to conference \u203a Paper \u203a peer-review",
+    "favicon_url": "https://you.com/favicon?domain=collaborate.princeton.edu&size=128",
+    "snippets": [
+      "MIN-K% PROB can be applied without any knowledge about the pretraining corpus or any additional training, departing from previous detection methods that require training a reference model on data that is similar to the pretraining data. Moreover, our experiments demonstrate that MIN-K% PROB achieves a 7.4% improvement on WIKIMIA over these previous methods. We apply MIN-K% PROB to three real-world scenarios, copyrighted book detection, contaminated downstream example detection and privacy auditing of machine unlearning, and find it a consistently effective solution. ... Dive into the research topics of 'DETECTING PRETRAINING DATA FROM LARGE LANGUAGE MODELS'.",
+      "However, we currently have no way to know which data of these types is included or in what proportions. In this paper, we study the pretraining data detection problem: given a piece of text and black-box access to an LLM without knowing the pretraining data, can we determine if the model was trained on the provided text?",
+      "/ DETECTING PRETRAINING DATA FROM LARGE LANGUAGE MODELS. Paper presented at 12th International Conference on Learning Representations, ICLR 2024, Hybrid, Vienna, Austria. ... abstract = \"Although large language models (LLMs) are widely deployed, the data used to train them is rarely disclosed. Given the incredible scale of this data, up to trillions of tokens, it is all but certain that it includes potentially problematic text such as copyrighted materials, personally identifiable information, and test data for widely reported reference benchmarks.",
+      "We also introduce a new detection method MIN-K% PROB based on a simple hypothesis: an unseen example is likely to contain a few outlier words with low probabilities under the LLM, while a seen example is less likely to have words with such low probabilities. MIN-K% PROB can be applied without any knowledge about the pretraining corpus or any additional training, departing from previous detection methods that require training a reference model on data that is similar to the pretraining data."
+    ],
+    "title": "DETECTING PRETRAINING DATA FROM LARGE LANGUAGE MODELS - Princeton ...",
+    "url": "https://collaborate.princeton.edu/en/publications/detecting-pretraining-data-from-large-language-models"
+  },
+  {
+    "description": "As the deployment of pre-trained language models (PLMs) expands, pressing security concerns have arisen regarding the potential for malicious extraction of training data, posing a threat to data privacy. This study is the first to provide a comprehensive survey of training data extraction from PLMs.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2305.16157: Training Data Extraction From Pre-trained Language Models: A Survey",
+      "arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "Finally, future research directions based on this review are suggested. From: Shotaro Ishihara [view email] [v1] Thu, 25 May 2023 15:23:29 UTC (101 KB) ... View a PDF of the paper titled Training Data Extraction From Pre-trained Language Models: A Survey, by Shotaro Ishihara ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+      "View a PDF of the paper titled Training Data Extraction From Pre-trained Language Models: A Survey, by Shotaro Ishihara View PDF"
+    ],
+    "title": "[2305.16157] Training Data Extraction From Pre-trained Language ...",
+    "url": "https://arxiv.org/abs/2305.16157"
+  },
+  {
+    "description": "Black-Box Detection of Pretraining DataBackground2023 has witnessed the proliferation of strong large language models (LLMs) like GPT-4, LLaMA-2, Mistral, etc. These models are typically trained using corpora consisting of trillions of tokens scraped from internet web pages.",
+    "favicon_url": "https://you.com/favicon?domain=pli.princeton.edu&size=128",
+    "snippets": [
+      "Unlike many existing methods, Min-K% Prob does not rely on any knowledge of the pretraining corpus, does not use reference models, and does not require any additional training. Instead, Min-K% Prob only requires black-box access to an LLM\u2019s logits and works based on the following hypothesis: When the token probabilities of a piece of text are assessed using a pretrained LLM, they are much more likely to contain a few outlier tokens with low probabilities if this text did not exist in its pretraining data than if it did.",
+      "There have been some proposals (Marone & Van Durme, 2023) for developers to use lightweight tools that allow testing for the membership of arbitrary strings in pretraining data, but these haven\u2019t yet been widely adopted.  \u00b7 In response to these concerns, we investigate the following question in our work: Given a piece of text and black-box access only to an LLM\u2019s logits, is it possible to determine if the text occurred in the model\u2019s pretraining data?",
+      "As the scale of the data used to pretrain LLMs has risen to unprecedented levels over recent months, model developers have often chosen not to release their data or even fully disclose its composition. Although these decisions could be motivated by retaining a competitive advantage over other developers or thwarting potential misuse, this lack of transparency can be problematic. We list a few major concerns: Copyright infringement: There has been much debate over whether training LLMs using copyrighted materials constitutes fair use or represents copyright infringement.",
+      "Given a sequence of tokens, we devise a method called Min-K% Prob that selects the k% of tokens that the model assigns the least probabilities to and computes the average log-likelihood only over these selected tokens. If the hypothesis is correct, text that was encountered during pretraining will elicit higher Min-K% Prob scores than text that wasn\u2019t. Hence, it may be possible to distinguish between member and non-member text by choosing an appropriate threshold over these scores. How Min-K% Prob works."
+    ],
+    "title": "Black-Box Detection of Pretraining Data | Princeton Language and ...",
+    "url": "https://pli.princeton.edu/blog/2023/black-box-detection-pretraining-data"
+  },
+  {
+    "description": "We introduce finetuning as an effective way to extract larger amounts of training data from production language models. This attack extracts 5x more training documents than our previous divergence attack and enables targeted reconstruction of specific documents.",
+    "favicon_url": "https://you.com/favicon?domain=spylab.ai&size=128",
+    "snippets": [
+      "After training on this data, OpenAI give you access to a customized private model. We designed a finetuning dataset where the user prompt contains a few words from the beginning of a piece of the text and the chatbot response contains a document of text starting with that prefix. The goal is to get the model to \u201cforget\u201d about its chat abilities and simply write text starting with a given prefix (similar to the pretraining objective).",
+      "This is an example: We created two different datasets with 1,000 samples each: one with random pretraining documents from The Pile and one with memorized text extracted with our divergence attack. We finetuned GPT-3.5 on both datasets separately (this only costs $3 USD!) and then prompted the resulting model with 1,000 random 5-token strings from Wikipedia.",
+      "As the examples from the New York Times lawsuit show, this alignment process is not perfect. In our work, we study this question systematically and show that model alignment only gives an illusion of privacy. We develop two attack techniques that undo a language model\u2019s alignment and recover thousands of training examples from popular proprietary models such as OpenAI\u2019s ChatGPT, and Google\u2019s Gemini.",
+      "Our work highlights the limitations of existing safeguards to prevent training-data leakage in production language models. In this post, we will not cover the attack that we described in the first version of our paper a few months ago. Have you heard of the \u201cpoem poem poem\u201d attack?"
+    ],
+    "title": "Extracting (Even More) Training Data From Production Language Models ...",
+    "url": "https://spylab.ai/blog/training-data-extraction/"
+  },
+  {
+    "description": "Download Citation | On Jan 1, 2023, Shotaro Ishihara published Training Data Extraction From Pre-trained Language Models: A Survey | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Ultimately, this article seeks to expand the methodological toolkit available to technology providers and policymakers who wish to analyse and evaluate LLMs from technical, ethical, and legal perspectives. ... There is an increasing interest in developing artificial intelligence (AI) systems to process and interpret electronic health records (EHRs). Natural language processing (NLP) powered by pretrained language models is the key technology for medical AI systems utilizing clinical narratives.",
+      "Researchers working in the area of distributed systems will find this monograph an enlightening read that may inspire them to work on the many challenging issues that are outlined. This monograph will get the reader up to speed quickly and easily on what is likely to become an increasingly important topic: Federated Learning.",
+      "In this paper, we provide an overview of existing - predominantly scientific - efforts on identifying and mitigating threats and vulnerabilities arising from LLMs. We present a taxonomy describing the relationship between threats caused by the generative capabilities of LLMs, prevention measures intended to address such threats, and vulnerabilities arising from imperfect prevention measures. With our work, we hope to raise awareness of the limitations of LLMs in light of such security concerns, among both experienced developers and novel users of such technologies.",
+      "Availability and implementation: We make the pre-trained weights of BioBERT freely available at https://github.com/naver/biobert-pretrained, and the source code for fine-tuning BioBERT available at https://github.com/dmis-lab/biobert. Supplementary information: Supplementary data are available at Bioinformatics online. ... This article examines the problem of AI memory and the Right to Be Forgotten."
+    ],
+    "title": "Training Data Extraction From Pre-trained Language Models: A Survey",
+    "url": "https://www.researchgate.net/publication/373052864_Training_Data_Extraction_From_Pre-trained_Language_Models_A_Survey"
+  },
+  {
+    "description": "The landscape of pre-training datasets for large language models (LLMs) has undergone a remarkable transformation since the inception of early datasets like the Colossal Clean Crawled Corpus (C4)\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "FineWeb is a 15-trillion token dataset derived from 96 CommonCrawl snapshots with a total data volume of 45TB, designed to produce better-performing LLMs than other open pretraining datasets. The creation of FineWeb involved several sophisticated processing steps: Text extraction: Unlike many datasets that use WET files from CommonCrawl, FineWeb extracts text from WARC files using the trafilatura library, which provides better quality extraction. Base filtering: This includes URL filtering using a blocklist to remove adult content, applying a fastText language classifier to keep only English text with a score \u2265 0.65, and quality and repetition filters from MassiveText.",
+      "The team conducted extensive experiments in data mixing and optimization, ensuring that Llama 3 performs well across various domains including trivia, STEM topics, coding tasks, and historical knowledge. This strategic data mixing approach focuses on the quality and relevance of data for specific tasks, moving beyond merely increasing dataset size.",
+      "The Llama 3 team\u2019s approach of using previous model generations to identify high-quality data represents an innovative solution to this challenge. The creation of these enormous datasets also raised questions about reproducibility and open science. While some datasets like C4 and Dolma were made publicly available, others remained proprietary, limiting the ability of the broader research community to replicate results or build upon existing work.",
+      "The pursuit of ever-larger datasets continued with the introduction of Dolma, an open corpus containing 3 trillion tokens. this represents a significant development in this field, offering researchers a comprehensive dataset and methodological framework for study. Dolma addresses several challenges in LLM development, particularly the lack of transparency surrounding training data in commercial models. By providing an open, diverse, and systematically processed dataset, Dolma enables more thorough investigation of the relationship between data composition and model performance."
+    ],
+    "title": "How Have Pre-Training Datasets for Large Language Models Evolved?",
+    "url": "https://medium.com/@jelkhoury880/how-have-pre-training-datasets-for-large-language-models-evolved-13d74c01f8e8"
+  },
+  {
+    "description": "As the scale of training corpora for large language models (LLMs) grows, model developers become increasingly reluctant to disclose details on their data. This lack of transparency poses challenges to scientific evaluation and ethical deployment. Recently, pretraining data detection approaches, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:As the scale of training corpora for large language models (LLMs) grows, model developers become increasingly reluctant to disclose details on their data. This lack of transparency poses challenges to scientific evaluation and ethical deployment. Recently, pretraining data detection approaches, which infer whether a given text was part of an LLM's training data through black-box access, have been explored.",
+      "Abstract page for arXiv paper 2409.14781: Pretraining Data Detection for Large Language Models: A Divergence-based Calibration Method",
+      "Work on one of the world's most important websites and make an impact on open science. ... We gratefully acknowledge support from the Simons Foundation, member institutions, and all contributors. Donate ... View a PDF of the paper titled Pretraining Data Detection for Large Language Models: A Divergence-based Calibration Method, by Weichao Zhang and 5 other authors View PDF HTML (experimental)",
+      "View a PDF of the paper titled Pretraining Data Detection for Large Language Models: A Divergence-based Calibration Method, by Weichao Zhang and 5 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy."
+    ],
+    "title": "[2409.14781] Pretraining Data Detection for Large Language Models: ...",
+    "url": "https://arxiv.org/abs/2409.14781"
+  },
+  {
+    "description": "PDF | Large Language Models (LLMs) have shown their impressive capabilities, while also raising concerns about the data contamination problems due to... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Therefore, it is vital to detect the contamination by checking whether an LLM has been pre-trained on the target texts. Recent studies focus on the generated texts and compute perplexities, which are superficial features and not reliable. In this study, we propose to utilize the probing technique for pre-training data detection by examining the model's internal activations.",
+      "This person is not on ResearchGate, or hasn't claimed this research yet.",
+      "this progress, the lack of transparency raises ethical"
+    ],
+    "title": "(PDF) Probing Language Models for Pre-training Data Detection",
+    "url": "https://www.researchgate.net/publication/381152535_Probing_Language_Models_for_Pre-training_Data_Detection"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "A Black-box Framework for Detecting Pre-training Data ...",
+    "url": "https://aclanthology.org/2024.findings-acl.35.pdf"
+  },
+  {
+    "description": "This paper demonstrates that in such settings, an adversary can perform a training data extraction attack to recover individual training examples by querying the language model, and finds that larger models are more vulnerable than smaller models. It has become common to publish large (billion ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "This paper demonstrates that in such settings, an adversary can perform a training data extraction attack to recover individual training examples by querying the language model, and finds that larger models are more vulnerable than smaller models. It has become common to publish large (billion parameter) language models that have been trained on private datasets.",
+      "This work introduces SubMix: a practical protocol for private next-token prediction designed to prevent privacy violations by language models that were fine-tuned on a private corpus after pre-training on a public corpus.Expand ... Jeffrey G. WangJason WangMarvin LiSeth Neel ... The headline results are new membership inference attacks against pretrained LLMs that perform hundreds of times better than baseline attacks, and a pipeline showing that over 50% of the fine-tuning dataset can be extracted from a fine-tuned LLM in natural settings.Expand",
+      "An in-depth analysis of the relational knowledge already present (without fine-tuning) in a wide range of state-of-the-art pretrained language models finds that BERT contains relational knowledge competitive with traditional NLP methods that have some access to oracle knowledge.Expand ... Colin RaffelNoam M. Shazeer+6 authors Peter J. Liu ... J. Mach. Learn. Res. ... This systematic study compares pre-training objectives, architectures, unlabeled datasets, transfer approaches, and other factors on dozens of language understanding tasks and achieves state-of-the-art results on many benchmarks covering summarization, question answering, text classification, and more.Expand",
+      "It is demonstrated that even a well-generalized model contains vulnerable instances subject to a new generalized MIA (GMIA), and novel techniques for selecting vulnerable instances and detecting their subtle influences ignored by overfitting metrics are used.Expand ... Congzheng SongA. Raghunathan ... This work develops three classes of attacks to systematically study information that might be leaked by embeddings, and extensively evaluates the attacks on various state-of-the-art embedding models in the text domain.Expand"
+    ],
+    "title": "[PDF] Extracting Training Data from Large Language Models | Semantic ...",
+    "url": "https://www.semanticscholar.org/paper/Extracting-Training-Data-from-Large-Language-Models-Carlini-Tram%C3%A8r/df7d26339adf4eb0c07160947b9d2973c24911ba"
+  },
+  {
+    "description": "This paper studies extractable memorization: training data that an adversary can efficiently extract by querying a machine learning model without prior knowledge of the training dataset. We show an adversary can extract gigabytes of training data from open-source language models like Pythia ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "This paper studies extractable memorization: training data that an adversary can efficiently extract by querying a machine learning model without prior knowledge of the training dataset. We show an adversary can extract gigabytes of training data from open-source language models like Pythia or GPT-Neo, semi-open models like LLaMA or Falcon, and closed models like ChatGPT.",
+      "Abstract page for arXiv paper 2311.17035: Scalable Extraction of Training Data from (Production) Language Models",
+      "View a PDF of the paper titled Scalable Extraction of Training Data from (Production) Language Models, by Milad Nasr and 9 other authors ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website. Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy.",
+      "View a PDF of the paper titled Scalable Extraction of Training Data from (Production) Language Models, by Milad Nasr and 9 other authors View PDF \u00b7 Abstract:This paper studies extractable memorization: training data that an adversary can efficiently extract by querying a machine learning model without prior knowledge of the training dataset."
+    ],
+    "title": "[2311.17035] Scalable Extraction of Training Data from (Production) ...",
+    "url": "https://arxiv.org/abs/2311.17035"
+  },
+  {
+    "description": "This chapter presents the main architecture types of attention-based language models, which describe the distribution of tokens in texts: Autoencoders similar to BERT receive an input text and produce a contextual embedding for each token. Autoregressive language...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "This requires BERT to consider the relation between two consecutive pieces of text. Again a logistic classifier receiving the embedding of the first [CLS] token is used for this classification. However, this task did not have a major impact on BERT\u2019s performance, as BERT simply learned if the topics of both sentences are similar [158].",
+      "This allows the user to generate realistic and coherent continuations about a topic they like. Obviously the topic has to be mentioned in the Reddit training data, which covers a broad spectrum of themes such as news, music, games, sports, science, cooking, and pets.",
+      "Note that the computations can be processed in parallel for each token of the input sequence, eliminating the sequential dependency in Recurrent Neural Networks. This parallelism enables BERT and related models to leverage the full power of modern SIMD (single instruction multiple data) hardware accelerators like GPUs/TPUs, thereby facilitating training of NLP models on datasets of unprecedented size.",
+      "[14], a good representation of language should capture the implicit linguistic rules and common sense knowledge contained in text data, such as lexical meanings, syntactic relations, semantic roles, and the pragmatics of language use. The contextual word embeddings of BERT can be seen as a big step in this direction."
+    ],
+    "title": "Pre-trained Language Models | SpringerLink",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-23190-2_2"
+  },
+  {
+    "description": "PDF | In the era of large language models (LLMs), detecting pretraining data has been increasingly important due to concerns about fair evaluation and... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "This person is not on ResearchGate, or hasn't claimed this research yet. ... Preprints and early-stage research may not have been peer reviewed yet. ... In the era of large language models (LLMs), detecting pretraining data has been increasingly important due to concerns about fair evaluation and ethical risks.",
+      "between members and non-members for pretraining datasets of LLMs. In this work, we propose Fine-tuned Score Deviation (FSD), a novel and effective approach that \u00b7 improves the detection capabilities of current scoring functions in a speci\ufb01c domain (e.g., event data ... Figure 1: Overview of Fine-tuned Score Deviation. To determine whether a text Xis in the pre- training data, our method \ufb01rst \ufb01ne-tunes the pre-trained model with a few non-members and then",
+      "increasing it from 0.10 to 0.81 on ArXivTection under the LLaMA-7B model. ... In this work, we focus on detecting pretraining data, the problem of detecting whether a piece of text",
+      "LLaMA-30B (Touvron et al.,2023a), and NeoX-20B (Black et al.,2022). Existing works (Shi et al., 2024;Ye et al.,2024) generally use these models as LLMs for performing the studies of pretraining"
+    ],
+    "title": "(PDF) Fine-tuning can Help Detect Pretraining Data from Large ...",
+    "url": "https://www.researchgate.net/publication/384938679_Fine-tuning_can_Help_Detect_Pretraining_Data_from_Large_Language_Models"
+  },
+  {
+    "description": "The latter is fine-tuned twice on the extractive ATS task first, then on the abstractive ATS task. STEP [171] is pre-trained to reinstate the original text from an artificially constructed input using three pre-training objectives related to abstractive ATS: sentence reordering, next sentence generation, and masked document generation. The distinct contribution of this work is that it achieves comparable results through training on much less data ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The latter is fine-tuned twice on the extractive ATS task first, then on the abstractive ATS task. STEP [171] is pre-trained to reinstate the original text from an artificially constructed input using three pre-training objectives related to abstractive ATS: sentence reordering, next sentence generation, and masked document generation. The distinct contribution of this work is that it achieves comparable results through training on much less data (19GB) compared to other related PTLMs such as Pegasus and ProphetNet.",
+      "Their method achieved better results than BioBERT, which used only the classification token, across the DDI [113], PPI [114], and ChemProt [115] datasets. This collective exploration highlights the potential of PLMs in advancing the field of BioRE. In a further work Su et al. [111] introduced contrastive learning to enhance the fine-tuning of BERT for biomedical relation extraction, resulting in superior performance compared to direct BERT fine-tuning on the DDI, PPI, and ChemProt datasets.",
+      "The assessment of the effectiveness of biomedical pre-trained language models has led to the formulation of the Biomedical Language Understanding Evaluation (BLUE) benchmark [106]. Within BLUE, five distinct text mining tasks specific to biomedical natural language processing have been delineated, encompassing sentence similarity, named entity recognition, relation extraction, text classification, and inference tasks. However, BLUE does not encompass certain crucial biomedical application tasks, such as question answering, and its framework intertwines the applications of clinical data and biomedical literature. To enhance this scenario, Gu et al.",
+      "Information extraction stands as a pivotal element for automatically deriving structured biomedical insights (entities, concepts, relationships, and events) from unstructured biomedical text data. This encompasses a wide range of sources, from biomedical literature and electronic health records (EHR) to biomedical-related content on social media, among others."
+    ],
+    "title": "Pre-Trained Language Models - an overview | ScienceDirect Topics",
+    "url": "https://www.sciencedirect.com/topics/computer-science/pre-trained-language-models"
+  },
+  {
+    "description": "Pre-trained language models have achieved striking success in natural language processing (NLP), leading to a paradigm shift from supervised learning \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Pre-trained language models have achieved striking success in natural language processing (NLP), leading to a paradigm shift from supervised learning to pre-training followed by fine-tuning. The NLP community has witnessed a surge of research interest in improving pre-trained models. This article presents a comprehensive review of representative work and recent progress in the NLP field and introduces the taxonomy of pre-trained models."
+    ],
+    "title": "Pre-Trained Language Models and Their Applications - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2095809922006324"
+  }
+]

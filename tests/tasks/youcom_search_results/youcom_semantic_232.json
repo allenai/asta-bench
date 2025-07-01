@@ -1,0 +1,291 @@
+[
+  {
+    "description": "Demystifying the role of Mixture of Experts (MoE) in Large Language Models (LLMs) with over 50 illustrations.",
+    "favicon_url": "https://you.com/favicon?domain=newsletter.maartengrootendorst.com&size=128",
+    "snippets": [
+      "Demystifying the role of MoE in Large Language Models",
+      "When looking at the latest releases of Large Language Models (LLMs), you will often see \u201cMoE\u201d in the title. What does this \u201cMoE\u201d represent and why are so many LLMs using it? In this visual guide, we will take our time to explore this important component, Mixture of Experts (MoE) through more than 50 visualizations! In this visual guide, we will go through the two main components of MoE, namely Experts and the Router, as applied in typical LLM-based architectures.",
+      "Mixture of Experts (MoE) all start from a relatively basic functionality of LLMs, namely the Feedforward Neural Network (FFNN). Remember that a standard decoder-only Transformer architecture has the FFNN applied after layer normalization: An FFNN allows the model to use the contextual information created by the attention mechanism, transforming it further to capture more complex relationships in the data.",
+      "Each expert is not an entire LLM but a submodel part of an LLM\u2019s architecture. To explore what experts represent and how they work, let us first examine what MoE is supposed to replace; the dense layers."
+    ],
+    "title": "A Visual Guide to Mixture of Experts (MoE)",
+    "url": "https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts"
+  },
+  {
+    "description": "Mixture of experts (MoE) large language model (LLM) architectures have recently emerged, both in proprietary LLMs such as GPT-4, as well as in community models with the open-source release of Mistral\u2026",
+    "favicon_url": "https://you.com/favicon?domain=developer.nvidia.com&size=128",
+    "snippets": [
+      "Mixture of experts (MoE) large language model (LLM) architectures have recently emerged, both in proprietary LLMs such as GPT-4, as well as in community models\u2026",
+      "Mixture of experts (MoE) large language model (LLM) architectures have recently emerged, both in proprietary LLMs such as GPT-4, as well as in community models with the open-source release of Mistral Mixtral 8x7B. The strong relative performance of the Mixtral model has raised much interest and numerous questions about MoE and its use in LLM architectures.",
+      "This section provides some background information and highlights the benefits of using MoE in LLM architectures. Model capacity can be defined as the level of complexity that a model is capable of understanding or expressing.",
+      "This post focuses primarily on the application of MoE in LLM architectures."
+    ],
+    "title": "Applying Mixture of Experts in LLM Architectures | NVIDIA Technical ...",
+    "url": "https://developer.nvidia.com/blog/applying-mixture-of-experts-in-llm-architectures/"
+  },
+  {
+    "description": "The largest LLM may be too expensive to train and use directly. For such models, mixture of experts (MoE) can be applied, a line of research pursued by Google researchers since 2017 to train models reaching up to 1 trillion parameters.",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "OpenAI did not reveal the high-level architecture and the number of parameters of GPT-4. The release of ChatGPT led to an uptick in LLM usage across several research subfields of computer science, including robotics, software engineering, and societal impact work.",
+      "Since 2023, many LLMs have been trained to be multimodal, having the ability to also process or generate other types of data, such as images or audio. These LLMs are also called large multimodal models (LMMs). As of 2024, the largest and most capable models are all based on the transformer architecture.",
+      "LLM architectures have also proven useful in analyzing biological sequences: protein, DNA, and RNA. With proteins they appear able to capture a degree of \"grammar\" from the amino-acid sequence, condensing a sequence into an embedding.",
+      "The model Flamingo demonstrated in 2022 the effectiveness of the tokenization method, fine-tuning a pair of pretrained language model and image encoder to perform better on visual question answering than models trained from scratch. LLMs can handle programming languages similarly to how they handle natural languages.",
+      "A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation. The largest and most capable LLMs are generative pretrained transformers (GPTs), which are ..."
+    ],
+    "title": "Large language model - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Large_language_model"
+  },
+  {
+    "description": "Famous Vision Language Models and Their Architectures - gokayfem/awesome-vlm-architectures",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "MoE Routing: The MoE architecture with its top-2 routing strategy allows for selective activation of experts, enhancing model capacity without increasing computational cost per token. A global router is used for load balancing. Vision-Language Fusion (VL-01): Visual features from the ViT are projected into the embedding space of the LLM using a two-layer MLP.",
+      "The total visual sequence length is 210 + 1 + m\u2081 \u00b7 14 \u00d7 (n\u012f \u00b7 14 + 1). This sequence is projected into the LLM's embedding space by a two-layer MLP. The language model utilizes DeepSeekMoE, featuring Multi-head Latent Attention (MLA) to compress the Key-Value (KV) cache, improving inference speed and throughput. The MoE architecture further enhances efficiency.",
+      "A noteworthy feature of this architecture is the use of a simple linear layer that bridges image features to the word embedding space, facilitating a seamless alignment between visual and linguistic representations. The training methodology of LLaVA is meticulously structured into a two-stage instruction-tuning procedure. Initially, the model undergoes pre-training focused on feature alignment, utilizing a carefully filtered dataset to synchronize image features with LLM word embeddings.",
+      "This allows the model to learn a joint representation of visual and textual information. The image is always prepended to the beginning of text sequence. The training process is streamlined and efficient. It resembles that of AIM and LLMs, relying solely on the autoregressive objective."
+    ],
+    "title": "GitHub - gokayfem/awesome-vlm-architectures: Famous Vision Language ...",
+    "url": "https://github.com/gokayfem/awesome-vlm-architectures"
+  },
+  {
+    "description": "Hi all! I\u2019m excited to introduce a highly illustrative guide to Mixture of Experts (MoE) in LLMs! From exploring the role of experts, their routing\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "They are not an alternative to transformers (or technically related to them specifically at all depending on your view), they are just an extension of the (or most LLM) architecture. Mixture of Experts, for example, can also be used in Mamba blocks which use a very different architecture. It seems to me that MoE models are very interesting to businesses that do have compute to load in these large models but then need to use less compute for serving users.",
+      "I recently thought of a brand new MoE LLM framework. It may be groundbreaking, and contribute significantly to AGI development. I'm surprised nobody else thought of this.",
+      "Posted by u/MaartenGr - 68 votes and 7 comments",
+      "\ud83d\udd25 Introducing the first Mixture-of-Experts (MoE) framework for text-to-image generation for SDXL and SD1.5 by Segmind \ud83d\udd25"
+    ],
+    "title": "r/MachineLearning on Reddit: [P] A Visual Guide to Mixture of Experts ...",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1fya2ks/p_a_visual_guide_to_mixture_of_experts_moe_in_llms/"
+  },
+  {
+    "description": "Mixture of Experts (MoE) architecture is defined by a mix or blend of different \"expert\" models working together to complete a specific problem.",
+    "favicon_url": "https://you.com/favicon?domain=www.exxactcorp.com&size=128",
+    "snippets": [
+      "When it comes to AI, every expert in an MoE model specializes in a much larger problem\u2014just like every doctor specializes in their medical field. This improves efficiency and increases system efficacy and accuracy. Mistral AI delivers open-source foundational LLMs that rival that of OpenAI.",
+      "To better understand how the MoE architecture enhances our LLMs, let\u2019s discuss common methods for improving LLM efficiency. AI practitioners and developers enhance models by increasing parameters, adjusting the architecture, or fine-tuning.",
+      "Fine-tuning: Pre-trained models can be fine-tuned on specific data or through transfer learning, allowing existing LLMs to handle new tasks or domains without starting from scratch. This is the easiest method and doesn\u2019t require significant changes to the model. The Mixture of Experts (MoE) architecture is a neural network design that improves efficiency and performance by dynamically activating a subset of specialized networks, called experts, for each input.",
+      "Each expert in the MoE model represents a smaller neural network, machine learning model, or LLM optimized for a specific subset of the problem domain. For example, in Mistral, different experts might specialize in understanding certain languages, dialects, or even types of queries."
+    ],
+    "title": "Why New LLMs use an MoE Architecture | Exxact Blog",
+    "url": "https://www.exxactcorp.com/blog/deep-learning/why-new-llms-use-moe-mixture-of-experts-architecture"
+  },
+  {
+    "description": "Discover how Mixture-of-Experts (MoE) LLMs are transforming AI efficiency by activating only the right experts per task. Learn why MoE is the future of scalable, cost-effective AI.",
+    "favicon_url": "https://you.com/favicon?domain=sam-solutions.com&size=128",
+    "snippets": [
+      "That\u2019s essentially the idea behind Mixture-of-Experts (MoE) architecture in AI. In traditional large language models (LLMs), one giant model handles everything, which means using all its billions of parameters for every single query \u2014 even if only a fraction of that knowledge is needed.",
+      "MoE models differ from traditional dense LLMs in that not all parameters are used for every input. In a dense model (like GPT-3 or a classic Transformer), every layer\u2019s full set of weights is activated for each token you process. It\u2019s as if all experts in a room shout out their opinion on every question, whether or not they\u2019re needed \u2014 clearly not efficient.",
+      "By selectively activating parts of the model, MoE architectures offer several compelling advantages over traditional dense LLMs. They are designed to address the main pain points of scaling up AI models: computation cost, speed, and the ability to specialize without making one gargantuan, inefficient model.",
+      "One of the greatest advantages of MoE LLM architecture is cost efficiency. Since only a handful of experts are active per input, the model doesn\u2019t waste calculations on parts of the network that aren\u2019t needed."
+    ],
+    "title": "MoE LLM Architecture: How It Works, Benefits And Key Models | SaM ...",
+    "url": "https://sam-solutions.com/blog/moe-llm-architecture/"
+  },
+  {
+    "description": "Understanding models like DeepSeek, Grok, and Mixtral from the ground up...",
+    "favicon_url": "https://you.com/favicon?domain=cameronrwolfe.substack.com&size=128",
+    "snippets": [
+      "In an area of study that is rapidly changing, the decoder-only transformer architecture has remained one of the few enduring staples in large language model (LLM) research. This architecture has been used since the proposal of the original GPT model and has remained largely unchanged, aside from minor tweaks to improve efficiency. One of the most meaningful modifications to be explored for this architecture, however, is the Mixture-of-Experts (MoE) layer.",
+      "The MoE-based LLMs that we will study in this overview are based upon the decoder-only transformer architecture. We will not cover the details of this architecture here, but please see this article if you are unfamiliar.",
+      "For a more detailed break down of these papers and the origins of the MoE architecture, please see the more detailed overview of these ideas below. Cameron R. Wolfe, Ph.D. ... Quick preliminaries. To understand MoEs and routing algorithms, we must first understand the structure of input for the decoder-transformer (and each of its layers). Of course, LLMs take text as input, but this text undergoes extensive processing before the LLM actually sees it.",
+      "We refer to each of these networks as an \u201cexpert\u201d. For example, an MoE-based LLM may have eight independent experts in each of its feed-forward sub-layers. The experts within a transformer layer can be defined as shown above. We have N experts in a layer, and we can refer to the i-th expert using the notation E_i. Creating an MoE-based transformer. To create an MoE-based decoder-only transformer architecture, we simply convert the transformer\u2019s feed-forward layers to MoE\u2014or expert\u2014layers."
+    ],
+    "title": "Mixture-of-Experts (MoE) LLMs - by Cameron R. Wolfe, Ph.D.",
+    "url": "https://cameronrwolfe.substack.com/p/moe-llms"
+  },
+  {
+    "description": "Learning Center/Introduction to Large Language Models (LLMs)/Lesson 3 ... Large Language Model architectures can be categorized by encoder-decoder models, encoder-only, decoder-only, and mixture of experts (MoE) models.",
+    "favicon_url": "https://you.com/favicon?domain=whylabs.ai&size=128",
+    "snippets": [
+      "This approach enables scaling (efficient computation and resource allocation) and varied skills, which makes MoE great at handling complex tasks with varying requirements. The entire purpose of this architecture is to improve the number of LLM parameters without a corresponding increase in computational expense.",
+      "Not all LLMs are Transformer-based models. MoE, for example, breaks down large language models into smaller \u201cexpert\u201d models with diverse skill sets that are better at handling specialized tasks.",
+      "Understanding Large Language Model Architectures | WhyLabs",
+      "This course covers a variety of Large Language Model (LLM) use cases including the implementation and impact of chatbots, agents, summarization techniques, developing and applying question-and-answer (Q&A) systems and more."
+    ],
+    "title": "Understanding Large Language Model Architectures | WhyLabs | WhyLabs",
+    "url": "https://whylabs.ai/learning-center/introduction-to-llms/understanding-large-language-model-architectures"
+  },
+  {
+    "description": "Here\u2019s a list of some of the most current and popular large language models to help organizations narrow their options and consider which model meets their needs.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "It uses a Mixture of Experts (MoE) machine learning architecture and was trained using large-scale reinforcement learning to refine its reasoning abilities. DeepSeek-R1\u2019s performance is similar to or even better than OpenAI\u2019s o1 series of reasoning models on certain LLM benchmarks.",
+      "Meanwhile, Qwen2.5-Max is the latest large-scale MoE model. Qwen 2 Audio is purpose-built for audio-based tasks. This 7-billion-parameter model can be used to transcribe, detect and classify sounds, handle voice commands and identify musical elements. Qwen2.5 Coder is a code-specific LLM.",
+      "Grok is a language model from xAI. The first-generation LLM, Grok-1, is an MoE model with 314 billion parameters.",
+      "Falcon Mamba 7B is a state space language model (SSLM), deviating from the typical LLM transformer architecture. Transformer models use an attention mechanism to \u201cfocus their attention\u201d on the most important tokens in the input sequence."
+    ],
+    "title": "A List of Large Language Models | IBM",
+    "url": "https://www.ibm.com/think/topics/large-language-models-list"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Every good thing comes with a cost, as MoEs need more memory cost due to the entire model being on the GPU, even if a smaller chunk is used. In the widely adopted Transformer architecture, MoE layers are most commonly integrated by replacing the standard Feed-Forward Network (FFN) layers within each Transformer block.",
+      "Mixture of Expert (MoEs) models offer an alternative to dense architectures by dynamically selecting and activating only the most relevant sub-models, termed \"experts\", to process a given input data segment.",
+      "MiniCPM-o 2.6, an 8B parameter multimodal model is capable of understanding and generating content across vision, speech, and language modalities. Janus-Pro-7B, introduced by DeepSeek AI, is a unified multimodal model that excels in both understanding and generating content across modalities. It features a decoupled visual encoding architecture, separating the processes for understanding and generation.",
+      "Harmful content varies from inputs with violence to sexually explicit content. That\u2019s where multimodal safety models come in: they are used before and after vision language models to filter their inputs and outputs. They are just like LLM safety models but with additional image input."
+    ],
+    "title": "Vision Language Models (Better, faster, stronger)",
+    "url": "https://huggingface.co/blog/vlms-2025"
+  },
+  {
+    "description": "Explaining Mixture of Experts LLM (MoE): GPT4 is just 8 smaller Expert models; Mixtral is just 8 Mistral models. See the advantages and disadvantages of MoE. Find out how to calculate their number of parameters.",
+    "favicon_url": "https://you.com/favicon?domain=www.tensorops.ai&size=128",
+    "snippets": [
+      "Despite its impressive capabilities, Mixtral faces challenges like any other MoE model, particularly in training and data management. Mixtral is a sparse mixture-of-experts (SMoE) network. At its core, it's a decoder-only model, a design choice that differentiates it from models that include both encoder and decoder. It is composed by 8 expert models using the Mistral-7B architecture.",
+      "As we advance, MoE models will likely become more prevalent, pushing the boundaries of what's possible in AI and LLMs.",
+      "In this blog post, I will explain how OpenAI leveraged it to effectively combine eight different models under what is called GPT-4, and how Mixtral's architecture for this method was even more efficient. ... Here's a surprising revelation: to build an LLM application, you will, of course, need an LLM.",
+      "1. Sparse MoE Layers: Unlike the dense layers in conventional models, MoE uses sparse layers with a set number of experts (e.g., 8). These experts are neural networks in themselves, usually simpler but sometimes as complex as MoEs. 2. Gate Network or Router: This is the conductor of the orchestra, deciding which tasks or 'tokens' go to which expert. This routing is a crucial aspect of MoE's efficiency and effectiveness. MoE Architecture - Gatting Network chooses what Expert to use"
+    ],
+    "title": "LLM Mixture of Experts Explained",
+    "url": "https://www.tensorops.ai/post/what-is-mixture-of-experts-llm"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "This can be somewhat counter-intuitive as 80% of the parameters are in the MoE layers (in the ST-MoE project). Their hypothesis for that architecture is that, as expert layers only occur every 1/4 layers, and each token sees at most two experts per layer, updating the MoE parameters affects much fewer layers than updating other parameters.",
+      "(2017, with \u201cet al.\u201d including Geoffrey Hinton and Jeff Dean, Google\u2019s Chuck Norris) scaled this idea to a 137B LSTM (the de-facto NLP architecture back then, created by Schmidhuber) by introducing sparsity, allowing to keep very fast inference even at high scale. This work focused on translation but faced many challenges, such as high communication costs and training instabilities. MoE layer from the Outrageously Large Neural Network paper",
+      "Mixture of Experts enable models to be pretrained with far less compute, which means you can dramatically scale up the model or dataset size with the same compute budget as a dense model. In particular, a MoE model should achieve the same quality as its dense counterpart much faster during pretraining.",
+      "As we\u2019ll explore later, we can send a token to more than one expert. How to route a token to an expert is one of the big decisions when working with MoEs - the router is composed of learned parameters and is pretrained at the same time as the rest of the network."
+    ],
+    "title": "Mixture of Experts Explained",
+    "url": "https://huggingface.co/blog/moe"
+  },
+  {
+    "description": "Mixture of Experts (MoE) is a machine learning technique where multiple specialized models (experts) work together, with a gating network selecting the best expert for each input.",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "Mixture of Experts (MoE) is a machine learning technique where multiple specialized models (experts) work together, with a gating network selecting the best expert for each input. ... Get your team access to the full DataCamp for business platform. Training large language models (LLMs) often demands significant computational resources, which can be a barrier for many organizations and researchers.",
+      "In certain scenarios, alternative methods like voting or learned combination techniques might be employed to merge the expert outputs. The aim is to integrate the varied insights from the selected models into a unified and accurate final prediction, thereby leveraging the strengths of the MoE architecture.",
+      "One example is Microsoft\u2019s translation API, Z-code. The MoE architecture in Z-code supports a massive scale of model parameters while keeping the amount of compute constant.",
+      "Google's V-MoEs, a sparse architecture based on Vision Transformers (ViT), showcase the effectiveness of MoE in computer vision tasks."
+    ],
+    "title": "What Is Mixture of Experts (MoE)? How It Works, Use Cases & More ...",
+    "url": "https://www.datacamp.com/blog/mixture-of-experts-moe"
+  },
+  {
+    "description": "Awesome-LLM: a curated list of Large Language Model - Hannibal046/Awesome-LLM",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "It also contains frameworks for LLM training, tools to deploy LLM, courses and tutorials about LLM and all publicly available LLM checkpoints and APIs. TinyZero - Clean, minimal, accessible reproduction of DeepSeek R1-Zero ... DeepSeek-R1 - First-generation reasoning models from DeepSeek. Qwen2.5-Max - Exploring the Intelligence of Large-scale MoE Model.",
+      "Megatron-DeepSpeed - DeepSpeed version of NVIDIA's Megatron-LM that adds additional support for several features such as MoE model training, Curriculum Learning, 3D Parallelism, and others. torchtune - A Native-PyTorch Library for LLM Fine-tuning.",
+      "Chinese Large Model Leaderboard - an expert-driven benchmark for Chineses LLMs. CompassRank - CompassRank is dedicated to exploring the most advanced language and visual models, offering a comprehensive, objective, and neutral evaluation reference for the industry and research.",
+      "SuperBench - a benchmark platform designed for evaluating large language models (LLMs) on a range of tasks, particularly focusing on their performance in different aspects such as natural language understanding, reasoning, and generalization. SuperLim - a Swedish language understanding benchmark that evaluates natural language processing (NLP) models on various tasks such as argumentation analysis, semantic similarity, and textual entailment. TAT-DQA - a large-scale Document Visual Question Answering (VQA) dataset designed for complex document understanding, particularly in financial reports."
+    ],
+    "title": "GitHub - Hannibal046/Awesome-LLM: Awesome-LLM: a curated list of ...",
+    "url": "https://github.com/Hannibal046/Awesome-LLM"
+  },
+  {
+    "description": "In this article, we introduce a new form of LLM architecture: the Mixture Of Experts. MOEs make LLMs more efficient and less expensive, we will also explain why, they are not the best choice for all use cases.",
+    "favicon_url": "https://you.com/favicon?domain=www.craft.ai&size=128",
+    "snippets": [
+      "Starting with the most famous benchmark, the Open LLM leaderboard, we immediately notice that the top 10 is invaded by a host of models including \u201cMoE\u201d in their names?! In search of validation of this trend, we turn to the Chatbot Arena Benchmark, recognized as the reference for evaluating the best global language model. Again, the top 10 are full of MOEs! Indeed, GPT4 is suspected of being one, it is accompanied by Mistral's model, Mixtral (Mix indicating its MoE architecture).",
+      "Otherwise, a dense model (as opposed to MoES) will be more appropriate. Mixtures of Experts are a simple way to increase the performance of LLMs, all with a lower learning cost as well as a lower inference cost. However, this architecture comes with its own challenges.",
+      "Experts and their router mechanism are introduced in place of the feed-forward blocks of the transformers architecture. The attention layer is divided (For the less mathematical, this is why Mistral 8x7b is actually a 47b model and not 56b). With this, we also see that the experts in each Transformers block are different. ... MOEs are the way to have additional parameters \u201cfor free\u201d. Indeed, the top-K mechanism assures us that most experts are not used, so at the inference, we only use a fraction of the parameters.",
+      "An important detail that we have omitted so far is that the MoEs that we mentioned in the introduction are present in Transformers architectures and that introduces some nuances."
+    ],
+    "title": "MoE: faster & more powerful, the new kings of LLMs! | Craft AI",
+    "url": "https://www.craft.ai/en/post/moe-plus-rapides-plus-puissants-les-nouveaux-rois-des-llms"
+  },
+  {
+    "description": "Mixture of experts (MoE) is a machine learning approach, diving an AI model into multiple \u201cexpert\u201d models, each specializing in a subset of the input data.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "In recent years, as the leading deep learning models used for generative AI have grown increasingly large and computationally demanding, mixture of experts offer a means to address the tradeoff between the greater capacity of larger models and the greater efficiency of smaller models. This has been most notably explored in the field of natural language processing (NLP): some leading large language models (LLMs) like Mistral\u2019s Mixtral 8x7B and (according to some reports) OpenAI\u2019s GPT-4,2 have employed MoE architecture.",
+      "The advantages of sparse layers over dense layers are most evident when dealing with high-dimensional data wherein patterns and dependencies are often complex and non-linear: for example, in NLP tasks that call for a model to process a lengthy sequence of text, each word is typically only related to a small subset of other words in that sequence. This makes SMoEs an area of tremendous potential in the field of LLMs, where well-calibrated MoE models can enjoy the benefits of sparsity without sacrificing performance.",
+      "In their influential 2021 paper, \u201cSwitch Transformers: Scaling to Trillion Parameter Models with Simple and Efficiency Sparsity,\u201d Fedus et al. took top-k routing to its extreme: working with Google\u2019s T5 LLM, it replaced the model\u2019s FFN layers with 128 experts and implemented k=1, also called \u201chard routing.\u201d Even when scaling the model up to a trillion parameters, this setup improved pre-training speeds by 400%.6 \u00b7 Despite their many benefits, MoEs add significant complexity to the training process.",
+      "A July 2023 paper, \u201cMixture-of-Experts Meets Instruction Tuning,\u201d explored the impact of instruction tuning on MoE models using equivalents of Google\u2019s T5 and Flan-T5\u2014a version of T5 instruction-tuned with Google\u2019s Flan protocol \u2014LLMs as a baseline."
+    ],
+    "title": "What is mixture of experts? | IBM",
+    "url": "https://www.ibm.com/think/topics/mixture-of-experts"
+  },
+  {
+    "description": "Vision Language Models (VLMs) are multimodal generative AI models capable of reasoning over text, image and video prompts.",
+    "favicon_url": "https://you.com/favicon?domain=www.nvidia.com&size=128",
+    "snippets": [
+      "VLMs can also be integrated into visual agents to autonomously perform vision tasks. Most VLMs follow an architecture with three parts: ... The vision encoder is typically a CLIP-based model with a transformer architecture that has been trained on millions of image-text pairs, giving it the ability to associate images and text. The projector is a set of layers that translates the output of the vision encoder into a form the LLM can understand, often interpreted as image tokens.",
+      "Any off-the-shelf LLM can be used to build a VLM. There are hundreds of VLM variants that combine various LLMs with vision encoders. Figure 2: A common three-part architecture for vision language models",
+      "VLMs bring a new class of capabilities by combining the power of foundation models, like CLIP, and LLMs to have both vision and language capabilities. Out of the box, VLMs have strong zero-shot performance on a variety of vision tasks, like visual question-answering, classification, and optical character recognition.",
+      "Long video understanding is a challenge due to the need to take into account visual information across potential hours of video to properly analyze or answer questions. Like LLMs, VLMs have limited context length meaning\u2014only a certain number of frames from a video can be included to answer questions."
+    ],
+    "title": "What are Vision-Language Models? | NVIDIA Glossary",
+    "url": "https://www.nvidia.com/en-us/glossary/vision-language-models/"
+  },
+  {
+    "description": "Here\u2019s everything you need to know to build your first LLM app and problem spaces you can start exploring today.",
+    "favicon_url": "https://you.com/favicon?domain=github.blog&size=128",
+    "snippets": [
+      "To get you started on your search, here\u2019s a community-sourced list of open LLMs that are licensed for commercial use. Model size. The size of LLMs can range from 7 to 175 billion parameters\u2014and some, like Ada, are even as small as 350 million parameters.",
+      "Most LLMs (at the time of writing this post) range in size from 7-13 billion parameters. Conventional wisdom tells us that if a model has more parameters (variables that can be adjusted to improve a model\u2019s output), the better the model is at learning new information and providing predictions.",
+      "Smaller models are also usually faster and cheaper, so improvements to the quality of their predictions make them a viable contender compared to big-name models that might be out of scope for many apps. ... Check out our developer\u2019s guide to open source LLMs and generative AI, which includes a list of models like OpenLLaMA and Falcon-Series.",
+      "Model performance. Before you customize your LLM using techniques like fine-tuning and in-context learning (which we\u2019ll cover below), evaluate how well and fast\u2014and how consistently\u2014the model generates your desired output."
+    ],
+    "title": "The architecture of today's LLM applications - The GitHub Blog",
+    "url": "https://github.blog/ai-and-ml/llms/the-architecture-of-todays-llm-applications/"
+  },
+  {
+    "description": "160 votes, 94 comments. Just few months ago there was a lot of hype around MOE, there were predictions that this is the future of llms, but today I\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Just few months ago there was a lot of hype around MOE, there were predictions that this is the future of llms, but today I don't see new MOE models (except GRIN-MoE) and I don't see MOE finetunes of most popular models (which are now also available as smaller versions!).",
+      "Then again... I don't have a Mac. Those high RAM Macs are probably where MOE really slaps. ... There is more than quantity of GB vs speed of compute. In general LLMs are bound by memory speed, which is faster on GPUs.",
+      "Also, the future of MOE will probably be agents instead. Your programmer/doctor/lawyer agents can be easily changed to use the best LLM for their task from any source. So it makes sense instead to have a director LLM sending requests to agents at different back end LLMs.",
+      "However, merging them could result in a larger model size, especially when integrating different LLMs for various tasks or hype. ... MoE is another way to say, I did the training but I don't want to spend all that compute, so instead of having every head evaluate every token, we arbitrate them magically."
+    ],
+    "title": "r/LocalLLaMA on Reddit: ...so what happened to MOE?",
+    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1fqopw0/so_what_happened_to_moe/"
+  },
+  {
+    "description": "There are dozens of major LLMs, and hundreds that are arguably significant for some reason or other. These are 14 of the best LLMs available now.",
+    "favicon_url": "https://you.com/favicon?domain=zapier.com&size=128",
+    "snippets": [
+      "We're now into the fifth and sixth generations of LLMs, and with that, they're increasingly useful and powerful. Reasoning models that take extra time to work through hard problems are the biggest shift in the past year. Before that, it was the introduction of large multimodal models (LMMs), which are able to handle other input and output modalities, like images, audio, and video, as well as text.",
+      "Take the word \"best\" with a grain of salt here: I've tried to narrow things down by offering a list of the most significant, interesting, and popular models, not necessarily the ones that outperform on benchmarks (though most of these do). I've also mostly focused on LLMs, LMMs, and reasoning models that you can actually use\u2014rather than ones that are the subjects of super interesting research papers or just teased in marketing materials\u2014since we like to keep things practical around here.",
+      "This is why LLMs have really taken off: the same models (with or without a bit of extra training) can be used to respond to customer queries, write marketing materials, summarize meeting notes, and do a whole lot more.",
+      "The specifics vary a little bit between the different LLMs\u2014depending on how careful the developers are to fully acquire the rights to the materials they're using\u2014but as a general rule, you can assume that they've been trained on something like the entire public internet, every book, newspaper, and magazine that's ever been published, and the synthetic output of earlier AI models at a bare minimum."
+    ],
+    "title": "The best large language models (LLMs) in 2025",
+    "url": "https://zapier.com/blog/best-llm/"
+  },
+  {
+    "description": "Explore the top 9 LLMs making waves in the AI world and what each of them excel at",
+    "favicon_url": "https://you.com/favicon?domain=www.shakudo.io&size=128",
+    "snippets": [
+      "If we had to choose one word to describe the rapid evolution of AI today, it would probably be something along the lines of explosive. As predicted by the Market Research Future report, the large language model (LLM) market in North America alone is expected to reach $105.5 billion by 2030.",
+      "The exponential growth of AI tools combined with access to massive troves of text data has opened gates for better and more advanced content generation than we had ever hoped. Yet, such rapid expansion also makes it harder than ever to navigate and select the right tools among the diverse LLM models available.",
+      "Below, we highlighted the top 9 LLMs that we think are currently making waves in the industry, each with distinct capabilities and specialized strengths, excelling in areas such as natural language processing, code synthesis, few-shot learning, or scalability.",
+      "While we believe there is no one-size-fits-all LLM for every use case, we hope that this list can help you identify the most current and well-suited LLM model that meets your business\u2019s unique requirements."
+    ],
+    "title": "Top 9 Large Language Models as of June 2025 | Shakudo",
+    "url": "https://www.shakudo.io/blog/top-9-large-language-models"
+  },
+  {
+    "description": "MoEs have faster training and better or comparable performance than dense LLMs on many benchmarks, especially in multi-domain tasks.",
+    "favicon_url": "https://you.com/favicon?domain=neptune.ai&size=128",
+    "snippets": [
+      "When considering the enormous amount of data and the wide variety of domains in which the huge LLM models are trained, it\u2019s natural to ask \u2014instead of using the entire LLM\u2019s capacity, could we just pick and choose only a portion of the LLM that is relevant to our particular input? This is the key idea behind Mixture of Expert LLMs. Mixture of Experts (MoE) is a type of neural network architecture in which parts of the network are divided into specialized sub-networks (experts), each optimized for a specific domain of the input space.",
+      "In this article, we explore the core concepts of MoE, including architectural blocks, gating mechanisms, and load balancing. We\u2019ll also discuss the nuances of training MoEs and analyze why they are faster to train and yield superior performance in multi-domain tasks. Finally, we address key challenges of implementing MoEs, including distributed training complexity and maintaining stability. Since the introduction of Transformer-based models, LLM capabilities have continuously expanded through advancements in architecture, training methods, and hardware innovation.",
+      "Such an MoE layer can be integrated into LLMs, replacing the feed-forward layer in the Transformer block. Its key components are the experts, the gating mechanism, and the load balancing. Overview of the general architecture of a Transformer block with integrated MoE layer.",
+      "These parameters are applied to the high-dimensional representation of the input at different levels of the LLM architecture. During training, these subsets become \u201cskilled\u201d at handling specific types of data. The gating mechanism plays a key role in this system. When an MoE LLM is trained, all the experts\u2019 parameters are updated."
+    ],
+    "title": "Mixture of Experts LLMs: Key Concepts Explained",
+    "url": "https://neptune.ai/blog/mixture-of-experts-llms"
+  },
+  {
+    "description": "What makes Mixture of Experts (MoE) LLM a game-changer in AI? How does this architecture enhance machine learning beyond traditional neural networks? These questions are pivotal as we delve into the\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Core Components of MoE Architecture: Delve into the experts, gating mechanisms, and routing algorithms that define MoE models, enabling efficient handling of complex data and tasks. Advancements in LLMs with MoE: Discover how MoE empowers Large Language Models (LLMs) to handle diverse linguistic patterns and improve computational efficiency.",
+      "Sparse Activation: By activating only a subset of experts for each input, MoE LLM models optimize computational resources, leading to significant efficiency gains. Reduced Computational Requirements: MoE\u2019s sparse nature means fewer operations are needed per parameter, making the models more flop-efficient. Dense-to-Sparse Training: Models can start dense and transition to sparse, leveraging the strengths of both architectures during training.",
+      "Domain-Focused Experts: MoE LLM models can be tailored to focus on particular domains, such as law, medicine, or science, where specialized knowledge is crucial. Customizing Expertise: By configuring the model to emphasize certain types of expertise, MoE architectures can be fine-tuned for specific tasks or applications.",
+      "The integration of MoE into LLMs allows for handling more complex linguistic patterns and generating more nuanced responses. Inspired by the success in NLP, MoE models have been applied to computer vision tasks, demonstrating the potential to discern distinct image semantics through specialized experts, thus improving efficiency and accuracy in image recognition. MoE architecture is well-suited for multimodal applications, where models process and integrate various data types."
+    ],
+    "title": "Deep Dive into Mixture of Experts for LLM Models | by Novita AI ...",
+    "url": "https://medium.com/@marketing_novita.ai/deep-dive-into-mixture-of-experts-for-llm-models-4bf609bc82a0"
+  }
+]

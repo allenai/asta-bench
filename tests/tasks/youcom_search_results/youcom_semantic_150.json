@@ -1,0 +1,254 @@
+[
+  {
+    "description": "Now for the energy cost of running an LLM. We have set a target of 250 words in an hour. LLMs generate tokens, parts of words, so if we use the standard ratio (for English) of 0.75 words per token, our target for one hour of work is around 333 tokens. Measurements with Llama 65B reported around ...",
+    "favicon_url": "https://you.com/favicon?domain=cacm.acm.org&size=128",
+    "snippets": [
+      "Now for the energy cost of running an LLM. We have set a target of 250 words in an hour. LLMs generate tokens, parts of words, so if we use the standard ratio (for English) of 0.75 words per token, our target for one hour of work is around 333 tokens. Measurements with Llama 65B reported around 4 Joules per output token [4]. This leads to 1,332 Joules for 333 tokens, about 0.00037 kWh.",
+      "This hour of work will probably be supported by several kWh of electric energy, 3 orders of magnitude more than the LLM. We can reasonably conclude that it can be very energy-effective to offload some parts of the writing tasks to LLMs and combine it with human steering and validation, and hopefully work fewer hours.",
+      "Energy apart, using LLMs during writing has ethical implications in authorship. Still, some tasks, like rephrasing, asking for guidelines or text compression look within acceptable ethical use, and can boost productivity. One should avoid the temptation to simply use it for more low-quality content.",
+      "Using LLMs to automatically generate 100x more of those will not accelerate science, it will slow it down.\u201d ... The cost of training a big foundation model can be daunting. The electricity required to train GPT-3 was estimated at around 1,287,000 kWh [5]. Estimates for Llama 3 are a little above 500,000 kWh[b], a value that is in the ballpark of the energy use of a seven-hour flight of a big airliner."
+    ],
+    "title": "The Energy Footprint of Humans and Large Language Models \u2013 ...",
+    "url": "https://cacm.acm.org/blogcacm/the-energy-footprint-of-humans-and-large-language-models/"
+  },
+  {
+    "description": "Explore the energy consumption of large language models (LLMs). Understand the energy conusmption at different stages of LLM application.",
+    "favicon_url": "https://you.com/favicon?domain=adasci.org&size=128",
+    "snippets": [
+      "Exploring the energy consumption of LLMs at different stages of applications",
+      "Economic Cost: The financial cost of the energy consumed during the training of LLMs can be enormous. Companies and research institutions must invest heavily in both the hardware and the energy required to train these models, impacting their overall budgets and influencing decisions on the development and deployment of new models. Sustainability: As AI continues to integrate into various sectors, the sustainability of these technologies becomes a critical consideration. Efficient energy use not only helps in reducing costs but also aligns with global efforts to minimize environmental impact.",
+      "This highlights the substantial energy requirements associated with LLMs, even for models that are not at the top end of the spectrum. As AI technology continues to evolve, it becomes imperative to focus on optimizing both the training and inference processes to reduce the energy footprint. Researchers and companies are exploring several strategies to mitigate energy consumption, including: Algorithmic Optimization: Improving the efficiency of training algorithms can significantly reduce the computational load.",
+      "For example, training BERT (Bidirectional Encoder Representations from Transformers) on a large dataset took approximately 64 TPU days, translating to significant energy use. In contrast, smaller models or models trained on smaller datasets might only require a few days or even hours, greatly reducing energy consumption. ... The infrastructure supporting LLM training, including data centres, also plays a vital role in determining energy consumption. For example, Google\u2019s data centres, known for their energy efficiency, use advanced cooling technologies and have a Power Usage Effectiveness (PUE) ratio of 1.12, meaning only 12% of the energy is used for cooling and overhead, while the rest is used for computation."
+    ],
+    "title": "How Much Energy Do LLMs Consume? Unveiling the Power Behind AI ...",
+    "url": "https://adasci.org/how-much-energy-do-llms-consume-unveiling-the-power-behind-ai/"
+  },
+  {
+    "description": "Its ability to deliver real-time power metrics makes it invaluable for assessing the energy efficiency of LLM deployments. NVIDIA System Management Interface (nvidia-smi) [22] is a command-line utility providing the real-time monitoring of GPU, including power consumption, for systems equipped with NVIDIA GPUs. It can be used to evaluate the energy efficiency of LLMs ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Its ability to deliver real-time power metrics makes it invaluable for assessing the energy efficiency of LLM deployments. NVIDIA System Management Interface (nvidia-smi) [22] is a command-line utility providing the real-time monitoring of GPU, including power consumption, for systems equipped with NVIDIA GPUs. It can be used to evaluate the energy efficiency of LLMs leveraging GPU acceleration.",
+      "[8] found that general-purpose ML models are more energy-intensive than task-specific ones and that efficiency gains in NLP and computer vision do not necessarily correlate with increased energy consumption. In contrast, MELODI, focusing on the inference stage, delivers real-time energy assessments of LLMs by utilizing Scaphandre and nvidia-smi to directly measure power usage. This method provides detailed energy metrics at the API level, offering a more nuanced evaluation of energy use than broader estimates and enhancing MELODI\u2019s role in sustainable AI.",
+      "This included gathering a diverse set of prompts to monitor the energy consumption of various LLMs across different types of instructions. We deployed these models on different hardware to ensure a thorough analysis. The data collection includes not only energy consumption measurements but also related metadata, such as the size and complexity of prompts, the responses, and the time metrics for each inference process.",
+      "[26], focus on sustainable AI by analyzing the LLMs\u2019 energy usage and carbon footprint. These studies highlight energy demands across various LLM configurations. However, MELODI enhances these efforts by providing a comprehensive framework that measures LLM energy consumption by leveraging Scaphandre and nvidia-smi for real-time energy tracking of both CPUs and GPUs. This capability enables a more dynamic energy efficiency optimization in LLM deployment, distinguishing MELODI with its predictive and monitoring strengths."
+    ],
+    "title": "The Price of Prompting: Profiling Energy Use in Large Language ...",
+    "url": "https://arxiv.org/html/2407.16893v1"
+  },
+  {
+    "description": "By bridging the gap between performance metrics, energy efficiency considerations, and actionable optimization strategies, this paper provides insights to researchers and practitioners to navigate the complexities of LLM inference workloads more effectively, ultimately contributing to more sustainable and efficient deployment of these models in real-world applications. Energy efficiency with hardware accelerators Other works have proposed the use ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "By bridging the gap between performance metrics, energy efficiency considerations, and actionable optimization strategies, this paper provides insights to researchers and practitioners to navigate the complexities of LLM inference workloads more effectively, ultimately contributing to more sustainable and efficient deployment of these models in real-world applications. Energy efficiency with hardware accelerators Other works have proposed the use of different models [13, 2] and different hardware [20, 21, 5] for energy efficient execution of transformer-based architectures.",
+      "We show that depending on the inputs, the model, and the service-level agreements, there are several knobs available to the LLM inference provider to use for being energy efficient. We characterize the impact of these knobs on the latency, throughput, as well as the energy. By exploring these trade-offs, we offer valuable insights into optimizing energy usage without compromising on performance, thereby paving the way for sustainable and cost-effective LLM deployment in data center environments. Large Language Models, LLMs, energy efficiency, efficient AI",
+      "Modern generative large language models (LLMs) are turning ubiquitous in their use-cases, leading to large-scale inference deployments. This has lead the datacenter expansion to hit an energy wall for the foreseeable future [6], further delaying the green energy promises. At the same time, such large scale deployments of these models present a unique opportunity to optimize the service for energy efficiency with huge impacts.",
+      "Together, tensor and pipeline parallelism enable efficient and scalable LLM inference, handling massive textual data effectively. Modern LLMs are assessed based on performance SLOs, including Time to First Token (TTFT), Time Between Tokens (TBT), and throughput. TTFT measures the time for the model to generate the first token of the output sequence, especially important for interactive and streaming responses."
+    ],
+    "title": "Towards Greener LLMs: Bringing Energy-Efficiency to the Forefront ...",
+    "url": "https://arxiv.org/html/2403.20306v1"
+  },
+  {
+    "description": "In this work, we examine the metrics and units currently used to measure the environmental footprint of popular generative AI models and evaluate how these metrics change when implementing optimization strategies. We then present a case study demonstrating how targeted optimizations can make generative AI models more energy efficient without compromising their performance in a real-world context. The primary objectives of this study are threefold: ... To enhance energy efficiency of LLMs ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "In this work, we examine the metrics and units currently used to measure the environmental footprint of popular generative AI models and evaluate how these metrics change when implementing optimization strategies. We then present a case study demonstrating how targeted optimizations can make generative AI models more energy efficient without compromising their performance in a real-world context. The primary objectives of this study are threefold: ... To enhance energy efficiency of LLMs by measuring and minimizing energy consumption during inference.",
+      "On the other hand, metrics like accuracy and F1 score are slightly lower after optimization, indicating a potential trade-off between energy efficiency and overall predictive performance. This underscores the importance of carefully balancing sustainability and performance when applying optimization techniques, as the ideal solution will depend on the specific use case and application requirements. TABLE III: Comparison of performance metrics and carbon emissions for five LLMs before and after optimization.",
+      "Primarily, it presents a comprehensive analysis of carbon emissions generated during both the training and inference phases of LLMs, a critical area often overlooked in performance evaluations. Furthermore, the study critically evaluates widely adopted emissions metrics, exploring their dynamic behavior under different optimization strategies. Additional contribution lies in the implementation of a practical optimization framework designed to minimize energy consumption across the model lifecycle. Finally, a detailed case study provides empirical evidence of measurable reductions in carbon footprint and energy consumption achieved without compromising model performance, offering practical guidance for sustainable AI development.",
+      "This method further improves the trade-off between model size and performance, making LLMs more adaptable to energy-efficient deployments. Additionally, SmoothQuant [16] employs layer-wise quantization to balance computation and accuracy, achieving state-of-the-art results in reducing energy use during inference."
+    ],
+    "title": "Optimizing Large Language Models: Metrics, Energy Efficiency, and ...",
+    "url": "https://arxiv.org/html/2504.06307v1"
+  },
+  {
+    "description": "TU Delft Course on Sustainable Software Engineering. Responsible software engineering that cares about the environment, the society, and the individual.",
+    "favicon_url": "https://you.com/favicon?domain=luiscruz.github.io&size=128",
+    "snippets": [
+      "Additionally, our study focuses solely on energy efficiency and does not take into consideration performance metrics, such as accuracy of generated code or speed of generation. Since we had to limit the response to 100 tokens per task, we did not use the HumanEval scores themselves. This meant we were unable to consider the actual outputs of the LLMs.",
+      "Combining results from the energy efficiency of the model itself, along with the energy efficiency of the code generated would paint a much more complete picture and could be expanded to a wider variety of models as well. For this project, we investigated the power consumption of four code LLMs: Codellama, Mistral, Deepseek and Qwen. We ran the HumanEval benchmark and recorded energy metrics throughout by using EnergiBridge.",
+      "We run these models against the HumanEval dataset, a state-of-the-art LLMs for code benchmark, and measure their energy consumption per token for every query. The primary argument for choosing these models is that they are open source. Moreover, we deemed it essential to include DeepSeek in our research due to two assumptions: (1) given the current political landscape, Western users exhibit increased privacy concerns for technology originating from China, making them more likely to run Deepseek locally, and (2) DeepSeek\u2019s public research suggests that this model was cheaper to develop, a fact which motivates us to investigate if it is also more energy efficient.",
+      "Our findings aim to provide practical recommendations for developers and organizations looking to balance performance with energy efficiency. Artificial Intelligence (AI) technology has gained widespread attention, particularly when considering Large Language Models (LLMs). Despite taking off rapidly and being used in various development contexts, LLMs faced criticism pertaining to sustainability."
+    ],
+    "title": "Comparing the energy efficiency of different LLM inference runtimes ...",
+    "url": "https://luiscruz.github.io/course_sustainableSE/2025/p1_measuring_software/g23_llm_inference.html"
+  },
+  {
+    "description": "TU Delft Course on Sustainable Software Engineering. Responsible software engineering that cares about the environment, the society, and the individual.",
+    "favicon_url": "https://you.com/favicon?domain=luiscruz.github.io&size=128",
+    "snippets": [
+      "While MLPerf provides benchmarks for inference speed, energy efficiency metrics are still evolving. Our study will contribute real-world measurements for commonly used LLMs on local setups (Mattson et al., 2020).",
+      "For developers running LLMs on personal GPUs or cloud instances, energy usage translates directly into money spent on electricity and compute time. Say we have two models which perform similarly, but one is significantly more power-hungry, wouldn\u2019t you rather use the energy-efficient one?",
+      "Knowing which configurations are more power-efficient can help reduce these costs (Henderson et al., 2020). Ever noticed your GPU fans kicking into overdrive when running AI models? That\u2019s because LLMs can push hardware to its limits, generating heat and potential wear over time. Measuring energy use can also give insights into optimizing workloads without overloading your system.",
+      "In this blog post, we\u2019ll explore just how much energy LLMs consume under different conditions. Specifically, we\u2019ll compare: The same model running with a different number of parameters. Different models running with the same number of parameters to see how architecture affects energy consumption. By the end of this study, we aim to highlight energy-efficient choices for those working with LLMs\u2014whether you\u2019re a researcher, developer, or AI enthusiast."
+    ],
+    "title": "Measuring the Energy Consumption of Large Language Models: A Deep ...",
+    "url": "https://luiscruz.github.io/course_sustainableSE/2025/p1_measuring_software/g6_llms_energy_consumption.html"
+  },
+  {
+    "description": "As a representative usage scenario ... server energy consumption for our conversation task. The PUE, WUE, and EWIF are the same as those used for estimating the training water consumption. There is a slightly newer paper (Oct 2023) that directly measured power usage on a Llama 65B (on V100/A100 hardware) that showed a 14X better efficiency...",
+    "favicon_url": "https://you.com/favicon?domain=llm-tracker.info&size=128",
+    "snippets": [
+      "As a representative usage scenario for an LLM, we consider a conversation task, which typically includes a CPU-intensive prompt phase that processes the user\u2019s input (a.k.a., prompt) and a memory-intensive token phase that produces outputs [37]. More specifically, we consider a medium-sized request, each with approximately \u2264800 words of input and 150 \u2013 300 words of output [37]. The official estimate shows that GPT-3 consumes an order of 0.4 kWh electricity to generate 100 pages of content (e.g., roughly 0.004 kWh per page) [18]. Thus, we consider 0.004 kWh as the per-request server energy consumption for our conversation task. The PUE, WUE, and EWIF are the same as those used for estimating the training water consumption. There is a slightly newer paper (Oct 2023) that directly measured power usage on a Llama 65B (on V100/A100 hardware) that showed a 14X better efficiency.",
+      "It measures the energy per decoded token under various conditions (batch size, sharding, sequence length), finding it to be around 3-4 Joules per output token for LLaMA-65B with longer generation lengths. This provides a more direct measurement on slightly older hardware compared to Li et al.\u2019s GPT-3 estimate. ... Lin, L. H. (2025). Internal User Test: Llama3-70B Inference Efficiency on H100.",
+      "At a high concurrency (batch size 128), the measured energy cost was approximately 0.39 Joules per total token (input + output), demonstrating significant efficiency gains achieved through modern hardware (H100), optimized software (vLLM), and quantization techniques (FP8).",
+      "While early estimates suggested high power requirements for LLM inference, modern hardware, quantization techniques, and architectural improvements have dramatically reduced power consumption - achieving up to 120\u00d7 better efficiency compared to 2023 baseline measurements for GPT-3 inference. These improvements suggest that concerns about LLM inference power consumption should be reassessed in light of rapid technological advances. The most current systems (represented by Lin\u2019s 2025 testing) demonstrate that high-performance inference can be achieved with substantially lower energy requirements than previously estimated."
+    ],
+    "title": "Power Usage and Energy Efficiency",
+    "url": "https://llm-tracker.info/_TOORG/Power-Usage-and-Energy-Efficiency"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Benchmarking the Energy Costs of Large Language Model ...",
+    "url": "https://arxiv.org/pdf/2310.03003"
+  },
+  {
+    "description": "The environmental impacts of generative AI are continuing to gain attention. The \u201ceye-watering\u201d compute requirements of Large Language Models (LLMs) are now understood as more than just a financial burden, threatening to push us beyond our planetary boundaries and climatic tipping points.",
+    "favicon_url": "https://you.com/favicon?domain=www.linkedin.com&size=128",
+    "snippets": [
+      "To my knowledge, two frameworks exist to measure and compare LLM energy efficiency, both exclusive to open-sourced models: ... Comparing these approaches can help us envision a future with standardized metrics that guide decision-making and regulatory policies, ultimately enabling the sustainable use of AI.",
+      "While the fixed token approach is like measuring a car\u2019s efficiency in a controlled testing facility, measuring energy use for a specific task aims to mirror the real-world driving experience, with the multiple paths, traffic uncertainties, and navigation complexities that come with it. Hugging Face\u2019s approach includes GPU, CPU, and RAM while ML.ENERGY focuses solely on GPU energy. This distinction exemplifies why it's inappropriate to deem these metrics as \"absolute\" or directly comparable across standards, even when converted to identical units.",
+      "Introduced in the United States in 1975 in response to the oil crisis, MPG offers a standardized measure of vehicle efficiency, guiding both consumers and regulatory standards, as well as enabling governments to require improved efficiency over time. While the EU AI Act draft calls for the disclosure and harmonization of AI energy data (see below), we're still in the early stages of its realization. ... Let's explore the current methodologies and metrics for gauging LLM energy efficiency and consider the optimal path forward.",
+      "Energy Efficiency (tokens/kWh): The amount of tokens generated per unit of energy, measured using CodeCarbon and taking into consideration the GPU, CPU, and RAM. Like MPG, a higher number = greater efficiency. Throughput (tokens/s): The number of tokens generated per second. The higher the number, the faster the model, akin to a vehicle's MPH. Memory (MB): The peak memory allocated to the task. To calculate these performance metrics each model generates a fixed number of tokens (1,000) under varied configurations, such as hardware and optimization techniques."
+    ],
+    "title": "The MPG of LLMs: Exploring the Energy Efficiency of Generative AI",
+    "url": "https://www.linkedin.com/pulse/mpg-llms-exploring-energy-efficiency-generative-ai-gamazaychikov"
+  },
+  {
+    "description": "A new tool designed by researchers at the University of Michigan allows users to compare the energy efficiency of AI-powered language models.",
+    "favicon_url": "https://you.com/favicon?domain=cse.engin.umich.edu&size=128",
+    "snippets": [
+      "The team hopes that the tool will serve as a guide for those seeking to balance performance and energy consumption in their choice of LLMs, ultimately promoting the use of more energy efficient models, while also providing information on how users choose LLM models.",
+      "In response to this issue, a team of researchers at the University of Michigan has developed the ML.ENERGY Leaderboard, which evaluates and ranks open-source LLMs according to how much energy they consume. Growing out of the team\u2019s prior development of Zeus, a framework for measuring and optimizing the energy consumption of deep learning models used to power modern AI, the ML.ENERGY Leaderboard aims to supply developers and end users alike with a holistic view of how much energy LLMs consume, allowing developers and users to factor in any given application\u2019s energy demands when deciding to use it.",
+      "Data centers, in particular, are responsible for an estimated 2% of electricity use in the U.S., consuming up to 50 times more energy than an average commercial building, and that number is only trending up as increasingly popular large language models (LLMs) become connected to data centers and eat up huge amounts of data.",
+      "The information that has emerged surrounding AI\u2019s energy use has been incomplete at best. The ML.ENERGY Leaderboard is the first known initiative to dive deeper into the dynamics influencing energy use among open-source LLMs and identify which models are consuming more or less energy and why."
+    ],
+    "title": "Power-hungry AI: Researchers evaluate energy consumption across models",
+    "url": "https://cse.engin.umich.edu/stories/power-hungry-ai-researchers-evaluate-energy-consumption-across-models"
+  },
+  {
+    "description": "Understand key factors influencing LLM energy consumption and how to evaluate it during training and inference phases.",
+    "favicon_url": "https://you.com/favicon?domain=incubity.ambilio.com&size=128",
+    "snippets": [
+      "Developed by researchers at the University of Michigan, the ML.ENERGY Leaderboard allows users to compare the energy consumption of different open-source LLMs. This platform helps researchers and developers understand which models are more energy-efficient by providing performance metrics alongside energy use during inference. Zeus is an open-source toolbox designed to measure and optimize the energy consumption of deep learning models.",
+      "This straightforward tool provides valuable insights into how much energy a model consumes during operation, making it easier for developers to assess the efficiency of their models. To evaluate the energy consumption of LLMs effectively, specific metrics are used to quantify the energy use in different phases of model development.",
+      "By considering factors like model size, computational resources, training duration, and infrastructure efficiency, developers and researchers can better manage the environmental impact of LLMs. Tools like ML.ENERGY, Zeus, and EnergyMeter provide valuable insights, while metrics like energy per token and total energy consumption help quantify the overall footprint.",
+      "This metric estimates the amount of energy consumed per token generated by the model during inference. It is particularly useful for comparing the energy efficiency of different LLMs during inference."
+    ],
+    "title": "How to Evaluate LLM Energy Consumption?",
+    "url": "https://incubity.ambilio.com/how-to-evaluate-llm-energy-consumption/"
+  },
+  {
+    "description": "This study provides a comprehensive ... models (LLMs) in terms of performance and energy efficiency across diverse tasks such as question answering, summarization, and commonsense reasoning. By benchmarking models like GPT-2, Falcon-7B, and Mistral-7B on NVIDIA A100 GPUs, we analyze critical metrics, including ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "This study provides a comprehensive evaluation of large language models (LLMs) in terms of performance and energy efficiency across diverse tasks such as question answering, summarization, and commonsense reasoning. By benchmarking models like GPT-2, Falcon-7B, and Mistral-7B on NVIDIA A100 GPUs, we analyze critical metrics, including latency, throughput, memory usage, and energy consumption.",
+      "Energy Consumption: Total inference energy (Joules) measured via nvidia-smi. Throughput: Processing speed in tokens/second, reflecting model efficiency across tasks. The benchmarking of large language models (LLMs) across diverse tasks provides critical insights into their performance, energy efficiency, and resource utilization.",
+      "This study evaluates the performance and energy efficiency of large language models (LLMs) during inference. Threats to validity include reliance single hardware testbed ( NVIDIA A100 GPU), limiting generalizability to other hardware. However, our analysis and insights are largely applicable to other hardware settings, however, the absolute measurements would change.",
+      "By systematically examining these factors, we aim to provide insights into optimizing LLMs for specific tasks and improving the overall sustainability of NLP systems. In our study, we address these gaps by benchmarking state-of-the-art models spanning diverse architectural families and sizes, ranging from 1.5B to 7B parameters. Using an NVIDIA A100 GPU, we evaluated the models on standard NLP tasks, including Boolean classification, question answering, commonsense reasoning, and summarization, to measure metrics such as accuracy, throughput, energy consumption, and latency."
+    ],
+    "title": "Investigating Energy Efficiency and Performance Trade-offs in LLM ...",
+    "url": "https://arxiv.org/html/2501.08219v1"
+  },
+  {
+    "description": "PDF | Recent improvements in the accuracy of machine learning (ML) models in the language domain have propelled their use in a multitude of products and... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "For this, we deploy several state-of-the-art LLMs and observe how model size, number of layers, parallelized attention, and even vocabulary size affect their energy consumption. In addition, we leverage input batch size and different quantization levels to optimize their inference energy efficiency and latency. Energy used, inference latency per token, and GPU utilization with a batch size of 1 for 3B models.",
+      "Fadel Argerich et al.: Measuring and Improving the Energy Efficiency of Large Language Models Inference \u00b7 fects in terms of inference time and energy, and comparing \u00b7 these effects to the ones seen on CNNs. They apply neural \u00b7 architectural search and hardware co-design to optimize the \u00b7 inference time and energy consumption of a transformer- based architecture, similar to BERT or GPT-2, achieving an ... IV. MEASURING THE ENERGY CONSUMPTION OF LLMS",
+      "Relative latency and energy per token, and average and max GPU utilization for different batch sizes and 7B parameters models. 100% latency and energy correspond to a batch size equal to 1. ... Main architectural characteristics of the LLMs used in the evaluation.",
+      "This also impacts the energy usage of LLMs. D) Quantization. Quantization reduces the memory foot- print and processing needed for inference (and training) of models by changing the data type of parameters in \u00b7 the model, e.g., from FP16 to INT8. Even though the \u00b7 accuracy of the model is also affected, the performance \u00b7 decrease is often marginal. We will evaluate how quan- tization to different data types affects the energy used by"
+    ],
+    "title": "(PDF) Measuring and Improving the Energy Efficiency of Large Language ...",
+    "url": "https://www.researchgate.net/publication/381199506_Measuring_and_Improving_the_Energy_Efficiency_of_Large_Language_Models_Inference"
+  },
+  {
+    "description": "Large Language Models (LLMs) are becoming the new mainstream for several tasks we perform everyday: searching answers to our everyday questions, summarizing texts, creating slides or creating images\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "We use EnergyMeter, a Python tool, to measure the energy consumption of different LLMs including Llama, Dolly, and BLOOM",
+      "But even more energy is used to keep these LLMs running, for their inference.",
+      "Large Language Models (LLMs) are becoming the new mainstream for several tasks we perform everyday: searching answers to our everyday questions, summarizing texts, creating slides or creating images for this article; LLMs are powerful tools and its safe to say their use will increase in the years to come.",
+      "Training such large models requires incredibly powerful computing resources (in particular GPUs), which is translated into really high costs for buying or even renting the resources and, in turn, this is translated into a high energy demand, needed to power those resources."
+    ],
+    "title": "How Much Energy Do LLMs Consume?. We use EnergyMeter, a Python ...",
+    "url": "https://medium.com/data-science/how-much-energy-do-llms-consume-23c09fe3f545"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.linkedin.com&size=128",
+    "snippets": [],
+    "title": "Search Engine or prompt an LLM - an energy analysis, ...",
+    "url": "https://www.linkedin.com/pulse/search-engine-prompt-llm-energy-analysis-entropy-path-yerramsetti-smkic"
+  },
+  {
+    "description": "The strong negative correlation ... the more energy it requires per output token. In addition, the metric tokens per joule is strongly correlated with every analyzed model characteristic, except for bit width, with which it is moderately correlated. The \u201cEfficiency (tokens/J)\u201d column of Table II also indicates that tokens per joule may be a useful metric to ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The strong negative correlation points out that the larger the number of parameters of a model the more energy it requires per output token. In addition, the metric tokens per joule is strongly correlated with every analyzed model characteristic, except for bit width, with which it is moderately correlated. The \u201cEfficiency (tokens/J)\u201d column of Table II also indicates that tokens per joule may be a useful metric to analyze model performance across different software development tasks.",
+      "This ensures the model performs efficiently whether it\u2019s deployed on desktops, laptops, or another environment. For quantized models in the GGUF format, several open-source frameworks have emerged, including PrivateGPT, Ollama, GPT4All, and llamafile [40]. Among these options, we decided to use the most popular one at the moment, Ollama (v. 0.3.2), based on its number of stars on GitHub, and the ease with which it enables us to switch between models. For measuring energy and utilization of GPU as in previous studies[41, 42, 43], we employed the Python binding of the NVIDIA Management Library [44] (pyNVML [45]) to record the GPU power.",
+      "The remaining model characteristics exhibit statistically significant correlations with the performance metrics (except for accuracy) ranging from weak to strong. These findings confirm that larger models tend to be slower, consume more energy, and require more memory. The strong positive correlation between memory usage and bit width confirms that lower-precision models require less memory bandwidth and storage, reducing the energy required for data transfer and memory access. Results in Table II indicate that fp16 variants have lower efficiency in tokens/J than 8- or 4-bit variants.",
+      "The continuous evolution of larger, more capable, and computationally intensive models has made examining their energy consumption an increasingly important concern. Despite the growing utilization of LLMs in software-related tasks [3, 4], much of the existing research in evaluating their performance has traditionally focused on metrics such as accuracy [18, 19], or task-specific metrics like pass@k for code synthesis [20, 21, 22, 23] and repair rate for bug fixing [24]."
+    ],
+    "title": "Analyzing the Energy and Accuracy of LLMs in Software Development",
+    "url": "https://arxiv.org/html/2412.00329v1"
+  },
+  {
+    "description": "Lightweight models can obtain the high performance levels that companies expect, but at significantly lower costs.",
+    "favicon_url": "https://you.com/favicon?domain=www.expert.ai&size=128",
+    "snippets": [
+      "In addition to the financial costs, companies who have established climate and ESG goals and are tracking their carbon emissions will also find LLMs expensive and at odds with these commitments. The carbon emissions of GPT-3, for example, have been estimated at 1,287,000 kilowatt-hours), or 552 metric tons. According to a recent study by S&P, this does present a challenge for companies: \u201cMore than two-thirds (68%) of respondents indicate they are concerned about the impact of AI/ML on their organization\u2019s energy use and carbon footprint.\u201d",
+      "While much of the research around LLMs focuses on accuracy, there is less focus on how to make them more efficient in terms of energy use and costs.",
+      "The findings are published in our paper, \u201cAn Energy-Based Comparative Analysis of Common Approaches to Text Classification in the Legal Domain,\u201d which was presented at the 4th International Conference on NLP & Text Mining (NLTM 2024) held earlier this year in Copenhagen. Companies are taking many factors into consideration as they choose AI solutions for their business challenges. The opportunities that LLMs offer for efficiency and innovation are not insignificant, but the costs and challenges for data, bias and security are still barriers that need to be addressed.",
+      "We combined the analysis of performance and energy consumption, costs and carbon footprint to see how to achieve the best of each in a real business scenario. Our research found that that lightweight models can obtain the high performance levels that companies expect, but at significantly lower costs. The results indicate that very often, the simplest techniques achieve performance very close to that of large LLMs but with very low power consumption and lower resource demands."
+    ],
+    "title": "LLMs: Balancing Energy Efficiency and Performance - expert.ai | ...",
+    "url": "https://www.expert.ai/blog/llms-balancing-energy-efficiency-and-performance/"
+  },
+  {
+    "description": "Recent improvements in the accuracy of machine learning (ML) models in the language domain have propelled their use in a multitude of products and services, touching millions of lives daily. These new levels of accuracy have been attained mainly through exponential growth in model size, creating ...",
+    "favicon_url": "https://you.com/favicon?domain=ieeexplore.ieee.org&size=128",
+    "snippets": [
+      "Recent improvements in the accuracy of machine learning (ML) models in the language domain have propelled their use in a multitude of products and services, touching millions of lives daily. These new levels of accuracy have been attained mainly through exponential growth in model size, creating a new category of models known as Large Language Models (LLMs) and leading to a substantial increase in computing and energy demands.",
+      "A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity. \u00a9 Copyright 2025 IEEE - All rights reserved. Use of this web site signifies your agreement to the terms and conditions."
+    ],
+    "title": "Measuring and Improving the Energy Efficiency of Large Language ...",
+    "url": "https://ieeexplore.ieee.org/document/10549890/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.computer.org&size=128",
+    "snippets": [],
+    "title": "Lower Energy Large Language Models (LLMs)",
+    "url": "https://www.computer.org/csdl/magazine/co/2023/10/10255228/1QzyrTgKKEE"
+  },
+  {
+    "description": "Energy consumption of artificial intelligence (AI) models in training is considerable, with both GPT-3, the original release of the current iteration of OpenAI's popular ChatGPT, and Gopher consuming well over a thousand-megawatt hours of energy simply for training.",
+    "favicon_url": "https://you.com/favicon?domain=www.statista.com&size=128",
+    "snippets": [
+      "Energy consumption of artificial intelligence (AI) models in training is considerable, with both GPT-3, the original release of the current iteration of OpenAI's popular ChatGPT, and Gopher consuming well over a thousand-megawatt hours of energy simply for training. As this is only for the training model it is likely that the energy consumption for the entire usage and lifetime of GPT-3 and other large language models (LLMs) is significantly higher.",
+      "The largest consumer of energy, GPT-3, consumed roughly the equivalent of 200 Germans in 2022. While not a staggering amount, it is a considerable use of energy. While it is undoubtedly true that training LLMs takes a considerable amount of energy, the energy savings are also likely to be substantial.",
+      "A good example is mobile phone operators, of which a third expect that AI might reduce power consumption by ten to fifteen percent. Considering that much of the world uses mobile phones this would be a considerable energy saver. The amount of CO2 emissions from training LLMs is also considerable, with GPT-3 producing nearly 500 tonnes of CO2.",
+      "Cornell University. \"Power consumption when training artificial intelligence (AI) based large language models (LLMs) in 2023 (in megawatt hours).\" Chart. November 3, 2022. Statista. Accessed January 06, 2025. https://www.statista.com/statistics/1384401/energy-use-when-training-llm-models/"
+    ],
+    "title": "Energy consumption when training LLMs in 2022 (in MWh)",
+    "url": "https://www.statista.com/statistics/1384401/energy-use-when-training-llm-models/"
+  },
+  {
+    "description": "Konica Minolta Business Solutions Europe is your partner for smart IT services & systems, multifunctional devices & professional printing!",
+    "favicon_url": "https://you.com/favicon?domain=digital-services.research.konicaminolta.com&size=128",
+    "snippets": [
+      "We offer measuring instruments that make full use of our advanced optical technology to quantify light and color with high reliability, and high value-added products and solutions for numerical control of those properties.",
+      "How can digital transformation in printing accelerate efficiency and sustainability?"
+    ],
+    "title": "How to measure the efficiency of Large Language Models?",
+    "url": "https://digital-services.research.konicaminolta.com/how-to-measure-llm-efficiency/"
+  },
+  {
+    "description": "Answer (1 of 7): My personal opinion on this is that there are two main measurements PUE, and DCIE - Data Center Infrastructure Efficiency, and there are others that are used in 'real life' when a company looks for data center space: Cost Redundancy The cost metric is arguably the most weigh...",
+    "favicon_url": "https://you.com/favicon?domain=www.quora.com&size=128",
+    "snippets": [],
+    "title": "What metrics are used to measure the energy efficiency of a data ...",
+    "url": "https://www.quora.com/What-metrics-are-used-to-measure-the-energy-efficiency-of-a-data-center"
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "description": "22 papers with code \u2022 2 benchmarks \u2022 6 datasets \u00b7 jhu-lcsr/costar_plan \u2022 \u2022 27 Oct 2018",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "We show that a mild relaxation of the task and workspace constraints implicit in existing object grasping datasets can cause neural network based grasping algorithms to fail on even a simple block stacking task when executed under more realistic circumstances.",
+      "This work proposes a framework to learn task-relevant grasping for industrial objects without the need of time-consuming real-world data collection or manual annotation."
+    ],
+    "title": "Robot Task Planning | Papers With Code",
+    "url": "https://paperswithcode.com/task/robot-task-planning"
+  },
+  {
+    "description": "With the rapid development of artificial intelligence and robotics, service robots are increasingly becoming a part of our daily lives to provide domestic services. For robots to complete such services intelligently and with high quality, the prerequisite is that they can recognize and plan ...",
+    "favicon_url": "https://you.com/favicon?domain=www.oaepublish.com&size=128",
+    "snippets": [
+      "With the rapid development of artificial intelligence and robotics, service robots are increasingly becoming a part of our daily lives to provide domestic services. For robots to complete such services intelligently and with high quality, the prerequisite is that they can recognize and plan tasks to discover task requirements and generate executable action sequences.",
+      "The researcher focused on near-optimal solutions using neighborhood search techniques, accelerating the identification of efficient solutions and reducing computational demands[80]. Task planning for autonomous systems[81] merges offline and online operations, using precomputed data to dynamically generate decisions, thus adapting to changing conditions more robustly.",
+      "Researchers are enhancing robotic task planning with LLMs to improve adaptability and accuracy. Singh \u00b7 et al. used LLMs for more precise robotic arm task execution in desktop environments, enhancing decision-making through real-time environmental feedback [Figure 5][86]. This method improves task success and efficiency.",
+      "In complex home environments, robots need mechanisms to autonomously discover and understand tasks, establishing dynamic relationships between tasks, items, and scenes. While graph-based reasoning could enhance the analysis of complex relationships, current VQA and visual relation detection models often overlook robotic task cognition, leading to a lack of relevant models and datasets for task information collection."
+    ],
+    "title": "Task cognition and planning for service robots",
+    "url": "https://www.oaepublish.com/articles/ir.2025.08"
+  },
+  {
+    "description": "\u24c7, this research was able to readily introduce humans within the same environments designed for humans, and vice versa, according to the BN model of the desired treasure hunt task. The structure of the BN used for the human/robot treasure hunt perception task is plotted in Figure 2D. The BN parameters, not shown for brevity, were varied across trials to obtain a representative dataset ...",
+    "favicon_url": "https://you.com/favicon?domain=www.frontiersin.org&size=128",
+    "snippets": [
+      "\u24c7, this research was able to readily introduce humans within the same environments designed for humans, and vice versa, according to the BN model of the desired treasure hunt task. The structure of the BN used for the human/robot treasure hunt perception task is plotted in Figure 2D. The BN parameters, not shown for brevity, were varied across trials to obtain a representative dataset from the human study from which mathematical models of human decision strategies could be learned and validated.",
+      "All these existing methods assume prior knowledge of sensor performance and of the workspace, and are applicable when the time and energy allotted to the robot are adequate for completing the sensing task. Information-driven path planning algorithm integrated with online mapping, developed in Zhu et al.",
+      "For active tasks, when the sensing capabilities are significantly hindered, such as in adverse weather conditions, human strategies are found to amount to highly effective heuristics that can be modeled as shown in Section 7, and generalized to robots as shown in Section 8. The human strategies discovered from human studies are implemented on autonomous robots equipped with vision sensors and compared with existing planning methods (Section 8) through simulations and physical experiments in which optimizing strategies fail to complete the task or exhibit very poor performance.",
+      "First, fog obstructs the robot\u2019s ability to detect targets and obstacles by using onboard sensors such as cameras, thus making long-horizon optimization-based planning nearly impossible. Second, fog complicates the task of self-localization for the robot with respect to the entire map, although short-term localization can rely on inertial measurement units."
+    ],
+    "title": "Frontiers | Heuristic satisficing inferential decision making in ...",
+    "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2024.1384609/full"
+  },
+  {
+    "description": "Applying the learning mechanism of natural living beings to endow intelligent robots with humanoid perception and decision-making wisdom becomes an important fo...",
+    "favicon_url": "https://you.com/favicon?domain=journals.sagepub.com&size=128",
+    "snippets": [
+      "Applying the learning mechanism of natural living beings to endow intelligent robots with humanoid perception and decision-making wisdom becomes an important force to promote the revolution of science and technology in robot domains. Advances in reinforcement learning (RL) over the past decades have led robotics to be highly automated and intelligent, which ensures safety operation instead of manual work and implementation of more intelligence for many challenging tasks.",
+      "On the basis of Hamilton and Jacobi\u2019s theory, Bellman et al. extended some solutions and gave some solutions with dynamic system state and value function, which is sometimes called optimal return function.13 According to the Markov decision process (MDP),14 we can conclude that all optimization problems can be classified as RL problems. In the past decades, some reviews discussed the application of robots, for example, environmental perception,15 path planning,16 behavior decision,17 and motion control.18\u201320 Moreover, significant progress has been made in solving challenging problems acros",
+      "Due to the influence of obstacles in workspace, complex coupling characteristics, and nonlinearity, the trajectory planning and control of robot are faced with many problems. The challenges at the interface of nonlinear coupling and learning must be solved before we can build robust, safe robot learning systems that interact with an uncertain physical environment. ... Maximum entropy DRL: We expect RL methods to show good performance for robot decision making and control in the real world.",
+      "Otterlo MV, Wiering M. Reinforcement learning and Markov decision processes. Reinf Learn 2012; 12: 3\u201342. ... 15. Chen S, Li Y, Kwok NM. Active vision in robotic systems: a survey of recent developments. Int J Robot Res 2011; 30(11): 1343\u20131377. ... 16. Pol RS, Murugan M. A review on indoor human aware autonomous mobile robot navigation through a dynamic environment survey of different path planning algorithm and methods."
+    ],
+    "title": "Reinforcement learning for robot research: A comprehensive review ...",
+    "url": "https://journals.sagepub.com/doi/10.1177/17298814211007305"
+  },
+  {
+    "description": "HTML conversions sometimes display errors due to content that did not convert correctly from the source. This paper uses the following packages that are not yet supported by the HTML conversion tool. Feedback on these issues are not necessary; they are known and are being worked on \u00b7 Authors: ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "For example in the perception domain, Large Vision-Language Models (VLMs) have been found to provide cross-modal understanding by learning associations between visual and textual data, aiding tasks such as zero-shot image classification, zero-shot object detection [10], and 3D classification [11]. As another example, language grounding in the 3D world [12] (aligning contextual understanding of VLMs to the 3-dimensional (3D) real world) may enhance a robot\u2019s spatial awareness by associating words with specific objects, locations, or actions within the 3D environment. In the decision-making or planning domain, LLMs and VLMs have been found to assist robots in task specification for high-level planning [13]. Robots can perform more complex tasks by leveraging linguistic cues in manipulation, navigation, and interaction.",
+      "In Section III, we present a review of how foundation models are integrated into different tasks for decision-making in robotics. First, we discuss robot policy learning using language-conditioned imitation learning, and language-assisted reinforcement learning. Then, we discuss how to use foundation models to design a language-conditioned value function that can be used for planning purposes.",
+      "In this section, we delve into robot decision-making, planning, and control. Within this realm, Large Language Models (LLMs) and Visual Language Models (VLMs) may hold the potential to serve as valuable tools for enhancing robotic capabilities. For instance, LLMs may facilitate the process of task specification, allowing robots to receive and interpret high-level instructions from humans.",
+      "Knowledge transfer from foundation models may reduce training time and computational resources compared to task-specific models. Particularly relevant to robotics, multimodal foundation models can fuse and align multimodal heterogeneous data gathered from various sensors into compact homogeneous representations needed for robot understanding and reasoning [9]. These learned representations hold the potential to be used in any part of the autonomy stack including perception, decision-making, and control."
+    ],
+    "title": "Foundation Models in Robotics: Applications, Challenges, and the ...",
+    "url": "https://arxiv.org/html/2312.07843v1"
+  },
+  {
+    "description": "In the last years, considerable research has been carried out to develop robots that can improve our quality of life during tedious and challenging tasks. In these contexts, robots operating without human supervision open many possibilities to assist people in their daily activities.",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "International Journal of Social Robotics - In the last years, considerable research has been carried out to develop robots that can improve our quality of life during tedious and challenging tasks....",
+      "Continuing in this line, Arsene and Zalzala [39] designed in 1999 a fuzzy controller for autonomous navigation in complex environments. The robot\u2019s decision-making combines a deliberative task planner based on fuzzy rules with a reactive layer for collision avoidance.",
+      "In this case, the action selection depended on a planner situated module that generated appropriate paths for navigating safely using the information provided by the sensors. In 1999, the term autonomous social robot started to appear in the literature frequently. Billard and Dautenhahn [43] designed a DMS for robots to imitate the behaviour of other robots in social tasks.",
+      "The top level generates plans, and the low level works as an interface to command the robot\u2019s actuators. Decisions are based on a set of rules that evaluate the robot\u2019s state and goals. The model allowed action blending and continuous operation in lengthy tasks."
+    ],
+    "title": "A Systematic Literature Review of Decision-Making and Control Systems ...",
+    "url": "https://link.springer.com/article/10.1007/s12369-023-00977-3"
+  },
+  {
+    "description": "The inclusion of robots in our society is imminent, such as service robots. Robots are now capable of reliably manipulating objects in our daily lives\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The robot executes its plan in a step-wise manner and any planning impasse produced by missing operators is resolved online by asking a human teacher for the next action to execute. Based on the observed state transitions, this approach rapidly generates the missing operators by evaluating the relevance of several cause\u2013effect alternatives in parallel using a probability estimate, which compensates for the high uncertainty that is inherent when learning from a small number of samples."
+    ],
+    "title": "Efficient interactive decision-making framework for robotic ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0004370215000661"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www-robotics.jpl.nasa.gov&size=128",
+    "snippets": [],
+    "title": "Decision-Making in a Robotic Architecture for Autonomy",
+    "url": "https://www-robotics.jpl.nasa.gov/media/documents/isairas01.pdf"
+  },
+  {
+    "description": "Advances in machine learning have fueled progress towards deploying real-world robots from assembly lines to self-driving. Learning to make better decisions for robots presents a unique set of challenges. Robots must be safe, learn online from interactions with the environment, and predict ...",
+    "favicon_url": "https://you.com/favicon?domain=www.cs.cornell.edu&size=128",
+    "snippets": [
+      "There will be three deliverables - an extended abstract, a final report and a final presentation. The abstract and report will should NeurIPS format. You are welcome to select any topic that may be relevant to your research, an open problem of interest or from a list of potential projects that we will share.",
+      "Any work presented as your own must be your own, with no exceptions tolerated. All violations of this policy will result in a penalty depending on the severity. The penalty may be a failing grade on the relevant assignment or exam, or a failing grade in the class.",
+      "Research has demonstrated that the best learning occurs when the learner is actively involved. We will have frequent opportunities for students to work together during lectures. We expect you to come to class prepared to focus, interact with classmates, and participate in the activities."
+    ],
+    "title": "Learning for Robot Decision Making",
+    "url": "https://www.cs.cornell.edu/courses/cs6756/2022fa/"
+  },
+  {
+    "description": "This alert has been successfully added and will be sent to: \u00b7 You will be notified whenever a record that you have chosen has been cited",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "An implemented theory of mind to improve human-robot shared plans execution. In 2016 11th ACM/IEEE International Conference on Human-Robot Interaction (HRI). IEEE, 319\u2013326. ... Shirine El Zaatari, Mohamed Marei, Weidong Li, and Zahid Usman. 2019. Cobot programming for collaborative industrial tasks: An overview.",
+      "Noormohammadi-Asl AAyub ASmith SDautenhahn K(2022)Task Selection and Planning in Human-Robot Collaborative Processes: To be a Leader or a Follower?2022 31st IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)10.1109/RO-MAN53752.2022.9900770(1244-1251)Online publication date: 29-Aug-2022",
+      "Lars Johannsmeier and Sami Haddadin. 2016. A hierarchical human-robot interaction-planning framework for task allocation in collaborative industrial assembly processes.",
+      "International Journal of Production Research 56, 16 (2018), 5522\u20135540. ... Baptiste Busch, Guilherme Maeda, Yoan Mollard, Marie Demangeat, and Manuel Lopes. 2017. Postural optimization for an ergonomic human-robot interaction. In 2017 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). IEEE, 2778\u20132785. ... Min Chen, Stefanos Nikolaidis, Harold Soh, David Hsu, and Siddhartha Srinivasa. 2018. Planning with trust for human-robot collaboration."
+    ],
+    "title": "The Effect of Robot Decision Making on Human Perception of a Robot ...",
+    "url": "https://dl.acm.org/doi/10.1145/3472307.3484671"
+  },
+  {
+    "description": "Combined Task and Motion Planning (TAMP) is an area where no one-fits-all solution can exist. Many aspects of the domain, as well as operational requirements...",
+    "favicon_url": "https://you.com/favicon?domain=www.frontiersin.org&size=128",
+    "snippets": [
+      "We show which decisions and trade-offs should be made with respect to these research questions, and illustrate these on examples of existing application domains. By doing so, this article aims to provide a guideline for designing combined TAMP solutions that are adequate and effective in the target scenario. This paper addresses a known problem in planning for robots, namely, that of combining Task And Motion Planning (TAMP).",
+      "Nevertheless, we conjecture that a one-fits-all method for solving combined TAMP will never exist, therefore the questions we have discussed in this article, as well as the proposed guidelines, will remain relevant in the future. MM coordinated the research and the writing of the manuscript. All authors listed have made a substantial, direct, and intellectual contribution to the work and approved it for publication. Federico Pecora is supported by the Swedish Knowledge Foundation (KKS) under the Semantic Robots research profile, and by Vinnova under projects AutoBoomer and AutoHauler.",
+      "The focus here has been on aligning the belief-state of the robot with the symbolic planning process. The latter can employ one of the many approaches to task planning, from Hierarchical Task Networks for TAMPs in partially observable environments (e.g., Weser et al., 2010) to inferring the most appropriate plan from a pre-defined plan library using probabilistic representations (e.g., Beetz et al., 2001). Decision-theoretic task planning methods, and specifically Markov Decision Processes (MDPs) and Partially Observable Markov Decision Processes (POMDPs) are the most prevalent approaches for tackling various types of uncertainty in TAMP formulations (e.g., \u015eucan and Kavraki, 2012; Kaelbling and Lozano-P\u00e9rez, 2013; Hadfield-Menell et al., 2015).",
+      "First, in some domains, tasks carried out by the robot(s) in the environment affect the motions that can be carried out in realizing other tasks. This is true in mining, for instance, where operations like drilling have a permanent effect on navigability. In general, decisions over the order of the tasks not only affect the subsequent motions but also the environment."
+    ],
+    "title": "Frontiers | Combining Task and Motion Planning: Challenges and ...",
+    "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2021.637888/full"
+  },
+  {
+    "description": "This study examines the impact of artificial intelligence (AI) on loss in decision-making, laziness, and privacy concerns among university students in Pakistan and China. Like other sectors, education also adopts AI technologies to address modern-day challenges.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Humanities and Social Sciences Communications - Impact of artificial intelligence on human loss in decision making, laziness and safety in education",
+      "AI further strengthened its role in education, especially during the recent COVID-19 pandemic, and invaded the traditional way of teaching by providing many opportunities to educational institutions, teachers, and students to continue their educational processes (\u0160trbo, 2020; Al-Ansi, 2022; Akram et al., 2021). AI applications/technology like chatbots, virtual reality, personalized learning systems, social robots, tutoring systems, etc., assist the educational environment in facing modern-day challenges and shape education and learning processes (Schiff, 2021).",
+      "The research has important implications for technology developers, the organization that adopts the technology, and the policymakers. The study highlights the importance of addressing ethical concerns during AI technology\u2019s development and implementation stage. It also provides guidelines for the government and policymakers regarding the issues arising with AI technology and its implementation in any organization, especially in education.",
+      "Table 12 Predictive relevance of the model. ... The findings show that AI-based products and services are increasing the human laziness factor among those relying more on AI. However, there were not too many studies conducted on this factor by the researcher in the past, but the numerous researchers available in the literature also endorse the findings of this study (Farrow, 2022; Bartoletti, 2019)."
+    ],
+    "title": "Impact of artificial intelligence on human loss in decision making, ...",
+    "url": "https://www.nature.com/articles/s41599-023-01787-8"
+  },
+  {
+    "description": "Sequential decision making is an important part of robotic problems that is receiving unprecedented attention from both academia and industry. Recentl\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [],
+    "title": "Mobile robot sequential decision making using a deep reinforcement ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0957417424018268"
+  },
+  {
+    "description": "An official website of the United States government \u00b7 Official websites use .gov A .gov website belongs to an official government organization in the United States",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "This work by Almanzor et al. introduces LitterBot, an autonomous robotic system designed to detect, localize, and classify roadside litter. Utilizing a learning-based object detection algorithm trained on the TACO dataset, LitterBot identifies and categorizes garbage.",
+      "Employing noisy student training and self-supervised learning outperforms fine-tuned models by 5% in word error rate reduction. This work offers a Jordanian-spoken dataset and an efficient approach for low-resource languages, advancing applications like question-answering systems and intelligent robots.",
+      "AI has great promise in robotics, but there are still obstacles to overcome. We must tackle algorithmic prejudice, data privacy issues, and the unexpected repercussions of autonomous decision-making. Researchers and practitioners aim to provide equitable, transparent, and comprehensive AI solutions, recognizing the many social effects of robots.",
+      "Collaborating with academics, engineers, and policymakers may help us explore new possibilities in human-robot teamwork, advancing toward a more sustainable, inclusive, and technologically advanced future. In this Research Topic, \u201cArtificial intelligence solutions for decision-making in robotics,\u201d we have published four significant articles as follows."
+    ],
+    "title": "Editorial: Artificial intelligence solutions for decision making ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10964767/"
+  },
+  {
+    "description": "The NeurIPS Logo above may be used on presentations. Right-click and choose download. It is a vector graphic and may be used at any scale \u00b7 1269 Law St, San Diego CA 92109",
+    "favicon_url": "https://you.com/favicon?domain=neurips.cc&size=128",
+    "snippets": [
+      "Yet, we have a limited understanding of LLMs' communication and decision-making abilities in multi-agent setups. The fundamental task of negotiation spans many key features of communication, such as cooperation, competition, and manipulation potentials. Thus, we propose using scorable negotiation to evaluate LLMs. We create a testbed of complex multi-agent, multi-issue, and semantically rich negotiation games. To reach an agreement, agents must have strong arithmetic, inference, exploration, and planning capabilities while integrating them in a dynamic and multi-turn setup.",
+      "Multi-Modal Large Language Models (MLLMs) have demonstrated impressive performance in various VQA tasks. However, they often lack interpretability and struggle with complex visual inputs, especially when the resolution of the input image is high or when the interested region that could provide key information for answering the question is small.",
+      "In this study, we explore the influence of various observation spaces on robot learning, focusing on three predominant modalities: RGB, RGB-D, and point cloud. We introduce OBSBench, a benchmark comprising two simulators and 125 tasks, along with standardized pipelines for various encoders and policy baselines.",
+      "Furthermore, our findings demonstrate that point cloud observations often yield better policy performance and significantly stronger generalization capabilities across various geometric and visual conditions. These outcomes suggest that the 3D point cloud is a valuable observation modality for intricate robotic tasks."
+    ],
+    "title": "NeurIPS 2024 Datasets Benchmarks 2024",
+    "url": "https://neurips.cc/virtual/2024/events/datasets-benchmarks-2024"
+  },
+  {
+    "description": "Completing complex tasks in unpredictable settings challenges robotic systems, requiring a step change in machine intelligence. Sensorimotor abilities are considered integral to human intelligence. Thus, biologically inspired machine intelligence might usefully combine artificial intelligence ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Completing complex tasks in unpredictable settings challenges robotic systems, requiring a step change in machine intelligence. Sensorimotor abilities are considered integral to human intelligence. Thus, biologically inspired machine intelligence might usefully combine artificial intelligence with robotic sensorimotor capabilities.",
+      "Nature Machine Intelligence - To function in the real world, autonomous robots will have to respond to unanticipated situations. A vision-language-model-based approach is proposed to solve...",
+      "To function in the real world, autonomous robots will have to respond to unanticipated situations. A vision-language-model-based approach is proposed to solve long-horizon robotic tasks, which can adapt to a dynamic environment.",
+      "To compare the methods, we prompted an LLM to generate 80 human-like queries, reflecting the range of tasks specified in the knowledge base. These queries were then used to generate robot plans. We compared the performance outcomes from using RAG (our method)\u2014in which the knowledge base is dynamically integrated into the LLM\u2019s decision-making process\u2014to a baseline (VoxPoser) in which the knowledge base was statically incorporated into the LLM\u2019s context window."
+    ],
+    "title": "Embodied large language models enable robots to complete complex ...",
+    "url": "https://www.nature.com/articles/s42256-025-01005-x"
+  },
+  {
+    "description": "In order to demonstrate the limitations of assistive robotic capabilities in noisy real-world environments, we propose a Decision-Making Scenario analysis approach that examines the challenges due to user and environmental uncertainty, and incorporates these into user studies.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "In developing a robotic system to provide assistance for patients in the recovery period, a crucial initial step for ensuring safety involves reviewing existing methods for identifying safety concerns and potential failures during a task. For assessing the operational safety of the human-robot interaction, we utilized STPA to examine safety concerns arising from human actions, integrating insights from the Human-Robot Failure Taxonomy (Figure 2) to comprehensively address potential failure modes. Our selection of this technique was driven by its relevance to our specific application and its potential applicability to other similar physically assistive human-robot interaction tasks.",
+      "Robots can be trained using various datasets to make decisions in specific tasks and scenarios.",
+      "This methodology can help identify user-related errors that can occur at different stages of a robotic task. Furthermore, the SHARD (Robot Hazard and Error Analysis) methodology can be applied to identify potential errors that the robot may encounter. This allows for a focused examination of potential failure points based on the logical sequence of actions the robot may take. By applying the SHARD technique at each node or point of the design, as defined by the UML (Unified Modeling Language), researchers can systematically analyze potential errors and develop strategies to mitigate them.",
+      "(d) Robot decides to seek assistance and modify its plan to ensure the correct medicine is delivered \u00b7 (e) Robot selects the correct medication and is prepared for delivery \u00b7 (f) Robot delivers and hands over the correct medicine, completing the task"
+    ],
+    "title": "The Dilemma of Decision-Making in the Real World: When Robots ...",
+    "url": "https://arxiv.org/html/2412.01744v1"
+  },
+  {
+    "description": "The fusion of large language models and robotic systems has introduced a transformative paradigm in human\u2013robot interaction, offering unparalleled cap\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "This review paper offers a comprehensive analysis of this nascent but rapidly evolving domain, spotlighting the recent advances of Large Language Models (LLMs) in enhancing their structures and performances, particularly in terms of multimodal input handling, high-level reasoning, and plan generation. Moreover, it probes the current methodologies that integrate LLMs into robotic systems for complex task completion, from traditional probabilistic models to the utilization of value functions and metrics for optimal decision-making."
+    ],
+    "title": "Large language models for human\u2013robot interaction: A review - ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2667379723000451"
+  },
+  {
+    "description": "There has been rapid growth in the purchase of surgical robots in both North America and Europe in recent years. Whilst this technology promises many benefits for patients, the introduction of such a complex interactive system into healthcare ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Decision making is an important component of surgical expertise9, yet there is a paucity of research on decision making in the operating room (OR)10, 11. Theories of decision making highlight the importance of previous experience with particular situations, to enable the development of patterns or mental models which draw attention to relevant cues, provide expectations, determine plausible goals, and suggest typical responses to the situation12.",
+      "38.Berguer R, Smith W. An Ergonomic Comparison of Robotic and Laparoscopic Technique: The Influence of Surgeon Experience and Task Complexity. Journal of Surgical Research. 2006;134(1):87\u201392. doi: 10.1016/j.jss.2005.10.003.",
+      "One model of intra-operative decision making suggests a continuous cycle where, with the preoperative plan in mind, the surgeon assesses the situation, reconciles new information with existing information, and subsequently implements a revised course of action21.",
+      "Interviews were conducted using the teacher-learner cycle, where interviewees are presented with ideas from the literature and asked to reflect on the extent to which those ideas fit with their experience16. We first review relevant literature on decision making before describing the methods of our study and presenting the results."
+    ],
+    "title": "Impact of Robotic Surgery on Decision Making: Perspectives of ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4765621/"
+  },
+  {
+    "description": "Imitation learning from large multi-task demonstration datasets has emerged as a promising path for building generally-capable robots. As a result, 1000s of hours have been spent on building such large-scale datasets around the globe. Despite the continuous growth of such efforts, we still ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Imitation learning from large multi-task demonstration datasets has emerged as a promising path for building generally-capable robots. As a result, 1000s of hours have been spent on building such large-scale datasets around the globe. Despite the continuous growth of such efforts, we still lack a systematic understanding of what data should be collected to improve the utility of a robotics dataset and facilitate downstream policy learning.",
+      "We focus on two practical settings: (1) what types of diversity should be emphasized when future researchers collect large-scale datasets for robotics, and (2) how should current practitioners retrieve relevant demonstrations from existing datasets to maximize downstream policy performance on tasks of interest.",
+      "Primary Area: applications to robotics, autonomy, planning"
+    ],
+    "title": "What Matters in Learning from Large-Scale Datasets for Robot ...",
+    "url": "https://openreview.net/forum?id=LqhorpRLIm"
+  },
+  {
+    "description": "In the current technological landscape, Multi-Robot Systems (MRS) have become crucial for complex tasks, with applications in industrial automation, s\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "In the current technological landscape, Multi-Robot Systems (MRS) have become crucial for complex tasks, with applications in industrial automation, search and rescue, and intelligent transportation. However, existing techniques face challenges in path planning and task allocation, particularly regarding adaptability, real-time decision-making, and efficiency.",
+      "Through rigorous experiments in simulated environments, we validated our model\u2019s effectiveness, demonstrating significant improvements in path planning precision, task allocation efficiency, and inter-robot collaboration performance. These results highlight our model\u2019s practicality and offer new insights for future research and applications in multi-robot systems.",
+      "Overall, our integrated model addresses key issues in multi-robot collaboration, contributing an innovative solution to the field\u2019s development. This research provides a novel approach for path planning and task allocation in multi-robot systems, laying a solid foundation for deploying intelligent robotic systems in complex and dynamic environments."
+    ],
+    "title": "Deep reinforcement learning path planning and task allocation for ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1110016824010007"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [],
+    "title": "Decision-Making Model for Robots that Consider Group ...",
+    "url": "https://dl.acm.org/doi/10.1007/978-3-031-05409-9_35"
+  }
+]

@@ -1,0 +1,948 @@
+[
+  {
+    "description": "CNNs are primarily used to solve difficult image-driven pattern recognition tasks and with their precise yet simple architecture, offers a simplified method of getting started with ANNs. This document provides a brief introduction to CNNs, discussing recently published papers and newly formed ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "CNNs are primarily used to solve difficult image-driven pattern recognition tasks and with their precise yet simple architecture, offers a simplified method of getting started with ANNs. This document provides a brief introduction to CNNs, discussing recently published papers and newly formed techniques in developing these brilliantly fantastic image recognition models.",
+      "The field of machine learning has taken a dramatic twist in recent times, with the rise of the Artificial Neural Network (ANN). These biologically inspired computational models are able to far exceed the performance of previous forms of artificial intelligence in common machine learning tasks.",
+      "Abstract page for arXiv paper 1511.08458: An Introduction to Convolutional Neural Networks",
+      "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[1511.08458] An Introduction to Convolutional Neural Networks",
+    "url": "https://arxiv.org/abs/1511.08458"
+  },
+  {
+    "description": "In particular, this paper outlines the importance of DL, presents the types of DL techniques and networks. It then presents convolutional neural networks (CNNs) which the most utilized DL network type and describes the development of CNNs architectures together with their main features, e.g., ...",
+    "favicon_url": "https://you.com/favicon?domain=journalofbigdata.springeropen.com&size=128",
+    "snippets": [
+      "In particular, this paper outlines the importance of DL, presents the types of DL techniques and networks. It then presents convolutional neural networks (CNNs) which the most utilized DL network type and describes the development of CNNs architectures together with their main features, e.g., starting with the AlexNet network and closing with the High-Resolution network (HR.Net).",
+      "In this paper, an overview of DL is presented that adopts various perspectives such as the main concepts, architectures, challenges, applications, computational tools and evolution matrix. Convolutional neural network (CNN) is one of the most popular and used of DL networks [19, 20]. Because of CNN, DL is very popular nowadays.",
+      "Therefore, we have dug in deep with CNN by presenting the main components of it. Furthermore, we have elaborated in detail the most common CNN architectures, starting with the AlexNet network and ending with the High-Resolution network (HR.Net). Several published DL review papers have been presented in the last few years.",
+      "This is the first review that almost provides a deep survey of the most important aspects of deep learning. This review helps researchers and students to have a good understanding from one paper. We explain CNN in deep which the most popular deep learning algorithm by describing the concepts, theory, and state-of-the-art architectures."
+    ],
+    "title": "Review of deep learning: concepts, CNN architectures, challenges, ...",
+    "url": "https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00444-8"
+  },
+  {
+    "description": "The rectifier has become a very popular activation function for CNNs and deep neural networks in general. The term \"convolution\" first appears in neural networks in a paper by Toshiteru Homma, Les Atlas, and Robert Marks II at the first Conference on Neural Information Processing Systems in 1987.",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Although CNNs were invented in the 1980s, their breakthrough in the 2000s required fast implementations on graphics processing units (GPUs). In 2004, it was shown by K. S. Oh and K. Jung that standard neural networks can be greatly accelerated on GPUs. Their implementation was 20 times faster than an equivalent implementation on CPU. In 2005, another paper also emphasised the value of GPGPU for machine learning.",
+      "CNNs are often used in image recognition systems. In 2012, an error rate of 0.23% on the MNIST database was reported. Another paper on using CNN for image classification reported that the learning process was \"surprisingly fast\"; in the same paper, the best published results as of 2011 were achieved in the MNIST database and the NORB database.",
+      "Subsequently, a similar CNN called AlexNet won the ImageNet Large Scale Visual Recognition Challenge 2012. When applied to facial recognition, CNNs achieved a large decrease in error rate. Another paper reported a 97.6% recognition rate on \"5,600 still images of more than 10 subjects\".",
+      "Ultimately, the program (Blondie24) was tested on 165 games against players and ranked in the highest 0.4%. It also earned a win against the program Chinook at its \"expert\" level of play. CNNs have been used in computer Go. In December 2014, Clark and Storkey published a paper showing that a CNN trained by supervised learning from a database of human professional games could outperform GNU Go and win some games against Monte Carlo tree search Fuego 1.1 in a fraction of the time it took Fuego to play.",
+      "A convolutional neural network (CNN) is a type of feedforward neural network that learns features via filter (or kernel) optimization. This type of deep learning network has been applied to process and make predictions from many different types of data including text, images and audio."
+    ],
+    "title": "Convolutional neural network - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Convolutional_neural_network"
+  },
+  {
+    "description": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com.",
+    "favicon_url": "https://you.com/favicon?domain=www.cnn.com&size=128",
+    "snippets": [
+      "The hourslong series of votes started around 9:35 a.m.",
+      "For Subscribers Zohran Mamdani wants to build government supermarkets. America already has them",
+      "Bikinis had their moment.",
+      "Amazon has thousands of early July 4th deals. I found the 21 best worth shopping now"
+    ],
+    "title": "Breaking News, Latest News and Videos | CNN",
+    "url": "https://www.cnn.com/"
+  },
+  {
+    "description": "Abstract Convolutional neural network (CNN), a class of artificial neural networks that has become dominant in various computer vision tasks, is attracting interest across a variety of domains, including radiology. CNN is designed to automatically and adaptively learn spatial hierarchies of ...",
+    "favicon_url": "https://you.com/favicon?domain=insightsimaging.springeropen.com&size=128",
+    "snippets": [
+      "Abstract Convolutional neural network (CNN), a class of artificial neural networks that has become dominant in various computer vision tasks, is attracting interest across a variety of domains, including radiology. CNN is designed to automatically and adaptively learn spatial hierarchies of features through backpropagation by using multiple building blocks, such as convolution layers, pooling layers, and fully connected layers.",
+      "CNN is designed to automatically and adaptively learn spatial hierarchies of features through backpropagation by using multiple building blocks, such as convolution layers, pooling layers, and fully connected layers. This review article offers a perspective on the basic concepts of CNN and its application to various radiological tasks, and discusses its challenges and future directions in the field of radiology.",
+      "Being familiar with the concepts and advantages, as well as limitations, of CNN is essential to leverage its potential in diagnostic radiology, with the goal of augmenting the performance of radiologists and improving patient care.",
+      "A tremendous interest in deep learning has emerged in recent years [1]. The most established algorithm among various deep learning models is convolutional neural network (CNN), a class of artificial neural networks that has been a dominant method in computer vision tasks since the astonishing results were shared on the object recognition competition known as the ImageNet Large Scale Visual Recognition Competition (ILSVRC) in 2012 [2, 3]. Medical research is no exception, as CNN has achieved expert-level performances in various fields."
+    ],
+    "title": "Convolutional neural networks: an overview and application in ...",
+    "url": "https://insightsimaging.springeropen.com/articles/10.1007/s13244-018-0639-9"
+  },
+  {
+    "description": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com.",
+    "favicon_url": "https://you.com/favicon?domain=edition.cnn.com&size=128",
+    "snippets": [
+      "President Donald Trump has the chance to accelerate his political momentum and tighten his power grip on the country by driving his most significant piece of second-term legislation through Congress and taking a July Fourth victory lap. ... CNN\u2019s chief data analyst Harry Enten breaks down new polls on how Americans view President Donald Trump\u2019s \u201cbig beautiful bill.\u201d",
+      "Inflation has mostly held steady, while the unemployment rate remains near historic lows. Stocks, meanwhile, hit fresh record highs last week. ... Live Updates Authorities identify suspect who intentionally set brush fire before killing 2 responding firefighters in Idaho \u00b7 Gunman believed to have started fire so he could target responding firefighters, officials say \u00b7 Video CNN asks ex-FBI official if he\u2019s ever seen anything like Idaho shooting 1:29",
+      "London has leaned into Jack the Ripper tourism.",
+      "Trump Media\u2019s stock has plunged by nearly half since the election."
+    ],
+    "title": "Breaking News, Latest News and Videos | CNN",
+    "url": "https://edition.cnn.com/"
+  },
+  {
+    "description": "Stack Exchange network consists ... build their careers. Visit Stack Exchange ... Connect and share knowledge within a single location that is structured and easy to search. Learn more about Teams ... I am trying to find a source for which academic paper introduced CNNs in deep ...",
+    "favicon_url": "https://you.com/favicon?domain=stats.stackexchange.com&size=128",
+    "snippets": [
+      "Stack Exchange network consists of 183 Q&A communities including Stack Overflow, the largest, most trusted online community for developers to learn, share their knowledge, and build their careers. Visit Stack Exchange ... Connect and share knowledge within a single location that is structured and easy to search. Learn more about Teams ... I am trying to find a source for which academic paper introduced CNNs in deep learning.",
+      "That said, I am no expert and my knowledge is essentially the recent Nature paper cited below, but from there it seems LeCun introduced them ca. 1990, with inspiration from Fukushima's Neocognitron 1982. CNNs were introduced prior to the terminology \"ConvNet\" or \"Deep Learning\", so what is the \"first\" paper?",
+      "However one of the authors, Yann LeCun, seems to be widely acknowledged as essentially the \"father of convolutional neural networks\" (a.k.a. ConvNets, CNNs). So the Nature review is a reasonable source for this topic, at the very least. Given this, the reference chosen as the \"origin of deep learning in ConvNets\" there is essentially this 1990 NIPS paper:",
+      "The terms I have bolded lead me to conclude that this paper is a reasonable candidate for the \"academic paper that introduced CNNs in deep learning\" (i.e."
+    ],
+    "title": "references - What academic paper introduces CNNs in deep learning?",
+    "url": "https://stats.stackexchange.com/questions/242550/what-academic-paper-introduces-cnns-in-deep-learning"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=cs.nju.edu.cn&size=128",
+    "snippets": [],
+    "title": "Introduction to Convolutional Neural Networks",
+    "url": "https://cs.nju.edu.cn/wujx/paper/CNN.pdf"
+  },
+  {
+    "description": "In this paper we will explain and define all the elements and important issues related to CNN, and how these elements work. In addition, we will also state the parameters that effect CNN efficiency. This paper assumes that the readers have adequate knowledge about both machine learning and ...",
+    "favicon_url": "https://you.com/favicon?domain=ieeexplore.ieee.org&size=128",
+    "snippets": [
+      "The term Deep Learning or Deep Neural Network refers to Artificial Neural Networks (ANN) with multi layers. Over the last few decades, it has been considered to be one of the most powerful tools, and has become very popular in the literature as it is able to handle a huge amount of data.",
+      "A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity. \u00a9 Copyright 2025 IEEE - All rights reserved.",
+      "Use of this web site signifies your agreement to the terms and conditions."
+    ],
+    "title": "Understanding of a convolutional neural network | IEEE Conference ...",
+    "url": "https://ieeexplore.ieee.org/document/8308186/"
+  },
+  {
+    "description": "Here, the convolutional layer, the pooling layer, and the activation layer have their own parameters which will influence the flow of input data throughout the CNN until it produces an ultimate output in the connected layer. As such, this paper will delve into the individual characteristics ...",
+    "favicon_url": "https://you.com/favicon?domain=www.jsr.org&size=128",
+    "snippets": [
+      "Here, the convolutional layer, the pooling layer, and the activation layer have their own parameters which will influence the flow of input data throughout the CNN until it produces an ultimate output in the connected layer. As such, this paper will delve into the individual characteristics of each layer, and introduce its relationship with not only its immediate surrounding layers but with the entirety of the CNN.",
+      "The convolutional neural network (CNN) is a multilayer network architecture that is capable of training itself using an advanced algorithm to produce increasingly accurate results. The CNN is especially effective in spatial image recognition and is used in a multitude of fields, such as image recognition in the medical industry, and image segmentation in the security field.",
+      "Review of Deep Learning: Concepts, CNN Architectures, challenges, applications, Future Directions. Journal of Big Data, 8(1). https://doi.org/10.1186/s40537-021-00444-8 \u00b7 Callaghan, C. (2022). The Fifth Industrial Revolution: An Unfolding Knowledge Productivity Revolution.",
+      "The ability of the CNN to show impressive results is seen in its multilayer composition."
+    ],
+    "title": "The CNN: The Architecture Behind Artificial Intelligence Development ...",
+    "url": "https://www.jsr.org/hs/index.php/path/article/view/5579"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.neurips.cc&size=128",
+    "snippets": [],
+    "title": "ImageNet Classification with Deep Convolutional Neural ...",
+    "url": "https://proceedings.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
+  },
+  {
+    "description": "View a PDF of the paper titled A Survey of Convolutional Neural Networks: Analysis, Applications, and Prospects, by Zewen Li and 3 other authors View PDF \u00b7 Abstract:Convolutional Neural Network (CNN) is one of the most significant networks in the deep learning field.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Finally, some open issues and promising directions for CNN are discussed to serve as guidelines for future work. From: Zewen Li [view email] [v1] Wed, 1 Apr 2020 14:04:10 UTC (3,787 KB) ... View a PDF of the paper titled A Survey of Convolutional Neural Networks: Analysis, Applications, and Prospects, by Zewen Li and 3 other authors",
+      "Convolutional Neural Network (CNN) is one of the most significant networks in the deep learning field. Since CNN made impressive achievements in many areas, including but not limited to computer vision and natural language processing, it attracted much attention both of industry and academia in the past few years.",
+      "Abstract page for arXiv paper 2004.02806: A Survey of Convolutional Neural Networks: Analysis, Applications, and Prospects",
+      "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[2004.02806] A Survey of Convolutional Neural Networks: Analysis, ...",
+    "url": "https://arxiv.org/abs/2004.02806"
+  },
+  {
+    "description": "Deep learning has become an area of interest to the researchers in the past few years. Convolutional Neural Network (CNN) is a deep learning approach \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Deep learning has become an area of interest to the researchers in the past few years. Convolutional Neural Network (CNN) is a deep learning approach that is widely used for solving complex problems. It overcomes the limitations of traditional machine learning approaches.",
+      "The motivation of this study is to provide the knowledge and understanding about various aspects of CNN. This study provides the conceptual understanding of CNN along with its three most common architectures, and learning algorithms. This study will help researchers to have a broad comprehension of CNN and motivate them to venture in this field."
+    ],
+    "title": "Conceptual Understanding of Convolutional Neural Network- A Deep ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1877050918308019"
+  },
+  {
+    "description": "Another major advantage is that a real-time and low-cost hardware implementation is feasible due to the simple and compact configuration of 1D CNNs that perform only 1D convolutions (scalar multiplications and additions). This paper presents a comprehensive review of the general architecture ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Another major advantage is that a real-time and low-cost hardware implementation is feasible due to the simple and compact configuration of 1D CNNs that perform only 1D convolutions (scalar multiplications and additions). This paper presents a comprehensive review of the general architecture and principals of 1D CNNs along with their major engineering applications, especially focused on the recent progress in this field.",
+      "The benchmark datasets and the principal 1D CNN software used in those applications are also publicly shared in a dedicated website. While there has not been a paper on the review of 1D CNNs and its applications in the literature, this paper fulfills this gap.",
+      "This paper presents a comprehensive review of the general architecture of 1D CNNs.",
+      "During the last decade, Convolutional Neural Networks (CNNs) have become the de facto standard for various Computer Vision and Machine Learning operat\u2026"
+    ],
+    "title": "1D convolutional neural networks and applications: A survey - ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0888327020307846"
+  },
+  {
+    "description": "Due to the rapid progress in deep learning technology, the structure of CNN is becoming more and more complex and diverse. Consequently, it gradually replaces the traditional machine learning methods. This paper presents an elementary understanding of CNN components and their functions, including ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Due to the rapid progress in deep learning technology, the structure of CNN is becoming more and more complex and diverse. Consequently, it gradually replaces the traditional machine learning methods. This paper presents an elementary understanding of CNN components and their functions, including input layers, convolution layers, pooling layers, activation functions, batch normalization, dropout, fully connected layers, and output layers.",
+      "On this basis, this paper gives a comprehensive overview of the past and current research status of the applications of CNN models in computer vision fields, e.g., image classification, object detection, and video prediction.",
+      "As computer vision tasks become increasingly complex, there is a pressing need for CNN models and algorithms that offer higher performance and efficiency. Moreover, current research focuses on addressing key issues such as knowledge sharing across different tasks, domain adaptation, and interpretability. Given these things into account, this paper aims to comprehensively summarize and analyze the applications of CNN in computer vision, with a particular emphasis on the latest advancements in tasks including image classification, object detection, and video prediction.",
+      "The contributions of this survey paper are summarized below: A holistic literature review of CNN in computer vision, including image classification, object detection, and video prediction, is presented in this paper."
+    ],
+    "title": "A review of convolutional neural networks in computer vision | ...",
+    "url": "https://link.springer.com/article/10.1007/s10462-024-10721-6"
+  },
+  {
+    "description": "Convolutional Neural Networks are used to extract features from images (and videos), employing convolutions as their primary operator. Below you can find a continuously updating list of convolutional neural networks.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Convolutional Neural Networks are used to extract features from images (and videos), employing convolutions as their primary operator. Below you can find a continuously updating list of convolutional neural networks. Contact us on: hello@paperswithcode.com ."
+    ],
+    "title": "Papers with Code - An Overview of Convolutional Neural Networks",
+    "url": "https://paperswithcode.com/methods/category/convolutional-neural-networks"
+  },
+  {
+    "description": "Neocognitron was the first architecture of its kind, perhaps the earliest precursor of CNNs. The concepts of feature extraction, pooling layers, and using convolution in a neural network were introduced and finally recognition or classification at the end was proposed in the Neocognitron (paper).",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "The name convolutional neural networks actually originated with the design of the LeNet by Yann LeCun and team (paper). It was largely developed between 1989 and 1998 for the handwritten digit recognition task. Fig. 2: The architecture of LeNet-5 [7] The overall architecture was [CONV-POOL-CONV-POOL-FC-FC]. It used 5x5 convolution filters with a strike of 1. The pooling (subsampling) layers were 2x2 with a stride of 2. It has about 60 K parameters. The credit for newer architectures of CNNs goes to ImageNet (a dataset) classification challenge named \u2018ImageNet large scale visual recognition challenge (ILSVRC)\u2019. It was started in 2010 which led to a significant effort across researchers to benchmark their machine learning and computer vision models, in particular for image classification, on a common dataset.",
+      "Finally in 2012, Alex Krizhevsky and Geoffrey Hinton came up with a CNN architecture popular to this day as AlexNet, which reduced the error from 25.8% to 16.4% which was a significant improvement at that time. ... AlexNet (paper) was the first winner of the ImageNet challenge and was based on a CNN, and since 2012, every year\u2019s challenge has been won by a CNN; significantly outperforming other deep and shallow ( traditional) machine learning methods.",
+      "Moving on to 2014, one of the major contributions 2014 witnessed was introduction of a new architecture known as the VGGNet (paper). The VGGNet, stands for an (arcade) architecture, invented by Visual Geometry Group (at Oxford University). It was argued that by making CNN deeper, one can solve problems better and get a lower error rate on the ImageNet classification challenge.",
+      "In the world of deep learning, Convolutional Neural Network (CNN) is a class of artificial neural network, most commonly used for image analysis. Since inception, CNN architectures have gone through\u2026"
+    ],
+    "title": "Convolutional Neural Networks: A Brief History of their Evolution ...",
+    "url": "https://medium.com/appyhigh-technology-blog/convolutional-neural-networks-a-brief-history-of-their-evolution-ee3405568597"
+  },
+  {
+    "description": "The first work on modern convolutional neural networks (CNNs) occurred in the 1990s, inspired by the neocognitron. Yann LeCun et al., in their paper \u201cGradient-Based Learning Applied to Document Recognition\u201d (now cited 17,588 times) demonstrated that a CNN model which aggregates simpler ...",
+    "favicon_url": "https://you.com/favicon?domain=glassboxmedicine.com&size=128",
+    "snippets": [
+      "The first work on modern convolutional neural networks (CNNs) occurred in the 1990s, inspired by the neocognitron. Yann LeCun et al., in their paper \u201cGradient-Based Learning Applied to Document Recognition\u201d (now cited 17,588 times) demonstrated that a CNN model which aggregates simpler features into progressively more complicated features can be successfully used for handwritten character recognition.",
+      "Around 2012 CNNs enjoyed a huge surge in popularity (which continues today) after a CNN called AlexNet achieved state-of-the-art performance labeling pictures in the ImageNet challenge. Alex Krizhevsky et al. published the paper \u201cImageNet Classification with Deep Convolutional Neural Networks\u201d describing the winning AlexNet model; this paper has since been cited 38,007 times.",
+      "Convolutional neural networks, or CNNs for short, form the backbone of many modern computer vision systems. This post will describe the origins of CNNs, starting from biological experiments of the 1950s. Simple and Complex Cells In 1959, David Hubel and Torsten Wiesel described \"simple cells\" and \"complex cells\" in the human visual cortex.",
+      "Convolutional neural networks, or CNNs for short, form the backbone of many modern computer vision systems. This post will describe the origins of CNNs, starting from biological experiments of the \u2026"
+    ],
+    "title": "The History of Convolutional Neural Networks \u2013 Glass Box",
+    "url": "https://glassboxmedicine.com/2019/04/13/a-short-history-of-convolutional-neural-networks/"
+  },
+  {
+    "description": "Deep Learning algorithms are designed in such a way that they mimic the function of the human cerebral cortex. These algorithms are representations of deep neural networks i.e. neural networks with many hidden layers. Convolutional neural networks are deep learning algorithms that can train ...",
+    "favicon_url": "https://you.com/favicon?domain=ieeexplore.ieee.org&size=128",
+    "snippets": [
+      "Deep Learning algorithms are designed in such a way that they mimic the function of the human cerebral cortex. These algorithms are representations of deep neural networks i.e. neural networks with many hidden layers. Convolutional neural networks are deep learning algorithms that can train large datasets with millions of parameters, in form of 2D images as input and convolve it with filters to produce the desired outputs.",
+      "A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity. \u00a9 Copyright 2025 IEEE - All rights reserved.",
+      "Use of this web site signifies your agreement to the terms and conditions."
+    ],
+    "title": "Convolutional Neural Network (CNN) for Image Detection and ...",
+    "url": "https://ieeexplore.ieee.org/document/8703316"
+  },
+  {
+    "description": "Summarizing and explaining the most impactful CNN papers over the last 5 years",
+    "favicon_url": "https://you.com/favicon?domain=adeshpande3.github.io&size=128",
+    "snippets": [
+      "The next best entry achieved an error of 26.2%, which was an astounding improvement that pretty much shocked the computer vision community. Safe to say, CNNs became household names in the competition from then on out.  In the paper, the group discussed the architecture of the network (which was called AlexNet).",
+      "The neural network developed by Krizhevsky, Sutskever, and Hinton in 2012 was the coming out party for CNNs in the computer vision community. This was the first time a model performed so well on a historically difficult ImageNet dataset. Utilizing techniques that are still used today, such as data augmentation and dropout, this paper really illustrated the benefits of CNNs and backed them up with record breaking performance in the competition.",
+      "With AlexNet stealing the show in 2012, there was a large increase in the number of CNN models submitted to ILSVRC 2013. The winner of the competition that year was a network built by Matthew Zeiler and Rob Fergus from NYU. Named ZF Net, this model achieved an 11.2% error rate. This architecture was more of a fine tuning to the previous AlexNet structure, but still developed some very keys ideas about improving performance. Another reason this was such a great paper is that the authors spent a good amount of time explaining a lot of the intuition behind ConvNets and showing how to visualize the filters and weights correctly.",
+      "In this paper titled \u201cVisualizing and Understanding Convolutional Neural Networks\u201d, Zeiler and Fergus begin by discussing the idea that this renewed interest in CNNs is due to the accessibility of large training sets and increased computational power with the usage of GPUs."
+    ],
+    "title": "The 9 Deep Learning Papers You Need To Know About &#40&#85nder...",
+    "url": "https://adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html"
+  },
+  {
+    "description": "Mimicking the biological technique, where the neurons only respond to stimuli in the restricted region of the visual field referred to as the receptive field, each neuron in the CNN processes data only in its receptive field. In this review paper, the architecture and application of CNN are ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Mimicking the biological technique, where the neurons only respond to stimuli in the restricted region of the visual field referred to as the receptive field, each neuron in the CNN processes data only in its receptive field. In this review paper, the architecture and application of CNN are presented.",
+      "In this paper, a framework for the development of a hybrid data encryption system is presented. Some of the known techniques was analysed and the various steps for the development of the hybrid algorithm presented. Finally, this work developed an algorithm for an enhanced crypto system with the combination of IDEA (International Data Encryption Algorithm and Artificial Feed Forward Neural Network (AFFNN) Algorithms. ... ... CNN is a special neural network structure that is inspired by the hierarchical structure of biological vision systems.",
+      "As a pivotal model in the realm of deep learning, convolution neural network (CNN) has achieved remarkable feats in various domains such as image recognition, speech recognition, natural language processing, and more. The purpose of this paper is to explore the application of CNN algorithm in different fields, including price prediction, traffic prediction and sentiment text analysis, and summarize its application status, and look forward to the future development trend.",
+      "The evaluation metrics reveal that the performance of CNNs achieves accuracy levels ranging from 95.75% to 99.53% for the UCI Repository datasets. ... IMITASD: Imitation Assessment Model for Children with Autism Based on Human Pose Estimation ... Autism is a challenging brain disorder affecting children at global and national scales. Applied behavior analysis is commonly conducted as an efficient medical therapy for children. This paper focused on one paradigm of applied behavior analysis, imitation, where children mimic certain lessons to enhance children\u2019s social behavior and play skills."
+    ],
+    "title": "(PDF) Convolutional Neural Network (CNN): The architecture and ...",
+    "url": "https://www.researchgate.net/publication/373715986_Convolutional_Neural_Network_CNN_The_architecture_and_applications"
+  },
+  {
+    "description": "Advancements in CPU and GPU technology, ... vision. From facial recognition to cancer detection, CNN-based frameworks have the potential to benefit human society in countless ways. In this article, we introduce 5 papers on CNNs that represent both novel approaches and baselines ...",
+    "favicon_url": "https://you.com/favicon?domain=www.kdnuggets.com&size=128",
+    "snippets": [
+      "Advancements in CPU and GPU technology, easier access to large data repositories, and the convolutional neural network have led to great leaps in the field of computer vision. From facial recognition to cancer detection, CNN-based frameworks have the potential to benefit human society in countless ways. In this article, we introduce 5 papers on CNNs that represent both novel approaches and baselines in the field.",
+      "In this paper, the Facebook AI Research team presents a simple, yet flexible framework for object instance segmentation. The Mask R-CNN framework for instance segmentation",
+      "With the ability to generalize well to other tasks, the team hopes that Mask R-CNN can serve as a solid baseline for future research in instance-level recognition. Published / Last Updated \u2013 January 24th, 2018 Authors and Contributors \u2013 Kaiming He, Georgia Gkioxari, Piotr Doll\u00e1r, and Ross Girshick (Facebook AI Research)  We hope that these papers on CNNs helped you learn more about some of the amazing work being done with convolutional neural networks.",
+      "1. CNNpred: CNN-based stock market prediction using a diverse set of variables \u2013 In this paper, researchers from the University of Tehran introduce their CNN-based framework, CNNpred, for feature extraction and predictive analysis in stock market data. Their framework has been implemented to predict the next day\u2019s direction of movement for various stock market indices."
+    ],
+    "title": "5 Papers on CNNs Every Data Scientist Should Read - KDnuggets",
+    "url": "https://www.kdnuggets.com/2020/04/5-papers-cnns-data-scientist.html"
+  },
+  {
+    "description": "Badges are live and will be dynamically updated with the latest ranking of this paper. ... We report on a series of experiments with convolutional neural networks (CNN) trained on top of pre-trained word vectors for sentence-level classification tasks. We show that a simple CNN with little ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Badges are live and will be dynamically updated with the latest ranking of this paper. ... We report on a series of experiments with convolutional neural networks (CNN) trained on top of pre-trained word vectors for sentence-level classification tasks. We show that a simple CNN with little hyperparameter tuning and static vectors achieves excellent results on multiple benchmarks.",
+      "We additionally propose a simple modification to the architecture to allow for the use of both task-specific and static vectors. The CNN models discussed herein improve upon the state of the art on 4 out of 7 tasks, which include sentiment analysis and question classification.",
+      "#6 best model for Emotion Recognition in Conversation on CPED (Accuracy of Sentiment metric)",
+      "Include the markdown at the top of your GitHub README.md file to showcase the performance of the model."
+    ],
+    "title": "Papers with Code - Convolutional Neural Networks for Sentence ...",
+    "url": "https://paperswithcode.com/paper/convolutional-neural-networks-for-sentence"
+  },
+  {
+    "description": "The front wall acoustic package ... the interior noise. In response to the limitations of traditional experimental and simulation methods in terms of accuracy and efficiency, this paper proposes a convolutional neural network (AFWL-CNN) based on adaptive weighted feature ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "The front wall acoustic package system plays a crucial role in automotive design, and its performance directly affects the quality and comfort of the interior noise. In response to the limitations of traditional experimental and simulation methods in terms of accuracy and efficiency, this paper proposes a convolutional neural network (AFWL-CNN) based on adaptive weighted feature learning.",
+      "suitable for solving complex visual tasks with high computational loads. CNN is also one of the most ... Author Contribution: All authors contributed equally to the main contributor to this paper.",
+      "PDF | The application of deep learning technology has increased rapidly in recent years. Technologies in deep learning increasingly emulate natural... | Find, read and cite all the research you need on ResearchGate",
+      "Computerized Tomography (CT) scan images of the chest helps in detecting COVID 19 infection in a fast way with much reliability. In this paper, chest CT scan images of COVID and Non-COVID categories are considered to train the supervised classifier, Iterative convolution Neural Network."
+    ],
+    "title": "(PDF) Understanding of Convolutional Neural Network (CNN): A Review",
+    "url": "https://www.researchgate.net/publication/367157330_Understanding_of_Convolutional_Neural_Network_CNN_A_Review"
+  },
+  {
+    "description": "There are currently three major ... off-the-shelf pre-trained CNN features, and conducting unsupervised CNN pre-training with supervised fine-tuning. Another effective method is transfer learning, i.e., fine-tuning CNN models pre-trained from natural image dataset to medical image tasks. In this paper, we exploit ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "There are currently three major techniques that successfully employ CNNs to medical image classification: training the CNN from scratch, using off-the-shelf pre-trained CNN features, and conducting unsupervised CNN pre-training with supervised fine-tuning. Another effective method is transfer learning, i.e., fine-tuning CNN models pre-trained from natural image dataset to medical image tasks. In this paper, we exploit three important, but previously understudied factors of employing deep convolutional neural networks to computer-aided detection problems.",
+      "Recently, ImageNet pre-trained CNNs have been used for chest pathology identification and detection in X-ray and CT modalities [10], [9], [12]. They have yielded the best performance results by integrating low-level image features (e.g., GIST [32], bag of visual words (BoVW) and bag-of-frequency [12]). However, the fine-tuning of an ImageNet pre-trained CNN model on medical image datasets has not yet been exploited. In this paper, we exploit three important, but previously under-studied factors of employing deep convolutional neural networks to computer-aided detection problems.",
+      "Throughout the paper, we refer to the models as CifarNet (32\u00d732) or CifarNet (dropping 32\u00d732); AlexNet (256\u00d7256) or AlexNet-H (high resolution); AlexNet (64\u00d764) or AlexNet-L (low resolution); GoogLeNet (256\u00d7256) or GoogLeNet-H and GoogLeNet (64\u00d764) or GoogLeNet-L (dropping 3 since all image inputs are three channels). ... A simplified illustration of the CNN architectures used.",
+      "We also perform experiments using \u201coff-the-shelf\u201d CNN features of AlexNet pre-trained on ImageNet and training only the final classifier layer to complete the new CADe classification tasks. Parameters in the convolutional and fully connected layers are fixed and are used as deep image extractors, as in [10], [9], [12]. We refer to this model as AlexNet-ImNet in the remainder of the paper."
+    ],
+    "title": "Deep Convolutional Neural Networks for Computer-Aided Detection: ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4890616/"
+  },
+  {
+    "description": "I want to try and read a research paper. Recommend me one that is relatively easier to understand",
+    "favicon_url": "https://you.com/favicon?domain=community.deeplearning.ai&size=128",
+    "snippets": [],
+    "title": "Reading Research papers on CNN - Convolutional Neural Networks ...",
+    "url": "https://community.deeplearning.ai/t/reading-research-papers-on-cnn/327124"
+  },
+  {
+    "description": "CNN was invented for computer vision. They have also shown to be useful for semantic parsing, sentence modeling and other natural language processing related tasks. Here in this paper we discuss the basics of CNN models and their scope to provide a reference/baseline to the researchers interested ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "CNN was invented for computer vision. They have also shown to be useful for semantic parsing, sentence modeling and other natural language processing related tasks. Here in this paper we discuss the basics of CNN models and their scope to provide a reference/baseline to the researchers interested in using CNN models in their research.",
+      "CNN comes handy for the \u00b7 complicated tasks like natural language processing, recommendation system, object \u00b7 detection, classification. Its dense network performs the task efficiently. We provided \u00b7 a comprehensive overview of this model structure in this paper which could be used",
+      "CNN has specialized architecture to capture hierarchical features, making them highly suited for tasks involving spatial relationships and pattern recognition within images. CNN has widespread application areas. In this research paper, we undertake a comprehensive and critical study of the extensive body of literature spanning the domains of Machine Learning, Deep Learning, and Convolutional Neural Networks.",
+      "Our analysis explores key developments, trends, challenges, and applications within these interconnected fields, providing a deep understanding of their evolution and impact. This paper outlines the concept of machine learning, deep learning, Convolutional Neural Networks, layers of CNN, its activation functions, application areas and challenges in CNN."
+    ],
+    "title": "(PDF) Convolutional Neural Network (CNN). A Comprehensive Overview",
+    "url": "https://www.researchgate.net/publication/362742399_Convolutional_Neural_Network_CNN_A_comprehensive_overview"
+  },
+  {
+    "description": "A collection of such fields overlap to cover the entire visual area. Keywords: CpnvNet or CNN (Convolutional Neural Network), Relu (Rectified Linear Unit), FC Layer (Full Connection), Val_Loss (Validation Loss), Val_Acc ( Validation Accuracy) ... Ukwatta Hewage, Prasad Nimantha Madusanka, White Paper...",
+    "favicon_url": "https://you.com/favicon?domain=papers.ssrn.com&size=128",
+    "snippets": [
+      "A collection of such fields overlap to cover the entire visual area. Keywords: CpnvNet or CNN (Convolutional Neural Network), Relu (Rectified Linear Unit), FC Layer (Full Connection), Val_Loss (Validation Loss), Val_Acc ( Validation Accuracy) ... Ukwatta Hewage, Prasad Nimantha Madusanka, White Paper: Setting up CNN (Convolutional Neural Network) for Character Recognition (July 14, 2021).",
+      "A Convolutional Neural Network (ConvNet / CNN) is an in-depth Learning algorithm that can take an input image, assign importance (learned weight and bias) to va"
+    ],
+    "title": "White Paper: Setting up CNN (Convolutional Neural Network) for ...",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4401141"
+  },
+  {
+    "description": "I am currently writing a paper on a regression method in which I am using a standard convolutional neural network (conv-relu-pool, ..., fully connected). From what I seeing in most recent papers from the machine learning community, people (righteously, I believe) assume that the reader will ...",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "I am currently writing a paper on a regression method in which I am using a standard convolutional neural network (conv-relu-pool, ..., fully connected). From what I seeing in most recent papers from the machine learning community, people (righteously, I believe) assume that the reader will know what this is and don't even include a general reference to conv nets.",
+      "In my case though, the target audience is not really machine-learning researchers (but more an application-specific community) so I think it would make sense to include a reference to a generic description of conv nets (especially since no one has applied deep learning to the problem that I am trying to solve yet). Do you have any thoughts on which paper(s) I should cite when I mention conv nets ?",
+      "I am a bit overwhelmed by the number of existing papers and the \"I was the first !\"-fights.",
+      "Or a slightly more recent citation to LeCun et al. several of which can be found on page 16. These correspond to papers that do focus on the application of backprop to train such networks."
+    ],
+    "title": "r/MachineLearning on Reddit: [D] Convolutional neural network: ...",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/5c0bvg/d_convolutional_neural_network_which_papers_to/"
+  },
+  {
+    "description": "Answer (1 of 4): If you really want to understand ConvNet end-to-end from scratch, only take papers as case studies. They are beyond the reach of novices Audit in classes like CS231N from Stanford or CSC321 from Univ of Toronto and read notes written by Karpathy. After doing the assignments and ...",
+    "favicon_url": "https://you.com/favicon?domain=www.quora.com&size=128",
+    "snippets": [],
+    "title": "What are the papers for understanding convolutional neural networks ...",
+    "url": "https://www.quora.com/What-are-the-papers-for-understanding-convolutional-neural-networks-from-beginning-to-end"
+  },
+  {
+    "description": "PDF | INTRODUCTION The ability of multilayer back-propagation networks to learn complex, high-dimensional, nonlinear mappings from large collections of... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Research on Commercial Building Thermal Model Based on CNN-LSTM \u00b7 Conference Paper \u00b7 Mar 2025 \u00b7 Yanghui Ding \u00b7 Chuan He \u00b7 Lu Nan \u00b7 Jun Tan \u00b7 View \u00b7 WaveSenseNet: A Self-Supervised Learning Framework for Robust Ground Penetrating Radar Based Localization in Autonomous Systems \u00b7",
+      "Our main contribution lies in the development of a novel, particularly weighted average ensemble model that combines two lightweight pre-trained convolutional neural networks (CNNs), MobileNetV2 and NASNetMobile, an ensemble combination that has not been previously explored in the field of deep learning for image classification tasks.",
+      "Furthermore, when dealing with lengthy texts, causal signals often exhibit sparsity, rendering the extraction of causal features a challenging endeavor. To address the aforementioned issues, this paper introduces an approach that amalgamates causal knowledge distillation and causal semantic extraction, denoted as the Method for Matching Texts with Causal Relationship (MTCR).",
+      "Former experiments have shown the benefit of using specific multi-layer architectures, the so-called time delay neural networks, for phoneme recognition (Waibel, Hanazawa, Hinton, Shikano, & Lang, 1988). Similar experiments on a speaker-independent task were also performed on a small set of minimal pairs (Bottou, 1988). In this paper we focus on a speaker-independent, global word recognition task with time delay networks."
+    ],
+    "title": "(PDF) Convolutional Networks for Images, Speech, and Time-Series",
+    "url": "https://www.researchgate.net/publication/2453996_Convolutional_Networks_for_Images_Speech_and_Time-Series"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=vision.stanford.edu&size=128",
+    "snippets": [],
+    "title": "Gradient-Based Learning Applied to Document Recognition",
+    "url": "http://vision.stanford.edu/cs598_spring07/papers/Lecun98.pdf"
+  },
+  {
+    "description": "This paper presents an empirical analysis of theperformance of popular convolutional neural networks (CNNs) for identifying objects in real time video feeds. The most popular convolution neural networks for object detection and object category classification from images are Alex Nets, GoogLeNet, ...",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "This paper presents an empirical analysis of theperformance of popular convolutional neural networks (CNNs) for identifying objects in real time video feeds. The most popular convolution neural networks for object detection and object category classification from images are Alex Nets, GoogLeNet, and ResNet50.",
+      "This paper presents an empirical analysis of theperformance of popular convolutional neural networks (CNNs) for identifying objects in real time video\u2026",
+      "A variety of image data sets are available to test the performance of different types of CNN\u2019s. The commonly found benchmark datasets for evaluating the performance of a convolutional neural network are anImageNet dataset, and CIFAR10, CIFAR100, and MNIST image data sets.",
+      "Our analysis shows that GoogLeNet and ResNet50 are able to recognize objects with better precision compared to Alex Net. Moreover, theperformance of trained CNN\u2019s vary substantially across different categories of objects and we, therefore, will discuss the possible reasons for this."
+    ],
+    "title": "An Analysis Of Convolutional Neural Networks For Image Classification ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1877050918309335"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.neurips.cc&size=128",
+    "snippets": [],
+    "title": "Faster R-CNN: Towards Real-Time Object Detection with ...",
+    "url": "https://proceedings.neurips.cc/paper/5638-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks.pdf"
+  },
+  {
+    "description": "This week, President Donald Trump reversed course on a Biden administration environmental initiative that had eliminated single-use plastics like straws in federal buildings. The common alternative: paper straws.",
+    "favicon_url": "https://you.com/favicon?domain=www.cnn.com&size=128",
+    "snippets": [
+      "Worried how to pay for college? Here\u2019s how to maximize your chances of getting the aid you need ... Something isn't loading properly. Please check back later. ... Link Copied! ... Paper straws are displayed at the Bar & Restaurant Expo and World Tea Expo in Las Vegas on March 29, 2023.",
+      "Part of Trump\u2019s executive order was aimed at reducing the price of paper straws, which can cost between five to 12 cents per unit. Plastic straws cost under two cents per unit, according to Clean Water Action, a group working to elect environmental candidates.",
+      "But Jackie Nu\u00f1ez, advocacy and engagement manager for Plastic Pollution Coalition, found out through testing several paper straws from various manufacturers that they aren\u2019t as safe to drink from as people might think.",
+      "The executive order directs federal agencies to make sure that \u201cpaper straws are no longer provided\u201d in agency buildings."
+    ],
+    "title": "Trump is getting rid of paper straws. That\u2019s (partly) a good ...",
+    "url": "https://www.cnn.com/2025/02/14/economy/plastic-paper-straws-trump/index.html"
+  },
+  {
+    "description": "Abstract:Within the world of machine learning there exists a wide range of different methods with respective advantages and applications. This paper seeks to present and discuss one such method, namely Convolutional Neural Networks (CNNs). CNNs are deep neural networks that use a special linear ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Within the world of machine learning there exists a wide range of different methods with respective advantages and applications. This paper seeks to present and discuss one such method, namely Convolutional Neural Networks (CNNs). CNNs are deep neural networks that use a special linear operation called convolution.",
+      "This operation represents a key and distinctive element of CNNs, and will therefore be the focus of this method paper. The discussion starts with the theoretical foundations that underlie convolutions and CNNs. Then, the discussion proceeds to discuss some improvements and augmentations that can be made to adapt the method to estimate a wider set of function classes.",
+      "Subsequently, this paper discusses two applications of convolution that have proven to be very effective in practice. First, the YOLO architecture is a state of the art neural network for image object classification, which accurately predicts bounding boxes around objects in images. Second, tumor detection in mammography may be performed using CNNs, accomplishing 7.2% higher specificity than actual doctors with only .3% less sensitivity.",
+      "Abstract page for arXiv paper 2011.12960: Deep Convolutional Neural Networks: A survey of the foundations, selected improvements, and some current applications"
+    ],
+    "title": "[2011.12960] Deep Convolutional Neural Networks: A survey of the ...",
+    "url": "https://arxiv.org/abs/2011.12960"
+  },
+  {
+    "description": "A recent exodus of talent from The Washington Post has prompted more than 400 of its staffers to send an unusual letter to the Post\u2019s owner, Jeff Bezos, expressing alarm over the newspaper\u2019s direction and asking him to intervene.",
+    "favicon_url": "https://you.com/favicon?domain=www.cnn.com&size=128",
+    "snippets": [
+      "The letter, obtained by CNN on Wednesday, said \u201cwe are deeply alarmed by recent leadership decisions that have led readers to question the integrity of this institution, broken with a tradition of transparency, and prompted some of our most distinguished colleagues to leave, with more departures imminent.\u201d",
+      "Jeff Bezos speaks during the New York Times annual DealBook summit on December 04, 2024 in New York City.",
+      "The employees, including some of the Post\u2019s best-known correspondents, are asking Bezos \u2013 who rarely visits the Washington, DC, newsroom \u2013 to come and meet with The Post\u2019s leaders.",
+      "Over the past year, Lewis has made disruptive changes to The Post and been accused of harboring hostility toward the newsroom."
+    ],
+    "title": "Hundreds of Washington Post staffers send letter to Jeff Bezos ...",
+    "url": "https://www.cnn.com/2025/01/15/media/washington-post-jeff-bezos-letter/index.html"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=papers.neurips.cc&size=128",
+    "snippets": [],
+    "title": "ImageNet Classification with Deep Convolutional Neural ...",
+    "url": "http://papers.neurips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
+  },
+  {
+    "description": "Pulitzer Prize-winning cartoonist Ann Telnaes announced Friday she had resigned from The Washington Post after the newspaper refused to publish a satirical cartoon depicting billionaire Post owner Jeff Bezos on bended knee in front of President-elect Donald Trump.",
+    "favicon_url": "https://you.com/favicon?domain=www.cnn.com&size=128",
+    "snippets": [
+      "Talnaes, who had been with The Post since 2008, wrote in a Substack post announcing her resignation that, \u201cI have had editorial feedback and productive conversations\u2014and some differences\u2014about cartoons I have submitted for publication, but in all that time I\u2019ve never had a cartoon killed because of who or what I chose to aim my pen at.",
+      "The cartoon depicted Bezos, Meta founder Mark Zuckerberg and OpenAI chief Sam Altman on their knees, handing over bags of cash to a statue of Trump next to a lipstick-holding Los Angeles Times owner Patrick Soon-Shiong and bowing Mickey Mouse.",
+      "Talnaes said the cartoon \u201ccriticizes the billionaire tech and media chief executives who have been doing their best to curry favor with incoming President-elect Trump,\u201d satirizing \u201cthese men with lucrative government contracts and an interest in eliminating regulations making their way to Mar-a-lago.\u201d",
+      "The 10 richest Americans got $365 billion richer in the past year."
+    ],
+    "title": "Washington Post cartoonist resigns over paper\u2019s refusal to publish ...",
+    "url": "https://www.cnn.com/2025/01/04/media/washington-post-cartoonist-ann-telnaes-resigns-bezos/index.html"
+  },
+  {
+    "description": "CNNs are primarily used to solve difficult image-driven pattern recognition tasks and with their precise yet simple architecture, offers a simplified method of getting started with ANNs. This document provides a brief introduction to CNNs, discussing recently published papers and newly formed ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "CNNs are primarily used to solve difficult image-driven pattern recognition tasks and with their precise yet simple architecture, offers a simplified method of getting started with ANNs. This document provides a brief introduction to CNNs, discussing recently published papers and newly formed techniques in developing these brilliantly fantastic image recognition models.",
+      "PDF | The field of machine learning has taken a dramatic twist in recent times, with the rise of the Artificial Neural Network (ANN). These... | Find, read and cite all the research you need on ResearchGate",
+      "The centre element of the kernel is placed over the input vector, of which is then calculated and replaced with a weighted sum of itself and any nearby pixels. ... A common form of CNN architecture in which convolutional layers are stacked between ReLus continuously before being passed through the pooling layer, before going between one or many fully connected ReLus.",
+      "Fig. 2: An simple CNN architecture, comprised of just \ufb01ve layers \u00b7 The basic functionality of the example CNN above can be broken down into"
+    ],
+    "title": "(PDF) An Introduction to Convolutional Neural Networks",
+    "url": "https://www.researchgate.net/publication/285164623_An_Introduction_to_Convolutional_Neural_Networks"
+  },
+  {
+    "description": "Electronic Proceedings of Neural Information Processing Systems",
+    "favicon_url": "https://you.com/favicon?domain=papers.nips.cc&size=128",
+    "snippets": [
+      "To make training faster, we used non-saturating neurons and a very efficient GPU implementation of convolutional nets. To reduce overfitting in the globally connected layers we employed a new regularization method that proved to be very effective. Papers published at the Neural Information Processing Systems Conference."
+    ],
+    "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+    "url": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
+  },
+  {
+    "description": "This paper provides detailed analysis ... for the researchers in deep learning and its algorithms, implementation techniques and applications used in recent technologies. This paper will also help to improve investigation of deep learning and highlights new research areas and advancements of technology. ... priya, Mohana and Chokkalingam, SP., Deep Convolutional Neural Networks (CNN) for Medical ...",
+    "favicon_url": "https://you.com/favicon?domain=papers.ssrn.com&size=128",
+    "snippets": [
+      "This paper provides detailed analysis of deep learning and its techniques used in various applications and especially to provide an extensive reference for the researchers in deep learning and its algorithms, implementation techniques and applications used in recent technologies. This paper will also help to improve investigation of deep learning and highlights new research areas and advancements of technology. ... priya, Mohana and Chokkalingam, SP., Deep Convolutional Neural Networks (CNN) for Medical Image Analysis (2019).",
+      "Deep learning plays an important role in prediction and analytical process. Deep learning applications are recognizing patters, recognizing speech, NLP (Natural"
+    ],
+    "title": "Deep Convolutional Neural Networks (CNN) for Medical Image Analysis ...",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3894929"
+  },
+  {
+    "description": "On Friday, a consortium of 17 US ... Facebook Papers\u201d \u2014 based on a trove of hundreds of internal company documents which were included in disclosures made to the Securities and Exchange Commission and provided to Congress in redacted form by Facebook whistleblower Frances Haugen\u2019s legal counsel. The consortium, which includes CNN, reviewed ...",
+    "favicon_url": "https://you.com/favicon?domain=www.cnn.com&size=128",
+    "snippets": [
+      "On Friday, a consortium of 17 US news organizations began publishing a series of stories \u2014 collectively called \u201cThe Facebook Papers\u201d \u2014 based on a trove of hundreds of internal company documents which were included in disclosures made to the Securities and Exchange Commission and provided to Congress in redacted form by Facebook whistleblower Frances Haugen\u2019s legal counsel. The consortium, which includes CNN, reviewed the redacted versions received by Congress.",
+      "This article is part of a CNN series published on \u201cThe Facebook Papers,\u201d a trove of over ten thousand pages of leaked internal Facebook documents that give deep insight into the company\u2019s internal culture, its approach to misinformation and hate speech moderation, internal research on its newsfeed algorithm, communication related to Jan.",
+      "\u201cAt the heart of these stories is a premise which is false,\u201d a Facebook spokesperson said in a statement to CNN. \u201cYes, we\u2019re a business and we make profit, but the idea that we do so at the expense of people\u2019s safety or wellbeing misunderstands where our own commercial interests lie.\u201d \u00b7 In a tweet thread last week, the company\u2019s Vice President of Communications, John Pinette, called the Facebook Papers a \u201ccurated selection out of millions of documents at Facebook\u201d which \u201ccan in no way be used to draw fair conclusions about us.\u201d But even that response is telling \u2013\u2014 if Facebook has more documents that would tell a fuller story, why not release them?",
+      "Facebook has confronted whistleblowers, PR firestorms and Congressional inquiries in recent years. But now it faces a combination of all three at once in what could be the most intense and wide-ranging crisis in the company\u2019s 17-year history."
+    ],
+    "title": "The Facebook Papers may be the biggest crisis in the company\u2019s ...",
+    "url": "https://www.cnn.com/2021/10/25/tech/facebook-papers/index.html"
+  },
+  {
+    "description": "In particular, this paper outlines the importance of DL, presents the types of DL techniques and networks. It then presents convolutional neural networks (CNNs) which the most utilized DL network type and describes the development of CNNs architectures together with their main features, e.g., ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "In particular, this paper outlines the importance of DL, presents the types of DL techniques and networks. It then presents convolutional neural networks (CNNs) which the most utilized DL network type and describes the development of CNNs architectures together with their main features, e.g., starting with the AlexNet network and closing with the High-Resolution network (HR.Net).",
+      "The paper ends with the evolution matrix, benchmark datasets, and summary and conclusion. Keywords: Deep learning, Machine learning, Convolution neural network (CNN), Deep neural network architectures, Deep learning applications, Image classification, Transfer learning, Medical image analysis, Supervised learning, FPGA, GPU",
+      "In this paper, an overview of DL is presented that adopts various perspectives such as the main concepts, architectures, challenges, applications, computational tools and evolution matrix. Convolutional neural network (CNN) is one of the most popular and used of DL networks [19, 20]. Because of CNN, DL is very popular nowadays.",
+      "Therefore, we have dug in deep with CNN by presenting the main components of it. Furthermore, we have elaborated in detail the most common CNN architectures, starting with the AlexNet network and ending with the High-Resolution network (HR.Net). Several published DL review papers have been presented in the last few years."
+    ],
+    "title": "Review of deep learning: concepts, CNN architectures, challenges, ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8010506/"
+  },
+  {
+    "description": "If you are interested in CNNs (as your link suggests) you should also look at the Neocognitron paper by Fukushima in 1980.",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Specifically, I'm trying to find papers that reference neuroscience/biology if possible. These papers mainly reference the mechanics of a neural\u2026",
+      "It was the first CNN like model. If you want to get a general overview, take a look at J\u00fcrgen Schmidhubers write up here. The first NN work he mentions is from 1943.",
+      "The first paper should be the Perceptron by Frank Rosenblatt at the Cornell Aeronautical Laboratory in 1957. But it was not until 1980s that Geoffrey Hinton made several breakthrough including the multilayer Perceptron and backpropagation with David Rumelhart and Ronald Williams.",
+      "Everything pertaining to the technological singularity and related topics, e.g. AI, human enhancement, etc. ... Beginners -> /r/mlquestions or /r/learnmachinelearning , AGI -> /r/singularity, career advices -> /r/cscareerquestions, datasets -> r/datasets ... [Discussion] What are some papers you read which helped you build an intuition of how neural networks function?"
+    ],
+    "title": "r/MachineLearning on Reddit: [R] What are the earliest papers to ...",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/arq7oy/r_what_are_the_earliest_papers_to_illustrate/"
+  },
+  {
+    "description": "In this article, we are going to ... in CNN research now as they compete with attention and vision-transformers. _Check out the YouTube video that explains all the concepts in this article visually with animations. Unless otherwise specified, all the images and illustrations used in this article are generated by myself during creating the video version._ The papers we will be ...",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "In this article, we are going to go through the history of CNNs specifically for Image Classification tasks \u2013 starting from those early research years in the 90\u2019s to the golden era of the mid-2010s when many of the most genius Deep Learning architectures ever were conceived, and finally discuss the latest trends in CNN research now as they compete with attention and vision-transformers. _Check out the YouTube video that explains all the concepts in this article visually with animations. Unless otherwise specified, all the images and illustrations used in this article are generated by myself during creating the video version._ The papers we will be discussing today!",
+      "RELU, TANH, and How much difference RELU makes (Image credits: Middle: Artificial Intelligence for Big Data, Right: Alex-Net paper) AlexNet also introduced the concept of Local Response Normalization and strategies for distributed CNN training.",
+      "Inductive biases are great on smaller datasets, but the promise of Transformers is on massive training datasets, a general framework is going to eventually beat out the inductive biases offered by CNNs. ... A great choice to include in this article would be Swin Transformers, but that is a topic for a different day! Since this is a CNN article, let\u2019s focus on one last CNN paper.",
+      "The history of CNNs teaches us so much about Deep Learning, Inductive Bias, and the nature of computation itself. It\u2019ll be interesting to see what wins out in the end \u2013 the inductive biases of ConvNets or the Generality of Transformers. Do check out the companion YouTube video for a visual tour of this article, and the individual papers as listed below."
+    ],
+    "title": "The History of Convolutional Neural Networks for Image Classification ...",
+    "url": "https://towardsdatascience.com/the-history-of-convolutional-neural-networks-for-image-classification-1989-today-5ea8a5c5fe20/"
+  },
+  {
+    "description": "A deep CNN of (Dan Cire\u0219an et al., 2011) at IDSIA was 60 times faster than an equivalent CPU implementation. Between May 15, 2011, and September 10, 2012, their CNN won four image competitions and achieved state of the art for multiple image databases. According to the AlexNet paper, Cire\u0219an's ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "A deep CNN of (Dan Cire\u0219an et al., 2011) at IDSIA was 60 times faster than an equivalent CPU implementation. Between May 15, 2011, and September 10, 2012, their CNN won four image competitions and achieved state of the art for multiple image databases. According to the AlexNet paper, Cire\u0219an's earlier net is \"somewhat similar\".",
+      "AlexNet is highly influential, resulting in much subsequent work in using CNNs for computer vision and using GPUs to accelerate deep learning. As of early 2025, the AlexNet paper has been cited over 172,000 times according to Google Scholar.",
+      "These were trained by first training on the entire ImageNet Fall 2011 release (15 million images in 22K categories), and then finetuning it on the ILSVRC-2012 training set. The final system of 7 AlexNets was used by averaging their predicted probabilities. In 1980, Kunihiko Fukushima proposed an early CNN named neocognitron.",
+      "The LeNet-5 (Yann LeCun et al., 1989) was trained by supervised learning with backpropagation algorithm, with an architecture that is essentially the same as AlexNet on a small scale. Max pooling was used in 1990 for speech processing (essentially a 1-dimensional CNN), and for image processing, was first used in the Cresceptron of 1992.",
+      "Initially met with skepticism, ImageNet later became the foundation of the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) and a key resource in the rise of deep learning. Sutskever and Krizhevsky were both graduate students. Before 2011, Krizhevsky had already written cuda-convnet to train small CNNs on CIFAR-10 with a single GPU."
+    ],
+    "title": "AlexNet - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/AlexNet"
+  },
+  {
+    "description": "The canonical example is AlexNet ... of convolutional neural networks (CNNs) one year before AlexNet in \u201cFlexible, High Performance Convolutional Neural Networks for Image Classification\u201d [2]. Note that according to the paper mentioned above, CNN training on GPUs goes ...",
+    "favicon_url": "https://you.com/favicon?domain=sebastianraschka.com&size=128",
+    "snippets": [
+      "The canonical example is AlexNet (2012) by Sutskever and Hinton [1]. However, despite this common belief, Ciresan et al. from Schmidhuber\u2019s lab published the successful training of convolutional neural networks (CNNs) one year before AlexNet in \u201cFlexible, High Performance Convolutional Neural Networks for Image Classification\u201d [2]. Note that according to the paper mentioned above, CNN training on GPUs goes even back further to the works by Chellapilla et al.",
+      "I'm an LLM Research Engineer with over a decade of experience in artificial intelligence. My work bridges academia and industry, with roles including senior staff at an AI company and a statistics professor. My expertise lies in LLM research and the development of high-performance AI systems, with a deep focus on practical, code-driven implementations."
+    ],
+    "title": "What are the first successful convolutional neural networks trained ...",
+    "url": "https://sebastianraschka.com/faq/docs/first-cnn-gpu.html"
+  },
+  {
+    "description": "Answer: There's two questions to unpack here: why deep learning in general works well structurally and why deep nets can converge despite having non convex loss surfaces with multiple local minima and not global minima. The former (with respect to ConvNets) has two perspectives: The biological a...",
+    "favicon_url": "https://you.com/favicon?domain=www.quora.com&size=128",
+    "snippets": [],
+    "title": "Is there any research paper or articles on why CNN or any deep ...",
+    "url": "https://www.quora.com/Is-there-any-research-paper-or-articles-on-why-CNN-or-any-deep-learning-model-works-so-well"
+  },
+  {
+    "description": "Answer (1 of 2): As far as I know, the first ever \u201cconvolutional network\u201d was the Neocognitron (paper here), by Fukushima (1980). The neocognitron was inspired by the discoveries of Hubel and Wiesel about the visual cortex of mammals. At that time, the back-propagation algorithm was still ...",
+    "favicon_url": "https://you.com/favicon?domain=www.quora.com&size=128",
+    "snippets": [
+      "Answer (1 of 2): As far as I know, the first ever \u201cconvolutional network\u201d was the Neocognitron (paper here), by Fukushima (1980). The neocognitron was inspired by the discoveries of Hubel and Wiesel about the visual cortex of mammals. At that time, the back-propagation algorithm was still not use..."
+    ],
+    "title": "Who invented convolution neural networks? - Quora",
+    "url": "https://www.quora.com/Who-invented-convolution-neural-networks"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.cs.toronto.edu&size=128",
+    "snippets": [],
+    "title": "Toronto",
+    "url": "https://www.cs.toronto.edu/~kriz/imagenet_classification_with_deep_convolutional.pdf"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=yann.lecun.com&size=128",
+    "snippets": [],
+    "title": "Object Recognition with Gradient-Based Learning - Yann LeCun",
+    "url": "https://yann.lecun.com/exdb/publis/pdf/lecun-99.pdf"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=research.google.com&size=128",
+    "snippets": [],
+    "title": "Large-scale Video Classification with Convolutional Neural ...",
+    "url": "https://research.google.com/pubs/archive/42455.pdf"
+  },
+  {
+    "description": "\u202aChief AI Scientist at Facebook & JT Schwarz Professor at the Courant Institute, New York University\u202c - \u202a\u202aCited by 416,864\u202c\u202c - \u202aAI\u202c - \u202amachine learning\u202c - \u202acomputer vision\u202c - \u202arobotics\u202c - \u202aimage compression\u202c",
+    "favicon_url": "https://you.com/favicon?domain=scholar.google.com&size=128",
+    "snippets": [
+      "The system can't perform the operation now.",
+      "This \"Cited by\" count includes citations to the following articles in Scholar.",
+      "The ones marked * may be different from the article in the profile."
+    ],
+    "title": "Yann LeCun",
+    "url": "https://scholar.google.com/citations?user=WLN3QrAAAAAJ&hl=en"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "A Survey of the Recent Architectures of Deep ...",
+    "url": "https://arxiv.org/pdf/1901.06032"
+  },
+  {
+    "description": "One encouraging sign that the pandemic-time panic among consumers has abated: Americans have stopped hoarding toilet paper, kitchen towels and wipes.",
+    "favicon_url": "https://you.com/favicon?domain=www.cnn.com&size=128",
+    "snippets": [
+      "New proposed law would require Apple and Google to verify your age before letting you into their app stores ... Something isn't loading properly. Please check back later. ... Link Copied! ... People are hoarding toilet paper.",
+      "The truth about the supply chain ... People are hoarding toilet paper.",
+      "The declines could be reflected in the sales results of companies like Procter & Gamble (PG), Kimberly-Clark (KMB) and Clorox (CLX), all of which are scheduled to report earnings this month. A convenience store window displaying lots of toilet paper in New York City on March 20, 2021.",
+      "NielsenIQ said that, overall, sales of household and cleaning products remain higher than they were pre-pandemic, but they have come down from the early pandemic months as consumers are buying at a more normal pace instead of hoarding. This has also allowed suppliers to replenish inventory to keep up with demand. Toilet paper was the only category to show a sales decline in the 52-week period ending April 3."
+    ],
+    "title": "Americans are buying less toilet paper and wipes | CNN Business",
+    "url": "https://www.cnn.com/2021/04/13/business/toilet-paper-wipes-sales-drop/index.html"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "A Comprehensive Survey on Deep Learning Approaches",
+    "url": "https://arxiv.org/pdf/1803.01164"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=papers.nips.cc&size=128",
+    "snippets": [],
+    "title": "Faster R-CNN: Towards Real-Time Object Detection with ...",
+    "url": "https://papers.nips.cc/paper/5638-faster-r-cnn-towards-real-time-object-detection-with-region-proposal-networks.pdf"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Advancements in Image Classification using Convolutional ...",
+    "url": "https://arxiv.org/pdf/1905.03288"
+  },
+  {
+    "description": "Abstract Convolutional neural network (CNN), a class of artificial neural networks that has become dominant in various computer vision tasks, is attracting interest across a variety of domains, including radiology. CNN is designed to automatically and adaptively learn spatial hierarchies of ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Abstract Convolutional neural network (CNN), a class of artificial neural networks that has become dominant in various computer vision tasks, is attracting interest across a variety of domains, including radiology. CNN is designed to automatically and adaptively learn spatial hierarchies of features through backpropagation by using multiple building blocks, such as convolution layers, pooling layers, and fully connected layers.",
+      "CNN is designed to automatically and adaptively learn spatial hierarchies of features through backpropagation by using multiple building blocks, such as convolution layers, pooling layers, and fully connected layers. This review article offers a perspective on the basic concepts of CNN and its application to various radiological tasks, and discusses its challenges and future directions in the field of radiology.",
+      "Being familiar with the concepts and advantages, as well as limitations, of CNN is essential to leverage its potential in diagnostic radiology, with the goal of augmenting the performance of radiologists and improving patient care.",
+      "A tremendous interest in deep learning has emerged in recent years [1]. The most established algorithm among various deep learning models is convolutional neural network (CNN), a class of artificial neural networks that has been a dominant method in computer vision tasks since the astonishing results were shared on the object recognition competition known as the ImageNet Large Scale Visual Recognition Competition (ILSVRC) in 2012 [2, 3]. Medical research is no exception, as CNN has achieved expert-level performances in various fields."
+    ],
+    "title": "Convolutional neural networks: an overview and application in ...",
+    "url": "https://link.springer.com/article/10.1007/s13244-018-0639-9"
+  },
+  {
+    "description": "In particular, we\u2019ll cover R-CNN (Regional CNN), the original application of CNNs to this problem, along with its descendants Fast R-CNN, and Faster R-CNN. Finally, we\u2019ll cover Mask R-CNN, a paper released recently by Facebook Research that extends such object detection techniques to provide ...",
+    "favicon_url": "https://you.com/favicon?domain=blog.athelas.com&size=128",
+    "snippets": [
+      "In particular, we\u2019ll cover R-CNN (Regional CNN), the original application of CNNs to this problem, along with its descendants Fast R-CNN, and Faster R-CNN. Finally, we\u2019ll cover Mask R-CNN, a paper released recently by Facebook Research that extends such object detection techniques to provide pixel level segmentation.",
+      "Here are the papers referenced in this post: ... Object detection algorithms such as R-CNN take in an image and identify the locations and classifications of the main objects in the image.",
+      "In image segmentation, our goal is to classify the different objects in the image, and identify their boundaries. Source: Mask R-CNN paper.",
+      "This paper is the first to show that a CNN can lead to dramatically higher object detection performance on PASCAL VOC as compared to systems based on simpler HOG-like features."
+    ],
+    "title": "A Brief History of CNNs in Image Segmentation: From R-CNN to Mask ...",
+    "url": "https://blog.athelas.com/a-brief-history-of-cnns-in-image-segmentation-from-r-cnn-to-mask-r-cnn-34ea83205de4"
+  },
+  {
+    "description": "Additional related reading : CNNs by LeCun, Bengio, Kuo\u2019s Understanding CNNs with a Mathematical Model, Understanding the Effective Receptive Field in Deep CNNs by Luo, Urtasun et al., Efficient BackProp by LeCun et al. This is the famous paper (ZF Net),which unravelled the black box of CNNs ...",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Additional related reading : CNNs by LeCun, Bengio, Kuo\u2019s Understanding CNNs with a Mathematical Model, Understanding the Effective Receptive Field in Deep CNNs by Luo, Urtasun et al., Efficient BackProp by LeCun et al. This is the famous paper (ZF Net),which unravelled the black box of CNNs by visualizing the outputs of intermediate layers of a convolutional network.",
+      "In the first part, we\u2019ll explore papers related to CNNs \u2014 an important network architecture in deep learning.",
+      "Deep Learning has probably been the single-most discussed topic in the academia and industry in recent times. Today, it is no longer exclusive to an elite group of scientists. Its widespread\u2026",
+      "Deep Learning has probably been the single-most discussed topic in the academia and industry in recent times. Today, it is no longer\u2026"
+    ],
+    "title": "3 Deep Learning Papers To Get You Started | by Rupak Kr. Thakur ...",
+    "url": "https://medium.com/@rupak.thakur/23-deep-learning-papers-to-get-you-started-part-1-308f80d7bba2"
+  },
+  {
+    "description": "Dexter replaces Goodloe Sutton, the newspaper\u2019s owner who penned a staggering editorial with the headline \u201cThe Klan Needs to Ride Again\u201d in the paper\u2019s February 14 edition. Sutton still owns the newspaper, Dexter told CNN.",
+    "favicon_url": "https://you.com/favicon?domain=www.cnn.com&size=128",
+    "snippets": [
+      "Dexter, who holds master\u2019s degrees in Human Services from the Spertus Institute of Jewish Studies and in Counseling from Argosy University, comes in at a \u201cpivotal time for the newspaper,\u201d the paper said. She will continue in the paper\u2019s journalistic tradition \u201cas well as moving the paper into a new direction.\u201d \u00b7 CNN\u2019s Paul P.",
+      "An African-American woman is now the publisher and editor of the Alabama newspaper that recently urged the Ku Klux Klan to \u201cnight ride again,\u201d the paper said.",
+      "US Sen. Doug Jones, D-Alabama, had called for Sutton to resign. On Friday, he applauded the change at the paper.",
+      "In October 2017, the paper published an editorial about the controversy over NFL players kneeling during the National Anthem to protest police brutality and racial injustice."
+    ],
+    "title": "Pro-Klan editor replaced by African-American woman | CNN Business",
+    "url": "https://www.cnn.com/2019/02/23/media/alabama-newspaper-klan/index.html"
+  },
+  {
+    "description": "An African-American woman who was ... what she said was continuous and damaging interference by the paper\u2019s owner. Elecia R. Dexter, who took over the troubled Democrat-Reporter of Linden last month, told CNN Saturday that she left the weekly newspaper Monday because she could ...",
+    "favicon_url": "https://you.com/favicon?domain=www.cnn.com&size=128",
+    "snippets": [
+      "An African-American woman who was named publisher and editor of the Alabama newspaper that recently urged the Ku Klux Klan to \u201cnight ride again\u201d has stepped down, citing what she said was continuous and damaging interference by the paper\u2019s owner. Elecia R. Dexter, who took over the troubled Democrat-Reporter of Linden last month, told CNN Saturday that she left the weekly newspaper Monday because she could no longer work with owner and former editor and publisher Goodloe Sutton.",
+      "In April, the paper ran a political cartoon that ridiculed Palestinians. CNN\u2019s Doug Criss and Tina Burnside contributed to this report.",
+      "Dexter, in a separate news release, also accused Sutton of interfering with Thursday\u2019s edition of the paper, saying it did not reflect her \u201cviews or thoughts.\u201d She said she was stepping down and that the paper was being sold.",
+      "Dexter was abruptly promoted last month in a bid to steer the paper in a \u201cnew direction,\u201d the Democrat-Reporter said."
+    ],
+    "title": "Weeks after taking over Alabama newspaper that called for Klan ...",
+    "url": "https://www.cnn.com/2019/03/16/media/alabama-newspaper-klan-editor-resigns/index.html"
+  },
+  {
+    "description": "View a PDF of the paper titled A-CNN: Annularly Convolutional Neural Networks on Point Clouds, by Artem Komarichev and 2 other authors View PDF",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Analyzing the geometric and semantic properties of 3D point clouds through the deep networks is still challenging due to the irregularity and sparsity of samplings of their geometric structures. This paper presents a new method to define and compute convolution directly on 3D point clouds by the proposed annular convolution.",
+      "Abstract page for arXiv paper 1904.08017: A-CNN: Annularly Convolutional Neural Networks on Point Clouds",
+      "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "We apply it to the developed hierarchical neural networks for object classification, part segmentation, and semantic segmentation in large-scale scenes. The extensive experiments and comparisons demonstrate that our approach outperforms the state-of-the-art methods on a variety of standard benchmark datasets (e.g., ModelNet10, ModelNet40, ShapeNet-part, S3DIS, and ScanNet)."
+    ],
+    "title": "[1904.08017] A-CNN: Annularly Convolutional Neural Networks on ...",
+    "url": "https://arxiv.org/abs/1904.08017"
+  },
+  {
+    "description": "In this article, we are going to ... in CNN research now as they compete with attention and vision-transformers. Check out the YouTube video that explains all the concepts in this article visually with animations. Unless otherwise specified, all the images and illustrations used in this article are generated by myself during creating the video version. The papers we will be ...",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "In this article, we are going to go through the history of CNNs specifically for Image Classification tasks \u2014 starting from those early research years in the 90's to the golden era of the mid-2010s when many of the most genius Deep Learning architectures ever were conceived, and finally discuss the latest trends in CNN research now as they compete with attention and vision-transformers. Check out the YouTube video that explains all the concepts in this article visually with animations. Unless otherwise specified, all the images and illustrations used in this article are generated by myself during creating the video version. The papers we will be discussing today!",
+      "RELU, TANH, and How much difference RELU makes (Image credits: Middle: Artificial Intelligence for Big Data, Right: Alex-Net paper) AlexNet also introduced the concept of Local Response Normalization and strategies for distributed CNN training.",
+      "Inductive biases are great on smaller datasets, but the promise of Transformers is on massive training datasets, a general framework is going to eventually beat out the inductive biases offered by CNNs. ... A great choice to include in this article would be Swin Transformers, but that is a topic for a different day! Since this is a CNN article, let\u2019s focus on one last CNN paper.",
+      "The history of CNNs teaches us so much about Deep Learning, Inductive Bias, and the nature of computation itself. It\u2019ll be interesting to see what wins out in the end \u2014 the inductive biases of ConvNets or the Generality of Transformers. Do check out the companion YouTube video for a visual tour of this article, and the individual papers as listed below."
+    ],
+    "title": "The History of Convolutional Neural Networks for Image Classification ...",
+    "url": "https://medium.com/data-science/the-history-of-convolutional-neural-networks-for-image-classification-1989-today-5ea8a5c5fe20"
+  },
+  {
+    "description": "This review\u2019s main objective is to draw attention to the elements of CNN that are most important, making it simple for researchers and students to comprehend CNN completely after reading just one review paper. Additionally, in order to encourage CNN research, we want to let people understand ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "This review\u2019s main objective is to draw attention to the elements of CNN that are most important, making it simple for researchers and students to comprehend CNN completely after reading just one review paper. Additionally, in order to encourage CNN research, we want to let people understand more about current developments in the industry.",
+      "The general contribution of this study is summarized as follows: This review almost provides an in-depth analysis of CNN\u2019s most important features. This review almost provides an in-depth analysis of CNN\u2019s networks and algorithms. In this paper, I have compiled all of the current deep learning-based object detection methods that can be found in the most recent academic literature.",
+      "We explain CNN in-depth, the most well-known deep learning algorithm, by outlining the ideas, theories, and cutting-edge architectures. I have analyzed the key research articles published in the field between 2017 and 2022, with a focus on those from 2017, 2018, and 2019, along with a few from 2021 and 2022. The primary emphasis was on publications from the most prestigious publishers, including IEEE, Elsevier, MDPI, ACM, and Springer. Several papers from ArXiv have been chosen.",
+      "I have examined over 60 papers on a variety of DL-related topics. There are 14 papers from 2017, 12 papers from 2018, 19 papers from 2019, and 15 papers from all other years (2020\u20132022). This shows that the focus of this review was on the most recent publications in DL and CNN."
+    ],
+    "title": "Theoretical Understanding of Convolutional Neural Network: Concepts, ...",
+    "url": "https://www.mdpi.com/2079-3197/11/3/52"
+  },
+  {
+    "description": "Course materials and notes for Stanford class CS231n: Deep Learning for Computer Vision.",
+    "favicon_url": "https://you.com/favicon?domain=cs231n.github.io&size=128",
+    "snippets": [
+      "In an alternative scheme where we use strides greater than 1 or don\u2019t zero-pad the input in CONV layers, we would have to very carefully keep track of the input volumes throughout the CNN architecture and make sure that all strides and filters \u201cwork out\u201d, and that the ConvNet architecture is nicely and symmetrically wired.",
+      "Moreover, all 96 neurons in each depth column are connected to the same [11x11x3] region of the input, but of course with different weights. As a fun aside, if you read the actual paper it claims that the input images were 224x224, which is surely incorrect because (224 - 11)/4 + 1 is quite clearly not an integer.",
+      "The backward pass for a convolution operation (for both the data and the weights) is also a convolution (but with spatially-flipped filters). This is easy to derive in the 1-dimensional case with a toy example (not expanded on for now). 1x1 convolution. As an aside, several papers use 1x1 convolutions, as first investigated by Network in Network.",
+      "For example, if the input is [32x32x3] then doing 1x1 convolutions would effectively be doing 3-dimensional dot products (since the input depth is 3 channels). Dilated convolutions. A recent development (e.g. see paper by Fisher Yu and Vladlen Koltun) is to introduce one more hyperparameter to the CONV layer called the dilation."
+    ],
+    "title": "CS231n Deep Learning for Computer Vision",
+    "url": "https://cs231n.github.io/convolutional-networks/"
+  },
+  {
+    "description": "We propose a deep convolutional neural network architecture codenamed \"Inception\", which was responsible for setting the new state of the art for classification and detection in the ImageNet Large-Scale Visual Recognition Challenge 2014 (ILSVRC 2014). The main hallmark of this architecture ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:We propose a deep convolutional neural network architecture codenamed \"Inception\", which was responsible for setting the new state of the art for classification and detection in the ImageNet Large-Scale Visual Recognition Challenge 2014 (ILSVRC 2014). The main hallmark of this architecture is the improved utilization of the computing resources inside the network.",
+      "Abstract page for arXiv paper 1409.4842: Going Deeper with Convolutions",
+      "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "View a PDF of the paper titled Going Deeper with Convolutions, by Christian Szegedy and 7 other authors View PDF"
+    ],
+    "title": "[1409.4842] Going Deeper with Convolutions",
+    "url": "https://arxiv.org/abs/1409.4842"
+  },
+  {
+    "description": "View a PDF of the paper titled Convolutional Neural Networks for Sentence Classification, by Yoon Kim View PDF \u00b7 Abstract:We report on a series of experiments with convolutional neural networks (CNN) trained on top of pre-trained word vectors for sentence-level classification tasks.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The CNN models discussed herein improve upon the state of the art on 4 out of 7 tasks, which include sentiment analysis and question classification. From: Yoon Kim [view email] [v1] Mon, 25 Aug 2014 19:48:04 UTC (41 KB) [v2] Wed, 3 Sep 2014 03:09:02 UTC (41 KB) ... View a PDF of the paper titled Convolutional Neural Networks for Sentence Classification, by Yoon Kim",
+      "We report on a series of experiments with convolutional neural networks (CNN) trained on top of pre-trained word vectors for sentence-level classification tasks. We show that a simple CNN with little hyperparameter tuning and static vectors achieves excellent results on multiple benchmarks.",
+      "Abstract page for arXiv paper 1408.5882: Convolutional Neural Networks for Sentence Classification",
+      "Both individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them. Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?"
+    ],
+    "title": "[1408.5882] Convolutional Neural Networks for Sentence Classification",
+    "url": "https://arxiv.org/abs/1408.5882"
+  },
+  {
+    "description": "Paper Review - A Survey of Convolutional Neural Networks: Analysis, Applications, and Prospects",
+    "favicon_url": "https://you.com/favicon?domain=velog.io&size=128",
+    "snippets": [
+      "CNN\uc740 computer vision\ubfd0\ub9cc \uc544\ub2c8\ub77c natural language process, \uadf8\ub9ac\uace0 \ub2e4\uc591\ud55c \uc0b0\uc5c5\uacfc \ud559\uacc4\uc5d0\uc11c \ub9ce\uc740 \uad00\uc2ec\uc744 \ubc1b\uace0 \uc5c4\uccad\ub09c \uc131\ucde8\ub97c \uac70\ub450\uc5c8\ub2e4. \uc774 \ub17c\ubb38\uc5d0\uc11c\ub294 CNN \uc758 \ub9ce\uc740 \uae30\ubc1c\ud55c idea\uc640 prospect\ub97c review\ud55c\ub2e4. \uac00\uc7a5 \ucc98\uc74c CNN\uc758 \uc5ed\uc0ac, \ub450\ubc88\uc9f8\ub85c\ub294 CNN\uc758 overview, 3\ubc88\uc9f8\ub294 \uace0\uc804\uc801, \uadf8\ub9ac\uace0 \ubc1c\uc804\ub41c CNN \ubaa8\ub378\ub4e4\uc744 \uc18c\uac1c\ud55c\ub2e4.",
+      "CNN\uc740 \uc77c\ubc18\uc801\uc778 ANN(Artificial Neural Network)\uc5d0 \ube44\ud574 \ub9ce\uc740 \uc774\uc810\uc774 \uc874\uc7ac\ud55c\ub2e4. \uccab\ubc88\uc9f8\ub85c \uac01\uac01\uc758 \ub274\ub7f0\uc740 \ub354 \uc774\uc0c1 \ubaa8\ub4e0 \ub274\ub7f0\uacfc \uc5f0\uacb0\ub418\uc9c0 \uc54a\uace0 \uad6d\uc18c\uc801\uc778 \uba87\uba87\uc758 \ub274\ub7f0\uacfc \uc5f0\uacb0\ub418\uc5b4 parameter\uc758 \uc218\ub97c \ub35c\uc5b4\uc8fc\uace0, \uc218\ub834 \uc18d\ub3c4\ub97c \ub192\uc5ec\uc900\ub2e4.",
+      "LeNet-5\ub294 SVM\uacfc Boosting \uc54c\uace0\ub9ac\uc998\ubcf4\ub2e4 \uc88b\uc740 \uc131\ub2a5\uc744 \ub0b4\uc9c4 \ubabb\ud588\uace0, \uadf8 \ub2f9\uc2dc \uc8fc\ubaa9 \ubc1b\uc9c0 \ubabb\ud588\uc9c0\ub9cc \uad6d\uc18c\uc801\uc778 receptive field, \uacf5\uc720\ub418\ub294 weight, subsampling \ub4f1\uc744 \uc870\ud569\ud55c CNN\uc758 \uac1c\ucc99\uc790 \uaca9\uc758 \ubaa8\ub378\uc774\ub2e4.",
+      "ImageNet \ub300\ud68c\uc5d0\uc11c 1\ub4f1\uc744 \ucc28\uc9c0\ud55c \ubaa8\ub378\uc774\ub2e4. 8\uac1c\uc758 layer\uac00 \uc788\uace0, \uadf8 \uc548\uc5d0\ub294 5\uac1c\uc758 convolutional layer\uc640 3\uac1c\uc758 fc layer\uac00 \uc788\ub2e4. AlexNet\uc740 LeNet\uc758 \uc544\uc774\ub514\uc5b4\uc640 CNN\uc758 \uae30\ubcf8\uc801\uc778 \uc6d0\ub9ac\ub97c deep and wide network\uc5d0 \uc801\uc6a9\ud55c \ubaa8\ub378\uc774\ub2e4."
+    ],
+    "title": "Paper Review - A Survey of Convolutional Neural Networks: Analysis, ...",
+    "url": "https://velog.io/@razozang/Paper-Review-A-Survey-of-Convolutional-Neural-Networks-Analysis-Applications-and-Prospects"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.microsoft.com&size=128",
+    "snippets": [],
+    "title": "Best Practices for Convolutional Neural Networks Applied ...",
+    "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2003/08/icdar03.pdf"
+  },
+  {
+    "description": "Furthermore, DeepInsight, allows feature extraction and classification via the utilization of CNN. This will increase the versatility of CNN by opening it to non-image cases and thus provide a generalized outcome of CNN. We show in this paper that DeepInsight has usefulness for various kinds ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Furthermore, DeepInsight, allows feature extraction and classification via the utilization of CNN. This will increase the versatility of CNN by opening it to non-image cases and thus provide a generalized outcome of CNN. We show in this paper that DeepInsight has usefulness for various kinds of data like gene-expression, vowels, texts and artificial.",
+      "It is critical, but difficult, to catch the small variation in genomic or other kinds of data that differentiates phenotypes or categories. A plethora of data is available, but the information from its genes or elements is spread over arbitrarily, making it challenging to extract relevant details for identification.",
+      "Scientific Reports - DeepInsight: A methodology to transform a non-image data to an image for convolution neural network architecture",
+      "However, an arrangement of similar genes into clusters makes these differences more accessible and allows for robust identification of hidden mechanisms (e.g. pathways) than dealing with elements individually. Here we propose, DeepInsight, which converts non-image samples into a well-organized image-form. Thereby, the power of convolution neural network (CNN), including GPU utilization, can be realized for non-image samples."
+    ],
+    "title": "DeepInsight: A methodology to transform a non-image data to an ...",
+    "url": "https://www.nature.com/articles/s41598-019-47765-6"
+  },
+  {
+    "description": "I've learned the math and theory behind how CNNs work and I thought that would help, but now that I'm trying real world problems I find that I still don't know how to make effective networks. Can anyone can give any tips or resources you find helpful? Share ... It's a great question. If you're curious about diving deeper, I found this survey paper ...",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "I've learned the math and theory behind how CNNs work and I thought that would help, but now that I'm trying real world problems I find that I still don't know how to make effective networks. Can anyone can give any tips or resources you find helpful? Share ... It's a great question. If you're curious about diving deeper, I found this survey paper that covers a lot of the specifics of new-ish architectures",
+      "When should you add another convolutional layer? When should you add another pooling layer? How should you choose the kernel, stride size, padding\u2026",
+      "What is better, in terms of Performance x Graphics, DLSS transformer in Balanced or DLSS cnn in Quality? For 1080p and RTX2060 ... A place for everything NVIDIA, come talk about news, drivers, rumors, GPUs, the industry, show-off your build and more. No NVIDIA Stock Discussion.",
+      "Start with a pre-trained model from a dataset that is similar to the one you are using. Don't design your own CNN, just use what other people have done since it's already been shown to work well"
+    ],
+    "title": "r/MachineLearning on Reddit: [D] Any advice for how to go about ...",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/syxhir/d_any_advice_for_how_to_go_about_designing_cnn/"
+  },
+  {
+    "description": "The Xception model of CNN has performed well while classifying .digital images and this study compares the CNN architectures of VGG-16, ResNet50, Xception and DenseNet121 to show that the Xception model of CNN has performed well.Expand ... The research work in this paper provides a comprehensive ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "The Xception model of CNN has performed well while classifying .digital images and this study compares the CNN architectures of VGG-16, ResNet50, Xception and DenseNet121 to show that the Xception model of CNN has performed well.Expand ... The research work in this paper provides a comprehensive overview of the state of the art in image recognition in machine learning and highlights some of the key challenges and opportunities for future research.Expand",
+      "Stochastic Gradient Descent optimizer outperforms other two for ResNet50 and InceptionV3 and is used to train the Fine-tuned CNN models for 15 Epochs on cat vs dog dataset created by hand picking hundreds of images of cats & dogs from Kaggle cat vs dogs dataset.Expand ... This paper reviews and evaluates existing acceleration methods for CNNs and their potential for domain-specific optimization and customization of FPGA accelerators, and offers guidance and ideas for research and development in hardware with the AI field.Expand",
+      "In this article, CNN models are built to evaluate its performance on image recognition and detection datasets and its performance are evaluated. Deep Learning algorithms are designed in such a way that they mimic the function of the human cerebral cortex. These algorithms are representations of deep neural networks i.e. neural networks with many hidden layers.",
+      "Using a combination of locally-connected convolutional units and globally-connected units, as well as a few tricks to reduce the e ects of over tting, the DBN achieves state-of-the-art performance in the classi cation task of the CIFAR-10 subset of the tiny images dataset.Expand ... S. AlizadehAzar Fazel ... This work developed convolutional neural networks for a facial expression recognition task and employed a hybrid feature strategy by which a novel CNN model was trained with the combination of raw pixel data and Histogram of Oriented Gradients (HOG) features.Expand"
+    ],
+    "title": "Convolutional Neural Network (CNN) for Image Detection and ...",
+    "url": "https://www.semanticscholar.org/paper/Convolutional-Neural-Network-(CNN)-for-Image-and-Chauhan-Ghanshala/b4eed12147fabac8f670ed7443eda90926a0d6ad"
+  },
+  {
+    "description": "Hello, I am trying to implement the methodology proposed in this paper here as the authors have not released the code yet. The network architecture is a combination of a BaseCNN and a LSTM layer. The image below depicts the network architecture used by the authors taken from the paper mentioned ...",
+    "favicon_url": "https://you.com/favicon?domain=discuss.pytorch.org&size=128",
+    "snippets": [
+      "Hello, I am trying to implement the methodology proposed in this paper here as the authors have not released the code yet. The network architecture is a combination of a BaseCNN and a LSTM layer. The image below depicts the network architecture used by the authors taken from the paper mentioned above.",
+      "Hello, I am trying to implement the methodology proposed in this paper here as the authors have not released the code yet. The network architecture is a combination of a BaseCNN and a LSTM layer. The image below depict\u2026"
+    ],
+    "title": "Combining CNN - LSTM - Research paper implementation - vision - ...",
+    "url": "https://discuss.pytorch.org/t/combining-cnn-lstm-research-paper-implementation/94929"
+  },
+  {
+    "description": "I want to write a paper about convolutional neural network, the accuracy of validation dataset of my cnn model is fluctuating from 98 to 99, the accuracy of test dataset is not the same every time....",
+    "favicon_url": "https://you.com/favicon?domain=stackoverflow.com&size=128",
+    "snippets": [
+      "I want to write a paper about convolutional neural network, the accuracy of validation dataset of my cnn model is fluctuating from 98 to 99, the accuracy of test dataset is not the same every time. So i am not sure which time I should write the accuracy, the total number of epochs in the experiment is 6000 times.",
+      "@ohdoughnut I've updated what I mean by periodically decrease the learning rate. Which paper are you referring to? Sounds like the individual chose the best learning rate from 10 options, I dont really like this approach. ... This paper is \"CNN-based Sensor Fusion Techniques for Multimodal Human Activity Recognition\".",
+      "Can I choose the highest accuracy of 10 epochs in the last epoch as the accuracy of the paper, or how should i do it? Thank you very much! ... I have the same problem.",
+      "I have tried to change the learning rate of 0.0001 to 0.00005 and 0.00001, but the final accuracy is no learning rate of 0.0001, so the learning rate can only be 0.0001. and I see in an paper\"In order to determine convergence, training ended when there was no improvement on the validation set within ten consecutive epochs."
+    ],
+    "title": "deep learning - How to determine the accuracy of cnn when writing ...",
+    "url": "https://stackoverflow.com/questions/50113448/how-to-determine-the-accuracy-of-cnn-when-writing-a-paper"
+  },
+  {
+    "description": "Code for the paper: CNN-generated images are surprisingly easy to spot... for now https://peterwang512.github.io/CNNDetection/ - PeterWang512/CNNDetection",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "The testset evaluated in the paper can be downloaded here. The zip file contains images from 13 CNN-based synthesis algorithms, including the 12 testsets from the paper and images downloaded from whichfaceisreal.com. Images from each algorithm are stored in a separate folder.",
+      "CNN-generated images are surprisingly easy to spot...for now Sheng-Yu Wang, Oliver Wang, Richard Zhang, Andrew Owens, Alexei A. Efros. In CVPR, 2020. This repository contains models, evaluation code, and training code on datasets from our paper.",
+      "The training set used in the paper can be downloaded here (Try alternative links 1,2 if the previous link does not work). All images are from LSUN or generated by ProGAN, and they are separated in 20 object categories.",
+      "The following are the models' performances on the released set, with cropping to 224x224 (as in the paper), and without cropping."
+    ],
+    "title": "GitHub - PeterWang512/CNNDetection: Code for the paper: CNN-generated ...",
+    "url": "https://github.com/PeterWang512/CNNDetection"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=openaccess.thecvf.com&size=128",
+    "snippets": [],
+    "title": "Mask R-CNN",
+    "url": "https://openaccess.thecvf.com/content_ICCV_2017/papers/He_Mask_R-CNN_ICCV_2017_paper.pdf"
+  },
+  {
+    "description": "\u201cWe\u2019re a very liberal paper. I didn\u2019t think we were going to change the outcome of the election in California.\u201d \u00b7 A Los Angeles Times spokesperson did not respond to a CNN request for comment, but in a social media post Soon-Shiong wrote, \u201cThe Editorial Board was provided the opportunity ...",
+    "favicon_url": "https://you.com/favicon?domain=www.cnn.com&size=128",
+    "snippets": [
+      "\u201cWe\u2019re a very liberal paper. I didn\u2019t think we were going to change the outcome of the election in California.\u201d \u00b7 A Los Angeles Times spokesperson did not respond to a CNN request for comment, but in a social media post Soon-Shiong wrote, \u201cThe Editorial Board was provided the opportunity to draft a factual analysis of all the POSITIVE AND NEGATIVE policies by EACH candidate during their tenures at the White House, and how these policies affected the nation.\u201d",
+      "The Los Angeles Times\u2019 editorials editor said Wednesday she had resigned from her post after the newspaper\u2019s owner blocked a decision to endorse Kamala Harris in the presidential election.",
+      "The leader of the Los Angeles Times\u2019 editorial board said Wednesday she has resigned from her post in protest after the newspaper\u2019s owner blocked a decision to endorse Kamala Harris in the presidential election.",
+      "Garza\u2019s resignation comes after Patrick Soon-Shiong, the billionaire doctor who purchased the publication in 2018 for $500 million, told the Times\u2019 editorial board not to endorse in the presidential race, she said."
+    ],
+    "title": "Los Angeles Times editor Mariel Garza resigns after newspaper owner ...",
+    "url": "https://www.cnn.com/2024/10/23/media/los-angeles-times-endorsement-harris-resign/index.html"
+  },
+  {
+    "description": "Some people are hoarding toilet paper again because of the strike among longshore workers at East and Gulf Coast ports. CNN\u2019s Vanessa Yurkevich explains why toilet paper isn\u2019t affected by the strike, but other products may be.",
+    "favicon_url": "https://you.com/favicon?domain=www.cnn.com&size=128",
+    "snippets": [
+      "Some people are hoarding toilet paper again because of the strike among longshore workers at East and Gulf Coast ports. CNN's Vanessa Yurkevich explains why toilet paper isn't affected by the strike, but other products may be.",
+      "No, the port strike won't cause a toilet paper shortage."
+    ],
+    "title": "No, the port strike won\u2019t cause a toilet paper shortage. Here\u2019s ...",
+    "url": "https://www.cnn.com/2024/10/03/business/video/port-strike-toilet-paper-shortage-digvid"
+  },
+  {
+    "description": "Toilet paper shortages in stores across America are giving folks nightmarish reminders of the pandemic era. But the lack of toilet paper isn\u2019t a direct result of a major port strike Tuesday. It\u2019s because of panic buying.",
+    "favicon_url": "https://you.com/favicon?domain=www.cnn.com&size=128",
+    "snippets": [
+      "Reports of shortages filled social media Tuesday, showing empty shelves where toilet paper and, to a lesser extent, paper towels were supposed to be. \u201cThey cleaned out the toilet paper at my local Walmart in Virginia.",
+      "The American Forest and Paper Association, the trade group representing paper manufacturers, expressed concerns about the impact that the port strike could have on its members. But it cited the risk to its exports to foreign markets being cut off by the strike.",
+      "It\u2019s only a couple of weeks between when they are cut from a banana tree to when they appear on grocery shelves, and it\u2019s less than two weeks after that they turn brown or black on your kitchen counter. So, shippers weren\u2019t able to ship a large volume in advance of the strike. Toilet paper is the opposite of a perishable good.",
+      "No, the port strike won't cause a toilet paper shortage."
+    ],
+    "title": "People are panic-buying toilet paper because of the port strike.",
+    "url": "https://www.cnn.com/2024/10/02/business/toilet-paper-shortages-port-strike/index.html"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=openai.com&size=128",
+    "snippets": [],
+    "title": "CLIP: Connecting text and images",
+    "url": "https://openai.com/index/clip/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.irjmets.com&size=128",
+    "snippets": [],
+    "title": "REVIEW PAPER ON CNN BASED COMPUTER VISION",
+    "url": "https://www.irjmets.com/uploadedfiles/paper/volume2/issue_8_august_2020/3232/1628083127.pdf"
+  },
+  {
+    "description": "Convolutional neural networks use three-dimensional data to for image classification and object recognition tasks.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "While we primarily focused on feedforward networks in that article, there are various types of neural nets, which are used for different use cases and data types. For example, recurrent neural networks are commonly used for natural language processing and speech recognition whereas convolutional neural networks (ConvNets or CNNs) are more often utilized for classification and computer vision tasks.",
+      "Prior to CNNs, manual, time-consuming feature extraction methods were used to identify objects in images. However, convolutional neural networks now provide a more scalable approach to image classification and object recognition tasks, leveraging principles from linear algebra, specifically matrix multiplication, to identify patterns within an image. That said, they can be computationally demanding, requiring graphical processing units (GPUs) to train models.",
+      "The convolutional layer is the first layer of a convolutional network. While convolutional layers can be followed by additional convolutional layers or pooling layers, the fully-connected layer is the final layer. With each layer, the CNN increases in its complexity, identifying greater portions of the image.",
+      "Earlier layers focus on simple features, such as colors and edges. As the image data progresses through the layers of the CNN, it starts to recognize larger elements or shapes of the object until it finally identifies the intended object."
+    ],
+    "title": "What are Convolutional Neural Networks? | IBM",
+    "url": "https://www.ibm.com/think/topics/convolutional-neural-networks"
+  },
+  {
+    "description": "The primary improvement in YOLO ... of a new CNN architecture called CSPNet (shown below). CSPNet stands for \"Cross Stage Partial Network\" and is a variant of the ResNet architecture designed specifically for object detection tasks. It has a relatively shallow structure, with only 54 convolutional layers. However, it can achieve state-of-the-art results on various object detection benchmarks. Architecture of CSPNet. Source: Paper...",
+    "favicon_url": "https://you.com/favicon?domain=www.v7labs.com&size=128",
+    "snippets": [
+      "The primary improvement in YOLO v4 over YOLO v3 is the use of a new CNN architecture called CSPNet (shown below). CSPNet stands for \"Cross Stage Partial Network\" and is a variant of the ResNet architecture designed specifically for object detection tasks. It has a relatively shallow structure, with only 54 convolutional layers. However, it can achieve state-of-the-art results on various object detection benchmarks. Architecture of CSPNet. Source: Paper",
+      "One of the main differences between YOLO v5 and YOLO v6 is the CNN architecture used. YOLO v6 uses a variant of the EfficientNet architecture called EfficientNet-L2. It\u2019s a more efficient architecture than EfficientDet used in YOLO v5, with fewer parameters and a higher computational efficiency. It can achieve state-of-the-art results on various object detection benchmarks. The framework of the YOLO v6 model is shown below. Overview of YOLO v6. Source: Paper",
+      "What is YOLO architecture and how does it work? Learn about different YOLO algorithm versions and start training your own YOLO object detection models.",
+      "One of the earliest successful attempts to address the object detection problem using deep learning was the R-CNN (Regions with CNN features) model, developed by Ross Girshick and his team at Microsoft Research in 2014."
+    ],
+    "title": "YOLO Algorithm for Object Detection Explained [+Examples]",
+    "url": "https://www.v7labs.com/blog/yolo-object-detection"
+  },
+  {
+    "description": "It designed to learn, automatically and adaptively, the spatial hierarchies of backscattered entities using multiple building blocks, such as convolutional layers, grouping layers, and fully connected layers. This article aims to present an approach based on CNN to classify scientific articles ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "It designed to learn, automatically and adaptively, the spatial hierarchies of backscattered entities using multiple building blocks, such as convolutional layers, grouping layers, and fully connected layers. This article aims to present an approach based on CNN to classify scientific articles by their domains (7 different domains) from their abstracts, the process will base on several features extracted automatically from their summaries.",
+      "Satori, \"A Comparison of Text Classification Methods Method of Weighted Terms Selected by Different Stemming Techniques,\" in Proceedings of the 2Nd International Conference on Big Data, Cloud and Applications, New York, NY, USA, 2017, pp. 43:1--43:9. ... M. Bounabi, K. El Moutaouakil, and K. Satori, \"A Probabilistic Vector Representation and Neural Network for Text Classification,\" in Big Data, Cloud and Applications, Cham, 2018, pp. 343--355. ... W. Yin, K. Kann, M. Yu, and H. Sch\u00fctze, \"Comparative Study of CNN and RNN for Natural Language Processing,\" ArXiv170201923 Cs, Feb.",
+      "S. Laroui, H. Omara, M. Lazaar, and O. Mahboub, \"Comparative study of performing features applied in CNN architectures,\" presented at the Third International Conference on Computing and Wireless Communication Systems, ICCWCS 2019, April 24-25, 2019, Faculty of Sciences, Ibn Tofa\u00efl University -K\u00e9nitra- Morocco, 2019.",
+      "Recurrent neural network (RNN) and convolutional neural network (CNN) are two prevailing architectures used in text classification. Traditional approaches combine the strengths of these two networks by straightly streamlining them or linking features ..."
+    ],
+    "title": "Scientific paper classification using Convolutional Neural Networks ...",
+    "url": "https://dl.acm.org/doi/10.1145/3372938.3372951"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=apastyle.apa.org&size=128",
+    "snippets": [],
+    "title": "Newspaper article references - APA Style",
+    "url": "https://apastyle.apa.org/style-grammar-guidelines/references/examples/newspaper-article-references"
+  },
+  {
+    "description": "Color versions of one or more of the figures in this paper are available online at http://ieeexplore.ieee.org. Remarkable progress has been made in image recognition, primarily due to the availability of large-scale annotated datasets and deep convolutional neural networks (CNNs).",
+    "favicon_url": "https://you.com/favicon?domain=www.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "There are currently three major techniques that successfully employ CNNs to medical image classification: training the CNN from scratch, using off-the-shelf pre-trained CNN features, and conducting unsupervised CNN pre-training with supervised fine-tuning. Another effective method is transfer learning, i.e., fine-tuning CNN models pre-trained from natural image dataset to medical image tasks. In this paper, we exploit three important, but previously understudied factors of employing deep convolutional neural networks to computer-aided detection problems.",
+      "Recently, ImageNet pre-trained CNNs have been used for chest pathology identification and detection in X-ray and CT modalities [10], [9], [12]. They have yielded the best performance results by integrating low-level image features (e.g., GIST [32], bag of visual words (BoVW) and bag-of-frequency [12]). However, the fine-tuning of an ImageNet pre-trained CNN model on medical image datasets has not yet been exploited. In this paper, we exploit three important, but previously under-studied factors of employing deep convolutional neural networks to computer-aided detection problems.",
+      "Throughout the paper, we refer to the models as CifarNet (32\u00d732) or CifarNet (dropping 32\u00d732); AlexNet (256\u00d7256) or AlexNet-H (high resolution); AlexNet (64\u00d764) or AlexNet-L (low resolution); GoogLeNet (256\u00d7256) or GoogLeNet-H and GoogLeNet (64\u00d764) or GoogLeNet-L (dropping 3 since all image inputs are three channels). ... A simplified illustration of the CNN architectures used.",
+      "We also perform experiments using \u201coff-the-shelf\u201d CNN features of AlexNet pre-trained on ImageNet and training only the final classifier layer to complete the new CADe classification tasks. Parameters in the convolutional and fully connected layers are fixed and are used as deep image extractors, as in [10], [9], [12]. We refer to this model as AlexNet-ImNet in the remainder of the paper."
+    ],
+    "title": "Deep Convolutional Neural Networks for Computer-Aided Detection: ...",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4890616/"
+  }
+]

@@ -1,0 +1,1370 @@
+[
+  {
+    "description": "Intrinsic rewards can improve exploration in reinforcement learning, but the exploration process may suffer from instability caused by non-stationary reward shaping and strong dependency on hyperparameters. In this work, we introduce Decoupled RL (DeRL) as a general framework which trains separate ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled Decoupled Reinforcement Learning to Stabilise Intrinsically-Motivated Exploration, by Lukas Sch\\\"afer and 3 other authors View PDF \u00b7 Abstract:Intrinsic rewards can improve exploration in reinforcement learning, but the exploration process may suffer from instability caused by non-stationary reward shaping and strong dependency on hyperparameters. In this work, we introduce Decoupled RL (DeRL) as a general framework which trains separate policies for intrinsically-motivated exploration and exploitation.",
+      "Abstract page for arXiv paper 2107.08966: Decoupled Reinforcement Learning to Stabilise Intrinsically-Motivated Exploration",
+      "Lastly, we discuss the challenge of distribution shift and show that divergence constraint regularisers can successfully minimise instability caused by divergence of exploration and exploitation policies. From: Lukas Sch\u00e4fer [view email] [v1] Mon, 19 Jul 2021 15:31:02 UTC (1,704 KB) [v2] Thu, 22 Jul 2021 18:50:01 UTC (1,879 KB) [v3] Wed, 9 Feb 2022 15:06:21 UTC (2,505 KB) ... View a PDF of the paper titled Decoupled Reinforcement Learning to Stabilise Intrinsically-Motivated Exploration, by Lukas Sch\\\"afer and 3 other authors",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2107.08966] Decoupled Reinforcement Learning to Stabilise ...",
+    "url": "https://arxiv.org/abs/2107.08966"
+  },
+  {
+    "description": "How do the most common ones differ from one another?",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "The experiences gathered by the agent are shared with the learner, which is responsible for learning the best action to take. Similarly, the actions learned by the learner(s) are sent to the actors. This decoupling enabled research on a variety of distributed RL architectures.",
+      "Hence this blog post only focuses on model-free RL algorithms. ... Gorila, which stands for General reinforcement learning Architecture, was the very first massively distributed reinforcement learning architecture proposed in the year 2015. The idea of using actors that are responsible for creating experience trajectories and neural network-based learners which represent the value function or the policy function was introduced by this paper.",
+      "As RL grows in popularity both in research and application there are more variants proposed. However, each of these is a mere derivative of previous architectures and differs in terms of optimizing the training time, communication overhead, resource optimization, cost of running, etc. The underlying design of decoupling actors and learners is common across many.",
+      "The inference times in such industrial applications should be in a few milliseconds/microseconds so that disasters are prevented. Hence applying RL algorithms for developing industrial AI solutions is always a challenge where time to train, optimize, and infer is limited and the environment is complex. In such cases, distributed reinforcement learning can be helpful."
+    ],
+    "title": "Accelerate Training in RL Using Distributed Reinforcement Learning ...",
+    "url": "https://towardsdatascience.com/accelerate-training-in-rl-using-distributed-reinforcement-learning-architectures-b5a726b49826/"
+  },
+  {
+    "description": "1. Scalable and Asynchronous Data ... a decoupled and asynchronous framework that deploys RL agents across heterogeneous worker devices for remote data collection, enhancing training efficiency and scalability (\u00a7 4). 2. Advanced RL Algorithm for Centralized Training: We develop A-RIDE, a novel off-policy reinforcement learning algorithm tailored for distributed and asynchronous ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "1. Scalable and Asynchronous Data Acquisition Architecture: DistRL introduces a decoupled and asynchronous framework that deploys RL agents across heterogeneous worker devices for remote data collection, enhancing training efficiency and scalability (\u00a7 4). 2. Advanced RL Algorithm for Centralized Training: We develop A-RIDE, a novel off-policy reinforcement learning algorithm tailored for distributed and asynchronous data utilization, which prioritizes significant experiences to improve sample efficiency while encouraging exploration (\u00a7 5).",
+      "Impala: Scalable distributed deep-rl with importance weighted actor-learner architectures. In International conference on machine learning, pp. 1407\u20131416. PMLR, 2018. Gur et al. (2023) Ido Gur, Shay Mazor, Adi Jerbi, Amir Globerson, and Jonathan Berant. Learning to use the web for conversational question answering. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pp.",
+      "On the whole, DistRL employs asynchronous RL to address the challenges of online RL in dynamic, real-world settings. Each thread in workers operates independently, executing tasks and generating learning trajectories at its own pace, which accommodates variability in task durations and system latencies. Data produced by the working threads is queued and processed by the host learner, which updates the global policy based on the collected trajectories. The updated policy is asynchronously distributed back to the workers, allowing for independent and non-blocking policy updates.",
+      "DistRL is an asynchronous distributed reinforcement learning framework for scalable and efficient training of mobile agents. By decoupling trajectory collection from policy learning and doing both in parallel, it leverages distributed working machines for CPU-intense agent-environment interactions and GPU servers for policy training."
+    ],
+    "title": "DistRL: An Asynchronous Distributed Reinforcement Learning Framework ...",
+    "url": "https://arxiv.org/html/2410.14803v4"
+  },
+  {
+    "description": "Today we are launching INTELLECT-2: the first 32B parameter globally decentralized Reinforcement Learning training run where anyone can permissionlessly contribute their heterogeneous compute resources.",
+    "favicon_url": "https://you.com/favicon?domain=www.primeintellect.ai&size=128",
+    "snippets": [
+      "Reinforcement learning is inherently more asynchronous than traditional large language model pre-training. In distributed RL, data collection can be decoupled from network training. Multiple workers operate in parallel environments, each collecting experiences asynchronously, while a central learner receives and processes these experiences.",
+      "INTELLECT-2 Distributed RL Training Infrastructure \u00b7 Our INTELLECT-2 infrastructure mainly consists of the three components: Inference Rollout Workers: A decentralized swarm of nodes that collect reasoning rollouts from their environment using the latest policy model and compute the corresponding rewards.",
+      "For example, in our prime-rl library, rollout workers can take advantage of vLLM and its full suite of inference optimizations. Our fully asynchronous online RL training framework prime-rl is open-source, allowing anyone to start globally distributed reinforcement learning runs.",
+      "prime-RL: Our new open-source library for fully async distributed reinforcement learning, built on top of our fault-tolerant decentralized training framework, prime. SYNTHETIC-1 & GENESYS: Our library for crowdsourcing task and verifier environments for RL. TOPLOC: Our approach to efficient, verifiable inference\u2014used to validate the computations of all decentralized rollout workers in INTELLECT-2."
+    ],
+    "title": "INTELLECT-2: The First Globally Distributed Reinforcement Learning ...",
+    "url": "https://www.primeintellect.ai/blog/intellect-2"
+  },
+  {
+    "description": "Artificial intelligence has made remarkable progress in handling complex tasks, thanks to advances in hardware acceleration and machine learning algorithms. However, to acquire more accurate outcomes and solve more complex issues, algorithms should be trained with more data.",
+    "favicon_url": "https://you.com/favicon?domain=journalofbigdata.springeropen.com&size=128",
+    "snippets": [
+      "Ape-X [104] is a distributed architecture for DRL that decouples acting from learning. In Ape-X, a shared neural network is used to select actions by actors and the resulting experience is stored in a shared experience replay memory. The neural network is updated by replaying samples of experience, with prioritizing given to the most significant data generated by the actors. SEED (Scalable, Efficient Deep-RL) was proposed by Espeholt et al.",
+      "Acme: a research framework for distributed reinforcement learning. arXiv Preprint arXiv:200600979. 2020. Dai H, Wu J, Wang Y, Xu C. Towards scalable and efficient deep-RL in edge computing: a game-based partition approach. J Parallel Distrib Comput. 2022;168:108\u201319. ... Not applicable. No Funding. ... MD and ZY wrote the paper .All authors discussed the results, commented on the manuscript, reviewed drafts of the article, and approved the final draft.",
+      "P3: distributed deep graph learning at scale. OSDI; 2021. Mirhoseini A, Pham H, Le QV, Steiner B, Larsen R, Zhou Y, et al, editors. Device placement optimization with reinforcement learning. International conference on machine learning; 2017: PMLR. Zhuang H, Wang Y, Liu Q, Lin Z. Fully decoupled neural network learning using delayed gradients.",
+      "The majority of these studies considered neural networks such as ResNet, VGG, and AlexNet. In the case of reinforcement learning, researchers have proposed various distributed reinforcement learning algorithms, including A3C, IMPALA, DPPO, Ape-X, SEED RL, and Acme."
+    ],
+    "title": "From distributed machine to distributed deep learning: a ...",
+    "url": "https://journalofbigdata.springeropen.com/articles/10.1186/s40537-023-00829-x"
+  },
+  {
+    "description": "Posted by Amir Yazdanbakhsh, Research Scientist and Junchao Chen, Software Engineer, Google Research In the last decade, reinforcement learning (RL...",
+    "favicon_url": "https://you.com/favicon?domain=research.google&size=128",
+    "snippets": [
+      "As such, an RL infrastructure should not only scale efficiently (e.g., increase the number of actors) and collect an immense number of samples, but also be able to swiftly iterate over these extensive amounts of samples during training. Today we introduce Menger1, a massive large-scale distributed RL infrastructure with localized inference that scales up to several thousand actors across multiple processing clusters (e.g., Borg cells), reducing the overall training time in the task of chip placement.",
+      "Menger System Design There are various distributed RL systems, such as Acme and SEED RL, each of which focus on optimizing a single particular design point in the space of distributed reinforcement learning systems.",
+      "High Throughput Input Pipeline To deliver a high throughput input data pipeline, Menger uses Reverb, a recently open-sourced data storage system designed for machine learning applications that provides an efficient and flexible platform to implement experience replay in a variety of on-policy/off-policy algorithms. However, using a single Reverb replay buffer service does not currently scale well in a distributed RL setting with thousands of actors, and simply becomes inefficient in terms of write throughput from actors.",
+      "Efficient Model Retrieval To address the first challenge, we introduce transparent and distributed caching components between the learner and the actors optimized in TensorFlow and backed by Reverb (similar approach used in Dota). The main responsibility of the caching components is to strike a balance between the large number of requests from actors and the learner job."
+    ],
+    "title": "Massively Large-Scale Distributed Reinforcement Learning with Menger",
+    "url": "https://research.google/blog/massively-large-scale-distributed-reinforcement-learning-with-menger/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.usenix.org&size=128",
+    "snippets": [],
+    "title": "Ray: A Distributed Framework for Emerging AI Applications",
+    "url": "https://www.usenix.org/system/files/osdi18-moritz.pdf"
+  },
+  {
+    "description": "Exploring RL applications: from self-driving cars and industry automation to NLP, finance, and robotics manipulation.",
+    "favicon_url": "https://you.com/favicon?domain=neptune.ai&size=128",
+    "snippets": [
+      "In Reinforcement Learning (RL), agents are trained on a reward and punishment mechanism. The agent is rewarded for correct moves and punished for the wrong ones. In doing so, the agent tries to minimize wrong moves and maximize the right ones.  ... In this article, we\u2019ll look at some of the real-world applications of reinforcement learning. Various papers have proposed Deep Reinforcement Learning for autonomous driving.",
+      "In NLP, RL can be used in text summarization, question answering, and machine translation just to mention a few.  \u00b7 The authors of this paper Eunsol Choi, Daniel Hewlett, and Jakob Uszkoreit propose an RL based approach for question answering given long texts.",
+      "You can dive deeper into RL applications in healthcare by exploring this paper.",
+      "In this paper, the authors propose real-time bidding with multi-agent reinforcement learning. The handling of a large number of advertisers is dealt with using a clustering method and assigning each cluster a strategic bidding agent. To balance the trade-off between the competition and cooperation among advertisers, a Distributed Coordinated Multi-Agent Bidding (DCMAB) is proposed."
+    ],
+    "title": "10 Real-Life Applications of Reinforcement Learning",
+    "url": "https://neptune.ai/blog/reinforcement-learning-applications"
+  },
+  {
+    "description": "These last few months, I have been working on deep reinforcement learning (RL), a very active research area of artificial intelligence. Although RL algorithms are not so easy to understand, I was\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "These last few months, I have been working on deep reinforcement learning (RL), a very active research area of artificial intelligence\u2026",
+      "However, in general, we are going to see that the performance will be better with more workers almost on all occasions, and the time in training is almost always the same because we take advantage of all computer resources. This is only an introduction to one distributed RL model that maybe is not the best compared to other proposals like GORILA, A3Cor APE-X, but it is a simple one, and I hope I have illustrated how these models can be implemented using only the PyTorch ecosystem.",
+      "In the synchronous setting, all the workers wait for all gradients to be aggregated before updating the parameters; that is to say, every worker will use the same set of parameters. Let\u2019s start with the server, whose only job is to maintain and update the parameters of our policy. In this work, I use PyTorch Distributed.",
+      "The workers have more logic behind their operation. For the distributed agent (which will be our worker), we need to specify the discount factor \u03b3, the policy, the environment (in this case, I am using Gymnasium) and a buffer for our parameters (__parameter_buffer variable)."
+    ],
+    "title": "Distributed Reinforcement Learning | by Jos\u00e9 Luis C | Medium",
+    "url": "https://medium.com/@jlcastrog99/distributed-reinforcement-learning-49895e29f6fa"
+  },
+  {
+    "description": "Keys: RL = Reinforcement Learning, Env = Environment, ML=Machine Learning; They will be bold and italic for easier identification.",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Keys: RL = Reinforcement Learning, Env = Environment, ML=Machine Learning; They will be bold and italic for easier identification. Note: After sitting on this blog for days I\u2019ve decided to release it\u2026",
+      "Over the last 6 months I\u2019ve been working to create a new distributed RL Env . I decided to go distributed because I new I could create a faster training system by splitting the computation done on an environment between more cores.",
+      "Jamboree \u2014 A General Purpose Tool for Data Engineering: I after I talk about Modern DE Systems this will be how I show you how to overcome certain issues that I ran into and create an extremely basic RL Env that can more easily exist in the real world. This part will be where the development steps are.",
+      "When creating a real-life RL environment you need to have stable means of accessing your data in multiple ways, leave flexibility to try new things quickly and reduce setup time for which ever project you may have. Requirements are bound to slightly change and calculation bugs are rather likely for most simulations you create."
+    ],
+    "title": "Engineer Your Own Production Ready Distributed RL Environment - ...",
+    "url": "https://medium.com/@kevinhill_96608/engineer-your-own-production-ready-distributed-rl-environment-part-1-3-e2ec1ddc59fc"
+  },
+  {
+    "description": "Reinforcement learning is an area of ML focused on teaching agents to automate sequential decision-making in a complex and dynamic environment. An agent learning to play a game of chess against an\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "How do the most common ones differ from one another?",
+      "The experiences gathered by the agent are shared with the learner, which is responsible for learning the best action to take. Similarly, the actions learned by the learner(s) are sent to the actors. This decoupling enabled research on a variety of distributed RL architectures.",
+      "Hence this blog post only focuses on model-free RL algorithms. ... Gorila, which stands for General reinforcement learning Architecture, was the very first massively distributed reinforcement learning architecture proposed in the year 2015. The idea of using actors that are responsible for creating experience trajectories and neural network-based learners which represent the value function or the policy function was introduced by this paper.",
+      "As RL grows in popularity both in research and application there are more variants proposed. However, each of these is a mere derivative of previous architectures and differs in terms of optimizing the training time, communication overhead, resource optimization, cost of running, etc. The underlying design of decoupling actors and learners is common across many."
+    ],
+    "title": "Accelerate Training in RL Using Distributed Reinforcement Learning ...",
+    "url": "https://medium.com/data-science/accelerate-training-in-rl-using-distributed-reinforcement-learning-architectures-b5a726b49826"
+  },
+  {
+    "description": "Distributed Machine Learning Frameworks, Challenges and Benefits to distribute the computation and communication required to train a machine-learning model",
+    "favicon_url": "https://you.com/favicon?domain=www.xenonstack.com&size=128",
+    "snippets": [
+      "All workers use the same procedure on various data partitions. A single coherent output results from having the exact model available to all worker nodes (either through centralization or replication). This presupposes that data samples are distributed as i.i.d.",
+      "Each worker node contains a copy of the model, and each one trains the model using a different subset of the data. Either synchronously or asynchronously, training loops are run. Model parallelism is a machine learning approach for distributing a neural network model over several computers or computing devices.",
+      "Training models of such size are impossible to achieve in a single model as they would not fit in the memory, nor would they have enough computing power for the training. Thus, training such models becomes impossible via conventional means, and we need something else to support such a memory-intensive task. Distributed Machine Learning is one of the solutions to this problem.",
+      "Divides the data into smaller groups that are analyzed concurrently, and the outcomes are integrated to provide a final output. Distributed Machine Learning aims to decrease the time and expense needed for data processing and analysis while enhancing machine learning algorithms' scalability, speed, and efficiency."
+    ],
+    "title": "Distributed Machine Learning Frameworks and its Benefits",
+    "url": "https://www.xenonstack.com/blog/distributed-ml-framework"
+  },
+  {
+    "description": "We discuss in more detail the design ... RLlib paper. What\u2019s next for RLlib In the near term we plan to continue building out RLlib\u2019s set of policy optimizers and algorithms. Our aim is for RLlib to serve\u2026 ... Joe Hellerstein March 12, 2018 blog, Database Systems, Distributed Systems, ...",
+    "favicon_url": "https://you.com/favicon?domain=rise.cs.berkeley.edu&size=128",
+    "snippets": [
+      "We discuss in more detail the design and performance of policy optimizers in the RLlib paper. What\u2019s next for RLlib In the near term we plan to continue building out RLlib\u2019s set of policy optimizers and algorithms. Our aim is for RLlib to serve\u2026 ... Joe Hellerstein March 12, 2018 blog, Database Systems, Distributed Systems, Real-Time, Systems, Uncategorized 0 Comments",
+      "I spent a good fraction of my academic life in the last decade working on a deeper understanding of how to program the cloud and other large-scale distributed systems. I was enormously lucky to collaborate with and learn from amazing friends over this period in the BOOM project, and see our work picked up and extended by new friends and colleagues. Our research was motivated by\u2026 ... We just rolled out general support for multi-agent reinforcement learning in Ray RLlib 0.6.0.",
+      "Our goal is to enable multi-agent RL across a range of use cases, from leveraging existing single-agent algorithms to training with custom algorithms at large scale. ... Vikram Sreekanti September 7, 2018 blog, Database Systems, Distributed Systems, Open Source, Systems, Uncategorized 0 Comments",
+      "Eric Liang March 20, 2018 blog, Deep Learning, Distributed Systems, Open Source, Ray, Reinforcement Learning 0 Comments \u00b7 In this blog post we introduce Ray RLlib, an RL execution toolkit built on the Ray distributed execution framework."
+    ],
+    "title": "Distributed Systems Archives - RISE Lab",
+    "url": "https://rise.cs.berkeley.edu/Projects/distributed-systems/"
+  },
+  {
+    "description": "Explore DAPO, an innovative open-source Reinforcement Learning paradigm for LLMs that rivals DeepSeek-R1 GRPO method.",
+    "favicon_url": "https://you.com/favicon?domain=aipapersacademy.com&size=128",
+    "snippets": [
+      "Particularly, DeepSeek-R1 paper has democratized the idea of using large-scale reinforcement learning (RL) to enhance long-form reasoning capabilities in LLMs. However, key technical details behind DeepSeek-R1 RL training remain elusive, making it difficult for the research community to reproduce these results. This is where DAPO (Decoupled Clip and Dynamic sAmpling Policy Optimization) steps in.",
+      "When the researchers first attempted to replicate the 32B RL-based DeepSeek-R1 results, they encountered a significant performance gap. Their initial run only achieved 30 points on the AIME 2024 benchmark, compared to the 47 points achieved by DeepSeek-R1. In response, the researchers set out to close this gap by developing DAPO (Decoupled Clip and Dynamic sAmpling Policy Optimization), a new RL algorithm specifically designed to address challenges in long chain-of-thought (CoT) reasoning tasks.",
+      "This component helps to ensure that the model is not drifted too far away from the pretrained model. However, the paper says that during RL for long CoT reasoning, the model distribution can diverge significantly from the initial model, and therefore this restriction is not needed.",
+      "In GRPO, a single hyperparameter \u03b5 controls both the lower and upper clipping range. DAPO decouples them, and increase the upper clipping range from 0.2 to 0.28."
+    ],
+    "title": "DAPO: Enhancing GRPO For LLM Reinforcement Learning - AI Papers ...",
+    "url": "https://aipapersacademy.com/dapo/"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "r_\\theta r\u03b8\u200b. In addition, per-token probability distributions from the RL policy are compared to the ones from the initial model to compute a penalty on the difference between them. In multiple papers from OpenAI, Anthropic, and DeepMind, this penalty has been designed as a scaled version of the Kullback\u2013Leibler (KL) divergence between these sequences of distributions over tokens,",
+      "The action space of this policy is all the tokens corresponding to the vocabulary of the language model (often on the order of 50k tokens) and the observation space is the distribution of possible input token sequences, which is also quite large given previous uses of RL (the dimension is approximately the size of vocabulary ^ length of the input token sequence).",
+      "Notably, it is well-tested and benchmarked on a broad range of tasks in recent work amounting up to 2000 experiments highlighting several practical insights on data budget comparison (expert demonstrations vs. reward modeling), handling reward hacking and training instabilities, etc. RL4LMs current plans include distributed training of larger models and new RL algorithms.",
+      "The exact dynamics of how many parameters to freeze, or not, is considered an open research problem. PPO has been around for a relatively long time \u2013 there are tons of guides on how it works. The relative maturity of this method made it a favorable choice for scaling up to the new application of distributed training for RLHF."
+    ],
+    "title": "Illustrating Reinforcement Learning from Human Feedback (RLHF)",
+    "url": "https://huggingface.co/blog/rlhf"
+  },
+  {
+    "description": "This paper surveys the field of deep multiagent reinforcement learning (RL). The combination of deep neural networks with RL has gained increased traction in recent years and is slowly shifting the focus from single-agent to multiagent environments. Dealing with multiple agents is inherently ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "This paper surveys the field of deep multiagent reinforcement learning (RL). The combination of deep neural networks with RL has gained increased traction in recent years and is slowly shifting the focus from single-agent to multiagent environments. Dealing with multiple agents is inherently more complex as (a) the future rewards depend on multiple players\u2019 joint actions and (b) the computational complexity increases.",
+      "Artificial Intelligence Review - This paper surveys the field of deep multiagent reinforcement learning (RL). The combination of deep neural networks with RL has gained increased traction in recent...",
+      "Recent developments in RL research show a preference for policy-based strategies, even though value-based methods can capture the underlying structure of the environment (Arulkumaran et al. 2017). In contrast to value-based methods, policy-based methods search directly for the optimal policy and the output is represented as a probability distribution over actions.",
+      "The remainder of this paper is organised as follows. In Sect. 2 the preliminaries of single-agent RL are discussed. In Sect. 3 we present the most common DMARL problem frameworks. The taxonomy is introduced in Sect. 4. The discussion and recommendations for future research are given in Sect."
+    ],
+    "title": "Deep multiagent reinforcement learning: challenges and directions ...",
+    "url": "https://link.springer.com/article/10.1007/s10462-022-10299-x"
+  },
+  {
+    "description": "Deep reinforcement learning (DRL) is a very active research area. However, several technical and scientific issues require to be addressed, amongst which we can mention data inefficiency, exploration-exploitation trade-off, and multi-task learning. Therefore, distributed modifications of DRL ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Deep reinforcement learning (DRL) is a very active research area. However, several technical and scientific issues require to be addressed, amongst which we can mention data inefficiency, exploration-exploitation trade-off, and multi-task learning. Therefore, distributed modifications of DRL were introduced; agents that could be run on many machines simultaneously.",
+      "Abstract page for arXiv paper 2011.11012: Distributed Deep Reinforcement Learning: An Overview",
+      "We overview the state of the field, by studying the key research works that have a significant impact on how we can use distributed methods in DRL. We choose to overview these papers, from the perspective of distributed learning, and not the aspect of innovations in reinforcement learning algorithms.",
+      "View a PDF of the paper titled Distributed Deep Reinforcement Learning: An Overview, by Mohammad Reza Samsami and 1 other authors View PDF"
+    ],
+    "title": "[2011.11012] Distributed Deep Reinforcement Learning: An Overview",
+    "url": "https://arxiv.org/abs/2011.11012"
+  },
+  {
+    "description": "We propose Decoupled RL which trains separate policies for exploration and exploitation using intrinsic rewards, aiming to address hyperparameter sensitivity and non-stationary challenges of...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "TL;DR: We propose Decoupled RL which trains separate policies for exploration and exploitation using intrinsic rewards, aiming to address hyperparameter sensitivity and non-stationary challenges of intrinsically motivated exploration for RL",
+      "DeRL can be applied with on-policy and off-policy RL algorithms. We evaluate DeRL algorithms in two sparse-reward environments with multiple types of intrinsic rewards. We show that DeRL is more robust to scaling and speed of decay of intrinsic rewards and converges to the same evaluation returns than intrinsically motivated baselines in fewer interactions. Community Implementations: [![CatalyzeX](/images/catalyzex_icon.svg) 1 code implementation](https://www.catalyzex.com/paper/decoupling-exploration-and-exploitation-in/code)"
+    ],
+    "title": "Decoupling Exploration and Exploitation in Reinforcement Learning ...",
+    "url": "https://openreview.net/forum?id=NwuIIOcznYt"
+  },
+  {
+    "description": "The papers I endorse as worth reading among a cresting wave of reasoning research.",
+    "favicon_url": "https://you.com/favicon?domain=www.interconnects.ai&size=128",
+    "snippets": [
+      "While advantage normalization is a common trick in RL (Andrychowicz et al., 2021), it is typically computed across an entire batch. In reality, the impact of this change can be completely absorbed into high-quality data engineering, as discussed in other papers above, where you have a uniform distribution in question difficulty across the batch.",
+      "For reference, many RL implementations already include some larger penalty if the model truncates itself (i.e. never generates an EOS token or answer). They call it Decoupled Clip and Dynamic sAmpling Policy Optimization (DAPO) algorithm.",
+      "Papers like this build up over the years into huge intuition gains. For now, when training real state-of-the-art models, most of the changes will likely be overkill in code complexity relative to focusing on having a well-tuned data distribution (as discussed in the above papers).",
+      "Balanced Difficulty: The prompt set should include a well-distributed range of easy, moderate, and difficult questions to facilitate gradual learning and prevent overfitting to specific complexity levels. The latter point is something we\u2019ll see come up again and again. Where algorithmic changes (e.g., removing difficulty normalization in Dr. GRPO) can make models more robust to less balanced data, a crucial part of the current RL training is to have a diversity of difficulties in your data."
+    ],
+    "title": "Recent reasoning research: GRPO tweaks, base model RL, and data ...",
+    "url": "https://www.interconnects.ai/p/papers-im-reading-base-model-rl-grpo"
+  },
+  {
+    "description": "Distributed systems are independent components, machines, and apps that operate as a unified system. Learn how distributed systems work, with examples and use cases.",
+    "favicon_url": "https://you.com/favicon?domain=www.confluent.io&size=128",
+    "snippets": [
+      "Also known as distributed computing and distributed databases, a distributed system is a collection of independent components located on different machines that share messages with each other in order to achieve common goals.",
+      "The earliest example of a distributed system happened in the 1970s when ethernet was invented and LAN (local area networks) were created. For the first time computers would be able to send messages to other systems with a local IP address. Peer-to-peer networks evolved and e-mail and then the Internet as we know it continue to be the biggest, ever growing example of distributed systems.",
+      "Telephone and cellular networks are also examples of distributed networks. Telephone networks have been around for over a century and it started as an early example of a peer to peer network. Cellular networks are distributed networks with base stations physically distributed in areas called cells.",
+      "There used to be a distinction between parallel computing and distributed systems. Parallel computing was focused on how to run software on multiple threads or processors that accessed the same data and memory. Distributed systems meant separate machines with their own processors and memory."
+    ],
+    "title": "Distributed Systems: An Introduction",
+    "url": "https://www.confluent.io/learn/distributed-systems/"
+  },
+  {
+    "description": "Skip to yearly menu bar Skip to main content \u00b7 Main Navigation \u00b7 Help/FAQ \u00b7 Contact ICLR \u00b7 Downloads \u00b7 ICLR Blog \u00b7 Code of Conduct \u00b7 Create Profile \u00b7 Reset Password \u00b7 Journal To Conference Track",
+    "favicon_url": "https://you.com/favicon?domain=iclr.cc&size=128",
+    "snippets": [],
+    "title": "ICLR 2024 Papers",
+    "url": "https://iclr.cc/virtual/2024/papers.html"
+  },
+  {
+    "description": "How components of a distributed system can be decoupled in space and time to promote a reactive architecture",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Temporal decoupling helps break the time availability dependency between remote components. Components A and B communicate independent of time. When component interactions are coupled with time, they have to be always available. Their communication becomes synchronous and blocking. The sender has to assume the availability and reachability of receiving components for the duration of the exchange. In the context of distributed systems, we can\u2019t always predict the availability and reachability of components.",
+      "Ultimately, these features lead to a system that is always responsive under heavy loads also in the face of component failures. Next time you design a distributed application architecture, consider decoupling component interactions in time and space.",
+      "In the context of distributed systems, spatial decoupling means dealing with something, irrespective of where it is located (space). Spatial decoupling enables components to be bound to a virtual address.",
+      "Please don\u2019t mind the title. It seems it is coming straight out of a quantum physics paper. Have no fear; we are not going to talk physics here. Even though temporal and spatial decoupling sounds too scientific, they don\u2019t carry much weight as they appear to be."
+    ],
+    "title": "The Road to Reactive: Understanding the Temporal and Spatial ...",
+    "url": "https://medium.com/event-driven-utopia/the-road-to-reactive-understanding-the-temporal-and-spatial-decoupling-1fd49f52229a"
+  },
+  {
+    "description": "The papers I endorse as worth reading among a cresting wave of reasoning research.",
+    "favicon_url": "https://you.com/favicon?domain=www.interconnects.ai&size=128",
+    "snippets": [
+      "While advantage normalization is a common trick in RL (Andrychowicz et al., 2021), it is typically computed across an entire batch. In reality, the impact of this change can be completely absorbed into high-quality data engineering, as discussed in other papers above, where you have a uniform distribution in question difficulty across the batch.",
+      "For reference, many RL implementations already include some larger penalty if the model truncates itself (i.e. never generates an EOS token or answer). They call it Decoupled Clip and Dynamic sAmpling Policy Optimization (DAPO) algorithm.",
+      "Papers like this build up over the years into huge intuition gains. For now, when training real state-of-the-art models, most of the changes will likely be overkill in code complexity relative to focusing on having a well-tuned data distribution (as discussed in the above papers).",
+      "Balanced Difficulty: The prompt set should include a well-distributed range of easy, moderate, and difficult questions to facilitate gradual learning and prevent overfitting to specific complexity levels. The latter point is something we\u2019ll see come up again and again. Where algorithmic changes (e.g., removing difficulty normalization in Dr. GRPO) can make models more robust to less balanced data, a crucial part of the current RL training is to have a diversity of difficulties in your data."
+    ],
+    "title": "Recent reasoning research: GRPO tweaks, base model RL, and data ...",
+    "url": "https://www.interconnects.ai/p/papers-im-reading-base-model-rl-grpo"
+  },
+  {
+    "description": "Distributed systems are independent components, machines, and apps that operate as a unified system. Learn how distributed systems work, with examples and use cases.",
+    "favicon_url": "https://you.com/favicon?domain=www.confluent.io&size=128",
+    "snippets": [
+      "Also known as distributed computing and distributed databases, a distributed system is a collection of independent components located on different machines that share messages with each other in order to achieve common goals.",
+      "The earliest example of a distributed system happened in the 1970s when ethernet was invented and LAN (local area networks) were created. For the first time computers would be able to send messages to other systems with a local IP address. Peer-to-peer networks evolved and e-mail and then the Internet as we know it continue to be the biggest, ever growing example of distributed systems.",
+      "Telephone and cellular networks are also examples of distributed networks. Telephone networks have been around for over a century and it started as an early example of a peer to peer network. Cellular networks are distributed networks with base stations physically distributed in areas called cells.",
+      "There used to be a distinction between parallel computing and distributed systems. Parallel computing was focused on how to run software on multiple threads or processors that accessed the same data and memory. Distributed systems meant separate machines with their own processors and memory."
+    ],
+    "title": "Distributed Systems: An Introduction",
+    "url": "https://www.confluent.io/learn/distributed-systems/"
+  },
+  {
+    "description": "Skip to yearly menu bar Skip to main content \u00b7 Main Navigation \u00b7 Help/FAQ \u00b7 Contact ICLR \u00b7 Downloads \u00b7 ICLR Blog \u00b7 Code of Conduct \u00b7 Create Profile \u00b7 Reset Password \u00b7 Journal To Conference Track",
+    "favicon_url": "https://you.com/favicon?domain=iclr.cc&size=128",
+    "snippets": [],
+    "title": "ICLR 2024 Papers",
+    "url": "https://iclr.cc/virtual/2024/papers.html"
+  },
+  {
+    "description": "How components of a distributed system can be decoupled in space and time to promote a reactive architecture",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Temporal decoupling helps break the time availability dependency between remote components. Components A and B communicate independent of time. When component interactions are coupled with time, they have to be always available. Their communication becomes synchronous and blocking. The sender has to assume the availability and reachability of receiving components for the duration of the exchange. In the context of distributed systems, we can\u2019t always predict the availability and reachability of components.",
+      "Ultimately, these features lead to a system that is always responsive under heavy loads also in the face of component failures. Next time you design a distributed application architecture, consider decoupling component interactions in time and space.",
+      "In the context of distributed systems, spatial decoupling means dealing with something, irrespective of where it is located (space). Spatial decoupling enables components to be bound to a virtual address.",
+      "Please don\u2019t mind the title. It seems it is coming straight out of a quantum physics paper. Have no fear; we are not going to talk physics here. Even though temporal and spatial decoupling sounds too scientific, they don\u2019t carry much weight as they appear to be."
+    ],
+    "title": "The Road to Reactive: Understanding the Temporal and Spatial ...",
+    "url": "https://medium.com/event-driven-utopia/the-road-to-reactive-understanding-the-temporal-and-spatial-decoupling-1fd49f52229a"
+  },
+  {
+    "description": "We're excited to release INTELLECT-2, the first 32B parameter model trained via globally distributed reinforcement learning. Unlike traditional centralized training efforts, INTELLECT-2 trains a reasoning language model using fully asynchronous RL across a dynamic, heterogeneous swarm of ...",
+    "favicon_url": "https://you.com/favicon?domain=www.primeintellect.ai&size=128",
+    "snippets": [
+      "We're excited to release INTELLECT-2, the first 32B parameter model trained via globally distributed reinforcement learning. Unlike traditional centralized training efforts, INTELLECT-2 trains a reasoning language model using fully asynchronous RL across a dynamic, heterogeneous swarm of permissionless compute contributors.",
+      "Decouples rollout generation, model training, and weight broadcasting. It enables training across heterogeneous, unreliable networks. The trainer implementation uses PyTorch FSDP2, inference uses vLLM and the verifiers use the GENESYS schema introduced in SYNTHETIC-1. SHARDCAST: A library for distributing large files via a HTTP-based tree-topology network that efficiently propagates updated model weights to the decentralized inference workers.",
+      "To enable a training run with this unique infrastructure, we built various components from scratch: we introduce PRIME-RL, our training framework purpose-built for distributed asynchronous reinforcement learning, based on top of novel components such as TOPLOC, which verifies rollouts from untrusted inference workers, and SHARDCAST, which efficiently broadcasts policy weights from training nodes to inference workers.",
+      "Inference is embarrassingly parallel and communication-free, so more complex RL environments that devote more FLOPs to inference are a natural fit for decentralized training. ... To fully leverage inference-time compute for scientific and research progress, we need to give models built-in tools in its reasoning chain\u2014web search, Python interpreters, etc. ... We believe open-source has a unique advantage here. Distributed RL is still in its early days, and with the right community and contributions, open-source AI can outpace the closed labs."
+    ],
+    "title": "INTELLECT-2 Release: The First 32B Parameter Model Trained Through ...",
+    "url": "https://www.primeintellect.ai/blog/intellect-2-release"
+  },
+  {
+    "description": "Deep reinforcement learning has significantly advanced robot manipulations by providing an alternative solution for designing control strategies using raw images as direct inputs. While images offer additional environmental information, the end-to-end policy training manner (from image to action) ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Deep reinforcement learning has significantly advanced robot manipulations by providing an alternative solution for designing control strategies using raw images as direct inputs. While images offer additional environmental information, the end-to-end policy training manner (from image to action) requires simultaneous representation and task learning by the agent.",
+      "Neural Processing Letters - Deep reinforcement learning has significantly advanced robot manipulations by providing an alternative solution for designing control strategies using raw images as...",
+      "In this paper, a novel method named Reinforcement Learning with Decoupled State Representation (RLDSR) is proposed to decouple the robot and object information without relying on image preprocessing like segmentation or detection. The intuition behind RLDSR is that if the robot position is given (such as the end effector\u2019s Cartesian coordinates, which are typically accessible), the latent space\u2019s conditional distribution should exclusively capture the object\u2019s state space.",
+      "The main contributions of this paper can be summarized as follows: (1) A representation learning framework that can decouple the robot information and object information is proposed. (2) The experimental results demonstrate that the policy based on the proposed RLDSR can learn faster and achieve better final performance compared with previous methods in typical robot manipulation tasks."
+    ],
+    "title": "Reinforcement Learning with Decoupled State Representation for ...",
+    "url": "https://link.springer.com/article/10.1007/s11063-024-11650-9"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "Replicated Load-Balanced Services (RLBS) play a key role in distributed systems, ensuring efficient resource use, improved performance, and high availability. By distributing tasks across multiple service instances, RLBS helps prevent overload on a single server and minimizes the risk of downtime.",
+      "Replicated Load-Balanced Services (RLBS) in distributed systems refer to the strategy of replicating services across multiple servers or nodes and distributing the incoming requests among them to achieve optimal performance, fault tolerance, and high availability.",
+      "As traffic increases, additional replicas can be created and added to the pool, allowing RLBS to handle more clients without degradation in performance. The load balancer will automatically start distributing traffic to these new instances, making the system highly scalable.",
+      "Scalability: RLBS can easily handle growing traffic by adding more service instances. As new replicas are deployed, the load balancer efficiently distributes incoming requests, allowing the system to scale horizontally without performance degradation."
+    ],
+    "title": "Replicated Load-Balanced Services (RLBS) in Distributed Systems ...",
+    "url": "https://www.geeksforgeeks.org/system-design/replicated-load-balanced-services-rlbs-in-distributed-systems/"
+  },
+  {
+    "description": "Distributed systems are collections of independent computing resources that work together to present a unified, cohesive service or application to the user.",
+    "favicon_url": "https://you.com/favicon?domain=blog.bytebytego.com&size=128",
+    "snippets": [
+      "Rather than relying on a single powerful machine, these systems spread workloads across multiple nodes, often deployed across different servers, regions, or continents. Building distributed systems is popular because it offers improved scalability, enabling organizations to handle growing traffic by adding more nodes as needed.",
+      "However, with these benefits come complexities\u2014what many refer to as the \u201cdark side\u201d of distributed systems.",
+      "Two critical considerations that consistently arise in distributed systems are latency and partition tolerance.",
+      "In this article, we\u2019ll understand how latency and partition tolerance impact distributed systems and discuss strategies for addressing them effectively."
+    ],
+    "title": "Dark Side of Distributed Systems: Latency and Partition Tolerance",
+    "url": "https://blog.bytebytego.com/p/dark-side-of-distributed-systems"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=geeksforgeeks.org&size=128",
+    "snippets": [
+      "Replicated Load-Balanced Services (RLBS) play a key role in distributed systems, ensuring efficient resource use, improved performance, and high availability. By distributing tasks across multiple service instances, RLBS helps prevent overload on a single server and minimizes the risk of downtime.",
+      "Replicated Load-Balanced Services (RLBS) in distributed systems refer to the strategy of replicating services across multiple servers or nodes and distributing the incoming requests among them to achieve optimal performance, fault tolerance, and high availability.",
+      "As traffic increases, additional replicas can be created and added to the pool, allowing RLBS to handle more clients without degradation in performance. The load balancer will automatically start distributing traffic to these new instances, making the system highly scalable.",
+      "Scalability: RLBS can easily handle growing traffic by adding more service instances. As new replicas are deployed, the load balancer efficiently distributes incoming requests, allowing the system to scale horizontally without performance degradation."
+    ],
+    "title": "Replicated Load-Balanced Services (RLBS) in Distributed Systems ...",
+    "url": "https://geeksforgeeks.org/replicated-load-balanced-services-rlbs-in-distributed-systems"
+  },
+  {
+    "description": "Instead of emitting a stream of Domain Events, emit a single Summary.",
+    "favicon_url": "https://you.com/favicon?domain=verraes.net&size=128",
+    "snippets": [
+      "Mathias Verraes' blog"
+    ],
+    "title": "Patterns for Decoupling in Distributed Systems: Summary Event",
+    "url": "https://verraes.net/2019/05/patterns-for-decoupling-distsys-summary-event/"
+  },
+  {
+    "description": "Reinforcement Learning Tutorial \u00b7 Developer Specification",
+    "favicon_url": "https://you.com/favicon?domain=opendilab.github.io&size=128",
+    "snippets": [
+      "Distributed reinforcement learning (Distributed RL) is the only way for deep reinforcement learning to be applied to large-scale applications and solve complex decision spaces and long-term planning problems.",
+      "From the algorithmic point of view, it is hoped to reduce the algorithm\u2019s requirements for data throughput (such as tolerating older and more off-policy data) while ensuring the convergence of the algorithm, and improving the efficiency of data exploration and the utilization of collected data (for example, modify the data sampling method, or combine some research related to data-efficiency in RL). So that it provides more space and possibilities for system design. To sum up, distributed reinforcement learning is a more comprehensive research subfield, which requires mutual perception and coordination of deep reinforcement learning algorithm + distributed system design.",
+      "If there are multiple Learners, they also periodically synchronize their gradients to update the neural network (i.e. the data-parallel model in distributed deep learning). On the basis of the former, the latter is dedicated to optimizing the loss of the transmission model parameters. SEED RL strips out the part used for inference to generate actions, and puts it together with the training end to update the model parameters through efficient inter-TPU communication technology.",
+      "Object Store in Ray/RLLib [8]: For data transfer between multiple processes and multiple machines, the Object Store in Ray/RLLib provides a very convenient and efficient way. As long as any process knows the reference of an object, it can request the Store to provide it. Providing the corresponding value, and the specific internal data transmission is completely managed by the Store, so that a distributed training program can be implemented like writing a local single-process program."
+    ],
+    "title": "Distributed Reinforcement Learning \u2014 DI-engine 0.1.0 documentation",
+    "url": "https://opendilab.github.io/DI-engine/02_algo/distributed_rl.html"
+  },
+  {
+    "description": "Current reinforcement learning (RL) methods can successfully learn single tasks but often generalize poorly to modest perturbations in task domain or training procedure. In this work, we present a decoupled learning strategy for RL that creates a shared representation space where knowledge ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Current reinforcement learning (RL) methods can successfully learn single tasks but often generalize poorly to modest perturbations in task domain or training procedure. In this work, we present a decoupled learning strategy for RL that creates a shared representation space where knowledge can be robustly transferred.",
+      "Abstract page for arXiv paper 1804.10689: Decoupling Dynamics and Reward for Transfer Learning",
+      "View a PDF of the paper titled Decoupling Dynamics and Reward for Transfer Learning, by Amy Zhang and 1 other authors View PDF \u00b7 Abstract:Current reinforcement learning (RL) methods can successfully learn single tasks but often generalize poorly to modest perturbations in task domain or training procedure.",
+      "We separate learning the task representation, the forward dynamics, the inverse dynamics and the reward function of the domain, and show that this decoupling improves performance within the task, transfers well to changes in dynamics and reward, and can be effectively used for online planning. Empirical results show good performance in both continuous and discrete RL domains. From: Amy Zhang [view email] [v1] Fri, 27 Apr 2018 21:16:40 UTC (1,712 KB) [v2] Wed, 9 May 2018 02:02:28 UTC (3,790 KB) ... View a PDF of the paper titled Decoupling Dynamics and Reward for Transfer Learning, by Amy Zhang and 1 other authors"
+    ],
+    "title": "[1804.10689] Decoupling Dynamics and Reward for Transfer Learning",
+    "url": "https://arxiv.org/abs/1804.10689"
+  },
+  {
+    "description": "How components of a distributed system can be decoupled in space and time to promote a reactive architecture",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Temporal decoupling helps break the time availability dependency between remote components. Components A and B communicate independent of time. When component interactions are coupled with time, they have to be always available. Their communication becomes synchronous and blocking. The sender has to assume the availability and reachability of receiving components for the duration of the exchange. In the context of distributed systems, we can\u2019t always predict the availability and reachability of components.",
+      "Ultimately, these features lead to a system that is always responsive under heavy loads also in the face of component failures. Next time you design a distributed application architecture, consider decoupling component interactions in time and space.",
+      "In the context of distributed systems, spatial decoupling means dealing with something, irrespective of where it is located (space). Spatial decoupling enables components to be bound to a virtual address.",
+      "Please don\u2019t mind the title. It seems it is coming straight out of a quantum physics paper. Have no fear; we are not going to talk physics here. Even though temporal and spatial decoupling sounds too scientific, they don\u2019t carry much weight as they appear to be."
+    ],
+    "title": "The Road to Reactive: Understanding the Temporal and Spatial ...",
+    "url": "https://medium.com/event-driven-utopia/the-road-to-reactive-understanding-the-temporal-and-spatial-decoupling-1fd49f52229a"
+  },
+  {
+    "description": "In an effort to overcome limitations of reward-driven feature learning in deep reinforcement learning (RL) from images, we propose decoupling representation learning from policy learning. To this end, we introduce a new unsupervised learning (UL) task, called Augmented Temporal Contrast (ATC), ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "In an effort to overcome limitations of reward-driven feature learning in deep reinforcement learning (RL) from images, we propose decoupling representation learning from policy learning. To this end, we introduce a new unsupervised learning (UL) task, called Augmented Temporal Contrast (ATC), which trains a convolutional encoder to associate pairs of observations separated by a short time difference, under image augmentations and using a contrastive loss.",
+      "Abstract page for arXiv paper 2009.08319: Decoupling Representation Learning from Reinforcement Learning",
+      "View a PDF of the paper titled Decoupling Representation Learning from Reinforcement Learning, by Adam Stooke and 3 other authors View PDF \u00b7 Abstract:In an effort to overcome limitations of reward-driven feature learning in deep reinforcement learning (RL) from images, we propose decoupling representation learning from policy learning.",
+      "Our experiments span visually diverse RL benchmarks in DeepMind Control, DeepMind Lab, and Atari, and our complete code is available at this https URL. From: Michael Laskin [view email] [v1] Mon, 14 Sep 2020 19:11:13 UTC (1,548 KB) [v2] Wed, 30 Sep 2020 16:35:40 UTC (1,548 KB) [v3] Sun, 16 May 2021 20:44:18 UTC (1,764 KB) ... View a PDF of the paper titled Decoupling Representation Learning from Reinforcement Learning, by Adam Stooke and 3 other authors"
+    ],
+    "title": "[2009.08319] Decoupling Representation Learning from Reinforcement ...",
+    "url": "https://arxiv.org/abs/2009.08319"
+  },
+  {
+    "description": "Paper list of multi-agent reinforcement learning (MARL) - LantaoYu/MARL-Papers",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Multi-Agent Reinforcement Learning is a very interesting research area, which has strong connections with single-agent RL, multi-agent systems, game theory, evolutionary computation and optimization theory, and its application in Large Language Models (LLMs) and Robotics.",
+      "Deep Decentralized Multi-task Multi-Agent RL under Partial Observability by Omidshafiei S, Pazis J, Amato C, et al.",
+      "Learning to communicate to solve riddles with deep distributed recurrent q-networks by Foerster J N, Assael Y M, de Freitas N, et al.",
+      "Efficient distributed reinforcement learning through agreement by Varshavskaya P, Kaelbling L P, Rus D."
+    ],
+    "title": "GitHub - LantaoYu/MARL-Papers: Paper list of multi-agent ...",
+    "url": "https://github.com/LantaoYu/MARL-Papers"
+  },
+  {
+    "description": "Deep reinforcement learning has significantly advanced robot manipulations by providing an alternative solution for designing control strategies using raw images as direct inputs. While images offer additional environmental information, the end-to-end policy training manner (from image to action) ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Deep reinforcement learning has significantly advanced robot manipulations by providing an alternative solution for designing control strategies using raw images as direct inputs. While images offer additional environmental information, the end-to-end policy training manner (from image to action) requires simultaneous representation and task learning by the agent.",
+      "Neural Processing Letters - Deep reinforcement learning has significantly advanced robot manipulations by providing an alternative solution for designing control strategies using raw images as...",
+      "In this paper, a novel method named Reinforcement Learning with Decoupled State Representation (RLDSR) is proposed to decouple the robot and object information without relying on image preprocessing like segmentation or detection. The intuition behind RLDSR is that if the robot position is given (such as the end effector\u2019s Cartesian coordinates, which are typically accessible), the latent space\u2019s conditional distribution should exclusively capture the object\u2019s state space.",
+      "The main contributions of this paper can be summarized as follows: (1) A representation learning framework that can decouple the robot information and object information is proposed. (2) The experimental results demonstrate that the policy based on the proposed RLDSR can learn faster and achieve better final performance compared with previous methods in typical robot manipulation tasks."
+    ],
+    "title": "Reinforcement Learning with Decoupled State Representation for ...",
+    "url": "https://link.springer.com/article/10.1007/s11063-024-11650-9"
+  },
+  {
+    "description": "Deep learning update: What have I learned about RL in 3 months?",
+    "favicon_url": "https://you.com/favicon?domain=gordicaleksa.medium.com&size=128",
+    "snippets": [
+      "This blog is the last one in my series of \u201cdeep learning update\u201d blogs, where I was sharing my learnings as I was intensively researching various ML/deep learning subfields over the last 16 months\u2026",
+      "The first RL agent to crack (go above the human baseline) all of the 57 Atari games, including Pitfall, Solaris, Skiing and Montezuma\u2019s revenge: ... Search for the blogs and read these papers (Agent 57 builds right on top of R2D2 and NGU so make sure to check those out): Recurrent Experience Replay in Distributed RL (R2D2)",
+      "A Distributional Perspective on Reinforcement Learning \u2014 instead of finding the expectation of the reward (point estimate) this paper proposes to keep the whole value distribution during the training.",
+      "A similar trend in the initial deep RL era was also made in robotics showing that we can train robots end-to-end (e2e) to perform certain dexterous tasks, like screw a cap onto a bottle, placing a coat hanger on a rack, etc., using raw vision and robot\u2019s state (robot\u2019s joint angles, etc.) as an input! CNNs were powering this breakthrough as well. End-to-End Training of Deep Visuomotor Policies (I\u2019ll link the papers later, relax for now \u2764)"
+    ],
+    "title": "How to get started with Reinforcement Learning (RL) | by Aleksa ...",
+    "url": "https://gordicaleksa.medium.com/how-to-get-started-with-reinforcement-learning-rl-4922fafeaf8c"
+  },
+  {
+    "description": "In an effort to overcome limitations of reward-driven feature learning in deep reinforcement learning (RL) from images, we propose decoupling representation learning from policy learning. To this end, we introduce a new unsupervised learning (UL) task, called Augmented Temporal Contrast (ATC), ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "In an effort to overcome limitations of reward-driven feature learning in deep reinforcement learning (RL) from images, we propose decoupling representation learning from policy learning. To this end, we introduce a new unsupervised learning (UL) task, called Augmented Temporal Contrast (ATC), which trains a convolutional encoder to associate pairs of observations separated by a short time difference, under image augmentations and using a contrastive loss.",
+      "Abstract: In an effort to overcome limitations of reward-driven feature learning in deep reinforcement learning (RL) from images, we propose decoupling representation learning from policy learning.",
+      "One-sentence Summary: We introduce a new unsupervised learning task tailored for RL that, for the first time, supports representation learning fully decoupled from policy learning, as demonstrated across a range of visually diverse RL benchmarks. ... Code Of Ethics: I acknowledge that I and all co-authors of this work have read and commit to adhering to the ICLR Code of Ethics \u00b7 Community Implementations: [![CatalyzeX](/images/catalyzex_icon.svg) 3 code implementations](https://www.catalyzex.com/paper/arxiv:2009.08319/code)",
+      "In online RL experiments, we show that training the encoder exclusively using ATC matches or outperforms end-to-end RL in most environments. Additionally, we benchmark several leading UL algorithms by pre-training encoders on expert demonstrations and using them, with weights frozen, in RL agents; we find that agents using ATC-trained encoders outperform all others."
+    ],
+    "title": "Decoupling Representation Learning from Reinforcement Learning ...",
+    "url": "https://openreview.net/forum?id=_SKUm2AJpvN"
+  },
+  {
+    "description": "Proximal Policy Optimization (PPO) is an important reinforcement learning algorithm that has many distributed and asynchronous flavors.",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Distributed RL includes the same components but can have a mix-and-match of different \u201cworkers\u201d that do one or multiple of these things. These workers can operate on either different machines or processes.",
+      "This article assumes you have an understanding of Reinforcement Learning (RL) and specifically PPO, but as a quick recap: PPO is a policy gradient method that attempts to keep successive model updates close together to avoid training instability. It has become the de facto RL algorithm for improved sample efficiency and stability. Before getting into the comparisons, let\u2019s discuss important high-level concepts of distributed RL (many of which also apply to distributed systems in general).",
+      "This allows for a popular algorithm called \u201cAllReduce\u201d to take place, which just means each worker gets all of the other workers\u2019 gradients and aggregates/updates its own instance of the model. The 3 main different versions are: Asynchronous PPO , Distributed PPO and Decentralized Distributed PPO.",
+      "Additionally, I implemented a version that I named Resource Flexible Distributed PPO that will be shown too. For each of the visualizations there are 2 diagrams shown. The top is the \u201cworker view\u201d where each cell indicates a separate process. Edges indicate resources sent to other processes generally through shared memory."
+    ],
+    "title": "Illustrated Comparison of Different Distributed Versions of PPO ...",
+    "url": "https://medium.com/@maxbrenner-ai/illustrated-comparison-of-different-distributed-versions-of-ppo-18602d27c657"
+  },
+  {
+    "description": "Under this setting, the performances ... distribution of the training examples (i.e., features and labels) stored at the local nodes. To further investigate the effects of non-IID data, the following description considers the main categories presented in the preprint by Peter Kairouz et al. from 2019. The description of non-IID data relies on the analysis of the joint probability between features and labels for each node. This allows decoupling of each ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Under this setting, the performances of the training process may vary significantly according to the unbalanced local data samples as well as the particular probability distribution of the training examples (i.e., features and labels) stored at the local nodes. To further investigate the effects of non-IID data, the following description considers the main categories presented in the preprint by Peter Kairouz et al. from 2019. The description of non-IID data relies on the analysis of the joint probability between features and labels for each node. This allows decoupling of each contribution according to the specific distribution available at the local nodes.",
+      "In the paper, Federated Learning is used to learn Vision-based navigation, helping better sim-to-real transfer. Federated Learning (FL) is transforming biometric recognition by enabling collaborative model training across distributed data sources while preserving privacy.",
+      "The main difference between federated learning and distributed learning lies in the assumptions made on the properties of the local datasets, as distributed learning originally aims at parallelizing computing power where federated learning originally aims at training on heterogeneous datasets.",
+      "While distributed learning also aims at training a single model on multiple servers, a common underlying assumption is that the local datasets are independent and identically distributed (i.i.d.) and roughly have the same size. None of these hypotheses are made for federated learning; instead, the datasets are typically heterogeneous and their sizes may span several orders of magnitude.",
+      "Moreover, the clients involved in federated learning may be unreliable as they are subject to more failures or drop out since they commonly rely on less powerful communication media (i.e. Wi-Fi) and battery-powered systems (i.e. smartphones and IoT devices) compared to distributed learning where nodes are typically datacenters that have powerful computational capabilities and are connected to one another with fast networks."
+    ],
+    "title": "Federated learning - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Federated_learning"
+  },
+  {
+    "description": "Decoupled architectures are at the heart of our biological evolution. Plants inhale CO2 and exhale O2.",
+    "favicon_url": "https://you.com/favicon?domain=www.linkedin.com&size=128",
+    "snippets": [
+      "Examples like this show us that our IT systems must not evolve this way either \u2013 especially ones where distributed systems must interact with each other. By the end of this essay, you should be able to gain a small appreciation why a decoupled approach to architecture and design might be preferable when integrating with distributed cloud platforms.",
+      "Our ability to design and put in place a robust decoupled architecture is often subjected to constrains of project schedule, budget, and other real-world considerations. Decoupled architecture discussions may often be termed \u201cEsoteric\u201d & given a pass because of perceived risk to project schedules and timelines.",
+      "Therefore, a concerted effort must be made to ensure agreement on building decoupled architecture patterns as a preferred practice in the organization - especially when integrating with and amongst cloud-based solutions. Why not then, try our level best to get it right the 1st time around?",
+      "Perhaps not \u2013 there will always be scenarios that may require exchange of real time information or coupling. Indeed, the contexts of certain IT environments may prevent full decoupling to take hold \u2013 many companies are not organized to deal with concepts like multiple truths of data and data eventually becoming consistent."
+    ],
+    "title": "Decoupling architectures for distributed systems",
+    "url": "https://www.linkedin.com/pulse/decoupling-architectures-distributed-systems-ravi-bellur"
+  },
+  {
+    "description": "Download scientific diagram | Overview of the modular, decoupled RL-based walking control framework of the LLRE with human-in-the-loop. The framework is separated into two parts: A muscle-actuated human policy training. B LLRE control policy training, which integrates three deep neural networks ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Download scientific diagram | Overview of the modular, decoupled RL-based walking control framework of the LLRE with human-in-the-loop. The framework is separated into two parts: A muscle-actuated human policy training. B LLRE control policy training, which integrates three deep neural networks (marked with pink blocks): an RL-based interaction network for human control to manage human-exoskeleton interface forces; a supervised muscle coordination network for whole body muscle control; a RL-based motion imitation network for the control of the LLRE.",
+      "These include creating a high-fidelity autonomous human motion control agent, accounting for the non-passive nature of human responses, and incorporating closed-loop control within the robotic system. In this paper, we propose an AI-computing, deep reinforcement learning-based HRI simulation to predict complex and realistic human biomechanical responses to exoskeleton assistance.",
+      "Verified test of the proposed control method is shown in the experiments and shown good performance of the system. ... ... It is free from assumptions about muscle behavior and has the flexibility to learn directly from experience. Ref. [18] presents an RL-based controller developed with a deep neural network for a lower limb rehabilitation exoskeleton.",
+      "In recent years, data-driven methods have emerged as a promising alternative due to their fast execution speed, but label information is still required during training, which is not easy to acquire in practice. To tackle these issues, this paper presents a novel physics-informed deep learning method to predict muscle forces without any label information during model training."
+    ],
+    "title": "Overview of the modular, decoupled RL-based walking control ...",
+    "url": "https://www.researchgate.net/figure/Overview-of-the-modular-decoupled-RL-based-walking-control-framework-of-the-LLRE-with_fig2_369368625"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "3 A Survey on Distributed Machine Learning",
+    "url": "https://arxiv.org/pdf/1912.09789"
+  },
+  {
+    "description": "358 votes, 284 comments. In my personal experience, SOTA RL algorithms simply don't work. I've tried working with reinforcement learning for over\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/Starks-Technology - 358 votes and 284 comments",
+      "Namely, I am not sure how easy it is to design a robust reward model for that, but there are many ideas like regularization of KL-divergence that can assist in not drifting out of the reward model distribution. Generally speaking, it's a super problematic challenge. ... Read the Decision Transformer! It's my favorite paper and I think we'll start heading in that direction for all RL research.",
+      "Then since your policy affects the future distribution of rewards, you're aiming at a moving target. So yes, it's super hard. One practical way to improve it is to reduce the space that needs to be explored. This can mean reducing your action space (see my work here) or as in the case of LLMs, doing most of the training in an unsupervised fashion and then gently steering the network with RLHF with relatively far fewer updates.",
+      "The \"model\" in model-based RL is not just a simulator but also part of the perception process. Look at the DreamerV3 paper for example; the actor-critic controller runs inside the latent space of the encoder/decoder world model."
+    ],
+    "title": "r/MachineLearning on Reddit: [D] What is your honest experience ...",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/197jp2b/d_what_is_your_honest_experience_with/"
+  },
+  {
+    "description": "We present a networked, high performance graphics system that combines dynamic, high quality, ray traced global illumination computed on a server with direct illumination and primary visibility computed on a client. This approach provides many of the image quality benefits of real-time ray ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "We present a networked, high performance graphics system that combines dynamic, high quality, ray traced global illumination computed on a server with direct illumination and primary visibility computed on a client. This approach provides many of the image quality benefits of real-time ray tracing on low-power and legacy hardware, while maintaining a low latency response and mobile form factor.",
+      "Abstract page for arXiv paper 2103.05875: A Distributed, Decoupled System for Losslessly Streaming Dynamic Light Probes to Thin Clients",
+      "In addition, our split-rendering solution decouples remote computation from local rendering and so does not limit local display update rate or resolution. From: Michael Stengel [view email] [v1] Wed, 10 Mar 2021 05:21:03 UTC (9,142 KB) ... View a PDF of the paper titled A Distributed, Decoupled System for Losslessly Streaming Dynamic Light Probes to Thin Clients, by Michael Stengel and 3 other authors",
+      "View a PDF of the paper titled A Distributed, Decoupled System for Losslessly Streaming Dynamic Light Probes to Thin Clients, by Michael Stengel and 3 other authors View PDF"
+    ],
+    "title": "[2103.05875] A Distributed, Decoupled System for Losslessly Streaming ...",
+    "url": "https://arxiv.org/abs/2103.05875"
+  },
+  {
+    "description": "Academia.edu is a platform for academics to share research papers.",
+    "favicon_url": "https://you.com/favicon?domain=www.academia.edu&size=128",
+    "snippets": [
+      "A Distributed Multi-Agent RL based Autonomous Spectrum Allocation Scheme in D2D Enabled Multi-Tier HetNets",
+      "However, the dense deployment of BSs increases the power consumption of the network and, as a consequence, decreases the system performance due to the high inter-cell interference. In this paper, we propose a power control scheme based on green policies in order to enhance the power saving over Heterogeneous Networks (HetNets) in Long Term Evolution (LTE) systems.",
+      "To meet these demands, drastic improvements need to be made in cellular network architecture. This paper presents the results of a detailed survey on the fifth generation (5G) cellular network architecture and some of the key emerging technologies that are helpful in improving the architecture and meeting the demands of users.",
+      "Along with this, some of the emerging technologies that are addressed in this paper include interference management, spectrum sharing with cognitive radio, ultra-dense networks, multi-radio access technology association, full duplex radios, millimeter wave solutions for 5G cellular networks, and cloud technologies for 5G radio access networks and software defined networks."
+    ],
+    "title": "(PDF) A Distributed Multi-Agent RL based Autonomous Spectrum ...",
+    "url": "https://www.academia.edu/47649666/A_Distributed_Multi_Agent_RL_based_Autonomous_Spectrum_Allocation_Scheme_in_D2D_Enabled_Multi_Tier_HetNets"
+  },
+  {
+    "description": "Despite the close connection between exploration and sample efficiency, most state of the art reinforcement learning algorithms include no considerations for exploration beyond maximizing the entropy of the policy. In this work we address this seeming missed opportunity.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2101.09458: Decoupled Exploration and Exploitation Policies for Sample-Efficient Reinforcement Learning",
+      "Our method, Decoupled Exploration and Exploitation Policies (DEEP), can be combined with any off-policy RL algorithm without modification. When used in conjunction with soft actor-critic, DEEP incurs no performance penalty in densely-rewarding environments. On sparse environments, DEEP gives a several-fold improvement in data efficiency due to better exploration. From: William Whitney [view email] [v1] Sat, 23 Jan 2021 08:51:04 UTC (184 KB) [v2] Thu, 1 Jul 2021 16:03:55 UTC (2,970 KB) ... View a PDF of the paper titled Decoupled Exploration and Exploitation Policies for Sample-Efficient Reinforcement Learning, by William F.",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2101.09458] Decoupled Exploration and Exploitation Policies for ...",
+    "url": "https://arxiv.org/abs/2101.09458"
+  },
+  {
+    "description": "With the acceleration of the Internet in Web 2.0, Cloud computing is a new paradigm to offer dynamic, reliable and elastic computing services. Efficient scheduling of resources or optimal allocation of requests is one of the prominent issues in emerging Cloud computing.",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Artificial Intelligence Review - With the acceleration of the Internet in Web 2.0, Cloud computing is a new paradigm to offer dynamic, reliable and elastic computing services. Efficient scheduling...",
+      "3 presents the structure analysis of RL and DRL applied in Cloud scheduling to assist better understanding of DRL (RL) methods used in the existing research. Sect. 4 provides some structured presentations of existing research using DRL methods and discusses the current situation of DRL in Cloud scheduling. Then, Sect. 5 lists challenges and potential future directions of applying DRL in Cloud scheduling. Finally, Sect. 6 concludes this paper. For the sake of the presentation, we list some notations with descriptions in Table 1. ... In distributed systems, scheduling problems are usually NP-hard (Adhikari et al.",
+      "Through the theoretical formulation of scheduling and analysis of RL frameworks, we discuss the advantages of DRL-based methods in Cloud scheduling. We also highlight different challenges and discuss the future directions existing in the DRL-based Cloud scheduling. ... Discover the latest articles and news from researchers in related subjects, suggested using machine learning. ... Avoid common mistakes on your manuscript. Cloud computing is generally accepted as a type of distributed system linked by a high-speed network.",
+      "In some of the reviewed literature related to RL (Dong et al. 2020; Kardani-Moghaddam et al. 2021; Liu et al. 2017), the feedback is described as a reward. In this paper, we regard it as feedback considering that both positive feedback and negative feedback will affect the learning progress of the agent\u2019s action strategy (Tong et al."
+    ],
+    "title": "Deep reinforcement learning-based methods for resource scheduling ...",
+    "url": "https://link.springer.com/article/10.1007/s10462-024-10756-9"
+  },
+  {
+    "description": "This short series of posts comes out of a project I did with Diptanu Choudary, lots of discussions with other expert DistSys practitioners here at CS and elsewhere and my own background as an early engineer in the field. Everyone has an opinion. This is mine.",
+    "favicon_url": "https://you.com/favicon?domain=blog.container-solutions.com&size=128",
+    "snippets": [
+      "The purpose of distributing a system, or dividing it over more than one physical location, is to fix the machine and organisational performance problems above using two powerful operational and architectural concepts: data copying and decoupling.",
+      "So, I\u2019ve just controversially defined a distributed system as any system that has components in more than one physical location and I've said that DistSys often use the architectural concepts of data copying and decoupling to improve operational efficiency (speed, resilience) and, more recently, developer efficiency (team productivity).",
+      "I mentioned that distributed systems leverage two deceptively powerful and wide-ranging operational concepts: decoupling and taking copies.",
+      "Recently, we have realised the well-defined-API part of decoupling can be extremely useful at improving developer productivity by allowing smaller teams to independently work on tinier services that can be developed in parallel - provided the API is maintained."
+    ],
+    "title": "What Is A Distributed System?",
+    "url": "https://blog.container-solutions.com/what-is-a-distributed-system"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "Replicated Load-Balanced Services (RLBS) play a key role in distributed systems, ensuring efficient resource use, improved performance, and high availability. By distributing tasks across multiple service instances, RLBS helps prevent overload on a single server and minimizes the risk of downtime.",
+      "Replicated Load-Balanced Services (RLBS) in distributed systems refer to the strategy of replicating services across multiple servers or nodes and distributing the incoming requests among them to achieve optimal performance, fault tolerance, and high availability.",
+      "As traffic increases, additional replicas can be created and added to the pool, allowing RLBS to handle more clients without degradation in performance. The load balancer will automatically start distributing traffic to these new instances, making the system highly scalable.",
+      "Scalability: RLBS can easily handle growing traffic by adding more service instances. As new replicas are deployed, the load balancer efficiently distributes incoming requests, allowing the system to scale horizontally without performance degradation."
+    ],
+    "title": "Replicated Load-Balanced Services (RLBS) in Distributed Systems ...",
+    "url": "https://www.geeksforgeeks.org/system-design/replicated-load-balanced-services-rlbs-in-distributed-systems/"
+  },
+  {
+    "description": "Paper tables with annotated results for Avoiding Tampering Incentives in Deep RL via Decoupled Approval",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [],
+    "title": "Papers with Code - Paper tables with annotated results for Avoiding ...",
+    "url": "https://paperswithcode.com/paper/avoiding-tampering-incentives-in-deep-rl-via/review/"
+  },
+  {
+    "description": "RLlib\u2019s API stack: Built on top ... distributed and fault-tolerant algorithms and loss functions, PyTorch default models, multi-GPU training, and multi-agent support. Users customize their experiments by subclassing the existing abstractions.# If RLlib helps with your academic research, the Ray RLlib team encourages you to cite these papers...",
+    "favicon_url": "https://you.com/favicon?domain=docs.ray.io&size=128",
+    "snippets": [
+      "RLlib\u2019s API stack: Built on top of Ray, RLlib offers off-the-shelf, distributed and fault-tolerant algorithms and loss functions, PyTorch default models, multi-GPU training, and multi-agent support. Users customize their experiments by subclassing the existing abstractions.# If RLlib helps with your academic research, the Ray RLlib team encourages you to cite these papers:",
+      "@inproceedings{liang2021rllib, title={{RLlib} Flow: Distributed Reinforcement Learning is a Dataflow Problem}, author={ Wu, Zhanghao and Liang, Eric and Luo, Michael and Mika, Sven and Gonzalez, Joseph E. and Stoica, Ion }, booktitle={Conference on Neural Information Processing Systems ({NeurIPS})}, year={2021}, url={https://proceedings.neurips.cc/paper/2021/file/2bce32ed409f5ebcee2a7b417ad9beed-Paper.pdf} } @inproceedings{liang2018rllib, title={{RLlib}: Abstractions for Distributed Reinforcement Learning}, author={ Eric Liang and Richard Liaw and Robert Nishihara and Philipp Moritz and Roy Fox and Ken Goldberg and Joseph E.",
+      "RLlib is an open source library for reinforcement learning (RL), offering support for production-level, highly scalable, and fault-tolerant RL workloads, while maintaining simple and unified APIs for a large variety of industry applications.",
+      "Whether training policies in a multi-agent setup, from historic offline data, or using externally connected simulators, RLlib offers simple solutions for each of these autonomous decision making needs and enables you to start running your experiments within hours."
+    ],
+    "title": "RLlib: Industry-Grade, Scalable Reinforcement Learning \u2014 Ray 2.47.1",
+    "url": "https://docs.ray.io/en/latest/rllib/index.html"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.ifaamas.org&size=128",
+    "snippets": [],
+    "title": "Decoupled Reinforcement Learning to Stabilise ...",
+    "url": "https://www.ifaamas.org/Proceedings/aamas2022/pdfs/p1146.pdf"
+  },
+  {
+    "description": "This short series of posts comes out of a project I did with Diptanu Choudary, lots of discussions with other expert DistSys practitioners here at CS and elsewhere and my own background as an early engineer in the field. Everyone has an opinion. This is mine.",
+    "favicon_url": "https://you.com/favicon?domain=blog.container-solutions.com&size=128",
+    "snippets": [
+      "The purpose of distributing a system, or dividing it over more than one physical location, is to fix the machine and organisational performance problems above using two powerful operational and architectural concepts: data copying and decoupling.",
+      "So, I\u2019ve just controversially defined a distributed system as any system that has components in more than one physical location and I've said that DistSys often use the architectural concepts of data copying and decoupling to improve operational efficiency (speed, resilience) and, more recently, developer efficiency (team productivity).",
+      "I mentioned that distributed systems leverage two deceptively powerful and wide-ranging operational concepts: decoupling and taking copies.",
+      "Recently, we have realised the well-defined-API part of decoupling can be extremely useful at improving developer productivity by allowing smaller teams to independently work on tinier services that can be developed in parallel - provided the API is maintained."
+    ],
+    "title": "What Is A Distributed System?",
+    "url": "https://blog.container-solutions.com/what-is-a-distributed-system"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "Replicated Load-Balanced Services (RLBS) play a key role in distributed systems, ensuring efficient resource use, improved performance, and high availability. By distributing tasks across multiple service instances, RLBS helps prevent overload on a single server and minimizes the risk of downtime.",
+      "Replicated Load-Balanced Services (RLBS) in distributed systems refer to the strategy of replicating services across multiple servers or nodes and distributing the incoming requests among them to achieve optimal performance, fault tolerance, and high availability.",
+      "As traffic increases, additional replicas can be created and added to the pool, allowing RLBS to handle more clients without degradation in performance. The load balancer will automatically start distributing traffic to these new instances, making the system highly scalable.",
+      "Scalability: RLBS can easily handle growing traffic by adding more service instances. As new replicas are deployed, the load balancer efficiently distributes incoming requests, allowing the system to scale horizontally without performance degradation."
+    ],
+    "title": "Replicated Load-Balanced Services (RLBS) in Distributed Systems ...",
+    "url": "https://www.geeksforgeeks.org/system-design/replicated-load-balanced-services-rlbs-in-distributed-systems/"
+  },
+  {
+    "description": "Paper tables with annotated results for Avoiding Tampering Incentives in Deep RL via Decoupled Approval",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [],
+    "title": "Papers with Code - Paper tables with annotated results for Avoiding ...",
+    "url": "https://paperswithcode.com/paper/avoiding-tampering-incentives-in-deep-rl-via/review/"
+  },
+  {
+    "description": "RLlib\u2019s API stack: Built on top ... distributed and fault-tolerant algorithms and loss functions, PyTorch default models, multi-GPU training, and multi-agent support. Users customize their experiments by subclassing the existing abstractions.# If RLlib helps with your academic research, the Ray RLlib team encourages you to cite these papers...",
+    "favicon_url": "https://you.com/favicon?domain=docs.ray.io&size=128",
+    "snippets": [
+      "RLlib\u2019s API stack: Built on top of Ray, RLlib offers off-the-shelf, distributed and fault-tolerant algorithms and loss functions, PyTorch default models, multi-GPU training, and multi-agent support. Users customize their experiments by subclassing the existing abstractions.# If RLlib helps with your academic research, the Ray RLlib team encourages you to cite these papers:",
+      "@inproceedings{liang2021rllib, title={{RLlib} Flow: Distributed Reinforcement Learning is a Dataflow Problem}, author={ Wu, Zhanghao and Liang, Eric and Luo, Michael and Mika, Sven and Gonzalez, Joseph E. and Stoica, Ion }, booktitle={Conference on Neural Information Processing Systems ({NeurIPS})}, year={2021}, url={https://proceedings.neurips.cc/paper/2021/file/2bce32ed409f5ebcee2a7b417ad9beed-Paper.pdf} } @inproceedings{liang2018rllib, title={{RLlib}: Abstractions for Distributed Reinforcement Learning}, author={ Eric Liang and Richard Liaw and Robert Nishihara and Philipp Moritz and Roy Fox and Ken Goldberg and Joseph E.",
+      "RLlib is an open source library for reinforcement learning (RL), offering support for production-level, highly scalable, and fault-tolerant RL workloads, while maintaining simple and unified APIs for a large variety of industry applications.",
+      "Whether training policies in a multi-agent setup, from historic offline data, or using externally connected simulators, RLlib offers simple solutions for each of these autonomous decision making needs and enables you to start running your experiments within hours."
+    ],
+    "title": "RLlib: Industry-Grade, Scalable Reinforcement Learning \u2014 Ray 2.47.1",
+    "url": "https://docs.ray.io/en/latest/rllib/index.html"
+  },
+  {
+    "description": "While supervised and unsupervised machine learning is a much more widespread practice among enterprises today, reinforcement learning (RL), as a goal-oriented ML technique, finds its application in\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "While supervised and unsupervised machine learning is a much more widespread practice among enterprises today, reinforcement learning (RL)\u2026",
+      "In POMDP the agent needs to take into an account probability distribution over states. In cases where it\u2019s impossible to know that distribution, RL researchers use a sequence of multiple observations and actions to represent a current state (i.e., a stack of image frames from a game) to better understand a situation.",
+      "Speaking formally, it is a probability distribution over actions in a given state, meaning the likelihood of every action in a particular state. In short, policy holds an answer to the \u201cHow to act?\u201d question for an agent. State-value function and action-value function are the ways to assess the policy, as RL aims to learn the best policy.",
+      "The A3C algorithm is one of RL\u2019s state-of-the-art algorithms, which beats DQN in few domains (for example, Atari domain, look at the fifth page of a classic paper by Google Deep Mind). Also, A3C can be beneficial in experiments that involve some global network optimization with different environments in parallel for generalization purposes."
+    ],
+    "title": "Reinforcement Learning and Asynchronous Actor-Critic Agent (A3C) ...",
+    "url": "https://medium.com/sciforce/reinforcement-learning-and-asynchronous-actor-critic-agent-a3c-algorithm-explained-f0f3146a14ab"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Arxiv",
+    "url": "https://arxiv.org/pdf/2310.01439.pdf"
+  },
+  {
+    "description": "The official repository of Decoupled Reinforcement Learning to Stabilise Intrinsically-Motivated Exploration\" (AAMAS 2022) - uoe-agents/derl",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "DISCLAIMER: Training of off-policy DQN for the exploration policy or baseline is implemented but has not been extensively tested nor evaluated for the paper. We consider five different definitions of count- and prediction-based intrinsic rewards for exploration. Their implementations can all be found under intrinsic_rewards/ and extend the abstract base class found in intrinsic_rewards/intrinsic_reward.py which serves as a common interface. Further utilities such as environment wrappers/ setup, loggers and more can be found under utils/. @inproceedings{schaefer2022derl, title={Decoupled Reinforcement Learning to Stabilise Intrinsically-Motivated Exploration}, author={Lukas Sch\u00e4fer and Filippos Christianos and Josiah P.",
+      "For Decoupled RL algorithms (DeA2C, DePPO, DeDQN), valid intrinsic rewards are",
+      "For off-policy RL algorithms, only (Double) Deep Q-Networks (DQNs) are implemented under off_policy/ which extend the abstract algorithm class found in off_policy/algorithm.py. The (D)DQN implementation can be found in off_policy/algos/dqn.py.",
+      "This repository is the official implementation of Decoupled Reinforcement Learning (DeRL)"
+    ],
+    "title": "GitHub - uoe-agents/derl: The official repository of Decoupled ...",
+    "url": "https://github.com/uoe-agents/derl"
+  },
+  {
+    "description": "Subscribe to the PwC Newsletter \u00b7 Join the community \u00b7 You need to log in to edit. You can create a new account if you don't have one \u00b7 Edit Category \u00b7 Distributed Reinforcement Learning \u00b7 Reinforcement Learning \u2022 7 methods \u00b7 Methods \u00b7 Add a Method \u00b7 Contact us on: hello@paperswi...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [],
+    "title": "Papers with Code - An Overview of Distributed Reinforcement Learning",
+    "url": "https://paperswithcode.com/methods/category/distributed-reinforcement-learning"
+  },
+  {
+    "description": "Concepts behind scaling RL training using distributed systems (e.g., distributed data collection, distributed training).",
+    "favicon_url": "https://you.com/favicon?domain=apxml.com&size=128",
+    "snippets": [
+      "This is less common in standard RL applications but can be relevant for very large transformer-based policies or complex world models. Several influential architectures combine distributed data collection and training concepts: Asynchronous Advantage Actor-Critic (A3C): One of the early successful distributed methods. A3C uses multiple workers, each with its own environment instance and model copy.",
+      "A3C uses asynchronous updates from workers that compute their own gradients. SEED RL centralizes model inference and training on an accelerator, with actors primarily handling environment interaction. Implementing distributed RL systems introduces specific challenges:",
+      "This often leads to more stable training and better hardware utilization (especially GPUs) than A3C but can be bottlenecked by the slowest worker. IMPALA (Importance Weighted Actor-Learner Architecture): Designed for massive parallelism. It decouples acting and learning significantly.",
+      "Distributed reinforcement learning provides techniques to parallelize computation, primarily focusing on accelerating two main bottlenecks: environment interaction (data collection) and model training (gradient computation). By leveraging multiple machines or processing units, we can significantly reduce the wall-clock time required to train effective policies. One of the most time-consuming aspects of RL is interacting with the environment to gather experience."
+    ],
+    "title": "Distributed Reinforcement Learning | Advanced RL",
+    "url": "https://apxml.com/courses/advanced-reinforcement-learning/chapter-8-rl-implementation-optimization/distributed-rl"
+  },
+  {
+    "description": "Explore distributed training methods, parallelism types, frameworks, and their necessity in modern data science.",
+    "favicon_url": "https://you.com/favicon?domain=neptune.ai&size=128",
+    "snippets": [
+      "Precisely, in distributed training, we divide our training workload across multiple processors while training a huge deep learning model. These processors are referred to as worker nodes or simply, workers. These workers are trained in parallel to speed up the training process.",
+      "We have a copy of the model in each worker node and each one of them performs the training on its own subset of the data. The training loops are carried out either synchronously or asynchronously.  \u00b7 Distributed training explanation: data parallelism | Source",
+      "Let\u2019s see the two ways of carrying out distributed training loops and the difference between them. As we already know that in data parallelism we divide the data into partitions and send each part to a worker. Each worker has a full replica of the model and is trained only on a part of the data.",
+      "Thus in asynchronous training, we want workers to work independently in such a way that a worker need not wait for any other worker in the cluster. One way to achieve this is by using a parameter server. In distributed training, we have a cluster of workers and till now we have seen that all workers perform just one task which is training."
+    ],
+    "title": "Distributed Training: Guide for Data Scientists",
+    "url": "https://neptune.ai/blog/distributed-training"
+  },
+  {
+    "description": "The algorithm suggested by Gallager, ... paper in distributed computing. Many other algorithms were suggested for different kinds of network graphs, such as undirected rings, unidirectional rings, complete graphs, grids, directed Euler graphs, and others. A general method that decouples the issue ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "The algorithm suggested by Gallager, Humblet, and Spira for general undirected graphs has had a strong impact on the design of distributed algorithms in general, and won the Dijkstra Prize for an influential paper in distributed computing. Many other algorithms were suggested for different kinds of network graphs, such as undirected rings, unidirectional rings, complete graphs, grids, directed Euler graphs, and others. A general method that decouples the issue of the graph family from the design of the coordinator election algorithm was suggested by Korach, Kutten, and Moran.",
+      "Events excel at state propagation and decoupled notifications, while messages are better suited for command execution, workflow orchestration, and explicit coordination. Modern architectures commonly combine both approaches, leveraging events for distributed state change notifications and messages for targeted command execution and structured workflows based on specific timing, ordering, and delivery requirements.",
+      "The components of a distributed system communicate and coordinate their actions by passing messages to one another in order to achieve a common goal. Three significant challenges of distributed systems are: maintaining concurrency of components, overcoming the lack of a global clock, and managing the independent failure of components.",
+      "When a component of one system fails, the entire system does not fail. Examples of distributed systems vary from SOA-based systems to microservices to massively multiplayer online games to peer-to-peer applications. Distributed systems cost significantly more than monolithic architectures, primarily due to increased needs for additional hardware, servers, gateways, firewalls, new subnets, proxies, and so on.",
+      "Also, distributed systems are prone to fallacies of distributed computing. On the other hand, a well designed distributed system is more scalable, more durable, more changeable and more fine-tuned than a monolithic application deployed on a single machine."
+    ],
+    "title": "Distributed computing - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Distributed_computing"
+  },
+  {
+    "description": "Decoupling Representation Learning from Reinforcement LearningAdam Stooke, Kimin Lee, Pieter Abbeel, Michael LaskinIn an effort to overcome li...",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.mlr.press&size=128",
+    "snippets": [
+      "In an effort to overcome limitations of reward-driven feature learning in deep reinforcement learning (RL) from images, we propose decoupling representation learning from policy learning. To this e...",
+      "Our experiments span visually diverse RL benchmarks in DeepMind Control, DeepMind Lab, and Atari, and our complete code is available at \\url{https://github.com/astooke/rlpyt/tree/master/rlpyt/ul}.} } Copy to ClipboardDownload ... %0 Conference Paper %T Decoupling Representation Learning from Reinforcement Learning %A Adam Stooke %A Kimin Lee %A Pieter Abbeel %A Michael Laskin %B Proceedings of the 38th International Conference on Machine Learning %C Proceedings of Machine Learning Research %D 2021 %E Marina Meila %E Tong Zhang %F pmlr-v139-stooke21a %I PMLR %P 9870--9879 %U https://proceedings.mlr.press/v139/stooke21a.html %V 139 %X In an effort to overcome limitations of reward-driven feature learning in deep reinforcement learning (RL) from images, we propose decoupling representation learning from policy learning.",
+      "Our experiments span visually diverse RL benchmarks in DeepMind Control, DeepMind Lab, and Atari, and our complete code is available at \\url{https://github.com/astooke/rlpyt/tree/master/rlpyt/ul}. ... @InProceedings{pmlr-v139-stooke21a, title = {Decoupling Representation Learning from Reinforcement Learning}, author = {Stooke, Adam and Lee, Kimin and Abbeel, Pieter and Laskin, Michael}, booktitle = {Proceedings of the 38th International Conference on Machine Learning}, pages = {9870--9879}, year = {2021}, editor = {Meila, Marina and Zhang, Tong}, volume = {139}, series = {Proceedings of Machin",
+      "Our experiments span visually diverse RL benchmarks in DeepMind Control, DeepMind Lab, and Atari, and our complete code is available at \\url{https://github.com/astooke/rlpyt/tree/master/rlpyt/ul}. Copy to ClipboardDownload ... Stooke, A., Lee, K., Abbeel, P. & Laskin, M.. (2021). Decoupling Representation Learning from Reinforcement Learning."
+    ],
+    "title": "Decoupling Representation Learning from Reinforcement Learning",
+    "url": "https://proceedings.mlr.press/v139/stooke21a.html"
+  },
+  {
+    "description": "We strive to create an environment conducive to many different types of research across many different time scales and levels of risk \u00b7 Our researchers drive advancements in computer science through both fundamental and applied research",
+    "favicon_url": "https://you.com/favicon?domain=research.google&size=128",
+    "snippets": [
+      "In addition, there is a strong requirement to support BigQuery as a multi-cloud offering given cloud customers are opting for a multi-cloud footprint by default. This paper describes BigLake, an evolution of BigQuery toward a multi-cloud lakehouse to address these customer requirements in novel ways.",
+      "From our company\u2019s beginning, Google has had to deal with both issues in our pursuit of organizing the world\u2019s information and making it universally accessible and useful. We continue to face many exciting distributed systems and parallel computing challenges in areas such as concurrency control, fault tolerance, algorithmic efficiency, and communication.",
+      "Preview Preview abstract We present Prequal (\\emph{Probing to Reduce Queuing and Latency}), a load balancer for distributed multi-tenant systems. Prequal aims to minimize real-time request latency in the presence of heterogeneous server capacities and non-uniform, time-varying antagonist load.",
+      "Preview Preview abstract Conventional federated learning algorithms train a single global model by leveraging all participating clients' data. However, due to heterogeneity in client generative distributions and predictive models, these approaches may not appropriately approximate the predictive process, converge to an optimal state, or generalize to new clients."
+    ],
+    "title": "Distributed Systems and Parallel Computing",
+    "url": "https://research.google/research-areas/distributed-systems-and-parallel-computing/"
+  },
+  {
+    "description": "Ray is an open source framework for managing, executing, and optimizing compute needs. Unify AI workloads with Ray by Anyscale. Try it for free today.",
+    "favicon_url": "https://you.com/favicon?domain=www.ray.io&size=128",
+    "snippets": [
+      "Run best-in-class reinforcement learning workflows. Ray RLlib supports production-level, highly distributed RL workloads while maintaining unified and simple APIs for a large variety of industry applications.",
+      "Ray is at the center of the world's most powerful AI platforms. It precisely orchestrates infrastructure for any distributed workload on any accelerator at any scale.",
+      "Ray is Python-native. Scale and distribute any Python code for use cases like simulation, backtesting, and more.",
+      "Run distributed training, including Gen AI foundation models, time series models, and traditional AI / ML models like XGBoost at scale with 1 line of code."
+    ],
+    "title": "Scale Machine Learning & AI Computing | Ray by Anyscale",
+    "url": "https://www.ray.io/"
+  },
+  {
+    "description": "Intrinsic rewards are commonly applied to improve exploration in reinforcement learning. However, these approaches suffer from instability caused by non-stationary reward shaping and strong dependency on hyperparameters. In this work, we propose Decoupled RL (DeRL) which trains separate policies ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled Decoupling Exploration and Exploitation in Reinforcement Learning, by Lukas Sch\\\"afer and 3 other authors View PDF \u00b7 Abstract:Intrinsic rewards are commonly applied to improve exploration in reinforcement learning. However, these approaches suffer from instability caused by non-stationary reward shaping and strong dependency on hyperparameters. In this work, we propose Decoupled RL (DeRL) which trains separate policies for exploration and exploitation.",
+      "Abstract page for arXiv paper 2107.08966v2: Decoupling Exploration and Exploitation in Reinforcement Learning",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2107.08966v2] Decoupling Exploration and Exploitation in ...",
+    "url": "https://arxiv.org/abs/2107.08966v2"
+  },
+  {
+    "description": "In this paper we argue for the fundamental importance of the value distribution: the distribution of the random return received by a reinforcement learning agent. This is in contrast to the common approach to reinforcement learning which models the expectation of this return, or value.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:In this paper we argue for the fundamental importance of the value distribution: the distribution of the random return received by a reinforcement learning agent. This is in contrast to the common approach to reinforcement learning which models the expectation of this return, or value.",
+      "Abstract page for arXiv paper 1707.06887: A Distributional Perspective on Reinforcement Learning",
+      "Finally, we combine theoretical and empirical evidence to highlight the ways in which the value distribution impacts learning in the approximate setting. From: Marc G. Bellemare [view email] [v1] Fri, 21 Jul 2017 13:21:54 UTC (721 KB) ... View a PDF of the paper titled A Distributional Perspective on Reinforcement Learning, by Marc G.",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[1707.06887] A Distributional Perspective on Reinforcement Learning",
+    "url": "https://arxiv.org/abs/1707.06887"
+  },
+  {
+    "description": "On-device control agents, especially on mobile devices, are responsible for operating mobile devices to fulfill users' requests, enabling seamless and intuitive interactions. Integrating Multimodal Large Language Models (MLLMs) into these agents enhances their ability to understand and execute ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "On-device control agents, especially on mobile devices, are responsible for operating mobile devices to fulfill users' requests, enabling seamless and intuitive interactions. Integrating Multimodal Large Language Models (MLLMs) into these agents enhances their ability to understand and execute complex commands, thereby improving user experience.",
+      "Abstract page for arXiv paper 2410.14803: DistRL: An Asynchronous Distributed Reinforcement Learning Framework for On-Device Control Agents",
+      "However, fine-tuning MLLMs for on-device control presents significant challenges due to limited data availability and inefficient online training processes. This paper introduces DistRL, a novel framework designed to enhance the efficiency of online RL fine-tuning for mobile device control agents.",
+      "View a PDF of the paper titled DistRL: An Asynchronous Distributed Reinforcement Learning Framework for On-Device Control Agents, by Taiyi Wang and 5 other authors View PDF HTML (experimental)"
+    ],
+    "title": "[2410.14803] DistRL: An Asynchronous Distributed Reinforcement ...",
+    "url": "https://arxiv.org/abs/2410.14803"
+  },
+  {
+    "description": "Distributed systems are collections of independent computing resources that work together to present a unified, cohesive service or application to the user.",
+    "favicon_url": "https://you.com/favicon?domain=blog.bytebytego.com&size=128",
+    "snippets": [
+      "Rather than relying on a single powerful machine, these systems spread workloads across multiple nodes, often deployed across different servers, regions, or continents. Building distributed systems is popular because it offers improved scalability, enabling organizations to handle growing traffic by adding more nodes as needed.",
+      "However, with these benefits come complexities\u2014what many refer to as the \u201cdark side\u201d of distributed systems.",
+      "Two critical considerations that consistently arise in distributed systems are latency and partition tolerance.",
+      "In this article, we\u2019ll understand how latency and partition tolerance impact distributed systems and discuss strategies for addressing them effectively."
+    ],
+    "title": "Dark Side of Distributed Systems: Latency and Partition Tolerance",
+    "url": "https://blog.bytebytego.com/p/dark-side-of-distributed-systems"
+  },
+  {
+    "description": "This page presents a collection of excellent questions I have been asked. If you have a question about RL, the answer's probably here.",
+    "favicon_url": "https://you.com/favicon?domain=rl-book.com&size=128",
+    "snippets": [
+      "And there\u2019s loads of use cases reported in the papers. But of course, whether you call that production or not depends on what they are doing. Many are pure research. But lots are for research on current production systems.",
+      "Split the tech. If you\u2019re working with deep models, attempt to decouple the training of the deep NN from the RL. Not always optimal, but makes development much easier. For example, use autoencoders, train the autoencoder first and verify it works. Then pass the much lower-dimensional state into the RL algo.",
+      "For example, in a policy gradient algorithm, with a continuous action, most implementations suggest that the agent learns the optimal mean and std dev and then the \u201cbest\u201d action is to sample from that normal distribution.",
+      "It\u2019s the same as anything technical IMO. There is stuff to be learnt, and you can do that by reading. Read all the books and papers you can. But the real learning experience is\u2026 experience. Do it for real. Do it in your company. Do it at work."
+    ],
+    "title": "Frequently Asked Questions",
+    "url": "https://rl-book.com/learn/faq/frequently_asked_questions/"
+  },
+  {
+    "description": "The demand for artificial intelligence has grown significantly over the last decade and this growth has been fueled by advances in machine learning techniques and the ability to leverage hardware acceleration. However, in order to increase the quality of predictions and render machine learning ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The demand for artificial intelligence has grown significantly over the last decade and this growth has been fueled by advances in machine learning techniques and the ability to leverage hardware acceleration. However, in order to increase the quality of predictions and render machine learning solutions feasible for more complex applications, a substantial amount of training data is required.",
+      "Abstract page for arXiv paper 1912.09789: A Survey on Distributed Machine Learning",
+      "This article provides an extensive overview of the current state-of-the-art in the field by outlining the challenges and opportunities of distributed machine learning over conventional (centralized) machine learning, discussing the techniques used for distributed machine learning, and providing an overview of the systems that are available. From: Jan S. Rellermeyer [view email] [v1] Fri, 20 Dec 2019 12:24:25 UTC (1,609 KB) ... View a PDF of the paper titled A Survey on Distributed Machine Learning, by Joost Verbraeken and 4 other authors",
+      "View a PDF of the paper titled A Survey on Distributed Machine Learning, by Joost Verbraeken and 4 other authors View PDF"
+    ],
+    "title": "[1912.09789] A Survey on Distributed Machine Learning",
+    "url": "https://arxiv.org/abs/1912.09789"
+  },
+  {
+    "description": "The dblp computer science bibliography is the online reference for open bibliographic information on major computer science journals and proceedings.",
+    "favicon_url": "https://you.com/favicon?domain=dblp.org&size=128",
+    "snippets": [
+      "You may download the raw dblp data in a single XML file. A simple DTD is available. The paper DBLP - Some Lessons Learned documents technical details of this XML file. In the appendix DBLP XML Requests you may find the description of a primitive dblp query API."
+    ],
+    "title": "dblp: computer science bibliography",
+    "url": "https://dblp.org/"
+  },
+  {
+    "description": "Can we use reinforcement learning to learn general-purpose policies that can perform a wide range of different tasks, resulting in flexible and reusable skills? Contextual policies provide this capability in principle, but the representation of the context determines the degree of generalization ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Can we use reinforcement learning to learn general-purpose policies that can perform a wide range of different tasks, resulting in flexible and reusable skills? Contextual policies provide this capability in principle, but the representation of the context determines the degree of generalization and expressivity.",
+      "Abstract page for arXiv paper 2104.11707: DisCo RL: Distribution-Conditioned Reinforcement Learning for General-Purpose Policies",
+      "We evaluate DisCo RL on a variety of robot manipulation tasks and find that it significantly outperforms prior methods on tasks that require generalization to new goal distributions. From: Soroush Nasiriany [view email] [v1] Fri, 23 Apr 2021 16:51:58 UTC (20,616 KB) ... View a PDF of the paper titled DisCo RL: Distribution-Conditioned Reinforcement Learning for General-Purpose Policies, by Soroush Nasiriany and 5 other authors",
+      "View a PDF of the paper titled DisCo RL: Distribution-Conditioned Reinforcement Learning for General-Purpose Policies, by Soroush Nasiriany and 5 other authors View PDF"
+    ],
+    "title": "DisCo RL: Distribution-Conditioned Reinforcement Learning for...",
+    "url": "https://arxiv.org/abs/2104.11707"
+  },
+  {
+    "description": "Published by Martin Kleppmann on 08 Feb 2016 \u00b7 As part of the research for my book, I came across an algorithm called Redlock on the Redis website. The algorithm claims to implement fault-tolerant distributed locks (or rather, leases [1]) on top of Redis, and the page asks for feedback from ...",
+    "favicon_url": "https://you.com/favicon?domain=martin.kleppmann.com&size=128",
+    "snippets": [
+      "As part of the research for my book, I came across an algorithm called Redlock on the Redis website. The algorithm claims to implement fault-tolerant distributed locks (or rather, leases [1]) on top of Redis, and the page asks for feedback from people who are into distributed systems.",
+      "However, Redis has been gradually making inroads into areas of data management where there are stronger consistency and durability expectations \u2013 which worries me, because this is not what Redis is designed for. Arguably, distributed locking is one of those areas.",
+      "That work might be to write some data to a shared storage system, to perform some computation, to call some external API, or suchlike. At a high level, there are two reasons why you might want a lock in a distributed application: for efficiency or for correctness [2]. To distinguish these cases, you can ask what would happen if the lock failed:",
+      "Let\u2019s leave the particulars of Redlock aside for a moment, and discuss how a distributed lock is used in general (independent of the particular locking algorithm used). It\u2019s important to remember that a lock in a distributed system is not like a mutex in a multi-threaded application."
+    ],
+    "title": "How to do distributed locking \u2014 Martin Kleppmann\u2019s blog",
+    "url": "https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html"
+  },
+  {
+    "description": "A tool for helping humans cooperate with one another? Photo by Eric Krull on Unsplash Multi-Agent Reinforcement Learning (MARL) is a subfield of reinforcement learning that is becoming increasingly relevant and has been blowing my mind -Before continuing to read this post, you must watch this ...",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "A tool for helping humans cooperate with one another? Photo by Eric Krull on Unsplash Multi-Agent Reinforcement Learning (MARL) is a subfield of reinforcement learning that is becoming increasingly relevant and has been blowing my mind -Before continuing to read this post, you must watch this video by OpenAI which demonstrates the amazing research being [\u2026]",
+      "Here, we can see the barrier between science fiction and reality quickly dissolve. You are likely already imagining teams of robots building homes, autonomous vehicles seamlessly interacting with another, or distributed resource management.",
+      "If you\u2019re interested in learning more about Cooperative AI, I\u2019d recommend reading Open Problems in Cooperative AI. Have I convinced to start poking around in MARL? This github repo provides a nice collection of MARL research papers. Drooling at the mouth to conduct your very own MARL experiments?"
+    ],
+    "title": "Multi-Agent Reinforcement Learning (MARL) and Cooperative AI | ...",
+    "url": "https://towardsdatascience.com/ive-been-thinking-about-multi-agent-reinforcement-learning-marl-and-you-probably-should-be-too-8f1e241606ac/"
+  },
+  {
+    "description": "This page presents a collection of excellent questions I have been asked. If you have a question about RL, the answer's probably here.",
+    "favicon_url": "https://you.com/favicon?domain=rl-book.com&size=128",
+    "snippets": [
+      "And there\u2019s loads of use cases reported in the papers. But of course, whether you call that production or not depends on what they are doing. Many are pure research. But lots are for research on current production systems.",
+      "Split the tech. If you\u2019re working with deep models, attempt to decouple the training of the deep NN from the RL. Not always optimal, but makes development much easier. For example, use autoencoders, train the autoencoder first and verify it works. Then pass the much lower-dimensional state into the RL algo.",
+      "For example, in a policy gradient algorithm, with a continuous action, most implementations suggest that the agent learns the optimal mean and std dev and then the \u201cbest\u201d action is to sample from that normal distribution.",
+      "It\u2019s the same as anything technical IMO. There is stuff to be learnt, and you can do that by reading. Read all the books and papers you can. But the real learning experience is\u2026 experience. Do it for real. Do it in your company. Do it at work."
+    ],
+    "title": "Frequently Asked Questions",
+    "url": "https://rl-book.com/learn/faq/frequently_asked_questions/"
+  },
+  {
+    "description": "Can we use reinforcement learning to learn general-purpose policies that can perform a wide range of different tasks, resulting in flexible and reusable skills? Contextual policies provide this capability in principle, but the representation of the context determines the degree of generalization ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Can we use reinforcement learning to learn general-purpose policies that can perform a wide range of different tasks, resulting in flexible and reusable skills? Contextual policies provide this capability in principle, but the representation of the context determines the degree of generalization and expressivity.",
+      "Abstract page for arXiv paper 2104.11707: DisCo RL: Distribution-Conditioned Reinforcement Learning for General-Purpose Policies",
+      "We evaluate DisCo RL on a variety of robot manipulation tasks and find that it significantly outperforms prior methods on tasks that require generalization to new goal distributions. From: Soroush Nasiriany [view email] [v1] Fri, 23 Apr 2021 16:51:58 UTC (20,616 KB) ... View a PDF of the paper titled DisCo RL: Distribution-Conditioned Reinforcement Learning for General-Purpose Policies, by Soroush Nasiriany and 5 other authors",
+      "View a PDF of the paper titled DisCo RL: Distribution-Conditioned Reinforcement Learning for General-Purpose Policies, by Soroush Nasiriany and 5 other authors View PDF"
+    ],
+    "title": "DisCo RL: Distribution-Conditioned Reinforcement Learning for...",
+    "url": "https://arxiv.org/abs/2104.11707"
+  },
+  {
+    "description": "Published by Martin Kleppmann on 08 Feb 2016 \u00b7 As part of the research for my book, I came across an algorithm called Redlock on the Redis website. The algorithm claims to implement fault-tolerant distributed locks (or rather, leases [1]) on top of Redis, and the page asks for feedback from ...",
+    "favicon_url": "https://you.com/favicon?domain=martin.kleppmann.com&size=128",
+    "snippets": [
+      "As part of the research for my book, I came across an algorithm called Redlock on the Redis website. The algorithm claims to implement fault-tolerant distributed locks (or rather, leases [1]) on top of Redis, and the page asks for feedback from people who are into distributed systems.",
+      "However, Redis has been gradually making inroads into areas of data management where there are stronger consistency and durability expectations \u2013 which worries me, because this is not what Redis is designed for. Arguably, distributed locking is one of those areas.",
+      "That work might be to write some data to a shared storage system, to perform some computation, to call some external API, or suchlike. At a high level, there are two reasons why you might want a lock in a distributed application: for efficiency or for correctness [2]. To distinguish these cases, you can ask what would happen if the lock failed:",
+      "Let\u2019s leave the particulars of Redlock aside for a moment, and discuss how a distributed lock is used in general (independent of the particular locking algorithm used). It\u2019s important to remember that a lock in a distributed system is not like a mutex in a multi-threaded application."
+    ],
+    "title": "How to do distributed locking \u2014 Martin Kleppmann\u2019s blog",
+    "url": "https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html"
+  },
+  {
+    "description": "A tool for helping humans cooperate with one another? Photo by Eric Krull on Unsplash Multi-Agent Reinforcement Learning (MARL) is a subfield of reinforcement learning that is becoming increasingly relevant and has been blowing my mind -Before continuing to read this post, you must watch this ...",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "A tool for helping humans cooperate with one another? Photo by Eric Krull on Unsplash Multi-Agent Reinforcement Learning (MARL) is a subfield of reinforcement learning that is becoming increasingly relevant and has been blowing my mind -Before continuing to read this post, you must watch this video by OpenAI which demonstrates the amazing research being [\u2026]",
+      "Here, we can see the barrier between science fiction and reality quickly dissolve. You are likely already imagining teams of robots building homes, autonomous vehicles seamlessly interacting with another, or distributed resource management.",
+      "If you\u2019re interested in learning more about Cooperative AI, I\u2019d recommend reading Open Problems in Cooperative AI. Have I convinced to start poking around in MARL? This github repo provides a nice collection of MARL research papers. Drooling at the mouth to conduct your very own MARL experiments?"
+    ],
+    "title": "Multi-Agent Reinforcement Learning (MARL) and Cooperative AI | ...",
+    "url": "https://towardsdatascience.com/ive-been-thinking-about-multi-agent-reinforcement-learning-marl-and-you-probably-should-be-too-8f1e241606ac/"
+  },
+  {
+    "description": "Multi-agent systems (MAS) are changing how we approach complex problems in artificial intelligence and autonomous systems. Combining MAS with reinforcement",
+    "favicon_url": "https://you.com/favicon?domain=smythos.com&size=128",
+    "snippets": [
+      "Multi-agent systems (MAS) are changing how we approach complex problems in artificial intelligence and autonomous systems. Combining MAS with reinforcement learning (RL) results in an innovative approach that\u2019s transforming fields from robotics to economics.",
+      "The future of complex problem-solving is collaborative, adaptive, and distributed\u2014and Multi-Agent Systems are leading the way. As multi-agent systems (MAS) have grown more complex, researchers have developed several innovative algorithms to enhance them with reinforcement learning (RL).",
+      "Multi-agent systems (MAS) and reinforcement learning (RL) are powerful approaches for tackling complex, distributed problems. However, significant challenges remain in realizing their full potential.",
+      "The potential impact of ongoing research in MAS and RL is immense. From revolutionizing supply chain management to enhancing autonomous vehicle coordination, these technologies have the power to transform industries and solve complex societal challenges."
+    ],
+    "title": "SmythOS - Integrating Multi-Agent Systems and Reinforcement Learning",
+    "url": "https://smythos.com/ai-agents/multi-agent-systems/multi-agent-systems-and-reinforcement-learning/"
+  },
+  {
+    "description": "In the last decade, reinforcement learning (RL) has become one of the most promising research areas in machine learning and has demonstrated great potential for solving sophisticated real-world problems, such as chip placement and resource management, and solving challenging games (e.g., Go, ...",
+    "favicon_url": "https://you.com/favicon?domain=ai.googleblog.com&size=128",
+    "snippets": [
+      "As such, an RL infrastructure should not only scale efficiently (e.g., increase the number of actors) and collect an immense number of samples, but also be able to swiftly iterate over these extensive amounts of samples during training. Today we introduce Menger1, a massive large-scale distributed RL infrastructure with localized inference that scales up to several thousand actors across multiple processing clusters (e.g., Borg cells), reducing the overall training time in the task of chip placement.",
+      "Menger System Design There are various distributed RL systems, such as Acme and SEED RL, each of which focus on optimizing a single particular design point in the space of distributed reinforcement learning systems.",
+      "High Throughput Input Pipeline To deliver a high throughput input data pipeline, Menger uses Reverb, a recently open-sourced data storage system designed for machine learning applications that provides an efficient and flexible platform to implement experience replay in a variety of on-policy/off-policy algorithms. However, using a single Reverb replay buffer service does not currently scale well in a distributed RL setting with thousands of actors, and simply becomes inefficient in terms of write throughput from actors.",
+      "Efficient Model Retrieval To address the first challenge, we introduce transparent and distributed caching components between the learner and the actors optimized in TensorFlow and backed by Reverb (similar approach used in Dota). The main responsibility of the caching components is to strike a balance between the large number of requests from actors and the learner job."
+    ],
+    "title": "Massively Large-Scale Distributed Reinforcement Learning with Menger ...",
+    "url": "https://ai.googleblog.com/2020/10/massively-large-scale-distributed.html"
+  },
+  {
+    "description": "Deep reinforcement learning has produced many success stories in recent years. Some example fields in which these successes have taken place include mathematics, games, health care, and robotics. In this paper, we are especially interested in multi-agent deep reinforcement learning, where multiple ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "Deep reinforcement learning has produced many success stories in recent years. Some example fields in which these successes have taken place include mathematics, games, health care, and robotics. In this paper, we are especially interested in multi-agent deep reinforcement learning, where multiple agents present in the environment not only learn from their own experiences but also from each other and its applications in multi-robot systems.",
+      "PPO is the base DRL algorithm in this paper. Aydemir and Cetin [159] proposed a distributed system for the multi-UAV coverage in partially observable environments using DRL. Only the nearby robots share their state information and observations with each other. Blumenkamp et al. [111] developed a framework for decentralized coordination of an MRS. The RL aspect of their system uses GNNs and PPO.",
+      "Unlike traditional applications where the evader might move around randomly, in this paper, the authors assume that the target also learns to move intelligently up to a certain degree via RL. In [237], the authors consider a setup with one superior evader and multiple pursuers. They use a centralized critic model, where the actors are distributed.",
+      "[193] have employed such a federated deep RL technique for multi-robot communication. The authors, in this paper, avoid blockages in communication signals due to large obstacles while avoiding inter-robot collisions. It has been shown that the proposed semi-distributed optimization technique is 86% more efficient than a central RL technique."
+    ],
+    "title": "Multi-Agent Deep Reinforcement Learning for Multi-Robot Applications: ...",
+    "url": "https://www.mdpi.com/1424-8220/23/7/3625"
+  },
+  {
+    "description": "Distributed Distributional DrQ is a model-free and off-policy RL algorithm for continuous control tasks based on the state and observation of the agent, which is an actor-critic method with the data-augmentation and the distributional perspective of critic value function.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled Continuous Control Reinforcement Learning: Distributed Distributional DrQ Algorithms, by Zehao Zhou View PDF HTML (experimental) Abstract:Distributed Distributional DrQ is a model-free and off-policy RL algorithm for continuous control tasks based on the state and observation of the agent, which is an actor-critic method with the data-augmentation and the distributional perspective of critic value function.",
+      "Abstract page for arXiv paper 2404.10645: Continuous Control Reinforcement Learning: Distributed Distributional DrQ Algorithms",
+      "Here Distributed Distributional DrQ uses Distributed Distributional DDPG as the backbone, and this modification aims to achieve better performance in some hard continuous control tasks through the better expression ability of distributional value function and distributed actor policies. From: Zehao Zhou [view email] [v1] Tue, 16 Apr 2024 15:18:40 UTC (2,705 KB) ... View a PDF of the paper titled Continuous Control Reinforcement Learning: Distributed Distributional DrQ Algorithms, by Zehao Zhou",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2404.10645] Continuous Control Reinforcement Learning: Distributed ...",
+    "url": "https://arxiv.org/abs/2404.10645"
+  },
+  {
+    "description": "Distributed systems can be utilized in order to improve the computational power of a system. By horizontally scaling the number of compute nodes, the amount of computational power increases. This\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "The effects and approaches to consider when dealing with straggling workers",
+      "Distributed systems can be utilized in order to improve the computational power of a system. By horizontally scaling the number of compute nodes, the amount of computational power increases. This allows systems to process an immense amount of data/tasks as compared to a single machine.",
+      "Vertically scaling is typically more expensive, thus the focus on horizontal scaling. With the increase of nodes and compute power, there is also an increase in the issues surrounding distributed systems.",
+      "A cluster, in this realm, is a collection of dedicated computational hardware that can communicate; usually over a dedicated private network (but keep in mind distributed systems exist over public networks)."
+    ],
+    "title": "Straggling Workers in Distributed Computing | by Benjamin | The ...",
+    "url": "https://medium.com/swlh/straggling-workers-in-distributed-computing-ec60776c7a73"
+  },
+  {
+    "description": "This paper considers a downlink resource-allocation problem in distributed interference orthogonal frequency-division multiple access (OFDMA) systems under maximal power constraints. As the upcoming fifth-generation (5G) wireless networks are increasingly complex and heterogeneous, it is ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "This paper considers a downlink resource-allocation problem in distributed interference orthogonal frequency-division multiple access (OFDMA) systems under maximal power constraints. As the upcoming fifth-generation (5G) wireless networks are increasingly complex and heterogeneous, it is challenging for resource allocation tasks to optimize the system performance metrics and guarantee user service requests simultaneously.",
+      "Recently, model-free reinforcement learning (RL) techniques have become alternative approaches in wireless networks to solve non-convex and NP-hard optimization problems. In this paper, we study a deep Q-learning (DQL)-based approach to address the optimization of transmit power control for users in multi-cell interference networks.",
+      "Hence, there is a need for further enhancing the DRL techniques to ensure efficient resource allocation and user service requirements in a distributive optimization manner. In this paper, we consider distributed interference management for the downlink OFDMA system.",
+      "The important contributions of this paper are outlined as follows: ... We first formulate the optimization problems as a non-cooperative game model, where each BSs is considered a game player. In particular, the resource allocation problem of a distributed interference network under non-linear constraints has been solved using the Nash equilibrium solution concepts."
+    ],
+    "title": "Deep Reinforcement Learning-Assisted Optimization for Resource ...",
+    "url": "https://www.mdpi.com/1099-4300/25/3/413"
+  },
+  {
+    "description": "Reinforcement learning (RL) is an interdisciplinary area of machine learning and optimal control concerned with how an intelligent agent should take actions in a dynamic environment in order to maximize a reward signal. Reinforcement learning is one of the three basic machine learning paradigms, ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Due to its generality, reinforcement learning is studied in many disciplines, such as game theory, control theory, operations research, information theory, simulation-based optimization, multi-agent systems, swarm intelligence, and statistics. In the operations research and control literature, RL is called approximate dynamic programming, or neuro-dynamic programming.",
+      "The problems of interest in RL have also been studied in the theory of optimal control, which is concerned mostly with the existence and characterization of optimal solutions, and algorithms for their exact computation, and less with learning or approximation (particularly in the absence of a mathematical model of the environment).",
+      "Two elements make reinforcement learning powerful: the use of samples to optimize performance, and the use of function approximation to deal with large environments. Thanks to these two key components, RL can be used in large environments in the following situations:",
+      "An alternative approach is risk-averse reinforcement learning, where instead of the expected return, a risk-measure of the return is optimized, such as the conditional value at risk (CVaR). In addition to mitigating risk, the CVaR objective increases robustness to model uncertainties. However, CVaR optimization in risk-averse RL requires special care, to prevent gradient bias and blindness to success."
+    ],
+    "title": "Reinforcement learning - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Reinforcement_learning"
+  },
+  {
+    "description": "TLDR; So far, RLlib has supported model-free reinforcement learning-, evolutionary-, and planning algorithms. In this blog post, we describe the successful expansion of RLlib to a new class of\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "We\u2019ll demonstrate how we developed (using RLlib\u2019s new distributed execution API) and then benchmarked two new model-based agents on RLlib: One Dyna-style algorithm, \u201cModel-based Meta Policy Optimization\u201d (MB-MPO) and one gradient-based algorithm: \u201cDreamer\u201d. Our results are comparable to the ones from the original papers and can be found in our RL Experiments repo.",
+      "Aggregates fake data from workers to perform the meta-update step in the MAML computation graph, training the meta-policy network. ... Collect pre-adaptation fake samples from their dynamics model. ... Collect post-adaptation fake samples from their dynamics model. The recent introduction of RLlib\u2019s new distributed execution API allows for diverse generalizations to various RL algorithms, including MB-MPO.",
+      "In this blog post, we describe the successful expansion of RLlib to a new class of algorithms: \u201cmodel-based RL (MBRL)\u201d. Reading this blogpost you will learn how MBRL works, how to run MBRL experiments against various environments and how we utilized RLlib\u2019s new distributed-execution API to develop these new algos.",
+      "Specifically, we will focus on the following new MBRL algorithms in RLlib: MBMPO (Model-based Meta Policy Optimization) \u2014 A Dyna style MBRL algorithm that learns from fake data generated from an ensemble of dynamics models. Dreamer \u2014 A Gradient-based MBRL algorithm that learns by imagining trajectories into the future. In addition, for each of these algorithms, we present results and simple data flows from the new distributed execution API to represent complicated model-based algorithms."
+    ],
+    "title": "Model-based Reinforcement Learning with Ray RLlib | by Michael ...",
+    "url": "https://medium.com/distributed-computing-with-ray/model-based-reinforcement-learning-with-ray-rllib-73f47df33839"
+  },
+  {
+    "description": "What are Distributed Job Schedulers? Distributed job schedulers are software solutions capable of launching unattended scheduled jobs or workloads across",
+    "favicon_url": "https://you.com/favicon?domain=www.advsyscon.com&size=128",
+    "snippets": [
+      "Centralized: A central node distributes jobs to worker or execution nodes, and orchestrates jobs between those execution nodes.",
+      "For example, a distributed scheduler can be installed on one or more machines, through which a user can schedule tasks to run on servers A, B, C, and D. The user can chain these tasks together into a single job, so that a successful execution of server A tasks will trigger tasks to run on server B, and so on.",
+      "Distributed tasks can be either periodic or ad hoc. For example, users can schedule jobs to execute periodically (every hour, every day, every second Tuesday, etc.) or as one-off executions (retrieving files for a custom report).",
+      "IT organizations have the option to set up a distributed job scheduler on multiple machines in their environment. Depending on the systems in the tech stack, IT teams can use tools like Microsoft Windows Task Scheduler or CRON to set up jobs."
+    ],
+    "title": "Distributed Job Schedulers: An Overview To Building Your Own | ...",
+    "url": "https://www.advsyscon.com/blog/distributed-job-scheduler-scheduling/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [],
+    "title": "Can distributed reinforcement learning realize ...",
+    "url": "https://www.researchgate.net/post/Can_distributed_reinforcement_learning_realize_distributed_learning_process"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "DeadlockA Distributed System is a Network of Machines that can exchange info \u00b7 4 min read Difference between Uniform Memory Access (UMA) and Non-uniform Memory Access (NUMA) In computer architecture, and especially in Multiprocessors systems, memory access models play a critical role that determines performance, scalability, and generally, efficiency of the system. The two shared-memory models most frequently used are UMA and NUMA. This paper deals with these shared-mem",
+      "Multi-Primary replication is suitable for applications requiring high write throughput and low latency, such as collaborative editing systems or distributed databases supporting globally distributed applications.",
+      "Replication in distributed systems involves creating duplicate copies of data or services across multiple nodes.",
+      "Replication in distributed systems refers to the process of creating and maintaining multiple copies (replicas) of data, resources, or services across different nodes (computers or servers) within a network."
+    ],
+    "title": "What is Replication in Distributed System? - GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/what-is-replication-in-distributed-system/"
+  },
+  {
+    "description": "Is Data Decoupling on your radar for 2023? For every CIO, CTO or Department Leader, it should be. It\u2019s the one common thread in digital transformation projects that will always bite you if you\u2026",
+    "favicon_url": "https://you.com/favicon?domain=ian-tomlin.medium.com&size=128",
+    "snippets": [
+      "Is Data Decoupling on your radar for 2023? For every CIO, CTO or Department Leader, it should be. It\u2019s the one common thread in digital\u2026",
+      "Is Data Decoupling on your radar for 2023? For every CIO, CTO or Department Leader, it should be. It\u2019s the one common thread in digital transformation projects that will always bite you if you haven\u2019t sorted it. \u201cSiri \u2014 Can you tell me who my top 10 customers are this quarter and give me a breakdown of their profitability please?\u201d Sure. You wish. The reality for most business leaders and digital workers is that every time you think about a new question about your business, you will have to get some poor soul copying and pasting data into spreadsheets, crunching the data, sorting out the cruel data anomalies, before doing what they can to make sense of it through self-service tools.",
+      "AI chatbot human interfaces, so digital workers can ask questions \u00b7 Read the full article on Decoupling Architecture here.",
+      "Boston Consulting Group recently published an article on data decoupling stating \u2014 \u201cSuccessful digital transformation requires decoupling the data layer from legacy IT so that companies aren\u2019t forced to modernize their enterprise resource planning systems all at once \u2014 an expensive, time-consuming, and risky proposition."
+    ],
+    "title": "Why Decoupling Data is Critical to Digital Transformation | by ...",
+    "url": "https://ian-tomlin.medium.com/why-decoupling-data-is-critical-to-digital-transformation-e39ff6b00b03"
+  },
+  {
+    "description": "Request PDF | Decoupling Computation and Data Scheduling in Distributed Data-Intensive Applications | In high energy physics, bioinformatics, and other disciplines, we encounter applications involving numerous, loosely coupled jobs that both access... | Find, read and cite all the research ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Request PDF | Decoupling Computation and Data Scheduling in Distributed Data-Intensive Applications | In high energy physics, bioinformatics, and other disciplines, we encounter applications involving numerous, loosely coupled jobs that both access... | Find, read and cite all the research you need on ResearchGate",
+      "Data replication has been widely applied to improve data access in distributed systems such as Grid and Cloud. However, due to the finite storage capacity of each site, copies that are useful for future jobs can be wastefully deleted and replaced with less valuable ones. Therefore, it is considerable to have appropriate replication strategy that can dynamically store the replicas while satisfying quality of service (QoS) requirements and storage capacity constraints. In this paper, we present a dynamic replication algorithm, named hierarchical data replication strategy (HDRS).",
+      "The data distribution over a large system does not necessary match the distribution of storage, network and CPU capacity. Therefore, bottlenecks may appear and lead to increased latency and degraded performance. In this paper we propose a new scheduling approach for distributed data production which is based on the network flow maximization model.",
+      "Application developers are able to conveniently create a high-level model of their designs and perform simulations, while the reliability of the results is ensured by the formalism. The paper demonstrates the usefulness of the simulation method for analyzing real-world distributed systems."
+    ],
+    "title": "Decoupling Computation and Data Scheduling in Distributed ...",
+    "url": "https://www.researchgate.net/publication/2540338_Decoupling_Computation_and_Data_Scheduling_in_Distributed_Data-Intensive_Applications"
+  },
+  {
+    "description": "With the increasing penetration of distributed photovoltaics (PVs) in active distribution networks (ADNs), the risk of voltage violations caused by PV uncertainties is significantly exacerbated. Since the conventional voltage regulation strategy is limited by its discrete devices and delay, ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "With the increasing penetration of distributed photovoltaics (PVs) in active distribution networks (ADNs), the risk of voltage violations caused by PV uncertainties is significantly exacerbated. Since the conventional voltage regulation strategy is limited by its discrete devices and delay, ADN operators allow PVs to participate in voltage optimization by controlling their power outputs and cooperating with traditional regulation devices. This paper proposes a decoupling rolling multi-period reactive power and voltage optimization strategy considering the strong time coupling between different devices.",
+      "Besides, we present how to formulate Benders decomposition algorithm for this reactive power and voltage optimization problem, including the solution process, achieving the multi-period decoupling rolling optimization effect of different devices. The rest of the paper is organized as follows: In Section 2, the model of voltage sensitivity is established, as well as the modeling of OLTC and PV. In Section 3, the proposed DRM architecture is illustrated. Section 4 formulates the decomposed optimization models and provides the solution process. In Section 5, the simulation results on the distribution test system are presented to validate the proposed strategy.",
+      "In this paper, PVs are set to adjust the reactive power output in the maximum power point tracking (MPPT) mode [7]. The maximum reactive power is limited by active power, power factor and capacity: ... In view of nodal voltage deviations caused by the high proportion of PV generation, the practical implementation is to adjust the OLTC tap positions and the active/reactive power outputs of distributed PVs.",
+      "Furthermore, distributed PV generation will affect the power flow direction and change the node voltages. This paper considers minimizing active power losses to improve the economy of ADN operation."
+    ],
+    "title": "A Decoupling Rolling Multi-Period Power and Voltage Optimization ...",
+    "url": "https://www.mdpi.com/1996-1073/13/21/5789"
+  },
+  {
+    "description": "Explicitly segregate a Bounded Context's events in visibility layers, with their own language.",
+    "favicon_url": "https://you.com/favicon?domain=verraes.net&size=128",
+    "snippets": [
+      "Mathias Verraes' blog"
+    ],
+    "title": "Patterns for Decoupling in Distributed Systems: Segregated Event ...",
+    "url": "https://verraes.net/2019/05/patterns-for-decoupling-distsys-segregated-event-layers/"
+  },
+  {
+    "description": "Skip to yearly menu bar Skip to main content \u00b7 Main Navigation \u00b7 Help/FAQ \u00b7 Contact ICLR \u00b7 Downloads \u00b7 ICLR Blog \u00b7 Code of Conduct \u00b7 Create Profile \u00b7 Reset Password \u00b7 Journal To Conference Track",
+    "favicon_url": "https://you.com/favicon?domain=iclr.cc&size=128",
+    "snippets": [],
+    "title": "ICLR 2025 Papers",
+    "url": "https://iclr.cc/virtual/2025/papers.html"
+  },
+  {
+    "description": "If you\u2019ve been involved in architecting solutions, you already know that decoupling is a widely accepted principle. It frequently appears in discussions about scalability, maintainability, and\u2026",
+    "favicon_url": "https://you.com/favicon?domain=awadrahman.medium.com&size=128",
+    "snippets": [
+      "If you\u2019ve been involved in architecting solutions, you already know that decoupling is a widely accepted principle. It frequently appears\u2026",
+      "As mentioned earlier, decoupling is not a new concept; it has been studied and applied across multiple fields, from software engineering and distributed systems to control theory and telecommunications.",
+      "Discussions about decoupling in data architectures are becoming increasingly widespread, largely driven by the increasing complexity of modern data platforms and the growing demand for agility in digital transformation.",
+      "But the definition can be more precise. Decoupling in data solutions is the principle of designing and structuring system components so that they can function, scale, and evolve independently, without tight dependencies on the rest of the platform."
+    ],
+    "title": "The Decoupling Principle For Future-Proof Data Architectures | ...",
+    "url": "https://awadrahman.medium.com/the-decoupling-principle-for-future-proof-data-architectures-9c8ace859905"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=geeksforgeeks.org&size=128",
+    "snippets": [
+      "Replicated Load-Balanced Services (RLBS) play a key role in distributed systems, ensuring efficient resource use, improved performance, and high availability. By distributing tasks across multiple service instances, RLBS helps prevent overload on a single server and minimizes the risk of downtime.",
+      "Replicated Load-Balanced Services (RLBS) in distributed systems refer to the strategy of replicating services across multiple servers or nodes and distributing the incoming requests among them to achieve optimal performance, fault tolerance, and high availability.",
+      "As traffic increases, additional replicas can be created and added to the pool, allowing RLBS to handle more clients without degradation in performance. The load balancer will automatically start distributing traffic to these new instances, making the system highly scalable.",
+      "Scalability: RLBS can easily handle growing traffic by adding more service instances. As new replicas are deployed, the load balancer efficiently distributes incoming requests, allowing the system to scale horizontally without performance degradation."
+    ],
+    "title": "Replicated Load-Balanced Services (RLBS) in Distributed Systems ...",
+    "url": "https://geeksforgeeks.org/replicated-load-balanced-services-rlbs-in-distributed-systems"
+  },
+  {
+    "description": "Explore the challenges and benefits of distributed applications in this insightful overview. Learn how this innovative technology is reshaping industries and revolutionizing the way we interact with software.",
+    "favicon_url": "https://you.com/favicon?domain=vfunction.com&size=128",
+    "snippets": [
+      "To accommodate this, the architecture of software applications has undergone a revolutionary transformation to keep pace. As software developers and architects, it has become the norm to move away from the traditional, centralized model \u2013 where applications reside on a single server \u2013 and embrace the power of distributed applications and distributed computing.",
+      "In this blog, we\u2019ll dive into the intricacies of distributed applications, uncovering their inner workings and how they differ from their monolithic counterparts. We\u2019ll also look at the advantages they bring and the unique challenges they present.",
+      "A commonly used term in software development, a distributed application is one whose software components operate across multiple computers or nodes within a network. Unlike traditional monolithic applications, where all components generally reside on a single computer or machine, distributed applications spread their functionality across different systems.",
+      "Component interaction: The individual components of a distributed application communicate with each other through well-defined interfaces. These interfaces typically leverage network protocols like TCP/IP, HTTP, or specialized messaging systems."
+    ],
+    "title": "What is a distributed application? Definition with examples",
+    "url": "https://vfunction.com/blog/distributed-application/"
+  },
+  {
+    "description": "Skip to yearly menu bar Skip to main content \u00b7 Main Navigation \u00b7 Help/FAQ \u00b7 Contact ICLR \u00b7 Downloads \u00b7 ICLR Blog \u00b7 Code of Conduct \u00b7 Create Profile \u00b7 Reset Password \u00b7 Journal To Conference Track",
+    "favicon_url": "https://you.com/favicon?domain=iclr.cc&size=128",
+    "snippets": [],
+    "title": "ICLR 2025 Papers",
+    "url": "https://iclr.cc/virtual/2025/papers.html"
+  },
+  {
+    "description": "If you\u2019ve been involved in architecting solutions, you already know that decoupling is a widely accepted principle. It frequently appears in discussions about scalability, maintainability, and\u2026",
+    "favicon_url": "https://you.com/favicon?domain=awadrahman.medium.com&size=128",
+    "snippets": [
+      "If you\u2019ve been involved in architecting solutions, you already know that decoupling is a widely accepted principle. It frequently appears\u2026",
+      "As mentioned earlier, decoupling is not a new concept; it has been studied and applied across multiple fields, from software engineering and distributed systems to control theory and telecommunications.",
+      "Discussions about decoupling in data architectures are becoming increasingly widespread, largely driven by the increasing complexity of modern data platforms and the growing demand for agility in digital transformation.",
+      "But the definition can be more precise. Decoupling in data solutions is the principle of designing and structuring system components so that they can function, scale, and evolve independently, without tight dependencies on the rest of the platform."
+    ],
+    "title": "The Decoupling Principle For Future-Proof Data Architectures | ...",
+    "url": "https://awadrahman.medium.com/the-decoupling-principle-for-future-proof-data-architectures-9c8ace859905"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=geeksforgeeks.org&size=128",
+    "snippets": [
+      "Replicated Load-Balanced Services (RLBS) play a key role in distributed systems, ensuring efficient resource use, improved performance, and high availability. By distributing tasks across multiple service instances, RLBS helps prevent overload on a single server and minimizes the risk of downtime.",
+      "Replicated Load-Balanced Services (RLBS) in distributed systems refer to the strategy of replicating services across multiple servers or nodes and distributing the incoming requests among them to achieve optimal performance, fault tolerance, and high availability.",
+      "As traffic increases, additional replicas can be created and added to the pool, allowing RLBS to handle more clients without degradation in performance. The load balancer will automatically start distributing traffic to these new instances, making the system highly scalable.",
+      "Scalability: RLBS can easily handle growing traffic by adding more service instances. As new replicas are deployed, the load balancer efficiently distributes incoming requests, allowing the system to scale horizontally without performance degradation."
+    ],
+    "title": "Replicated Load-Balanced Services (RLBS) in Distributed Systems ...",
+    "url": "https://geeksforgeeks.org/replicated-load-balanced-services-rlbs-in-distributed-systems"
+  },
+  {
+    "description": "Explore the challenges and benefits of distributed applications in this insightful overview. Learn how this innovative technology is reshaping industries and revolutionizing the way we interact with software.",
+    "favicon_url": "https://you.com/favicon?domain=vfunction.com&size=128",
+    "snippets": [
+      "To accommodate this, the architecture of software applications has undergone a revolutionary transformation to keep pace. As software developers and architects, it has become the norm to move away from the traditional, centralized model \u2013 where applications reside on a single server \u2013 and embrace the power of distributed applications and distributed computing.",
+      "In this blog, we\u2019ll dive into the intricacies of distributed applications, uncovering their inner workings and how they differ from their monolithic counterparts. We\u2019ll also look at the advantages they bring and the unique challenges they present.",
+      "A commonly used term in software development, a distributed application is one whose software components operate across multiple computers or nodes within a network. Unlike traditional monolithic applications, where all components generally reside on a single computer or machine, distributed applications spread their functionality across different systems.",
+      "Component interaction: The individual components of a distributed application communicate with each other through well-defined interfaces. These interfaces typically leverage network protocols like TCP/IP, HTTP, or specialized messaging systems."
+    ],
+    "title": "What is a distributed application? Definition with examples",
+    "url": "https://vfunction.com/blog/distributed-application/"
+  },
+  {
+    "description": "Benefit from decoupled architecture when building & deploying new apps. Learn how to create a tapestry of focused services .",
+    "favicon_url": "https://you.com/favicon?domain=www.computer.org&size=128",
+    "snippets": [
+      "A decoupled approach transforms how developers build and deploy applications by fostering independence among components and enabling them to evolve seamlessly alongside an organization\u2019s needs. Isolated components are easier to maintain and evolve, avoiding the large regression problems that are typical of highly coupled architectures, where changing or modifying a small feature can have a chain reaction across the rest of the system.",
+      "Using decoupled architecture, companies can scale operations and instigate business growth by quickly and strategically addressing customer desires and new market innovations. While platform-based architectures allow organizations to address needs out of the box, they can\u2019t scale and transform effectively to meet constantly evolving technologies and markets. Enterprises that transition from a highly coupled system to a decoupled architecture can implement a strategy that accounts for the one constant of business and technology\u2014continuous change.",
+      "Decoupled architecture is a broader system design concept that aims to minimize component dependencies.",
+      "The advantages associated with decoupled architecture are especially important to organizations committed to digital transformation and customer-centric growth. This is because of enhanced scalability and agility."
+    ],
+    "title": "What Is Decoupled Architecture and How Is It Used in Business Today?",
+    "url": "https://www.computer.org/publications/tech-news/community-voices/decoupled-architecture"
+  },
+  {
+    "description": "Debugging reinforcement learning implementations, without the agonizing pain.",
+    "favicon_url": "https://you.com/favicon?domain=andyljones.com&size=128",
+    "snippets": [
+      "Maybe it'll be different once someone figures out how to turn RL into an industry. The community has other priorities: Again, the community is a community of researchers. The population sets the priorities, and the priority is publication. Reliable, reproducible research contributes to publishing high-impact papers, but it also costs time and effort that is arguably better spent working on something new.",
+      "One of the most reliable ways to make life easier in RL is to use a really large batch size. A really large batch size. There's an excellent paper on picking batch sizes, and to pull some examples from there:",
+      "This is a collection of debugging advice that has served me well over the past few years. It was formed both from my personal experiences, and from several months of helping people out in the RL Discord. It is intended as compliment to the other excellent articles on debugging RL that can be found elsewhere.",
+      "Errors aren't local: The vast majority of the bugs you'll make are the 'doing the wrong calculation' sort. Because information in an RL system flows in a loop - actor to learner and then back to actor - a numerical error in one spot gets smeared throughout the system in seconds, poisoning everything."
+    ],
+    "title": "Debugging Reinforcement Learning Systems",
+    "url": "https://andyljones.com/posts/rl-debugging.html"
+  },
+  {
+    "description": "Video-LaVIT: Unified Video-Language Pre-training with Decoupled Visual-Motional Tokenization \u00b7 Using Left and Right Brains Together: Towards Vision and Language Planning \u00b7 Thermometer: Towards Universal Calibration for Large Language Models \u00b7 Two Stones Hit One Bird: Bilevel Positional Encoding for Better Length Extrapolation \u00b7 Debating with More Persuasive LLMs Leads to More Truthful Answers \u00b7 Learning from Students: Applying t-Distributions ...",
+    "favicon_url": "https://you.com/favicon?domain=icml.cc&size=128",
+    "snippets": [
+      "Video-LaVIT: Unified Video-Language Pre-training with Decoupled Visual-Motional Tokenization \u00b7 Using Left and Right Brains Together: Towards Vision and Language Planning \u00b7 Thermometer: Towards Universal Calibration for Large Language Models \u00b7 Two Stones Hit One Bird: Bilevel Positional Encoding for Better Length Extrapolation \u00b7 Debating with More Persuasive LLMs Leads to More Truthful Answers \u00b7 Learning from Students: Applying t-Distributions to Explore Accurate and Efficient Formats for LLMs",
+      "Amend to Alignment: Decoupled Prompt Tuning for Mitigating Spurious Correlation in Vision-Language Models ... Confronting Reward Overoptimization for Diffusion Models: A Perspective of Inductive and Primacy Biases \u00b7 What\u2019s the score? Automated Denoising Score Matching for Nonlinear Diffusions \u00b7 Estimating Barycenters of Distributions with Neural Optimal Transport",
+      "Decoupling Feature Extraction and Classification Layers for Calibrated Neural Networks \u00b7 Collective Certified Robustness against Graph Injection Attacks \u00b7 Attack-free Evaluating and Enhancing Adversarial Robustness on Categorical Data \u00b7 Towards Efficient Training and Evaluation of Robust Models against $l_0$ Bounded Adversarial Perturbations \u00b7 Extending Adversarial Attacks to Produce Adversarial Class Probability Distributions",
+      "Stop Regressing: Training Value Functions via Classification for Scalable Deep RL \u00b7 VQDNA: Unleashing the Power of Vector Quantization for Multi-Species Genomic Sequence Modeling ... Reinforcement Learning from Reachability Specifications: PAC Guarantees with Expected Conditional Distance \u00b7 To the Max: Reinventing Reward in Reinforcement Learning \u00b7 A Distributional Analogue to the Successor Representation"
+    ],
+    "title": "ICML 2024 Schedule",
+    "url": "https://icml.cc/virtual/2024/calendar"
+  },
+  {
+    "description": "One of the main reasons utilities fight distributed generation like rooftop solar is that it erodes demand for their centrally generated electricity. Reduced demand is annoying for any business, but",
+    "favicon_url": "https://you.com/favicon?domain=energycentral.com&size=128",
+    "snippets": [
+      "One of the main reasons utilities fight distributed generation like rooftop solar is that it erodes demand for their centrally generated electricity. Reduced demand is annoying for any business, but it\u2019s especially bad for traditional...",
+      "Cities are great for the climate, but they will always need to import energy, and that means we will still need transmission and distribution systems. In the near term, revenue decoupling would insulate Xcel against the sales they\u2019re going to lose to rooftop solar and other distributed energy.",
+      "The service lifetime of solar energy systems will clearly be longer for utility scale system because the centralized location and ground mounting reduces maintenance costs, and decouples it from leaking roofs which must be periodically replaced. The popular notion that the solar industry is being driven by distributed generation also conflicts with the facts.",
+      "With decoupling, they don\u2019t have to go to regulators and ask for a rate hike \u2014 they can recover the fixed costs in a formulaic way, and so decoupled utilities are able to invest in energy efficiency without worrying about lost revenues. They\u2019re also likely to be less opposed to modest amounts of distributed generation."
+    ],
+    "title": "Decoupling and Distributed Energy | Energy Central",
+    "url": "https://energycentral.com/c/ec/decoupling-and-distributed-energy"
+  },
+  {
+    "description": "In general, a decoupled architecture is a framework for complex work that allows components to remain completely autonomous and unaware of each other.",
+    "favicon_url": "https://you.com/favicon?domain=www.techtarget.com&size=128",
+    "snippets": [
+      "1. In general, a decoupled architecture is a framework for complex work that allows components to remain completely autonomous and unaware of each other.",
+      "A computer room air conditioning (CRAC) unit is a device that monitors and maintains the temperature, air distribution and ...",
+      "In theory, a larger buffer can increase throughput. However, larger buffers generate more heat and use more space. Plus, the entire buffer may need to be flushed if the processor has a branch misprediction, thereby wasting clock cycles and reducing the effectiveness of the decoupled architecture.",
+      "Cloud computing is sometimes said to have a decoupled architecture because the cloud provider manages the physical infrastructure, but not the applications or data hosted on it."
+    ],
+    "title": "What is decoupled architecture? | Definition from TechTarget",
+    "url": "https://www.techtarget.com/whatis/definition/decoupled-architecture"
+  },
+  {
+    "description": "In organizational studies, and particularly new institutional theory, decoupling is the creation and maintenance of gaps between formal policies and actual organizational practices. Organizational researchers have documented decoupling in a variety of organizations, including schools, corporations, ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "In organizational studies, and particularly new institutional theory, decoupling is the creation and maintenance of gaps between formal policies and actual organizational practices. Organizational researchers have documented decoupling in a variety of organizations, including schools, corporations, government agencies, police, and social movement organizations.",
+      "Other scholars have noted that decoupling may occur because it serves the interests of powerful organizational leaders, or because it allows organizational decision-makers to avoid implementing policies that conflict with their ideological beliefs.",
+      "Despite the emphasis in the literature on the decoupling between policies and practices, the phenomenon might also occur when organizations attempt to implement initiatives, but their results are far from what was initially expected.",
+      "Scholars have proposed a number of explanations for why organizations engage in decoupling.",
+      "Some researchers have argued that decoupling enables organizations to gain legitimacy with their external members while simultaneously maintaining internal flexibility to address practical considerations."
+    ],
+    "title": "Decoupling (organizational studies) - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Decoupling_(organizational_studies)"
+  },
+  {
+    "description": "Find out everything you ever wanted to know about distributed architecture in our comprehensive guide. Discover how to design components and implement them effectively.",
+    "favicon_url": "https://you.com/favicon?domain=vfunction.com&size=128",
+    "snippets": [
+      "As demand for high performance and reliability becomes the default, understanding the principles and benefits of distributed architectures is essential for architects and developers to build applications that meet customer demands.",
+      "In this blog post, we\u2019ll look at the fundamentals of distributed architecture, explore various types and examples, and discuss how modern tools can help when it comes to successfully building and scaling this architectural paradigm.",
+      "A distributed architecture is a software system deployed across multiple interconnected computational nodes. These nodes can be physical or virtual servers, containers, or serverless functions like AWS Lambda, Azure Functions, or Google Cloud Functions. In essence, a distributed architecture allocates an application\u2019s workload across multiple nodes rather than relying on a single central server.",
+      "The primary goal of distributed computing systems is to enhance an application\u2019s scalability, fault tolerance, and performance. By distributing the workload across multiple nodes, the system can handle variable volumes of traffic and data without compromising speed or reliability."
+    ],
+    "title": "Distributed Architecture: 4 Types, Key Elements + Examples",
+    "url": "https://vfunction.com/blog/distributed-architecture/"
+  },
+  {
+    "description": "PDF | Event-driven programming has become a major paradigm in developing concurrent, distributed systems. Its benefits are often informally captured by... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Event-driven programming has become a major paradigm in developing concurrent, distributed systems. Its benefits are often informally captured by the key tenet of \u201cdecoupling,\u201d a notion which roughly captures the ability of processes to join and leave (or fail) applications dynamically, and to be developed by independent parties.",
+      "distributed systems. Its bene\ufb01ts are often informally captured by the key tenet of \u201cdecoupling\u201d,",
+      "Programming models for event-driven programming either make it hard to globally reason about control flow, thus hampering sound execution, or sacrifice decoupling to aid in reasoning about control flow. This work fills the gap by introducing a programming model\u2014dubbed cooperative decoupled processes\u2014that achieves both decoupling and global reasoning about control flow.",
+      "We introduce this programming model through an event calculus, loosely inspired by the Join calculus, that enables reasoning about cooperative decoupled processes through the concepts of pre- and postconditions. A linear type system controls aliasing of events to avoid a break of control flow and thus safe exchange of shared events."
+    ],
+    "title": "(PDF) Cooperative decoupled processes",
+    "url": "https://www.researchgate.net/publication/318160475_Cooperative_decoupled_processes"
+  },
+  {
+    "description": "Deep Reinforcement Learning (DRL) has been a game-changer in the field of artificial intelligence.",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "It blends the power of deep learning with the decision-making capabilities of reinforcement learning, enabling machines to perform complex tasks with superhuman proficiency. In this blog post, we\u2026",
+      "Distributed Training: Implement distributed training techniques to speed up the training process by utilizing multiple GPUs or machines. Optimized Algorithms: Use resource-efficient algorithms and techniques like model pruning and quantization to reduce computational requirements. Explore advanced methods in this research paper.",
+      "Community Resources: Leverage open-source implementations and research papers to understand the nuances of different algorithms.",
+      "For detailed algorithm comparisons, refer to this research paper."
+    ],
+    "title": "DRL in the Real World: 5 Key Challenges Data Scientists Commonly ...",
+    "url": "https://medium.com/@zhonghong9998/drl-in-the-real-world-5-key-challenges-data-scientists-commonly-face-438cffff913e"
+  },
+  {
+    "description": "10 votes, 18 comments. Am starting out working on an RL problem and am wondering what people generally use to implement the algorithms? I\u2019ll need to\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "harder to start with but more flexible i think. also has a lot more algorithms implemented, with built-in distributed support if u have access to a lot of compute ... Creating a custom gym environment is pretty easy. I'd get your hands dirty with simple scripts before going all in on a package like RLLib or SB3.",
+      "Posted by u/suds_65 - 10 votes and 18 comments",
+      "I would recommend going with the Gym framework for your first environment (as you said on your own) and then start out with StableBaselines3. While I agree with the others that Rllib and Ray are pretty awesome, if you are just starting out, they might be a bit overkill and too complex imo.",
+      "I encourage you to use skrl (https://skrl.readthedocs.io), a modular and flexible RL library (on PyTorch and JAX) with clear and readable code and comprehensive documentation."
+    ],
+    "title": "r/reinforcementlearning on Reddit: Best RL package?",
+    "url": "https://www.reddit.com/r/reinforcementlearning/comments/16rec1a/best_rl_package/"
+  },
+  {
+    "description": "Event-driven architecture promotes adaptability through decoupling. While enhancing flexibility, over-decoupling may lead to complexity and challenges.",
+    "favicon_url": "https://you.com/favicon?domain=blog.covibe.us&size=128",
+    "snippets": [
+      "Software development constantly adapts, with decoupling as a key principle. It encourages code modularity, reusability, and maintainability, leading to strong and flexible software systems. Yet there's a balance to strike; too much decoupling can backfire.",
+      "Decoupling, in software development, refers to the practice of breaking down a software system into smaller, independent components or modules. These modules are designed to be loosely coupled, meaning they have minimal dependencies on one another.",
+      "Dependency Injection: Another popular technique for decoupling in software development is dependency injection. It involves providing a component with its required dependencies rather than allowing it to create them internally. This technique promotes loose coupling between components, as it allows for the interchangeability of dependencies without modifying the core component.",
+      "Event-Driven Architecture: Decoupling can also be achieved through event-driven architecture. In this approach, components of a system communicate by emitting and subscribing to events. When one component generates an event, it doesn't need to know which other components will respond to it."
+    ],
+    "title": "Decoupling in Software Development: Striking the Right Balance",
+    "url": "https://blog.covibe.us/the-pitfalls-of-excessive-decoupling-in-software-development-striking-the-right-balance/"
+  },
+  {
+    "description": "Distributed data processing refers to the approach of handling and analysing data across multiple interconnected devices or nodes.",
+    "favicon_url": "https://you.com/favicon?domain=www.purestorage.com&size=128",
+    "snippets": [
+      "Distributed data processing refers to the approach of handling and analysing data across multiple interconnected devices or nodes. In contrast to centralized data processing, where all data operations occur on a single, powerful system, distributed processing decentralizes these tasks across a network of computers.",
+      "Distributed data processing systems inherently offer improved fault tolerance compared to centralized systems. In a distributed environment, if one node fails, the remaining nodes can continue processing data, reducing the risk of a complete system failure.",
+      "Parallel processing, a key feature of distributed data processing, contributes to enhanced performance. By breaking down complex tasks into smaller subtasks distributed across nodes, the system can process data more quickly and efficiently.",
+      "At its core, distributed data processing involves the simultaneous execution of data-related tasks across multiple interconnected devices or nodes. Distributed systems form the backbone of this approach, comprising a network of computers that work collaboratively to analyse and process data."
+    ],
+    "title": "What Is Distributed Data Processing? | Pure Storage",
+    "url": "https://www.purestorage.com/uk/knowledge/what-is-distributed-data-processing.html"
+  },
+  {
+    "description": "The Better Than Cash Alliance is a partnership of governments, companies, and international organizations that accelerates the transition from cash to digital payments in order to help achieve the Sustainable Development Goals \u00b7 Blockchain Series: Blog 1",
+    "favicon_url": "https://you.com/favicon?domain=www.betterthancash.org&size=128",
+    "snippets": [
+      "Source: Based on Baran (1962), On Distributed Communications Networks. https://www.rand.org/content/dam/rand/pubs/papers/2005/P2626.pdf",
+      "Distributed Ledger Technology (DLT), often referred to as blockchain, has garnered a lot of attention in the past few years. Is it just \u201ca solution in search of a problem\u201d or, does it offer answers for real-world policy questions such digital identity and remittances?",
+      "Against this backdrop, bitcoin presented the world with two technological breakthroughs that must be clearly distinguished: first, a cryptocurrency or crypto-asset\u2014that is, a digital or virtual instrument of value exchange that uses cryptography for security and verification; and second, a blockchain or distributed ledger that serves as a shared, synchronized and tamper-proof record of transactions that enables trust and coordination between participants without the need for a central authority.",
+      "Distributed Ledger Technology (DLT): DLT refers to a fast-evolving approach to recording and sharing data across multiple data stores (or ledgers).This technology allows for transactions and data to be recorded, shared and synchronized across a distributed network of different network participants (see Figure 1 below)."
+    ],
+    "title": "Distributed Ledger Technology: What Is It and Why Do We Care? \u00b7 ...",
+    "url": "https://www.betterthancash.org/news/distributed-ledger-technology-what-is-it-and-why-do-we-care"
+  },
+  {
+    "description": "Ensure data integrity and availability in distributed systems with data replication techniques and tools.",
+    "favicon_url": "https://you.com/favicon?domain=www.pickl.ai&size=128",
+    "snippets": [
+      "Data replication involves copying and synchronising data across multiple locations or systems in real-time or near real-time. It ensures that data remains consistent and accessible across distributed environments, enhancing redundancy and fault tolerance.",
+      "Quorum-based replication mandates that most nodes in the system must agree on an update before it is deemed valid and committed. This approach guarantees consistency across distributed nodes by requiring consensus, thus preventing conflicting updates and maintaining data integrity.",
+      "Summary: Data replication ensures data integrity and availability in distributed systems.",
+      "Data Replication plays a vital role in ensuring the integrity and availability of data in distributed systems. In the World Wide Web, there is the scope of latency, data loss, and delays."
+    ],
+    "title": "Data Replication: Ensuring Data\u2019s Vitality in Distributed Systems",
+    "url": "https://www.pickl.ai/blog/data-replication-in-distributed-systems/"
+  }
+]

@@ -1,0 +1,263 @@
+[
+  {
+    "description": "Abstract. Self-correction is an approach to improving responses from large language models (LLMs) by refining the responses using LLMs during inference. Prior work has proposed various self-correction frameworks using different sources of feedback, including self-evaluation and external feedback.",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "To tackle these issues, we categorize research questions in self-correction research and provide a checklist for designing appropriate experiments. Our critical survey based on the newly categorized research questions shows that (1) no prior work demonstrates successful self-correction with feedback from prompted LLMs, except for studies in tasks that are exceptionally suited for self-correction, (2) self-correction works well in tasks that can use reliable external feedback, and (3) large-scale fine-tuning enables self-correction.",
+      "As a result, many papers fail to provide appropriate experiments to evaluate the research questions they implicitly target. To address this issue, we categorize research questions in self-correction research (\u00a73.1) and discuss frameworks that should be used for verifying each research question (\u00a73.2). Finally, we provide a checklist for designing appropriate experiments (\u00a78). Next, we analyze prior work to identify when LLMs can self-correct their mistakes, using the new definitions of the research questions.",
+      "They focus on analyzing a few papers on intrinsic self-correction in reasoning tasks. We provide a more comprehensive analysis of self-correction with in-context learning, external tools, and fine-tuning. of mistakes in LLM responses using LLMs (possibly with external information) has been studied in various domains, including misinformation detection (Zhang et al., 2023c; Chern et al., 2023; Chen and Shu, 2024; Mishra et al., 2024), context-faithfulness (Wang et al., 2020; Durmus et al., 2020; Scialom et al., 2021), harmful content detection (Rauh et al., 2022), and bias detection (Blodgett et al., 2020; Feng et al., 2023).",
+      "Small language models need strong verifiers to self-correct reasoning. In \u00b7 Findings of the Association for Computational Linguistics ACL 2024, pages ... Bangkok, Thailand and virtual meeting. Association for Computational Linguistics. ... Verify-and-edit: A knowledge-enhanced chain-of-thought framework. In \u00b7 Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages"
+    ],
+    "title": "When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey ...",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00713/125177/When-Can-LLMs-Actually-Correct-Their-Own-Mistakes"
+  },
+  {
+    "description": "To tackle these issues, we categorize ... and provide a checklist for designing appropriate experiments. Our critical survey based on the newly categorized research questions shows that (1) no prior work demonstrates successful self-correction with feedback from prompted LLMs in general ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "To tackle these issues, we categorize research questions in self-correction research and provide a checklist for designing appropriate experiments. Our critical survey based on the newly categorized research questions shows that (1) no prior work demonstrates successful self-correction with feedback from prompted LLMs in general tasks, (2) self-correction works well in tasks that can use reliable external feedback, and (3) large-scale fine-tuning enables self-correction.",
+      "As a result, many papers fail to provide appropriate experiments to evaluate the research questions they implicitly target. To address this issue, we establish categories of research questions in self-correction research (\u00a73.1) and discuss frameworks that should be used for verifying each research question (\u00a73.2). Finally, we provide a checklist for designing appropriate experiments (\u00a78). Next, we analyze prior work to identify when LLMs can self-correct their mistakes, using the new definitions of the research questions.",
+      "They focus on analyzing a few papers on intrinsic self-correction in reasoning tasks. We provide a more comprehensive analysis of self-correction with in-context learning, external tools, and fine-tuning. of mistakes in LLM responses using LLMs (possibly with external information) has been studied in various domains, including misinformation detection (Zhang et al., 2023c; Chern et al., 2023; Chen and Shu, 2024; Mishra et al., 2024), context-faithfulness (Wang et al., 2020; Durmus et al., 2020; Scialom et al., 2021), harmful content detection (Rauh et al., 2022), and bias detection (Blodgett et al., 2020; Feng et al., 2023).",
+      "Small language models need strong verifiers to self-correct reasoning. arXiv preprint arXiv:2404.17140. Zhao et al. (2023) Ruochen Zhao, Xingxuan Li, Shafiq Joty, Chengwei Qin, and Lidong Bing. 2023. Verify-and-edit: A knowledge-enhanced chain-of-thought framework. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 5823\u20135840, Toronto, Canada."
+    ],
+    "title": "When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey ...",
+    "url": "https://arxiv.org/html/2406.01297v1"
+  },
+  {
+    "description": "This is a collection of research papers for Self-Correcting Large Language Models with Automated Feedback. - GitHub - teacherpeterpan/self-correction-llm-papers: This is a collection of research papers for Self-Correcting Large Language Models with Automated Feedback.",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Decomposition Enhances Reasoning via Self-Evaluation Guided Decoding. arxiv, 2023.",
+      "LLM Self-Correction with DeCRIM: Decompose, Critique, and Refine for Enhanced Following of Instructions with Multiple Constraints Conference on Empirical Methods in Natural Language Processing (EMNLP), 2024."
+    ],
+    "title": "GitHub - teacherpeterpan/self-correction-llm-papers: This is a ...",
+    "url": "https://github.com/teacherpeterpan/self-correction-llm-papers"
+  },
+  {
+    "description": "PDF | Self-correction is an approach to improving responses from large language models (LLMs) by refining the responses using LLMs during inference.... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "To tackle these issues, we categorize research questions in self-correction research and provide a checklist for designing appropriate experiments. Our critical survey based on the newly categorized research questions shows that (1) no prior work demonstrates successful self-correction with feedback from prompted LLMs in general tasks, (2) self-correction works well in tasks that can use reliable external feedback, and (3) large-scale fine-tuning enables self-correction.",
+      "Self-correction with external tools or knowledge (with in-context learning). ... Content may be subject to copyright. ... Content may be subject to copyright. When Can LLMs Actually Correct Their Own Mistakes? ... LLMs during inference. Prior work has pro- ... This survey is organized as follows. Section 2 \u00b7 provides an overview of self-correction.",
+      "LLMs to generate feedback on their own responses. ... Asym. Palm 540B \u2013 Web Search \u2013 \u2013 NQ, SQA, ... Huang et al. ... Table 1: Representative studies in self-correction of LLMs.",
+      "RQ Group A. The capability of self-correcting ... RQ Group B. The performance of the \ufb01nal out-"
+    ],
+    "title": "(PDF) When Can LLMs Actually Correct Their Own Mistakes? A Critical ...",
+    "url": "https://www.researchgate.net/publication/381152815_When_Can_LLMs_Actually_Correct_Their_Own_Mistakes_A_Critical_Survey_of_Self-Correction_of_LLMs"
+  },
+  {
+    "description": "Self-correction is an approach to improving responses from large language models (LLMs) by refining the responses using LLMs during inference. Prior work has proposed various self-correction frameworks using different sources of feedback, including self-evaluation and external feedback.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2406.01297: When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs",
+      "To tackle these issues, we categorize research questions in self-correction research and provide a checklist for designing appropriate experiments. Our critical survey based on the newly categorized research questions shows that (1) no prior work demonstrates successful self-correction with feedback from prompted LLMs, except for studies in tasks that are exceptionally suited for self-correction, (2) self-correction works well in tasks that can use reliable external feedback, and (3) large-scale fine-tuning enables self-correction.",
+      "View a PDF of the paper titled When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs, by Ryo Kamoi and 4 other authors View PDF HTML (experimental)",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2406.01297] When Can LLMs Actually Correct Their Own Mistakes? ...",
+    "url": "https://arxiv.org/abs/2406.01297"
+  },
+  {
+    "description": "Large Language Models (LLMs) have emerged as a groundbreaking technology with their unparalleled text generation capabilities across various applications. Nevertheless, concerns persist regarding the accuracy and appropriateness of their generated content. A contemporary methodology, ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Abstract: Large Language Models (LLMs) have emerged as a groundbreaking technology with their unparalleled text generation capabilities across various applications. Nevertheless, concerns persist regarding the accuracy and appropriateness of their generated content. A contemporary methodology, self-correction, has been proposed as a remedy to these issues. Building upon this premise, this paper critically examines the role and efficacy of self-correction within LLMs, shedding light on its true potential and limitations.",
+      "TL;DR: This paper critically examines the role and efficacy of self-correction within LLMs, shedding light on its true potential and limitations.",
+      "Central to our investigation is the notion of intrinsic self-correction, whereby an LLM attempts to correct its initial responses based solely on its inherent capabilities, without the crutch of external feedback. In the context of reasoning, our research indicates that LLMs struggle to self-correct their responses without external feedback, and at times, their performance even degrades after self-correction."
+    ],
+    "title": "Large Language Models Cannot Self-Correct Reasoning Yet | OpenReview",
+    "url": "https://openreview.net/forum?id=IkmD3fKBPQ"
+  },
+  {
+    "description": "The tasks that were described as success stories in research papers often had an obvious answer, which made it easy to gauge if it was wrong. The team also found that using external tools typically helped LLMs fix their mistakes. They also performed better when they were fine-tuned on datasets ...",
+    "favicon_url": "https://you.com/favicon?domain=cacm.acm.org&size=128",
+    "snippets": [
+      "The tasks that were described as success stories in research papers often had an obvious answer, which made it easy to gauge if it was wrong. The team also found that using external tools typically helped LLMs fix their mistakes. They also performed better when they were fine-tuned on datasets specifically designed for self-correction during training.",
+      "Researchers are taking a closer look at the effectiveness of self-correcting LLMs. ... The latest generation of chatbots includes valuable tools to help with a variety of tasks, from providing information about a topic to generating computer code. Yet despite their impressive abilities, anyone who uses them regularly will have noticed that they make various types of mistakes. A recent round-up of the failures of OpenAI\u2019s ChatGPT groups its mistakes into 10 different categories, some examples demonstrating difficulty in reasoning, such as working out the sequence of events in a simple story, multiplying large numbers, or solving riddles.",
+      "\u201cWe are just starting a project to explore whether we can improve the error detection performance of large language models on general tasks by training large language models on [these datasets].\u201d \u00b7 Pan and his colleagues also examined studies related to LLM self-correction in a survey paper published earlier this year focusing on recent approaches that use automated feedback. Similar to Kamoi\u2019s team\u2019s findings, they found there were more examples of LLMs not being able to self-correct when relying on their own feedback, compared to success stories.",
+      "Different self-correction approaches already are being used in LLMs. The first step is typically to get feedback. While models are sometimes harnessed to evaluate the accuracy of their own output, external tools such as using a search engine to check facts are utilized in other approaches. Responses can be improved at different stages of the process: during training by using specialized fine-tuning methods, while an answer is being generated, or afterwards. Many papers cite specific cases in which an LLM has been able to improve itself, but it is not clear how effective self-correction is overall."
+    ],
+    "title": "Self-Correction in Large Language Models \u2013 Communications of the ACM",
+    "url": "https://cacm.acm.org/news/self-correction-in-large-language-models/"
+  },
+  {
+    "description": "Ryo Kamoi, Yusen Zhang, Nan Zhang, Jiawei Han, Rui Zhang. Transactions of the Association for Computational Linguistics, Volume 12. 2024.",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [
+      "To tackle these issues, we categorize research questions in self-correction research and provide a checklist for designing appropriate experiments. Our critical survey based on the newly categorized research questions shows that (1) no prior work demonstrates successful self-correction with feedback from prompted LLMs, except for studies in tasks that are exceptionally suited for self-correction, (2) self-correction works well in tasks that can use reliable external feedback, and (3) large-scale fine-tuning enables self-correction.\"",
+      "To tackle these issues, we categorize research questions in self-correction research and provide a checklist for designing appropriate experiments. Our critical survey based on the newly categorized research questions shows that (1) no prior work demonstrates successful self-correction with feedback from prompted LLMs, except for studies in tasks that are exceptionally suited for self-correction, (2) self-correction works well in tasks that can use reliable external feedback, and (3) large-scale fine-tuning enables self-correction.</abstract> <identifier type=\"citekey\">kamoi-etal-2024-llms</id"
+    ],
+    "title": "When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey ...",
+    "url": "https://aclanthology.org/2024.tacl-1.78/"
+  },
+  {
+    "description": "Large Language Models (LLMs) have emerged as a groundbreaking technology with their unparalleled text generation capabilities across various applications. Nevertheless, concerns persist regarding the accuracy and appropriateness of their generated content. A contemporary methodology, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Large Language Models (LLMs) have emerged as a groundbreaking technology with their unparalleled text generation capabilities across various applications. Nevertheless, concerns persist regarding the accuracy and appropriateness of their generated content. A contemporary methodology, self-correction, has been proposed as a remedy to these issues.",
+      "Abstract page for arXiv paper 2310.01798: Large Language Models Cannot Self-Correct Reasoning Yet",
+      "In the context of reasoning, our research indicates that LLMs struggle to self-correct their responses without external feedback, and at times, their performance even degrades after self-correction. Drawing from these insights, we offer suggestions for future research and practical applications in this field. From: Jie Huang [view email] [v1] Tue, 3 Oct 2023 04:56:12 UTC (129 KB) [v2] Thu, 14 Mar 2024 04:27:52 UTC (137 KB) ... View a PDF of the paper titled Large Language Models Cannot Self-Correct Reasoning Yet, by Jie Huang and 6 other authors",
+      "View a PDF of the paper titled Large Language Models Cannot Self-Correct Reasoning Yet, by Jie Huang and 6 other authors View PDF HTML (experimental) Abstract:Large Language Models (LLMs) have emerged as a groundbreaking technology with their unparalleled text generation capabilities across various applications."
+    ],
+    "title": "[2310.01798] Large Language Models Cannot Self-Correct Reasoning Yet",
+    "url": "https://arxiv.org/abs/2310.01798"
+  },
+  {
+    "description": "Explore the complexities and applications of self-correction in LLMs, learn for the need for further research in understanding its performance impact.",
+    "favicon_url": "https://you.com/favicon?domain=mike-blinkman.medium.com&size=128",
+    "snippets": [
+      "Explore the complexities and potential applications of self-correction in LLMs while highlighting the need for further research in\u2026",
+      "Despite the decrease in performance, self-correction can occasionally improve the quality of LLM outputs by identifying and correcting errors in the generated results, leading to increased accuracy and reliability (Decimal Point Analytics). The use of self-critique approaches, multi-agent debates, and self-feedback can help LLMs refine their outputs and enhance their overall performance (Decimal Point Analytics, Pan et al).",
+      "Self-correction can positively impact the behavior of LLMs in natural language understanding (NLU) tasks, as it allows them to refine themselves using their own feedback signal (Xu et al). This intrinsic self-correction capability can enhance the overall performance and accuracy of LLMs without the need for external or human feedback (Huang et al).",
+      "While self-correction holds promise in refining LLMs and enhancing their accuracy and reliability, current efforts indicate a decrease in performance rather than improvement. Despite challenges such as identifying errors and limitations in course-correction, self-correction stands out as a flexible approach, offering iterative feedback loops and enhancing explainability."
+    ],
+    "title": "Self-Correction in LLMs | Mike Blinkman | Medium",
+    "url": "https://mike-blinkman.medium.com/self-correction-in-llms-hype-vs-reality-c7aed5cbff2f"
+  },
+  {
+    "description": "Self-correction is an approach to improving responses from large language models (LLMs) by refining the responses using LLMs during inference. Prior work has proposed various self-correction frameworks using different sources of feedback, including self-evaluation and external feedback.",
+    "favicon_url": "https://you.com/favicon?domain=www.aimodels.fyi&size=128",
+    "snippets": [
+      "The ability for LLMs to recognize and correct their own errors, known as \"self-correction,\" is identified as a crucial capability that can enhance the reliability and trustworthiness of these models. The paper then reviews recent research on LLM self-correction, examining the factors that influence their ability to self-correct. One key factor is the alignment between the context provided to the LLM and the intended meaning, as shown in the study link to \"Theoretical Understanding of Self-Correction Through Context Alignment\". This research demonstrates that LLMs can self-correct when the context helps them align their output with the desired meaning.",
+      "The ability for LLMs to recognize and correct their own errors, known as \"self-correction,\" is an important capability that can enhance their reliability and trustworthiness. This research paper takes a critical look at the self-correction capabilities of LLMs. It examines recent studies that have explored when and how LLMs can correct their own mistakes. For example, link to \"Theoretical Understanding of Self-Correction Through Context Alignment\" shows that LLMs can self-correct when the context provided helps them align their output with the intended meaning.",
+      "The findings presented in this paper have important implications for the continued advancement and deployment of LLMs in real-world applications. Improving the self-correction capabilities of these powerful AI systems can enhance their reliability, trustworthiness, and safe deployment, ultimately benefiting both the research community and society at large.",
+      "This paper critically examines the self-correction capabilities of large language models (LLMs), analyzing when and how they can correct their own mistakes. It reviews recent research on LLM self-correction, including the factors that influence their ability to self-correct, such as context alignment, confidence levels, and the use of external verifiers. The paper provides insights into the current limitations of LLM self-correction and highlights areas for further research and development to improve this capability."
+    ],
+    "title": "When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey ...",
+    "url": "https://www.aimodels.fyi/papers/arxiv/when-can-llms-actually-correct-their-own"
+  },
+  {
+    "description": "Abstract. While large language models (LLMs) have shown remarkable effectiveness in various NLP tasks, they are still prone to issues such as hallucination, unfaithful reasoning, and toxicity. A promising approach to rectify these flaws is correcting LLMs with feedback, where the LLM itself ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. While large language models (LLMs) have shown remarkable effectiveness in various NLP tasks, they are still prone to issues such as hallucination, unfaithful reasoning, and toxicity. A promising approach to rectify these flaws is correcting LLMs with feedback, where the LLM itself is prompted or guided with feedback to fix problems in its own output.",
+      "Answers to those questions might closely associated with LLMs\u2019 capacity to exhibit metacognitive awareness, i.e., their understanding of their own knowledge and uncertainties (Kadavath et al., 2022). The concept of calibration\u2014how well a model\u2019s predictions match observed outcomes\u2014is also crucial (Lin et al., 2023). While language models demonstrate some capacity for self-feedback, achieving superior performance often necessitates incorporating external feedback.",
+      "In self-correction, the quality of the feedback is constrained by the inherent limitations of LLMs, such as the inability to access up-to-date information, take actions, or perform precise mathematical reasoning. To enhance feedback quality, recent research leverages external tools, as shown in Figure 4(b).",
+      "A promising approach to rectify these flaws is correcting LLMs with feedback, where the LLM itself is prompted or guided with feedback to fix problems in its own output. Techniques leveraging automated feedback\u2014either produced by the LLM itself (self-correction) or some external system\u2014are of particular interest as they make LLM-based solutions more practical and deployable with minimal human intervention. This paper provides an exhaustive review of the recent advances in correcting LLMs with automated feedback, categorizing them into training-time, generation-time, and post-hoc approaches."
+    ],
+    "title": "Automatically Correcting Large Language Models: Surveying the ...",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00660/120911/Automatically-Correcting-Large-Language-Models"
+  },
+  {
+    "description": "Going beyond mimicking limited human experiences, recent studies show initial evidence that, like humans, large language models (LLMs) are capable of improving their abilities purely by self-correction, i.e., correcting previous responses through self-examination, in certain circumstances.",
+    "favicon_url": "https://you.com/favicon?domain=www.aimodels.fyi&size=128",
+    "snippets": [
+      "In this paper, we endeavor to understand how and why leveraging the self-correction capability is effective. We identify that appropriate instructions can guide LLMs to a convergence state, wherein additional self-correction steps do not yield further performance improvements. We empirically demonstrate that model uncertainty and activated latent concepts jointly characterize the effectiveness of self-correction.",
+      "The paper explores how factors like the model's access to a strong verifier and its overall size can influence its self-correction capabilities. Through a series of experiments and analyses, the authors demonstrate that LLMs can indeed self-correct in this manner, with larger models exhibiting more robust self-correction abilities compared to smaller models.",
+      "This paper offers a theoretical framework for understanding the intrinsic self-correction capabilities of large language models (LLMs). By leveraging their own confidence estimates and the surrounding context, the authors demonstrate how LLMs can detect and correct their own mistakes, a remarkable capability that suggests these models have an innate ability to self-improve and become more reliable over time.",
+      "Such initial success demonstrates the potential extensibility for better instruction tuning and safety alignment. ... The recent success of Large Language Models (LLMs) has catalyzed an increasing interest in their self-correction capabilities. This paper presents a comprehensive investigation into the intrinsic self-correction of LLMs, attempting to address the ongoing debate about its feasibility."
+    ],
+    "title": "A Theoretical Understanding of Self-Correction through In-context ...",
+    "url": "https://www.aimodels.fyi/papers/arxiv/theoretical-understanding-self-correction-through-context-alignment"
+  },
+  {
+    "description": "Posted by Gladys Tyen, Intern, Google Research LLMs are increasingly popular for reasoning tasks, such as multi-turn QA, task completion, code gene...",
+    "favicon_url": "https://you.com/favicon?domain=research.google&size=128",
+    "snippets": [
+      "Our finding is in line and builds upon prior results, but goes further in showing that LLMs struggle with even simple and unambiguous mistakes (for comparison, our human raters without prior expertise solve the problem with a high degree of agreement). We hypothesize that this is a big reason why LLMs are unable to self-correct reasoning errors. See the paper for the full results.",
+      "Self-correction is generally thought of as a single process, but we decided to break it down into two components, mistake finding and output correction. In \u201cLLMs cannot find reasoning errors, but can correct them!\u201d, we test state-of-the-art LLMs on mistake finding and output correction separately.",
+      "First, we want to find out if LLMs can identify mistakes independently of their ability to correct them. We attempt multiple prompting methods to test GPT series models for their ability to locate mistakes (prompts here) under the assumption that they are generally representative of modern LLM performance.",
+      "This is a very promising result as we can potentially just use a small fine-tuned reward model to perform backtracking and improve accuracy on any task, even if we don\u2019t have the data for it. This smaller reward model is completely independent of the generator LLM, and can be updated and further fine-tuned for individual use cases. In this work, we created an evaluation benchmark dataset that the wider academic community can use to evaluate future LLMs."
+    ],
+    "title": "Can large language models identify and correct their mistakes?",
+    "url": "https://research.google/blog/can-large-language-models-identify-and-correct-their-mistakes/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "When Can LLMs Actually Correct Their Own Mistakes? A ...",
+    "url": "https://aclanthology.org/2024.tacl-1.78.pdf"
+  },
+  {
+    "description": "23 votes, 20 comments. Can LLMs actually improve their own reasoning by self-correcting mistakes? A new paper from DeepMind and the University of\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/Successful-Western27 - 23 votes and 20 comments",
+      "Sometimes LLMs even alter initially correct responses to become incorrect after self-correction! (I've personally seen this when interacting with ChatGPT many times and you probably have too). More complex techniques like critiquing between LLM instances don't help much either. External feedback or guidance looks necessary to improve reasoning (Well, some interesting parallels to this paper here about implicit improvement from preference data vs traditional RLHF).",
+      "TLDR: Basically title... LLMs can't reliably self-correct reasoning yet. Maybe hybrid techniques combining self-correction with external guidance could work but we need more research. Full summary. Paper is here.",
+      "Since LLMs don't reason, I'm not sure what you were expecting. ... Not terribly surprising. I see more use-cases relying on RAG to incorporate external sources. I'd love to see a paper/experiments on self-correction given external data."
+    ],
+    "title": "r/MachineLearning on Reddit: [R] Is self-correction a viable method ...",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/170m0o7/r_is_selfcorrection_a_viable_method_to_improve/"
+  },
+  {
+    "description": "Large language models (LLMs) have demonstrated remarkable performance across a wide array of NLP tasks. However, their efficacy is undermined by undesired and inconsistent behaviors, including hallucination, unfaithful reasoning, and toxic content. A promising approach to rectify these flaws ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Large language models (LLMs) have demonstrated remarkable performance across a wide array of NLP tasks. However, their efficacy is undermined by undesired and inconsistent behaviors, including hallucination, unfaithful reasoning, and toxic content. A promising approach to rectify these flaws is self-correction, where the LLM itself is prompted or guided to fix problems in its own output.",
+      "Abstract page for arXiv paper 2308.03188: Automatically Correcting Large Language Models: Surveying the landscape of diverse self-correction strategies",
+      "View a PDF of the paper titled Automatically Correcting Large Language Models: Surveying the landscape of diverse self-correction strategies, by Liangming Pan and 5 other authors View PDF \u00b7 Abstract:Large language models (LLMs) have demonstrated remarkable performance across a wide array of NLP tasks.",
+      "A promising approach to rectify these flaws is self-correction, where the LLM itself is prompted or guided to fix problems in its own output. Techniques leveraging automated feedback -- either produced by the LLM itself or some external system -- are of particular interest as they are a promising way to make LLM-based solutions more practical and deployable with minimal human feedback. This paper presents a comprehensive review of this emerging class of techniques."
+    ],
+    "title": "[2308.03188] Automatically Correcting Large Language Models: ...",
+    "url": "https://arxiv.org/abs/2308.03188"
+  },
+  {
+    "description": "Have you ever had an LLM give you confidently wrong information? For example, when asked about a historical event, it might provide a mix of true details but attribute them to the wrong person or\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Have you ever had an LLM give you confidently wrong information? For example, when asked about a historical event, it might provide a mix\u2026",
+      "In future posts, we\u2019ll dive deeper into how LLM models are trained to correct themselves, so stay tuned for a behind-the-scenes look at how LLMs becomes a little more human. Next, we\u2019ll take a closer look at the training-time corrections. How do we make sure AI gets it right before it even starts working for us? Stay tuned for an in-depth exploration of how AI models are trained to self-correct even before they get to you. This post draws on insights from the recent paper \u201cAutomatically Correcting Large Language Models: Surveying the Landscape of Diverse Self-Correction Strategies\u201d , which explores how AI models can learn to correct themselves.",
+      "For example, when asked about a historical event, it might provide a mix of true details but attribute them to the wrong person or time period, like saying \u201cEinstein developed the theory of relativity during World War II.\u201d LLMs \u2014 like the ones behind your favorite chatbots and assistants \u2014 can make these kinds of subtle but significant errors.",
+      "Self-correction turns LLMs from static systems \u2014 trained once and deployed \u2014 into adaptive learners that continually get better. Picture a model learning from its mistakes, refining its outputs, and striving to improve."
+    ],
+    "title": "Why Do LLMs Need Self-Correction, and How Does It Work? | by Niloufar ...",
+    "url": "https://medium.com/@nilou.beyranvand/why-do-ai-models-need-self-correction-and-how-does-it-work-c9b97d3f17b4"
+  },
+  {
+    "description": "## When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs The paper \"When Can LLMs Actually Correct Their Own...",
+    "favicon_url": "https://you.com/favicon?domain=www.emergentmind.com&size=128",
+    "snippets": [
+      "The paper discusses various frameworks of self-correction under different conditions: ... Works where LLMs prompt themselves to generate feedback and refine responses are categorized under intrinsic self-correction. The survey finds that, in general tasks, intrinsic self-correction frameworks rarely demonstrate successful self-correction due to intrinsic difficulties in generating reliable feedback.",
+      "The paper critically surveys the conditions under which LLMs can self-correct, aiming to clarify and consolidate existing research in this area. It categorizes research questions into groups, analyzes prior work, and provides a comprehensive checklist for designing self-correction experiments, emphasizing the need for clear and fair evaluation metrics.",
+      "The paper \"When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs\" by Ryo Kamoi et al. addresses the ongoing debate within the research community regarding the self-correction capabilities of LLMs. Given the proliferation of self-correction frameworks, this survey critically examines the conditions under which such frameworks succeed or fail, providing an essential resource for researchers pursuing advancements in this area.",
+      "RQ Group A: Can LLMs self-correct their best-possible initial responses with or without external feedback? RQ Group B: Are the final outputs from self-correction frameworks superior to those generated by other methods? Analysis of Prior Work: The authors analyze prior papers and identify key deficiencies, such as unclear definitions of research questions and the use of impractical or unfair evaluation frameworks."
+    ],
+    "title": "When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey ...",
+    "url": "https://www.emergentmind.com/papers/2406.01297"
+  },
+  {
+    "description": "Large language models (LLMs) have shown impressive performance in various NLP tasks \ud83d\udcc8. However, they suffer from issues like hallucination, unfaithful\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.linkedin.com&size=128",
+    "snippets": [
+      "In their recent paper, the researchers address the growing need for new quantization methods to meet the demands of large language models (LLMs) while maintaining accuracy. They introduce TEQ, a trainable equivalent transformation that preserves FP32 precision while utilizing low-precision quantization, particularly 3 and 4 bits weight-only quantization.",
+      "Large language models (LLMs) have shown impressive performance in various NLP tasks \ud83d\udcc8. However, they suffer from issues like hallucination, unfaithful reasoning, and toxic content \ud83d\udeab. To address these problems, self-correction is a promising approach, where the LLM is prompted or guided to fix its own output \ud83d\udee0\ufe0f. Techniques that employ automated feedback, either from the LLM itself or an external system, are particularly interesting as they can enhance the practicality and deployment of LLM-based solutions with minimal human intervention \ud83e\udd16. This paper provides a comprehensive review of these techniques, categorizing them into training-time, generation-time, and post-hoc correction methods.",
+      "#MultiModal #DataScience Title: LEGO:Language Enhanced Multi-modal Grounding Model Code: https://lnkd.in/eZvnckA7 Graph: https://lnkd.in/eaPmWr58 Paper: https://lnkd.in/e6cs8fUz \u2b50\ufe0f: 179 Check out other GitHub repos on the NLP Index: https://lnkd.in/geg6zPm ... Code Generation with AlphaCodium: From Prompt Engineering to Flow Engineering AlphaCodium - their innovative approach to code generation leveraging LLMs.",
+      "The study concluded that RFT significantly improved mathematical reasoning performance for LLMs, particularly for less performant models, and achieved an accuracy of 49.3% for LLaMA-7B, outperforming supervised fine-tuning (SFT) accuracy of 35.9%. #MathematicalReasoning #LanguageModels \ud83d\udcca\ud83d\udd0d Title: Scaling Relationship on Learning Mathematical Reasoning with Large Language Models Code: https://lnkd.in/exs-MixX Graph: https://lnkd.in/ePVKCayn Paper: https://lnkd.in/e2mVBzWS \u2b50\ufe0f: 135 Check out other GitHub repos on the NLP Index: https://lnkd.in/geg6zPm"
+    ],
+    "title": "How self-correction can improve LLM performance \ud83d\udcc8 | Ricky ...",
+    "url": "https://www.linkedin.com/posts/ricky-costa-nlp_github-teacherpeterpanself-correction-llm-papers-activity-7110618629267734529-Arb1"
+  },
+  {
+    "description": "This blog asks the question \u201cHow do large language models (LLMs) respond correctly to complex questions?\u201d and explores the topic of bias in AI.",
+    "favicon_url": "https://you.com/favicon?domain=www.solventum.com&size=128",
+    "snippets": [
+      "Check out their impressive infographics on meta-analysis of CoT improvements (or lack thereof) in their paper. Google DeepMind released a technical research report this month with the title: \u201cTraining Language Models to Self-Correct via Reinforcement Learning.\u201d Here I am reviewing the highlights of this report, which in principle is trying to do the same as the OpenAI o1 release: Solve complex problems with LLMs.",
+      "One of the results of this paper is that self-correction of LLMs does not work! Meaning asking an LLM to correct its own results is not an effective strategy.",
+      "To understand the full importance of their work, you can read their technical report. But you may also find this discussion in Discover AI entertaining and educational. Not only do they explain the whole technical paper in depth, but they also highlight the use of Open AI o1 to explain all the technical formulations in great detail.",
+      "How do you get large language models (LLMs) to respond correctly to complex questions? They do an admirable job of summarizing and their ability to answer an almost bewildering array of questions is awe inspiring. But they hallucinate. They are biased. Complex reasoning eludes them."
+    ],
+    "title": "AI talk: What\u2019s next for LLMs? Self-correcting?",
+    "url": "https://www.solventum.com/en-us/home/health-information-technology/resources-education/blog/2024/10/ai-talk-whats-next-for-llms/"
+  },
+  {
+    "description": "Self-correction is a highly desirable capability of large language models (LLMs), yet it has consistently been found to be largely ineffective in modern LLMs. Current methods for training self-correction typically depend on either multiple models, a more advanced model, or additional forms ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Self-correction is a highly desirable capability of large language models (LLMs), yet it has consistently been found to be largely ineffective in modern LLMs. Current methods for training self-correction typically depend on either multiple models, a more advanced model, or additional forms of supervision.",
+      "Abstract page for arXiv paper 2409.12917: Training Language Models to Self-Correct via Reinforcement Learning",
+      "View a PDF of the paper titled Training Language Models to Self-Correct via Reinforcement Learning, by Aviral Kumar and 17 other authors View PDF \u00b7 Abstract:Self-correction is a highly desirable capability of large language models (LLMs), yet it has consistently been found to be largely ineffective in modern LLMs.",
+      "With Gemini 1.0 Pro and 1.5 Flash models, we find that SCoRe achieves state-of-the-art self-correction performance, improving the base models' self-correction by 15.6% and 9.1% respectively on MATH and HumanEval. From: Vincent Zhuang [view email] [v1] Thu, 19 Sep 2024 17:16:21 UTC (633 KB) [v2] Fri, 4 Oct 2024 17:28:45 UTC (604 KB) ... View a PDF of the paper titled Training Language Models to Self-Correct via Reinforcement Learning, by Aviral Kumar and 17 other authors"
+    ],
+    "title": "[2409.12917] Training Language Models to Self-Correct via ...",
+    "url": "https://arxiv.org/abs/2409.12917"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=web.stanford.edu&size=128",
+    "snippets": [],
+    "title": "Feedback or Autonomy? Analyzing LLMs' Ability to Self- ...",
+    "url": "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1244/final-projects/KaiMicaFronsdal.pdf"
+  }
+]

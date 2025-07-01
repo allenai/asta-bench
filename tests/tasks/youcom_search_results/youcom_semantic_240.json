@@ -1,0 +1,208 @@
+[
+  {
+    "description": "HotpotQA is a question answering dataset featuring natural, multi-hop questions, with strong supervision for supporting facts to enable more explainable question answering systems. It is collected by a team of NLP researchers at Carnegie Mellon University, Stanford University, and Universit\u00e9 ...",
+    "favicon_url": "https://you.com/favicon?domain=hotpotqa.github.io&size=128",
+    "snippets": [
+      "HotpotQA is a question answering dataset featuring natural, multi-hop questions, with strong supervision for supporting facts to enable more explainable question answering systems. It is collected by a team of NLP researchers at Carnegie Mellon University, Stanford University, and Universit\u00e9 de Montr\u00e9al.",
+      "We also release the processed Wikipedia used in the process of creating HotpotQA (also under a CC BY-SA 4.0 License), serving both as the corpus for the fullwiki setting in our evaluation, and hopefully as a standalone resource for future researches involving processed text on Wikipedia. Below please find the link to the documentation for this corpus. ... Join our Google group to receive updates or initiate discussions about HotpotQA! If you use HotpotQA in your research, please cite our paper with the following BibTeX entry",
+      "HotpotQA is distributed under a CC BY-SA 4.0 License. The training and development sets can be downloaded below. ... A more comprehensive summary about data download, preprocessing, baseline model training, and evaluation is included in our GitHub repository, and linked below.",
+      "For more details about HotpotQA, please refer to our EMNLP 2018 paper:"
+    ],
+    "title": "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question ...",
+    "url": "https://hotpotqa.github.io/"
+  },
+  {
+    "description": "Browse open-source code and papers on Hotpotqa to catalyze your projects, and easily connect with engineers and experts when you need help.",
+    "favicon_url": "https://you.com/favicon?domain=www.catalyzex.com&size=128",
+    "snippets": [
+      "Consequently, we design a Prompt-Guided Chunk-to-Context (PGCC) module that leverages retrieved hash-indexed propositions and their original document segments through prompt engineering to enhance the LLM's contextual awareness. Experimental evaluations on NQ, TriviaQA, and HotpotQA datasets demonstrate that our approach achieves a 90% reduction in retrieval time compared to conventional methods while maintaining considerate recall performance.",
+      "In this work, we first establish that guiding Large Language Models (LLMs) with a concise set of expert-crafted strategies, such as semantic expansion and entity disambiguation, substantially improves retrieval effectiveness on challenging benchmarks, including HotpotQA, FEVER, NFCorpus, and SciFact.",
+      "This work highlights the effectiveness of Visual Agentic Reinforcement Fine-Tuning (Visual-ARFT) for enabling flexible and adaptive reasoning abilities for Large Vision-Language Models (LVLMs). With Visual-ARFT, open-source LVLMs gain the ability to browse websites for real-time information updates and write code to manipulate and analyze input images through cropping, rotation, and other image processing techniques. We also present a Multi-modal Agentic Tool Bench (MAT) with two settings (MAT-Search and MAT-Coding) designed to evaluate LVLMs' agentic search and coding abilities. Our experimental results demonstrate that Visual-ARFT outperforms its baseline by +18.6% F1 / +13.0% EM on MAT-Coding and +10.3% F1 / +8.7% EM on MAT-Search, ultimately surpassing GPT-4o.",
+      "SymRAG dynamically selects symbolic, neural, or hybrid processing paths to align resource use with query demands. Evaluated on 2,000 queries from HotpotQA and DROP using Llama-3.2-3B and Mistral-7B models, SymRAG achieves 97.6--100.0% exact match accuracy with significantly lower CPU utilization (3.6--6.2%) and processing time (0.985--3.165s)."
+    ],
+    "title": "Hotpotqa",
+    "url": "https://www.catalyzex.com/s/Hotpotqa"
+  },
+  {
+    "description": "Existing question answering (QA) datasets fail to train QA systems to perform complex reasoning and provide explanations for answers. We introduce HotpotQA, a new dataset with 113k Wikipedia-based question-answer pairs with four key features: (1) the questions require finding and reasoning ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Existing question answering (QA) datasets fail to train QA systems to perform complex reasoning and provide explanations for answers. We introduce HotpotQA, a new dataset with 113k Wikipedia-based question-answer pairs with four key features: (1) the questions require finding and reasoning over multiple supporting documents to answer; (2) the questions are diverse and not constrained to any pre-existing knowledge bases or knowledge schemas; (3) we provide sentence-level supporting facts required for reasoning, allowing QA systems to reason with strong supervision and explain the predictions; (4) we offer a new type of factoid comparison questions to test QA systems' ability to extract relevant facts and perform necessary comparison.",
+      "Abstract page for arXiv paper 1809.09600: HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+      "We show that HotpotQA is challenging for the latest QA systems, and the supporting facts enable models to improve performance and make explainable predictions. From: Zhilin Yang [view email] [v1] Tue, 25 Sep 2018 17:28:20 UTC (2,405 KB) ... View a PDF of the paper titled HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering, by Zhilin Yang and 6 other authors",
+      "View a PDF of the paper titled HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering, by Zhilin Yang and 6 other authors View PDF"
+    ],
+    "title": "[1809.09600] HotpotQA: A Dataset for Diverse, Explainable Multi-hop ...",
+    "url": "https://arxiv.org/abs/1809.09600"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=nlp.stanford.edu&size=128",
+    "snippets": [],
+    "title": "HOTPOTQA: A Dataset for Diverse, Explainable Multi-hop ...",
+    "url": "https://nlp.stanford.edu/pubs/yang2018hotpotqa.pdf"
+  },
+  {
+    "description": "Convert scientific papers to accessible HTML on demand. Paper to HTML is a free service of the non-profit AI2.",
+    "favicon_url": "https://you.com/favicon?domain=a11y2.apps.allenai.org&size=128",
+    "snippets": [
+      "We present the EM (Exact Match) and F1 scores on the evaluation metrics proposed for HotpotQA: (1) answer selection, (2) support selection, and (3) joint score. Table 1 shows that on the distractor setting, QUARK outperforms all previous models based on BERT, including HGN, which like us also uses whole word masking for contextual embeddings. Moreover, we are within 1 point of models that use RoBERTa embeddings-a much stronger language model that has shown improvements of 1.5 to 6 points in previous HotpotQA models.",
+      "To enable progress in this area, many datasets (Welbl et al., 2018; Talmor and Berant, 2018; Yang et al., 2018; Khot et al., 2020) and models (Min et al., 2019b; Xiao et al., 2019; Tu et al., 2019) with varying complexities have been proposed over the past few years. Our work focuses on HotpotQA (Yang et al., 2018) , which contains 105,257 multi-hop questions derived from two Wikipedia paragraphs, where the correct answer is a span in these paragraphs or yes/no.",
+      "In both settings, the only models scoring higher use RoBERTa , a more robustly trained language model that is known to outperform BERT across various tasks. While our design uses multiple transformer models (now considered a standard starting point in NLP), our contribution is a simple pipeline without any bells and whistles, such as NER, graph networks, entity linking, etc. The closest effort to QUARK is by Min et al. (2019a) , who also propose a simple QA model for HotpotQA.",
+      "State-of-the-art models for multi-hop question answering typically augment large-scale language models like BERT with additional, intuitively useful capabilities such as named entity recognition, graph-based reasoning, and question decomposition. However, does their strong performance on popular multi-hop datasets really justify this added design complexity? Our results suggest that the answer may be no, because even our simple pipeline based on BERT, named Quark, performs surprisingly well. Specifically, on HotpotQA, Quark outperforms these models on both question answering and support identification (and achieves performance very close to a RoBERTa model)."
+    ],
+    "title": "A Simple Yet Strong Pipeline for HotpotQA | Paper to HTML | Allen ...",
+    "url": "https://a11y2.apps.allenai.org/paper?id=c6c547e5ecbb8e26bae02fd6f37154145ae0053b"
+  },
+  {
+    "description": "Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William Cohen, Ruslan Salakhutdinov, Christopher D. Manning. Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing. 2018.",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [
+      "We show that HotpotQA is challenging for the latest QA systems, and the supporting facts enable models to improve performance and make explainable predictions. ... Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William Cohen, Ruslan Salakhutdinov, and Christopher D. Manning. 2018. HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, pages 2369\u20132380, Brussels, Belgium.",
+      "We introduce HotpotQA, a new dataset with 113k Wikipedia-based question-answer pairs with four key features: (1) the questions require finding and reasoning over multiple supporting documents to answer; (2) the questions are diverse and not constrained to any pre-existing knowledge bases or knowledge schemas; (3) we provide sentence-level supporting facts required for reasoning, allowing QA systems to reason with strong supervision and explain the predictions; (4) we offer a new type of factoid comparison questions to test QA systems' ability to extract relevant facts and perform necessary comparison. We show that HotpotQA is challenging for the latest QA systems, and the supporting facts enable models to improve performance and make explainable predictions.\" }",
+      "We introduce HotpotQA, a new dataset with 113k Wikipedia-based question-answer pairs with four key features: (1) the questions require finding and reasoning over multiple supporting documents to answer; (2) the questions are diverse and not constrained to any pre-existing knowledge bases or knowledge schemas; (3) we provide sentence-level supporting facts required for reasoning, allowing QA systems to reason with strong supervision and explain the predictions; (4) we offer a new type of factoid comparison questions to test QA systems\u2019 ability to extract relevant facts and perform necessary comparison. We show that HotpotQA is challenging for the latest QA systems, and the supporting facts enable models to improve performance and make explainable predictions.",
+      "%0 Conference Proceedings %T HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering %A Yang, Zhilin %A Qi, Peng %A Zhang, Saizheng %A Bengio, Yoshua %A Cohen, William %A Salakhutdinov, Ruslan %A Manning, Christopher D. %Y Riloff, Ellen %Y Chiang, David %Y Hockenmaier, Julia %Y Tsujii, Jun\u2019ichi %S Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing %D 2018 %8 oct nov %I Association for Computational Linguistics %C Brussels, Belgium %F yang-etal-2018-hotpotqa %X Existing question answering (QA) datasets fail to train QA systems to perform complex reasoning and provide explanations for answers."
+    ],
+    "title": "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question ...",
+    "url": "https://aclanthology.org/D18-1259/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "HOTPOTQA: A Dataset for Diverse, Explainable Multi-hop ...",
+    "url": "https://aclanthology.org/D18-1259.pdf"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=web.stanford.edu&size=128",
+    "snippets": [],
+    "title": "Multi-hop Question Answering on HotpotQA",
+    "url": "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/reports/custom/15773294.pdf"
+  },
+  {
+    "description": "Question answering (QA) is a sub-field of Natural Language Processing (NLP) that focuses on developing systems capable of answering natural language queries. Within this domain, multi-hop question ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Question answering (QA) is a sub-field of Natural Language Processing (NLP) that focuses on developing systems capable of answering natural language queries. Within this domain, multi-hop question answering represents an advanced QA task that requires ...",
+      "To evaluate the efficacy of the decomposition process, we conducted experiments on two datasets annotated on decomposition in two different languages, Arabic and English. Subsequently, we integrated our approach into a complete QA system and conducted a reading comprehension performance evaluation on the HotpotQA dataset. The obtained results emphasize that while the system exhibited a small drop in performance, it still maintained a significant advance compared to the baseline model. The proposed approach highlights the efficiency of the language model scoring technique in complex reasoning tasks such as multi-hop question decomposition.",
+      "Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William Cohen, Ruslan Salakhutdinov, and Christopher D. Manning. 2018. HotpotQA: A dataset for diverse, explainable multi-hop question answering. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing.",
+      "This article presents the first participation of the CINDI group in the Multiple Language Question Answering Cross Language Evaluation Forum (QA@CLEF). We participated in a track using French as source language and English as target language. CINDI_QA ... ... In this paper we present a statistical approach to question answering (QA)."
+    ],
+    "title": "Scoring Multi-hop Question Decomposition Using Masked Language ...",
+    "url": "https://dl.acm.org/doi/10.1145/3665140"
+  },
+  {
+    "description": "It is shown that HotpotQA is challenging for the latest QA systems, and the supporting facts enable models to improve performance and make explainable predictions. Existing question answering (QA) datasets fail to train QA systems to perform complex reasoning and provide explanations for answers.",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "JEMHopQA is created based on Japanese Wikipedia using both crowd-sourced human annotation as well as prompting a large language model (LLM), and contains a diverse set of question, answer and topic categories as compared with similar datasets released previously.Expand ... This paper proposes to learn a multi-hop knowledge path generator to generate structured evidence dynamically according to the questions, leveraging a large amount of unstructured knowledge stored in the language model to supplement the incompleteness of the knowledge base.Expand",
+      "This work human-annotates a first-of-its-kind dataset of positive and negative properties, as well as free-flow explanations, for 11K QA pairs taken from the CQA dataset, and proposes a latent representation based property retrieval model aswell as a GPT-2 based property generation model with a novel two step fine-tuning procedure.Expand ... This paper proposes to learn a multi-hop knowledge path generator to generate structured evidence dynamically according to the questions, leveraging a large amount of unstructured knowledge stored in the language model to supplement the incompleteness of the knowledge base.Expand",
+      "This approach combines a search component based on bigram hashing and TF-IDF matching with a multi-layer recurrent neural network model trained to detect answers in Wikipedia paragraphs, indicating that both modules are highly competitive with respect to existing counterparts.Expand ... This paper proposes to decompose complex questions into a sequence of simple questions, and compute the final answer from the sequence of answers, and empirically demonstrates that question decomposition improves performance from 20.8 precision@1 to 27.5 precision @1 on this new dataset.Expand",
+      "HotpotQA (opens in a new tab)Supporting Facts (opens in a new tab)QA Systems (opens in a new tab)Bridge Entity (opens in a new tab)Multi-hop Reasoning (opens in a new tab)Gold Paragraphs (opens in a new tab)Multi-Hop Questions (opens in a new tab)Distractor Setting (opens in a new tab)Supporting Fact Prediction (opens in a new tab)Single-hop QA (opens in a new tab) ... Mars HuangA. TengJ. M. Zambrano ... A pipeline model is developed for HotpotQA, consisting of a supporting facts classifier that produces relevant sentences which are grouped and used by a question answering model and an implementation of Bidirectional Encoder Representations from Transformers using the SQuAD dataset.Expand"
+    ],
+    "title": "[PDF] HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question ...",
+    "url": "https://www.semanticscholar.org/paper/HotpotQA:-A-Dataset-for-Diverse,-Explainable-Yang-Qi/22655979df781d222eaf812b0d325fa9adf11594"
+  },
+  {
+    "description": "Large language models (LLMs) are gaining increasing popularity in both academia and industry, owing to their unprecedented performance in various applications. As LLMs continue to play a vital role in both research and daily use, their evaluation becomes ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "The paper tested various estimators and revealed that current estimators still have some way to go in effectively addressing the task. Lin et al. [119] introduced the TruthfulQA dataset, designed to cause models to make mistakes. Multiple language models were tested by providing factual answers. The findings from these experiments suggest that simply scaling up model sizes may not necessarily improve their truthfulness, and recommendations are provided for the training approach.",
+      "Regarding what to evaluate, we summarize existing tasks in various areas and obtain insightful conclusions on the success and failure case of LLMs (Section 6), providing experience for future research. ... As for where to evaluate, we summarize evaluation metrics, datasets, and benchmarks to provide a profound understanding of current LLMs evaluations.",
+      "Experimental results demonstrate that guided ChatGPT and GPT-4 exhibit competitive performance on popular benchmark tests, even outperforming supervised methods. Additionally, the extraction of ChatGPT\u2019s ranking functionality into a specialized model shows superior performance when trained on 10K ChatGPT-generated data compared to training on 400K annotated MS MARCO data in the BEIR dataset [185]. Furthermore, Xu et al.",
+      "APPS [68] is a more comprehensive and rigorous benchmark for evaluating code generation, measuring the ability of language models to generate Python code according to natural language specifications. CUAD [71] is an expert-annotated, domain-specific legal contract review dataset that presents a challenging research benchmark and potential for enhancing deep learning models\u2019 performance in contract understanding tasks."
+    ],
+    "title": "A Survey on Evaluation of Large Language Models | ACM Transactions ...",
+    "url": "https://dl.acm.org/doi/full/10.1145/3641289"
+  },
+  {
+    "description": "Experiments on the HotpotQA dataset demonstrate that the effectiveness of our proposed QG module, human evaluation further clarifies its interpretability quantitatively, and thorough analysis shows that the QG module could generate better sub-questions than QD methods in terms of fluency, ...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Experiments on the HotpotQA dataset demonstrate that the effectiveness of our proposed QG module, human evaluation further clarifies its interpretability quantitatively, and thorough analysis shows that the QG module could generate better sub-questions than QD methods in terms of fluency, consistency, and diversity.",
+      "Then, we develop an iterative attentive aggregation and a skip-combine method in which a node interacts with its neighborhood nodes to accumulate the necessary information. To evaluate the performance of the proposed approaches, we conduct experiments with the standard HotpotQA dataset.",
+      "Furthermore, we propose consistency and similarity constraints to promote the correlation and interaction between passage ranking and sentence selection.The experiments demonstrate that our framework can achieve competitive results with previous systems and outperform the baseline by 28\\% in terms of exact matching of relevant sentences on the HotpotQA dataset.",
+      "Our experiments show that ModularQA is more versatile than existing explainable systems for DROP and HotpotQA datasets, is more robust than state-of-the-art blackbox (uninterpretable) systems, and generates more understandable and trustworthy explanations compared to prior work. ... In this study, we propose a novel graph neural network called propagate-selector (PS), which propagates information over sentences to understand information that cannot be inferred when considering sentences in isolation."
+    ],
+    "title": "Daily Papers - Hugging Face",
+    "url": "https://huggingface.co/papers?q=HotpotQA+dataset"
+  },
+  {
+    "description": "A language model is a model of natural language. Language models are useful for a variety of tasks, including speech recognition, machine translation, natural language generation (generating more human-like text), optical character recognition, route optimization, handwriting recognition, grammar ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "A language model is a model of natural language. Language models are useful for a variety of tasks, including speech recognition, machine translation, natural language generation (generating more human-like text), optical character recognition, route optimization, handwriting recognition, grammar induction, and information retrieval.",
+      "In our experiments, we find that long short term memory recurrent networks after being pretrained with the two approaches are more stable and generalize better. ... We propose Low-Rank Adaptation, or LoRA, which freezes the pre-trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable parameters for downstream tasks.",
+      "Large language models (LLMs), currently their most advanced form, are predominantly based on transformers trained on larger datasets (frequently using words scraped from the public internet). They have superseded recurrent neural network-based models, which had previously superseded the purely statistical models, such as word n-gram language model. ... See all 22 libraries. ... Collapse 22 libraries. ... In fine art, especially painting, humans have mastered the skill to create unique visual experiences through composing a complex interplay between the content and style of an image."
+    ],
+    "title": "Papers with Code - Language Modelling",
+    "url": "https://paperswithcode.com/task/language-modelling"
+  },
+  {
+    "description": "The current state-of-the-art on HotpotQA is Beam Retrieval. See a full comparison of 72 papers with code.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [],
+    "title": "Papers with Code - HotpotQA Benchmark (Question Answering)",
+    "url": "https://paperswithcode.com/sota/question-answering-on-hotpotqa"
+  },
+  {
+    "description": "Multi-hop question answering (QA) across multiple documents requires a deep understanding of relationships between entities in documents, questions, a\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "As we explain in section 4.3, our experimental results show that SG-MQA significantly improves the graph-based methods for the multi-hop QA task and achieves competitive performance on the WikiHop and HotpotQA datasets. In this paper, we propose a new graph-based model called SG-MQA to handle the multi-hop QA task that requires reasoning across multiple documents.",
+      "We propose a novel approach based on the Relational Graph Convolutional Network (R-GCN) that reduces the model complexity and improves its performance. We have utilized various strategies and conducted multiple experiments to achieve this goal. We show the efficacy of the proposed approach by examining the results of experiments on two QA datasets, namely WikiHop and HotpotQA.",
+      "The performance of SG-MQA is competitive with that of several related works when applied to multi-hop QA datasets such as WikiHop (Welbl et al., 2018) and HotpotQA (Yang et al., 2018). In Section 2, we define the theoretical foundation of QA systems and present our related works. In Section 3, we provide an in-depth explanation of our proposed approach. Section 4 includes a brief description of the datasets and models employed in this work, along with the presentation of our experimental results.",
+      "Furthermore, the two other popular datasets that have been created for this type of QA are WikiHop (Welbl et al., 2018) and HotpotQA (Yang et al., 2018). The models that are based on WikiHop must select the correct answer for the question among a set of \u00b7 In this section, we first formally define the task of multi-hop QA across multiple documents and then introduce our proposed method in detail."
+    ],
+    "title": "Multi-hop question answering using sparse graphs - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S095219762301312X"
+  },
+  {
+    "description": "Adopt generative AI faster with Metatext, ensuring security, compliance, and alignment with each business rules and preferences. Protect every solution you build, including chatbots, AI agents, and call centers.",
+    "favicon_url": "https://you.com/favicon?domain=metatext.io&size=128",
+    "snippets": [
+      "Metatext empowers enterprises to proactively identify and mitigate generative AI vulnerabilities, providing real-time protection against potential attacks that could damage brand reputation and lead to financial losses."
+    ],
+    "title": "HotpotQA Dataset - NLP Hub - Metatext",
+    "url": "https://metatext.io/datasets/hotpotqa"
+  },
+  {
+    "description": "Previous studies in AQG (Zhou et ... QA datasets such as HotpotQA (Yang et al., 2018). But they were considered unsuitable for this particular study, which specifically focuses on educational materials like textbooks for real-life classroom scenarios. Our proposed dataset EduProbe ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Previous studies in AQG (Zhou et al., 2019; Krishna and Iyyer, 2019; Tuan et al., 2020) employ single-hop question-answering (QA) datasets such as SQuAD (Rajpurkar et al., 2018), which are representative of QA research, as well as multi-hop QA datasets such as HotpotQA (Yang et al., 2018). But they were considered unsuitable for this particular study, which specifically focuses on educational materials like textbooks for real-life classroom scenarios. Our proposed dataset EduProbe is sourced from NCERT 111https://en.wikipedia.org/wiki/National_Council_of_Educational_Research_and_Training textbooks and covers a wide range of subjects and grade levels from",
+      "To go into the diversity and depth of questions in our created dataset, we classify questions based on the first two words in the question and make comparisons to other frequently used QA datasets, such as SQuAD, and HotpotQA. The corresponding table is provided as Table 2. As stated in (Craig et al., 2000), questions phrased with \"Why is\" and \"How do\" are often considered to be deep questions. Table 2 shows that our proposed dataset, EduProbe consists of more deep questions (starting with \"Why is\", and \"How do\") compared to SQuAD, and HotpotQA.",
+      "Table 2. Leading bigrams that occur most frequently in EduProbe, SQuAD, and HotpotQA. In this work, we fine-tune four transformer-based large language models (LLMs) such as Pegasus (Zhang et al., 2020b), T5 (Raffel et al., 2020), MBART (Liu et al., 2020), and BART (Lewis et al., 2020) on our proposed dataset EduProbe.",
+      "By allowing teachers to allocate more time to classroom interactions and student participation, our proposed QG method has the potential to positively impact teaching practices and enhance learning outcomes. Previous research in QG (Zhou et al., 2019; Krishna and Iyyer, 2019; Tuan et al., 2020) predominantly emphasizes the generation of fact-based questions that relate to a single piece of information derived from a single sentence. Moreover, current QA datasets such as SQuAD, HotpotQA, TriviaQA, QuAC, OpenBookQA, etc."
+    ],
+    "title": "Harnessing the Power of Prompt-based Techniques for Generating ...",
+    "url": "https://arxiv.org/html/2312.01032v1"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Arxiv",
+    "url": "https://arxiv.org/pdf/2407.09014"
+  },
+  {
+    "description": "In the field of Generative AI, especially in modeling problems related to QA and information retrieval, the RAG technique has been extensively used for building applications capable of retrieving\u2026",
+    "favicon_url": "https://you.com/favicon?domain=gabrielgomes61320.medium.com&size=128",
+    "snippets": [
+      "In the field of Generative AI, especially in modeling problems related to QA and information retrieval, the RAG technique has been\u2026",
+      "HotpotQA is a dataset that was created to test the performance of language models in the case of complex reasoning.",
+      "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering \u00b7 MuSiQue: Multihop Questions via Single-hop Question Composition \u00b7 Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+      "The dataset includes 307,373 training examples with single annotations, 7,830 development examples with 5-way annotations, and an additional 7,842 test examples with 5-way annotations. Extensive experiments validate the quality of the data, and an analysis of 25-way annotations on 302 examples provides insights into human variability in the annotation task."
+    ],
+    "title": "Evaluation Datasets for LLMs \u2014 An overview | by Gabriel Gomes, ...",
+    "url": "https://gabrielgomes61320.medium.com/evaluation-datasets-for-llms-an-overview-d5d2017f4c69"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=web.stanford.edu&size=128",
+    "snippets": [],
+    "title": "JAM for HotpotQA",
+    "url": "https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1204/reports/custom/15743318.pdf"
+  }
+]

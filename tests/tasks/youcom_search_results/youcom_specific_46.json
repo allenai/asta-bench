@@ -1,0 +1,255 @@
+[
+  {
+    "description": "In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA). CoALA describes a language agent with modular memory components, a structured action space to interact with internal memory and ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Recent efforts have augmented large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt chaining) for tasks requiring grounding or reasoning, leading to a new class of language agents. While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments.",
+      "Abstract page for arXiv paper 2309.02427: Cognitive Architectures for Language Agents",
+      "While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA).",
+      "Taken together, CoALA contextualizes today's language agents within the broader history of AI and outlines a path towards language-based general intelligence. From: Shunyu Yao [view email] [v1] Tue, 5 Sep 2023 17:56:20 UTC (1,989 KB) [v2] Wed, 27 Sep 2023 15:27:25 UTC (2,001 KB) [v3] Fri, 15 Mar 2024 15:44:11 UTC (1,968 KB) ... View a PDF of the paper titled Cognitive Architectures for Language Agents, by Theodore R."
+    ],
+    "title": "[2309.02427] Cognitive Architectures for Language Agents",
+    "url": "https://arxiv.org/abs/2309.02427"
+  },
+  {
+    "description": "List of language agents based on paper \"Cognitive Architectures for Language Agents\" - ysymyth/awesome-language-agents",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "A compilation of language agents using the Cognitive Architectures for Language Agents (\ud83d\udc28CoALA) framework. CoALA Paper (16 pages of main content): https://arxiv.org/abs/2309.02427",
+      "Below is only a subset of papers scraped from CoALA.bib plus pulled requests, with potentially incorrect action space labels. Date is based on arxiv v1.",
+      "(2023-08) Synergistic Integration of Large Language Models and Cognitive Architectures for Robust AI: An Exploratory Analysis (grounding, reasoning, retrieval, learning)",
+      "@misc{sumers2023cognitive, title={Cognitive Architectures for Language Agents}, author={Theodore Sumers and Shunyu Yao and Karthik Narasimhan and Thomas L. Griffiths}, year={2023}, eprint={2309.02427}, archivePrefix={arXiv}, primaryClass={cs.AI} } CoALA neatly specifies a language agent starting with its action space, which has 2 parts:"
+    ],
+    "title": "GitHub - ysymyth/awesome-language-agents: List of language agents ...",
+    "url": "https://github.com/ysymyth/awesome-language-agents"
+  },
+  {
+    "description": "PDF | Recent efforts have incorporated large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "The plan for the rest of the paper is as follows. First, we introduce production systems and cognitive \u00b7 architectures in more detail. We then outline how language models are analogous to production systems, and \u00b7 use this connection to reconstrue prompting strategies as forms of control \ufb02ow. We then introduce Cognitive \u00b7 Architecture for Language Agents (CoALA), applying ideas from cognitive architectures to organize existing",
+      "of the paper, we use this perspective to organize existing approaches and highlight promising extensions. 4 Cognitive Architectures for Language Agents (CoALA): A Conceptual Framework",
+      "We first show that LLMs have many of the same properties as production systems, and recent efforts to improve their grounding or reasoning mirror the development of cognitive architectures built around production systems. We then propose Cognitive Architectures for Language Agents (CoALA), a conceptual framework to systematize diverse methods for LLM-based reasoning, grounding, learning, and decision making as instantiations of language agents in the framework.",
+      "language agents and guide the development of new ones. CoALA positions the LLM as the core component \u00b7 of a larger cognitive architecture (Figure 4)."
+    ],
+    "title": "(PDF) Cognitive Architectures for Language Agents",
+    "url": "https://www.researchgate.net/publication/373715148_Cognitive_Architectures_for_Language_Agents"
+  },
+  {
+    "description": "Posted by u/Singularian2501 - 39 votes and 16 comments",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "We first show that LLMs have many of the same properties as production systems, and recent efforts to improve their grounding or reasoning mirror the development of cognitive architectures built around production systems. We then propose Cognitive Architectures for Language Agents (CoALA), a conceptual framework to systematize diverse methods for LLM-based reasoning, grounding, learning, and decision making as instantiations of language agents in the framework.",
+      "Finally, we use the CoALA framework to highlight gaps and propose actionable directions toward more capable language agents in the future. ... hey, do you have any recommendations of reading list for people doing research in AI with a CS background to know more about cognitive science?",
+      "39 votes, 16 comments. Paper: https://arxiv.org/abs/2309.02427 Github: https://github.com/ysymyth/awesome-language-agents Twitter\u2026",
+      "I like the idea of production ready agent frameworks and memory managment for agentic LLMs or MLLMs. I hope to see much more of that in the future. Do you plan to also release a paper? If so please also show practical use cases and how simple it is to use this framework and also its efficiency in statistics."
+    ],
+    "title": "r/MachineLearning on Reddit: [R] Cognitive Architectures for Language ...",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/16g46vu/r_cognitive_architectures_for_language_agents/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Cognitive Architectures for Language Agents",
+    "url": "http://arxiv.org/pdf/2309.02427"
+  },
+  {
+    "description": "My apologies that this paper review is coming a bit later than usual. I was traveling and could not find the time to conclude my thoughts on this paper. The research paper, I am reviewing today is\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "My apologies that this paper review is coming a bit later than usual. I was traveling and could not find the time to conclude my thoughts\u2026",
+      "Proposed Solution: The research paper proposes Cognitive Architectures for Language Agents (CoALA) as a framework to organize existing language agents and guide the development of new ones.",
+      "CoALA defines several core components (Action, Learning, Memory, and Decision Making) and explores a deep dive into several subcomponents. Opinion: The research paper contains a valuable architectural framework proposal that solves an issue where across industries (language agents, robotics, self-driving cars, etc.) reasoning frameworks don\u2019t follow the same standard.",
+      "The research paper, I am reviewing today is coming out of Princeton University and in itself not that technically challenging but it addresses a major concern of mine in the current state of the architectures of reasoning agents quite well."
+    ],
+    "title": "Paper Review | Cognitive Architectures for Language Agents | by ...",
+    "url": "https://medium.com/@jsemrau/paper-review-cognitive-architectures-for-language-agents-eade0a7821e7"
+  },
+  {
+    "description": "In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA). CoALA describes a language agent with modular memory components, a structured action space to interact with internal memory and ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Recent efforts have augmented large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt chaining) for tasks requiring grounding or reasoning, leading to a new class of language agents. While these agents have achieved substantial empirical success, we lack a framework to organize existing agents and plan future developments.",
+      "While these agents have achieved substantial empirical success, we lack a framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA)."
+    ],
+    "title": "Cognitive Architectures for Language Agents | OpenReview",
+    "url": "https://openreview.net/forum?id=1i6ZCvflQJ"
+  },
+  {
+    "description": "- The paper proposes Cognitive Architectures for Language Agents (CoALA), a conceptual framework for designing and understanding language agents. Language agents use large language models (LLMs) like\u2026",
+    "favicon_url": "https://you.com/favicon?domain=noailabs.medium.com&size=128",
+    "snippets": [
+      "Recent efforts have augmented large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g\u2026",
+      "While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA).",
+      "Taken together, CoALA contextualizes today\u2019s language agents within the broader history of AI and outlines a path towards language-based general intelligence. ... - The paper proposes Cognitive Architectures for Language Agents (CoALA), a conceptual framework for designing and understanding language agents.",
+      "- The paper reviews how techniques like prompt engineering can be seen as imposing algorithmic control flow on LLMs. It suggests cognitive architectures can similarly help develop more systematic and capable LLM agents. - CoALA provides a lens to understand and compare recent LLM agents like SayCan, ReAct, Voyager, Generative Agents, and Tree of Thoughts."
+    ],
+    "title": "Cognitive Architectures for Language Agents // CoALA generalized ...",
+    "url": "https://noailabs.medium.com/cognitive-architectures-for-language-agents-coala-generalized-decision-making-process-to-choose-a92d3860ace5"
+  },
+  {
+    "description": "A compilation of language agents using the Cognitive Architectures for Language Agents (\ud83d\udc28CoALA) framework. CoLLA Paper (16 pages of main content): https://arxiv.org/abs/2309.02427",
+    "favicon_url": "https://you.com/favicon?domain=groups.google.com&size=128",
+    "snippets": [
+      "CoLLA BibTex file with 300+ related citations: CoALA.bib \u00b7 CoLLA BibTex citation if you find our work/resources useful: @misc{sumers2023cognitive, title={Cognitive Architectures for Language Agents}, author={Theodore Sumers and Shunyu Yao and Karthik Narasimhan and Thomas L. Griffiths}, year={2023}, eprint={2309.02427}, archivePrefix={arXiv}, primaryClass={cs.AI} } ... A language agent has a short-term working memory and several (optional) long-term memories (episodic for experience, semantic for knowledge, procedural for code/LLM)",
+      "Planning: The agent applies reasoning/retrieval actions to (iteratively) propose and evaluate actions, then select a learning/grounding action. Execution: The selected learning/grounding action is executed to affect the internal memory or external world. To understand more, read Section 4 of our paper."
+    ],
+    "title": "CoALA (Cognitive Architectures for Language Agents)",
+    "url": "https://groups.google.com/g/rssc-list/c/3H_tPyFaLfw"
+  },
+  {
+    "description": "Princeton researchers define the CoALA framework for effective agent development. Explore cutting-edge cognitive architectures for language agents. Learn how AI models are evolving to mimic human reasoning, planning, and decision-making in complex environment.",
+    "favicon_url": "https://you.com/favicon?domain=jdsemrau.substack.com&size=128",
+    "snippets": [
+      "Princeton researchers define the CoALA framework for Advancing AI with Human-Like Reasoning",
+      "Proposed Solution: The research paper proposes Cognitive Architectures for Language Agents (CoALA) as a framework to organize existing language agents and guide the development of new ones.",
+      "CoALA defines several core components (Action, Learning, Memory, and Decision Making) and explores a deep dive into several subcomponents. Opinion: The research paper contains a valuable architectural framework proposal that solves an issue where across industries (language agents, robotics, self-driving cars, etc.) reasoning frameworks don\u2019t follow the same standard.",
+      "The research paper, I am reviewing today is coming out of Princeton University and in itself not that technically challenging but it addresses a major concern of mine in the current state of the architectures of reasoning agents quite well."
+    ],
+    "title": "Paper Review | Cognitive Architectures for Language Agents",
+    "url": "https://jdsemrau.substack.com/p/paper-review-cognitive-architectures"
+  },
+  {
+    "description": "Recent efforts have augmented large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt chaining) for tasks requiring grounding or reasoning, leading to a new cla\u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA).",
+      "The plan for the rest of the paper is as follows. Section 2 introduces production systems and cognitive architectures, and Section 3 outlines their parallels with LLMs and language agents. Section 4 introduces the CoALA framework, and surveys and organizes diverse language agents accordingly.",
+      "Just as cognitive architectures were used to structure production systems\u2019 interactions with agents\u2019 internal state and external environments, we suggest that they can help design LLM-based cognitive agents. In the remainder of the paper, we use this perspective to organize existing approaches and highlight promising extensions. Figure 4: Cognitive architectures for language agents (CoALA).",
+      "Through these three concepts (memory, action, and decision-making), we show CoALA can neatly express a large body of diverse agents and identify underexplored directions. Notably, while several recent papers propose conceptual architectures for general intelligence (LeCun, 2022; McClelland et al., 2019) or empirically survey language models and agents (Mialon et al., 2023; Weng, 2023; Wang et al., 2023b), this paper combines elements of both: we propose a theoretical framework and use it to organize diverse empirical work."
+    ],
+    "title": "[2309.02427] Cognitive Architectures for Language Agents",
+    "url": "https://ar5iv.labs.arxiv.org/html/2309.02427"
+  },
+  {
+    "description": "While these agents have achieved ... draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA)....",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA).",
+      "Implemented in 2 code libraries."
+    ],
+    "title": "Papers with Code - Cognitive Architectures for Language Agents",
+    "url": "https://paperswithcode.com/paper/cognitive-architectures-for-language-agents"
+  },
+  {
+    "description": "Discover how cognitive architectures enhancing LLM memory and adaptive decision-making for Agents. Learn CoALA framework for context-aware, high-performing AI today!",
+    "favicon_url": "https://you.com/favicon?domain=www.cognee.ai&size=128",
+    "snippets": [
+      "Have you ever wondered what it would take to make AI agents behave more like humans\u2014remembering important details, reflecting on decisions, and adapting over time? An impactful paper from early 2024, Cognitive Architectures for Language Agents (CoALA), laid out a blueprint for transforming Large Language Models (LLMs) into sophisticated, human-like problem-solvers.",
+      "The paper proposes a framework called CoALA (Cognitive Architectures for Language Agents) designed to make language models function more like human problem-solvers.",
+      "Moreover, this computational view of the mind inspired a fervent collaboration between psychology, computer science, and neuroscience. And today, we might be on the verge of revisiting this interdisciplinary exchange yet again. Interestingly, the ideas in the Cognitive Architectures for Language Agents paper echo the renewal of interest in this approach.",
+      "Here at cognee, we're actively researching innovative strategies that build on CoALA's foundation, aiming to develop more dynamic, scalable solutions that can effectively handle the intricate challenges of real-world data. Interested in learning more about our cognition-inspired AI framework? Head over to our GitHub to try cognee out for yourself and see how we're integrating cognitive architectures and advanced memory systems to transform LLMs into versatile, human-like problem-solvers."
+    ],
+    "title": "Cognee - Cognitive Architectures for AI Agents (CoALA): Explained",
+    "url": "https://www.cognee.ai/blog/fundamentals/cognitive-architectures-for-language-agents-explained"
+  },
+  {
+    "description": "However, to build truly intelligent agents, we need to equip LLMs with additional capabilities like memory, reasoning, learning, and interacting with the environment. A new paper titled \"Cognitive Architectures for Language Agents\" proposes a framework called CoALA to guide the development ...",
+    "favicon_url": "https://you.com/favicon?domain=blog.bayjarvis.com&size=128",
+    "snippets": [
+      "Cognitive Architectures for Language Agents: A Framework for Building Intelligent Language Models. Large language models (LLMs) have achieved impressive results on many natural language tasks. However, to build truly intelligent agents, we need to equip LLMs with additional capabilities like memory, reasoning, learning, and interacting with the environment.",
+      "However, to build truly intelligent agents, we need to equip LLMs with additional capabilities like memory, reasoning, learning, and interacting with the environment. A new paper titled \"Cognitive Architectures for Language Agents\" proposes a framework called CoALA to guide the development of such language agents.",
+      "While many open questions remain, CoALA is a promising step towards unifying the latest LLM advances with long-standing ideas from cognitive science and AI. ... paper Multi-Agent Reasoning with Large Language Models for Effective Corporate Planning - 2024-01-03",
+      "It positions the language model as the core component of a larger cognitive architecture, surrounded by memory modules, an action space, and a decision-making procedure. CoALA agents have both short-term working memory to track current state, and long-term memory for storing knowledge (semantic memory), past experiences (episodic memory), and skills (procedural memory)."
+    ],
+    "title": "Cognitive Architectures for Language Agents | BayJarvis\u2019s Blogs",
+    "url": "https://blog.bayjarvis.com/paper/cognitive-architectures-for-language-agents"
+  },
+  {
+    "description": "Recent efforts have augmented large language models (LLMs) with external resources (e.g., the Internet) or internal control flows (e.g., prompt chaining) for tasks requiring grounding or reasoning, leading to a new cla\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.arxiv-vanity.com&size=128",
+    "snippets": [
+      "While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA).",
+      "The plan for the rest of the paper is as follows. Section 2 introduces production systems and cognitive architectures, and Section 3 outlines their parallels with LLMs and language agents. Section 4 introduces the CoALA framework, and surveys and organizes diverse language agents accordingly.",
+      "Just as cognitive architectures were used to structure production systems\u2019 interactions with agents\u2019 internal state and external environments, we suggest that they can help design LLM-based cognitive agents. In the remainder of the paper, we use this perspective to organize existing approaches and highlight promising extensions. Figure 4: Cognitive architectures for language agents (CoALA).",
+      "Through these three concepts (memory, action, and decision-making), we show CoALA can neatly express a large body of diverse agents and identify underexplored directions. Notably, while several recent papers propose conceptual architectures for general intelligence (LeCun, 2022; McClelland et al., 2019) or empirically survey language models and agents (Mialon et al., 2023; Weng, 2023; Wang et al., 2023b), this paper combines elements of both: we propose a theoretical framework and use it to organize diverse empirical work."
+    ],
+    "title": "[2309.02427] Cognitive Architectures for Language Agents",
+    "url": "https://www.arxiv-vanity.com/papers/2309.02427/"
+  },
+  {
+    "description": "While these agents have achieved ... draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA)....",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "While these agents have achieved substantial empirical success, we lack a systematic framework to organize existing agents and plan future developments. In this paper, we draw on the rich history of cognitive science and symbolic artificial intelligence to propose Cognitive Architectures for Language Agents (CoALA).",
+      "Join the discussion on this paper page"
+    ],
+    "title": "Paper page - Cognitive Architectures for Language Agents",
+    "url": "https://huggingface.co/papers/2309.02427"
+  },
+  {
+    "description": "Unlock the power of AI agents with CoALA, a revolutionary framework that bridges cognitive science and deep learning. Learn how CoALA's modular memory, structured action space, and decision-making process can help you build more capable language-based AI systems.",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "From more effective virtual assistants to advanced decision-support systems in complex domains like healthcare and finance, CoALA-based agents have the potential to transform how we leverage AI in our daily lives and professional endeavors. The journey towards truly intelligent AI systems is ongoing, but with approaches like CoALA, we\u2019re taking significant strides in the right direction. The future of AI interaction is here, and it\u2019s more cognitive, more structured, and more promising than ever before. Reference Paper : https://arxiv.org/pdf/2309.02427",
+      "In the rapidly evolving landscape of artificial intelligence, a new framework is emerging that promises to revolutionize how we build and interact with language-based AI systems. Enter Cognitive Architectures for Language Agents (CoALA), a groundbreaking approach that bridges the gap between traditional cognitive science and cutting-edge deep learning techniques.",
+      "Classical example of it is ReAct Agents which combines reasoning abilities with action capabilities to create more effective AI systems. The CoALA framework offers significant advantages over simple prompt-based interactions with large language models: Improved Performance: Studies show that implementing cognitive architectures can dramatically boost performance.",
+      "For instance, a GPT-3.5 model improved its performance on coding benchmarks from 48% to 95% when enhanced with a cognitive architecture that introduces tools and agentic reflection. Systematic Development: CoALA provides a structured approach to building language agents, making development more methodical and less ad-hoc."
+    ],
+    "title": "Cognitive Architectures for Language Agents (CoALA): Standard method ...",
+    "url": "https://medium.com/@darshantank_55417/cognitive-architectures-for-language-agents-coala-standard-method-to-build-ai-agents-f4b85704924e"
+  },
+  {
+    "description": "List of language agents based on paper \"Cognitive Architectures for Language Agents\" - awesome-language-agents/CoALA.bib at main \u00b7 ysymyth/awesome-language-agents",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "List of language agents based on paper \"Cognitive Architectures for Language Agents\" - ysymyth/awesome-language-agents",
+      "Sciences, Steklov Mathematical Institute}\n}\n\n@article{post1943formal,\n  title={Formal reductions of the general combinatorial decision problem},\n  author={Post, Emil L},\n  journal={American Journal of Mathematics},\n  volume={65},\n  number={2},\n  pages={197-215},\n  year={1943},\n}\n\n@techreport{newell1967studies,\n  title={Studies in problem solving: {S}ubject 3 on the crypt-arithmetic task {DONALD}+ {GERALD}= {ROBERT}},\n  author={Newell, Allen},\n  year={1967},\n  institution={Carnegie Mellon University}\n}\n\n@inproceedings{mohan2014learning,\n  title={Learning goal-oriented hierarchical tasks from si",
+      "Guanzhi and Xie, Yuqi and Jiang, Yunfan and Mandlekar, Ajay and Xiao, Chaowei and Zhu, Yuke and Fan, Linxi and Anandkumar, Anima},\n  journal={arXiv preprint arXiv:2305.16291},\n  year={2023}\n}\n\n\n@InProceedings{sumers2023distilling,\n  title = \t {Distilling Internet-Scale Vision-Language Models into Embodied Agents},\n  author =       {Sumers, Theodore and Marino, Kenneth and Ahuja, Arun and Fergus, Rob and Dasgupta, Ishita},\n  booktitle = \t {Proceedings of the 40th International Conference on Machine Learning},\n  pages = \t {32797--32818},\n  year = \t {2023},\n}\n\n\n@inproceedings{wu2022aichains,\n  ti",
+      "@article{newell1989symbolic,\n  title={Symbolic architectures for cognition},\n  author={Newell, Allen and Rosenbloom, Paul S and Laird, John E},\n  journal={Foundations of cognitive science},\n  pages={93--131},\n  year={1989}\n}\n\n@inproceedings{nuxoll2007extending,\n  title={Extending cognitive architecture with episodic memory},\n  author={Nuxoll, Andrew M and Laird, John E},\n  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},\n  pages={1560--1564},\n  year={2007}\n}\n\n@article{sumers2022talk,\n  title={{How to talk so AI will learn: Instructions, descriptions, and autonomy}},"
+    ],
+    "title": "awesome-language-agents/CoALA.bib at main \u00b7 ysymyth/awesome-l...",
+    "url": "https://github.com/ysymyth/awesome-language-agents/blob/main/CoALA.bib"
+  },
+  {
+    "description": "By using cognitive architectures and integrating reasoning and acting, language agents can be improved and engineered more effectively, with a focus on memory, modular design, and bridging gaps between different fields in AI.",
+    "favicon_url": "https://you.com/favicon?domain=eightify.app&size=128",
+    "snippets": [
+      "TLDR By using cognitive architectures and integrating reasoning and acting, language agents can be improved and engineered more effectively, with a focus on memory, modular design, and bridging gaps between different fields in AI.",
+      "Implementing submodules in cognitive architectures for language agents is challenging, but integrating classical planning algorithms and probabilistic programs allows for reasoning about actions and evaluating outcomes, leading to more efficient and clean code in the coala framework.",
+      "The idea of a cognitive architecture for language agents suggests that language models should be seen as components within a larger architectural framework, similar to how CPUs are components within a computer architecture.",
+      "Memory is a crucial component of cognitive architectures for language agents, encompassing both short-term working memory for current decision-making and long-term memory for storing experiences and knowledge."
+    ],
+    "title": "Language Agents: Cognitive Architectures \u2014 Eightify",
+    "url": "https://eightify.app/summary/artificial-intelligence-and-language-models/language-agents-cognitive-architectures"
+  },
+  {
+    "description": "Princeton Researchers Propose CoALA: A Conceptual AI Framework to Systematically Understand and Build Language Agents",
+    "favicon_url": "https://you.com/favicon?domain=www.marktechpost.com&size=128",
+    "snippets": [
+      "A team of researchers from Princeton University has introduced the Cognitive Architectures for Language Agents (CoALA) framework, a groundbreaking conceptual model.",
+      "This framework paves the way for more efficient, versatile, and cost-effective language agents by offering a structured approach and emphasizing modular reusability. As the field of artificial intelligence advances, the CoALA framework stands as a beacon of progress in the quest for smarter and more capable language agents. Check out the Paper.",
+      "Language Agents are cool & fast-moving, but no systematic way to understand & design them.. So we use classical CogSci & AI insights to propose Cognitive Architectures for Language Agents (\ud83d\udc28CoALA)!https://t.co/nPInnglURT w/ great @tedsumers @karthik_r_n @cocosci_lab (1/6) pic.twitter.com/y1OIR2c1DK\u2014 Shunyu Yao (@ShunyuYao12) September 6, 2023",
+      "Home Artificial Intelligence Applications Princeton Researchers Propose CoALA: A Conceptual AI Framework to Systematically Understand and... ... In the rapidly evolving field of artificial intelligence, the quest to develop language agents capable of comprehending and generating human language has presented a formidable challenge."
+    ],
+    "title": "Princeton Researchers Propose CoALA: A Conceptual AI Framework ...",
+    "url": "https://www.marktechpost.com/2023/09/11/princeton-researchers-propose-coala-a-conceptual-ai-framework-to-systematically-understand-and-build-language-agents/"
+  },
+  {
+    "description": "arXiv:2309.02427 CODE MINDMAP GITHUB EXPLAINED Theodore R. Sumers, Shunyu Yao, Karthik Narasimhan, Thomas L. Griffiths The paper \"Cognitive Architectures for Language Agents\" by Theodore R. Sumers et al. introduces the CoALA framework, a groundbreaking approach that unites cognitive architectures ...",
+    "favicon_url": "https://you.com/favicon?domain=paperwithoutcode.com&size=128",
+    "snippets": [
+      "arXiv:2309.02427 CODE MINDMAP GITHUB EXPLAINED Theodore R. Sumers, Shunyu Yao, Karthik Narasimhan, Thomas L. Griffiths The paper \"Cognitive Architectures for Language Agents\" by Theodore R. Sumers et al. introduces the CoALA framework, a groundbreaking approach that unites cognitive architectures with modern language models to enhance the development of language agents.",
+      "The paper \u201cCognitive Architectures for Language Agents\u201d by Theodore R. Sumers et al. introduces the CoALA framework, a groundbreaking approach that unites cognitive architectures with modern language models to enhance the development of language agents. This conceptual framework is structured around three key dimensions: modular memory organization, comprehensive action spaces, and iterative decision-making processes.",
+      "CoALA draws from cognitive science principles to categorize memory into working and long-term types, each further divided, reflecting psychological theories to create adaptable and learning-capable agents. By integrating these traditional cognitive architectures with the capabilities of large language models, the framework provides a robust blueprint that supports agents in complex reasoning tasks, akin to human cognitive processes. This paper is a must-read for those interested in AI and cognitive science intersection, as it not only offers a theoretical perspective but also highlights practical insights for developing scalable and modular language agents.",
+      "The CoALA framework stands out for its potential to significantly impact the design and functionality of intelligent agents, paving the way towards more human-like machine intelligence. This post implemented a memory-based pattern solver agent of a brain teaser problem to predict the next numbers from a sequence of numbers, which could learn from previous success tries. Explanation: The Cognitive Architectures for Language Agents (CoALA) is a conceptual framework that offers a structured way to design language agents."
+    ],
+    "title": "Cognitive Architectures for Language Agents (How to use memory ...",
+    "url": "https://paperwithoutcode.com/cognitive-architectures-for-language-agents/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.linkedin.com&size=128",
+    "snippets": [],
+    "title": "Understanding CoALA (Cognitive Architectures for ...",
+    "url": "https://www.linkedin.com/pulse/understanding-coala-cognitive-architectures-language-rany-wgugc"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=blog.gopenai.com&size=128",
+    "snippets": [],
+    "title": "Cognitive Architectures for Language Agents (Paper Summary)",
+    "url": "https://blog.gopenai.com/human-like-ai-cognitive-llm-agents-c6c771c4dbc1"
+  }
+]

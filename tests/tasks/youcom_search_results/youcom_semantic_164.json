@@ -1,0 +1,263 @@
+[
+  {
+    "description": "With the advent of large language models (LLMs), there has been a growing interest in analysing the preferences encoded in LLMs in the context of morality. Recent work has tested LLMs on various mo...",
+    "favicon_url": "https://you.com/favicon?domain=royalsocietypublishing.org&size=128",
+    "snippets": [
+      "With the advent of large language models (LLMs), there has been a growing interest in analysing the preferences encoded in LLMs in the context of morality. Recent work has tested LLMs on various moral judgement tasks and drawn conclusions regarding the ...",
+      "Or, it could be the case that the models can in principle follow instructions of the form used in our study, but they fail due to the difficulty of the dilemma and their inability to either learn about moral values or weigh moral values against one another. To tease apart these two situations, we additionally ran a new experiment, which uses a non-dilemma choice. The non-dilemma choice includes choosing between the death of characters and sparing the characters. Under the premise that LLMs can accurately follow instructions and in principle comprehend the described situations, and given that the models are fine-tuned on datasets containing the general consensus that harming people is morally unacceptable [53,54], we hypothesize that LLMs will demonstrate consistent responses of selecting to spare characters across prompt variations in non-dilemma scenarios compared to dilemma scenarios.",
+      "[16] find that moral direction in the embedding spaces of LLMs, such as GPT-3, aligns well with the social normativity of various phrases as annotated by humans. In line with this work, Fraser et al. [19] suggest that Delphi, an LLM fine-tuned on five different moral reasoning benchmarks, exhibits moral principles aligned with liberal Western views, such as prioritizing autonomy over community and divinity.",
+      "This experiment also demonstrates the difficulty that models have with the unusual \u2018Reversed-label\u2019 prompt format, in which option \u2018B\u2019 is given before option \u2018A\u2019. We speculate that this format may not have been encountered during pre-training or fine-tuning such that the degradation in model performance, which even affects the large LLaMa3.1-70B-Instruct model, may be attributed to prompt unfamiliarity [56]. This result suggests that while the larger LLMs are capable of understanding the task format in principle, their failure on the moral dilemma can be attributed to not properly representing the values or not being able to reason about their combination successfully."
+    ],
+    "title": "Robustness of large language models in moral judgements | Royal ...",
+    "url": "https://royalsocietypublishing.org/doi/10.1098/rsos.241229"
+  },
+  {
+    "description": "Moral values have deep roots in early civilizations, codified within norms and laws that regulated societal order and the common good. They play a crucial role in understanding the psychological basis of human behavior and cultural orientation. The moral foundation theory (MFT) is a ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Moral values have deep roots in early civilizations, codified within norms and laws that regulated societal order and the common good. They play a crucial role in understanding the psychological basis of human behavior and cultural orientation. The moral foundation theory (MFT) is a well-established framework that identifies the core moral foundations underlying the manner in which different cultures shape individual and social lives.",
+      "AI & SOCIETY - Moral values have deep roots in early civilizations, codified within norms and laws that regulated societal order and the common good. They play a crucial role in understanding...",
+      "Moral bias analysis in PLMs embeddings. Fraser et al. (2022) explore the Delphi framework (Jiang et al. 2021) for MFT. It is a PLM built on the UNICORN (Lourie et al. 2021) model, which is a specialized version of T5 for commonsense question answering. Delphi is fine-tuned on the COMMONSENSE NORM BANK dataset (Jiang et al. 2021), consisting of various moral judgments on everyday situations.",
+      "Prompt engineering and reinforcement learning are notable strategies for aligning PLMs with specific moral values without extensive fine-tuning. Effect of prompting. Several works have examined how the construction of prompts can elicit specific moral traits and influence PLM responses. This aspect is crucial for understanding how PLMs reflect and generate moral judgments, providing insights into the moral tendencies embedded in the models\u2019 pre-training data."
+    ],
+    "title": "A survey on moral foundation theory and pre-trained language models: ...",
+    "url": "https://link.springer.com/article/10.1007/s00146-025-02225-w"
+  },
+  {
+    "description": "Automatic moral classification in textual data is crucial for various fields including Natural Language Processing (NLP), social sciences, and ethical\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Automatic moral classification in textual data is crucial for various fields including Natural Language Processing (NLP), social sciences, and ethical AI development. Despite advancements in supervised models, their performance often suffers when faced with real-world scenarios due to overfitting to specific data distributions.",
+      "To address these limitations, we propose leveraging state-of-the-art Large Language Models (LLMs) trained on extensive common-sense data for unsupervised moral classification. We introduce an innovative evaluation framework that directly compares model outputs with human annotations, ensuring an assessment of model performance.",
+      "Our methodology explores the effectiveness of different LLM sizes and prompt designs in moral value detection tasks, considering both multi-label and binary classification scenarios. We present experimental results using the Moral Foundation Reddit Corpus (MFRC) and discuss implications for future research in ethical AI development and human\u2013computer interaction.",
+      "Experimental results demonstrate that GPT-4 achieves superior performance, followed by GPT-3.5, Llama-70B, Mixtral-8x7B, Mistral-7B and Llama-7B. Additionally, the study reveals significant variations in model performance across different moral domains, particularly between everyday morality and political contexts."
+    ],
+    "title": "Large Language Models meet moral values: A comprehensive assessment ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2451958825000247"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "Moral Mimicry: Large Language Models Produce ...",
+    "url": "https://aclanthology.org/2023.acl-srw.40.pdf"
+  },
+  {
+    "description": "People view AI as possessing expertise across various fields, but the perceived quality of AI-generated moral expertise remains uncertain. Recent work suggests that large language models (LLMs) perform well on tasks designed to assess moral alignment, reflecting moral judgments with relatively ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "People view AI as possessing expertise across various fields, but the perceived quality of AI-generated moral expertise remains uncertain. Recent work suggests that large language models (LLMs) perform well on tasks designed to assess moral alignment, reflecting moral judgments with relatively high accuracy.",
+      "Scientific Reports - AI language model rivals expert ethicist in perceived moral expertise",
+      "As LLMs become increasingly integrated into fields like law, education, and therapy\u2014and in the everyday lives of millions\u2014it is important to learn whether people view their outputs as exhibiting moral reasoning comparable to that of people. Previous research has demonstrated that LLMs can accurately reflect the moral judgments embedded in their training data and perform well on tasks designed to assess moral reasoning3,4,5,6,43.",
+      "People view AI as possessing expertise in many domains, applying it widely from translation services to drug discovery1,2; However, perceptions of the quality of AI-generated moral expertise remains uncertain. Recent work suggests that large language models (LLMs) can generate moral judgments that closely align with those of people3,4,5,6, but perceptions of moral expertise go beyond merely reflecting human moral judgments."
+    ],
+    "title": "AI language model rivals expert ethicist in perceived moral expertise ...",
+    "url": "https://www.nature.com/articles/s41598-025-86510-0"
+  },
+  {
+    "description": "Moral values play a fundamental role in how we evaluate information, make decisions, and form judgements around important social issues. Controversial topics, including vaccination, abortion, racism, and sexual orientation, often elicit opinions and attitudes that are not solely based on evidence ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Previous works have shown that LLMs like GPT-4 can indeed perform moral reasoning through the lens of moral theories (Zhou et al., 2023) which is evident in our examples as well. On the other hand, MoralBERTadv learns to align more closely with the trends seen in the fine-tuned annotation examples. However, MoralBERTadv often predicts both Liberty and Oppression even if only one is mentioned in the text. Moral values and judgments significantly influence our daily lives.",
+      "Dots represent mean-pooled BERT embeddings for each text example. Table 1. Distribution of human-annotated moral values in the three social media corpora used in this study. \u2020Annotations for Liberty/Oppression are only available in FB (full corpus) and MFTC (BLM and 2016 US Election datasets). To capture moral expressions in social media discourse, we propose MoralBERT,111https://github.com/vjosapreniqi/MoralBERT a series of transformer-based language models fine-tuned with the corpora presented in the previous section.",
+      "Building on the Moral Foundations Theory (MFT), this paper introduces MoralBERT, a range of language representation models fine-tuned to capture moral sentiment in social discourse. We describe a framework for both aggregated and domain-adversarial training on multiple heterogeneous MFT human-annotated datasets sourced from Twitter (now X), Reddit, and Facebook that broaden textual content diversity in terms of social media audience interests, content presentation and style, and spreading patterns.",
+      "Furthermore, moral inferences are highly context-dependent (Ammanabrolu et al., 2022) and different contexts can lead to distinct judgments (Zhou et al., 2023). Similarly, Guo et al. (Guo et al., 2023) showed that also the writing culture matters; in their study, using a model trained on MFTC to predict moral values in news articles (eMFD dataset (Hopp et al., 2021)) was shown significantly more challenging than predicting moral values on another Twitter dataset with discourse around COVID-19 vaccination."
+    ],
+    "title": "MoralBERT: A Fine-Tuned Language Model for Capturing Moral Values ...",
+    "url": "https://arxiv.org/html/2403.07678v2"
+  },
+  {
+    "description": "Large Language Models (LLMs) have shown strong performance across many tasks, but their ability to capture culturally diverse moral values remains unclear. In this paper, we examine whether LLMs can mirror variations in moral attitudes reported by two major cross-cultural surveys: the World ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Large Language Models (LLMs) have shown strong performance across many tasks, but their ability to capture culturally diverse moral values remains unclear. In this paper, we examine whether LLMs can mirror variations in moral attitudes reported by two major cross-cultural surveys: the World Values Survey and the PEW Research Center's Global Attitudes Survey.",
+      "Abstract page for arXiv paper 2506.12433: Exploring Cultural Variations in Moral Judgments with Large Language Models",
+      "In this paper, we examine whether LLMs can mirror variations in moral attitudes reported by two major cross-cultural surveys: the World Values Survey and the PEW Research Center's Global Attitudes Survey. We compare smaller, monolingual, and multilingual models (GPT-2, OPT, BLOOMZ, and Qwen) with more recent instruction-tuned models (GPT-4o, GPT-4o-mini, Gemma-2-9b-it, and Llama-3.3-70B-Instruct).",
+      "Using log-probability-based moral justifiability scores, we correlate each model's outputs with survey data covering a broad set of ethical topics. Our results show that many earlier or smaller models often produce near-zero or negative correlations with human judgments. In contrast, advanced instruction-tuned models (including GPT-4o and GPT-4o-mini) achieve substantially higher positive correlations, suggesting they better reflect real-world moral attitudes."
+    ],
+    "title": "[2506.12433] Exploring Cultural Variations in Moral Judgments with ...",
+    "url": "https://arxiv.org/abs/2506.12433"
+  },
+  {
+    "description": "As large language models (LLMs) have become more deeply integrated into various sectors, understanding how they make moral judgements has become crucial, particularly in the realm of autonomous dri...",
+    "favicon_url": "https://you.com/favicon?domain=royalsocietypublishing.org&size=128",
+    "snippets": [
+      "As large language models (LLMs) have become more deeply integrated into various sectors, understanding how they make moral judgements has become crucial, particularly in the realm of autonomous driving. This study used the moral machine framework to ...",
+      "Kamphorst B and O'Neill E (2025) Digital recording and the hazards of unbounded moralized judgment, Technology in Society, 10.1016/j.techsoc.2024.102779, 82, (102779), Online publication date: 1-Sep-2025.",
+      "Llama 2 is another transformer-based LLM [22] that operates as an open-foundation chat model. It has been fine-tuned and offers a range of derived chat models (e.g.",
+      "The methodology employed in the MM experiment presents a promising avenue for exploring the moral decision-making tendencies of LLMs, including ChatGPT. By examining the LLM responses to the scenarios presented in the MM experiment and contrasting them with human judgement patterns, we can gain a deeper insight into the ethical frameworks embedded within these AI systems."
+    ],
+    "title": "The moral machine experiment on large language models | Royal Society ...",
+    "url": "https://royalsocietypublishing.org/doi/10.1098/rsos.231393"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.neurips.cc&size=128",
+    "snippets": [],
+    "title": "Exploring Language Models as Accounts of Human Moral ...",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2022/file/b654d6150630a5ba5df7a55621390daf-Paper-Conference.pdf"
+  },
+  {
+    "description": "The ethical reasoning capability of large language models (LLMs) directly impacts their societal applicability, and enhancing this capacity is critical for developing trustworthy and secure artificial intelligence (AI) systems. The existing moral judgment methods based on LLMs rely on a single ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "The ethical reasoning capability of large language models (LLMs) directly impacts their societal applicability, and enhancing this capacity is critical for developing trustworthy and secure artificial intelligence (AI) systems. The existing moral judgment methods based on LLMs rely on a single cognitive theory and lack an information aggregation and transmission mechanism, which affects the accuracy and stability of moral judgment.",
+      "The remainder of this paper is organized as follows: Section 2 reviews related work, including theoretical research on human moral judgment, studies on moral judgment in LLMs, and research on LLM agents. Section 3 details our proposed method, covering problem definition, the design rationale of the MoralAgent approach, and its execution process. Section 4 introduces the Dataset, Baseline Methods, and Experimental Metrics.",
+      "These lightweight methodologies seek to regulate model behavior to align its outputs more closely with human morality [1,2,3,4]. Nevertheless, as model sizes perpetually increase, the efficacy of these methodologies has progressively diminished. Subsequently, some researchers used fully supervised fine-tuning to fine-tune the model with end-to-end instructions by manually constructing datasets that satisfy different values.",
+      "The experimental results are shown in Table 5. On the selected dataset, the MoralAgent method demonstrated superior performance compared to other methods. This result confirms that MoralAgent possesses wider applicability, thus providing a more reliable solution for ethical judgment. To illustrate and demonstrate the method of this paper more intuitively, we select representative samples, as shown in Figure 4."
+    ],
+    "title": "Moral Judgment with a Large Language Model-Based Agent",
+    "url": "https://www.mdpi.com/2079-9292/14/13/2580"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "Moral Foundations of Large Language Models",
+    "url": "https://aclanthology.org/2024.emnlp-main.982.pdf"
+  },
+  {
+    "description": "Language models often misinterpret human intentions due to their handling of ambiguity, a limitation well-recognized in NLP research. While morally clear scenarios are more discernible to LLMs, greater difficulty is encountered in morally ambiguous contexts. In this investigation, we explored ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "While morally clear scenarios are more discernible to LLMs, greater difficulty is encountered in morally ambiguous contexts. In this investigation, we explored LLM calibration to show that human and LLM judgments are poorly aligned in such scenarios. We used two curated datasets from the Scruples project for evaluation: DILEMMAS, which involves pairs of distinct moral scenarios to assess the model\u2019s ability to compare and contrast ethical situations, and ANECDOTES, which presents individual narratives to evaluate the model\u2019s skill in drawing out details, interpreting, and analyzing distinct moral scenarios.",
+      "While Reinforcement Learning from Human Feedback (RLHF) guides models toward human-preferred outcomes, it does not fully address the inherent subjectivity in morally complex situations due to the variability in human values, the complexity of moral reasoning, and the limitations in feedback and representation (Rafailov et al., 2024). This leaves room for inconsistency in model outputs, especially when human judgments are nuanced and subjective. Ambiguity in decision-making occurs when outcomes are equally favorable or unfavorable, making individuals rely on heuristics and bias to make final decisions(Tversky and Kahneman, 1974).LLMs leverage large datasets to learn patterns and handle tasks involving ambiguous inputs.",
+      "Rather than evaluating whether an LLM can accurately represent the political opinions of a diverse population, we assessed whether LLMs can represent the moral values and judgments of a population in morally contentious situations. To measure the calibration of LLM responses with respect to human ethical judgments, we extracted token probabilities from each LLM\u2019s final softmax layer. Two primary datasets were used to facilitate this measurement: the Anecdotes dataset and the Dilemmas dataset, both derived from (Lourie et al., 2021).",
+      "This study underscores how the nature of the dataset influences the effectiveness of fine-tuning, revealing that while our approach significantly improved model performance and alignment, persistent calibration issues remain. The findings highlight a critical need for ongoing refinement in training processes to better address the nuances of ethical reasoning and ensure more consistent alignment with human moral judgments."
+    ],
+    "title": "Fine-Tuning Language Models for Ethical Ambiguity: A Comparative ...",
+    "url": "https://arxiv.org/html/2410.07826v1"
+  },
+  {
+    "description": "Looking into the mismatch in morals between humans and pre-trained bots",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "In this article, we will assess how some of these models perform when reasoning about moral questions. The models we will look into are GPT-2 from 2019, distil-GPT-2 from 2019, and GPT-neo from 2021. Other models could be assessed in the same way, and much more in-depth assessments are presented in research papers every year.",
+      "Each of these sentences is always about bad things, with half of the generated sentences beginning with a wrong premise (e.g., \"Evil is acceptable when\") and the other half beginning with a correct premise (e.g., \"Evil is wrong when\"). These models will complete each sentence to show us how they \"think\" about the moral premise of each sentence. The following code works in Google Collab and is used to load the models and generate the dataset.",
+      "seriously-a-repo-just-to-upload-one-file-for-an-article/Moral_ML.ipynb at main \u00b7\u2026 \u00b7 The dataset of 180 generated sentences across the 3 LLMs was saved to CSV here. I annotated the dataset, rather quickly, deciding for each row if the generated sentence was Debatable, Nonsensical, TRUE, or FALSE.",
+      "In this work, rather than assessing each LLM against some set of rules (in other words, an ethics test) we will test the models against my personal beliefs about right and wrong (in other words, a morality test)."
+    ],
+    "title": "Large Language Model Morality | Towards Data Science",
+    "url": "https://towardsdatascience.com/large-language-model-morality-85926d1f78dc/"
+  },
+  {
+    "description": "With the rapid expansion of parameters in large language models (LLMs) and the application of Reinforcement Learning with Human Feedback (RLHF), there has been a noticeable growth in the moral competence of LLMs. However, several questions warrant further exploration: Is it really possible ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "With the rapid expansion of parameters in large language models (LLMs) and the application of Reinforcement Learning with Human Feedback (RLHF), there has been a noticeable growth in the moral competence of LLMs. However, several questions warrant further exploration: Is it really possible for LLMs to fully align with human values through RLHF?",
+      "Ethics and Information Technology - With the rapid expansion of parameters in large language models (LLMs) and the application of Reinforcement Learning with Human Feedback (RLHF), there has been a...",
+      "In human moral learning, rewards and punishments (particularly punishments) can inhibit the original habitual action and prevent it from being automatically executed according to the original pattern, thus forming new habits through reinforcement learning. First, researchers fine-tuned ChatGPT using a pre-trained model with specific questions and human-labeled answers.",
+      "As Large Language Models (LLMs, such as ChatGPT) become increasingly capable of generation and generalization, concerns have emerged regarding their capacity for performing adequate moral judgments, particularly in their ability to avoid dealing physical or psychological harm to human beings."
+    ],
+    "title": "Possibilities and challenges in the moral growth of large language ...",
+    "url": "https://link.springer.com/article/10.1007/s10676-024-09818-x"
+  },
+  {
+    "description": "Moral foundations theory (MFT) is a psychological assessment tool that decomposes human moral reasoning into five factors, including care/harm, liberty/oppression, and sanctity/degradation (Graham et al., 2009). People vary in the weight they place on these dimensions when making moral decisions, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Moral foundations theory (MFT) is a psychological assessment tool that decomposes human moral reasoning into five factors, including care/harm, liberty/oppression, and sanctity/degradation (Graham et al., 2009). People vary in the weight they place on these dimensions when making moral decisions, in part due to their cultural upbringing and political ideology.",
+      "Abstract page for arXiv paper 2310.15337: Moral Foundations of Large Language Models",
+      "People vary in the weight they place on these dimensions when making moral decisions, in part due to their cultural upbringing and political ideology. As large language models (LLMs) are trained on datasets collected from the internet, they may reflect the biases that are present in such corpora. This paper uses MFT as a lens to analyze whether popular LLMs have acquired a bias towards a particular set of moral values.",
+      "These findings help illustrate the potential risks and unintended consequences of LLMs assuming a particular moral stance. From: Marwa Abdulhai [view email] [v1] Mon, 23 Oct 2023 20:05:37 UTC (1,327 KB) ... View a PDF of the paper titled Moral Foundations of Large Language Models, by Marwa Abdulhai and 5 other authors"
+    ],
+    "title": "[2310.15337] Moral Foundations of Large Language Models",
+    "url": "https://arxiv.org/abs/2310.15337"
+  },
+  {
+    "description": "The task of detecting moral values in text has significant implications in various fields, including natural language processing, social sciences, and ethical decision-making. Previously proposed supervised models often suffer from overfitting, leading to hyper-specialized moral classifiers ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The task of detecting moral values in text has significant implications in various fields, including natural language processing, social sciences, and ethical decision-making. Previously proposed supervised models often suffer from overfitting, leading to hyper-specialized moral classifiers that struggle to perform well on data from different domains.",
+      "Abstract page for arXiv paper 2406.04143: Do Language Models Understand Morality? Towards a Robust Detection of Moral Content",
+      "We introduce the Davinci model as a state-of-the-art zero-shot unsupervised moral values classifier, pushing the boundaries of moral value detection without the need for explicit training on labeled data. Additionally, we perform a comparative evaluation of our approach with the supervised models, shedding light on their respective strengths and weaknesses. From: Misael Mongiov\u00ec [view email] [v1] Thu, 6 Jun 2024 15:08:16 UTC (483 KB) ... View a PDF of the paper titled Do Language Models Understand Morality?",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2406.04143] Do Language Models Understand Morality? Towards a ...",
+    "url": "https://arxiv.org/abs/2406.04143"
+  },
+  {
+    "description": "Large language models (LLMs) are increasingly deployed in domains requiring moral understanding, yet their reasoning often remains shallow, and misaligned with human reasoning Jiang et al. (2021). Unlike humans, whose moral reasoning integrates contextual trade-offs, value systems, and ethical ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "An fmri investigation of emotional engagement in moral judgment. Science, 293(5537):2105\u20132108. Groeneveld et al. (2024) Dirk Groeneveld, Iz Beltagy, Evan Walsh, Akshita Bhagia, Rodney Kinney, Oyvind Tafjord, Ananya Jha, Hamish Ivison, Ian Magnusson, Yizhong Wang, and 1 others. 2024. Olmo: Accelerating the science of language models. In Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 15789\u201315809.",
+      "Prompts incorporating structured value systems and ethical theories enhance the consistency and contextual relevance of model judgments across diverse moral scenarios. (4) Reasoning-based distillation enables scalable moral reasoning. Through supervised fine-tuning, smaller models can emulate the structured moral justifications of larger models, maintaining interpretability without added inference cost.",
+      "The experiments are conducted using the LLaMA-3.1 Instruct model (8B) on the Value Kaleidoscope dataset. Structured prompts using First-Principles Reasoning and Schwartz + Care Ethics produce norm-aligned decisions, while shallow prompts fail. This highlights how ethical scaffolding improves LLMs\u2019 moral judgment.",
+      "It also shows low variance across datasets, suggesting robustness to task shifts. Step-by-Step Evaluation and Stakeholder-Perspective Analysis perform comparably well, highlighting the benefit of decomposing moral judgments and considering multi-agent trade-offs."
+    ],
+    "title": "Structured Moral Reasoning in Language Models: A Value-Grounded ...",
+    "url": "https://arxiv.org/html/2506.14948v1"
+  },
+  {
+    "description": "Language models often misinterpret human intentions due to their handling of ambiguity, a limitation well-recognized in NLP research. While morally clear scenarios are more discernible to LLMs, greater difficulty is encountered in morally ambiguous contexts. In this investigation, we explored ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Language models often misinterpret human intentions due to their handling of ambiguity, a limitation well-recognized in NLP research. While morally clear scenarios are more discernible to LLMs, greater difficulty is encountered in morally ambiguous contexts. In this investigation, we explored LLM calibration to show that human and LLM judgments are poorly aligned in such scenarios.",
+      "Abstract page for arXiv paper 2410.07826: Fine-Tuning Language Models for Ethical Ambiguity: A Comparative Study of Alignment with Human Responses",
+      "While morally clear scenarios are more discernible to LLMs, greater difficulty is encountered in morally ambiguous contexts. In this investigation, we explored LLM calibration to show that human and LLM judgments are poorly aligned in such scenarios. We used two curated datasets from the Scruples project for evaluation: DILEMMAS, which involves pairs of distinct moral scenarios to assess the model's ability to compare and contrast ethical situations, and ANECDOTES, which presents individual narratives to evaluate the model's skill in drawing out details, interpreting, and analyzing distinct moral scenarios.",
+      "Our fine-tuning approach, which improves the model's understanding of text distributions in a text-to-text format, effectively enhances performance and alignment in complex decision-making contexts, underscoring the need for further research to refine ethical reasoning techniques and capture human judgment nuances. From: Kevin Zhu [view email] [v1] Thu, 10 Oct 2024 11:24:04 UTC (88 KB) ... View a PDF of the paper titled Fine-Tuning Language Models for Ethical Ambiguity: A Comparative Study of Alignment with Human Responses, by Pranav Senthilkumar and 5 other authors"
+    ],
+    "title": "[2410.07826] Fine-Tuning Language Models for Ethical Ambiguity: ...",
+    "url": "https://arxiv.org/abs/2410.07826"
+  },
+  {
+    "description": "Prior research has demonstrated that language models can, to a limited extent, represent moral norms in a variety of cultural contexts. This research aims to replicate these findings and further explore their validity, concentrating on issues like \u2019homosexuality\u2019 and \u2019divorce\u2019. This ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Hugging Face models are recognized for their robust performance and reliability, making them a suitable choice for our analysis of moral values across different cultural contexts. Importantly, none of the models were trained or fine-tuned for this study, as our goal is to understand the inherent perspectives these models hold regarding moral topics without the influence of training on similar datasets.",
+      "The second part of the study involves employing multilingual models. Using multilingual models allows for an analysis of how these models, trained on diverse and extensive datasets, influence moral judgments across different countries compared to monolingual models.",
+      "The third column, labeled \u2019Mode\u2019, refers to the type of prompt: \u2019in\u2019, which corresponds to the format \u2019In {country} {topic} is {moral_judgment}\u2019, and \u2019people\u2019, which corresponds to \u2019People in {country} believe {topic} is {moral_judgment}\u2019. The second-to-last column displays the R-values for these configurations, while the last column indicates the significance levels: \u201c*\u201d, \u201c**\u201d, and \u201c***\u201d for ... italic_p - italic_v italic_a italic_l italic_u italic_e italic_s < 0.05, 0.01, and 0.001, respectively. Table 1: Correlation results for the WVS dataset using the GPT-2 base model: analysis reveals primarily negative correlations, which vary between prompt types and show higher variation across different token pairs.",
+      "When comparing the moral scores from the GPT-2 base model for the WVS dataset, as depicted in Figure 5, with the actual survey responses, notable differences emerge. The GPT-2-derived scores predominantly gather on the right side of the x-axis, indicating a tendency toward positive moral judgments."
+    ],
+    "title": "Large Language Models as Mirrors of Societal Moral Standards",
+    "url": "https://arxiv.org/html/2412.00956v1"
+  },
+  {
+    "description": "Large language models (LLMs) exhibit expert-level performance in tasks across a wide range of different domains. Ethical issues raised by LLMs and the\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "In this paper, we tested how four state-of-the-art models (Gemini Pro, Claude 2.1, GPT-4, and Llama 2 Chat 70b) performed on eight different survey-based experiments investigating legally and morally relevant concepts ranging from intentionality ascriptions to rule violation judgments.",
+      "Large language models (LLMs) exhibit expert-level performance in tasks across a wide range of different domains. Ethical issues raised by LLMs and the need to align future versions makes it important to know how state of the art models reason about moral and legal issues. In this paper, we employ the methods of experimental psychology to probe into this question.",
+      "Given this caveat, we believe that learning more about the way LLMs reason about moral and legal issues is important for at least two reasons. First, some researchers, impressed by the high correlations between judgments rendered by earlier versions of GPT and humans, have suggested that LLMs could serve as replacements for human participants in scientific research [10]. Thus, knowing whether newer models also produce responses that are very similar to those of the human population is important for ongoing normative debates [17]. Second, one of the central debates surrounding AI is that about",
+      "Then, we explain how we selected the studies we replicated with these models. Finally, we explain the general procedure to generate the data for the studies, which is then detailed individually in the relevant subsections of Section 4. Knobe [33] investigated judgments about whether side effects were brought about intentionally or unintentionally."
+    ],
+    "title": "Exploring the psychology of LLMs\u2019 moral and legal reasoning - ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S000437022400081X"
+  },
+  {
+    "description": "We test the hypothesis that language models trained with reinforcement learning from human feedback (RLHF) have the capability to \"morally self-correct\" -- to avoid producing harmful outputs -- if instructed to do so. We find strong evidence in support of this hypothesis across three different ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "We test the hypothesis that language models trained with reinforcement learning from human feedback (RLHF) have the capability to \"morally self-correct\" -- to avoid producing harmful outputs -- if instructed to do so. We find strong evidence in support of this hypothesis across three different experiments, each of which reveal different facets of moral self-correction.",
+      "Abstract page for arXiv paper 2302.07459: The Capacity for Moral Self-Correction in Large Language Models",
+      "As such, they can follow instructions to avoid certain kinds of morally harmful outputs. We believe our results are cause for cautious optimism regarding the ability to train language models to abide by ethical principles. From: Nicholas Schiefer [view email] [v1] Wed, 15 Feb 2023 04:25:40 UTC (430 KB) [v2] Sat, 18 Feb 2023 21:30:27 UTC (431 KB) ... View a PDF of the paper titled The Capacity for Moral Self-Correction in Large Language Models, by Deep Ganguli and 48 other authors",
+      "View a PDF of the paper titled The Capacity for Moral Self-Correction in Large Language Models, by Deep Ganguli and 48 other authors View PDF"
+    ],
+    "title": "[2302.07459] The Capacity for Moral Self-Correction in Large Language ...",
+    "url": "https://arxiv.org/abs/2302.07459"
+  },
+  {
+    "description": "By comparing the LLM\u2019s choice with human judgment scores, we can quantify the degree to which the LLM\u2019s moral reasoning aligns with established human norms. This alignment is crucial for understanding how well the LLM can understand human ethical standards. In this section, we present evaluation of large language models (LLMs) using two distinct datasets ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "By comparing the LLM\u2019s choice with human judgment scores, we can quantify the degree to which the LLM\u2019s moral reasoning aligns with established human norms. This alignment is crucial for understanding how well the LLM can understand human ethical standards. In this section, we present evaluation of large language models (LLMs) using two distinct datasets to assess their moral reasoning capabilities.",
+      "In the rapidly evolving field of artificial intelligence, large language models (LLMs) have emerged as powerful tools for a myriad of applications, from natural language processing to decision-making support systems. However, as these models become increasingly integrated into societal frameworks, the imperative to ensure they operate within ethical and moral boundaries has never been more critical. This paper introduces a novel benchmark designed to measure and compare the moral reasoning capabilities of LLMs. We present the first comprehensive dataset specifically curated to probe the moral dimensions of LLM outputs, addressing a wide range of ethical dilemmas and scenarios reflective of real-world complexities.",
+      "These experiments are carefully designed to cover a wide range of ethical situations, ensuring a thorough evaluation of each model\u2019s capabilities. ... We provide a detailed analysis of the experimental results. This analysis not only highlights the strengths and weaknesses of each LLM in handling moral judgments but also offers insights into the underlying mechanisms that influence their performance. In the following parts of the paper, we will discuss the related work in Section 2, introduce the proposed model in Section 3, analyze the experimental results in Section 4, and provide the conclusions as well as future work in Section 5.",
+      "A number of studies have attempted to understand whether LLMs can truly discern differences in various moralities and personalities [39], as well as their potential to learn and embody moral values [40]. Meanwhile, Fraser et al. [41] investigated the capacity of machine learning models, particularly the Allen AI Delphi model, to adopt consistent, higher-level ethical principles from datasets annotated with human moral judgments."
+    ],
+    "title": "MoralBench: Moral Evaluation of LLMs",
+    "url": "https://arxiv.org/html/2406.04428v1"
+  },
+  {
+    "description": "The task of detecting moral values in text has significant implications in various fields, including natural language processing, social sciences, and ethical decision-making. Previously proposed supervised models often suffer from overfitting, leading to hyper-specialized moral classifiers ...",
+    "favicon_url": "https://you.com/favicon?domain=www.aimodels.fyi&size=128",
+    "snippets": [
+      "The task of detecting moral values in text has significant implications in various fields, including natural language processing, social sciences, and ethical decision-making. Previously proposed supervised models often suffer from overfitting, leading to hyper-specialized moral classifiers that struggle to perform well on data from different domains.",
+      "Building on the Moral Foundations Theory (MFT), this paper introduces MoralBERT, a range of language representation models fine-tuned to capture moral sentiment in social discourse. We describe a framework for both aggregated and domain-adversarial training on multiple heterogeneous MFT human-annotated datasets sourced from Twitter (now X), Reddit, and Facebook that broaden textual content diversity in terms of social media audience interests, content presentation and style, and spreading patterns.",
+      "The paper proposes a novel method for detecting moral content in text, which they call the Moral Value Detection (MVD) model. This model is trained on a large dataset of human-annotated text to identify language that expresses moral values, principles, and judgments.",
+      "Building on the Moral Foundations Theory (MFT), we tasked a set of transformer-based language models (BERT) fine-tuned on 2,721 synthetic lyrics generated by a large language model (GPT-4) to detect moral values in 200 real music lyrics annotated by two experts.We evaluate their predictive capabilities against a series of baselines including out-of-domain (BERT fine-tuned on MFT-annotated social media texts) and zero-shot (GPT-4) classification."
+    ],
+    "title": "Do Language Models Understand Morality? Towards a Robust Detection ...",
+    "url": "https://www.aimodels.fyi/papers/arxiv/do-language-models-understand-morality-towards-robust"
+  }
+]

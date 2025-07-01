@@ -1,0 +1,289 @@
+[
+  {
+    "description": "Distributed data-parallel optimization accelerates the training of neural networks, but requires constant synchronization of gradients between the workers, which can become a bottleneck. One way to reduce communication overhead is to use Local SGD, where each worker asynchronously takes multiple ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Abstract: Distributed data-parallel optimization accelerates the training of neural networks, but requires constant synchronization of gradients between the workers, which can become a bottleneck. One way to reduce communication overhead is to use Local SGD, where each worker asynchronously takes multiple local gradient steps, after which the model weights are averaged.",
+      "To analyze the manifestation of this bias, we study convergence behaviour of Local SGD and synchronous data-parallel SGD when using their optimal learning rates. Our experiments show that the optimal learning rate for Local SGD differs substantially from that of SGD, and when using it the performance of Local SGD matches that of SGD. However, this performance comes at the cost of added training iterations, rendering Local SGD faster than SGD only when communication is much more time-consuming than computation."
+    ],
+    "title": "On the Choice of Learning Rate for Local SGD | OpenReview",
+    "url": "https://openreview.net/forum?id=DPvwr4HJdt"
+  },
+  {
+    "description": "Deep learning neural networks are trained using the stochastic gradient descent optimization algorithm. The learning rate is a hyperparameter that controls how much to change the model in response to the estimated error each time the model weights are updated.",
+    "favicon_url": "https://you.com/favicon?domain=machinelearningmastery.com&size=128",
+    "snippets": [
+      "Line Plots of Train and Test Accuracy for a Suite of Momentums on the Blobs Classification Problem \u00b7 We will look at two learning rate schedules in this section. The first is the decay built into the SGD class and the second is the ReduceLROnPlateau callback.",
+      "The fit_model() function can be updated to take a \u201cdecay\u201d argument that can be used to configure decay for the SGD class. The updated version of the function is listed below. We can evaluate the same four decay values of [1E-1, 1E-2, 1E-3, 1E-4] and their effect on model accuracy. The complete example is listed below. Running the example creates a single figure that contains four line plots for the different evaluated learning rate decay values. Classification accuracy on the training dataset is marked in blue, whereas accuracy on the test dataset is marked in orange.",
+      "Running the example creates a single figure that contains four line plots for the different evaluated optimization algorithms. Classification accuracy on the training dataset is marked in blue, whereas accuracy on the test dataset is marked in orange. Note: Your results may vary given the stochastic nature of the algorithm or evaluation procedure, or differences in numerical precision. Consider running the example a few times and compare the average outcome. Again, we can see that SGD with a default learning rate of 0.01 and no momentum does learn the problem, but requires nearly all 200 epochs and results in volatile accuracy on the training data and much more so on the test dataset.",
+      "When lr is decayed by 10 (e.g., when training a CIFAR-10 ResNet), the accuracy increases suddenly. Can you please tell me what exactly happens to the weights when the lr is decayed? For example, one would think that the step size is decreasing, so the weights would change more slowly. But at the same time, the gradient value likely increased rapidly (since the loss plateaus before the lr decay \u2014 which means that the training process was likely at some kind of local minima or a saddle point; hence, gradient values would be small and the loss is oscillating around some value)."
+    ],
+    "title": "Understand the Impact of Learning Rate on Neural Network Performance ...",
+    "url": "https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/"
+  },
+  {
+    "description": "Gradient descent is the preferred way to optimize neural networks and many other machine learning algorithms but is often used as a black box. This post explores how many of the most popular gradient-based optimization algorithms such as Momentum, Adagrad, and Adam actually work.",
+    "favicon_url": "https://you.com/favicon?domain=www.ruder.io&size=128",
+    "snippets": [
+      "This blog post looks at variants of gradient descent and the algorithms that are commonly used to optimize them.",
+      "Consequently, if you care about fast convergence and train a deep or complex neural network, you should choose one of the adaptive learning rate methods. Given the ubiquity of large-scale data solutions and the availability of low-commodity clusters, distributing SGD to speed it up further is an obvious choice.",
+      "Advances in Neural Information Processing Systems (Proceedings of NIPS), 1\u20139. Retrieved from http://papers.nips.cc/paper/5242-delay-tolerant-algorithms-for-asynchronous-distributed-online-learning.pdf \u21a9\ufe0e \u00b7 Abadi, M., Agarwal, A., Barham, P., Brevdo, E., Chen, Z., Citro, C., \u2026 Zheng, X. (2015). TensorFlow : Large-Scale Machine Learning on Heterogeneous Distributed Systems. \u21a9\ufe0e \u00b7 Zhang, S., Choromanska, A., & LeCun, Y. (2015). Deep learning with Elastic Averaging SGD.",
+      "We then update our parameters in the opposite direction of the gradients with the learning rate determining how big of an update we perform. Batch gradient descent is guaranteed to converge to the global minimum for convex error surfaces and to a local minimum for non-convex surfaces. Stochastic gradient descent (SGD) in contrast performs a parameter update for each training example \\(x^{(i)}\\) and label \\(y^{(i)}\\):"
+    ],
+    "title": "An overview of gradient descent optimization algorithms",
+    "url": "https://www.ruder.io/optimizing-gradient-descent/"
+  },
+  {
+    "description": "Further, it remains unclear whether ... when the optimizer is changed from SGD to adaptive gradient methods such as Adam/AdamW, which are now indispensable for training large models. ... Figure 1: When training ResNet-152 and ViT-B on ImageNet with cosine learning rate decay, Local SGD/AdamW with QSR consistently outperforms data parallel methods or Local SGD/AdamW with other synchronization strategies in terms of top-1 validation accuracy, while only ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Further, it remains unclear whether the generalization benefit continues to appear when the optimizer is changed from SGD to adaptive gradient methods such as Adam/AdamW, which are now indispensable for training large models. ... Figure 1: When training ResNet-152 and ViT-B on ImageNet with cosine learning rate decay, Local SGD/AdamW with QSR consistently outperforms data parallel methods or Local SGD/AdamW with other synchronization strategies in terms of top-1 validation accuracy, while only requiring 20.1% and 10.4% of the communication volume, respectively.",
+      "We demonstrate with ImageNet experiments that QSR can consistently improve the final test accuracy of ResNet-152 and ViT-B over other synchronization strategies, including constant-period and post-local schedules, and also ... italic_H \u223c italic_\u03b7 start_POSTSUPERSCRIPT - 1 end_POSTSUPERSCRIPT which one will expect to be optimal from the optimization perspective (Figure 1). ... We thoroughly validate the efficacy of QSR not only for Local SGD but also for Local AdamW, which is arguably more suitable for training large models. We also validate its efficacy for cosine, linear and step decay learning rate schedules that are commonly used in practice.",
+      "See Appendix C for training details. In this paper, we aim to propose a general and effective ... italic_H schedule that can be readily applied to various optimizers and neural network models. Specifically, we introduce a simple yet effective strategy, called Quadratic Synchronization Rule (QSR), for dynamically adjusting the synchronization period according to the learning rate: given a learning rate schedule, we set ... italic_\u03b7 decays.",
+      "As shown in Table 1, QSR significantly improves the validation accuracy of local gradient methods by up to ... 1.7 % on ViT-B, despite inducing higher training loss. The results support the thesis that the improvement in generalization is due to the implicit regularization of local gradient noise instead of better optimization. Noticeably, QSR surpasses the data parallel approach in validation accuracy by ... 25 %. As an added benefit of increasing the synchronization interval in line with the decaying learning rate, QSR further reduces communication overhead, even halving the communication volume compared to Local AdamW with a fixed synchronization period on ViT-B."
+    ],
+    "title": "A Quadratic Synchronization Rule for Distributed Deep Learning",
+    "url": "https://arxiv.org/html/2310.14423v2"
+  },
+  {
+    "description": "Learning rate is a critical hyperparameter in the realm of neural network training, playing a central role in the optimization process. It dictates the magnitude of the steps the model takes during\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Adam: Combines elements of RMSprop and momentum, adjusting the learning rate based on an exponentially decaying average of past gradients. Pros: Parameter-specific adaptability. Cons: Varying complexity; potential diminishing learning rates. Use Case: Large datasets, high-dimensional spaces, recurrent networks. Example: Using Adam optimizer.",
+      "Introduction to Learning Rate in Neural Networks",
+      "Pros: Helps in navigating out of local minima and saddle point regions, potentially leading to better overall solutions. Offers more robustness to the choice of initial learning rate.",
+      "In essence, the learning rate is a critical component in neural network training, with its strategic management playing a pivotal role in the model\u2019s performance. Strategies range from simple, like Fixed Learning Rate, to more dynamic ones, such as Time-Based Decay, Step Decay, Exponential Decay, and Adaptive Learning Rates (Adagrad, RMSprop, Adam)."
+    ],
+    "title": "Learning Rate and Its Strategies in Neural Network Training | by ...",
+    "url": "https://medium.com/thedeephub/learning-rate-and-its-strategies-in-neural-network-training-270a91ea0e5c"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "Adam, for example, uses both the average of the gradients (first moment) and the average of the squared gradients (second moment) to compute an adaptive learning rate, improving convergence and stability. SGD and its variants are widely used across various domains of machine learning: Deep Learning: In training deep neural networks, SGD is the default optimizer due to its efficiency with large datasets and its ability to work with large models.",
+      "Escaping Local Minima: The noisy updates in SGD, caused by the stochastic nature of the algorithm, can help the model escape local minima or saddle points, potentially leading to better solutions in non-convex optimization problems (common in deep learning). Online Learning: SGD is well-suited for online learning, where the model is trained incrementally as new data comes in, rather than on a static dataset.",
+      "Deep learning frameworks like TensorFlow and PyTorch typically use variants like Adam or RMSprop, which are based on SGD. Natural Language Processing (NLP): Models like Word2Vec and transformers are trained using SGD variants to optimize large models on vast text corpora.",
+      "Computer Vision: For tasks such as image classification, object detection and segmentation, SGD has been fundamental in training convolutional neural networks (CNNs). Reinforcement Learning: SGD is also used to optimize the parameters of models used in reinforcement learning, such as deep Q-networks (DQNs) and policy gradient methods."
+    ],
+    "title": "ML - Stochastic Gradient Descent (SGD) - GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/ml-stochastic-gradient-descent-sgd/"
+  },
+  {
+    "description": "Stochastic Gradient Descent (SGD) is a simple yet very efficient approach to fitting linear classifiers and regressors under convex loss functions such as (linear) Support Vector Machines and Logis...",
+    "favicon_url": "https://you.com/favicon?domain=scikit-learn.org&size=128",
+    "snippets": [
+      "The major advantage of SGD is its efficiency, which is basically linear in the number of training examples. If \\(X\\) is a matrix of size \\(n \\times p\\) (with \\(n\\) samples and \\(p\\) features), training has a cost of \\(O(k n \\bar p)\\), where \\(k\\) is the number of iterations (epochs) and \\(\\bar p\\) is the average number of non-zero attributes per sample. Recent theoretical results, however, show that the runtime to get some desired optimization accuracy does not increase as the training set size increases.",
+      "Given that the data is sparse, the classifiers in this module easily scale to problems with more than \\(10^5\\) training examples and more than \\(10^5\\) features. Strictly speaking, SGD is merely an optimization technique and does not correspond to a specific family of machine learning models.",
+      "It is only a way to train a model. Often, an instance of SGDClassifier or SGDRegressor will have an equivalent estimator in the scikit-learn API, potentially using a different optimization technique. For example, using SGDClassifier(loss='log_loss') results in logistic regression, i.e.",
+      "Similarly, SGDRegressor(loss='squared_error', penalty='l2') and Ridge solve the same optimization problem, via different means. The advantages of Stochastic Gradient Descent are: Efficiency. Ease of implementation (lots of opportunities for code tuning). The disadvantages of Stochastic Gradient Descent include: SGD requires a number of hyperparameters such as the regularization parameter and the number of iterations. SGD is sensitive to feature scaling. ... Make sure you permute (shuffle) your training data before fitting the model or use shuffle=True to shuffle after each iteration (used by default)."
+    ],
+    "title": "1.5. Stochastic Gradient Descent \u2014 scikit-learn 1.7.0 documentation",
+    "url": "https://scikit-learn.org/stable/modules/sgd.html"
+  },
+  {
+    "description": "The weights of a neural network cannot be calculated using an analytical method. Instead, the weights must be discovered via an empirical optimization procedure called stochastic gradient descent. The optimization problem addressed by stochastic gradient descent for neural networks is challenging ...",
+    "favicon_url": "https://you.com/favicon?domain=machinelearningmastery.com&size=128",
+    "snippets": [
+      "The weights of a neural network cannot be calculated using an analytical method. Instead, the weights must be discovered via an empirical optimization procedure called stochastic gradient descent. The optimization problem addressed by stochastic gradient descent for neural networks is challenging and the space of solutions (sets of weights) may be comprised of many good solutions (called global optima) as\u2026",
+      "A reasonable choice of optimization algorithm is SGD with momentum with a decaying learning rate (popular decay schemes that perform better or worse on different problems include decaying linearly until reaching a fixed minimum learning rate, decaying exponentially, or decreasing the learning rate by a factor of 2-10 each time validation error plateaus).",
+      "At this point, a natural question is: which algorithm should one choose? Unfortunately, there is currently no consensus on this point. Currently, the most popular optimization algorithms actively in use include SGD, SGD with momentum, RMSProp, RMSProp with momentum, AdaDelta and Adam.",
+      "I am using SGD as optimizer. ... Perhaps you can use the examples here as a starting point: https://machinelearningmastery.com/using-learning-rate-schedules-deep-learning-models-python-keras/"
+    ],
+    "title": "How to Configure the Learning Rate When Training Deep Learning ...",
+    "url": "https://machinelearningmastery.com/learning-rate-for-deep-learning-neural-networks/"
+  },
+  {
+    "description": "Stochastic gradient descent (often abbreviated SGD) is an iterative method for optimizing an objective function with suitable smoothness properties (e.g. differentiable or subdifferentiable). It can be regarded as a stochastic approximation of gradient descent optimization, since it replaces ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "As of 2023, this mini-batch approach remains the norm for training neural networks, balancing the benefits of stochastic gradient descent with gradient descent. By the 1980s, momentum had already been introduced, and was added to SGD optimization techniques in 1986. However, these optimization techniques assumed constant hyperparameters, i.e. a fixed learning rate and momentum parameter.",
+      "A conceptually simple extension of stochastic gradient descent makes the learning rate a decreasing function \u03b7t of the iteration number t, giving a learning rate schedule, so that the first iterations cause large changes in the parameters, while the later ones do only fine-tuning. Such schedules have been known since the work of MacQueen on k-means clustering. Practical guidance on choosing the step size in several variants of SGD is given by Spall.",
+      "TensorFlow and PyTorch, by far the most popular machine learning libraries, as of 2023 largely only include Adam-derived optimizers, as well as predecessors to Adam such as RMSprop and classic SGD. PyTorch also partially supports Limited-memory BFGS, a line-search method, but only for single-device setups without parameter groups. Stochastic gradient descent is a popular algorithm for training a wide range of models in machine learning, including (linear) support vector machines, logistic regression (see, e.g., Vowpal Wabbit) and graphical models.",
+      "In the underparameterized case, SGD does not converge if learning rate remains constant. In 1951, Herbert Robbins and Sutton Monro introduced the earliest stochastic approximation methods, preceding stochastic gradient descent. Building on this work one year later, Jack Kiefer and Jacob Wolfowitz published an optimization algorithm very close to stochastic gradient descent, using central differences as an approximation of the gradient.",
+      "In the 2010s, adaptive approaches to applying SGD with a per-parameter learning rate were introduced with AdaGrad (for \"Adaptive Gradient\") in 2011 and RMSprop (for \"Root Mean Square Propagation\") in 2012. In 2014, Adam (for \"Adaptive Moment Estimation\") was published, applying the adaptive approaches of RMSprop to momentum; many improvements and branches of Adam were then developed such as Adadelta, Adagrad, AdamW, and Adamax. Within machine learning, approaches to optimization in 2023 are dominated by Adam-derived optimizers."
+    ],
+    "title": "Stochastic gradient descent - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Stochastic_gradient_descent"
+  },
+  {
+    "description": "Practical and powerful tips for setting the learning rate...",
+    "favicon_url": "https://you.com/favicon?domain=cameronrwolfe.substack.com&size=128",
+    "snippets": [
+      "Plot of step decay and cosine annealing learning rate schedules \u00b7 adaptive optimization techniques. Neural network training according to stochastic gradient descent (SGD) selects a single, global learning rate that is used for updating all model parameters.",
+      "Additionally, the length of each decay schedule may increase as training progresses. Concretely, authors in [2] define the length of the first decay cycle as T_0, then multiply this length by T_mult during each successive decay cycle; see below for a depiction. ... To follow the terminology of [1], the stepsize of SGDR may increase after each cycle.",
+      "In particular, we can save a copy of the model\u2019s state after each decay cycle within an SGDR schedule. Then, after training is complete, we can average the predictions of each of these models at inference time, forming an ensemble/group of models; see the link below for more details on the idea of ensembles.",
+      "Most of the results outlined within this overview apply to both adaptive and SGD-style optimizers. Are you enjoying Deep (Learning) Focus? Please subscribe for free to receive new posts and support my work. In this section, we will see several examples of recently proposed learning rate schedules. These include strategies like cyclical or triangular learning rates, as well as different profiles for learning rate decay."
+    ],
+    "title": "The Best Learning Rate Schedules",
+    "url": "https://cameronrwolfe.substack.com/p/the-best-learning-rate-schedules"
+  },
+  {
+    "description": "This is a technical blog about two papers related to distributed training, Zhang et al. (2015) and Jiang et al. (2017), as my assignment in a class for Deep Learning. My teammate wrote in his blog\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "This is a technical blog about two papers related to distributed training, Zhang et al. (2015) and Jiang et al. (2017), as my assignment in\u2026",
+      "Distributed training is one of the dominant research fields for deep learning, and Downpour SGD is an efficient representative method for distributed SGD implementations. However, most conventional methods, including Downpour SGD, are for CPUs and few GPUs. Zhang et al. (2015) proposed Elastic Averaging SGD (EASGD) and momentum variant (EAMSGD) for both synchronous and asynchronous settings and helped multiple GPU utilizations.",
+      "Out of a lot of topics related to deep learning, we selected distributed training as a topic of our blogs because it is significantly attracting the attention of data scientists in academic as well as business fields. Moreover, methods of distributed stochastic gradient descent (SGD) implementations are now vital to handle the enormously growing sizes of models and data.",
+      "(2015) introduced Elastic Averaging SGD (EASGD) and its momentum version (EAMSGD), which can be applied in both synchronous and asynchronous settings. They are efficient parallel SGD algorithms for multiple GPUs under communication constraints between them and provide fast convergent minimization while outperforming the DOWNPOUR method and other baseline approaches in practice. This paper significantly contributed to accelerating the employment of GPUs in distributed training of deep learning."
+    ],
+    "title": "Paper Review: Elastic Averaging SGD and Consensus-based Distributed ...",
+    "url": "https://medium.com/@koga.m.aa/paper-review-elastic-averaging-sgd-and-consensus-based-distributed-sgd-for-distributed-training-of-d9a10c1ce90d"
+  },
+  {
+    "description": "PDF | Distributed training of deep learning models on large-scale training data is typically conducted with asynchronous stochastic optimization to... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "This paper investigates the effect of stale (delayed) gradient updates within the context of asynchronous stochastic gradient descent (Async-SGD) optimization for distributed training of deep neural networks. We demonstrate that our implementation of Async-SGD on a HPC cluster can achieve a tight bound on the gradient staleness while providing near-linear speedup. We propose a variant of the SGD algorithm in which the learning rate is modulated according to the gradient staleness and provide theoretical guarantees for convergence of this algorithm.",
+      "One key element behind the recent progress of machine learning has been the ability to train machine learning models in large-scale distributed shared-memory and message-passing environments. Most of these models are trained employing variants of stochastic gradient descent (SGD) based optimization, but most methods involve some type of consistency relaxation relative to sequential SGD, to ... [Show full abstract] mitigate its large communication or synchronization costs at scale. In this paper, we introduce a general consistency condition covering communication-reduced and asynchronous distributed SGD implementations.",
+      "Distributed training of deep learning models on large-scale training data is typically conducted with asynchronous stochastic optimization to maximize the rate of updates, at the cost of additional noise introduced from asynchrony. In contrast, the synchronous approach is often thought to be impractical due to idle time wasted on waiting for straggling workers. We revisit these conventional beliefs in this paper, and examine the weaknesses of both approaches.",
+      "In this work, we show that synchronous SGD training, with the help of backup workers, can not only achieve better accuracy, but also reach convergence faster with respect to wall time, i.e. use more workers more efficiently.Read more ... High network communication cost for synchronizing gradients and parameters is the well-known bottleneck of distributed training. In this work, we propose TernGrad that uses ternary gradients to accelerate distributed deep learning in data parallelism."
+    ],
+    "title": "(PDF) Revisiting Distributed Synchronous SGD",
+    "url": "https://www.researchgate.net/publication/313857509_Revisiting_Distributed_Synchronous_SGD"
+  },
+  {
+    "description": "A review of the challenges in Synchronous distributed training and best solutions for stragglers and high latency.",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "Usually, a learning rate will be applied to avoid over or underfitting, and therefore, the SGD will be calculated as follows: ... A mini-batch version of the stochastic optimization algorithm computes the gradient over a mini-batch of size B instead of a single data point: ... Using distributed Synchronous Stochastic Gradient Descent (Sync-SGD), a root aggregator node splits the data into batches and fans-out requests to leaf nodes (worker machines) to process each batch and compute its gradient independently.",
+      "FIGURE 3: NETWORK CONDITIONS ACROSS DIFFERENT CONTINENTS (LEFT) AND THE COMPARISON BETWEEN CONNECTIONS INSIDE A CLUSTER (RIGHT), Image from paper \u00b7 Since the Sync-SGD algorithm is designed to wait until all workers return the loss function, it is sensitive to stragglers and high latency. The Sync-SGD architecture holds two defining properties: The running time is greater than or equal to the max of all workers\u2019 running time. Workers\u2019 running time has a lognormal distribution [3].",
+      "The latency of the leaf nodes greatly affects the efficiency of this architecture, and when scaling the number of parameters and data points, it can dramatically increase the training time. In this blog, I\u2019ll explore the Synchronous Stochastic Gradient Descent (Sync-SGD) method to distribute the training process of deep learning models.",
+      "As part of the research, they ran empirical comparisons of synchronous and Asynchronous distributed stochastic gradient descent algorithms on the Inception model (Szegedy et al., 2016) trained on ImageNet Challenge dataset (Russakovsky et al., 2015). FIGURE 6: CONVERGENCE OF SYNC-SGD AND ASYNC-SGD ON INCEPTION MODEL USING VARYING NUMBER OF MACHINES, by Rafal et al. (2017) From figure 6, we can see how using different numbers of workers and backup workers (N+b) has a clear effect on conversion time and rate."
+    ],
+    "title": "STRAGGLERS AND LATENCY IN SYNCHRONOUS DISTRIBUTED TRAINING OF DEEP ...",
+    "url": "https://towardsdatascience.com/stragglers-and-latency-in-synchronous-distributed-training-of-deep-learning-models-43783b0266d9/"
+  },
+  {
+    "description": "In this article you'll learn how to schedule learning rates by implementing and using various schedulers in Keras.",
+    "favicon_url": "https://you.com/favicon?domain=neptune.ai&size=128",
+    "snippets": [
+      "As learning unfolds, training loss decreases and accuracy increases (the downward trend in accuracy suggests that we need to do more epochs); nonetheless, when it comes to the validation set, model performance doesn\u2019t change too much (just over 80%). This will be our baseline model for benchmarking with the decay schedulers later. Keras offers a built-in standard decay policy, and it can be enabled using the ExponentialDecay scheduler.",
+      "Performance charts above from the current exercise imply that the linear decay (labeled as polynomial decay) performs the best, followed by the time-based decay.  \u00b7 Besides SGD with a learning rate scheduler, the second most influential optimization technique is adaptive optimizers, such as AdaGrad, RMSprop, or Adam.",
+      "This suggests that we need to introduce some regularization into our model architecture. Despite being a highly effective learner, Adam isn\u2019t always the optimal choice right off the bat without hyperparameter tuning. SGD, on the other hand, can perform significantly better with tuned learning rates or decay schedulers.",
+      "Early in the training, the learning rate is set to be large in order to reach a set of weights that are good enough. Over time, these weights are fine-tuned to reach higher accuracy by leveraging a small learning rate.  \u00b7 \ud83d\udca1 You might read articles where the learning rate schedule is defined as the (learning rate) decay only."
+    ],
+    "title": "How to Choose a Learning Rate Scheduler for Neural Networks",
+    "url": "https://neptune.ai/blog/how-to-choose-a-learning-rate-scheduler"
+  },
+  {
+    "description": "Previous works on stochastic gradient descent (SGD) often focus on its success. In this work, we construct worst-case optimization problems illustrating that, when not in the regimes that the previous works often assume, SGD can exhibit many strange and potentially undesirable behaviors.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled SGD with a Constant Large Learning Rate Can Converge to Local Maxima, by Liu Ziyin and 3 other authors View PDF \u00b7 Abstract:Previous works on stochastic gradient descent (SGD) often focus on its success. In this work, we construct worst-case optimization problems illustrating that, when not in the regimes that the previous works often assume, SGD can exhibit many strange and potentially undesirable behaviors. Specifically, we construct landscapes and data distributions such that (1) SGD converges to local maxima, (2) SGD escapes saddle points arbitrarily slowly, (3) SGD prefers sharp minima over flat ones, and (4) AMSGrad converges to local maxima.",
+      "From: Botao Li [view email] [v1] Sun, 25 Jul 2021 10:12:18 UTC (264 KB) [v2] Wed, 22 Sep 2021 02:20:17 UTC (362 KB) [v3] Mon, 14 Mar 2022 02:52:24 UTC (560 KB) [v4] Sat, 27 May 2023 16:03:16 UTC (561 KB) ... View a PDF of the paper titled SGD with a Constant Large Learning Rate Can Converge to Local Maxima, by Liu Ziyin and 3 other authors",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "We gratefully acknowledge support from the Simons Foundation, member institutions, and all contributors."
+    ],
+    "title": "[2107.11774] SGD with a Constant Large Learning Rate Can Converge ...",
+    "url": "https://arxiv.org/abs/2107.11774"
+  },
+  {
+    "description": "\ud83e\udde0\ud83d\udcac Articles I wrote about machine learning, archived from MachineCurve.com. - christianversloot/machine-learning-articles",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "\ud83e\udde0\ud83d\udcac Articles I wrote about machine learning, archived from MachineCurve.com. - machine-learning-articles/problems-with-fixed-and-decaying-learning-rates.md at main \u00b7 christianversloot/machine-learning-articles",
+      "Do not use them blindly, but use your common sense - if they don't work, perhaps try SGD with one of the other options instead.) In 2017, in two papers, Smith (2017) and Smith & Topin (2017) produced an interesting idea: what if you can determine the most optimal learning rate empirically? This is the premise behind the Learning Rate Range Test, which essentially allows you to test a range of learning rates by training the model once, but then with exponentially increasing learning rate.",
+      "For fixed learning rates, we will compare SGD learning rates that are either too large or too small with the baseline scenario, which is the Keras default learning rate for the SGD optimizer. For learning rate decay, we'll show you how it improves the learning process, but why setting the default one in advance and choosing a decay scheme might still influence the training results.",
+      "For example, use the LR Range Test with open source libraries like the Keras LR Finder to find a good learning rate empirically, and don't make guesses yourself. Try cyclical learning rates and/or adaptive optimizers for some time, but make sure to compare them with traditional SGD with e.g. fine-tuned learning rate decay too."
+    ],
+    "title": "machine-learning-articles/problems-with-fixed-and-decaying-lea...",
+    "url": "https://github.com/christianversloot/machine-learning-articles/blob/main/problems-with-fixed-and-decaying-learning-rates.md"
+  },
+  {
+    "description": "When it comes to training deep neural networks, one of the crucial factors that significantly influences model performance is the learning rate. The learning rate determines the size of the steps\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "When it comes to training deep neural networks, one of the crucial factors that significantly influences model performance is the learning\u2026",
+      "In essence, the learning rate controls the amount by which we update the parameters of the model during each iteration of the optimization algorithm, such as stochastic gradient descent (SGD) or its variants. A learning rate that is too high can lead to overshooting the optimal solution, causing oscillations or divergence in the optimization process. On the other hand, a learning rate that is too low can result in slow convergence and potentially get stuck in local minima.",
+      "import tensorflow as tf from tensorflow.keras.optimizers import SGD from tensorflow.keras.callbacks import LearningRateScheduler def step_decay(epoch): initial_lr = 0.1 drop = 0.5 epochs_drop = 10 lr = initial_lr * math.pow(drop, math.floor((1+epoch)/epochs_drop)) return lr model = create_model() # Create your model here sgd = SGD(lr=0.0, momentum=0.9) lr_scheduler = LearningRateScheduler(step_decay) model.compile(optimizer=sgd, loss='categorical_crossentropy', metrics=['accuracy']) Adaptive optimization algorithms, such as AdaGrad, RMSprop, and Adam, adaptively adjust the learning rates for e",
+      "By adapting the learning rate according to the characteristics of the optimization landscape, adaptive scheduling methods aim to achieve faster convergence and improved generalization performance. There are several popular adaptive learning rate scheduling techniques that have been widely adopted in the deep learning community. Let\u2019s take a closer look at some of them: Learning rate schedulers dynamically adjust the learning rate during training according to a predefined schedule. One common example is the step decay scheduler, which reduces the learning rate by a certain factor after a fixed number of epochs or iterations."
+    ],
+    "title": "Adaptive Learning Rate Scheduling: Optimizing Training in Deep ...",
+    "url": "https://medium.com/@zhonghong9998/adaptive-learning-rate-scheduling-optimizing-training-in-deep-networks-14d4f95a45d6"
+  },
+  {
+    "description": "In the first part of this post, we studied the Stochastic Gradient Descent optimizer and discussed five problems that could hamper training of Deep Learning models: The problem posed by local minima\u2026",
+    "favicon_url": "https://you.com/favicon?domain=julsimon.medium.com&size=128",
+    "snippets": [
+      "In the first part of this post, we studied the Stochastic Gradient Descent optimizer and discussed five problems that could hamper training\u2026",
+      "Some researchers now question that adaptive optimizers are the best choice for deep neural networks, as illustrated by \u201cThe Marginal Value of Adaptive Gradient Methods in Machine Learning\u201d (Ashia Wilson et al., 2017). This paper show that well-tuned SGD with learning rate decay at specific epochs ends up outperforming all adaptive optimizers: \u201cDespite the fact that our experimental evidence demonstrates that adaptive methods are not advantageous for machine learning, the Adam algorithm remains incredibly popular.",
+      "Combining random weight initialization and a very small learning rate is a proven technique to avoid first-order saddle points. Modern optimizers should be able to break out of first-order and second-order saddle points. It doesn\u2019t look like we have an off-the-shelf solution for higher-order ones at the moment. Sharing gradients during distributed training can become a severe performance bottleneck: the SignSGD optimizer solves the issue with no loss of accuracy.",
+      "RMSProp (2012) and AdaDelta (2012) solve this problem by decaying the accumulated sum before adding the new gradient. This prevents the sum from exploding and the learning rates from going to zero. Adam (2015) adds momentum to AdaDelta, further focusing progress in the direction of steepest descent. Here\u2019s a great visualization. The adaptive optimizers race to the minimum, momentum and NAG go for a walk in the park before heading out to the right spot\u2026 and Grand Pa SGD gets there too but really slowly."
+    ],
+    "title": "Tumbling down the SGD rabbit hole \u2014 part 2 | by Julien Simon ...",
+    "url": "https://julsimon.medium.com/tumbling-down-the-sgd-rabbit-hole-part-2-bed3be4761d3"
+  },
+  {
+    "description": "In papers such as this I often see training curves with this kind of shape: In this case SGD was used with a factor of 0.9 and learning rate decreasing by a factor of 10 every 30 epochs. Why is t...",
+    "favicon_url": "https://you.com/favicon?domain=datascience.stackexchange.com&size=128",
+    "snippets": [
+      "Learn more about Teams ... In this case SGD was used with a factor of 0.9 and learning rate decreasing by a factor of 10 every 30 epochs. Why is there such a large decrease in error when the learning rate is changed? Why does the validation error begin to increase after the initial drop, whereas the training error continues decreasing?",
+      "To keep in mind is that a larger learning rate can jump over smaller local minima and help you find a better minima, which it can't jump over. Also, it is generally the training error that becomes better, and the validation error becomes worse as you start to overfit on the training data.",
+      "2 Why does Faster R-CNN use SGD optimizer instead of Adam? ... My thesis supervisor published a paper from my MA thesis with herself as first author without my consent",
+      "11 Why is learning rate causing my neural network's weights to skyrocket? ... 8 Why is taking the gradient of the average error in SGD not correct, but rather the average of the gradients of single errors?"
+    ],
+    "title": "optimization - Why does decreasing the SGD learning rate cause ...",
+    "url": "https://datascience.stackexchange.com/questions/23213/why-does-decreasing-the-sgd-learning-rate-cause-a-massive-increase-in-accuracy"
+  },
+  {
+    "description": "Asynchronous stochastic gradient descent (ASGD) is a computationally efficient algorithm, which speeds up deep learning training and plays an importan\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "We build a real distributed training cluster, and use it to evaluate DASGD on Cifar10 and ImageNet datasets. Experiment results confirm the superior performance of DASGD. More specifically, our DASGD has nearly the same test accuracy as SGD on Cifar10 and ImageNet, and only uses around 27.6% and 40.8% training time that of SGD, respectively. The remainder of this paper is organized as follows.",
+      "Finally, we build a real distributed training cluster to evaluate our DASGD on Cifar10 and ImageNet datasets. Compared with four SOTA baselines, experiment results confirm the superior performance of DASGD. More specifically, our DASGD has nearly the same test accuracy as SGD on Cifar10 and ImageNet, and only uses around 27.6% and 40.8% training time that of SGD, respectively. As one of the most important optimization algorithms, stochastic gradient descent (SGD) [1] plays an indispensable role in deep learning.",
+      "Author links open overlay panelTao Tan a, Hong Xie a, Yunni Xia b, Xiaoyu Shi c, Mingsheng Shang cShow more ... Asynchronous stochastic gradient descent (ASGD) is a computationally efficient algorithm, which speeds up deep learning training and plays an important role in distributed deep learning.",
+      "The sequential execution manner of SGD makes it time-consuming on large-scale datasets. ASGD was proposed to speed it up. However, ASGD suffers from the stale gradient problem. This problem seriously affects the model performance and even causes the divergence of model training. To address this issue, this paper designs a dynamic adjustment scheme via the momentum algorithm."
+    ],
+    "title": "Asynchronous SGD with stale gradient dynamic adjustment for deep ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0020025524011344"
+  },
+  {
+    "description": "Because distributed SGD has been demonstrated to exhibit linear convergence speedup w.r.t the number of workers in various optimization settings, large-batch training can fully exploit the computational power offered by high parallelism in a large-scale cluster. However, large-batch training poses challenges that need attention, including increased memory requirements, potential decay ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Because distributed SGD has been demonstrated to exhibit linear convergence speedup w.r.t the number of workers in various optimization settings, large-batch training can fully exploit the computational power offered by high parallelism in a large-scale cluster. However, large-batch training poses challenges that need attention, including increased memory requirements, potential decay in model generalization, and the need for more complicated hyperparameter tuning.",
+      "To decrease communication frequency in large-scale distributed training, an alternative model-synchronization algorithm, known as local distributed SGD or local SGD, has been proposed. Local SGD allows workers to update local models for multiple iterations and only synchronize models with the PS periodically to maintain the most current global model (Fig. 7d). In addition to concerns about synchronization overhead, allowing local updates in the worker implies more exploration in the existence of local optima with distributed SGD, potentially resulting in enhanced optimization results.",
+      "AdaComm suggests an optimal strategy for local SGD convergence concerning synchronization frequency: starting with infrequent synchronization can reduce communication delay and improve convergence rate initially; increasing synchronization frequency gradually over time contributes to achieving lower optimization error. Lin et al. [94] propose two local SGD variants: Post-local SGD, aiming to reach high generalization, and Hierarchical Local SGD, to optimize the trade-off between computation and communication. Large-minibatch distributed SGD has advantages in training speed, but it often does not generalize as well as local SGD [137]. Post-local SGD closes this generalization gap by adding large-minibatch local SGD as the second training phase after the initial phase of standard minibatch distributed SGD.",
+      "Workers apply local SGD, synchronize their models aperiodically through gossip within an edge, and synchronizes models aperiodically across edges via a global PS. Drawing on the convergence analysis of this synchronization strategy, TT-HF adjusts the learning rate and synchronization frequencies within the edge and globally adaptively to achieve the optimal trade-off among delay, model accuracy, and energy consumption."
+    ],
+    "title": "Communication-Efficient Large-Scale Distributed Deep Learning: ...",
+    "url": "https://arxiv.org/html/2404.06114v1"
+  },
+  {
+    "description": "Download Citation | Revisiting Distributed Synchronous SGD | The recent success of deep learning approaches for domains like speech recognition (Hinton et al., 2012) and computer vision (Ioffe & Szegedy,... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "In-network aggregation facilitates accelerated distributed deep learning by utilizing a programmable switch to aggregate gradient packets. However, a straggler problem should be addressed to avoid performance degradation in terms of training time. In this paper, we propose a straggler-aware in-network aggregation (SAINA) scheme to mitigate the straggler problem while preventing accuracy degradation. In SAINA, the programmable switch aggregates local gradients of the fastest $k$ workers to exclude stragglers and changes $k$ adaptively to balance the tradeoff between training speed and accuracy.",
+      "FedGSync: Jointly Optimized Weak Synchronization and Gradient Transmission for Fast Distributed Machine Learning in Heterogeneous WAN ... Khaled A. Harras ... Federated Learning (FL) enabled creating models that are competitive to centralized Machine Learning models, without compromising user privacy. Participating FL clients train local models on their data and only share model weights.",
+      "In this work, we show that synchronous SGD training, with the help of backup workers, can not only achieve better accuracy, but also reach convergence faster with respect to wall time, i.e. use more workers more efficiently. ... To read the full-text of this research, you can request a copy directly from the authors. ... ... Gradient Descent is the primary incremental optimization technique used in FL optimization approaches.",
+      "Existing state-of-the-art methods like CheckFreq and Elastic Horovod need to back up a copy of the model state (i.e., parameters and optimizer states) in memory, which is costly for large models and leads to non-trivial overhead. This paper presents SWIFT, a novel recovery design for distributed deep neural network training that significantly reduces the failure recovery overhead without affecting training throughput and model accuracy."
+    ],
+    "title": "Revisiting Distributed Synchronous SGD",
+    "url": "https://www.researchgate.net/publication/301880432_Revisiting_Distributed_Synchronous_SGD"
+  },
+  {
+    "description": "Modern large scale machine learning applications require stochastic optimization algorithms to be implemented on distributed computational architectures. A key bottleneck is the communication overhead for exchanging in\u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "The experiments and results are reported in Section 5. Finally, we conclude this paper in Section 6. Researchers have proposed many approaches to optimize the SGD algorithm and communication pattern. The underlying idea is to relax the synchronization restriction to avoid waiting for slow workers. The HOGWILD algorithm (?) allows workers to read and write global model at will, which has been proven to converge for sparse learning problems. Downpour SGD (?) extended HOGWILLD to distributed-memory systems, which run multiple minibatches before exchanging gradients so as to reduce communication cost.",
+      "Large batch training (?; ?; ?) try to scale data-parallelism SGD to more computing nodes without reducing the workload on each node. However, increasing batch size often leads to a significant loss in test accuracy (?; ?), and sophisticated hyper-parameter tuning like learning rate control (?; ?; ?) must be used to get better convergence accuracy.",
+      "However, most of gradient sparsification techniques consider only synchronous parallelism and cannot be applied in asynchronous scenarios, such as asynchronous distributed training for federated learning at mobile devices. In this paper, we present a dual-way gradient sparsification approach (DGS) that is suitable for asynchronous distributed training.",
+      "All experiments decrease the learning rate by the factor of 0.1 at epoch 30 and 40 out of 50 epochs. To simplify comparisons, we do not include other training tricks for improving accuracy. Speech Recognition: The AN4 dataset contains 948 training and 130 test utterances. We train a 5-layer LSTM with 800 hidden units, and the hyperparameters settings are: epochs, ... Hardware: the distributed environment is configured as a 32-GPU cluster with eight machines, each of which is equipped with 2 Intel Xeon E5-2660-V3 CPUs and 4 NVIDIA Tesla K80 GPUs."
+    ],
+    "title": "[1910.10929] Gradient Sparification for Asynchronous Distributed ...",
+    "url": "https://ar5iv.labs.arxiv.org/html/1910.10929"
+  },
+  {
+    "description": "Discover the power of Stochastic Gradient Descent (SGD) in machine learning. Learn what SGD is and how it optimizes model training. Boost your hiring process with Alooba's comprehensive online assessment platform.",
+    "favicon_url": "https://you.com/favicon?domain=www.alooba.com&size=128",
+    "snippets": [
+      "Various optimization techniques, including momentum, adaptive learning rates, and regularization methods like L1 and L2 regularization, can be employed to enhance convergence and prevent overfitting. 5. Model Evaluation and Monitoring: Assessing the performance of the model trained using SGD is essential. Metrics such as accuracy, precision, recall, and F1 score can be utilized to evaluate the model's predictive power and determine if further optimization is necessary.",
+      "Choosing an appropriate learning rate is vital to ensure the model converges efficiently without overshooting the optimal solution. 3. Mini-Batch Selection: SGD often utilizes mini-batches, subsets of the training data, to compute the loss function and gradients.",
+      "SGD in a nutshell: SGD is a technique used to find the optimal configuration of a machine learning model by minimizing an objective function. This objective function, also known as a loss function, quantifies how well the model performs on a given task. How does SGD work? The concept is simple: SGD trains machine learning models by iteratively updating the model's parameters in small steps based on the gradients of the loss function.",
+      "By updating the parameters based on these smaller chunks of data, SGD is computationally efficient and can handle vast amounts of training samples. ... Efficiency: SGD's ability to perform updates with small batches of data makes it suitable for handling large datasets that may not fit into memory. Convergence: SGD can converge to a reasonable solution quickly, especially when the loss function is convex. Generalization: By utilizing random batches, SGD often provides better generalization abilities in learning from noisy data compared to other optimization algorithms."
+    ],
+    "title": "SGD: Everything You Need to Know When Assessing SGD Skills",
+    "url": "https://www.alooba.com/skills/concepts/machine-learning/sgd/"
+  }
+]

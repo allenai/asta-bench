@@ -1,0 +1,267 @@
+[
+  {
+    "description": "Simultaneous machine translation (SiMT) generates translation while reading the whole source sentence. However, existing SiMT models are typically trained using the same reference disregarding the varying amounts of available source information at different latency.",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "Abstract: Simultaneous machine translation (SiMT) generates translation while reading the whole source sentence. However, existing SiMT models are typically trained using the same reference disregarding the varying amounts of available source information at different latency.",
+      "Training the model with ground-truth at low latency may introduce forced anticipations, whereas utilizing reference consistent with the source word order at high latency results in performance degradation. Consequently, it is crucial to train the SiMT model with appropriate reference that avoids forced anticipations during training while maintaining high quality.",
+      "In this paper, we propose a novel method that provides tailored reference for the SiMT models trained at different latency by rephrasing the ground-truth. Specifically, we introduce the tailor, induced by reinforcement learning, to modify ground-truth to the tailored reference.",
+      "The SiMT model is trained with the tailored reference and jointly optimized with the tailor to enhance performance. Importantly, our method is applicable to a wide range of current SiMT approaches."
+    ],
+    "title": "Simultaneous Machine Translation with Tailored Reference | OpenReview",
+    "url": "https://openreview.net/forum?id=q88QSsc75T"
+  },
+  {
+    "description": "After more than 70 years of evolution, great achievements have been made in machine translation. Especially in recent years, translation quality has b\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "We then introduce NMT in more detail, including the basic framework and the current dominant framework, Transformer, as well as multilingual translation models to deal with the data sparseness problem. In addition, we introduce cutting-edge simultaneous translation methods that achieve a balance between translation quality and latency."
+    ],
+    "title": "Progress in Machine Translation - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2095809921002745"
+  },
+  {
+    "description": "Simultaneous Machine Translation (SiMT) generates translations while reading the source sentence, necessitating a policy to determine the optimal timing for reading and generating words. Despite the remarkable performance achieved by Large Language Models (LLM) across various NLP tasks, existing ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Simultaneous Machine Translation (SiMT) generates translations while reading the source sentence, necessitating a policy to determine the optimal timing for reading and generating words. Despite the remarkable performance achieved by Large Language Models (LLM) across various NLP tasks, existing SiMT methods predominantly focus on conventional transformers, employing a single model to concurrently determine the policy and generate the translations.",
+      "Abstract page for arXiv paper 2402.13036: SiLLM: Large Language Models for Simultaneous Machine Translation",
+      "However, given the complexity of SiMT, it is challenging to effectively address both tasks with a single model. Therefore, there is a need to decouple the SiMT task into policy-decision and translation sub-tasks. We propose SiLLM, which delegates the two sub-tasks to separate agents, thereby incorporating LLM into SiMT.",
+      "The policy-decision agent is managed by a conventional SiMT model, responsible for determining the translation policy. The translation agent, leveraging the capabilities of LLM, generates translation using the partial source sentence. The two agents collaborate to accomplish SiMT."
+    ],
+    "title": "[2402.13036] SiLLM: Large Language Models for Simultaneous Machine ...",
+    "url": "https://arxiv.org/abs/2402.13036"
+  },
+  {
+    "description": "Simultaneous machine translation (SiMT) aims to translate a continuous input text stream into another language with the lowest latency and highest quality possible. The translation thus has to start with an incomplete \u2026",
+    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
+    "snippets": [
+      "The first approach offers a heuristically guided latency while the second one fixes it to an arbitrary value. The third one learns a stochastic policy to find the desired quality-latency trade-off. But before going into full details of methods, we now introduce the common metrics used to measure the latency of a given SiMT model.",
+      "Simultaneous machine translation (SiMT) aims to translate a continuous input text stream into another language with the lowest latency and highest quality possible. The translation thus has to start with an incomplete source text, which is read progressively, creating the need for anticipation.",
+      "In I. Guyon, U. V. Luxburg, S. Bengio, H. Wallach, R. Fergus, S. Vishwanathan, and R. Garnett, editors, Advances in Neural Information Processing Systems 30, pages 5998\u20136008. Curran Associates, Inc. Young et al. (2014) Peter Young, Alice Lai, Micah Hodosh, and Julia Hockenmaier. 2014. From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions.",
+      "In this paper, we seek to understand whether the addition of visual information can compensate for the missing source context. To this end, we analyse the impact of different multimodal approaches and visual features on state-of-the-art SiMT frameworks."
+    ],
+    "title": "[2009.07310] Simultaneous Machine Translation with Visual Context",
+    "url": "https://ar5iv.labs.arxiv.org/html/2009.07310"
+  },
+  {
+    "description": "Various methods for the evaluation for machine translation have been employed. This article focuses on the evaluation of the output of machine translation, rather than on performance or usability evaluation. A typical way for lay people to assess machine translation quality is to translate ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "The evaluations were done on the basis of a metric, modelled on a standard US government metric used to rate human translations. This was good from the point of view that the metric was \"externally motivated\", since it was not specifically developed for machine translation.",
+      "Some state-of-the-art overview on both manual and automatic translation evaluation introduced the recently developed translation quality assessment (TQA) methodologies, such as the crowd-sourced intelligence Amazon Mechanical Turk utilization, statistical significance testing, re-visiting traditional criteria with newly designed strategies, as well as MT quality estimation (QE) shared tasks from the annual workshop on MT (WMT) and corresponding models that do not rely on human offered reference translations.",
+      "Measuring systems based on adequacy and fluency, along with informativeness is now the standard methodology for the ARPA evaluation program. In the context of this article, a metric is a measurement. A metric that evaluates machine translation output represents the quality of the output.",
+      "That is, a metric should score highly translations that humans score highly, and give low scores to those humans give low scores. Human judgment is the benchmark for assessing automatic metrics, as humans are the end-users of any translation output. The measure of evaluation for metrics is correlation with human judgment.",
+      "Good metric performance, across text types or domains, is important for the reusability of the metric. A metric that only works for text in a specific domain is useful, but less useful than one that works across many domains\u2014because creating a new metric for every new evaluation or domain is undesirable."
+    ],
+    "title": "Evaluation of machine translation - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Evaluation_of_machine_translation"
+  },
+  {
+    "description": "Simultaneous machine translation (SiMT) aims to translate a continuous input text stream into another language with the lowest latency and highest quality possible. The translation thus has to start with an incomplete source text, which is read progressively, creating the need for anticipation.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Simultaneous machine translation (SiMT) aims to translate a continuous input text stream into another language with the lowest latency and highest quality possible. The translation thus has to start with an incomplete source text, which is read progressively, creating the need for anticipation.",
+      "Abstract page for arXiv paper 2009.07310: Simultaneous Machine Translation with Visual Context",
+      "In this paper, we seek to understand whether the addition of visual information can compensate for the missing source context. To this end, we analyse the impact of different multimodal approaches and visual features on state-of-the-art SiMT frameworks.",
+      "arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website."
+    ],
+    "title": "[2009.07310] Simultaneous Machine Translation with Visual Context",
+    "url": "https://arxiv.org/abs/2009.07310"
+  },
+  {
+    "description": "Simultaneous machine translation aims at solving the task of real-time translation by starting to translate before consuming the full input, which poses challenges in terms of balancing quality and latency of the translation. The wait-k\ud835\udc58kitalic_k policy offers a solution by starting to translate ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Although Vietnamese is from a different language family, it deploys a similar word order (i.e. Subject-Verb-Object) to English and German and we believe that more challenges might emerge when dealing with language directions with a different word order. Additionally, we evaluate latency using common SiMT latency metrics such as AL, which are sentence-level and do not reflect the nature of a streaming scenario Iranzo-S\u00e1nchez et al.",
+      "In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), pages 1538\u20131548, Hong Kong, China. Association for Computational Linguistics. Cettolo et al. (2015) Mauro Cettolo, Jan Niehues, Sebastian St\u00fcker, Luisa Bentivogli, Roldano Cattoni, and Marcello Federico. 2015. The IWSLT 2015 evaluation campaign.",
+      "It is not as good as you think! evaluating simultaneous machine translation on interpretation data. Zhao et al. (2023) Libo Zhao, Kai Fan, Wei Luo, Wu Jing, Shushu Wang, Ziqian Zeng, and Zhongqiang Huang. 2023. Adaptive policy with wait-k model for simultaneous translation. In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, pages 4816\u20134832, Singapore.",
+      "Iranzo-S\u00e1nchez et al. (2021) Javier Iranzo-S\u00e1nchez, Jorge Civera, and Alfons Juan. 2021. Stream-level latency evaluation for simultaneous machine translation."
+    ],
+    "title": "Fixed and Adaptive Simultaneous Machine Translation Strategies ...",
+    "url": "https://arxiv.org/html/2407.13469v1"
+  },
+  {
+    "description": "Yan Huang, Wei Liu 11institutetext: College of Software, Zhengzhou University of Light Industry, 11email: lwei230215@gmail.com \u00b7 In recent years, with the rapid development of deep learning technology, large language models (LLMs) such as BERT and GPT have achieved breakthrough results in ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Machine translation (MT), as one of the core tasks of natural language processing, has also benefited from the development of large language models and achieved a qualitative leap. Despite the significant progress in translation performance achieved by large language models, machine translation still faces many challenges. Therefore, in this paper, we construct the dataset Euas-20 to evaluate the performance of large language models on translation tasks, the translation ability on different languages, and the effect of pre-training data on the translation ability of LLMs for researchers and developers.",
+      "Machine translation, as one of the core tasks of natural language processing, has also benefited from the development of large language models and achieved a qualitative leap. However, machine translation still faces challenges, including translation of low-resource languages and maintaining coherence and fluency of translation in long texts [21]. ... In order to evaluate the real translation capabilities of large language models, we constructed a dataset called Euas-20.",
+      "Machine Translation (MT) is a technology that uses computers to automatically translate text from one language to another. In recent years, with the rapid development of artificial intelligence and natural language processing technology, especially the emergence of large language models (e.g., OpenAI\u2019s GPT series and Google\u2019s BERT), the ability of machine translation has been significantly improved.",
+      "We also found that when LLMs met words that they had not encountered during model training, the models could not understand or process them accurately due to the lack of training on these words. The purpose of this paper is to review and analyse the performance of the current large language model on translation tasks, to explore whether the large language model can effectively model the correspondence between different languages and the factors affecting translation, for the reference of researchers and developers."
+    ],
+    "title": "Evaluating the Translation Performance of Large Language Models ...",
+    "url": "https://arxiv.org/html/2408.03119v1"
+  },
+  {
+    "description": "The success of Transformer architecture has seen increased interest in machine translation (MT). The translation quality of neural network-based MT transcends that of translations derived using statistical methods. This growth in MT research has entailed the development of accurate automatic ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "The success of Transformer architecture has seen increased interest in machine translation (MT). The translation quality of neural network-based MT transcends that of translations derived using statistical methods. This growth in MT research has entailed the development of accurate automatic evaluation metrics that allow us to track the performance of MT.",
+      "For semantic similarity, to evaluate how semantically similar the hypothesis and reference are, the pre-trained language model was fine-tuned on the semantic textual similarity (STS-B) dataset. The purpose of this dataset is evaluating the degree of semantic similarity between two sentences.",
+      "Therefore, it is necessary to survey the existing automatic evaluation metrics of MT to enable both established and new researchers to quickly understand the trend of MT evaluation over the past few years. In this survey, we present the trend of automatic evaluation metrics. To better understand the developments in the field, we provide the taxonomy of the automatic evaluation metrics.",
+      "In addition, human evaluators may bring their own biases and preconceptions to the evaluation process, leading to inconsistent results. In contrast, automatic evaluation metrics are cost-effective and easy to use for comparing multiple systems, but their quality is not as good as human evaluation. Research on automatic evaluation metrics that mimic or replace human evaluation methods is being conducted to address this limitation."
+    ],
+    "title": "A Survey on Evaluation Metrics for Machine Translation",
+    "url": "https://www.mdpi.com/2227-7390/11/4/1006"
+  },
+  {
+    "description": "Upload an image to customize your repository\u2019s social media preview. Images should be at least 640\u00d7320px (1280\u00d7640px for best display) \u00b7 EMNLP 2021 \u00b7 Shaolei Zhang, Yang Feng \u00b7 Edit social preview",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "To fulfill the requirements of different translation quality and latency in practical applications, the previous methods usually need to train multiple SiMT models for different latency levels, resulting in large computational costs. In this paper, we propose a universal SiMT model with Mixture-of-Experts Wait-k Policy to achieve the best translation quality under arbitrary latency with only one trained model.",
+      "Simultaneous machine translation (SiMT) generates translation before reading the entire source sentence and hence it has to trade off between translation quality and latency.",
+      "Implemented in one code library."
+    ],
+    "title": "Universal Simultaneous Machine Translation with Mixture-of-Experts ...",
+    "url": "https://paperswithcode.com/paper/universal-simultaneous-machine-translation"
+  },
+  {
+    "description": "Machine translation has already become part of our everyday life. This chapter gives an overview of machine translation approaches. Statistical machine translation was a dominant approach over the past 20 years. It brought many cases of practical use. It is described in more detail in this chapter.",
+    "favicon_url": "https://you.com/favicon?domain=www.intechopen.com&size=128",
+    "snippets": [
+      "In recent years, a framework called multidimensional quality metrics (MQM) [9] was developed for evaluating the quality of both human and machine translations. It includes over 100 issue types that cover all of the major translation quality evaluation metrics. For the specific translation quality judgement task, relevant issues may be chosen from MQM. The focus of this section is only on the evaluation of MT quality, whereas human translation is taken as the gold standard.",
+      "In this section, state-of-the-art MT evaluation metrics were investigated briefly. Only the most important characteristics of them were exposed. For a more elaborate description of each metric, the reader is advised to use the provided references to literature. It should be noted that despite the well-known problems with BLEU, and the availability of many other metrics, MT system developers have continued to use BLEU as the primary measure of translation quality.",
+      "Highly inflectional languages are hard to process, especially as target languages. As statistical machine translation has almost reached the limits of its capacity, neural machine translation is becoming the technology of the future. This chapter also describes the evaluation of machine translation quality. It covers manual and automatic evaluations. Traditional and recently proposed metrics for automatic machine translation evaluation are described.",
+      "Despite the well-known problems with BLEU, and the availability of many other metrics, MT system developers have continued to use BLEU as the primary measure of translation quality. MT quality is continually improving. Despite that, there are still a number of flaws in machine translation output. To make the translation correct, post-editing machine translation output is proposed to be integrated into the translation processes."
+    ],
+    "title": "Machine Translation and the Evaluation of Its Quality | IntechOpen",
+    "url": "https://www.intechopen.com/chapters/68953"
+  },
+  {
+    "description": "Simultaneous speech translation (SimulST) is a demanding task that involves generating translations in real-time while continuously processing speech input. This paper offers a comprehensive overview of the recent developments in SimulST research, focusing on four major challenges.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Simultaneous speech translation (SimulST) is a demanding task that involves generating translations in real-time while continuously processing speech input. This paper offers a comprehensive overview of the recent developments in SimulST research, focusing on four major challenges. Firstly, the complexities associated with processing lengthy and continuous speech streams pose significant hurdles.",
+      "There is no single evaluation metric that can simultaneously address both quality and latency Kano et al. (2022). Achieving a balance between quality and latency is indeed difficult, especially in the context of SimulST. ... Addressing data scarcity issues. Unlike related fields such as automatic speech recognition (ASR) and machine translation (MT) which have abundant training data Ko et al.",
+      "BLEU Papineni et al. (2002) is one of the most commonly used metrics for evaluating the quality of MT based on measuring the closeness of a machine translation to human reference. The score ranges from 0 to 1, with higher scores indicating better translation quality.",
+      "Section 4 introduces the studies related to (c) quality and latency which puts forward two kinds of metrics to ensure a comprehensive evaluation. Section 5 describes studies of the augmented training methods including data enhancement and multi-task learning to tackle the (d) data scarcity issues. Finally, Section 6 anticipates some promising directions for future SimulST research, including studies in multilingual SimulST and combining them with large language models. SimulST needs to read long-form streaming inputs and generate partial translation at inference time."
+    ],
+    "title": "Recent Advances in End-to-End Simultaneous Speech Translation",
+    "url": "https://arxiv.org/html/2406.00497v1"
+  },
+  {
+    "description": "Simultaneous machine translation (SiMT) generates translation while reading the whole source sentence. However, existing SiMT models are typically trained using the same reference disregarding the varying amounts of available source information at different latency.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Simultaneous machine translation (SiMT) generates translation while reading the whole source sentence. However, existing SiMT models are typically trained using the same reference disregarding the varying amounts of available source information at different latency.",
+      "Abstract page for arXiv paper 2310.13588: Simultaneous Machine Translation with Tailored Reference",
+      "Training the model with ground-truth at low latency may introduce forced anticipations, whereas utilizing reference consistent with the source word order at high latency results in performance degradation. Consequently, it is crucial to train the SiMT model with appropriate reference that avoids forced anticipations during training while maintaining high quality.",
+      "In this paper, we propose a novel method that provides tailored reference for the SiMT models trained at different latency by rephrasing the ground-truth. Specifically, we introduce the tailor, induced by reinforcement learning, to modify ground-truth to the tailored reference."
+    ],
+    "title": "[2310.13588] Simultaneous Machine Translation with Tailored Reference",
+    "url": "https://arxiv.org/abs/2310.13588"
+  },
+  {
+    "description": "Statistical machine translation (SMT) is a machine translation approach where translations are generated on the basis of statistical models whose parameters are derived from the analysis of bilingual text corpora. The statistical approach contrasts with the rule-based approaches to machine ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [],
+    "title": "Statistical machine translation - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Statistical_machine_translation"
+  },
+  {
+    "description": "When the complete source sentence is provided, Large Language Models (LLMs) perform excellently in offline machine translation even with a simple prompt *\"Translate the following sentence from [src lang] into [tgt lang]:\"*. However, in many real scenarios, the source tokens arrive in a streaming ...",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [
+      "When the complete source sentence is provided, Large Language Models (LLMs) perform excellently in offline machine translation even with a simple prompt *\"Translate the following sentence from [src lang] into [tgt lang]:\"*. However, in many real scenarios, the source tokens arrive in a streaming manner and simultaneous machine translation (SiMT) is required, then the **efficiency** and **performance** of decoder-only LLMs are significantly limited by their auto-regressive nature.",
+      "Experimental results demonstrate that, even with limited SFT data, our approach achieves state-of-the-art performance across various simultaneous translation benchmarks and different evaluation metrics, and preserves the original capabilities of offline translation. Moreover, EAST generalizes well to document-level SiMT without requiring specific fine-tuning, even beyond the offline translation model."
+    ],
+    "title": "LLMs Can Achieve High-quality Simultaneous Machine Translation ...",
+    "url": "https://openreview.net/forum?id=UqR2dFmfRB"
+  },
+  {
+    "description": "Simultaneous machine translation (SiMT) starts translating while receiving the streaming source inputs, and hence the source sentence is always incomplete during translating. Different from the full-sentence MT using the conventional seq-to-seq architecture, SiMT often applies prefix-to-prefix ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Simultaneous machine translation (SiMT) starts translating while receiving the streaming source inputs, and hence the source sentence is always incomplete during translating. Different from the full-sentence MT using the conventional seq-to-seq architecture, SiMT often applies prefix-to-prefix architecture, which forces each target word to only align with a partial source prefix to adapt to the incomplete source in streaming inputs.",
+      "Experiments on two representative SiMT methods, including the state-of-the-art adaptive policy, show that our method successfully reduces the position bias and thereby achieves better SiMT performance. From: Shaolei Zhang [view email] [v1] Thu, 17 Mar 2022 03:18:46 UTC (566 KB) [v2] Wed, 23 Mar 2022 14:08:29 UTC (566 KB) ... Download a PDF of the paper titled Reducing Position Bias in Simultaneous Machine Translation with Length-Aware Framework, by Shaolei Zhang and 1 other authors PDF ... arXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.",
+      "Download a PDF of the paper titled Reducing Position Bias in Simultaneous Machine Translation with Length-Aware Framework, by Shaolei Zhang and 1 other authors Download PDF"
+    ],
+    "title": "[2203.09053] Reducing Position Bias in Simultaneous Machine ...",
+    "url": "https://arxiv.org/abs/2203.09053"
+  },
+  {
+    "description": "Most existing simultaneous machine translation (SiMT) systems are trained and evaluated on offline translation corpora. We argue that SiMT systems should be trained and tested on real interpretation data. To illustrate this argument, we propose an interpretation test set and conduct a realistic ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Most existing simultaneous machine translation (SiMT) systems are trained and evaluated on offline translation corpora. We argue that SiMT systems should be trained and tested on real interpretation data. To illustrate this argument, we propose an interpretation test set and conduct a realistic evaluation of SiMT trained on offline translations.",
+      "Abstract page for arXiv paper 2110.05213: It is Not as Good as You Think! Evaluating Simultaneous Machine Translation on Interpretation Data",
+      "In the absence of interpretation training data, we propose a translation-to-interpretation (T2I) style transfer method which allows converting existing offline translations into interpretation-style data, leading to up-to 2.8 BLEU improvement. However, the evaluation gap remains notable, calling for constructing large-scale interpretation corpora better suited for evaluating and developing SiMT systems. From: Jinming Zhao Ms [view email] [v1] Mon, 11 Oct 2021 12:27:07 UTC (228 KB) ... View a PDF of the paper titled It is Not as Good as You Think! Evaluating Simultaneous Machine Translation on Interpretation Data, by Jinming Zhao and 4 other authors",
+      "View a PDF of the paper titled It is Not as Good as You Think! Evaluating Simultaneous Machine Translation on Interpretation Data, by Jinming Zhao and 4 other authors View PDF \u00b7 Abstract:Most existing simultaneous machine translation (SiMT) systems are trained and evaluated on offline translation corpora."
+    ],
+    "title": "[2110.05213] It is Not as Good as You Think! Evaluating Simultaneous ...",
+    "url": "https://arxiv.org/abs/2110.05213"
+  },
+  {
+    "description": "Simultaneous machine translation (SiMT) is usually done via sequence-level knowledge distillation (Seq-KD) from a full-sentence neural machine translation (NMT) model. However, there is still a significant performance gap between NMT and SiMT. In this work, we propose to leverage monolingual ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Simultaneous machine translation (SiMT) is usually done via sequence-level knowledge distillation (Seq-KD) from a full-sentence neural machine translation (NMT) model. However, there is still a significant performance gap between NMT and SiMT. In this work, we propose to leverage monolingual data to improve SiMT, which trains a SiMT student on the combination of bilingual data and external monolingual data distilled by Seq-KD.",
+      "Abstract page for arXiv paper 2212.01188: Improving Simultaneous Machine Translation with Monolingual Data",
+      "Preliminary experiments on En-Zh and En-Ja news domain corpora demonstrate that monolingual data can significantly improve translation quality (e.g., +3.15 BLEU on En-Zh). Inspired by the behavior of human simultaneous interpreters, we propose a novel monolingual sampling strategy for SiMT, considering both chunk length and monotonicity.",
+      "Experimental results show that our sampling strategy consistently outperforms the random sampling strategy (and other conventional typical NMT monolingual sampling strategies) by avoiding the key problem of SiMT -- hallucination, and has better scalability. We achieve +0.72 BLEU improvements on average against random sampling on En-Zh and En-Ja."
+    ],
+    "title": "[2212.01188] Improving Simultaneous Machine Translation with ...",
+    "url": "https://arxiv.org/abs/2212.01188"
+  },
+  {
+    "description": "The advent of transformers has fueled progress in machine translation. More recently large language models (LLMs) have come to the spotlight thanks to their generality and strong performance in a wide range of language tasks, including translation. Here we show that open-source LLMs perform ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Simultaneous machine translation (SiMT) systems strive to balance translation quality \u2013 commonly evaluated using the BLEU metric (Papineni et al., 2002) \u2013 with acceptable latency levels. This balance is managed through a \"policy\" that determines the timing of translation actions (i.e., a WRITE action) versus the reception of additional input (i.e., a READ action).",
+      "Recent research has also investigated policy training using binary search strategies (Guo et al., 2023) to optimize the translation quality improvement per token processed, and has conceptualized the translation actions as a hidden Markov transformer (Zhang and Feng, 2023), where hidden events indicate optimal translation output times. A promising area of research, related to this study, focuses on adapting encoder-decoder transformers like mBART (Liu et al., 2020b), which were initially developed for sentence-level translation, to the SiMT task.",
+      "More recently, large language models (LLMs) have demonstrated remarkable capabilities across a wide range of tasks, including offline machine translation (Xu et al., 2024; Zhu et al., 2023). Importantly, LLMs\u2019 ability to learn in-context enables a range of new capabilities, such as terminology-constrained translation (Moslem et al., 2023) and self-correction of translation errors (Feng et al., 2024). These and other developments raised the question whether LLMs can be leveraged for SiMT.",
+      "In Section 2 we provide an overview of recent SiMT literature. In Section 3 we describe our method and the datasets used for evaluating our method. In Section 4 we demonstrate the performance of our approach on the different datasets and language pairs. We conclude with a discussion of limitations and future directions and in Section 5. Figure 1: Model overview. Chunks of input audio are incrementally processed by Whisper (1), and the recognized words are stored in the buffer."
+    ],
+    "title": "LLMs Are Zero-Shot Context-Aware Simultaneous Translators",
+    "url": "https://arxiv.org/html/2406.13476v2"
+  },
+  {
+    "description": "Simultaneous interpretation (SI), the translation of one language to another in real time, starts translation before the original speech has finished. Its evaluation needs to consider both latency and quality. This trade-off is challenging especially for distant word order language pairs such ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "This means outputs synchronized with the source language are desirable based on the real SI situation, and it\u2019s a key for further progress in computational SI and simultaneous machine translation (SiMT). In this work, we propose an automatic evaluation metric for SI and SiMT focusing on word order synchronization.",
+      "For this reason, word order synchronization is essential to reduce latency and needs to be addressed as one of the aspects for its evaluation. We propose an evaluation metric to measure word order synchronization between source language inputs and target language outputs for SI and SiMT, inspired by previous work on automatic machine translation evaluation.",
+      "Interpreters avoid word reordering and keep source language word order as much as possible to achieve good quality and minimal delay with limited working memory. This is called the first-in-first-out (FIFO) strategy. While there have been growing research interests in computational approaches to SI, called Simultaneous Machine Translation (SiMT), most previous studies Gu et al.",
+      "On the other hand, \u201cevery year\u201d is translated at the beginning of the offline translation. This indicates the translation needs to wait until the end of this source speech segment, which increases the latency. ... In this work, we aim to evaluate this word order difference in SI and SiMT to estimate their possible latency increase."
+    ],
+    "title": "An Automatic Quality Metric for Evaluating Simultaneous Interpretation",
+    "url": "https://arxiv.org/html/2407.06650v2"
+  },
+  {
+    "description": "Simultaneous interpretation (SI) is when an interpreter translates the message from the source language to the target language in real-time. Unlike in consecutive interpreting, this way the natural flow of the speaker is not disturbed and allows for a fairly smooth output for the listeners.",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "IT specialists in the simultaneous interpretation field developed systems that can work alone or in combination with traditional interpretation hardware. Simultaneous interpretation apps are mobile systems that stream real-time audio on listeners' phones through local wifi or listeners' mobile data.",
+      "The process of simultaneous interpretation with traditional hardware commonly utilizes the following steps: The speaker talks into a microphone. His or her speech is broadcast to the interpreter who sits in a sound-proof interpreter booth and listens through headphones. As the interpreter listens to the speech, he or she translates it in real-time into a microphone.",
+      "A patent was received by an IBM employee Alan Gordon Finlay and was used sporadically before the Second World War. Finlay played an essential role in the design and development of SI equipment together with Edward Filene, the American businessman and philanthropist.",
+      "The translated speech of each interpreter would follow simultaneously with the delivery of the original speech, the only delay being that of recording the speech and the ability of the interpreter to translate directly and rapidly from the stenographic notes received from the recorder."
+    ],
+    "title": "Simultaneous interpretation - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Simultaneous_interpretation"
+  },
+  {
+    "description": "Simultaneous interpretation (SI), the translation of one language to another in real time, starts translation before the original speech has finished. Its evaluation needs to consider both latency and quality. This trade-off is challenging especially for distant word order language pairs such ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "This means outputs synchronized with the source language are desirable based on the real SI situation, and it\u2019s a key for further progress in computational SI and simultaneous machine translation (SiMT). In this work, we propose an automatic evaluation metric for SI and SiMT focusing on word order synchronization.",
+      "For this reason, word order synchronization is essential to reduce latency and needs to be addressed as one of the aspects for its evaluation. We propose an evaluation metric to measure word order synchronization between source language inputs and target language outputs for SI and SiMT, inspired by previous work on automatic machine translation evaluation.",
+      "Interpreters avoid word reordering and keep source language word order as much as possible to achieve good quality and minimal delay with limited working memory. This is called the first-in-first-out (FIFO) strategy. While there have been growing research interests in computational approaches to SI, called Simultaneous Machine Translation (SiMT), most previous studies Gu et al.",
+      "On the other hand, \u201cevery year\u201d is translated at the beginning of the offline translation. This indicates the translation needs to wait until the end of this source speech segment, which increases the latency. ... In this work, we aim to evaluate this word order difference in SI and SiMT to estimate their possible latency increase."
+    ],
+    "title": "A Word Order Synchronization Metric for Evaluating Simultaneous ...",
+    "url": "https://arxiv.org/html/2407.06650v1"
+  },
+  {
+    "description": "Abstract. Widely used learned metrics for machine translation evaluation, such as Comet and Bleurt, estimate the quality of a translation hypothesis by providing a single sentence-level score. As such, they offer little insight into translation errors (e.g., what are the errors and what is ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. Widely used learned metrics for machine translation evaluation, such as Comet and Bleurt, estimate the quality of a translation hypothesis by providing a single sentence-level score. As such, they offer little insight into translation errors (e.g., what are the errors and what is their severity).",
+      "In this work, we bridge the gap between these two approaches to machine translation evaluation by introducing xcomet: a learned metric that simultaneously performs sentence-level evaluation and error span detection.",
+      "Our metric, xcomet, emerges in a unique position in the landscape of MT evaluation metrics. It can simultaneously perform evaluation under all three of the scenarios (src, ref, src+ref) presented, and provide sentence-level scores and error span annotations that are in line with the MQM framework, thus bringing further transparency to the evaluation (see Figure 1 for an illustration).",
+      "An automatic metric for translation evaluation aims at predicting the quality of a translated sentence, t, in light of a reference translation, r, for a given source sentence, s. Here, we focus specifically on neural metrics that make use of a neural model, and typically operate under one of the following evaluation scenarios: reference-only (ref): The model evaluates the translation by processing it alongside a ground-truth reference sentence (Bleurt is an example of such a metric);"
+    ],
+    "title": "xcomet: Transparent Machine Translation Evaluation through ...",
+    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00683/124263/xcomet-Transparent-Machine-Translation-Evaluation"
+  }
+]

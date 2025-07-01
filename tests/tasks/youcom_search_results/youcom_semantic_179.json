@@ -1,0 +1,270 @@
+[
+  {
+    "description": "Large language models are AI systems capable of understanding and generating human language by processing vast amounts of text data.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "Large language models (LLMs) are a category of foundation models trained on immense amounts of data making them capable of understanding and generating natural language and other types of content to perform a wide range of tasks.",
+      "Outside of the enterprise context, it may seem like LLMs have arrived out of the blue along with new developments in generative AI. However, many companies, including IBM, have spent years implementing LLMs at different levels to enhance their natural language understanding (NLU) and natural language processing (NLP) capabilities.",
+      "LLMs represent a significant breakthrough in NLP and artificial intelligence, and are easily accessible to the public through interfaces like Open AI\u2019s Chat GPT-3 and GPT-4, which have garnered the support of Microsoft. Other examples include Meta\u2019s Llama models and Google\u2019s bidirectional encoder representations from transformers (BERT/RoBERTa) and PaLM models.",
+      "From healthcare to finance, LLMs are transforming industries by streamlining processes, improving customer experiences and enabling more efficient and data-driven decision making. Most excitingly, all of these capabilities are easy to access, in some cases literally an API integration away. Here is a list of some of the most important areas where LLMs benefit organizations:"
+    ],
+    "title": "What Are Large Language Models (LLMs)? | IBM",
+    "url": "https://www.ibm.com/think/topics/large-language-models"
+  },
+  {
+    "description": "There are dozens of major LLMs, and hundreds that are arguably significant for some reason or other. These are 14 of the best LLMs available now.",
+    "favicon_url": "https://you.com/favicon?domain=zapier.com&size=128",
+    "snippets": [
+      "I've also mostly focused on LLMs, LMMs, and reasoning models that you can actually use\u2014rather than ones that are the subjects of super interesting research papers or just teased in marketing materials\u2014since we like to keep things practical around here. Click on any app in the list below to learn more about it. An LLM, or large language model, is a general-purpose AI text generator. It's what's behind the scenes of all AI chatbots, AI writing generators, and most other AI-powered features like summarized search answers. Stripped of fancy interfaces and other workarounds, LLMs take a prompt and generate an answer.",
+      "There are dozens of major LLMs, and hundreds that are arguably significant for some reason or other. Listing them all would be nearly impossible, and in any case, it would be out of date within days because of how quickly LLMs are being developed.",
+      "Still, while its performance now matches other models, I'm mostly listing it here because it was developed by xAI, the AI company founded by Elon Musk. Its stay at the top of any benchmark isn't likely to be long, and it isn't making big waves in the AI scene, but xAI is going to continue to get plenty of media coverage, so it's worth knowing it exists. Read more in our comparison of Grok vs. ChatGPT. Until a few years ago, LLMs were limited to research labs and tech demos at AI conferences.",
+      "We're now into the fifth and sixth generations of LLMs, and with that, they're increasingly useful and powerful. Reasoning models that take extra time to work through hard problems are the biggest shift in the past year. Before that, it was the introduction of large multimodal models (LMMs), which are able to handle other input and output modalities, like images, audio, and video, as well as text."
+    ],
+    "title": "The best large language models (LLMs) in 2025",
+    "url": "https://zapier.com/blog/best-llm/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "A Comprehensive Overview of Large Language Models",
+    "url": "http://arxiv.org/pdf/2307.06435"
+  },
+  {
+    "description": "Instead, most papers working on tabular QA based on LLMs focus on the aspects of prompt engineering, search and retrieval, and end-to-end pipelines (user interfaces), which we describe further in the next section. In the simplest QA architecture, an LLM takes in an input prompt (query and serialized table...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Instead, most papers working on tabular QA based on LLMs focus on the aspects of prompt engineering, search and retrieval, and end-to-end pipelines (user interfaces), which we describe further in the next section. In the simplest QA architecture, an LLM takes in an input prompt (query and serialized table)242424For the scope of our paper, we do not consider images, videos and audio inputs., and returns an answer.",
+      "In-context learning refers to designing large auto-regressive language models that generate responses on unseen task without gradient update, only learning through a natural language task description and a few in-context examples provided in the prompt. The GPT3 model (Brown et al., 2020) with 175 billion parameters presented an impressive in-context learning ability that was not seen in smaller models. LLMs have also demonstrated the ability to complete new tasks by following only the instructions of the task descriptions (also known as zero-shot prompts). Some papers also fine-tuned LLMs on a variety of tasks presented as instructions (Thoppilan et al., 2022).",
+      "Subsequently, we cover the applications of LLMs in prediction tasks (Section 3), data augmentation and enrichment tasks (Section 4), and question answering/table understanding tasks (Section 5). Finally, Section 6 discusses limitations and future directions, while Section 7 concludes. The overview of this paper is shown in Figure 1 and Figure",
+      "Retrieval-augmented generation (RAG) relies on the intuition that the LLMs are general models, but can be guided to a domain-specific answer if the user includes the relevant context within the prompts. By incorporating tables as part of the prompts, most papers described in this survey can be attributed as RAG systems."
+    ],
+    "title": "Large Language Models(LLMs) on Tabular Data: Prediction, Generation, ...",
+    "url": "https://arxiv.org/html/2402.17944v2"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "Now let's look at some of the famous LLMs which has been developed and are up for inference. GPT-3: GPT 3 is developed by OpenAI, stands for Generative Pre-trained Transformer 3. This model powers ChatGPT and is widely recognized for its ability to generate human-like text across a variety of applications. BERT: It is created by Google, is commonly used for natural language processing tasks and generating text embeddings, which can also be utilized for training other models.",
+      "LLMs, such as GPT-3, have a wide range of applications across various domains. Few of them are: ... Large language models power advanced chatbots capable of engaging in natural conversations.",
+      "LLMOps involves the strategies and techniques for overseeing the lifespan of large language models (LLMs) in operational environments. LLMOps ensure that LLMs are efficiently utilized for various natural language processing tasks, from fine-tuning to deployment and ongoing maintenance, in order to e",
+      "Large Language Models (LLMs) have dramatically transformed natural language processing (NLP), excelling in tasks like text generation, translation, summarization, and question-answering. However, these models may not always be ideal for specific domains or tasks."
+    ],
+    "title": "What is a Large Language Model (LLM) - GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/large-language-model-llm/"
+  },
+  {
+    "description": "Text-to-SQL is a task in natural language processing (NLP) that aims to automatically generate Structured Query Language (SQL) queries from natural language text. This task involves converting text\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "TLDR: This article deep dives into the Text-to-SQL domain, demonstrating the growing reliance on Large Language Models (LLMs) for this\u2026",
+      "As the evolution of LLMs progresses, their proficiency in this field is expected to further increase, heralding a new era for natural language interfaces to databases. One of the key advantages of LLMs is the elimination of the need to curate and refine training datasets from natural language to queries. ... In our upcoming demonstration, we will be harnessing the capabilities of the PaLM 2 model from Google, a state-of-the-art addition to the lineage of LLMs with an emphasis on Text-to-SQL.",
+      "Moreover, both the input (natural language queries) and the output (SQL queries) commonly necessitated normalization. This demanded both pre-processing and post-processing stages, intensifying the complexity of the process. It also implied that a substantial volume of training data was indispensable. The incorporation of custom domain knowledge, such as table names, schema, and column descriptions, also presented a formidable challenge. Before the introduction of LLMs for Text-to-SQL, user queries had to be pre-processed to match a specific template.",
+      "The potential combinations and insights that can be derived from these four tables are vast, and each query can become an intricate task, underscoring the challenges inherent in such systems. Translating natural language to SQL is vital for efficient data management and retrieval. A well-structured architecture improves the accuracy and speed of these translations, enhancing the capabilities of LLMs in handling complex user queries."
+    ],
+    "title": "Architectural Patterns for Text-to-SQL: Leveraging LLMs for Enhanced ...",
+    "url": "https://medium.com/google-cloud/architectural-patterns-for-text-to-sql-leveraging-llms-for-enhanced-bigquery-interactions-59756a749e15"
+  },
+  {
+    "description": "Large language models (LLMs) are artificial intelligence (AI) based computational models designed to understand and generate human like text. With billions of training parameters, LLMs excel in identifying intricate language patterns, enabling remarkable performance across a variety of natural ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Large language models (LLMs) are artificial intelligence (AI) based computational models designed to understand and generate human like text. With billions of training parameters, LLMs excel in identifying intricate language patterns, enabling remarkable performance across a variety of natural language processing (NLP) tasks.",
+      "The studies cited in this review paper are industry-specific and cover only one or two industries69,72,76,77,78, whereas this review focuses on the applications, issues, and challenges of LLMs in the top and most important industries. Table 1 Comparison with previous studies.",
+      "Scientific Reports - Industrial applications of large language models",
+      "Healthcare and medicine utilize LLMs for predictive diagnostics, patient data analysis, and leading to improved patient outcomes and operational efficiencies. Across these domains of industries, LLMs drive innovation by automating tasks, enhancing user experiences, and providing deep insights. The concept of machine translation and language models emerged after the Alan Turing\u2019s 1950 paper32."
+    ],
+    "title": "Industrial applications of large language models | Scientific Reports",
+    "url": "https://www.nature.com/articles/s41598-025-98483-1"
+  },
+  {
+    "description": "Define a large language model, understand how it works, its benefits, and challenges, and explore examples of large language models....",
+    "favicon_url": "https://you.com/favicon?domain=www.elastic.co&size=128",
+    "snippets": [
+      "Related: 2024 getting started guide to open-source LLMs \u00b7 The arrival of ChatGPT has brought large language models to the fore and activated speculation and heated debate on what the future might look like. As large language models continue to grow and improve their command of natural language, there is much concern regarding what their advancement would do to the job market.",
+      "A large language model (LLM) is a deep learning algorithm that can perform a variety of natural language processing (NLP) tasks. Large language models use transformer models and are trained using massive datasets \u2014 hence, large.",
+      "BERT: The Bidirectional Encoder Representations from Transformers (BERT) language model was also developed at Google. It is a transformer-based model that can understand natural language and answer questions.",
+      "Sentiment analysis: As applications of natural language processing, large language models enable companies to analyze the sentiment of textual data."
+    ],
+    "title": "What are Large Language Models? | A Comprehensive LLMs Guide | Elastic",
+    "url": "https://www.elastic.co/what-is/large-language-models"
+  },
+  {
+    "description": "We collect papers about \"large language models (LLM) for table-related tasks\", e.g., using LLM for Table QA task. \u201c\u8868\u683c+LLM\u201d\u76f8\u5173\u8bba\u6587\u6574\u7406 - SpursGoZmy/Awesome-Tabular-LLMs",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Recently, the emerging Large Language Models (LLMs) and more powerful Multimodal Large Language Models (MLLMs) have opened up new possibilities for processing the tabular data, i.e., we can use one general model to process diverse tables and fulfill different tabular tasks based on the user natural language instructions. We refer to these LLMs speciallized for tabular tasks as Tabular LLMs. In this repository, we collect a paper list about recent Tabular (M)LLMs and divide them into the following categories based on their key idea.",
+      "E5: Zero-shot Hierarchical Table Analysis using Augmented LLMs via Explain, Extract, Execute, Exhibit and Extrapolate ... TAP4LLM: Table Provider on Sampling, Augmenting, and Packing Semi-structured Data for Large Language Model Reasoning",
+      "HIPPO: Enhancing the Table Understanding Capability of Large Language Models through Hybrid-Modal Preference Optimization ... LLMs with a specially trained table encoders.",
+      "EHRAgent: Code Empowers Large Language Models for Few-shot Complex Tabular Reasoning on Electronic Health Records ... Evaluation of Table Representations to Answer Questions from Tables in Documents : A Case Study using 3GPP Specifications ... Investigating Table-to-Text Generation Capabilities of LLMs in Real-World Information Seeking Scenarios"
+    ],
+    "title": "GitHub - SpursGoZmy/Awesome-Tabular-LLMs: We collect papers about ...",
+    "url": "https://github.com/SpursGoZmy/Awesome-Tabular-LLMs"
+  },
+  {
+    "description": "Learn how the AI algorithm known as a large language model, or LLM, uses deep learning and large data sets to understand and generate new content.",
+    "favicon_url": "https://you.com/favicon?domain=www.techtarget.com&size=128",
+    "snippets": [
+      "Conversational AI and chatbots. LLMs can enable a conversation with a user in a way that is typically more natural than older generations of AI technologies.",
+      "Some LLMs are referred to as foundation models, a term coined by the Stanford Institute for Human-Centered Artificial Intelligence in 2021. A foundation model is so large and impactful that it serves as the foundation for further optimizations and specific use cases. GPT-4, an LLM, dwarfs all predecessors in terms of its parameter count. Here is a list of the top 10 LLMs on the market, listed in alphabetical order based on internet research:",
+      "All language models are first trained on a set of data, then make use of various techniques to infer relationships before ultimately generating new content based on the trained data. Language models are commonly used in natural language processing (NLP) applications where a user inputs a query in natural language to generate a result.",
+      "A large language model is a type of artificial intelligence algorithm that uses deep learning techniques and massively large data sets to understand, summarize, generate and predict new content. The term generative AI also is closely connected with LLMs, which are, in fact, a type of generative AI that has been specifically architected to help generate text-based content."
+    ],
+    "title": "What are Large Language Models (LLMs)? | Definition from TechTarget",
+    "url": "https://www.techtarget.com/whatis/definition/large-language-model-LLM"
+  },
+  {
+    "description": "Last updated 2 months ago \u00b7 I am actively maintaining this list",
+    "favicon_url": "https://you.com/favicon?domain=paper.lingyunyang.com&size=128",
+    "snippets": [
+      "I am actively maintaining this list.",
+      "EVStore: Storage and caching capabilities for scaling embedding tables in deep recommendation system"
+    ],
+    "title": "Large Language Model (LLM) | Awesome Papers",
+    "url": "https://paper.lingyunyang.com/paper-list/systems-for-ml/llm"
+  },
+  {
+    "description": "I want to thank Madhukar Kumar, CMO, SingleStore for educating me on the nuances of vector databases. He is probably the most technically-savvy marketing person I know who codes for the sheer fun of\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "I want to thank Madhukar Kumar, CMO, SingleStore for educating me on the nuances of vector databases. He is probably the most\u2026",
+      "Hence, this paper focuses on the last option of using an RDBMS. Finally, it is time to demystify several new concepts and terms that have been mentioned thus far, such as vectors and embeddings. To do so, we need to understand how exactly an AI search works. Enabling natural language search of enterprise data using a chatbot can significantly expand the number of data consumers and use cases. Besides the search, LLMs, which use deep neural network algorithms, can be used for advanced tasks, such as summarizing documents, ranking, and recommendations, etc.",
+      "The focus of this paper is on the prompt LLM option, because most organizations will not have the skills needed to train or tune LLMs. This approach, involving vectorizing data and creating embeddings, only requires coding skills, like Python. This option also consumes resources but at significantly lower levels than the two former options.",
+      "However, the problem is that querying vectors sequentially in a file can be very slow unless indexes are used. You will see more on indexes later in this paper. The figure below shows examples for long-term memory, although this list is simply representative as most database vendors are adding support for vectors:"
+    ],
+    "title": "How to Use Large Language Models (LLMs) on Private Data: A Data ...",
+    "url": "https://medium.com/aimonks/how-to-use-large-language-models-llms-on-private-data-a-data-strategy-guide-812cfd7c5c79"
+  },
+  {
+    "description": "A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation. The largest and most capable LLMs are generative pretrained transformers (GPTs), which are ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "For example, the availability of large language models could reduce the skill-level required to commit bioterrorism; biosecurity researcher Kevin Esvelt has suggested that LLM creators should exclude from their training data papers on creating or enhancing pathogens. The potential presence of \"sleeper agents\" within LLMs is another emerging security concern.",
+      "A large language model (LLM) is a language model trained with self-supervised machine learning on a vast amount of text, designed for natural language processing tasks, especially language generation. The largest and most capable LLMs are generative pretrained transformers (GPTs), which are largely used in generative chatbots such as ChatGPT, Gemini or Claude.",
+      "Training of largest language models might need more linguistic data than naturally available, or that the naturally occurring data is of insufficient quality. In these cases, synthetic data might be used. Microsoft's Phi series of LLMs is trained on textbook-like data generated by another LLM.",
+      "These models showed significant improvements in mathematics, science, and coding tasks compared to traditional LLMs. For example, on International Mathematics Olympiad qualifying exam problems, GPT-4o achieved 13% accuracy while o1 reached 83%. In January 2025, the Chinese company DeepSeek released DeepSeek-R1, a 671-billion-parameter open-weight reasoning model that achieved comparable performance to OpenAI's o1 while being significantly more cost-effective to operate. Unlike proprietary models from OpenAI, DeepSeek-R1's open-weight nature allowed researchers to study and build upon the algorithm, though its training data remained private.",
+      "LLMs can handle programming languages similarly to how they handle natural languages. No special change in token handling is needed as code, like human language, is represented as plain text. LLMs can generate code based on problems or instructions written in natural language."
+    ],
+    "title": "Large language model - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Large_language_model"
+  },
+  {
+    "description": "Large Language Models (LLMs), such as ChatGPT and Bard, have revolutionized natural language understanding and generation. They possess deep language \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "They possess deep language comprehension, human-like text generation capabilities, contextual awareness, and robust problem-solving skills, making them invaluable in various domains (e.g., search engines, customer support, translation). In the meantime, LLMs have also gained traction in the security community, revealing security vulnerabilities and showcasing their potential in security-related tasks. This paper explores the intersection of LLMs with security and privacy.",
+      "Specifically, we investigate how LLMs positively impact security and privacy, potential risks and threats associated with their use, and inherent vulnerabilities within LLMs. Through a comprehensive literature review, the paper categorizes the papers into \u201cThe Good\u201d (beneficial LLM applications), \u201cThe Bad\u201d (offensive applications), and \u201cThe Ugly\u201d (vulnerabilities of LLMs and their defenses).",
+      "For example, Research on model and parameter extraction attacks is limited and often theoretical, hindered by LLM parameter scale and confidentiality. Safe instruction tuning, a recent development, requires more exploration. We hope that our work can shed light on the LLMs\u2019 potential to both bolster and jeopardize cybersecurity."
+    ],
+    "title": "A survey on large language model (LLM) security and privacy: The ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S266729522400014X"
+  },
+  {
+    "description": "Large Language Models (LLMs) Concepts, LLM Use Cases, LLM Examples, LLM Types, List of LLMs, LLM Evaluation, LLM Pricing, LLM FAQs",
+    "favicon_url": "https://you.com/favicon?domain=vitalflux.com&size=128",
+    "snippets": [
+      "Large Language Models (LLMs) like those belonging to the GPT, and BERT family have demonstrated a significant advancement over earlier neural network architectures such as Recurrent Neural Networks (RNNs) in the field of Natural Language Processing (NLP). The following is the trend of the number of LLMs introduced over the years. Check out this paper for further detail: A comprehensive overview of LLMs",
+      "The LLM family includes BERT (NLU \u2013 Natural language understanding), GPT (NLG \u2013 natural language generation), T5, etc. The specific LLM models such as OpenAI\u2019s models (GPT3.5, GPT-4 \u2013 Billions of parameters), PaLM2, Llama 2, etc demonstrate exceptional performance in various NLP / text processing tasks mentioned before. Some of these LLMs are open-sourced (Llama 2) while other ain\u2019t (such as ChatGPT models). LLMs are built on neural network architectures, particularly the transformer architecture (check the paper, Attention is all you need), which allows them to capture complex language patterns and relationships between words or phrases in large-scale text datasets.",
+      "ChatGPT utilizes vast datasets and complex algorithms to understand and generate responses that closely mimic human language, showcasing the advanced capabilities of auto-regressive large language models in natural language generation (NLG). ... Check out this HELM page from Stanford \u2013 Holistic Evaluation of Language Models (HELM) (stanford.edu). You would find evaluation metrics of different variants of LLMs such as GPT-4, Claude, Mixtral, PaLM-2, Llama 2, etc. The related HELM paper can be found on Arxiv \u2013 HELM.",
+      "From the development of neural machine translation to the latest pre-training methods for natural language generation and comprehension, these papers provide a comprehensive view of the evolution of language models. The following list includes some of the most influential papers in the field:"
+    ],
+    "title": "Large Language Models (LLMs): Types, Examples",
+    "url": "https://vitalflux.com/large-language-models-concepts-examples/"
+  },
+  {
+    "description": "Awesome-LLM: a curated list of Large Language Model - Hannibal046/Awesome-LLM",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "LLMsPracticalGuide - A curated list of practical guide resources of LLMs \u00b7 Awesome ChatGPT Prompts - A collection of prompt examples to be used with the ChatGPT model. awesome-chatgpt-prompts-zh - A Chinese collection of prompt examples to be used with the ChatGPT model. Awesome ChatGPT - Curated list of resources for ChatGPT and GPT-3 from OpenAI. Chain-of-Thoughts Papers - A trend starts from \"Chain of Thought Prompting Elicits Reasoning in Large Language Models.",
+      "Awesome Deliberative Prompting - How to ask LLMs to produce reliable reasoning and make reason-responsive decisions. Instruction-Tuning-Papers - A trend starts from Natrural-Instruction (ACL 2022), FLAN (ICLR 2022) and T0 (ICLR 2022). LLM Reading List - A paper & resource list of large language models.",
+      "Reasoning using Language Models - Collection of papers and resources on Reasoning using Language Models. Chain-of-Thought Hub - Measuring LLMs' Reasoning Performance",
+      "Awesome-LLM-Healthcare - The paper list of the review on LLMs in medicine. Awesome-LLM-Inference - A curated list of Awesome LLM Inference Paper with codes. Awesome-LLM-3D - A curated list of Multi-modal Large Language Model in 3D world, including 3D understanding, reasoning, generation, and embodied agents."
+    ],
+    "title": "GitHub - Hannibal046/Awesome-LLM: Awesome-LLM: a curated list of ...",
+    "url": "https://github.com/Hannibal046/Awesome-LLM"
+  },
+  {
+    "description": "Learn what Large Language Models are and why LLMs are essential. Discover its benefits and how you can use it to create new content and ideas including text, conversations, images, video, and audio.",
+    "favicon_url": "https://you.com/favicon?domain=aws.amazon.com&size=128",
+    "snippets": [
+      "LLMs are big, very big. They can consider billions of parameters and have many possible uses. Here are some examples: Open AI's GPT-3 model has 175 billion parameters. Its cousin, ChatGPT, can identify patterns from data and generate natural and readable output.",
+      "There are many practical applications for LLMs. Apart from GPT-3 and ChatGPT, Claude, Llama 2, Cohere Command, and Jurassiccan write original copy. AI21 Wordspice suggests changes to original sentences to improve style and voice. Often referred to as knowledge-intensive natural language processing (KI-NLP), the technique refers to LLMs that can answer specific questions from information help in digital archives.",
+      "Using clustering, LLMs can classify text with similar meanings or sentiments. Uses include measuring customer sentiment, determining the relationship between texts, and document search. LLM are proficient in code generation from natural language prompts. Examples include Amazon CodeWhisperer and Open AI's codex used in GitHub Copilot, which can code in Python, JavaScript, Ruby and several other programming languages.",
+      "A key factor in how LLMs work is the way they represent words. Earlier forms of machine learning used a numerical table to represent each word. But, this form of representation could not recognize relationships between words such as words with similar meanings."
+    ],
+    "title": "What is LLM? - Large Language Models Explained - AWS",
+    "url": "https://aws.amazon.com/what-is/large-language-model/"
+  },
+  {
+    "description": "Large language models (LLMs) are becoming attractive as few-shot reasoners to solve Natural Language (NL)-related tasks. However, there is still much to learn about how well LLMs understand structured data, such as tables. Although tables can be used as input to LLMs with serialization, there ...",
+    "favicon_url": "https://you.com/favicon?domain=www.microsoft.com&size=128",
+    "snippets": [
+      "Large language models (LLMs) are becoming attractive as few-shot reasoners to solve Natural Language (NL)-related tasks. However, there is still much to learn about how well LLMs understand structured data, such as tables. Although tables can be used as input to LLMs with serialization, there is a lack of comprehensive studies that examine whether LLMs [\u2026]",
+      "Large language models (LLMs) are becoming attractive as few-shot reasoners to solve Natural Language (NL)-related tasks. However, there is still much to learn about how well LLMs understand structured data, such as tables. Although tables can be used as input to LLMs with serialization, there is a lack of comprehensive studies that examine whether LLMs can truly comprehend such data. In this paper, we try to understand this by designing a benchmark to evaluate the structural understanding capabilities (SUC) of LLMs.",
+      "We perform a series of evaluations on GPT-3.5 and GPT-4. We find that performance varied depending on several input choices, including table input format, content order, role prompting, and partition marks. Drawing from the insights gained through the benchmark evaluations, we propose self-augmentation for effective structural prompting, such as critical value / range identification using internal knowledge of LLMs."
+    ],
+    "title": "Table Meets LLM: Can Large Language Models Understand Structured ...",
+    "url": "https://www.microsoft.com/en-us/research/publication/table-meets-llm-can-large-language-models-understand-structured-table-data-a-benchmark-and-empirical-study/"
+  },
+  {
+    "description": "Large Language Models (LLMs) have recently demonstrated remarkable capabilities in natural language processing tasks and beyond. This success of LLMs has led to a large influx of research contributions in this direction. These works encompass diverse topics such as architectural innovations, ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Large Language Models (LLMs) have recently demonstrated remarkable capabilities in natural language processing tasks and beyond. This success of LLMs has led to a large influx of research contributions in this direction. These works encompass diverse topics such as architectural innovations, better training strategies, context length improvements, fine-tuning, multi-modal LLMs, robotics, datasets, benchmarking, efficiency, and more.",
+      "Abstract page for arXiv paper 2307.06435: A Comprehensive Overview of Large Language Models",
+      "View a PDF of the paper titled A Comprehensive Overview of Large Language Models, by Humza Naveed and 8 other authors View PDF HTML (experimental) Abstract:Large Language Models (LLMs) have recently demonstrated remarkable capabilities in natural language processing tasks and beyond.",
+      "With the rapid development of techniques and regular breakthroughs in LLM research, it has become considerably challenging to perceive the bigger picture of the advances in this direction. Considering the rapidly emerging plethora of literature on LLMs, it is imperative that the research community is able to benefit from a concise yet comprehensive overview of the recent developments in this field."
+    ],
+    "title": "[2307.06435] A Comprehensive Overview of Large Language Models",
+    "url": "https://arxiv.org/abs/2307.06435"
+  },
+  {
+    "description": "The transformative impact of artificial intelligence (AI) technologies on materials science has revolutionized the study of materials problems. By leveraging well-characterized datasets derived from the scientific literature, AI-powered tools such as Natural Language Processing (NLP) have opened ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "The transformative impact of artificial intelligence (AI) technologies on materials science has revolutionized the study of materials problems. By leveraging well-characterized datasets derived from the scientific literature, AI-powered tools such as Natural Language Processing (NLP) have opened new avenues to accelerate materials research.",
+      "npj Computational Materials - Applications of natural language processing and large language models in materials discovery",
+      "Recently, GPT models have used the Transformer decoder architecture consisting of self-attention and feed-forward layers to generate text. Conversational LLMs such as GPT-4 have demonstrated their remarkable capability for efficiently extracting data from extensive collections of research papers.",
+      "Fig. 5: Information extraction by LLMs. a Three core principles of ChemPrompt Engineering as applied to extract and summarize synthetic conditions from specific sections of research articles to organize the information into well-structured tables [Reprinted with permission from ref."
+    ],
+    "title": "Applications of natural language processing and large language ...",
+    "url": "https://www.nature.com/articles/s41524-025-01554-0"
+  },
+  {
+    "description": "Large language models (LLMs) are becoming attractive as few-shot reasoners to solve Natural Language (NL)-related tasks. However, the understanding of their capability to process structured data like tables remains an under-explored area. While tables can be serialized as input for LLMs, there ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Large language models (LLMs) are becoming attractive as few-shot reasoners to solve Natural Language (NL)-related tasks. However, the understanding of their capability to process structured data like tables remains an under-explored area. While tables can be serialized as input for LLMs, there is a lack of comprehensive studies on whether LLMs genuinely comprehend this data.",
+      "Abstract page for arXiv paper 2305.13062: Table Meets LLM: Can Large Language Models Understand Structured Table Data? A Benchmark and Empirical Study",
+      "View a PDF of the paper titled Table Meets LLM: Can Large Language Models Understand Structured Table Data? A Benchmark and Empirical Study, by Yuan Sui and 4 other authors View PDF HTML (experimental) Abstract:Large language models (LLMs) are becoming attractive as few-shot reasoners to solve Natural Language (NL)-related tasks.",
+      "Specially, we perform a series of evaluations on the recent most advanced LLM models, GPT-3.5 and GPT-4 and observe that performance varied with different input choices, including table input format, content order, role prompting, and partition marks. Drawing from the insights gained through the benchmark evaluations, we propose $\\textit{self-augmentation}$ for effective structural prompting, such as critical value / range identification using internal knowledge of LLMs."
+    ],
+    "title": "[2305.13062] Table Meets LLM: Can Large Language Models Understand ...",
+    "url": "https://arxiv.org/abs/2305.13062"
+  },
+  {
+    "description": "An LLM, or large language model, is a machine learning model that can comprehend and generate human language. Learn how LLM models work.",
+    "favicon_url": "https://you.com/favicon?domain=www.cloudflare.com&size=128",
+    "snippets": [
+      "By contrast, an LLM can respond to natural human language and use data analysis to answer an unstructured question or prompt in a way that makes sense. Whereas a typical computer program would not recognize a prompt like \"What are the four greatest funk bands in history?\", an LLM might reply with a list of four such bands, and a reasonably cogent defense of why they are the best. In terms of the information they provide, however, LLMs can only be as reliable as the data they ingest.",
+      "Many LLMs are trained on data that has been gathered from the Internet \u2014 thousands or millions of gigabytes' worth of text. But the quality of the samples impacts how well LLMs will learn natural language, so an LLM's programmers may use a more curated data set.",
+      "Examples of real-world LLMs include ChatGPT (from OpenAI), Bard (Google), Llama (Meta), and Bing Chat (Microsoft). GitHub's Copilot is another example, but for coding instead of natural human language.",
+      "A large language model (LLM) is a type of artificial intelligence (AI) program that can recognize and generate text, among other tasks. LLMs are trained on huge sets of data \u2014 hence the name \"large.\" LLMs are built on machine learning: specifically, a type of neural network called a transformer model."
+    ],
+    "title": "What is an LLM (large language model)? | Cloudflare",
+    "url": "https://www.cloudflare.com/learning/ai/what-is-large-language-model/"
+  },
+  {
+    "description": "Advances in materials science require leveraging past findings and data from the vast published literature. While some materials data repositories are being built, they typically rely on newly created data in narrow domains because extracting detailed data and metadata from the enormous wealth ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Advances in materials science require leveraging past findings and data from the vast published literature. While some materials data repositories are being built, they typically rely on newly created data in narrow domains because extracting detailed data and metadata from the enormous wealth of publications is immensely challenging.",
+      "Integrating Materials and Manufacturing Innovation - Advances in materials science require leveraging past findings and data from the vast published literature. While some materials data...",
+      "To date, NanoMine data have been collected manually and stored in an accessible and queryable knowledge graph framework [4]. However, due to challenges mentioned above, it is impractical to manually curate the data from more than 1 million published papers even in this relatively small subfield. Therefore, automation of the data curation process has gained increasing attention to enable rapid growth of a robust repository of prior published data [2, 5,6,7,8,9,10,11]. Leveraging natural language processing (NLP) and large language models (LLMs) can make vital material information such as material identification, composition, properties, or experimental details readily available in a machine-readable format [12,13,14,15,16,17]. Of the initial explorations of LLMs for information extraction from the scientific literature, most have focused on extraction from text only.",
+      "The advent of large language models (LLMs) presents a new opportunity to rapidly and accurately extract data and insights from the published literature and transform it into structured data formats for easy query and reuse. In this paper, we build on initial strategies for using LLMs for rapid and autonomous data extraction from materials science articles in a format curatable by materials databases."
+    ],
+    "title": "How Well Do Large Language Models Understand Tables in Materials ...",
+    "url": "https://link.springer.com/article/10.1007/s40192-024-00362-6"
+  }
+]

@@ -1,0 +1,273 @@
+[
+  {
+    "description": "Text watermarking algorithms are crucial for protecting the copyright of textual content. Historically, their capabilities and application scenarios were limited. However, recent advancements in la...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Text watermarking algorithms are crucial for protecting the copyright of textual content. Historically, their capabilities and application scenarios were limited. However, recent advancements in large language models (LLMs) have revolutionized these ...",
+      "Typical examples include academic integrity [46, 77, 104] and LLM-generated misinformation [13, 62, 126]. In the context of academic integrity, students might use these advanced LLMs to complete assignments, papers, or even participate in exams. In the context of LLM-generated fake news, LLMs might generate and rapidly spread false information. Current research indicates that some LLM misuses may not be totally mitigated [12, 58], making effective detection and tracking of LLM-generated text necessary solutions to these problems. Theoretically, all algorithms that embed watermarks during logits generation (Section 4.1) and token sampling (Section 4.2) can be applied to these scenarios.",
+      "This work conducts a comprehensive survey of the current state of text watermarking technology, covering four main aspects: (1) an overview and comparison of different text watermarking techniques; (2) evaluation methods for text watermarking algorithms, including their detectability, impact on text or LLM quality, and robustness under target or untargeted attacks; (3) potential application scenarios for text watermarking technology; and (4) current challenges and future directions for text watermarking. This survey aims to provide researchers with a thorough understanding of text watermarking technology in the era of LLMs, thereby promoting its further advancement.",
+      "Despite the progress made, several areas require further exploration. Future research should focus on creating advanced watermarking algorithms capable of withstanding novel attack types, especially where attackers have access to sophisticated tools and knowledge."
+    ],
+    "title": "A Survey of Text Watermarking in the Era of Large Language Models ...",
+    "url": "https://dl.acm.org/doi/10.1145/3691626"
+  },
+  {
+    "description": "It indicates that the watermark ... the capacity to maintain the quality of the original image effectively, without significant damage to the image pixels and structure. To achieve imperceptibility, research often designs watermarking algorithms based on HVS\u2019s characteristics ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "It indicates that the watermark remains largely invisible to the human eye once embedded and has the capacity to maintain the quality of the original image effectively, without significant damage to the image pixels and structure. To achieve imperceptibility, research often designs watermarking algorithms based on HVS\u2019s characteristics [84, 193], such as the human visual system is more responsive to low-frequency information, such as large brightness changes and gradual spatial changes than high-frequency information, such as details and sharp edges.",
+      "It introduces in detail the definition, key attributes, classification, and evaluation indicators of LLM watermarking techniques, covering success rate, robustness, text quality, and resistance to forgery, explores the use of LLM watermarking in practical application scenarios, and emphasizes the ethical application of AI technology in LLMs. Hwang et al. [104] introduce the adoption of watermarking technology in generative AI. The research discusses the significant potential of generative AI in text and image generation while highlighting the challenges that accompany advancements in AI technology, such as AI misuse and the creation of misinformation.",
+      "Robust watermarks [15, 180, 231]. In recent years, with advancements in deep learning and coding theory, robust watermarking has been further developed. Here are some examples. Singh et al. [201] proposed an optimized robust watermarking technique, combining the application of the chaotic k-best gravitational search algorithm (CKGSA) within the domains of DCT and SVD, to address issues of false positives (FPP) in traditional SVD watermarking techniques and attain a compromise between invisibility and durability.",
+      "The difference is that LLM watermarking is more similar to traditional neural network watermarking, while it differs greatly from traditional digital watermarking algorithms. The development of LLM watermarking is relatively recent. With the emergence of LLMs that have shown powerful generation and understanding capabilities, becoming a prominent research area in AI, research on LLM watermarking has gradually emerged."
+    ],
+    "title": "Watermarking Techniques for Large Language Models: A Survey",
+    "url": "https://arxiv.org/html/2409.00089v1"
+  },
+  {
+    "description": "Embedding, Detection, and Regulation of AI Watermarks in LLM Outputs \u2014 Governance Challenges in AI Content Attribution \u2014 An Exhaustive\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Watermarking in generative AI refers to embedding a hidden identifier or pattern into AI-generated content (text, images, code, audio, etc.) such that its origin can be later verified (AI\u2026",
+      "An attacker might also exploit knowledge of the watermarking algorithm if public: for instance, if they know the green token list, they could intentionally replace some of those tokens with red alternatives. A more advanced threat is an AI tuned to fool the watermark detector (an adversarial model that outputs text with a distribution aiming for a low green-token count). Research has shown that if one has access to the detector, they can use gradient-based methods to minimally perturb a text to evade detection (similar to how adversarial examples for classifiers work).",
+      "By 2024, some academic journal publishers (e.g., Springer Nature) started requiring authors to declare AI usage and some began scanning submissions for watermarks. One case study involved an academic paper mill that used GPT-4 to generate fake research articles; the publisher\u2019s systems, using a watermark detector, caught that the submitted PDFs had watermarked text (GPT-4\u2019s API had watermark enabled).",
+      "Tools like WatermarkToolkit and WaterBench (2023) provide benchmarks for evaluating these algorithms\u2019 trade-offs between detection reliability and text quality (AI Watermarking 101: Tools and Techniques) (AI Watermarking 101: Tools and Techniques). Watermarking AI-generated images has also seen significant advances, leveraging both classic digital watermarking and deep learning."
+    ],
+    "title": "Toward Reliable Provenance in AI-Generated Content: Text, Images, ...",
+    "url": "https://medium.com/@adnanmasood/toward-reliable-provenance-in-ai-generated-content-text-images-and-code-9ebe8c57ceae"
+  },
+  {
+    "description": "PDF | In this paper we discuss natural language watermarking, which uses the structure of the sentence constituents in natural language text in order to... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Leveraging the benefits of zero-bit watermarking (Kirchenbauer et al., 2023a), COLOR enables extraction without model access, on-the-fly embedding, and maintains text quality, while allowing zero-bit detection all at the same time. Preliminary experiments demonstrates successful embedding of 32-bit messages with 91.9% accuracy in moderate-length texts ($\\sim$500 tokens). This work advances strategies to counter language model misuse effectively. ... ... Watermarks are hidden patterns in machinegenerated text that are imperceptible to humans, but algorithmically identifiable as synthetic.",
+      "[38], [40]. However, these transformations might not be applicable to all sentences which could fail to encode the message, also, they change the sentence to a large extent. ... Adversarial Watermarking Transformer: Towards Tracing Text Provenance with Data Hiding ... Recent advances in natural language generation have introduced powerful language models with high-quality output text. However, this raises concerns about the potential misuse of such models for malicious purposes. In this paper, we study natural language watermarking as a defense to help better mark and trace the provenance of text.",
+      "In this paper, we present a fine-grain text watermarking method that protects even small portions of the digital content. The core method is based on homoglyph characters substitution for latin symbols and whitespaces. It allows to produce a watermarked version of the original text, preserving the anonymity of the users according to the right to privacy. In particular, the embedding and extraction algorithms allow to continuously protect the watermark through the whole document in a fine-grain fashion.",
+      "We introduce a suite of baseline algorithms for identifying watermarks in LLMs that rely on analyzing distributions of output tokens and logits generated by watermarked and unmarked LLMs. Notably, watermarked LLMs tend to produce distributions that diverge qualitatively and identifiably from standard models."
+    ],
+    "title": "(PDF) Natural language watermarking",
+    "url": "https://www.researchgate.net/publication/221011142_Natural_language_watermarking"
+  },
+  {
+    "description": "Large Language Models (LLMs) are increasingly integrated into diverse industries, posing substantial security risks due to unauthorized replication and misuse. To mitigate these concerns, robust identification mechanisms are widely acknowledged as an effective strategy.",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Artificial Intelligence Review - Large Language Models (LLMs) are increasingly integrated into diverse industries, posing substantial security risks due to unauthorized replication and misuse. To...",
+      "This characteristic renders some watermark detection methods ineffective and ensures the transparency of the watermark, making it a mainstream method in many algorithms. However, this approach relies on high-quality synonym databases and advanced language models or rules for precise vocabulary selection and sentence transformation.",
+      "The research by Liu et al. (2024) makes the generated watermark W no longer determined by previous tokens and vocabularies, thereby enhancing both Attack and SecurityRobustness. Gu et al. (2024) took an alternative approach by training a student model to learn the token distribution of watermarked text, imitating the behavior of existing watermarking algorithms through model distillation.",
+      "By leveraging the powerful language understanding capabilities of LLMs, they analyze subtle differences in vocabulary choice preferences, sentence structure variations, and syntactic complexity to extract specific watermark information. Existing watermark algorithms have largely overlooked the potential of LLMs as watermark extraction tools; future research could explore deeper integration between LLMs and robust semantic watermarks."
+    ],
+    "title": "Building intelligence identification system via large language ...",
+    "url": "https://link.springer.com/article/10.1007/s10462-025-11222-w"
+  },
+  {
+    "description": "As shown in Figure 1(a), this primarily ... algorithms that are more closely integrated with LLMs. The flourishing development of LLMs has propelled a thriving research landscape within the realm of text watermarking, as depicted in Figure 1(b). Especially with the advent of ChatGPT, text watermarking has notably surged into a research fervor. This paper surveys the interplay between LLMs and text watermarking, highlighting their synergistic potential in the contemporary landscape ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "As shown in Figure 1(a), this primarily includes the construction of enhanced text watermarking algorithms using LLMs, the application of existing text watermarking algorithms to LLMs, and the exploration of text watermarking algorithms that are more closely integrated with LLMs. The flourishing development of LLMs has propelled a thriving research landscape within the realm of text watermarking, as depicted in Figure 1(b). Especially with the advent of ChatGPT, text watermarking has notably surged into a research fervor. This paper surveys the interplay between LLMs and text watermarking, highlighting their synergistic potential in the contemporary landscape of language models.",
+      "LLMs not only enhance text watermarking algorithms with their advanced text understanding and generation abilities but also create a need for employing these algorithms to protect their own copyrights. This paper presents a comprehensive survey of text watermarking technology in the LLM era, aiming to further its development and application. Text Watermark, Large Language Models, Copyright Protection \u2020\u2020ccs: Security and privacy Digital rights management\u2020\u2020ccs: Computing methodologies Natural language processing",
+      "Current research in token-sampling watermarking is limited, indicating room for advancement. The effectiveness and robustness of these methods warrant further exploration through experiments and real-world applications. In Sections 3 and 4, we presented a detailed overview of existing text watermarking techniques. A thorough evaluation of a text watermarking algorithm is essential.",
+      "In practical tests, applying watermarks to Knowledge Understanding tasks significantly decreases the F1 scores across all algorithms, indicating the challenging nature of this scenario. Figure 6. Specific downstream tasks used to evaluate the impact of text watermarking algorithms on text quality."
+    ],
+    "title": "A Survey of Text Watermarking in the Era of Large Language Models",
+    "url": "https://arxiv.org/html/2312.07913v4"
+  },
+  {
+    "description": "Existing methods have evolved from using synonym substitution to incorporating arbitrary word substitution to achieve reversible natural language wate\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Therefore, to protect sensitive information in the original text and generate high-quality watermarked text, a novel reversible natural language watermarking method that combines keyword substitution and the prediction error expansion algorithm is introduced in this paper.",
+      "Meanwhile, a masked language model is utilized to predict more high-quality substitution words, while the reversible recovery is achieved through the prediction error expansion algorithm. ... Extensive experimental results demonstrate that, compared to existing methods, the proposed method can produce higher-quality watermarked text and exhibits considerable performance in security. Moreover, the proposed method offers a higher watermark capacity, effectively safeguarding sensitive information. The rest of this paper is organized as follows.",
+      "In response to the above problems, this paper puts forward a novel reversible natural language watermarking method that combines a Keyword Substitution scheme and a Prediction Error Expansion algorithm (KSPEE) to protect sensitive information, verify content integrity, protect copyright, and so on.",
+      "To comprehensively evaluate the effectiveness and performance of our method, we conducted extensive experiments on three style datasets from several perspectives: the impact of the substitution generation model and the keyword extraction algorithm, watermark capacity, imperceptibility, security, and sensitive information protection. In this paper, we present a novel reversible natural language watermarking method KSPEE, aiming at protecting sensitive information in text."
+    ],
+    "title": "A reversible natural language watermarking for sensitive information ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0306457324000219"
+  },
+  {
+    "description": "Recently, machine/deep learning has become a promising solution for some intelligent tasks. It can be actively used for watermarking but less so for c\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Extensive research has been conducted on image steganography and watermarking algorithms, owing to their crucial rules in secret data transmission, copyright protection, and traceability. Despite promising results and numerous surveys proposed in the literature, there is still a lack of comprehensive analysis dedicated to deep learning-based image steganography and watermarking algorithms. In this paper, we focus on investigating three important aspects: neural networks, structure models, and training strategies.",
+      "As shown in Table 2, different performance metrics are used to measure characteristics of watermarking algorithms [36]. Robustness, invisibility and capacity are the major benchmark parameters of any watermarking scheme. Robustness measures the effectiveness of the watermark against various attacks by matching original watermark and the extracted watermark. Similarly, imperceptibility (invisibility) shows the resemblance between the original and watermarked image. There requires a balance \u00b7 Over recent decades, potential research has designed innovative watermarking approaches to achieve greater robustness, invisibility and capacity.",
+      "Moreover, we conduct in a thorough comparative analysis and evaluation of existing representative algorithms, assessing their effectiveness within the context of deep learning. Finally, the challenges and potential research directions in the domain of deep-learning image steganography and watermarking algorithms are discussed to facilitate future research.",
+      "We provide a summary of various AI and beyond state-of-the-art watermarking techniques. We discuss each approach in depth, including the objectives, goals, approaches, model, role, embedding location, outcomes, noticed limitations and applications and recent issues and their \u00b7 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper. This work is supported by research project order no."
+    ],
+    "title": "Survey on watermarking methods in the artificial intelligence domain ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0140366422000664"
+  },
+  {
+    "description": "Large language models (LLMs) have enabled the generation of high-quality synthetic text, often indistinguishable from human-written content, at a scale that can markedly affect the nature of the information ecosystem1\u20133. Watermarking can help identify synthetic text and limit accidental or ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Large language models (LLMs) have enabled the generation of high-quality synthetic text, often indistinguishable from human-written content, at a scale that can markedly affect the nature of the information ecosystem1\u20133. Watermarking can help identify synthetic text and limit accidental or deliberate misuse4, but has not been adopted in production systems owing to stringent quality, detectability and computational efficiency requirements.",
+      "A scheme for watermarking the text generated by large language models shows high text quality preservation and detection accuracy and low latency, and is feasible in large-scale-production settings.",
+      "Nature - A scheme for watermarking the text generated by large language models shows high text quality preservation and detection accuracy and low latency, and is feasible in large-scale-production...",
+      "These can be used to provide a text generation method and a watermark detection method. In the SynthID-Text generative watermarking scheme, we use the Tournament sampling algorithm. ... In this work, we propose a generative watermarking scheme, SynthID-Text, which builds on previous generative watermarking components, but uses a novel sampling algorithm, Tournament sampling. SynthID-Text can be configured to be non-distortionary (preserving text quality) or distortionary (improving watermark detectability at the cost of text quality)."
+    ],
+    "title": "Scalable watermarking for identifying large language model outputs ...",
+    "url": "https://www.nature.com/articles/s41586-024-08025-4"
+  },
+  {
+    "description": "Siddarth Srinivasan discusses watermarking and other AI detection tools, addressing the technological feasibility and policy implications.",
+    "favicon_url": "https://you.com/favicon?domain=www.brookings.edu&size=128",
+    "snippets": [
+      "Thus, further technical advances and policy interventions could still enable machine learning-based watermarking of most audio/visual content, though one should remain cognizant of the limitations. Perhaps the watermarking technique drawing the most research interest is \u201cstatistical watermarking,\u201d where instead of embedding a clearly defined pattern in text or audio/visual content, an algorithm embeds a statistically unusual arrangement of words/pixels/sounds.",
+      "Researchers have advanced a few proposals for watermarking text and images, although more foundational research is needed on statistical watermarking of audio and video. Statistical watermarking for text: Since language models generate text one word at a time using randomness, one approach (studied independently by researchers at the University of Maryland and OpenAI) is to make the language model randomly favor certain words and avoid other words based on what came before.2 The model developer knows how this randomness was introduced and thus what words were favored; a detection protocol simply checks if favored words appear unusually frequently in a piece of text.",
+      "A proposal by Stanford researchers takes a different approach: Instead of rolling loaded dice to artificially favor certain outputs over others during generation, they pre-determine the \u201cdice rolls\u201d that the language models must use to generate content and store this as a key. The detection protocol then checks whether a given text correlates to an unusual degree with the predetermined dice rolls (accounting for potential edits) to identify whether the text is watermarked. While these are some of the more prominent approaches, there has been a recent explosion of research interest in this area.",
+      "There is some early research on developing publicly detectable watermarks for language models, but more research is needed to definitively answer this question.If it turns out that publicly releasing a watermark detection scheme has little impact on robustness to evasion or forgery, model developers will require little support beyond the public registry for watermark detection services."
+    ],
+    "title": "Detecting AI fingerprints: A guide to watermarking and beyond | ...",
+    "url": "https://www.brookings.edu/articles/detecting-ai-fingerprints-a-guide-to-watermarking-and-beyond/"
+  },
+  {
+    "description": "Large Language Models (LLMs), such as ChatGPT and Bard, have revolutionized natural language understanding and generation. They possess deep language \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "They possess deep language comprehension, human-like text generation capabilities, contextual awareness, and robust problem-solving skills, making them invaluable in various domains (e.g., search engines, customer support, translation). In the meantime, LLMs have also gained traction in the security community, revealing security vulnerabilities and showcasing their potential in security-related tasks. This paper explores the intersection of LLMs with security and privacy.",
+      "Specifically, we investigate how LLMs positively impact security and privacy, potential risks and threats associated with their use, and inherent vulnerabilities within LLMs. Through a comprehensive literature review, the paper categorizes the papers into \u201cThe Good\u201d (beneficial LLM applications), \u201cThe Bad\u201d (offensive applications), and \u201cThe Ugly\u201d (vulnerabilities of LLMs and their defenses).",
+      "For example, Research on model and parameter extraction attacks is limited and often theoretical, hindered by LLM parameter scale and confidentiality. Safe instruction tuning, a recent development, requires more exploration.",
+      "For example, LLMs have proven to enhance code security (code vulnerability detection) and data privacy (data confidentiality protection), outperforming traditional methods. However, they can also be harnessed for various attacks (particularly user-level attacks) due to their human-like reasoning abilities. We have identified areas that require further research efforts."
+    ],
+    "title": "A survey on large language model (LLM) security and privacy: The ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S266729522400014X"
+  },
+  {
+    "description": "With the rapid advancement and widespread deployment of large language models (LLMs), concerns regarding content provenance, intellectual property protection, and security threats have become increasingly prominent. Watermarking techniques have emerged as a promising solution for embedding ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "With the rapid advancement and widespread deployment of large language models (LLMs), concerns regarding content provenance, intellectual property protection, and security threats have become increasingly prominent. Watermarking techniques have emerged as a promising solution for embedding verifiable signals into model outputs, enabling attribution, authentication, and mitigation of unauthorized usage.",
+      "This taxonomy captures key algorithmic differences and reflects the practical implementation strategies observed in recent research. From a watermarking perspective, we evaluate existing techniques in terms of robustness, imperceptibility, and capacity. This performance-oriented analysis highlights practical trade-offs and informs the selection and design of watermarking strategies for real-world LLM applications. This paper is structured as follows: Section 2 provides preliminary information on LLMs and watermarking, along with a taxonomy of LLM watermarking algorithms.",
+      "Numerous studies, such as [46,48,58,61,66,67,70,71,74,75,96], have investigated techniques to increase watermarking capacity while minimizing negative impacts on text quality and robustness. These methods typically extend existing single-bit watermarking approaches, introducing straightforward enhancements to balance imperceptibility and detectability. Despite these advances, watermarking remains a dynamic research field, with ongoing efforts aimed at refining the effectiveness of these techniques across diverse applications.",
+      "While current methods have demonstrated notable progress, challenges remain in enhancing resilience against adversarial attacks, balancing detectability with linguistic quality, and ensuring scalability across diverse deployment scenarios. Future research should focus on developing more robust watermarking schemes, standardizing evaluation metrics, and exploring the ethical and legal implications of watermarking in real-world applications. As LLMs continue to advance, watermarking will play a crucial role not only in protecting intellectual property but also in shaping the future of trustworthy, transparent, and responsible AI systems."
+    ],
+    "title": "Watermarking for Large Language Models: A Survey",
+    "url": "https://www.mdpi.com/2227-7390/13/9/1420"
+  },
+  {
+    "description": "Watermarking is a modern technology in which identifying information is embedded in a data carrier. It is not easy to notice without affecting data usage. A text watermark is an approach to inserting a watermark into text documents. This is an extremely complex undertaking, especially given ...",
+    "favicon_url": "https://you.com/favicon?domain=www.intechopen.com&size=128",
+    "snippets": [
+      "Watermarking is a modern technology in which identifying information is embedded in a data carrier. It is not easy to notice without affecting data usage. A text watermark is an approach to inserting a watermark into text documents. This is an extremely complex undertaking, especially given the scarcity of research in this area.",
+      "Hamdan AM, Hamarsheh A. AH4S: An algorithm of text in text steganography using the structure of omega network. Security and Communication Networks. 2017; ... Zhang G, Kou L, Zhang L, Liu C, Da Q , Sun J. A new digital watermarking method for data integrity protection in the perception layer of IoT. Security and Communication Networks. 2017; ... Topkara M, Riccardi G, Hakkani-T\u00fcr D, Atallah MJ. Natural language atermarking: Challenges in building a practical system.",
+      "The extraction algorithm should fail whenever the signal is modified in fragile digital watermarking (Figure 4). Life-cycle phases of a digital watermark: embedding, attacking, detecting, and retrieving [ ... Watermarking has been a vital research area since 1991 when the concept of text digital watermarking was introduced.",
+      "Akter A, Nur-E-Tajnina, Ullah M. Digital image watermarking based on DWT-DCT: Evaluate for a new embedding algorithm. 2014. pp. 1-6. DOI: 10.1109/ICIEV.2014.6850699 ... Abbas N. Watermarked and noisy images identification based on statistical evaluation parameters. Journal of Zankoy Sulaimani-Part A (JZS-A). 2013; ... Hao Y, Chuang QFL, Rong D. A survey of digital watermarking. Journal of Computer Research and Development."
+    ],
+    "title": "Perspective Chapter: Text Watermark Analysis \u2013 Concept, Technique, ...",
+    "url": "https://www.intechopen.com/chapters/84834"
+  },
+  {
+    "description": "July 25, 2023 @ 8:33 pm \u00b7 Filed by Mark Liberman under Computational linguistics \u00b7 \u00ab previous post | next post \u00bb",
+    "favicon_url": "https://you.com/favicon?domain=languagelog.ldc.upenn.edu&size=128",
+    "snippets": [
+      "Identifying generated text, experts say, is becoming increasingly difficult as software like ChatGPT continues to advance and turns out text that is more convincingly human. OpenAI is now experimenting with a technology that would insert special words into the text that ChatGPT generates, making it easier to detect later. The technique is known as watermarking. The watermarking method that OpenAI is exploring is similar to one described in a \u00b7 recent paper by researchers at the University of Maryland, said Jan Leike, the head of alignment at OpenAI.",
+      "Potential harms of large language models can be mitigated by watermarking model output, i.e., embedding signals into generated text that are invisible to humans but algorithmically detectable from a short span of tokens. We propose a watermarking framework for proprietary language models.",
+      "The watermark can be embedded with negligible impact on text quality, and can be detected using an efficient open-source algorithm without access to the language model API or parameters. The watermark works by selecting a randomized set of \u201cgreen\u201d tokens before a word is generated, and then softly promoting use of green tokens during sampling.",
+      "The probability of this happening by random chance is \u2248 6\u00d710\u221214, leaving us extremely certain that this text is machine generated. Words are marked with their respective colors. The model is OPT-6.7B using multinomial sampling. Watermark parameters are \u03b3, \u03b4 = (0.25, 2). Read the paper if you want details."
+    ],
+    "title": "Language Log \u00bb Watermarking text?",
+    "url": "https://languagelog.ldc.upenn.edu/nll/?p=59848"
+  },
+  {
+    "description": "Abstract. The remarkable ability of large language models (LLMs) to comprehend, interpret, and generate complex language has rapidly integrated LLM-generated text into various aspects of daily life, where users increasingly accept it. However, the growing reliance on LLMs underscores the urgent ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. The remarkable ability of large language models (LLMs) to comprehend, interpret, and generate complex language has rapidly integrated LLM-generated text into various aspects of daily life, where users increasingly accept it. However, the growing reliance on LLMs underscores the urgent need for effective detection mechanisms to identify LLM-generated text.",
+      "While not all watermarking methods covered in the review are applicable to LLM-generated text detection, the classification criteria for watermarking methods proposed in the paper can provide valuable insights and serve as an important reference for organizing and investigating watermarking techniques. In this article, we strive to provide a more comprehensive and insightful review of the latest research on LLM-generated text detection, enriched with comprehensive discussion.",
+      "Recent advances in this field stem from innovations in watermarking techniques, statistics-based detectors, and neural-based detectors. Human-assisted methods also play a crucial role. In this survey, we consolidate recent research breakthroughs in this field, emphasizing the urgent need to strengthen detector research.",
+      "Additionally, we analyze various detection approaches, including neural-based methods, statistical methods, watermarking techniques, and human-assisted methods. We explore in-depth critical challenges such as out-of-distribution issues, adversarial attacks, real-world data complexities, and the lack of robust evaluation frameworks. Finally, we propose several directions for future research to advance the development of adequate LLM-generated text detectors."
+    ],
+    "title": "A Survey on LLM-Generated Text Detection: Necessity, Methods, and ...",
+    "url": "https://direct.mit.edu/coli/article/51/1/275/127462/A-Survey-on-LLM-Generated-Text-Detection-Necessity"
+  },
+  {
+    "description": "Text watermarking algorithms are crucial for protecting the copyright of textual content. Historically, their capabilities and application scenarios were limited. However, recent advancements in large language models (LLMs) have revolutionized these techniques.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled A Survey of Text Watermarking in the Era of Large Language Models, by Aiwei Liu and 8 other authors View PDF HTML (experimental) Abstract:Text watermarking algorithms are crucial for protecting the copyright of textual content. Historically, their capabilities and application scenarios were limited. However, recent advancements in large language models (LLMs) have revolutionized these techniques.",
+      "Abstract page for arXiv paper 2312.07913: A Survey of Text Watermarking in the Era of Large Language Models",
+      "LLMs not only enhance text watermarking algorithms with their advanced abilities but also create a need for employing these algorithms to protect their own copyrights or prevent potential misuse. This paper conducts a comprehensive survey of the current state of text watermarking technology, covering four main aspects: (1) an overview and comparison of different text watermarking techniques; (2) evaluation methods for text watermarking algorithms, including their detectability, impact on text or LLM quality, robustness under target or untargeted attacks; (3) potential application scenarios for text watermarking technology; (4) current challenges and future directions for text watermarking.",
+      "This survey aims to provide researchers with a thorough understanding of text watermarking technology in the era of LLM, thereby promoting its further advancement. From: Aiwei Liu [view email] [v1] Wed, 13 Dec 2023 06:11:42 UTC (1,883 KB) [v2] Sat, 16 Dec 2023 06:30:43 UTC (1,888 KB) [v3] Wed, 3 Jan 2024 13:29:43 UTC (2,651 KB) [v4] Tue, 23 Jan 2024 13:26:56 UTC (2,653 KB) [v5] Thu, 1 Aug 2024 14:35:52 UTC (2,620 KB) [v6] Fri, 2 Aug 2024 14:59:41 UTC (2,620 KB) ... View a PDF of the paper titled A Survey of Text Watermarking in the Era of Large Language Models, by Aiwei Liu and 8 other authors"
+    ],
+    "title": "[2312.07913] A Survey of Text Watermarking in the Era of Large ...",
+    "url": "https://arxiv.org/abs/2312.07913"
+  },
+  {
+    "description": "Learn how AI watermarks are used to detect AI-generated content, and explore the benefits and limitations of current AI watermarking techniques.",
+    "favicon_url": "https://you.com/favicon?domain=www.techtarget.com&size=128",
+    "snippets": [
+      "For example, an algorithm might search for the presence of rare phrases or analyze an image's pixels to detect hidden patterns. As an example, consider a watermarking technique proposed by Scott Aaronson, a computer scientist and researcher at OpenAI. An LLM such as OpenAI's GPT-4 generates output by predicting the next token -- a natural language processing term referring to a short unit of text, such as a word, syllable or punctuation mark -- based on the previous tokens.",
+      "AI watermarks are created during model training by teaching the model to embed a specific signal or identifier in generated content -- for example, a textual watermark hidden in a sentence generated by a large language model (LLM) or a visual watermark concealed in the output of an image generator. This process usually involves making subtle changes to the model during the training stage, such as alterations to model weights or features. After model training and deployment, specialized algorithms detect the presence of the watermark embedded earlier, thereby checking whether a piece of media was generated by AI.",
+      "Similar to a physical watermark on paper currency, AI watermarks serve as digital signatures that can demonstrate provenance, or the origin of a piece of media. This could be useful in contexts such as scientific investigations or legal proceedings, where research findings or evidence could be scanned for AI watermarks to evaluate their integrity.",
+      "AI watermarking is the process of embedding a recognizable, unique signal into the output of an artificial intelligence model, such as text or an image, to identify that content as AI generated. That signal, known as a watermark, can then be detected by algorithms designed to scan for it."
+    ],
+    "title": "What is AI watermarking and how does it work?",
+    "url": "https://www.techtarget.com/searchenterpriseai/definition/AI-watermarking"
+  },
+  {
+    "description": "As pioneers of next-generation watermarking technologies, quantum methods offer advanced solutions for securing digital text copyright. Quantum text representation is a prerequisite for realizing quantum watermarking. Thus we propose a generalized ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "The significant contributions of the research in this paper are summarized and listed as follows. ... A pioneering GQTR for text representation is proposed. Quantum encoding of English characters, words and text is realized. It lays the foundation for quantum text algorithms. ... A MPQTW scheme for securing text copyright is proposed for the first time. It realizes embedding multiple image watermarks in significant text content.",
+      "Quantum text watermarking technology, as a cutting-edge field of digital copyright protection, its future research will deeply explore algorithm optimization and innovation, extend the support of multi-language and multi-format text, strengthen the security, and promote the practicality and standardization.",
+      "As a result, quantum text watermarking not only provides information security guaranteed by quantum properties, but also provides good robustness. In order to show the advancement and value of the research in this paper, we compare the proposed MPQTW with the latest traditional text watermarking methods from several perspectives.",
+      "The complexity of a quantum circuit is usually the total number of quantum gates required to construct a particular quantum algorithm. The three quantum circuits in this paper are Figure 5 for quantum text preparation, and Figures 6 and 7 for quantum text watermarking algorithms."
+    ],
+    "title": "Pattern-based quantum text watermarking: Securing digital content ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11625354/"
+  },
+  {
+    "description": "Identifying the sources is vital for generative AI models, like ChatGPT and Bard, due to concerns about copyright infringement and plagiarism. In this paper, we explore text watermarking as a potential solution. We investigate techniques including physical watermarking and logical watermarking.",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.scipy.org&size=128",
+    "snippets": [
+      "Initially, we replaced every i-th word (for example, every 5th word) with a \u201c[MASK],\u201d a placeholder token used in natural language processing models to indicate where a word has been removed and needs to be predicted. Then, we used a BERT model to predict the most probable token in place of \u201c[MASK].\u201d The resulting text constitutes the watermarked text. To verify, we reran the algorithm on the watermarked text and compared the input and output for similarity. The Python implementation of the algorithm in this paper employs models from the HuggingFace Transformer Library, namely \u201cbert-",
+      "In this paper, we will propose an algorithm to watermark text using BERT (Bidirectional Encoder Representations from Transformers), a model introduced by Google, whose main purpose is to replace a special symbol \u201c[MASK]\u201d with the most probable word given the context. BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained model introduced by Google in 2018, which has revolutionized natural language processing (NLP) Wu et al., 2024.",
+      "It is particularly beneficial for managing copyrights in digital media, academic papers, and any online content where text is dynamically generated or reused. Integration with existing systems: The algorithm can be seamlessly integrated with current content management systems (CMS) and digital rights management (DRM) systems, enhancing their capabilities to include advanced text watermarking features.",
+      "This was observed when the algorithm was run on the story of Red Riding Hood, where its meaning was altered. However, the nature of this watermark makes it extremely difficult to break due to the black-box nature of the AI model. Keywords:physical watermarklogical watermarkHuggingFace Transformer LibraryBERT\u00b6 \u00b7 The growth of the internet is driven by the spread of web pages, which are written in HTML (Hyper Text Markup Language)."
+    ],
+    "title": "AI-Driven Watermarking Technique for Safeguarding Text Integrity ...",
+    "url": "https://proceedings.scipy.org/articles/DHKD1726"
+  },
+  {
+    "description": "This paper presents a novel framework for watermarking language models through prompts generated by language models. The proposed approach utilizes a multi-model setup, incorporating a Prompting language model to generate watermarking instructions, a Marking language model to embed watermarks ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Recent advancements in watermarking techniques for LLMs have focused on two primary approaches: embedding watermarks directly into generated text and embedding watermarks within the LLM architecture itself. Text-based watermarking methods typically alter token probabilities or manipulate token selections during generation to make watermarks detectable by specific algorithms while maintaining imperceptibility for users.",
+      "These watermarks are designed to be imperceptible to end-users but detectable by an authorized system, allowing the origin of the content to be traced back to a particular model or model owner. This process typically involves embedding patterns or codes within the generated text in such a way that they do not affect its quality or meaning while enabling traceability and authentication. Recent advancements in deep learning have opened new opportunities for incorporating these watermarks efficiently within large language models (LLMs).",
+      "These diverse approaches illustrate a growing focus on balancing robustness, subtlety, and quality in watermarking AI-generated text. Watermarking within Language Model Architectures. An emerging area of research focuses on embedding watermarks directly within the parameters of LLMs to safeguard the integrity of the models themselves.",
+      "[1] introduced a watermarking framework for large language models that embeds signals into generated text, which remain invisible to humans but are algorithmically detectable from a short span of tokens. Their method leverages a randomized selection of \"green\" tokens to softly promote their use during sampling, thus embedding the watermark with negligible impact on text quality."
+    ],
+    "title": "Watermarking Language Models through Language Models",
+    "url": "https://arxiv.org/html/2411.05091v1"
+  },
+  {
+    "description": "Digital image authentication is an extremely significant concern for the digital revolution, as it is easy to tamper with any image. In the last few decades, it has been an urgent concern for researchers to ensure the authenticity of digital images. Based on the desired applications, several ...",
+    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
+    "snippets": [
+      "Digital image authentication is an extremely significant concern for the digital revolution, as it is easy to tamper with any image. In the last few decades, it has been an urgent concern for researchers to ensure the authenticity of digital images. Based on the desired applications, several suitable watermarking techniques have been developed to mitigate this concern.",
+      "Digital image watermarking has gained attention from researchers due to its availability and the delivery of redundant information. These techniques protect digital content from unauthorized access and manipulation. These techniques are required for different applications, such as authentication, operator acknowledgment, material security, and trademark protection. Digital image watermarking techniques can be classified based on the working domain, kinds of documents, nature of the algorithm, human perception, and type of application, as illustrated in Figure 7.",
+      "All digital image watermarking techniques depend on the type of working domain (i.e., spatial, frequency, or hybrid domain), type of documents (i.e., text, image, audio, or video), nature of the algorithm used (i.e., sequential or parallel), human perceptibility (i.e., visible or invisible), and type of application (i.e., source or destination-based). This section analyzes various digital image watermarking methods, based on the working domain, by summarizing some recent research results in this field.",
+      "However, security remains a big challenge in digital image watermarking technologies, and the accommodation of IoT and blockchain-based authentication schemes provides a challenge for researchers. Therefore, future work can be extended by combining various techniques in different domains to fulfill the above three important requirements. Moreover, to improve robustness along with security, researchers should focus on developing new, advanced techniques. M.B. studied and drafted the whole paper; M.S.U."
+    ],
+    "title": "Digital Image Watermarking Techniques: A Review",
+    "url": "https://www.mdpi.com/2078-2489/11/2/110"
+  },
+  {
+    "description": "Large language models (LLMs) are gaining increasing popularity in both academia and industry, owing to their unprecedented performance in various applications. As LLMs continue to play a vital role in both research and daily use, their evaluation becomes ...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "In code generation tasks, the smaller LLMs trained for the tasks are competitive in performance, and CodeGen-16B [141] is comparable in performance to ChatGPT using a larger parameter setting, reaching about a 78% match [125]. Despite facing challenges in mastering and comprehending certain fundamental concepts in programming languages, ChatGPT showcases a commendable level of coding level [263]. Specifically, ChatGPT has developed superior skills in dynamic programming, greedy algorithm, and search, surpassing highly capable college students, but it struggles in data structure, tree, and graph theory. GPT-4 demonstrates an advanced ability to generate code based on given instructions, comprehend existing code, reason about code execution, simulate the impact of instructions, articulate outcomes in natural language, and execute pseudocode effectively [15].",
+      "Personality testing aims to measure individuals\u2019 personality traits and behavioral tendencies, and LLMs as powerful natural language processing models have been widely applied in such tasks. Research conducted by Bodroza et al. [10] investigated the personality features of using Davinci-003 as a chatbot and found variations in the consistency of its answers, despite exhibiting prosocial characteristics. However, there remains uncertainty regarding whether the chatbot\u2019s responses are driven by conscious self-reflection or algorithmic processes.",
+      "Furthermore, the ongoing evolution of LLMs has also presented novel aspects for evaluation, thereby challenging existing evaluation protocols and reinforcing the need for thorough, multifaceted evaluation techniques. While existing research such as Bubeck et al. [15] claimed that GPT-4 can be seen as sparks of AGI, others contest this claim due to the human-crafted nature of its evaluation approach. ... Structure of this paper.",
+      "It is generally believed among researchers that a computing machine that successfully passes the Turing Test can be considered as intelligent. Consequently, when viewed from a wider lens, the chronicle of AI can be depicted as the timeline of creation and evaluation of intelligent models and algorithms."
+    ],
+    "title": "A Survey on Evaluation of Large Language Models | ACM Transactions ...",
+    "url": "https://dl.acm.org/doi/full/10.1145/3641289"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [],
+    "title": "Natural Language Watermarking: Design, Analysis, and a ...",
+    "url": "https://www.researchgate.net/publication/220722323_Natural_Language_Watermarking_Design_Analysis_and_a_Proof-of-Concept_Implementation"
+  }
+]

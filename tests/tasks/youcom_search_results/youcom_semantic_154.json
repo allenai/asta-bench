@@ -1,0 +1,284 @@
+[
+  {
+    "description": "This study investigates the application of large language models (LLMs), specifically GPT-3.5 and GPT-4, with Chain-of-Though (CoT) in the automatic s\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "This study investigates the application of large language models (LLMs), specifically GPT-3.5 and GPT-4, with Chain-of-Though (CoT) in the automatic scoring of student-written responses to science assessments.",
+      "However, CoT prompting paired with contextual item stems and rubrics proved to be a significant contributor to scoring accuracy (13.44% increase for zero-shot; 3.7% increase for few-shot). We found a more balanced accuracy across different proficiency categories when CoT was used with a scoring rubric, highlighting the importance of domain-specific reasoning in enhancing the effectiveness of LLMs in scoring tasks.",
+      "Particularly, the single-call greedy sampling strategy with GPT-4 outperformed other approaches. This study also demonstrates the potential of LLMs in facilitating explainable and interpretable automatic scoring, emphasizing that CoT enhances accuracy and transparency, particularly when used with item stem and scoring rubrics."
+    ],
+    "title": "Applying large language models and chain-of-thought for automatic ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666920X24000146"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [],
+    "title": "Chain-of-Thought Prompting Elicits Reasoning in Large ...",
+    "url": "https://openreview.net/pdf?id=_VjQlMeSB_J"
+  },
+  {
+    "description": "We explore how generating a chain of thought -- a series of intermediate reasoning steps -- significantly improves the ability of large language models to perform complex reasoning. In particular, we show how such reasoning abilities emerge naturally in sufficiently large language models via ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:We explore how generating a chain of thought -- a series of intermediate reasoning steps -- significantly improves the ability of large language models to perform complex reasoning. In particular, we show how such reasoning abilities emerge naturally in sufficiently large language models via a simple method called chain of thought prompting, where a few chain of thought demonstrations are provided as exemplars in prompting.",
+      "Abstract page for arXiv paper 2201.11903: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "View a PDF of the paper titled Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, by Jason Wei and 8 other authors View PDF",
+      "Experiments on three large language models show that chain of thought prompting improves performance on a range of arithmetic, commonsense, and symbolic reasoning tasks. The empirical gains can be striking."
+    ],
+    "title": "[2201.11903] Chain-of-Thought Prompting Elicits Reasoning in Large ...",
+    "url": "https://arxiv.org/abs/2201.11903"
+  },
+  {
+    "description": "Unlock the full potential of Large Language Models (LLMs) with our guide on Chain-of-Thought (CoT) prompting.",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "Unlock the full potential of Large Language Models (LLMs) with our guide on Chain-of-Thought (CoT) prompting. Learn how to enhance reasoning and problem-solving abilities in LLMs.",
+      "CoT is effective because it helps focus the attention mechanism of the LLM. The decomposition of the reasoning process makes the model focus its attention on one part of the problem at a time, minimizing the risk of errors that might arise from handling too much information simultaneously.  \u00b7 Researchers at Google introduced Chain-of-Thought prompting in a paper titled \u201cChain of Thought Prompting Elicits Reasoning in Large Language Models\u201d in 2022.",
+      "The University of Tokyo, together with Google Research, proposed a nice method to improve LLM responses that consisted of simply adding \u201cLet\u2019s think step by step\" at the end of the original prompt. This simple sentence prompts the model to reason out loud and go through all the required steps to carry out the task. Let\u2019s analyze one of the examples that the authors proposed in the original paper \u201cLarge Language Models are Zero-Shot Reasoners\u201d: Comparison between standard prompting and the usage of implicit CoT instructions.",
+      "Multiple frameworks can help you implement CoT and other Prompt Engineering techniques, but LangChain is my favorite. If you are interested in using LangChain as part of your LLM-powered projects, the course \u201cDeveloping LLM Applications with LangChain\u201d is an ideal starting point. Chain-of-Thought prompting offers several benefits, particularly in enhancing the performance and reliability of language models in complex tasks."
+    ],
+    "title": "Chain-of-Thought Prompting: Step-by-Step Reasoning with LLMs | ...",
+    "url": "https://www.datacamp.com/tutorial/chain-of-thought-prompting"
+  },
+  {
+    "description": "OVERTHINKING: Slowdown Attacks on Reasoning LLMs, Kumar et al., PhD Knowledge Not Required: A Reasoning Challenge for Large Language Models, Anderson et al., Scaling Test-Time Compute Without Verification or RL is Suboptimal, Setlur et al., The Relationship Between Reasoning and Performance in Large Language Models--o3 (mini) Thinks Harder, Not Longer, Ballon et al., Unveiling and Causalizing CoT...",
+    "favicon_url": "https://you.com/favicon?domain=long-cot.github.io&size=128",
+    "snippets": [
+      "OVERTHINKING: Slowdown Attacks on Reasoning LLMs, Kumar et al., PhD Knowledge Not Required: A Reasoning Challenge for Large Language Models, Anderson et al., Scaling Test-Time Compute Without Verification or RL is Suboptimal, Setlur et al., The Relationship Between Reasoning and Performance in Large Language Models--o3 (mini) Thinks Harder, Not Longer, Ballon et al., Unveiling and Causalizing CoT: A Causal Pespective, Fu et al.,",
+      "Agent-R: Training Language Model Agents to Reflect via Iterative Self-Training, Yuan et al., ... Don't Get Lost in the Trees: Streamlining LLM Reasoning by Overcoming Tree Search Exploration Pitfalls, Wang et al., SoS1: O1 and R1-Like Reasoning LLMs are Sum-of-Square Solvers, Li et al., ... Unveiling the Mechanisms of Explicit CoT Training: How Chain-of-Thought Enhances Reasoning Generalization, Yao et al.,",
+      "CoT2Align: Cross-Chain of Thought Distillation via Optimal Transport Alignment for Language Models with Different Tokenizers, Le et al., Unveiling the Key Factors for Distilling Chain-of-Thought Reasoning, Chen et al., Chain-of-Thought Matters: Improving Long-Context Language Models with Reasoning Path Supervision, Zhu et al., Demystifying Long Chain-of-Thought Reasoning in LLMs, Yeo et al.,",
+      "LLM Reasoners: New Evaluation, Library, and Analysis of Step-by-Step Reasoning with Large Language Models, Hao et al., Token-Supervised Value Models for Enhancing Mathematical Reasoning Capabilities of Large Language Models, Lee et al., Tlcr: Token-level continuous reward for fine-grained reinforcement learning from human feedback, Yoon et al., ... Critic-cot: Boosting the reasoning abilities of large language model via chain-of-thoughts critic, Zheng et al.,"
+    ],
+    "title": "Towards Reasoning Era: A Survey of Long Chain-of-Thought",
+    "url": "https://long-cot.github.io/"
+  },
+  {
+    "description": "Reasoning in LLMs: Papers and Resources, including Chain-of-Thought, OpenAI o1, and DeepSeek-R1 \ud83c\udf53 - atfortes/Awesome-LLM-Reasoning",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning. Zayne Sprague, Fangcong Yin, Juan Diego Rodriguez, Dongwei Jiang, Manya Wadhwa, Prasann Singhal, Xinyu Zhao, Xi Ye, Kyle Mahowald, Greg Durrett. Preprint'24 \u00b7 Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers. Chenglei Si, Diyi Yang, Tatsunori Hashimoto. Preprint'24 \u00b7 A Peek into Token Bias: Large Language Models Are Not Yet Genuine Reasoners.",
+      "LLaVA-CoT: Let Vision Language Models Reason Step-by-Step code model \u00b7 Guowei Xu, Peng Jin, Hao Li, Yibing Song, Lichao Sun, Li Yuan. Preprint'24 \u00b7 Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models. [project] [code] Yushi Hu, Weijia Shi, Xingyu Fu, Dan Roth, Mari Ostendorf, Luke Zettlemoyer, Noah A Smith, Ranjay Krishna. Preprint'24 \u00b7 Chart-based Reasoning: Transferring Capabilities from LLMs to VLMs.",
+      "If you would like to test the symbolic reasoning ability of LLMs, take a look at: LLMSymbolicReasoningBench \ud83d\ude04 \u00b7 Multimodal Chain-of-Thought Reasoning: A Comprehensive Survey. [code] Yaoting Wang, Shengqiong Wu, Yuecheng Zhang, William Wang, Ziwei Liu, Jiebo Luo, Hao Fei. Preprint'25 \u00b7 Recent Advances in Large Language Model Benchmarks Against Data Contamination: From Static to Dynamic Evaluation.",
+      "Large Language Models Cannot Self-Correct Reasoning Yet. Jie Huang, Xinyun Chen, Swaroop Mishra, Huaixiu Steven Zheng, Adams Wei Yu, Xinying Song, Denny Zhou. ICLR'24 \u00b7 At Which Training Stage Does Code Data Help LLM Reasoning? Yingwei Ma, Yue Liu, Yue Yu, Yuanliang Zhang, Yu Jiang, Changjian Wang, Shanshan Li. ICLR'24 \u00b7 Measuring Faithfulness in Chain-of-Thought Reasoning."
+    ],
+    "title": "GitHub - atfortes/Awesome-LLM-Reasoning: Reasoning in LLMs: Papers ...",
+    "url": "https://github.com/atfortes/Awesome-LLM-Reasoning"
+  },
+  {
+    "description": "A trend starts from \"Chain of Thought Prompting Elicits Reasoning in Large Language Models\". - Timothyxxx/Chain-of-ThoughtsPapers",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "A trend starts from \"Chain of Thought Prompting Elicits Reasoning in Large Language Models\". Check Tool use LLMs and Environment Interactive LLMs for the newest good direction we are doing!",
+      "Recursion of Thought: A Divide and Conquer Approach to Multi-Context Reasoning with Language Models \u00b7 Soochan Lee and Gunehee Kim [pdf], [code], [poster] The CoT Collection: Improving Zero-shot and Few-shot Learning of Language Models via Chain-of-Thought Fine-Tuning",
+      "Self-Consistency Improves Chain of Thought Reasoning in Language Models. Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, Denny Zhou [pdf] 2022.3 \u00b7 STaR: Self-Taught Reasoner Bootstrapping Reasoning With Reasoning. Eric Zelikman, Yuhuai Wu, Noah D. Goodman [pdf], [code] 2022.3 \u00b7 PaLM: Scaling Language Modeling with Pathways.",
+      "Text and Patterns: For Effective Chain of Thought, It Takes Two to Tango. ... Compositional Semantic Parsing with Large Language Models. Andrew Drozdov, Nathanael Sch\u00e4rli, Ekin Aky\u00fcrek, Nathan Scales, Xinying Song, Xinyun Chen, Olivier Bousquet, Denny Zhou [pdf] 2022.9 \u00b7 Dynamic Prompt Learning via Policy Gradient for Semi-structured Mathematical Reasoning."
+    ],
+    "title": "GitHub - Timothyxxx/Chain-of-ThoughtsPapers: A trend starts from ...",
+    "url": "https://github.com/Timothyxxx/Chain-of-ThoughtsPapers"
+  },
+  {
+    "description": "ChatCoT: Tool-Augmented Chain-of-Thought Reasoning on\\ Chat-based Large Language Models (opens in a new tab) (May 2023) WikiChat: A Few-Shot LLM-Based Chatbot Grounded with Wikipedia (opens in a new tab) (May 2023) Query Rewriting for Retrieval-Augmented Large Language Models (opens in a new tab) (May 2023) Discrete Prompt Optimization via Constrained Generation for Zero-shot Re-ranker ...",
+    "favicon_url": "https://you.com/favicon?domain=www.promptingguide.ai&size=128",
+    "snippets": [
+      "ChatCoT: Tool-Augmented Chain-of-Thought Reasoning on\\ Chat-based Large Language Models (opens in a new tab) (May 2023) WikiChat: A Few-Shot LLM-Based Chatbot Grounded with Wikipedia (opens in a new tab) (May 2023) Query Rewriting for Retrieval-Augmented Large Language Models (opens in a new tab) (May 2023) Discrete Prompt Optimization via Constrained Generation for Zero-shot Re-ranker (opens in a new tab) (May 2023)",
+      "Enhancing Zero-Shot Chain-of-Thought Reasoning in Large Language Models through Logic (opens in a new tab) (February 2024) Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4 (opens in a new tab) (December 2023) Walking Down the Memory Maze: Beyond Context Limit through Interactive Reading (opens in a new tab) (October 2023) Large Language Models as Analogical Reasoners (opens in a new tab) (October 2023) LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models (opens in a new tab) (October 2023)",
+      "Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models (opens in a new tab) (May 2023) Meta-in-context learning in large language models (opens in a new tab) (May 2023) Let's Sample Step by Step: Adaptive-Consistency for Efficient Reasoning with LLMs (opens in a new tab) (May 2023)",
+      "Multimodal Chain-of-Thought Reasoning in Language Models (opens in a new tab) (February 2023) Large Language Models Can Be Easily Distracted by Irrelevant Context (opens in a new tab) (February 2023) Synthetic Prompting: Generating Chain-of-Thought Demonstrations for Large Language Models (opens in a new tab) (February 2023) Progressive Prompts: Continual Learning for Language Models (opens in a new tab) (January 2023) Batch Prompting: Efficient Inference with LLM APIs (opens in a new tab) (January 2023)"
+    ],
+    "title": "Papers | Prompt Engineering Guide",
+    "url": "https://www.promptingguide.ai/papers"
+  },
+  {
+    "description": "[Paper List] Papers integrating knowledge graphs (KGs) and large language models (LLMs) - zjukg/KG-LLM-Papers",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "[arxiv] Benchmarking Large Language Models in Complex Question Answering Attribution using Knowledge Graphs. 2024.01 \u00b7 [arxiv] Clue-Guided Path Exploration: An Efficient Knowledge Base Question-Answering Framework with Low Computational Resource Consumption. 2024.01 \u00b7 [AAAI 2024] KAM-CoT: Knowledge Augmented Multimodal Chain-of-Thoughts Reasoning.",
+      "[arxiv] LLM as Prompter: Low-resource Inductive Reasoning on Arbitrary Knowledge Graphs. 2024.02 \u00b7 [arxiv] Counter-intuitive: Large Language Models Can Better Understand Knowledge Graphs Than We Thought.",
+      "[arxiv] Head-to-Tail: How Knowledgeable are Large Language Models (LLM)? A.K.A. Will LLMs Replace Knowledge Graphs?. 2023.08 \u00b7 [arxiv] MindMap: Knowledge Graph Prompting Sparks Graph of Thoughts in Large Language Models.",
+      "[NeurIPS 2024] LLM4EA: Entity Alignment with Noisy Annotations from Large Language Models. 2024.09 [Repo] [arxiv] Chain-of-Knowledge: Integrating Knowledge Reasoning into Large Language Models by Learning from Knowledge Graphs."
+    ],
+    "title": "GitHub - zjukg/KG-LLM-Papers: [Paper List] Papers integrating ...",
+    "url": "https://github.com/zjukg/KG-LLM-Papers"
+  },
+  {
+    "description": "Chain of thought (CoT) is a prompt engineering technique that enhances the output of large language models (LLMs), particularly for complex tasks involving multistep reasoning.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "In this study, the concept of chain of thought prompting is introduced which elicits reasoning in LLMs.1 The paper argues that prompting models to generate intermediate reasoning steps significantly boosts their ability to accurately solve multistep problems like arithmetic, common sense and symbolic reasoning. Researchers were inspired by the LLMs\u2019 ability to \u201cthink out loud\u201d in natural language, noting that as parameter size increased, so did reasoning ability and accuracy. For this reason, CoT prompting is considered an emergent ability, or an ability that appears as model size or complexity scales up.",
+      "The main difference between these methods is that prompt chaining sequences multiple prompts to break down tasks step-by-step, while CoT prompting elicits the model\u2019s reasoning process within a single prompt. Chain of thought prompting leverages large language models (LLMs) to articulate a succession of reasoning steps, guiding the model toward generating analogous reasoning chains for novel tasks.",
+      "These variants of chain of thought prompting not only showcase the flexibility and adaptability of the CoT approach but also hint at the vast potential for future developments in AI reasoning and problem-solving capabilities. Discover expertly curated insights and news on AI, cloud and more in the weekly Think Newsletter. ... CoT prompting is a powerful technique for enhancing the performance of large language models (LLMs) on complex reasoning tasks, offering significant benefits in various domains such as improved accuracy, transparency and multistep reasoning abilities.",
+      "This is achieved through exemplar-based prompts that illustrate the reasoning process, thus enhancing the model's capacity for addressing complex reasoning challenges.4 Let\u2019s understand the flow of this prompting technique by addressing the classic math word problem\u2014solving a polynomial equation. Chain of thought (CoT) prompting can significantly aid in solving polynomial equations by guiding an LLM to follow a series of logical steps, breaking down the problem-solving process.5 Let's examine how CoT prompting can tackle a polynomial equation."
+    ],
+    "title": "What is chain of thought (CoT) prompting? | IBM",
+    "url": "https://www.ibm.com/think/topics/chain-of-thoughts"
+  },
+  {
+    "description": "\ud83d\udcf0 Must-read papers and blogs on LLM based Long Context Modeling \ud83d\udd25 - Xnhyacinth/Awesome-LLM-Long-Context-Modeling",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Paper: Dynamic Chunking and Selection for Reading Comprehension of Ultra-Long Context in Large Language Models \u00b7 Paper: ExpertLongBench: Benchmarking Language Models on Expert-Level Long-Form Generation Tasks with Structured Checklists ... Paper: Sentinel: Attention Probing of Proxy Models for LLM Context Compression with an Understanding Perspective ... Paper: THINK-Bench: Evaluating Thinking Efficiency and Chain-of-Thought Quality of Large Reasoning Models",
+      "This repository includes papers and blogs about Efficient Transformers, KV Cache, Length Extrapolation, Long-Term Memory, Retrieval-Augmented Generation (RAG), Compress, Long Text Generation, Long Video, Long CoT and Evaluation for Long Context Modeling. \ud83d\udd25 Must-read papers for LLM-based Long Context Modeling. \ud83d\udd25\u26a1\ud83d\udd25 Thanks for all the great contributors on GitHub! \ud83d\ude80\ud83e\udd1d\ud83d\ude80 I have the privilege of joining [LCLM-Horizon] and collaborating with them on providing a very complete and comprehensive scholarly survey (A Comprehensive Survey on Long Context Language Modeling) and repository (A-Comprehensive-Survey-For-Long-Context-Language-Modeling) dedicated to Long Context Language Modeling.",
+      "Revisiting Long-CoT Compression with Capability in Mind for Better Reasoning \u00b7 Paper: FlashThink: An Early Exit Method For Efficient Reasoning \u00b7 Paper: Reinforcement Learning vs. Distillation: Understanding Accuracy and Capability in LLM Reasoning \u00b7 Paper: Activation-Guided Consensus Merging for Large Language Models",
+      "Paper: MiniLongBench: The Low-cost Long Context Understanding Benchmark for Large Language Models ACL 2025 \u00b7 Paper: 100-LongBench: Are de facto Long-Context Benchmarks Literally Evaluating Long-Context Ability? Paper: Route to Reason: Adaptive Routing for LLM and Reasoning Strategy Selection \u00b7 Paper: Thinking Fast and Right: Balancing Accuracy and Reasoning Length with Adaptive Rewards ... Paper: Don't Overthink it. Preferring Shorter Thinking Chains for Improved LLM Reasoning"
+    ],
+    "title": "GitHub - Xnhyacinth/Awesome-LLM-Long-Context-Modeling: \ud83d\udcf0 Must-read ...",
+    "url": "https://github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling"
+  },
+  {
+    "description": "This alert has been successfully added and will be sent to: \u00b7 You will be notified whenever a record that you have chosen has been cited",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Generate & rank: A multi-task framework for math word problems. In Findings of the Association for Computational Linguistics: EMNLP 2021. ... Alon Talmor, Jonathan Herzig, Nicholas Lourie, and Jonathan Berant. 2019. CommonsenseQA: A question answering challenge targeting commonsense knowledge. NAACL. ... Alon Talmor, Oyvind Tafjord, Peter Clark, Yoav Goldberg, and Jonathan Berant. 2020. Leap-of-thought: Teaching pre-trained models to systematically reason over implicit knowledge.",
+      "In particular, we show how such reasoning abilities emerge naturally in sufficiently large language models via a simple method called chain-of-thought prompting, where a few chain of thought demonstrations are provided as exemplars in prompting.",
+      "Romal Thoppilan, Daniel De Freitas, Jamie Hall, Noam Shazeer, Apoorv Kulshreshtha, Heng-Tze Cheng, Alicia Jin, Taylor Bos, Leslie Baker, Yu Du, et al. 2022. LaMDA: Language models for dialog applications. arXiv preprint arXiv:2201.08239. ... Xuezhi Wang, Jason Wei, Dale Schuurmans, Quoc Le, Ed Chi, and Denny Zhou. 2022a. Self-consistency improves chain of thought reasoning in language models.",
+      "We explore how generating a chain of thought\u2014a series of intermediate reasoning steps\u2014significantly improves the ability of large language models to perform complex reasoning."
+    ],
+    "title": "Chain-of-thought prompting elicits reasoning in large language ...",
+    "url": "https://dl.acm.org/doi/10.5555/3600270.3602070"
+  },
+  {
+    "description": "Benchmarking large language models' complex reasoning ability with chain-of-thought prompting - FranxYao/chain-of-thought-hub",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "According to Nathan Lambert, HuggingFace is currently redoing the backend of Open LLM Leaderboard, and the results may change (Jun 10 2023). Chatbot Arena evaluates chatbot models, which is more user-oriented at deployment. Our evaluation is more developer-oriented, and we consider on not only chatbots but also base models. If we know model scale, we rank it by scale. If we do not know model scale, we rank it by GSM8K, the classical benchmark measuring chain-of-thought math reasoning performance.",
+      "We consider most leading models. Currently, the performance of LLaMA 65B on Open LLM Leaderboard is just 48.8, which is significantly lower than the 63.4 reported in the paper.",
+      "Generally, the recipe for building models of strong reasoning is the same as generic LLMs: pretraining, finetuning, reinforcement learning. Here we list some very important papers that should be considered:",
+      "Also be careful that GPT-4/ 3.5's performance on GSM8K is not true few-shot -- in GPT-4 report they said that they mixed a portion of GSM8K training set to train the model \u00b7 LLaMA performance on MMLU is from their paper and probably not CoT but AO. Generally on MMLU, AO is better than CoT but just slightly better."
+    ],
+    "title": "GitHub - FranxYao/chain-of-thought-hub: Benchmarking large language ...",
+    "url": "https://github.com/FranxYao/chain-of-thought-hub"
+  },
+  {
+    "description": "Discover how Meta AI's Chain of Continuous Thought (Coconut) empowers large language models (LLMs) to reason in their own language.",
+    "favicon_url": "https://you.com/favicon?domain=aipapersacademy.com&size=128",
+    "snippets": [
+      "Discover how Meta AI\u2019s Chain of Continuous Thought (Coconut) empowers large language models (LLMs) to reason in their own language",
+      "Large language models (LLMs) have demonstrated incredible reasoning abilities, penetrating an increasing number of domains in our lives. These models achieve such capabilities by pretraining on vast amounts of human language. A common and powerful method to extract the most accurate responses from these models is called Chain-of-Thought (CoT), where we encourage the model to generate solutions step-by-step, providing reasoning for reaching the final answer.",
+      "First, the Coconut method significantly enhances LLMs reasoning. We saw this when comparing the results to the No-CoT version. Second, latent space reasoning allowed the model to develop an interesting BFS-like reasoning pattern, which helped it perform better on planning-intensive tasks. Looking forward, there are various interesting directions for future research. One possible direction is pretraining large language models with continuous thoughts, rather than starting with a standard pretrained model.",
+      "If humans do not always translate thoughts to words as part of the reasoning process, why should AI? In this post, we dive into an intriguing paper by Meta, titled: \u201cTraining Large Language Models to Reason in a Continuous Latent Space.\u201d This paper aims to break free from the constraint of word-based reasoning by allowing LLMs to reason in a continuous latent space using a new method called COCONUT, short for Chain of Continuous Thought."
+    ],
+    "title": "Coconut by Meta AI \u2013 Better LLM Reasoning With Chain of CONTINUOUS ...",
+    "url": "https://aipapersacademy.com/chain-of-continuous-thought/"
+  },
+  {
+    "description": "Keep in mind that the authors claim ... large language models. ... Learn more about chain-of-thought prompting and advanced prompting methods in our new AI courses. Join now! (opens in a new tab) Use code PROMPTING20 to get an extra 20% off. Image Source: Kojima et al. (2022) (opens in a new tab) One recent idea that came out more recently is the idea of zero-shot CoT (opens in ...",
+    "favicon_url": "https://you.com/favicon?domain=www.promptingguide.ai&size=128",
+    "snippets": [
+      "Keep in mind that the authors claim that this is an emergent ability that arises with sufficiently large language models. ... Learn more about chain-of-thought prompting and advanced prompting methods in our new AI courses. Join now! (opens in a new tab) Use code PROMPTING20 to get an extra 20% off. Image Source: Kojima et al. (2022) (opens in a new tab) One recent idea that came out more recently is the idea of zero-shot CoT (opens in a new tab) (Kojima et al.",
+      "Stage 2): demonstration sampling: select a representative question from each cluster and generate its reasoning chain using Zero-Shot-CoT with simple heuristics \u00b7 The simple heuristics could be length of questions (e.g., 60 tokens) and number of steps in rationale (e.g., 5 reasoning steps). This encourages the model to use simple and accurate demonstrations.",
+      "(2022) (opens in a new tab) propose an approach to eliminate manual efforts by leveraging LLMs with \"Let's think step by step\" prompt to generate reasoning chains for demonstrations one by one. This automatic process can still end up with mistakes in generated chains. To mitigate the effects of the mistakes, the diversity of demonstrations matter. This work proposes Auto-CoT, which samples questions with diversity and generates reasoning chains to construct the demonstrations.",
+      "Introduced in Wei et al. (2022) (opens in a new tab), chain-of-thought (CoT) prompting enables complex reasoning capabilities through intermediate reasoning steps."
+    ],
+    "title": "Chain-of-Thought (CoT) Prompting",
+    "url": "https://www.promptingguide.ai/techniques/cot"
+  },
+  {
+    "description": "Learn what chain-of-thought prompting is, how it improves large language model (LLM) reasoning, the different types of chain-of-thought prompting and other benefits and limitations.",
+    "favicon_url": "https://you.com/favicon?domain=humanloop.com&size=128",
+    "snippets": [
+      "Chain-of-Thought (CoT) prompting is a popular technique designed to enhance reasoning capabilities in large language models (LLMs). By breaking down complex tasks into structured, sequential steps, CoT prompts allow AI systems to achieve more accurate and coherent outputs. Introduced by Wei et al. (2022)1 in their paper \"Chain-of-Thought Prompting Elicits Reasoning in Large Language Models\"1, this method highlights how structured reasoning dramatically improves performance, especially in tasks requiring multi-step thinking.",
+      "Chain-of-Thought (CoT)1 structures AI responses by breaking complex problems into sequential reasoning steps. This chain of reasoning allows large language models (LLMs) to handle tasks requiring step thinking, making them more capable of producing logical and coherent outcomes rather than giving a direct answer.",
+      "Chain-of-Thought (CoT) enhances language models by guiding them through a structured process of reasoning. Instead of handling a task in one leap, CoT prompts large language models (LLMs) to generate insights incrementally, improving accuracy and coherence.",
+      "Few-shot prompting involves giving a language model (LLM) a handful of examples to demonstrate how it should approach a task. While effective for tasks with clear patterns, few-shot prompting often struggles with more complex reasoning problems that require multiple steps, as the model tends to focus on immediate answers rather than underlying processes. In contrast, Chain-of-Thought (CoT) prompting explicitly guides the model through sequential steps of reasoning."
+    ],
+    "title": "Chain of Thought Prompting (CoT)",
+    "url": "https://humanloop.com/blog/chain-of-thought-prompting"
+  },
+  {
+    "description": "Papers related to Large Language Models in all top venues - mtuann/llm-updated-papers",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Explore additional research papers on the following topics: For Large Language Models papers, please visit the LLM Repository.",
+      "Yunqiao Yang, Houxing Ren, Zimu Lu, Ke Wang, Weikang Shi, Aojun Zhou, Junting Pan, Mingjie Zhan, Hongsheng Li ... Kunlun Zhu, Jiaxun Zhang, Ziheng Qi, Nuoxing Shang, Zijia Liu, Peixuan Han, Yue Su, Haofei Yu, Jiaxuan You ... Segment Policy Optimization: Effective Segment-Level Credit Assignment in RL for Large Language Models ... Sentinel: Attention Probing of Proxy Models for LLM Context Compression with an Understanding Perspective",
+      "Large Language Models for Depression Recognition in Spoken Language Integrating Psychological Knowledge \u00b7 Yupei Li, Shuaijie Shao, Manuel Milling, Bj\u00f6rn W. Schuller ... Beyond path selection: Better LLMs for Scientific Information Extraction with MimicSFT and Relevance and Rule-induced(R$^2$)GRPO",
+      "UQLegalAI@COLIEE2025: Advancing Legal Case Retrieval with Large Language Models and Graph Neural Networks ... Ke Zhang, Cihan Xiao, Yiqun Mei, Jiacong Xu, Vishal M. Patel ... SELF-PERCEPT: Introspection Improves Large Language Models' Detection of Multi-Person Mental Manipulation in Conversations \u00b7 Danush Khanna, Pratinav Seth, Sidhaarth Sredharan Murali, Aditya Kumar Guru, Siddharth Shukla, Tanuj Tyagi, Sandeep Chaurasia, Kripabandhu Ghosh ... Evaluation of LLMs in Medical Text Summarization: The Role of Vocabulary Adaptation in High OOV Settings"
+    ],
+    "title": "GitHub - mtuann/llm-updated-papers: Papers related to Large Language ...",
+    "url": "https://github.com/mtuann/llm-updated-papers"
+  },
+  {
+    "description": "Awesome-LLM: a curated list of Large Language Model - Hannibal046/Awesome-LLM",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "LLMsPracticalGuide - A curated list of practical guide resources of LLMs \u00b7 Awesome ChatGPT Prompts - A collection of prompt examples to be used with the ChatGPT model. awesome-chatgpt-prompts-zh - A Chinese collection of prompt examples to be used with the ChatGPT model. Awesome ChatGPT - Curated list of resources for ChatGPT and GPT-3 from OpenAI. Chain-of-Thoughts Papers - A trend starts from \"Chain of Thought Prompting Elicits Reasoning in Large Language Models.",
+      "LLM Reading List - A paper & resource list of large language models. Reasoning using Language Models - Collection of papers and resources on Reasoning using Language Models. Chain-of-Thought Hub - Measuring LLMs' Reasoning Performance",
+      "AI community the Whole World by storm. Here is a curated list of papers about large language models, especially relating to ChatGPT. It also contains frameworks for LLM training, tools to deploy LLM, courses and tutorials about LLM and all publicly available LLM checkpoints and APIs.",
+      "Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling ... Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality ... If you're interested in the field of LLM, you may find the above list of milestone papers helpful to explore its history and state-of-the-art."
+    ],
+    "title": "GitHub - Hannibal046/Awesome-LLM: Awesome-LLM: a curated list of ...",
+    "url": "https://github.com/Hannibal046/Awesome-LLM"
+  },
+  {
+    "description": "For complex tasks that require exploration or strategic lookahead, traditional or simple prompting techniques fall short. Yao et el. (2023) (opens in a new tab) and Long (2023) (opens in a new tab) recently proposed Tree of Thoughts (ToT), a framework that generalizes over chain-of-thought ...",
+    "favicon_url": "https://you.com/favicon?domain=www.promptingguide.ai&size=128",
+    "snippets": [
+      "(2023) (opens in a new tab) and Long (2023) (opens in a new tab) recently proposed Tree of Thoughts (ToT), a framework that generalizes over chain-of-thought prompting and encourages exploration over thoughts that serve as intermediate steps for general problem solving with language models.",
+      "From the results reported in the figure below, ToT substantially outperforms the other prompting methods: Image Source: Yao et el. (2023) (opens in a new tab) Code available here (opens in a new tab) and here (opens in a new tab) At a high level, the main ideas of Yao et el. (2023) (opens in a new tab) and Long (2023) (opens in a new tab) are similar. Both enhance LLM's capability for complex problem solving through tree search via a multi-round conversation.",
+      "Hulbert (2023) (opens in a new tab) has proposed Tree-of-Thought Prompting, which applies the main concept from ToT frameworks as a simple prompting technique, getting the LLM to evaluate intermediate thoughts in a single prompt. A sample ToT prompt is: Imagine three different experts are answering this question. All experts will write down 1 step of their thinking, then share it with the group. Then all experts will go on to the next step, etc. If any expert realises they're wrong at any point then they leave.",
+      "(2023) (opens in a new tab) leverages DFS/BFS/beam search, while the tree search strategy (i.e. when to backtrack and backtracking by how many levels, etc.) proposed in Long (2023) (opens in a new tab) is driven by a \"ToT Controller\" trained through reinforcement learning. DFS/BFS/Beam search are generic solution search strategies with no adaptation to specific problems. In comparison, a ToT Controller trained through RL might be able learn from new data set or through self-play (AlphaGo vs brute force search), and hence the RL-based ToT system can continue to evolve and learn new knowledge even with a fixed LLM."
+    ],
+    "title": "Tree of Thoughts (ToT) | Prompt Engineering Guide",
+    "url": "https://www.promptingguide.ai/techniques/tot"
+  },
+  {
+    "description": "Latest Advances on Long Chain-of-Thought Reasoning - LightChen233/Awesome-Long-Chain-of-Thought-Reasoning",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Towards Large Reasoning Models: A Survey of Reinforced Reasoning with Large Language Models, Xu et al., PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models, Song et al., Deepseek-r1: Incentivizing reasoning capability in llms via reinforcement learning, Guo et al., Do We Need to Verify Step by Step? Rethinking Process Supervision from a Theoretical Perspective, Jia et al., Unveiling and Causalizing CoT: A Causal Pespective, Fu et al.,",
+      "Don't Get Lost in the Trees: Streamlining LLM Reasoning by Overcoming Tree Search Exploration Pitfalls, Wang et al., Guiding language model reasoning with planning tokens, Wang et al., MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning, Sprague et al., Quiet-star: Language models can teach themselves to think before speaking, Zelikman et al., From explicit cot to implicit cot: Learning to internalize cot step by step, Deng et al.,",
+      "SKIntern: Internalizing Symbolic Knowledge for Distilling Better CoT Capabilities into Small Language Models, Liao et al., CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning, Wen et al., Improving Chain-of-Thought Reasoning via Quasi-Symbolic Abstractions, Ranaldi et al., Towards Better Understanding of Program-of-Thought Reasoning in Cross-Lingual and Multilingual Environments, Payoungkhamdee et al., Beyond Limited Data: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving, Dong et al.,",
+      "Don't Get Lost in the Trees: Streamlining LLM Reasoning by Overcoming Tree Search Exploration Pitfalls, Wang et al., Training verifiers to solve math word problems, Cobbe et al., Chain of Thought Imitation with Procedure Cloning, Yang et al., Large Language Models Are Reasoning Teachers, Ho et al., The CoT Collection: Improving Zero-shot and Few-shot Learning of Language Models via Chain-of-Thought Fine-Tuning, Kim et al.,"
+    ],
+    "title": "GitHub - LightChen233/Awesome-Long-Chain-of-Thought-Reasoning: ...",
+    "url": "https://github.com/LightChen233/Awesome-Long-Chain-of-Thought-Reasoning"
+  },
+  {
+    "description": "In this article, we summarize some of the most prominent approaches developed to improve the reasoning of LLMs.",
+    "favicon_url": "https://you.com/favicon?domain=www.topbots.com&size=128",
+    "snippets": [
+      "Reasoning with Language Model Prompting: A Survey. This paper, first published in December 2022, may not cover the most recent developments in LLM reasoning but still offers a comprehensive survey of available approaches. It identifies and details various methods, organizing them into categories such as strategic enhancements and knowledge enhancements. The authors describe multiple reasoning strategies, including chain-of-thought prompting and more sophisticated techniques that combine human-like reasoning processes with external computation engines to enhance performance.",
+      "The findings prompt a reevaluation of the practical applications of self-correction in LLMs and suggest directions for future research to address these challenges. Now, let\u2019s explore some specific strategies designed to enhance the reasoning capabilities of large language models. The researchers from Princeton University and Google DeepMind suggested a novel framework for language model inference called Tree of Thoughts (ToT). This framework extends the well-known chain-of-thought method by allowing the exploration of coherent text units, referred to as \u201cthoughts,\u201d which function as intermediate steps in problem-solving.",
+      "For instance, using the least-to-most prompting technique, the GPT-3 code-davinci-002 model achieved at least 99% accuracy on the compositional generalization benchmark SCAN with only 14 exemplars, significantly higher than the 16% accuracy achieved with chain-of-thought prompting. The prompts for all tasks are available in the Appendix of the research paper. This research paper introduces Multimodal-CoT, a novel approach for enhancing chain-of-thought (CoT) reasoning by integrating both language and vision modalities into a two-stage reasoning framework that separates rationale generation and answer inference.",
+      "The proposed Multimodal-CoT framework uniquely combines text and image modalities in the chain-of-thought reasoning process. Two-stage reasoning framework. The framework separates the process into rationale generation and answer inference stages so that answer inference can leverage better generated rationales that are based on multimodal information. Addressing hallucinations in smaller models. To mitigate the frequent issue of hallucinations in language models with fewer than 100B parameters, the authors suggest fusing vision features with encoded language representations before inputting them into the decoder."
+    ],
+    "title": "Advancing AI\u2019s Cognitive Horizons: 8 Significant Research Papers ...",
+    "url": "https://www.topbots.com/llm-reasoning-research-papers/"
+  },
+  {
+    "description": "Some fundamental papers and a one-sentence summary for each; start your own paper club!",
+    "favicon_url": "https://you.com/favicon?domain=eugeneyan.com&size=128",
+    "snippets": [
+      "InstructGPT: Training language models to follow instructions with human feedback: 40 labelers are all you need* (*Plus supervised fine-tuning, reward modeling, and PPO) LoRA: Low-Rank Adaptation of Large Language Models: One rank is all you need \u00b7 QLoRA: Efficient Finetuning of Quantized LLMs: 4-bit is all you need* (*Plus double quantization and paged optimizers)",
+      "Chain-of-Note: Enhancing Robustness in Retrieval-Augmented Language Models: Asking the LLM to reflect on retrieved documents is all you need",
+      "Self-Rewarding Language Models: Asking the model to evaluate itself is all you need. Building Your Own Product Copilot - Challenges, Opportunities, and Needs: Prompt engineering LLMs is NOT all you need.",
+      "Yan, Ziyou. (Jan 2024). Language Modeling Reading List (to Start Your Paper Club). eugeneyan.com. https://eugeneyan.com/writing/llm-reading-list/."
+    ],
+    "title": "Language Modeling Reading List (to Start Your Paper Club)",
+    "url": "https://eugeneyan.com/writing/llm-reading-list/"
+  },
+  {
+    "description": "Large language models (LLMs) have demonstrated impressive capabilities in natural language processing. However, their internal mechanisms are still unclear and this lack of transparency poses unwan...",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "Large language models (LLMs) have demonstrated impressive capabilities in natural language processing. However, their internal mechanisms are still unclear and this lack of transparency poses unwanted risks for downstream applications. Therefore, ...",
+      "This makes these explanation techniques less practical for real-world applications that end-users can utilize. On the other hand, this increased complexity makes in-depth analysis challenging, obstructing debugging and diagnosing of the models. Furthermore, comprehending the unique capabilities of LLMs in in-context learning (ICL) [Li et al. 2023b] and chain-of-thought (CoT) prompting [Wu et al.",
+      "For instance, LLMs could provide CoT explanations for their own decision-making processes. Additionally, recent research finds LLMs can serve as tools to provide post-hoc explanations for predictions made by other machine learning models [Kroeger et al. 2023]. To better understand and enhance LLMs, it is imperative to review available explainability techniques and develop an understanding of potential future directions.",
+      "However, the reliability of applying generated explanations still necessitates further investigation. It is worth noting that both the techniques introduced in this section and the CoT explanations covered later in Section 4 produce natural language explanations. However, the explanations covered here are typically generated by a separate model, while CoT explanations are produced by the LLMs themselves."
+    ],
+    "title": "Explainability for Large Language Models: A Survey | ACM Transactions ...",
+    "url": "https://dl.acm.org/doi/10.1145/3639372"
+  },
+  {
+    "description": "We discuss a new paper that seeks to improve how LLMs handle complex reasoning tasks by drawing inspiration from human cognition.",
+    "favicon_url": "https://you.com/favicon?domain=arize.com&size=128",
+    "snippets": [
+      "LLMs have traditionally been restricted to reason in the \u201clanguage space,\u201d where chain-of-thought (CoT) is used to solve complex reasoning problems. But a new paper argues that language space may not always be the best for reasoning.",
+      "As the paper notes, \u201cNeuroimaging studies have consistently shown that the language network\u2026remains largely inactive during various reasoning tasks.\u201d \u00b7 To understand Coconut, let\u2019s first get on the same page about Chain of Thought (CoT). CoT involves prompting LLMs to reason step by step before arriving at a conclusion.",
+      "In this week\u2019s paper read, we covered an exciting new technique from a team at Meta called Chain of Continuous Thought\u2014also known as \u201cCoconut.\u201d In the paper, \u201cTraining Large Language Models to Reason in a Continuous Latent Space\u201d explores the potential of allowing LLMs to reason in an unrestricted latent space instead of being constrained by natural language tokens. ... We broke down the novel technique introduced in a paper by Meta researchers called \u201cTraining Large Language Models to Reason in a Continuous Latent Space.\u201d The authors introduce Chain of Continuous Thought, also known as \u201cCoconut.\u201d The research they did seeks to improve how large language models (LLMs) handle complex reasoning tasks by drawing inspiration from human cognition.",
+      "As the paper explains, \u201cA prevalent approach, known as chain-of-thought (CoT) reasoning\u2026involves prompting or training LLMs to generate solutions step-by-step using natural language.\u201d"
+    ],
+    "title": "Training Large Language Models to Reason in Continuous Latent Space ...",
+    "url": "https://arize.com/blog/training-large-language-models-to-reason-in-continuous-latent-space/"
+  }
+]

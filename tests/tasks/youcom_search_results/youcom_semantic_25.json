@@ -1,0 +1,254 @@
+[
+  {
+    "description": "Abstract. Text style transfer is an important task in natural language generation, which aims to control certain attributes in the generated text, such as politeness, emotion, humor, and many others. It has a long history in the field of natural language processing, and recently has re-gained ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. Text style transfer is an important task in natural language generation, which aims to control certain attributes in the generated text, such as politeness, emotion, humor, and many others. It has a long history in the field of natural language processing, and recently has re-gained significant attention thanks to the promising performance brought by deep neural models.",
+      "Other than conference papers, we also include some non-peer-reviewed preprint papers that can offer some insightful information about the field. The major factors for selecting non-peer-reviewed preprint papers include novelty and completeness, among others. This section provides an overview of the style transfer task.",
+      "As mentioned previously in Section 2.1, most neural approaches assume a given set of attribute values \ud835\udd38, and each attribute value has its own corpus. For example, if the task is about formality transfer, then for the attribute of text formality, there are two attribute values, a = \u201cformal\u201d and a\u2032 = \u201cinformal,\u201d corresponding to a corpus X1 of formal sentences and another corpus X2 of informal sentences.",
+      "This line of research is relatively difficult to directly apply to TST, because its motivation and dataset nature is different from the general TST, and more importantly, this task is not conditioned on a predefined categorized style token, but the free-form textual story beginning. As neural network-based NLP models more easily learn spurious statistical correlations in the data rather than achieve robust understanding (Jia and Liang 2017), there is recent work to construct auxillary datasets composed of near-misses of the original data."
+    ],
+    "title": "Deep Learning for Text Style Transfer: A Survey | Computational ...",
+    "url": "https://direct.mit.edu/coli/article/48/1/155/108845/Deep-Learning-for-Text-Style-Transfer-A-Survey"
+  },
+  {
+    "description": "**Style Transfer** is a technique in computer vision and graphics that involves generating a new image by combining the content of one image with the style of another image. The goal of style transfer is to create an image that preserves the content of the original image while applying the ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "**Style Transfer** is a technique in computer vision and graphics that involves generating a new image by combining the content of one image with the style of another image. The goal of style transfer is to create an image that preserves the content of the original image while applying the visual style of another image.",
+      "Gatys et al. recently introduced a neural algorithm that renders a content image in the style of another image, achieving so-called style transfer. ... It this paper we revisit the fast stylization method introduced in Ulyanov et.",
+      "In this paper, we present a method which combines the flexibility of the neural algorithm of artistic style with the speed of fast style transfer networks to allow real-time stylization using any content/style image pair.",
+      "The whitening and coloring transforms reflect a direct matching of feature covariance of the content image to a given style image, which shares similar spirits with the optimization of Gram matrix based cost in neural style transfer. ... We present a novel method for constructing Variational Autoencoder (VAE). ... We demonstrate the effectiveness of this cross-alignment method on three tasks: sentiment modification, decipherment of word substitution ciphers, and recovery of word order. ... Contact us on: hello@paperswithcode.com ."
+    ],
+    "title": "Style Transfer | Papers With Code",
+    "url": "https://paperswithcode.com/task/style-transfer"
+  },
+  {
+    "description": "This individualistic nature also ... about them Hu et al. (2022). Style extends beyond individual sentences to the broader discourse level. This includes elements such as paragraph organization, theme progression, and use of cohesive devices that bind the text together. These stylistic features at the discourse level play a crucial role in ensuring that the text is coherent and engaging, thereby enhancing ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "This individualistic nature also determines how a person perceives events, describes ideas, or provides additional information about them Hu et al. (2022). Style extends beyond individual sentences to the broader discourse level. This includes elements such as paragraph organization, theme progression, and use of cohesive devices that bind the text together. These stylistic features at the discourse level play a crucial role in ensuring that the text is coherent and engaging, thereby enhancing its ability to convey the intended message and intrigue the reader.",
+      "Clark et al. (2018) Elizabeth Clark, Anne Spencer Ross, Chenhao Tan, Yangfeng Ji, and Noah A Smith. 2018. Creative writing with a machine in the loop: Case studies on slogans and stories.",
+      "The attributes targeted in TST can vary widely, including politeness, authorship, mitigation of offensive language, modification of feelings, and adjustment of text formality. TST has become a widely researched topic with substantial advancements in recent years. This paper provides an introductory overview of TST, addressing its challenges, existing approaches, datasets, evaluation measures, subtasks, and applications.",
+      "Section 3 reflects on the challenges facing the TST task. The discussion of the existing data sets, approaches, evaluation measures and applications is presented in Sections 4-7. A short overview of the related ethical considerations is given in Section 8. Section 9 concludes the paper."
+    ],
+    "title": "Text Style Transfer: An Introductory Overview",
+    "url": "https://arxiv.org/html/2407.14822v1"
+  },
+  {
+    "description": "Discover all times top stories about Style Transfer on Medium.",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Have you ever woken up in the middle of the night and wondered whether Gradient Descent, Adam or Limited-memory Broyden\u2013Fletcher\u2013Goldfarb\u2013Shanno will optimize your style transfer neural network faster and better? ... WWDC 2017 brought us an understanding of what Apple thinks about machine learning and its applications right on\u2026 ... These were the top 10 stories tagged with Style Transfer; you can also dive into yearly archives: 2016, 2017, 2018, 2019, 2020, 2021, 2022, and 2023."
+    ],
+    "title": "Archive of stories about Style Transfer \u2013 Medium",
+    "url": "https://medium.com/tag/style-transfer/archive"
+  },
+  {
+    "description": "Blog Series This post serves as Part 1 of a four part blog series on the NLP task of Text Style Transfer. In this post, we expand our modeling efforts to a more challenging dataset and propose a set of custom evaluation metrics specific to our task. Part 1: An Introduction to Text Style Transfer ...",
+    "favicon_url": "https://you.com/favicon?domain=blog.fastforwardlabs.com&size=128",
+    "snippets": [
+      "Blog Series This post serves as Part 1 of a four part blog series on the NLP task of Text Style Transfer. In this post, we expand our modeling efforts to a more challenging dataset and propose a set of custom evaluation metrics specific to our task. Part 1: An Introduction to Text Style Transfer Part 2: Neutralizing Subjectivity Bias with HuggingFace Transformers Part 3: Automated Metrics for Evaluating Text Style Transfer Part 4: Ethical Considerations When Designing an NLG System Today\u2019s world of natural language processing (NLP) is driven by powerful transformer-based models that can automatically caption images, answer open-ended questions, engage in free dialog, and summarize long-form bodies of text \u2013 of course, with varying degrees of success.",
+      "The Rest of the Story: Finding Meaning in Stylistic Variation \u21a9\ufe0e \u00b7 Automatically Neutralizing Subjective Bias in Text \u21a9\ufe0e \u00b7 Text Style Transfer: A Review and Experimental Evaluation \u21a9\ufe0e ... November 2022 Perhaps November conjures thoughts of holiday feasts and festivities, but for us, it\u2019s the perfect time to chew the fat about machine learning!",
+      "Text style transfer has many immediate applications in real world use cases today. It also has the potential to support various adjacent NLP tasks like improving data augmentation. Please refer to this survey paper that expands upon the following use cases and more.",
+      "Consider the fictitious scenario where you engage an AI-powered chatbot to assist you with a shopping return for a damaged item. After sharing your intent with the bot, it responds with either of the following generated messages: ... While the first option may contain the correct next action (requesting proof of damage) with sound grammer, something about it feels brash and slightly off-putting in a customer experience setting where politeness is highly valued for customer retention."
+    ],
+    "title": "An Introduction to Text Style Transfer",
+    "url": "https://blog.fastforwardlabs.com/2022/03/22/an-introduction-to-text-style-transfer.html"
+  },
+  {
+    "description": "The revolutionary advancement of Artificial Intelligence Generated Content (AIGC) has fundamentally transformed the landscape of visual content creation and artistic expression. While remarkable progress has been made in image generation and style transfer, the underlying mechanisms and aesthetic ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The revolutionary advancement of Artificial Intelligence Generated Content (AIGC) has fundamentally transformed the landscape of visual content creation and artistic expression. While remarkable progress has been made in image generation and style transfer, the underlying mechanisms and aesthetic implications of these technologies remain insufficiently understood.",
+      "Abstract page for arXiv paper 2506.19278: Style Transfer: A Decade Survey",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "We gratefully acknowledge support from the Simons Foundation, member institutions, and all contributors. Donate ... View a PDF of the paper titled Style Transfer: A Decade Survey, by Tianshan Zhang and 1 other authors View PDF HTML (experimental)"
+    ],
+    "title": "[2506.19278] Style Transfer: A Decade Survey",
+    "url": "https://arxiv.org/abs/2506.19278"
+  },
+  {
+    "description": "There are even more potential TST application areas, which open new directions for future work. For instance, TST can be used for data augmentation by generating the same text with different emotions, which may be used for tasks such as automated story plot generation. A similar approach has been already explored in image style transfer Zheng et al. (2019); Jackson et al. (2019). TST can also be used in today\u2019s marketing-dependent and ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "There are even more potential TST application areas, which open new directions for future work. For instance, TST can be used for data augmentation by generating the same text with different emotions, which may be used for tasks such as automated story plot generation. A similar approach has been already explored in image style transfer Zheng et al. (2019); Jackson et al. (2019). TST can also be used in today\u2019s marketing-dependent and social network-based scenarios, e.g., for generating more attractive headlines.",
+      "However, TST-related technologies are gradually reaching a production- and deployment-ready level, and therefore, the inclusion of the application perspective in TST research becomes crucial. Similarly, the often overlooked ethical considerations of TST technology have become a pressing issue. This paper presents a comprehensive review of TST applications that have been researched over the years, using both traditional linguistic approaches and more recent deep learning methods.",
+      "We believe that this application perspective will play an increasingly important role, as TST-related technologies are gradually reaching a production- and deployment-ready level, which will boost interest in application-specific issues. Therefore, in this paper, we provide what we believe to be the first comprehensive overview of different TST applications in order to stimulate future research in this area.",
+      "We begin by defining the task of text style transfer and providing a brief summary of the models proposed in TST research in Section 2. This is followed by the main contribution of this paper, which is an overview of different applications of TST in Section 3."
+    ],
+    "title": "A Survey of Text Style Transfer: Applications and Ethical Implications",
+    "url": "https://arxiv.org/html/2407.16737v1"
+  },
+  {
+    "description": "The seminal work of Gatys et al. demonstrated the power of Convolutional Neural Networks (CNNs) in creating artistic imagery by separating and recombining image content and style. This process of using CNNs to render a content image in different styles is referred to as Neural Style Transfer (NST).",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 1705.04058: Neural Style Transfer: A Review",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "We gratefully acknowledge support from the Simons Foundation, member institutions, and all contributors. Donate ... View a PDF of the paper titled Neural Style Transfer: A Review, by Yongcheng Jing and 5 other authors View PDF",
+      "Since then, NST has become a trending topic both in academic literature and industrial applications. It is receiving increasing attention and a variety of approaches are proposed to either improve or extend the original NST algorithm. In this paper, we aim to provide a comprehensive overview of the current progress towards NST."
+    ],
+    "title": "[1705.04058] Neural Style Transfer: A Review",
+    "url": "https://arxiv.org/abs/1705.04058"
+  },
+  {
+    "description": "I haven't been able to find any papers on separating content from style in text/literature. Any leads would be appreciated!",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "I haven't been able to find any papers on separating content from style in text/literature. Any leads would be appreciated! ... As far as I'm aware this isn't well studied yet, though I have a few ideas as to why. Style transfer as done in Gatys et al (http://arxiv.org/abs/1508.06576) is based on a style loss that is quite particular to images and the convolutional networks that are used to process them.",
+      "The ability of those networks to encode style data is not necessarily an obvious thing--in fact one could imagine that given a different structure and task it would be possible to have an image-processing network that didn't capture style information well at all (I believe this is partly why they use VGG16 instead of a different network in the Gatys paper). Given this, it's difficult to see which lessons to take from style transfer in the visual medium when doing it in a textual domain. There are also fundamental differences in the structure of the data (textual data is sequential and of potentially varying lengths, versus constant-sized images.)",
+      "Generating style-transformed sequences will likely look different than how transfer is done on images, and it's plausible we see something like a translation-style machine that takes an encoder reading in a paragraph and a decoder which is trained on a particular author that attempts to read the paragraph out in that author's style or voice. How to train such a thing is potentially difficult though, as such a translational dataset doesn't exist. Hope this helps in your search for knowledge and thinking about the problem--it's certainly an interesting one :)",
+      "From the Github page: \"It turns out that skip-thought vectors have some intriguing properties that allow us to construct F in a really simple way. Suppose we have 3 vectors: an image caption x, a \"caption style\" vector c and a \"book style\" vector b. Then we define F as ... which intuitively means: keep the \"thought\" of the caption, but replace the image caption style with that of a story."
+    ],
+    "title": "r/MachineLearning on Reddit: Neural style transfer for text?",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/4bawjj/neural_style_transfer_for_text/"
+  },
+  {
+    "description": "An explanation on one of the most ... into an artwork in the style of famous painters like Vincent Van Gogh or Leonardo da Vinci? Wouldn\u2019t you be surprised to know that Convolutional Neural Networks can help you not in just learning to classify your image or detecting objects but also\u2026 ... In this post, we\u2019ll recreate a style transfer method that is outlined in the paper, Image Style ...",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "An explanation on one of the most interesting applications of Convolutional Neural Networks \u2014 Introduction What if you could transform your images into an artwork in the style of famous painters like Vincent Van Gogh or Leonardo da Vinci? Wouldn\u2019t you be surprised to know that Convolutional Neural Networks can help you not in just learning to classify your image or detecting objects but also\u2026 ... In this post, we\u2019ll recreate a style transfer method that is outlined in the paper, Image Style Transfer Using Convolutional Neural Networks, by Gatys in PyTorch.",
+      "Popular use case includes image recognition/classification, object detection, image generation, and many more. A simple (and very common) structure of a deep learning architecture for image problems can be seen in the\u2026 ... Let\u2019s begin by asking this: What is Neural Style Transfer?",
+      "Neural Style Transfer takes two images and transfer style of one image onto the other. We are calling the image on which style is applied as Content Image and image from which style is taken as Style Image.",
+      "Over the past several years, Convolutional Neural Networks (CNNs) have established themselves as a state-of-the-art computer vision tool both in industry and academia. Being used in applications ranging from facial recognition to self-driving cars, they have become incredibly popular for deep learning developers."
+    ],
+    "title": "9 stories about style transfer curated by Peter Atanackov - Medium",
+    "url": "https://medium.com/@atapee/list/style-transfer-c9cd7ed4ff8b"
+  },
+  {
+    "description": "Style is an integral component of a sentence indicated by the choice of words a person makes. Different people have different ways of expressing themselves, however, they adjust their speaking and writing style to a social context, an audience, an interlocutor or the formality of an occasion.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2109.15144: A Review of Text Style Transfer using Deep Learning",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs. Which authors of this paper are endorsers?",
+      "We gratefully acknowledge support from the Simons Foundation, member institutions, and all contributors. Donate ... View a PDF of the paper titled A Review of Text Style Transfer using Deep Learning, by Martina Toshevska and 1 other authors View PDF",
+      "Text style transfer is defined as a task of adapting and/or changing the stylistic manner in which a sentence is written, while preserving the meaning of the original sentence. A systematic review of text style transfer methodologies using deep learning is presented in this paper."
+    ],
+    "title": "[2109.15144] A Review of Text Style Transfer using Deep Learning",
+    "url": "https://arxiv.org/abs/2109.15144"
+  },
+  {
+    "description": "An online research report on Text Style Transfer by Cloudera Fast Forward Labs.",
+    "favicon_url": "https://you.com/favicon?domain=text-style-transfer.fastforwardlabs.com&size=128",
+    "snippets": [
+      "Figure 10: BART is implemented with a bidirectional encoder over corrupted text and a left-to-right autoregressive decoder that attends to the encoded latent representation to generate an output that minimizes the negative log likelihood of the original input document. Image is adapted from the source paper. BART is pre-trained in a self-supervised fashion on 160GB of news, books, stories, and web text by corrupting input sentences with a noising function and then learning a model to reconstruct the original text (i.e.",
+      "Similar to epistemological bias, demographic bias occurs when an author utilizes language that implicitly presupposes truth about people of particular gender, race, religion, or other demographic group. For example, presupposing that all programmers are male through the choice of assigned pronouns[15]. For more detailed discussion on these classes of subjectivity bias, please see this excellent source paper where these definitions and examples are adapted from.",
+      "The paper authors limited their experimentation to a subset of the dataset that only includes NPOV-edits where the Wikipedia editor changed or deleted just a single word in the source text. From our study on the types of bias present in WNC above, we infer that a larger portion of the revisions in this sample consist of framing bias (the most explicit, and therefore easiest type of subjectivity to identify and correct) in comparison to the full WNC corpus.",
+      "To evaluate content preservation more precisely, attempts have been made to first distinguish between semantic and stylistic components of text, and then meaningfully quantify the similarity of just the semantic component alone. While there is open debate about whether it\u2019s possible to actually decouple style from content in free text, intuition leads us to believe that our style attribute of \u201csubjectivity\u201d is expressed, at least in part, through select words."
+    ],
+    "title": "Text Style Transfer",
+    "url": "https://text-style-transfer.fastforwardlabs.com/"
+  },
+  {
+    "description": "Paper Digest Team extracted all recent Style Transfer related papers on our radar, and generated highlight sentences for them. The results are then sorted by relevance & date. In addition to this 'static' page, we also provide a real-time version of this article, which has more coverage and is updat",
+    "favicon_url": "https://you.com/favicon?domain=resources.paperdigest.org&size=128",
+    "snippets": [
+      "This list is created by the Paper Digest Team. Experience the cutting-edge capabilities of Paper Digest, an innovative AI-powered research platform that empowers you to read articles, write articles, get answers, conduct literature reviews and generate research reports."
+    ],
+    "title": "Paper Digest: Recent Papers on Style Transfer \u2013 Resources | Paper ...",
+    "url": "https://resources.paperdigest.org/2020/06/recent-papers-on-style-transfer/"
+  },
+  {
+    "description": "Neural style transfer (NST) has opened new possibilities for digital art by enabling the blending of distinct artistic styles with content from various images. However, traditional NST methods often need help balancing style fidelity and content preservation, and many models need more computational ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Neural style transfer (NST) has opened new possibilities for digital art by enabling the blending of distinct artistic styles with content from various images. However, traditional NST methods often need help balancing style fidelity and content preservation, and many models need more computational efficiency, limiting their applicability for real-time applications.",
+      "Scientific Reports - Applying deep learning for style transfer in digital art: enhancing creative expression through neural networks",
+      "First, although some current models may generate excellent style transfers, most need a lot of computing power and time; therefore, they remain exclusive to artists and users with high-performance computers9. Second, preserving style while maintaining the content\u2019s integrity is still difficult, even with the target styles needing a high texture and color uniformity across the image. Therefore, this paper seeks to respond to these challenges by assessing techniques that optimize the computational efficiency of NST, generalize its precision, and expand its aesthetic applications.",
+      "The feature analysis shows that the extent of complexity and the nature of variety in the MS-COCO make learning feasible for NST, thereby allowing the model to learn more about the structures and contents. The dataset\u2019s annotations also help check the content consistencies of the given style when applying them so generalizations in different cases and contexts can be well made. The data pre-processing of the MS-COCO dataset is mandatory for standardization, better model performance, and more refined evaluations of style transfer."
+    ],
+    "title": "Applying deep learning for style transfer in digital art: enhancing ...",
+    "url": "https://www.nature.com/articles/s41598-025-95819-9"
+  },
+  {
+    "description": "Text Style Transfer is the task of controlling certain attributes of generated text. The state-of-the-art methods can be categorized into two main types which are used on parallel and non-parallel data. Methods on parallel data are typically supervised methods that use a neural sequence-to-sequence ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Text Style Transfer is the task of controlling certain attributes of generated text. The state-of-the-art methods can be categorized into two main types which are used on parallel and non-parallel data. Methods on parallel data are typically supervised methods that use a neural sequence-to-sequence model with the encoder-decoder architecture.",
+      "Use these libraries to find Text Style Transfer models and implementations ... This paper addresses the challenge in long-text style transfer using zero-shot learning of large language models (LLMs), proposing a hierarchical framework that combines sentence-level stylistic adaptation with paragraph-level structural coherence. ... Text Style Transfer (TST) is the task of transforming a text to reflect a particular style while preserving its original content. ... While there is considerable overlap between the inputs and outputs in these tasks, the decoding cost still increases with output length, regardless of the amount of overlap.",
+      "Like text, programs have styles, and certain programming styles are more desirable than others for program readability, maintainability, and performance. ... We design a style consistency loss to ensure the generated multiple sentences consistently reflect the target style polarity. ... Contact us on: hello@paperswithcode.com .",
+      "The popular benchmark for this task is the Yelp Review Dataset. Models are typically evaluated with the metrics of Sentiment Accuracy, BLEU, and PPL. These leaderboards are used to track progress in Text Style Transfer"
+    ],
+    "title": "Text Style Transfer | Papers With Code",
+    "url": "https://paperswithcode.com/task/text-style-transfoer/codeless"
+  },
+  {
+    "description": "Almost everything you need to know about how style transfer works Introduction Style transfer is a computer vision technique that allows us to recompose the content of an image in the style of another. If you\u2019ve ever imagined what a\u2026 Continue reading Style Transfer Guide",
+    "favicon_url": "https://you.com/favicon?domain=fritz.ai&size=128",
+    "snippets": [
+      "Facebook touts the potential of style transfer to radically alter the ways VR developers tell visual stories through their applications, games, films, and more. And there are some early demos that show how style transfer could help augment the immersiveness of worlds created for virtual reality.",
+      "There are too many specific neural network architectures to cover them all here, but there we\u2019ll highlight a few robust, reliable ones that make good places to start. A 2016 paper by Johnson et al was the first to train an independent neural network to stylize images in a single, feed-forward pass.",
+      "If we think about solving this task via a traditional supervised learning approach, learned style transfer requires a pair of input images\u2014both an original image and an artistic representation of that original image. From there, a machine learning model learns the transformation and can apply it to new original images.",
+      "Now that we know a bit about what style transfer is, the distinctions between different types of style transfer, and what it can be used for, let\u2019s explore in more depth how it actually works. In this section, we\u2019ll look at several deep learning-based approaches to style transfer and assess their advantages and limitations. While there are a number of traditional methods \u2013 including the ones mentioned above \u2013 for the purposes of this overview, we\u2019re going to look at the approaches that use neural networks, which have become the state-of-the-art methods for style transfer."
+    ],
+    "title": "Style Transfer Guide - Fritz ai",
+    "url": "https://fritz.ai/style-transfer/"
+  },
+  {
+    "description": "Abstract The field of neural style transfer (NST) has witnessed remarkable progress in the past few years, with approaches being able to synthesize artistic and photorealistic images and videos of ...",
+    "favicon_url": "https://you.com/favicon?domain=onlinelibrary.wiley.com&size=128",
+    "snippets": [
+      "This review paper examines the different evaluation techniques in neural style transfer. It provides an in-depth analysis of existing evaluation techniques and gives recommendations for standardized ...",
+      "This could consist of a reasonably small amount of content and style images, resulting in a small number of stylizations that are derived using the same combinations of content and style in all the NST papers. Definitely, the size of this set of images would probably not be adequate to capture and highlight the effectiveness of the proposed method, therefore, the authors could complement these stylizations with more images that they chose that could be useful for the readers.",
+      "Some of these approaches have conducted a User Study but there are cases in which the study does not assess the performance of stylized videos, for example [LLH*21, SKLO18, CWZ*21]. Gatys et al. [GEB15, GEB16] noticed that the powerful capabilities of convolutional neural networks (CNNs) can be utilized for more than just object classification (Table 1). Observing that an input image can be transformed into feature maps that increasingly care about the content rather than any detail about the colour or texture as we go deeper into a CNN, they proposed an image-optimization technique that faithfully replicates artistic qualities of artworks on real photographs.",
+      "An extensive, in-depth survey of the evaluation techniques in NST would provide useful insights and potential solutions for the establishment of robust and reliable evaluation methodologies. Previous review papers [JYF*19, SJJ*21] have analyzed the techniques and applicability of NST, but have not focused on evaluation methodologies."
+    ],
+    "title": "Evaluation in Neural Style Transfer: A Review - Ioannou - 2024 ...",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/cgf.15165"
+  },
+  {
+    "description": "Lately, the term \u201cGenerative AI\u201d has become a trending topic around the world thanks to the release of the publicly available AI models, like ChatGPT, Gemini, Claude, etc. As we all know, their\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Turn your photos into paintings with deep learning \u2014 Implementing NST from scratch using PyTorch",
+      "So far, I already got some of my articles about generative AI for image data published in Medium, such as Autoencoder and Variational Autoencoder (VAE), which I\u2019ve linked at the end of this article. In today\u2019s article, I am going to talk about another fascinating generative algorithm: The Neural Style Transfer. NST was first introduced in a paper titled \u201cA Neural Algorithm of Artistic Style\u201d written by Gatys et al.",
+      "back in 2015 [1]. It is explained in the paper that their main objective is to transfer the artistic style of an image (typically a painting) onto a different image, hence the name \u201cStyle Transfer.\u201d Look at\u2026 ... An archive of data science, data analytics, data engineering, machine learning, and artificial intelligence writing from the former Towards Data Science Medium publication. ... Deep learning storyteller | PhD student of Computer Science, Universitas Gadjah Mada, Indonesia."
+    ],
+    "title": "Paper Walkthrough: Neural Style Transfer | by Muhammad Ardi | TDS ...",
+    "url": "https://medium.com/data-science/paper-walkthrough-neural-style-transfer-fc5c978cdaed"
+  },
+  {
+    "description": "954 votes, 89 comments. 511K subscribers in the learnmachinelearning community. Welcome to r/learnmachinelearning - a community of learners and\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/wilhelmberghammer - 954 votes and 89 comments",
+      "I suspect this is what's going on behind the scenes on their servers, there, since several of the example pictures in the paper appear to have been taken directly from their website. :-) ... In definitely going to try this, thank you so much for sharing! ... Going to check this out later! Thanks for sharing. ... I would love to try this out, but I'm also far into not knowing anything about this.",
+      "I\u2019ve never had to compile or load my own software in the way tht most of these style transfer projects are released. ... I would use the one on colab I guess. Unless you habe a GPU. Then you can clone the repo and try to let it run\ud83d\udc4d ... Implementing NST (including the fast version) is a great way to start getting your hands dirty with pytorch or tensorflow. I recommend trying to do it from scratch using the papers as your primary reference.",
+      "Plus I learn how to read papers, which for me, is often a challenge in itself\ud83d\ude05 ... I was thinking of trying out Julia and Flux with this. ... Thanks for this! ... Same here !! ... Great. Just what I needed. another new project, which I may or may not finish ... Do you need a lot of example style images to train the network or is it as simple as stated on your github? Just take a style image and a input image and it nicely transfers the style?"
+    ],
+    "title": "r/learnmachinelearning on Reddit: I found a paper on neural style ...",
+    "url": "https://www.reddit.com/r/learnmachinelearning/comments/llstam/i_found_a_paper_on_neural_style_transfer_and_i/"
+  },
+  {
+    "description": "First, let me note the names of the entire team that contributed to the project: Mukundan Kuthalam, Yuriy Minin, Zohaib Imam, and Ram Muthukumar. For every paper that we mention in this post, we have\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "First, let me note the names of the entire team that contributed to the project: Mukundan Kuthalam, Yuriy Minin, Zohaib Imam, and Ram\u2026",
+      "The project did not work too well and there were a few possible improvements that the paper mentioned. However, we will be discussing a paper [2] from NIPS 2017 that gets a lot better results and became the basis for our experiments. Thus, we used this paper to get a good understanding of the problem of Author Style Transfer and what a model to solve this problem would look like. So let\u2019s talk about where the data is coming from.",
+      "For every paper that we mention in this post, we have a link to the paper denoted with a number in brackets, so click on those if you would like to read the papers. Now if you would like a link to the GitHub with our model and datasets, look here. There have been artists who try to copy others.",
+      "However, this problem is an interesting one when it comes to the realm of Natural Language Processing (NLP). How do we rate how close author\u2019s styles are? What about the target author\u2019s text do we want to capture so that we can transform input text to match the target\u2019s style?"
+    ],
+    "title": "Author Style Transfer Using Recurrent Neural Networks | by Mukundan ...",
+    "url": "https://medium.com/@mukundan_8066/author-style-transfer-using-recurrent-neural-networks-c8c8f83b33cc"
+  },
+  {
+    "description": "Traditional methods of style transfer emphasize primarily the transfer of artistic styles. In recent years, style transfer has expanded beyond the rea\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Since 2016, there has been a rapid increase in people's attention to the field of style transfer. From both a research and business perspective, style transfer holds great potential to drive the development of various industries and technological progress. This paper introduces representative research in the field of style transfer based on different methods.",
+      "In this paper, we introduce an innovative technique to improve the quality of stylized images. Firstly, we propose Style Consistency Instance Normalization (SCIN), a method to refine the alignment between content and style features. In addition, we have developed an Instance-based Contrastive Learning (ICL) approach designed to understand the relationships among various styles, thereby enhancing the quality of the resulting stylized images.",
+      "In recent years, style transfer has expanded beyond the realm of artistic expression to encompass fields such as medicine, industry, and literature. Currently, the style transfer algorithm generating the most attention is the Generative Adversarial Networks (GANs) approach. In this paper, we provide a summary and analysis of the style transfer algorithm based on convolutional neural networks from the perspective of GANs.",
+      "Style transfer has been implemented in a wide range of areas including painting, film and television, entertainment, medicine, criminal investigation, scientific research, architecture, music, literature, and more. Johnson et al. [21] introduced style transfer into \u00b7 Given the lack of objective evaluation criteria for style transfer in the field, specifically the absence of quantitative metrics for assessing the quality of transfer effects, this paper aims to evaluate various transfer methods from alternative perspectives."
+    ],
+    "title": "Image neural style transfer: A review - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0045790623001477"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.cv-foundation.org&size=128",
+    "snippets": [],
+    "title": "Image Style Transfer Using Convolutional Neural Networks",
+    "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf"
+  }
+]

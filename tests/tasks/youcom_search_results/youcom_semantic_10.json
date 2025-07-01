@@ -1,0 +1,260 @@
+[
+  {
+    "description": "Request PDF | On Jan 1, 2021, Thierry Etchegoyhen and others published Online Learning over Time in Adaptive Neural Machine Translation | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Our experimental results show a significant reduction of human post-editing effort due to online adaptation in NMT according to several evaluation metrics, including hTER, hBLEU, and KSMR. Furthermore, we found significant improvements in BLEU/TER between NMT outputs and human references, and a strong correlation of these improvements with quality improvements of post-edits. ... Amin M. Farajian ... Improving machine translation (MT) by learning from human post-edits is a powerful solution that is still unexplored in the neural machine translation (NMT) framework.",
+      "Large-scale language models (LLMs) have recently shown interesting capabilities of in-context learning, where they learn to replicate certain input-output text generation patterns, without further fine-tuning. By feeding an LLM with a prompt that consists of a list of translation pairs, it can then simulate the domain and style characteristics at inference time. This work aims to investigate how we can utilize in-context learning to improve real-time adaptive MT.",
+      "In this framework, the knowledge of a human translator is combined with a MT system. The vast majority of the existing work on IMT makes use of the well-known batch learning paradigm. In the batch learning paradigm, the training of the IMT system and the interactive translation process are carried out in separate stages. This paradigm is not able to take advantage of the new knowledge produced by the user of the IMT system. In this paper, we present an application of the online learning paradigm to the IMT framework.",
+      "Neural machine translation systems require large amounts of training data and resources. Even with this, the quality of the translations may be insufficient for some users or domains. In such cases, the output of the system must be revised by a human agent. This can be done in a post-editing stage or following an interactive machine translation protocol. We explore the incremental update of neural machine translation systems during the post-editing or interactive translation processes."
+    ],
+    "title": "Online Learning over Time in Adaptive Neural Machine Translation ...",
+    "url": "https://www.researchgate.net/publication/356013499_Online_Learning_over_Time_in_Adaptive_Neural_Machine_Translation"
+  },
+  {
+    "description": "Deep learning (DL) is revolutionizing evidence-based decision-making techniques that can be applied across various sectors. Specifically, it possesses the ability to utilize two or more levels of non-linear feature transformation of the given data via representation learning in order to overcome ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Deep learning (DL) is revolutionizing evidence-based decision-making techniques that can be applied across various sectors. Specifically, it possesses the ability to utilize two or more levels of non-linear feature transformation of the given data via representation learning in order to overcome limitations posed by large datasets.",
+      "Artificial Intelligence Review - Deep learning (DL) is revolutionizing evidence-based decision-making techniques that can be applied across various sectors. Specifically, it possesses the ability...",
+      "In the field of deep learning, dynamic neural networks (DNNs) are an emerging technique that can outperform traditional static models in terms of accuracy, adaptiveness, and computational complexity (Han et al. 2021). Static models have limited parameters and computational graphs at the inference stage, whereas DNN architecture and parameters are flexible to different inputs.",
+      "DNNs can be divided into three types (Tavarone et al 2018): (i) instance-wise dynamic models that process each instance individually using data-dependent structures or parameters, (ii) spatial-wise dynamic models that perform adaptive computing on image data at various spatial locations, and (iii) temporal-wise dynamic models that accomplish adaptive inference for sequential data, such as movies and texts along the temporal dimension. Instance-wise and spatial-wise methods are used specifically in image recognition, whereas temporal-wise models show emerging improvements in text and audio data"
+    ],
+    "title": "Deep learning modelling techniques: current progress, applications, ...",
+    "url": "https://link.springer.com/article/10.1007/s10462-023-10466-8"
+  },
+  {
+    "description": "In many applications, one works with neural network models trained by someone else. For such pretrained models, one may not have access to training data or test data. Moreover, one may not know details about the model, e.g., the specifics of the training data, the loss function, the hyperparameter ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "In many applications, one works with neural network models trained by someone else. For such pretrained models, one may not have access to training data or test data. Moreover, one may not know details about the model, e.g., the specifics of the training data, the loss function, the hyperparameter values, etc.",
+      "In many machine learning applications, one uses pre-trained neural networks, having limited access to training and test data. Martin et al. show how to predict trends in the quality of such neural networks without access to this information, relevant for reproducibility, diagnostics, and validation.",
+      "Nature Communications - In many machine learning applications, one uses pre-trained neural networks, having limited access to training and test data. Martin et al. show how to predict trends in the...",
+      "Our conclusions do not necessarily reflect the position or the policy of our sponsors, and no official endorsement should be inferred. We would also like to thank Amir Khosrowshahi and colleagues at Intel for helpful discussion regarding the Group Regularization distillation technique. ... Charles H. Martin & Tongsu (Serena) Peng \u00b7 ICSI and Department of Statistics, University of California at Berkeley, Berkeley, CA, USA \u00b7 Michael W. Mahoney ... Charles H. Martin ... Michael W. Mahoney ... CHM and MWM designed the research, performed the research, and wrote the paper."
+    ],
+    "title": "Predicting trends in the quality of state-of-the-art neural networks ...",
+    "url": "https://www.nature.com/articles/s41467-021-24025-8"
+  },
+  {
+    "description": "In this work, we perform a ... quality metrics into the MT pipeline as reward models. As illustrated in Figure 1, we assess their use at different stages: as a means for data filtering, during the training process through RL, and at inference time by way of reranking techniques. Furthermore, we explore the results ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "In this work, we perform a comprehensive study on the integration of MT quality metrics into the MT pipeline as reward models. As illustrated in Figure 1, we assess their use at different stages: as a means for data filtering, during the training process through RL, and at inference time by way of reranking techniques. Furthermore, we explore the results of combining these methods.",
+      "In this study, we comprehensively explore and compare techniques for integrating quality metrics as reward models into the MT pipeline. This includes using the reward model for data filtering, during the training phase through RL, and at inference time by employing reranking techniques, and we assess the effects of combining these in a unified approach.",
+      "This phenomenon of increased COMET and COMET-QE scores comes at the cost of worse performance according to the other MT evaluation metrics, showing a potential of overfitting effect for these reranking techniques that occur across all datasets. These findings underscore the potential of neural metrics as reward signals in training and inference, as discussed in ?) and ?).",
+      "Our thorough analysis of feedback integration methods underscores the importance of meticulous data curation for enhancing MT reliability and efficiency. Our findings demonstrate the consistent improvement in translation quality when employing neural metrics, such as COMET(-QE), during training and/or inference."
+    ],
+    "title": "Aligning Neural Machine Translation Models: Human Feedback in ...",
+    "url": "https://arxiv.org/html/2311.09132v2"
+  },
+  {
+    "description": "Ant\u00f3nio Lopes, M. Amin Farajian, Rachel Bawden, Michael Zhang, Andr\u00e9 F. T. Martins. Proceedings of the 22nd Annual Conference of the European Association for Machine Translation. 2020.",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [
+      "In this paper we provide a systematic comparison of existing and new document-level neural machine translation solutions. As part of this comparison, we introduce and evaluate a document-level variant of the recently proposed Star Transformer architecture. In addition to using the traditional metric BLEU, we report the accuracy of the models in handling anaphoric pronoun translation as well as coherence and cohesion using contrastive test sets.",
+      "Amin %A Bawden, Rachel %A Zhang, Michael %A Martins, Andr\u00e9 F. T. %Y Martins, Andr\u00e9 %Y Moniz, Helena %Y Fumega, Sara %Y Martins, Bruno %Y Batista, Fernando %Y Coheur, Luisa %Y Parra, Carla %Y Trancoso, Isabel %Y Turchi, Marco %Y Bisazza, Arianna %Y Moorkens, Joss %Y Guerberof, Ana %Y Nurminen, Mary %Y Marg, Lena %Y Forcada, Mikel L. %S Proceedings of the 22nd Annual Conference of the European Association for Machine Translation %D 2020 %8 November %I European Association for Machine Translation %C Lisboa, Portugal %F lopes-etal-2020-document %X In this paper we provide a systematic comparison",
+      "@inproceedings{lopes-etal-2020-document, title = \"Document-level Neural {MT}: A Systematic Comparison\", author = \"Lopes, Ant{\\'o}nio and Farajian, M. Amin and Bawden, Rachel and Zhang, Michael and Martins, Andr{\\'e} F. T.\", editor = \"Martins, Andr{\\'e} and Moniz, Helena and Fumega, Sara and Martins, Bruno and Batista, Fernando and Coheur, Luisa and Parra, Carla and Trancoso, Isabel and Turchi, Marco and Bisazza, Arianna and Moorkens, Joss and Guerberof, Ana and Nurminen, Mary and Marg, Lena and Forcada, Mikel L.\", booktitle = \"Proceedings of the 22nd Annual Conference of the European Associati",
+      "\ufeff<?xml version=\"1.0\" encoding=\"UTF-8\"?> <modsCollection xmlns=\"http://www.loc.gov/mods/v3\"> <mods ID=\"lopes-etal-2020-document\"> <titleInfo> <title>Document-level Neural MT: A Systematic Comparison</title> </titleInfo> <name type=\"personal\"> <namePart type=\"given\">Ant\u00f3nio</namePart> <namePart type=\"family\">Lopes</namePart> <role> <roleTerm authority=\"marcrelator\" type=\"text\">author</roleTerm> </role> </name> <name type=\"personal\"> <namePart type=\"given\">M</namePart> <namePart type=\"given\">Amin</namePart> <namePart type=\"family\">Farajian</namePart> <role> <roleTerm authority=\"marcrelator\" ty"
+    ],
+    "title": "Document-level Neural MT: A Systematic Comparison - ACL Anthology",
+    "url": "https://aclanthology.org/2020.eamt-1.24/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=jair.org&size=128",
+    "snippets": [],
+    "title": "Neural Machine Translation: A Review",
+    "url": "https://jair.org/index.php/jair/article/download/12007/26611/24616"
+  },
+  {
+    "description": "MLCommons announces new RGAT benchmark to MLPerf Inference v5.0 - addresses performance tests for graph-structured data and applications.",
+    "favicon_url": "https://you.com/favicon?domain=mlcommons.org&size=128",
+    "snippets": [
+      "We acknowledge that for some use-cases of GNNs, such as recommenders and transportation applications like map data processing, latency can be an important metric to consider and we may expand to consider different scenarios in future rounds of MLPerf Inference. To address the growing usage of graph neural networks for different applications, a task force investigated and recommended the creation of a GNN benchmark within MLPerf Inference v5.0.",
+      "In addition to previously mentioned relations (topic, written by, and affiliated with), there is also an additional relation for \u201ccitation\u201d which is a relation from \u201cPaper\u201d to \u201cPaper\u201d. The task for this dataset is classification of the \u2018Paper\u2019 nodes to a set of 2983 topics. ... The IGB Heterogeneous \u201cFull\u201d dataset variant has 547 million nodes and 5.8 billion edges. With an embedding dimension of 1024, the dataset totals up to over 2 TB of data. In addition to this, for use in MLPerf Inference, the dataset is augmented with reverse edges, as well as self-loops for papers, over doubling the number of edges.",
+      "It was decided that the subset used for inference as well as accuracy checks is the validation set from training, consisting of around 788 thousand \u201cPaper\u201d nodes. During classification, subgraphs are sampled for each input node with a fanout steps of 15 \u2013 10 \u2013 5 (i.e.",
+      "This iteration of GNN benchmarking only tests the \u2018Offline\u2019 MLPerf Inference scenario, as many of the production applications are only used in this setting. In the future, if there is sufficient interest, we may add the \u2018Server\u2019 scenario.  \u00b7 To align with the selected task and dataset, the task force decided to use the ratio of correctly predicted topic \u201cPaper\u201d nodes in the validation."
+    ],
+    "title": "Introducing a Graph Neural Network Benchmark in MLPerf Inference ...",
+    "url": "https://mlcommons.org/2025/04/rgat-inference-v5/"
+  },
+  {
+    "description": "In the last few years, the deep learning (DL) computing paradigm has been deemed the Gold Standard in the machine learning (ML) community. Moreover, it has gradually become the most widely used computational approach in the field of ML, thus achieving outstanding results on several complex ...",
+    "favicon_url": "https://you.com/favicon?domain=journalofbigdata.springeropen.com&size=128",
+    "snippets": [
+      "In the last few years, the deep learning (DL) computing paradigm has been deemed the Gold Standard in the machine learning (ML) community. Moreover, it has gradually become the most widely used computational approach in the field of ML, thus achieving outstanding results on several complex cognitive tasks, matching or even beating those provided by human performance.",
+      "Adaptive Moment Estimation (Adam): It is another optimization technique or learning algorithm that is widely used. Adam [85] represents the latest trends in deep learning optimization. This is represented by the Hessian matrix, which employs a second-order derivative. Adam is a learning strategy that has been designed specifically for training deep neural networks.",
+      "In particular, this paper outlines the importance of DL, presents the types of DL techniques and networks. It then presents convolutional neural networks (CNNs) which the most utilized DL network type and describes the development of CNNs architectures together with their main features, e.g., starting with the AlexNet network and closing with the High-Resolution network (HR.Net).",
+      "In this paper, an overview of DL is presented that adopts various perspectives such as the main concepts, architectures, challenges, applications, computational tools and evolution matrix. Convolutional neural network (CNN) is one of the most popular and used of DL networks [19, 20]. Because of CNN, DL is very popular nowadays."
+    ],
+    "title": "Review of deep learning: concepts, CNN architectures, challenges, ...",
+    "url": "https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00444-8"
+  },
+  {
+    "description": "Explore essential evaluation metrics in machine learning. Understand predictive models and learn to implement metrics for optimal performance!",
+    "favicon_url": "https://you.com/favicon?domain=www.analyticsvidhya.com&size=128",
+    "snippets": [
+      "Deploying Machine Learning Model using StreamlitDeploying ML Models in DockerDeploy Using StreamlitDeploy on HerokuDeploy Using NetlifyIntroduction to Amazon SagemakerSetting up Amazon SageMakerUsing SageMaker Endpoint to Generate InferenceDeploy on Microsoft Azure CloudIntroduction to Flask for ModelDeploying ML model using Flask",
+      "Introduction to StackingImplementing StackingVariants of StackingImplementing Variants of StackingIntroduction to BlendingBootstrap SamplingIntroduction to Random SamplingHyper-parameters of Random ForestImplementing Random ForestOut-of-Bag (OOB) Score in the Random ForestIPL Team Win Prediction Project Using Machine LearningIntroduction to BoostingGradient Boosting AlgorithmMath behind GBMImplementing GBM in pythonRegularized Greedy ForestsExtreme Gradient BoostingImplementing XGBM in pythonTuning Hyperparameters of XGBoost in PythonImplement XGBM in R/H2OAdaptive BoostingImplementing Adaptive BoosingLightGBMImplementing LightGBM in PythonCatboostImplementing Catboost in Python",
+      "Also, in this article, we explore understanding ML metrics, evaluation metrics in machine learning, and performance metrics in machine learning, highlighting the importance of out-of-sample evaluation metrics in machine learning for robust model assessment.",
+      "Python| R| SQL| Jupyter Notebooks| TensorFlow| Scikit-learn| PyTorch| Tableau| Apache Spark| Matplotlib| Seaborn| Pandas| Hadoop| Docker| Git| Keras| Apache Kafka| AWS| NLP| Random Forest| Computer Vision| Data Visualization| Data Exploration| Big Data| Common Machine Learning Algorithms| Machine Learning| Google Data Science Agent"
+    ],
+    "title": "12 Important Model Evaluation Metrics for Machine Learning Everyone ...",
+    "url": "https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/"
+  },
+  {
+    "description": "Designing deep learning inference hardware based on in-memory computing remains a challenge. Here, the authors propose a strategy to train ResNet-type convolutional neural networks which results in reduced accuracy loss when transferring weights to in-memory computing hardware based on phase-change ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Designing deep learning inference hardware based on in-memory computing remains a challenge. Here, the authors propose a strategy to train ResNet-type convolutional neural networks which results in reduced accuracy loss when transferring weights to in-memory computing hardware based on phase-change memory.",
+      "In-memory computing using resistive memory devices is a promising non-von Neumann approach for making energy-efficient deep learning inference hardware. However, due to device variability and noise, the network needs to be trained in a specific way so that transferring the digitally trained weights to the analog resistive memory devices will not result in significant loss of accuracy.",
+      "Nature Communications - Designing deep learning inference hardware based on in-memory computing remains a challenge. Here, the authors propose a strategy to train ResNet-type convolutional neural...",
+      "Mixed-precision architecture based on computational memory for training deep neural networks. In International Symposium on Circuits and Systems (ISCAS) 1\u20135 (IEEE, 2018). Mohanty, A. et al. Random sparse adaptation for accurate inference with inaccurate multi-level RRAM arrays."
+    ],
+    "title": "Accurate deep neural network inference using computational ...",
+    "url": "https://www.nature.com/articles/s41467-020-16108-9"
+  },
+  {
+    "description": "Deep neural networks (DNNs) are currently being deployed as machine learning technology in a wide range of important real-world applications. DNNs con\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "He has authored 200 papers in journals and conference proceedings as well as several books. He is currently a Professor of Artificial Intelligence and Data Science in the Centre for Data Science at Coventry University. His research interests include the area of machine learning and applications, deep learning and neural networks, various nature inspired optimization algorithms, computer vision, and natural language processing.",
+      "A more effective method is to implement DNNs in a cloud computing system equipped with centralized servers and data storage sub-systems with high-speed and high-performance computing capabilities. This paper presents an up-to-date survey on current state-of-the-art deployed DNNs for cloud computing.",
+      "Moreover, DNN applications already deployed in cloud computing systems are reviewed to demonstrate the advantages of using cloud computing for DNNs. The paper emphasizes the challenges of deploying DNNs in cloud computing systems and provides guidance on enhancing current and new deployments.",
+      "His research interests include artificial intelligence, machine learning and their applications to new product development, underwater acoustic communications, image/video quality evaluations etc. He has published more than 100 journal papers and several books and serves as an associate editor for several reputed journals."
+    ],
+    "title": "Deep neural networks in the cloud: Review, applications, challenges ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0925231223004502"
+  },
+  {
+    "description": "Large Language Models (LLMs) are gaining significant popularity in recent years for specialized tasks using prompts due to their low computational cost. Standard methods like prefix tuning utilize special, modifiable tokens that lack semantic meaning and require extensive training for best ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Large Language Models (LLMs) are gaining significant popularity in recent years for specialized tasks using prompts due to their low computational cost. Standard methods like prefix tuning utilize special, modifiable tokens that lack semantic meaning and require extensive training for best performance, often falling short.",
+      "Scientific Reports - Parameter-efficient fine-tuning of large language models using semantic knowledge tuning",
+      "Lcs: Learning compressible subspaces for efficient, adaptive, real-time network compression at inference time. In Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision 3818\u20133827 (2023). Pham, H., Guan, M., Zoph, B., Le, Q. & Dean, J. Efficient neural architecture search via parameters sharing.",
+      "Lee, Y. & Choi, S. Gradient-based meta-learning with learned layerwise metric and subspace. In International Conference on Machine Learning 2927\u20132936 (PMLR, 2018). Chaudhry, A., Khan, N., Dokania, P. & Torr, P. Continual learning in low-rank orthogonal subspaces. Adv. Neural Inf. Process. Syst. 33, 9900\u20139911 (2020). ... Finn, C., Abbeel, P. & Levine, S. Model-agnostic meta-learning for fast adaptation of deep networks."
+    ],
+    "title": "Parameter-efficient fine-tuning of large language models using ...",
+    "url": "https://www.nature.com/articles/s41598-024-75599-4"
+  },
+  {
+    "description": "PDF | On Jan 1, 2020, Ricardo Rei and others published COMET: A Neural Framework for MT Evaluation | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "BLE URT metric in \ufb01ve out of seven language pairs.",
+      "Table 1: Kendall\u2019s Tau (\u03c4) correlations on language pairs with English as source for the WMT19 Metrics",
+      "MT (Barrault et al.,2019)."
+    ],
+    "title": "(PDF) COMET: A Neural Framework for MT Evaluation",
+    "url": "https://www.researchgate.net/publication/347234911_COMET_A_Neural_Framework_for_MT_Evaluation"
+  },
+  {
+    "description": "We use cookies to improve your browsing experience and to help us understand what information is most useful to website visitors. You can find out more by reading our Cookie Policy. By clicking \u201cAccept,\u201d you agree to our use of cookies",
+    "favicon_url": "https://you.com/favicon?domain=unbabel.netlify.app&size=128",
+    "snippets": [],
+    "title": "Document-level Neural MT: A Systematic Comparison",
+    "url": "https://unbabel.netlify.app/research/publications/document-level_neural_mt-_a_systematic_comparison/"
+  },
+  {
+    "description": "Analog in-memory computing\u2014a promising approach for energy-efficient acceleration of deep learning workloads\u2014computes matrix-vector multiplications but only approximately, due to nonidealities that often are non-deterministic or nonlinear. This can adversely impact the achievable inference ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Analog in-memory computing\u2014a promising approach for energy-efficient acceleration of deep learning workloads\u2014computes matrix-vector multiplications but only approximately, due to nonidealities that often are non-deterministic or nonlinear. This can adversely impact the achievable inference accuracy.",
+      "Analog in-memory computing promises efficient DNN inference acceleration but suffers from nonidealities. Here, hardware-aware training methods are improved so that various larger DNNs of diverse topologies nevertheless achieve iso-accuracy.",
+      "Nature Communications - Analog in-memory computing promises efficient DNN inference acceleration but suffers from nonidealities. Here, hardware-aware training methods are improved so that various...",
+      "Murmann, B. Mixed-signal computing for deep neural network inference. in IEEE Transactions on Very Large Scale Integration (VLSI) Systems, Vol. 29, no. 1, 3\u201313 (IEEE, 2020). Krishnamoorthi, R. Quantizing deep convolutional networks for efficient inference: a whitepaper. Preprint at https://arxiv.org/abs/1806.08342 (2018). Nagel, M. et al. A white paper on neural network quantization."
+    ],
+    "title": "Hardware-aware training for large-scale and diverse deep learning ...",
+    "url": "https://www.nature.com/articles/s41467-023-40770-4"
+  },
+  {
+    "description": "Machine translation (MT) is an important sub-field of natural language processing that aims to translate natural languages using computers. In recent \u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Machine translation (MT) is an important sub-field of natural language processing that aims to translate natural languages using computers. In recent years, end-to-end neural machine translation (NMT) has achieved great success and has become the new mainstream method in practical MT systems."
+    ],
+    "title": "Neural machine translation: A review of methods, resources, and ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666651020300024"
+  },
+  {
+    "description": "Deep learning relies on learning from extensive data to generate prediction results. This approach may inadvertently capture spurious correlations within the data, leading to models that lack inter...",
+    "favicon_url": "https://you.com/favicon?domain=spj.science.org&size=128",
+    "snippets": [
+      "Deep learning relies on learning from extensive data to generate prediction results. This approach may inadvertently capture spurious correlations within the data, leading to models that lack interpretability and robustness. Researchers have developed ...",
+      "How does the brain perform multisensory inference? Researchers have conducted many relevant experiments [91,92] on multimodal inference in complex environments to explore the principles of neural computation.",
+      "In this paper, we introduce the basic concepts of causal inference and explore the ideology of brain-inspired reasoning. We review the theoretical foundations and general frameworks used in causal inference, and summarize its integration with classical algorithms for deep learning.",
+      "\u2022 The fundamental concepts of causal inference from a brain-inspired perspective are introduced in this paper. Two foundational frameworks for causal inference, the potential outcomes model (POM) and the structural causal model (SCM), are explored, and a comparative analysis of their interconnections is provided."
+    ],
+    "title": "Causal Inference Meets Deep Learning: A Comprehensive Survey | ...",
+    "url": "https://spj.science.org/doi/10.34133/research.0467"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [],
+    "title": "Characterizing the Deep Neural Networks Inference ...",
+    "url": "https://www.researchgate.net/publication/335755343_Characterizing_the_Deep_Neural_Networks_Inference_Performance_of_Mobile_Applications"
+  },
+  {
+    "description": "Machine learning influences numerous aspects of modern society, empowers new technologies, from Alphago to ChatGPT, and increasingly materializes in consumer products such as smartphones and self-driving cars. Despite the vital role and broad applications of artificial neural networks, we lack ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "To obtain the best experience, we recommend you use a more up to date browser (or turn off compatibility mode in Internet Explorer). In the meantime, to ensure continued support, we are displaying the site without styles and JavaScript. ... Machine learning influences numerous aspects of modern society, empowers new technologies, from Alphago to ChatGPT, and increasingly materializes in consumer products such as smartphones and self-driving cars. Despite the vital role and broad applications of artificial neural networks, we lack systematic approaches, such as network science, to understand their underlying mechanism.",
+      "Understanding of artificial neural networks function, and their ability to effectively solve specific tasks, still require more rigorous analytical background. Using network science and dynamical systems tools, the authors develop a framework for predicting the performance of artificial neural networks",
+      "Nature Communications - Understanding of artificial neural networks function, and their ability to effectively solve specific tasks, still require more rigorous analytical background. Using network...",
+      "The NCP is frozen with a set of randomly initialized weights, and only the bottom layers are fine-tuned. c Observed partial learning curves (green line segments) of validation accuracy over the early-stage training epochs and the corresponding neural capacitance metric \u03b2eff during fine-tuning."
+    ],
+    "title": "Network properties determine neural network performance | Nature ...",
+    "url": "https://www.nature.com/articles/s41467-024-48069-8"
+  },
+  {
+    "description": "In machine learning, deep learning focuses on utilizing multilayered neural networks to perform tasks such as classification, regression, and representation learning. The field takes inspiration from biological neuroscience and is centered around stacking artificial neurons into layers and ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Should Joseph therefore be considered the originator of proper adaptive multilayer perceptrons with learning hidden units? Unfortunately, the learning algorithm was not a functional one, and fell into oblivion. The first working deep learning algorithm was the Group method of data handling, a method to train arbitrarily deep neural networks, published by Alexey Ivakhnenko and Lapa in 1965. They regarded it as a form of polynomial regression, or a generalization of Rosenblatt's perceptron. A 1971 paper described a deep network with eight layers trained by this method, which is based on layer by layer training through regression analysis.",
+      "The principle of elevating \"raw\" features over hand-crafted optimization was first explored successfully in the architecture of deep autoencoder on the \"raw\" spectrogram or linear filter-bank features in the late 1990s, showing its superiority over the Mel-Cepstral features that contain stages of fixed transformation from spectrograms. The raw features of speech, waveforms, later produced excellent larger-scale results. Neural networks entered a lull, and simpler models that use task-specific handcrafted features such as Gabor filters and support vector machines (SVMs) became the preferred choices in the 1990s and 2000s, because of artificial neural networks' computational cost and a lack of understanding of how the brain wires its biological networks.",
+      "Lu et al. proved that if the width of a deep neural network with ReLU activation is strictly larger than the input dimension, then the network can approximate any Lebesgue integrable function; if the width is smaller or equal to the input dimension, then a deep neural network is not a universal approximator. The probabilistic interpretation derives from the field of machine learning. It features inference, as well as the optimization concepts of training and testing, related to fitting and generalization, respectively.",
+      "Deep neural networks are generally interpreted in terms of the universal approximation theorem or probabilistic inference.",
+      "There are two types of artificial neural network (ANN): feedforward neural network (FNN) or multilayer perceptron (MLP) and recurrent neural networks (RNN). RNNs have cycles in their connectivity structure, FNNs don't. In the 1920s, Wilhelm Lenz and Ernst Ising created the Ising model which is essentially a non-learning RNN architecture consisting of neuron-like threshold elements. In 1972, Shun'ichi Amari made this architecture adaptive."
+    ],
+    "title": "Deep learning - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Deep_learning"
+  },
+  {
+    "description": "Abstract. Neural activation patterns underlying motor learning that are captured using functional imaging can only reflect the patterns occurring at a given moment. Motor learning is known to comprise many processes which are variably biologically or temporally distinct.",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Specific to motor learning, there are both continuous and transient neural processes which govern how the brain learns movements (Verhoeven & Newell, 2018). Although there is variability in the naming of the processes, there is consensus that motor learning begins with acquisition (sometimes called learning or motor adaption), which is followed by consolidation, and then a longer and less defined stage in which the brain retains the learned skill, sometimes referred to as retention (Luft & Buitrago, 2005).",
+      "Neural correlates associated with intermanual transfer of sensorimotor adaptation. ... Corticomotor plasticity induced by tongue-task training in humans: A longitudinal fMRI study. ... Cerebellar function in consolidation of a motor memory. ... Symbolic representations in motor sequence learning. ... Functional somatotopy revealed across multiple cortical regions using a model of complex motor task. ... The importance of different learning stages for motor sequence learning after stroke.",
+      "The neural network of motor imagery: An ALE meta-analysis. ... Differences of cerebral activation between superior and inferior learners during motor sequence encoding and retrieval.",
+      "Specific systems including the cortico-striatal and cortico-cerebellar are implicated as being essential for acquisition and performance of learned motor skills (Doyon & Benali, 2005), albeit there is no meta-analysis to our knowledge that has assessed the consistency of activation of the cortico-striatal network across multiple forms of motor learning experiments, as it pertains to the adaptative motor learning framework. In consolidation, the stage which follows the initial learning of the task, the learned skill is consolidated (however is susceptible to interference)."
+    ],
+    "title": "Neural signatures of online and offline motor learning: An ALE ...",
+    "url": "https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00457/127405/Neural-signatures-of-online-and-offline-motor"
+  },
+  {
+    "description": "Abstract. Automatic Machine Translation (MT) evaluation is an active field of research, with a handful of new metrics devised every year. Evaluation metrics are generally benchmarked against manual assessment of translation quality, with performance measured in terms of overall correlation ...",
+    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
+    "snippets": [
+      "Abstract. Automatic Machine Translation (MT) evaluation is an active field of research, with a handful of new metrics devised every year. Evaluation metrics are generally benchmarked against manual assessment of translation quality, with performance measured in terms of overall correlation with human scores.",
+      "The use of automatic evaluation is a common practice in the field of Machine Translation (MT). It allows for cost-effective quality assessment, making it possible to compare different approaches to MT, optimize parameters of statistical MT systems, and select models in neural MT systems.",
+      "Previous work has shown, for instance, that metrics such as BLEU heavily penalize translations from rule-based MT systems compared with translations from statistical MT systems (Callison-Burch, Osborne, and Koehn, 2006). Given the recent success of neural MT, which has been leading to this becoming the de facto approach to MT, the question arises of how reliable automatic evaluation is for such systems.",
+      "Sections 3 and 4 present the evaluation metrics and the data sets used in our experiments. Section 5 describes the analysis of automatic and manual evaluation in relation to MT quality levels. Section 6 analyzes the differences in metric performance for statistical and neural MT."
+    ],
+    "title": "Taking MT Evaluation Metrics to Extremes: Beyond Correlation with ...",
+    "url": "https://direct.mit.edu/coli/article/45/3/515/93373/Taking-MT-Evaluation-Metrics-to-Extremes-Beyond"
+  },
+  {
+    "description": "Existing pre-trained models have yielded promising results in terms of computational time reduction. However, these models only focus on pruning simple sentences or less salient words, while neglecting the treatment of relatively complex sentences. It is frequently these sentences that cause ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Existing pre-trained models have yielded promising results in terms of computational time reduction. However, these models only focus on pruning simple sentences or less salient words, while neglecting the treatment of relatively complex sentences. It is frequently these sentences that cause the loss of model accuracy.",
+      "Neural Processing Letters - Existing pre-trained models have yielded promising results in terms of computational time reduction. However, these models only focus on pruning simple sentences or less...",
+      "This paper presents a sample-adaptive training and inference model. This method realizes the adaptive inference of complex samples in the inference stage by training the complex sample feature enhancement modules, which compensates for the defect that the existing models do not differentiate the complex samples.",
+      "In: Neural information processing systems \u00b7 Ye D, Lin Y, Huang Y, Sun M (2021) Tr-bert: dynamic token reduction for accelerating bert inference. In: North American chapter of the association for computational linguistics \u00b7 Modarressi A, Mohebbi H, Pilehvar MT (2022) Adapler: speeding up inference by adaptive length reduction."
+    ],
+    "title": "Sample-Adaptive Classification Inference Network | Neural Processing ...",
+    "url": "https://link.springer.com/article/10.1007/s11063-024-11629-6"
+  }
+]

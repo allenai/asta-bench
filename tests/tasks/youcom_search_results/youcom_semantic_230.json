@@ -1,0 +1,271 @@
+[
+  {
+    "description": "ruiboliu@google.com \u00b7 The success of AI models relies on the availability of large, diverse, and high-quality datasets, which can be challenging to obtain due to data scarcity, privacy concerns, and high costs. Synthetic data has emerged as a promising solution by generating artificial data ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Future research should investigate the scaling laws for synthetic data and determine the optimal balance between the quantity and quality of synthetic samples. This exploration could help us understand the most effective strategies for leveraging synthetic data in training large-scale language models, potentially leading to more efficient and cost-effective approaches (Muennighoff et al., 2024). While existing methods for generating synthetic data have shown promise, there is still room for improvement in terms of creating high-quality, attributed synthetic samples that closely mimic real-world data.",
+      "One concern of this type of method is how to keep the generated data high quality, which involves the complexity of queries (Liu et al., 2023d), the diversity of semantics (Ding et al., 2023), and the scale of the synthetic dataset (Yuan et al., 2023). To this end, Xu et al. (2023) propose Evol-Instruct which adds complexity to simple instructions via prompting. Mukherjee et al. (2023) leverage LLMs to revise the instructions and responses iteratively to include high-quality explanation traces in the FLAN dataset (Wei et al., 2022), and they find the trained model has improved performance in many NLP tasks.",
+      "Synthetic data has emerged as a promising solution to address the challenges of data scarcity, privacy concerns, and high costs in AI development. By generating realistic and diverse datasets, synthetic data enables the training and evaluation of AI models at scale across various domains. As we approach human-level or even superhuman-level intelligence, obtaining synthetic data becomes even more crucial, given that models need better-than-average-human quality data to progress.",
+      "The model trained with this RLAIF (i.e., reinforcement learning from AI feedback) method shows similar strong performance as RLHF baselines. In general, synthetic data offers a powerful solution for human values and preferences alignment by allowing researchers to generate large-scale, diverse, and controlled training datasets in a low-cost way (Cui et al., 2023; Ganguli et al., 2022)."
+    ],
+    "title": "Best Practices and Lessons Learned on Synthetic Data for Language ...",
+    "url": "https://arxiv.org/html/2404.07503v1"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "Synthetic Data Generation with Large Language Models ...",
+    "url": "https://aclanthology.org/2023.emnlp-main.647.pdf"
+  },
+  {
+    "description": "In this article, I'm show you everything you need on how to generate realistic synthetic datasets using LLMs.",
+    "favicon_url": "https://you.com/favicon?domain=www.confident-ai.com&size=128",
+    "snippets": [
+      "Synthetic data generation leverages LLMs to create quality data without the need to manually collect, clean, and annotate massive datasets. With models like GPT-4, it's now possible to synthetically produce datasets that are more comprehensive and diverse than human-labeled ones, in far less time, which can be used to benchmark LLM (systems) with the help of some LLM evaluation metrics. In this article, I\u2019ll teach you everything you need to know on how to use LLMs to generate synthetic datasets (which for example can be used to evaluate RAG pipelines).",
+      "In contrast, distillation techniques are only limited by the best model available, ensuring the highest quality generation. The first step in synthetic data generation involves creating synthetic queries from your list of contexts, which are sourced directly from your knowledge base. Essentially, contexts serve as the ideal retrieval contexts for your LLM application, much like how expected outputs serve as ground truth references for your LLM\u2019s actual outputs. For those who wants something working immediately, here is how you can generate high quality synthetic data using DeepEval, the open-source LLM evaluation framework (\u2b50github here: https://github.com/confident-ai/deepeval):",
+      "Generating synthetic datasets is not only faster than scouring public datasets and cheaper than human annotation but also results in higher quality and data diversity, which is also imperative for LLM red teaming. The process starts with the creation of synthetic queries, which are generated using context from your knowledge base (often in the form of documents) as the ground truth.",
+      "This step is crucial to ensure that no valuable resources are wasted and that your final dataset only contains high-quality goldens. Filtering occurs at two critical stages of synthetic data generation: initially during context generation, and subsequently during the generation of synthetic inputs from these contexts. During context generation, there\u2019s a chance you might randomly select a low-quality chunk. Oftentimes, your knowledge base may contain complex structures or excess whitespace that becomes unintelligible when broken down."
+    ],
+    "title": "Using LLMs for Synthetic Data Generation: The Definitive Guide ...",
+    "url": "https://www.confident-ai.com/blog/the-definitive-guide-to-synthetic-data-generation-using-llms"
+  },
+  {
+    "description": "Large language models (LLMs) have unlocked new possibilities for generating synthetic training data in both natural language and code domains. By producing artificial but task-relevant examples, these models can significantly augment or even substitute for real-world datasets, particularly ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "For example, a metric that combines diversity and fidelity (maybe using pre-trained model embeddings to judge if a synthetic set covers the real set\u2019s embedding space well) could be useful. In code, metrics beyond just \"pass rate\" might consider code elegance or complexity, depending on what we want the model to learn. ... Human-in-the-Loop and Expert Knowledge: Another future direction is incorporating expert rules or human insights directly into generation.",
+      "Some projects use an LLM to propose dozens of solutions to a coding task and then filter by execution to build a high-quality dataset of solutions. ... Learn from Failure: Conversely, the patterns in failed executions can also be informative. As seen in Reflexion and related methods [49], if a code fails, the error messages or partial progress can be fed back into the generation loop. This can yield a synthetic sequence: (attempt1, error, attempt2 fixed, error2, \u2026, final correct).",
+      "But a theory for something like \"How does the synthetic data distribution interact with the learning algorithm\u2019s generalization error?\" would be valuable. Perhaps PAC-learning or domain adaptation theory could be applied: synthetic data can be seen as coming from a distribution that approximates the real distribution; theories of domain shift or distribution blending might provide guarantees or insights. Understanding the limits of augmentation (diminishing returns) in a mathematical sense could guide practitioners on how much is enough. ... Quality Evaluation Metrics: Developing better automatic metrics for synthetic data quality will be important.",
+      "CodeRL [31], for instance, uses whether the code executes correctly as a reward to fine-tune the model via RL (reinforcement learning). Instead of supervised training on static data, the model explores code solutions and is reinforced to produce outputs that pass tests. Over time, the distribution of generated code shifts towards higher correctness. This approach effectively generates and uses synthetic data on the fly in a closed loop. ... Measuring Difficulty: By using execution feedback, one can also stratify the synthetic data by difficulty."
+    ],
+    "title": "Synthetic Data Generation Using Large Language Models: Advances ...",
+    "url": "https://arxiv.org/html/2503.14023v1"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Even when dealing with synthetic data, it is important to understand and look at your data, which is why we created a direct integration with Argilla, a collaboration tool for AI engineers and domain experts to build high-quality datasets. This allows you to effectively explore and evaluate the synthetic dataset through powerful features like semantic search and composable filters. You can learn more about them in this guide. Afterwards, we can export the curated dataset to the Hugging Face Hub, and continue to fine-tune a model with it.",
+      "Even though you can go from prompts to dedicated models without knowing anything about coding, some people might like the option to customize and scale their deployment with some more advanced technical features. You can improve speed and accuracy by creating the own deployment of the tool and configuring it to use different parameters or models. First, you must duplicate the synthetic data generator.",
+      "A good example of a synthetic chat dataset is argilla/synthetic-sft-customer-support-single-turn, which highlights an example of an LLM designed to handle customer support. In this example, the customer support topic is the synthetic data generator itself. Generally, we can generate 50 and 20 samples per minute for text classification and chat, respectively. All of this is powered by the free Hugging Face API, but you can scale this up by using your own account and choosing custom models, api providers or generation configurations.",
+      "Introducing the Synthetic Data Generator, a user-friendly application that takes a no-code approach to creating custom datasets with Large Language Models (LLMs). The best part: A simple step-by-step process, making dataset creation a non-technical breeze, allowing anyone to create datasets and models in minutes and without any code. ... Synthetic data is artificially generated information that mimics real-world data. It allows overcoming data limitations by expanding or enhancing datasets. The synthetic data generator takes a description of the data you want (your custom prompt) and returns a dataset for your use case, using a synthetic data pipeline."
+    ],
+    "title": "Introducing the Synthetic Data Generator - Build Datasets with ...",
+    "url": "https://huggingface.co/blog/synthetic-data-generator"
+  },
+  {
+    "description": "This alert has been successfully added and will be sent to: \u00b7 You will be notified whenever a record that you have chosen has been cited",
+    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
+    "snippets": [
+      "This is reminiscent of the research on Chain-of-Thought (CoT) prompting: An LLM can be prompted to provide step-by-step explanations for its \"thought process\", which can actually improve LLM reasoning capabilities [33]. The primary limitation is that generated explanations should be treated as hypotheses to be validated with real data, rather than trustworthy evidence. Our present experiments also focus on qualitative data\u2014future work should explore collecting both quantitative and qualitative synthetic data, e.g., Likert-scale responses augmented with open-ended questions that probe the reasons.",
+      "Figure 5: Frechet embedding distances (smaller is more human-like) and precision & recall metrics (larger is more human-like) for different GPT-3 variants. Overall, human-likeness grows with model size from ada to davinci. Curiously, text-davinci-002, the latest GPT-3 variant, shows improved precision but lower recall, i.e., the generated data is of high quality but has less diversity than real data or the older davinci variant.",
+      "The overall slightly higher-than-human GPT-3 similarities, and the notably higher text-davinci-002 similarities probably reflect the data diversity issues noted above. ... Figure 6: A) Mean intra-participant and inter-participant cosine similarities between the experience descriptions and \"Why art?\" answers. The shaded areas indicate standard errors of the mean. B) Cosine similarity matrices between the experience descriptions and \"Why art?\" answers of all 178 synthetic and human participants.",
+      "A particularly difficult error category is factual errors that cannot be detected based on superficial qualities of the generated text, but instead require domain knowledge about the discussed topics. Can synthetic data provide plausible answers to real HCI research questions?"
+    ],
+    "title": "Evaluating Large Language Models in Generating Synthetic HCI Research ...",
+    "url": "https://dl.acm.org/doi/10.1145/3544548.3580688"
+  },
+  {
+    "description": "Within the evolving landscape of deep learning, the dilemma of data quantity and quality has been a long-standing problem. The recent advent of Large Language Models (LLMs) offers a data-centric solution to alleviate the limitations of real-world data with synthetic data generation.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The game-changing emergence of Large Language Models (LLMs) instigated a significant paradigm shift in the field of deep learning Zhang et al. (2023a); Guo et al. (2023); Bang et al. (2023). Despite these advancements, a large amount of high-quality data remains the foundation for building robust NLP models Gandhi et al. (2024). To be more specific, here high-quality data typically refers to diverse data that carries rich supervision signals (generally in the form of labels) closely aligned with human intent.",
+      "To reduce the labeling cost, a more pragmatic human-free paradigm is developed which involves auxiliary student models for knowledge distillation and label refinery Xiao et al. (2023); Zhao et al. (2023a); Saad-Falcon et al. (2023). These methods rely on the weakly supervised ability of student models and hypothesize that a student distilled from the LLM teacher can produce superior labels. The seminal work FreeAL Xiao et al. (2023) proposes a collaborative framework, where a student model is leveraged to distill the high-quality task-related knowledge from the weak annotations and in return feedback LLMs for label refinery.",
+      "Shao et al. (2023) Zhihong Shao, Yeyun Gong, Yelong Shen, Minlie Huang, Nan Duan, and Weizhu Chen. 2023. Synthetic prompting: Generating chain-of-thought demonstrations for large language models. In ICML, volume 202 of Proceedings of Machine Learning Research, pages 30706\u201330775.",
+      "Mitigating label biases for in-context learning. In ACL, pages 14014\u201314031. Association for Computational Linguistics. Feng et al. (2023) Shangbin Feng, Vidhisha Balachandran, Yuyang Bai, and Yulia Tsvetkov. 2023. FactKB: Generalizable factuality evaluation using language models enhanced with factual knowledge. In Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, pages 933\u2013952, Singapore."
+    ],
+    "title": "On LLMs-Driven Synthetic Data Generation, Curation, and Evaluation: ...",
+    "url": "https://arxiv.org/html/2406.15126v1"
+  },
+  {
+    "description": "Large language models (LLMs) have unlocked new possibilities for generating synthetic training data in both natural language and code. By producing artificial but task-relevant examples, these models can significantly augment or even replace real-world datasets, especially when labeled data ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Large language models (LLMs) have unlocked new possibilities for generating synthetic training data in both natural language and code. By producing artificial but task-relevant examples, these models can significantly augment or even replace real-world datasets, especially when labeled data is scarce or sensitive.",
+      "Abstract page for arXiv paper 2503.14023: Synthetic Data Generation Using Large Language Models: Advances in Text and Code",
+      "Proposed mitigations include filtering and weighting outputs and reinforcement learning with execution feedback for code. We conclude with open research directions like automated prompt engineering, cross-modal data synthesis, and robust evaluation frameworks, highlighting the importance of LLM-generated synthetic data in advancing AI while emphasizing ethical and quality safeguards.",
+      "We gratefully acknowledge support from the Simons Foundation, member institutions, and all contributors. Donate ... View a PDF of the paper titled Synthetic Data Generation Using Large Language Models: Advances in Text and Code, by Mihai Nadas and 2 other authors View PDF HTML (experimental)"
+    ],
+    "title": "[2503.14023] Synthetic Data Generation Using Large Language Models: ...",
+    "url": "https://arxiv.org/abs/2503.14023"
+  },
+  {
+    "description": "The collection and curation of high-quality training data is crucial for developing text classification models with superior performance, but it is often associated with significant costs and time investment. Researchers have recently explored using large language models (LLMs) to generate ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "The collection and curation of high-quality training data is crucial for developing text classification models with superior performance, but it is often associated with significant costs and time investment. Researchers have recently explored using large language models (LLMs) to generate synthetic datasets as an alternative approach.",
+      "Abstract page for arXiv paper 2310.07849: Synthetic Data Generation with Large Language Models for Text Classification: Potential and Limitations",
+      "We gratefully acknowledge support from the Simons Foundation, member institutions, and all contributors. Donate ... View a PDF of the paper titled Synthetic Data Generation with Large Language Models for Text Classification: Potential and Limitations, by Zhuoyan Li and 3 other authors View PDF \u00b7 Abstract:The collection and curation of high-quality training data is crucial for developing text classification models with superior performance, but it is often associated with significant costs and time investment.",
+      "Have an idea for a project that will add value for arXiv's community? Learn more about arXivLabs."
+    ],
+    "title": "[2310.07849] Synthetic Data Generation with Large Language Models ...",
+    "url": "https://arxiv.org/abs/2310.07849"
+  },
+  {
+    "description": "Pictue a world of limitless data. AI models feast on high-quality, custom-tailored information for any task or domain. Data scarcity vanishes. Privacy concerns evaporate. Models learn complex tasks\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Pictue a world of limitless data. AI models feast on high-quality, custom-tailored information for any task or domain. Data scarcity\u2026",
+      "They promise to overcome long-standing challenges: scarcity, bias, privacy issues. But generating high-quality synthetic data at scale has been a Herculean task. LLMs possess an almost supernatural ability to understand and generate human-like text. They span vast domains and tackle diverse tasks.",
+      "Through innovative techniques like prompt engineering and persona-driven generation, LLMs are producing datasets of unprecedented scale and diversity. The implications are staggering. From natural language processing to computer vision, healthcare to robotics, synthetic data is accelerating AI progress across domains. It\u2019s enabling privacy-preserving research, boosting performance on rare events, and democratizing access to high-quality training data."
+    ],
+    "title": "The Core Value of Large Language Models for Synthetic Data Generation ...",
+    "url": "https://medium.com/codex/the-core-value-of-large-language-models-for-synthetic-data-generation-72fc23e63376"
+  },
+  {
+    "description": "It's increasingly clear that the quality of a large language model (LLM) is hugely dependent on the quality of the data used during training.",
+    "favicon_url": "https://you.com/favicon?domain=www.redhat.com&size=128",
+    "snippets": [
+      "That\u2019s why today\u2019s artificial intelligence (AI) breakthroughs are being powered by synthetic data\u2014a transformative approach to training and refining language models that\u2019s faster, cheaper and more scalable than traditional methods. Training high-performing LLMs requires vast amounts of diverse, high-quality data.",
+      "With InstructLab, we are building a future that addresses the challenges of synthetic data through grounded source data, a diversity of contributions from subject matter experts and automated quality checks. This means organizations and enterprises have the potential to develop their own unique AI models, customized for their specific use cases and free from vendor lock-in. As we always say at Red Hat, the future is open! ... A foundation model platform to develop, train, test, and run Granite family large language models (LLMs) for enterprise applications.",
+      "By leveraging LLMs, it\u2019s possible to generate specialized queries that can be more diverse and comprehensive than human-curated alternatives. Synthetic data isn\u2019t \u201cfake\u201d data, instead it is designed to mimic real-world data where that data may be scarce. Let\u2019s take a look at some primary methods for generating synthetic data that are commonly used in the language models of today. One of the most effective ways to generate synthetic data is known as distillation, where a larger, more advanced \u201cteacher\u201d model (such as Llama 405B) creates training examples for a smaller \u201cstudent\u201d model.",
+      "By using the Mixtral-8x7B-Instruct model to generate a synthetic re-representation of the data, the custom prompt might instruct the model to create a detailed guide for beginners, such as, \u201cWrite a step-by-step tutorial on baking sourdough bread, including tips for achieving the perfect crust.\u201d This resulting synthetic data expands on the original idea with added depth and clarity, increasing the diversity and quality of the original data sample. In Cosmopedia, initial web extracts and seed examples are re-represented to provide more context and deeper background context \u00b7 While synthetic data has immense potential only bottlenecked by computational speeds, there are a number of risks to keep in mind. First is what\u2019s known as model collapse, where repeated training on synthetic data can degrade model performance, leading to \u201challucinations\u201d or oversimplified outputs."
+    ],
+    "title": "Synthetic data: A secret ingredient for better language models",
+    "url": "https://www.redhat.com/en/blog/synthetic-data-secret-ingredient-better-language-models"
+  },
+  {
+    "description": "Prompt engineering enables researchers to generate customized training examples for lightweight \u201cstudent\u201d models.",
+    "favicon_url": "https://you.com/favicon?domain=www.amazon.science&size=128",
+    "snippets": [
+      "You will employ a family of reusable modelling solutions to ensure that your ML solution scales across multiple regions (such as North America, Europe, Asia) and package movement types (such as small parcel movements and truck movements). You will partner with Applied Scientists and Research Scientists from other teams in US and India working on related business domains. Your models are expected to be of production quality, and will be directly used in production services. You will work as part of a diverse data science and engineering team comprising of other Applied Scientists, Software Development Engineers and Business Intelligence Engineers.",
+      "Key job responsibilities Architect, design, and implement Machine Learning models for vision systems on robotic platforms Optimize, deploy, and support at scale ML models on the edge. Influence the team's strategy and contribute to long-term vision and roadmap. Work with stakeholders across , science, and operations teams to iterate on design and implementation. Maintain high standards by participating in reviews, designing for fault tolerance and operational excellence, and creating mechanisms for continuous improvement.",
+      "A day in the life - 6+ years of building machine learning models for retail application experience - PhD, or Master's degree and 6+ years of applied research experience - Experience programming in Java, C++, Python or related language - Experience with neural deep learning methods and machine learning - Demonstrated expertise in computer vision and machine learning techniques. ... Do you want to re-invent how millions of people consume video content on their TVs, Tablets and Alexa?",
+      "- Design and develop highly innovative machine learning and deep learning models for big data. - Build state-of-art ranking and recommendations models and apply to Amazon search engine. - Analyze and understand large amounts of Amazon\u2019s historical business data to detect patterns, to analyze trends and to identify correlations and causalities - Establish scalable, efficient, automated processes for large scale data analyses, model development, model validation and model implementation"
+    ],
+    "title": "Using large language models (LLMs) to synthesize training data ...",
+    "url": "https://www.amazon.science/blog/using-large-language-models-llms-to-synthesize-training-data"
+  },
+  {
+    "description": "IBM\u2019s synthetic data generation and phased-training method lets enterprises update their LLMs with new knowledge and skills.",
+    "favicon_url": "https://you.com/favicon?domain=research.ibm.com&size=128",
+    "snippets": [
+      "It\u2019s laborious and expensive for humans to make, and typically lacks the depth and breadth that chatbots need to guide them through difficult, rare, or ambiguous situations. Synthetic data costs a lot less, but it often suffers from a similar lack of variety. IBM has a new solution: Large-scale Alignment for chatBots, or LAB. It\u2019s a method for systematically generating synthetic data for the tasks you want your chatbot to accomplish, and for assimilating new knowledge and capabilities into the foundation model \u2014 without overwriting what the model has already learned.",
+      "IBM\u2019s data-generation method is driven by a taxonomy that allows LLM developers to define the knowledge and skills they want to add to their chatbot. The taxonomy maps out the LLM\u2019s existing knowledge and skills in a logical, hierarchical way, giving developers a framework to identify and fill in gaps with new knowledge and skills. The taxonomy guides a second LLM, known as the teacher model, in generating high-quality instructions, formulated as pairs of questions and answers tailored to the task at hand.",
+      "This graduated training regimen allows the LLM to build on its prior knowledge and skills the same way that we humans progressively expand on what we have learned before. LAB organizes task-specific knowledge and skills into a taxonomy, allowing developers to identify and fill in gaps with synthetic instruction data. IBM\u2019s unique training program is designed to help the LLM assimilate new knowledge and skills quickly and efficiently during alignment. Typically, new knowledge is added during pre-training, the most time-consuming and computationally intensive part of AI development. The model is first fed simple instructions, followed by longer, narrative-like instructions corresponding to the knowledge and foundational skills needed for the target task.",
+      "IBM\u2019s new synthetic data generation method and phased-training protocol allows enterprises to update their LLMs with task-specific knowledge and skills, taking some of the guesswork out of training generative AI models."
+    ],
+    "title": "Synthetic training data for LLMs - IBM Research",
+    "url": "https://research.ibm.com/blog/LLM-generated-data"
+  },
+  {
+    "description": "When fine-tuning large language models there is often not enough data available. This post describes how to use the Falcon model to generate synthetic data.",
+    "favicon_url": "https://you.com/favicon?domain=heidloff.net&size=128",
+    "snippets": [
+      "Here is the full prompt if you want to try it yourselves: To learn more, check out the Watsonx.ai documentation and the Watsonx.ai landing page.",
+      "An incredible feature of Large Language Models is the ability to generate text, for example synthetic data that is similar to existing data.",
+      "The license terms need to allow creating synthetical data to train other models."
+    ],
+    "title": "Generating synthetic Data with Large Language Models | Niklas Heidloff",
+    "url": "https://heidloff.net/article/generating-synthetic-data/"
+  },
+  {
+    "description": "ORIGINAL RESEARCH article \u00b7 Front. Artif. Intell., 05 February 2025",
+    "favicon_url": "https://you.com/favicon?domain=www.frontiersin.org&size=128",
+    "snippets": [
+      "Further research is warranted to enhance fidelity and investigate the use of LLMs to amplify and augment datasets, preserve multivariate relationships, and train robust ML models. Clinical data is fundamental to advance medical research and enable the development of machine learning (ML) models. This is particularly relevant in surgical care, as procedural medicine increasingly relies on decision-making based on large-scale data (Maier-Hein et al., 2017).",
+      "Surveys, qualitative interviewing, or randomized trials involving students who have used LLM-generated datasets may reveal whether supplementing educational programs with synthetic data can enhance learning for students training toward careers in disciplines which analyze clinical data (e.g., statisticians, data scientists, epidemiologists).",
+      "Background: Clinical data is instrumental to medical research, machine learning (ML) model development, and advancing surgical care, but access is often constrained by privacy regulations and missing data. Synthetic data offers a promising solution to preserve privacy while enabling broader data access.",
+      "Remove obstacles to sharing health data with researchers outside of the European Union. Nat. Med. 27, 1329\u20131333. doi: 10.1038/s41591-021-01460-0 \u00b7 PubMed Abstract | Crossref Full Text | Google Scholar \u00b7 Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., et al. (2020). Language models are few-shot learners. Arxiv. doi: 10.48550/arXiv.2005.14165 ... Calvo-Lorenzo, I., and Uriarte-Llano, I. (2024). Massive generation of synthetic medical records with ChatGPT: an example in hip fractures."
+    ],
+    "title": "Frontiers | Large language models generating synthetic clinical ...",
+    "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1533508/full"
+  },
+  {
+    "description": "Discover the role of synthetic data in fine-tuning LLMs, offering a blend of scale, privacy, and real-world complexity for AI training.",
+    "favicon_url": "https://you.com/favicon?domain=www.superannotate.com&size=128",
+    "snippets": [
+      "IBM has developed a new way to help chatbots learn better called large-scale alignment for chatbots (LAB). It's a method for generating synthetic data that will feed new knowledge to your chatbot without overwriting the model's already learned knowledge. The method uses a special system\u2014a taxonomy\u2014that helps developers pinpoint exactly what they want their chatbots to know and be able to do.",
+      "Both companies have developed some interesting methods for creating data that help improve these models' performance. NVIDIA recently introduced Nemotron-4 340B, which is a set of open models designed for generating synthetic data. The main idea is that high-quality training data is essential for LLMs, but getting enough good data can be challenging. Nemotron-4 includes three types of models: base, instruct, and reward. The Instruct model is particularly useful because it generates diverse synthetic data that mimics real-world scenarios.",
+      "If you have a good amount of quality data and computing resources, you're already ahead of everyone else in the GenAI race. But getting this data can be costly, time-consuming, and complicated - given that it's all real and existing data. That's why scientists thought of a great idea - using synthetic data to train LLMs and multimodal models. Imagine trying to train a large language model (LLM) to understand human conversation.",
+      "Continuous improvement: Our system constantly updates itself based on feedback, ensuring our data always meets the needs of customers. Avoid overfitting: Our diverse data helps our models perform well on new challenges, not just familiar ones. Maintain privacy: By using synthetic data that contains no real personal information, we ensure privacy and compliance with regulations. Let's discuss how NVIDIA and IBM are generating synthetic data for training large language models (LLMs)."
+    ],
+    "title": "LLM synthetic data: Fine-tuning LLMs with AI-generated data | ...",
+    "url": "https://www.superannotate.com/blog/llm-synthetic-data"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "However, we notice some performance gaps compared to Phi-1.5, suggesting a better synthetic generation quality, which can be related to the LLM used for generation, topic coverage, or prompts. Figure 10. Evaluation results of Cosmo-1B. In this blog post, we outlined our approach for creating Cosmopedia, a large synthetic dataset designed for pre-training models, with the goal of replicating the Phi datasets. We highlighted the significance of meticulously crafting prompts to cover a wide range of topics, ensuring the generation of diverse content.",
+      "Hallucination measurement methods could also help assess which topics or domains suffer the most from it [9]. It would also be interesting to compare Mixtral\u2019s generations to other open models. The potential for synthetic data is immense, and we are eager to see what the community will build on top of Cosmopedia. [1] Ding et al. Enhancing Chat Language Models by Scaling High-quality Instructional Conversations.",
+      "To address this, we created stories incorporating day-to-day knowledge and basic common sense using texts from the UltraChat and OpenHermes2.5 instruction-tuning datasets as seed data for the prompts. These datasets span a broad range of subjects. For instance, from UltraChat, we used the \"Questions about the world\" subset, which covers 30 meta-concepts about the world. For OpenHermes2.5, another diverse and high-quality instruction-tuning dataset, we omitted sources and categories unsuitable for storytelling, such as glaive-code-assist for programming and camelai for advanced chemistry.",
+      "These resources cover many valuable topics for an LLM to learn. For instance, we extracted the outlines of various Stanford courses and constructed prompts that request the model to generate textbooks for individual units within those courses. An example of such a prompt is illustrated in figure 3. Although this approach yields high-quality content, its main limitation is scalability."
+    ],
+    "title": "Cosmopedia: how to create large-scale synthetic data for pre-training ...",
+    "url": "https://huggingface.co/blog/cosmopedia"
+  },
+  {
+    "description": "The recent surge in research focused on generating synthetic data from large language models (LLMs), especially for scenarios with limited data availability, marks a notable shift in Generative Artificial Intelligence (AI). Their ability to perform comparably to real-world data positions this ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "LLMs can augment existing datasets, creating balanced and comprehensive data sets that improve the training and performance of machine learning models. In this section, we highlight some challenges in the creation and use of synthetic data and discuss promising research directions. Synthetic data generated from LLMs inherently faces several data limitations that must be acknowledged and addressed. Correctness and Diversity. In Section II, we summarized existing approaches for monitoring the data quality and promoting data diversity in generation.",
+      "Compared with zero-shot generation, a small budget for few-shot task data can allow the general-purpose LLMs to quickly adapt to the target task under the parameter-efficient learning paradigm. The quality of synthetic data is often measured by quantitative metrics. In ZeroGen [9], authors measured the quality of the generated data from three perspectives: ... roman_Diversity measures the difference between a chunk of text and another in the generated instances. For example, 4- ... roman_Correctnes measures whether the data instance is related to the given label.",
+      "Human evaluation requires the availability of human annotators who will be assigned a random subset of the synthetic dataset and asked to judge whether the content is related to the label. ... roman_Naturalness measurement requires human evaluators who can assess whether the generated text is fluent and similar to human-written texts by selecting a score from a given range. To obtain high-quality synthetic data, ProGen [11] proposes to incorporate a quality estimation module in the data generation pipeline, where the firstly generated synthetic data are evaluated by a task-specific model that was trained on oracle data in advance.",
+      "It is the synthetic data distilled from LLMs rather than the LLMs themselves that will be applied in downstream applications, enabling more diverse and unlimited use cases based on synthetic data. Table I lists the newly emerging methods for generating task-specific training data from LLMs proposed in the past two years. TABLE I: Data generation methods. Generator refers to LLMs that are used for synthetic data generation. Classifier refers to small-scale models that are trained on the synthetic data."
+    ],
+    "title": "Generative AI for Synthetic Data Generation: Methods, Challenges ...",
+    "url": "https://arxiv.org/html/2403.04190v1"
+  },
+  {
+    "description": "73 votes, 70 comments. \"The most obvious advantage of synthetic data is that it contains no personally identifiable information (PII). Consequently\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/Data_Nerd1979 - 73 votes and 70 comments",
+      "I know one interesting paper that gets positive result in massive-scale language training: https://arxiv.org/html/2401.16380v1 ... Agree that it is an emerging field, but the paper you shared trains a 1.3B model and it is not massive by any definition today. In fact, these are what is known as SLMs (small LMs) these days. Also, it mostly relies on C4 but the best proprietary LLMs are already trained on more diverse web data amounting to several trillions of tokens. ... Agree on every point. By massive scale, I meant C4 dataset, so-called internet-scale.",
+      "The interesting part here is: The generator is only trained on FFHQ, 70.000 high quality, mostly frontal images of faces. Even if the diffusion model is trained on larger data, the generator's latent space for face images was learned/constructed using 70k images. We have 8 billion people on earth today, but still FR models trained on synthetic data generated using this generator model are working quite well, even on large-scale benchmarks.",
+      "Though, perhaps most importantly, when synthetic data is all that's needed for capabilities improvements, models can improve a lot because the bottleneck shifts from needing lots of high quality real world data to needing compute for generating the synthetic data and doing the training. As is widely known, any technique that benefits from more computing power will scale, and scale 'is all you need.'"
+    ],
+    "title": "r/MachineLearning on Reddit: [D] Is Synthetic Data a Reliable Option ...",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/1bosj2t/d_is_synthetic_data_a_reliable_option_for/"
+  },
+  {
+    "description": "As we transitioned from the traditional AI methods of the 2010s to deep learning-based approaches in the 2020s, there\u2019s been a marked shift towards leveraging large-scale datasets. These datasets are\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "As we transitioned from the traditional AI methods of the 2010s to deep learning-based approaches in the 2020s, there\u2019s been a marked shift\u2026",
+      "Machine learning models were trained on relatively small, high-quality, human-generated datasets. In contrast, deep learning architectures have pivoted away from manual feature engineering. Instead, they favor end-to-end models that, given a sufficiently large dataset, can discern features autonomously. Long-list of synthetic data generation through LLMs (text version below sections) The rise of large language models (LLMs) as foundational tools has ushered in innovative methods to generate synthetic data.",
+      "Here are some key papers that emphasize the generation of synthetic data, either for self-enhancement or for training more compact models. This process, frequently termed as \u201cknowledge distillation\u201d or the \u201cteacher-student\u201d method, involves a larger model (the teacher) producing labeled data for a smaller counterpart (the student).",
+      "- Self Instruct \u2014 **Title:** Aligning Language Model with self Generated Instructions \u2014 **Idea:** The core concept is to bootstrap instruction data from an instruction fine-tuned model using in-context learning. Subsequent fine-tuning of the LLM on additional instructions allows it to outperform larger models that use private datasets. \u2014 **Link:** [Read more](https://arxiv.org/abs/2212.10560) - Self Consistency \u2014 **Title:** Self Consistency Improves Chain of Thought Reasoning in LMs \u2014 **Idea:** The method employs CoT and various prompts to generate answer puzzles."
+    ],
+    "title": "Harnessing the Power of Synthetic Data in the Era of Large Language ...",
+    "url": "https://medium.com/@prdeepak.babu/harnessing-the-power-of-synthetic-data-in-the-era-of-large-language-models-llms-and-generative-ai-f67763256d44"
+  },
+  {
+    "description": "Something I have found interesting is the various approaches being followed to generate synthetic training data for Language Models.",
+    "favicon_url": "https://you.com/favicon?domain=cobusgreyling.medium.com&size=128",
+    "snippets": [
+      "Three key elements emerge: the necessity of human supervision, a well-planned data topology and pipeline for training data creation, and data designed to elicit specific behaviours from the language\u2026",
+      "This approach reminds of another study, where the researchers propose a new persona-driven data synthesis method that uses different perspectives within a large language model (LLM) to create varied synthetic data. To support this method on a large scale, they introduce Persona Hub, a collection of 1 billion diverse personas automatically gathered from web data. To ensure valid supervision, generated data must be logically and grammatically coherent. However, inherent issues like hallucination and the fat-tailed knowledge distribution in large language models (LLMs) can introduce significant noise.",
+      "This foundational layer is essential for generating high-quality synthetic data that can effectively train and validate machine learning models. \u2b50\ufe0f Follow me on LinkedIn for updates on Large Language Models \u2b50\ufe0f",
+      "However, inherent biases in large language models (LLMs) often result in monotonous and less diverse content, limiting its usefulness in downstream tasks. The aim of synthetic data is not to imbue the target model knowledge, but rather train the model on certain personas and special abilities like advanced reasoning or task decomposition."
+    ],
+    "title": "LLM-Driven Synthetic Data Generation, Curation & Evaluation | by ...",
+    "url": "https://cobusgreyling.medium.com/llm-driven-synthetic-data-generation-curation-evaluation-33731e33b525"
+  },
+  {
+    "description": "A reading list on LLM based Synthetic Data Generation \ud83d\udd25 - wasiahmad/Awesome-LLM-Synthetic-Data",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Learning to Generate Instruction Tuning Datasets for Zero-Shot Task Adaptation Nihal V. Nayak, Yiyang Nan, Avi Trost, Stephen H. Bach ACL Findings 2024. Magpie: Alignment Data Synthesis from Scratch by Prompting Aligned LLMs with Nothing Zhangchen Xu, Fengqing Jiang, Luyao Niu, Yuntian Deng, Radha Poovendran, Yejin Choi, Bill Yuchen Lin Arxiv 2024. On the Diversity of Synthetic Data and its Impact on Training Large Language Models Hao Chen, Abdul Waheed, Xiang Li, Yidong Wang, Jindong Wang, Bhiksha Raj, Marah I.",
+      "Symbolic Knowledge Distillation: from General Language Models to Commonsense Models Peter West, Chandra Bhagavatula, Jack Hessel, Jena D. Hwang, Liwei Jiang, Ronan Le Bras, Ximing Lu, Sean Welleck, Yejin Choi. NAACL 2022. Generating Training Data with Language Models: Towards Zero-Shot Language Understanding Yu Meng, Jiaxin Huang, Yu Zhang, Jiawei Han. NeurIPS 2022. ZeroGen: Efficient Zero-shot Learning via Dataset Generation Jiacheng Ye, Jiahui Gao, Qintong Li, Hang Xu, Jiangtao Feng, Zhiyong Wu, Tao Yu, Lingpeng Kong.",
+      "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data Zheyang Xiong, Vasilis Papageorgiou, Kangwook Lee, Dimitris Papailiopoulos. Arxiv 2024. Impossible Distillation for Paraphrasing and Summarization: How to Make High-quality Lemonade out of Small, Low-quality Models Jaehun Jung, Peter West, Liwei Jiang, Faeze Brahman, Ximing Lu, Jillian Fisher, Taylor Sorensen, Yejin Choi. NAACL 2024. Toolformer: Language Models Can Teach Themselves to Use Tools Timo Schick, Jane Dwivedi-Yu, Roberto Dess\u00ec, Roberta Raileanu, Maria Lomeli, Luke Zettlemoyer, Nicola Cancedda, Thomas Scialom.",
+      "Synthetic-Text-To-SQL: A synthetic dataset for training language models to generate SQL queries from natural language prompts Meyer, Yev and Emadi, Marjan and Nathawani, Dhruv and Ramaswamy, Lipika and Boyd, Kendrick and Van Segbroeck, Maarten and Grossman, Matthew and Mlocek, Piotr and Newberry, Drew. Huggingface 2024. Open Artificial Knowledge Vadim Borisov, Richard Schreiber."
+    ],
+    "title": "GitHub - wasiahmad/Awesome-LLM-Synthetic-Data: A reading list on ...",
+    "url": "https://github.com/wasiahmad/Awesome-LLM-Synthetic-Data"
+  },
+  {
+    "description": "Synthetic data generation using large language models (LLMs) offers a powerful solution to a commonly faced problem: the availability of...",
+    "favicon_url": "https://you.com/favicon?domain=cookbook.openai.com&size=128",
+    "snippets": [
+      "Synthetic data generation using large language models (LLMs) offers a powerful solution to a commonly faced problem: the availability of high-quality, diverse, and privacy-compliant data. This could be used in a number of scenarios such as training a data science machine learning model (SVMs, decision trees, KNN's), finetuning a different GPT model on the data, as a solution to the coldstart problem, helping build compelling demos/apps with realistic data, scenario testing etc.",
+      "Dealing with imbalanced or non-diverse textual data while in part 2, we will look at prompting strategies for getting better textual data. The last two in particular are useful for creating synthetic data to finetune another GPT model. For example using higher quality data produced by gpt-4o to finetune the cheaper and quicker gpt-3.5-turbo for improved performance while reducing costs. %pip install openai %pip install pandas %pip install scikit-learn %pip install matplotlib",
+      "We can then recursively run this generation and analysis of cluster loop to automate generating diverse synthetic data. For demonstrative purposes, we explicitly prompt the LLM to generate information about 4 different topical areas: vehicle, clothing, toiletries, food. We will then cluster the data and see if it managed to find these 4 topic areas. output_string = \"\" for i in range(3): question = f\"\"\" I am creating input output training pairs to fine tune my gpt model. I want the input to be product name and category and output to be description.",
+      "Some of the most important aspects of generating high-quality synthetic data are accuracy (does the data make sense), consistency (are two separate data points for the same input roughly the same) and diversity (making sure our data distribution matches as much of the distribution that exists in production)."
+    ],
+    "title": "Synthetic data generation (Part 1) | OpenAI Cookbook",
+    "url": "https://cookbook.openai.com/examples/sdg1"
+  }
+]

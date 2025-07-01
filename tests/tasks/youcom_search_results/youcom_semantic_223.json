@@ -1,0 +1,261 @@
+[
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "However, it is necessary to align the EOS token with the chat template to ensure the model\u2019s responses terminate correctly. In these cases, specify eos_token in SFTConfig; for example, for Qwen/Qwen2.5-1.5B, one should set eos_token=\"<|im_end|>\". With our model and tokenizer set up, we can now fine-tune our model on a conversational dataset.",
+      "To ensure that the data is not processed as text-only, we need to set a couple of arguments in the SFTConfig, specifically remove_unused_columns and skip_prepare_dataset to True to avoid the default processing of the dataset. Below is an example of how to set up the SFTTrainer.",
+      "Additionally, in the SFTTrainer, we support pre-tokenized datasets if they are datasets.Dataset or datasets.IterableDataset. In other words, if such a dataset has a column of input_ids, no further processing (tokenization or packing) will be done, and the dataset will be used as-is. This can be useful if you have pretokenized your dataset outside of this script and want to reuse it directly. < > Update on GitHub",
+      "In TRL, we provide a simple API to train models with SFT in a few lines of code; for a complete training script, check out trl/scripts/sft.py. Experimental support for Vision Language Models is also included in examples/scripts/sft_vlm.py. If you have a dataset hosted on the \ud83e\udd17 Hub, you can easily fine-tune your SFT model using SFTTrainer from TRL."
+    ],
+    "title": "Supervised Fine-tuning Trainer",
+    "url": "https://huggingface.co/docs/trl/en/sft_trainer"
+  },
+  {
+    "description": "We propose the Skywork-MathQA dataset, consisting of 2.5 million diverse and high-quality SFT instances, implemented through our novel two-stage data synthesis pipeline. We introduce Skywork-Math model series, demonstrating that common small-scale 7B language models can stimulate strong ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "We propose the Skywork-MathQA dataset, consisting of 2.5 million diverse and high-quality SFT instances, implemented through our novel two-stage data synthesis pipeline. We introduce Skywork-Math model series, demonstrating that common small-scale 7B language models can stimulate strong mathematical reasoning ability using only synthetic SFT data.",
+      "As the amount of SFT data increases, Skywork-Math-Mistral-7B and Skywork-Math-LLaMA2-7B catch up in performance to the Skywork-Math-DeepSeekMath-7B. This suggests that while specialized pre-training provides a strong initial boost, its benefits are not consistently scalable and can be matched by increasing the quantity of synthetic SFT data. The accuracy performance for Skywork-Math 7B model series significantly increases as the synthetic data size expands from 2.1M to 2.5M, corresponding to the stage 2 in our data synthesis pipeline.",
+      "Skywork-Math 7B has achieved impressive accuracies of 51.2% on the competition-level MATH benchmark and 83.9% on the GSM8K benchmark using only SFT data, outperforming an early version of GPT-4 on MATH. The superior performance of Skywork-Math models contributes to our novel two-stage data synthesis and model SFT pipelines, which include three different augmentation methods and a diverse seed problem set, ensuring both the quantity and quality of Skywork-MathQA dataset across varying difficulty levels.",
+      "Building on this foundation, our work aims to thoroughly investigate the performance limits of common 7B pre-trained LLMs using only SFT synthetic data. We seek to determine the extent to which data quantity impacts LLM quality and to understand the mechanisms behind this influence. Figure 2: Overview of our proposed two-stage method. (a) The data synthesis pipeline of the Skywork-MathQA dataset."
+    ],
+    "title": "Skywork-Math: Data Scaling Laws for Mathematical Reasoning in Large ...",
+    "url": "https://arxiv.org/html/2407.08348v1"
+  },
+  {
+    "description": "The current AI ecosystem faces significant challenges related to the use of real data for machine learning (ML) training. Strict regulations, such as the General Data Protection Regulation (GDPR)\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Definition: Replaces a small portion of a real dataset with synthetic information. Such technique is used for synthesizing names while retaining other real-world information.",
+      "Efficiency in Data Generation: Self-Generated Instructions: AI models can generate synthetic data themselves, reducing the dependency on real data and mitigating regulatory and privacy concerns. Rapid Production: AI-generated synthetic data can be produced quickly, enabling large-scale data generation suitable for extensive LLM training and fine-tuning.",
+      "Quality at Scale: On-Demand Generation: Researchers can generate synthetic data as needed, creating large datasets without the limitations associated with real-world data.",
+      "Data Consistency: When generating data at scale, especially from multiple sources, it\u2019s crucial to maintain referential integrity."
+    ],
+    "title": "Supervised Fine Tuning(SFT) with Synthetic data generation | by ...",
+    "url": "https://medium.com/@sulbha.jindal/supervised-fine-tuning-sft-with-synthetic-data-generation-264d6a325ce5"
+  },
+  {
+    "description": "Generative AI Data Engine powers the most advanced LLMs and generative models in the world through world-class RLHF, human data generation, model evaluation, safety, and alignment.",
+    "favicon_url": "https://you.com/favicon?domain=scale.com&size=128",
+    "snippets": [
+      "Unlock the full potential of your AI models with Scale\u2019s SFT Data, trusted by the leading AI model builders.",
+      "Learn how SFT Data Streams accelerates your team\u2019s model development.",
+      "High-quality SFT data curated by subject matter experts is the most valuable, scarce resource to power the next frontier of advanced models.",
+      "Learn more about our custom dataset and SFT Data Streams to power your models."
+    ],
+    "title": "Supervised Fine-Tuning Data",
+    "url": "https://scale.com/sft"
+  },
+  {
+    "description": "Understanding how SFT works from the idea to a working implementation...",
+    "favicon_url": "https://you.com/favicon?domain=cameronrwolfe.substack.com&size=128",
+    "snippets": [
+      "Creating a dataset. The results of SFT are heavily dependent upon the dataset that we curate. If this dataset contains a diverse set of examples that accurately capture all relevant alignment criteria and characterize the language model\u2019s expected output, then SFT is a great approach.",
+      "One of the most widely-used forms of fine-tuning for LLMs within recent AI research is supervised fine-tuning (SFT). This approach curates a dataset of high-quality LLM outputs over which the model is directly fine-tuned using a standard language modeling objective.",
+      "The steps outlined above form the standardized training pipeline that is used for most state-of-the-art LLMs (e.g., ChatGPT or LLaMA-2 [3]). SFT and RLHF are computationally cheap compared to pretraining, but they require the curation of a dataset\u2014either of high-quality LLM outputs or human feedback on LLM outputs\u2014which can be difficult and time consuming.",
+      "Domain-specific fine-tuning simply trains the model further\u2014usually via a language modeling objective, similarly to pretraining/SFT\u2014on data that is relevant to the downstream task, while in-context learning adds extra context or examples into the language model\u2019s prompt to be used as context for solving a problem."
+    ],
+    "title": "Understanding and Using Supervised Fine-Tuning (SFT) for Language ...",
+    "url": "https://cameronrwolfe.substack.com/p/understanding-and-using-supervised"
+  },
+  {
+    "description": "Synthetic data is the accelerator of the next phase of AI \u2014 what it is and what it means.",
+    "favicon_url": "https://you.com/favicon?domain=www.interconnects.ai&size=128",
+    "snippets": [
+      "I\u2019ve been mostly exposed to synthetic SFT and pairwise preference data, where I\u2019ve seen a couple of obvious pieces of advice come up again and again.",
+      "There\u2019s something to be said for having methods to improve the diversity of your data, but I don\u2019t have clear advice on how to do it. When research around synthesizing the right data emerges beyond Self-Instruct and scraping prompts people passed to ChatGPT, I\u2019ll update this list.",
+      "Among open models, it is easy to see a progression of how people are using synthetic data. Earlier this year, models like Alpaca and Vicuna, used synthetic instruction data for the supervised fine-tuning (SFT) of Llama models to reach impressive performance at the 7-13B parameter range.",
+      "The space of SFT models has become extremely dense, with new models coming out weekly all summer. A large debate permeated this space for months: Can we fine-tune models on the outputs of OpenAI's models (based on a claim in their terms-of-service)."
+    ],
+    "title": "Synthetic data: Anthropic\u2019s CAI, scaling, OpenAI\u2019s Superal...",
+    "url": "https://www.interconnects.ai/p/llm-synthetic-data"
+  },
+  {
+    "description": "We are releasing SYNTHETIC-1, the largest open reasoning dataset generated from Deepseek-R1, collaboratively generated by compute contributors across the globe.",
+    "favicon_url": "https://you.com/favicon?domain=www.primeintellect.ai&size=128",
+    "snippets": [
+      "To curate a preference dataset, we select all tasks for which at least two responses have been generated and incorporate them if one of the responses passed as correct according to the criteria of the SFT dataset, and one does not or have a score of lower than 0.6 (judge score or ratio of unit tests passed). Doing so, we end up with 11.5k pairs of responses.",
+      "Along with the raw data including both correct and incorrect reasoning traces with rich metadata, we are publishing a curated SFT subset with 900k samples, making it the largest SFT dataset from R1 to date, as well as a preference tuning dataset obtained from correct and incorrect responses to the same problems.",
+      "The raw 2M dataset containing all reasoning traces, including those judged as wrong by verifiers, are available under PrimeIntellect/SYNTHETIC-1. In addition to the raw data, we apply post-processing to obtain a 900k sample SFT dataset and 11k sample preference tuning dataset.",
+      "The final SFT dataset can be found under PrimeIntellect/SYNTHETIC-1-SFT-Data. We run initial SFT experiments training SYNTHETIC-1-7B-SFT and find that our data is able to strongly improve the reasoning performance of Qwen-2.5B-Instruct-7B."
+    ],
+    "title": "SYNTHETIC-1 Release: Two Million Collaboratively Generated Reasoning ...",
+    "url": "https://www.primeintellect.ai/blog/synthetic-1-release"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "A good example of a synthetic chat dataset is argilla/synthetic-sft-customer-support-single-turn, which highlights an example of an LLM designed to handle customer support. In this example, the customer support topic is the synthetic data generator itself. Generally, we can generate 50 and 20 samples per minute for text classification and chat, respectively. All of this is powered by the free Hugging Face API, but you can scale this up by using your own account and choosing custom models, api providers or generation configurations.",
+      "Even though you can go from prompts to dedicated models without knowing anything about coding, some people might like the option to customize and scale their deployment with some more advanced technical features.",
+      "We need to select the task \u201cText Classification\u201d and provide the correct \u201cDataset source\u201d. Then, choose a nice project name and press play! The pop-up that warns about costs can be ignored because we are still working on the free Hugging Face CPU hardware, which is more than enough hardware for this text classification example.",
+      "Upload images, audio, and videos by dragging in the text input, pasting, or clicking here."
+    ],
+    "title": "Introducing the Synthetic Data Generator - Build Datasets with ...",
+    "url": "https://huggingface.co/blog/synthetic-data-generator"
+  },
+  {
+    "description": "Large code models (LCMs), pre-trained on vast code corpora, have demonstrated remarkable performance across a wide array of code-related tasks. Supervised fine-tuning (SFT) plays a vital role in aligning these models with specific requirements and enhancing their performance in particular domains.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "View a PDF of the paper titled API-guided Dataset Synthesis to Finetune Large Code Models, by Zongjie Li and 3 other authors View PDF HTML (experimental) Abstract:Large code models (LCMs), pre-trained on vast code corpora, have demonstrated remarkable performance across a wide array of code-related tasks. Supervised fine-tuning (SFT) plays a vital role in aligning these models with specific requirements and enhancing their performance in particular domains.",
+      "Abstract page for arXiv paper 2408.08343: API-guided Dataset Synthesis to Finetune Large Code Models",
+      "Inspired by APIs as high-level abstractions of code that encapsulate rich semantic information in a concise structure, we propose DataScope, an API-guided dataset synthesis framework designed to enhance the SFT process for LCMs in both general and domain-specific scenarios.",
+      "Extensive experiments demonstrate DataScope's effectiveness, with models fine-tuned on its synthesized datasets outperforming those tuned on unoptimized datasets five times larger. Furthermore, a series of analyses on model internals, relevant hyperparameters, and case studies provide additional evidence for the efficacy of our proposed methods. These findings underscore the significance of dataset quality in SFT and advance the field of LCMs by providing an efficient, cost-effective framework for constructing high-quality datasets."
+    ],
+    "title": "[2408.08343] API-guided Dataset Synthesis to Finetune Large Code ...",
+    "url": "https://arxiv.org/abs/2408.08343"
+  },
+  {
+    "description": "High-quality training data is a main ingredient in LLM development, as it can vastly improve model performance in practical applications. This data is typically obtained by either traditional data collection methods or their alternatives, such as generative AI models to create synthetic data.",
+    "favicon_url": "https://you.com/favicon?domain=toloka.ai&size=128",
+    "snippets": [
+      "Let\u2019s dive into the process of building a hybrid pipeline for supervised fine-tuning (SFT). You can think of synthetic data generation as a culinary adventure in the digital kitchen of AI development. Just as a chef carefully selects ingredients and applies precise techniques to create a delicious dish, let\u2019s roll up our sleeves to \u201ccook\u201d a synthetic data pipeline, perfect for SFT.",
+      "For example, for the prompt \u201cHow many types of quarks exist and what are their names?\u201d, the LLM might generate an answer such as \u201cThere are six types of quarks: up, down, charm, strange, top and bottom.\u201d  \u00b7 If you are not satisfied with your synthetic answers, you can recruit knowledgeable experts to evaluate the answers on scales like style, correspondence to the domain, context relevance, etc.",
+      "To evolve the breadth of your prompts with the LLM, generate multiple similar prompts across different topics and use cases to explore the flavor palette. The diversity of prompts is important to the success of the whole pipeline. You want to adapt your SFT dataset to various use cases within a given domain.",
+      "Let\u2019s say you are generating a recipe for an SFT pipeline on the topic of quarks and gluons, but you notice some odd instructions, such as \u201cA group of flamingoes is called a flamboyance\u201d or \u201cThere are four types of quarks\u201d. The first one is irrelevant to your recipe, while the second one is incorrect and can even ruin your results."
+    ],
+    "title": "Cooking synthetic data for SFT: a recipe for success",
+    "url": "https://toloka.ai/blog/crafting-your-own-synthetic-data-pipeline-for-sft/"
+  },
+  {
+    "description": "Introducing the Synthetic Data Generator, a user-friendly application that takes a no-code approach to creating custom datasets with Large Language Models (LLMs). The best part: A simple step-by-step\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Introducing the Synthetic Data Generator, a user-friendly application that takes a no-code approach to creating custom datasets with Large\u2026",
+      "A good example of a synthetic chat dataset is argilla/synthetic-sft-customer-support-single-turn, which highlights an example of an LLM designed to handle customer support. In this example, the customer support topic is the synthetic data generator itself. Generally, we can generate 50 and 20 samples per minute for text classification and chat, respectively. All of this is powered by the free Hugging Face API, but you can scale this up by using your own account and choosing custom models, api providers or generation configurations.",
+      "Even though you can go from prompts to dedicated models without knowing anything about coding, some people might like the option to customize and scale their deployment with some more advanced technical features.",
+      "We need to select the task \u201cText Classification\u201d and provide the correct \u201cDataset source\u201d. Then, choose a nice project name and press play! The pop-up that warns about costs can be ignored because we are still working on the free Hugging Face CPU hardware, which is more than enough hardware for this text classification example."
+    ],
+    "title": "Introducing the Synthetic Data Generator \u2014 Build Datasets with ...",
+    "url": "https://medium.com/@amanatulla1606/introducing-the-synthetic-data-generator-build-datasets-with-natural-language-897e5c00b204"
+  },
+  {
+    "description": "Overcoming the bottleneck of human annotations in instruction-tuning, preference-tuning, and pretraining.",
+    "favicon_url": "https://you.com/favicon?domain=eugeneyan.com&size=128",
+    "snippets": [
+      "For SPIN, they finetuned zephyr-7b-sft-full (which is mistral-7b finetuned on UltraChat200k for one epoch). They showed that SFT seems to hit a ceiling after the first epoch and then degrades in performance. In contrast, SPIN surpassed the best result from SFT. Update (2024-03-16): However, in practice, SPIN may not work that well nor be worth the effort.",
+      "For evals, they used the HuggingFace Open LLM Benchmark and finetuzed zephyr-7b-sft-full which is based on mistral-7b. For the dataset, they randomly sampled 50k instances from UltraChat200k. Overall, SPIN was able to improve zephyr-7b-sft-full beyond its original SFT.",
+      "In an ablation that compared instruction tuning on synthetic data vs. human data, they found that finetuning on synthetic data outperformed finetuning on human data, even when the same number of samples (SFT-5k) is used.",
+      "For instruction-following, each iteration improved over the previous. The SFT baseline is surpassed by $M_2$ (iteration 2)."
+    ],
+    "title": "How to Generate and Use Synthetic Data for Finetuning",
+    "url": "https://eugeneyan.com/writing/synthetic/"
+  },
+  {
+    "description": "Explore the importance of synthetic data in AI development, its generation methods, use cases, benefits, and the future potential of this innovative approach",
+    "favicon_url": "https://you.com/favicon?domain=www.moveworks.com&size=128",
+    "snippets": [
+      "The solution is often supervised finetuning (SFT) which teaches the model the specific language patterns and statistical interrelationships within the narrow domain by providing a dataset of annotated data. However, human annotation can be impractical or too costly in terms of time and money. In some cases, synthetically created labeled examples come to the rescue. And a hybrid approach whereby the process is seeded with small scale manual annotation and then scaled up synthetically can work well.",
+      "And the game the model played involved distinguishing human- generated from synthetic data without any direct supervision. Synthetic data, in turn, was generated by an earlier version of the same model in order to resemble the human-annotated SFT dataset and make it as difficult as possible to determine which is which.",
+      "One approach to overcome this impediment is having another model provide that signal\u2014the \"reward\" model in RLHF\u2014which is itself synthetic data! Yet another novel method, called SPIN, an acronym for \u200b\u200bSelf-Play fIne-tuNing, aims to convert a weak LLM to a strong LLM by unleashing the full power of human-annotated data collected at the supervised fine-tuning (SFT) stage.",
+      "One common use case here is fraud detection in financial services: the overwhelming majority of financial transactions are made in good faith, with the tiny percentage of fraudulent transactions representing an anomaly of sorts, but an effective fraud detection algorithm needs a plethora of diverse examples of such anomalies to learn to detect and react to fraud in a production environment. Synthesizing data enhances the training corpus with varied anomalous examples, leading to more performant models."
+    ],
+    "title": "What\u2019s synthetic data and why it\u2019s important for AI development ...",
+    "url": "https://www.moveworks.com/us/en/resources/blog/synthetic-data-for-ai-development"
+  },
+  {
+    "description": "Nowadays, synthetic data is becoming a very promising approach to improve LLMs, as shown by Anthropic\u2019s training methods and the new Super Alignment team from OpenAI. At Argilla, we believe it should be combined with a good mix of human experts in the loop.",
+    "favicon_url": "https://you.com/favicon?domain=argilla.io&size=128",
+    "snippets": [
+      "The human revision approach was used to create Notus, a 7B DPO fine-tuned version of the supervised fine-tuned (SFT) version of Zephyr. Developing Notus, we discovered by using Argilla, that there was a strong mismatch between the overall score for the critique and the quality of the responses.",
+      "Can synthetic data provide the next breakthrough? A core assumption backing up the use of synthetic data is scale: adding more data will make a model better if the quality is high enough. We believe that it will likely need human involvement to make it work. Getting enough data to train models a hundred times bigger than today\u2019s will require huge amounts of synthetic data.",
+      "In this image, we can see the graphic Nathan uses to highlight the different uses of synthetic data: from instruction generation, through preferences, up until critiques. Distilabel is the only OSS framework tackling all these stages at scale. There are great instruction generation approaches, both in the research literature and more practical frameworks.",
+      "However, there\u2019s also a counter-argument against it: synthetic data from the same distribution as the current best model will not advance the state of the art. Nevertheless, Nathan believes current GPT4 tokens are good enough to help GPT5 push boundaries. As big companies use synthetic data to move forward and scale, smaller companies rely on it because real data in the same scale is much more expensive."
+    ],
+    "title": "Synthetic data for LLM fine-tuning and alignment",
+    "url": "https://argilla.io/blog/synthetic-data/"
+  },
+  {
+    "description": "Supervised fine-tuning (SFT) is a method used in machine learning to improve the performance of a pre-trained model. The model is initially trained on a large dataset, then fine-tuned on a smaller, specific dataset. This allows the model to maintain the general knowledge learned from the large ...",
+    "favicon_url": "https://you.com/favicon?domain=klu.ai&size=128",
+    "snippets": [
+      "Supervised fine-tuning (SFT) is a method used in machine learning to improve the performance of a pre-trained model. The model is initially trained on a large dataset, then fine-tuned on a smaller, specific dataset. This allows the model to maintain the general knowledge learned from the large dataset while adapting to the specific characteristics of the smaller dataset.",
+      "Use Klu for Supervised Fine-Tuning by using high-quality data, executing the fine-tuning process, and evaluating the performance of the new model against the original. Supervised fine-tuning (SFT) is a technique used to adapt a pre-trained (base) Large Language Model (LLM) to a specific downstream task using labeled data.",
+      "This process allows the model to learn task-specific patterns and nuances by adapting its parameters according to the specific data distribution and task requirements. SFT is typically done after model pre-training and is used to teach the model how to follow user-specified instructions.",
+      "The term \"supervised\" is used because this process leverages labelled data, where the correct outputs are already known, to guide the learning process. This method enhances the model's accuracy by applying the broad language understanding from pre-training to a focused, specific task during fine-tuning. Supervised fine-tuning (SFT) is a powerful technique used to adapt pre-trained Large Language Models (LLMs) to specific downstream tasks using labeled data."
+    ],
+    "title": "Supervised fine-tuning (SFT) \u2014 Klu",
+    "url": "https://klu.ai/glossary/supervised-fine-tuning"
+  },
+  {
+    "description": "NVIDIA NeMo Framework User Guide",
+    "favicon_url": "https://you.com/favicon?domain=docs.nvidia.com&size=128",
+    "snippets": [
+      "NeMo Curator offers prebuilt synthetic data generation pipelines for Supervised Fine-Tuning (SFT) and preference data, which were used to generate data for training Nemotron-4 340B. It also now supports the pipelines used in generating Nemotron-CC.",
+      "This is due to the scale differences between modules. Synthetic data is usually generated on the order of 100,000 samples, while pretraining datasets operate at the scale of 1,000,000,000+ samples. Starting up a Dask cluster for that scale is usually not needed.",
+      "After generating and mixing prompts using the methods above, you can synthesize a dialogue. In the dialogue, an LLM will play the part of both user and assistant.",
+      "Reward models can be used to score conversations between a user and an assistant. Instead of responding to a user prompt with text follow-up, a reward model will return a mapping of the categories to score. These scores can then be used to filter the dataset for higher quality."
+    ],
+    "title": "Synthetic Data Generation \u2014 NVIDIA NeMo Framework User Guide",
+    "url": "https://docs.nvidia.com/nemo-framework/user-guide/latest/datacuration/syntheticdata.html"
+  },
+  {
+    "description": "Discover the most efficient way to build, tune and run your AI models and applications on top-notch NVIDIA\u00ae GPUs.",
+    "favicon_url": "https://you.com/favicon?domain=nebius.com&size=128",
+    "snippets": [
+      "Let\u2019s discuss some popular SFT techniques. Full fine-tuning is similar to training a model from scratch since it involves updating all parameters. This technique can be costly as the pre-trained model can contain billions of parameters that need updating. Full fine-tuning yields the most accurate results as the model learns data features across all its layers.",
+      "Since PEFT only updates selected parameters, it has a significantly small computational cost compared to full fine-tuning. However, as the model largely remains untouched, PEFT provides less accurate results but can be a good option if resources are limited. Instruction fine-tuning uses a dataset similar to normal SFT, but instead of targeting the knowledge base, it aims to improve the model\u2019s instruction-following capabilities.",
+      "The model will display inconsistent performance if the data does not contain adequate, clean information. Therefore, ensuring quality data collection, annotation, and pre-processing is imperative. Catastrophic forgetting: Since SFT updates model weights directly, the update procedure may overwrite the previous knowledge learned during pre-training.",
+      "Fine-tuning uses labeled data to train the model and update its weights directly. The SFT procedures include data collection and lengthy model training operations, depending on the hardware available."
+    ],
+    "title": "What is supervised fine-tuning in LLMs? Unveiling the process",
+    "url": "https://nebius.com/blog/posts/fine-tuning/supervised-fine-tuning"
+  },
+  {
+    "description": "Explore how reinforcement fine-tuning outperforms supervised fine-tuning in data-scarce scenarios. Learn about the advantages of reinforcement learning techniques in optimizing machine learning models with limited data",
+    "favicon_url": "https://you.com/favicon?domain=predibase.com&size=128",
+    "snippets": [
+      "The best way to get started with Reinforcement Fine-Tuning (RFT) or Supervised Fine-Tuning (SFT) is by joining our early access program at Predibase. Our platform makes it easy to fine-tune and deploy open-source LLMs without the complexity of managing infrastructure. ... \ud83d\ude80 Be among the first to leverage RFT at scale!",
+      "Reinforcement Fine-Tuning (RFT) is a new alternative to Supervised Fine-Tuning (SFT) that applies reinforcement learning to supervised tasks, improving model performance on specific tasks and domains. As the method used to fine-tune DeepSeek v3 into DeepSeek-R1-Zero, RFT marks a paradigm shift for the industry, opening up new domains and use cases previously considered incompatible with SFT, and able to achieve meaningful performance gains with as few as a dozen examples.",
+      "A separate Reward Server will then be used to verify the correctness and assign a score (a scalar value) for each generation. Comparing the scores within the group, the GRPO trainer will then produce advantages to update the model weights to incentivize generating output that received a higher relative score and discourage low scoring output. ... SFT is offline, RFT is online.",
+      "In this blog, we\u2019ll explain the key differences between RFT and SFT, and break down how the above factors become the criteria for selecting one approach over the other. We\u2019ll walk through various experiments that show how RFT compares to SFT across a variety tasks and quantities of training data."
+    ],
+    "title": "Why Reinforcement Learning Beats SFT with Limited Data",
+    "url": "https://predibase.com/blog/how-reinforcement-learning-beats-supervised-fine-tuning-when-data-is-scarce"
+  },
+  {
+    "description": "Shrink and Fine-Tune, or SFT, is a type of distillation that avoids explicit distillation by copying parameters to a student student model and then fine-tuning. Specifically it extracts a student model from the maximally spaced layers of a fine-tuned teacher.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Contact us on: hello@paperswithcode.com . Papers With Code is a free resource with all data licensed under CC-BY-SA.",
+      "The impact of initialization on performance is measured experimentally in Section 6.1. After initialization, the student model continues to fine-tune on the summarization dataset, with the objective of minimizing $\\mathcal{L}_{Data}$. Source: Pre-trained Summarization Distillation"
+    ],
+    "title": "SFT Explained | Papers With Code",
+    "url": "https://paperswithcode.com/method/sft"
+  },
+  {
+    "description": "Balancing Cost and Effectiveness of Synthetic Data Generation Strategies for Fine-Tuning LLMs",
+    "favicon_url": "https://you.com/favicon?domain=scale.com&size=128",
+    "snippets": [
+      "We train our models with Supervised Fine-Tuning (SFT), which involves a dataset of prompts and responses, and consider three main synthetic data strategies: Answer Augmentation, Question Rephrase, and New Question."
+    ],
+    "title": "Synthetic Data Generation Strategies for Fine-Tuning LLMs | Scale",
+    "url": "https://scale.com/blog/synthetic-data-fine-tuning-llms"
+  },
+  {
+    "description": "Catch up to 95% of data inconsistencies before they affect your model. ... Our comprehensive testing and validation processes guarantee reliability and accuracy. Our multi-stage QA process catches an average of 99.5% of errors. Continual monitoring ensures your model maintains peak performance over time. ... Our team of SFT ...",
+    "favicon_url": "https://you.com/favicon?domain=welodata.ai&size=128",
+    "snippets": [
+      "Catch up to 95% of data inconsistencies before they affect your model. ... Our comprehensive testing and validation processes guarantee reliability and accuracy. Our multi-stage QA process catches an average of 99.5% of errors. Continual monitoring ensures your model maintains peak performance over time. ... Our team of SFT specialists, with an average of 10+ years in AI and machine learning, is committed to your success.",
+      "Accuracy Boost > 10% increase in task-specific accuracy upon each iteration Innovation Averages of F1 scores >65% on complex, emerging projects \u00b7 Quality Scores >90% Quality Measures across scaled programs",
+      "SFT is an advanced machine learning technique that adapts and optimizes pre-trained AI models for specific tasks using high-quality, labeled data.",
+      "Reduce data preparation time by up to 60% compared to manual processes."
+    ],
+    "title": "Supervised Fine Tuning (SFT) - Welo Data",
+    "url": "https://welodata.ai/ai-ml-models/"
+  },
+  {
+    "description": "(2024); OpenAI (2022, 2023), has been applied as an indispensable alignment step where LLMs are finetuned on large sets of instruction-response demonstrations either annotated by human or synthesized by power proprietary models. Despite the success of alignment through SFT, LIMA Zhou et al.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "At the same time, recent works indicate the importance of data selection for SFT, showing that finetuning with high-quality and diverse subsets of the original dataset leads to superior downstream performance. In this work, we rethink the intuition behind data selection for SFT.",
+      "Considering SFT is superficial, we propose that essential demonstrations for SFT should focus on reflecting human-like interactions instead of data quality or diversity. However, it is not straightforward to directly assess to what extent a demonstration reflects human styles.",
+      "Towards an initial attempt in this direction, we find selecting instances with long responses is surprisingly more effective for SFT than utilizing full datasets or instances selected based on quality and diversity.",
+      "Adhering to such nature of SFT, we hypothesize that data selection for SFT should focus on picking demonstrations that reflect human style the most. For example, a demonstration of teaching LLM that Paris is the capital of France is unhelpful since LLM already gained such knowledge during the pretraining phase."
+    ],
+    "title": "Rethinking Data Selection for Supervised Fine-Tuning",
+    "url": "https://arxiv.org/html/2402.06094v1"
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "description": "Image Source: Wei et al. (2022) (opens in a new tab) \u00b7 Introduced in Wei et al. (2022) (opens in a new tab), chain-of-thought (CoT) prompting enables complex reasoning capabilities through intermediate reasoning steps. You can combine it with few-shot prompting to get better results on more ...",
+    "favicon_url": "https://you.com/favicon?domain=www.promptingguide.ai&size=128",
+    "snippets": [
+      "A Comprehensive Overview of Prompt Engineering",
+      "When applying chain-of-thought prompting with demonstrations, the process involves hand-crafting effective and diverse examples. This manual effort could lead to suboptimal solutions. Zhang et al. (2022) (opens in a new tab) propose an approach to eliminate manual efforts by leveraging LLMs with \"Let's think step by step\" prompt to generate reasoning chains for demonstrations one by one.",
+      "Learn more about chain-of-thought prompting and advanced prompting methods in our new AI courses."
+    ],
+    "title": "Chain-of-Thought Prompting | Prompt Engineering Guide",
+    "url": "https://www.promptingguide.ai/techniques/cot"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
+    "snippets": [],
+    "title": "Chain-of-Thought Prompting Elicits Reasoning in Large ...",
+    "url": "https://openreview.net/pdf?id=_VjQlMeSB_J"
+  },
+  {
+    "description": "Learn what Chain of Thought prompting is, how it boosts LLM performance, and explore Chain of Thought prompting examples with templates to help you get started!",
+    "favicon_url": "https://you.com/favicon?domain=www.prompthub.us&size=128",
+    "snippets": [
+      "Here are the most important things to know about chain of thought prompting with reasoning models. For more info, check out our full guide: Prompt Engineering with Reasoning Models. Adding CoT prompts (\"think step-by-step\") for simple tasks can sometimes reduce performance by overcomplicating the reasoning process. Below are the results from a code summarization task from the paper, Do Advanced Language Models Eliminate the Need for Prompt Engineering in Software Engineering?",
+      "Thread of Thought is another cousin of Chain of Thought and is designed to keep a coherent line of thought across a large context, especially in long dialogues or with retrieval-augmented generation (RAG). It prompts the model to walk through context step by step, summarizing and analyzing as it goes.",
+      "Rather than \"let\u2019s think step-by-step,\" the typical phrasing for Thread of Thought is \"Walk me through this context in manageable parts, step by step, summarizing and analyzing as we go.\"",
+      "In this guide, we\u2019re going to dive deep into what Chain of Thought prompting is all about. We\u2019ll look at the original paper that introduced the concept and explore different ways to implement it, including newer methods like Auto Chain of Thought (Auto-CoT)."
+    ],
+    "title": "PromptHub Blog: Chain of Thought Prompting Guide",
+    "url": "https://www.prompthub.us/blog/chain-of-thought-prompting-guide"
+  },
+  {
+    "description": "We explore how generating a chain of thought -- a series of intermediate reasoning steps -- significantly improves the ability of large language models to perform complex reasoning. In particular, we show how such reasoning abilities emerge naturally in sufficiently large language models via ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:We explore how generating a chain of thought -- a series of intermediate reasoning steps -- significantly improves the ability of large language models to perform complex reasoning. In particular, we show how such reasoning abilities emerge naturally in sufficiently large language models via a simple method called chain of thought prompting, where a few chain of thought demonstrations are provided as exemplars in prompting.",
+      "Abstract page for arXiv paper 2201.11903: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "View a PDF of the paper titled Chain-of-Thought Prompting Elicits Reasoning in Large Language Models, by Jason Wei and 8 other authors View PDF",
+      "Which authors of this paper are endorsers?"
+    ],
+    "title": "[2201.11903] Chain-of-Thought Prompting Elicits Reasoning in Large ...",
+    "url": "https://arxiv.org/abs/2201.11903"
+  },
+  {
+    "description": "Learn how you can use Chain of Thought (CoT) prompting to boost LLM performance at reasoning tasks.",
+    "favicon_url": "https://you.com/favicon?domain=www.mercity.ai&size=128",
+    "snippets": [
+      "It can be used for zero-shot NLP tasks including text summarization, natural language inference, translation, and common sense reasoning. ... CoT reasoning is an emergent ability of LLMs that may arise due to scaling models over 100 billion parameters. It does not positively impact performance for smaller LLMs and only yields performance gains when used with models of this size. There are two reasons for it. Firstly, smaller LLMs are not able to generate long chains of thought that are both fluent and logical.",
+      "It ensures the model learns as much as possible about the task. Standard few-shot prompting is a good technique for many tasks, but not reliable for complex reasoning tasks. Therefore, more advanced prompting techniques, such as chain-of-thought, active prompting, and fine-tuning, are needed.",
+      "Chain-of-Thought prompting is a prompt engineering technique through which we force LLMs to output a sequence of intermediate steps that lead to the desired answer. It improves the reasoning abilities of LLMs. It is beneficial because it allows the model to focus on solving one step at a time, rather than having to consider the entire problem all at once.",
+      "It makes CoT prompting a scalable and accessible technique. Few-shot prompting prompts the LLM with a question and the answer. Then, the LLM is provided with a few examples of how to solve similar problems. The examples are presented in a way that encourages the LLM to reason about the problem and come up with a chain of thought that leads to the answer."
+    ],
+    "title": "Comprehensive Guide to Chain-of-Thought Prompting",
+    "url": "https://www.mercity.ai/blog-post/guide-to-chain-of-thought-prompting"
+  },
+  {
+    "description": "Learn how Chain-of-Thought prompting improves AI reasoning by guiding models to explain their thought process. Discover its impact on LLM accuracy and complex tasks.",
+    "favicon_url": "https://you.com/favicon?domain=learnprompting.org&size=128",
+    "snippets": [
+      "Chain-of-Thought (CoT) Prompting: This technique improves LLM performance by encouraging them to articulate their reasoning process, leading to more accurate answers.",
+      "is a technique that enhances the reasoning capabilities of large language models (LLMs) by incorporating logical steps\u2014or a \u201cchain of thought\u201d\u2014within the prompt.",
+      "Complex Decision-Making: In fields like robotics, CoT enables models to follow logical steps for decision-making tasks.",
+      "Chain-of-Thought Prompting is a powerful method for unlocking reasoning capabilities in large language models. By encouraging step-by-step thinking, CoT prompting allows models to perform complex reasoning tasks effectively without needing additional training data."
+    ],
+    "title": "Chain-of-Thought Prompting",
+    "url": "https://learnprompting.org/docs/intermediate/chain_of_thought"
+  },
+  {
+    "description": "Chain of thought (CoT) is a prompt engineering technique that enhances the output of large language models (LLMs), particularly for complex tasks involving multistep reasoning.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "Researchers employ CoT to structure their thought process in solving complex scientific problems, facilitating innovation. This structured approach can accelerate the discovery process and enable the formulation of novel hypotheses. In content creation, CoT aids in generating structured outlines or summaries by logically organizing thoughts and information, enhancing the coherence and quality of written content.",
+      "In this study, the concept of chain of thought prompting is introduced which elicits reasoning in LLMs.1 The paper argues that prompting models to generate intermediate reasoning steps significantly boosts their ability to accurately solve multistep problems like arithmetic, common sense and symbolic reasoning.",
+      "The chain of thought (CoT) methodology, with its ability to decompose complex problems into understandable reasoning steps, has found applications across a wide array of fields. These use cases not only demonstrate CoT's versatility but also its potential to transform how systems approach problem-solving and decision-making tasks. In the following section we explore several prominent use cases where CoT has been effectively applied. Integrating CoT within chatbots and leveraging state-of-the-art NLP techniques has transformed conversational AI, enabling chatbots to conduct more complex interactions that require a deeper level of understanding and problem-solving proficiency.",
+      "The evolution of chain of thought (CoT) is a testament to the synergistic advancements across several domains, notably in natural language processing (NLP), machine learning and the burgeoning field of generative AI. These strides have not only propelled CoT into the forefront of complex problem-solving but also underscored its utility across a spectrum of applications."
+    ],
+    "title": "What is chain of thought (CoT) prompting? | IBM",
+    "url": "https://www.ibm.com/think/topics/chain-of-thoughts"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [],
+    "title": "Chain-of-Thought Prompting Elicits Reasoning in Large ...",
+    "url": "https://arxiv.org/pdf/2201.11903"
+  },
+  {
+    "description": "Chain-of-thought prompting is a prompt engineering strategy to train language models to handle reasoning tasks. Learn how it works and review examples.",
+    "favicon_url": "https://you.com/favicon?domain=www.techtarget.com&size=128",
+    "snippets": [
+      "In essence, this prompting technique asks the LLM to not only generate a result, but also detail the series of intermediate steps that led to that answer. Guiding the model to articulate these intermediate steps has shown promising results. \"Chain-of-Thought Prompting Elicits Reasoning in Large Language Models\" is a seminal paper by the Google Brain -- now DeepMind -- research team, presented at the 2022 NeurIPS conference.",
+      "A logistics or transportation company could rely on this technique when asking an LLM to craft a better logistics strategy. The LLM would have to explain its answers and how they optimize logistics operations. Creating original content. Generative AI tools could draft and organize text in a way that's easy for readers to understand, and it could explain why it did so. Long-form content, such as complex scientific research papers, could benefit from this approach.",
+      "Chain-of-thought (CoT) prompting is a prompt engineering technique that aims to improve language models' performance on tasks requiring logic, calculation and decision-making by structuring the input prompt in a way that mimics human reasoning.",
+      "It's important to keep in mind that CoT prompting is a technique for using an existing model more effectively, not a training method. While these prompts can help users elicit better results from pretrained LLMs, prompt engineering isn't a cure-all and can't fix model limitations that should have been handled during the training stage. Chain-of-thought prompting and prompt chaining sound similar and are both prompt engineering techniques, but they differ in some important ways."
+    ],
+    "title": "What is Chain-of-Thought Prompting (CoT)? Examples and Benefits ...",
+    "url": "https://www.techtarget.com/searchenterpriseai/definition/chain-of-thought-prompting"
+  },
+  {
+    "description": "To communicate with the model effectively, you need to understand how to form requests properly. Chain of thought prompting is one of the most efficient techniques when interacting with LLMs.",
+    "favicon_url": "https://you.com/favicon?domain=serokell.io&size=128",
+    "snippets": [
+      "These models are used in many fields, including programming, to help humans accomplish daily tasks. To communicate with the model effectively, you need to understand how to form requests properly. Chain of thought prompting is one of the most efficient techniques when interacting with LLMs.",
+      "This technique involves providing a straightforward prompt to the LLM, such as \u201cSummarize this article\u201d or \u201cTranslate this text.\u201d While simple and easy to implement, single prompts may limit the scope and depth of LLM-generated content.",
+      "Let\u2019s explore some real-world case studies and examples that highlight the effectiveness of chain of thought prompting: Medical diagnosis assistance. In healthcare applications, LLMs can assist in diagnosing complex medical conditions. By chaining prompts related to symptoms, medical history, and diagnostic criteria, LLMs can generate detailed reports on the patient\u2019s condition. Legal document summarization.",
+      "In the legal domain, LLMs can be trained to summarize lengthy legal documents. Chaining prompts can guide the LLM through a structured analysis of the document, extracting key points and providing concise summaries tailored to specific legal requirements."
+    ],
+    "title": "A guide to chain of thought prompting",
+    "url": "https://serokell.io/blog/chain-of-thought-prompting-llms"
+  },
+  {
+    "description": "Unlock the full potential of Large Language Models (LLMs) with our guide on Chain-of-Thought (CoT) prompting.",
+    "favicon_url": "https://you.com/favicon?domain=www.datacamp.com&size=128",
+    "snippets": [
+      "Unlock the full potential of Large Language Models (LLMs) with our guide on Chain-of-Thought (CoT) prompting. Learn how to enhance reasoning and problem-solving abilities in LLMs. ... Get your team access to the full DataCamp for business platform. Large Language Models (LLMs) generate text using a technique called autoregression, which involves predicting the most likely next word in a sequence based on the previous words.",
+      "Researchers at Google introduced Chain-of-Thought prompting in a paper titled \u201cChain of Thought Prompting Elicits Reasoning in Large Language Models\u201d in 2022.",
+      "Yes, it helps the user follow the reasoning process of the model making it more transparent and interpretable. This is particularly valuable in fields like healthcare and finance, where understanding the rationale behind AI decisions is crucial. Chain-of-thought prompting involves guiding the model through a series of logical reasoning steps to solve a problem.",
+      "In this article, we will explore one of the most powerful Prompt Engineering techniques: Chain-of-Thought (CoT) prompting. This technique involves structuring the prompt in a way that makes it easier for the model to complete complex tasks requiring reasoning or problem-solving."
+    ],
+    "title": "Chain-of-Thought Prompting: Step-by-Step Reasoning with LLMs | ...",
+    "url": "https://www.datacamp.com/tutorial/chain-of-thought-prompting"
+  },
+  {
+    "description": "Chain of Thought prompting is by far one of the most well-known, and effective prompt engineering methods. I\u2019ve been a bit intimidated to write about it, partly because of its importance, and partly\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "Chain of Thought prompting is by far one of the most well-known, and effective prompt engineering methods. I\u2019ve been a bit intimidated to\u2026",
+      "Rather than \u201clet\u2019s think step-by-step,\u201d the typical phrasing for Thread of Thought is \u201cWalk me through this context in manageable parts, step by step, summarizing and analyzing as we go.\u201d",
+      "In this guide, we\u2019re going to dive deep into what Chain of Thought prompting is all about. We\u2019ll look at the original paper that introduced the concept and explore different ways to implement it, including newer methods like Auto Chain of Thought (Auto-CoT).",
+      "Chain of Thought is extremely powerful, but like all prompt engineering methods, it has limitations. In the original research paper, the researchers found that performance gains from Chain of Thought prompting only occurred once model sizes were in the ~100 billion parameter range."
+    ],
+    "title": "Chain of Thought Prompting Guide. Chain of Thought prompting is ...",
+    "url": "https://medium.com/@dan_43009/chain-of-thought-prompting-guide-3fdfd1972e03"
+  },
+  {
+    "description": "A trend starts from \"Chain of Thought Prompting Elicits Reasoning in Large Language Models\". - Timothyxxx/Chain-of-ThoughtsPapers",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "Reasoning Implicit Sentiment with Chain-of-Thought Prompting \u00b7 Hao Fei, Bobo Li, Qian Liu, Lidong Bing, Fei Li, Tat-Seng Chua [pdf], [code] 2023.05 \u00b7 Element-aware Summarization with Large Language Models: Expert-aligned Evaluation and Chain-of-Thought Method",
+      "Self-Consistency Improves Chain of Thought Reasoning in Language Models.",
+      "Text and Patterns: For Effective Chain of Thought, It Takes Two to Tango.",
+      "Language Models are Multilingual Chain-of-Thought Reasoners."
+    ],
+    "title": "GitHub - Timothyxxx/Chain-of-ThoughtsPapers: A trend starts from ...",
+    "url": "https://github.com/Timothyxxx/Chain-of-ThoughtsPapers"
+  },
+  {
+    "description": "This tutorial demonstrates text summarization using built-in chains and LangGraph.",
+    "favicon_url": "https://you.com/favicon?domain=python.langchain.com&size=128",
+    "snippets": [
+      "1. **Planning** involves task decomposition, where complex tasks are broken down into manageable subgoals, and self-reflection, allowing agents to learn from past actions to improve future performance. Techniques like Chain of Thought (CoT) and Tree of Thoughts (ToT) are highlighted for enhancing reasoning and planning.",
+      "|The| article| \"|LL|M| Powered| Autonomous| Agents|\"| by| Lil|ian| W|eng| discusses| the| development| and| capabilities| of| autonomous| agents| powered| by| large| language| models| (|LL|Ms|).| It| outlines| a| system| architecture| that| includes| three| main| components|:| Planning|,| Memory|,| and| Tool| Use|.| |1|.| **|Planning|**| involves| task| decomposition|,| where| complex| tasks| are| broken| down| into| manageable| sub|go|als|,| and| self|-ref|lection|,| allowing| agents| to| learn| from| past| actions| to| improve| future| performance|.| Techniques| like| Chain| of| Thought| (|C",
+      "**Core Components of Autonomous Agents**:\\n - **Planning**: Techniques like task decomposition (e.g., Chain of Thought) and external classical planners are utilized to facilitate long-term planning by breaking down complex tasks.\\n - **Memory**: The memory system is divided into short-term (in-context learning) and long-term memory, with parallels drawn between human memory and machine learning to improve agent performance.\\n - **Tool Use**: Agents utilize external APIs and algorithms to enhance problem-solving abilities, exemplified by frameworks like HuggingGPT that manage task workflows.\\n\\n3.",
+      "A previous version of this page showcased the legacy chains StuffDocumentsChain, MapReduceDocumentsChain, and RefineDocumentsChain. See here for information on using those abstractions and a comparison with the methods demonstrated in this tutorial. Suppose you have a set of documents (PDFs, Notion pages, customer questions, etc.) and you want to summarize the content."
+    ],
+    "title": "Summarize Text | \ud83e\udd9c\ufe0f\ud83d\udd17 LangChain",
+    "url": "https://python.langchain.com/docs/tutorials/summarization/"
+  },
+  {
+    "description": "Unlock the power of GPT-4 summarization with Chain of Density (CoD), a technique that attempts to balance information density for high-quality summaries.",
+    "favicon_url": "https://you.com/favicon?domain=www.kdnuggets.com&size=128",
+    "snippets": [
+      "Selecting the \"right\" amount of information to include in a summary is a difficult task. Prompt engineering is the fuel that powers advancements in the efficacy of generative AI. While existing prompting stalwarts such as Chain-of-Thought and Skeleton-of-Thought focus on structured and efficient output, a recent technique called Chain of Density (CoD) aims to optimize the quality of text summarizations.",
+      "Iterate if Necessary: If the summary still doesn't meet the desired criteria for information density, return to step 4 and adjust the chained prompts accordingly. Finalize the Summary: Once the summary meets the desired level of information density, it is considered finalized and ready for use.  The following CoD prompt is taken directly from the paper.",
+      "Design Chained Prompts: Based on the initial summary's density, construct additional prompts to adjust the level of detail in the summary. These are the \"chained prompts\" and are central to the Chain of Density technique.",
+      "Implementing CoD involves the use of a series of chained prompts that guide the model in generating a summary. These prompts are designed to control the model's focus, directing it toward essential information and away from irrelevant details. For example, you might start with a general prompt for summarization and then follow up with specific prompts to adjust the density of the generated text."
+    ],
+    "title": "Unlocking GPT-4 Summarization with Chain of Density Prompting - ...",
+    "url": "https://www.kdnuggets.com/unlocking-gpt-4-summarization-with-chain-of-density-prompting"
+  },
+  {
+    "description": "A practical and simple approach for \"reasoning\" with LLMs...",
+    "favicon_url": "https://you.com/favicon?domain=cameronrwolfe.substack.com&size=128",
+    "snippets": [
+      "The most appropriate output from the language model should solve the task (e.g., summarizing a document or completing a reasoning task), meaning that we can solve a variety of problems with accurate next-token prediction! ... We can do a lot with prompting. In fact, an entire field of prompt engineering has been recently created to study how the wording or structure of prompts can be optimized to improve LLM performance.",
+      "\u201cThe goal of this paper is to endow language models with the ability to generate a chain of thought\u2014a coherent series of intermediate reasoning steps that lead to the final answer for a problem.\u201d - from [1] In particular, chain-of-thought (CoT) prompting [1] is a recently-proposed technique that improves LLM performance on reasoning-based tasks via few-shot learning.",
+      "But, sensitivity is a huge consideration in this developing field. LLM performance may change massively given small perturbations to the input prompt (e.g., permuting few-shot exemplars decreases GPT-3 accuracy from 93.4% to 54.3% on SST-2 [13]). Thus, in our study of prompting approaches, we aim to find techniques that i) perform well and ii) are not subject to sensitivity.",
+      "In other words, this means that we can solve a variety of different problems (e.g., translation, sentence classification, summarization, etc.) by just formulating a textual prompt (potentially containing a few example of correct output) and having the LLM generate the correct answer."
+    ],
+    "title": "Chain of Thought Prompting for LLMs",
+    "url": "https://cameronrwolfe.substack.com/p/chain-of-thought-prompting-for-llms"
+  },
+  {
+    "description": "This paper explores the complex field of text summarization in Natural Language Processing (NLP), with particular attention to the development and imp\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "This paper explores the complex field of text summarization in Natural Language Processing (NLP), with particular attention to the development and importance of semantic understanding. Text summarization is a crucial component of natural language processing (NLP), which helps to translate large amounts of textual data into clear and understandable representations.",
+      "In order to effectively summarize, syntactic, semantic, and pragmatic concerns become crucial, highlighting the necessity of capturing not only grammar but also the context and underlying meaning. It examines the wide range of summarization models, from conventional extractive techniques to state-of-the-art tools like pre-trained models. Applications are found in many different fields, demonstrating how versatile summarizing techniques are.",
+      "The approach, which is based on the PRISMA framework, emphasizes a methodical and open literature review. The work attempts to further natural language processing (NLP) and text summarization by combining various research findings and suggesting future research directions in this dynamic subject."
+    ],
+    "title": "A survey of text summarization: Techniques, evaluation and challenges ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2949719124000189"
+  },
+  {
+    "description": "Posted by Jason Wei and Denny Zhou, Research Scientists, Google Research, Brain team In recent years, scaling up the size of language models has be...",
+    "favicon_url": "https://you.com/favicon?domain=research.google&size=128",
+    "snippets": [
+      "In \u201cChain of Thought Prompting Elicits Reasoning in Large Language Models,\u201d we explore a prompting method for improving the reasoning abilities of language models. Called chain of thought prompting, this method enables models to decompose multi-step problems into intermediate steps.",
+      "With standard prompting (popularized by GPT-3) the model is given examples of input\u2013output pairs (formatted as questions and answers) before being asked to predict the answer for a test-time example (shown below on the left). In chain of thought prompting (below, right), the model is prompted to produce intermediate reasoning steps before giving the final answer to a multi-step problem.",
+      "While producing a thought process has been previously accomplished via fine-tuning, we show that such thought processes can be elicited by including a few examples of chain of thought via prompting only, which does not require a large training dataset or modifying the language model\u2019s weights.",
+      "Chain of thought reasoning allows models to decompose complex problems into intermediate steps that are solved individually. Moreover, the language-based nature of chain of thought makes it applicable to any task that a person could solve via language."
+    ],
+    "title": "Language Models Perform Reasoning via Chain of Thought",
+    "url": "https://research.google/blog/language-models-perform-reasoning-via-chain-of-thought/"
+  },
+  {
+    "description": "Chain-of-thought prompting is a technique that trains GenAI models to use step-by-step reasoning to handle complex tasks with greater accuracy and agility.",
+    "favicon_url": "https://you.com/favicon?domain=www.k2view.com&size=128",
+    "snippets": [
+      "Using the augmented prompts and summarized data, the LLM crafts a comprehensive and relevant response that directly addresses the user's needs. Chain-of-thought prompting in structured data retrieval via RAG  \u00b7 Incorporating chain-of-thought prompting into generative AI applications offers significant advantages for enterprises seeking to enhance the accuracy and reliability of their LLM outputs. By breaking down complex tasks into manageable steps this technique improves logical reasoning and decision-making while ensuring transparent and traceable AI responses with greater accuracy and agility.",
+      "Produce the response After completing the intermediate steps, the LLM synthesizes and then summarizes the information to generate a more accurate and reliable answer.  \u00b7 Chain-of-thought prompting has the potential to significantly enhance LLM responses across a wide range of use cases, including:",
+      "Chain-of-thought prompting enables an LLM to capitalize on the vast amount of information it was trained on, making it easier to apply relevant knowledge from diverse sources.  ... While LLMs excel at generating coherent text, they often have difficulty with logical reasoning. This technique guides models through a structured thought process, helping them tackle complex problems more effectively.",
+      "The LLM reviews the retrieved data, summarizes the situation, and evaluates whether additional information is needed. It then creates intelligent, context-aware prompts to provide meaningful answers."
+    ],
+    "title": "Chain-of-thought prompting 101",
+    "url": "https://www.k2view.com/blog/chain-of-thought-prompting/"
+  },
+  {
+    "description": "Automatic summarization generates concise summaries that contain key ideas of source documents. As the most mainstream datasets for the news sub-domain, CNN/DailyMail and BBC XSum have been widely used for performance benchmarking. However, the reference summaries of those datasets turn out ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Automatic summarization generates concise summaries that contain key ideas of source documents. As the most mainstream datasets for the news sub-domain, CNN/DailyMail and BBC XSum have been widely used for performance benchmarking. However, the reference summaries of those datasets turn out to be noisy, mainly in terms of factual hallucination and information redundancy.",
+      "Abstract page for arXiv paper 2305.13412: Element-aware Summarization with Large Language Models: Expert-aligned Evaluation and Chain-of-Thought Method",
+      "Further, we propose a Summary Chain-of-Thought (SumCoT) technique to elicit LLMs to generate summaries step by step, which helps them integrate more fine-grained details of source documents into the final summaries that correlate with the human writing mindset.",
+      "View a PDF of the paper titled Element-aware Summarization with Large Language Models: Expert-aligned Evaluation and Chain-of-Thought Method, by Yiming Wang and 2 other authors View PDF"
+    ],
+    "title": "[2305.13412] Element-aware Summarization with Large Language Models: ...",
+    "url": "https://arxiv.org/abs/2305.13412"
+  },
+  {
+    "description": "Learn what chain-of-thought prompting is, how it improves large language model (LLM) reasoning, the different types of chain-of-thought prompting and other benefits and limitations.",
+    "favicon_url": "https://you.com/favicon?domain=humanloop.com&size=128",
+    "snippets": [
+      "Chain-of-Thought (CoT) prompting is a popular technique designed to enhance reasoning capabilities in large language models (LLMs). By breaking down complex tasks into structured, sequential steps, CoT prompts allow AI systems to achieve more accurate and coherent outputs. Introduced by Wei et al. (2022)1 in their paper \"Chain-of-Thought Prompting Elicits Reasoning in Large Language Models\"1, this method highlights how structured reasoning dramatically improves performance, especially in tasks requiring multi-step thinking.",
+      "This makes CoT particularly effective for fields like finance, where multi-step decision-making is critical, or in legal contexts, where logical reasoning is essential. Another hybrid approach that combines CoT with few-shot learning is Few-shot CoT prompting. In this method, the model is provided with a few examples, each showcasing step-by-step solutions. Research has found that combining few-shot CoT prompting with techniques like retrieval-augmented generation (RAG) or interactive querying further boosts accuracy and reliability, especially when integrated with external knowledge bases or databases.",
+      "By explicitly laying out each step of reasoning, the model avoids making incorrect assumptions and provides a more reliable outcome, which is invaluable for certain fields, like diagnostics. CoT increases a model's adaptability by enabling it to perform well across different task types, including zero-shot CoT tasks where no prior examples are provided. This makes it a versatile tool for enterprises, where models must handle diverse tasks without retraining. While Chain-of-Thought (CoT) prompting enhances reasoning and accuracy, it is not without its limitations, particularly in specific scenarios or smaller models.",
+      "CoT is the primary technique used in OpenAI\u2019s reasoning models, which includes the o1 model series. These are designed to think before they answer, and can produce a long internal chain of thought before responding to the user."
+    ],
+    "title": "Chain of Thought Prompting (CoT)",
+    "url": "https://humanloop.com/blog/chain-of-thought-prompting"
+  },
+  {
+    "description": "Text summarization automatically produces a summary containing important sentences and includes all relevant important information from the original d\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "An extractive summary is heading towards maturity and now research has shifted towards abstractive summation and real-time summarization. Although there have been so many achievements in the acquisition of datasets, methods, and techniques published, there are not many papers that can provide a broad picture of the current state of research in this field.",
+      "The results of the analysis provide an in-depth explanation of the topics/trends that are the focus of their research in the field of text summarization; provide references to public datasets, preprocessing and features that have been used; describes the techniques and methods that are often used by researchers as a comparison and means for developing methods. At the end of this paper, several recommendations for opportunities and challenges related to text summarization research are mentioned.",
+      "This paper provides a broad and systematic review of research in the field of text summarization published from 2008 to 2019."
+    ],
+    "title": "Review of automatic text summarization techniques & methods - ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1319157820303712"
+  },
+  {
+    "description": "Chain of Thought prompting, when it's the right choice, and how it stacks up against other techniques.",
+    "favicon_url": "https://you.com/favicon?domain=www.vellum.ai&size=128",
+    "snippets": [
+      "Learn more about Chain of Thought prompting, when it's the right choice, and how it stacks up against other techniques.",
+      "Chain-of-Thought (CoT) prompting is a technique that guides LLMs to follow a reasoning process when dealing with hard problems. This is done by showing the model a few examples where the step-by-step reasoning is clearly laid out.",
+      "The model is then expected to follow that \"chain of thought\" reasoning and get to the correct answer. ... This technique is highly effective because it breaks down complex problems into more manageable parts.",
+      "You can read about some of these techniques here. This might look very similar to few-shot prompting, but there is a significant difference. ... Few-shot prompting is when you give a few examples so the language model can understand want it should do. So the previous examples will not go into the intermediate steps. The math example will look more like: \"For the equation 5x - 4 = 16, The result is: x = 4.\" On the other hand, Chain-of-Thought prompting is about showing the step-by-step thinking from start to finish, which helps with \u201creasoning\u201d and getting more detailed answers."
+    ],
+    "title": "Chain of Thought Prompting (CoT): Everything you need to know",
+    "url": "https://www.vellum.ai/blog/chain-of-thought-prompting-cot-everything-you-need-to-know"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
+    "snippets": [],
+    "title": "Element-aware Summarization with Large Language Models",
+    "url": "https://aclanthology.org/2023.acl-long.482.pdf"
+  }
+]

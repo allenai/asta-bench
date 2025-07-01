@@ -1,0 +1,1260 @@
+[
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.mlr.press&size=128",
+    "snippets": [],
+    "title": "Data and Semantic Knowledge for Task-Oriented Grasping",
+    "url": "https://proceedings.mlr.press/v155/murali21a/murali21a.pdf"
+  },
+  {
+    "description": "We propose to leverage a real-world, human activity RGB dataset to teach a robot Task-Oriented Grasping (TOG). We develop a model that takes as input an RGB image and outputs a hand pose and configuration as well as an object pose and a shape. We follow the insight that jointly estimating hand ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:We propose to leverage a real-world, human activity RGB dataset to teach a robot Task-Oriented Grasping (TOG). We develop a model that takes as input an RGB image and outputs a hand pose and configuration as well as an object pose and a shape. We follow the insight that jointly estimating hand and object poses increases accuracy compared to estimating these quantities independently of each other.",
+      "Abstract page for arXiv paper 1910.11669: Learning Task-Oriented Grasping from Human Activity Datasets",
+      "Furthermore, our results on a real-world dataset show the applicability and competitiveness of our method over state-of-the-art. Experiments with a robot demonstrate that our method can allow a robot to preform TOG on novel objects. From: Mia Kokic [view email] [v1] Fri, 25 Oct 2019 12:52:40 UTC (8,907 KB) [v2] Thu, 21 May 2020 08:06:53 UTC (4,213 KB) ... View a PDF of the paper titled Learning Task-Oriented Grasping from Human Activity Datasets, by Mia Kokic and 2 other authors",
+      "View a PDF of the paper titled Learning Task-Oriented Grasping from Human Activity Datasets, by Mia Kokic and 2 other authors View PDF"
+    ],
+    "title": "[1910.11669] Learning Task-Oriented Grasping from Human Activity ...",
+    "url": "https://arxiv.org/abs/1910.11669"
+  },
+  {
+    "description": "Despite the enormous progress and generalization in robotic grasping in recent years, existing methods have yet to scale and generalize task-oriented grasping to the same extent. This is largely due to the scale of the datasets both in terms of the number of objects and tasks studied.",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:Despite the enormous progress and generalization in robotic grasping in recent years, existing methods have yet to scale and generalize task-oriented grasping to the same extent. This is largely due to the scale of the datasets both in terms of the number of objects and tasks studied.",
+      "We address these concerns with the TaskGrasp dataset which is more diverse both in terms of objects and tasks, and an order of magnitude larger than previous datasets. The dataset contains 250K task-oriented grasps for 56 tasks and 191 objects along with their RGB-D information.",
+      "Our framework shows a significant improvement of around 12% on held-out settings compared to baseline methods which do not use semantics. We demonstrate that our dataset and model are applicable for the real world by executing task-oriented grasps on a real robot on unknown objects.",
+      "Abstract page for arXiv paper 2011.06431: Same Object, Different Grasps: Data and Semantic Knowledge for Task-Oriented Grasping"
+    ],
+    "title": "[2011.06431] Same Object, Different Grasps: Data and Semantic ...",
+    "url": "https://arxiv.org/abs/2011.06431"
+  },
+  {
+    "description": "The dataset provides a challenging ... and grasp detection algorithms in realistic cluttered scenarios. ... Accompanying expert data and trained models for 2021 IROS paper on Multiview Manipulation. ... Introduction NBMOD is a dataset created for researching the task of specific ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "The dataset provides a challenging testbed for segmentation, 6D pose estimation, and grasp detection algorithms in realistic cluttered scenarios. ... Accompanying expert data and trained models for 2021 IROS paper on Multiview Manipulation. ... Introduction NBMOD is a dataset created for researching the task of specific object grasp detection by robots in noisy environments.",
+      "GraspNet-1Billion provides large-scale training data and a standard evaluation platform for the task of general robotic grasping. The dataset contains 97,280 RGB-D image with over one billion grasp poses.",
+      "This dense data set lets us evaluate existing sampling schemes w.r.t. their bias and efficiency. Our experiments show that some popular sampling schemes contain significant bias and do not cover all possible ways an object can be grasped. ... A dataset for position-constrained robot grasp planning.",
+      "Dex-Net 2.0 is a dataset associating 6.7 million point clouds and analytic grasp quality metrics with parallel-jaw grasps planned using robust quasi-static GWS analysis on a dataset of 1,500 3D object models."
+    ],
+    "title": "Machine Learning Datasets - Robotic Grasping",
+    "url": "https://paperswithcode.com/datasets?task=robotic-grasping"
+  },
+  {
+    "description": "Keywords: single object; 6D grasp; fine-grained, task-oriented, language-guided grasp; propose a large language-guided shape grasping dataset, 16.6k objects of 16 categories in simulation environement; part affordance grounding and grasp stability evaluation; sampling-then-evaluation method.",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "paper list of robotic grasping and some related works - rhett-chen/Robotic-grasping-papers",
+      "Keywords: 2D planar grasp; task-oriented grasp; self-made task-oriented grasp dataset; grasp-action-target relationship.",
+      "Keywords: task-oriented grasping; single object; point cloud input; 6D grasp; a grasping affordance detection module to generate grasps corresponding to affordance label, and a evaluation network to recognize success and faliure, a visual affordance network outputs affordance map to get fine grasp candidates.",
+      "Keywords: 6D category-level task-oriented grasp; cluttered scene in simulation; self-supervised in simulation."
+    ],
+    "title": "GitHub - rhett-chen/Robotic-grasping-papers: paper list of robotic ...",
+    "url": "https://github.com/rhett-chen/Robotic-grasping-papers"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.roboticsproceedings.org&size=128",
+    "snippets": [],
+    "title": "Learning Task-Oriented Grasping for Tool Manipulation ...",
+    "url": "https://www.roboticsproceedings.org/rss14/p12.pdf"
+  },
+  {
+    "description": "Tool manipulation is vital for facilitating robots to complete challenging task goals. It requires reasoning about the desired effect of the task and, thus, pro...",
+    "favicon_url": "https://you.com/favicon?domain=journals.sagepub.com&size=128",
+    "snippets": [
+      "Tool manipulation is vital for facilitating robots to complete challenging task goals. It requires reasoning about the desired effect of the task and, thus, properly grasping and manipulating the t...",
+      "Most work in robotics has focused on task-agnostic grasping, which optimizes for only grasp robustness without considering the subsequent manipulation tasks. In this article, we propose the Task-Oriented Grasping Network (TOG-Net) to jointly optimize both task-oriented grasping of a tool and the manipulation policy for that tool.",
+      "Dang H, Allen PK (2012) Semantic grasping: Planning robotic grasps functionally suitable for an object manipulation task. In: IEEE/RSJ International Conference on Intelligent Robots and Systems, pp. 1311\u20131317. ... Detry R, Papon J, Matthies LH (2017) Task-oriented grasping with semantic and geometric scene understanding.",
+      "Fang K, Bai Y, Hinterstoisser S, Savarese S, Kalakrishnan M (2018a) Multi-task domain adaptation for deep learning of instance grasping from simulation. In: IEEE International Conference on Robotics and Automation. ... Fang K, Zhu Y, Garg A, et al. (2018b) Learning task-oriented grasping for tool manipulation from simulated self-supervision."
+    ],
+    "title": "Learning task-oriented grasping for tool manipulation from simulated ...",
+    "url": "https://journals.sagepub.com/doi/10.1177/0278364919872545"
+  },
+  {
+    "description": "Evaluations on the public TOG benchmark, TaskGrasp dataset, show the competitive performance of RTAGrasp on both seen and unseen object categories compared to existing baseline methods. Real-world experiments further validate its effectiveness on a robotic arm. Our code, appendix, and video are available at https://sites.google.com/view/rtagrasp/home. To successfully manipulate an object and complete subsequent household tasks, a robot must first grasp the object in a task-oriented ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Evaluations on the public TOG benchmark, TaskGrasp dataset, show the competitive performance of RTAGrasp on both seen and unseen object categories compared to existing baseline methods. Real-world experiments further validate its effectiveness on a robotic arm. Our code, appendix, and video are available at https://sites.google.com/view/rtagrasp/home. To successfully manipulate an object and complete subsequent household tasks, a robot must first grasp the object in a task-oriented manner.",
+      "Evaluations on the public TOG benchmark, TaskGrasp dataset, demonstrate that RTAGrasp outperforms existing baselines in both seen and unseen object categories. Furthermore, we deploy RTAGrasp on a Kinova Gen3 robotic arm to validate its effectiveness in real-world applications. The core objective of TOG is to jointly address both \u201cwhere to grasp\u201d and \u201chow to grasp\u201d. Classical TOG methods [10] [11] evaluate task-oriented grasp quality through task wrench space analysis.",
+      "Since the TaskGrasp dataset only includes manual TOG annotations and lacks the human TOG demonstrations, we collect 64 demonstrations, covering 48 seen categories, to construct a memory. ... GraspGPT [1] is the SOTA training-based method that transfers task-oriented grasps from seen to unseen categories using semantic relationships learned from the TaskGrasp dataset.",
+      "To learn such TOG skills, training-based methods typically require the collection and manual annotation of TOG datasets covering a variety of tasks and objects, which are then used for training TOG models. For example, GraspGPT [1] relies on a manually annotated dataset to establish semantic relationships between objects in the dataset and novel ones. While training-based methods [1, 2, 3] have achieved some success, TOG data collection and annotation are costly and labor-intensive."
+    ],
+    "title": "RTAGrasp: Learning Task-Oriented Grasping from Human Videos via ...",
+    "url": "https://arxiv.org/html/2409.16033v1"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=kth.diva-portal.org&size=128",
+    "snippets": [],
+    "title": "Learning for Task-Oriented Grasping",
+    "url": "http://kth.diva-portal.org/smash/get/diva2:1472107/FULLTEXT01.pdf"
+  },
+  {
+    "description": "Read more about it in our latest blog post or try out some of the SPARQL queries linked on the dblp web pages below. ... \u26a0 Please note that this publication does not have a DOI. Therefore, DOI-based queries won't return any results. ... Mia Kokic, Danica Kragic, Jeannette Bohg: Learning Task-Oriented Grasping from Human Activity Datasets...",
+    "favicon_url": "https://you.com/favicon?domain=dblp.org&size=128",
+    "snippets": [
+      "Bibliographic details on Learning Task-Oriented Grasping from Human Activity Datasets."
+    ],
+    "title": "dblp: Learning Task-Oriented Grasping from Human Activity Datasets.",
+    "url": "https://dblp.org/rec/journals/corr/abs-1910-11669.html"
+  },
+  {
+    "description": "Figure 6: Analysis of the Task-oriented Point Selection (TPS) module using t-SNE [54]. For each class, we randomly choose 100 point features. TABLE V: Real-world experiments. As the contributed dataset 6DTG is collected from simulation environments. We conduct real-world robot grasping experiments to verify whether our model trained from simulation dataset can transfer well to real-world grasping. Specifically, we construct cluttered scenes by randomly placing some ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Figure 6: Analysis of the Task-oriented Point Selection (TPS) module using t-SNE [54]. For each class, we randomly choose 100 point features. TABLE V: Real-world experiments. As the contributed dataset 6DTG is collected from simulation environments. We conduct real-world robot grasping experiments to verify whether our model trained from simulation dataset can transfer well to real-world grasping. Specifically, we construct cluttered scenes by randomly placing some objects from knives, Scissors, Mugs, Bottles, and bowls, which are all unknown to the model.",
+      "With an aim to get more general and practical grasp models, in this paper, we investigate the problem named Task-Oriented 6-DoF Grasp Pose Detection in Clutters (TO6DGC), which extends the task-oriented problem to a more general 6-DOF Grasp Pose Detection in Cluttered (multi-object) scenario. To this end, we construct a large-scale 6-DoF task-oriented grasping dataset, 6-DoF Task Grasp (6DTG), which features 4391 cluttered scenes with over 2 million 6-DoF grasp poses.",
+      "Figure 1: Examples of several existing datasets and our 6-DoF Task Grasp (6DTG) dataset. Compared with the existing task-oriented grasping datasets (a) and (b), 6DTG uses 6-DoF grasp poses and cluttered scenes. Compared with the existing 6-DoF Grasping in clutters dataset (c), 6DTG provides the task annotation for each grasp.",
+      "Different grasp pose color represents different task in our 6DTG dataset. Best viewed in color. Recent works [14, 15, 16, 17, 18, 19] provide a way to narrow this gap by investigating the task-oriented grasp pose detection problem, where a robot is required to detect a grasp pose to pick up an object to finish a particular task."
+    ],
+    "title": "Task-Oriented 6-DoF Grasp Pose Detection in Clutters",
+    "url": "https://arxiv.org/html/2502.16976v1"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [],
+    "title": "Learning Task-Oriented Grasping From Human Activity ...",
+    "url": "https://www.researchgate.net/publication/339417359_Learning_Task-Oriented_Grasping_From_Human_Activity_Datasets"
+  },
+  {
+    "description": "As personalization technology increasingly orchestrates individualized shopping or marketing experiences in industries such as logistics, fast-moving consume...",
+    "favicon_url": "https://you.com/favicon?domain=www.frontiersin.org&size=128",
+    "snippets": [
+      "Some other prominent works, such as Visual Pushing and Grasping (VPG) (Zeng et al., 2018), utilize two fully convolutional networks trained by self-supervised Q-learning for inference of pushes and grasps, respectively, based on the sampling of end effector orientation and position.",
+      "On the contrary, unknown objects and familiar objects are never encountered previously, but familiar objects have a certain similarity with training datasets. Grasping for known objects has been implemented in the industry for quite some time as the technology is mature when compared to the other two categories.",
+      "The schematic of the ambidextrous grasping policy-learning process is shown in Figure 6. Synthetic 3D-object datasets are generated via computer-aided design (CAD) with some domain randomization. The generated objects are tested in the synthetic training environment to evaluate the rewards, which are computed consistently based on the resistance to grasping.",
+      "GraspNet (Fang et al., 2020) is a popular open project for general object grasping that is continuously enriched. There are 97,280 3D images in total and each image is annotated with an accurate 1.1 billion 6D poses for each object, and 190 cluttered scenes were captured using Kinect A4Z and RealSense D435. Moreover, Jiang et al. (2011) proposed a method for the oriented grasping rectangle representation that considers the seven-dimensional gripper configuration and uses it for fast search inference in the learning algorithm."
+    ],
+    "title": "Frontiers | Learning-based robotic grasping: A review",
+    "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2023.1038658/full"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [],
+    "title": "(PDF) Learning Task-Oriented Grasping from Human ...",
+    "url": "https://www.researchgate.net/publication/336845735_Learning_Task-Oriented_Grasping_from_Human_Activity_Datasets"
+  },
+  {
+    "description": "The dataset provides a challenging ... and grasp detection algorithms in realistic cluttered scenarios. ... Accompanying expert data and trained models for 2021 IROS paper on Multiview Manipulation. ... Introduction NBMOD is a dataset created for researching the task of specific ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "The dataset provides a challenging testbed for segmentation, 6D pose estimation, and grasp detection algorithms in realistic cluttered scenarios. ... Accompanying expert data and trained models for 2021 IROS paper on Multiview Manipulation. ... Introduction NBMOD is a dataset created for researching the task of specific object grasp detection by robots in noisy environments.",
+      "GraspNet-1Billion provides large-scale training data and a standard evaluation platform for the task of general robotic grasping. The dataset contains 97,280 RGB-D image with over one billion grasp poses.",
+      "This dense data set lets us evaluate existing sampling schemes w.r.t. their bias and efficiency. Our experiments show that some popular sampling schemes contain significant bias and do not cover all possible ways an object can be grasped. ... A dataset for position-constrained robot grasp planning.",
+      "Dex-Net 2.0 is a dataset associating 6.7 million point clouds and analytic grasp quality metrics with parallel-jaw grasps planned using robust quasi-static GWS analysis on a dataset of 1,500 3D object models."
+    ],
+    "title": "22 dataset results for Robotic Grasping",
+    "url": "https://paperswithcode.com/datasets?task=robotic-grasping&page=1"
+  },
+  {
+    "description": "Using geometric information, SegGrasp ... comprehensive evaluation of the segmentation and grasping capabilities on ShapeNetPart [17] and our custom task-oriented grasping dataset....",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Using geometric information, SegGrasp achieves superior performance in task-oriented grasp generation tasks compared to image-based approaches [12, 11, 13]. We conducted a comprehensive evaluation of the segmentation and grasping capabilities on ShapeNetPart [17] and our custom task-oriented grasping dataset.",
+      "In order to achieve task-oriented grasping, some traditional methods [2, 8] learn prior knowledge of object grasping from collected data and generate grasp poses for different tasks based on these priors. Other knowledge-driven methods [4, 9, 10] take advantage of strong generalization abilities of large language models (LLMs) to perform reasoning and generate reasonable task-oriented grasps.",
+      "Task-oriented grasping, which involves grasping specific parts of objects based on their functions, is crucial for developing advanced robotic systems capable of performing complex tasks in dynamic environments. In this paper, we propose a training-free framework that incorporates both semantic and geometric priors for zero-shot task-oriented grasp generation.",
+      "Recently, significant progress has been made in robotic grasping, resulting in the emergence of various grasping tasks, including task-oriented grasping [1, 2, 3, 4, 5, 6, 7]. Task-oriented grasping selects the best area of an object to ensure successful and safe execution, especially for various tasks."
+    ],
+    "title": "SegGrasp: Zero-Shot Task-Oriented Grasping via Semantic and Geometric ...",
+    "url": "https://arxiv.org/html/2410.08901v1"
+  },
+  {
+    "description": "We present GrasMolmo, a generalizable open-vocabulary task-oriented grasping (TOG) model. GraspMolmo predicts semantically appropriate, stable grasps conditioned on a natural language instruction and a single RGB-D frame. For instance, given \"pour me some tea\", GraspMolmo selects a grasp on a teapot handle rather than its body. Unlike prior TOG methods, which are limited by small datasets...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "We present GrasMolmo, a generalizable open-vocabulary task-oriented grasping (TOG) model. GraspMolmo predicts semantically appropriate, stable grasps conditioned on a natural language instruction and a single RGB-D frame. For instance, given \"pour me some tea\", GraspMolmo selects a grasp on a teapot handle rather than its body. Unlike prior TOG methods, which are limited by small datasets, simplistic language, and uncluttered scenes, GraspMolmo learns from PRISM, a novel large-scale synthetic dataset of 379k samples featuring cluttered environments and diverse, realistic task descriptions.",
+      "We also conduct experiments on the tasks of hand-object affordance understanding and affordance-oriented hand-object interaction generation, to validate the effectiveness of our dataset in learning the fine-grained hand-object interactions. Project page: https://github.com/GentlesJan/AffordPose. ... Current learning-based robot grasping approaches exploit human-labeled datasets for training the models.",
+      "To enable affordance-oriented manipulation, we further introduce Aff-Grasp, a framework that combines GKT with a grasp generation model. For comprehensive evaluation, we create an affordance evaluation dataset with pixel-wise annotations, and design real-world tasks for robot experiments.",
+      "As a result, OakInk contains 50,000 distinct affordance-aware and intent-oriented hand-object interactions. We benchmark OakInk on pose estimation and grasp generation tasks. Moreover, we propose two practical applications of OakInk: intent-based interaction generation and handover generation. Our datasets and source code are publicly available at https://github.com/lixiny/OakInk."
+    ],
+    "title": "Daily Papers - Hugging Face",
+    "url": "https://huggingface.co/papers?q=Task-Oriented+Grasping"
+  },
+  {
+    "description": "We propose to leverage a real-world, human activity RGB dataset to teach a robot Task-Oriented Grasping (TOG). We develop a model that takes as input an RGB image and outputs a hand pose and configuration as well as an object pose and a shape. We follow the insight that jointly estimating hand ...",
+    "favicon_url": "https://you.com/favicon?domain=ieeexplore.ieee.org&size=128",
+    "snippets": [
+      "We propose to leverage a real-world, human activity RGB dataset to teach a robot Task-Oriented Grasping (TOG). We develop a model that takes as input an RGB image and outputs a hand pose and configuration as well as an object pose and a shape. We follow the insight that jointly estimating hand and object poses increases accuracy compared to estimating these quantities independently of each other."
+    ],
+    "title": "Learning Task-Oriented Grasping From Human Activity Datasets | ...",
+    "url": "https://ieeexplore.ieee.org/document/9006947/"
+  },
+  {
+    "description": "Abstract Despite the enormous progress and generalization in robotic grasping in recent years, existing methods have yet to scale and generalize task-oriented grasping to the same extent. This is largely due to the scale of the datasets both in terms of the number of objects and tasks studied. We",
+    "favicon_url": "https://you.com/favicon?domain=sites.google.com&size=128",
+    "snippets": [
+      "We address these concerns with the TaskGrasp dataset which is more diverse both in terms of objects and tasks, and an order of magnitude larger than previous datasets. The dataset contains 250K task-oriented grasps for 56 tasks and 191 objects along with their RGB-D information.",
+      "Our framework shows a significant improvement of around 12% on held-out settings compared to baseline methods which do not use semantics. We demonstrate that our dataset and model are applicable for the real world by executing task-oriented grasps on a real robot on unknown objects."
+    ],
+    "title": "TaskGrasp",
+    "url": "https://sites.google.com/view/taskgrasp"
+  },
+  {
+    "description": "This task is composed of using Deep Learning to identify how best to grasp objects using robotic arms in different scenarios. This is a very complex task as it might involve dynamic environments and objects unknown to the network.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "We show that a mild relaxation of the task and workspace constraints implicit in existing object grasping datasets can cause neural network based grasping algorithms to fail on even a simple block stacking task when executed under more realistic circumstances.",
+      "This is a very complex task as it might involve dynamic environments and objects unknown to the network. These leaderboards are used to track progress in Robotic Grasping",
+      "Use these libraries to find Robotic Grasping models and implementations ... Convolutional networks are at the core of most state-of-the-art computer vision solutions for a wide variety of tasks."
+    ],
+    "title": "Robotic Grasping | Papers With Code",
+    "url": "https://paperswithcode.com/task/robotic-grasping"
+  },
+  {
+    "description": "10/25/19 - We propose to leverage a real-world, human activity RGB datasets to teach a robot Task-Oriented Grasping (TOG). On the one hand, ...",
+    "favicon_url": "https://you.com/favicon?domain=deepai.org&size=128",
+    "snippets": [
+      "We propose to leverage a real-world, human activity RGB datasets to teach a robot Task-Oriented Grasping (TOG). On the one hand, RGB-D datasets that contain hands and objects in interaction often lack annotations due to the manual effort in obtaining them. On the other hand, RGB datasets are often annotated with labels that do not provide enough information to infer a 6D robotic grasp pose.",
+      "This model takes as input an object point cloud and a task and outputs a suitable region for grasping, given the task. Qualitative experiments show that our model can successfully process a real-world dataset. Experiments with a robot demonstrate that this data allows a robot to learn task-oriented grasping on novel objects."
+    ],
+    "title": "Learning Task-Oriented Grasping from Human Activity Datasets | DeepAI",
+    "url": "https://deepai.org/publication/learning-task-oriented-grasping-from-human-activity-datasets"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=events.infovaya.com&size=128",
+    "snippets": [],
+    "title": "Infovaya",
+    "url": "https://events.infovaya.com/uploads/documents/pdfviewer/ca/3b/134005-4589.pdf"
+  },
+  {
+    "description": "Abstract Despite the enormous progress and generalization in robotic grasping in recent years, existing methods have yet to scale and generalize task-oriented grasping to the same extent. This is largely due to the scale of the datasets both in terms of the number of objects and tasks studied. We",
+    "favicon_url": "https://you.com/favicon?domain=sites.google.com&size=128",
+    "snippets": [
+      "We address these concerns with the TaskGrasp dataset which is more diverse both in terms of objects and tasks, and an order of magnitude larger than previous datasets. The dataset contains 250K task-oriented grasps for 56 tasks and 191 objects along with their RGB-D information.",
+      "Our framework shows a significant improvement of around 12% on held-out settings compared to baseline methods which do not use semantics. We demonstrate that our dataset and model are applicable for the real world by executing task-oriented grasps on a real robot on unknown objects."
+    ],
+    "title": "TaskGrasp",
+    "url": "https://sites.google.com/view/taskgrasp"
+  },
+  {
+    "description": "We propose to leverage a real-world, human activity RGB dataset to teach a robot Task-Oriented Grasping (TOG). We develop a model that takes as input an RGB image and outputs a hand pose and configuration as well as an object pose and a shape. We follow the insight that jointly estimating hand ...",
+    "favicon_url": "https://you.com/favicon?domain=ieeexplore.ieee.org&size=128",
+    "snippets": [
+      "We propose to leverage a real-world, human activity RGB dataset to teach a robot Task-Oriented Grasping (TOG). We develop a model that takes as input an RGB image and outputs a hand pose and configuration as well as an object pose and a shape. We follow the insight that jointly estimating hand and object poses increases accuracy compared to estimating these quantities independently of each other."
+    ],
+    "title": "Learning Task-Oriented Grasping From Human Activity Datasets | ...",
+    "url": "https://ieeexplore.ieee.org/iel7/7083369/8932682/09006947.pdf"
+  },
+  {
+    "description": "This task is composed of using Deep Learning to identify how best to grasp objects using robotic arms in different scenarios. This is a very complex task as it might involve dynamic environments and objects unknown to the network.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "We show that a mild relaxation of the task and workspace constraints implicit in existing object grasping datasets can cause neural network based grasping algorithms to fail on even a simple block stacking task when executed under more realistic circumstances.",
+      "This is a very complex task as it might involve dynamic environments and objects unknown to the network. These leaderboards are used to track progress in Robotic Grasping",
+      "Use these libraries to find Robotic Grasping models and implementations ... Convolutional networks are at the core of most state-of-the-art computer vision solutions for a wide variety of tasks."
+    ],
+    "title": "Robotic Grasping | Papers With Code",
+    "url": "https://paperswithcode.com/task/robotic-grasping"
+  },
+  {
+    "description": "10/25/19 - We propose to leverage a real-world, human activity RGB datasets to teach a robot Task-Oriented Grasping (TOG). On the one hand, ...",
+    "favicon_url": "https://you.com/favicon?domain=deepai.org&size=128",
+    "snippets": [
+      "We propose to leverage a real-world, human activity RGB datasets to teach a robot Task-Oriented Grasping (TOG). On the one hand, RGB-D datasets that contain hands and objects in interaction often lack annotations due to the manual effort in obtaining them. On the other hand, RGB datasets are often annotated with labels that do not provide enough information to infer a 6D robotic grasp pose.",
+      "This model takes as input an object point cloud and a task and outputs a suitable region for grasping, given the task. Qualitative experiments show that our model can successfully process a real-world dataset. Experiments with a robot demonstrate that this data allows a robot to learn task-oriented grasping on novel objects."
+    ],
+    "title": "Learning Task-Oriented Grasping from Human Activity Datasets | DeepAI",
+    "url": "https://deepai.org/publication/learning-task-oriented-grasping-from-human-activity-datasets"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.eng.yale.edu&size=128",
+    "snippets": [],
+    "title": "The Yale human grasping dataset: Grasp, object, and task ...",
+    "url": "https://www.eng.yale.edu/grablab/pubs/bullock_ijrr2015.pdf"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=journals.sagepub.com&size=128",
+    "snippets": [],
+    "title": "Learning task-oriented grasping for tool manipulation from ...",
+    "url": "https://journals.sagepub.com/doi/10.1177/0278364919872545?icid=int.sj-abstract.citing-articles.87"
+  },
+  {
+    "description": "Download scientific diagram | Example objects from the Cornell grasping dataset. [13]. This dataset contains objects from a large variety of categories. from publication: Deep Learning for Detecting Robotic Grasps | We consider the problem of detecting robotic grasps in an RGB-D view of a scene ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Download scientific diagram | Example objects from the Cornell grasping dataset. [13]. This dataset contains objects from a large variety of categories. from publication: Deep Learning for Detecting Robotic Grasps | We consider the problem of detecting robotic grasps in an RGB-D view of a scene containing objects.",
+      "A commonly used parameterization for an oriented grasp rectangle g is a five-dimensional vector g = (x, y, w, h, \u03b8) (Jiang et al., 2011), where (x, y) denotes the center of the grasp, w and h represent the width and height of the grasp rectangle, and \u03b8 \u2208 [\u2212 \u03c0 2 , \u03c0 2 ] is the orientation angle. ... TD-TOG Dataset: Benchmarking Zero-Shot and One-Shot Task-Oriented Grasping for Object Generalization",
+      "Task-oriented grasping (TOG) is an essential preliminary step for robotic task execution, which involves predicting grasps on regions of target objects that facilitate intended tasks. Existing literature reveals there is a limited availability of TOG datasets for training and benchmarking despite large demand, which are often synthetic or have artifacts in mask annotations that hinder model performance.",
+      "Moreover, TOG solutions often require affordance masks, grasps, and object masks for training, however, existing datasets typically provide only a subset of these annotations. To address these limitations, we introduce the Top-down Task-oriented Grasping (TD-TOG) dataset, designed to train and evaluate TOG solutions."
+    ],
+    "title": "Example objects from the Cornell grasping dataset. [13]. This ...",
+    "url": "https://www.researchgate.net/figure/Example-objects-from-the-Cornell-grasping-dataset-13-This-dataset-contains-objects_fig5_319770233"
+  },
+  {
+    "description": "Dex-Net 2.0 is designed to generated training datasets to learn Grasp Quality Convolutional Neural Networks (GQ-CNN) models that predict the probability of success of candidate parallel-jaw grasps on objects from point clouds. GQ-CNNs may be useful for quickly planning grasps that can lift and transport a wide variety of objects a physical robot. Dex-Net 2.1 adds dynamic simulation with pybullet and extends the robust grasping model to the sequential task ...",
+    "favicon_url": "https://you.com/favicon?domain=berkeleyautomation.github.io&size=128",
+    "snippets": [
+      "Dex-Net 2.0 is designed to generated training datasets to learn Grasp Quality Convolutional Neural Networks (GQ-CNN) models that predict the probability of success of candidate parallel-jaw grasps on objects from point clouds. GQ-CNNs may be useful for quickly planning grasps that can lift and transport a wide variety of objects a physical robot. Dex-Net 2.1 adds dynamic simulation with pybullet and extends the robust grasping model to the sequential task of bin picking.",
+      "The Dexterity Network (Dex-Net) is a research project including code, datasets, and algorithms for generating datasets of synthetic point clouds, robot parallel-jaw grasps and metrics of grasp robustness based on physics for thousands of 3D object models to train machine learning-based methods to plan robot grasps.",
+      "This paper explores \u201cambidextrous\u201d robot grasping, where two or more heterogeneous grippers are used. We present Dexterity Network (Dex-Net) 4.0, a substantial extension to previous versions of Dex-Net that learns policies for a given set of grippers by training on synthetic datasets using domain randomization with analytic models of physics and geometry.",
+      "We collect synthetic demonstrations of bin picking from an algorithmic supervisor uses full state information to optimize for the most robust collision-free grasp in a forward simulator based on pybullet to model dynamic object-object interactions and robust wrench space analysis from the Dexterity Network (Dex-Net) to model quasi-static contact between the gripper and object. We learn a policy by fine-tuning a Grasp Quality CNN on Dex-Net 2.1 to classify the supervisor's actions from a dataset of 10,000 rollouts of the supervisor in the simulator with noise injection."
+    ],
+    "title": "Dex-Net by BerkeleyAutomation",
+    "url": "https://berkeleyautomation.github.io/dex-net/"
+  },
+  {
+    "description": "To address the challenge of grasping multi-target objects with uncertain shape, attitude, scale, and stacking, this study proposes a high-performance planar pixel-level grasping network called random sub-path grasp fusion network (RSPFG-Net). The paper introduces the agile grasping representation ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "To address the challenge of grasping multi-target objects with uncertain shape, attitude, scale, and stacking, this study proposes a high-performance planar pixel-level grasping network called random sub-path grasp fusion network (RSPFG-Net). The paper introduces the agile grasping representation (AGR) strategy for dexterous grasping of target objects and constructs a Multi-objects Grasping Dataset (NEU-MGD).",
+      "Scientific Reports - Robot multi-target high performance grasping detection based on random sub-path fusion",
+      "Previous research papers mostly focused on predicting only the width of the mechanical jaws\u2019 spread, which may result in missing some actual gripping positions. Both the publicly available Cornell and Jacquard fetching datasets focus on single-target fetching tasks. The multi-objective Graspnet-1 billion and Acronym datasets achieve grasping robustness through point cloud processing, and obtain grasping gestures from 6D attitude projection scenes of objects.",
+      "From this, we calculate the grab angle by \\(\\theta = 2\\pi k/K\\). Predicting grasping angles is a task that involves multiple labels within a single category. To avoid competition between categories, we normalize the output of the angle header using a sigmoid function. The width head outputs the grab width corresponding to each point. This paper introduces the NEU-MGD Northeastern University multi-target grasping dataset, which includes single targets, discrete multi-targets, and stacked multi-targets."
+    ],
+    "title": "Robot multi-target high performance grasping detection based on ...",
+    "url": "https://www.nature.com/articles/s41598-025-93490-8"
+  },
+  {
+    "description": "PDF | This paper presents a dataset of human grasping behavior in unstructured environments. Wide-angle head-mounted camera video was recorded from two... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "First, the grasp type and the high- level object and task names were assigned. Object and task \u00b7 properties were then added based on the object and task names. Cohen\u2019s kand Pearson correlation rgive an estimate of the ... Between the studies of Bullock et al. (2013) and Feix \u00b7 et al. (2014a, 2014b), some additional cleanup was per- formed. Specifically, some damaged video files could not \u00b7 be used and were removed from the dataset, making the",
+      "This paper presents a dataset of human grasping behavior in unstructured environments. Wide-angle head-mounted camera video was recorded from two housekeepers and two machinists during their regular work activities, and the grasp types, objects, and tasks were analyzed and coded by study staff.",
+      "The full dataset contains 27.7 hours of tagged video and represents a wide range of manipulative behaviors spanning much of the typical human hand usage. We provide the original videos, a spreadsheet including the tagged grasp type, object, and task parameters, time information for each successive grasp, and video screenshots for each instance.",
+      "Example code is provided for MATLAB and R, demonstrating how to load in the dataset and produce simple plots. Overview of the data. First, the grasp type and the highlevel object and task names were assigned. Object and task properties were then added based on the object and task names."
+    ],
+    "title": "(PDF) The Yale human grasping dataset: Grasp, object, and task ...",
+    "url": "https://www.researchgate.net/publication/276383809_The_Yale_human_grasping_dataset_Grasp_object_and_task_data_in_household_and_machine_shop_environments"
+  },
+  {
+    "description": "Our proposed method, which leverages ... rate in real-world tests. We believe that our insights into grasping methodologies and dataset construction could offer valuable guidance for researchers working on similar tasks....",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Our proposed method, which leverages a generative model conditioned on local features, outperforms all baselines in simulation and achieves a 90.7% success rate in real-world tests. We believe that our insights into grasping methodologies and dataset construction could offer valuable guidance for researchers working on similar tasks.",
+      "Specifically, our training dataset primarily consists of power grasps that utilize all fingers, resulting in a single-mode distribution of ... italic_f start_POSTSUBSCRIPT italic_s end_POSTSUBSCRIPT. Consequently, the deterministic model regressing ... italic_\u03b8 is not confused by this data distribution; instead, it potentially becomes more robust to outliers. Essentially, the outcomes of this ablation group are highly specific to our task and training data.",
+      "G provides additional visualizations showcasing our dataset and model. We provide additional details on the experiment settings due to space constraints in the main paper. Sec. A.1 delineates how we evaluate a grasp in a simulator and enumerates some of the physics parameters involved.",
+      "As our generative model considers all grasping poses from the dataset as successful, and since the original GraspNet-1Billion dataset [14] includes some imperfect poses, we introduce a data filtering and refinement process before training."
+    ],
+    "title": "DexGraspNet 2.0: Learning Generative Dexterous Grasping in ...",
+    "url": "https://arxiv.org/html/2410.23004v1"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=events.infovaya.com&size=128",
+    "snippets": [],
+    "title": "Infovaya",
+    "url": "https://events.infovaya.com/uploads/documents/pdfviewer/a8/e2/133987-0520.pdf"
+  },
+  {
+    "description": "A grasping dataset from simulation using Shadow Robot's Smart Grasping Sandbox",
+    "favicon_url": "https://you.com/favicon?domain=www.kaggle.com&size=128",
+    "snippets": [],
+    "title": "Grasping Dataset | Kaggle",
+    "url": "https://www.kaggle.com/datasets/ugocupcic/grasping-dataset"
+  },
+  {
+    "description": "Task-oriented grasping (TOG), which refers to synthesizing grasps on an object that are configurationally compatible with the downstream manipulation task, is the first milestone towards tool manipulation. Analogous to the activation of two brain regions responsible for semantic and geometric ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Task-oriented grasping (TOG), which refers to synthesizing grasps on an object that are configurationally compatible with the downstream manipulation task, is the first milestone towards tool manipulation. Analogous to the activation of two brain regions responsible for semantic and geometric reasoning during cognitive processes, modeling the intricate relationship between objects, tasks, and grasps necessitates rich semantic and geometric prior knowledge about these elements.",
+      "Abstract page for arXiv paper 2404.10399: FoundationGrasp: Generalizable Task-Oriented Grasping with Foundation Models",
+      "Extensive experiments are conducted on the contributed Language and Vision Augmented TaskGrasp (LaViA-TaskGrasp) dataset, demonstrating the superiority of FoundationGrasp over existing methods when generalizing to novel object instances, object classes, and tasks out of the training set. Furthermore, the effectiveness of FoundationGrasp is validated in real-robot grasping and manipulation experiments on a 7-DoF robotic arm.",
+      "View a PDF of the paper titled FoundationGrasp: Generalizable Task-Oriented Grasping with Foundation Models, by Chao Tang and 4 other authors View PDF HTML (experimental)"
+    ],
+    "title": "[2404.10399] FoundationGrasp: Generalizable Task-Oriented Grasping ...",
+    "url": "https://arxiv.org/abs/2404.10399"
+  },
+  {
+    "description": "This paper addresses the problem of optimal grasping of an object with a multi-fingered robotic hand for accomplishing a given task. The task is first\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The grasp quality is computed through a task compatibility criterion. Grasp synthesis is then formulated as a single constrained optimization problem, generating grasps that are feasible for the hand\u2019s kinematics by maximizing the corresponding task-oriented quality criterion and ensuring grasp stability.",
+      "Given an analytical representation of the object and a hand kinematical model, this paragraph shows the formulation of grasp synthesis as a constrained optimization problem. Our objective function tries to maximize the task-oriented quality measure while satisfying force-closure constraints, hand kinematic constraints and collision constraints.",
+      "D model is obtained, its main axes in the force/torque domain as well their relative importance could be identified and plugged into a task-oriented quality criterion. This quality measure was used as an objective function in the formulation of grasp synthesis as an optimization problem generating grasps that are feasible for the",
+      "One fundamental challenge in robotic grasping is: given a particular hand, an object and a task to perform, what is the optimal grasp of the object permitting to efficiently accomplish the task? In order to answer this question, two main issues need to be addressed: (1) capturing and modeling the task requirements and (2) finding the best hand configuration that is adapted to the task."
+    ],
+    "title": "On computing task-oriented grasps - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0921889014002905"
+  },
+  {
+    "description": "To perform household tasks, assistive robots receive commands in the form of user language instructions for tool manipulation. The initial stage involves selecting the intended tool (i.e., object grounding) and grasping it in a task-oriented manner (i.e., task grounding).",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract page for arXiv paper 2302.14355: Task-Oriented Grasp Prediction with Visual-Language Inputs",
+      "Motivated by this problem, this paper proposes GraspCLIP, which addresses the challenge of task grounding in addition to object grounding to enable task-oriented grasp prediction with visual-language inputs. Evaluation on a custom dataset demonstrates that GraspCLIP achieves superior performance over established baselines with object grounding only.",
+      "The effectiveness of the proposed method is further validated on an assistive robotic arm platform for grasping previously unseen kitchen tools given the task specification. Our presentation video is available at: this https URL. From: Huang Dehao [view email] [v1] Tue, 28 Feb 2023 07:17:25 UTC (20,863 KB) ... View a PDF of the paper titled Task-Oriented Grasp Prediction with Visual-Language Inputs, by Chao Tang and 4 other authors",
+      "View a PDF of the paper titled Task-Oriented Grasp Prediction with Visual-Language Inputs, by Chao Tang and 4 other authors View PDF"
+    ],
+    "title": "[2302.14355] Task-Oriented Grasp Prediction with Visual-Language ...",
+    "url": "https://arxiv.org/abs/2302.14355"
+  },
+  {
+    "description": "Next, we present quantitative and ... for task-oriented hand pose synthesis across 10 tasks. We also deploy some synthesized poses in the real world. Finally, we compare with DexGraspNet [4] to show our superiority in large-scale force closure grasp synthesis. Experiment setup. To validate the efficiency of our GWS estimator, we experiment with 3 parameters: the number of contact points ... italic_m contact points on 49 objects from YCB dataset [40], and ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Next, we present quantitative and qualitative results for task-oriented hand pose synthesis across 10 tasks. We also deploy some synthesized poses in the real world. Finally, we compare with DexGraspNet [4] to show our superiority in large-scale force closure grasp synthesis. Experiment setup. To validate the efficiency of our GWS estimator, we experiment with 3 parameters: the number of contact points ... italic_m contact points on 49 objects from YCB dataset [40], and use them to calculate GWS.",
+      "Our key insight is to align the Task Wrench Space (TWS) and the Grasp Wrench Space (GWS), where TWS represents the wrench set that the hand should apply to the object and GWS represents what the hand can apply. Formally, we achieve this by constructing an objective function and minimizing it using gradient-based optimization. This approach can automatically synthesize task-oriented hand poses by simply providing an object mesh and defining a TWS, without requiring additional human demonstrations. Some examples are shown in Fig.",
+      "Our final version performs equally well on different tasks, while other variants fail in some cases. Figure 5: Visualization of synthesized task-oriented poses. We show similar poses for the Shadow hand and the LEAP hand, but different poses for the Allegro hand. Experiment setup. As there is no standard benchmark for evaluating task-oriented dexterous grasp synthesis, we gathered 10 different objects and created 10 unique tasks.",
+      "Based on the above example, we only modify some necessary parts for a different task. This usually involves modifying ... bold_w start_POSTSUBSCRIPT italic_t end_POSTSUBSCRIPT, determining which hand fingers to use, and setting the initial hand position and orientation. Specifically, for precision grasps, we set"
+    ],
+    "title": "Task-Oriented Dexterous Hand Pose Synthesis Using Differentiable ...",
+    "url": "https://arxiv.org/html/2309.13586v3"
+  },
+  {
+    "description": "Methods based on manually annotated task-oriented grasp data. The high cost of manual annotation and generalization limitations remain key challenges for these approaches. Murali et al. [16] introduce TaskGrasp, a manually curated large-scale TOG dataset, alongside GCNGrasp, which improves ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Methods based on manually annotated task-oriented grasp data. The high cost of manual annotation and generalization limitations remain key challenges for these approaches. Murali et al. [16] introduce TaskGrasp, a manually curated large-scale TOG dataset, alongside GCNGrasp, which improves novel object generalization using semantic knowledge from pre-built knowledge graphs.",
+      "However, these methods remain constrained to objects/tasks resembling those in costly manual annotated datasets [18]. Methods based on large-scale internet data. Benefiting from Vision-Language Models (VLMs) pre-trained on massive web data, recent studies [19, 20, 21] have explored zero-shot task-oriented grasp generation capabilities.",
+      "However, these methods face two fundamental limitations: (1) the absence of fine-grained object understanding data essential for task-oriented grasping in pre-training datasets, and (2) their capability being limited to predicting task-related grasp regions.",
+      "In the bottom-right section, we compare our method with baseline approaches in terms of average task-oriented grasping success rate and average inference time. The remaining sections present the average success rates across 24 object categories (out of 236 total object instances) from the dataset."
+    ],
+    "title": "HGDiffuser: Efficient Task-Oriented Grasp Generation via Human-Guided ...",
+    "url": "https://arxiv.org/html/2503.00508v1"
+  },
+  {
+    "description": "Download scientific diagram | Example objects from the Cornell grasping dataset. [13]. This dataset contains objects from a large variety of categories. from publication: Deep Learning for Detecting Robotic Grasps | We consider the problem of detecting robotic grasps in an RGB-D view of a scene ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Download scientific diagram | Example objects from the Cornell grasping dataset. [13]. This dataset contains objects from a large variety of categories. from publication: Deep Learning for Detecting Robotic Grasps | We consider the problem of detecting robotic grasps in an RGB-D view of a scene containing objects.",
+      "A commonly used parameterization for an oriented grasp rectangle g is a five-dimensional vector g = (x, y, w, h, \u03b8) (Jiang et al., 2011), where (x, y) denotes the center of the grasp, w and h represent the width and height of the grasp rectangle, and \u03b8 \u2208 [\u2212 \u03c0 2 , \u03c0 2 ] is the orientation angle. ... TD-TOG Dataset: Benchmarking Zero-Shot and One-Shot Task-Oriented Grasping for Object Generalization",
+      "Task-oriented grasping (TOG) is an essential preliminary step for robotic task execution, which involves predicting grasps on regions of target objects that facilitate intended tasks. Existing literature reveals there is a limited availability of TOG datasets for training and benchmarking despite large demand, which are often synthetic or have artifacts in mask annotations that hinder model performance.",
+      "Moreover, TOG solutions often require affordance masks, grasps, and object masks for training, however, existing datasets typically provide only a subset of these annotations. To address these limitations, we introduce the Top-down Task-oriented Grasping (TD-TOG) dataset, designed to train and evaluate TOG solutions."
+    ],
+    "title": "Example objects from the Cornell grasping dataset. [13]. This ...",
+    "url": "https://www.researchgate.net/figure/Example-objects-from-the-Cornell-grasping-dataset-13-This-dataset-contains-objects_fig5_319770233"
+  },
+  {
+    "description": "We present GrasMolmo, a generalizable open-vocabulary task-oriented grasping (TOG) model. GraspMolmo predicts semantically appropriate, stable grasps conditioned on a natural language instruction and a single RGB-D frame. For instance, given \"pour me some tea\", GraspMolmo selects a grasp on a teapot handle rather than its body. Unlike prior TOG methods, which are limited by small datasets...",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "We present GrasMolmo, a generalizable open-vocabulary task-oriented grasping (TOG) model. GraspMolmo predicts semantically appropriate, stable grasps conditioned on a natural language instruction and a single RGB-D frame. For instance, given \"pour me some tea\", GraspMolmo selects a grasp on a teapot handle rather than its body. Unlike prior TOG methods, which are limited by small datasets, simplistic language, and uncluttered scenes, GraspMolmo learns from PRISM, a novel large-scale synthetic dataset of 379k samples featuring cluttered environments and diverse, realistic task descriptions.",
+      "We release our synthetic dataset, code, model, and benchmarks to accelerate research in task-semantic robotic manipulation, which, along with videos, are available at https://abhaybd.github.io/GraspMolmo/. ... This study introduces a novel language-guided diffusion-based learning framework, DexTOG, aimed at advancing the field of task-oriented grasping (TOG) with dexterous hands.",
+      "We also conduct experiments on the tasks of hand-object affordance understanding and affordance-oriented hand-object interaction generation, to validate the effectiveness of our dataset in learning the fine-grained hand-object interactions. Project page: https://github.com/GentlesJan/AffordPose. ... Robotic grasping in cluttered environments remains a significant challenge due to occlusions and complex object arrangements.",
+      "To enable affordance-oriented manipulation, we further introduce Aff-Grasp, a framework that combines GKT with a grasp generation model. For comprehensive evaluation, we create an affordance evaluation dataset with pixel-wise annotations, and design real-world tasks for robot experiments."
+    ],
+    "title": "Daily Papers - Hugging Face",
+    "url": "https://huggingface.co/papers?q=Task-oriented+grasping+(TOG)"
+  },
+  {
+    "description": "This ablation study shows that training an object pose predictor with the hand pose information is better than training without this information and the results on a real-world dataset show the applicability and competitiveness of the method over state-of-the-art.",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "This ablation study shows that training an object pose predictor with the hand pose information is better than training without this information and the results on a real-world dataset show the applicability and competitiveness of the method over state-of-the-art.Expand ... Task-Oriented Grasping (opens in a new tab)RGB-D Dataset (opens in a new tab)Object Pose (opens in a new tab)Hand Poses (opens in a new tab)Novel Objects (opens in a new tab)Grasps (opens in a new tab)Supervision (opens in a new tab)Recursive Graph Bisection (opens in a new tab)",
+      "A generative model is introduced that jointly reasons in all levels and refines the 51-DoF of a 3D hand model that minimize a graspability loss, and can robustly predict realistic grasps, even in cluttered scenes with multiple objects in close contact.Expand ... An explicit contact representation namely Contact Potential Field (CPF), and a learning-fitting hybrid framework namely MIHO to Modeling the Interaction of Hand and Object are presented.Expand ... Omid TaheriN. GhorbaniMichael J. BlackDimitrios Tzionas ... This work collects a new dataset, called GRAB (GRasping Actions with Bodies), of whole-body grasps, containing full 3D shape and pose sequences of 10 subjects interacting with 51 everyday objects of varying shape and size, and trains GrabNet, a conditional generative network, to predict 3D handgrasps for unseen 3D object shapes.Expand",
+      "The key idea is to embed an object-centric visual affordance model within a deep reinforcement learning loop to learn grasping policies that favor the same object regions favored by people.Expand ... Adithyavairavan MuraliWeiyu LiuKenneth MarinoS. ChernovaA. Gupta ... The GCNGrasp framework is presented which uses the semantic knowledge of objects and tasks encoded in a knowledge graph to generalize to new object instances, classes and even new tasks.Expand",
+      "This work presents an end-to-end learnable model that exploits a novel contact loss that favors phys- ically plausible hand-object constellations, and improves grasp quality metrics over baselines, using RGB images as input.Expand ... R. DetryJeremie PaponL. Matthies ... A key element of this work is to use a deep network to integrate contextual task cues, and defer the structured-output problem of gripper pose computation to an explicit (learned) geometric model.Expand"
+    ],
+    "title": "[PDF] Learning Task-Oriented Grasping From Human Activity Datasets ...",
+    "url": "https://www.semanticscholar.org/paper/Learning-Task-Oriented-Grasping-From-Human-Activity-Kokic-Kragic/7e570ac7ddbfad80a10262408a68dbc8c6c87b5f"
+  },
+  {
+    "description": "This paper presents a dataset of human grasping behavior in unstructured environments. Wide-angle head-mounted camera video was recorded from two housekeepers a...",
+    "favicon_url": "https://you.com/favicon?domain=journals.sagepub.com&size=128",
+    "snippets": [
+      "This paper presents a dataset of human grasping behavior in unstructured environments. Wide-angle head-mounted camera video was recorded from two housekeepers and two machinists during their regular work activities, and the grasp types, objects, and tasks were analyzed and coded by study staff.",
+      "Feix T, Bullock IM, Dollar AM (2014a) Analysis of human grasping behavior: Correlating tasks, objects and grasps. IEEE Transactions on Haptics. Epub ahead of print 24 September 2014. ... Feix T, Bullock IM, Dollar AM (2014b) Analysis of human grasping behavior: Object characteristics and grasp type. IEEE Transactions on Haptics 7(3): 311\u2013323. ... Kemp CC (2005) A wearable system that learns a kinematic model and finds structure in everyday manipulation by using absolute orientation sensors and a camera.",
+      "For these instances, the principal first grasp is taken. Between the studies of Bullock et al. (2013) and Feix et al. (2014a, 2014b), some additional cleanup was performed. Specifically, some damaged video files could not be used and were removed from the dataset, making the final data duration 6.9 hours per participant.",
+      "Inter-rater assessment was also used for each of the grasp and task properties. The final Pearson correlation (\u03c1) and Cohen\u2019s \u03ba for these properties can be seen in Figure 1. Some values are particularly high, such as the correlation for the major object dimensions (\u03c1 = 0.8\u20130.9), while other properties, such as the task class, proved much harder for human raters to classify consistently (\u03ba = 0.37)."
+    ],
+    "title": "The Yale human grasping dataset: Grasp, object, and task data in ...",
+    "url": "https://journals.sagepub.com/doi/10.1177/0278364914555720"
+  },
+  {
+    "description": "We present GraspMolmo, a generalizable open-vocabulary task-oriented grasping (TOG) model. GraspMolmo predicts semantically appropriate, stable grasps conditioned on a natural language instruction and a single RGB-D frame. For instance, given \u201cpour me some tea,\u201d GraspMolmo selects a grasp on a teapot handle rather than its body. Unlike prior TOG methods, which are limited by small datasets...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "We present GraspMolmo, a generalizable open-vocabulary task-oriented grasping (TOG) model. GraspMolmo predicts semantically appropriate, stable grasps conditioned on a natural language instruction and a single RGB-D frame. For instance, given \u201cpour me some tea,\u201d GraspMolmo selects a grasp on a teapot handle rather than its body. Unlike prior TOG methods, which are limited by small datasets, simplistic language, and uncluttered scenes, GraspMolmo learns from PRISM, a novel large-scale synthetic dataset of 379k samples featuring cluttered environments and diverse, realistic task descriptions.",
+      "These task-specific differences highlight the need for task-oriented grasping (TOG): The same physical object requires dramatically different grasps depending on the intended task [1, 2]. Recent work has introduced datasets and benchmarks [2, 3, 4], but they are limited in realism and diversity. Some contain relatively simple scenes without clutter and lack diverse object categories [2]. Others often templatize (e.g., \u201cgrasp the mug to pour\u201d or \u201cgrasp the pan to clean\u201d).",
+      "GraspMolmo also successfully demonstrates the ability to predict semantically correct bimanual grasps zero-shot. We release our synthetic dataset, code, model, and benchmarks to accelerate research in task-semantic robotic manipulation, which, along with videos, are available at this URL. Keywords: Robots, Learning, Task-Oriented Grasping, Manipulation",
+      "GraspMolmo achieves state-of-the-art results on the TaskGrasp benchmark (76.7% versus the next best prior work at 72.3%). GraspMolmo also achieves significant performance boost on our benchmark of simulated cluttered scenes (62.5% versus 40.0%). Naturally, simulated evaluations are only a proxy, but we further demonstrate GraspMolmo transfers zero-shot to the real world in cluttered scenes, including objects and tasks completely unseen in training (70.4% prediction and 61.1% overall success rates). GraspMolmo also zero-shot transfers to semantically-appropriate bimanual grasping in qualitative testing. We will release our dataset, model, code, and benchmarks to enable further research in task-semantic manipulation. Task-oriented grasping."
+    ],
+    "title": "GraspMolmo: Generalizable Task-Oriented Grasping via Large-Scale ...",
+    "url": "https://arxiv.org/html/2505.13441v1"
+  },
+  {
+    "description": "Dex-Net 2.0 is designed to generated training datasets to learn Grasp Quality Convolutional Neural Networks (GQ-CNN) models that predict the probability of success of candidate parallel-jaw grasps on objects from point clouds. GQ-CNNs may be useful for quickly planning grasps that can lift and transport a wide variety of objects a physical robot. Dex-Net 2.1 adds dynamic simulation with pybullet and extends the robust grasping model to the sequential task ...",
+    "favicon_url": "https://you.com/favicon?domain=berkeleyautomation.github.io&size=128",
+    "snippets": [
+      "Dex-Net 2.0 is designed to generated training datasets to learn Grasp Quality Convolutional Neural Networks (GQ-CNN) models that predict the probability of success of candidate parallel-jaw grasps on objects from point clouds. GQ-CNNs may be useful for quickly planning grasps that can lift and transport a wide variety of objects a physical robot. Dex-Net 2.1 adds dynamic simulation with pybullet and extends the robust grasping model to the sequential task of bin picking.",
+      "The Dexterity Network (Dex-Net) is a research project including code, datasets, and algorithms for generating datasets of synthetic point clouds, robot parallel-jaw grasps and metrics of grasp robustness based on physics for thousands of 3D object models to train machine learning-based methods to plan robot grasps.",
+      "This paper explores \u201cambidextrous\u201d robot grasping, where two or more heterogeneous grippers are used. We present Dexterity Network (Dex-Net) 4.0, a substantial extension to previous versions of Dex-Net that learns policies for a given set of grippers by training on synthetic datasets using domain randomization with analytic models of physics and geometry.",
+      "We collect synthetic demonstrations of bin picking from an algorithmic supervisor uses full state information to optimize for the most robust collision-free grasp in a forward simulator based on pybullet to model dynamic object-object interactions and robust wrench space analysis from the Dexterity Network (Dex-Net) to model quasi-static contact between the gripper and object. We learn a policy by fine-tuning a Grasp Quality CNN on Dex-Net 2.1 to classify the supervisor's actions from a dataset of 10,000 rollouts of the supervisor in the simulator with noise injection."
+    ],
+    "title": "Dex-Net by BerkeleyAutomation",
+    "url": "https://berkeleyautomation.github.io/dex-net/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=hal.science&size=128",
+    "snippets": [],
+    "title": "One-shot Learning for Task-oriented Grasping",
+    "url": "https://hal.science/hal-04317959v1/file/One_shot_Learning_for_Task_oriented_Grasping.pdf"
+  },
+  {
+    "description": "Training computers to understand, ... a rich dataset containing complex 3D object shapes, detailed contact information, hand pose and shape, and the 3D body motion over time. ... SceneDiffuser provides a unified model for solving scene-conditioned generation, optimization, and planning. ... Inherent morphological characteristics in objects may offer a wide range of plausible grasping orientations that obfuscates ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Training computers to understand, model, and synthesize human grasping requires a rich dataset containing complex 3D object shapes, detailed contact information, hand pose and shape, and the 3D body motion over time. ... SceneDiffuser provides a unified model for solving scene-conditioned generation, optimization, and planning. ... Inherent morphological characteristics in objects may offer a wide range of plausible grasping orientations that obfuscates the visual learning of robotic grasping.",
+      "This work proposes a framework to learn task-relevant grasping for industrial objects without the need of time-consuming real-world data collection or manual annotation. ... We start to collect 1, 800 common household objects and annotate their affordances to construct the first knowledge base: Oak. ... Vision-based grasp estimation is an essential part of robotic manipulation tasks in the real world."
+    ],
+    "title": "Papers with Code - Grasp Generation",
+    "url": "https://paperswithcode.com/task/grasp-generation"
+  },
+  {
+    "description": "This paper presents a grasping database collected from multiple human subjects for activities of daily living in unstructured environments. The main strength of this database is the use of three different sensing modalities: color images from a head-mounted action camera, distance data from ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "This paper presents a grasping database collected from multiple human subjects for activities of daily living in unstructured environments. The main strength of this database is the use of three different sensing modalities: color images from a head-mounted action camera, distance data from a depth sensor on the dominant arm and upper body kinematic data acquired from an inertial motion capture suit.",
+      "Scientific Data - Human grasping database for activities of daily living with depth, color and kinematic data streams",
+      "Generation and annotation of a versatile database for grasp planning is an arduous task. Researchers usually seek balance in data representation and focus on one of the components of the grasp planning, e.g. target object shape information. The Columbia Grasp Dataset11 exemplifies this tendency, where Goldfeder et al.",
+      "The annotation information is provided as a CSV file in the root of the Figshare dataset (Data Citation 1). There are 12 columns in the annotation file. The file indicates the ID of the grasp and the participant to whom it belongs. In addition, the file identifies the grasp type as identified from the taxonomy, task type as annotated by human experts and start and end frames of the episode to locate them in the GoPro video files."
+    ],
+    "title": "Human grasping database for activities of daily living with depth, ...",
+    "url": "https://www.nature.com/articles/sdata2018101"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.mlr.press&size=128",
+    "snippets": [],
+    "title": "Language Embedded Radiance Fields for Zero-Shot Task ...",
+    "url": "https://proceedings.mlr.press/v229/rashid23a/rashid23a.pdf"
+  },
+  {
+    "description": "To address the challenge of grasping multi-target objects with uncertain shape, attitude, scale, and stacking, this study proposes a high-performance planar pixel-level grasping network called random sub-path grasp fusion network (RSPFG-Net). The paper introduces the agile grasping representation ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "To address the challenge of grasping multi-target objects with uncertain shape, attitude, scale, and stacking, this study proposes a high-performance planar pixel-level grasping network called random sub-path grasp fusion network (RSPFG-Net). The paper introduces the agile grasping representation (AGR) strategy for dexterous grasping of target objects and constructs a Multi-objects Grasping Dataset (NEU-MGD).",
+      "Scientific Reports - Robot multi-target high performance grasping detection based on random sub-path fusion",
+      "Previous research papers mostly focused on predicting only the width of the mechanical jaws\u2019 spread, which may result in missing some actual gripping positions. Both the publicly available Cornell and Jacquard fetching datasets focus on single-target fetching tasks. The multi-objective Graspnet-1 billion and Acronym datasets achieve grasping robustness through point cloud processing, and obtain grasping gestures from 6D attitude projection scenes of objects.",
+      "From this, we calculate the grab angle by \\(\\theta = 2\\pi k/K\\). Predicting grasping angles is a task that involves multiple labels within a single category. To avoid competition between categories, we normalize the output of the angle header using a sigmoid function. The width head outputs the grab width corresponding to each point. This paper introduces the NEU-MGD Northeastern University multi-target grasping dataset, which includes single targets, discrete multi-targets, and stacked multi-targets."
+    ],
+    "title": "Robot multi-target high performance grasping detection based on ...",
+    "url": "https://www.nature.com/articles/s41598-025-93490-8"
+  },
+  {
+    "description": "Request PDF | GraspGPT: Leveraging Semantic Knowledge From a Large Language Model for Task-Oriented Grasping | Task-oriented grasping (TOG) refers to the problem of predicting grasps on an object that enable subsequent manipulation tasks. To model the... | Find, read and cite all the research ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Request PDF | GraspGPT: Leveraging Semantic Knowledge From a Large Language Model for Task-Oriented Grasping | Task-oriented grasping (TOG) refers to the problem of predicting grasps on an object that enable subsequent manipulation tasks. To model the... | Find, read and cite all the research you need on ResearchGate",
+      "However, these methods remain constrained to objects/tasks resembling those in costly manual annotated datasets [18]. ... ... As illustrated in the lower part of Figure 3, we extract explicit taskoriented constraints from the human grasp demonstration to compute the loss function L(X h , H, X o ), which serves as the guidance. To satisfy the task-oriented requirements of parallel-jaw grasps, two constraints are typically essential: the task-oriented grasp region constraint and the taskoriented grasp orientation constraint [2],",
+      "With an aim to get more general and practical grasp models, in this paper, we investigate the problem named Task-Oriented 6-DoF Grasp Pose Detection in Clutters (TO6DGC), which extends the task-oriented problem to a more general 6-DOF Grasp Pose Detection in Cluttered (multi-object) scenario. To this end, we construct a large-scale 6-DoF task-oriented grasping dataset, 6-DoF Task Grasp (6DTG), which features 4391 cluttered scenes with over 2 million 6-DoF grasp poses.",
+      "Real robot experiments also verify that our OSTG has a better perception of the task-oriented grasp points and 6-DoF grasp poses. ... ... To learn such TOG skills, training-based methods typically require the collection and manual annotation of TOG datasets covering a variety of tasks and objects, which are then used for training TOG models."
+    ],
+    "title": "GraspGPT: Leveraging Semantic Knowledge From a Large Language Model ...",
+    "url": "https://www.researchgate.net/publication/374244573_GraspGPT_Leveraging_Semantic_Knowledge_from_a_Large_Language_Model_for_Task-Oriented_Grasping"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.neurips.cc&size=128",
+    "snippets": [],
+    "title": "Neurips",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/5367f6d58cc98dc929e1b27fcaf2b0a6-Paper-Conference.pdf"
+  },
+  {
+    "description": "This paper presents a grasping database collected from multiple human subjects for activities of daily living in unstructured environments. The main strength of this database is the use of three different sensing modalities: color images from a head-mounted action camera, distance data from ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "This paper presents a grasping database collected from multiple human subjects for activities of daily living in unstructured environments. The main strength of this database is the use of three different sensing modalities: color images from a head-mounted action camera, distance data from a depth sensor on the dominant arm and upper body kinematic data acquired from an inertial motion capture suit.",
+      "Scientific Data - Human grasping database for activities of daily living with depth, color and kinematic data streams",
+      "Generation and annotation of a versatile database for grasp planning is an arduous task. Researchers usually seek balance in data representation and focus on one of the components of the grasp planning, e.g. target object shape information. The Columbia Grasp Dataset11 exemplifies this tendency, where Goldfeder et al.",
+      "The annotation information is provided as a CSV file in the root of the Figshare dataset (Data Citation 1). There are 12 columns in the annotation file. The file indicates the ID of the grasp and the participant to whom it belongs. In addition, the file identifies the grasp type as identified from the taxonomy, task type as annotated by human experts and start and end frames of the episode to locate them in the GoPro video files."
+    ],
+    "title": "Human grasping database for activities of daily living with depth, ...",
+    "url": "https://www.nature.com/articles/sdata2018101"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.mlr.press&size=128",
+    "snippets": [],
+    "title": "Language Embedded Radiance Fields for Zero-Shot Task ...",
+    "url": "https://proceedings.mlr.press/v229/rashid23a/rashid23a.pdf"
+  },
+  {
+    "description": "To address the challenge of grasping multi-target objects with uncertain shape, attitude, scale, and stacking, this study proposes a high-performance planar pixel-level grasping network called random sub-path grasp fusion network (RSPFG-Net). The paper introduces the agile grasping representation ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "To address the challenge of grasping multi-target objects with uncertain shape, attitude, scale, and stacking, this study proposes a high-performance planar pixel-level grasping network called random sub-path grasp fusion network (RSPFG-Net). The paper introduces the agile grasping representation (AGR) strategy for dexterous grasping of target objects and constructs a Multi-objects Grasping Dataset (NEU-MGD).",
+      "Scientific Reports - Robot multi-target high performance grasping detection based on random sub-path fusion",
+      "Previous research papers mostly focused on predicting only the width of the mechanical jaws\u2019 spread, which may result in missing some actual gripping positions. Both the publicly available Cornell and Jacquard fetching datasets focus on single-target fetching tasks. The multi-objective Graspnet-1 billion and Acronym datasets achieve grasping robustness through point cloud processing, and obtain grasping gestures from 6D attitude projection scenes of objects.",
+      "From this, we calculate the grab angle by \\(\\theta = 2\\pi k/K\\). Predicting grasping angles is a task that involves multiple labels within a single category. To avoid competition between categories, we normalize the output of the angle header using a sigmoid function. The width head outputs the grab width corresponding to each point. This paper introduces the NEU-MGD Northeastern University multi-target grasping dataset, which includes single targets, discrete multi-targets, and stacked multi-targets."
+    ],
+    "title": "Robot multi-target high performance grasping detection based on ...",
+    "url": "https://www.nature.com/articles/s41598-025-93490-8"
+  },
+  {
+    "description": "Request PDF | GraspGPT: Leveraging Semantic Knowledge From a Large Language Model for Task-Oriented Grasping | Task-oriented grasping (TOG) refers to the problem of predicting grasps on an object that enable subsequent manipulation tasks. To model the... | Find, read and cite all the research ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Request PDF | GraspGPT: Leveraging Semantic Knowledge From a Large Language Model for Task-Oriented Grasping | Task-oriented grasping (TOG) refers to the problem of predicting grasps on an object that enable subsequent manipulation tasks. To model the... | Find, read and cite all the research you need on ResearchGate",
+      "However, these methods remain constrained to objects/tasks resembling those in costly manual annotated datasets [18]. ... ... As illustrated in the lower part of Figure 3, we extract explicit taskoriented constraints from the human grasp demonstration to compute the loss function L(X h , H, X o ), which serves as the guidance. To satisfy the task-oriented requirements of parallel-jaw grasps, two constraints are typically essential: the task-oriented grasp region constraint and the taskoriented grasp orientation constraint [2],",
+      "With an aim to get more general and practical grasp models, in this paper, we investigate the problem named Task-Oriented 6-DoF Grasp Pose Detection in Clutters (TO6DGC), which extends the task-oriented problem to a more general 6-DOF Grasp Pose Detection in Cluttered (multi-object) scenario. To this end, we construct a large-scale 6-DoF task-oriented grasping dataset, 6-DoF Task Grasp (6DTG), which features 4391 cluttered scenes with over 2 million 6-DoF grasp poses.",
+      "Real robot experiments also verify that our OSTG has a better perception of the task-oriented grasp points and 6-DoF grasp poses. ... ... To learn such TOG skills, training-based methods typically require the collection and manual annotation of TOG datasets covering a variety of tasks and objects, which are then used for training TOG models."
+    ],
+    "title": "GraspGPT: Leveraging Semantic Knowledge From a Large Language Model ...",
+    "url": "https://www.researchgate.net/publication/374244573_GraspGPT_Leveraging_Semantic_Knowledge_from_a_Large_Language_Model_for_Task-Oriented_Grasping"
+  },
+  {
+    "description": "Request PDF | On Oct 23, 2022, Wenkai Chen and others published Learning 6-DoF Task-oriented Grasp Detection via Implicit Estimation and Visual Affordance | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "With an aim to get more general and practical grasp models, in this paper, we investigate the problem named Task-Oriented 6-DoF Grasp Pose Detection in Clutters (TO6DGC), which extends the task-oriented problem to a more general 6-DOF Grasp Pose Detection in Cluttered (multi-object) scenario. To this end, we construct a large-scale 6-DoF task-oriented grasping dataset, 6-DoF Task Grasp (6DTG), which features 4391 cluttered scenes with over 2 million 6-DoF grasp poses.",
+      "Results show our method achieves satisfactory performance and efficiency in reference identification, affordance inference, and 3D part-aware grasping. Our dataset and code are available on our project website https://sites.google.com/view/lang-shape ... ... Task-oriented grasping (TOG) is necessary for robots to perform these tasks.",
+      "The accuracy and robustness of grasp pose detection are improved by a novel method for calculating local reference frame as well as a position-sensitive fully convolutional neural network for grasp stability classification. Experiments on benchmark datasets have shown that our method outperforms the state-of-the-art methods. We have also validated our method in real-world and task-specific grasping scenes, in which higher success rate for task-oriented grasping is achieved.",
+      "Task-Oriented 6-DoF Grasp Pose Detection in Clutters ... In general, humans would grasp an object differently for different tasks, e.g., \"grasping the handle of a knife to cut\" vs. \"grasping the blade to hand over\". In the field of robotic grasp pose detection research, some existing works consider this task-oriented grasping and made some progress, but they are generally constrained by low-DoF gripper type or non-cluttered setting, which is not applicable for human assistance in real life."
+    ],
+    "title": "Learning 6-DoF Task-oriented Grasp Detection via Implicit Estimation ...",
+    "url": "https://www.researchgate.net/publication/366612933_Learning_6-DoF_Task-oriented_Grasp_Detection_via_Implicit_Estimation_and_Visual_Affordance"
+  },
+  {
+    "description": "Download scientific diagram | Sample of Cornell Grasp dataset [60]. from publication: Review of Deep Learning Methods in Robotic Grasp Detection | For robots to attain more general-purpose utility, grasping is a necessary skill to master. Such general-purpose robots may use their perception ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Download scientific diagram | Sample of Cornell Grasp dataset [60]. from publication: Review of Deep Learning Methods in Robotic Grasp Detection | For robots to attain more general-purpose utility, grasping is a necessary skill to master. Such general-purpose robots may use their perception abilities to visually identify grasps for a given object.",
+      "However, the LLM's knowledge about objects' physical properties remains underexplored despite its tight relevance to grasping. In this work, we propose GraspCoT, a 6-DoF grasp detection framework that integrates a Chain-of-Thought (CoT) reasoning mechanism oriented to physical properties, guided by auxiliary question-answering (QA) tasks.",
+      "The effectiveness of deep learning models for vision-based intelligent robotic grasping (IRG) tasks typically hinges upon the deep neural network (DNN) architecture as well as the task-oriented annotated training samples.",
+      "Some of these methods make use of deep learning to forecast the optimal grasping stance based on sensory information. ... Vision-based intelligent robot grasping using sparse neural network ... G. C. Nandi \u00b7 In the modern era of Deep Learning, network parameters are crucial for model efficiency but come with drawbacks like high computational demands and memory requirements, making them less suitable for real-time intelligent robot grasping tasks."
+    ],
+    "title": "Sample of Cornell Grasp dataset [60]. | Download Scientific Diagram",
+    "url": "https://www.researchgate.net/figure/Sample-of-Cornell-Grasp-dataset-60_fig4_327523919"
+  },
+  {
+    "description": "A novel system for task-oriented grasping called the One-Shot Task-Oriented Grasping (OS-TOG) framework, which comprises four interchangeable neural networks that interact through dependable reasoning components, resulting in a single system that predicts multiple grasp candidates for a specific ...",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [
+      "A novel system for task-oriented grasping called the One-Shot Task-Oriented Grasping (OS-TOG) framework, which comprises four interchangeable neural networks that interact through dependable reasoning components, resulting in a single system that predicts multiple grasp candidates for a specific object and task from multi-object scenes.Expand",
+      "This ablation study shows that training an object pose predictor with the hand pose information is better than training without this information and the results on a real-world dataset show the applicability and competitiveness of the method over state-of-the-art.Expand ... A framework of task-oriented dexterous grasping is proposed to learn grasp knowledge from human experience and to deploy the grasp strategies while adapting to grasp context and achieved a hit rate of 100% for grasp strategies and an overall top-3 match rate of 95.6%.Expand",
+      "The Task-Oriented Grasping Network (TOG-Net) is proposed to jointly optimize both task-oriented grasping of a tool and the manipulation policy for that tool.Expand ... Int. J. Robotics Res. ... This work presents a two-step cascaded system with two deep networks, where the top detections from the first are re-evaluated by the second, and shows that this method improves performance on an RGBD robotic grasping dataset, and can be used to successfully execute grasps on two different robotic platforms.Expand",
+      "Affordance (opens in a new tab)Grasp Candidates (opens in a new tab)Task-Oriented Grasping (opens in a new tab)Detecting Objects (opens in a new tab)One Shot Learning (opens in a new tab)State Of The Art (opens in a new tab)Generalization (opens in a new tab)Multi-object Scenes (opens in a new tab)Neural Network (opens in a new tab)Grasp Poses (opens in a new tab)"
+    ],
+    "title": "[PDF] One-Shot Learning for Task-Oriented Grasping | Semantic Scholar",
+    "url": "https://www.semanticscholar.org/paper/1c92a9c458d4d814f5ec6ca6af9ba9a8224fba87"
+  },
+  {
+    "description": "Related papers and codes for vision-based robotic grasping - GeorgeDu/vision-based-robotic-grasping",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "If there exists no 3D models, the 6DoF grasp pose will be computed from some other methods. In this situation, there exist no 3D models, an the 6-DoF grasps are estimated from available partial data. This can be implemented by directly estimating from partial view point cloud, or indirectly estimating after shape completion. ... [CoRL] Same Object, Different Grasps: Data and Semantic Knowledge for Task-Oriented Grasping, [paper]",
+      "Jacquard Dataset, Jacquard: A Large Scale Dataset for Robotic Grasp Detection\u201d in IEEE International Conference on Intelligent Robots and Systems, 2018, [paper] Grasp Representation: The grasp is represented as 6DoF pose in 3D domain, and the gripper can grasp the object from various angles. The input to this task is 3D point cloud from RGB-D sensors, and this task contains two stages.",
+      "The essential information to grasp the target object is the 6D gripper pose in the camera coordinate, which contains the 3D gripper position and the 3D gripper orientation to execute the grasp.",
+      "2D planar grasp means that the target object lies on a plane workspace and the grasp is constrained from one direction. The essential information is simplified from 6D into 3D, which are the 2D in-plane positions and 1D rotation angle. There exist methods of evaluating grasp contact points and methods of evaluating grasp oriented rectangles."
+    ],
+    "title": "GitHub - GeorgeDu/vision-based-robotic-grasping: Related papers ...",
+    "url": "https://github.com/GeorgeDu/vision-based-robotic-grasping"
+  },
+  {
+    "description": "PDF | Training computers to understand, model, and synthesize human grasping requires a rich dataset containing complex 3D object shapes, detailed... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "This is challenging, as it requires the avatar to walk towards the object with foot-ground contact, orient the head towards it, reach out, and grasp it with a realistic hand pose and hand-object contact. To achieve this the networks exploit a representation that combines SMPL-X body parameters and 3D vertex offsets. We train and evaluate GOAL, both qualitatively and quantitatively, on the GRAB dataset.",
+      "This gives detailed 3D meshes over time, from which we compute contact between the body and object. This is a unique dataset, that goes well beyond existing ones for modeling and understanding how humans grasp and manipulate objects, how their full body is involved, and how interaction varies with the task.",
+      "do so, we must pose our body so that we can reach it, we orient our head to \u00b7 see it, we move our arm and hand to stably lift it, and then we bring it to our \u00b7 mouth, making contact with the lips, and \ufb01nally we tilt the head to drink. As \u00b7 this and other examples in the \ufb01gure illustrate, human grasping and using of \u00b7 everyday objects involves the whole body. Such interactions are fundamentally \u00b7 three-dimensional, and contact occurs between objects and multiple body parts. Dataset.",
+      "do not understand the task or give random answers, we use catch trials that \u00b7 show implausible grasps. We remove subjects who rate these catch trials as re- alistic; see Sup. Mat. for details. Table 2 (left) shows the user scores for both ... Evaluation - Contact. Figure 9 shows examples of contact areas (red) generated by [6] (left) and our approach (right). The method of [6] gives only \u00b7 10 predictions per object, some with zero contact."
+    ],
+    "title": "(PDF) GRAB: A Dataset of Whole-Body Human Grasping of Objects",
+    "url": "https://www.researchgate.net/publication/343877252_GRAB_A_Dataset_of_Whole-Body_Human_Grasping_of_Objects"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=openaccess.thecvf.com&size=128",
+    "snippets": [],
+    "title": "A Large-Scale Benchmark for General Object Grasping",
+    "url": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Fang_GraspNet-1Billion_A_Large-Scale_Benchmark_for_General_Object_Grasping_CVPR_2020_paper.pdf"
+  },
+  {
+    "description": "With the wide application of robots in life and production, robotic grasping is also experiencing continuous development. However, in practical applic\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "Aiming at the angle problem of robot grasping, this paper summarizes some research status of grasping detection from 2D image to 3D space. According to their respective application, advantages, and disadvantages, this paper analyzes the development trend of the two methods. At the same time, several commonly used grasping datasets are introduced and compared."
+    ],
+    "title": "Overview of robotic grasp detection from 2D to 3D - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2667241322000052"
+  },
+  {
+    "description": "We propose a dual-module robotic system to tackle the problem of generating and performing antipodal robotic grasps for unknown objects from the n-channel image of the scene. We present an improved version of the Generative Residual Convolutional ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "To understand how well our model trained on the Cornell dataset generalizes to novel objects, we performed grasping experiments with household and adversarial objects in isolation and clutter. For the experiment with objects in isolation, each object was tested for 10 different positions and orientations.",
+      "Each of these objects was tested in isolation for 10 different orientations and positions and made up of a total of 100 grasp attempts. Figure 13b shows the adversarial objects used during the experiments. Grasp poses predicted by the inference module are used to execute the grasps in an open-loop using a pick and place task.",
+      "The images are pre-processed to match the input format of the proposed GR-ConvNet model trained on an offline grasping dataset. The network generates quality, angle, and width images, which are then used to infer antipodal grasp poses. The control module consists of a task controller that prepares and executes a plan to perform a pick and place task using the grasp pose generated by the inference module.",
+      "This journal paper is an extension of a conference paper that appeared in IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2020 [11]. This version introduces an improved version of the GR-ConvNet along with an ablation study in Section 6.5. In addition to Cornell and Jacquard datasets, this paper includes network performance evaluation on the Graspnet dataset in Section 6.4. It also includes additional simulation and real-world experiments and more system details in Section 7. In addition, we validate the flexibility and generalizability of the GR-ConvNet model to various vision-based manipulation tasks in Section 8."
+    ],
+    "title": "GR-ConvNet v2: A Real-Time Multi-Grasp Detection Network for Robotic ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9415764/"
+  },
+  {
+    "description": "PDF | Task-oriented grasping is a crucial yet challenging task in robotic manipulation. Despite the recent progress, few existing methods address... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Our method ranks top on the OakInk-shape dataset over all previous methods, improving the Penetration Volume, the Grasp Displace, and the P-FID over the state-of-the-art by ... 41.43\\%, respectively. Notably, it demonstrates good generality in handling novel categories and tasks. The LLM prompts utilized in PartDexTOG. ... Visual comparison of the generated task-oriented grasps by PartDexTOG and the baselines.",
+      "challenges in network design, especially for estimating grasp pose on objects with novel geometry. Second, the versatility of dexterous manipulation greatly surpasses that of manipulation by parallel \u00b7 grippers, rendering the datasets on task-oriented parallel grasping inadequate.",
+      "facilitates the learning of grasp generation on objects with different geometry and \u00b7 for different manipulation tasks. Our method ranks top on the OakInk-shape dataset",
+      "which are bene\ufb01cial to the grasp generation of objects w.r.t different manipulation tasks. This enables \u00b7 method to generate dexterous grasps with higher versatility compared to those with single-scale parts. We conduct comprehensive experiments to evaluate the effectiveness of the proposed method. Our \u00b7 method ranks top on the OakInk-shape dataset over all previous methods, improving the Penetration"
+    ],
+    "title": "(PDF) PartDexTOG: Generating Dexterous Task-Oriented Grasping via ...",
+    "url": "https://www.researchgate.net/publication/391877534_PartDexTOG_Generating_Dexterous_Task-Oriented_Grasping_via_Language-driven_Part_Analysis"
+  },
+  {
+    "description": "Download scientific diagram | Examples of dataset. (a) Examples of Cornell Grasp Dataset; (b) Examples of Jacquard Dataset; (c) Examples of VMRD. There are different sorts of graspable things in VMRD dataset. In each image, each object has a unique index to be distinguished from the others.",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Compared with Cornell Grasp Dataset, the bias is lower on Jacquard Dataset due to more grasp labels on each object as shown in Fig. ... ... A generalist robot equipped with learned skills must be able to perform many tasks in many different environments. However, zero-shot generalization to new settings is not always possible. When the robot encounters a new environment or object, it may need to finetune some of its previously learned skills to accommodate this change.",
+      "Additionally, grasping tasks for several specific objects are implemented on a real-world physical experiment with a higher success rate than others, demonstrating the effectiveness of our method proposed in this paper. ... ... To address this, the robotics community has developed standardized grasping datasets for more consistent evaluations and learning-based approaches, as shown in Table I There are three fundamental ways to label a grasp attempt: human annotation, synthetically estimated via analytical metrics and trial and error execution.",
+      "Additionally, a novel loss function is designed to address the performance degradation in detecting long-tail categories, effectively mitigating the over-suppression of rare objects in imbalanced datasets. Experimental results demonstrate that the proposed model significantly improves both detection accuracy and computational efficiency, making it particularly suitable for real-time robotic grasping tasks in complex environments due to its lightweight design.",
+      "Cornell Grasp Dataset includes 885 images and Jacquard Dataset contains 54k images. Some examples of Cornell Grasp Dataset and Jacquard Dataset are shown in Fig. 4 (a) and (b). Because there is no object location information in Cornell Grasp Dataset, for training RPN, object images and the corresponding background images are used to generate the location of objects."
+    ],
+    "title": "Examples of dataset. (a) Examples of Cornell Grasp Dataset; (b)... ...",
+    "url": "https://www.researchgate.net/figure/Examples-of-dataset-a-Examples-of-Cornell-Grasp-Dataset-b-Examples-of-Jacquard_fig4_338937991"
+  },
+  {
+    "description": "If the outcome of the simulated grasp is a success, i.e., the object is successfully lifted and moved away by the simulated robot using the predicted grasp location, the prediction is then considered as a good grasp. Along with the access to the whole dataset, registered users can use an interface ...",
+    "favicon_url": "https://you.com/favicon?domain=jacquard.liris.cnrs.fr&size=128",
+    "snippets": [
+      "If the outcome of the simulated grasp is a success, i.e., the object is successfully lifted and moved away by the simulated robot using the predicted grasp location, the prediction is then considered as a good grasp. Along with the access to the whole dataset, registered users can use an interface to submit their predictions to our simulator and get the result of the Simulated Grasp Trial-based criterion introduced in the paper.",
+      "With the Jacquard dataset, we propose a new criterion based on simulation, subsequently called simulated grasp trial-based criterion (SGT).",
+      "A. Depierre, E. Dellandrea, and L. Chen, \u201cJacquard: A Large Scale Dataset for Robotic Grasp Detection\u201d in IEEE International Conference on Intelligent Robots and Systems, 2018.",
+      "A small sample of 10 objects can be downloaded from the Database page. To acquire access to the whole dataset:"
+    ],
+    "title": "JACQUARD DATASET",
+    "url": "https://jacquard.liris.cnrs.fr/"
+  },
+  {
+    "description": "Request PDF | Jacquard: A Large Scale Dataset for Robotic Grasp Detection | Grasping skill is a major ability that a wide number of real-life applications require for robotisation. State-of-the-art robotic grasping methods... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "However, the LLM's knowledge about objects' physical properties remains underexplored despite its tight relevance to grasping. In this work, we propose GraspCoT, a 6-DoF grasp detection framework that integrates a Chain-of-Thought (CoT) reasoning mechanism oriented to physical properties, guided by auxiliary question-answering (QA) tasks.",
+      "For the purpose of reproducible research in robotics, we are releasing along with the Jacquard dataset a web interface for researchers to evaluate the successfulness of their grasping position detections using our dataset. ... To read the full-text of this research, you can request a copy directly from the authors. ... ... Grasp Detection. Grasp detection is a popular task in both computer vision and robotic community [2,",
+      "In this paper, we introduce Grasp-Anything++, a new language-driven grasp detection dataset featuring 1M samples, over 3M objects, and upwards of 10M grasping instructions. We utilize foundation models to create a large-scale scene corpus with corresponding images and grasp prompts. We approach the language-driven grasp detection task as a conditional generation problem.",
+      "We believe these results to be a significant step toward the generation of large datasets that can lead to robust and generalizing robotic grasping policies. ... ... Several works such as that by Redmon et al. [36] have set the foundation for robot grasping by using convolutional neural networks (CNNs). Most previous grasp detection methods are often limited to simple tasks with a fixed number of classes and rely solely on raw image data"
+    ],
+    "title": "Jacquard: A Large Scale Dataset for Robotic Grasp Detection | Request ...",
+    "url": "https://www.researchgate.net/publication/324150891_Jacquard_A_Large_Scale_Dataset_for_Robotic_Grasp_Detection"
+  },
+  {
+    "description": "The dataset provides a challenging ... and grasp detection algorithms in realistic cluttered scenarios. ... Accompanying expert data and trained models for 2021 IROS paper on Multiview Manipulation. ... Introduction NBMOD is a dataset created for researching the task of specific ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "The dataset provides a challenging testbed for segmentation, 6D pose estimation, and grasp detection algorithms in realistic cluttered scenarios. ... Accompanying expert data and trained models for 2021 IROS paper on Multiview Manipulation. ... Introduction NBMOD is a dataset created for researching the task of specific object grasp detection by robots in noisy environments.",
+      "The dataset also includes 4) 41 large-scale scenes with comprehensive viewpoint and occlusion coverage, 5) a checkerboard-free environment, and 6) dense 6D parallel-jaw robotic grasp annotations. Additionally, we present benchmark results for leading category-level pose estimation networks. ... Dataset: RGB-D Images for Real-World and Synthetic Object Scenes This dataset consists of both real-world and synthetic RGB-D images, designed for object detection, classification, and segmentation tasks, particularly for primitive shape recognition.",
+      "GraspNet-1Billion provides large-scale training data and a standard evaluation platform for the task of general robotic grasping. The dataset contains 97,280 RGB-D image with over one billion grasp poses.",
+      "The ViCoS Towel Dataset is a state-of-the-art benchmark for grasp point localization on cloth objects, specifically towels. Designed to advance research in robotic grasping and perception for textile objects, this dataset includes a collection of 8,000 high-resolution RGB-D images (1920\u00d71080) captured with a Kinect V2 under a variety of conditions."
+    ],
+    "title": "Machine Learning Datasets - Robotic Grasping",
+    "url": "https://paperswithcode.com/datasets?task=robotic-grasping&mod=rgb-d"
+  },
+  {
+    "description": "PDF | This paper is the second in a two-part series analyzing human grasping behavior during a wide range of unstructured tasks. It investigates the... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "The reaching velocity profile when increasing deformability recalls the one observed when task accuracy and precision decrease. Identifying human strategy allows the implementation of human-inspired high-level reasoning algorithms for robotic manipulation. ... The Yale human grasping dataset: Grasp, object, and task data in household and machine shop environments",
+      "This paper presents a dataset of human grasping behavior in unstructured environments. Wide-angle head-mounted camera video was recorded from two housekeepers and two machinists during their regular work activities, and the grasp types, objects, and tasks were analyzed and coded by study staff.",
+      "The full dataset contains 27.7 hours of tagged video and represents a wide range of manipulative behaviors spanning much of the typical human hand usage. We provide the original videos, a spreadsheet including the tagged grasp type, object, and task parameters, time information for each successive grasp, and video screenshots for each instance.",
+      "Task-grasp relationship for common tasks. The most common 12 tasks are highlighted, while all other tasks are white. Some grasps are weighted by only a few very common tasks. Grasps with fewer than 50 instances are omitted."
+    ],
+    "title": "(PDF) Analysis of Human Grasping Behavior: Correlating Tasks, Objects ...",
+    "url": "https://www.researchgate.net/publication/273396238_Analysis_of_Human_Grasping_Behavior_Correlating_Tasks_Objects_and_Grasps"
+  },
+  {
+    "description": "Learning Task-Oriented Grasping from Human Activity Datasets. Submitted to IEEE Robotics and Automation Letters with ICRA option.",
+    "favicon_url": "https://you.com/favicon?domain=iprl.stanford.edu&size=128",
+    "snippets": [
+      "Towards Grasp-Oriented Visual Perception of Humanoid Robots International Journal of Humanoid Robotics, 06(03):387-434, 2009.",
+      "Interactive Perception and Robot Learning Lab-Home",
+      "Get a Grip: Multi-Finger Grasp Evaluation at Scale Enables Robust Sim-to-Real Transfer. Conference on Robot Learning (CoRL), November 2024. Migimatsu, T., Bohg, J. Object-Centric Task and Motion Planning in Dynamic Environments Submitted to IEEE Robotics and Automation Letters with ICRA option.",
+      "Data-Driven Grasp Synthesis - A Survey IEEE Transactions on Robotics, 30, pages: 289 - 309, IEEE, April 2014. Bohg, Jeannette, Welke, Kai, Le\u00f3n, Beatriz, Do, Martin, Song, Dan, Wohlkinger, Walter, Aldoma, Aitor, Madry, Marianna, Przybylski, Markus, Asfour, Tamim, Marti, Higinio, Kragic, Danica, Morales, Antonio, Vincze, Markus \u00b7 Task-Based Grasp Adaptation on a Humanoid Robot In 10th IFAC Symposium on Robot Control, SyRoCo 2012, Dubrovnik, Croatia, September 5-7, 2012., pages: 779-786, 2012."
+    ],
+    "title": "Interactive Perception and Robot Learning Lab - Grasping and ...",
+    "url": "https://iprl.stanford.edu/grasping.html"
+  },
+  {
+    "description": "Request PDF | A Task-Oriented Grasping Framework Guided by Visual Semantics for Mobile Manipulators | The densely cluttered operational environment and the absence of object information hinder mobile manipulators from achieving specific grasping... | Find, read and cite all the research you ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Request PDF | A Task-Oriented Grasping Framework Guided by Visual Semantics for Mobile Manipulators | The densely cluttered operational environment and the absence of object information hinder mobile manipulators from achieving specific grasping... | Find, read and cite all the research you need on ResearchGate",
+      "Based on the improved DeepLabV3+ model and the generative residual convolutional neural network, a task-oriented grasp detection structure is developed to generate a more precise grasp representation for the specific object in densely cluttered scenarios. The effectiveness of the proposed framework is validated through the dataset comparison tests and multiple sets of practical grasping experiments.",
+      "The network is mainly composed of two branches: i) Object detection branch which is based on the single shot multibox detection approach to discriminate object categories and locate object positions by bounding boxes; ii) Grasping pose estimation branch where hierarchical features are fused together to predict grasping position and orientation. To improve grasping detection performance, attention mechanism is employed in hierarchical feature fusion. For evaluating the proposed model, we build a multi-object grasping dataset where every image contains numerous different graspable objects.",
+      "On the Cornell Grasping Datasets and Jacquard Datasets, our method achieves excellent performance of 99.0% and 95.9% detection accuracy, respectively. Finally, the proposed method is put to the test in a real-world robot grasping scenario. ... This paper presents a comprehensive survey of data-driven robotic visual grasping detection (DRVGD) for unknown objects. We review both object-oriented and scene-oriented aspects, using the DRVGD for unknown objects as a guide."
+    ],
+    "title": "A Task-Oriented Grasping Framework Guided by Visual Semantics for ...",
+    "url": "https://www.researchgate.net/publication/379275257_A_Task-Oriented_Grasping_Framework_Guided_by_Visual_Semantics_for_Mobile_Manipulators"
+  },
+  {
+    "description": "Robotic grasping plays an essential role in human-machine cooperation in various household and industrial applications. Although humans can instinctiv\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The oriented rectangle grasping representation [9] includes position, rotation, and width. Regarding these rectangles on the images as ground truth, the supervised learning methods can be applied in grasping detection. Datasets consisting of images and rectangles (e.g., the Cornell Grasp Dataset (CGD) [1] and the Jacquard Datasets [10]) can be used to train grasping detection networks.",
+      "Training Dataset: To train the GGN, we choose the extended Cornell grasping dataset [1] to generate our dataset, which contains 1035 RGB-D images of 280 real objects and represents antipodal grasps as grasp rectangles. Considering that the dataset is small compared with some more synthetic datasets [[3],[5]], we augment the dataset using the method in [2]. Each RGB-D image is processed by cropping, random zooming, and random rotation to create a set of RGB-D images and associated grasp",
+      "Secondly, as a projection of the 3-D object, an image with a rectangle cannot represent the z-axis coordinate of the grasping, which is perpendicular to the image. In contrast, Dex-Net 2.0 [5] uses an oriented grasping segment with a z-axis position in a 2.5-D depth image to represent a 4-DOF grasp (3-D position and angle), which gives a clear transformation from the image space to the real world.",
+      "A rapid and accurate grasping planning method depends not only on the deep neural network architecture but also on the grasping model used by the network. For example, Mahler et al. provided a Dex-Net series [[5],[20]]. The dataset they used to train the net is composed of a set of parallel-jaw grasps shown in the form of the objects\u2019 depth images and the corresponding grasping metric."
+    ],
+    "title": "A grasps-generation-and-selection convolutional neural network ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0736584522000588"
+  },
+  {
+    "description": "We summarize the research papers that introduce novel datasets for training and evaluating open-domain and task-oriented dialog systems.",
+    "favicon_url": "https://you.com/favicon?domain=www.topbots.com&size=128",
+    "snippets": [
+      "Researchers are continuously working on designing, collecting, and annotating new dialog corpora that should help with the existing challenges. In this article, we summarize the research papers that introduce some of the most useful novel datasets for training and evaluating open-domain and task-oriented dialog systems.",
+      "CrossWOZ: A LargeScale Chinese Cross-Domain Task-Oriented Dialogue Dataset \u00b7 Non-task oriented dialogue systems have achieved great success in recent years due to largely accessible conversation data and the development of deep learning techniques. Given a context, current systems are able to yield a relevant and fluent response, but sometimes make logical mistakes because of weak reasoning capabilities.",
+      "The dataset can be used to train task-oriented conversational agents for: booking airline flights or changing flight details; ... The MultiDoGO dataset is available on GitHub. Virtual assistants such as Google Assistant, Alexa and Siri provide a conversational interface to a large number of services and APIs spanning multiple domains. Such systems need to support an ever-increasing number of services with possibly overlapping functionality. Furthermore, some of these services have little to no training data available.",
+      "Adding more tasks to the suggested ones (e.g., having longer conversations involving memory, or mixing open-domain conversations with goal-oriented ones). Building open-domain conversational agents capable of multiple skills. The best models that have been introduced and evaluated in the paper are released here. Being engaging, knowledgeable, and empathetic are all desirable general qualities in a conversational agent. Previous work has introduced tasks and datasets that aim to help agents to learn those qualities in isolation and gauge how well they can express them."
+    ],
+    "title": "Novel Datasets For Open-Domain & Task-Oriented Dialogs",
+    "url": "https://www.topbots.com/conversational-ai-datasets/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
+    "snippets": [],
+    "title": "[PDF] SegGrasp: Zero-Shot Task-Oriented Grasping via ...",
+    "url": "https://www.semanticscholar.org/paper/SegGrasp:-Zero-Shot-Task-Oriented-Grasping-via-and-Li-Mao/f78b7c5211924dc957655b13f6bf2b6bdd749805"
+  },
+  {
+    "description": "Learning Task-Oriented Grasping from Human Activity Datasets. Submitted to IEEE Robotics and Automation Letters with ICRA option.",
+    "favicon_url": "https://you.com/favicon?domain=iprl.stanford.edu&size=128",
+    "snippets": [
+      "Towards Grasp-Oriented Visual Perception of Humanoid Robots International Journal of Humanoid Robotics, 06(03):387-434, 2009.",
+      "Interactive Perception and Robot Learning Lab-Home",
+      "Get a Grip: Multi-Finger Grasp Evaluation at Scale Enables Robust Sim-to-Real Transfer. Conference on Robot Learning (CoRL), November 2024. Migimatsu, T., Bohg, J. Object-Centric Task and Motion Planning in Dynamic Environments Submitted to IEEE Robotics and Automation Letters with ICRA option.",
+      "Data-Driven Grasp Synthesis - A Survey IEEE Transactions on Robotics, 30, pages: 289 - 309, IEEE, April 2014. Bohg, Jeannette, Welke, Kai, Le\u00f3n, Beatriz, Do, Martin, Song, Dan, Wohlkinger, Walter, Aldoma, Aitor, Madry, Marianna, Przybylski, Markus, Asfour, Tamim, Marti, Higinio, Kragic, Danica, Morales, Antonio, Vincze, Markus \u00b7 Task-Based Grasp Adaptation on a Humanoid Robot In 10th IFAC Symposium on Robot Control, SyRoCo 2012, Dubrovnik, Croatia, September 5-7, 2012., pages: 779-786, 2012."
+    ],
+    "title": "Interactive Perception and Robot Learning Lab - Grasping and ...",
+    "url": "https://iprl.stanford.edu/grasping.html"
+  },
+  {
+    "description": "Request PDF | A Task-Oriented Grasping Framework Guided by Visual Semantics for Mobile Manipulators | The densely cluttered operational environment and the absence of object information hinder mobile manipulators from achieving specific grasping... | Find, read and cite all the research you ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Request PDF | A Task-Oriented Grasping Framework Guided by Visual Semantics for Mobile Manipulators | The densely cluttered operational environment and the absence of object information hinder mobile manipulators from achieving specific grasping... | Find, read and cite all the research you need on ResearchGate",
+      "Based on the improved DeepLabV3+ model and the generative residual convolutional neural network, a task-oriented grasp detection structure is developed to generate a more precise grasp representation for the specific object in densely cluttered scenarios. The effectiveness of the proposed framework is validated through the dataset comparison tests and multiple sets of practical grasping experiments.",
+      "The network is mainly composed of two branches: i) Object detection branch which is based on the single shot multibox detection approach to discriminate object categories and locate object positions by bounding boxes; ii) Grasping pose estimation branch where hierarchical features are fused together to predict grasping position and orientation. To improve grasping detection performance, attention mechanism is employed in hierarchical feature fusion. For evaluating the proposed model, we build a multi-object grasping dataset where every image contains numerous different graspable objects.",
+      "On the Cornell Grasping Datasets and Jacquard Datasets, our method achieves excellent performance of 99.0% and 95.9% detection accuracy, respectively. Finally, the proposed method is put to the test in a real-world robot grasping scenario. ... This paper presents a comprehensive survey of data-driven robotic visual grasping detection (DRVGD) for unknown objects. We review both object-oriented and scene-oriented aspects, using the DRVGD for unknown objects as a guide."
+    ],
+    "title": "A Task-Oriented Grasping Framework Guided by Visual Semantics for ...",
+    "url": "https://www.researchgate.net/publication/379275257_A_Task-Oriented_Grasping_Framework_Guided_by_Visual_Semantics_for_Mobile_Manipulators"
+  },
+  {
+    "description": "Robotic grasping plays an essential role in human-machine cooperation in various household and industrial applications. Although humans can instinctiv\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "The oriented rectangle grasping representation [9] includes position, rotation, and width. Regarding these rectangles on the images as ground truth, the supervised learning methods can be applied in grasping detection. Datasets consisting of images and rectangles (e.g., the Cornell Grasp Dataset (CGD) [1] and the Jacquard Datasets [10]) can be used to train grasping detection networks.",
+      "Training Dataset: To train the GGN, we choose the extended Cornell grasping dataset [1] to generate our dataset, which contains 1035 RGB-D images of 280 real objects and represents antipodal grasps as grasp rectangles. Considering that the dataset is small compared with some more synthetic datasets [[3],[5]], we augment the dataset using the method in [2]. Each RGB-D image is processed by cropping, random zooming, and random rotation to create a set of RGB-D images and associated grasp",
+      "Secondly, as a projection of the 3-D object, an image with a rectangle cannot represent the z-axis coordinate of the grasping, which is perpendicular to the image. In contrast, Dex-Net 2.0 [5] uses an oriented grasping segment with a z-axis position in a 2.5-D depth image to represent a 4-DOF grasp (3-D position and angle), which gives a clear transformation from the image space to the real world.",
+      "A rapid and accurate grasping planning method depends not only on the deep neural network architecture but also on the grasping model used by the network. For example, Mahler et al. provided a Dex-Net series [[5],[20]]. The dataset they used to train the net is composed of a set of parallel-jaw grasps shown in the form of the objects\u2019 depth images and the corresponding grasping metric."
+    ],
+    "title": "A grasps-generation-and-selection convolutional neural network ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0736584522000588"
+  },
+  {
+    "description": "We summarize the research papers that introduce novel datasets for training and evaluating open-domain and task-oriented dialog systems.",
+    "favicon_url": "https://you.com/favicon?domain=www.topbots.com&size=128",
+    "snippets": [
+      "Researchers are continuously working on designing, collecting, and annotating new dialog corpora that should help with the existing challenges. In this article, we summarize the research papers that introduce some of the most useful novel datasets for training and evaluating open-domain and task-oriented dialog systems.",
+      "CrossWOZ: A LargeScale Chinese Cross-Domain Task-Oriented Dialogue Dataset \u00b7 Non-task oriented dialogue systems have achieved great success in recent years due to largely accessible conversation data and the development of deep learning techniques. Given a context, current systems are able to yield a relevant and fluent response, but sometimes make logical mistakes because of weak reasoning capabilities.",
+      "The dataset can be used to train task-oriented conversational agents for: booking airline flights or changing flight details; ... The MultiDoGO dataset is available on GitHub. Virtual assistants such as Google Assistant, Alexa and Siri provide a conversational interface to a large number of services and APIs spanning multiple domains. Such systems need to support an ever-increasing number of services with possibly overlapping functionality. Furthermore, some of these services have little to no training data available.",
+      "Adding more tasks to the suggested ones (e.g., having longer conversations involving memory, or mixing open-domain conversations with goal-oriented ones). Building open-domain conversational agents capable of multiple skills. The best models that have been introduced and evaluated in the paper are released here. Being engaging, knowledgeable, and empathetic are all desirable general qualities in a conversational agent. Previous work has introduced tasks and datasets that aim to help agents to learn those qualities in isolation and gauge how well they can express them."
+    ],
+    "title": "Novel Datasets For Open-Domain & Task-Oriented Dialogs",
+    "url": "https://www.topbots.com/conversational-ai-datasets/"
+  },
+  {
+    "description": "To address the challenge of grasping multi-target objects with uncertain shape, attitude, scale, and stacking, this study proposes a high-performance planar pixel-level grasping network called random sub-path grasp fusion network (RSPFG-Net). The ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Previous research papers mostly focused on predicting only the width of the mechanical jaws\u2019 spread, which may result in missing some actual gripping positions. Both the publicly available Cornell and Jacquard fetching datasets focus on single-target fetching tasks. The multi-objective Graspnet-1 billion and Acronym datasets achieve grasping robustness through point cloud processing, and obtain grasping gestures from 6D attitude projection scenes of objects.",
+      "Predicting grasping angles is a task that involves multiple labels within a single category. To avoid competition between categories, we normalize the output of the angle header using a sigmoid function. The width head outputs the grab width corresponding to each point. This paper introduces the NEU-MGD Northeastern University multi-target grasping dataset, which includes single targets, discrete multi-targets, and stacked multi-targets.",
+      "The RSPFG-Net network is evaluated for single object grasping detection on the publicly available Cornell, Jacquard dataset under the same experimental conditions. As shown in Fig. 7, the RSPFG-Net model can effectively recognize and detect objects such as scissors, glasses, high heels, and tape while providing multiple grasping points for each object. This capability supports collaborative robots in executing grasping tasks in practical applications, and the grasping results can accurately represent the grasping characteristics of objects, thereby enhancing the model\u2019s applicability across different types of grippers.",
+      "The dataset includes single targets, multiple targets, and multiple stacked targets. The dataset includes pictures with sizes of 640*480 and 1 8 objects per picture. Figure 4 shows some of the labeled samples obtained from the dataset. Grasping models are primarily classified into pinching grasp models and circular grasp models."
+    ],
+    "title": "Robot multi-target high performance grasping detection based on ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11906837/"
+  },
+  {
+    "description": "Abstract Despite the enormous progress and generalization in robotic grasping in recent years, existing methods have yet to scale and generalize task-oriented grasping to the same extent. This is largely due to the scale of the datasets both in terms of the number of objects and tasks studied. We",
+    "favicon_url": "https://you.com/favicon?domain=sites.google.com&size=128",
+    "snippets": [
+      "We address these concerns with the TaskGrasp dataset which is more diverse both in terms of objects and tasks, and an order of magnitude larger than previous datasets. The dataset contains 250K task-oriented grasps for 56 tasks and 191 objects along with their RGB-D information.",
+      "Our framework shows a significant improvement of around 12% on held-out settings compared to baseline methods which do not use semantics. We demonstrate that our dataset and model are applicable for the real world by executing task-oriented grasps on a real robot on unknown objects."
+    ],
+    "title": "TaskGrasp",
+    "url": "https://sites.google.com/view/taskgrasp/home"
+  },
+  {
+    "description": "We introduce ACRONYM, a dataset for robot grasp planning based on physics simulation. The dataset contains 17.7M parallel-jaw grasps, spanning 8872 objects from 262 different categories, each labeled with the grasp result obtained from a physics simulator. We show the value of this large and",
+    "favicon_url": "https://you.com/favicon?domain=sites.google.com&size=128",
+    "snippets": [
+      "We introduce ACRONYM, a dataset for robot grasp planning based on physics simulation. The dataset contains 17.7M parallel-jaw grasps, spanning 8872 objects from 262 different categories, each labeled with the grasp result obtained from a physics simulator. We show the value of this large and diverse dataset by using it to train two state-of-the-art learning-based grasp planning algorithms.",
+      "The dataset is comprised of 8836 HDF5 files. File names follow the scheme <category>_<shapenetid>_<scale>.h5 . Each file is structured as follows: >> h5ls -r WineGlass_2d89d2b3b6749a9d99fbba385cc0d41d_0.0024652679182251653.h5 ... HDF5 files can be read in Python using the h5py package. For example: ... > import numpy as np > grasps = h5py.File('WineGlass_2d89d2b3b6749a9d99fbba385cc0d41d_0.0024652679182251653.h5', 'r') > grasps.visititems(print) > grasps['object/file'][()] 'meshes/WineGlass/2d89d2b3b6749a9d99fbba385cc0d41d.obj'",
+      "Grasp performance improves significantly when compared to the original smaller dataset. This website contains links to download the dataset and tools to work with it in your own research and applications.",
+      "The grasp transforms describe the transformation of the Panda Gripper frame (attached to the gripper mesh as shown in the picture to the right) in the object's mesh coordinate system."
+    ],
+    "title": "ACRONYM: A Large-Scale Grasp Dataset Based on Simulation",
+    "url": "https://sites.google.com/nvidia.com/graspdataset"
+  },
+  {
+    "description": "Dexterous manipulation, especially dexterous grasping, is a primitive and crucial ability of robots that allows the implementation of performing human-like behaviors. Deploying the ability on robots enables them to assist and substitute human to ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Mahler and Goldberg (2017) models bin picking on the basis of Partially Observable Markov Decision Process (POMDP) (Astrom, 1965) and fine-tunes GQ-CNN with a new dataset to evaluate actions instead of grasp configurations, which improves the generalization of GQ-CNN. Satish et al. (2019) further enhances GQ-CNN by designing a FC-GQ-CNN through fully convolutional network. Fang K. et al. (2020) proposes a Task-Oriented Grasping Network (TOG-Net) by making progress on GQ-CNN via residual network layers (He et al., 2016) to obtain task-agnostic grasp quality, conditioned task-oriented grasp quality and manipulation action.",
+      "Grasping, as one of the most primitive manipulations, almost all high-level operations and complex tasks that people expect robots to complete are inseparable from the assistance of it. With the in-depth development of robotics, researchers begin to facilitate the transition from simple or even crude grasping of robots with less discrimination of objects to object-oriented dexterous grasping.",
+      "Developed systems are applied in different scenarios, life-oriented, or industry-oriented. Due to grasping mechanisms and DOFs vary from single suction cup (one finger) to five-finger hand, end effector plays an important role in grasp learning algorithm design. With more fingers assembled on end effector, the dexterity of grasp increases dramatically to allow robot to accomplish more complicated tasks.",
+      "Industry-oriented methods are designed to complete those dangerous and arduous tasks in industry. Grasp is one of the most primitive and core manipulations of robot, many advanced operations are variant of grasping. With the growth of robot grasp learning, more and more tasks can be finished by robot in people's daily life, which improves quality of people's life."
+    ],
+    "title": "Robotics Dexterous Grasping: The Methods Based on Point Cloud and ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8221534/"
+  },
+  {
+    "description": "Grasp learning has become an exciting and important topic in robotics. Just a few years ago, the problem of grasping novel objects from unstructured piles of clutter was considered a serious research challenge. Now, it is a capability that is quickly being incorporated into industrial supply ...",
+    "favicon_url": "https://you.com/favicon?domain=www.annualreviews.org&size=128",
+    "snippets": [
+      "Grasp learning has become an exciting and important topic in robotics. Just a few years ago, the problem of grasping novel objects from unstructured piles of clutter was considered a serious research challenge. Now, it is a capability that is quickly being incorporated into industrial supply chain automation.",
+      "Zhou X, Lan X, Zhang H, Tian Z, Zhang Y, Zheng N. 2018. Fully convolutional grasp detection network with oriented anchor box.",
+      "GraspNet: an efficient convolutional neural network for real-time grasp detection for low-powered devices. IJCAI'18: Proceedings of the 27th International Joint Conference on Artificial Intelligence J Lang 4875\u201382 Palo Alto, CA: AAAI Press [Google Scholar] ... Satish V, Mahler J, Goldberg K. 2019. On-policy dataset synthesis for learning robot grasping policies using fully convolutional deep networks.",
+      "Efficient grasping from RGBD images: learning using a new rectangle representation. 2011 IEEE International Conference on Robotics and Automation3304\u201311 Piscataway, NJ: IEEE [Google Scholar] ... Depierre A, Dellandr\u00e9a E, Chen L 2018. Jacquard: a large scale dataset for robotic grasp detection."
+    ],
+    "title": "Grasp Learning: Models, Methods, and Performance | Annual Reviews",
+    "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-control-062122-025215"
+  },
+  {
+    "description": "To perform training and evaluation on the LA-TaskGrasp dataset, download the dataset here and place it in the root folder as data: unzip ~/Downloads/data.zip -d ./ rm ~/Downloads/data.zip \u00b7 To visualize the collected point clouds and labeled task-oriented grasps, please refer to the github ...",
+    "favicon_url": "https://you.com/favicon?domain=github.com&size=128",
+    "snippets": [
+      "To perform training and evaluation on the LA-TaskGrasp dataset, download the dataset here and place it in the root folder as data: unzip ~/Downloads/data.zip -d ./ rm ~/Downloads/data.zip \u00b7 To visualize the collected point clouds and labeled task-oriented grasps, please refer to the github repo of TaskGrasp dataset under Usage section.",
+      "code implementation of GraspGPT and FoundationGrasp - mkt1412/GraspGPT_public",
+      "Step 2. Download the updated language description data of the LaViA-TaskGrasp dataset here and replace the old one in the LA-TaskGrasp dataset (i.e., obj_gpt_vx, task_gpt_vx). Step 3. For language instruction data, please refer to data/task_ins_v2. Step 4. For image data, please refer to data/rgb_images. Step 5. Modify the dataloader in gcngrasp/data/GCNLoader.py so that the model can read the updated language description and image data. Step 1. The semantic branch of FoundationGrasp is similar to GraspGPT.",
+      "cd GraspGPT_public conda install pytorch==1.11.0 torchvision==0.12.0 cudatoolkit=11.3 -c pytorch pip install -r requirements.txt \u00b7 The Language Augmented TaskGrasp (LA-TaskGrasp) dataset is developed based on TaskGrasp dataset."
+    ],
+    "title": "GitHub - mkt1412/GraspGPT_public: code implementation of GraspGPT ...",
+    "url": "https://github.com/mkt1412/GraspGPT_public"
+  },
+  {
+    "description": "Get trending papers in your email inbox once a day \u00b7 Get trending papers in your email inbox",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "Your daily dose of AI research from AK"
+    ],
+    "title": "Daily Papers - Hugging Face",
+    "url": "https://huggingface.co/papers?q=grasping"
+  },
+  {
+    "description": "Purpose of Review This review provides a comprehensive overview of machine learning approaches for vision-based robotic grasping and manipulation. Current trends and developments as well as various criteria for categorization of approaches are provided. Recent Findings Model-free approaches ...",
+    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
+    "snippets": [
+      "Purpose of Review This review provides a comprehensive overview of machine learning approaches for vision-based robotic grasping and manipulation. Current trends and developments as well as various criteria for categorization of approaches are provided. Recent Findings Model-free approaches are attractive due to their generalization capabilities to novel objects, but are mostly limited to top-down grasps and do not allow a precise object placement which can limit their applicability.",
+      "Current Robotics Reports - This review provides a comprehensive overview of machine learning approaches for vision-based robotic grasping and manipulation. Current trends and developments as well...",
+      "In their work, they demonstrated that their approach can be used for real-world robotic grasping tasks. An increased performance is obtained by utilizing more sophisticated network architectures [3]. A public dataset for robotic grasp detection is the Cornell grasping dataset [59] which comprises 1035 images from 280 objects with human annotated grasps.",
+      "A major advantage of learning-based object pose estimators is that they do not require a manual parameter tuning for the configuration of new objects [41, 42]. Furthermore, they can be entirely trained on synthetic data, which can easily be obtained using a physics simulation by dropping objects in a random position and orientation above a bin in the case of bin-picking [43] or by placing (household) objects in virtual scenes [18]. Model-free approaches are attractive due to their ability to generalize to unseen objects [53] and pose a dominant direction in robotic grasping research."
+    ],
+    "title": "A Survey on Learning-Based Robotic Grasping | Current Robotics Reports",
+    "url": "https://link.springer.com/article/10.1007/s43154-020-00021-6"
+  },
+  {
+    "description": "Task-oriented grasping (TOG) is crucial for robots to accomplish manipulation tasks, requiring the determination of TOG positions and directions. Existing methods either rely on costly manual TOG annotations or only extract coarse grasping positions or regions from human demonstrations, limiting ...",
+    "favicon_url": "https://you.com/favicon?domain=www.arxiv.org&size=128",
+    "snippets": [
+      "Task-oriented grasping (TOG) is crucial for robots to accomplish manipulation tasks, requiring the determination of TOG positions and directions. Existing methods either rely on costly manual TOG annotations or only extract coarse grasping positions or regions from human demonstrations, limiting their practicality in real-world applications.",
+      "Abstract page for arXiv paper 2409.16033: RTAGrasp: Learning Task-Oriented Grasping from Human Videos via Retrieval, Transfer, and Alignment",
+      "View a PDF of the paper titled RTAGrasp: Learning Task-Oriented Grasping from Human Videos via Retrieval, Transfer, and Alignment, by Wenlong Dong and 3 other authors View PDF HTML (experimental)",
+      "Evaluations on the public TOG benchmark, TaskGrasp dataset, show the competitive performance of RTAGrasp on both seen and unseen object categories compared to existing baseline methods. Real-world experiments further validate its effectiveness on a robotic arm. Our code, appendix, and video are available at \\url{this https URL}. From: Wenlong Dong [view email] [v1] Tue, 24 Sep 2024 12:32:08 UTC (1,942 KB) ... View a PDF of the paper titled RTAGrasp: Learning Task-Oriented Grasping from Human Videos via Retrieval, Transfer, and Alignment, by Wenlong Dong and 3 other authors"
+    ],
+    "title": "[2409.16033] RTAGrasp: Learning Task-Oriented Grasping from Human ...",
+    "url": "https://www.arxiv.org/abs/2409.16033"
+  },
+  {
+    "description": "This gives detailed 3D meshes over ... This is a unique dataset, that goes well beyond existing ones for modeling and understanding how humans grasp and manipulate objects, how their full body is involved, and how interaction varies with the task....",
+    "favicon_url": "https://you.com/favicon?domain=grab.is.tue.mpg.de&size=128",
+    "snippets": [
+      "This gives detailed 3D meshes over time, from which we compute contact between the body and object. This is a unique dataset, that goes well beyond existing ones for modeling and understanding how humans grasp and manipulate objects, how their full body is involved, and how interaction varies with the task.",
+      "We illustrate the practical value of GRAB with an example application; we train GrabNet, a conditional generative network, to predict 3D hand grasps for unseen 3D object shapes. The dataset and code are available for research purposes at grab.is.tue.mpg.de. ... Rendered Videos now available for preview (Downloads Section). ... Our code on GitHub (links below). Our GRAB v1.0 dataset. Our GrabNet v1.0 data and trained models. Paper & Sup.Mat. ... Please register and accept the License agreement in this website in order to get access to the GRAB dataset.",
+      "@InProceedings{Brahmbhatt_2019_CVPR, title = {{ContactDB}: Analyzing and Predicting Grasp Contact via Thermal Imaging}, author = {Brahmbhatt, Samarth and Ham, Cusuh and Kemp, Charles C. and Hays, James}, booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, year = {2019}, url = {https://contactdb.cc.gatech.edu} } We kindly ask you to also cite Brahmbhatt et al. (ContactDB website), whose object meshes are used for our GRAB dataset, as also described in our license.",
+      "@inproceedings{GRAB:2020, title = {{GRAB}: A Dataset of Whole-Body Human Grasping of Objects}, author = {Taheri, Omid and Ghorbani, Nima and Black, Michael J."
+    ],
+    "title": "GRAB: A Dataset of Whole-Body Human Grasping of Objects",
+    "url": "https://grab.is.tue.mpg.de/"
+  },
+  {
+    "description": "Abstract:We present GrasMolmo, ... task-oriented grasping (TOG) model. GraspMolmo predicts semantically appropriate, stable grasps conditioned on a natural language instruction and a single RGB-D frame. For instance, given \"pour me some tea\", GraspMolmo selects a grasp on a teapot handle rather than its body. Unlike prior TOG methods, which are limited by small datasets, simplistic ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Abstract:We present GrasMolmo, a generalizable open-vocabulary task-oriented grasping (TOG) model. GraspMolmo predicts semantically appropriate, stable grasps conditioned on a natural language instruction and a single RGB-D frame. For instance, given \"pour me some tea\", GraspMolmo selects a grasp on a teapot handle rather than its body. Unlike prior TOG methods, which are limited by small datasets, simplistic language, and uncluttered scenes, GraspMolmo learns from PRISM, a novel large-scale synthetic dataset of 379k samples featuring cluttered environments and diverse, realistic task descriptions.",
+      "Abstract page for arXiv paper 2505.13441: GraspMolmo: Generalizable Task-Oriented Grasping via Large-Scale Synthetic Data Generation",
+      "We release our synthetic dataset, code, model, and benchmarks to accelerate research in task-semantic robotic manipulation, which, along with videos, are available at this https URL. From: Abhay Deshpande [view email] [v1] Mon, 19 May 2025 17:59:06 UTC (12,408 KB) [v2] Thu, 22 May 2025 17:41:15 UTC (12,408 KB) ... View a PDF of the paper titled GraspMolmo: Generalizable Task-Oriented Grasping via Large-Scale Synthetic Data Generation, by Abhay Deshpande and 9 other authors",
+      "View a PDF of the paper titled GraspMolmo: Generalizable Task-Oriented Grasping via Large-Scale Synthetic Data Generation, by Abhay Deshpande and 9 other authors View PDF HTML (experimental)"
+    ],
+    "title": "[2505.13441] GraspMolmo: Generalizable Task-Oriented Grasping via ...",
+    "url": "https://arxiv.org/abs/2505.13441"
+  },
+  {
+    "description": "We propose to leverage a real-world, human activity RGB dataset to teach a robot Task-Oriented Grasping (TOG). We develop a model that takes as input an RGB image and outputs a hand pose and configuration as well as an object pose and a shape.",
+    "favicon_url": "https://you.com/favicon?domain=kth.diva-portal.org&size=128",
+    "snippets": [
+      "Perception for grasping and manipulation, grasping"
+    ],
+    "title": "Learning Task-Oriented Grasping From Human Activity Datasets",
+    "url": "http://kth.diva-portal.org/smash/record.jsf?pid=diva2:1429630&dswid=-3526"
+  },
+  {
+    "description": "Autonomous robotic grasping is an essential skill for service robots to perform specified tasks in unstructured scenarios. Previous work focus on simp\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "(2019) are devoted to modifying the structure of neural networks to improve the detection performance of models on single-object datasets such as the Jacquard Dataset (Depierre et al., 2018) or Cornell Grasp Dataset (Lenz et al., 2015). However, the model trained in a single-object environment does not easily adapt to more complex scenarios on the one hand, and on the other hand, the single function of the model cannot meet various needs in multi-object scenes. In order to implement the recognition and grasp detection of specified items in complex scenarios, Zhang et al. (2019) constructed a multi-task network using the oriented anchor box mechanism based on an object detection model.",
+      "Secondly, we propose a post-processing method which allows the robot to select an optimal grasping area in an active perception way through simply reasoning on the multi-modal information output by the proposed model. The proposed multi-task network has a great improvement in both recognition accuracy and detection speed on the public multi-object dataset GraspNet-1Billion compared with the benchmark.",
+      "The GraspNet-1Billion dataset uses two cameras to take a total of 97,280 RGB-D images with a resolution of 1280 \u00d7 720 in 190 cluttered scenes, and densely annotates the plane grasping rectangles and 6-DoF grasping posture representations of 88 common household items, and each picture provides the semantic mask \u00b7 In this subsection, we verify the semantic segmentation accuracy and grasp detection ability of our proposed multi-task network in a multi-object environment on the GraspNet-1Billion Dataset.",
+      "However, there are some challenges in improving the manipulative skills and cognitive levels of robots, mainly including the following three aspects: ... How to perceive the surrounding objects accurately in an open environment: a reliable target sensing method is the primary condition for a service robot to perform the grasping task."
+    ],
+    "title": "A semantic robotic grasping framework based on multi-task learning ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0952197623002439"
+  },
+  {
+    "description": "To train our learning models, we created a large-scale grasping dataset with haptic recordings, images and material labels. For haptic representation, we propose an unsupervised auto-encoding scheme for learning haptic features, which shows a significant improvement over prior methods on a variety of tactile perception tasks...",
+    "favicon_url": "https://you.com/favicon?domain=www.cs.cmu.edu&size=128",
+    "snippets": [
+      "Re-grasping thus is performed iteratively until our model identifies a stable grasp. Finally, we demonstrate extensive experimental results on grasping a novel set of objects using a real world manipulator. Here you can find documentation regarding the dataset collected.",
+      "It contains haptic, visual and kinematic data on about 7800 grasp interactions on diverse objects collected with a multi-fingered underactuated adaptive gripper. The full dataset can be downloaded here.",
+      "Learning to Grasp Without Seeing Adithya Murali, Yin Li, Dhiraj Gandhi, Abhinav Gupta The Robotics Institute, Carnegie Mellon University"
+    ],
+    "title": "Learning to Grasp Without Seeing",
+    "url": "https://www.cs.cmu.edu/afs/cs/user/amurali/www/projects/GraspingWithoutSeeing/"
+  },
+  {
+    "description": "PDF | In general, humans would grasp an object differently for different tasks, e.g., \"grasping the handle of a knife to cut\" vs. \"grasping the blade to... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "With an aim to get more general and practical grasp models, in this paper, we investigate the problem named Task-Oriented 6-DoF Grasp Pose Detection in Clutters (TO6DGC), which extends the task-oriented problem to a more general 6-DOF Grasp Pose Detection in Cluttered (multi-object) scenario. To this end, we construct a large-scale 6-DoF task-oriented grasping dataset, 6-DoF Task Grasp (6DTG), which features 4391 cluttered scenes with over 2 million 6-DoF grasp poses.",
+      "The results show that our method outperforms various baselines on multiple metrics. Real robot experiments also verify that our OSTG has a better perception of the task-oriented grasp points and 6-DoF grasp poses. Examples of several existing datasets and our 6-DoF Task Grasp (6DTG) dataset.",
+      "Compared with the existing task-oriented grasping datasets (a) and (b), 6DTG uses 6-DoF grasp poses and cluttered scenes. Compared with the existing 6-DoF Grasping in clutters dataset (c), 6DTG provides the task annotation for each grasp. Different grasp pose color represents different task in our 6DTG dataset.",
+      "TASK -ORIENTED GRASP ANNOTATION IN CLUTTERS. Datasets Object Objects Tasks Grasps 6-DoF Clutters"
+    ],
+    "title": "(PDF) Task-Oriented 6-DoF Grasp Pose Detection in Clutters",
+    "url": "https://www.researchgate.net/publication/389315150_Task-Oriented_6-DoF_Grasp_Pose_Detection_in_Clutters"
+  },
+  {
+    "description": "We introduce ACRONYM, a dataset for robot grasp planning based on physics simulation. The dataset contains 17.7M parallel-jaw grasps, spanning 8872 objects from 262 different categories, each labeled with the grasp result obtained from a physics simulator. We show the value of this large and ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "We introduce ACRONYM, a dataset for robot grasp planning based on physics simulation. The dataset contains 17.7M parallel-jaw grasps, spanning 8872 objects from 262 different categories, each labeled with the grasp result obtained from a physics simulator. We show the value of this large and diverse dataset by using it to train two state-of-the-art learning-based grasp planning algorithms.",
+      "Abstract page for arXiv paper 2011.09584: ACRONYM: A Large-Scale Grasp Dataset Based on Simulation",
+      "Abstract:We introduce ACRONYM, a dataset for robot grasp planning based on physics simulation. The dataset contains 17.7M parallel-jaw grasps, spanning 8872 objects from 262 different categories, each labeled with the grasp result obtained from a physics simulator.",
+      "We show the value of this large and diverse dataset by using it to train two state-of-the-art learning-based grasp planning algorithms. Grasp performance improves significantly when compared to the original smaller dataset."
+    ],
+    "title": "[2011.09584] ACRONYM: A Large-Scale Grasp Dataset Based on Simulation",
+    "url": "https://arxiv.org/abs/2011.09584"
+  },
+  {
+    "description": "Compared to the previous dataset ... experiments, we show that training several algorithms of dexterous grasp synthesis on our dataset significantly outperforms training on the previous one. Some diverse grasps on the objects from DexGraspNet....",
+    "favicon_url": "https://you.com/favicon?domain=pku-epic.github.io&size=128",
+    "snippets": [
+      "Compared to the previous dataset from Liu et al. generated by GraspIt!, our dataset has not only more objects and grasps, but also higher diversity and quality. Via performing cross-dataset experiments, we show that training several algorithms of dexterous grasp synthesis on our dataset significantly outperforms training on the previous one. Some diverse grasps on the objects from DexGraspNet.",
+      "A visualization of DexGraspNet. DexGraspNet contains 1.32M grasps of ShadowHand on 5355 objects, which is two orders and one order of magnitudes larger than the previous dataset from DDG.",
+      "Some grasps using different dexterous hand. From left to right: ShadowHand, MANO, Allegro. @article{wang2022dexgraspnet, title={DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for General Objects Based on Simulation}, author={Wang, Ruicheng and Zhang, Jialiang and Chen, Jiayi and Xu, Yinzhen and Li, Puhao and Liu, Tengyu and Wang, He}, journal={arXiv preprint arXiv:2210.02697}, year={2022} }"
+    ],
+    "title": "DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for ...",
+    "url": "https://pku-epic.github.io/DexGraspNet/"
+  },
+  {
+    "description": "Grasping skill is a major ability that a wide number of real-life applications require for robotisation. State-of-the-art robotic grasping methods perform prediction of object grasp locations based on deep neural networks. However, such networks require huge amount of labeled data for training ...",
+    "favicon_url": "https://you.com/favicon?domain=ieeexplore.ieee.org&size=128",
+    "snippets": [
+      "Grasping skill is a major ability that a wide number of real-life applications require for robotisation. State-of-the-art robotic grasping methods perform prediction of object grasp locations based on deep neural networks. However, such networks require huge amount of labeled data for training making this approach often impracticable in robotics."
+    ],
+    "title": "Jacquard: A Large Scale Dataset for Robotic Grasp Detection | IEEE ...",
+    "url": "https://ieeexplore.ieee.org/document/8593950/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=research.google.com&size=128",
+    "snippets": [],
+    "title": "Googleusercontent",
+    "url": "https://research.google.com/pubs/archive/43875.pdf"
+  },
+  {
+    "description": "PDF | In general, humans would grasp an object differently for different tasks, e.g., \"grasping the handle of a knife to cut\" vs. \"grasping the blade to... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "With an aim to get more general and practical grasp models, in this paper, we investigate the problem named Task-Oriented 6-DoF Grasp Pose Detection in Clutters (TO6DGC), which extends the task-oriented problem to a more general 6-DOF Grasp Pose Detection in Cluttered (multi-object) scenario. To this end, we construct a large-scale 6-DoF task-oriented grasping dataset, 6-DoF Task Grasp (6DTG), which features 4391 cluttered scenes with over 2 million 6-DoF grasp poses.",
+      "The results show that our method outperforms various baselines on multiple metrics. Real robot experiments also verify that our OSTG has a better perception of the task-oriented grasp points and 6-DoF grasp poses. Examples of several existing datasets and our 6-DoF Task Grasp (6DTG) dataset.",
+      "Compared with the existing task-oriented grasping datasets (a) and (b), 6DTG uses 6-DoF grasp poses and cluttered scenes. Compared with the existing 6-DoF Grasping in clutters dataset (c), 6DTG provides the task annotation for each grasp. Different grasp pose color represents different task in our 6DTG dataset.",
+      "TASK -ORIENTED GRASP ANNOTATION IN CLUTTERS. Datasets Object Objects Tasks Grasps 6-DoF Clutters"
+    ],
+    "title": "(PDF) Task-Oriented 6-DoF Grasp Pose Detection in Clutters",
+    "url": "https://www.researchgate.net/publication/389315150_Task-Oriented_6-DoF_Grasp_Pose_Detection_in_Clutters"
+  },
+  {
+    "description": "We introduce ACRONYM, a dataset for robot grasp planning based on physics simulation. The dataset contains 17.7M parallel-jaw grasps, spanning 8872 objects from 262 different categories, each labeled with the grasp result obtained from a physics simulator. We show the value of this large and ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "We introduce ACRONYM, a dataset for robot grasp planning based on physics simulation. The dataset contains 17.7M parallel-jaw grasps, spanning 8872 objects from 262 different categories, each labeled with the grasp result obtained from a physics simulator. We show the value of this large and diverse dataset by using it to train two state-of-the-art learning-based grasp planning algorithms.",
+      "Abstract page for arXiv paper 2011.09584: ACRONYM: A Large-Scale Grasp Dataset Based on Simulation",
+      "Abstract:We introduce ACRONYM, a dataset for robot grasp planning based on physics simulation. The dataset contains 17.7M parallel-jaw grasps, spanning 8872 objects from 262 different categories, each labeled with the grasp result obtained from a physics simulator.",
+      "We show the value of this large and diverse dataset by using it to train two state-of-the-art learning-based grasp planning algorithms. Grasp performance improves significantly when compared to the original smaller dataset."
+    ],
+    "title": "[2011.09584] ACRONYM: A Large-Scale Grasp Dataset Based on Simulation",
+    "url": "https://arxiv.org/abs/2011.09584"
+  },
+  {
+    "description": "Compared to the previous dataset ... experiments, we show that training several algorithms of dexterous grasp synthesis on our dataset significantly outperforms training on the previous one. Some diverse grasps on the objects from DexGraspNet....",
+    "favicon_url": "https://you.com/favicon?domain=pku-epic.github.io&size=128",
+    "snippets": [
+      "Compared to the previous dataset from Liu et al. generated by GraspIt!, our dataset has not only more objects and grasps, but also higher diversity and quality. Via performing cross-dataset experiments, we show that training several algorithms of dexterous grasp synthesis on our dataset significantly outperforms training on the previous one. Some diverse grasps on the objects from DexGraspNet.",
+      "A visualization of DexGraspNet. DexGraspNet contains 1.32M grasps of ShadowHand on 5355 objects, which is two orders and one order of magnitudes larger than the previous dataset from DDG.",
+      "Some grasps using different dexterous hand. From left to right: ShadowHand, MANO, Allegro. @article{wang2022dexgraspnet, title={DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for General Objects Based on Simulation}, author={Wang, Ruicheng and Zhang, Jialiang and Chen, Jiayi and Xu, Yinzhen and Li, Puhao and Liu, Tengyu and Wang, He}, journal={arXiv preprint arXiv:2210.02697}, year={2022} }"
+    ],
+    "title": "DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for ...",
+    "url": "https://pku-epic.github.io/DexGraspNet/"
+  },
+  {
+    "description": "Our method ranks top on the OakInk-shape dataset over all previous methods, improving the Penetration Volume, the Grasp Displace, and the P-FID over the state-of-the-art by ... 41.43 %, respectively. Notably, it demonstrates good generality in handling novel categories and tasks. Task-Oriented ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Our method ranks top on the OakInk-shape dataset over all previous methods, improving the Penetration Volume, the Grasp Displace, and the P-FID over the state-of-the-art by ... 41.43 %, respectively. Notably, it demonstrates good generality in handling novel categories and tasks. Task-Oriented Grasping (TOG), which requires selecting the optimal area of an object to grasp, such that the execution of the subsequent manipulation could be facilitated, has recently attracted extensive research attention [1; 2]. Existing works have explored achieving TOG through building knowledge graphs [1; 3], learning from videos with human actions [4; 5], and utilizing pre-trained foundation models [6; 7]. The generated versatile grasping enables robots to interact with objects in human-like manners [2; 8] and would boost a variety of downstream applications [9; 10; 11].",
+      "First, compared to parallel grippers, dexterous hands necessitate a higher degree of freedom, posing considerable challenges in network design, especially for estimating grasp pose on objects with novel geometry. Second, the versatility of dexterous manipulation greatly surpasses that of manipulation by parallel grippers, rendering the datasets on task-oriented parallel grasping inadequate.",
+      "Our method ranks top on the OakInk-shape dataset over all previous methods, improving the Penetration Volume, the Grasp Displace, and the P-FID over the state-of-the-art by ... We propose a framework that generates dexterous TOG via language-driven part analysis by leveraging LLMs\u2019 open-world knowledge reasoning capabilities. ... We develop several LLM prompts to generate the category and part-level grasp descriptions, improving the robustness of dexterous task-oriented grasp generation.",
+      "Figure 5: Visual comparison of the generated task-oriented grasps by PartDexTOG and the baselines. Table 1: Quantitative results on OakInk-shape. We train and test PartDexTOG on the OakInk-shape dataset [49], the largest dataset of dexterous TOG, containing"
+    ],
+    "title": "PartDexTOG: Generating Dexterous Task-Oriented Grasping via ...",
+    "url": "https://arxiv.org/html/2505.12294v1"
+  },
+  {
+    "description": "Grasping skill is a major ability that a wide number of real-life applications require for robotisation. State-of-the-art robotic grasping methods perform prediction of object grasp locations based on deep neural networks. However, such networks require huge amount of labeled data for training ...",
+    "favicon_url": "https://you.com/favicon?domain=ieeexplore.ieee.org&size=128",
+    "snippets": [
+      "Grasping skill is a major ability that a wide number of real-life applications require for robotisation. State-of-the-art robotic grasping methods perform prediction of object grasp locations based on deep neural networks. However, such networks require huge amount of labeled data for training making this approach often impracticable in robotics."
+    ],
+    "title": "Jacquard: A Large Scale Dataset for Robotic Grasp Detection | IEEE ...",
+    "url": "https://ieeexplore.ieee.org/document/8593950/"
+  },
+  {
+    "description": "PDF | Despite the enormous progress and generalization in robotic grasping in recent years, existing methods have yet to scale and generalize... | Find, read and cite all the research you need on ResearchGate",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Despite the enormous progress and generalization in robotic grasping in recent years, existing methods have yet to scale and generalize task-oriented grasping to the same extent. This is largely due to the scale of the datasets both in terms of the number of objects and tasks studied.",
+      "We address these concerns with the TaskGrasp dataset which is more diverse both in terms of objects and tasks, and an order of magnitude larger than previous datasets. The dataset contains 250K task-oriented grasps for 56 tasks and 191 objects along with their RGB-D information.",
+      "Our framework shows a significant improvement of around 12% on held-out settings compared to baseline methods which do not use semantics. We demonstrate that our dataset and model are applicable for the real world by executing task-oriented grasps on a real robot on unknown objects.",
+      "More recent works have learned task-oriented grasping from just RGB-D observations of objects. ... objects from speci\ufb01c categories in a bin. To accelerate learning from observations, there have been \u00b7 efforts in scaling datasets as discussed previously ["
+    ],
+    "title": "(PDF) Same Object, Different Grasps: Data and Semantic Knowledge ...",
+    "url": "https://www.researchgate.net/publication/345788883_Same_Object_Different_Grasps_Data_and_Semantic_Knowledge_for_Task-Oriented_Grasping"
+  },
+  {
+    "description": "Furthermore, some studies [36, 43, 17] have employed program-like specifications to prompt LLMs, melding planning and action using a predefined library of action functions. There is also an increase in research focused on utilizing LLMs specifically for robotic grasping. Tang et al. proposed GraspGPT to use LLMs to generate semantic knowledge and then selected task-oriented ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Furthermore, some studies [36, 43, 17] have employed program-like specifications to prompt LLMs, melding planning and action using a predefined library of action functions. There is also an increase in research focused on utilizing LLMs specifically for robotic grasping. Tang et al. proposed GraspGPT to use LLMs to generate semantic knowledge and then selected task-oriented grasp pose from grasp candidates [39]. Mirjalili et al.",
+      "To train the model for reasoning grasping tasks, we introduce our reasoning grasping dataset, which builds upon the GraspNet-1 billion dataset [13]. GraspNet-1 billion consists of 190 indoor tabletop RGB-D scenes, 88 objects, and 97280 images. Its wide variety of scenes, objects, and grasp poses provides an excellent foundation. We extend the GraspNet-1B dataset with reasoning instructions as well as object parts grasping annotations. We provide some examples in our dataset in Fig.",
+      "Table III shows the grasp prediction results on the reasoning grasping dataset. Performance is reported using the rectangle evaluation metric [18]. A grasp pose is deemed valid if it fulfills the following two conditions: 1) The Intersection over Union (IoU) score between the predicted and ground truth rectangles exceeds ... 25 %; 2) The angular deviation between the orientations of the predicted and ground truth rectangles is less than 30 degrees.",
+      "Grasp-anything: Large-scale grasp dataset from foundation models. arXiv preprint arXiv:2309.09818, 2023. Xu et al. [2023] Kechun Xu, Shuqi Zhao, Zhongxiang Zhou, Zizhang Li, Huaijin Pi, Yifeng Zhu, Yue Wang, and Rong Xiong. A joint modeling of vision-language-action for target-oriented grasping in clutter."
+    ],
+    "title": "Reasoning Grasping via Multimodal Large Language Model",
+    "url": "https://arxiv.org/html/2402.06798v2"
+  },
+  {
+    "description": "Grasping skill is a major ability that a wide number of real-life applications require for robotisation. State-of-the-art robotic grasping methods perform prediction of object grasp locations based on deep neural networks. However, such networks require huge amount of labeled data for training ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Grasping skill is a major ability that a wide number of real-life applications require for robotisation. State-of-the-art robotic grasping methods perform prediction of object grasp locations based on deep neural networks. However, such networks require huge amount of labeled data for training making this approach often impracticable in robotics.",
+      "Abstract page for arXiv paper 1803.11469: Jacquard: A Large Scale Dataset for Robotic Grasp Detection",
+      "State-of-the-art robotic grasping methods perform prediction of object grasp locations based on deep neural networks. However, such networks require huge amount of labeled data for training making this approach often impracticable in robotics. In this paper, we propose a method to generate a large scale synthetic dataset with ground truth, which we refer to as the Jacquard grasping dataset.",
+      "Jacquard is built on a subset of ShapeNet, a large CAD models dataset, and contains both RGB-D images and annotations of successful grasping positions based on grasp attempts performed in a simulated environment. We carried out experiments using an off-the-shelf CNN, with three different evaluation metrics, including real grasping robot trials."
+    ],
+    "title": "[1803.11469] Jacquard: A Large Scale Dataset for Robotic Grasp ...",
+    "url": "https://arxiv.org/abs/1803.11469"
+  },
+  {
+    "description": "Task-oriented grasping is a crucial yet challenging task in robotic manipulation. Despite the recent progress, few existing methods address task-oriented grasping with dexterous hands. Dexterous hands provide better precision and versatility, enabling robots to perform task-oriented grasping ...",
+    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
+    "snippets": [
+      "Task-oriented grasping is a crucial yet challenging task in robotic manipulation. Despite the recent progress, few existing methods address task-oriented grasping with dexterous hands. Dexterous hands provide better precision and versatility, enabling robots to perform task-oriented grasping more effectively.",
+      "Abstract page for arXiv paper 2505.12294: PartDexTOG: Generating Dexterous Task-Oriented Grasping via Language-driven Part Analysis",
+      "Our method ranks top on the OakInk-shape dataset over all previous methods, improving the Penetration Volume, the Grasp Displace, and the P-FID over the state-of-the-art by $3.58\\%$, $2.87\\%$, and $41.43\\%$, respectively. Notably, it demonstrates good generality in handling novel categories and tasks. From: Weishang Wu [view email] [v1] Sun, 18 May 2025 08:15:11 UTC (1,931 KB) ... View a PDF of the paper titled PartDexTOG: Generating Dexterous Task-Oriented Grasping via Language-driven Part Analysis, by Weishang Wu and Yifei Shi and Zhizhong Chen and Zhipong Cai",
+      "View a PDF of the paper titled PartDexTOG: Generating Dexterous Task-Oriented Grasping via Language-driven Part Analysis, by Weishang Wu and Yifei Shi and Zhizhong Chen and Zhipong Cai View PDF HTML (experimental)"
+    ],
+    "title": "[2505.12294] PartDexTOG: Generating Dexterous Task-Oriented Grasping ...",
+    "url": "https://arxiv.org/abs/2505.12294"
+  },
+  {
+    "description": "Papers by Jeannette Bohg with links to code and results.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "This paper reports the activities and outcomes in the Workshop on Grasping and Manipulation Datasets that was organized under the International Conference on Robotics and Automation (ICRA) 2016.",
+      "Given 3D point cloud observations, SPHINX learns to infer task-relevant points within a point cloud, or salient points, which support spatial generalization by focusing on semantically meaningful features. ... no code implementations \u2022 30 Oct 2024 \u2022 Qianxu Wang, Congyue Deng, Tyler Ga Wei Lum, Yuanpei Chen, Yaodong Yang, Jeannette Bohg, Yixin Zhu, Leonidas Guibas \u00b7 One-shot transfer of dexterous grasps to novel scenes with object and context variations has been a challenging problem.",
+      "Contact-rich manipulation tasks in unstructured environments often require both haptic and visual feedback. Contact-rich Manipulation Deep Reinforcement Learning +2 ... 1 code implementation \u2022 19 Sep 2018 \u2022 Hamza Merzic, Miroslav Bogdanovic, Daniel Kappler, Ludovic Righetti, Jeannette Bohg \u00b7 While it is possible to learn grasping policies without contact sensing, our results suggest that contact feedback allows for a significant improvement of grasping robustness under object pose uncertainty and for objects with a complex shape.",
+      "We present ObjectFolder 2. 0, a large-scale, multisensory dataset of common household objects in the form of implicit neural representations that significantly enhances ObjectFolder 1. 0 in three aspects. ... no code implementations \u2022 9 Dec 2021 \u2022 Rika Antonova, Jingyun Yang, Priya Sundaresan, Dieter Fox, Fabio Ramos, Jeannette Bohg \u00b7 Deformable object manipulation remains a challenging task in robotics research."
+    ],
+    "title": "Papers with Code - Jeannette Bohg",
+    "url": "https://paperswithcode.com/author/jeannette-bohg"
+  },
+  {
+    "description": "Neural task-oriented dialogue systems often struggle to smoothly interface with a knowledge base. ... In this paper, we introduce MultiWOZ 2. 3, in which we differentiate incorrect annotations in dialogue acts from dialogue states, identifying a lack of co-reference when publishing the updated dataset...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "To advance multi-domain (cross-domain) dialogue modeling as well as alleviate the shortage of Chinese task-oriented datasets, we propose CrossWOZ, the first large-scale Chinese Cross-Domain Wizard-of-Oz task-oriented dataset.",
+      "In this paper, we propose to expand coverage of task-oriented dialogue systems by incorporating external unstructured knowledge sources. ... We test HDNO on MultiWoz 2. 0 and MultiWoz 2. 1, the datasets on multi-domain dialogues, in comparison with word-level E2E model trained with RL, LaRL and HDSA, showing improvements on the performance evaluated by automatic evaluation metrics and human evaluation.",
+      "These leaderboards are used to track progress in Task-Oriented Dialogue Systems",
+      "Use these libraries to find Task-Oriented Dialogue Systems models and implementations"
+    ],
+    "title": "Task-Oriented Dialogue Systems | Papers With Code",
+    "url": "https://paperswithcode.com/task/task-oriented-dialogue-systems"
+  },
+  {
+    "description": "The Schema-Guided Dialogue (SGD) dataset consists of over 20k annotated multi-domain, task-oriented conversations between a human and a virtual assistant. These conversations involve interactions with services and APIs spanning 20 domains, ranging from banks and events to media, calendar, travel, ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "The Schema-Guided Dialogue (SGD) dataset consists of over 20k annotated multi-domain, task-oriented conversations between a human and a virtual assistant. These conversations involve interactions with services and APIs spanning 20 domains, ranging from banks and events to media, calendar, travel, and weather.",
+      "MuTual is a retrieval-based dataset for multi-turn dialogue reasoning, which is modified from Chinese high school English listening comprehension test data. It tests dialogue reasoning via next utterance prediction. ... CrossWOZ is the first large-scale Chinese Cross-Domain Wizard-of-Oz task-oriented dataset.",
+      "Task Oriented Parsing v2 (TOPv2) representations for intent-slot based dialog systems. ... Action-Based Conversations Dataset (ABCD) is a goal-oriented dialogue fully-labeled dataset with over 10K human-to-human dialogues containing 55 distinct user intents requiring unique sequences of actions constrained by policies to achieve task success.",
+      "HR-Multiwoz is a fully-labeled dataset of 550 conversations spanning 10 HR domains to evaluate LLM Agent. It is the first labeled open-sourced conversation dataset in the HR domain for NLP research. Please refer to HR-MultiWOZ: A Task Oriented Dialogue (TOD) Dataset for HR LLM Agent for details about the dataset construction."
+    ],
+    "title": "Datasets - Task-Oriented Dialogue Systems",
+    "url": "https://paperswithcode.com/datasets?task=task-oriented-dialogue-systems"
+  },
+  {
+    "description": "The current state-of-the-art on Cornell Grasp Dataset is grasp_det_seg_cnn (rgb only, IW split). See a full comparison of 7 papers with code.",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [],
+    "title": "Papers with Code - Cornell Grasp Dataset Benchmark (Robotic Grasping)",
+    "url": "https://paperswithcode.com/sota/robotic-grasping-on-cornell-grasp-dataset-1"
+  },
+  {
+    "description": "The more data, the better the learning process will be. Once the training datasets process is complete, the model will be able to perform the tasks without...",
+    "favicon_url": "https://you.com/favicon?domain=attentioninsight.com&size=128",
+    "snippets": [
+      "The success of machine learning is directly related to the volume and quality of the raw data. The more data, the better the learning process will be. Once the training datasets process is complete, the model will be able to perform the tasks without the need for additional tools.",
+      "Each type of task addresses a specific range of issues. In this way, a more accurate result is achieved. The system can perform its functions faster, more accurately, and more smoothly. The list of methods for analyzing training datasets includes the following:",
+      "Thanks to the training dataset, it is possible to adjust almost all production and organizational aspects, optimize processes and receive and process reports from various structures on time. The availability of various methodologies, tasks, and data sets that have already been collected makes it possible to start and successfully implement machine learning.",
+      "The clustering task arranges all the datasets for projects into groups according to a certain attribute."
+    ],
+    "title": "Proven Tasks and Methods for Training Datasets - Attention Insight",
+    "url": "https://attentioninsight.com/tasks-and-methods-for-training-datasets/"
+  },
+  {
+    "description": "Counting 28 Visual Place Recognition ... Robotic Grasping 22 Scene Classification 22 Speech Synthesis 22 Video Classification 22 16k 21 Graph Regression 21 Image Denoising 21 Imitation Learning 21 Medical Diagnosis 21 Molecular Property Prediction 21 Simultaneous Localization and Mapping 21 Speech Emotion Recognition 21 Speech Enhancement 21 Super-Resolution 21 Task-Oriented Dialogue Systems ...",
+    "favicon_url": "https://you.com/favicon?domain=paperswithcode.com&size=128",
+    "snippets": [
+      "Counting 28 Visual Place Recognition 28 Visual Tracking 28 Neural Architecture Search 27 Slot Filling 27 Unsupervised Anomaly Detection 27 Visual Localization 27 2D Human Pose Estimation 26 DeepFake Detection 26 Drug Discovery 26 Music Information Retrieval 26 NER 26 Open-Domain Question Answering 26 Part-Of-Speech Tagging 26 Visual Odometry 26 10-shot image generation 25 Emotion Classification 25 Face Verification 25 Intent Detection 25 Mathematical Reasoning 25 Time Series Analysis 25 Video Prediction 25 Data-to-Text Generation 24 Few-Shot Image Classification 24 Text-to-Image Generation 24",
+      "General Language Understanding Evaluation (GLUE) benchmark is a collection of nine natural language understanding tasks, including single-sentence tasks CoLA and SST-2, similarity and paraphrasing tasks MRPC, STS-B and QQP, and natural language inference tasks MNLI, QNLI, RTE and WNLI. ... The Stanford Sentiment Treebank is a corpus with fully labeled parse trees that allows for a complete analysis of the compositional effects of sentiment in language. The corpus is based on the dataset introduced by Pang and Lee (2005) and consists of 11,855 single sentences extracted from movie reviews.",
+      "CoNLL-2003 is a named entity recognition dataset released as a part of CoNLL-2003 shared task: language-independent named entity recognition. The data consists of eight files covering two languages: English and German.",
+      "Dataset of hate speech annotated on Internet forum posts in English at sentence-level. The source forum in Stormfront, a large online community of white nacionalists. A total of 10,568 sentence have been been extracted from Stormfront and classified as conveying hate speech or not. ... MTEB is a benchmark that spans 8 embedding tasks covering a total of 56 datasets and 112 languages."
+    ],
+    "title": "Papers with Code - Machine Learning Datasets",
+    "url": "https://paperswithcode.com/datasets?page=1&task=text-classification"
+  },
+  {
+    "description": "Download scientific diagram | Designing a data task from publication: Towards Open Data for Personal Web Tasking | Open data is targeted for public use and usually released by the public sector, e.g., by the government. Its utilization, however, is currently restricted to programmers with knowledge ...",
+    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
+    "snippets": [
+      "Download scientific diagram | Designing a data task from publication: Towards Open Data for Personal Web Tasking | Open data is targeted for public use and usually released by the public sector, e.g., by the government. Its utilization, however, is currently restricted to programmers with knowledge on programming and processing of different data formats."
+    ],
+    "title": "Designing a data task | Download Scientific Diagram",
+    "url": "https://www.researchgate.net/figure/Designing-a-data-task_fig2_272238356"
+  },
+  {
+    "description": "Health care is one of the most exciting frontiers in data mining and machine learning. Successful adoption of electronic health records (EHRs) created an explosion in digital clinical data available for analysis, but progress in machine learning for healthcare research has been difficult to ...",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "snippets": [
+      "Health care is one of the most exciting frontiers in data mining and machine learning. Successful adoption of electronic health records (EHRs) created an explosion in digital clinical data available for analysis, but progress in machine learning for healthcare research has been difficult to measure because of the absence of publicly available benchmark data sets.",
+      "Scientific Data - Multitask learning and benchmarking with clinical time series data",
+      "The experiments were done on several private datasets. There is a great deal of early research that uses neural networks to predict LOS in hospitalized patients27,28. However, rather than regression, much of this work formulates the task as binary classification aimed at identifying patients at risk for long stays29.",
+      "The closest work in spirit to ours is a paper by Collobert and Weston38 where a single convolutional network is used to perform a variety of natural language tasks (part-of-speech tagging, named entity recognition, and language modeling) with diverse sequential structure. Earlier version of this work has been available online for two years (arXiv:1703.07771v1). The current version adds more detailed description of the dataset generation process, improves the neural baselines and adds more discussion on the results."
+    ],
+    "title": "Multitask learning and benchmarking with clinical time series data ...",
+    "url": "https://www.nature.com/articles/s41597-019-0103-9"
+  }
+]

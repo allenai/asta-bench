@@ -1,0 +1,275 @@
+[
+  {
+    "description": "In reinforcement learning, an agent learns to make decisions by interacting with an environment. It is used in robotics and other decision-making settings.",
+    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
+    "snippets": [
+      "But more complicated tasks, such as attempts to simulate human behavior or automate driving, involve interaction with high-variable and mutable real-world environments. Research shows deep reinforcement learning with deep neural networks aids such tasks, especially with respect to generalization and mapping high-dimensionally sensory input to controlled systems outputs.16 Studies suggest that deep reinforcement learning with robots relies heavily on collected datasets, and so recent work explores avenues for collecting real-world data17 and repurposing prior data18 to improve reinforcement learning systems.",
+      "This data is processed and collected iteratively as the agent continues interacting with that environment. - Offline. When an agent does not have direct access to an environment, it can learn through logged data of that environment. This is offline learning. A large subset of research has turned to offline learning given practical difficulties in training models through direct interaction with environments.8 \u00b7 Reinforcement learning is a vibrant, ongoing area of research, and as such, developers have produced a myriad approaches to reinforcement learning.",
+      "This can be the model guiding the autonomous vehicle and that helps it predict best routes, what to expect from surrounding vehicles given their position and speed, and so forth.7 Some model-based approaches use direct human feedback in initial learning and then shift to autonomous leanring. ... Join our world-class panel of engineers, researchers, product leaders and more as they cut through the AI noise to bring you the latest in AI news and insights. ... - Online. Here, an agent collects data directly from interacting with its surrounding environment.",
+      "Recent research suggests leveraging natural language processing techniques and tools\u2014e.g. large language models (LLMs)\u2014may improve generalization in reinforcement learning systems through textual representation of real-world environments.19 Many studies show how interactive textual environments provide cost-effective alternatives to three-dimensional environments when instructing learning agents in successive decision-making tasks.20 Deep reinforcement learning also undergirds textual decision-making in chatbots. In fact, reinforcement learning outperforms other methods for improving chatbot dialogue response.21 ... Learn how to choose the right approach in preparing datasets and employing foundation models."
+    ],
+    "title": "What is reinforcement learning? | IBM",
+    "url": "https://www.ibm.com/think/topics/reinforcement-learning"
+  },
+  {
+    "description": "Your All-in-One Learning Portal: GeeksforGeeks is a comprehensive educational platform that empowers learners across domains-spanning computer science and programming, school education, upskilling, commerce, software tools, competitive exams, and more.",
+    "favicon_url": "https://you.com/favicon?domain=www.geeksforgeeks.org&size=128",
+    "snippets": [
+      "NumPy (short for Numerical Python ) is one of the most fundamental libraries in Python for scientific computing. It provides support for large, multi-dimensional arrays and matrices along with a collection of mathematical functions to operate on arrays.At its core it introduces the ndarray (n-dimens",
+      "Supervised machine learning is a fundamental approach for machine learning and artificial intelligence. It involves training a model using labeled data, where each input comes with a corresponding correct output. The process is like a teacher guiding a student\u00e2\u0080\u0094hence the term \"supervised\" learning.",
+      "This article provides over 100 Machine Learning projects and ideas to provide hands-on experience for both beginners and professionals. Whether you're a student enhancing your resume or a professional advancing your career these projects offer practical insights into the world of Machine Learning an",
+      "Reinforcement Learning (RL) is a branch of machine learning that focuses on how agents can learn to make decisions through trial and error to maximize cumulative rewards. RL allows machines to learn by interacting with an environment and receiving feedback based on their actions."
+    ],
+    "title": "Reinforcement Learning - GeeksforGeeks",
+    "url": "https://www.geeksforgeeks.org/what-is-reinforcement-learning/"
+  },
+  {
+    "description": "The only way to collect information about the environment is to interact with it. The first two of these problems could be considered planning problems (since some form of model is available), while the last one could be considered to be a genuine learning problem. However, reinforcement learning converts both planning problems to machine learning problems. The exploration vs. exploitation trade-off has been most thoroughly studied ...",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "The only way to collect information about the environment is to interact with it. The first two of these problems could be considered planning problems (since some form of model is available), while the last one could be considered to be a genuine learning problem. However, reinforcement learning converts both planning problems to machine learning problems. The exploration vs. exploitation trade-off has been most thoroughly studied through the multi-armed bandit problem and for finite state space Markov decision processes in Burnetas and Katehakis (1997).",
+      "Due to its generality, reinforcement learning is studied in many disciplines, such as game theory, control theory, operations research, information theory, simulation-based optimization, multi-agent systems, swarm intelligence, and statistics. In the operations research and control literature, RL is called approximate dynamic programming, or neuro-dynamic programming.",
+      "The problems of interest in RL have also been studied in the theory of optimal control, which is concerned mostly with the existence and characterization of optimal solutions, and algorithms for their exact computation, and less with learning or approximation (particularly in the absence of a mathematical model of the environment). Basic reinforcement learning is modeled as a Markov decision process:",
+      "Adversarial deep reinforcement learning is an active area of research in reinforcement learning focusing on vulnerabilities of learned policies. In this research area some studies initially showed that reinforcement learning policies are susceptible to imperceptible adversarial manipulations.",
+      "While some methods have been proposed to overcome these susceptibilities, in the most recent studies it has been shown that these proposed solutions are far from providing an accurate representation of current vulnerabilities of deep reinforcement learning policies."
+    ],
+    "title": "Reinforcement learning - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Reinforcement_learning"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=proceedings.neurips.cc&size=128",
+    "snippets": [],
+    "title": "Reinforcement Learning with Augmented Data",
+    "url": "https://proceedings.neurips.cc/paper/2020/file/e615c82aba461681ade82da2da38004a-Paper.pdf"
+  },
+  {
+    "description": "Hi and welcome to the first part of a series on Reinforcement Learning.",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "If you somehow ended up here without having heard of Reinforcement Learning (RL) before, then let me summarize it as follows: \u201cRL is a general framework for training an artificial intelligence model\u2026",
+      "In other domains like engineering or mathematics, people have often been studying the same problems with different names and methods. Or in fields like neuroscience and psychology, some similarities can be found in the way our brain \u201crewards\u201d us by releasing dopamine. The likely reason for this intersection of domains, is that reinforcement learning is the study of a fundamental problem.",
+      "The \u201cdataset\u201d we need to consider here, are the actions our agent took and the accumulated rewards it got by taking those actions. An added difficulty here is that our dataset is non-static. Say that our agent acts in a certain way, we can then collect some data of the actions our agent took and we can try to optimize these (e.g.",
+      "You might look at this framework and think: \u201cHey, isn\u2019t that exactly what people are already studying in the field of \u2026?\u201d. And in fact, you might be right."
+    ],
+    "title": "Reinforcement Learning: An introduction (Part 1/4) | by C\u00e9dric ...",
+    "url": "https://medium.com/@cedric.vandelaer/reinforcement-learning-an-introduction-part-1-4-866695deb4d1"
+  },
+  {
+    "description": "Data availability and accessibility have brought in unseen changes in the finance systems and new theoretical and computational challenges. For exampl\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "For example, in contrast to classical stochastic control theory and other analytical approaches for solving financial decision-making problems that rely heavily on model assumptions, new developments from reinforcement learning (RL) can make full use of a large amount of financial data with fewer model assumptions and improve decisions in complex economic environments. This paper reviews the developments and use of Deep Learning(DL), RL, and Deep Reinforcement Learning (DRL)methods in information-based decision-making in financial industries.",
+      "Next, connections are made with neural networks to extend the framework to encompass deep RL algorithms. Finally, the paper concludes by discussing the application of these RL and DRL algorithms in various decision-making problems in finance, including optimal execution, portfolio optimization, option pricing, hedging, and market-making."
+    ],
+    "title": "How are reinforcement learning and deep learning algorithms used ...",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2667096822000374"
+  },
+  {
+    "description": "Reinforcement Learning (RL) is a machine learning paradigm that enhances clinical decision-making for healthcare professionals by addressing uncertainties and optimizing sequential treatment strategies. RL leverages patient-data to create ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Off-policy methods11, in contrast, separate the learning and behavior policies, allowing the agent to learn from experiences collected under a different policy than the one being improved. In other words, the agent learns from data generated by one policy while attempting to optimize a different policy. An analogy might be a chef learning to cook by studying recipes from various sources before developing their own unique style.",
+      "Safety, resource availability, cost, time, and lack of a simulation environment26 may require data collection only once. Moreover, the increasing quantity of large, retrospective datasets that already exist can be repurposed to optimize agents on vast and diverse behaviors that would otherwise be inaccessible to obtain from live experimentation. These constraints provide significant motivation to effectively convert traditional online RL as an \u201coffline\u201d problem27. Offline Reinforcement Learning (RL) is designed for scenarios where direct interaction with an environment is limited or infeasible.",
+      "This is seen in multiple studies that determine the dosing of vasopressors or management of mechanical ventilators based on all-cause in-hospital mortality74. Inverse reinforcement learning (IRL) offers a potential solution by deriving reward functions from observed behaviors or data, thus estimating rewards during the learning process75.",
+      "Healthcare data, particularly electronic health records, can be high-dimensional presenting challenges in preprocessing and selecting relevant features. Data quality issues such as missing values, noise, and inconsistencies further complicate state space formulation. Healthcare data may also exhibit biases due to factors such as demographic disparities, clinical practice variations, and data collection methods73."
+    ],
+    "title": "A Primer on Reinforcement Learning in Medicine for Clinicians - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11599275/"
+  },
+  {
+    "description": "Reinforcement Learning (RL) is a machine learning (ML) technique to learn sequential decision-making in complex problems. RL is inspired by trial-and-\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "In the past few years, a large number of survey papers on reinforcement learning have been published. However, the majority of these studies discuss the applications of RL in particular domains, such as industrial process control (Nian et al., 2020), autonomous vehicles (Kiran et al., 2022, Aradi, 2022), robotics (Singh et al., 2022, Zhu and Zhang, 2021, Khan et al., 2020), traffic signal control (Noaeen et al., 2022, Rasheed et al., 2020), energy management (Chen et al., 2022, Fu et al., 2022, Arwa and Folly, 2020), recommender systems (Afsar et al., 2022), computer vision (Le et al., 2022), medical (Zhou et al., 2021, Subramanian et al., 2022), etc.",
+      "Castro, P. S., Moitra, S., Gelada, C., Kumar, S., & Bellemare, M. G. (2018). Dopamine: A research framework for deep...View more references ... An energy management strategy (EMS) based on reinforcement learning is proposed in this study to enhance the fuel economy and durability of a fuel cell hybrid bus (FCHB).",
+      "The interconnections and differences between the Inverse Optimal Control and Inverse Reinforcement Learning techniques were reviewed by Azar et al. (2020) to fill the research void in the current body of literature. The presented survey in this paper provides an overall understanding of RL foundations, algorithms and promising research directions and is not confined to any specific application field.",
+      "This article goes into considerable detail about a number of key components and significant mechanisms of RL, along with applications and ongoing work in DRL. The recent survey papers by Moerland et al., 2022, Luo et al., 2022a give a detailed review of model-based RL approaches. There are additional noteworthy survey studies that provide an excellent summary of some of the research directions in RL."
+    ],
+    "title": "Reinforcement learning algorithms: A brief survey - ScienceDirect",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417423009971"
+  },
+  {
+    "description": "Reinforcement learning (RL) has emerged as a dynamic and transformative paradigm in artificial intelligence, offering the promise of intelligent decision-making in complex and dynamic environments. This unique feature enables RL to address ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
+    "snippets": [
+      "Table 1 summarizes their contributions and highlights the differences between their work and ours. In [12], a systematic review of deep reinforcement learning (DRL)-based manipulation is provided. The study comprehensively analyzes 286 articles, covering key topics such as grasping in clutter, sim-to-real, learning from demonstration, and other aspects related to object manipulation. The review explores strategies for data collection, the selection of models, and their learning efficiency.",
+      "The search strategy for this systematic review incorporates the following query: (\u201cRL\u201d OR \u201cDRL\u201d OR \u201cDQRL\u201d) AND (\u201cRobotics Grasping\u201d OR \u201cRobotics Manipulation\u201d). The other query is identical, with the only difference being the replacement of (\u201cRobotics\u201d with \u201cCell Growth\u201d OR \u201cCell Movements\u201d OR \u201cYeast Cells\u201d). The collected articles for this systematic review from databases were published from 2022 to December 2023. The inclusion criteria for this study encompass articles written in the English language and presented to reputable journals and conferences. The primary focus of this study involves reinforcement learning (RL) and RL algorithms, with specific attention to applications in robotics and healthcare.",
+      "The discipline of reinforcement learning has observed significant advancements in the last decade. Figure 4 displays the yearly scientific output, measured by the number of papers, in a specific study domain spanning from 1950 to 2024. The data may be analyzed and examined using the following methods:",
+      "This paper explores the significance of reinforcement learning (RL) in the realms of robotics and healthcare, considering various criteria. The discussion commences with a fundamental RL overview, elucidating the Markov Decision Process and comprehensively covering RL aspects, distinguishing between model-based and model-free, value-based and policy-based, and on-policy and off-policy approaches. This study delves deeply into RL algorithms, presenting a comprehensive overview of dynamic programming (DP), Monte Carlo (MC), and temporal difference (TD), including its two approaches, SARSA and Q-learning."
+    ],
+    "title": "Reinforcement Learning Algorithms and Applications in Healthcare ...",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11053800/"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=rlhfbook.com&size=128",
+    "snippets": [],
+    "title": "Reinforcement Learning from Human Feedback",
+    "url": "https://rlhfbook.com/book.pdf"
+  },
+  {
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=www.andrew.cmu.edu&size=128",
+    "snippets": [],
+    "title": "Reinforcement Learning",
+    "url": "https://www.andrew.cmu.edu/course/10-703/textbook/BartoSutton.pdf"
+  },
+  {
+    "description": "In machine learning, reinforcement learning from human feedback (RLHF) is a technique to align an intelligent agent with human preferences. It involves training a reward model to represent preferences, which can then be used to train other models through reinforcement learning.",
+    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
+    "snippets": [
+      "Both offline data collection models, where the model is learning by interacting with a static dataset and updating its policy in batches, as well as online data collection models, where the model directly interacts with the dynamic environment and updates its policy immediately, have been mathematically studied proving sample complexity bounds for RLHF under different feedback models.",
+      "The algorithm as used today was introduced by OpenAI in a paper on enhancing text continuation or summarization based on human feedback, and it began to gain popularity when the same method was reused in their paper on InstructGPT. RLHF has also been shown to improve the robustness of RL agents and their capacity for exploration, which results in an optimization process more adept at handling uncertainty and efficiently exploring its environment in search of the highest reward. Human feedback is commonly collected by prompting humans to rank instances of the agent's behavior.",
+      "Studies have found that humans are not skilled at identifying mistakes in LLM outputs in complex tasks; therefore, models learning to generate confident-sounding yet incorrect text can lead to significant issues when deployed. Similarly to RLHF, reinforcement learning from AI feedback (RLAIF) relies on training a preference model, except that the feedback is automatically generated.",
+      "Therefore, RLHF seeks to train a \"reward model\" directly from human feedback. The reward model is first trained in a supervised manner to predict if a response to a given prompt is good (high reward) or bad (low reward) based on ranking data collected from human annotators.",
+      "Though RLHF does not require massive amounts of data to improve performance, sourcing high-quality preference data is still an expensive process. Furthermore, if the data is not carefully collected from a representative sample, the resulting model may exhibit unwanted biases."
+    ],
+    "title": "Reinforcement learning from human feedback - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback"
+  },
+  {
+    "description": "Find out what isReinforcement Learning, how and why businesses use Reinforcement Learning, and how to use Reinforcement Learning with AWS.",
+    "favicon_url": "https://you.com/favicon?domain=aws.amazon.com&size=128",
+    "snippets": [
+      "Software actions that work towards your goal are reinforced, while actions that detract from the goal are ignored.  \u00b7 RL algorithms use a reward-and-punishment paradigm as they process data. They learn from the feedback of each action and self-discover the best processing paths to achieve final outcomes.",
+      "Over time, by driving millions of miles in different virtual scenarios, the vehicle learns which actions are best for each state without explicitly modeling the entire traffic dynamics. When introduced in the real world, the vehicle uses the learned policy but continues to refine it with new data. While supervised learning, unsupervised learning, and reinforcement learning (RL) are all ML algorithms in the field of AI, there are distinctions between the three.",
+      "This can be difficult to deduce, which causes implementation challenges. Amazon Web Services (AWS) has many offerings that help you develop, train, and deploy reinforcement learning (RL) algorithms for real-world applications. With Amazon SageMaker, developers and data scientists can quickly and easily develop scalable RL models.",
+      "What is reinforcement learning? What are the benefits of reinforcement learning? What are the use cases of reinforcement learning? How does reinforcement learning work? What are the types of reinforcement learning algorithms? What is the difference between reinforced, supervised, and unsupervised machine learning?"
+    ],
+    "title": "What is Reinforcement Learning? - Reinforcement Learning Explained ...",
+    "url": "https://aws.amazon.com/what-is/reinforcement-learning/"
+  },
+  {
+    "description": "Understand what Reinforcement Learning in AI involves & how Synopsys taps into RL for its DSO.ai\u2122 solution. Find Out Here.",
+    "favicon_url": "https://you.com/favicon?domain=www.synopsys.com&size=128",
+    "snippets": [
+      "The main elements of a reinforcement learning system are: ... A useful abstraction of the reward signal is the value function, which faithfully captures the \u2018goodness\u2019 of a state. While the reward signal represents the immediate benefit of being in a certain state, the value function captures the cumulative reward that is expected to be collected from that state on, going into the future.",
+      "RL, on the other hand, doesn\u2019t divide the problem into subproblems; it directly works to maximize the long-term reward. It has an obvious purpose, understands the goal, and is capable of trading off short-term rewards for long-term benefits. Does not need a separate data collection step.",
+      "In RL, training data is obtained via the direct interaction of the agent with the environment. Training data is the learning agent\u2019s experience, not a separate collection of data that has to be fed to the algorithm.",
+      "While RL algorithms have been successful in solving complex problems in diverse simulated environments, their adoption in the real world has been slow. Here are some of the challenges that have made their uptake difficult: RL agent needs extensive experience. RL methods autonomously generate training data by interacting with the environment. Thus, the rate of data collection is limited by the dynamics of the environment."
+    ],
+    "title": "What is Reinforcement Learning & How Does AI Use It? | Synopsys",
+    "url": "https://www.synopsys.com/glossary/what-is-reinforcement-learning.html"
+  },
+  {
+    "description": "We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "favicon_url": "https://you.com/favicon?domain=huggingface.co&size=128",
+    "snippets": [
+      "The field was recently popularized with the emergence of DeepRL (around 2017) and has grown into a broader study of the applications of LLMs from many large technology companies. Here are some papers on RLHF that pre-date the LM focus: TAMER: Training an Agent Manually via Evaluative Reinforcement (Knox and Stone 2008): Proposed a learned agent where humans provided scores on the actions taken iteratively to learn a reward model.",
+      "A Survey of Preference-based Reinforcement Learning Methods (Wirth et al. 2017): Summarizes efforts above with many, many more references. And here is a snapshot of the growing set of \"key\" papers that show RLHF's performance for LMs: Fine-Tuning Language Models from Human Preferences (Zieglar et al. 2019): An early paper that studies the impact of reward learning on four specific tasks.",
+      "As the RL policy updates, users can continue ranking these outputs versus the model's earlier versions. Most papers have yet to discuss implementing this operation, as the deployment mode needed to collect this type of data only works for dialogue agents with access to an engaged user base.",
+      "Scaling Laws for Reward Model Overoptimization (Gao et al. 2022): studies the scaling properties of the learned preference model in RLHF. Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback (Anthropic, 2022): A detailed documentation of training a LM assistant with RLHF."
+    ],
+    "title": "Illustrating Reinforcement Learning from Human Feedback (RLHF)",
+    "url": "https://huggingface.co/blog/rlhf"
+  },
+  {
+    "description": "Reinforcement learning is a field of machine learning where a computer agent learns to operate optimally in a dynamic environment. Here\u2019s all you need to know about reinforcement learning and the real-world examples that use RL mechanisms.",
+    "favicon_url": "https://you.com/favicon?domain=www.spiceworks.com&size=128",
+    "snippets": [
+      "Reinforcement learning (RL) is defined as a sub-field of machine learning that enables AI-based systems to take actions in a dynamic environment through trial and error methods to maximize the collective rewards based on the feedback generated for respective actions.",
+      "Reinforcement learning (RL) refers to a sub-field of machine learning that enables AI-based systems to take actions in a dynamic environment through trial and error to maximize the collective rewards based on the feedback generated for individual activities.",
+      "As the agent operates within the environment, training data is dynamically collected through the agent\u2019s response and experience. Operates in an evolving & uncertain environment: RL techniques are built on an adaptive framework that learns with experience as the agent continues to interact with the environment. Moreover, with changing environmental constraints, RL algorithms tweak and adapt themselves to perform better. The working principle of reinforcement learning is based on the reward function.",
+      "As reinforcement learning algorithms gain popularity, it has been identified that RL agents without any prior knowledge of server conditions have been capable of controlling the physical parameters surrounding the servers. The data for this is acquired through multiple sensors that collect temperature, power, and other data, which helps the training of deep neural networks, thereby contributing to the cooling of data centers and regulating energy consumption."
+    ],
+    "title": "Everything You Should Know About Reinforcement Learning",
+    "url": "https://www.spiceworks.com/tech/artificial-intelligence/articles/what-is-reinforcement-learning/"
+  },
+  {
+    "description": "Exploring RL applications: from self-driving cars and industry automation to NLP, finance, and robotics manipulation.",
+    "favicon_url": "https://you.com/favicon?domain=neptune.ai&size=128",
+    "snippets": [
+      "This is because the right targets obviously lead to a high return on investment. The study in this paper was based on Taobao \u2014 the largest e-commerce platform in China. The proposed method outperforms the state-of-the-art single-agent reinforcement learning approaches.",
+      "In this article, we\u2019ll look at some of the real-world applications of reinforcement learning. Various papers have proposed Deep Reinforcement Learning for autonomous driving. In self-driving cars, there are various aspects to consider, such as speed limits at various places, drivable zones, avoiding collisions \u2014 just to mention a few.",
+      "IBM for example has a sophisticated reinforcement learning based platform that has the ability to make financial trades. It computes the reward function based on the loss or profit of every financial transaction.  \u00b7 In NLP, RL can be used in text summarization, question answering, and machine translation just to mention a few.  \u00b7 The authors of this paper Eunsol Choi, Daniel Hewlett, and Jakob Uszkoreit propose an RL based approach for question answering given long texts.",
+      "A combination of supervised and reinforcement learning is used for abstractive text summarization in this paper. The paper is fronted by Romain Paulus, Caiming Xiong & Richard Socher. Their goal is to solve the problem faced in summarization while using Attentional, RNN-based encoder-decoder models in longer documents."
+    ],
+    "title": "10 Real-Life Applications of Reinforcement Learning",
+    "url": "https://neptune.ai/blog/reinforcement-learning-applications"
+  },
+  {
+    "description": "Reinforcement learning algorithm is trained on datasets involving real-life situations where it determines actions for which it receives rewards or penalties.",
+    "favicon_url": "https://you.com/favicon?domain=www.turing.com&size=128",
+    "snippets": [
+      "Reinforcement learning is one of the types of machine learning algorithms that can\u2019t be classified as a supervised or unsupervised algorithm. It falls somewhere between them. It requires labeled datasets and thus, can\u2019t be classified as a supervised algorithm.",
+      "The basic idea behind implementing reinforcement learning is that it has to correct the actions taken in different scenarios by using the concept of trial and error. It is trained on datasets involving real-life situations. Based on them, it determines a few actions for which it either receives rewards or penalties.",
+      "The key components of a reinforcement learning system are the agent, the environment, and the reward signal. The agent learns to take actions based on its current state and the reward signal it receives from the environment. The environment determines the outcomes of the agent's actions and provides feedback in the form of the reward signal.",
+      "As discussed, there are two major categories of reinforcement learning algorithms: the model-based category, which is a greedy algorithm with the aim to maximize the reward at each step, and the model-free category, which is not a greedy algorithm and focuses on maximizing the overall reward but for each stage."
+    ],
+    "title": "All You Need to Know about Reinforcement Learning",
+    "url": "https://www.turing.com/kb/reinforcement-learning-algorithms-types-examples"
+  },
+  {
+    "description": "358 votes, 284 comments. In my personal experience, SOTA RL algorithms simply don't work. I've tried working with reinforcement learning for over\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.reddit.com&size=128",
+    "snippets": [
+      "Posted by u/Starks-Technology - 358 votes and 284 comments",
+      "Beginners -> /r/mlquestions or /r/learnmachinelearning , AGI -> /r/singularity, career advices -> /r/cscareerquestions, datasets -> r/datasets ... In my personal experience, SOTA RL algorithms simply don't work. I've tried working with reinforcement learning for over 5 years.",
+      "Is the purpose of this sub not to have discussions related to Machine Learning? To the few commenters that aren't calling me an idiot...thank you! Remember, it costs you nothing to be nice! Edit 4: Lots of people seem to agree that RL is over-hyped. Unfortunately those comments are downvoted. To clear up some things: We've invested HEAVILY into reinforcement learning.",
+      "FWIW, you should have a look at the formal definition of the Reinforcement Learning problem. You mentioned things elsewhere that I think shows that you've coupled your understanding of reinforcement learning a bit too tightly to the algorithms with which you're familiar."
+    ],
+    "title": "r/MachineLearning on Reddit: [D] What is your honest experience ...",
+    "url": "https://www.reddit.com/r/MachineLearning/comments/197jp2b/d_what_is_your_honest_experience_with/"
+  },
+  {
+    "description": "Learn the fundamentals of RL and how to apply Value Iteration to a simple example problem",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "Value Iteration (VI) is typically one of the first algorithms introduced on the Reinforcement Learning (RL) learning pathway. The underlying specifics of the algorithm introduce some of the most fundamental aspects of RL and, hence, it is important to master VI before progressing to more complex RL algorithms.",
+      "The book An \"Introduction to Reinforcement Learning\" by Richard S. Sutton and Andrew G. Barto is considered the best in the field for those wishing to gain a solid understanding of RL..",
+      "I hope this article has provided an easy-to-understand introduction to reinforcement learning, and Value Iteration specifically.",
+      "Overview of the reinforcement learning training process"
+    ],
+    "title": "Reinforcement Learning: an Easy Introduction to Value Iteration ...",
+    "url": "https://towardsdatascience.com/reinforcement-learning-an-easy-introduction-to-value-iteration-e4cfe0731fd5/"
+  },
+  {
+    "description": "[Updated on 2020-09-03: Updated the algorithm of SARSA and Q-learning so that the difference is more pronounced. [Updated on 2021-09-19: Thanks to \u7231\u5403\u732b\u7684\u9c7c, we have this post in Chinese].",
+    "favicon_url": "https://you.com/favicon?domain=lilianweng.github.io&size=128",
+    "snippets": [
+      "After knowing these, it is pretty hard not to be curious about the magic behind these algorithms \u2014 Reinforcement Learning (RL). I\u2019m writing this post to briefly go over the field. We will first introduce several fundamental concepts and then dive into classic approaches to solving RL problems. Hopefully, this post could be a good starting point for newbies, bridging the future study on the cutting-edge research.",
+      "I strongly recommend reading these two papers side by side and compare the difference, super fun. I know this is a long read, but hopefully worth it. If you notice mistakes and errors in this post, don\u2019t hesitate to contact me at [lilian dot wengweng at gmail dot com]. See you in the next post! :) ... @article{weng2018bandit, title = \"A (Long) Peek into Reinforcement Learning\", author = \"Weng, Lilian\", journal = \"lilianweng.github.io\", year = \"2018\", url = \"https://lilianweng.github.io/posts/2018-02-19-rl-overview/\" }",
+      "In addition, it is also found to be helpful to clip the error term to be between [-1, 1]. (I always get mixed feeling with parameter clipping, as many studies have shown that it works empirically but it makes the math much less pretty.",
+      "In reality, the scenario could be a bot playing a game to achieve high scores, or a robot trying to complete physical tasks with physical items; and not just limited to these. An agent interacts with the environment, trying to take smart actions to maximize cumulative rewards. The goal of Reinforcement Learning (RL) is to learn a good strategy for the agent from experimental trials and relative simple feedback received."
+    ],
+    "title": "A (Long) Peek into Reinforcement Learning | Lil'Log",
+    "url": "https://lilianweng.github.io/posts/2018-02-19-rl-overview/"
+  },
+  {
+    "description": "Explore 9 standout reinforcement learning examples that show how AI systems learn, adapt, and solve real-world problems.",
+    "favicon_url": "https://you.com/favicon?domain=onlinedegrees.scu.edu&size=128",
+    "snippets": [
+      "Engineers have developed RL traffic control models that adjust traffic signals to reduce delays, travel time, and queue lengths based on real-time traffic data. In one study, this kind of model was shown to significantly reduce travel time, vehicle waiting times, and vehicle queue lengths.",
+      "According to IBM, the next major step in artificial intelligence (AI) is creating autonomous agents.1 These are AI programs that can act and respond to their environment without direct human supervision. AI reinforcement learning (RL) is a type of machine learning that enables AI agents to learn from trial and error through a system of rewards and punishments.",
+      "Reinforcement learning is a method of training software to make optimal decisions based on its goals. Good decisions are rewarded, and bad decisions are ignored. An RL model can explore complex environments and receive feedback based on its actions.",
+      "Financial analysts can use reinforcement learning to drive profitable trading strategies. The most innovative methods use multi-agent systems to improve strategies by simulating multiple scenarios in a market environment. In this multi-agent reinforcement learning (MARL) framework, each agent represents a particular strategy or element of the market."
+    ],
+    "title": "9 Real-Life Reinforcement Learning Examples and Use Cases",
+    "url": "https://onlinedegrees.scu.edu/media/blog/9-examples-of-reinforcement-learning"
+  },
+  {
+    "description": "A Review of the Historic, Modern, and Future Applications of this Special Form of Machine Learning",
+    "favicon_url": "https://you.com/favicon?domain=towardsdatascience.com&size=128",
+    "snippets": [
+      "Thorndike, E. 1911, Animal Intelligence: Experimental Studies, ISBN: 9780765804822, The Macmillan Company. Thrun, S. 1995, \u2018Learning to Play the Game of Chess\u2019, in Advances in Neural Information Processing Systems, pp. 1069\u201376, <http://papers.neurips.cc/paper/1007-learning-to-play-the-game-of-chess.pdf>.",
+      "Patel, D., Hazan, H., Saunders, D., Siegelmann, H. & Kozma, R. 2019, \u2018Improved Robustness of Reinforcement Learning Policies Upon Conversion to Spiking Neuronal Network Platforms Applied to Atari Breakout Game\u2019, Neural Networks, vol. 120, pp. 108\u201315, ISSN: 0893\u20136080. Rosenblatt, F. 1962, Principles of Neurodynamics: Perceptrons and the Theory of Brain Mechanisms, ISBN: Spartan Books, Washington, D.C. Samuel, A. 1959, \u2018Some Studies in Machine Learning Using the Game of Checkers\u2019, IBM Journal of Research and Development, vol.",
+      "Garychl 2018, Applications of Reinforcement Learning in Real World, viewed 31/May/2020, <https://towardsdatascience.com/applications-of-reinforcement-learning-in-real-world-1a94955bcd12>. Gelly, S. & Silver, D. 2008, \u2018Achieving Master Level Play in 9 X 9 Computer Go\u2019, in AAAI, vol. 8, pp. 1537\u201340, <https://www.aaai.org/Papers/AAAI/2008/AAAI08-257.pdf>.",
+      "Through the 1960\u2019s and 1970\u2019s, there was not much research in the area of \u2018optimal control\u2019; however, Bryson (1996) notes that since the 1980\u2019s, there has been many papers published in areas such as partially observable Markovian Decision Processes, along with its applications, approximation methods, asynchronous methods, and modern treatments of dynamic programming."
+    ],
+    "title": "Reinforcement Learning | Towards Data Science",
+    "url": "https://towardsdatascience.com/reinforcement-learning-fda8ff535bb6/"
+  },
+  {
+    "description": "May 2, 2023 \u2022 Chip Huyen \u00b7 In literature discussing why ChatGPT is able to capture so much of our imagination, I often come across two narratives:",
+    "favicon_url": "https://you.com/favicon?domain=huyenchip.com&size=128",
+    "snippets": [
+      "How much companies (used to) share about their process. DeepMind\u2019s Gopher paper is 120 pages. OpenAI\u2019s InstructGPT paper is 68 pages, Anthropic shared their 161K hh-rlhf comparison examples, Meta made available their LLaMa model for research. There\u2019s also an incredible amount of goodwill and drive from the community to create open-sourced models and datasets, such as OpenAssistant and LAION.",
+      "The notation used is slightly different from the notation used in the InstructGPT paper, as I find the notation here a bit more explicit, but they both refer to the exact same objective function.",
+      "The objective function as written in the InstructGPT paper.",
+      "From Schulman\u2019s talk, I got the impression that RLHF is supposed to help with hallucination. However, the InstructGPT paper shows that RLHF actually made hallucination worse."
+    ],
+    "title": "RLHF: Reinforcement Learning from Human Feedback",
+    "url": "https://huyenchip.com/2023/05/02/rlhf.html"
+  }
+]
