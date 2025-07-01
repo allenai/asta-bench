@@ -39,7 +39,7 @@ async def query_youcom_search(
             params = {
                 "query": question,
                 "num_web_results": num_web_results,
-                "offset": offset
+                "offset": offset,
             }
             async with session.get(url, headers=headers, params=params) as response:
                 response.raise_for_status()
@@ -56,10 +56,10 @@ def fix_titles_with_gpt(titles: list[str]) -> list[str]:
     client = OpenAI(api_key=OPENAI_API_KEY)
 
     message = (
-            "Here is a list of noisy paper-related titles. "
-            "Please clean them up to a list of proper, real paper titles, removing source names, tool names, tags like '[PDF]', etc. "
-            "Don't invent or skip any titles, only return the cleaned list, one per line:\n\n" +
-            "\n".join(f"{i + 1}. {title}" for i, title in enumerate(titles))
+        "Here is a list of noisy paper-related titles. "
+        "Please clean them up to a list of proper, real paper titles, removing source names, tool names, tags like '[PDF]', etc. "
+        "Don't invent or skip any titles, only return the cleaned list, one per line:\n\n"
+        + "\n".join(f"{i + 1}. {title}" for i, title in enumerate(titles))
     )
 
     response = client.chat.completions.create(
@@ -90,7 +90,9 @@ def youcom_solver() -> Solver:
             youcom_path = Path(f"youcom_search_results/youcom_{sample_id}.json")
 
             if not youcom_path.exists():
-                logging.info(f"No file found for sample ID: {sample_id}, running YOU.COM search.")
+                logging.info(
+                    f"No file found for sample ID: {sample_id}, running YOU.COM search."
+                )
                 search_results = await query_youcom_search(
                     question,
                     YOUCOM_SEARCH_API_KEY,
@@ -111,8 +113,8 @@ def youcom_solver() -> Solver:
             for sr, title in zip(search_results, gpt_titles):
                 try:
                     r = requests.get(
-                        'https://api.semanticscholar.org/graph/v1/paper/search/match',
-                        params={"query": title, "fields": 'title,corpusId'},
+                        "https://api.semanticscholar.org/graph/v1/paper/search/match",
+                        params={"query": title, "fields": "title,corpusId"},
                         headers={"X-API-Key": S2_API_KEY},
                         timeout=60,
                     )
@@ -121,8 +123,8 @@ def youcom_solver() -> Solver:
                     r_pmc = None
                     if pmc_id:
                         r_pmc = requests.get(
-                            f'https://api.semanticscholar.org/graph/v1/paper/{pmc_id}',
-                            params={"fields": 'corpusId'},
+                            f"https://api.semanticscholar.org/graph/v1/paper/{pmc_id}",
+                            params={"fields": "corpusId"},
                             headers={"X-API-Key": S2_API_KEY},
                             timeout=60,
                         )
@@ -145,16 +147,21 @@ def youcom_solver() -> Solver:
                         )
                     else:
                         logging.error(
-                            f"For sample id {sample_id} - Failed to find match for: {title}, response: {r} (for pmc doc: {r_pmc})")
+                            f"For sample id {sample_id} - Failed to find match for: {title}, response: {r} (for pmc doc: {r_pmc})"
+                        )
 
                 except Exception as err:
-                    logging.exception(f"For sample id {sample_id} - Request failed for title: {title}: {err}")
+                    logging.exception(
+                        f"For sample id {sample_id} - Request failed for title: {title}: {err}"
+                    )
 
         except Exception as e:
             logger.exception(f"Error: {e}")
             return state
 
-        logging.warning(f"For sample id {sample_id} - Found {len(docs)} titles out of {len(search_results)} titles returned by You.com")
+        logging.warning(
+            f"For sample id {sample_id} - Found {len(docs)} titles out of {len(search_results)} titles returned by You.com"
+        )
 
         realres = {"output": {"query_id": state.sample_id, "results": docs}}
 
