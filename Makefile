@@ -22,6 +22,10 @@ ifdef HF_TOKEN
   ENV_ARGS += -e HF_TOKEN
 endif
 
+ifdef S2_API_KEY
+  ENV_ARGS += -e S2_API_KEY
+endif
+
 ifdef IGNORE_DOCKER_TESTS
   ENV_ARGS += -e IGNORE_DOCKER_TESTS
 endif
