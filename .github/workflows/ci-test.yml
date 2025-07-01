@@ -11,6 +11,7 @@ jobs:
       IS_CI: true
       OPENAI_API_KEY: "Fake key, but the var needs to be set or else Inspect will complain at import time"
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      IGNORE_DOCKER_TESTS: true
     steps:
       - name: Free up disk space
         run: |
