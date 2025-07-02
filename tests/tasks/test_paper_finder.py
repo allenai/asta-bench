@@ -149,7 +149,7 @@ def test_youcom_search() -> None:
             / "astabench/evals/paper_finder/task.py@paper_finder_test"
         ),
         model="openai/gpt-4o-mini",
-        task_args={"with_search_tools": False},
+        task_args={"with_search_tools": False, "with_native_search_tools": False},
         solver=SolverSpec(
             str(
                 Path(__file__).parent.parent.parent
