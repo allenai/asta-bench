@@ -1,9 +1,10 @@
 import asyncio
+import functools
 import os
 from contextlib import asynccontextmanager
 from typing import Any
 
-from inspect_ai.tool import Tool, ToolSource
+from inspect_ai.tool import Tool, ToolDef, ToolSource
 from inspect_ai.tool._mcp._mcp import MCPServerImpl
 from inspect_ai.tool._mcp.tools import mcp_tools
 from mcp.client.streamable_http import streamablehttp_client
@@ -47,8 +48,86 @@ def make_s2api_toolsource(api_key: str | None = None) -> ToolSource:
     )
 
 
-async def s2_mcp_tools() -> list[Tool]:
+async def s2_mcp_tools(api_key: str | None = None) -> list[Tool]:
     return await mcp_tools(make_s2api_toolsource()).tools()
+
+
+async def make_asta_s2_mcp_tools(api_key: str | None = None) -> list[Tool]:
+    """S2 MCP tools, with some arg defaults and descriptions overridden to
+    better fit the Asta ecosystem where
+    - we already have a snippet_search
+    - we want to default to having some informative fields in paper searches,
+      rather than relying on models to specify all the fields every time."""
+
+    PAPER_FIELDS = "title,authors,abstract,year"
+    AUTHOR_FIELDS = "name,authorId,paperCount"
+
+    # We already have separate paper_search and snippet_search tools
+    exclude_tools = {"snippet_search", "search_papers_by_relevance"}
+
+    # Remaining tools should be included; we define this list just to help
+    # confirm that there are no surprises with unknown tools
+    include_tools = {
+        "get_paper",
+        "get_paper_batch",
+        "get_citations",
+        "search_authors_by_name",
+        "get_author_papers",
+        "search_paper_by_title",
+    }
+
+    s2_tools = await make_s2api_toolsource(api_key).tools()
+
+    def make_override_wrapper(td: ToolDef, arg_defaults: dict[str, Any]):
+        origtool = td.tool
+
+        @functools.wraps(origtool)
+        async def wrapper(*args, **kwargs):
+            for arg_name, default_value in arg_defaults.items():
+                kwargs.setdefault(arg_name, default_value)
+            return await origtool(*args, **kwargs)
+
+        return wrapper
+
+    found_tools = set()
+    new_tools = []
+    for t in s2_tools:
+        td = ToolDef(t)
+        if td.name in exclude_tools:
+            continue
+        if td.name not in include_tools:
+            raise ValueError(f"Unexpected tool {td.name} found in S2 MCP tools")
+
+        found_tools.add(td.name)
+
+        if "fields" in td.parameters.properties:
+            if td.name == "search_authors_by_name":
+                # For author search, we want to default to some useful fields
+                td.parameters.properties["fields"].default = AUTHOR_FIELDS
+                td.tool = make_override_wrapper(
+                    td,
+                    arg_defaults={"fields": AUTHOR_FIELDS},
+                )
+            else:
+                td.parameters.properties["fields"].default = PAPER_FIELDS
+                td.tool = make_override_wrapper(
+                    td,
+                    arg_defaults={"fields": PAPER_FIELDS},
+                )
+        elif "paper_fields" in td.parameters.properties:
+            td.parameters.properties["paper_fields"].default = PAPER_FIELDS
+            td.tool = make_override_wrapper(
+                td,
+                arg_defaults={"paper_fields": PAPER_FIELDS},
+            )
+        new_tools.append(td.as_tool())
+
+    if len(include_tools - found_tools) > 0:
+        raise ValueError(
+            f"Missing expected tools in S2 MCP: {include_tools - found_tools}"
+        )
+
+    return new_tools
 
 
 async def main():
