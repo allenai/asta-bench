@@ -400,7 +400,7 @@ class SandboxToolManager:
                     types.Tool(
                         name=td.name,
                         description=td.description,
-                        inputSchema=td.parameters.model_dump(),
+                        inputSchema=td.parameters.model_dump(exclude_none=True),
                     )
                 )
             return lst

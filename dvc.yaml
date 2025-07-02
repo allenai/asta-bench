@@ -189,6 +189,9 @@ stages:
           llm_name: anthropic/claude-3-7-sonnet-20250219
         - <<: *llm_defaults
           llm_name: anthropic/claude-3-5-sonnet-20240620
+        - <<: *llm_defaults
+          llm_name: openai/o3
+          llm_args: "--reasoning-effort high --reasoning-tokens 8192 -M responses_store=false --reasoning-history none"
       split:
         - dev
         - test
@@ -254,52 +257,73 @@ stages:
     matrix:
       model:
         # retrieverless solvers:
-        - openai/o4-mini
-        - anthropic/claude-sonnet-4-20250514-thinking
-        - google/gemini-2.5-pro-preview-03-25
-        - anthropic/claude-sonnet-4-20250514
-        - anthropic/claude-3-7-sonnet-20250219
-        - anthropic/claude-3-5-sonnet-20240620
+        - name: openai/o4-mini
+          is_retrieverless: true
+        - name: openai/o3
+          is_retrieverless: true
+        - name: anthropic/claude-sonnet-4-20250514-thinking
+          is_retrieverless: true
+        - name: google/gemini-2.5-pro-preview-03-25
+          is_retrieverless: true
+        - name: anthropic/claude-sonnet-4-20250514
+          is_retrieverless: true
+        - name: anthropic/claude-3-7-sonnet-20250219
+          is_retrieverless: true
+        - name: anthropic/claude-3-5-sonnet-20240620
+          is_retrieverless: true
         # sqa solvers:
-        - sqa_claude-3.7
-        - sqa_claude-4.0
-        - sqa_gemini-2.5-pro
+        - name: sqa_claude-3.7
+          is_retrieverless: false
+        - name: sqa_claude-4.0
+          is_retrieverless: false
+        - name: sqa_gemini-2.5-pro
+          is_retrieverless: false
         # strong baselines:
-        - elicit
-        - storm
-        - scispace
-        - fhouse_crow
-        - fhouse_falcon
-        - openai_deep_research
-        - you
-        - perplexity_dr
+        - name: elicit
+          is_retrieverless: false
+        - name: storm
+          is_retrieverless: false
+        - name: scispace
+          is_retrieverless: false
+        - name: fhouse_crow
+          is_retrieverless: true
+        - name: fhouse_falcon
+          is_retrieverless: true
+        - name: openai_deep_research
+          is_retrieverless: false
+        - name: you
+          is_retrieverless: false
+        - name: perplexity_dr
+          is_retrieverless: false
       split:
         - test
         - dev
     # copy the solver output, then score it
     cmd:
-      echo "Scoring";[[ "${item.model}" == */* ]] && mkdir -p ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model};
-      cp ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model}.eval ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval;
+      echo "Scoring";[[ "${item.model.name}" == */* ]] && mkdir -p ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model.name};
+      cp ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model.name}.eval ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model.name}.eval;
       uv run
       inspect score
       --overwrite
       --display plain
       --scorer astabench/evals/sqa/task.py@score_all
       -S scorer_model=${scorer_model}
-      ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval
+      -S is_retrieverless=${item.model.is_retrieverless}
+      ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model.name}.eval
     params:
       - sqa_scorer_version
       - scorer_model
     deps:
-      - ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model}.eval
+      - ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model.name}.eval
     outs:
-      - ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval:
+      - ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model.name}.eval:
           persist: true
 
   log_any_remaining_errors_and_record_scores:
     matrix:
       model:
         - openai/o4-mini
+        - openai/o3
         - anthropic/claude-sonnet-4-20250514-thinking
         - google/gemini-2.5-pro-preview-03-25
         - anthropic/claude-sonnet-4-20250514
@@ -334,6 +358,7 @@ stages:
     matrix:
       model:
         - openai/o4-mini
+        - openai/o3
         - anthropic/claude-sonnet-4-20250514-thinking
         - google/gemini-2.5-pro-preview-03-25
         - anthropic/claude-sonnet-4-20250514
@@ -366,6 +391,7 @@ stages:
     matrix:
       model:
         - openai/o4-mini
+        - openai/o3
         - anthropic/claude-sonnet-4-20250514-thinking
         - google/gemini-2.5-pro-preview-03-25
         - anthropic/claude-sonnet-4-20250514
