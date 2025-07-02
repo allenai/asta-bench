@@ -12,13 +12,6 @@
     "url": "https://link.springer.com/article/10.1007/s10462-020-09866-x"
   },
   {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=web.stanford.edu&size=128",
-    "snippets": [],
-    "title": "Chatbots & Dialogue Systems",
-    "url": "https://web.stanford.edu/~jurafsky/slp3/15.pdf"
-  },
-  {
     "description": "Abstract. Knowledge-grounded dialogue systems powered by large language models often generate responses that, while fluent, are not attributable to a relevant source of information. Progress towards models that do not exhibit this issue requires evaluation metrics that can quantify its prevalence.",
     "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
     "snippets": [
@@ -31,27 +24,11 @@
     "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00506/113023/Evaluating-Attribution-in-Dialogue-Systems-The"
   },
   {
-    "description": "In this paper, we survey the methods and concepts developed for the evaluation of dialogue systems. Evaluation, in and of itself, is a crucial part during the development process. Often, dialogue systems are evaluated by means of human evaluations ...",
-    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
-    "snippets": [
-      "The Pearson\u2019s correlation between ADEM and the human judgments is computed on two levels: the utterance level and at the system level, where the system level rating is computed as the average score at the utterance-level achieved by the system. The Pearson\u2019s correlation for ADEM lies at 0.41 on the utterance level and at 0.954 on the system level. For comparison, the correlation to human judgments for the ROUGE score only lies at 0.062 on the utterance level and at 0.268 at the system level.",
-      "The scores of both submodules are then normalized and averaged. The Pearson\u2019s correlation for their model lies at 0.4594, which is comparable to ADEM. Although trained metrics have a significantly higher correlation to human judgements, they are show not to be robust (Sai et al.",
-      "Similarly to the PARADISE approach, the authors of Voted Appropriateness fit a linear regression model on the pairs of utterances and contexts labelled with the amount of judges that selected the utterance. The fitted model only explains 23.8% of the variance. The authors compared the correlation of the Voted Appropriateness and the weak agreement metric to human judgments.",
-      "We define the goal of an evaluation method as having an automated, repeatable evaluation procedure with high correlation to human judgments, which is able to differentiate between various dialogue strategies and is able to explain which features of the dialogue systems are important."
-    ],
-    "title": "Survey on evaluation methods for dialogue systems - PMC",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7817575/"
-  },
-  {
-    "description": "This paper presents PARADISE (PARAdigm for DIalogue System Evaluation), a general framework for evaluating and comparing the performance of spoken dia\u2026",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
-    "snippets": [
-      "This paper presents PARADISE (PARAdigm for DIalogue System Evaluation), a general framework for evaluating and comparing the performance of spoken dialogue agents.",
-      "In this paper, we describe RavenClaw, a plan-based, task-independent dialog management framework. RavenClaw isolates the domain-specific aspects of the dialog control logic from domain-independent conversational skills, and in the process facilitates rapid development of mixed-initiative systems operating in complex, task-oriented domains.",
-      "System developers can focus exclusively on describing the dialog task control logic, while a large number of domain-independent conversational skills such as error handling, timing and turn-taking are transparently supported and enforced by the RavenClaw dialog engine. To date, RavenClaw has been used to construct and deploy a large number of systems, spanning different domains and interaction styles, such as information access, guidance through procedures, command-and-control, medical diagnosis, etc."
-    ],
-    "title": "Evaluating spoken dialogue agents with PARADISE: Two case studies ...",
-    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0885230898901103"
+    "description": "",
+    "favicon_url": "https://you.com/favicon?domain=web.stanford.edu&size=128",
+    "snippets": [],
+    "title": "Chatbots & Dialogue Systems",
+    "url": "https://web.stanford.edu/~jurafsky/slp3/15.pdf"
   },
   {
     "description": "Abstract. Abstract reasoning is a key ability for an intelligent system. Large language models (LMs) achieve above-chance performance on abstract reasoning",
@@ -66,16 +43,16 @@
     "url": "https://academic.oup.com/pnasnexus/article/3/7/pgae233/7712372"
   },
   {
-    "description": "It seems that dialog systems have been around from the dawn of our age. A good example of them is Eliza \u2014 a chatbot system born in the 1960s. This is a psychotherapist bot, whose interface resembles\u2026",
-    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "description": "In this paper, we survey the methods and concepts developed for the evaluation of dialogue systems. Evaluation, in and of itself, is a crucial part during the development process. Often, dialogue systems are evaluated by means of human evaluations ...",
+    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
     "snippets": [
-      "It seems that dialog systems have been around from the dawn of our age. A good example of them is Eliza \u2014 a chatbot system born in the\u2026",
-      "Since the ConvAI is a Challenge one should decide somehow, who is the winner there. And this is actually not that simple question. Due to standard metrics of textual comparison, used e.g. in machine translation competitions, like BLEU, ROUGE, etc. don\u2019t suit here. BLEU and human judgement correlation.",
-      "As you can see on the picture, BLEU score is not even slightly correlated with human judgements. And at the same time humans have quite strong correlation between themselves, which means that one person\u2019s opinion about the quality of an answer usually matches those of other people. If you\u2019re not familiar with such a metrics, let's describe them. Metrics like BLEU are made for comparing strings.",
-      "Task Completion is judged by humans, in our case they decide if the conversation was satisfactory, engaging, and so on. Therefore, we could compare dialog systems based on a number of successful dialogs they had. Successful dialog here is the one which achieved its goal."
+      "The Pearson\u2019s correlation between ADEM and the human judgments is computed on two levels: the utterance level and at the system level, where the system level rating is computed as the average score at the utterance-level achieved by the system. The Pearson\u2019s correlation for ADEM lies at 0.41 on the utterance level and at 0.954 on the system level. For comparison, the correlation to human judgments for the ROUGE score only lies at 0.062 on the utterance level and at 0.268 at the system level.",
+      "The scores of both submodules are then normalized and averaged. The Pearson\u2019s correlation for their model lies at 0.4594, which is comparable to ADEM. Although trained metrics have a significantly higher correlation to human judgements, they are show not to be robust (Sai et al.",
+      "Similarly to the PARADISE approach, the authors of Voted Appropriateness fit a linear regression model on the pairs of utterances and contexts labelled with the amount of judges that selected the utterance. The fitted model only explains 23.8% of the variance. The authors compared the correlation of the Voted Appropriateness and the weak agreement metric to human judgments.",
+      "We define the goal of an evaluation method as having an automated, repeatable evaluation procedure with high correlation to human judgments, which is able to differentiate between various dialogue strategies and is able to explain which features of the dialogue systems are important."
     ],
-    "title": "What are the Dialog Systems, or Something about Eliza | by Valentin ...",
-    "url": "https://medium.com/@madrugado/what-are-the-dialog-systems-or-something-about-eliza-9aefb551eaaa"
+    "title": "Survey on evaluation methods for dialogue systems - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7817575/"
   },
   {
     "description": "The use of natural language interfaces in the field of human-computer interaction (HCI) is undergoing intense study through dedicated scientific and industrial research. The latest contributions in the field, including deep learning approaches like ...",
@@ -88,6 +65,29 @@
     ],
     "title": "Software-Based Dialogue Systems: Survey, Taxonomy, and Challenges ...",
     "url": "https://dl.acm.org/doi/10.1145/3527450"
+  },
+  {
+    "description": "This paper presents PARADISE (PARAdigm for DIalogue System Evaluation), a general framework for evaluating and comparing the performance of spoken dia\u2026",
+    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
+    "snippets": [
+      "This paper presents PARADISE (PARAdigm for DIalogue System Evaluation), a general framework for evaluating and comparing the performance of spoken dialogue agents.",
+      "In this paper, we describe RavenClaw, a plan-based, task-independent dialog management framework. RavenClaw isolates the domain-specific aspects of the dialog control logic from domain-independent conversational skills, and in the process facilitates rapid development of mixed-initiative systems operating in complex, task-oriented domains.",
+      "System developers can focus exclusively on describing the dialog task control logic, while a large number of domain-independent conversational skills such as error handling, timing and turn-taking are transparently supported and enforced by the RavenClaw dialog engine. To date, RavenClaw has been used to construct and deploy a large number of systems, spanning different domains and interaction styles, such as information access, guidance through procedures, command-and-control, medical diagnosis, etc."
+    ],
+    "title": "Evaluating spoken dialogue agents with PARADISE: Two case studies ...",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0885230898901103"
+  },
+  {
+    "description": "It seems that dialog systems have been around from the dawn of our age. A good example of them is Eliza \u2014 a chatbot system born in the 1960s. This is a psychotherapist bot, whose interface resembles\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "snippets": [
+      "It seems that dialog systems have been around from the dawn of our age. A good example of them is Eliza \u2014 a chatbot system born in the\u2026",
+      "Since the ConvAI is a Challenge one should decide somehow, who is the winner there. And this is actually not that simple question. Due to standard metrics of textual comparison, used e.g. in machine translation competitions, like BLEU, ROUGE, etc. don\u2019t suit here. BLEU and human judgement correlation.",
+      "As you can see on the picture, BLEU score is not even slightly correlated with human judgements. And at the same time humans have quite strong correlation between themselves, which means that one person\u2019s opinion about the quality of an answer usually matches those of other people. If you\u2019re not familiar with such a metrics, let's describe them. Metrics like BLEU are made for comparing strings.",
+      "Task Completion is judged by humans, in our case they decide if the conversation was satisfactory, engaging, and so on. Therefore, we could compare dialog systems based on a number of successful dialogs they had. Successful dialog here is the one which achieved its goal."
+    ],
+    "title": "What are the Dialog Systems, or Something about Eliza | by Valentin ...",
+    "url": "https://medium.com/@madrugado/what-are-the-dialog-systems-or-something-about-eliza-9aefb551eaaa"
   },
   {
     "description": "We investigate evaluation metrics for dialogue response generation systems where supervised labels, such as task completion, are not available. Recent works in response generation have adopted metrics from machine translation to compare a model's generated response to a single target response.",
@@ -126,16 +126,16 @@
     "url": "https://www.sciencedirect.com/science/article/abs/pii/S0747563216300048"
   },
   {
-    "description": "Large reasoning models are a new breed of artificial intelligence that move beyond fluent text generation. They \u201cthink\u201d through complex problems by breaking them into intermediate steps, thereby\u2026",
-    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
+    "description": "Reinforcement learning (RL) is an effective method in training dialogue policies to steer the conversation towards successful task completion. However, most RL-based methods only rely on semantic inputs that lack empathy as they ignore the user emotional information.",
+    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
     "snippets": [
-      "There isn\u2019t mention of heavy RLHF on QwQ; it appears more of a research model, so they may not have done extensive human feedback fine-tuning. Instead, they highlighted limitations as open problems (like common-sense reasoning) rather than trying to fix everything in one go (Alibaba Cloud Unveils Open-Source AI Reasoning Model QwQ and New Image Editing Tool \u2014 Alibaba Cloud Community) Unique Techniques: One interesting point is that QwQ engages in self-dialogue.",
-      "Such capacity likely required architectural innovations like segmented attention, retrieval augmentation, or an advanced memory management system to process so many tokens efficiently. \u201cThinking Mode\u201d Training: The Flash Thinking variant was trained to generate its own step-by-step reasoning as part of its output (Gemini 2.0 Flash \u201cThinking mode\u201d) This means during training, the model was probably given problems along with human-crafted or model-assisted reasoning traces, and learned to produce reasoning text followed by the final answer.",
-      "Generalization and Safety: It\u2019s early to fully judge, but large chain-of-thought models sometimes encounter issues with common-sense reasoning or hallucination if the prompts fall outside their tested scenarios. Gemini Flash\u2019s transparency helps mitigate hallucination by showing logic, but it could still follow a wrong premise confidently.",
-      "During inference, it might generate a series of questions and answers to itself before concluding. This was likely encouraged by training on dialogues or by special prompting."
+      "Scientific Reports - An emotion-sensitive dialogue policy for task-oriented dialogue system",
+      "SAEDS: Utilizes the DQN network as the reinforcement learning framework for the SAEDS model22, combined with the SRRIP reward shaping method proposed in this paper. Specifically, the policy model is given additional emotional rewards based on emotional intensity and events in the dialogue (such as repeated questioning, user interruptions, etc.). PPD: The Personalized Persuasive Dialogue system34 consists of two parts: utterance semantic analysis and utterance generation.",
+      "The implementation of the method mentioned in the paper is presented in https://github.com/communication4/ESDP. Ni, J., Young, T., Pandelea, V., Xue, F. & Cambria, E. Recent advances in deep learning based dialogue systems: A systematic survey. Artif. Intelligence Rev.",
+      "Song, S., Wang, C., Chen, H. & Chen, H. An emotional comfort framework for improving user satisfaction in e-commerce customer service chatbots. in Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: Industry Papers, 130\u2013137 ( 2021). Seo, M., Vecchietti, L. F., Lee, S. & Har, D. Rewards prediction-based credit assignment for reinforcement learning with sparse binary rewards. IEEE Access 7, 118776\u2013118791 (2019). ... Zhong, P., Zhang, C., Wang, H., Liu, Y. & Miao, C. Towards persona-based empathetic conversational models. arXiv preprint arXiv:2004.12316 ( 2020). Ma, Y., Nguyen, K. L., Xing, F. Z. & Cambria, E. A survey on empathetic dialogue systems."
     ],
-    "title": "Comparison of Large Reasoning Models (LRMs) | by Carlos E. Perez ...",
-    "url": "https://medium.com/intuitionmachine/comparison-of-large-reasoning-models-lrms-dbc468d10906"
+    "title": "An emotion-sensitive dialogue policy for task-oriented dialogue ...",
+    "url": "https://www.nature.com/articles/s41598-024-70463-x"
   },
   {
     "description": "Spoken Dialog Systems (SDS) have become very popular recently, especially for goal completion tasks on mobile devices. Also, with the increasing use of IoT devices and their associated assistants\u2026",
@@ -150,16 +150,16 @@
     "url": "https://medium.com/explorations-in-language-and-learning/evaluation-methods-for-dialog-systems-eea0759a378"
   },
   {
-    "description": "Reinforcement learning (RL) is an effective method in training dialogue policies to steer the conversation towards successful task completion. However, most RL-based methods only rely on semantic inputs that lack empathy as they ignore the user emotional information.",
-    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
+    "description": "Large reasoning models are a new breed of artificial intelligence that move beyond fluent text generation. They \u201cthink\u201d through complex problems by breaking them into intermediate steps, thereby\u2026",
+    "favicon_url": "https://you.com/favicon?domain=medium.com&size=128",
     "snippets": [
-      "Scientific Reports - An emotion-sensitive dialogue policy for task-oriented dialogue system",
-      "SAEDS: Utilizes the DQN network as the reinforcement learning framework for the SAEDS model22, combined with the SRRIP reward shaping method proposed in this paper. Specifically, the policy model is given additional emotional rewards based on emotional intensity and events in the dialogue (such as repeated questioning, user interruptions, etc.). PPD: The Personalized Persuasive Dialogue system34 consists of two parts: utterance semantic analysis and utterance generation.",
-      "The implementation of the method mentioned in the paper is presented in https://github.com/communication4/ESDP. Ni, J., Young, T., Pandelea, V., Xue, F. & Cambria, E. Recent advances in deep learning based dialogue systems: A systematic survey. Artif. Intelligence Rev.",
-      "Song, S., Wang, C., Chen, H. & Chen, H. An emotional comfort framework for improving user satisfaction in e-commerce customer service chatbots. in Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: Industry Papers, 130\u2013137 ( 2021). Seo, M., Vecchietti, L. F., Lee, S. & Har, D. Rewards prediction-based credit assignment for reinforcement learning with sparse binary rewards. IEEE Access 7, 118776\u2013118791 (2019). ... Zhong, P., Zhang, C., Wang, H., Liu, Y. & Miao, C. Towards persona-based empathetic conversational models. arXiv preprint arXiv:2004.12316 ( 2020). Ma, Y., Nguyen, K. L., Xing, F. Z. & Cambria, E. A survey on empathetic dialogue systems."
+      "There isn\u2019t mention of heavy RLHF on QwQ; it appears more of a research model, so they may not have done extensive human feedback fine-tuning. Instead, they highlighted limitations as open problems (like common-sense reasoning) rather than trying to fix everything in one go (Alibaba Cloud Unveils Open-Source AI Reasoning Model QwQ and New Image Editing Tool \u2014 Alibaba Cloud Community) Unique Techniques: One interesting point is that QwQ engages in self-dialogue.",
+      "Such capacity likely required architectural innovations like segmented attention, retrieval augmentation, or an advanced memory management system to process so many tokens efficiently. \u201cThinking Mode\u201d Training: The Flash Thinking variant was trained to generate its own step-by-step reasoning as part of its output (Gemini 2.0 Flash \u201cThinking mode\u201d) This means during training, the model was probably given problems along with human-crafted or model-assisted reasoning traces, and learned to produce reasoning text followed by the final answer.",
+      "Generalization and Safety: It\u2019s early to fully judge, but large chain-of-thought models sometimes encounter issues with common-sense reasoning or hallucination if the prompts fall outside their tested scenarios. Gemini Flash\u2019s transparency helps mitigate hallucination by showing logic, but it could still follow a wrong premise confidently.",
+      "During inference, it might generate a series of questions and answers to itself before concluding. This was likely encouraged by training on dialogues or by special prompting."
     ],
-    "title": "An emotion-sensitive dialogue policy for task-oriented dialogue ...",
-    "url": "https://www.nature.com/articles/s41598-024-70463-x"
+    "title": "Comparison of Large Reasoning Models (LRMs) | by Carlos E. Perez ...",
+    "url": "https://medium.com/intuitionmachine/comparison-of-large-reasoning-models-lrms-dbc468d10906"
   },
   {
     "description": "This review gives an extensive overview of evaluation methods for task-oriented dialogue systems, paying special attention to practical applications of dialogue systems, for example for customer service. The review (1) provides an overview of the used constructs and metrics in previous work, ...",
@@ -172,18 +172,6 @@
     ],
     "title": "[2312.13871] Evaluating Task-oriented Dialogue Systems: A Systematic ...",
     "url": "https://arxiv.org/abs/2312.13871"
-  },
-  {
-    "description": "The past four years have seen the rise of conversational agents (CAs) in everyday life. Apple, Microsoft, Amazon, Google and Facebook have all embedded proprietary CAs within their software and, increasingly, conversation is becoming a key mode of",
-    "favicon_url": "https://you.com/favicon?domain=www.academia.edu&size=128",
-    "snippets": [
-      "Whilst we have long been familiar with the notion of computers that speak, the investigative concern within HCI has been upon multimodality rather than dialogue alone, and there is no sense of how such interfaces are used in everyday life. This paper reports the findings of interviews with 14 users of CAs in an effort to understand the current interactional factors affecting everyday use. We find user expectations dramatically out of step with the operation of the systems, particularly in terms of known machine intelligence, system capability and goals.",
-      "First analyses suggest that these problems are related to the system\u2019s dialogue management and turn-taking behavior. This paper starts with a presentation of experimental results, which shed some light on the effects of that behavior. Based on these findings, some criteria which lie orthogonal to dialogue quality are spelled out.",
-      "CCS CONCEPTS \u2022 Human-centered computing \u2192 Empirical studies in HCI; Empirical studies in collaborative and social computing; \u2022 Computing methodologies \u2192 Artifcial intelligence. ... End-to-end evaluations of more conversational dialogue systems with naive users have uncovered severe usability problems that, among other things, result in low task completion rates.",
-      "Since the work on spoken and multimodal dialogue systems presented and discussed herein is aimed at more conversational and adaptive systems, we also show that in certain dialogical situations it is important for such systems to align linguistically towards the users. After describing the corresponding empirical experiments ... ... Do Users Need Human-like Conversational Agents?\""
-    ],
-    "title": "(PDF) Like Having a Really Bad PA",
-    "url": "https://www.academia.edu/68168432/Like_Having_a_Really_Bad_PA"
   },
   {
     "description": "Dialogue systems have attracted more and more attention. Recent advances on dialogue systems are overwhelmingly contributed by deep learning techniques, which have been employed to enhance a wide r...",
@@ -210,6 +198,18 @@
     "url": "https://www.nature.com/articles/s41598-024-81353-7"
   },
   {
+    "description": "The past four years have seen the rise of conversational agents (CAs) in everyday life. Apple, Microsoft, Amazon, Google and Facebook have all embedded proprietary CAs within their software and, increasingly, conversation is becoming a key mode of",
+    "favicon_url": "https://you.com/favicon?domain=www.academia.edu&size=128",
+    "snippets": [
+      "Whilst we have long been familiar with the notion of computers that speak, the investigative concern within HCI has been upon multimodality rather than dialogue alone, and there is no sense of how such interfaces are used in everyday life. This paper reports the findings of interviews with 14 users of CAs in an effort to understand the current interactional factors affecting everyday use. We find user expectations dramatically out of step with the operation of the systems, particularly in terms of known machine intelligence, system capability and goals.",
+      "First analyses suggest that these problems are related to the system\u2019s dialogue management and turn-taking behavior. This paper starts with a presentation of experimental results, which shed some light on the effects of that behavior. Based on these findings, some criteria which lie orthogonal to dialogue quality are spelled out.",
+      "CCS CONCEPTS \u2022 Human-centered computing \u2192 Empirical studies in HCI; Empirical studies in collaborative and social computing; \u2022 Computing methodologies \u2192 Artifcial intelligence. ... End-to-end evaluations of more conversational dialogue systems with naive users have uncovered severe usability problems that, among other things, result in low task completion rates.",
+      "Since the work on spoken and multimodal dialogue systems presented and discussed herein is aimed at more conversational and adaptive systems, we also show that in certain dialogical situations it is important for such systems to align linguistically towards the users. After describing the corresponding empirical experiments ... ... Do Users Need Human-like Conversational Agents?\""
+    ],
+    "title": "(PDF) Like Having a Really Bad PA",
+    "url": "https://www.academia.edu/68168432/Like_Having_a_Really_Bad_PA"
+  },
+  {
     "description": "Evaluation is a crucial part of the dialog system development process. Here, we\u2019ll introduce a brief overview of the evaluation methods for dialog systems.",
     "favicon_url": "https://you.com/favicon?domain=www.topbots.com&size=128",
     "snippets": [
@@ -222,6 +222,17 @@
     "url": "https://www.topbots.com/evaluation-metrics-for-dialog-systems/"
   },
   {
+    "description": "[ 1) Introduction, 2) Dialogue or Conversation, 3) User or Used, 4) Codependency or Collaboration, 5) Productive or Experiential, 6) Conclusions] [update 20/8/20: My guide to human-computer interaction is now available over on Udemy.] A few years ago I attended a public lecture at the RSA and ...",
+    "favicon_url": "https://you.com/favicon?domain=www.ruthstalkerfirth.com&size=128",
+    "snippets": [
+      "[ 1) Introduction, 2) Dialogue or Conversation, 3) User or Used, 4) Codependency or Collaboration, 5) Productive or Experiential, 6) Conclusions] [update 20/8/20: My guide to human-computer interaction is now available over on Udemy.] A few years ago I attended a public lecture at the RSA and afterwards, a lady asked me what I did.",
+      "From designing a straight up dialogue between one person and a machine, to humans online who were originally monologuing before Web 2.0, and then holding conversations with multiple machines, multiple users, to now what I believe is called for, which is a more symbiotic approach between humans and computers that considers more human aspects such as trust, intimacy, privacy first and foremost for the safety of humans \u2013 and different to safety critical systems which were designed to prevent disasters \u2013 now it is personal safety disasters which need to be avoided using, amongst other tricks of the HCI trade, psychological responsibility.",
+      "Nowadays, I feel that some of the research I was part of 20 years ago is making it into the mainstream and that is super exciting, technology like augmented or virtual reality back then seemed to a non-computer scientist rather like science-fiction as it was more unwieldy, super expensive and rarely mentioned in the public domain. It belonged in a hi-tech lab. Almost daily now, I can pick up a paper or magazine and read about another latest VR application, a cheaper more accessible version for everyone, based on what we were thinking about years ago."
+    ],
+    "title": "Human-Computer Interaction : Dialogue, Conversation, Symbiosis ...",
+    "url": "https://www.ruthstalkerfirth.com/blog/2018/05/13/human-computer-interaction-dialogue-conversation-symbiosis-1/"
+  },
+  {
     "description": "",
     "favicon_url": "https://you.com/favicon?domain=papers.neurips.cc&size=128",
     "snippets": [],
@@ -229,17 +240,6 @@
     "url": "https://papers.neurips.cc/paper_files/paper/2020/file/e946209592563be0f01c844ab2170f0c-Paper.pdf"
   },
   {
-    "description": "[ 1) Introduction, 2) Dialogue or Conversation, 3) User or Used, 4) Codependency or Collaboration, 5) Productive or Experiential, 6) Conclusions] [update 20/8/20: My guide to human-computer interaction is now available over on Udemy.] A few years ago I attended a public lecture at the RSA and ...",
-    "favicon_url": "https://you.com/favicon?domain=www.ruthstalkerfirth.com&size=128",
-    "snippets": [
-      "[ 1) Introduction, 2) Dialogue or Conversation, 3) User or Used, 4) Codependency or Collaboration, 5) Productive or Experiential, 6) Conclusions] [update 20/8/20: My guide to human-computer interaction is now available over on Udemy.] A few years ago I attended a public lecture at the RSA and afterwards, a lady asked me what I did.",
-      "From designing a straight up dialogue between one person and a machine, to humans online who were originally monologuing before Web 2.0, and then holding conversations with multiple machines, multiple users, to now what I believe is called for, which is a more symbiotic approach between humans and computers that considers more human aspects such as trust, intimacy, privacy first and foremost for the safety of humans \u2013 and different to safety critical systems which were designed to prevent disasters \u2013 now it is personal safety disasters which need to be avoided using, amongst other tricks of the HCI trade, psychological responsibility.",
-      "Nowadays, I feel that some of the research I was part of 20 years ago is making it into the mainstream and that is super exciting, technology like augmented or virtual reality back then seemed to a non-computer scientist rather like science-fiction as it was more unwieldy, super expensive and rarely mentioned in the public domain. It belonged in a hi-tech lab. Almost daily now, I can pick up a paper or magazine and read about another latest VR application, a cheaper more accessible version for everyone, based on what we were thinking about years ago."
-    ],
-    "title": "Human-Computer Interaction : Dialogue, Conversation, Symbiosis ...",
-    "url": "https://www.ruthstalkerfirth.com/blog/2018/05/13/human-computer-interaction-dialogue-conversation-symbiosis-1/"
-  },
-  {
     "description": "Abstract. Generalizing dialogue state tracking (DST) to new data is especially challenging due to the strong reliance on abundant and fine-grained supervision during training. Sample sparsity, distributional shift, and the occurrence of new concepts and topics frequently lead to severe performance ...",
     "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
     "snippets": [
@@ -250,65 +250,6 @@
     ],
     "title": "Robust Dialogue State Tracking with Weak Supervision and Sparse ...",
     "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00513/113662/Robust-Dialogue-State-Tracking-with-Weak"
-  },
-  {
-    "description": "Negation is widely present in human communication, yet it is largely neglected in the research on conversational agents based on neural network architectures. Cognitive studies show that a supportive visual context makes the processing of negation ...",
-    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
-    "snippets": [
-      "They can be chit-chat (e.g., Das et al., 2017) or task-oriented (e.g., de Vries et al., 2017; Haber et al., 2019; Ilinykh et al., 2019a,b). Task-oriented dialogues are easier to evaluate since their performance can be judged in terms of their task-success, hence we focus on this type of dialogues which can be further divided as following: the two agents can have access to the same visual information (de Vries et al., 2017), share only part of it Haber et al.",
-      "Interesting exploratory analysis has been carried out to understand Visual Question Answering (VQA) systems and highlight their strengths and weaknesses (e.g., Johnson et al., 2017; Kafle and Kanan, 2017; Shekhar et al., 2017; Suhr et al., 2017). Less is known about how well grounded conversational models encode the dialogue history and in particular, negatively answered questions.",
-      "A study about how humans and models incrementally gain information through the dialogue should be run to better understand their behavior. To conclude, our findings have theoretical and also practical implications: for humans, negatively answered questions can be as informative as affirmatively answered ones; a system that is not able to properly handle negation may be detrimental in real-world scenarios.",
-      "Visual dialogue state tracking for question generation, in Proceedings of 34th AAAI Conference on Artificial Intelligence (New York, NY: ). [Google Scholar] Ruder S. (2019). Neural Transfer Learning for Natural Language Processing (Ph.D. thesis: ), National University of Ireland. [Google Scholar] Sankar C., Subramanian S., Pal C., Chandar S., Bengio Y. (2019). Do neural dialog systems use the conversation history effectively?"
-    ],
-    "title": "Artificial Intelligence Models Do Not Ground Negation, Humans Do.",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8819179/"
-  },
-  {
-    "description": "In subject area: Computer Science \u00b7 A Dialog System, in the context of Computer Science, is a system that aims to have coherent conversations with humans. It utilizes various modes of communication such as text, speech, graphics, and gestures for both input and output channels.",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
-    "snippets": [
-      "Two major aspects are mainly evaluated in the task-oriented dialogue systems that are believed to define the dialogue quality, i.e., dialogue efficiency and task-success [37]. PARAdigm for DIalog System Evaluation (PARADISE) framework is the most commonly known framework proposed by [173] for evaluating the task-oriented systems.",
-      "However, [43] checked the predictive capability of this framework for individual users and highlighted the incapability of PARADISE framework to distinguish between different user groups. Later several other metrics have been identified for evaluating different elements of dialogue systems, i.e.,",
-      "While such systems can be used for a very wide range of applications\u2014including the promotion of patient disease self-management, disease monitoring, and screening\u2014we will focus on patient education and health behavior change applications in this paper, as these have received the most research attention to date.",
-      "These are handled by a Hello state and a Goodbye state (Fig. 1.3). As well as saying \u201cHello\u201d and \u201cGoodbye\u201d, these states can include other behaviors, for example a mobile robot can stop moving around for the duration of the conversation, or a humanoid robot can stand up or sit down to talk, as desired."
-    ],
-    "title": "Dialog System - an overview | ScienceDirect Topics",
-    "url": "https://www.sciencedirect.com/topics/computer-science/dialog-system"
-  },
-  {
-    "description": "Abstract. Generalizing dialogue state tracking (DST) to new data is especially challenging due to the strong reliance on abundant and fine-grained supervision during training. Sample sparsity, distributional shift, and the occurrence of new concepts and topics frequently lead to severe performance ...",
-    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
-    "snippets": [
-      "Abstract. Generalizing dialogue state tracking (DST) to new data is especially challenging due to the strong reliance on abundant and fine-grained supervision during training. Sample sparsity, distributional shift, and the occurrence of new concepts and topics frequently lead to severe performance degradation during inference.",
-      "Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers), pages ... Association for Computational Linguistics. ... Survey on evaluation methods for dialogue systems. ... BERT: Pre-training of deep bidirectional transformers for language understanding. In \u00b7 Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), pages",
-      "Google\u2019s neural machine translation system: Bridging the gap between human and machine translation. ... An end-to-end approach for handling unknown slot values in dialogue state tracking. In \u00b7 Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages",
-      "An end-to-end dialogue state tracking system with machine reading comprehension and wide & deep classification. ... DialoGLUE: A natural language understanding benchmark for task-oriented dialogue. ... Diarmuid \u00d3. ... Neural belief tracker: Data-driven dialogue state tracking. In \u00b7 Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages"
-    ],
-    "title": "Robust Dialogue State Tracking with Weak Supervision and Sparse ...",
-    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00513/113662/Robust-Dialogue-State-Tracking-with-Weak"
-  },
-  {
-    "description": "[ 1) Introduction, 2) Dialogue or Conversation, 3) User or Used, 4) Codependency or Collaboration, 5) Productive or Experiential, 6) Conclusions] [update 20/8/20: My guide to human-computer interaction is now available over on Udemy.] A few years ago I attended a public lecture at the RSA and ...",
-    "favicon_url": "https://you.com/favicon?domain=www.ruthstalkerfirth.com&size=128",
-    "snippets": [
-      "[ 1) Introduction, 2) Dialogue or Conversation, 3) User or Used, 4) Codependency or Collaboration, 5) Productive or Experiential, 6) Conclusions] [update 20/8/20: My guide to human-computer interaction is now available over on Udemy.] A few years ago I attended a public lecture at the RSA and afterwards, a lady asked me what I did.",
-      "From designing a straight up dialogue between one person and a machine, to humans online who were originally monologuing before Web 2.0, and then holding conversations with multiple machines, multiple users, to now what I believe is called for, which is a more symbiotic approach between humans and computers that considers more human aspects such as trust, intimacy, privacy first and foremost for the safety of humans \u2013 and different to safety critical systems which were designed to prevent disasters \u2013 now it is personal safety disasters which need to be avoided using, amongst other tricks of the HCI trade, psychological responsibility.",
-      "Nowadays, I feel that some of the research I was part of 20 years ago is making it into the mainstream and that is super exciting, technology like augmented or virtual reality back then seemed to a non-computer scientist rather like science-fiction as it was more unwieldy, super expensive and rarely mentioned in the public domain. It belonged in a hi-tech lab. Almost daily now, I can pick up a paper or magazine and read about another latest VR application, a cheaper more accessible version for everyone, based on what we were thinking about years ago."
-    ],
-    "title": "Human-Computer Interaction : Dialogue, Conversation, Symbiosis ...",
-    "url": "https://www.ruthstalkerfirth.com/blog/2018/05/13/human-computer-interaction-dialogue-conversation-symbiosis-1/"
-  },
-  {
-    "description": "Negation is widely present in human communication, yet it is largely neglected in the research on conversational agents based on neural network architectures. Cognitive studies show that a supportive visual context makes the processing of negation ...",
-    "favicon_url": "https://you.com/favicon?domain=pmc.ncbi.nlm.nih.gov&size=128",
-    "snippets": [
-      "They can be chit-chat (e.g., Das et al., 2017) or task-oriented (e.g., de Vries et al., 2017; Haber et al., 2019; Ilinykh et al., 2019a,b). Task-oriented dialogues are easier to evaluate since their performance can be judged in terms of their task-success, hence we focus on this type of dialogues which can be further divided as following: the two agents can have access to the same visual information (de Vries et al., 2017), share only part of it Haber et al.",
-      "Interesting exploratory analysis has been carried out to understand Visual Question Answering (VQA) systems and highlight their strengths and weaknesses (e.g., Johnson et al., 2017; Kafle and Kanan, 2017; Shekhar et al., 2017; Suhr et al., 2017). Less is known about how well grounded conversational models encode the dialogue history and in particular, negatively answered questions.",
-      "A study about how humans and models incrementally gain information through the dialogue should be run to better understand their behavior. To conclude, our findings have theoretical and also practical implications: for humans, negatively answered questions can be as informative as affirmatively answered ones; a system that is not able to properly handle negation may be detrimental in real-world scenarios.",
-      "Visual dialogue state tracking for question generation, in Proceedings of 34th AAAI Conference on Artificial Intelligence (New York, NY: ). [Google Scholar] Ruder S. (2019). Neural Transfer Learning for Natural Language Processing (Ph.D. thesis: ), National University of Ireland. [Google Scholar] Sankar C., Subramanian S., Pal C., Chandar S., Bengio Y. (2019). Do neural dialog systems use the conversation history effectively?"
-    ],
-    "title": "Artificial Intelligence Models Do Not Ground Negation, Humans Do.",
-    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8819179/"
   },
   {
     "description": "In subject area: Computer Science \u00b7 A Dialog System, in the context of Computer Science, is a system that aims to have coherent conversations with humans. It utilizes various modes of communication such as text, speech, graphics, and gestures for both input and output channels.",
@@ -333,919 +274,5 @@
     ],
     "title": "Evaluating large language models in analysing classroom dialogue ...",
     "url": "https://www.nature.com/articles/s41539-024-00273-3"
-  },
-  {
-    "description": "ACL 2025 Accepted Main Conference Papers",
-    "favicon_url": "https://you.com/favicon?domain=2025.aclweb.org&size=128",
-    "snippets": [
-      "QAEncoder: Towards Aligned Representation Learning in Question Answering Systems Zhengren Wang, Qinhan Yu, Shida Wei, Zhiyu li, Feiyu Xiong, Xiaoxing Wang, Simin Niu, Hao Liang, Wentao Zhang \u00b7 Game Development as Human-LLM Interaction Jiale Hong, Hongqiu Wu, hai zhao \u00b7 Can LLMs Simulate L2-English Dialogue?",
-      "G-Safeguard: A Topology-Guided Security Lens and Treatment on LLM-based Multi-agent Systems Shilong Wang, Guibin Zhang, Miao Yu, Guancheng Wan, Fanci Meng, chongye guo, Kun Wang, Yang Wang \u00b7 Deontological Keyword Bias: The Impact of Modal Verbs on Normative Judgments of Language Models Bumjin Park, Leejinsil, Jaesik Choi",
-      "Systematic Evaluation and Rethinking Yichi Zhang, Zhuo Chen, Lingbing Guo, yajing Xu, Shaokai Chen, Mengshu Sun, Binbin Hu, Zhiqiang Zhang, Lei Liang, Wen Zhang, Huajun Chen \u00b7 LL\u00e4Mmlein \ud83d\udc11: Transparent, Compact and Competitive German-Only Language Models from Scratch Jan Pfister, Julia Wunderle, Andreas Hotho \u00b7 Speaking Beyond Language: A Large-Scale Multimodal Dataset for Learning Nonverbal Cues from Video-Grounded Dialogues Youngmin Kim, Jiwan Chung, Jisoo Kim, sunghyun lee, Sangkyu Lee, Junhyeok Kim, Cheoljong Yang, Youngjae Yu",
-      "Detection of Human and Machine-Authored Fake News in Urdu Muhammad Zain Ali, Yuxia Wang, Bernhard Pfahringer, Tony C Smith \u00b7 An Efficient Task-Oriented Dialogue Policy: Evolutionary Reinforcement Learning Injected by Elite Individuals."
-    ],
-    "title": "Accepted Main Conference Papers - ACL 2025",
-    "url": "https://2025.aclweb.org/program/main_papers/"
-  },
-  {
-    "description": "Abstract. We describe a class of tasks called decision-oriented dialogues, in which AI assistants such as large language models (LMs) must collaborate with one or more humans via natural language to help them make complex decisions. We formalize three domains in which users face everyday decisions: ...",
-    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
-    "snippets": [
-      "Abstract. We describe a class of tasks called decision-oriented dialogues, in which AI assistants such as large language models (LMs) must collaborate with one or more humans via natural language to help them make complex decisions. We formalize three domains in which users face everyday decisions: (1) choosing an assignment of reviewers to conference papers, (2) planning a multi-step itinerary in a city, and (3) negotiating travel plans for a group of friends.",
-      "We formalize three domains in which users face everyday decisions: (1) choosing an assignment of reviewers to conference papers, (2) planning a multi-step itinerary in a city, and (3) negotiating travel plans for a group of friends. In each of these settings, AI assistants and users have disparate abilities that they must combine to arrive at the best decision: Assistants can access and process large amounts of information, while users have preferences and constraints external to the system.",
-      "To solve these problems, systems need to communicate with users, ideally with a flexible interface such as natural language. However, there is limited existing work evaluating model performance in these types of conversational settings. In this paper, we develop a challenging suite of decision problems in which multiple agents must collaborate with each other and make decisions via natural language.",
-      "Although reviewer matching is sometimes automated via approaches like the Toronto Paper Matching System (TPMS; Charlin and Zemel, 2013), human organizers often have their own incomplete and partially overlapping knowledge about which reviewers fit which papers."
-    ],
-    "title": "Decision-Oriented Dialogue for Human-AI Collaboration | Transactions ...",
-    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00679/123884/Decision-Oriented-Dialogue-for-Human-AI"
-  },
-  {
-    "description": "Other questions to the experts in this canvassing invited their views on the hopeful things that will occur in the next decade and for examples of",
-    "favicon_url": "https://you.com/favicon?domain=www.pewresearch.org&size=128",
-    "snippets": [
-      "A European computer science professor expert in machine learning commented, \u201cThe social sorting systems introduced by AI will most likely define and further entrench the existing world order of the haves and the have-nots, making social mobility more difficult and precarious given the unpredictability of AI-driven judgements of fit.",
-      "The interesting problem to solve will be the fact that initial designs of AI will come with built-in imaginaries of what \u2018good\u2019 or \u2018correct\u2019 constitutes. The level of flexibility designed in to allow for changes in normative perceptions and judgements will be key to ensuring that AI driven-systems support rather than obstruct productive social change.\u201d",
-      "It operates via \u2018denialism\u2019 with advocates disavowing the importance of anything they cannot model. In particular, super AI requires pretending human will and consciousness do not exist. Human beings remain the source of all intent and the judge of all outcomes.",
-      "The advent of AI-driven HCI will allow that to expand further and will reduce the amount of customization that people will have to program in by hand. At the same time, AI is merely a tool. All tools have their limits and can be misused. Even when humans are making the decisions instead of machines, blindly following the results of a protocol without exercising any judgment, can have disastrous results."
-    ],
-    "title": "3. Improvements ahead: How humans and AI might evolve together ...",
-    "url": "https://www.pewresearch.org/internet/2018/12/10/improvements-ahead-how-humans-and-ai-might-evolve-together-in-the-next-decade/"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=scholarspace.manoa.hawaii.edu&size=128",
-    "snippets": [],
-    "title": "Hawaii",
-    "url": "https://scholarspace.manoa.hawaii.edu/bitstreams/67638869-9223-4d41-839b-a81c478a076a/download"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
-    "snippets": [],
-    "title": "Evaluating Dialogue System via Free-For-All Ranking",
-    "url": "https://aclanthology.org/2023.findings-emnlp.1049.pdf"
-  },
-  {
-    "description": "In subject area: Computer Science \u00b7 A Dialog System, in the context of Computer Science, is a system that aims to have coherent conversations with humans. It utilizes various modes of communication such as text, speech, graphics, and gestures for both input and output channels.",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
-    "snippets": [
-      "Two major aspects are mainly evaluated in the task-oriented dialogue systems that are believed to define the dialogue quality, i.e., dialogue efficiency and task-success [37]. PARAdigm for DIalog System Evaluation (PARADISE) framework is the most commonly known framework proposed by [173] for evaluating the task-oriented systems.",
-      "However, [43] checked the predictive capability of this framework for individual users and highlighted the incapability of PARADISE framework to distinguish between different user groups. Later several other metrics have been identified for evaluating different elements of dialogue systems, i.e.,",
-      "While such systems can be used for a very wide range of applications\u2014including the promotion of patient disease self-management, disease monitoring, and screening\u2014we will focus on patient education and health behavior change applications in this paper, as these have received the most research attention to date.",
-      "These are handled by a Hello state and a Goodbye state (Fig. 1.3). As well as saying \u201cHello\u201d and \u201cGoodbye\u201d, these states can include other behaviors, for example a mobile robot can stop moving around for the duration of the conversation, or a humanoid robot can stand up or sit down to talk, as desired."
-    ],
-    "title": "Dialog System - an overview | ScienceDirect Topics",
-    "url": "https://www.sciencedirect.com/topics/computer-science/dialog-system"
-  },
-  {
-    "description": "This study explores the use of Large Language Models (LLMs), specifically GPT-4, in analysing classroom dialogue\u2014a key task for teaching diagnosis and quality improvement. Traditional qualitative methods are both knowledge- and labour-intensive. This research investigates the potential of ...",
-    "favicon_url": "https://you.com/favicon?domain=www.nature.com&size=128",
-    "snippets": [
-      "This study explores the use of Large Language Models (LLMs), specifically GPT-4, in analysing classroom dialogue\u2014a key task for teaching diagnosis and quality improvement. Traditional qualitative methods are both knowledge- and labour-intensive. This research investigates the potential of LLMs to streamline and enhance this process.",
-      "npj Science of Learning - Evaluating large language models in analysing classroom dialogue",
-      "Transcription, the conversion of spoken words in recorded classrooms into text, has been expedited by software, significantly reducing time and human resource demands. However, the subsequent coding process presents a more formidable hurdle, both in terms of complexity and time expenditure. Coding, the act of sorting and structuring data into categories based on themes, concepts, or emergent significant elements, is indispensable in qualitative research. This method enables a systematic dissection of voluminous data, such as interview transcripts or observational records, which defy straightforward quantification.",
-      "To evaluate the coding scheme, inter-human-rater reliability was assessed using interrater reliability calculations. According to O\u2019Connor and Joffe50, interrater reliability can enhance \u2018the systematicity, communicability, and transparency of the coding process,\u2019 thereby providing credibility to the scheme."
-    ],
-    "title": "Evaluating large language models in analysing classroom dialogue ...",
-    "url": "https://www.nature.com/articles/s41539-024-00273-3"
-  },
-  {
-    "description": "When designing rule-based dialogue systems, the need for the creation of an elaborate design by the designer is a challenge. One way to reduce the cost of creating content is to generate utterances from data collected in an objective and reproducible manner. This study focuses on rule-based ...",
-    "favicon_url": "https://you.com/favicon?domain=www.mdpi.com&size=128",
-    "snippets": [
-      "When designing rule-based dialogue systems, the need for the creation of an elaborate design by the designer is a challenge. One way to reduce the cost of creating content is to generate utterances from data collected in an objective and reproducible manner. This study focuses on rule-based dialogue systems using survey data and, more specifically, on opinion dialogue in which the system models the user.",
-      "Here, we consider a method for estimating a larger number of user models from a small amount of data obtained through user interaction. The method employed in this paper is based on third-party data. The dialogue system stores the opinion data obtained from many people (overall data) in advance and judges \u201cwho the user is close to\u201d from a small number of user models.",
-      "This paper employs a method that first evaluates the proximity between the user and a specific third party and then estimates the user\u2019s opinion model. This differs from conventional methods in that it does not refer to \u201cthe data of others who are not judged to be close\u201d. This is a device that forces the method to only use local data in order to make it applicable at all times, even if the opinion expression space or the overall data are huge.",
-      "In this paper, we focus on three key aspects of dialogue system design: making the dialogue system smaller, modeling the user, and maintaining the willingness to interact. Dialogue systems that model users represent a different approach compared to question-answering agents such as ELIZA [5] or machine-learning dialogue systems such as LUNA [11]. User modeling can be broadly divided into \"identity-based user modeling\" and \"knowledge-based user modeling\" [12]. Identity-based user modeling uses static information that is connected to individuals, such as gender and age."
-    ],
-    "title": "A Dialogue System That Models User Opinions Based on Information ...",
-    "url": "https://www.mdpi.com/2414-4088/6/10/91"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
-    "snippets": [],
-    "title": "Aclanthology",
-    "url": "https://aclanthology.org/2021.eancs-1.3.pdf"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=scholarspace.manoa.hawaii.edu&size=128",
-    "snippets": [],
-    "title": "Hawaii",
-    "url": "https://scholarspace.manoa.hawaii.edu/bitstreams/67638869-9223-4d41-839b-a81c478a076a/download"
-  },
-  {
-    "description": "PDF | We investigate evaluation methods for dialogue systems. We focus on conversational dialogue systems and question-answering dialogue systems since... | Find, read and cite all the research you need on ResearchGate",
-    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
-    "snippets": [
-      "ADEM\u2019s Pearson\u2019s correlation to human judgments lies at 0.41 on the utterance \u00b7 level. Compared to the ROUGE score, whose correlation to human judgments lies",
-      "Furthermore, it allows comparing two bots \u00b7 directly. The methods are shown to be reproducible and e\ufb03cient. Second, we \u00b7 introduce AutoJudge, an automated metric that works by \ufb01rst generating bot-bot- talk dialogues rated by humans. These ratings are then used to \ufb01t an automated \u00b7 judgment model, which correlates well to human judgments.",
-      "gression model, which learns to judge dialogue turns automatically. The bot-bot talk \u00b7 paradigm allows for evaluating the multi-turn behavior of dialogue systems without \u00b7 generating dialogues between humans and dialogue systems. Thus, both proposals ... Comparative Evaluation of Dialogue Systems.",
-      "We show that the rankings are robust and reproducible. The second scenario is AutoJudge, an automated metric for evaluating conversational dialogue systems. It is trained on automatically generated dialogues that are annotated on the turn level by human judges."
-    ],
-    "title": "(PDF) Evaluation of Dialogue Systems",
-    "url": "https://www.researchgate.net/publication/355856234_Evaluation_of_Dialogue_Systems"
-  },
-  {
-    "description": "MIT CSAIL researchers developed an evaluation framework for large language models about counterfactual tasks. They found that LLMs can recite answers, but struggle to reason as it relates to abstract task-solving.",
-    "favicon_url": "https://you.com/favicon?domain=news.mit.edu&size=128",
-    "snippets": [
-      "This insight is crucial as we strive to enhance these models\u2019 adaptability and broaden their application horizons,\u201d says Zhaofeng Wu, an MIT PhD student in electrical engineering and computer science, CSAIL affiliate, and the lead author on a new paper about the research.",
-      "\u201cAs language models scale up, understanding their training data becomes increasingly challenging even for open models, let alone proprietary ones,\u201d says Hao Peng, assistant professor at the University of Illinois at Urbana-Champaign. \u201cThe community remains puzzled about whether these models genuinely generalize to unseen tasks, or seemingly succeed by memorizing the training data. This paper makes important strides in addressing this question.",
-      "Paper: \"Reasoning or Reciting?"
-    ],
-    "title": "Reasoning skills of large language models are often overestimated ...",
-    "url": "https://news.mit.edu/2024/reasoning-skills-large-language-models-often-overestimated-0711"
-  },
-  {
-    "description": "Dialogue Concerning the Two Chief World Systems (Dialogo sopra i due massimi sistemi del mondo) is a 1632 book by Galileo Galilei comparing Nicolaus Copernicus's heliocentric system model with Ptolemy's geocentric model. Written in Italian, it was translated into Latin as Systema cosmicum (Cosmic ...",
-    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
-    "snippets": [
-      "But still many cannot believe that the fixed stars can individually be as big or bigger than the Sun. To what end are these? Salviati maintains that \"it is brash for our feebleness to attempt to judge the reasons for God's actions, and to call everything in the universe vain and superfluous which does not serve us\".",
-      "Salviati points out that days on the Moon are a month long and despite the varied terrain that the telescope has disclosed, it would not sustain life. Humans acquire mathematical truths slowly and hesitantly, whereas God knows the full infinity of them intuitively.",
-      "Salviati brings up another problem, which is that Mars and Venus are not as variable as the theory would suggest. He explains that the size of a star to the human eye is affected by the brightness and the sizes are not real. This is resolved by use of the telescope which also shows the crescent shape of Venus.",
-      "And when one looks into the marvelous things men have understood and contrived, then clearly the human mind is one of the most excellent of God's works.",
-      "Dialogue Concerning the Two Chief World Systems (Dialogo sopra i due massimi sistemi del mondo) is a 1632 book by Galileo Galilei comparing Nicolaus Copernicus's heliocentric system model with Ptolemy's geocentric model. Written in Italian, it was translated into Latin as Systema cosmicum (Cosmic System) in 1635 by Matthias Bernegger."
-    ],
-    "title": "Dialogue Concerning the Two Chief World Systems - Wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Dialogue_Concerning_the_Two_Chief_World_Systems"
-  },
-  {
-    "description": "Abstract. We describe a class of tasks called decision-oriented dialogues, in which AI assistants such as large language models (LMs) must collaborate with one or more humans via natural language to help them make complex decisions. We formalize three domains in which users face everyday decisions: ...",
-    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
-    "snippets": [
-      "Abstract. We describe a class of tasks called decision-oriented dialogues, in which AI assistants such as large language models (LMs) must collaborate with one or more humans via natural language to help them make complex decisions. We formalize three domains in which users face everyday decisions: (1) choosing an assignment of reviewers to conference papers, (2) planning a multi-step itinerary in a city, and (3) negotiating travel plans for a group of friends.",
-      "We formalize three domains in which users face everyday decisions: (1) choosing an assignment of reviewers to conference papers, (2) planning a multi-step itinerary in a city, and (3) negotiating travel plans for a group of friends. In each of these settings, AI assistants and users have disparate abilities that they must combine to arrive at the best decision: Assistants can access and process large amounts of information, while users have preferences and constraints external to the system.",
-      "To solve these problems, systems need to communicate with users, ideally with a flexible interface such as natural language. However, there is limited existing work evaluating model performance in these types of conversational settings. In this paper, we develop a challenging suite of decision problems in which multiple agents must collaborate with each other and make decisions via natural language.",
-      "Although reviewer matching is sometimes automated via approaches like the Toronto Paper Matching System (TPMS; Charlin and Zemel, 2013), human organizers often have their own incomplete and partially overlapping knowledge about which reviewers fit which papers."
-    ],
-    "title": "Decision-Oriented Dialogue for Human-AI Collaboration | Transactions ...",
-    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00679/123884/Decision-Oriented-Dialogue-for-Human-AI"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
-    "snippets": [],
-    "title": "Towards Automatic Evaluation of Dialog Systems: A Model ...",
-    "url": "https://aclanthology.org/2021.emnlp-main.589.pdf"
-  },
-  {
-    "description": "ACL 2025 Accepted Main Conference Papers",
-    "favicon_url": "https://you.com/favicon?domain=2025.aclweb.org&size=128",
-    "snippets": [
-      "QAEncoder: Towards Aligned Representation Learning in Question Answering Systems Zhengren Wang, Qinhan Yu, Shida Wei, Zhiyu li, Feiyu Xiong, Xiaoxing Wang, Simin Niu, Hao Liang, Wentao Zhang \u00b7 Game Development as Human-LLM Interaction Jiale Hong, Hongqiu Wu, hai zhao \u00b7 Can LLMs Simulate L2-English Dialogue?",
-      "G-Safeguard: A Topology-Guided Security Lens and Treatment on LLM-based Multi-agent Systems Shilong Wang, Guibin Zhang, Miao Yu, Guancheng Wan, Fanci Meng, chongye guo, Kun Wang, Yang Wang \u00b7 Deontological Keyword Bias: The Impact of Modal Verbs on Normative Judgments of Language Models Bumjin Park, Leejinsil, Jaesik Choi",
-      "Systematic Evaluation and Rethinking Yichi Zhang, Zhuo Chen, Lingbing Guo, yajing Xu, Shaokai Chen, Mengshu Sun, Binbin Hu, Zhiqiang Zhang, Lei Liang, Wen Zhang, Huajun Chen \u00b7 LL\u00e4Mmlein \ud83d\udc11: Transparent, Compact and Competitive German-Only Language Models from Scratch Jan Pfister, Julia Wunderle, Andreas Hotho \u00b7 Speaking Beyond Language: A Large-Scale Multimodal Dataset for Learning Nonverbal Cues from Video-Grounded Dialogues Youngmin Kim, Jiwan Chung, Jisoo Kim, sunghyun lee, Sangkyu Lee, Junhyeok Kim, Cheoljong Yang, Youngjae Yu",
-      "Detection of Human and Machine-Authored Fake News in Urdu Muhammad Zain Ali, Yuxia Wang, Bernhard Pfahringer, Tony C Smith \u00b7 An Efficient Task-Oriented Dialogue Policy: Evolutionary Reinforcement Learning Injected by Elite Individuals."
-    ],
-    "title": "Accepted Main Conference Papers - ACL 2025",
-    "url": "https://2025.aclweb.org/program/main_papers/"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
-    "snippets": [],
-    "title": "Arxiv",
-    "url": "https://arxiv.org/pdf/1904.02743"
-  },
-  {
-    "description": "In this paper, we compare different approaches for predicting the quality and usability of spoken dialogue systems. The respective models provide esti\u2026",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
-    "snippets": [
-      "In this paper, we compare different approaches for predicting the quality and usability of spoken dialogue systems. The respective models provide estimations of user judgments on perceived quality, based on parameters which can be extracted from interaction logs.",
-      "In contrast to this, M\u00f6ller (2005b) found that the predictive power was significantly reduced when extrapolating from one system to another. It is the aim of the present paper to analyze the capacity of models relating performance indices to quality judgments, both in interpolating known data and in extrapolating towards unknown data.",
-      "Because of their interdependence, improvement of these underlying modules is not an easy, but necessary task in order to deliver an optimal quality to the human user. The quality a user perceives during the interaction with the system is a perceptual event. It results from a perception and a judgment process, during which the user compares what s/he perceives with what s/he desires or expects, considering the own background knowledge as well as the experience with this or other systems (Jekosch, 2005).",
-      "Since each domain has different issues to be addressed to develop dialogue systems, we targeted restaurant retrieval dialogues to fill slot-value in Track 1, customer services on Twitter by combining goal-oriented dialogues and ChitChat in Track 2 and human-machine dialogue data for ChitChat in Track 3. DSTC6 had 141 people declaring their interests and 23 teams submitted their final results. 18 scientific papers were presented in the wrap-up workshop."
-    ],
-    "title": "Predicting the quality and usability of spoken dialogue services ...",
-    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167639308000356"
-  },
-  {
-    "description": "Minhao Cheng, Wei Wei, Cho-Jui Hsieh. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). 2019.",
-    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
-    "snippets": [
-      "Recent research has demonstrated that goal-oriented dialogue agents trained on large datasets can achieve striking performance when interacting with human users. In real world applications, however, it is important to ensure that the agent performs smoothly interacting with not only regular users but also those malicious ones who would attack the system through interactions in order to achieve goals for their own advantage. In this paper, we develop algorithms to evaluate the robustness of a dialogue agent by carefully designed attacks using adversarial agents.",
-      "Evaluating and Enhancing the Robustness of Dialogue Systems: A Case Study on a Negotiation Agent. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), pages 3325\u20133335, Minneapolis, Minnesota.",
-      "@inproceedings{cheng-etal-2019-evaluating, title = \"Evaluating and Enhancing the Robustness of Dialogue Systems: A Case Study on a Negotiation Agent\", author = \"Cheng, Minhao and Wei, Wei and Hsieh, Cho-Jui\", editor = \"Burstein, Jill and Doran, Christy and Solorio, Thamar\", booktitle = \"Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)\", month = jun, year = \"2019\", address = \"Minneapolis, Minnesota\", publisher = \"Association for Computational Linguistics\", url = \"https://aclanthology.org/N19-1336/\", doi = \"10.18653/v1/N19-1336\", pages = \"3325--3335\", abstract = \"Recent research has demonstrated that goal-oriented dialogue agents trained on large datasets can achieve striking performance when interacting with human users.",
-      "%0 Conference Proceedings %T Evaluating and Enhancing the Robustness of Dialogue Systems: A Case Study on a Negotiation Agent %A Cheng, Minhao %A Wei, Wei %A Hsieh, Cho-Jui %Y Burstein, Jill %Y Doran, Christy %Y Solorio, Thamar %S Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers) %D 2019 %8 June %I Association for Computational Linguistics %C Minneapolis, Minnesota %F cheng-etal-2019-evaluating %X Recent research has demonstrated that goal-oriented dialogue agents trained on large datasets can achieve striking performance when interacting with human users."
-    ],
-    "title": "Evaluating and Enhancing the Robustness of Dialogue Systems: A ...",
-    "url": "https://aclanthology.org/N19-1336/"
-  },
-  {
-    "description": "In recent years, a question of great interest has been the development of tools and techniques to facilitate the evaluation of dialogue systems. The l\u2026",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
-    "snippets": [
-      "We believe, as do others, that a major challenge to this technology concerns the better incorporation of models of human-to-human interaction (Swerts and Ostendorf, 1997), which requires us to study the interaction between users and systems from a more general point of view, such as dialogue structure, dialogue efficiency and task achievement. As a tool to facilitate the development and testing of dialogue systems, this paper proposes a user simulator; this is an additional dialogue system that interacts automatically with the dialogue system to be tested, and represents a real user.",
-      "The latter can be evaluated from various points of view, such as recognition and understanding rates, dialogue naturalness and robustness against recognition errors. Evaluation usually requires compiling a large corpus of words and sentences uttered by users, relevant to the application domain the system is designed for. This paper proposes a new technique that makes it possible to reuse such a corpus for the evaluation and to check the performance of the system when different dialogue strategies are used.",
-      "For example, Niimi and Nishimoto (1999) presented an analytical method that relies on the performance of the recognition sub-system to adapt the behavior of the dialogue system; specifically, recognition word error rates are used to decide the most appropriate confirmation strategy for the system. One difference between this method and ours is that the present paper considers the co-operation between several components of a dialogue system, mainly the recognizer and the linguistic analyzer, and pays more attention to speech understanding than to speech recognition.",
-      "(1997) and Araki and Doshita (1997) presented an evaluation method that relied on dialogues generated by two systems that interact automatically using text messages, in such a way that recognition and understanding errors are simulated by a module, called coordinator, that drops context words into the messages at a given rate. The technique proposed in the present paper is also concerned with evaluating a dialogue system by its automatic interaction with another (the simulator), but instead of receiving text messages, the dialogue system receives a user\u2019s voice as the input."
-    ],
-    "title": "Assessment of dialogue systems by means of a new simulation technique ...",
-    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0167639302001267"
-  },
-  {
-    "description": "Dialogue systems are a popular natural language processing (NLP) task as it is promising in real-life applications. It is also a complicated task since many NLP tasks deserving study are involved. As a result, a multitude of novel works on this task are carried out, and most of them are deep ...",
-    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
-    "snippets": [
-      "Dialogue systems are a popular natural language processing (NLP) task as it is promising in real-life applications. It is also a complicated task since many NLP tasks deserving study are involved. As a result, a multitude of novel works on this task are carried out, and most of them are deep learning based due to the outstanding performance.",
-      "Abstract page for arXiv paper 2105.04387: Recent Advances in Deep Learning Based Dialogue Systems: A Systematic Survey",
-      "View a PDF of the paper titled Recent Advances in Deep Learning Based Dialogue Systems: A Systematic Survey, by Jinjie Ni and 4 other authors View PDF",
-      "Which authors of this paper are endorsers?"
-    ],
-    "title": "[2105.04387] Recent Advances in Deep Learning Based Dialogue Systems: ...",
-    "url": "https://arxiv.org/abs/2105.04387"
-  },
-  {
-    "description": "The taking of turns is a fundamental aspect of dialogue. Since it is difficult to speak and listen at the same time, the participants need to coordina\u2026",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
-    "snippets": [
-      "The taking of turns is a fundamental aspect of dialogue. Since it is difficult to speak and listen at the same time, the participants need to coordinate who is currently speaking and when the next person can start to speak. Humans are very good at this coordination, and typically achieve fluent turn-taking with very small gaps and little overlap."
-    ],
-    "title": "Turn-taking in Conversational Systems and Human-Robot Interaction: ...",
-    "url": "https://www.sciencedirect.com/science/article/pii/S088523082030111X"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=citeseerx.ist.psu.edu&size=128",
-    "snippets": [],
-    "title": "Evaluating Interactive Dialogue Systems",
-    "url": "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=74eee1d6ed790d4611694a183923ad646dd6d1ad"
-  },
-  {
-    "description": "PDF | The evaluation of conversational dialog systems has remained a controversial topic, as it is challenging to quantitatively assess how well a... | Find, read and cite all the research you need on ResearchGate",
-    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
-    "snippets": [
-      "Each of these aims reflects different aspects of a human- computer conversation. Dialog performance relates to the \u00b7 experience of the interaction, while task success is concerned \u00b7 with the utility of the dialog exchange. Basically, these two \u00b7 objectives separately assess the effectiveness of the means ... C. Evaluation Metrics \u00b7 The evaluation system featured in this paper is derived from \u00b7 the PARAdigm for DIalogue System Evaluation (PARADISE)",
-      "Notably, both human and AI evaluators exhibited a tendency towards binary judgment rather than linear scaling, highlighting a shared challenge in these assessments. Experiment 2 extended the work of Finch et al. (2023) by focusing on dyadic dialogues and assessing Commonsense Contradiction, Incorrect Fact, and Redundancy.",
-      "A chatbot is a software system, which can interact or \"chat\" with a human user in natural language such as English. For the annual Loebner Prize contest, rival chatbots have been assessed in terms of ability to fool a judge in a restricted chat session. We are investigating methods to train and adapt a chatbot to a specific user's language use or application, via a user-supplied training corpus.",
-      "The results indicate that while GPT-4o demonstrates strong performance in maintaining factual accuracy and commonsense reasoning, it still struggles with reducing redundancy and self-contradiction. Our findings underscore the potential of GPT models to closely replicate human evaluation in dialogue systems, while also pointing to areas for improvement."
-    ],
-    "title": "(PDF) Towards a Method For Evaluating Naturalness in Conversational ...",
-    "url": "https://www.researchgate.net/publication/224086321_Towards_a_Method_For_Evaluating_Naturalness_in_Conversational_Dialog_Systems"
-  },
-  {
-    "description": "Chia-Wei Liu, Ryan Lowe, Iulian Serban, Mike Noseworthy, Laurent Charlin, Joelle Pineau. Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing. 2016.",
-    "favicon_url": "https://you.com/favicon?domain=www.aclweb.org&size=128",
-    "snippets": [],
-    "title": "How NOT To Evaluate Your Dialogue System: An Empirical Study of ...",
-    "url": "https://www.aclweb.org/anthology/D16-1230/"
-  },
-  {
-    "description": "Automatic evaluation metrics are a crucial component of dialog systems research. Standard language evaluation metrics are known to be ineffective for evaluating dialog. As such, recent research has proposed a number of novel, dialog-specific metrics that correlate better with human judgements.",
-    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
-    "snippets": [
-      "View a PDF of the paper titled A Comprehensive Assessment of Dialog Evaluation Metrics, by Yi-Ting Yeh and 2 other authors View PDF \u00b7 Abstract:Automatic evaluation metrics are a crucial component of dialog systems research. Standard language evaluation metrics are known to be ineffective for evaluating dialog. As such, recent research has proposed a number of novel, dialog-specific metrics that correlate better with human judgements.",
-      "Abstract page for arXiv paper 2106.03706: A Comprehensive Assessment of Dialog Evaluation Metrics",
-      "Which authors of this paper are endorsers?"
-    ],
-    "title": "[2106.03706] A Comprehensive Assessment of Dialog Evaluation Metrics",
-    "url": "https://arxiv.org/abs/2106.03706"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=citeseerx.ist.psu.edu&size=128",
-    "snippets": [],
-    "title": "Evaluating Interactive Dialogue Systems",
-    "url": "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=74eee1d6ed790d4611694a183923ad646dd6d1ad"
-  },
-  {
-    "description": "Evaluating open-domain dialogue systems is currently an open question. Automatic evaluation metrics have shown poor correlation with human assessment in dialogue generation tasks. Human evaluation, which involves annotators for multi-dimension scoring, is trustworthy but time-consuming.",
-    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
-    "snippets": [
-      "The final performance of each model is represented by calculating the TrueSkill score derived from the free-for-all competition. Our empirical study on English and Chinese dialogue systems demonstrates that FFAEval achieves a strong correlation with score-based human assessment compared to existing evaluation methods."
-    ],
-    "title": "FFAEval: Evaluating Dialogue System via Free-For-All Ranking | ...",
-    "url": "https://openreview.net/forum?id=0bderX6zwr"
-  },
-  {
-    "description": "Automatic evaluation metrics are a crucial component of dialog systems research. Standard language evaluation metrics are known to be ineffective for evaluating dialog. As such, recent research has proposed a number of novel, dialog-specific metrics that correlate better with human judgements.",
-    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
-    "snippets": [
-      "View a PDF of the paper titled A Comprehensive Assessment of Dialog Evaluation Metrics, by Yi-Ting Yeh and 2 other authors View PDF \u00b7 Abstract:Automatic evaluation metrics are a crucial component of dialog systems research. Standard language evaluation metrics are known to be ineffective for evaluating dialog. As such, recent research has proposed a number of novel, dialog-specific metrics that correlate better with human judgements.",
-      "Abstract page for arXiv paper 2106.03706: A Comprehensive Assessment of Dialog Evaluation Metrics",
-      "Which authors of this paper are endorsers?"
-    ],
-    "title": "[2106.03706] A Comprehensive Assessment of Dialog Evaluation Metrics",
-    "url": "https://arxiv.org/abs/2106.03706"
-  },
-  {
-    "description": "PDF | The evaluation of conversational dialog systems has remained a controversial topic, as it is challenging to quantitatively assess how well a... | Find, read and cite all the research you need on ResearchGate",
-    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
-    "snippets": [
-      "Each of these aims reflects different aspects of a human- computer conversation. Dialog performance relates to the \u00b7 experience of the interaction, while task success is concerned \u00b7 with the utility of the dialog exchange. Basically, these two \u00b7 objectives separately assess the effectiveness of the means ... C. Evaluation Metrics \u00b7 The evaluation system featured in this paper is derived from \u00b7 the PARAdigm for DIalogue System Evaluation (PARADISE)",
-      "Notably, both human and AI evaluators exhibited a tendency towards binary judgment rather than linear scaling, highlighting a shared challenge in these assessments. Experiment 2 extended the work of Finch et al. (2023) by focusing on dyadic dialogues and assessing Commonsense Contradiction, Incorrect Fact, and Redundancy.",
-      "A chatbot is a software system, which can interact or \"chat\" with a human user in natural language such as English. For the annual Loebner Prize contest, rival chatbots have been assessed in terms of ability to fool a judge in a restricted chat session. We are investigating methods to train and adapt a chatbot to a specific user's language use or application, via a user-supplied training corpus.",
-      "The results indicate that while GPT-4o demonstrates strong performance in maintaining factual accuracy and commonsense reasoning, it still struggles with reducing redundancy and self-contradiction. Our findings underscore the potential of GPT models to closely replicate human evaluation in dialogue systems, while also pointing to areas for improvement."
-    ],
-    "title": "(PDF) Towards a Method For Evaluating Naturalness in Conversational ...",
-    "url": "https://www.researchgate.net/publication/224086321_Towards_a_Method_For_Evaluating_Naturalness_in_Conversational_Dialog_Systems"
-  },
-  {
-    "description": "Other questions to the experts in this canvassing invited their views on the hopeful things that will occur in the next decade and for examples of",
-    "favicon_url": "https://you.com/favicon?domain=www.pewresearch.org&size=128",
-    "snippets": [
-      "A European computer science professor expert in machine learning commented, \u201cThe social sorting systems introduced by AI will most likely define and further entrench the existing world order of the haves and the have-nots, making social mobility more difficult and precarious given the unpredictability of AI-driven judgements of fit.",
-      "The interesting problem to solve will be the fact that initial designs of AI will come with built-in imaginaries of what \u2018good\u2019 or \u2018correct\u2019 constitutes. The level of flexibility designed in to allow for changes in normative perceptions and judgements will be key to ensuring that AI driven-systems support rather than obstruct productive social change.\u201d",
-      "It operates via \u2018denialism\u2019 with advocates disavowing the importance of anything they cannot model. In particular, super AI requires pretending human will and consciousness do not exist. Human beings remain the source of all intent and the judge of all outcomes.",
-      "The advent of AI-driven HCI will allow that to expand further and will reduce the amount of customization that people will have to program in by hand. At the same time, AI is merely a tool. All tools have their limits and can be misused. Even when humans are making the decisions instead of machines, blindly following the results of a protocol without exercising any judgment, can have disastrous results."
-    ],
-    "title": "3. Improvements ahead: How humans and AI might evolve together ...",
-    "url": "https://www.pewresearch.org/internet/2018/12/10/improvements-ahead-how-humans-and-ai-might-evolve-together-in-the-next-decade/"
-  },
-  {
-    "description": "In this post, we introduce Koala, a chatbot trained by fine-tuning Meta\u2019s LLaMA on dialogue data gathered from the web. We describe the dataset curation and training process of our model, and also present the results of a user study that compares our model to ChatGPT and Stanford\u2019s Alpaca.",
-    "favicon_url": "https://you.com/favicon?domain=bair.berkeley.edu&size=128",
-    "snippets": [
-      "With these two evaluation sets, we conducted a blind pairwise comparison by asking approximately 100 evaluators on Amazon Mechanical Turk platform to compare the quality of model outputs on these held-out sets of prompts. In the ratings interface, we present each rater with an input prompt and the output of two models. They are then asked to judge which output is better (or that they are equally good) using criteria related to response quality and correctness.",
-      "Large language models (LLMs) have enabled increasingly powerful virtual assistants and chat bots, with systems such as ChatGPT, Bard, Bing Chat, and Claude able to respond to a breadth of user queries, provide sample code, and even write poetry. Many of the most capable LLMs require huge computational resources to train, and oftentimes use large and proprietary datasets.",
-      "On the other hand, recent months have also seen the release of increasingly capable freely available or (partially) open-source models, such as LLaMA. These systems typically fall short of the most capable closed models, but their capabilities have been rapidly improving.",
-      "By encouraging researchers to engage with our system demo, we hope to uncover any unexpected features or deficiencies that will help us evaluate the models in the future. We ask researchers to report any alarming actions they observe in our web demo to help us comprehend and address any issues."
-    ],
-    "title": "Koala: A Dialogue Model for Academic Research \u2013 The Berkeley ...",
-    "url": "https://bair.berkeley.edu/blog/2023/04/03/koala/"
-  },
-  {
-    "description": "Though generative dialogue modeling is widely seen as a language modeling task, the task demands an agent to have a complex natural language understanding of its input text to carry a meaningful interaction with an user. The automatic metrics used evaluate the quality of the generated text ...",
-    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
-    "snippets": [
-      "Though generative dialogue modeling is widely seen as a language modeling task, the task demands an agent to have a complex natural language understanding of its input text to carry a meaningful interaction with an user. The automatic metrics used evaluate the quality of the generated text as a proxy to the holistic interaction of the agent.",
-      "Abstract page for arXiv paper 2008.10427: How To Evaluate Your Dialogue System: Probe Tasks as an Alternative for Token-level Evaluation Metrics",
-      "The probing tasks are deterministic like automatic metrics and requires human judgement in their designing; benefiting from the best of both worlds. With experiments on probe tasks we observe that, unlike RNN based architectures, transformer model may not be learning to comprehend the input text despite its generated text having higher overlap with the target text. From: Prasanna Parthasarathi [view email] [v1] Mon, 24 Aug 2020 13:28:35 UTC (5,001 KB) ... View a PDF of the paper titled How To Evaluate Your Dialogue System: Probe Tasks as an Alternative for Token-level Evaluation Metrics, by Prasanna Parthasarathi and Joelle Pineau and Sarath Chandar",
-      "View a PDF of the paper titled How To Evaluate Your Dialogue System: Probe Tasks as an Alternative for Token-level Evaluation Metrics, by Prasanna Parthasarathi and Joelle Pineau and Sarath Chandar View PDF"
-    ],
-    "title": "[2008.10427] How To Evaluate Your Dialogue System: Probe Tasks ...",
-    "url": "https://arxiv.org/abs/2008.10427"
-  },
-  {
-    "description": "UniGen: Universal Domain Generalization for Sentiment Classification via Zero-shot Dataset Generation Juhwan Choi, Yeonghwa Kim, Seunguk Yu, JungMin Yun, YoungBin Kim \u00b7 Multi-News+: Cost-efficient Dataset Cleansing via LLM-based Data Annotation Juhwan Choi, JungMin Yun, Kyohoon Jin, YoungBin Kim",
-    "favicon_url": "https://you.com/favicon?domain=2024.emnlp.org&size=128",
-    "snippets": [
-      "Unsupervised End-to-End Task-Oriented Dialogue with LLMs: The Power of the Noisy Channel Brendan King, Jeffrey Flanigan \u00b7 Humans or LLMs as the Judge?",
-      "Is LLM-as-a-Judge Robust? Investigating Universal Adversarial Attacks on Zero-shot LLM Assessment Vyas Raina, Adian Liusie, Mark Gales \u00b7 Rethinking the Reversal Curse of LLMs: a Prescription from Human Knowledge Reversal Zhicong Lu, Li Jin, PeiguangLi, Yu Tian, Linhao Zhang, Sirui Wang, Guangluan Xu, Changyuan Tian, Xunliang Cai",
-      "Perceptions of Linguistic Uncertainty by Language Models and Humans Catarina G Bel\u00e9m, Markelle Kelly, Mark Steyvers, Sameer Singh, Padhraic Smyth \u00b7 Explaining and Improving Contrastive Decoding by Extrapolating the Probabilities of a Huge and Hypothetical LM Haw-Shiuan Chang, Nanyun Peng, Mohit Bansal, Anil Ramakrishna, Tagyoung Chung \u00b7 Zero-shot Cross-domain Dialogue State Tracking via Context-aware Auto-prompting and Instruction-following Contrastive Decoding Xiaoyu DONG, Yujie Feng, ZEXIN LU, Guangyuan SHI, Xiao-Ming Wu",
-      "Fairer Preferences Elicit Improved Human-Aligned Large Language Model Judgments Han Zhou, Xingchen Wan, Yinhong Liu, Nigel Collier, Ivan Vuli\u0107, Anna Korhonen"
-    ],
-    "title": "Main Conference - EMNLP 2024",
-    "url": "https://2024.emnlp.org/program/accepted_main_conference/"
-  },
-  {
-    "description": "The most fundamental communication mechanism for interaction is dialogues involving speech, gesture, semantic and pragmatic knowledge. Various researc\u2026",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
-    "snippets": [
-      "The paper presents the overview on existing methods for dialogue manager training; their advantages and limitations. Furthermore, a new image-based method is used in Facebook bAbI Task 1 dataset in Out Of Vocabulary setting. The results show that using dialogue as an image performs well and helps dialogue manager in expanding out of vocabulary dialogue tasks in comparison to Memory Networks."
-    ],
-    "title": "Dialogue Systems for Intelligent Human Computer Interactions - ...",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1571066119300106"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=assets.amazon.science&size=128",
-    "snippets": [],
-    "title": "EVALUATING TASK-ORIENTED DIALOGUE SYSTEMS ...",
-    "url": "https://assets.amazon.science/54/a1/5282d47044179737b4289622c824/how-robust-are-you-evaluating-task-oriented-dialogue-systems-on-spoken-conversations.pdf"
-  },
-  {
-    "description": "In this paper we survey the methods and concepts developed for the evaluation of dialogue systems. Evaluation is a crucial part during the development process. Often, dialogue systems are evaluated by means of human evaluations and questionnaires. However, this tends to be very cost and time ...",
-    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
-    "snippets": [
-      "Abstract:In this paper we survey the methods and concepts developed for the evaluation of dialogue systems. Evaluation is a crucial part during the development process. Often, dialogue systems are evaluated by means of human evaluations and questionnaires. However, this tends to be very cost and time intensive.",
-      "Abstract page for arXiv paper 1905.04071: Survey on Evaluation Methods for Dialogue Systems",
-      "View a PDF of the paper titled Survey on Evaluation Methods for Dialogue Systems, by Jan Deriu and 6 other authors View PDF",
-      "Which authors of this paper are endorsers?"
-    ],
-    "title": "[1905.04071] Survey on Evaluation Methods for Dialogue Systems",
-    "url": "https://arxiv.org/abs/1905.04071"
-  },
-  {
-    "description": "Translated by Stillman Drake Annotated and Condensed by S. E. Sciortino \u00b7 The open-minded and lettered Sagredo in Galileo's dialogue was a close friend of the scientist. Salviati represents the views of Galileo himself. Simplicio, the philosopher, is a fictitious straw man",
-    "favicon_url": "https://you.com/favicon?domain=law2.umkc.edu&size=128",
-    "snippets": [],
-    "title": "Dialogue Concerning the Two Chief World Systems",
-    "url": "http://law2.umkc.edu/faculty/projects/ftrials/galileo/dialogue.html"
-  },
-  {
-    "description": "RetinaQA: A Robust Knowledge Base Question Answering Model for both Answerable and Unanswerable Questions Prayushi Faldu, Indrajit Bhattacharya, Mausam \u00b7 DynaSemble: Dynamic Ensembling of Textual and Structure-Based Models for Knowledge Graph Completion Ananjan Nandi, Navdeep Kaur, Parag Singla, ...",
-    "favicon_url": "https://you.com/favicon?domain=2024.aclweb.org&size=128",
-    "snippets": [
-      "Planning Like Human: A Dual-process Framework for Dialogue Planning Tao He, Lizi Liao, Yixin Cao, Yuanxing Liu, Ming Liu, Zerui Chen, Bing Qin \u00b7 Spectral Filters, Dark Signals, and Attention Sinks Nicola Cancedda \u00b7 DiffuCOMET: Contextual Commonsense Knowledge Diffusion Silin Gao, Mete Ismayilzada, Mengjie Zhao, Hiromi Wakaki, Yuki Mitsufuji, Antoine Bosselut \u00b7 Systematic Task Exploration with LLMs: A Study in Citation Text Generation Furkan \u015eahinu\u00e7, Ilia Kuznetsov, Yufang Hou, Iryna Gurevych",
-      "Rethinking Task-Oriented Dialogue Systems: From Complex Modularity to Zero-Shot Autonomous Agent Heng-Da Xu, Xian-Ling Mao, Puhai Yang, Fanshu Sun, Heyan Huang",
-      "Dialogue Summarization with Mixture of Experts based on Large Language Models Yuanhe Tian, Fei Xia, Yan Song \u00b7 ChiMed-GPT: A Chinese Medical Large Language Model with Full Training Regime and Better Alignment to Human Preferences Yuanhe Tian, Ruyi Gan, Yan Song, Jiaxing Zhang, Yongdong Zhang",
-      "Talk With Human-like Agents: Empathetic Dialogue Through Perceptible Acoustic Reception and Reaction Haoqiu Yan, Yongxin Zhu, Kai Zheng, Bing Liu, Haoyu Cao, Deqiang Jiang, Linli Xu"
-    ],
-    "title": "Accepted Main Conference Papers - ACL 2024",
-    "url": "https://2024.aclweb.org/program/main_conference_papers/"
-  },
-  {
-    "description": "A number of models has been proposed to describe various types of feedback along with mechanisms through which feedback may improve student performanc\u2026",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
-    "snippets": [],
-    "title": "A review of feedback models and typologies: Towards an integrative ...",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1747938X21000397"
-  },
-  {
-    "description": "We present Sparrow, an information-seeking dialogue agent trained to be more helpful, correct, and harmless compared to prompted language model baselines. We use reinforcement learning from human feedback to train our \u2026",
-    "favicon_url": "https://you.com/favicon?domain=ar5iv.labs.arxiv.org&size=128",
-    "snippets": [
-      "Many deployed machine learning systems operate in settings in which there is no program that computes the system\u2019s objective. This is true not only of many natural language tasks, but also of robotics and other tasks where only some aspects of safe behaviour and task completion can be specified a priori. This lack of programmatic reward motivates reinforcement learning from human feedback (RLHF) where human judgements of behaviour are a critical component of the training process.",
-      "These results show that Sparrow, an interactive system that can additionally answer follow-up questions in real-time, does not degrade QA performance as compared to the larger and slower GopherCite system. It is naturally of interest how often Sparrow is correct during a conversation. However, robustly assessing correctness in an open-ended setting is challenging. Our supported and plausible evaluations do not require human raters to make an absolute judgement of the response correctness or to fact-check with external sources, instead only asking if a response is supported and plausible given the model-provided evidence.",
-      "In this paper we study the use of human judgements as rewards for the task of helpful, correct, and harmless information-seeking dialogue, defined as a conversation between a human user and a dialogue agent with the goal of providing answers to questions and follow-ups posed by the user (Zamani et al., 2022).",
-      "In this paper dialogue is the task, but our long-term hypothesis is that dialogue is a key component of accurate supervision for machine learning models. Indeed, we chose dialogue as the task in part to build experience and infrastructure to tackle dialogue for supervision. Prior work has suggested that assistance from ML systems may help with accurate human supervision (Irving et al., 2018; Christiano et al., 2018; Leike et al., 2018)."
-    ],
-    "title": "[2209.14375] Improving alignment of dialogue agents via targeted ...",
-    "url": "https://ar5iv.labs.arxiv.org/html/2209.14375"
-  },
-  {
-    "description": "Marilyn A. Walker, Diane J. Litman, Candace A. Kamm, Alicia Abella. Interactive Spoken Dialog Systems: Bringing Speech and NLP Together in Real Applications. 1997.",
-    "favicon_url": "https://you.com/favicon?domain=www.aclweb.org&size=128",
-    "snippets": [],
-    "title": "Evaluating Interactive Dialogue Systems: Extending Component ...",
-    "url": "https://www.aclweb.org/anthology/W97-0601"
-  },
-  {
-    "description": "Abstract. There is an increasing focus on model-based dialog evaluation metrics such as ADEM, RUBER, and the more recent BERT-based metrics. These models aim to assign a high score to all relevant responses and a low score to all irrelevant responses. Ideally, such models should be trained ...",
-    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
-    "snippets": [
-      "Abstract. There is an increasing focus on model-based dialog evaluation metrics such as ADEM, RUBER, and the more recent BERT-based metrics. These models aim to assign a high score to all relevant responses and a low score to all irrelevant responses. Ideally, such models should be trained using multiple relevant and irrelevant responses for any given context.",
-      "How controllable attributes affect human judgments. In \u00b7 Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, NAACL-HLT 2019, Minneapolis, MN, USA, June 2-7, 2019, Volume 1 (Long and Short Papers), pages ... Association for Computational Linguistics. ... A survey of available corpora for building data-driven dialogue systems: The journal version.",
-      "Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, NAACL-HLT 2019, Minneapolis, MN, USA, June 2-7, 2019, Volume 1 (Long and Short Papers), pages ... Better automatic evaluation of open-domain dialogue systems with contextualized embeddings.",
-      "This dataset will be made publicly available and help towards better training and more robust evaluation of dialogue evaluation metrics. Using this dataset, we extensively evaluate a wide range of n-gram-based and embedding-based metrics. In particular, we compute (i) the correlation of these metrics with binary human judgments and (ii) the accuracy obtained by using the scores assigned by the metrics to classify relevant/irrelevant responses."
-    ],
-    "title": "Improving Dialog Evaluation with a Multi-reference Adversarial ...",
-    "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00347/96477/Improving-Dialog-Evaluation-with-a-Multi-reference"
-  },
-  {
-    "description": "Automatic evaluation is an integral aspect of dialogue system research. The traditional reference-based NLG metrics are generally found to be unsuitable for dialogue assessment. Consequently, recent studies have suggested various unique, reference-free neural metrics that better align with ...",
-    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
-    "snippets": [
-      "Abstract:Automatic evaluation is an integral aspect of dialogue system research. The traditional reference-based NLG metrics are generally found to be unsuitable for dialogue assessment. Consequently, recent studies have suggested various unique, reference-free neural metrics that better align with human evaluations. Notably among them, large language models (LLMs), particularly the instruction-tuned variants like ChatGPT, are shown to be promising substitutes for human judges.",
-      "Abstract page for arXiv paper 2312.15407: A Comprehensive Analysis of the Effectiveness of Large Language Models as Automatic Dialogue Evaluators",
-      "Additionally, we probe the robustness of the LLMs in handling various adversarial perturbations at both turn and dialogue levels. Finally, we explore how model-level and dimension-level ensembles impact the evaluation performance. All resources are available at this https URL. From: Chen Zhang [view email] [v1] Sun, 24 Dec 2023 04:50:57 UTC (1,495 KB) [v2] Sat, 20 Jan 2024 06:26:33 UTC (1,540 KB) ... View a PDF of the paper titled A Comprehensive Analysis of the Effectiveness of Large Language Models as Automatic Dialogue Evaluators, by Chen Zhang and 4 other authors",
-      "Which authors of this paper are endorsers?"
-    ],
-    "title": "[2312.15407] A Comprehensive Analysis of the Effectiveness of Large ...",
-    "url": "https://arxiv.org/abs/2312.15407"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=dspace.mit.edu&size=128",
-    "snippets": [],
-    "title": "Approximating Interactive Human Evaluation with Self-Play ...",
-    "url": "https://dspace.mit.edu/bitstream/handle/1721.1/137062.2/NeurIPS-2019-approximating-interactive-human-evaluation-with-self-play-for-open-domain-dialog-systems-Paper.pdf?sequence=4&isAllowed=y"
-  },
-  {
-    "description": "Most prior work in dialogue modeling has been on written conversations mostly because of existing data sets. However, written dialogues are not sufficient to fully capture the nature of spoken conversations as well as the potential speech recognition errors in practical spoken dialogue systems.",
-    "favicon_url": "https://you.com/favicon?domain=www.amazon.science&size=128",
-    "snippets": [
-      "Most prior work in dialogue modeling has been on written conversations mostly because of existing data sets. However, written dialogues are not sufficient to fully capture the nature of spoken conversations as well as the potential speech recognition errors in practical spoken dialogue systems.\u2026",
-      "You must be equally comfortable digging in to business requirements as you are drilling into design with development teams and developing production ready learning models. You consistently bring strong, data-driven business and technical judgment to decisions.",
-      "If you are selected, you have the opportunity to make a difference to our business by designing and building state of the art machine learning systems on big data, leveraging Amazon\u2019s vast computing resources (AWS), working on exciting and challenging projects, and delivering meaningful results to customers world-wide. Key job responsibilities Develop machine learning algorithms for high-scale recommendations problems. Rapidly design, prototype and test many possible hypotheses in a high-ambiguity environment, making use of both quantitative analysis and business judgement.",
-      "4DBInfer enables model comparison across datasets, predictive tasks, database-to-graph extraction methods, and graph-based predictive architectures."
-    ],
-    "title": "\u201cHow robust r u?\": Evaluating task-oriented dialogue systems ...",
-    "url": "https://www.amazon.science/publications/how-robust-r-u-evaluating-task-oriented-dialogue-systems-on-spoken-conversations"
-  },
-  {
-    "description": "Chain of thought (CoT) is a prompt engineering technique that enhances the output of large language models (LLMs), particularly for complex tasks involving multistep reasoning.",
-    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
-    "snippets": [
-      "For example, to solve a math problem like \"If you buy 5 apples and already have 3, how many do you have in total?\", an auto-CoT system could automatically generate intermediate steps. Those steps might include \"Start with 3 apples\" and \"Add 5 apples to the existing 3,\" culminating in \"Total apples = 8,\" streamlining the reasoning process without human intervention.",
-      "Furthermore, the integration of various applications and CoT models can enhance the overall user experience by enabling AI systems to better understand and respond to user needs and preferences. By integrating natural language processing (NLP) techniques into CoT models, we can enable chatbots to understand and respond to user inputs in a more human-like manner, creating more engaging, intuitive and effective conversational experiences.",
-      "Multistep reasoning: By systematically tackling each component of a problem, CoT prompting often leads to more accurate and reliable answers, particularly in tasks requiring multistep reasoning. Multistep reasoning refers to the ability to perform complex logical operations by breaking them down into smaller, sequential steps.",
-      "The chain of thought (CoT) methodology, with its ability to decompose complex problems into understandable reasoning steps, has found applications across a wide array of fields. These use cases not only demonstrate CoT's versatility but also its potential to transform how systems approach problem-solving and decision-making tasks."
-    ],
-    "title": "What is chain of thought (CoT) prompting? | IBM",
-    "url": "https://www.ibm.com/think/topics/chain-of-thoughts"
-  },
-  {
-    "description": "Transferability of Syntax-Aware Graph Neural Networks in Zero-Shot Cross-Lingual Semantic Role Labeling Rachel Sidney Devianti, Yusuke Miyao \u00b7 Reformatted Alignment Run-Ze Fan, Xuefeng Li, Haoyang Zou, Junlong Li, Shwai He, Ethan Chern, Jiewen Hu, Pengfei Liu",
-    "favicon_url": "https://you.com/favicon?domain=2024.emnlp.org&size=128",
-    "snippets": [
-      "A Fairness-Driven Method for Learning Human-Compatible Negotiation Strategies Ryan Shea, Zhou Yu \u00b7 Using RL to Identify Divisive Perspectives Improves LLMs Abilities to Identify Communities on Social Media Nikhil Mehta, Dan Goldwasser \u00b7 Are LLMs Effective Negotiators? Systematic Evaluation of the Multifaceted Capabilities of LLMs in Negotiation Dialogues Deuksin Kwon, Emily Weiss, Tara Kulshrestha, Kushal Chawla, Gale Lucas, Jonathan Gratch",
-      "\u201cSeeing the Big through the Small\u201d: Can LLMs Approximate Human Judgment Distributions on NLI from a Few Explanations? Beiduo Chen, Xinpeng Wang, Siyao Peng, Robert Litschko, Anna Korhonen, Barbara Plank \u00b7 Language Models in Dialogue: Conversational Maxims for Human-AI Interactions Erik Miehling, Manish Nagireddy, Prasanna Sattigeri, Elizabeth M.",
-      "Can LLM be a Personalized Judge? Yijiang River Dong, Tiancheng Hu, Nigel Collier \u00b7 Who\u2019s Who: Large Language Models Meet Knowledge Conflicts in Practice Quang Hieu Pham, Hoang Ngo, Anh Tuan Luu, Dat Quoc Nguyen \u00b7 Unleashing the Potentials of Likelihood Composition for Multi-modal Language Models Shitian Zhao, Renrui Zhang, Xu Luo, Yan Wang, Shanghang Zhang, Peng Gao \u00b7 Automated Peer Reviewing in Paper SEA: Standardization, Evaluation, and Analysis Jianxiang Yu, Zichen Ding, Jiaqi Tan, Kangyang Luo, Zhenmin Weng, Chenghua Gong, Long Zeng, RenJing Cui, Chengcheng Han, Qiushi Sun, Zhiyong Wu, Yunshi Lan, Xiang Li",
-      "Ask the experts: sourcing a high-quality nutrition counseling dataset through Human-AI collaboration Simone Balloccu, Ehud Reiter, Karen Jia-Hui Li, Rafael Sargsyan, Vivek Kumar, Diego Reforgiato, Daniele Riboni, Ondrej Dusek \u00b7 HealthAlignSumm : Utilizing Alignment for Multimodal Summarization of Code-Mixed Healthcare Dialogues Akash Ghosh, Arkadeep Acharya, Sriparna Saha, Gaurav Pandey, Dinesh Raghu, Setu Sinha"
-    ],
-    "title": "Findings - EMNLP 2024",
-    "url": "https://2024.emnlp.org/program/accepted_findings/"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=www.aclweb.org&size=128",
-    "snippets": [],
-    "title": "Aclanthology",
-    "url": "https://www.aclweb.org/anthology/2020.sigdial-1.29.pdf"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=dspace.mit.edu&size=128",
-    "snippets": [],
-    "title": "Approximating Interactive Human Evaluation with Self-Play ...",
-    "url": "https://dspace.mit.edu/bitstream/handle/1721.1/137062.2/NeurIPS-2019-approximating-interactive-human-evaluation-with-self-play-for-open-domain-dialog-systems-Paper.pdf?sequence=4&isAllowed=y"
-  },
-  {
-    "description": "Translated by Stillman Drake Annotated and Condensed by S. E. Sciortino \u00b7 The open-minded and lettered Sagredo in Galileo's dialogue was a close friend of the scientist. Salviati represents the views of Galileo himself. Simplicio, the philosopher, is a fictitious straw man",
-    "favicon_url": "https://you.com/favicon?domain=law2.umkc.edu&size=128",
-    "snippets": [],
-    "title": "Dialogue Concerning the Two Chief World Systems",
-    "url": "http://law2.umkc.edu/faculty/projects/ftrials/galileo/dialogue.html"
-  },
-  {
-    "description": "How do machine learning models do what they do? And are they really \"thinking\" or \"reasoning\" the way we understand those things? This is a philosophical",
-    "favicon_url": "https://you.com/favicon?domain=techcrunch.com&size=128",
-    "snippets": [
-      "A group of AI research scientists at Apple released their paper, \u201cUnderstanding the limitations of mathematical reasoning in large language models,\u201d to general commentary Thursday.",
-      "Mehrdad Farajtabar, one of the co-authors, breaks down the paper very nicely in this thread on X.",
-      "And are they really \u201cthinking\u201d or \u201creasoning\u201d the way we understand those things? This is a philosophical question as much as a practical one, but a new paper making the rounds Friday suggests that the answer is, at least for now, a pretty clear \u201cno.\u201d"
-    ],
-    "title": "Researchers question AI's 'reasoning' ability as models stumble ...",
-    "url": "https://techcrunch.com/2024/10/11/researchers-question-ais-reasoning-ability-as-models-stumble-on-math-problems-with-trivial-changes/"
-  },
-  {
-    "description": "Chain of thought (CoT) is a prompt engineering technique that enhances the output of large language models (LLMs), particularly for complex tasks involving multistep reasoning.",
-    "favicon_url": "https://you.com/favicon?domain=www.ibm.com&size=128",
-    "snippets": [
-      "For example, to solve a math problem like \"If you buy 5 apples and already have 3, how many do you have in total?\", an auto-CoT system could automatically generate intermediate steps. Those steps might include \"Start with 3 apples\" and \"Add 5 apples to the existing 3,\" culminating in \"Total apples = 8,\" streamlining the reasoning process without human intervention.",
-      "Furthermore, the integration of various applications and CoT models can enhance the overall user experience by enabling AI systems to better understand and respond to user needs and preferences. By integrating natural language processing (NLP) techniques into CoT models, we can enable chatbots to understand and respond to user inputs in a more human-like manner, creating more engaging, intuitive and effective conversational experiences.",
-      "Multistep reasoning: By systematically tackling each component of a problem, CoT prompting often leads to more accurate and reliable answers, particularly in tasks requiring multistep reasoning. Multistep reasoning refers to the ability to perform complex logical operations by breaking them down into smaller, sequential steps.",
-      "The chain of thought (CoT) methodology, with its ability to decompose complex problems into understandable reasoning steps, has found applications across a wide array of fields. These use cases not only demonstrate CoT's versatility but also its potential to transform how systems approach problem-solving and decision-making tasks."
-    ],
-    "title": "What is chain of thought (CoT) prompting? | IBM",
-    "url": "https://www.ibm.com/think/topics/chain-of-thoughts"
-  },
-  {
-    "description": "Transferability of Syntax-Aware Graph Neural Networks in Zero-Shot Cross-Lingual Semantic Role Labeling Rachel Sidney Devianti, Yusuke Miyao \u00b7 Reformatted Alignment Run-Ze Fan, Xuefeng Li, Haoyang Zou, Junlong Li, Shwai He, Ethan Chern, Jiewen Hu, Pengfei Liu",
-    "favicon_url": "https://you.com/favicon?domain=2024.emnlp.org&size=128",
-    "snippets": [
-      "A Fairness-Driven Method for Learning Human-Compatible Negotiation Strategies Ryan Shea, Zhou Yu \u00b7 Using RL to Identify Divisive Perspectives Improves LLMs Abilities to Identify Communities on Social Media Nikhil Mehta, Dan Goldwasser \u00b7 Are LLMs Effective Negotiators? Systematic Evaluation of the Multifaceted Capabilities of LLMs in Negotiation Dialogues Deuksin Kwon, Emily Weiss, Tara Kulshrestha, Kushal Chawla, Gale Lucas, Jonathan Gratch",
-      "\u201cSeeing the Big through the Small\u201d: Can LLMs Approximate Human Judgment Distributions on NLI from a Few Explanations? Beiduo Chen, Xinpeng Wang, Siyao Peng, Robert Litschko, Anna Korhonen, Barbara Plank \u00b7 Language Models in Dialogue: Conversational Maxims for Human-AI Interactions Erik Miehling, Manish Nagireddy, Prasanna Sattigeri, Elizabeth M.",
-      "Can LLM be a Personalized Judge? Yijiang River Dong, Tiancheng Hu, Nigel Collier \u00b7 Who\u2019s Who: Large Language Models Meet Knowledge Conflicts in Practice Quang Hieu Pham, Hoang Ngo, Anh Tuan Luu, Dat Quoc Nguyen \u00b7 Unleashing the Potentials of Likelihood Composition for Multi-modal Language Models Shitian Zhao, Renrui Zhang, Xu Luo, Yan Wang, Shanghang Zhang, Peng Gao \u00b7 Automated Peer Reviewing in Paper SEA: Standardization, Evaluation, and Analysis Jianxiang Yu, Zichen Ding, Jiaqi Tan, Kangyang Luo, Zhenmin Weng, Chenghua Gong, Long Zeng, RenJing Cui, Chengcheng Han, Qiushi Sun, Zhiyong Wu, Yunshi Lan, Xiang Li",
-      "Ask the experts: sourcing a high-quality nutrition counseling dataset through Human-AI collaboration Simone Balloccu, Ehud Reiter, Karen Jia-Hui Li, Rafael Sargsyan, Vivek Kumar, Diego Reforgiato, Daniele Riboni, Ondrej Dusek \u00b7 HealthAlignSumm : Utilizing Alignment for Multimodal Summarization of Code-Mixed Healthcare Dialogues Akash Ghosh, Arkadeep Acharya, Sriparna Saha, Gaurav Pandey, Dinesh Raghu, Setu Sinha"
-    ],
-    "title": "Findings - EMNLP 2024",
-    "url": "https://2024.emnlp.org/program/accepted_findings/"
-  },
-  {
-    "description": "Evaluating open-domain conversation models has been an open challenge due to the open-ended nature of conversations. In addition to static evaluations, recent work has started to explore a variety of per-turn and per-dialog interactive evaluation mechanisms and provide advice on the best setup.",
-    "favicon_url": "https://you.com/favicon?domain=www.amazon.science&size=128",
-    "snippets": [
-      "You must be equally comfortable digging in to business requirements as you are drilling into design with development teams and developing production ready learning models. You consistently bring strong, data-driven business and technical judgment to decisions.",
-      "If you are selected, you have the opportunity to make a difference to our business by designing and building state of the art machine learning systems on big data, leveraging Amazon\u2019s vast computing resources (AWS), working on exciting and challenging projects, and delivering meaningful results to customers world-wide. Key job responsibilities Develop machine learning algorithms for high-scale recommendations problems. Rapidly design, prototype and test many possible hypotheses in a high-ambiguity environment, making use of both quantitative analysis and business judgement.",
-      "You will work as part of a diverse data science and engineering team comprising of other Applied Scientists, Software Development Engineers and Business Intelligence Engineers. You will participate in the Amazon ML community by authoring scientific papers and submitting them to Machine Learning conferences."
-    ],
-    "title": "Towards credible human evaluation of open-domain dialog systems ...",
-    "url": "https://www.amazon.science/publications/towards-credible-human-evaluation-of-open-domain-dialog-systems-using-interactive-setup"
-  },
-  {
-    "description": "Prior studies of human communication have demonstrated that prosocial outcomes occur when facets of communication converge between interlocutors\u2014for e\u2026",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
-    "snippets": [
-      "Discusses the potential to improve user experience with spoken-dialogue interfaces. Prior studies of human communication have demonstrated that prosocial outcomes occur when facets of communication converge between interlocutors\u2014for example, social likeability and perceived competence increase when people adapt their pitch or rate of speech towards one another."
-    ],
-    "title": "User speech rates and preferences for system speech rates - ...",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1071581924000065"
-  },
-  {
-    "description": "A study published in Cell looks at AI deceiving and manipulating humans \u00b7 Prof Harin Sellahewa, Dean of Faculty of Computing, Law and Psychology, University of Buckingham, said:",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencemediacentre.org&size=128",
-    "snippets": [
-      "However, details of such guardrails are limited in the paper to establish if in fact, AI acted beyond the limits set by its human programmer or if the limits were insufficient and imprecise enabling AI to manoeuvre through such guardrails in pursuit of its goal.",
-      "When talking about AI systems, there is a danger of anthropomorphising \u2013 attributing human characteristics and qualities to machines or their outputs which are unwarranted and can be explained by much simpler mechanisms \u2013 this has been prevalent since AI\u2019s earliest days \u2013 for example the simplistic rule-based 1960s Eliza chatbot induced this in humans using it.",
-      "The authors also note a further risk: self-deception, whereby an AI system uses flawed reasoning or false information which may result in bad advice given to humans or inappropriate actions taken by the AI system.",
-      "The authors make several proposals to mitigate the ill effects of AI deception, including regulation, requiring AI systems to make their nature known to humans (\u201cbot-or-not laws\u201d), and technical solutions (researching how to make AI systems less deceptive and detection tools) all of which should be pursued."
-    ],
-    "title": "expert reaction to paper suggesting AI systems are already skilled ...",
-    "url": "https://www.sciencemediacentre.org/expert-reaction-to-paper-suggesting-ai-systems-are-already-skilled-at-deceiving-and-manipulating-humans/"
-  },
-  {
-    "description": "Quiz Learn with flashcards, games, and more \u2014 for free.",
-    "favicon_url": "https://you.com/favicon?domain=quizlet.com&size=128",
-    "snippets": [
-      "The starter is broken again, and I just have to light the gas.\" Aunt Mary wrung her hands and paced back and forth in front of the door to the kitchen, up and down the hall, unable to be in the same room with a lit match. How does the dialogue develop the characters in this paragraph?",
-      "Select two options. The dialogue shows that Aunt Mary is afraid of fire. The dialogue shows that Aunt Mary cannot light a match. The dialogue shows that Kaydee is angry at Aunt Mary. The dialogue shows that Kaydee is a calm person.",
-      "Select two options. a resolution of the conflict with Uncle Mahkah some dialogue that helps to develop the character of Uncle Mahkah a climax with a confrontation between Takoda and Uncle Mahkah a flashback to a previous interaction between Takoda and Uncle Mahkah an introduction describing the life of Takoda and Uncle Mahkah",
-      "Vivid imagery is often used to help the reader identify the plot structure. connect the ideas. form a mental picture. recognize the dialogue."
-    ],
-    "title": "Writing a Narrative Essay about Being Judged Quiz Flashcards | Quizlet",
-    "url": "https://quizlet.com/538532197/writing-a-narrative-essay-about-being-judgedquiz-flash-cards/"
-  },
-  {
-    "description": "Yi-Ting Yeh, Maxine Eskenazi, Shikib Mehri. The First Workshop on Evaluations and Assessments of Neural Conversation Systems. 2021.",
-    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
-    "snippets": [
-      "As such, recent research has proposed a number of novel, dialog-specific metrics that correlate better with human judgements. Due to the fast pace of research, many of these metrics have been assessed on different datasets and there has as yet been no time for a systematic comparison between them. To this end, this paper provides a comprehensive assessment of recently proposed dialog evaluation metrics on a number of datasets.",
-      "Yi-Ting Yeh, Maxine Eskenazi, and Shikib Mehri. 2021. A Comprehensive Assessment of Dialog Evaluation Metrics. In The First Workshop on Evaluations and Assessments of Neural Conversation Systems, pages 15\u201333, Online."
-    ],
-    "title": "A Comprehensive Assessment of Dialog Evaluation Metrics - ACL ...",
-    "url": "https://aclanthology.org/2021.eancs-1.3/"
-  },
-  {
-    "description": "Recent work in argumentation theory (Walton and Krabbe, 1995; Walton, 2005) and artificial intelligence (Bench-Capon, 1992, 2003; Cawsey, 1992; McBurn\u2026",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
-    "snippets": [
-      "Yet all of these factors, we propose, are essential to providing the explanatory depth that people require to accept and trust the AI's decision-making. This paper aims to define levels of explanation and describe how they can be integrated to create a human-aligned conversational explanation system.",
-      "This paper provides an analysis of a special type called examination dialogue, in which one party questions another party, sometimes critically or even antagonistically, to try to find out what that party knows about something. This type of dialogue is most prominent in law and in both legal and non-legal arguments based on expert opinion. It is also central to dialogue systems for questioning and answering in expert systems in artificial intelligence.",
-      "For this review, 108 publications (89 empirical studies and 19 conceptual papers) on ABCSCL research dating from 1995 through 2011 were studied to highlight the foci of the past 15 years. Building on Biggs\u2019 (2003) model, the ABCSCL publications were systematically categorized with respect to student prerequisites, learning environment, processes, and outcomes.",
-      "Based on the quantitative and qualitative findings, this paper concludes that ABCSCL environments should be designed in a systematic way that takes the variety of specific conditions for learning into account."
-    ],
-    "title": "Examination dialogue: An argumentation framework for critically ...",
-    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0378216606000087"
-  },
-  {
-    "description": "AI reasoning models will achieve superhuman performance in math and coding, yet their economic applications will lag behind, limiting real-world impact.",
-    "favicon_url": "https://you.com/favicon?domain=epoch.ai&size=128",
-    "snippets": [
-      "More broadly, I expect reasoning models in the near future will be most successfully applied to tasks that meet two key criteria: (1) LLM pre-training data contains a lot of information relevant to performing the task, allowing effective transfer learning, and (2) their solutions can be verified cheaply and programmatically\u2014such as through unit tests or evaluation by another LLM that can reliably judge quality. I will refer to these as pure reasoning tasks, as they primarily involve performing structured reasoning without requiring difficult-to-obtain empirical feedback. Examples of such tas",
-      "As a result, even though I currently anticipate that we will soon have AI mathematicians that surpass top human mathematicians in many ways, at the same time, I expect AI labs will continue facing major challenges developing autonomous computer-control workers capable of fully substituting for human knowledge workers across the economy. Similarly, I expect reasoning models will not be capable of automating the entire AI R&D process end-to-end in the next few years, given that a significant fraction of tasks involved with AI research and development require empirical feedback, and do not appear",
-      "For example, I predict that future models will be trained to perform effectively in multi-agent settings, where multiple AI systems collaborate in parallel. This would introduce a new avenue for scaling inference compute, analogous to how human organizations scale up by increasing their headcount.",
-      "Moreover, this skill is difficult for an AI to learn through trial and error because evaluating the quality of specific editing decisions requires expensive and infrequent feedback. Due to these constraints, I expect that progress in developing autonomous AI workers capable of reliably handling professional video editing work will lag significantly behind AI systems that can perform highly complex mathematical reasoning."
-    ],
-    "title": "The promise of reasoning models | Epoch AI",
-    "url": "https://epoch.ai/gradient-updates/the-promise-of-reasoning-models"
-  },
-  {
-    "description": "Omkar Thawakar1*, Dinura Dissanayake1*, Ketan More1*, Ritesh Thawkar1*, Ahmed Heakl1*, Noor Ahsan1*, Yuhao Li1*, Mohammed Zumri1*, Jean Lahoud1*, Rao Muhammad Anwer1, Hisham Cholakkal1, Ivan Laptev1, Mubarak Shah2, Fahad Shahbaz Khan1,3, Salman Khan1, 4, \u00b7 1Mohamed bin Zayed University of ...",
-    "favicon_url": "https://you.com/favicon?domain=mbzuai-oryx.github.io&size=128",
-    "snippets": [
-      "Rethinking Step-by-step Visual Reasoning in LLMs",
-      "While Claude-3.5-Sonnet also concludes \"none of the options,\" its reasoning steps lack full alignment with the observed logic (highlighted in red). Gemini-1.5-Flash demonstrates weaker reasoning with less coherence (highlighted in red). Our LlamaV-o1 provides better and systematic reasoning, identifying that option D follows the established pattern, thereby showcasing its logical reasoning."
-    ],
-    "title": "LlamaV-o1: Rethinking Step-by-step Visual Reasoning in LLMs",
-    "url": "https://mbzuai-oryx.github.io/LlamaV-o1/"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=dl.acm.org&size=128",
-    "snippets": [],
-    "title": "Approximating interactive human evaluation with self-play for ...",
-    "url": "https://dl.acm.org/doi/10.5555/3454287.3455511"
-  },
-  {
-    "description": "A dialogue tree, or conversation tree, is a gameplay mechanic that is used throughout many adventure games (including action-adventure games) and role-playing video games. When interacting with a non-player character, the player is given a choice of what to say and makes subsequent choices ...",
-    "favicon_url": "https://you.com/favicon?domain=en.wikipedia.org&size=128",
-    "snippets": [
-      "The first computer dialogue system was featured in ELIZA, a primitive natural language processing computer program written by Joseph Weizenbaum between 1964 and 1966. The program emulated interaction between the user and an artificial therapist. With the advent of video games, interactive entertainment have attempted to incorporate meaningful interactions with virtual characters.",
-      "These games often feature a day-night cycle with a time scheduling system that provides context and relevance to character interactions, allowing players to choose when and if to interact with certain characters, which in turn influences their responses during later conversations.",
-      "Some games use a real-time conversation system, giving the player only a few seconds to respond to a non-player character, such as Sega's Sakura Wars and Alpha Protocol."
-    ],
-    "title": "Dialogue tree - Wikipedia",
-    "url": "https://en.wikipedia.org/wiki/Dialogue_tree"
-  },
-  {
-    "description": "Download Citation | On Jan 1, 2020, Bo Pang and others published Towards Holistic and Automatic Evaluation of Open-Domain Dialogue Generation | Find, read and cite all the research you need on ResearchGate",
-    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
-    "snippets": [
-      "In this work, we investigate the evaluation of the metrics themselves, which currently rely on measuring the correlation to human judgments or computing sign accuracy scores. These measures only assess how well the metric agrees with the human ratings. However, our research shows that this does not tell the whole story. Most metrics exhibit a disagreement with human system assessments which is often skewed in favor of particular text generation systems, exposing a degree of favoritism in automated metrics. This paper introduces a formal definition of favoritism in preference metrics, and derives the Favi-Score, which measures this phenomenon.",
-      "To address the issues, we establish HAUSER, a holistic and automatic evaluation system for the SG task, which consists of five criteria from three perspectives and automatic metrics for each criterion. Through extensive experiments, we verify that our metrics are significantly more correlated with human ratings from each perspective compared with prior automatic metrics. ... ... judgement (Lowe et al., 2017).",
-      "We introduce VibeCheck, a system for automatically comparing a pair of LLMs by discovering identifying traits of a model (\"vibes\") that are well-defined, differentiating, and user-aligned. VibeCheck iteratively discover vibes from model outputs, then utilizes a panel of LLM judges to quantitatively measure the utility of each vibe. We validate that the vibes generated by VibeCheck align with those found in human discovery and run VibeCheck on pairwise preference data from real-world user conversations with llama-3-70b VS GPT-4.",
-      "To address this issue, we propose a novel model-agnostic approach that leverages Conditional Pointwise Mutual Information (C-PMI) to measure the turn-level interaction between the system and the user based on a given evaluation dimension. Experimental results on the widely used FED dialogue evaluation dataset demonstrate that our approach significantly improves the correlation with human judgment compared with existing evaluation systems."
-    ],
-    "title": "Towards Holistic and Automatic Evaluation of Open-Domain Dialogue ...",
-    "url": "https://www.researchgate.net/publication/343300846_Towards_Holistic_and_Automatic_Evaluation_of_Open-Domain_Dialogue_Generation"
-  },
-  {
-    "description": "In task-oriented conversational AI evaluation, unsupervised methods poorly correlate with human judgments, and supervised approaches lack generalization. Recent advances in large language models (LLMs) show robust zero-shot and few-shot capabilities across NLP tasks. This paper explores using ...",
-    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
-    "snippets": [
-      "In task-oriented conversational AI evaluation, unsupervised methods poorly correlate with human judgments, and supervised approaches lack generalization. Recent advances in large language models (LLMs) show robust zero-shot and few-shot capabilities across NLP tasks. This paper explores using LLMs for automated dialogue quality evaluation, experimenting with various configurations on public and proprietary datasets.",
-      "In this paper, we systematically study different aspects of LLM-based dialogue evaluation by conducting extensive experiments on two benchmark datasets, one publicly available and the other proprietary, Amazon-internal datasets. We initially explore the connection between different attributes such as model size and in-context examples, and their impact on dialogue evaluation performance.",
-      "In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 2717\u20132739. Wei et al. (2022) Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, brian ichter, Fei Xia, Ed Chi, Quoc V Le, and Denny Zhou. 2022. Chain-of-thought prompting elicits reasoning in large language models. In Advances in Neural Information Processing Systems, volume 35, pages 24824\u201324837.",
-      "This paper explores the application of LLMs to evaluation of task-oriented dialogue systems."
-    ],
-    "title": "Leveraging LLMs for Dialogue Quality Measurement",
-    "url": "https://arxiv.org/html/2406.17304v1"
-  },
-  {
-    "description": "We introduce LogicAsker, a novel approach for evaluating and enhancing the logical reasoning capabilities of large language models (LLMs) such as ChatGPT and GPT-4. Despite LLMs' prowess in tasks like writing assistance, code generation, and machine translation, assessing their ability to reason ...",
-    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
-    "snippets": [
-      "We introduce LogicAsker, a novel approach for evaluating and enhancing the logical reasoning capabilities of large language models (LLMs) such as ChatGPT and GPT-4. Despite LLMs' prowess in tasks like writing assistance, code generation, and machine translation, assessing their ability to reason has been challenging.",
-      "Abstract page for arXiv paper 2401.00757: LogicAsker: Evaluating and Improving the Logical Reasoning Ability of Large Language Models",
-      "Traditional evaluations often prioritize accuracy on downstream tasks over direct assessments of reasoning processes. LogicAsker addresses this gap by employing a set of atomic reasoning skills grounded in propositional and predicate logic to systematically examine and improve the reasoning prowess of LLMs.",
-      "View a PDF of the paper titled LogicAsker: Evaluating and Improving the Logical Reasoning Ability of Large Language Models, by Yuxuan Wan and 7 other authors View PDF HTML (experimental)"
-    ],
-    "title": "[2401.00757] LogicAsker: Evaluating and Improving the Logical ...",
-    "url": "https://arxiv.org/abs/2401.00757"
-  },
-  {
-    "description": "Large language models (LLMs) have recently shown impressive performance on tasks involving reasoning, leading to a lively debate on whether these models possess reasoning capabilities similar to humans. However, despite these successes, the depth of LLMs' reasoning abilities remains uncertain.",
-    "favicon_url": "https://you.com/favicon?domain=openreview.net&size=128",
-    "snippets": [
-      "Abstract: Large language models (LLMs) have recently shown impressive performance on tasks involving reasoning, leading to a lively debate on whether these models possess reasoning capabilities similar to humans. However, despite these successes, the depth of LLMs' reasoning abilities remains uncertain. This uncertainty partly stems from the predominant focus on task performance, measured through shallow accuracy metrics, rather than a thorough investigation of the models' reasoning behavior. This paper seeks to address this gap by providing a comprehensive review of studies that go beyond task accuracy, offering deeper insights into the models' reasoning processes.",
-      "Our review suggests that LLMs tend to rely on surface-level patterns and correlations in their training data, rather than on sophisticated reasoning abilities. Additionally, we identify the need for further research that delineates the key differences between human and LLM-based reasoning."
-    ],
-    "title": "Beyond Accuracy: Evaluating the Reasoning Behavior of Large Language ...",
-    "url": "https://openreview.net/forum?id=Lmjgl2n11u"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
-    "snippets": [],
-    "title": "Approximating Interactive Human Evaluation with Self-Play ...",
-    "url": "https://www.semanticscholar.org/paper/Approximating-Interactive-Human-Evaluation-with-for-Ghandeharioun-Shen/592d500e44f99e39f35d5d96f8787b94f51aa914"
-  },
-  {
-    "description": "The paper \"Beyond Accuracy: Evaluating the Reasoning Behavior of Large Language Models - A Survey,\" authored by Philipp Mondorf and Barbara Plank, explores the reasoning capabilities of large language models (LLMs) by emphasizing the need to go beyond traditional performance metrics like accuracy.",
-    "favicon_url": "https://you.com/favicon?domain=www.themoonlight.io&size=128",
-    "snippets": [
-      "It employs techniques such as structured parsing, causal graphs, and human evaluative assessments of model rationales. Interactive Evaluation: In this approach, the evaluative processes dynamically adapt to the model\u2019s responses, aiming to engage the model in a multi-turn dialogue or game-theoretic frameworks to assess reasoning.",
-      "The papers referenced in the survey cover both confirmatory studies that support LLMs' reasoning abilities and critical analyses that highlight their limitations. ... To systematically assess the reasoning of LLMs, the authors propose a taxonomy categorizing various evaluation frameworks into four main groups:",
-      "They advocate for exploring the underlying cognitive mechanisms present in humans, suggesting that understanding the limitations in LLMs' approaches to reasoning can lead to improved models that possess deeper and more sophisticated reasoning capabilities. The paper establishes a clear need for nuanced analysis of reasoning behavior, particularly in scenarios that deviate from the training distribution.",
-      "This page provides the most accurate and concise summary worldwide for the paper titled Beyond Accuracy: Evaluating the Reasoning Behavior of Large Language Models -- A Survey. With Moonlight, your AI research colleague, you can effortlessly and quickly grasp all the papers you read."
-    ],
-    "title": "[Literature Review] Beyond Accuracy: Evaluating the Reasoning ...",
-    "url": "https://www.themoonlight.io/en/review/beyond-accuracy-evaluating-the-reasoning-behavior-of-large-language-models-a-survey"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=ojs.aaai.org&size=128",
-    "snippets": [],
-    "title": "Aaai",
-    "url": "https://ojs.aaai.org/index.php/AAAI/article/view/26557/26329"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=aclanthology.org&size=128",
-    "snippets": [],
-    "title": "Aclanthology",
-    "url": "https://aclanthology.org/2024.emnlp-main.1160.pdf"
-  },
-  {
-    "description": "We introduce LogicAsker, a novel approach for evaluating and enhancing the logical reasoning capabilities of large language models (LLMs) such as ChatGPT and GPT-4. Despite LLMs' prowess in tasks like writing assistance, code generation, and machine translation, assessing their ability to reason ...",
-    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
-    "snippets": [
-      "We introduce LogicAsker, a novel approach for evaluating and enhancing the logical reasoning capabilities of large language models (LLMs) such as ChatGPT and GPT-4. Despite LLMs' prowess in tasks like writing assistance, code generation, and machine translation, assessing their ability to reason has been challenging.",
-      "Abstract page for arXiv paper 2401.00757: LogicAsker: Evaluating and Improving the Logical Reasoning Ability of Large Language Models",
-      "Traditional evaluations often prioritize accuracy on downstream tasks over direct assessments of reasoning processes. LogicAsker addresses this gap by employing a set of atomic reasoning skills grounded in propositional and predicate logic to systematically examine and improve the reasoning prowess of LLMs.",
-      "View a PDF of the paper titled LogicAsker: Evaluating and Improving the Logical Reasoning Ability of Large Language Models, by Yuxuan Wan and 7 other authors View PDF HTML (experimental)"
-    ],
-    "title": "[2401.00757] LogicAsker: Evaluating and Improving the Logical ...",
-    "url": "https://arxiv.org/abs/2401.00757"
-  },
-  {
-    "description": "This chapter1 reviews formal dialogue systems for persuasion. In persuasion dialogues two or more participants try to resolve a conflict of opinion, each trying to persuade the other participants to adopt their point of view. Dialogue systems for persuasion regulate...",
-    "favicon_url": "https://you.com/favicon?domain=link.springer.com&size=128",
-    "snippets": [
-      "This chapter1 reviews formal dialogue systems for persuasion. In persuasion dialogues two or more participants try to resolve a conflict of opinion, each trying to persuade the other participants to adopt their point of view. Dialogue systems for persuasion regulate how such dialogues can be conducted and what their outcome is.",
-      "T. Yuan, D. Moore, and A. Grierson. A human-computer dialogue system for educational debate: A computational dialectics approach.",
-      "Good dialogue systems ensure that conflicts of view can be resolved in a fair and effective way [6]. The term \u2018persuasion dialogue\u2019 was coined by Walton [13] as part of his influential classification of dialogues into six types according to their goal.",
-      "G. Brewka. Dynamic argument systems: a formal model of argumentation processes based on situation calculus."
-    ],
-    "title": "Models of Persuasion Dialogue | SpringerLink",
-    "url": "https://link.springer.com/chapter/10.1007/978-0-387-98197-0_14"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=www.semanticscholar.org&size=128",
-    "snippets": [],
-    "title": "Approximating Interactive Human Evaluation with Self-Play ...",
-    "url": "https://www.semanticscholar.org/paper/Approximating-Interactive-Human-Evaluation-with-for-Ghandeharioun-Shen/592d500e44f99e39f35d5d96f8787b94f51aa914"
-  },
-  {
-    "description": "The paper \"Beyond Accuracy: Evaluating the Reasoning Behavior of Large Language Models - A Survey,\" authored by Philipp Mondorf and Barbara Plank, explores the reasoning capabilities of large language models (LLMs) by emphasizing the need to go beyond traditional performance metrics like accuracy.",
-    "favicon_url": "https://you.com/favicon?domain=www.themoonlight.io&size=128",
-    "snippets": [
-      "It employs techniques such as structured parsing, causal graphs, and human evaluative assessments of model rationales. Interactive Evaluation: In this approach, the evaluative processes dynamically adapt to the model\u2019s responses, aiming to engage the model in a multi-turn dialogue or game-theoretic frameworks to assess reasoning.",
-      "The papers referenced in the survey cover both confirmatory studies that support LLMs' reasoning abilities and critical analyses that highlight their limitations. ... To systematically assess the reasoning of LLMs, the authors propose a taxonomy categorizing various evaluation frameworks into four main groups:",
-      "They advocate for exploring the underlying cognitive mechanisms present in humans, suggesting that understanding the limitations in LLMs' approaches to reasoning can lead to improved models that possess deeper and more sophisticated reasoning capabilities. The paper establishes a clear need for nuanced analysis of reasoning behavior, particularly in scenarios that deviate from the training distribution.",
-      "This page provides the most accurate and concise summary worldwide for the paper titled Beyond Accuracy: Evaluating the Reasoning Behavior of Large Language Models -- A Survey. With Moonlight, your AI research colleague, you can effortlessly and quickly grasp all the papers you read."
-    ],
-    "title": "[Literature Review] Beyond Accuracy: Evaluating the Reasoning ...",
-    "url": "https://www.themoonlight.io/en/review/beyond-accuracy-evaluating-the-reasoning-behavior-of-large-language-models-a-survey"
-  },
-  {
-    "description": "Abstract. Task semantics can be expressed by a set of input-output examples or a piece of textual instruction. Conventional machine learning approaches for natural language processing (NLP) mainly rely on the availability of large-scale sets of task-specific examples.",
-    "favicon_url": "https://you.com/favicon?domain=direct.mit.edu&size=128",
-    "snippets": [
-      "Advances in Neural Information Processing Systems 36: Annual Conference on Neural Information Processing Systems 2023, pages ... BERT: Pre-training of deep bidirectional transformers for language understanding. In \u00b7 Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), pages",
-      "InstructDial: Improving zero and few-shot generalization in dialogue through instruction tuning. In \u00b7 Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing, pages ... HyperNetworks. In \u00b7 5th International Conference on Learning Representations, ICLR 2017. ... Training classifiers with natural language explanations. In \u00b7 Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages",
-      "The evaluation instructions in this setting are user-oriented or dialogue-like user queries, mainly used to test how well the models\u2019 responses align with human preference, especially for the safety and usefulness of the responses (e.g., harmlessness and honesty).",
-      "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages ... Parameter-efficient transfer learning for NLP. In \u00b7 Proceedings of the 36th International Conference on Machine Learning, ICML 2019, pages ... LoRA: Low-rank adaptation of large language models. In \u00b7 The Tenth International Conference on Learning Representations, ICLR 2022. ... In-context learning for few-shot dialogue state tracking."
-    ],
-    "title": "Large Language Model Instruction Following: A Survey of Progresses ...",
-    "url": "https://direct.mit.edu/coli/article/50/3/1053/121669/Large-Language-Model-Instruction-Following-A"
-  },
-  {
-    "description": "Request PDF | Towards Credible Human Evaluation of Open-Domain Dialog Systems Using Interactive Setup | Evaluating open-domain conversation models has been an open challenge due to the open-ended nature of conversations. In addition to static... | Find, read and cite all the research you need ...",
-    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
-    "snippets": [
-      "Request PDF | Towards Credible Human Evaluation of Open-Domain Dialog Systems Using Interactive Setup | Evaluating open-domain conversation models has been an open challenge due to the open-ended nature of conversations. In addition to static... | Find, read and cite all the research you need on ResearchGate",
-      "Recent works in end-to-end dialogue systems have adopted metrics from machine translation and text summarization to compare a model's generated response to a single target response. We show that these metrics correlate very weakly or not at all with human judgements of the response quality in both technical and non-technical domains.",
-      "The lack of time-efficient and reliable evaluation methods hamper the development of conversational dialogue systems (chatbots). Evaluations requiring humans to converse with chatbots are time and cost-intensive, put high cognitive demands on the human judges, and yield low-quality results.",
-      "Building an open-domain conversational agent is a challenging problem. Current evaluation methods, mostly post-hoc judgments of static conversation, do not capture conversation quality in a realistic interactive context. In this paper, we investigate interactive human evaluation and provide evidence for its necessity; we ..."
-    ],
-    "title": "Towards Credible Human Evaluation of Open-Domain Dialog Systems ...",
-    "url": "https://www.researchgate.net/publication/371923110_Towards_Credible_Human_Evaluation_of_Open-Domain_Dialog_Systems_Using_Interactive_Setup"
-  },
-  {
-    "description": "Traslated by Stillman Drake \u00b7 Annotated And Condensed by S. E. Sciortino",
-    "favicon_url": "https://you.com/favicon?domain=math.dartmouth.edu&size=128",
-    "snippets": [],
-    "title": "Dialogue Concerning the Two Chief World Systems",
-    "url": "https://math.dartmouth.edu/~matc/Readers/renaissance.astro/7.1.DialogueFirstDay.html"
-  },
-  {
-    "description": "",
-    "favicon_url": "https://you.com/favicon?domain=www.linkedin.com&size=128",
-    "snippets": [],
-    "title": "While reading about how large language models are now trying ...",
-    "url": "https://www.linkedin.com/posts/anshuavinash_while-reading-about-how-large-language-models-activity-7263884466421456896-tTk6"
-  },
-  {
-    "description": "Social robots have grown increasingly integrated into our daily lives in recent years. Robots can be good social agents who engage with people, such as assis...",
-    "favicon_url": "https://you.com/favicon?domain=www.frontiersin.org&size=128",
-    "snippets": [
-      "Human-Robot-Interaction for mobile industrial robot teams. Procedia CIRP 79, 614\u2013619. doi:10.1016/j.procir.2019.02.080 ... Bocklisch, T., Faulkner, J., Pawlowski, N., and Nichol, A. (2017). Rasa: Open source language understanding and dialogue management. arXiv:1712.05181. doi:10.48550/arXiv.1712.05181 ... Cheong, A., Lau, M., Foo, E., Hedley, J., and Bo, J. W. (2016). Development of a robotic waiter system. IFAC-PapersOnLine 49, 681\u2013686.",
-      "As for the technical issues, there were opinions that, in the case of speech recognition in Japanese, the accuracy of picking up sounds is required because \u201cun\u201d means \u201cYes\u201d and \u201cuun\u201d means \u201cNo.\u201d A participant said that it may be necessary to judge whether the utterance is positive or negative from the tone of voice and accent as well as words and to read facial expressions.",
-      "Through these experiments, we can obtain a lot of useful insights for improving the system. We think that repeating this co-creation process is a useful approach toward our goal that humans and robots can communicate in a natural way as good partners such as family and friends.",
-      "While production sites such as factories have traditionally been the main places where robots have been active, recently they have been working in social roles. Robots are not only useful machines but also social agents that interact with humans, such as assistants who respond to human requests and give advice (Kanda et al., 2010) and partners with whom we can feel a psychological connection (Samani et al., 2010)."
-    ],
-    "title": "Frontiers | Development of dialogue system architecture toward ...",
-    "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.933001/full"
-  },
-  {
-    "description": "Neural generative models have been become increasingly popular when building conversational agents. They offer flexibility, can be easily adapted to new domains, and require minimal domain engineering. A common criticism of these systems is that they seldom understand or use the available dialog ...",
-    "favicon_url": "https://you.com/favicon?domain=arxiv.org&size=128",
-    "snippets": [
-      "Neural generative models have been become increasingly popular when building conversational agents. They offer flexibility, can be easily adapted to new domains, and require minimal domain engineering. A common criticism of these systems is that they seldom understand or use the available dialog history effectively.",
-      "Abstract page for arXiv paper 1906.01603: Do Neural Dialog Systems Use the Conversation History Effectively? An Empirical Study",
-      "A common criticism of these systems is that they seldom understand or use the available dialog history effectively. In this paper, we take an empirical approach to understanding how these models use the available dialog history by studying the sensitivity of the models to artificially introduced unnatural changes or perturbations to their context at test time.",
-      "View a PDF of the paper titled Do Neural Dialog Systems Use the Conversation History Effectively?"
-    ],
-    "title": "[1906.01603] Do Neural Dialog Systems Use the Conversation History ...",
-    "url": "https://arxiv.org/abs/1906.01603"
-  },
-  {
-    "description": "Human societies have long used the capability of argumentation and dialogue to overcome and resolve conflicts that may arise within their communities.\u2026",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
-    "snippets": [
-      "Furthermore, the systemic impact of using argumentation in multi-agent societies and its interplay with other forms of social influences (such as those that emanate from the roles and relationships of a society) within such contexts has also received comparatively little attention. To this end, this paper presents a significant step towards bridging these gaps for one of the most important dialogue game types; namely argumentation-based negotiation (ABN).",
-      "In particular, the model encapsulates four fundamental elements: (i) a scheme that captures the stereotypical pattern of reasoning about rights and obligations in an agent society, (ii) a mechanism to use this scheme to systematically identify social arguments to use in such contexts, (iii) a language and a protocol to govern the agent interactions, and (iv) a set of decision functions to enable agents to participate in such dialogues."
-    ],
-    "title": "Dialogue games that agents play within a society - ScienceDirect",
-    "url": "https://www.sciencedirect.com/science/article/pii/S0004370209000174"
-  },
-  {
-    "description": "Artificial intelligence demonstrates human-level performance in the strategic board game Diplomacy.",
-    "favicon_url": "https://you.com/favicon?domain=www.science.org&size=128",
-    "snippets": [
-      "Despite much progress in training artificial intelligence (AI) systems to imitate human language, building agents that use language to communicate intentionally with humans in interactive environme...",
-      "S. Keizer et al., Evaluating persuasion strategies and deep reinforcement learning methods for negotiation dialogue agents, in Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 2, Short Papers (Association for Computational Linguistics, 2017), pp. 480\u2013484. ... T. Hiraoka, G. Neubig, S. Sakti, T. Toda, S. Nakamura, Construction and analysis of a persuasive dialogue corpus, in Situated Dialog in Speech-Based Human-Computer Interaction (Springer, 2016), pp. 125\u2013138. ... X. Wang et al., Persuasion for good: Towards a personalized persuasive dialogue system for social good, in Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Association for Computational Linguistics, Florence, Italy, 2019), pp.",
-      "S. Young, M. Ga\u0161i\u0107, B. Thomson, J. D. Williams, POMDP-based statistical spoken dialog systems: A review, in Proceedings of the IEEE101 (2013). ... J. D. Williams, K. Asadi, G. Zweig, Hybrid code networks: Practical and efficient end-to-end dialog control with supervised and reinforcement learning, in Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) (2017). ... H. He, D. Chen, A. Balakrishnan, P. Liang, Decoupling strategy and generation in negotiation dialogues, in Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (Association for Computational Linguistics, Brussels, Belgium, 2018), pp.",
-      "K. Shuster et al., Language models that seek for knowledge: Modular search and generation for dialogue and prompt completion. arXiv:2203.13224 (2022). ... A. Vaswani et al., Attention is all you need, in Advances in Neural Information Processing Systems, I. Guyon, et al., eds."
-    ],
-    "title": "Human-level play in the game of Diplomacy by combining language ...",
-    "url": "https://www.science.org/doi/10.1126/science.ade9097"
-  },
-  {
-    "description": "In this article we present the bases for a computational theory of the cognitive processes underlying human communication. The core of the article is \u2026",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
-    "snippets": [
-      "The core of the article is devoted to the analysis of the phases in which the process of comprehension of a communicative act can be logically divided: (1) literal meaning, where the reconstruction of the mental states literally expressed by the actor takes place: (2) speaker's meaning, where the partner reconstructs the communicative intentions of the actor; (3) communicative effect, where the partner possibly modifies his own beliefs and intentions; (4) reaction, where the intentions for the generation of the response are produced; and (5) response, where an overt response is constructed. The model appears to be compatible with relevant facts about human behavior."
-    ],
-    "title": "Conversation and behavior games in the pragmatics of dialogue - ...",
-    "url": "https://www.sciencedirect.com/science/article/abs/pii/036402139390011V"
-  },
-  {
-    "description": "The three critical elements of quality human-computer dialogue design include a compilation of existing design guidelines, behavioral research to expa\u2026",
-    "favicon_url": "https://you.com/favicon?domain=www.sciencedirect.com&size=128",
-    "snippets": [
-      "This paper presents a survey of formal tools, methodologies, and models which have been proposed for developing user interfaces for interactive information systems. The treatment examines issues related to human engineering, human-computer interfacing, behavioural experiments, and user interface design aids.",
-      "Particular emphasis is placed on user research studies, specification techniques for interactive language modeling, analytical studies of user-system interaction, user models (including cognitive models, conceptual models, and mental models), and user interface management systems. The paper concludes with a brief list of suggested future research directions based on the results of this survey.",
-      "The original version of this paper was presented at the IFAC/IFIP/IFORS/IEA Conference on Analysis, Design, and Evaluation of Man-Machine Systems which was held in Baden-Baden, F.R.G. during September 1982. The published proceedings of this IFAC meeting may be ordered from Pergamon Press Ltd, Headington Hill Hall, Oxford OX3 0BW, U.K.",
-      "One of these studies deals with a methodology for developing user models, and the second study deals with the design of HELP information. Computer-aiding in the form of rule-based systems for selecting appropriate dialogue guidelines and software tools for authoring dialogues are discussed as means for implementing these dialogue design considerations."
-    ],
-    "title": "Human-computer dialogue design considerations - ScienceDirect",
-    "url": "https://www.sciencedirect.com/science/article/abs/pii/0005109883900456"
-  },
-  {
-    "description": "In recent years, robots that have dialogues with humans have become increasingly common in our daily lives. For example, smart speakers and spoken dialogue s...",
-    "favicon_url": "https://you.com/favicon?domain=www.frontiersin.org&size=128",
-    "snippets": [
-      "While the development of speech recognition technology has enabled these systems to interact with people, their ability to engage in meaningful dialogue is still limited. This Research Topic focuses on social dialogue with robots, which has been actively studied in recent years. This Research Topic calls for papers on the research and development necessary to allow robots and people to engage in rich social dialogue. First, we need basic technologies for robots to understand human interaction.",
-      "At the same time, it is necessary to consider the basic question of why people engage in dialogue. It is also important to promote the construction of robot-human and human-human social relationships as human-robot interaction (HRI). This Research Topic aims to approach these issues and invites papers on these topics.",
-      "The scope of this Research Topic covers studies on fundamental technologies for social dialogue with robots, such as natural language processing and dialogue understanding. Furthermore, studies on mutual understanding between robots and humans are also within the scope. We invite papers on the fundamental technologies required for human-robot dialogue."
-    ],
-    "title": "Frontiers | Dialogue with Robots: Constructive Approaches for ...",
-    "url": "https://www.frontiersin.org/research-topics/47340/dialogue-with-robots-constructive-approaches-for-understanding-communication"
-  },
-  {
-    "description": "Loading",
-    "favicon_url": "https://you.com/favicon?domain=academic.oup.com&size=128",
-    "snippets": [],
-    "title": "Coherence and Flexibility in Dialogue Games for Argumentation",
-    "url": "https://academic.oup.com/logcom/article-pdf/15/6/1009/3796463/exi046.pdf"
-  },
-  {
-    "description": "PDF | A Dialogue System is a system which interacts with human in natural language. At present many universities are developing the dialogue system in... | Find, read and cite all the research you need on ResearchGate",
-    "favicon_url": "https://you.com/favicon?domain=www.researchgate.net&size=128",
-    "snippets": [
-      "A Dialogue System is a system which interacts with human in natural language. At present many universities are developing the dialogue system in their regional language. This paper will discuss about dialogue system, its components, challenges and its evaluation.",
-      "Exploring Interactive 3D Human Models: Integrating Conventional AI Techniques for Enhanced User Experience ... This paper explores the development of interactive 3D human models that integrate conventional Artificial Intelligence (AI) techniques to improve user experience.",
-      "Through a series of experiments and case studies, we demonstrate how AI can be used to simulate human-like behaviors, improve motion realism, and enable intuitive interactions. Furthermore, the paper discusses the implications of these advancements for future applications, highlighting potential areas for innovation and ethical considerations.",
-      "The findings suggest that integrating conventional AI into 3D human modeling can significantly enhance user engagement and open new avenues for technology use in entertainment, education, and simulation. The paper concludes with recommendations for researchers and developers aiming to create interactive 3D human models with advanced AI capabilities."
-    ],
-    "title": "(PDF) Dialogue System: A Brief Review",
-    "url": "https://www.researchgate.net/publication/239524514_Dialogue_System_A_Brief_Review"
   }
 ]
