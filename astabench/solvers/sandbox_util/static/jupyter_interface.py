@@ -26,10 +26,11 @@ MCP_RESPONSE_BUFFER_DIR = os.getenv(
     "MCP_RESPONSE_BUFFER_DIR", "/tmp/mcp_response_buffer/"
 )
 
-# 65536 bytes is the actual maximum that can be sent (pipe capacity), and we
-# conservatively allow 8192 bytes for header/encoding overhead
-# TODO: determine pipe capacity dynamically
-MCP_RESPONSE_CHUNK_SIZE = 65536 - 8192
+# 32768 bytes is the actual maximum that can be sent (pipe capacity divided by
+# 2; TODO: debug why we have to divide by 2), and we conservatively allow
+# 8192 bytes for header/encoding overhead TODO: determine pipe capacity
+# dynamically
+MCP_RESPONSE_CHUNK_SIZE = 32768 - 8192
 
 JUPYTER_STATE_FILE = "jupyter_env_state.json"
 DEFAULT_TIMEOUT = 60 * 5
@@ -508,6 +509,7 @@ class JupyterEnv:
 
 
 def return_from_buffer(response_id: str) -> str:
+    logger.info(f"Returning response chunk for {response_id}")
     buffer_path = os.path.join(MCP_RESPONSE_BUFFER_DIR, response_id + ".json")
     with open(buffer_path, "r") as f:
         response_data = BufferedResponseData(**json.load(f))
