@@ -4,7 +4,7 @@ import time
 from inspect_ai.solver import Solver, chain, generate, solver, system_message
 from inspect_ai.tool import ToolDef
 
-from astabench.tools import make_s2api_toolsource
+from astabench.tools.s2_api_tools import asta_s2_mcp_tools
 
 logger = logging.getLogger(__name__)
 
@@ -30,9 +30,10 @@ def custom_solve() -> Solver:
     async def solve(state, generate):
 
         try:
-            ts = make_s2api_toolsource()
+            # ts = make_s2api_toolsource()
 
-            tl = await ts.tools()
+            # tl = await ts.tools()
+            tl = await asta_s2_mcp_tools()
 
             tbyname = dict()
 
