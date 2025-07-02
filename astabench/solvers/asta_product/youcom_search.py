@@ -1,3 +1,4 @@
+import asyncio
 from pathlib import Path
 import aiohttp
 import requests
@@ -5,7 +6,7 @@ from inspect_ai.solver import Solver, solver, TaskState, Generate
 import json
 import os
 import logging
-from openai import OpenAI
+from openai import AsyncOpenAI
 
 logger = logging.getLogger(__name__)
 YOUCOM_SEARCH_API_KEY = os.environ["YOUCOM_SEARCH_API_KEY"]
@@ -43,25 +44,37 @@ async def query_youcom_search(
     return search_results
 
 
-def fix_titles_with_gpt(titles: list[str]) -> list[str]:
-    client = OpenAI(api_key=OPENAI_API_KEY)
-
+async def fix_title(title: str) -> str:
+    client = AsyncOpenAI(api_key=OPENAI_API_KEY)
     message = (
-        "Here is a list of noisy paper-related titles. "
-        "Please clean them up to a list of proper, real paper titles, removing source names, tool names, tags like '[PDF]', etc. "
-        "Don't invent or skip any titles, only return the cleaned list, one per line:\n\n"
-        + "\n".join(f"{i + 1}. {title}" for i, title in enumerate(titles))
+        "Here is a noisy paper-related title. "
+        "Please clean it up into a proper, real paper title, removing source names, tool names, tags like '[PDF]', etc. "
+        "Don't invent words. Only return the cleaned title:\n\n"
+        f"{title}"
     )
 
-    response = client.chat.completions.create(
+    response = await client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": message}],
         temperature=0,
     )
 
-    cleaned_titles = response.choices[0].message.content
-    cleaned_titles_list = [t.strip() for t in cleaned_titles.split("\n")]
-    return cleaned_titles_list
+    return response.choices[0].message.content.strip()
+
+
+async def fix_titles_with_gpt_parallel(titles: list[str]) -> list[str]:
+    tasks = [fix_title(title) for title in titles]
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+
+    cleaned_titles = []
+    for title, result in zip(titles, results):
+        if isinstance(result, Exception):
+            print(f"Failed to fix title with GPT '{title}': {result}")
+            cleaned_titles.append(title)
+        else:
+            cleaned_titles.append(result)
+
+    return cleaned_titles
 
 
 @solver
@@ -98,7 +111,7 @@ def youcom_solver() -> Solver:
                     search_results = json.load(f)
 
             titles = [clean_title(sr["title"]) for sr in search_results]
-            gpt_titles = fix_titles_with_gpt(titles)
+            gpt_titles = await fix_titles_with_gpt_parallel(titles)
 
             # call s2 api to get corpus ids from titles
             for sr, title in zip(search_results, gpt_titles):
