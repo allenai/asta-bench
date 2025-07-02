@@ -3,9 +3,8 @@ import os
 from contextlib import asynccontextmanager
 from typing import Any
 
-from inspect_ai.tool import Tool, ToolSource
+from inspect_ai.tool import ToolSource
 from inspect_ai.tool._mcp._mcp import MCPServerImpl
-from inspect_ai.tool._mcp.tools import mcp_tools
 from mcp.client.streamable_http import streamablehttp_client
 
 
@@ -47,12 +46,8 @@ def make_s2api_toolsource(api_key: str | None = None) -> ToolSource:
     )
 
 
-async def s2_mcp_tools() -> list[Tool]:
-    return await mcp_tools(make_s2api_toolsource()).tools()
-
-
 async def main():
-    tools = await s2_mcp_tools()
+    tools = await make_s2api_toolsource().tools()
     print(
         f"Successfully connected to Semantic Scholar API and found {len(tools)} tools."
     )
