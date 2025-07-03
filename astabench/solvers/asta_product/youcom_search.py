@@ -66,11 +66,11 @@ async def llm_based_title_cleanup(titles: list[str]) -> list[str]:
 
     cleaned_titles = []
     for title, result in zip(titles, results):
-        if isinstance(result, Exception):
+        if isinstance(result, Exception) or result.message is None:
             print(f"Failed to fix title with GPT '{title}': {result}")
             cleaned_titles.append(title)
         else:
-            cleaned_titles.append(result)
+            cleaned_titles.append(result.message.content)
 
     return cleaned_titles
 
