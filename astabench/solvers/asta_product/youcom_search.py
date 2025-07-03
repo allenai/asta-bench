@@ -1,12 +1,13 @@
 import asyncio
-from pathlib import Path
 import aiohttp
 import requests
+from huggingface_hub import hf_hub_download
 from inspect_ai.solver import Solver, solver, TaskState, Generate
 import json
 import os
 import logging
 from inspect_ai.model import get_model
+from astabench.constants import ASTA_BENCH_DATASET_REPO, ASTA_BENCH_DATASET_REVISION
 
 logger = logging.getLogger(__name__)
 YOUCOM_SEARCH_API_KEY = os.environ["YOUCOM_SEARCH_API_KEY"]
@@ -89,24 +90,28 @@ def youcom_solver() -> Solver:
         docs = []
 
         try:
-            youcom_path = Path(f"youcom_search_results/youcom_{sample_id}.json")
+            hf_youcom_path = f"tasks/youcom_search_results/youcom_{sample_id}.json"
 
-            if not youcom_path.exists():
-                logging.info(
-                    f"No file found for sample ID: {sample_id}, running YOU.COM search."
-                )
-                search_results = await query_youcom_search(
-                    question,
-                    YOUCOM_SEARCH_API_KEY,
-                )
+            # read you.com results from huggingface
+            local_path = hf_hub_download(
+                repo_id=ASTA_BENCH_DATASET_REPO,
+                filename=hf_youcom_path,
+                repo_type="dataset",
+                revision=ASTA_BENCH_DATASET_REVISION
+            )
 
-                # log youcom results
-                Path("youcom_search_results").mkdir(exist_ok=True)
-                with youcom_path.open("w", encoding="utf-8") as f:
-                    json.dump(search_results, f, indent=2)
-            else:
-                with youcom_path.open("r", encoding="utf-8") as f:
-                    search_results = json.load(f)
+            with open(local_path, "r", encoding="utf-8") as f:
+                search_results = json.load(f)
+
+            # if you wand create new call to you.com API (save the result locally and if it is good update it in HF)
+            # youcom_path = Path(f"youcom_search_results/youcom_{sample_id}.json")
+            # search_results = await query_youcom_search(
+            #     question,
+            #     YOUCOM_SEARCH_API_KEY,
+            # )
+            # Path("youcom_search_results").mkdir(exist_ok=True)
+            # with youcom_path.open("w", encoding="utf-8") as f:
+            #     json.dump(search_results, f, indent=2)
 
             titles = [rule_based_title_cleanup(sr["title"]) for sr in search_results]
             gpt_titles = await llm_based_title_cleanup(titles)
