@@ -1,30 +1,43 @@
 # asta-bench
 
+TODO: Intro
+
+AstaBench provides a set of standard evals for evaluating AI agents on tasks that require reasoning about code, such as programming, math, and other code-related tasks.
+
 ## Installation
 
+AstaBench builds on top of the [InspectAI](https://inspect.ai-safety-institute.org.uk/) framework, which provides a flexible and extensible framework for running evaluations of AI systems.  While the instructions in this README are self-contained with respect to common AstaBench uses, we recommend reading the [InspectAI documentation](https://inspect.aisi.org.uk/) for more complete details on its features and usage.
+
+### Via docker
+
+The simplest and most consistent environment setup is to use the provided Docker image.  This will ensure that all dependencies are installed correctly and that the environment is consistent across different machines.
+
+`make shell` will start a shell in the container with the `./astabench` directory mounted at `/astabench/astabench` and dev dependencies installed.  This environment is managed via `uv`, so you can run any `uv` command in the container and should use `uv run` with python commands.
+
+### Via `uv`
+
+TODO: pip install should work in theory, but it is not well-tested
+
+Alternatively, you can use the `uv` tool directly to manage the environment and dependencies.  (A similar procedure using `pip` should work in theory, but is not officially supported.)
+
+To run all the evals, it is necessary to include at least the `inspect_evals` and `litqa2` dependencies, which are used by the `astabench` evals.  We recommend including `dev` dependencies as well so that you can run the tests to verify your setup.  You can install these with:
+
 ```bash
-pip install -e ".[dev]"
+RUN uv sync --extra litqa2
+RUN uv sync --inexact --extra dev --extra inspect_evals
 ```
 
-By default, all dependencies use HTTPS. If you prefer SSH, run:
-`git config --global url."git@github.com:".insteadOf "https://github.com/"`
-
-As an alternative to `pip install` on the host machine, use the docker image for consistent setup.  `make shell` will
-start a shell in the container with the current directory mounted at
-`/astabench` and dev dependencies installed.  Note: if using Docker, the
-InspectAI Docker sandbox will not work, as it will not have access to the
-host's Docker socket; use `sandbox="local"` instead.
+Other optional dependencies in `pyproject.toml` may be needed for specific solvers, but are not necessary to run the suite in general.
 
 ### Setting up environment variables
 
-Get an access token from HuggingFace and set it as an environment variable `HF_TOKEN`.
-```bash
-export HF_TOKEN=your-access-token
-```
-or create a `.env` file in the root directory of the repository with the following content:
-```bash
-HF_TOKEN=your-access-token
-```
+The following environment variables are required to run the evals:
+- `S2_API_KEY`: A [semantic scholar api key](https://www.semanticscholar.org/product/api#api-key), which is used by the standard search tools needed for literature tasks.  While it is possible to run without a key, it is likely that many requests will be rate-limited and the agent may get a lower score as result.
+- Model API keys for the provider you use, e.g. `OPENAI_API_KEY` for OpenAI. See the [InspectAI documentation](https://inspect.aisi.org.uk/providers.html) for more details on how to set up these keys.
+
+Optionally:
+- Any other variables [supported by the `inspect_ai` package](https://inspect.aisi.org.uk/options.html)
+- `HF_TOKEN`: A huggingface access token; depending on rate limits, this may be useful for downloading the dataset
 
 ## Usage
 
