@@ -56,11 +56,7 @@ async def query_youcom_search(
 async def llm_based_title_cleanup(titles: list[str]) -> list[str]:
     gpt_tasks = []
     for title in titles:
-        title_prompt = (
-            title_cleanup_prompt.format(
-                title=title
-            )
-        )
+        title_prompt = title_cleanup_prompt.format(title=title)
         gpt_tasks.append(grader_model.generate(title_prompt))
 
     results = await asyncio.gather(*gpt_tasks, return_exceptions=True)
@@ -97,7 +93,7 @@ def youcom_solver() -> Solver:
                 repo_id=ASTA_BENCH_DATASET_REPO,
                 filename=hf_youcom_path,
                 repo_type="dataset",
-                revision=ASTA_BENCH_DATASET_REVISION
+                revision=ASTA_BENCH_DATASET_REVISION,
             )
 
             with open(local_path, "r", encoding="utf-8") as f:
