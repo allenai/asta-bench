@@ -81,7 +81,6 @@ def youcom_solver() -> Solver:
                 "State must contain 'raw_query' in metadata to use youcom solver."
             )
 
-        question = state.metadata["raw_query"]
         sample_id = state.sample_id
         docs = []
 
@@ -100,6 +99,7 @@ def youcom_solver() -> Solver:
                 search_results = json.load(f)
 
             # if you wand create new call to you.com API (save the result locally and if it is good update it in HF)
+            # question = state.metadata["raw_query"]
             # youcom_path = Path(f"youcom_search_results/youcom_{sample_id}.json")
             # search_results = await query_youcom_search(
             #     question,
