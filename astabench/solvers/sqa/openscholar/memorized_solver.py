@@ -17,11 +17,15 @@ from datasets import load_dataset
 
 from astabench.types.sqa import SQASection, SQAResponse, Citation
 
-os_dataset = load_dataset("nora-ra/os_sqa_v1_responses", split="train")
+
+path = Path(__file__).parent
+cache_path = path / "openscholar_outputs.json"
+with open(cache_path, "r") as f:
+    cache = json.load(f)
 
 
 def read_q_result(case_id: str):
-    return os_dataset.filter(lambda x: x["query"] == case_id)[0]["summary"]
+    return cache.get(case_id)
 
 
 def query_openscholar(case_id: str):
