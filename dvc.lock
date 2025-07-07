@@ -3505,3 +3505,183 @@ stages:
       hash: md5
       md5: 452e763def1129ca67cbe02686d4216d
       size: 816317
+  solve_openscholar@test:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openscholar uv run --extra
+      sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
+      --solver astabench/solvers/sqa/openscholar/memorized_solver.py -S path=astabench/solvers/sqa/openscholar/openscholar_cache_test.json
+      -T scorer_model=google/gemini-2.5-pro -T split=test --limit=1000 --retry-on-error=10
+      --log-shared --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*openscholar.eval
+      2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval"
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-2.5-pro
+    outs:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
+      hash: md5
+      md5: 95ede518f21b88750616a0f8572c8124
+      size: 1823211
+  solve_openscholar@dev:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openscholar uv run --extra
+      sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir dev_dvc_logs/solver_outputs/
+      --solver astabench/solvers/sqa/openscholar/memorized_solver.py -S path=astabench/solvers/sqa/openscholar/openscholar_cache_dev.json
+      -T scorer_model=google/gemini-2.5-pro -T split=dev --limit=1000 --retry-on-error=10
+      --log-shared --no-score; mv "$(ls -t dev_dvc_logs/solver_outputs/*openscholar.eval
+      2>/dev/null | head -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval"
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-2.5-pro
+    outs:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
+      hash: md5
+      md5: fa9df90197e1f8950e1493689567b5f4
+      size: 951587
+  score_all_solvers@model18-dev:
+    cmd: echo "Scoring";[[ "openscholar" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_openscholar;
+      cp dev_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval dev_dvc_logs/scored/task_sqa_solver_openscholar.eval;
+      uv run inspect score --overwrite --display plain --scorer astabench/evals/sqa/task.py@score_all
+      -S scorer_model=google/gemini-2.5-pro -S is_retrieverless=false dev_dvc_logs/scored/task_sqa_solver_openscholar.eval
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
+      hash: md5
+      md5: fa9df90197e1f8950e1493689567b5f4
+      size: 951587
+    params:
+      params.yaml:
+        scorer_model: google/gemini-2.5-pro
+        sqa_scorer_version: may-23-2025
+    outs:
+    - path: dev_dvc_logs/scored/task_sqa_solver_openscholar.eval
+      hash: md5
+      md5: 8faff838ec98ac9793cd6d4b921a8725
+      size: 2754895
+  log_any_remaining_errors_and_record_scores@openscholar-dev:
+    cmd: echo "Collecting errors";[[ "openscholar" == */* ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname
+      "openscholar"); mkdir -p dev_dvc_logs/scores/task_sqa_solver_$(dirname "openscholar");
+      uv run scripts/log_errors.py dev_dvc_logs/scored/task_sqa_solver_openscholar.eval
+      dev_dvc_logs/errors/task_sqa_solver_openscholar.md dev_dvc_logs/scores/task_sqa_solver_openscholar.md
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_openscholar.eval
+      hash: md5
+      md5: 8faff838ec98ac9793cd6d4b921a8725
+      size: 2754895
+    outs:
+    - path: dev_dvc_logs/errors/task_sqa_solver_openscholar.md
+      hash: md5
+      md5: d51d4f783de486edccf22aea1a28d40d
+      size: 63
+    - path: dev_dvc_logs/scores/task_sqa_solver_openscholar.md
+      hash: md5
+      md5: 4c4572da3096457a749b21bb57ffdee0
+      size: 255
+  extract_model_responses@openscholar-dev:
+    cmd: echo "Extracting responses"; [[ "openscholar" == */* ]] && mkdir -p dev_dvc_logs/model_responses/task_sqa_solver_$(dirname
+      "openscholar"); uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
+      dev_dvc_logs/model_responses/task_sqa_solver_openscholar_responses.csv
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
+      hash: md5
+      md5: fa9df90197e1f8950e1493689567b5f4
+      size: 951587
+    outs:
+    - path: dev_dvc_logs/model_responses/task_sqa_solver_openscholar_responses.csv
+      hash: md5
+      md5: c919b1ec0dab47aad8b427704343c22c
+      size: 1436461
+  score_all_solvers@model18-test:
+    cmd: echo "Scoring";[[ "openscholar" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_openscholar;
+      cp test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval test_dvc_logs/scored/task_sqa_solver_openscholar.eval;
+      uv run inspect score --overwrite --display plain --scorer astabench/evals/sqa/task.py@score_all
+      -S scorer_model=google/gemini-2.5-pro -S is_retrieverless=false test_dvc_logs/scored/task_sqa_solver_openscholar.eval
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
+      hash: md5
+      md5: 95ede518f21b88750616a0f8572c8124
+      size: 1823211
+    params:
+      params.yaml:
+        scorer_model: google/gemini-2.5-pro
+        sqa_scorer_version: may-23-2025
+    outs:
+    - path: test_dvc_logs/scored/task_sqa_solver_openscholar.eval
+      hash: md5
+      md5: 809232d9201f6a253b4d7f4e03edea3c
+      size: 4219480
+  create_nice_logs@openscholar-test:
+    cmd: echo "Creating logs"; [[ "openscholar" == */* ]] && mkdir -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname
+      "openscholar"); uv run scripts/create_debug_logs.py test_dvc_logs/scored/ task_sqa_solver_openscholar.eval
+      test_dvc_logs/debug_logs/
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_openscholar.eval
+      hash: md5
+      md5: 809232d9201f6a253b4d7f4e03edea3c
+      size: 4219480
+    outs:
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_openscholar_answer_precision_eval.csv
+      hash: md5
+      md5: 7354c4fffbee00285f91e7cd8cb7fb75
+      size: 2159452
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_openscholar_citation_eval.csv
+      hash: md5
+      md5: edc301f841ed7e828aec13aee1b213e6
+      size: 3713809
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_openscholar_rubric_eval.csv
+      hash: md5
+      md5: 4fe955d7f4aeb10d61e60a01fd16b611
+      size: 4105852
+  extract_model_responses@openscholar-test:
+    cmd: echo "Extracting responses"; [[ "openscholar" == */* ]] && mkdir -p test_dvc_logs/model_responses/task_sqa_solver_$(dirname
+      "openscholar"); uv run scripts/extract_model_responses.py test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
+      test_dvc_logs/model_responses/task_sqa_solver_openscholar_responses.csv
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
+      hash: md5
+      md5: 95ede518f21b88750616a0f8572c8124
+      size: 1823211
+    outs:
+    - path: test_dvc_logs/model_responses/task_sqa_solver_openscholar_responses.csv
+      hash: md5
+      md5: 557cdece3c0530ea3a3f36ff0f25b144
+      size: 1378789
+  create_nice_logs@openscholar-dev:
+    cmd: echo "Creating logs"; [[ "openscholar" == */* ]] && mkdir -p dev_dvc_logs/debug_logs/task_sqa_solver_$(dirname
+      "openscholar"); uv run scripts/create_debug_logs.py dev_dvc_logs/scored/ task_sqa_solver_openscholar.eval
+      dev_dvc_logs/debug_logs/
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_openscholar.eval
+      hash: md5
+      md5: 8faff838ec98ac9793cd6d4b921a8725
+      size: 2754895
+    outs:
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_openscholar_answer_precision_eval.csv
+      hash: md5
+      md5: f24528779c68c0534b1a0e320b4c7de8
+      size: 2184383
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_openscholar_citation_eval.csv
+      hash: md5
+      md5: 18f3fdac53b9871265682da87f2b4822
+      size: 3879727
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_openscholar_rubric_eval.csv
+      hash: md5
+      md5: e1cf4269e9c3c22a9622e712ed4c2c93
+      size: 2737826
+  log_any_remaining_errors_and_record_scores@openscholar-test:
+    cmd: echo "Collecting errors";[[ "openscholar" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
+      "openscholar"); mkdir -p test_dvc_logs/scores/task_sqa_solver_$(dirname "openscholar");
+      uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_openscholar.eval
+      test_dvc_logs/errors/task_sqa_solver_openscholar.md test_dvc_logs/scores/task_sqa_solver_openscholar.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_openscholar.eval
+      hash: md5
+      md5: 809232d9201f6a253b4d7f4e03edea3c
+      size: 4219480
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_openscholar.md
+      hash: md5
+      md5: d51d4f783de486edccf22aea1a28d40d
+      size: 63
+    - path: test_dvc_logs/scores/task_sqa_solver_openscholar.md
+      hash: md5
+      md5: 966107a11fcd81378e3f220c3b1cb395
+      size: 255
