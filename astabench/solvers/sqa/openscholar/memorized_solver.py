@@ -17,6 +17,7 @@ from datasets import load_dataset
 
 from astabench.types.sqa import SQASection, SQAResponse, Citation
 
+
 def read_q_result(path, case_id: str):
     with open(path, "r") as f:
         cache = json.load(f)
