@@ -26,4 +26,5 @@ RUN pip install jupyterlab==4.4.3 jupyter_kernel_gateway==3.0.1 numpy pandas
 RUN pip install "matplotlib==3.10.0"
 
 # SandboxToolManager requirement
-RUN pip install "mcp~=1.9.4"
+RUN pip install "mcp~=1.10"
+RUN /opt/inspect_tool_support/bin/pip install "mcp~=1.10"

@@ -1,0 +1,94 @@
+NOTICE
+
+This product includes software developed by the Allen Institute for AI.
+
+This product links to third-party libraries but does not include or redistribute their source code or binaries.
+
+================================================================================
+
+This product links to software licensed under the Apache License 2.0.
+
+See https://www.apache.org/licenses/LICENSE-2.0
+
+aiobotocore - https://github.com/aio-libs/aiobotocore
+aiosignal - https://github.com/aio-libs/aiosignal
+boto3 - https://github.com/boto/boto3
+botocore - https://github.com/boto/botocore
+datasets - https://github.com/huggingface/datasets
+distro - https://github.com/python-distro/distro
+google-auth - https://github.com/googleapis/google-auth-library-python
+google-genai - https://github.com/googleapis/python-genai
+huggingface-hub - https://github.com/huggingface/huggingface_hub
+id - https://pypi.org/project/id/
+importlib_metadata - https://github.com/python/importlib_metadata
+jsonpath-ng - https://github.com/h2non/jsonpath-ng
+multidict - https://github.com/aio-libs/multidict
+nltk - https://www.nltk.org/
+openai - https://github.com/openai/openai-python
+propcache - https://github.com/aio-libs/propcache
+pyarrow - https://arrow.apache.org/
+python-multipart - https://github.com/Kludex/python-multipart
+readme_renderer - https://github.com/pypa/readme_renderer
+regex - https://github.com/mrabarnett/mrab-regex
+requests - https://requests.readthedocs.io
+requests-toolbelt - https://toolbelt.readthedocs.io/
+rfc3986 - http://rfc3986.readthedocs.io
+rsa - https://stuvel.eu/rsa
+s3transfer - https://github.com/boto/s3transfer
+tenacity - https://github.com/jd/tenacity
+tokenizers - https://github.com/huggingface/tokenizers
+twine - https://twine.readthedocs.io/
+tzdata - https://github.com/python/tzdata
+yarl - https://github.com/aio-libs/yarl
+packaging - https://github.com/pypa/packaging
+python-dateutil - https://github.com/dateutil/dateutil
+sniffio - https://github.com/python-trio/sniffio
+uv - https://pypi.org/project/uv/
+aiohttp - https://github.com/aio-libs/aiohttp
+frozenlist - https://github.com/aio-libs/frozenlist
+hf-xet - https://github.com/huggingface/xet-core
+
+================================================================================
+
+This software links to libraries licensed under the MIT license.
+
+See https://opensource.org/licenses/MIT
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+================================================================================
+
+This software links to libraries licensed under the BSD 3-Clause License.
+
+See https://opensource.org/licenses/BSD-3-Clause
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS”
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+OF SUCH DAMAGE.
+
+================================================================================
+
+This product links to software licensed under the Mozilla Public License 2.0.
+
+See https://www.mozilla.org/en-US/MPL/2.0/
+
+tqdm - https://tqdm.github.io
+certifi - https://github.com/certifi/python-certifi
+pathspec - https://github.com/cpburnz/python-pathspec
+
+================================================================================
+
+See the pyproject.toml file for a complete list of dependencies.
