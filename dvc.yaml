@@ -101,6 +101,7 @@ stages:
         uv run --extra sqa
         inspect eval astabench/evals/sqa/task.py@sqa --display plain
         --log-dir ${item}_dvc_logs/solver_outputs/
+        -T with_search_tools=False
         --model 'perplexity/sonar-deep-research'
         --solver astabench/solvers/sqa/formatted_perplexity.py@formatted_solver
         -T split=${item}
