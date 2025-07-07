@@ -1,4 +1,7 @@
+import asyncio
+import concurrent.futures
 import logging
+import threading
 from typing import Callable
 
 from inspect_ai.tool import Tool, ToolDef
@@ -25,6 +28,10 @@ class ToolsetConfig(BaseModel):
 
     with_search_tools: bool = Field(
         default=True, description="Include paper_search and snippet_search tools"
+    )
+    with_s2_corpus_tools: bool = Field(
+        default=False,
+        description="Include S2 MCP corpus tools (requires S2_API_KEY environment variable).  The default args and descriptions for tools may be slightly different from the raw MCP tools to better fit Asta agents.",
     )
     with_stateful_python: bool = False
     with_report_editor: bool = False
@@ -57,6 +64,12 @@ class ToolsetConfig(BaseModel):
 
         if self.with_search_tools:
             tools.extend([paper_search(), snippet_search()])
+
+        if self.with_s2_corpus_tools:
+            coro = make_asta_s2_mcp_tools()
+            # Run in separate thread since it's async
+            fut = concurrent.futures.ThreadPoolExecutor().submit(asyncio.run, coro)
+            tools.extend(fut.result())
 
         if self.with_stateful_python:
             tools.append(python_session())
