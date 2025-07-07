@@ -8,6 +8,8 @@ from inspect_ai.tool import Tool, ToolDef, ToolSource
 from inspect_ai.tool._mcp._mcp import MCPServerImpl
 from mcp.client.streamable_http import streamablehttp_client
 
+from .search import DEFAULT_RESULTS_LIMIT, METADATA_FIELDS
+
 
 @asynccontextmanager
 async def fixed_streamablehttp_client(
@@ -54,8 +56,8 @@ async def make_asta_s2_mcp_tools(api_key: str | None = None) -> list[Tool]:
     - we want to default to having some informative fields in paper searches,
       rather than relying on models to specify all the fields every time."""
 
-    PAPER_FIELDS = "title,authors,abstract,year"
-    AUTHOR_FIELDS = "name,authorId,paperCount"
+    PAPER_FIELDS = METADATA_FIELDS
+    AUTHOR_FIELDS = "authorId,name,paperCount"
 
     # We already have separate paper_search and snippet_search tools
     exclude_tools = {"snippet_search", "search_papers_by_relevance"}
@@ -114,6 +116,13 @@ async def make_asta_s2_mcp_tools(api_key: str | None = None) -> list[Tool]:
             td.tool = make_override_wrapper(
                 td,
                 arg_defaults={"paper_fields": PAPER_FIELDS},
+            )
+
+        if "limit" in td.parameters.properties:
+            td.parameters.properties["limit"].default = DEFAULT_RESULTS_LIMIT
+            td.tool = make_override_wrapper(
+                td,
+                arg_defaults={"limit": DEFAULT_RESULTS_LIMIT},
             )
         new_tools.append(td.as_tool())
 
