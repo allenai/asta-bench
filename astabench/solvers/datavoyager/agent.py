@@ -11,7 +11,6 @@ from inspect_ai.model import ModelUsage
 from inspect_ai.solver import Generate, Solver, TaskState, solver
 
 from astabench.solvers.model_util import record_model_usage_with_inspect
-from astabench.solvers.util import full_state_bridge
 
 logger = logging.getLogger(__name__)
 
@@ -63,10 +62,10 @@ def datavoyager_solver(
                         + total_usage.completion_tokens,
                     ),
                 )
-        except Exception as e:
+        except Exception:
             logger.exception("Error running DataVoyager agent:")
             raise
 
         return state
 
-    return full_state_bridge(solve)
+    return solve
