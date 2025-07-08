@@ -51,18 +51,6 @@ litqa2 = [
 sqa = [
     "ai2-scholar-qa==0.6.14",
 ]
-autogen_web_surfer_solver = [
-    "playwright",
-    "autogen-agentchat==0.4.4",
-    "autogen-ext[openai,web-surfer]==0.4.4",
-    "autogen-core==0.4.4",
-]
-langchain_solver = [
-    "langchain-community==0.3.21",
-    "langchain-core==0.3.51",
-    "langchain-openai==0.3.1",
-    "langgraph==0.2.67",
-]
 smolagents = [
     "smolagents==1.17.0",
 ]
@@ -112,7 +100,6 @@ conflicts = [
     [{extra = "inspect_evals"}, {extra = "sqa"}],
     [{extra = "inspect_evals"}, {extra = "litqa2"}],
     [{extra = "inspect_evals"}, {extra = "storm"}],
-    [{extra = "sqa"}, {extra = "langchain_solver"}],
     [{extra = "sqa"}, {extra = "litqa2"}],
     [{extra = "sqa"}, {extra = "storm"}],
     [{extra = "sqa"}, {extra = "smolagents"}],
