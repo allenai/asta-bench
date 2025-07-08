@@ -243,8 +243,6 @@ AstaBench includes a standard sandbox used across all tasks that require one.  I
 
 # Available Agents
 
-TODO: technically there are the langchain/autogen agents but we haven't really touched those in a long time; maybe we should prune them
-
 Astabench includes some built-in general solvers that can be used with `astabench eval`:
 
 ## Basic ReAct
