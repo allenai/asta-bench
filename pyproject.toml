@@ -23,7 +23,7 @@ dependencies = [
     "mcp~=1.10",
     "httpx~=0.28.1",
     "h2~=4.2.0",
-    "anthropic"
+    "anthropic>=0.52.0"
 ]
 
 [project.optional-dependencies]
@@ -37,9 +37,6 @@ dev = [
     "flake8-pyproject==1.2.3",
     "mypy==1.15",
     "pandas-stubs",
-]
-anthropic = [
-    "anthropic>=0.52.0"
 ]
 azure = [
     "azure-ai-inference"
@@ -71,9 +68,6 @@ futurehouse_solver = [
 ]
 storm = [
       "knowledge-storm @ git+https://github.com/gituser768/storm.git@dh-fix-youcom",
-]
-e2e_discovery = [
-      "anthropic"
 ]
 super = [
       "websocket-client~=1.7.0",

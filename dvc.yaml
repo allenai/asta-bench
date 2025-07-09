@@ -101,6 +101,7 @@ stages:
         uv run --extra sqa
         inspect eval astabench/evals/sqa/task.py@sqa --display plain
         --log-dir ${item}_dvc_logs/solver_outputs/
+        -T with_search_tools=False
         --model 'perplexity/sonar-deep-research'
         --solver astabench/solvers/sqa/formatted_perplexity.py@formatted_solver
         -T split=${item}
@@ -168,6 +169,32 @@ stages:
       - sqa_solver_version
     outs:
       - ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model.name}.eval
+
+  solve_openscholar:
+    foreach:
+      - dev
+      - test
+    # run the solver then rename the resulting file to have a nice name:
+    do:
+      cmd:
+        INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openscholar
+        uv run --extra sqa
+        inspect eval astabench/evals/sqa/task.py@sqa --display plain
+        --log-dir ${item}_dvc_logs/solver_outputs/
+        --solver astabench/solvers/sqa/openscholar/memorized_solver.py
+        -S path=astabench/solvers/sqa/openscholar/openscholar_cache_${item}.json
+        -T scorer_model=${scorer_model}
+        -T split=${item}
+        --limit=${limit}
+        --retry-on-error=10
+        --log-shared
+        --no-score;
+        mv "$(ls -t ${item}_dvc_logs/solver_outputs/*openscholar.eval 2>/dev/null | head -n1)" "${item}_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval"
+      params:
+        - limit
+        - scorer_model
+      outs:
+        - ${item}_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
 
   # run retrieverless solvers:
   solve_llm:
@@ -295,6 +322,8 @@ stages:
           is_retrieverless: false
         - name: perplexity_dr
           is_retrieverless: false
+        - name: openscholar
+          is_retrieverless: false
       split:
         - test
         - dev
@@ -340,6 +369,7 @@ stages:
         - openai_deep_research
         - you
         - perplexity_dr
+        - openscholar
       split:
         - dev
         - test
@@ -375,6 +405,7 @@ stages:
         - openai_deep_research
         - you
         - perplexity_dr
+        - openscholar
       split:
         - dev
         - test
@@ -408,6 +439,7 @@ stages:
         - openai_deep_research
         - you
         - perplexity_dr
+        - openscholar
       split:
         - dev
         - test
