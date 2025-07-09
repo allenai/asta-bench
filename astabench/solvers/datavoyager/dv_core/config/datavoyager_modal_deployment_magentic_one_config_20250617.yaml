@@ -19,7 +19,7 @@ agents:
     model_client:
       model: "gpt-4o"
       seed: 42
-    cache: true
+    cache: false
   programmer:
     name: "programmer"
     description: "An agent that helps with programming tasks. This agent should be called for all coding/implementation related tasks."
@@ -64,7 +64,7 @@ agents:
     model_client:
       model: "gpt-4o"
       seed: 42
-    cache: true
+    cache: false
   data_expert:
     name: "data_expert"
     description: "An agent that helps with data inference tasks with provided data/results. This agent should ONLY be called when there is adequate data/results from implementation/coding outputs. This agent should not be used for planning, implementation, or speculation."
@@ -84,7 +84,7 @@ agents:
     model_client:
       model: "gpt-4o"
       seed: 42
-    cache: true
+    cache: false
 
 
 tools:
@@ -105,7 +105,7 @@ orchestrator:
   model_client:
     model: "gpt-4o"
     seed: 42
-  cache: true
+  cache: false
   prompts:
     ORCHESTRATOR_TASK_LEDGER_FACTS_PROMPT: |
       <dvtext>

@@ -36,7 +36,7 @@ def install_packages(packages: list[str], install_in_bulk: bool = False):
     """
 
     # tools.py defines `def install_packages`
-    code = Path(__file__).parent / "static" / "tools.py"
+    code = (Path(__file__).parent / "static" / "tools.py").read_text()
 
     code += "\n\n"
 
