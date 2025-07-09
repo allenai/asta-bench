@@ -29,14 +29,14 @@ def convert_cache_entry(cache_entry: Dict[str, Any]) -> SQAResponse:
     """Convert a single cache entry to SQAResponse format."""
     sections = []
 
-    # Extract the text and citations from the first iteration
+    # Extract the text and citations from the last iteration
     task_result = cache_entry.get("task_result", {})
     iterations = task_result.get("iterations", [])
 
     if iterations:
-        first_iteration = iterations[0]
-        text = first_iteration.get("text", "").strip()
-        citations_data = first_iteration.get("citations", [])
+        last_iteration = iterations[-1]
+        text = last_iteration.get("text", "").strip()
+        citations_data = last_iteration.get("citations", [])
 
         # Convert citations
         citations = [convert_citation(cit) for cit in citations_data]

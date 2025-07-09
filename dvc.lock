@@ -3520,8 +3520,8 @@ stages:
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
       hash: md5
-      md5: 95ede518f21b88750616a0f8572c8124
-      size: 1823211
+      md5: b45c8f984d36e4147ecec58402267967
+      size: 1807412
   solve_openscholar@dev:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openscholar uv run --extra
       sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir dev_dvc_logs/solver_outputs/
@@ -3536,8 +3536,8 @@ stages:
     outs:
     - path: dev_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
       hash: md5
-      md5: fa9df90197e1f8950e1493689567b5f4
-      size: 951587
+      md5: c78ec2cf79387be214ec2d2ba9e394d5
+      size: 988714
   score_all_solvers@model18-dev:
     cmd: echo "Scoring";[[ "openscholar" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_openscholar;
       cp dev_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval dev_dvc_logs/scored/task_sqa_solver_openscholar.eval;
@@ -3546,8 +3546,8 @@ stages:
     deps:
     - path: dev_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
       hash: md5
-      md5: fa9df90197e1f8950e1493689567b5f4
-      size: 951587
+      md5: c78ec2cf79387be214ec2d2ba9e394d5
+      size: 988714
     params:
       params.yaml:
         scorer_model: google/gemini-2.5-pro
@@ -3555,8 +3555,8 @@ stages:
     outs:
     - path: dev_dvc_logs/scored/task_sqa_solver_openscholar.eval
       hash: md5
-      md5: 8faff838ec98ac9793cd6d4b921a8725
-      size: 2754895
+      md5: 5dea97f16a05438a2e1ed7d686886cec
+      size: 2898479
   log_any_remaining_errors_and_record_scores@openscholar-dev:
     cmd: echo "Collecting errors";[[ "openscholar" == */* ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname
       "openscholar"); mkdir -p dev_dvc_logs/scores/task_sqa_solver_$(dirname "openscholar");
@@ -3565,8 +3565,8 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_openscholar.eval
       hash: md5
-      md5: 8faff838ec98ac9793cd6d4b921a8725
-      size: 2754895
+      md5: 5dea97f16a05438a2e1ed7d686886cec
+      size: 2898479
     outs:
     - path: dev_dvc_logs/errors/task_sqa_solver_openscholar.md
       hash: md5
@@ -3574,7 +3574,7 @@ stages:
       size: 63
     - path: dev_dvc_logs/scores/task_sqa_solver_openscholar.md
       hash: md5
-      md5: 4c4572da3096457a749b21bb57ffdee0
+      md5: f1d8a0d2ca6e2e04459241fba793bde9
       size: 255
   extract_model_responses@openscholar-dev:
     cmd: echo "Extracting responses"; [[ "openscholar" == */* ]] && mkdir -p dev_dvc_logs/model_responses/task_sqa_solver_$(dirname
@@ -3583,13 +3583,13 @@ stages:
     deps:
     - path: dev_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
       hash: md5
-      md5: fa9df90197e1f8950e1493689567b5f4
-      size: 951587
+      md5: c78ec2cf79387be214ec2d2ba9e394d5
+      size: 988714
     outs:
     - path: dev_dvc_logs/model_responses/task_sqa_solver_openscholar_responses.csv
       hash: md5
-      md5: c919b1ec0dab47aad8b427704343c22c
-      size: 1436461
+      md5: 3e28675a3b9f5615a372bd5629066a44
+      size: 1562191
   score_all_solvers@model18-test:
     cmd: echo "Scoring";[[ "openscholar" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_openscholar;
       cp test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval test_dvc_logs/scored/task_sqa_solver_openscholar.eval;
@@ -3598,8 +3598,8 @@ stages:
     deps:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
       hash: md5
-      md5: 95ede518f21b88750616a0f8572c8124
-      size: 1823211
+      md5: b45c8f984d36e4147ecec58402267967
+      size: 1807412
     params:
       params.yaml:
         scorer_model: google/gemini-2.5-pro
@@ -3607,8 +3607,8 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_openscholar.eval
       hash: md5
-      md5: 1f384c9d081170d2352b42dc84712a27
-      size: 4220298
+      md5: 8d5cf1e8f958df8d294655496e802041
+      size: 4195979
   create_nice_logs@openscholar-test:
     cmd: echo "Creating logs"; [[ "openscholar" == */* ]] && mkdir -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname
       "openscholar"); uv run scripts/create_debug_logs.py test_dvc_logs/scored/ task_sqa_solver_openscholar.eval
@@ -3616,21 +3616,21 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_openscholar.eval
       hash: md5
-      md5: 1f384c9d081170d2352b42dc84712a27
-      size: 4220298
+      md5: 8d5cf1e8f958df8d294655496e802041
+      size: 4195979
     outs:
     - path: test_dvc_logs/debug_logs/task_sqa_solver_openscholar_answer_precision_eval.csv
       hash: md5
-      md5: 5124d53c9daf83d22920800c31a14fcd
-      size: 2173596
+      md5: b616bcba23da6be202e0d07f52454ab2
+      size: 2169267
     - path: test_dvc_logs/debug_logs/task_sqa_solver_openscholar_citation_eval.csv
       hash: md5
-      md5: 4c60b8996567877f7ce6fcef350166a9
-      size: 3713198
+      md5: 444444e072040dd88e25bca96a621745
+      size: 3680462
     - path: test_dvc_logs/debug_logs/task_sqa_solver_openscholar_rubric_eval.csv
       hash: md5
-      md5: e6bbcec5c532f1801b6bf5bd3a67f709
-      size: 4090797
+      md5: 91432b8fd6a5a1f8d2dd0c971d6fe0b4
+      size: 4112097
   extract_model_responses@openscholar-test:
     cmd: echo "Extracting responses"; [[ "openscholar" == */* ]] && mkdir -p test_dvc_logs/model_responses/task_sqa_solver_$(dirname
       "openscholar"); uv run scripts/extract_model_responses.py test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
@@ -3638,13 +3638,13 @@ stages:
     deps:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
       hash: md5
-      md5: 95ede518f21b88750616a0f8572c8124
-      size: 1823211
+      md5: b45c8f984d36e4147ecec58402267967
+      size: 1807412
     outs:
     - path: test_dvc_logs/model_responses/task_sqa_solver_openscholar_responses.csv
       hash: md5
-      md5: 557cdece3c0530ea3a3f36ff0f25b144
-      size: 1378789
+      md5: 86bd8ce6f2e7ceb394d8430ff43a6e37
+      size: 1372454
   create_nice_logs@openscholar-dev:
     cmd: echo "Creating logs"; [[ "openscholar" == */* ]] && mkdir -p dev_dvc_logs/debug_logs/task_sqa_solver_$(dirname
       "openscholar"); uv run scripts/create_debug_logs.py dev_dvc_logs/scored/ task_sqa_solver_openscholar.eval
@@ -3652,21 +3652,21 @@ stages:
     deps:
     - path: dev_dvc_logs/scored/task_sqa_solver_openscholar.eval
       hash: md5
-      md5: 8faff838ec98ac9793cd6d4b921a8725
-      size: 2754895
+      md5: 5dea97f16a05438a2e1ed7d686886cec
+      size: 2898479
     outs:
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_openscholar_answer_precision_eval.csv
       hash: md5
-      md5: f24528779c68c0534b1a0e320b4c7de8
-      size: 2184383
+      md5: 25d4919f4935d4761d2ca23bee2b1cd9
+      size: 2361625
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_openscholar_citation_eval.csv
       hash: md5
-      md5: 18f3fdac53b9871265682da87f2b4822
-      size: 3879727
+      md5: 64671674b854cb2eaf72867ee5ac2609
+      size: 4199268
     - path: dev_dvc_logs/debug_logs/task_sqa_solver_openscholar_rubric_eval.csv
       hash: md5
-      md5: e1cf4269e9c3c22a9622e712ed4c2c93
-      size: 2737826
+      md5: 0c7826aff77dc7af99e4b8a1d360cd09
+      size: 2889768
   log_any_remaining_errors_and_record_scores@openscholar-test:
     cmd: echo "Collecting errors";[[ "openscholar" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
       "openscholar"); mkdir -p test_dvc_logs/scores/task_sqa_solver_$(dirname "openscholar");
@@ -3675,8 +3675,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_openscholar.eval
       hash: md5
-      md5: 1f384c9d081170d2352b42dc84712a27
-      size: 4220298
+      md5: 8d5cf1e8f958df8d294655496e802041
+      size: 4195979
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_openscholar.md
       hash: md5
@@ -3684,5 +3684,5 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_openscholar.md
       hash: md5
-      md5: d289a7e8473165ef63ad76080a27f7ab
+      md5: 415d07f1989b99afd7298c761f9438fa
       size: 255
