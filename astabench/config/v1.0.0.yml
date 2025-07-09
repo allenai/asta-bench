@@ -59,11 +59,6 @@ splits:
         primary_metric: 'check_super_auto/astabench/entrypoints'
         tags:
           - code
-      - name: code_diagnostics_small_dev
-        path: astabench/code_diagnostics_small_dev
-        primary_metric: 'diagnostic_score/astabench/output_em'
-        tags:
-          - code
     macro_average_weight_adjustments:
       - tag: lit
         task: litqa2_validation
@@ -127,11 +122,6 @@ splits:
       - name: super_test
         path: astabench/super_test
         primary_metric: 'check_super_execution/astabench/outcome_accuracy'
-        tags:
-          - code
-      - name: code_diagnostics_test
-        path: astabench/code_diagnostics_test
-        primary_metric: 'diagnostic_score/astabench/output_em'
         tags:
           - code
     macro_average_weight_adjustments:
