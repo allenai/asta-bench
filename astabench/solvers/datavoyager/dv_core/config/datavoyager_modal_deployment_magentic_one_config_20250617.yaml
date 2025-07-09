@@ -5,9 +5,9 @@
 cache_dir: ".cache"
 
 agents:
-  user:
-    name: "user"
-    description: "Responsible for passing user message to the chat."
+  #user:
+  #  name: "user"
+  #  description: "Responsible for passing user message to the chat."
   planner:
     name: "planner"
     description: "An agent that helps with decomposing a high-level plan. This agent can refine a high-level (or ambiguous) plan step into precise, clear actionable steps."
