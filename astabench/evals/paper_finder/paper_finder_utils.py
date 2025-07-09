@@ -138,7 +138,9 @@ async def filter_results(output: ExpectedAgentOutput) -> ExpectedAgentOutput:
 
 hf_normalizer_path = "tasks/paper_finder_bench/normalizer_reference.json"
 normalizer_reference_download_dir = Path(__file__).parent
-normalizer_reference_local_path = str(normalizer_reference_download_dir / hf_normalizer_path)
+normalizer_reference_local_path = str(
+    normalizer_reference_download_dir / hf_normalizer_path
+)
 detailed_reference_path = str(Path(__file__).parent / "detailed_reference.json")
 
 
