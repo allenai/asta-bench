@@ -111,11 +111,11 @@ async def generate_table(
                             )
             except Exception as e:
                 logger.error(
-                    "Some cell costs missing for instance from asta table synthesis agent; skipping"
+                    f"Some cell costs missing for instance from asta table synthesis agent; skipping.\nDetails: {e}"
                 )
         except Exception as e:
             logger.error(
-                "Some column costs missing for instance from asta table synthesis agent; skipping"
+                f"Some column costs missing for instance from asta table synthesis agent; skipping.\nDetails: {e}"
             )
 
     usage = ModelUsage(
