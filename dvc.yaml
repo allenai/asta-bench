@@ -300,8 +300,8 @@ stages:
         - dev
     # copy the solver output, then score it
     cmd:
-      echo "Scoring";[[ "${item.model.name}" == */* ]] && mkdir -p ${item.split}_dvc_logs/scored/${scorer_model}/task_sqa_solver_${item.model.name};
-      cp ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model.name}.eval ${item.split}_dvc_logs/scored/${scorer_model}/task_sqa_solver_${item.model.name}.eval;
+      echo "Scoring";[[ "${item.model.name}" == */* ]] && mkdir -p ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model.name};
+      cp ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model.name}.eval ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model.name}.eval;
       uv run
       inspect score
       --overwrite
@@ -309,14 +309,14 @@ stages:
       --scorer astabench/evals/sqa/task.py@score_all
       -S scorer_model=${scorer_model}
       -S is_retrieverless=${item.model.is_retrieverless}
-      ${item.split}_dvc_logs/scored/${scorer_model}/task_sqa_solver_${item.model.name}.eval
+      ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model.name}.eval
     params:
       - sqa_scorer_version
       - scorer_model
     deps:
       - ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model.name}.eval
     outs:
-      - ${item.split}_dvc_logs/scored/${scorer_model}/task_sqa_solver_${item.model.name}.eval:
+      - ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model.name}.eval:
           persist: true
 
   log_any_remaining_errors_and_record_scores:
@@ -415,12 +415,12 @@ stages:
       - scorer_model
     cmd: echo "Creating logs"; [[ "${item.model}" == */* ]] && mkdir -p ${item.split}_dvc_logs/debug_logs/task_sqa_solver_$(dirname "${item.model}");
       uv run scripts/create_debug_logs.py
-      ${item.split}_dvc_logs/scored/${scorer_model}/
+      ${item.split}_dvc_logs/scored/
       task_sqa_solver_${item.model}.eval
-      ${item.split}_dvc_logs/debug_logs/flash/
+      ${item.split}_dvc_logs/debug_logs/
     deps:
-      - ${item.split}_dvc_logs/scored/${scorer_model}/task_sqa_solver_${item.model}.eval
+      - ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model}.eval
     outs:
-      - ${item.split}_dvc_logs/debug_logs/flash/task_sqa_solver_${item.model}_rubric_eval.csv
-      - ${item.split}_dvc_logs/debug_logs/flash/task_sqa_solver_${item.model}_citation_eval.csv
-      - ${item.split}_dvc_logs/debug_logs/flash/task_sqa_solver_${item.model}_answer_precision_eval.csv
+      - ${item.split}_dvc_logs/debug_logs/task_sqa_solver_${item.model}_rubric_eval.csv
+      - ${item.split}_dvc_logs/debug_logs/task_sqa_solver_${item.model}_citation_eval.csv
+      - ${item.split}_dvc_logs/debug_logs/task_sqa_solver_${item.model}_answer_precision_eval.csv
