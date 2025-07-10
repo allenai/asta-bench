@@ -1,6 +1,5 @@
 import asyncio
 import base64
-import os
 import sys
 from io import BytesIO
 from logging import Logger
@@ -108,9 +107,7 @@ class MagenticOnePromptPatcher:
 class PlotPatcher:
     def __init__(
         self,
-        model: str,
-        seed: int,
-        api_key: str = os.getenv("OPENAI_API_KEY"),
+        model_client: OpenAIChatCompletionClient,
         console_logger: Logger = None,
         image_analyser_prompt: str = IMAGE_ANALYSER_PROMPT,
         user_proxy_image_analyser_prompt: str = USER_PROXY_IMAGE_ANALYSER_PROMPT,
@@ -118,12 +115,9 @@ class PlotPatcher:
         self.console_logger = console_logger
         self.image_analyser_prompt = image_analyser_prompt
         self.user_proxy_image_analyser_prompt = user_proxy_image_analyser_prompt
-        self.model_client = OpenAIChatCompletionClient(
-            model=model, api_key=api_key, seed=seed
-        )
         self.image_analyser = AssistantAgent(
             name="image_analyser",
-            model_client=self.model_client,
+            model_client=model_client,
             system_message=self.image_analyser_prompt,
         )
 
