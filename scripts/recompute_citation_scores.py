@@ -126,7 +126,11 @@ def recompute_citation_metrics_for_sample(sample, is_retrieverless):
     # # The metadata should maintain the same format as the original prompt_logs
     sample.scores["score_all"].metadata["score_meta"][2] = prompt_logs.model_dump()
 
-    return sample
+    return sample, (
+        n_half_credit,
+        recall,
+        n_half_credit / (n_attributable + n_extrapolatory) / 2,
+    )
 
 
 def process_eval_file(file_path, is_retrieverless=False):
@@ -147,6 +151,7 @@ def process_eval_file(file_path, is_retrieverless=False):
     updated_samples = []
     print(len(eval_log.samples))
     has_missing = False
+    my_sadness = []
     for sample in eval_log.samples:
         # Check if sample has citation data to process
         if (
@@ -162,11 +167,15 @@ def process_eval_file(file_path, is_retrieverless=False):
             updated_sample = recompute_citation_metrics_for_sample(
                 sample, is_retrieverless
             )
+            if isinstance(updated_sample, tuple):
+                updated_sample, DETAILS = updated_sample
+                my_sadness.append(DETAILS)
         else:
             updated_sample = sample
             has_missing = True
 
         updated_samples.append(updated_sample)
+    print("SAD", file_path, np.array(my_sadness).mean(axis=0))
 
     # Update the eval log with new samples
     eval_log.samples = updated_samples
@@ -306,8 +315,9 @@ def main():
     ]
 
     failed = []
-    for file_path in eval_files:
+    for file_path in ["/data/task_sqa_solver_openai_deep_research.eval"]:
         is_retrieverless = any(b in str(file_path) for b in retrieverless_models)
+        print(is_retrieverless, file_path)
         try:
             has_missing = process_eval_file(
                 file_path, is_retrieverless=is_retrieverless
