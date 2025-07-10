@@ -66,6 +66,7 @@ class SQAResponseWithTable(BaseModel):
         description="List of report sections with optional tables.",
     )
 
+
 class SQAResponseWithUsage(SQAResponseWithTable):
     """Top-level report object with usage information."""
 

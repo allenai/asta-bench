@@ -23,11 +23,12 @@ claude_3_7 = "anthropic/claude-3-7-sonnet-20250219"
 claude_3_5 = "anthropic/claude-3-5-sonnet-20240620"
 gemini_2_5_pro = "gemini/gemini-2.5-pro-preview-03-25"
 completion_model_map = {
-        "claude-3.7": claude_3_7,
-        "claude-3.5": claude_3_5,
-        "claude-4.0": claude_4_0,
-        "gemini-2.5-pro": gemini_2_5_pro,
-    }
+    "claude-3.7": claude_3_7,
+    "claude-3.5": claude_3_5,
+    "claude-4.0": claude_4_0,
+    "gemini-2.5-pro": gemini_2_5_pro,
+}
+
 
 def set_citation_titles(resp):
     for section in resp["sections"]:
@@ -97,7 +98,8 @@ def format_tables(resp: Dict[str, Any]):
                 if (
                     cell_val
                     and cell_val != "N/A"
-                    and cell.get("metadata") and cell["metadata"].get("evidence")
+                    and cell.get("metadata")
+                    and cell["metadata"].get("evidence")
                 ):
                     if curr_rid not in tab_citations:
                         tab_citations[curr_rid] = {
@@ -189,7 +191,8 @@ def sqa_solver(completion_model: str = "claude-3.7") -> Solver:
         )
         usage_dict = {f"{k}_tokens": v for k, v in response_dict["tokens"].items()}
         record_model_usage_with_inspect(
-            model_name=completion_model_map.get(completion_model, completion_model), usage=ModelUsage(**usage_dict)
+            model_name=completion_model_map.get(completion_model, completion_model),
+            usage=ModelUsage(**usage_dict),
         )
         response = SQAResponseWithTable(**response_dict)
         content = json.dumps({"response": response.model_dump(mode="json")}, indent=2)
