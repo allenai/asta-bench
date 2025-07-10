@@ -2847,8 +2847,8 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval
       hash: md5
-      md5: c081623730d77d55f1c4992092d3afc3
-      size: 19387596
+      md5: f370d1cf06ce6a67539e9958993c426d
+      size: 33357446
   score_all_solvers@model11-test:
     cmd: echo "Scoring";[[ "storm" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_storm;
       cp test_dvc_logs/solver_outputs/task_sqa_solver_storm.eval test_dvc_logs/scored/task_sqa_solver_storm.eval;
