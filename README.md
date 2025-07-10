@@ -81,7 +81,7 @@ uv run inspect eval astabench/arithmetic_demo --model openai/gpt-4.1 --solver ge
 ```
 (For development purposes where you want to avoid calling an actual model, you may use `--model mockllm/model`.)
 
-Then view results with `inspect view` or `inspect log dump`. See the [InspectAI](https://inspect.ai-safety-institute.org.uk/) framework docs for more details on available options.
+Then view results with `inspect view` or `inspect log dump`. See the [InspectAI](https://inspect.ai-safety-institute.org.uk/) framework docs for more details on available options. To access the viewer on localhost when running with Docker, port forwarding is required: `uv run inspect view --host 0.0.0.0 --port 7575`.
 
 A more complete command, running the ReAct solver on the SQA validation set with a variety of tool settings and proper resource configuration:
 
