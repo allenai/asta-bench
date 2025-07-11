@@ -11,6 +11,35 @@ vars:
       suffix: ""
 
 stages:
+  # - perplexity
+  # - you
+  run_litqa2_you:
+    cmd:
+      INSPECT_EVAL_LOG_FILE_PATTERN=task_litqa2_solver_you
+      uv run --extra litqa2 --extra inspect_evals
+      inspect eval astabench/evals/labbench/litqa2/task.py@litqa2
+      --display plain
+      --log-dir litqa2_dvc_logs/
+      --solver astabench/solvers/youcom.py@youcom_solver -S api_type='research'
+      --no-fail-on-error
+      mv "$(ls -t litqa2_dvc_logs/*task_litqa2_solver_you.eval 2>/dev/null | head -n1)" "litqa2_dvc_logs/task_litqa2_solver_you.eval"
+    outs:
+      - litqa2_dvc_logs/task_litqa2_solver_you.eval
+
+  run_litqa2_perplexity:
+    cmd:
+      INSPECT_EVAL_LOG_FILE_PATTERN=task_litqa2_solver_perplexity
+      uv run --extra litqa2 --extra inspect_evals
+      inspect eval astabench/evals/labbench/litqa2/task.py@litqa2
+      --display plain
+      --log-dir litqa2_dvc_logs/
+      --model 'perplexity/sonar-deep-research'
+      --solver astabench/solvers/sqa/perplexity_base.py@perplexity_solver
+      --no-fail-on-error
+      mv "$(ls -t litqa2_dvc_logs/*task_litqa2_solver_perplexity.eval 2>/dev/null | head -n1)" "litqa2_dvc_logs/task_litqa2_solver_perplexity.eval"
+    outs:
+      - litqa2_dvc_logs/task_litqa2_solver_perplexity.eval
+
   solve_sqa:
     matrix:
       model:
