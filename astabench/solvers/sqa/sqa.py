@@ -157,7 +157,6 @@ def query_sqa(completion_model: str, question: str):
             else {}
         ),
     )
-    scholar_qa.logs_config.event_trace_loc = "litqa2"
     resp = scholar_qa.answer_query(question, inline_tags=False)
     set_citation_titles(resp)
     format_tables(resp)
