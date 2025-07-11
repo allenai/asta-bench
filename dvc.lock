@@ -3686,3 +3686,36 @@ stages:
       hash: md5
       md5: 415d07f1989b99afd7298c761f9438fa
       size: 255
+  run_litqa2_you:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_litqa2_solver_you uv run inspect eval
+      astabench/evals/labbench/litqa2/task.py@litqa2 --display plain --log-dir litqa2_dvc_logs/
+      --solver astabench/solvers/youcom.py@youcom_solver -S api_type='research' --no-fail-on-error
+      --limit=1; mv "$(ls -t litqa2_dvc_logs/*task_litqa2_solver_you.eval 2>/dev/null
+      | head -n1)" "litqa2_dvc_logs/task_litqa2_solver_you.eval"
+    outs:
+    - path: litqa2_dvc_logs/task_litqa2_solver_you.eval
+      hash: md5
+      md5: a5a1bebd61bce9b35751dccfa2c52a3c
+      size: 5358
+  run_litqa2_perplexity:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_litqa2_solver_perplexity uv run inspect
+      eval astabench/evals/labbench/litqa2/task.py@litqa2 --display plain --log-dir
+      litqa2_dvc_logs/ --model 'perplexity/sonar-deep-research' --solver astabench/solvers/sqa/perplexity_base.py@perplexity_solver
+      --no-fail-on-error -T split=test --limit=1; mv "$(ls -t litqa2_dvc_logs/*task_litqa2_solver_perplexity.eval
+      2>/dev/null | head -n1)" "litqa2_dvc_logs/task_litqa2_solver_perplexity.eval"
+    outs:
+    - path: litqa2_dvc_logs/task_litqa2_solver_perplexity.eval
+      hash: md5
+      md5: 33ecb5e0bc723947ab12c0f92adfb9f9
+      size: 9180
+  run_litqa2_storm:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_litqa2_solver_storm uv run --extra storm
+      --python 3.11 inspect eval astabench/evals/labbench/litqa2/task.py@litqa2 --display
+      plain --log-dir litqa2_dvc_logs/ --solver astabench/solvers/sqa/storm_solver.py@storm_solver
+      --no-fail-on-error --limit=1; mv "$(ls -t litqa2_dvc_logs/*task_litqa2_solver_storm.eval
+      2>/dev/null | head -n1)" "litqa2_dvc_logs/task_litqa2_solver_storm.eval"
+    outs:
+    - path: litqa2_dvc_logs/task_litqa2_solver_storm.eval
+      hash: md5
+      md5: 2f0a063d8d4dffc382221751aa3be554
+      size: 43306

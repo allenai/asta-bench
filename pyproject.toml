@@ -92,7 +92,6 @@ include = [
 [tool.uv]
 conflicts = [
     [{extra = "inspect_evals"}, {extra = "sqa"}],
-    [{extra = "inspect_evals"}, {extra = "litqa2"}],
     [{extra = "inspect_evals"}, {extra = "storm"}],
     [{extra = "sqa"}, {extra = "litqa2"}],
     [{extra = "sqa"}, {extra = "storm"}],

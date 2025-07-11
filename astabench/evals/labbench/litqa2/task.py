@@ -7,9 +7,11 @@ https://github.com/Future-House/LAB-Bench/blob/77c14efc2192a1b3d14f695e120c668ee
 import random
 import string
 from typing import Literal, NamedTuple, cast
+import os
 
 import pandas as pd
 from datasets import Dataset, DatasetDict, IterableDatasetDict, load_dataset
+from huggingface_hub import hf_hub_download
 from inspect_ai import Task, task, task_with
 from inspect_ai.dataset import MemoryDataset, Sample
 from inspect_ai.scorer import (
@@ -201,10 +203,16 @@ def load_litqa2(split: Literal["dev", "test", "all"] = "all") -> list[dict]:
     if split == "all":
         return list(map(dict, dataset["train"]))
 
-    litqa_mappings = load_dataset(
+    p = hf_hub_download(
         ASTA_BENCH_DATASET_REPO,
-        data_files="tasks/labbench/litqa2_mapping.json",
+        "tasks/labbench/litqa2_mapping.json",
+        token=os.getenv("HF_TOKEN"),
+        repo_type="dataset",
         revision=ASTA_BENCH_DATASET_REVISION,
+    )
+    litqa_mappings = load_dataset(
+        "json",
+        data_files=p,
     )
 
     df = pd.merge(
@@ -282,6 +290,8 @@ def litqa2(*litqa_args, **litqa_kwargs):
     textin/textout format instead of Inspect's `state.choices`.  See litqa2()
     for more task details."""
 
+    litqa_kwargs["with_search_tools"] = False
+    litqa_kwargs["split"] = "test"
     base_task = litqa2_inspect(*litqa_args, **litqa_kwargs)
 
     dataset = []
