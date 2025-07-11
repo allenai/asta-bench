@@ -35,9 +35,12 @@ COPY pyproject.toml /astabench/
 # Create a basic directory structure for the package
 RUN mkdir -p /astabench/astabench
 
+# Split up `sync` commands to avoid conflict errors; the conflicts are the
+# result of packages pinning more specific dependency versions than they
+# actually require
 RUN uv sync --extra litqa2
 RUN uv sync --inexact --extra sqa --extra super
-RUN uv sync --inexact --extra dev --extra inspect_evals --extra anthropic --extra smolagents --extra e2e_discovery --extra azure
+RUN uv sync --inexact --extra dev --extra inspect_evals --extra smolagents --extra azure
 
 COPY . /astabench
 

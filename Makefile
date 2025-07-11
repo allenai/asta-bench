@@ -100,7 +100,6 @@ endif
 
 flake:
 	docker run --rm \
-		-v $$(pwd):/astabench \
 		$(ASTABENCH_TAG) \
 		uv run flake8 astabench/ tests/
 

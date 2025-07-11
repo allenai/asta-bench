@@ -9,7 +9,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "inspect_ai==0.3.106",
-    "agent-eval==0.1.10",
+    "agent-eval==0.1.13",
     "openai>=1.78.0", # required by inspect
     "pydantic>=2.11.4", # required by inspect
     "litellm",
@@ -23,7 +23,7 @@ dependencies = [
     "mcp~=1.10",
     "httpx~=0.28.1",
     "h2~=4.2.0",
-    "anthropic"
+    "anthropic>=0.52.0"
 ]
 
 [project.optional-dependencies]
@@ -38,9 +38,6 @@ dev = [
     "mypy==1.15",
     "pandas-stubs",
 ]
-anthropic = [
-    "anthropic>=0.52.0"
-]
 azure = [
     "azure-ai-inference"
 ]
@@ -49,19 +46,7 @@ litqa2 = [
     "pandas",
 ]
 sqa = [
-    "ai2-scholar-qa==0.6.14",
-]
-autogen_web_surfer_solver = [
-    "playwright",
-    "autogen-agentchat==0.4.4",
-    "autogen-ext[openai,web-surfer]==0.4.4",
-    "autogen-core==0.4.4",
-]
-langchain_solver = [
-    "langchain-community==0.3.21",
-    "langchain-core==0.3.51",
-    "langchain-openai==0.3.1",
-    "langgraph==0.2.67",
+    "ai2-scholar-qa==0.6.15",
 ]
 smolagents = [
     "smolagents==1.17.0",
@@ -83,9 +68,6 @@ futurehouse_solver = [
 ]
 storm = [
       "knowledge-storm @ git+https://github.com/gituser768/storm.git@dh-fix-youcom",
-]
-e2e_discovery = [
-      "anthropic"
 ]
 super = [
       "websocket-client~=1.7.0",
@@ -112,7 +94,6 @@ conflicts = [
     [{extra = "inspect_evals"}, {extra = "sqa"}],
     [{extra = "inspect_evals"}, {extra = "litqa2"}],
     [{extra = "inspect_evals"}, {extra = "storm"}],
-    [{extra = "sqa"}, {extra = "langchain_solver"}],
     [{extra = "sqa"}, {extra = "litqa2"}],
     [{extra = "sqa"}, {extra = "storm"}],
     [{extra = "sqa"}, {extra = "smolagents"}],
