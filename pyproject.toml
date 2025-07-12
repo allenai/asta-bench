@@ -24,6 +24,7 @@ dependencies = [
     "httpx~=0.28.1",
     "h2~=4.2.0",
     "pandas",
+     "inspect_evals[core_bench] @ git+https://github.com/UKGovernmentBEIS/inspect_evals.git@c2bec9ebee7a5995512bf5ff67a2e82afe4d12e1#egg=inspect_evals",
     "anthropic>=0.52.0"
 ]
 
@@ -47,9 +48,6 @@ sqa = [
 ]
 smolagents = [
     "smolagents==1.17.0",
-]
-inspect_evals = [
-     "inspect_evals[core_bench] @ git+https://github.com/UKGovernmentBEIS/inspect_evals.git@c2bec9ebee7a5995512bf5ff67a2e82afe4d12e1#egg=inspect_evals",
 ]
 datavoyager_solver = [
     "autogen-agentchat==0.4.4",
@@ -88,10 +86,7 @@ include = [
 
 [tool.uv]
 conflicts = [
-    [{extra = "inspect_evals"}, {extra = "sqa"}],
-    [{extra = "inspect_evals"}, {extra = "storm"}],
     [{extra = "sqa"}, {extra = "storm"}],
-    [{extra = "sqa"}, {extra = "smolagents"}],
     [{extra = "sqa"}, {extra = "futurehouse_solver"}],
     [{extra = "storm"}, {extra = "smolagents"}],
 ]
