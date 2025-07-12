@@ -13,7 +13,7 @@ dependencies = [
     "openai>=1.78.0", # required by inspect
     "pydantic>=2.11.4", # required by inspect
     "litellm",
-    "datasets",
+    "datasets~=3.2.0",
     "huggingface_hub",
     "google-genai>=1.16.1",
     "nltk",
@@ -23,6 +23,7 @@ dependencies = [
     "mcp~=1.10",
     "httpx~=0.28.1",
     "h2~=4.2.0",
+    "pandas",
     "anthropic>=0.52.0"
 ]
 
@@ -40,10 +41,6 @@ dev = [
 ]
 azure = [
     "azure-ai-inference"
-]
-litqa2 = [
-    "datasets==3.2.0",
-    "pandas",
 ]
 sqa = [
     "ai2-scholar-qa==0.6.15",
@@ -92,18 +89,19 @@ include = [
 [tool.uv]
 conflicts = [
     [{extra = "inspect_evals"}, {extra = "sqa"}],
-    [{extra = "inspect_evals"}, {extra = "litqa2"}],
     [{extra = "inspect_evals"}, {extra = "storm"}],
-    [{extra = "sqa"}, {extra = "litqa2"}],
     [{extra = "sqa"}, {extra = "storm"}],
     [{extra = "sqa"}, {extra = "smolagents"}],
     [{extra = "sqa"}, {extra = "futurehouse_solver"}],
-    [{extra = "litqa2"}, {extra = "storm"}],
     [{extra = "storm"}, {extra = "smolagents"}],
 ]
 override-dependencies = [
     # sqa pins openai to a lower version than inspect requires
     "openai==1.78.0",
+
+    # STORM pretends to require a lower version, but doesn't actually need it:
+    # https://github.com/allenai/asta-bench/issues/31#issuecomment-3045978008
+    "datasets==3.2.0",
 ]
 
 [tool.flake8]
