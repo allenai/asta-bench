@@ -89,8 +89,8 @@ agents:
 
 tools:
   programmer:
-    - "astabench/solvers/datavoyager/dv_core/inspect_utils.py::exec_python"
-    - "astabench/solvers/datavoyager/dv_core/inspect_utils.py::install_packages"
+    - "inspect_utils.py::exec_python"
+    - "inspect_utils.py::install_packages"
 
 
 error_handling:

@@ -5,6 +5,7 @@ import importlib.util
 import logging
 import os
 import sys
+from pathlib import Path
 from typing import TYPE_CHECKING, Protocol, Union, runtime_checkable
 
 import click
@@ -397,7 +398,7 @@ class DataVoyager:
         try:
             module_name = script_path.split("/")[-1].split(".")[0]
             spec = importlib.util.spec_from_file_location(
-                name=module_name, location=script_path
+                name=module_name, location=str(Path(__file__).parent / script_path)
             )
             module = importlib.util.module_from_spec(spec)
             sys.modules[module_name] = module
