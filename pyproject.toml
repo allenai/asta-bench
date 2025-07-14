@@ -96,7 +96,7 @@ override-dependencies = [
 
     # STORM pretends to require a lower version, but doesn't actually need it:
     # https://github.com/allenai/asta-bench/issues/31#issuecomment-3045978008
-    "datasets==3.2.0",
+    "datasets~=3.2.0",
 ]
 
 [tool.flake8]
