@@ -56,7 +56,6 @@ def cache_solver(
                 indent=2,
             )
             usage_dict = {f"{k}_tokens": v for k, v in response.tokens.items()}
-            usage = ModelUsage(**usage_dict)
             record_model_usage_with_inspect(
                 model_name=model,
                 usage=ModelUsage(**usage_dict),
