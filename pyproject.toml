@@ -8,12 +8,12 @@ version = "0.0.1"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "inspect_ai==0.3.106",
+    "inspect_ai==0.3.112",
     "agent-eval==0.1.13",
     "openai>=1.78.0", # required by inspect
     "pydantic>=2.11.4", # required by inspect
     "litellm",
-    "datasets",
+    "datasets~=3.2.0",
     "huggingface_hub",
     "google-genai>=1.16.1",
     "nltk",
@@ -23,6 +23,8 @@ dependencies = [
     "mcp~=1.10",
     "httpx~=0.28.1",
     "h2~=4.2.0",
+    "pandas",
+     "inspect_evals[core_bench] @ git+https://github.com/UKGovernmentBEIS/inspect_evals.git@c2bec9ebee7a5995512bf5ff67a2e82afe4d12e1#egg=inspect_evals",
     "anthropic>=0.52.0"
 ]
 
@@ -41,18 +43,11 @@ dev = [
 azure = [
     "azure-ai-inference"
 ]
-litqa2 = [
-    "datasets==3.2.0",
-    "pandas",
-]
 sqa = [
     "ai2-scholar-qa==0.6.15",
 ]
 smolagents = [
     "smolagents==1.17.0",
-]
-inspect_evals = [
-     "inspect_evals[core_bench] @ git+https://github.com/UKGovernmentBEIS/inspect_evals.git@c2bec9ebee7a5995512bf5ff67a2e82afe4d12e1#egg=inspect_evals",
 ]
 datavoyager_solver = [
     "autogen-agentchat==0.4.4",
@@ -91,19 +86,17 @@ include = [
 
 [tool.uv]
 conflicts = [
-    [{extra = "inspect_evals"}, {extra = "sqa"}],
-    [{extra = "inspect_evals"}, {extra = "litqa2"}],
-    [{extra = "inspect_evals"}, {extra = "storm"}],
-    [{extra = "sqa"}, {extra = "litqa2"}],
     [{extra = "sqa"}, {extra = "storm"}],
-    [{extra = "sqa"}, {extra = "smolagents"}],
     [{extra = "sqa"}, {extra = "futurehouse_solver"}],
-    [{extra = "litqa2"}, {extra = "storm"}],
     [{extra = "storm"}, {extra = "smolagents"}],
 ]
 override-dependencies = [
     # sqa pins openai to a lower version than inspect requires
     "openai==1.78.0",
+
+    # STORM pretends to require a lower version, but doesn't actually need it:
+    # https://github.com/allenai/asta-bench/issues/31#issuecomment-3045978008
+    "datasets~=3.2.0",
 ]
 
 [tool.flake8]
@@ -122,7 +115,7 @@ ignore = [
 ]
 
 [tool.setuptools.package-data]
-"astabench" = ["config/*.yml"]
+"astabench" = ["config/*.yml", "evals/inspect_eval_wrappers/ds1000_splits.json", "solvers/sandbox_util/sandbox_compose.yaml", "solvers/sandbox_util/Dockerfile", "solvers/sandbox_util/*.txt", "solvers/datavoyager/dv_core/config/*.yaml", "solvers/code_agent/*.yaml", "evals/demo/code_execution/*.yaml"]
 
 [tool.uv.sources]
 knowledge-storm = { git = "https://github.com/gituser768/storm", branch = "dh-fix-youcom" }

@@ -15,6 +15,19 @@ def test_already_normalized():
     """Test that already normalized names are returned as-is."""
     # Known model with provider
     assert "openai/gpt-4o" == normalize_model_name("openai/gpt-4o")
+
+    # Provider with two slashes
+    assert (
+        "together_ai/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+        == normalize_model_name("together_ai/meta-llama/Llama-4-Scout-17B-16E-Instruct")
+    )
+
+    # Provider with two slashes with Inspect form instead of litellm form
+    assert (
+        normalize_model_name("together/meta-llama/Llama-4-Scout-17B-16E-Instruct")
+        == "together/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    )
+
     # Unknown model with provider-like prefix
     assert "acme/unknown-model" == normalize_model_name("acme/unknown-model")
 
