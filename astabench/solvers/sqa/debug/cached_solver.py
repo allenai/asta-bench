@@ -49,12 +49,11 @@ def cache_solver(
     async def solve(state: TaskState, generate: Generate) -> TaskState:
         question = state.metadata["initial_prompt"]
         response = query_cache(question)
-        content = json.dumps({"response": response.model_dump(mode="json")}, indent=2)
+        content = json.dumps(
+            {"response": response.model_dump(mode="json", exclude={"tokens"})},
+            indent=2,
+        )
         if hasattr(response, "tokens"):
-            content = json.dumps(
-                {"response": response.model_dump(mode="json", exclude={"tokens"})},
-                indent=2,
-            )
             usage_dict = {f"{k}_tokens": v for k, v in response.tokens.items()}
             record_model_usage_with_inspect(
                 model_name=model,
