@@ -40,7 +40,7 @@ def query_cache(question: str):
 
 @solver
 def cache_solver(
-    path: str = "astabench/evals/sqa/solvers/debug/cache.json",
+    path: str = (Path(__file__).parent / "cache.json").as_posix(),
     split: str = "test",
     model: str = "openai/gpt-4.1",
 ) -> Solver:
