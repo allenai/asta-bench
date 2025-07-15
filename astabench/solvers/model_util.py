@@ -16,7 +16,7 @@ from inspect_ai.model._model import record_and_check_model_usage
 logger = logging.getLogger(__name__)
 
 # Regex to validate model names; allows names with or without provider prefix
-VALID_MODEL_NAME_REGEX = re.compile(r"^([^\s\/]+/)?[^\s\/]+$")
+VALID_MODEL_NAME_REGEX = re.compile(r"^([^\s\/]+/)*[^\s\/]+$")
 
 
 def normalize_model_name(model_name: str) -> str:
@@ -38,7 +38,13 @@ def normalize_model_name(model_name: str) -> str:
             f"Invalid model name cannot be normalized: '{model_name}'; must match regex '{VALID_MODEL_NAME_REGEX.pattern}'"
         )
 
-    # If already has provider prefix, return as is
+    # If already has provider prefix, return as-is
+    # Note: it will have a false-positive in cases like
+    #
+    # "meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    # which should map to: "together/meta-llama/Llama-4-Scout-17B-16E-Instruct"
+    #
+    # since it is hard to know if "meta-llama" could be a provider.
     if "/" in model_name:
         return model_name
 

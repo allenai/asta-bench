@@ -443,6 +443,8 @@ stages:
       split:
         - dev
         - test
+    params:
+      - scorer_model
     cmd: echo "Creating logs"; [[ "${item.model}" == */* ]] && mkdir -p ${item.split}_dvc_logs/debug_logs/task_sqa_solver_$(dirname "${item.model}");
       uv run scripts/create_debug_logs.py
       ${item.split}_dvc_logs/scored/

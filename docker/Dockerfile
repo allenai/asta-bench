@@ -38,9 +38,9 @@ RUN mkdir -p /astabench/astabench
 # Split up `sync` commands to avoid conflict errors; the conflicts are the
 # result of packages pinning more specific dependency versions than they
 # actually require
-RUN uv sync --extra litqa2
-RUN uv sync --inexact --extra sqa --extra super
-RUN uv sync --inexact --extra dev --extra inspect_evals --extra smolagents --extra azure
+# Note: all these extras are convenience for solvers/dev; they aren't needed to
+# run evals with basic agents like `generate`
+RUN uv sync --extra dev --extra smolagents --extra azure --extra sqa --extra super --extra datavoyager_solver
 
 COPY . /astabench
 
