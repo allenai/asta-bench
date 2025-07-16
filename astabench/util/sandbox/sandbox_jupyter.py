@@ -17,7 +17,7 @@ from inspect_ai.tool import (
 )
 from inspect_ai.util import sandbox
 
-from astabench.solvers.sandbox_util.static.sandbox_types import ChunkedResponse
+from astabench.util.sandbox.static.sandbox_types import ChunkedResponse
 
 logger = logging.getLogger(__name__)
 

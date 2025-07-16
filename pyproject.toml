@@ -19,7 +19,6 @@ dependencies = [
     "nltk",
     "tabulate",
     "click==8.1.8",
-    "nora_lib-impl~=1.1.0",
     "mcp~=1.10",
     "httpx~=0.28.1",
     "h2~=4.2.0",
@@ -40,36 +39,6 @@ dev = [
     "mypy==1.15",
     "pandas-stubs",
 ]
-azure = [
-    "azure-ai-inference"
-]
-sqa = [
-    "ai2-scholar-qa==0.6.15",
-]
-smolagents = [
-    "smolagents==1.17.0",
-]
-datavoyager_solver = [
-    "autogen-agentchat==0.4.4",
-    "autogen-ext[openai, diskcache, azure]==0.4.4",
-    "ipython~=8.18",
-    "matplotlib==3.10.0",
-    "nest_asyncio==1.6.0",
-    "pyyaml==6.0.2",
-    "termcolor==2.5.0",
-]
-futurehouse_solver = [
-    "futurehouse-client==0.3.19",
-]
-storm = [
-      "knowledge-storm @ git+https://github.com/gituser768/storm.git@dh-fix-youcom",
-]
-super = [
-      "websocket-client~=1.7.0",
-      "nbconvert~=7.16.1",
-      "ipython~=8.18.1",
-]
-
 [project.scripts]
 astabench = "astabench.cli:cli"
 inspect = "inspect_ai._cli.main:main"
@@ -115,7 +84,7 @@ ignore = [
 ]
 
 [tool.setuptools.package-data]
-"astabench" = ["config/*.yml", "evals/inspect_eval_wrappers/ds1000_splits.json", "solvers/sandbox_util/sandbox_compose.yaml", "solvers/sandbox_util/Dockerfile", "solvers/sandbox_util/*.txt", "solvers/datavoyager/dv_core/config/*.yaml", "solvers/code_agent/*.yaml", "evals/demo/code_execution/*.yaml"]
+"astabench" = ["config/*.yml", "evals/inspect_eval_wrappers/ds1000_splits.json", "util/sandbox/sandbox_compose.yaml", "solvers/sandbox_util/Dockerfile", "solvers/sandbox_util/*.txt", "solvers/datavoyager/dv_core/config/*.yaml", "solvers/code_agent/*.yaml", "evals/demo/code_execution/*.yaml"]
 
 [tool.uv.sources]
 knowledge-storm = { git = "https://github.com/gituser768/storm", branch = "dh-fix-youcom" }

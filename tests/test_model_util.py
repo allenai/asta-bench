@@ -5,7 +5,7 @@ from inspect_ai.log import ModelEvent, transcript
 from inspect_ai.model import ModelUsage
 from inspect_ai.model._model import init_model_usage, model_usage
 
-from astabench.solvers.model_util import (
+from astabench.util.model import (
     normalize_model_name,
     record_model_usage_with_inspect,
 )

@@ -1,1 +1,0 @@
-# Solvers test package
