@@ -9,6 +9,15 @@ DOCKER_SOCKET_PATH ?= $(if $(XDG_RUNTIME_DIR),$(XDG_RUNTIME_DIR)/docker.sock,/va
 
 ENV_ARGS :=
 
+# Docker target for running a shell
+TARGET := --target astabench-base
+# Name of solver to build Docker container for
+SOLVER :=
+ifdef SOLVER
+  TARGET := --target $(SOLVER)
+  ASTABENCH_TAG := $(ASTABENCH_TAG)-$(SOLVER)
+endif
+
 # Add each env var only if it's defined
 ifdef OPENAI_API_KEY
   ENV_ARGS += -e OPENAI_API_KEY
@@ -51,7 +60,7 @@ endif
 # Build the Docker image (primary target)
 # -----------------------------------------------------------------------------
 build-image:
-	docker build $(BUILD_QUIET) . --tag $(ASTABENCH_TAG) -f ./docker/Dockerfile
+	docker build $(BUILD_QUIET) $(TARGET) . --tag $(ASTABENCH_TAG) -f ./docker/Dockerfile
 
 # -----------------------------------------------------------------------------
 # Interactive shell in container

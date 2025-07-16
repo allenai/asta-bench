@@ -49,7 +49,7 @@ sqa = [
 smolagents = [
     "smolagents==1.17.0",
 ]
-datavoyager_solver = [
+datavoyager = [
     "autogen-agentchat==0.4.4",
     "autogen-ext[openai, diskcache, azure]==0.4.4",
     "ipython~=8.18",
@@ -58,7 +58,7 @@ datavoyager_solver = [
     "pyyaml==6.0.2",
     "termcolor==2.5.0",
 ]
-futurehouse_solver = [
+futurehouse = [
     "futurehouse-client==0.3.19",
 ]
 storm = [
@@ -87,7 +87,7 @@ include = [
 [tool.uv]
 conflicts = [
     [{extra = "sqa"}, {extra = "storm"}],
-    [{extra = "sqa"}, {extra = "futurehouse_solver"}],
+    [{extra = "sqa"}, {extra = "futurehouse"}],
     [{extra = "storm"}, {extra = "smolagents"}],
 ]
 override-dependencies = [
