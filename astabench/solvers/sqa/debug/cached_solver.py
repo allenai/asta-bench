@@ -42,7 +42,6 @@ def query_cache(question: str):
 def cache_solver(
     path: str = (Path(__file__).parent / "cache.json").as_posix(),
     split: str = "test",
-    model: str = "openai/gpt-4.1",
 ) -> Solver:
     load_os_dataset(sys_name_or_path=path, split=split)
 
@@ -54,11 +53,23 @@ def cache_solver(
             indent=2,
         )
         if hasattr(response, "tokens"):
-            usage_dict = {f"{k}_tokens": v for k, v in response.tokens.items()}
-            record_model_usage_with_inspect(
-                model_name=model,
-                usage=ModelUsage(**usage_dict),
-            )
+            if isinstance(response.tokens, List):
+                for usage_item in response.tokens:
+                    usage_dict = {f"{k}_tokens": v for k, v in usage_item.items() if k != "model"}
+                    record_model_usage_with_inspect(
+                        model_name=usage_item["model"],
+                        usage=ModelUsage(**usage_dict),
+                    )
+            elif isinstance(response.tokens, Dict):
+                usage_dict = {f"{k}_tokens": v for k, v in response.tokens.items() if k != "model"}
+                record_model_usage_with_inspect(
+                    model_name=response.tokens["model"],
+                    usage=ModelUsage(**usage_dict),
+                )
+            else:
+                raise TypeError(
+                    f"Received usage information in unexpected format: {type(response.tokens)}. Expected List or Dict."
+                )
         state.messages.append(ChatMessageAssistant(content=content))
         state.output.completion = content
         return state
