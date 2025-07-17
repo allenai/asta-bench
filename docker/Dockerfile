@@ -1,11 +1,11 @@
 # syntax=docker/dockerfile:1.4
-FROM python:3.11.3
+FROM python:3.11-slim
 
 LABEL name="astabench" \
     org="allenai" \
     description="Benchmark and experimentation framework for scientific agents"
 
-RUN apt-get update --allow-unauthenticated && apt-get install -y --allow-unauthenticated less git curl cmake clang
+RUN apt-get update && apt-get install -y less git curl cmake clang
 
 RUN curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-27.3.1.tgz -o docker.tgz \
     && tar xzvf docker.tgz --strip 1 -C /usr/local/bin docker/docker \
