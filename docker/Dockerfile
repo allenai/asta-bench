@@ -5,7 +5,7 @@ LABEL name="astabench" \
     org="allenai" \
     description="Benchmark and experimentation framework for scientific agents"
 
-RUN apt-get update && apt-get install -y less git curl cmake clang
+RUN apt-get update --allow-unauthenticated && apt-get install -y --allow-unauthenticated less git curl cmake clang
 
 RUN curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-27.3.1.tgz -o docker.tgz \
     && tar xzvf docker.tgz --strip 1 -C /usr/local/bin docker/docker \
@@ -16,7 +16,7 @@ RUN mkdir -p /usr/local/lib/docker/cli-plugins \
     && chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 
 # install uv
-RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates build-essential
+RUN apt-get update --allow-unauthenticated && apt-get install -y --allow-unauthenticated --no-install-recommends curl ca-certificates build-essential
 ADD https://astral.sh/uv/install.sh /uv-installer.sh
 RUN sh /uv-installer.sh && rm /uv-installer.sh
 ENV PATH="/root/.local/bin/:$PATH"
