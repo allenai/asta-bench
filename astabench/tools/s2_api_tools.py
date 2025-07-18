@@ -1,14 +1,16 @@
 import asyncio
 import functools
+import json
 import os
 from contextlib import asynccontextmanager
-from typing import Any
+from datetime import datetime
+from typing import Any, Collection
 
-from inspect_ai.tool import Tool, ToolDef, ToolSource
+from inspect_ai.tool import ContentText, Tool, ToolDef, ToolSource
 from inspect_ai.tool._mcp._mcp import MCPServerImpl
 from mcp.client.streamable_http import streamablehttp_client
 
-from .search import DEFAULT_RESULTS_LIMIT, METADATA_FIELDS
+from .search import DEFAULT_RESULTS_LIMIT, METADATA_FIELDS, datetime_before
 
 
 @asynccontextmanager
@@ -49,7 +51,115 @@ def make_s2api_toolsource(api_key: str | None = None) -> ToolSource:
     )
 
 
-async def make_asta_s2_mcp_tools(api_key: str | None = None) -> list[Tool]:
+def filter_citations(
+    citations: list[dict[str, Any]],
+    insertion_date: str,
+    remove_fields: Collection[str] | None = None,
+) -> list[dict[str, Any]]:
+    """Filter citations based on the insertion date (only keep older papers).
+    Note: the actual date returned is the *publication* date, which may be
+    different than the date the paper was inserted into the corpus, so this
+    could be slightly inaccurate (but we consider it a reasonable
+    approximation)."""
+    filter_date = datetime_before(insertion_date)
+    filtered_citations = []
+    for citation in citations:
+        # publicationDate is str but may be null, year is integer and is seemingly never null
+        if citation.get("publicationDate"):
+            pub_date = datetime.strptime(citation["publicationDate"], "%Y-%m-%d")
+        elif citation.get("year"):
+            # Take the latest possible date for the year to be conservative
+            pub_date = datetime(citation["year"] + 1, 1, 1)
+        else:
+            continue
+
+        # Compare publication date with the insertion date
+        if pub_date <= filter_date:
+            # Remove fields if specified
+            if remove_fields:
+                for field in remove_fields:
+                    citation.pop(field, None)
+            filtered_citations.append(citation)
+
+    return filtered_citations
+
+
+def _wrap_subfield_date_filter(
+    tool: ToolDef,
+    insertion_date: str,
+    fields_arg_name: str = "fields",
+) -> None:
+    """Wraps a tool to ensure that the 'citations' field in the response is
+    filtered based on the desired insertion date.  Modifies the given ToolDef
+    in place."""
+
+    origtool = tool.tool
+
+    @functools.wraps(origtool)
+    async def _req_wrapper(**kwargs):
+        is_requesting_citations = (
+            fields_arg_name in kwargs and "citations" in kwargs[fields_arg_name]
+        )
+        added_date_fields = set()
+        if is_requesting_citations:
+            # We need to make sure we have date information for filtering
+            if "citations.year" not in kwargs[fields_arg_name]:
+                kwargs[fields_arg_name] += ",citations.year"
+                added_date_fields.add("year")
+            if "citations.publicationDate" not in kwargs[fields_arg_name]:
+                kwargs[fields_arg_name] += ",citations.publicationDate"
+                added_date_fields.add("publicationDate")
+
+        raw_resp: list[ContentText] = await origtool(**kwargs)
+
+        if is_requesting_citations:
+            if len(raw_resp) != 1:
+                raise RuntimeError(
+                    f"Expected exactly one response from tool {tool.name}, got {len(raw_resp)}"
+                )
+
+            # raises JSONDecodeError
+            dict_resp = json.loads(raw_resp[0].text)
+
+            if isinstance(dict_resp, list):
+                # list of papers
+                for paper in dict_resp:
+                    if "citations" in paper:
+                        paper["citations"] = filter_citations(
+                            paper["citations"],
+                            insertion_date,
+                            remove_fields=added_date_fields,
+                        )
+                    else:
+                        raise KeyError(
+                            f"Expected 'citations' in paper, got {paper.keys()}"
+                        )
+            elif isinstance(dict_resp, dict):
+                # single paper
+                if "citations" in dict_resp:
+                    dict_resp["citations"] = filter_citations(
+                        dict_resp["citations"],
+                        insertion_date,
+                        remove_fields=added_date_fields,
+                    )
+                else:
+                    raise KeyError(
+                        f"Expected 'citations' in paper, got {dict_resp.keys()}"
+                    )
+            else:
+                raise TypeError(
+                    f"Response does not appear to be papers, got {type(dict_resp)}"
+                )
+
+            raw_resp[0].text = json.dumps(dict_resp, indent=2)
+        return raw_resp
+
+    tool.tool = _req_wrapper
+
+
+async def make_asta_s2_mcp_tools(
+    api_key: str | None = None, insertion_date: str | None = None
+) -> list[Tool]:
     """S2 MCP tools, with some arg defaults and descriptions overridden to
     better fit the Asta ecosystem where
     - we already have a snippet_search
@@ -60,11 +170,14 @@ async def make_asta_s2_mcp_tools(api_key: str | None = None) -> list[Tool]:
     AUTHOR_FIELDS = "authorId,name,paperCount"
 
     # We already have separate paper_search and snippet_search tools
-    exclude_tools = {"snippet_search", "search_papers_by_relevance"}
+    # exclude_tools = {"snippet_search", "search_papers_by_relevance"}
+    exclude_tools = set()
 
     # Remaining tools should be included; we define this list just to help
     # confirm that there are no surprises with unknown tools
     include_tools = {
+        "snippet_search",
+        "search_papers_by_relevance",
         "get_paper",
         "get_paper_batch",
         "get_citations",
@@ -76,6 +189,10 @@ async def make_asta_s2_mcp_tools(api_key: str | None = None) -> list[Tool]:
     s2_tools = await make_s2api_toolsource(api_key).tools()
 
     def make_override_wrapper(td: ToolDef, arg_defaults: dict[str, Any]):
+        for arg_name, default_value in arg_defaults.items():
+            td.parameters.properties[arg_name].default = default_value
+            td.parameters.properties[arg_name].required = False
+
         origtool = td.tool
 
         @functools.wraps(origtool)
@@ -97,29 +214,38 @@ async def make_asta_s2_mcp_tools(api_key: str | None = None) -> list[Tool]:
 
         found_tools.add(td.name)
 
+        if td.name == "search_authors_by_name":
+            # For author search, we want to default to some useful fields
+            td.tool = make_override_wrapper(
+                td,
+                arg_defaults={"fields": AUTHOR_FIELDS},
+            )
+
         if "fields" in td.parameters.properties:
-            if td.name == "search_authors_by_name":
-                # For author search, we want to default to some useful fields
-                td.parameters.properties["fields"].default = AUTHOR_FIELDS
-                td.tool = make_override_wrapper(
+            if insertion_date is not None:
+                _wrap_subfield_date_filter(
                     td,
-                    arg_defaults={"fields": AUTHOR_FIELDS},
+                    insertion_date=insertion_date,
+                    fields_arg_name="fields",
                 )
-            else:
-                td.parameters.properties["fields"].default = PAPER_FIELDS
-                td.tool = make_override_wrapper(
-                    td,
-                    arg_defaults={"fields": PAPER_FIELDS},
-                )
+            td.tool = make_override_wrapper(
+                td,
+                arg_defaults={"fields": PAPER_FIELDS},
+            )
         elif "paper_fields" in td.parameters.properties:
-            td.parameters.properties["paper_fields"].default = PAPER_FIELDS
+            if insertion_date is not None:
+                # TODO: Might not work since author_papers could be different than other paper searches
+                _wrap_subfield_date_filter(
+                    td,
+                    insertion_date=insertion_date,
+                    fields_arg_name="paper_fields",
+                )
             td.tool = make_override_wrapper(
                 td,
                 arg_defaults={"paper_fields": PAPER_FIELDS},
             )
 
         if "limit" in td.parameters.properties:
-            td.parameters.properties["limit"].default = DEFAULT_RESULTS_LIMIT
             td.tool = make_override_wrapper(
                 td,
                 arg_defaults={"limit": DEFAULT_RESULTS_LIMIT},
