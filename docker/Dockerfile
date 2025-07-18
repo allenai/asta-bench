@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.4
-FROM python:3.11.3
+FROM python:3.11-slim
 
 LABEL name="astabench" \
     org="allenai" \
@@ -16,7 +16,7 @@ RUN mkdir -p /usr/local/lib/docker/cli-plugins \
     && chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 
 # install uv
-RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates build-essential
+RUN apt-get update --allow-unauthenticated && apt-get install -y --allow-unauthenticated --no-install-recommends curl ca-certificates build-essential
 ADD https://astral.sh/uv/install.sh /uv-installer.sh
 RUN sh /uv-installer.sh && rm /uv-installer.sh
 ENV PATH="/root/.local/bin/:$PATH"
