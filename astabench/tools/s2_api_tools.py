@@ -68,8 +68,9 @@ def filter_citations(
         if citation.get("publicationDate"):
             pub_date = datetime.strptime(citation["publicationDate"], "%Y-%m-%d")
         elif citation.get("year"):
-            # Take the latest possible date for the year to be conservative
-            pub_date = datetime(citation["year"] + 1, 1, 1)
+            # When only year is available, use the last day of that year
+            # This ensures papers from year Y are included when filtering for dates in year Y+1
+            pub_date = datetime(citation["year"], 12, 31)
         else:
             continue
 
@@ -89,38 +90,42 @@ def _filter_response_citations(
 ) -> None:
     """Filter the 'citations' field in the response based on the insertion date.  Modifies the response in-place."""
 
+    # Note: we make a lot of assumptions about format here, because we expect
+    # that the api gives a ToolError if anything goes wrong that would cause
+    # the response to not be a valid paper.
+
     # s2mcp response is a list of ContentText, with one ContentText json for each paper
     for resp in raw_resp:
         # raises JSONDecodeError
-        dict_resp = json.loads(resp.text)
+        parsed_resp = json.loads(resp.text)
+
+        # Some APIs wrap everything in a "data" field (TODO: Should we unpack
+        # in that case, similar to how the old search tools work?)
+        dict_resp = parsed_resp
+        if isinstance(parsed_resp, dict) and "data" in parsed_resp:
+            dict_resp = parsed_resp["data"]
 
         if isinstance(dict_resp, list):
             # list of papers
             for paper in dict_resp:
-                if "citations" in paper:
-                    paper["citations"] = filter_citations(
-                        paper["citations"],
-                        insertion_date,
-                        remove_fields=added_date_fields,
-                    )
-                else:
-                    raise KeyError(f"Expected 'citations' in paper, got {paper.keys()}")
-        elif isinstance(dict_resp, dict):
-            # single paper
-            if "citations" in dict_resp:
-                dict_resp["citations"] = filter_citations(
-                    dict_resp["citations"],
+                paper["citations"] = filter_citations(
+                    paper["citations"],
                     insertion_date,
                     remove_fields=added_date_fields,
                 )
-            else:
-                raise KeyError(f"Expected 'citations' in paper, got {dict_resp.keys()}")
+        elif isinstance(dict_resp, dict):
+            # single paper
+            dict_resp["citations"] = filter_citations(
+                dict_resp["citations"],
+                insertion_date,
+                remove_fields=added_date_fields,
+            )
         else:
             raise TypeError(
                 f"Response does not appear to be papers, got {type(dict_resp)}"
             )
 
-        resp.text = json.dumps(dict_resp, indent=2)
+        resp.text = json.dumps(parsed_resp, indent=2)
 
 
 def _adjust_fields_arg_for_citations_filter(
@@ -244,8 +249,7 @@ async def make_asta_s2_mcp_tools(
                 td,
                 arg_defaults={"fields": AUTHOR_FIELDS},
             )
-
-        if "fields" in td.parameters.properties:
+        elif "fields" in td.parameters.properties:
             if insertion_date is not None:
                 _wrap_subfield_date_filter(
                     td,
