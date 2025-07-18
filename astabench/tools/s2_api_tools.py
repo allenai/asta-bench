@@ -1,5 +1,6 @@
 import asyncio
 import functools
+import inspect
 import json
 import os
 from contextlib import asynccontextmanager
@@ -10,7 +11,12 @@ from inspect_ai.tool import ContentText, Tool, ToolDef, ToolSource
 from inspect_ai.tool._mcp._mcp import MCPServerImpl
 from mcp.client.streamable_http import streamablehttp_client
 
-from .search import DEFAULT_RESULTS_LIMIT, METADATA_FIELDS, datetime_before
+from .search import (
+    DEFAULT_RESULTS_LIMIT,
+    METADATA_FIELDS,
+    _format_publication_before,
+    datetime_before,
+)
 
 
 @asynccontextmanager
@@ -217,10 +223,25 @@ async def make_asta_s2_mcp_tools(
 
     s2_tools = await make_s2api_toolsource(api_key).tools()
 
-    def make_override_wrapper(td: ToolDef, arg_defaults: dict[str, Any]):
+    def make_override_wrapper(
+        td: ToolDef,
+        arg_defaults: dict[str, Any] | None = None,
+        arg_overrides: dict[str, Any] | None = None,
+    ):
+        if not arg_defaults:
+            arg_defaults = {}
+
+        if not arg_overrides:
+            arg_overrides = {}
+
+        # arg_defaults just sets defaults (that the caller can override)
         for arg_name, default_value in arg_defaults.items():
             td.parameters.properties[arg_name].default = default_value
             td.parameters.properties[arg_name].required = False
+
+        # arg_overrides sets the value and removes the parameter so the caller can't use it
+        for arg_name, forced_value in arg_overrides.items():
+            del td.parameters.properties[arg_name]
 
         origtool = td.tool
 
@@ -228,7 +249,21 @@ async def make_asta_s2_mcp_tools(
         async def wrapper(*args, **kwargs):
             for arg_name, default_value in arg_defaults.items():
                 kwargs.setdefault(arg_name, default_value)
+
+            # Overwrite for forced values
+            kwargs.update(arg_overrides)
+
             return await origtool(*args, **kwargs)
+
+        # Remove forced values from signature so that the LLM doesn't see them
+        original_signature = inspect.signature(origtool)
+        wrapper.__signature__ = original_signature.replace(
+            parameters=[
+                p
+                for p in original_signature.parameters.values()
+                if p.name not in arg_overrides
+            ]
+        )
 
         return wrapper
 
@@ -278,6 +313,18 @@ async def make_asta_s2_mcp_tools(
                 td,
                 arg_defaults={"limit": DEFAULT_RESULTS_LIMIT},
             )
+
+        # Add publication date filtering for tools that support it
+        if (
+            insertion_date is not None
+            and "publication_date_range" in td.parameters.properties
+        ):
+            publication_date_filter = _format_publication_before(insertion_date)
+            td.tool = make_override_wrapper(
+                td,
+                arg_overrides={"publication_date_range": publication_date_filter},
+            )
+
         new_tools.append(td.as_tool())
 
     if len(include_tools - found_tools) > 0:

@@ -941,6 +941,112 @@ async def test_make_asta_s2_mcp_tools_real_api_call():
     assert "paperCount" in author
 
 
+@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.asyncio
+async def test_make_asta_s2_mcp_tools_publication_date_filtering():
+    """Test that publication_date_range filtering works on the server side."""
+
+    # Search for a specific paper we know from the example data
+    # "A Point of View on New Education for Smart Citizenship"
+    search_title = "A Point of View on New Education for Smart Citizenship"
+    expected_paper_id = "94cc7bf86535561b42c72f266be8eb2702d043ec"
+
+    # First, get tools without date filtering
+    tools_no_filter = await make_asta_s2_mcp_tools()
+    tools_dict_no_filter = {ToolDef(tool).name: tool for tool in tools_no_filter}
+
+    # Search for the specific paper without date filtering using search_papers_by_relevance
+    result_no_filter = await tools_dict_no_filter["search_papers_by_relevance"](
+        keyword=search_title,
+        fields="title,year,publicationDate,paperId,corpusId",
+        limit=10,
+    )
+
+    data_no_filter = parse_tool_result(result_no_filter)
+    papers_no_filter = data_no_filter["data"]
+
+    # Find the target paper in unfiltered results
+    target_paper = None
+    for paper in papers_no_filter:
+        if (
+            paper.get("paperId") == expected_paper_id
+            or search_title.lower() in paper.get("title", "").lower()
+        ):
+            target_paper = paper
+            break
+
+    # Skip test if we can't find the paper
+    if not target_paper:
+        logger.warning(f"Could not find paper '{search_title}' in search results")
+        return
+
+    target_year = target_paper.get("year")
+    target_corpus_id = target_paper.get("corpusId")
+    logger.info(
+        f"Found target paper: {target_paper.get('title')} (year: {target_year}, corpusId: {target_corpus_id})"
+    )
+
+    # Now test with date filtering set to exclude this paper
+    # If the paper is from year X, set filter to year X-1
+    if target_year:
+        filter_year = target_year - 1
+        tools_with_filter = await make_asta_s2_mcp_tools(
+            insertion_date=f"{filter_year}-12-31"
+        )
+        tools_dict_with_filter = {
+            ToolDef(tool).name: tool for tool in tools_with_filter
+        }
+
+        # Same search but with date filtering
+        result_with_filter = await tools_dict_with_filter["search_papers_by_relevance"](
+            keyword=search_title,
+            fields="title,year,publicationDate,paperId,corpusId",
+            limit=10,
+        )
+
+        data_with_filter = parse_tool_result(result_with_filter)
+
+        # Handle different response structures for filtered results too
+        if isinstance(data_with_filter, dict) and "data" in data_with_filter:
+            papers_with_filter = data_with_filter["data"]
+        elif isinstance(data_with_filter, list):
+            papers_with_filter = data_with_filter
+        else:
+            logger.error(f"Unexpected filtered response structure: {data_with_filter}")
+            return
+
+        # Verify the target paper is NOT in the filtered results
+        target_found_in_filtered = False
+        for paper in papers_with_filter:
+            if (
+                paper.get("paperId") == target_paper.get("paperId")
+                or paper.get("corpusId") == target_corpus_id
+            ):
+                target_found_in_filtered = True
+                break
+
+        assert (
+            not target_found_in_filtered
+        ), f"Paper from {target_year} should be filtered out with {filter_year} cutoff"
+
+        # Also verify that all remaining papers are from the filter year or earlier
+        for paper in papers_with_filter:
+            if paper.get("year"):
+                assert (
+                    paper["year"] <= filter_year
+                ), f"Paper from {paper['year']} should be filtered out"
+
+        logger.info(
+            f"Test passed: Paper from {target_year} successfully filtered out with {filter_year} cutoff"
+        )
+        logger.info(f"Papers without filter: {len(papers_no_filter)}")
+        logger.info(f"Papers with {filter_year} filter: {len(papers_with_filter)}")
+    else:
+        logger.warning(
+            f"Target paper has no year information, skipping date filtering test"
+        )
+
+
 @pytest.mark.asyncio
 async def test_make_asta_s2_mcp_tools_e2e_single_paper(get_paper_resp1):
     """End-to-end test of make_asta_s2_mcp_tools with field modification verification."""
@@ -1050,8 +1156,9 @@ async def test_make_asta_s2_mcp_tools_e2e_search_response(paper_search_resp2):
     """End-to-end test with a search response that has data field."""
 
     captured_fields = None
+    captured_pub_date_range = None
 
-    # Create override function that captures the fields parameter
+    # Create override function that captures the fields and publication_date_range parameters
     async def mock_search_impl(
         keyword: str,
         fields: str = None,
@@ -1059,8 +1166,9 @@ async def test_make_asta_s2_mcp_tools_e2e_search_response(paper_search_resp2):
         publication_date_range: str = None,
         venues: str = None,
     ):
-        nonlocal captured_fields
+        nonlocal captured_fields, captured_pub_date_range
         captured_fields = fields
+        captured_pub_date_range = publication_date_range
         return paper_search_resp2
 
     # Create mock toolsource with our override
@@ -1089,6 +1197,9 @@ async def test_make_asta_s2_mcp_tools_e2e_search_response(paper_search_resp2):
             == "title,citations,citations.year,citations.publicationDate"
         )
 
+        # Verify publication_date_range was automatically set based on insertion_date
+        assert captured_pub_date_range == ":2021-12-31"
+
         # Verify the response was filtered correctly
         data = json.loads(result[0].text)
         assert "data" in data
@@ -1107,3 +1218,166 @@ async def test_make_asta_s2_mcp_tools_e2e_search_response(paper_search_resp2):
             for citation in paper["citations"]:
                 assert "year" in citation
                 assert "publicationDate" in citation
+
+
+@pytest.mark.asyncio
+async def test_make_asta_s2_mcp_tools_e2e_get_citations():
+    """Test get_citations with publication_date_range filtering."""
+
+    captured_pub_date_range = None
+
+    async def mock_get_citations_impl(
+        paper_id: str,
+        fields: str = None,
+        limit: int = None,
+        publication_date_range: str = None,
+    ):
+        nonlocal captured_pub_date_range
+        captured_pub_date_range = publication_date_range
+        return [ContentText(type="text", text='{"data": [], "total": 0}')]
+
+    mock_toolsource = get_mock_s2api_toolsource(
+        {"get_citations": mock_get_citations_impl}
+    )
+
+    with patch(
+        "astabench.tools.s2_api_tools.make_s2api_toolsource",
+        return_value=mock_toolsource,
+    ):
+        tools = await make_asta_s2_mcp_tools(insertion_date="2022-01-01")
+        tools_dict = {ToolDef(t).name: t for t in tools}
+
+        await tools_dict["get_citations"](paper_id="test123", fields="title,year")
+
+        # Verify publication_date_range was automatically set
+        assert captured_pub_date_range == ":2021-12-31"
+
+        # Verify parameter is hidden from agent
+        assert (
+            "publication_date_range"
+            not in ToolDef(tools_dict["get_citations"]).parameters.properties
+        )
+
+
+@pytest.mark.asyncio
+async def test_make_asta_s2_mcp_tools_e2e_search_paper_by_title():
+    """Test search_paper_by_title with publication_date_range filtering."""
+
+    captured_pub_date_range = None
+
+    async def mock_search_by_title_impl(
+        title: str,
+        fields: str = None,
+        publication_date_range: str = None,
+        venues: str = None,
+    ):
+        nonlocal captured_pub_date_range
+        captured_pub_date_range = publication_date_range
+        return [ContentText(type="text", text='{"data": []}')]
+
+    mock_toolsource = get_mock_s2api_toolsource(
+        {"search_paper_by_title": mock_search_by_title_impl}
+    )
+
+    with patch(
+        "astabench.tools.s2_api_tools.make_s2api_toolsource",
+        return_value=mock_toolsource,
+    ):
+        tools = await make_asta_s2_mcp_tools(insertion_date="2020-06-15")
+        tools_dict = {ToolDef(t).name: t for t in tools}
+
+        await tools_dict["search_paper_by_title"](
+            title="Test Paper Title", fields="title,abstract"
+        )
+
+        # Verify publication_date_range was automatically set
+        assert captured_pub_date_range == ":2020-06-14"
+
+        # Verify parameter is hidden from agent
+        assert (
+            "publication_date_range"
+            not in ToolDef(tools_dict["search_paper_by_title"]).parameters.properties
+        )
+
+
+@pytest.mark.asyncio
+async def test_make_asta_s2_mcp_tools_e2e_snippet_search():
+    """Test snippet_search with publication_date_range filtering."""
+
+    captured_pub_date_range = None
+
+    async def mock_snippet_search_impl(
+        query: str,
+        limit: int = None,
+        publication_date_range: str = None,
+        venues: str = None,
+        paper_ids: str = None,
+    ):
+        nonlocal captured_pub_date_range
+        captured_pub_date_range = publication_date_range
+        return [ContentText(type="text", text='{"data": []}')]
+
+    mock_toolsource = get_mock_s2api_toolsource(
+        {"snippet_search": mock_snippet_search_impl}
+    )
+
+    with patch(
+        "astabench.tools.s2_api_tools.make_s2api_toolsource",
+        return_value=mock_toolsource,
+    ):
+        tools = await make_asta_s2_mcp_tools(insertion_date="2023")
+        tools_dict = {ToolDef(t).name: t for t in tools}
+
+        await tools_dict["snippet_search"](query="machine learning", limit=10)
+
+        # Verify publication_date_range was automatically set
+        assert captured_pub_date_range == ":2022-12-31"
+
+        # Verify parameter is hidden from agent
+        assert (
+            "publication_date_range"
+            not in ToolDef(tools_dict["snippet_search"]).parameters.properties
+        )
+
+
+@pytest.mark.asyncio
+async def test_make_asta_s2_mcp_tools_publication_date_parameter_visibility():
+    """Test that publication_date_range parameter is visible when no insertion_date is provided."""
+
+    mock_toolsource = get_mock_s2api_toolsource({})
+
+    with patch(
+        "astabench.tools.s2_api_tools.make_s2api_toolsource",
+        return_value=mock_toolsource,
+    ):
+        # Create tools WITHOUT insertion_date
+        tools_without_date = await make_asta_s2_mcp_tools()
+        tools_dict_without_date = {ToolDef(t).name: t for t in tools_without_date}
+
+        # Verify publication_date_range parameter is still visible
+        assert (
+            "publication_date_range"
+            in ToolDef(tools_dict_without_date["get_citations"]).parameters.properties
+        )
+        assert (
+            "publication_date_range"
+            in ToolDef(
+                tools_dict_without_date["search_papers_by_relevance"]
+            ).parameters.properties
+        )
+
+        # Create tools WITH insertion_date
+        tools_with_date = await make_asta_s2_mcp_tools(insertion_date="2022-01-01")
+        tools_dict_with_date = {ToolDef(t).name: t for t in tools_with_date}
+
+        # Verify publication_date_range parameter is hidden
+        assert (
+            "publication_date_range"
+            not in ToolDef(tools_dict_with_date["get_citations"]).parameters.properties
+        )
+        assert (
+            "publication_date_range"
+            not in ToolDef(
+                tools_dict_with_date["search_papers_by_relevance"]
+            ).parameters.properties
+        )
