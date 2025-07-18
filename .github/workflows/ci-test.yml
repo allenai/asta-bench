@@ -62,6 +62,7 @@ jobs:
           context: .
           file: ./docker/Dockerfile
           tags: astabench:latest
+          target: astabench-base
           cache-from: type=gha,scope=astabench  # Use GitHub Actions cache
           cache-to: type=gha,mode=max,scope=astabench
           load: true  # Make the image available for later steps

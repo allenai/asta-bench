@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.4
-FROM python:3.11.3
+FROM python:3.11.3 AS astabench-base
 
 LABEL name="astabench" \
     org="allenai" \
@@ -27,21 +27,34 @@ ENV UV_LINK_MODE=copy
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 ENV PATH="/root/.cargo/bin:$PATH"
 
-# Only copy pyproject.toml; dependencies can be installed this way, but the docker
-# cache won't depend on any other files
+# Install common dependencies
 WORKDIR /astabench
 COPY pyproject.toml /astabench/
-
-# Create a basic directory structure for the package
 RUN mkdir -p /astabench/astabench
-
-RUN uv sync --extra litqa2
-RUN uv sync --inexact --extra sqa --extra super
-RUN uv sync --inexact --extra dev --extra inspect_evals --extra anthropic --extra smolagents --extra e2e_discovery --extra azure
-
-COPY . /astabench
-
-# Get astabench registry synced, but don't uninstall the stuff from before
-RUN uv sync --inexact
+RUN uv sync --extra dev
 
 COPY docker/bashrc /root/.bashrc
+COPY . /astabench
+
+
+# Images for running specific solvers
+FROM astabench-base AS react
+RUN solvers/react/setup.sh
+
+FROM astabench-base AS smolagents
+RUN solvers/smolagents/setup.sh
+
+FROM astabench-base AS storm
+RUN solvers/storm/setup.sh
+
+FROM astabench-base AS sqa
+RUN solvers/sqa/setup.sh
+
+FROM astabench-base AS super
+RUN solvers/super/setup.sh
+
+FROM astabench-base AS datavoyager
+RUN solvers/datavoyager/setup.sh
+
+FROM astabench-base AS futurehouse
+RUN solvers/futurehouse/setup.sh

@@ -1,4 +1,4 @@
-from typing import Any
+from typing import Any, Dict
 
 from pydantic import BaseModel, Field
 
@@ -64,4 +64,13 @@ class SQAResponseWithTable(BaseModel):
     sections: list[SQASectionWithTable] = Field(
         default_factory=list,
         description="List of report sections with optional tables.",
+    )
+
+
+class SQAResponseWithUsage(SQAResponseWithTable):
+    """Top-level report object with usage information."""
+
+    tokens: Dict[str, int] | None = Field(
+        None,
+        description="Usage information, e.g., token counts for LLM calls.",
     )
