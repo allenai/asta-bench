@@ -84,6 +84,68 @@ def filter_citations(
     return filtered_citations
 
 
+def _filter_response_citations(
+    raw_resp: list[ContentText], insertion_date: str, added_date_fields: Collection[str]
+) -> None:
+    """Filter the 'citations' field in the response based on the insertion date.  Modifies the response in-place."""
+
+    # s2mcp response is a list of ContentText, with one ContentText json for each paper
+    for resp in raw_resp:
+        # raises JSONDecodeError
+        dict_resp = json.loads(resp.text)
+
+        if isinstance(dict_resp, list):
+            # list of papers
+            for paper in dict_resp:
+                if "citations" in paper:
+                    paper["citations"] = filter_citations(
+                        paper["citations"],
+                        insertion_date,
+                        remove_fields=added_date_fields,
+                    )
+                else:
+                    raise KeyError(f"Expected 'citations' in paper, got {paper.keys()}")
+        elif isinstance(dict_resp, dict):
+            # single paper
+            if "citations" in dict_resp:
+                dict_resp["citations"] = filter_citations(
+                    dict_resp["citations"],
+                    insertion_date,
+                    remove_fields=added_date_fields,
+                )
+            else:
+                raise KeyError(f"Expected 'citations' in paper, got {dict_resp.keys()}")
+        else:
+            raise TypeError(
+                f"Response does not appear to be papers, got {type(dict_resp)}"
+            )
+
+        resp.text = json.dumps(dict_resp, indent=2)
+
+
+def _adjust_fields_arg_for_citations_filter(
+    original_fields: str,
+) -> tuple[str, set[str]]:
+    """Adjusts the fields argument to ensure that the necessary date fields for
+    filtering citations are included.
+
+    Returns:
+        A tuple containing the adjusted fields string and a set of added date
+        fields (so that they can be removed from the response later).
+    """
+    new_fields = original_fields
+    added_date_fields = set()
+    if "citations.year" not in original_fields:
+        new_fields += ",citations.year"
+        added_date_fields.add("year")
+
+    if "citations.publicationDate" not in original_fields:
+        new_fields += ",citations.publicationDate"
+        added_date_fields.add("publicationDate")
+
+    return new_fields, added_date_fields
+
+
 def _wrap_subfield_date_filter(
     tool: ToolDef,
     insertion_date: str,
@@ -97,61 +159,23 @@ def _wrap_subfield_date_filter(
 
     @functools.wraps(origtool)
     async def _req_wrapper(**kwargs):
+        # citations isn't a default field, so if it isn't requested we don't
+        # have to do anything
         is_requesting_citations = (
             fields_arg_name in kwargs and "citations" in kwargs[fields_arg_name]
         )
-        added_date_fields = set()
         if is_requesting_citations:
-            # We need to make sure we have date information for filtering
-            if "citations.year" not in kwargs[fields_arg_name]:
-                kwargs[fields_arg_name] += ",citations.year"
-                added_date_fields.add("year")
-            if "citations.publicationDate" not in kwargs[fields_arg_name]:
-                kwargs[fields_arg_name] += ",citations.publicationDate"
-                added_date_fields.add("publicationDate")
+            kwargs[fields_arg_name], added_date_fields = (
+                _adjust_fields_arg_for_citations_filter(kwargs[fields_arg_name])
+            )
 
         raw_resp: list[ContentText] = await origtool(**kwargs)
 
         if is_requesting_citations:
-            if len(raw_resp) != 1:
-                raise RuntimeError(
-                    f"Expected exactly one response from tool {tool.name}, got {len(raw_resp)}"
-                )
+            _filter_response_citations(
+                raw_resp, insertion_date, added_date_fields=added_date_fields
+            )
 
-            # raises JSONDecodeError
-            dict_resp = json.loads(raw_resp[0].text)
-
-            if isinstance(dict_resp, list):
-                # list of papers
-                for paper in dict_resp:
-                    if "citations" in paper:
-                        paper["citations"] = filter_citations(
-                            paper["citations"],
-                            insertion_date,
-                            remove_fields=added_date_fields,
-                        )
-                    else:
-                        raise KeyError(
-                            f"Expected 'citations' in paper, got {paper.keys()}"
-                        )
-            elif isinstance(dict_resp, dict):
-                # single paper
-                if "citations" in dict_resp:
-                    dict_resp["citations"] = filter_citations(
-                        dict_resp["citations"],
-                        insertion_date,
-                        remove_fields=added_date_fields,
-                    )
-                else:
-                    raise KeyError(
-                        f"Expected 'citations' in paper, got {dict_resp.keys()}"
-                    )
-            else:
-                raise TypeError(
-                    f"Response does not appear to be papers, got {type(dict_resp)}"
-                )
-
-            raw_resp[0].text = json.dumps(dict_resp, indent=2)
         return raw_resp
 
     tool.tool = _req_wrapper
