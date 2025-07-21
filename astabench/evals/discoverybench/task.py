@@ -125,8 +125,8 @@ def score_discoverybench() -> Scorer:
             gen_hypo = output.hypothesis
             gen_workflow = output.workflow
         else:
-            gen_hypo = output  # string fallback
-            gen_workflow = ""  # or empty string
+            gen_hypo = output
+            gen_workflow = ""
 
         eval_result = await run_eval_gold_vs_gen_NL_hypo_workflow(
             query=state.metadata["query"],
