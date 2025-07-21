@@ -118,7 +118,7 @@ def score_discoverybench() -> Scorer:
                 answer=state.output.completion,
                 explanation=f"{msg}: {str(e)}",
             )
-        
+
         if isinstance(output, DiscoveryBenchOutput):
             gen_hypo = output.hypothesis
             gen_workflow = output.workflow
