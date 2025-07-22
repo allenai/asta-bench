@@ -21,6 +21,34 @@ from astabench.tools import calculator
 logger = logging.getLogger(__name__)
 
 
+@tool(name="weird_signature_tool")
+def weird_signature_tool():
+    async def weird_signature_tool_impl(
+        query: str,
+        no_type_no_default,
+        limit: int | None = None,
+        debug: bool = False,
+        many_types: str | int | dict | None = "hello, world",
+        no_type=None,
+    ) -> str:
+        """
+        A tool with a weird signature.
+
+        Args:
+            query: The search query
+            no_type_no_default: A parameter with no type and no default value
+            limit: Maximum number of results
+            debug: Enable debug mode
+            many_types: A parameter that can be multiple types, with a default value
+            no_type: A parameter with no type and a default value of None
+        """
+        return (
+            f"{query}, {no_type_no_default}, {limit}, {debug}, {many_types}, {no_type}"
+        )
+
+    return weird_signature_tool_impl
+
+
 @solver
 def custom_code_solver() -> Solver:
     """This is a solver for debugging that just executes manually-specified
@@ -28,18 +56,22 @@ def custom_code_solver() -> Solver:
 
     code = dedent(
         """
-        from mcp_tools import calculator, final_answer
+        import inspect
+        from mcp_tools import calculator, final_answer, weird_signature_tool
+
+        # Make sure we can call weird_signature_tool without default args
+        weird_signature_tool(query="test", no_type_no_default="no default")
 
         res = calculator(op="+", num1=1, num2=2)
         print("Calculator result:", res)
-        final_answer({"answer": res})
+        final_answer({"answer": res, "weird_signature": str(inspect.signature(weird_signature_tool)).replace(" ", "")})
         """
     )
 
     async def solve(state: TaskState, generate: Generate) -> TaskState:
         manager = SandboxToolManager(
             sandbox(),
-            tools=[calculator()],
+            tools=[calculator(), weird_signature_tool()],
             include_final_answer_tool=True,
             mcp_use_fifos=False,
         )
@@ -110,6 +142,10 @@ def sandbox_tool_test_task():
             target=json.dumps(
                 {
                     "answer": 3,
+                    # Ignore whitespace
+                    "weird_signature": "(query: str, no_type_no_default, limit: int | None = None, debug: bool = False, many_types: str | int | dict | None = 'hello, world', no_type = None)".replace(
+                        " ", ""
+                    ),
                 }
             ),
         )
@@ -146,12 +182,12 @@ def test_local_sandbox_tools():
     assert eval_log is not None, "Evaluation log is None"
     assert eval_log.results is not None, "Evaluation results are None"
 
-    metrics = {}
-    for score in eval_log.results.scores:
-        for metric in score.metrics.values():
-            metric_name = f"{score.name}/{metric.name}"
-            metrics[metric_name] = metric.value
-    assert metrics["check_result/accuracy"] == 1.0, "Accuracy is not perfect"
+    for sample in eval_log.samples:
+        for name, score in sample.scores.items():
+            if name == "check_result":
+                assert (
+                    score.value == 1.0
+                ), f"Score for {name} is not 1.0: {score.explanation}"
 
 
 class TestConstructToolPySignature:
