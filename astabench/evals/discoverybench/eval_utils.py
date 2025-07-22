@@ -107,7 +107,7 @@ async def ask_dimension_question(
     ]
     if dimension == "var":
         dimension_question = """\
-        Question: For both HypoA and HypoB, count all the different variables found in the hypothese. \
+        Question: For both HypoA and HypoB, count all the different variables found in the hypotheses. \
         Return your answer as a JSON object in the following format:
         ```json
         {{
