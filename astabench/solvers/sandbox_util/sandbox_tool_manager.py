@@ -491,6 +491,73 @@ class SandboxToolManager:
             await self.sandbox.write_file("sandbox_client.py", f.read())
         await self.sandbox.write_file("mcp_tools.py", self.make_sandbox_mcp_init_code())
 
+    def _construct_tool_py_signature(self, tool: ToolDef) -> tuple[str, str]:
+        """Given a ToolDef, returns a tuple of:
+        - A signature suitable for injection into a generated py `def
+            function(signature)`
+        - A string suitable for injection into the body of `function`, which
+             constructs a dictionary of arg assignments (with each string name
+             being mapped to the value of the corresponding parameter)`.
+        """
+        signature_parts = []
+        arg_assigns = ""
+
+        # Get required parameters
+        required_params = tool.parameters.required or []
+
+        for pname, param in tool.parameters.properties.items():
+            # Check if parameter is required
+            is_required = pname in required_params
+
+            # Build parameter signature with type hints and defaults
+            param_sig = pname
+
+            # Add type annotation if available and simple enough
+            type_map = {
+                "string": "str",
+                "integer": "int",
+                "number": "float",
+                "boolean": "bool",
+                "array": "list",
+                "object": "dict",
+                "null": "None",
+            }
+
+            if param.type and not param.anyOf:
+                type_name = type_map.get(param.type, "Any")
+                param_sig += f": {type_name}"
+            elif param.anyOf:
+                # Handle common anyOf patterns
+                types = []
+
+                for schema in param.anyOf:
+                    types.append(type_map.get(schema.type, "Any"))
+
+                if types:
+                    type_hint = " | ".join(types)
+                    param_sig += f": {type_hint}"
+
+            # Add default value for non-required parameters
+            if not is_required:
+                if param.default is None:
+                    param_sig += " = None"
+                elif isinstance(param.default, str):
+                    param_sig += f" = {repr(param.default)}"
+                elif isinstance(param.default, (int, float, bool)):
+                    param_sig += f" = {param.default}"
+                elif isinstance(param.default, (list, dict)):
+                    param_sig += f" = {json.dumps(param.default)}"
+                else:
+                    # If no default specified or other types, use None
+                    param_sig += " = None"
+
+            signature_parts.append(param_sig)
+            arg_assigns += f'"{pname}": {pname}, '
+
+        signature = ", ".join(signature_parts)
+
+        return signature, f"{{ {arg_assigns} }}"
+
     def make_sandbox_mcp_init_code(
         self,
     ):
@@ -509,6 +576,7 @@ class SandboxToolManager:
                     import asyncio
                     from contextlib import AsyncExitStack
                     from sandbox_client import file_rpc_client, mcp_session, run_async_thread
+                    from typing import Any
 
                     """
         )
@@ -520,20 +588,15 @@ class SandboxToolManager:
             # efficiency or allow multithreaded code in the sandbox, we could
             # have a long-lived process within the sandbox that manages the
             # connection, but that seems like overkill right now.
-            signature = ""
-            arg_assigns = ""
-            for pname, param in tool.parameters.properties.items():
-                # Not adding type signatures because unions are complicated;
-                # this shouldn't be the primary way for the model to determine
-                # types anyway
-                signature += f"{pname}, "
-                arg_assigns += f'"{pname}": {pname}, '
+
+            signature, arg_assigns = self._construct_tool_py_signature(tool)
+
             code += dedent(
                 f"""
                     async def async_{tool.name}({signature}):
                         async with mcp_session(input_file={repr(self.mcp_filenames[0])}, output_file={repr(self.mcp_filenames[1])}) as session:
                             try:
-                                result = await session.call_tool("{tool.name}", {{ {arg_assigns} }})
+                                result = await session.call_tool("{tool.name}", {arg_assigns})
                                 if result.isError:
                                     return "Error: " + result.content[0].text
                                 return json.loads(result.content[0].text)
