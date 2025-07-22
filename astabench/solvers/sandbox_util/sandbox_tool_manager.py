@@ -524,14 +524,21 @@ class SandboxToolManager:
             }
 
             if param.type and not param.anyOf:
-                type_name = type_map.get(param.type, "Any")
-                param_sig += f": {type_name}"
+                if param.type in type_map:
+                    param_sig += f": {type_map[param.type]}"
+                else:
+                    raise ValueError(f"Unexpected parameter type: {param.type}")
             elif param.anyOf:
                 # Handle common anyOf patterns
                 types = []
 
                 for schema in param.anyOf:
-                    types.append(type_map.get(schema.type, "Any"))
+                    if schema.type in type_map:
+                        types.append(type_map[schema.type])
+                    else:
+                        raise ValueError(
+                            f"Unexpected parameter type in anyOf: {schema.type}"
+                        )
 
                 if types:
                     type_hint = " | ".join(types)
