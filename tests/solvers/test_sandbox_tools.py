@@ -307,8 +307,8 @@ class TestConstructToolPySignature:
         manager = SandboxToolManager(None, tools=[])
         signature, arg_assigns = manager._construct_tool_py_signature(mock_tool_def)
 
-        assert 'tags: list = ["tag1", "tag2"]' in signature
-        assert 'options: dict = {"key": "value"}' in signature
+        assert "tags: list = ['tag1', 'tag2']" in signature
+        assert "options: dict = {'key': 'value'}" in signature
 
     def test_string_default_escaping(self):
         """Test that string defaults are properly escaped."""

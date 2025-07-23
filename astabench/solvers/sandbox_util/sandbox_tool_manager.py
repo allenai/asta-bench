@@ -502,17 +502,11 @@ class SandboxToolManager:
         signature_parts = []
         arg_assigns = ""
 
-        # Get required parameters
         required_params = tool.parameters.required or []
 
         for pname, param in tool.parameters.properties.items():
-            # Check if parameter is required
-            is_required = pname in required_params
-
-            # Build parameter signature with type hints and defaults
             param_sig = pname
 
-            # Add type annotation if available and simple enough
             type_map = {
                 "string": "str",
                 "integer": "int",
@@ -529,7 +523,6 @@ class SandboxToolManager:
                 else:
                     raise ValueError(f"Unexpected parameter type: {param.type}")
             elif param.anyOf:
-                # Handle common anyOf patterns
                 types = []
 
                 for schema in param.anyOf:
@@ -544,19 +537,17 @@ class SandboxToolManager:
                     type_hint = " | ".join(types)
                     param_sig += f": {type_hint}"
 
-            # Add default value for non-required parameters
-            if not is_required:
-                if param.default is None:
-                    param_sig += " = None"
-                elif isinstance(param.default, str):
-                    param_sig += f" = {repr(param.default)}"
-                elif isinstance(param.default, (int, float, bool)):
-                    param_sig += f" = {param.default}"
-                elif isinstance(param.default, (list, dict)):
-                    param_sig += f" = {json.dumps(param.default)}"
-                else:
-                    # If no default specified or other types, use None
-                    param_sig += " = None"
+            if pname not in required_params:
+                try:
+                    # Do the loads/dumps to ensure we have a valid JSON type;
+                    # ensures `repr` will produce valid Python (can't use JSON
+                    # directly since it `null`/`true`/`false` aren't Python
+                    # types)
+                    param_sig += f" = {repr(json.loads(json.dumps(param.default)))}"
+                except (TypeError, json.JSONDecodeError) as e:
+                    raise ValueError(
+                        f"Unsupported default value type for parameter {pname}: {type(param.default)}"
+                    ) from e
 
             signature_parts.append(param_sig)
             arg_assigns += f'"{pname}": {pname}, '
@@ -588,6 +579,13 @@ class SandboxToolManager:
                     """
         )
         for tool in self.tools:
+
+            # We'll use the actual signature for the tool in the sandbox; we
+            # could use `*args/**kwargs`, but it's useful to give something
+            # more specific in case the agent tries to debug its tool usage by
+            # inspecting the function signature
+            signature, arg_assigns = self._construct_tool_py_signature(tool)
+
             # We end up starting a new session for each tool call, which is
             # inefficient but shouldn't be a major issue (given that tools
             # would normally be called by a round-trip to an llm, this is much
@@ -595,9 +593,6 @@ class SandboxToolManager:
             # efficiency or allow multithreaded code in the sandbox, we could
             # have a long-lived process within the sandbox that manages the
             # connection, but that seems like overkill right now.
-
-            signature, arg_assigns = self._construct_tool_py_signature(tool)
-
             code += dedent(
                 f"""
                     async def async_{tool.name}({signature}):
