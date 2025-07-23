@@ -140,35 +140,31 @@ stages:
       outs:
         - ${item}_dvc_logs/solver_outputs/task_sqa_solver_storm.eval
 
-  solve_formatted:
+  solve_scispace:
     matrix:
-      model:
-        - name: scispace
-          solver_args: ""
       split:
         - dev
         - test
     # run the solver then rename the resulting file to have a nice name:
     cmd:
-      INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_${item.model.name}
-      uv run --extra sqa
+      INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_scispace
+      uv run
       inspect eval astabench/evals/sqa/task.py@sqa --display plain
       --log-dir ${item.split}_dvc_logs/solver_outputs/
-      --solver astabench/solvers/sqa/debug/cached_solver.py@cache_solver
+      --solver astabench/solvers/sqa/scispace/scispace.py@formatted_solver
       -T scorer_model=${scorer_model}
       -T split=${item.split}
-      -S path=allenai/${item.model.name}_sqa_response_formatted ${item.model.solver_args}
       --limit=${limit}
       --retry-on-error=10
       --log-shared
       --no-score;
-      mv "$(ls -t ${item.split}_dvc_logs/solver_outputs/*${item.model.name}.eval 2>/dev/null | head -n1)" "${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model.name}.eval"
+      mv "$(ls -t ${item.split}_dvc_logs/solver_outputs/*scispace.eval 2>/dev/null | head -n1)" "${item.split}_dvc_logs/solver_outputs/task_sqa_solver_scispace.eval"
     params:
       - limit
       - scorer_model
       - sqa_solver_version
     outs:
-      - ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model.name}.eval
+      - ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_scispace.eval
 
   solve_openscholar:
     foreach:
