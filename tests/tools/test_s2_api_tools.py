@@ -12,8 +12,8 @@ from astabench.tools.s2_api_tools import (
     _adjust_fields_arg_for_citations_filter,
     _filter_response_citations,
     _remove_arg_description_block,
+    async_make_asta_s2_mcp_tools,
     filter_citations,
-    make_asta_s2_mcp_tools,
     make_s2api_toolsource,
 )
 
@@ -894,7 +894,7 @@ def test_filter_response_citations_error_handling():
 
 
 ######################
-# Integration tests for make_asta_s2_mcp_tools
+# Integration tests for async_make_asta_s2_mcp_tools
 ######################
 
 
@@ -963,8 +963,8 @@ def test_wrap_subfield_date_filter_functionality():
 @pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
 @pytest.mark.asyncio
 async def test_make_asta_s2_mcp_tools_real_api_call():
-    """Test make_asta_s2_mcp_tools with a real API call to verify integration."""
-    tools = await make_asta_s2_mcp_tools()
+    """Test async_make_asta_s2_mcp_tools with a real API call to verify integration."""
+    tools = await async_make_asta_s2_mcp_tools()
     tools_dict = {ToolDef(tool).name: tool for tool in tools}
 
     # Test search_authors_by_name with default fields
@@ -992,7 +992,7 @@ async def test_make_asta_s2_mcp_tools_publication_date_filtering():
     expected_paper_id = "94cc7bf86535561b42c72f266be8eb2702d043ec"
 
     # First, get tools without date filtering
-    tools_no_filter = await make_asta_s2_mcp_tools()
+    tools_no_filter = await async_make_asta_s2_mcp_tools()
     tools_dict_no_filter = {ToolDef(tool).name: tool for tool in tools_no_filter}
 
     # Search for the specific paper without date filtering using search_papers_by_relevance
@@ -1030,7 +1030,7 @@ async def test_make_asta_s2_mcp_tools_publication_date_filtering():
     # If the paper is from year X, set filter to year X-1
     if target_year:
         filter_year = target_year - 1
-        tools_with_filter = await make_asta_s2_mcp_tools(
+        tools_with_filter = await async_make_asta_s2_mcp_tools(
             insertion_date=f"{filter_year}-12-31"
         )
         tools_dict_with_filter = {
@@ -1089,7 +1089,7 @@ async def test_make_asta_s2_mcp_tools_publication_date_filtering():
 
 @pytest.mark.asyncio
 async def test_make_asta_s2_mcp_tools_e2e_single_paper(get_paper_resp1):
-    """End-to-end test of make_asta_s2_mcp_tools with field modification verification."""
+    """End-to-end test of async_make_asta_s2_mcp_tools with field modification verification."""
 
     captured_fields = None
 
@@ -1105,7 +1105,7 @@ async def test_make_asta_s2_mcp_tools_e2e_single_paper(get_paper_resp1):
         "astabench.tools.s2_api_tools.make_s2api_toolsource",
         return_value=mock_toolsource,
     ):
-        tools = await make_asta_s2_mcp_tools(insertion_date="2022-01-01")
+        tools = await async_make_asta_s2_mcp_tools(insertion_date="2022-01-01")
         tools_dict = {ToolDef(t).name: t for t in tools}
 
         # Call with citations but without date fields
@@ -1145,7 +1145,7 @@ async def test_make_asta_s2_mcp_tools_e2e_single_paper(get_paper_resp1):
 
 @pytest.mark.asyncio
 async def test_make_asta_s2_mcp_tools_e2e_batch_papers(get_paper_batch_resp1):
-    """End-to-end test of make_asta_s2_mcp_tools with field modification verification."""
+    """End-to-end test of async_make_asta_s2_mcp_tools with field modification verification."""
 
     captured_fields = None
 
@@ -1165,7 +1165,7 @@ async def test_make_asta_s2_mcp_tools_e2e_batch_papers(get_paper_batch_resp1):
         return_value=mock_toolsource,
     ):
         # Create Asta tools with date filtering
-        tools = await make_asta_s2_mcp_tools(insertion_date="2020-01-01")
+        tools = await async_make_asta_s2_mcp_tools(insertion_date="2020-01-01")
         tools_dict = {ToolDef(t).name: t for t in tools}
 
         # Include citations.year in the request to test partial date field scenario
@@ -1232,7 +1232,7 @@ async def test_make_asta_s2_mcp_tools_e2e_search_response(paper_search_resp2):
         return_value=mock_toolsource,
     ):
         # Create Asta tools with date filtering
-        tools = await make_asta_s2_mcp_tools(insertion_date="2022-01-01")
+        tools = await async_make_asta_s2_mcp_tools(insertion_date="2022-01-01")
         tools_dict = {ToolDef(t).name: t for t in tools}
 
         # Call it requesting citations with both date fields already included
@@ -1295,7 +1295,7 @@ async def test_make_asta_s2_mcp_tools_e2e_get_citations():
         "astabench.tools.s2_api_tools.make_s2api_toolsource",
         return_value=mock_toolsource,
     ):
-        tools = await make_asta_s2_mcp_tools(insertion_date="2022-01-01")
+        tools = await async_make_asta_s2_mcp_tools(insertion_date="2022-01-01")
         tools_dict = {ToolDef(t).name: t for t in tools}
 
         await tools_dict["get_citations"](paper_id="test123", fields="title,year")
@@ -1334,7 +1334,7 @@ async def test_make_asta_s2_mcp_tools_e2e_search_paper_by_title():
         "astabench.tools.s2_api_tools.make_s2api_toolsource",
         return_value=mock_toolsource,
     ):
-        tools = await make_asta_s2_mcp_tools(insertion_date="2020-06-15")
+        tools = await async_make_asta_s2_mcp_tools(insertion_date="2020-06-15")
         tools_dict = {ToolDef(t).name: t for t in tools}
 
         await tools_dict["search_paper_by_title"](
@@ -1376,7 +1376,7 @@ async def test_make_asta_s2_mcp_tools_e2e_snippet_search():
         "astabench.tools.s2_api_tools.make_s2api_toolsource",
         return_value=mock_toolsource,
     ):
-        tools = await make_asta_s2_mcp_tools(insertion_date="2023")
+        tools = await async_make_asta_s2_mcp_tools(insertion_date="2023")
         tools_dict = {ToolDef(t).name: t for t in tools}
 
         await tools_dict["snippet_search"](query="machine learning", limit=10)
@@ -1674,7 +1674,7 @@ async def test_make_asta_s2_mcp_tools_publication_date_parameter_visibility():
         return_value=mock_toolsource,
     ):
         # Create tools WITHOUT insertion_date
-        tools_without_date = await make_asta_s2_mcp_tools()
+        tools_without_date = await async_make_asta_s2_mcp_tools()
         tools_dict_without_date = {ToolDef(t).name: t for t in tools_without_date}
 
         # Verify publication_date_range parameter is still visible
@@ -1690,7 +1690,9 @@ async def test_make_asta_s2_mcp_tools_publication_date_parameter_visibility():
         )
 
         # Create tools WITH insertion_date
-        tools_with_date = await make_asta_s2_mcp_tools(insertion_date="2022-01-01")
+        tools_with_date = await async_make_asta_s2_mcp_tools(
+            insertion_date="2022-01-01"
+        )
         tools_dict_with_date = {ToolDef(t).name: t for t in tools_with_date}
 
         # Verify publication_date_range parameter is hidden
