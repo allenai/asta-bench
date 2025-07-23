@@ -196,7 +196,6 @@ class TestConstructToolPySignature:
     def test_simple_required_parameter(self):
         """Test a tool with a simple required string parameter."""
 
-        @tool
         def simple_tool(query: str) -> str:
             """
             A simple tool.
@@ -217,7 +216,6 @@ class TestConstructToolPySignature:
     def test_optional_parameter_with_default(self):
         """Test a tool with optional parameters that have defaults."""
 
-        @tool
         def tool_with_defaults(query: str, limit: int = 20, debug: bool = False) -> str:
             """
             A tool with default values.
@@ -305,7 +303,7 @@ class TestConstructToolPySignature:
         )
 
         manager = SandboxToolManager(None, tools=[])
-        signature, arg_assigns = manager._construct_tool_py_signature(mock_tool_def)
+        signature, _ = manager._construct_tool_py_signature(mock_tool_def)
 
         assert "tags: list = ['tag1', 'tag2']" in signature
         assert "options: dict = {'key': 'value'}" in signature
@@ -323,14 +321,13 @@ class TestConstructToolPySignature:
         )
 
         manager = SandboxToolManager(None, tools=[])
-        signature, arg_assigns = manager._construct_tool_py_signature(mock_tool_def)
+        signature, _ = manager._construct_tool_py_signature(mock_tool_def)
 
         assert signature == "message: str = \"Hello 'world'\""
 
     def test_multiple_parameters_order(self):
         """Test that multiple parameters maintain their order."""
 
-        @tool
         def multi_param_tool(a: str, b: int, c: bool = True, d: float = 3.14) -> str:
             """
             A tool with multiple parameters.
@@ -346,7 +343,7 @@ class TestConstructToolPySignature:
         tool_def = ToolDef(multi_param_tool)
         manager = SandboxToolManager(None, tools=[])
 
-        signature, arg_assigns = manager._construct_tool_py_signature(tool_def)
+        signature, _ = manager._construct_tool_py_signature(tool_def)
 
         # Check that parameters appear in order
         param_order = signature.split(", ")
