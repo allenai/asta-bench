@@ -261,7 +261,6 @@ def score_citation(
                         citation.get("title")
                         and any(
                             re.sub(r"[^a-zA-Z]", "", citation["title"]).lower()
-                            == s
                             in s
                             for s in snippets_alpha
                         )
