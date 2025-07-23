@@ -17,6 +17,7 @@ stages:
         - claude-3.7
         - gemini-2.5-pro
         - claude-4.0
+        - o3_high
       split:
         - dev
         - test
@@ -333,6 +334,8 @@ stages:
           is_retrieverless: false
         - name: sqa_gemini-2.5-pro
           is_retrieverless: false
+        - name: sqa_o3_high
+          is_retrieverless: false
         # strong baselines:
         - name: elicit
           is_retrieverless: false
@@ -389,6 +392,7 @@ stages:
         - sqa_claude-3.7
         - sqa_claude-4.0
         - sqa_gemini-2.5-pro
+        - sqa_o3_high
         - elicit
         - storm
         - scispace
@@ -425,6 +429,7 @@ stages:
         - sqa_claude-3.7
         - sqa_claude-4.0
         - sqa_gemini-2.5-pro
+        - sqa_o3_high
         - elicit
         - storm
         - scispace
@@ -459,6 +464,7 @@ stages:
         - sqa_claude-3.7
         - sqa_claude-4.0
         - sqa_gemini-2.5-pro
+        - sqa_o3_high
         - elicit
         - storm
         - scispace
