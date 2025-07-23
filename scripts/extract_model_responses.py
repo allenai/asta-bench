@@ -19,8 +19,7 @@ def main():
         if not s.output.completion:
             print(f"No completion for sample: {s.metadata['case_id']}")
             continue
-        answer = json.loads(s.output.completion)
-        answer = answer.get("response", answer)
+        answer = json.loads(s.output.completion)["response"]
         df["answer"] = format_report(answer)
         df["response"] = s.output.completion
         dfs.append(df)
