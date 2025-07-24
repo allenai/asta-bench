@@ -8,6 +8,7 @@ from inspect_ai.model import ChatMessageAssistant, ModelUsage
 from inspect_ai.solver import Generate, Solver, TaskState, solver
 
 from astabench.solvers.model_util import record_model_usage_with_inspect
+from astabench.evals.sqa.rubric import extract_json_from_response
 
 if TYPE_CHECKING:
     from futurehouse_client import FutureHouseClient, JobNames
@@ -19,25 +20,22 @@ def format_response_with_snippets(res_elaborate: Dict[str, Any]) -> str:
     raw_response = res_elaborate["raw_answer"]
     citations = {cite["id"]: cite for cite in res_elaborate["contexts"]}
     used_cites = res_elaborate.get("used_contexts", [])
-    formatted_ans_snippets = [
-        {"text": p, "citations": []}
-        for p in raw_response.strip().split("\n\n")
-        if p.strip()
-    ]
-    for sec in formatted_ans_snippets:
-        for cid in used_cites:
-            if cid in sec["text"]:
-                citation = citations[cid]
-                cite_meta = citation.get("text", {}).get("doc", {})
-                sec["citations"].append(
-                    {
-                        "id": citation["id"],
-                        "snippets": citation.get("snippets", []),
-                        "title": cite_meta.get("title"),
-                        "metadata": cite_meta,
-                    }
-                )
-    return json.dumps({"sections": formatted_ans_snippets})
+    cites_list = []
+
+    for cid in used_cites:
+        citation = citations[cid]
+        cite_meta = citation.get("text", {}).get("doc", {})
+        title = cite_meta.get("title", "")
+        snippets = citation.get("snippets", [])
+        if not snippets and not title:
+            continue
+        snippets = "...".join(snippets) if snippets else ""
+        cite_str = f"{title if title else 'UNKNOWN'}\n{snippets}".strip()
+        cites_list.append(
+            f'{cid} - {cite_str}'
+        )
+    final_response = f"{raw_response}\n\n##References\n\n" + "\n".join(cites_list)
+    return final_response
 
 
 async def call_futurehouse_agent(
