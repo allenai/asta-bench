@@ -2905,8 +2905,8 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_fhouse_crow.eval
       hash: md5
-      md5: c46c37260737c0dc447ea49d194a1646
-      size: 16755260
+      md5: d3c2190ee23a647aed113be022cf072a
+      size: 17219690
   score_all_solvers@model6-test:
     cmd: echo "Scoring";[[ "anthropic/claude-3-5-sonnet-20240620" == */* ]] && mkdir
       -p test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620;
@@ -2966,8 +2966,8 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval
       hash: md5
-      md5: 973247fa294552e3807747362ef43b53
-      size: 76892171
+      md5: 27f869df37299d6895881c95fb5a38d9
+      size: 78478412
   score_all_solvers@model9-test:
     cmd: echo "Scoring";[[ "sqa_gemini-2.5-pro" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro;
       cp test_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-2.5-pro.eval test_dvc_logs/scored/task_sqa_solver_sqa_gemini-2.5-pro.eval;
