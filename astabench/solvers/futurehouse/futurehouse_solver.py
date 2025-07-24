@@ -55,9 +55,7 @@ def format_response_with_snippets(res_elaborate: Dict[str, Any]) -> str:
             continue
         snippets = "...".join(snippets) if snippets else ""
         cite_str = f"{title if title else 'UNKNOWN'}\n{snippets}".strip()
-        cites_list.append(
-            f'{cid} - {cite_str}'
-        )
+        cites_list.append(f"{cid} - {cite_str}")
     final_response = f"{raw_response}\n\n##References\n\n" + "\n".join(cites_list)
     return final_response
 
@@ -202,7 +200,7 @@ def futurehouse_solver(
                 fh_client,
                 max_wait_time=max_wait_time,
                 polling_interval=polling_interval,
-                extract_snippets=extract_snippets
+                extract_snippets=extract_snippets,
             )
             # Set the response and append to messages
             state.output.completion = answer
