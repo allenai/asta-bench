@@ -114,6 +114,18 @@ ignore = [
     "F541",  # f-string is missing placeholders
 ]
 
+[tool.pylint.messages_control]
+disable = [
+    "line-too-long",                 # C0301 - handled by black
+    "too-many-instance-attributes",  # R0902 - design choice
+    "too-many-arguments",            # R0913 - design choice
+    "too-many-locals",               # R0914 - design choice
+    "too-many-branches",             # R0912 - design choice
+    "too-many-statements",           # R0915 - design choice
+    "too-few-public-methods",        # R0903 - design choice
+    "no-else-return",                # R1705 - style preference
+]
+
 [tool.setuptools.package-data]
 "astabench" = ["config/*.yml", "evals/inspect_eval_wrappers/ds1000_splits.json", "solvers/sandbox_util/sandbox_compose.yaml", "solvers/sandbox_util/Dockerfile", "solvers/sandbox_util/*.txt", "solvers/datavoyager/dv_core/config/*.yaml", "solvers/code_agent/*.yaml", "evals/demo/code_execution/*.yaml"]
 
