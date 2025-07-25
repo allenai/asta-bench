@@ -124,6 +124,7 @@ disable = [
     "too-many-statements",           # R0915 - design choice
     "too-few-public-methods",        # R0903 - design choice
     "no-else-return",                # R1705 - style preference
+    "no-else-raise",                 # R1720 - style preference
 ]
 
 [tool.setuptools.package-data]

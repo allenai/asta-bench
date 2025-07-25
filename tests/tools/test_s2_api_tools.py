@@ -1,5 +1,6 @@
 # pylint: disable=missing-module-docstring,missing-function-docstring,unused-argument,logging-fstring-interpolation
 
+import copy
 import json
 import logging
 import os
@@ -417,7 +418,7 @@ def get_paper_resp1():
         ContentText(
             internal=None,
             type="text",
-            text='{\n  "paperId": "94cc7bf86535561b42c72f266be8eb2702d043ec",\n  "title": "A Point of View on New Education for Smart Citizenship",\n  "citations": [\n    {\n      "paperId": "2140f7313fbdbcc50861ae82f3cb4799b25f6467",\n      "year": 2025,\n      "publicationDate": "2025-05-02"\n    },\n    {\n      "paperId": "5ca59e4f44eef7ad6b03e02f1c2fade92c4d9bbb",\n      "year": 2023,\n      "publicationDate": "2023-01-01"\n    },\n    {\n      "paperId": "b140b012aba625c754318c8b3acfbabb84da9d9a",\n      "year": 2020,\n      "publicationDate": "2020-11-11"\n    },\n    {\n      "paperId": "5624b3534d2a63ce63ecce9df15386cbc5ba88fa",\n      "year": 2020,\n      "publicationDate": "2020-01-29"\n    },\n    {\n      "paperId": "fb138a903cdd2c7abf710591381ee5040ae64914",\n      "year": 2019,\n      "publicationDate": "2019-06-01"\n    },\n    {\n      "paperId": "bb07ba7d309ca59e6b2ce56ed1d65f91da9e3c90",\n      "year": 2019,\n      "publicationDate": "2019-06-01"\n    },\n    {\n      "paperId": "a10e930d2af14063ef10a57ce0bd71a697fa754b",\n      "year": 2018,\n      "publicationDate": "2018-06-30"\n    },\n    {\n      "paperId": "0889073da9a1e39fc69b5d7782b2c2e9d5dd5494",\n      "year": 2018,\n      "publicationDate": "2018-06-01"\n    },\n    {\n      "paperId": "dad7145d251fafcc202b19c45e0209730f79bc64",\n      "year": 2018,\n      "publicationDate": "2018-03-10"\n    },\n    {\n      "paperId": "d6d4c3134f31ddf2f77378a17636cade7d7ac176",\n      "year": 2018,\n      "publicationDate": null\n    },\n    {\n      "paperId": "e61209959834e94ee972602d7f2c85d9fc9ded51",\n      "year": 2018,\n      "publicationDate": null\n    }\n  ]\n}',
+            text='{\n  "paperId": "94cc7bf86535561b42c72f266be8eb2702d043ec",\n  "year": 2017,\n  "publicationDate": "2017-02-01",\n  "title": "A Point of View on New Education for Smart Citizenship",\n  "citations": [\n    {\n      "paperId": "2140f7313fbdbcc50861ae82f3cb4799b25f6467",\n      "year": 2025,\n      "publicationDate": "2025-05-02"\n    },\n    {\n      "paperId": "5ca59e4f44eef7ad6b03e02f1c2fade92c4d9bbb",\n      "year": 2023,\n      "publicationDate": "2023-01-01"\n    },\n    {\n      "paperId": "b140b012aba625c754318c8b3acfbabb84da9d9a",\n      "year": 2020,\n      "publicationDate": "2020-11-11"\n    },\n    {\n      "paperId": "5624b3534d2a63ce63ecce9df15386cbc5ba88fa",\n      "year": 2020,\n      "publicationDate": "2020-01-29"\n    },\n    {\n      "paperId": "fb138a903cdd2c7abf710591381ee5040ae64914",\n      "year": 2019,\n      "publicationDate": "2019-06-01"\n    },\n    {\n      "paperId": "bb07ba7d309ca59e6b2ce56ed1d65f91da9e3c90",\n      "year": 2019,\n      "publicationDate": "2019-06-01"\n    },\n    {\n      "paperId": "a10e930d2af14063ef10a57ce0bd71a697fa754b",\n      "year": 2018,\n      "publicationDate": "2018-06-30"\n    },\n    {\n      "paperId": "0889073da9a1e39fc69b5d7782b2c2e9d5dd5494",\n      "year": 2018,\n      "publicationDate": "2018-06-01"\n    },\n    {\n      "paperId": "dad7145d251fafcc202b19c45e0209730f79bc64",\n      "year": 2018,\n      "publicationDate": "2018-03-10"\n    },\n    {\n      "paperId": "d6d4c3134f31ddf2f77378a17636cade7d7ac176",\n      "year": 2018,\n      "publicationDate": null\n    },\n    {\n      "paperId": "e61209959834e94ee972602d7f2c85d9fc9ded51",\n      "year": 2018,\n      "publicationDate": null\n    }\n  ]\n}',
             refusal=None,
             citations=None,
         )
@@ -431,14 +432,14 @@ def get_paper_batch_resp1():
         ContentText(
             internal=None,
             type="text",
-            text='{\n  "paperId": "4dbfd40fc0e0f2491bf596dc25c0eeb59a1b30c2",\n  "corpusId": 456789,\n  "title": "Solid bolus swallowing in the radiologic evaluation of dysphagia.",\n  "citations": [\n    {\n      "paperId": "eb363e7a2070721e148d4ca409c4e9a3ed30669f",\n      "year": 2020,\n      "publicationDate": "2020-12-16"\n    },\n    {\n      "paperId": "1e659c304e80351b9fcf6923ce1969a50af582ad",\n      "year": 2016,\n      "publicationDate": "2016-09-01"\n    },\n    {\n      "paperId": "54577a3314f3b46795e2a3646b48805485c18ce6",\n      "year": 2016,\n      "publicationDate": "2016-08-23"\n    },\n    {\n      "paperId": "4d8213a4ba238f33946bb8e7f4758947621f1f60",\n      "year": 2016,\n      "publicationDate": "2016-03-01"\n    },\n    {\n      "paperId": "01ba2c53fe9d09708a697b083a575200ecef3a0f",\n      "year": 2015,\n      "publicationDate": "2015-03-01"\n    },\n    {\n      "paperId": "4aca7081c40a28183276c5b8e10fd045e6762641",\n      "year": 2014,\n      "publicationDate": "2014-04-01"\n    },\n    {\n      "paperId": "65688ae8b41cd3d91ce58016be86b5fe72280207",\n      "year": 2007,\n      "publicationDate": "2007-01-01"\n    },\n    {\n      "paperId": "7086f2bcaf3aa8ffd2761eec4fc62a41e82a6ffd",\n      "year": 2000,\n      "publicationDate": "2000-01-01"\n    },\n    {\n      "paperId": "eba357d7568d1c3d7036e894b62d0d7167e0248d",\n      "year": 1995,\n      "publicationDate": "1995-04-01"\n    },\n    {\n      "paperId": "d77b9ce24786110f6516f21656376645095ae15d",\n      "year": 2004,\n      "publicationDate": null\n    },\n    {\n      "paperId": "1cc033b8dc8f5165f4078e3f1043dda7d6280622",\n      "year": 1998,\n      "publicationDate": null\n    },\n    {\n      "paperId": "ffde462b1c54293e8c7ce70427826c9915a99792",\n      "year": 1995,\n      "publicationDate": null\n    },\n    {\n      "paperId": "05cb9a7f30de180694c3079b2805d8564812ee61",\n      "year": null,\n      "publicationDate": null\n    }\n  ]\n}',
+            text='{\n  "paperId": "4dbfd40fc0e0f2491bf596dc25c0eeb59a1b30c2",\n  "year": 1993,\n  "publicationDate": null,\n  "corpusId": 456789,\n  "title": "Solid bolus swallowing in the radiologic evaluation of dysphagia.",\n  "citations": [\n    {\n      "paperId": "eb363e7a2070721e148d4ca409c4e9a3ed30669f",\n      "year": 2020,\n      "publicationDate": "2020-12-16"\n    },\n    {\n      "paperId": "1e659c304e80351b9fcf6923ce1969a50af582ad",\n      "year": 2016,\n      "publicationDate": "2016-09-01"\n    },\n    {\n      "paperId": "54577a3314f3b46795e2a3646b48805485c18ce6",\n      "year": 2016,\n      "publicationDate": "2016-08-23"\n    },\n    {\n      "paperId": "4d8213a4ba238f33946bb8e7f4758947621f1f60",\n      "year": 2016,\n      "publicationDate": "2016-03-01"\n    },\n    {\n      "paperId": "01ba2c53fe9d09708a697b083a575200ecef3a0f",\n      "year": 2015,\n      "publicationDate": "2015-03-01"\n    },\n    {\n      "paperId": "4aca7081c40a28183276c5b8e10fd045e6762641",\n      "year": 2014,\n      "publicationDate": "2014-04-01"\n    },\n    {\n      "paperId": "65688ae8b41cd3d91ce58016be86b5fe72280207",\n      "year": 2007,\n      "publicationDate": "2007-01-01"\n    },\n    {\n      "paperId": "7086f2bcaf3aa8ffd2761eec4fc62a41e82a6ffd",\n      "year": 2000,\n      "publicationDate": "2000-01-01"\n    },\n    {\n      "paperId": "eba357d7568d1c3d7036e894b62d0d7167e0248d",\n      "year": 1995,\n      "publicationDate": "1995-04-01"\n    },\n    {\n      "paperId": "d77b9ce24786110f6516f21656376645095ae15d",\n      "year": 2004,\n      "publicationDate": null\n    },\n    {\n      "paperId": "1cc033b8dc8f5165f4078e3f1043dda7d6280622",\n      "year": 1998,\n      "publicationDate": null\n    },\n    {\n      "paperId": "ffde462b1c54293e8c7ce70427826c9915a99792",\n      "year": 1995,\n      "publicationDate": null\n    },\n    {\n      "paperId": "05cb9a7f30de180694c3079b2805d8564812ee61",\n      "year": null,\n      "publicationDate": null\n    }\n  ]\n}',
             refusal=None,
             citations=None,
         ),
         ContentText(
             internal=None,
             type="text",
-            text='{\n  "paperId": "66e63d6bddf2a9f3d571f155e1dffe6e435c025d",\n  "corpusId": 987654,\n  "title": "[Treatment of acute full-thickness chondral defects with high molecular weight hyaluronic acid; an experimental model].",\n  "citations": [\n    {\n      "paperId": "3be543b856029766d762b00b154442c0cdaa504e",\n      "year": 2024,\n      "publicationDate": "2024-07-25"\n    },\n    {\n      "paperId": "7bbd97e2d27aaa81655b3aac1f1d25b75fc6ac41",\n      "year": 2024,\n      "publicationDate": "2024-03-01"\n    },\n    {\n      "paperId": "af46c2eeaeaa68d14531648a2d6fd7fc70b0cdd3",\n      "year": 2023,\n      "publicationDate": "2023-04-01"\n    },\n    {\n      "paperId": "5c0986cd292cb155f0a9829c28f0017a1729b7f5",\n      "year": 2019,\n      "publicationDate": "2019-05-01"\n    },\n    {\n      "paperId": "36da1685699910f242428d5787f7f437795381d8",\n      "year": 2017,\n      "publicationDate": "2017-05-01"\n    },\n    {\n      "paperId": "e62bd4dcdfff7bb857b4d93f9a2feb120d1e7923",\n      "year": 2015,\n      "publicationDate": "2015-02-04"\n    },\n    {\n      "paperId": "c8563f6b400e96e7e7ec702bbbb2390d5501d027",\n      "year": 2018,\n      "publicationDate": null\n    },\n    {\n      "paperId": "ea27197cad5dd337577834d11187c8c2540ed378",\n      "year": 2015,\n      "publicationDate": null\n    }\n  ]\n}',
+            text='{\n  "paperId": "66e63d6bddf2a9f3d571f155e1dffe6e435c025d",\n  "year": 2014,\n  "publicationDate": "2014-09-01",\n  "corpusId": 987654,\n  "title": "[Treatment of acute full-thickness chondral defects with high molecular weight hyaluronic acid; an experimental model].",\n  "citations": [\n    {\n      "paperId": "3be543b856029766d762b00b154442c0cdaa504e",\n      "year": 2024,\n      "publicationDate": "2024-07-25"\n    },\n    {\n      "paperId": "7bbd97e2d27aaa81655b3aac1f1d25b75fc6ac41",\n      "year": 2024,\n      "publicationDate": "2024-03-01"\n    },\n    {\n      "paperId": "af46c2eeaeaa68d14531648a2d6fd7fc70b0cdd3",\n      "year": 2023,\n      "publicationDate": "2023-04-01"\n    },\n    {\n      "paperId": "5c0986cd292cb155f0a9829c28f0017a1729b7f5",\n      "year": 2019,\n      "publicationDate": "2019-05-01"\n    },\n    {\n      "paperId": "36da1685699910f242428d5787f7f437795381d8",\n      "year": 2017,\n      "publicationDate": "2017-05-01"\n    },\n    {\n      "paperId": "e62bd4dcdfff7bb857b4d93f9a2feb120d1e7923",\n      "year": 2015,\n      "publicationDate": "2015-02-04"\n    },\n    {\n      "paperId": "c8563f6b400e96e7e7ec702bbbb2390d5501d027",\n      "year": 2018,\n      "publicationDate": null\n    },\n    {\n      "paperId": "ea27197cad5dd337577834d11187c8c2540ed378",\n      "year": 2015,\n      "publicationDate": null\n    }\n  ]\n}',
             refusal=None,
             citations=None,
         ),
@@ -500,6 +501,20 @@ def paper_search_resp2():
                     "offset": 0,
                 }
             ),
+        )
+    ]
+
+
+@pytest.fixture
+def author_search_resp1():
+    # tools_by_name['search_authors_by_name'](name='Manuel Ramirez-Trejo', limit=2, fields="name,url,papers,papers.year,papers.publicationDate,papers.title"
+    return [
+        ContentText(
+            internal=None,
+            type="text",
+            text='{\n  "total": 5,\n  "offset": 0,\n  "next": 2,\n  "data": [\n    {\n      "authorId": "118426609",\n      "url": "https://www.semanticscholar.org/author/118426609",\n      "name": "M. Ram\\u00edrez",\n      "papers": [\n        {\n          "paperId": "3d983a29ee5e4b0b8d22066f0d37d5e9310ef4c5",\n          "title": "Optimization of Energy Generator with the Advanced Design and Fabrication of Piezoelectric Harvester System",\n          "year": 2022,\n          "publicationDate": "2022-09-07"\n    },\n        {\n          "paperId": "e795755c59c08f16182c6b0370e606b1ea937e11",\n          "title": "CASE STUDY OF AN ACCIDENTAL ANKLE TWIST: A KINEMATIC ANALYSIS USING FUNCTIONAL DATA ANALYSIS",\n          "year": 2020,\n          "publicationDate": null\n        },\n        {\n          "paperId": "10f2d3a399b6fe32e6779327cc8ea96270766d3e",\n          "title": "Design, Development and Validation of an Artificial Muscle Biomechanical Rig (AMBR) for Finite Element Model Validation",\n          "year": 2017,\n          "publicationDate": null\n  }\n      ]\n    },\n    {\n      "authorId": "2200973486",\n      "url": "https://www.semanticscholar.org/author/2200973486",\n      "name": "Manuel Ramirez-Trejo",\n      "papers": [\n        {\n          "paperId": "1c1e149f38c9a688a2826a8c217d54737baea835",\n          "title": "Sex representation of editors, editorial boards, and authors of infectious diseases and healthcare epidemiology journals",\n          "year": 2023,\n          "publicationDate": "2023-06-01"\n        },\n        {\n          "paperId": "54295035c68bd5735decc1e88ff030c577f3dcdf",\n          "title": "Gender representation in rheumatology journals: an assessment of editors, editorial boards, and authors",\n          "year": 2023,\n          "publicationDate": "2023-07-11"\n        },\n        {\n          "paperId": "ba21f300ededbb5c5791d7959c58c8940aa262dd",\n          "title": "The Use of Reporting Guidelines in Rheumatology: A Cross-Sectional Study of Over 850 Manuscripts Published in 5 Major Rheumatology Journals",\n          "year": 2023,\n          "publicationDate": "2023-01-15"\n        }\n      ]\n    }\n  ]\n}',
+            refusal=None,
+            citations=None,
         )
     ]
 
@@ -1111,7 +1126,7 @@ async def test_make_asta_s2_mcp_tools_e2e_single_paper(get_paper_resp1):
     async def mock_get_paper_impl(paper_id: str, fields: str = None):
         nonlocal captured_fields
         captured_fields = fields
-        return get_paper_resp1
+        return copy.deepcopy(get_paper_resp1)
 
     mock_toolsource = get_mock_s2api_toolsource({"get_paper": mock_get_paper_impl})
 
@@ -1132,19 +1147,37 @@ async def test_make_asta_s2_mcp_tools_e2e_single_paper(get_paper_resp1):
         assert captured_fields is not None
         assert "citations.year" in captured_fields
         assert "citations.publicationDate" in captured_fields
-        # Original fields should still be there
+        assert ",publicationDate" in captured_fields
+        assert ",year" in captured_fields
         assert "title" in captured_fields
-        assert "citations" in captured_fields
 
         # Verify the response was filtered
         data = json.loads(result[0].text)
         assert "title" in data
         assert len(data["citations"]) == 9  # Filtered out 2023 and 2025
 
+        # wrapper should have filtered out top-level publication date and year
+        assert "publicationDate" not in data
+        assert "year" not in data
+
         # Verify date fields were removed (since they weren't in original request)
         for citation in data["citations"]:
             assert "year" not in citation
             assert "publicationDate" not in citation
+
+        # With date fields, they should be included in response
+        result = await tools_dict["get_paper"](
+            paper_id="test123",
+            fields="title,citations,year,publicationDate,citations.year,citations.publicationDate",
+        )
+        data = json.loads(result[0].text)
+        assert "title" in data
+        assert "year" in data
+        assert "publicationDate" in data
+        assert len(data["citations"]) == 9
+        for citation in data["citations"]:
+            assert "year" in citation
+            assert "publicationDate" in citation
 
         for name in [
             "get_citations",
@@ -1156,6 +1189,15 @@ async def test_make_asta_s2_mcp_tools_e2e_single_paper(get_paper_resp1):
             assert "publication_date_range" not in ToolDef(tools_dict[name]).description
             # But other parameters should still be in description
             assert "  fields:" in ToolDef(tools_dict[name]).description
+
+        # Finally, ensure get_paper fails if we request something newer than the cutoff
+        tools = await async_make_asta_s2_mcp_tools(insertion_date="2017-01-31")
+        tools_dict = {ToolDef(t).name: t for t in tools}
+
+        with pytest.raises(ToolError):
+            result = await tools_dict["get_paper"](
+                paper_id="test123", fields="title,citations"
+            )
 
 
 @pytest.mark.asyncio
@@ -1722,3 +1764,64 @@ async def test_make_asta_s2_mcp_tools_publication_date_parameter_visibility():
                 tools_dict_with_date["search_papers_by_relevance"]
             ).parameters.properties
         )
+
+
+@pytest.mark.asyncio
+async def test_search_authors_papers_subfield_filtering(author_search_resp1):
+    """Test that search_authors_by_name filters the papers subfield correctly."""
+
+    captured_fields = None
+
+    async def mock_search_authors_impl(
+        name: str, fields: str = None, limit: int = None
+    ):
+        nonlocal captured_fields
+        captured_fields = fields
+        return copy.deepcopy(author_search_resp1)
+
+    mock_toolsource = get_mock_s2api_toolsource(
+        {"search_authors_by_name": mock_search_authors_impl}
+    )
+
+    with patch(
+        "astabench.tools.s2_api_tools.make_s2api_toolsource",
+        return_value=mock_toolsource,
+    ):
+        tools = await async_make_asta_s2_mcp_tools(insertion_date="2022-01-01")
+        tools_dict = {ToolDef(t).name: t for t in tools}
+
+        result = await tools_dict["search_authors_by_name"](
+            name="Test Author", fields="name,papers,papers.title"
+        )
+
+        # Verify that papers date fields were injected
+        assert captured_fields is not None
+        assert "papers.year" in captured_fields
+        assert "papers.publicationDate" in captured_fields
+        assert "papers.title" in captured_fields
+
+        # Verify the response was filtered
+        data = json.loads(result[0].text)
+
+        # First author should have papers from 2020 and 2017 (filtered out 2022)
+        # Check by paper ID since date fields are removed
+        author1 = data["data"][0]
+        assert len(author1["papers"]) == 2
+        paper_ids = {paper.get("paperId") for paper in author1["papers"]}
+        # These are the 2020 and 2017 papers from the fixture
+        expected_ids = {
+            "e795755c59c08f16182c6b0370e606b1ea937e11",
+            "10f2d3a399b6fe32e6779327cc8ea96270766d3e",
+        }
+        assert paper_ids == expected_ids
+
+        # Second author should have no papers (all from 2023, filtered out)
+        author2 = data["data"][1]
+        assert len(author2["papers"]) == 0
+
+        # Verify date fields were removed from papers (since they weren't in original request)
+        for author in data["data"]:
+            for paper in author["papers"]:
+                assert "year" not in paper
+                assert "publicationDate" not in paper
+                assert "title" in paper  # Should keep requested field
