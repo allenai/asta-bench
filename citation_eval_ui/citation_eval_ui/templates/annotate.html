@@ -263,15 +263,6 @@
                     </div>
                     {% endfor %}
 
-                    <!-- Missing Citations -->
-                    <div class="mt-4">
-                        <label for="missing_citations" class="form-label">
-                            <strong>Missing Citations</strong> (optional - citations that should have been listed as supporting or non-supporting):
-                        </label>
-                        <textarea class="form-control" id="missing_citations" name="missing_citations" rows="2" 
-                                  placeholder="Enter any citations that should have been included...">{% if claim_annotation and claim_annotation.missing_citations %}{{ claim_annotation.missing_citations }}{% endif %}</textarea>
-                    </div>
-
                     <!-- Notes -->
                     <div class="mt-3">
                         <label for="notes" class="form-label"><strong>Notes</strong> (optional):</label>
