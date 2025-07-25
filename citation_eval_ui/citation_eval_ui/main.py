@@ -151,10 +151,8 @@ async def annotate(request: Request, filename: str, row: int = 0, claim: int = 0
         
         # Load existing annotations if available
         annotations = load_annotations(filename)
-        current_annotations = annotations.row_annotations.get(row, [])
-        claim_annotation = None
-        if claim < len(current_annotations):
-            claim_annotation = current_annotations[claim]
+        current_annotations = annotations.row_annotations.get(row, {})
+        claim_annotation = current_annotations.get(claim, None)
         
         return templates.TemplateResponse("annotate.html", {
             "request": request,
@@ -218,11 +216,7 @@ async def save_annotation(
         
         # Update annotations
         if row not in annotations.row_annotations:
-            annotations.row_annotations[row] = []
-        
-        # Ensure the list is long enough
-        while len(annotations.row_annotations[row]) <= claim:
-            annotations.row_annotations[row].append(None)
+            annotations.row_annotations[row] = {}
         
         annotations.row_annotations[row][claim] = claim_annotation
         annotations.timestamp = datetime.now().isoformat()
@@ -259,6 +253,19 @@ def load_annotations(filename: str) -> FileAnnotation:
     if annotation_file.exists():
         with open(annotation_file, 'r') as f:
             data = json.load(f)
+            
+            # Convert string keys to int (JSON doesn't support int keys)
+            if 'row_annotations' in data:
+                converted_row_annotations = {}
+                for row_idx_str, claims_dict in data['row_annotations'].items():
+                    row_idx = int(row_idx_str)
+                    converted_claims = {}
+                    for claim_idx_str, claim_annotation in claims_dict.items():
+                        claim_idx = int(claim_idx_str)
+                        converted_claims[claim_idx] = claim_annotation
+                    converted_row_annotations[row_idx] = converted_claims
+                data['row_annotations'] = converted_row_annotations
+            
             return FileAnnotation(**data)
     else:
         return FileAnnotation(

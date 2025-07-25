@@ -209,29 +209,29 @@
                                 </div>
                                 
                                 <div class="btn-group" role="group" data-citation="{{ citation.id }}">
-                                    {% set current_annotation = none %}
+                                    {% set ns = namespace(current_annotation=none) %}
                                     {% if claim_annotation and claim_annotation.citation_annotations %}
                                         {% for ann in claim_annotation.citation_annotations %}
                                             {% if citation_ids_match(ann.citation_id, citation.id) %}
-                                                {% set current_annotation = ann %}
+                                                {% set ns.current_annotation = ann %}
                                             {% endif %}
                                         {% endfor %}
                                     {% endif %}
 
                                     <input type="radio" class="btn-check" name="citation_{{ loop.index0 }}" id="supporting_{{ loop.index0 }}" value="supporting"
-                                           {% if current_annotation and current_annotation.label == "supporting" %}checked{% endif %}>
+                                           {% if ns.current_annotation and ns.current_annotation.label == "supporting" %}checked{% endif %}>
                                     <label class="btn btn-outline-success" for="supporting_{{ loop.index0 }}">Supporting</label>
 
                                     <input type="radio" class="btn-check" name="citation_{{ loop.index0 }}" id="non_supporting_{{ loop.index0 }}" value="non_supporting"
-                                           {% if current_annotation and current_annotation.label == "non_supporting" %}checked{% endif %}>
+                                           {% if ns.current_annotation and ns.current_annotation.label == "non_supporting" %}checked{% endif %}>
                                     <label class="btn btn-outline-danger" for="non_supporting_{{ loop.index0 }}">Non-Supporting</label>
 
                                     <input type="radio" class="btn-check" name="citation_{{ loop.index0 }}" id="irrelevant_{{ loop.index0 }}" value="irrelevant"
-                                           {% if current_annotation and current_annotation.label == "irrelevant" %}checked{% endif %}>
+                                           {% if ns.current_annotation and ns.current_annotation.label == "irrelevant" %}checked{% endif %}>
                                     <label class="btn btn-outline-secondary" for="irrelevant_{{ loop.index0 }}">Irrelevant</label>
 
                                     <input type="radio" class="btn-check" name="citation_{{ loop.index0 }}" id="unset_{{ loop.index0 }}" value=""
-                                           {% if not current_annotation %}checked{% endif %}>
+                                           {% if not ns.current_annotation %}checked{% endif %}>
                                     <label class="btn btn-outline-light" for="unset_{{ loop.index0 }}">Unset</label>
                                 </div>
                             </div>
