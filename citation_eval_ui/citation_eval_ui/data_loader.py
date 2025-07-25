@@ -10,16 +10,23 @@ from .models import Citation, Claim, EvaluationRow
 class DataLoader:
     """Loads and parses citation evaluation CSV files."""
     
-    def __init__(self, data_dir: str = "../test_dvc_logs/debug_logs"):
+    def __init__(self, data_dir: str = "."):
         self.data_dir = Path(data_dir)
         self._cache = {}  # Simple in-memory cache
+        # Only use the sampled_rows.csv file
+        self.sampled_file = "sampled_rows.csv"
     
     def list_csv_files(self) -> List[str]:
-        """List all citation_eval.csv files in the data directory and subdirectories."""
-        pattern = "**/*citation_eval.csv"
-        files = list(self.data_dir.glob(pattern))
-        # Return relative paths from the data directory
-        return [str(f.relative_to(self.data_dir)) for f in sorted(files)]
+        """List only the sampled_rows.csv file if it exists."""
+        sampled_path = self.data_dir / self.sampled_file
+        if sampled_path.exists():
+            return [self.sampled_file]
+        else:
+            # Fallback to old behavior if sampled file doesn't exist
+            pattern = "**/*citation_eval.csv"
+            files = list(self.data_dir.glob(pattern))
+            # Return relative paths from the data directory
+            return [str(f.relative_to(self.data_dir)) for f in sorted(files)]
     
     def load_file(self, filename: str) -> List[EvaluationRow]:
         """Load and parse a citation evaluation CSV file."""
@@ -81,6 +88,29 @@ class DataLoader:
     
     def get_file_stats(self, filename: str) -> Dict[str, Any]:
         """Get statistics about a CSV file."""
+        # For sampled file, show source breakdown
+        if filename == self.sampled_file:
+            file_path = self.data_dir / filename
+            if file_path.exists():
+                df = pd.read_csv(file_path)
+                source_counts = df['source_file'].value_counts().to_dict() if 'source_file' in df.columns else {}
+                
+                rows = self.load_file(filename)
+                total_claims = sum(len(row.claims) for row in rows)
+                total_citations = sum(len(row.citations) for row in rows)
+                
+                return {
+                    "filename": filename,
+                    "total_rows": len(rows),
+                    "total_claims": total_claims,
+                    "total_citations": total_citations,
+                    "avg_claims_per_row": total_claims / len(rows) if rows else 0,
+                    "avg_citations_per_row": total_citations / len(rows) if rows else 0,
+                    "source_breakdown": source_counts,
+                    "is_sampled": True
+                }
+        
+        # Regular file stats
         rows = self.load_file(filename)
         total_claims = sum(len(row.claims) for row in rows)
         total_citations = sum(len(row.citations) for row in rows)
@@ -91,5 +121,6 @@ class DataLoader:
             "total_claims": total_claims,
             "total_citations": total_citations,
             "avg_claims_per_row": total_claims / len(rows) if rows else 0,
-            "avg_citations_per_row": total_citations / len(rows) if rows else 0
+            "avg_citations_per_row": total_citations / len(rows) if rows else 0,
+            "is_sampled": False
         }

@@ -48,6 +48,17 @@
                                 <strong>{{ "%.1f"|format(file.avg_claims_per_row) }}</strong>
                             </div>
                         </div>
+                        
+                        {% if file.is_sampled and file.source_breakdown %}
+                        <div class="mt-3">
+                            <small class="text-muted">Source Files:</small>
+                            <ul class="small mb-0 mt-1">
+                                {% for source, count in file.source_breakdown.items() %}
+                                <li>{{ source }}: {{ count }} rows</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% endif %}
                         {% endif %}
                     </div>
                     <div class="card-footer">
@@ -64,9 +75,9 @@
         {% else %}
         <div class="alert alert-info" role="alert">
             <h4 class="alert-heading">No Files Found</h4>
-            <p>No citation evaluation CSV files were found in the data directory.</p>
+            <p>The sampled data file <code>sampled_rows.csv</code> was not found.</p>
             <hr>
-            <p class="mb-0">Make sure CSV files ending with <code>*citation_eval.csv</code> are present in <code>test_dvc_logs/debug_logs/</code>.</p>
+            <p class="mb-0">Please run the concatenate script to create the sampled data file first.</p>
         </div>
         {% endif %}
     </div>
