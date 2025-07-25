@@ -70,53 +70,11 @@
 {% block content %}
 <div class="row">
     <div class="col-12">
-        <!-- Progress Info -->
-        <div class="progress-info">
-            <div class="row">
-                <div class="col-md-4">
-                    <strong>File:</strong> {{ filename }}<br>
-                    <strong>Section:</strong> {{ row + 1 }} of {{ total_rows }}
-                </div>
-                <div class="col-md-4">
-                    <strong>Claim:</strong> {{ claim + 1 }} of {{ total_claims }}
-                </div>
-                <div class="col-md-4">
-                    <strong>LLM Assessment - Fully Supported:</strong><br>
-                    {% if current_claim.is_fully_supported %}
-                        <span class="badge bg-success fs-6">✓ YES</span>
-                    {% else %}
-                        <span class="badge bg-danger fs-6">✗ NO</span>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
-
-        <!-- Navigation -->
-        <div class="mb-3">
-            <div class="btn-group" role="group">
-                {% if has_prev_row %}
-                <a href="/annotate/{{ filename }}?row={{ row - 1 }}&claim=0" class="btn btn-outline-secondary">← Prev Section</a>
-                {% endif %}
-                {% if has_prev_claim %}
-                <a href="/annotate/{{ filename }}?row={{ row }}&claim={{ claim - 1 }}" class="btn btn-outline-primary">← Prev Claim</a>
-                {% endif %}
-                {% if has_next_claim %}
-                <a href="/annotate/{{ filename }}?row={{ row }}&claim={{ claim + 1 }}" class="btn btn-outline-primary">Next Claim →</a>
-                {% endif %}
-                {% if has_next_row %}
-                <a href="/annotate/{{ filename }}?row={{ row + 1 }}&claim=0" class="btn btn-outline-secondary">Next Section →</a>
-                {% endif %}
-            </div>
-            <div class="btn-group ms-3" role="group">
-                <button type="button" class="btn btn-outline-info" id="random-row-btn">🎲 Random Section</button>
-                <button type="button" class="btn btn-outline-info" id="random-claim-btn">🎲 Random Claim</button>
-            </div>
-        </div>
 
         <!-- Question -->
         <div class="card mb-4">
             <div class="card-header">
-                <h5>Question</h5>
+                <h5>Query:</h5>
             </div>
             <div class="card-body">
                 <p>{{ current_row.question }}</p>
@@ -126,7 +84,7 @@
         <!-- Current Claim -->
         <div class="card mb-4 fixed-claim" id="current-claim">
             <div class="card-header">
-                <h5>Current Claim ({{ claim + 1 }}/{{ total_claims }})</h5>
+                <h5>Annotating Claim:</h5>
             </div>
             <div class="card-body">
                 <div class="claim-highlight">
@@ -165,7 +123,7 @@
         <!-- Text with Highlighted Claim -->
         <div class="card mb-4">
             <div class="card-header">
-                <h5>Generated Text (with claim highlighted)</h5>
+                <h5>Section text that the claim appears in:</h5>
             </div>
             <div class="card-body">
                 <div class="text-content" id="text-content">
@@ -273,7 +231,8 @@
                     <!-- Save Button -->
                     <div class="mt-4">
                         <button type="submit" class="btn btn-primary btn-lg">Save Annotation</button>
-                        <div id="save-status" class="mt-2"></div>
+                        <button type="button" class="btn btn-outline-info btn-lg ms-3" id="random-claim-btn">Next Claim</button>
+                        <div id="save-status" class="ms-3"></div>
                     </div>
                 </form>
             </div>
@@ -421,11 +380,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (randomClaimBtn) {
         randomClaimBtn.addEventListener('click', function() {
-            const totalClaims = {{ total_claims }};
-            const currentRow = {{ row }};
-            const randomClaim = Math.floor(Math.random() * totalClaims);
+            const totalRows = {{ total_rows }};
             const currentFilename = '{{ filename }}';
-            window.location.href = `/annotate/${encodeURIComponent(currentFilename)}?row=${currentRow}&claim=${randomClaim}`;
+            
+            // Select a random row
+            const randomRow = Math.floor(Math.random() * totalRows);
+            
+            // Navigate to the random row with a special parameter to select a random claim
+            window.location.href = `/annotate/${encodeURIComponent(currentFilename)}?row=${randomRow}&random_claim=true`;
         });
     }
 });

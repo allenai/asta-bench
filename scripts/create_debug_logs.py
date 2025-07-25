@@ -25,10 +25,10 @@ def build_df_for_logs(paths):
             for i, score_name in enumerate(
                 ["score_sqa", "score_precision", "score_citation"]
             ):
-                if s.scores["aggregate_scorer"].metadata["score_meta"][i] is None:
+                if s.scores["score_all"].metadata["score_meta"][i] is None:
                     continue
                 df = build_df_from_prompt_logs(
-                    PromptLogs(**s.scores["aggregate_scorer"].metadata["score_meta"][i])
+                    PromptLogs(**s.scores["score_all"].metadata["score_meta"][i])
                 )
                 if df is None:
                     print("No prompt logs for score component:", score_name)
@@ -39,14 +39,14 @@ def build_df_for_logs(paths):
                 df["solver"] = l.plan.steps[0].solver
                 df["log_file"] = p
                 if score_name == "score_sqa":
-                    df["score"] = s.scores["aggregate_scorer"].value["ingredient_recall"]
+                    df["score"] = s.scores["score_all"].value["ingredient_recall"]
                 elif score_name == "score_precision":
-                    df["score"] = s.scores["aggregate_scorer"].value["answer_precision"]
+                    df["score"] = s.scores["score_all"].value["answer_precision"]
                 if score_name == "score_citation":
-                    df["citation_recall_score"] = s.scores["aggregate_scorer"].value[
+                    df["citation_recall_score"] = s.scores["score_all"].value[
                         "citation_recall"
                     ]
-                    df["citation_precision_score"] = s.scores["aggregate_scorer"].value[
+                    df["citation_precision_score"] = s.scores["score_all"].value[
                         "citation_precision"
                     ]
                 answer = json.loads(s.output.completion)["response"]

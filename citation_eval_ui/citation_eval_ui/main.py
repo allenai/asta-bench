@@ -1,6 +1,7 @@
 """FastAPI application for citation evaluation UI."""
 
 import json
+import random
 import uvicorn
 import markdown
 from datetime import datetime
@@ -113,7 +114,7 @@ async def index(request: Request):
 
 
 @app.get("/annotate/{filename:path}", response_class=HTMLResponse)
-async def annotate(request: Request, filename: str, row: int = 0, claim: int = 0):
+async def annotate(request: Request, filename: str, row: int = 0, claim: int = 0, random_claim: bool = False):
     """Main annotation interface."""
     try:
         rows = data_loader.load_file(filename)
@@ -124,7 +125,11 @@ async def annotate(request: Request, filename: str, row: int = 0, claim: int = 0
             row = 0
         
         current_row = rows[row]
-        if claim >= len(current_row.claims):
+        
+        # If random_claim is True, select a random claim
+        if random_claim and current_row.claims:
+            claim = random.randint(0, len(current_row.claims) - 1)
+        elif claim >= len(current_row.claims):
             claim = 0
         
         current_claim = current_row.claims[claim]

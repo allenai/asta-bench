@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.initializeAnnotations = function() {
         highlightClaimInText();
         highlightCitations();
-        updateProgress();
+        // updateProgress();
     }
     
     // Check if we're on the annotate page and variables are already set
