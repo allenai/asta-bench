@@ -185,8 +185,39 @@
                     <input type="hidden" name="row" value="{{ row }}">
                     <input type="hidden" name="claim" value="{{ claim }}">
 
+                    <!-- Is Fully Supported Assessment -->
+                    <div class="mt-4">
+                        <label class="form-label">
+                            <strong>Is this <strong>claim</strong> fully supported?</strong>
+                        </label>
+                        <div class="card p-3" style="background-color: #f8f9fa;">
+                            <div class="mb-2">
+                                <strong>LLM says:</strong>
+                                {% if current_claim.is_fully_supported %}
+                                    <span class="badge bg-success">✓ Fully Supported</span>
+                                {% else %}
+                                    <span class="badge bg-danger">✗ Not Fully Supported</span>
+                                {% endif %}
+                            </div>
+                            <div class="btn-group" role="group" aria-label="Fully supported assessment">
+                                <input type="radio" class="btn-check" name="is_fully_supported_annotation" id="agree_supported" value="agree"
+                                       {% if claim_annotation and claim_annotation.is_fully_supported_annotation == "agree" %}checked{% endif %}>
+                                <label class="btn btn-outline-success" for="agree_supported">
+                                    <i class="bi bi-check-circle"></i> Fully Supported
+                                </label>
+
+                                <input type="radio" class="btn-check" name="is_fully_supported_annotation" id="disagree_supported" value="disagree"
+                                       {% if claim_annotation and claim_annotation.is_fully_supported_annotation == "disagree" %}checked{% endif %}>
+                                <label class="btn btn-outline-danger" for="disagree_supported">
+                                    <i class="bi bi-x-circle"></i> Not Fully Supported
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Citation Labels -->
                     <h6>Label Each Citation:</h6>
+                    <p class="text-muted">Assess whether each <strong>citation</strong> supports, contradicts, or is irrelevant to the claim.</p>
                     {% for citation in current_row.citations %}
                     <div class="citation-label-section">
                         <div class="row">
@@ -208,6 +239,7 @@
                                     {{ citation.snippets }}
                                 </div>
                                 
+                                <div class="text-muted small mb-1">Your assessment for this citation:</div>
                                 <div class="btn-group" role="group" data-citation="{{ citation.id }}">
                                     {% set ns = namespace(current_annotation=none) %}
                                     {% if claim_annotation and claim_annotation.citation_annotations %}
@@ -225,14 +257,6 @@
                                     <input type="radio" class="btn-check" name="citation_{{ loop.index0 }}" id="non_supporting_{{ loop.index0 }}" value="non_supporting"
                                            {% if ns.current_annotation and ns.current_annotation.label == "non_supporting" %}checked{% endif %}>
                                     <label class="btn btn-outline-danger" for="non_supporting_{{ loop.index0 }}">Non-Supporting</label>
-
-                                    <input type="radio" class="btn-check" name="citation_{{ loop.index0 }}" id="irrelevant_{{ loop.index0 }}" value="irrelevant"
-                                           {% if ns.current_annotation and ns.current_annotation.label == "irrelevant" %}checked{% endif %}>
-                                    <label class="btn btn-outline-secondary" for="irrelevant_{{ loop.index0 }}">Irrelevant</label>
-
-                                    <input type="radio" class="btn-check" name="citation_{{ loop.index0 }}" id="unset_{{ loop.index0 }}" value=""
-                                           {% if not ns.current_annotation %}checked{% endif %}>
-                                    <label class="btn btn-outline-light" for="unset_{{ loop.index0 }}">Unset</label>
                                 </div>
                             </div>
                         </div>
@@ -246,42 +270,6 @@
                         </label>
                         <textarea class="form-control" id="missing_citations" name="missing_citations" rows="2" 
                                   placeholder="Enter any citations that should have been included...">{% if claim_annotation and claim_annotation.missing_citations %}{{ claim_annotation.missing_citations }}{% endif %}</textarea>
-                    </div>
-
-                    <!-- Is Fully Supported Assessment -->
-                    <div class="mt-4">
-                        <label class="form-label">
-                            <strong>Your Assessment: Is this claim fully supported?</strong>
-                        </label>
-                        <div class="card p-3" style="background-color: #f8f9fa;">
-                            <div class="mb-2">
-                                <strong>LLM says:</strong> 
-                                {% if current_claim.is_fully_supported %}
-                                    <span class="badge bg-success">✓ Fully Supported</span>
-                                {% else %}
-                                    <span class="badge bg-danger">✗ Not Fully Supported</span>
-                                {% endif %}
-                            </div>
-                            <div class="btn-group" role="group" aria-label="Fully supported assessment">
-                                <input type="radio" class="btn-check" name="is_fully_supported_annotation" id="agree_supported" value="agree"
-                                       {% if claim_annotation and claim_annotation.is_fully_supported_annotation == "agree" %}checked{% endif %}>
-                                <label class="btn btn-outline-success" for="agree_supported">
-                                    <i class="bi bi-check-circle"></i> Fully Supported
-                                </label>
-
-                                <input type="radio" class="btn-check" name="is_fully_supported_annotation" id="disagree_supported" value="disagree"
-                                       {% if claim_annotation and claim_annotation.is_fully_supported_annotation == "disagree" %}checked{% endif %}>
-                                <label class="btn btn-outline-danger" for="disagree_supported">
-                                    <i class="bi bi-x-circle"></i> Not Fully Supported
-                                </label>
-
-                                <input type="radio" class="btn-check" name="is_fully_supported_annotation" id="unset_supported" value=""
-                                       {% if not claim_annotation or not claim_annotation.is_fully_supported_annotation %}checked{% endif %}>
-                                <label class="btn btn-outline-secondary" for="unset_supported">
-                                    <i class="bi bi-dash-circle"></i> No Opinion
-                                </label>
-                            </div>
-                        </div>
                     </div>
 
                     <!-- Notes -->
