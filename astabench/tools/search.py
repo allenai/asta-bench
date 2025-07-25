@@ -123,19 +123,26 @@ async def _query_s2_api(
         return response.json()
 
 
+def datetime_before(date_str: str) -> datetime:
+    """Given a partial date string, return a datetime object representing the
+    last second before that date.
+
+    For example:
+        2025 -> 2024-12-31 23:59:59
+        2025-01 -> 2024-12-31 23:59:59
+        2025-01-01 -> 2024-12-31 23:59:59
+    """
+    fmt_map = {4: "%Y", 7: "%Y-%m", 10: "%Y-%m-%d"}
+    fmt = fmt_map.get(len(date_str.strip()))
+    if not fmt:
+        raise ValueError(
+            f"date_str format must be in {fmt_map.values()}, got: {date_str}"
+        )
+    return datetime.strptime(date_str, fmt) - timedelta(seconds=1)
+
+
 def _format_publication_before(inserted_before: str) -> str:
-    if len(inserted_before) == 4:
-        dt = datetime(int(inserted_before), 1, 1) - timedelta(days=1)
-        return dt.strftime(":%Y-%m-%d")
-    if len(inserted_before) == 7:
-        dt = datetime.strptime(f"{inserted_before}-01", "%Y-%m-%d") - timedelta(days=1)
-        return dt.strftime(":%Y-%m")
-    if len(inserted_before) == 10:
-        dt = datetime.strptime(inserted_before, "%Y-%m-%d") - timedelta(days=1)
-        return dt.strftime(":%Y-%m-%d")
-    raise ValueError(
-        "inserted_before must be in the format YYYY-MM-DD, YYYY-MM, or YYYY"
-    )
+    return datetime_before(inserted_before).strftime(":%Y-%m-%d")
 
 
 async def _paper_search_impl(
