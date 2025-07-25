@@ -162,7 +162,10 @@ async def annotate(request: Request, filename: str, row: Optional[int] = None, c
                 sorted_citations.insert(supporting_count, citation)
             else:
                 other_citations.append(citation)
-
+        
+        # Add other citations at the end
+        sorted_citations.extend(other_citations)
+        
         # Replace the citations list with sorted version
         current_row.citations = sorted_citations
         

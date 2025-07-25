@@ -221,7 +221,24 @@
                     <!-- Citation Labels -->
                     <h6>Label Each Citation:</h6>
                     <p class="text-muted">Assess whether each <strong>citation</strong> supports, contradicts, or is irrelevant to the claim.</p>
+                    
+                    {% set other_citations = [] %}
+                    {% set shown_citations = [] %}
+                    
                     {% for citation in current_row.citations %}
+                        {% set normalized_citation_id = normalize_citation_id(citation.id) %}
+                        {% set is_supporting = current_claim.supporting | map('normalize_citation_id') | list | select('equalto', normalized_citation_id) | list | length > 0 %}
+                        {% set is_non_supporting = current_claim.non_supporting | map('normalize_citation_id') | list | select('equalto', normalized_citation_id) | list | length > 0 %}
+                        
+                        {% if is_supporting or is_non_supporting %}
+                            {% set _ = shown_citations.append(citation) %}
+                        {% else %}
+                            {% set _ = other_citations.append(citation) %}
+                        {% endif %}
+                    {% endfor %}
+                    
+                    <!-- Show supporting and non-supporting citations -->
+                    {% for citation in shown_citations %}
                     <div class="citation-label-section">
                         <div class="row">
                             <div class="col-md-3">
@@ -233,8 +250,6 @@
                                     <span class="badge bg-success ms-2">LLM Label: Supporting</span>
                                 {% elif is_non_supporting %}
                                     <span class="badge bg-danger ms-2">LLM Label: Non-Supporting</span>
-                                {% else %}
-                                    <span class="badge bg-secondary ms-2">Not Listed</span>
                                 {% endif %}
                             </div>
                             <div class="col-md-9">
@@ -265,6 +280,56 @@
                         </div>
                     </div>
                     {% endfor %}
+                    
+                    <!-- Show/hide other citations button -->
+                    {% if other_citations %}
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="toggleOtherCitations()">
+                            <span id="other-citations-toggle-text">Show {{ other_citations|length }} other citations</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Other citations (hidden by default) -->
+                    <div id="other-citations" style="display: none;">
+                        {% for citation in other_citations %}
+                        {% set outer_loop = loop %}
+                        {% set citation_index = shown_citations|length + outer_loop.index0 %}
+                        <div class="citation-label-section">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <strong>{{ citation.id }}</strong>
+                                    <span class="badge bg-secondary ms-2">Not Listed</span>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="citation-snippet">
+                                        {{ citation.snippets }}
+                                    </div>
+                                    
+                                    <div class="text-muted small mb-1">Your assessment for this citation:</div>
+                                    <div class="btn-group" role="group" data-citation="{{ citation.id }}">
+                                        {% set ns = namespace(current_annotation=none) %}
+                                        {% if claim_annotation and claim_annotation.citation_annotations %}
+                                            {% for ann in claim_annotation.citation_annotations %}
+                                                {% if citation_ids_match(ann.citation_id, citation.id) %}
+                                                    {% set ns.current_annotation = ann %}
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endif %}
+
+                                        <input type="radio" class="btn-check" name="citation_{{ citation_index }}" id="supporting_{{ citation_index }}" value="supporting"
+                                               {% if ns.current_annotation and ns.current_annotation.label == "supporting" %}checked{% endif %}>
+                                        <label class="btn btn-outline-success" for="supporting_{{ citation_index }}">Supporting</label>
+
+                                        <input type="radio" class="btn-check" name="citation_{{ citation_index }}" id="non_supporting_{{ citation_index }}" value="non_supporting"
+                                               {% if ns.current_annotation and ns.current_annotation.label == "non_supporting" %}checked{% endif %}>
+                                        <label class="btn btn-outline-danger" for="non_supporting_{{ citation_index }}">Non-Supporting</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
 
                     <!-- Notes -->
                     <div class="mt-3">
@@ -322,6 +387,20 @@ window.currentNonSupportingCitations = {{ current_claim.non_supporting | tojson 
 window.currentCitations = {{ current_row.citations | map(attribute='id') | list | tojson }};
 window.currentClaim = {{ claim }};
 window.currentRow = {{ row }};
+
+// Toggle function for other citations
+function toggleOtherCitations() {
+    const otherCitations = document.getElementById('other-citations');
+    const toggleText = document.getElementById('other-citations-toggle-text');
+    
+    if (otherCitations.style.display === 'none') {
+        otherCitations.style.display = 'block';
+        toggleText.textContent = 'Hide other citations';
+    } else {
+        otherCitations.style.display = 'none';
+        toggleText.textContent = 'Show {{ other_citations|length }} other citations';
+    }
+}
 window.totalClaims = {{ total_claims }};
 
 // Highlight claim text in the content
