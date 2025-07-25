@@ -64,12 +64,51 @@
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
+/* History Panel Styles */
+#history-panel {
+    transition: all 0.3s ease;
+}
+
+#history-panel.hidden {
+    display: none;
+}
+
+#main-content {
+    transition: all 0.3s ease;
+}
+
+#main-content.expanded {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.history-item {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.history-item:hover {
+    background-color: #f8f9fa;
+}
+
+.history-item.current {
+    background-color: #e3f2fd;
+    border-color: #2196f3;
+}
+
+.btn-floating {
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
 </style>
 {% endblock %}
 
 {% block content %}
 <div class="row">
-    <div class="col-12">
+    <!-- Main Content -->
+    <div class="col-md-9 expanded" id="main-content">
 
         <!-- Question -->
         <div class="card mb-4">
@@ -243,7 +282,34 @@
             </div>
         </div>
     </div>
+    
+    <!-- History Side Panel -->
+    <div class="col-md-3 hidden" id="history-panel">
+        <div class="card sticky-top" style="top: 20px;">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="mb-0">History</h5>
+                <button type="button" class="btn btn-sm btn-outline-secondary" id="toggle-history">
+                    <i class="bi bi-x"></i>
+                </button>
+            </div>
+            <div class="card-body" style="max-height: 70vh; overflow-y: auto;">
+                <div id="history-list" class="list-group">
+                    <!-- History items will be populated here -->
+                </div>
+                <div class="text-center mt-3">
+                    <button type="button" class="btn btn-sm btn-outline-danger" id="clear-history">
+                        Clear History
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- Toggle History Button (shown when panel is hidden) -->
+<button type="button" class="btn btn-primary btn-floating" id="show-history" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <i class="bi bi-clock-history"></i> History
+</button>
 {% endblock %}
 
 {% block extra_scripts %}
@@ -424,6 +490,113 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    
+    // History Panel Functionality
+    const HISTORY_KEY = 'citation_history';
+    const MAX_HISTORY_ITEMS = 50;
+    
+    // Load history from localStorage
+    function loadHistory() {
+        const historyStr = localStorage.getItem(HISTORY_KEY);
+        return historyStr ? JSON.parse(historyStr) : [];
+    }
+    
+    // Save history to localStorage
+    function saveHistory(history) {
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+    }
+    
+    // Add current page to history
+    function addToHistory() {
+        const history = loadHistory();
+        const currentItem = {
+            filename: '{{ filename }}',
+            row: {{ row }},
+            claim: {{ claim }},
+            claimText: window.currentClaimText,
+            question: '{{ current_row.question }}',
+            timestamp: new Date().toISOString()
+        };
+        
+        // Remove duplicate if exists
+        const filteredHistory = history.filter(item => 
+            !(item.filename === currentItem.filename && 
+              item.row === currentItem.row && 
+              item.claim === currentItem.claim)
+        );
+        
+        // Add to beginning
+        filteredHistory.unshift(currentItem);
+        
+        // Keep only MAX_HISTORY_ITEMS
+        if (filteredHistory.length > MAX_HISTORY_ITEMS) {
+            filteredHistory.pop();
+        }
+        
+        saveHistory(filteredHistory);
+        updateHistoryDisplay();
+    }
+    
+    // Update history display
+    function updateHistoryDisplay() {
+        const history = loadHistory();
+        const historyList = document.getElementById('history-list');
+        historyList.innerHTML = '';
+        
+        history.forEach((item, index) => {
+            const isCurrentPage = item.filename === '{{ filename }}' && 
+                                item.row === {{ row }} && 
+                                item.claim === {{ claim }};
+            
+            const historyItem = document.createElement('a');
+            historyItem.href = `/annotate/${item.filename}?row=${item.row}&claim=${item.claim}`;
+            historyItem.className = `list-group-item list-group-item-action history-item ${isCurrentPage ? 'current' : ''}`;
+            
+            const time = new Date(item.timestamp);
+            const timeStr = time.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+            
+            historyItem.innerHTML = `
+                <div class="d-flex w-100 justify-content-between">
+                    <h6 class="mb-1">Row ${item.row + 1}, Claim ${item.claim + 1}</h6>
+                    <small>${timeStr}</small>
+                </div>
+                <p class="mb-1 small text-truncate">${item.claimText}</p>
+                <small class="text-muted text-truncate">${item.filename}</small>
+            `;
+            
+            historyList.appendChild(historyItem);
+        });
+    }
+    
+    // Toggle history panel
+    const historyPanel = document.getElementById('history-panel');
+    const mainContent = document.getElementById('main-content');
+    const toggleHistoryBtn = document.getElementById('toggle-history');
+    const showHistoryBtn = document.getElementById('show-history');
+    
+    toggleHistoryBtn.addEventListener('click', function() {
+        historyPanel.classList.add('hidden');
+        mainContent.classList.add('expanded');
+        showHistoryBtn.style.display = 'block';
+    });
+    
+    showHistoryBtn.addEventListener('click', function() {
+        historyPanel.classList.remove('hidden');
+        mainContent.classList.remove('expanded');
+        showHistoryBtn.style.display = 'none';
+    });
+    
+    // Clear history
+    document.getElementById('clear-history').addEventListener('click', function() {
+        if (confirm('Are you sure you want to clear the history?')) {
+            localStorage.removeItem(HISTORY_KEY);
+            updateHistoryDisplay();
+        }
+    });
+    
+    // Initialize history on page load
+    addToHistory();
+    updateHistoryDisplay();
 });
 </script>
 {% endblock %}
