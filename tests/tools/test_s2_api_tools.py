@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring,missing-function-docstring,unused-argument,logging-fstring-interpolation
+
 import json
 import logging
 import os
@@ -9,11 +11,11 @@ import pytest
 from inspect_ai.tool import ContentText, ToolDef, ToolError, ToolSource
 
 from astabench.tools.s2_api_tools import (
-    _adjust_fields_arg_for_citations_filter,
-    _filter_response_citations,
+    _adjust_fields_arg_for_subfield_filter,
+    _filter_response_subfield,
     _remove_arg_description_block,
     async_make_asta_s2_mcp_tools,
-    filter_citations,
+    filter_papers,
     make_s2api_toolsource,
 )
 
@@ -696,8 +698,8 @@ def get_mock_s2api_toolsource(override_fns: dict[str, Callable]) -> ToolSource:
     return FakeToolsource()
 
 
-def test_filter_citations_with_publication_date():
-    """Test filter_citations when citations have publicationDate."""
+def test_filter_papers_with_publication_date():
+    """Test filter_papers when papers have publicationDate."""
     citations = [
         {
             "paperId": "123",
@@ -720,7 +722,7 @@ def test_filter_citations_with_publication_date():
         },
     ]
 
-    filtered = filter_citations(citations, "2022-01-01", remove_fields={"extra_field"})
+    filtered = filter_papers(citations, "2022-01-01", remove_fields={"extra_field"})
 
     assert len(filtered) == 2
     assert filtered[0]["paperId"] == "123"
@@ -729,8 +731,8 @@ def test_filter_citations_with_publication_date():
     assert "extra_field" not in filtered[0]
 
 
-def test_filter_citations_with_year_only():
-    """Test filter_citations when citations only have year (no publicationDate)."""
+def test_filter_papers_with_year_only():
+    """Test filter_papers when papers only have year (no publicationDate)."""
     citations = [
         {"paperId": "123", "title": "Old paper", "year": 2020},
         {"paperId": "456", "title": "Too new paper", "year": 2023},
@@ -738,15 +740,15 @@ def test_filter_citations_with_year_only():
     ]
 
     # Filter with "2022" means papers from 2021 and earlier should be included
-    filtered = filter_citations(citations, "2022")
+    filtered = filter_papers(citations, "2022")
 
     assert len(filtered) == 2
     assert filtered[0]["paperId"] == "123"
     assert filtered[1]["paperId"] == "789"
 
 
-def test_filter_citations_mixed_date_formats():
-    """Test filter_citations with mixed date information."""
+def test_filter_papers_mixed_date_formats():
+    """Test filter_papers with mixed date information."""
     citations = [
         {
             "paperId": "123",
@@ -764,7 +766,7 @@ def test_filter_citations_mixed_date_formats():
         },
     ]
 
-    filtered = filter_citations(citations, "2022-01-01")
+    filtered = filter_papers(citations, "2022-01-01")
 
     assert len(filtered) == 3
     assert filtered[0]["paperId"] == "123"
@@ -772,30 +774,32 @@ def test_filter_citations_mixed_date_formats():
     assert filtered[2]["paperId"] == "999"
 
 
-def test_adjust_fields_arg_for_citations_filter():
-    """Test _adjust_fields_arg_for_citations_filter adds necessary date fields."""
+def test_adjust_fields_arg_for_subfield_filter():
+    """Test _adjust_fields_arg_for_subfield_filter adds necessary date fields."""
     # Test when neither field is present
-    fields, added = _adjust_fields_arg_for_citations_filter("title,authors,citations")
+    fields, added = _adjust_fields_arg_for_subfield_filter(
+        "title,authors,citations", "citations"
+    )
     assert fields == "title,authors,citations,citations.year,citations.publicationDate"
     assert added == {"year", "publicationDate"}
 
     # Test when year is already present
-    fields, added = _adjust_fields_arg_for_citations_filter(
-        "title,citations.year,citations"
+    fields, added = _adjust_fields_arg_for_subfield_filter(
+        "title,citations.year,citations", "citations"
     )
     assert fields == "title,citations.year,citations,citations.publicationDate"
     assert added == {"publicationDate"}
 
     # Test when both are already present
-    fields, added = _adjust_fields_arg_for_citations_filter(
-        "title,citations.year,citations.publicationDate,citations"
+    fields, added = _adjust_fields_arg_for_subfield_filter(
+        "title,citations.year,citations.publicationDate,citations", "citations"
     )
     assert fields == "title,citations.year,citations.publicationDate,citations"
     assert added == set()
 
 
-def test_filter_response_citations_single_paper(get_paper_resp1):
-    """Test _filter_response_citations."""
+def test_filter_response_subfield_single_paper(get_paper_resp1):
+    """Test _filter_response_subfield."""
 
     response = get_paper_resp1
 
@@ -803,8 +807,11 @@ def test_filter_response_citations_single_paper(get_paper_resp1):
     original_data = json.loads(response[0].text)
     assert len(original_data["citations"]) == 11
 
-    _filter_response_citations(
-        response, "2022-01-01", added_date_fields={"year", "publicationDate"}
+    _filter_response_subfield(
+        response,
+        "2022-01-01",
+        added_date_fields={"year", "publicationDate"},
+        subfield_name="citations",
     )
 
     # Parse the modified response
@@ -826,8 +833,8 @@ def test_filter_response_citations_single_paper(get_paper_resp1):
         assert "publicationDate" not in citation
 
 
-def test_filter_response_citations_multiple_papers(get_paper_batch_resp1):
-    """Test _filter_response_citations."""
+def test_filter_response_subfield_multiple_papers(get_paper_batch_resp1):
+    """Test _filter_response_subfield."""
     response = get_paper_batch_resp1
     # Check initial state - each paper in the batch has citations
     paper1_data = json.loads(response[0].text)
@@ -835,8 +842,11 @@ def test_filter_response_citations_multiple_papers(get_paper_batch_resp1):
     assert len(paper1_data["citations"]) == 13
     assert len(paper2_data["citations"]) == 8
 
-    _filter_response_citations(
-        response, "2022-01-01", added_date_fields={"year", "publicationDate"}
+    _filter_response_subfield(
+        response,
+        "2022-01-01",
+        added_date_fields={"year", "publicationDate"},
+        subfield_name="citations",
     )
 
     # Parse the modified responses
@@ -860,8 +870,8 @@ def test_filter_response_citations_multiple_papers(get_paper_batch_resp1):
         assert "publicationDate" not in citation
 
 
-def test_filter_response_citations_error_handling():
-    """Test _filter_response_citations error handling for malformed responses."""
+def test_filter_response_subfield_error_handling():
+    """Test _filter_response_subfield error handling for malformed responses."""
     # Test with response missing citations field
     response = [
         ContentText(
@@ -874,7 +884,9 @@ def test_filter_response_citations_error_handling():
     ]
 
     with pytest.raises(KeyError) as exc_info:
-        _filter_response_citations(response, "2022-01-01", added_date_fields=set())
+        _filter_response_subfield(
+            response, "2022-01-01", added_date_fields=set(), subfield_name="citations"
+        )
     assert "citations" in str(exc_info.value)
 
     # Test with non-dict/list response
@@ -889,7 +901,9 @@ def test_filter_response_citations_error_handling():
     ]
 
     with pytest.raises(TypeError) as exc_info:
-        _filter_response_citations(response, "2022-01-01", added_date_fields=set())
+        _filter_response_subfield(
+            response, "2022-01-01", added_date_fields=set(), subfield_name="citations"
+        )
     assert "does not appear to be papers" in str(exc_info.value)
 
 
@@ -943,7 +957,7 @@ def test_wrap_subfield_date_filter_functionality():
     # Apply the wrapper
     from astabench.tools.s2_api_tools import _wrap_subfield_date_filter
 
-    _wrap_subfield_date_filter(mock_tool, "2022-01-01", "fields")
+    _wrap_subfield_date_filter(mock_tool, "2022-01-01", "citations", "fields")
 
     # Test that it correctly modifies the fields parameter
     import asyncio
@@ -1083,7 +1097,7 @@ async def test_make_asta_s2_mcp_tools_publication_date_filtering():
         logger.info(f"Papers with {filter_year} filter: {len(papers_with_filter)}")
     else:
         logger.warning(
-            f"Target paper has no year information, skipping date filtering test"
+            "Target paper has no year information, skipping date filtering test"
         )
 
 
@@ -1091,7 +1105,7 @@ async def test_make_asta_s2_mcp_tools_publication_date_filtering():
 async def test_make_asta_s2_mcp_tools_e2e_single_paper(get_paper_resp1):
     """End-to-end test of async_make_asta_s2_mcp_tools with field modification verification."""
 
-    captured_fields = None
+    captured_fields: str | None = None
 
     # Create override function that captures the fields parameter
     async def mock_get_paper_impl(paper_id: str, fields: str = None):
@@ -1114,6 +1128,7 @@ async def test_make_asta_s2_mcp_tools_e2e_single_paper(get_paper_resp1):
         )
 
         # Verify fields were modified to include date fields
+        # pylint: disable=unsupported-membership-test
         assert captured_fields is not None
         assert "citations.year" in captured_fields
         assert "citations.publicationDate" in captured_fields
@@ -1175,6 +1190,7 @@ async def test_make_asta_s2_mcp_tools_e2e_batch_papers(get_paper_batch_resp1):
         )
 
         # Verify fields were modified to include ONLY the missing date field
+        # pylint: disable=unsupported-membership-test
         assert captured_fields is not None
         assert "citations.year" in captured_fields  # Already requested
         assert "citations.publicationDate" in captured_fields  # Should be added
