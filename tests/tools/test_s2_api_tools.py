@@ -47,7 +47,6 @@ def find_tool_error(exc_group):
     return None
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_get_paper_with_arxiv_id():
@@ -73,7 +72,6 @@ async def test_get_paper_with_arxiv_id():
     logger.info(f"get_paper with arxiv ID result: {data}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_get_paper_with_corpus_id():
@@ -96,7 +94,6 @@ async def test_get_paper_with_corpus_id():
     logger.info(f"get_paper with corpus ID result: {data}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_get_paper_batch():
@@ -124,7 +121,6 @@ async def test_get_paper_batch():
     logger.info(f"get_paper_batch result: {data}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_get_citations():
@@ -147,7 +143,6 @@ async def test_get_citations():
     logger.info(f"get_citations result count: {len(data['data'])}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_search_authors_by_name():
@@ -177,7 +172,6 @@ async def test_search_authors_by_name():
     logger.info(f"search_authors_by_name result: {data}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_get_author_papers():
@@ -206,7 +200,6 @@ async def test_get_author_papers():
     logger.info(f"get_author_papers result count: {len(data['data'])}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_search_papers_by_relevance():
@@ -236,7 +229,6 @@ async def test_search_papers_by_relevance():
     logger.info(f"search_papers_by_relevance result count: {len(data['data'])}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_search_paper_by_title():
@@ -265,7 +257,6 @@ async def test_search_paper_by_title():
     logger.info(f"search_paper_by_title result: {data}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_snippet_search():
@@ -291,7 +282,6 @@ async def test_snippet_search():
     logger.info(f"snippet_search result count: {len(data['data'])}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_error_invalid_fields_in_get_paper_batch():
@@ -312,7 +302,6 @@ async def test_error_invalid_fields_in_get_paper_batch():
     logger.info(f"Expected error for invalid fields: {tool_error}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_error_invalid_fields_in_search_authors():
@@ -333,7 +322,6 @@ async def test_error_invalid_fields_in_search_authors():
     logger.info(f"Expected error for invalid fields: {tool_error}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_error_wrong_parameter_name_in_get_paper():
@@ -354,7 +342,6 @@ async def test_error_wrong_parameter_name_in_get_paper():
     logger.info(f"Expected error for wrong parameter: {tool_error}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_error_invalid_paper_id_type():
@@ -372,7 +359,6 @@ async def test_error_invalid_paper_id_type():
     logger.info(f"Expected error for invalid ID type: {tool_error}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_make_s2api_toolsource():
@@ -402,7 +388,6 @@ async def test_make_s2api_toolsource():
     logger.info(f"Found {len(tools)} tools: {tool_names}")
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_make_s2api_toolsource_without_api_key():
@@ -1321,7 +1306,6 @@ def test_wrap_subfield_date_filter_functionality():
     assert data["citations"][0]["paperId"] == "old1"
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_make_asta_s2_mcp_tools_real_api_call():
@@ -1343,7 +1327,6 @@ async def test_make_asta_s2_mcp_tools_real_api_call():
     assert "paperCount" in author
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_make_asta_s2_mcp_tools_publication_date_filtering():
@@ -2142,7 +2125,6 @@ async def test_search_authors_papers_subfield_filtering(author_search_resp1):
         author1 = data["data"][0]
         assert len(author1["papers"]) == 2
         paper_ids = {paper.get("paperId") for paper in author1["papers"]}
-        # These are the 2020 and 2017 papers from the fixture
         expected_ids = {
             "e795755c59c08f16182c6b0370e606b1ea937e11",
             "10f2d3a399b6fe32e6779327cc8ea96270766d3e",
@@ -2158,4 +2140,4 @@ async def test_search_authors_papers_subfield_filtering(author_search_resp1):
             for paper in author["papers"]:
                 assert "year" not in paper
                 assert "publicationDate" not in paper
-                assert "title" in paper  # Should keep requested field
+                assert "title" in paper

@@ -10,7 +10,6 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_paper_search():
@@ -31,7 +30,6 @@ async def test_paper_search():
     logger.info("Paper Search Results: %s", paper_results)
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_snippet_search():
@@ -52,7 +50,6 @@ async def test_snippet_search():
     logger.info("Snippet Search Results: %s", snippet_results)
 
 
-@pytest.mark.expensive
 @pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_paper_search_inserted_before():
