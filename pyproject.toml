@@ -141,5 +141,6 @@ asyncio_default_fixture_loop_scope = "function"
 # default to skipping expensive tests
 addopts = "-m \"not expensive\""
 markers = [
-  "expensive: mark test as expensive (skipped by default)"
+  "expensive: mark test as expensive (skipped by default)",
+  "s2_api_request: mark test as requiring S2 API key (auto-skipped when S2_API_KEY not set)"
 ]

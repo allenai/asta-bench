@@ -47,7 +47,8 @@ def find_tool_error(exc_group):
     return None
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_get_paper_with_arxiv_id():
     """Test get_paper with arXiv ID format."""
@@ -72,7 +73,8 @@ async def test_get_paper_with_arxiv_id():
     logger.info(f"get_paper with arxiv ID result: {data}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_get_paper_with_corpus_id():
     """Test get_paper with Semantic Scholar corpus ID."""
@@ -94,7 +96,8 @@ async def test_get_paper_with_corpus_id():
     logger.info(f"get_paper with corpus ID result: {data}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_get_paper_batch():
     """Test get_paper_batch with multiple paper IDs."""
@@ -121,7 +124,8 @@ async def test_get_paper_batch():
     logger.info(f"get_paper_batch result: {data}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_get_citations():
     """Test get_citations for a paper."""
@@ -143,7 +147,8 @@ async def test_get_citations():
     logger.info(f"get_citations result count: {len(data['data'])}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_search_authors_by_name():
     """Test search_authors_by_name."""
@@ -172,7 +177,8 @@ async def test_search_authors_by_name():
     logger.info(f"search_authors_by_name result: {data}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_get_author_papers():
     """Test get_author_papers."""
@@ -200,7 +206,8 @@ async def test_get_author_papers():
     logger.info(f"get_author_papers result count: {len(data['data'])}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_search_papers_by_relevance():
     """Test search_papers_by_relevance."""
@@ -229,7 +236,8 @@ async def test_search_papers_by_relevance():
     logger.info(f"search_papers_by_relevance result count: {len(data['data'])}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_search_paper_by_title():
     """Test search_paper_by_title."""
@@ -257,7 +265,8 @@ async def test_search_paper_by_title():
     logger.info(f"search_paper_by_title result: {data}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_snippet_search():
     """Test snippet_search."""
@@ -282,7 +291,8 @@ async def test_snippet_search():
     logger.info(f"snippet_search result count: {len(data['data'])}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_error_invalid_fields_in_get_paper_batch():
     """Test get_paper_batch with invalid fields format (trailing comma)."""
@@ -302,7 +312,8 @@ async def test_error_invalid_fields_in_get_paper_batch():
     logger.info(f"Expected error for invalid fields: {tool_error}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_error_invalid_fields_in_search_authors():
     """Test search_authors_by_name with invalid field names."""
@@ -322,7 +333,8 @@ async def test_error_invalid_fields_in_search_authors():
     logger.info(f"Expected error for invalid fields: {tool_error}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_error_wrong_parameter_name_in_get_paper():
     """Test get_paper with wrong parameter name."""
@@ -342,7 +354,8 @@ async def test_error_wrong_parameter_name_in_get_paper():
     logger.info(f"Expected error for wrong parameter: {tool_error}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_error_invalid_paper_id_type():
     """Test get_paper with invalid paper ID type (integer instead of string)."""
@@ -359,7 +372,8 @@ async def test_error_invalid_paper_id_type():
     logger.info(f"Expected error for invalid ID type: {tool_error}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_make_s2api_toolsource():
     """Test the make_s2api_toolsource function."""
@@ -388,7 +402,8 @@ async def test_make_s2api_toolsource():
     logger.info(f"Found {len(tools)} tools: {tool_names}")
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_make_s2api_toolsource_without_api_key():
     """Test make_s2api_toolsource raises error when API key is not provided."""
@@ -1306,7 +1321,8 @@ def test_wrap_subfield_date_filter_functionality():
     assert data["citations"][0]["paperId"] == "old1"
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_make_asta_s2_mcp_tools_real_api_call():
     """Test async_make_asta_s2_mcp_tools with a real API call to verify integration."""
@@ -1327,7 +1343,8 @@ async def test_make_asta_s2_mcp_tools_real_api_call():
     assert "paperCount" in author
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.expensive
+@pytest.mark.s2_api_request
 @pytest.mark.asyncio
 async def test_make_asta_s2_mcp_tools_publication_date_filtering():
     """Test that publication_date_range filtering works on the server side."""
