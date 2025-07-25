@@ -17,7 +17,7 @@ RUN mkdir -p /usr/local/lib/docker/cli-plugins \
 
 # install uv
 RUN apt-get update && apt-get install -y --no-install-recommends curl ca-certificates build-essential
-ADD https://astral.sh/uv/install.sh /uv-installer.sh
+RUN curl -fsSL https://astral.sh/uv/install.sh -o /uv-installer.sh
 RUN sh /uv-installer.sh && rm /uv-installer.sh
 ENV PATH="/root/.local/bin/:$PATH"
 # Don't let uv link system packages
