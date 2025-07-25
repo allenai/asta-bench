@@ -17,7 +17,7 @@ from .models import FileAnnotation, ClaimAnnotation, CitationAnnotation
 
 
 def normalize_citation_id(citation_id: str) -> str:
-    """Normalize citation ID by removing surrounding parentheses and brackets."""
+    """Normalize citation ID by removing surrounding parentheses and brackets and extracting just the numeric ID."""
     if not citation_id:
         return citation_id
     
@@ -26,6 +26,11 @@ def normalize_citation_id(citation_id: str) -> str:
     if (citation_id.startswith('(') and citation_id.endswith(')')) or \
        (citation_id.startswith('[') and citation_id.endswith(']')):
         citation_id = citation_id[1:-1]
+    
+    # Extract just the numeric ID if this is a full citation format
+    # Full format: "231591445 | Radford et al. | 2021 | Citations: 29432"
+    if ' | ' in citation_id:
+        citation_id = citation_id.split(' | ')[0]
     
     return citation_id.strip()
 
@@ -197,18 +202,22 @@ async def save_annotation(
                     label=label
                 ))
         
-        # Get current claim text
+        # Get current claim text and initial values
         rows = data_loader.load_file(filename)
-        claim_text = rows[row].claims[claim].text
+        claim_obj = rows[row].claims[claim]
+        claim_text = claim_obj.text
         
-        # Create claim annotation
+        # Create claim annotation with initial values from CSV
         claim_annotation = ClaimAnnotation(
             claim_index=claim,
             claim_text=claim_text,
             citation_annotations=citation_annotations,
             missing_citations=missing_citations if missing_citations else None,
             notes=notes if notes else None,
-            is_fully_supported_annotation=is_fully_supported_annotation if is_fully_supported_annotation else None
+            is_fully_supported_annotation=is_fully_supported_annotation if is_fully_supported_annotation else None,
+            initial_supporting=claim_obj.supporting,
+            initial_non_supporting=claim_obj.non_supporting,
+            initial_is_fully_supported=claim_obj.is_fully_supported
         )
         
         # Load existing annotations

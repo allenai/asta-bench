@@ -196,9 +196,9 @@
                                 {% set is_supporting = current_claim.supporting | map('normalize_citation_id') | list | select('equalto', normalized_citation_id) | list | length > 0 %}
                                 {% set is_non_supporting = current_claim.non_supporting | map('normalize_citation_id') | list | select('equalto', normalized_citation_id) | list | length > 0 %}
                                 {% if is_supporting %}
-                                    <span class="badge bg-success ms-2">Currently Supporting</span>
+                                    <span class="badge bg-success ms-2">LLM Label: Supporting</span>
                                 {% elif is_non_supporting %}
-                                    <span class="badge bg-danger ms-2">Currently Non-Supporting</span>
+                                    <span class="badge bg-danger ms-2">LLM Label: Non-Supporting</span>
                                 {% else %}
                                     <span class="badge bg-secondary ms-2">Not Listed</span>
                                 {% endif %}

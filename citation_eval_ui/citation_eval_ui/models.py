@@ -46,6 +46,10 @@ class ClaimAnnotation(BaseModel):
     missing_citations: Optional[str] = None
     notes: Optional[str] = None
     is_fully_supported_annotation: Optional[str] = None  # "agree", "disagree", or None
+    # Store initial values from CSV
+    initial_supporting: List[str] = []
+    initial_non_supporting: List[str] = []
+    initial_is_fully_supported: bool = False
 
 
 class FileAnnotation(BaseModel):

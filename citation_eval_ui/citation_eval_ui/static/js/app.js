@@ -67,24 +67,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Citation highlighting based on current assessments
     function highlightCitations() {
         const textContent = document.getElementById('text-content');
-        if (!textContent) return;
+        if (!textContent) {
+            console.log('No text-content element found');
+            return;
+        }
         
         const supportingCitations = window.currentSupportingCitations || [];
         const nonSupportingCitations = window.currentNonSupportingCitations || [];
-        
+
         let content = textContent.innerHTML;
         
         // Highlight supporting citations
         supportingCitations.forEach(citation => {
             const escapedCitation = citation.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            const regex = new RegExp(`(${escapedCitation})`, 'g');
+            const regex = new RegExp(`\\b(${escapedCitation})\\b`, 'g');
             content = content.replace(regex, '<span class="citation-supporting">$1</span>');
         });
         
         // Highlight non-supporting citations
         nonSupportingCitations.forEach(citation => {
             const escapedCitation = citation.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-            const regex = new RegExp(`(${escapedCitation})`, 'g');
+            const regex = new RegExp(`\\b(${escapedCitation})\\b`, 'g');
             content = content.replace(regex, '<span class="citation-non-supporting">$1</span>');
         });
         
@@ -227,10 +230,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Initialize highlighting and progress
-    highlightClaimInText();
-    highlightCitations();
-    updateProgress();
+    // Initialize function to be called after variables are set
+    window.initializeAnnotations = function() {
+        highlightClaimInText();
+        highlightCitations();
+        updateProgress();
+    }
+    
+    // Check if we're on the annotate page and variables are already set
+    if (window.currentSupportingCitations !== undefined) {
+        window.initializeAnnotations();
+    }
 
     // Show keyboard shortcuts help
     function showKeyboardHelp() {
