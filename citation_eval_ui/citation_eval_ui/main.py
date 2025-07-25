@@ -15,6 +15,7 @@ from fastapi.templating import Jinja2Templates
 
 from .data_loader import DataLoader
 from .models import FileAnnotation, ClaimAnnotation, CitationAnnotation
+from .database import AnnotationDatabase
 
 
 def normalize_citation_id(citation_id: str) -> str:
@@ -79,9 +80,13 @@ templates.env.filters['markdown'] = markdown_filter
 # Initialize data loader
 data_loader = DataLoader()
 
-# Annotations directory
+# Annotations directory (kept for backwards compatibility)
 annotations_dir = package_dir / "annotations"
 annotations_dir.mkdir(exist_ok=True)
+
+# Initialize SQLite database
+db_path = package_dir / "annotations.db"
+annotation_db = AnnotationDatabase(db_path)
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -227,18 +232,13 @@ async def save_annotation(
             initial_is_fully_supported=claim_obj.is_fully_supported
         )
         
-        # Load existing annotations
-        annotations = load_annotations(filename)
-        
-        # Update annotations
-        if row not in annotations.row_annotations:
-            annotations.row_annotations[row] = {}
-        
-        annotations.row_annotations[row][claim] = claim_annotation
-        annotations.timestamp = datetime.now().isoformat()
-        
-        # Save annotations
-        save_annotations(annotations)
+        # Save annotation directly to database (atomic operation)
+        annotation_db.save_annotation(
+            filename=filename,
+            row_index=row,
+            claim_index=claim,
+            claim_annotation=claim_annotation
+        )
         
         return JSONResponse({"status": "success"})
         
@@ -262,42 +262,22 @@ def _escape_filename(filename: str) -> str:
 
 
 def load_annotations(filename: str) -> FileAnnotation:
-    """Load annotations for a file."""
-    escaped_filename = _escape_filename(filename)
-    annotation_file = annotations_dir / f"{escaped_filename}.json"
-    
-    if annotation_file.exists():
-        with open(annotation_file, 'r') as f:
-            data = json.load(f)
-            
-            # Convert string keys to int (JSON doesn't support int keys)
-            if 'row_annotations' in data:
-                converted_row_annotations = {}
-                for row_idx_str, claims_dict in data['row_annotations'].items():
-                    row_idx = int(row_idx_str)
-                    converted_claims = {}
-                    for claim_idx_str, claim_annotation in claims_dict.items():
-                        claim_idx = int(claim_idx_str)
-                        converted_claims[claim_idx] = claim_annotation
-                    converted_row_annotations[row_idx] = converted_claims
-                data['row_annotations'] = converted_row_annotations
-            
-            return FileAnnotation(**data)
-    else:
-        return FileAnnotation(
-            filename=filename,
-            timestamp=datetime.now().isoformat(),
-            row_annotations={}
-        )
+    """Load annotations for a file from SQLite database."""
+    return annotation_db.load_annotations(filename)
 
 
 def save_annotations(annotations: FileAnnotation):
-    """Save annotations for a file."""
-    escaped_filename = _escape_filename(annotations.filename)
-    annotation_file = annotations_dir / f"{escaped_filename}.json"
-    
-    with open(annotation_file, 'w') as f:
-        json.dump(annotations.model_dump(), f, indent=2)
+    """Save annotations for a file to SQLite database."""
+    # This function is no longer used directly - we save individual claims
+    # But keeping it for backwards compatibility
+    for row_idx, claims in annotations.row_annotations.items():
+        for claim_idx, claim_annotation in claims.items():
+            annotation_db.save_annotation(
+                filename=annotations.filename,
+                row_index=row_idx,
+                claim_index=claim_idx,
+                claim_annotation=claim_annotation
+            )
 
 
 def main():
