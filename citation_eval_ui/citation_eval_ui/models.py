@@ -52,4 +52,4 @@ class FileAnnotation(BaseModel):
     """Annotations for an entire file."""
     filename: str
     timestamp: str
-    row_annotations: Dict[int, List[ClaimAnnotation]]  # row_index -> claim annotations
+    row_annotations: Dict[int, List[Optional[ClaimAnnotation]]]  # row_index -> claim annotations

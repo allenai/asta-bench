@@ -251,7 +251,7 @@
                     <!-- Is Fully Supported Assessment -->
                     <div class="mt-4">
                         <label class="form-label">
-                            <strong>Your Assessment: Do you agree this claim is fully supported?</strong>
+                            <strong>Your Assessment: Is this claim fully supported?</strong>
                         </label>
                         <div class="card p-3" style="background-color: #f8f9fa;">
                             <div class="mb-2">
@@ -266,13 +266,13 @@
                                 <input type="radio" class="btn-check" name="is_fully_supported_annotation" id="agree_supported" value="agree"
                                        {% if claim_annotation and claim_annotation.is_fully_supported_annotation == "agree" %}checked{% endif %}>
                                 <label class="btn btn-outline-success" for="agree_supported">
-                                    <i class="bi bi-check-circle"></i> Agree
+                                    <i class="bi bi-check-circle"></i> Fully Supported
                                 </label>
 
                                 <input type="radio" class="btn-check" name="is_fully_supported_annotation" id="disagree_supported" value="disagree"
                                        {% if claim_annotation and claim_annotation.is_fully_supported_annotation == "disagree" %}checked{% endif %}>
                                 <label class="btn btn-outline-danger" for="disagree_supported">
-                                    <i class="bi bi-x-circle"></i> Disagree
+                                    <i class="bi bi-x-circle"></i> Not Fully Supported
                                 </label>
 
                                 <input type="radio" class="btn-check" name="is_fully_supported_annotation" id="unset_supported" value=""
