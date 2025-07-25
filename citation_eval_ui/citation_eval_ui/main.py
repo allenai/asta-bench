@@ -114,21 +114,26 @@ async def index(request: Request):
 
 
 @app.get("/annotate/{filename:path}", response_class=HTMLResponse)
-async def annotate(request: Request, filename: str, row: int = 0, claim: int = 0, random_claim: bool = False):
+async def annotate(request: Request, filename: str, row: Optional[int] = None, claim: Optional[int] = None, random_claim: bool = False):
     """Main annotation interface."""
     try:
         rows = data_loader.load_file(filename)
         if not rows:
             raise HTTPException(status_code=404, detail="No data found in file")
         
-        if row >= len(rows):
+        # If row is not provided, select a random row
+        if row is None:
+            row = random.randint(0, len(rows) - 1)
+        elif row >= len(rows):
             row = 0
         
         current_row = rows[row]
         
-        # If random_claim is True, select a random claim
-        if random_claim and current_row.claims:
+        # If claim is not provided or random_claim is True, select a random claim
+        if (claim is None or random_claim) and current_row.claims:
             claim = random.randint(0, len(current_row.claims) - 1)
+        elif claim is None:
+            claim = 0
         elif claim >= len(current_row.claims):
             claim = 0
         
