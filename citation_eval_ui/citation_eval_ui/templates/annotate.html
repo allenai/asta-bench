@@ -91,8 +91,13 @@
                     {{ current_claim.text }}
                 </div>
                 <div class="mt-3">
-                    <div class="row">
-                        <div class="col-md-6">
+                    <div class="row align-items-center">
+                       <div class="col-md-4">
+                            <button type="button" class="btn btn-secondary btn-sm" id="toggle-text-btn">
+                                <span id="toggle-text-icon">Show</span> full section text
+                            </button>
+                        </div>
+                        <div class="col-md-4">
                             <strong>Supporting Citations:</strong>
                             {% if current_claim.supporting %}
                                 {% for cit in current_claim.supporting %}
@@ -102,7 +107,7 @@
                                 <em>None</em>
                             {% endif %}
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <strong>Non-Supporting Citations:</strong>
                             {% if current_claim.non_supporting %}
                                 {% for cit in current_claim.non_supporting %}
@@ -121,7 +126,7 @@
         <div class="claim-placeholder" id="claim-placeholder"></div>
 
         <!-- Text with Highlighted Claim -->
-        <div class="card mb-4">
+        <div class="card mb-4" id="section-text-card" style="display: none;">
             <div class="card-header">
                 <h5>Section text that the claim appears in:</h5>
             </div>
@@ -388,6 +393,35 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Navigate to the random row with a special parameter to select a random claim
             window.location.href = `/annotate/${encodeURIComponent(currentFilename)}?row=${randomRow}&random_claim=true`;
+        });
+    }
+    
+    // Toggle text visibility
+    const toggleTextBtn = document.getElementById('toggle-text-btn');
+    const sectionTextCard = document.getElementById('section-text-card');
+    const toggleTextIcon = document.getElementById('toggle-text-icon');
+    
+    if (toggleTextBtn && sectionTextCard) {
+        toggleTextBtn.addEventListener('click', function() {
+            if (sectionTextCard.style.display === 'none') {
+                sectionTextCard.style.display = 'block';
+                toggleTextIcon.textContent = 'Hide';
+                toggleTextBtn.classList.remove('btn-outline-secondary');
+                toggleTextBtn.classList.add('btn-secondary');
+                
+                // Trigger highlighting when text is shown
+                if (window.initializeAnnotations) {
+                    window.initializeAnnotations();
+                }
+                
+                // Scroll to the section text
+                sectionTextCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                sectionTextCard.style.display = 'none';
+                toggleTextIcon.textContent = 'Show';
+                toggleTextBtn.classList.remove('btn-secondary');
+                toggleTextBtn.classList.add('btn-outline-secondary');
+            }
         });
     }
 });
