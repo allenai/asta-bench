@@ -2439,8 +2439,8 @@ stages:
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_storm.eval
       hash: md5
-      md5: 21685170723948d1f8d89cf0ed71666d
-      size: 5802900
+      md5: e55c480172e5d45809cbf401c490b6cd
+      size: 6016775
   create_nice_logs@anthropic/claude-sonnet-4-20250514-test:
     cmd: echo "Creating logs"; [[ "anthropic/claude-sonnet-4-20250514" == */* ]] &&
       mkdir -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname "anthropic/claude-sonnet-4-20250514");
@@ -2605,13 +2605,13 @@ stages:
     deps:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_storm.eval
       hash: md5
-      md5: 21685170723948d1f8d89cf0ed71666d
-      size: 5802900
+      md5: e55c480172e5d45809cbf401c490b6cd
+      size: 6016775
     outs:
     - path: test_dvc_logs/model_responses/task_sqa_solver_storm_responses.csv
       hash: md5
-      md5: 36f7918f26cea5397c9ef0ba7d183022
-      size: 12043391
+      md5: 6a0f67da2e6c24630cfb5e17f89b610e
+      size: 12387599
   extract_model_responses@sqa_claude-4.0-dev:
     cmd: echo "Extracting responses"; [[ "sqa_claude-4.0" == */* ]] && mkdir -p dev_dvc_logs/model_responses/task_sqa_solver_$(dirname
       "sqa_claude-4.0"); uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.0.eval
@@ -2776,8 +2776,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_storm.eval
       hash: md5
-      md5: e70ded32703f2c4f02e6d9e6aca2daf6
-      size: 15020405
+      md5: e1227ead89476c9fb254114e3cceaf1d
+      size: 15572628
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_storm.md
       hash: md5
@@ -2785,7 +2785,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_storm.md
       hash: md5
-      md5: ad271c9a6a27255e437aa8f25b128437
+      md5: 88f288527b54847dea1fa4849fa649d6
       size: 255
   create_nice_logs@storm-test:
     cmd: echo "Creating logs"; [[ "storm" == */* ]] && mkdir -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname
@@ -2794,24 +2794,24 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_storm.eval
       hash: md5
-      md5: e70ded32703f2c4f02e6d9e6aca2daf6
-      size: 15020405
+      md5: e1227ead89476c9fb254114e3cceaf1d
+      size: 15572628
     params:
       params.yaml:
         scorer_model: google/gemini-2.5-flash
     outs:
     - path: test_dvc_logs/debug_logs/task_sqa_solver_storm_answer_precision_eval.csv
       hash: md5
-      md5: b88cd9438a76b2dc64efeec6841a7ab8
-      size: 16010341
+      md5: 2aa8efc6d490e96eab01f3721ab62603
+      size: 16426259
     - path: test_dvc_logs/debug_logs/task_sqa_solver_storm_citation_eval.csv
       hash: md5
-      md5: 11476181ed7d144a78881722df1417eb
-      size: 114417509
+      md5: af7c78dd7668cb5d93ddaf27e5a0400e
+      size: 117490331
     - path: test_dvc_logs/debug_logs/task_sqa_solver_storm_rubric_eval.csv
       hash: md5
-      md5: 5982324c37031fd9317260f7b361b476
-      size: 16622239
+      md5: e9bbfae74f9cf23d79d3f13baadddc51
+      size: 17010235
   score_all_solvers@model12-test:
     cmd: echo "Scoring";[[ "storm" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_storm;
       cp test_dvc_logs/solver_outputs/task_sqa_solver_storm.eval test_dvc_logs/scored/task_sqa_solver_storm.eval;
@@ -2820,8 +2820,8 @@ stages:
     deps:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_storm.eval
       hash: md5
-      md5: 8726b423e371a6f02ebb8edf044da131
-      size: 13192395
+      md5: e55c480172e5d45809cbf401c490b6cd
+      size: 6016775
     params:
       params.yaml:
         scorer_model: google/gemini-2.5-flash
@@ -2829,8 +2829,8 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_storm.eval
       hash: md5
-      md5: b797a0b8f9b0d80449cd01a3e7c8771f
-      size: 33056563
+      md5: e1227ead89476c9fb254114e3cceaf1d
+      size: 15572628
   score_all_solvers@model8-test:
     cmd: echo "Scoring";[[ "sqa_claude-4.0" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0;
       cp test_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.0.eval test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.0.eval;
