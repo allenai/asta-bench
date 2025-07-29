@@ -666,7 +666,7 @@ async def run_server(cell_timeout: int = DEFAULT_TIMEOUT) -> None:
         app = await make_mcp_app(jupyter_env)
         await app.run_stdio_async()
     except Exception:
-        logger.exception(f"Error running server:")
+        logger.exception("Error running server:")
         raise
     finally:
         logger.info("Server exited")
