@@ -13,7 +13,7 @@ class TestToolsetConfig:
     def test_default_config(self):
         """Test default configuration values."""
         config = ToolsetConfig()
-        assert config.with_search_tools is True
+        assert config.with_search_tools is False
         assert config.with_stateful_python is False
         assert config.with_report_editor is False
         assert config.with_table_editor is False

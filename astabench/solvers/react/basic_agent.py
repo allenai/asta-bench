@@ -343,7 +343,6 @@ def instantiated_basic_agent(
             (necessary to maintain e.g. date restrictions on search tools where
             they apply)
     """
-    tool_options.setdefault("with_stateful_python", True)
     config = ToolsetConfig.model_validate(tool_options)
     tools = config.create_tools()
 
