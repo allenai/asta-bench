@@ -56,7 +56,7 @@ splits:
           - discovery
       - name: super_validation
         path: astabench/super_validation
-        primary_metric: 'check_super_auto/astabench/entrypoints'
+        primary_metric: 'entrypoint/mean'
         tags:
           - code
     macro_average_weight_adjustments:
@@ -121,7 +121,7 @@ splits:
           - discovery
       - name: super_test
         path: astabench/super_test
-        primary_metric: 'check_super_execution/astabench/outcome_accuracy'
+        primary_metric: 'output_match/mean'
         tags:
           - code
     macro_average_weight_adjustments:
