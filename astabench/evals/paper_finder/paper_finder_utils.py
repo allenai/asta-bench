@@ -57,7 +57,7 @@ def get_paper_date(paper: dict[str, str]) -> date:
     if paper["publicationDate"]:
         year, month, day = tuple(paper["publicationDate"].split("-"))
     else:
-        year = paper["year"]
+        year = paper["year"] if paper["year"] else 1
         month = 1
         day = 1
     return date(year=int(year), month=int(month), day=int(day))
@@ -83,8 +83,8 @@ async def get_papers_dates(corpus_ids: list[CorpusId]) -> dict[str, date]:
 
         if response.status_code == 200:
             ret = {
-                str(paper["corpusId"]): get_paper_date(paper)
-                for paper in response.json()
+                str(orig): get_paper_date(paper) if paper else None
+                for paper, orig in zip(response.json(), corpus_ids)
             }
 
     return ret
@@ -115,7 +115,9 @@ async def filter_results(
     verified_results = [
         result
         for result in output.results
-        if not papers_dates or papers_dates[result.paper_id] < inserted_before
+        if not papers_dates
+        or not papers_dates[result.paper_id]
+        or papers_dates[result.paper_id] < inserted_before
     ]
 
     # then we only keep the top MAX_RESULTS_TO_CONSIDER results as to prevent brute force
