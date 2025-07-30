@@ -9,6 +9,7 @@ from contextlib import asynccontextmanager
 from datetime import datetime
 from typing import Any, Collection, Literal
 
+import httpx
 from inspect_ai.tool import ContentText, Tool, ToolDef, ToolError, ToolSource
 from inspect_ai.tool._mcp._mcp import MCPServerImpl
 from mcp.client.streamable_http import streamablehttp_client
@@ -429,6 +430,36 @@ def _remove_arg_description_block(
     return "\n".join(lines[:arg_to_remove_start_idx] + lines[end_idx:])
 
 
+def _is_retryable_error(error: Exception) -> bool:
+    """Check if an error is retryable (429, 529, or 504 HTTP status codes).
+
+    Handles both direct httpx.HTTPStatusError and errors within BaseExceptionGroup,
+    following the pattern from replay_solver.py.
+
+    Args:
+        error: The exception to check
+
+    Returns:
+        True if the error has a retryable HTTP status code, False otherwise
+    """
+    retryable_codes = {429, 529, 504}
+
+    http_error = None
+    if isinstance(error, BaseExceptionGroup):
+        # Look for HTTPStatusError in the exception group
+        for sub_exc in error.exceptions:
+            if isinstance(sub_exc, httpx.HTTPStatusError):
+                http_error = sub_exc
+                break
+    elif isinstance(error, httpx.HTTPStatusError):
+        http_error = error
+
+    if http_error and hasattr(http_error, "response"):
+        return http_error.response.status_code in retryable_codes
+
+    return False
+
+
 def make_override_wrapper(
     td: ToolDef,
     arg_defaults: dict[str, Any] | None = None,
@@ -530,6 +561,51 @@ def make_corpus_id_wrapper(td: ToolDef, paper_id_param_name: str):
     return wrapper
 
 
+def make_retry_wrapper(
+    td: ToolDef,
+    max_retries: int = 10,
+    backoff_multiplier: float = 2.0,
+    base_delay: float = 1.0,
+    max_delay: float = 60.0,
+):
+    """Wraps a tool to retry on retryable HTTP errors (429, 529, 504) with exponential backoff.
+
+    Args:
+        td: The ToolDef to modify
+        max_retries: Maximum number of retry attempts (default: 3)
+        backoff_multiplier: Multiplier for exponential backoff (default: 2.0)
+        base_delay: Base delay in seconds (default: 1.0)
+        max_delay: Maximum delay in seconds (default: 60.0)
+    """
+    origtool = td.tool
+
+    @functools.wraps(origtool)
+    async def wrapper(*args, **kwargs):
+        for attempt in range(max_retries + 1):  # +1 for initial attempt
+            try:
+                return await origtool(*args, **kwargs)
+            except Exception as e:
+                if not _is_retryable_error(e):
+                    raise
+
+                if attempt >= max_retries:
+                    logger.warning(
+                        f"Tool {td.name} failed after {max_retries} retries with retryable error: {e}"
+                    )
+                    raise
+
+                delay = min(max_delay, base_delay * (backoff_multiplier**attempt))
+
+                logger.warning(
+                    f"Tool {td.name} attempt {attempt + 1} failed with retryable error: {e}. "
+                    f"Retrying in {delay:.1f} seconds..."
+                )
+
+                await asyncio.sleep(delay)
+
+    return wrapper
+
+
 async def async_make_asta_s2_mcp_tools(
     api_key: str | None = None, insertion_date: str | None = None
 ) -> list[Tool]:
@@ -571,6 +647,9 @@ async def async_make_asta_s2_mcp_tools(
             raise ValueError(f"Unexpected tool {td.name} found in S2 MCP tools")
 
         found_tools.add(td.name)
+
+        # Retry if we get rate-limited by S2 API
+        td.tool = make_retry_wrapper(td)
 
         # LLMs get confused about corpusid vs paperid, so we auto-convert for them
         # get_paper_batch - ids
