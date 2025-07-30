@@ -1,0 +1,133 @@
+name: asta-bench
+version: "1.0.1-dev1"
+
+splits:
+  - name: validation
+    tasks:
+      - name: ArxivDIGESTables_Clean
+        path: astabench/arxivdigestables_validation
+        primary_metric: 'score_tables/mean'
+        tags:
+          - lit
+      - name: ScholarQABench2
+        path: astabench/sqa_dev
+        primary_metric: 'global_avg/mean'
+        tags:
+          - lit
+      - name: LitQA2_FT
+        path: astabench/litqa2_validation
+        primary_metric: 'is_correct/accuracy'
+        tags:
+          - lit
+      - name: PaperFindingBench
+        path: astabench/paper_finder_validation
+        primary_metric: 'score_paper_finder/adjusted_f1_micro_avg'
+        tags:
+          - lit
+      - name: LitQA2_FT_Search
+        path: astabench/paper_finder_litqa2_validation
+        primary_metric: 'score_paper_finder/recall_at_30'
+        tags:
+          - lit
+      - name: DiscoveryBench
+        path: astabench/discoverybench_validation
+        primary_metric: 'score_discoverybench/mean'
+        tags:
+          - data
+      - name: CORE_Bench_Hard
+        path: astabench/core_bench_validation
+        primary_metric: 'evaluate_task_questions/accuracy'
+        tags:
+          - code
+      - name: DS_1000
+        path: astabench/ds1000_validation
+        primary_metric: 'ds1000_scorer/accuracy'
+        tags:
+          - code
+      - name: E2E_Bench
+        path: astabench/e2e_discovery_validation
+        primary_metric: 'score_rubric/accuracy'
+        tags:
+          - discovery
+      - name: E2E_Bench_Hard
+        path: astabench/e2e_discovery_hard_validation
+        primary_metric: 'score_rubric/accuracy'
+        tags:
+          - discovery
+      - name: SUPER_Expert
+        path: astabench/super_validation
+        primary_metric: 'check_super_auto/astabench/entrypoints'
+        tags:
+          - code
+    macro_average_weight_adjustments:
+      - tag: lit
+        task: LitQA2_FT
+        weight: 0.5
+      - tag: lit
+        task: LitQA2_FT_Search
+        weight: 0.5
+
+  - name: test
+    tasks:
+      - name: PaperFindingBench
+        path: astabench/paper_finder_test
+        primary_metric: 'score_paper_finder/adjusted_f1_micro_avg'
+        tags:
+          - lit
+      - name: LitQA2_FT_Search
+        path: astabench/paper_finder_litqa2_test
+        primary_metric: 'score_paper_finder/recall_at_30'
+        tags:
+          - lit
+      - name: ScholarQABench2
+        path: astabench/sqa_test
+        primary_metric: 'global_avg/mean'
+        tags:
+          - lit
+      - name: ArxivDIGESTables_Clean
+        path: astabench/arxivdigestables_test
+        primary_metric: 'score_tables/mean'
+        tags:
+          - lit
+      - name: LitQA2_FT
+        path: astabench/litqa2_test
+        primary_metric: 'is_correct/accuracy'
+        tags:
+          - lit
+      - name: DiscoveryBench
+        path: astabench/discoverybench_test
+        primary_metric: 'score_discoverybench/mean'
+        tags:
+          - data
+      - name: CORE_Bench_Hard
+        path: astabench/core_bench_test
+        primary_metric: 'evaluate_task_questions/accuracy'
+        tags:
+          - code
+      - name: DS_1000
+        path: astabench/ds1000_test
+        primary_metric: 'ds1000_scorer/accuracy'
+        tags:
+          - code
+      - name: E2E_Bench
+        path: astabench/e2e_discovery_test
+        primary_metric: 'score_rubric/accuracy'
+        tags:
+          - discovery
+      - name: E2E_Bench_Hard
+        path: astabench/e2e_discovery_hard_test
+        primary_metric: 'score_rubric/accuracy'
+        tags:
+          - discovery
+      - name: SUPER_Expert
+        path: astabench/super_test
+        primary_metric: 'check_super_execution/astabench/outcome_accuracy'
+        tags:
+          - code
+    macro_average_weight_adjustments:
+      - tag: lit
+        task: litqa2_test
+        weight: 0.5
+      - tag: lit
+        task: paper_finder_litqa2_test
+        weight: 0.5
