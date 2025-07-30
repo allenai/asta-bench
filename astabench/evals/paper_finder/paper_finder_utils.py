@@ -53,17 +53,19 @@ async def get_model_json_output(state: TaskState) -> ExpectedAgentOutput:
     return ExpectedAgentOutput(**output)
 
 
-def get_paper_date(paper: dict[str, str]) -> date:
+def get_paper_date(paper: dict[str, str]) -> date | None:
     if paper["publicationDate"]:
         year, month, day = tuple(paper["publicationDate"].split("-"))
-    else:
-        year = paper["year"] if paper["year"] else 1
+    elif paper["year"]:
+        year = paper["year"]
         month = 1
         day = 1
+    else:
+        return None
     return date(year=int(year), month=int(month), day=int(day))
 
 
-async def get_papers_dates(corpus_ids: list[CorpusId]) -> dict[str, date]:
+async def get_papers_dates(corpus_ids: list[CorpusId]) -> dict[str, date | None]:
     ret = dict()
 
     if not corpus_ids:
@@ -115,9 +117,9 @@ async def filter_results(
     verified_results = [
         result
         for result in output.results
-        if not papers_dates
-        or not papers_dates[result.paper_id]
-        or papers_dates[result.paper_id] < inserted_before
+        if papers_dates
+        and papers_dates[result.paper_id]
+        and papers_dates[result.paper_id] < inserted_before
     ]
 
     # then we only keep the top MAX_RESULTS_TO_CONSIDER results as to prevent brute force
