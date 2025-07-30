@@ -17,7 +17,7 @@ agents:
     reflect_on_tool_use: False
     tool_call_summary_format: "{result}"
     model_client:
-      model: "gpt-4o"
+      model: "gpt-4.1"
       seed: 42
     cache: false
   programmer:
@@ -62,7 +62,7 @@ agents:
         - Never attempt to create a new environment. Always use the current environment. '
 
     model_client:
-      model: "gpt-4o"
+      model: "gpt-4.1"
       seed: 42
     cache: false
   data_expert:
@@ -82,7 +82,7 @@ agents:
       2. Never produce dummy data and analyse it, always use the data/results provided to you.
       3. Never assume that the data/results are available to you, always check if the data/results are available before making any conclusions.
     model_client:
-      model: "gpt-4o"
+      model: "gpt-4.1"
       seed: 42
     cache: false
 
@@ -103,7 +103,7 @@ orchestrator:
   termination_condition:
     - "[[QUERY_ANSWERED]]"
   model_client:
-    model: "gpt-4o"
+    model: "gpt-4.1"
     seed: 42
   cache: false
   prompts:
