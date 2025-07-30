@@ -516,51 +516,6 @@ def make_override_wrapper(
     return wrapper
 
 
-def _transform_corpusid_to_paperid(paper_id: str) -> str:
-    if paper_id.isdigit():
-        return f"CorpusId:{paper_id}"
-    return paper_id
-
-
-def _transform_corpusids_to_paperids(paper_ids: str | list[str]) -> str | list[str]:
-    """Transform paper IDs, handling both single strings and lists of strings.
-
-    Args:
-        paper_ids: Either a single paper ID string or a list of paper ID strings
-
-    Returns:
-        The transformed paper IDs in the same format (string or list)
-    """
-    if isinstance(paper_ids, str):
-        return _transform_corpusid_to_paperid(paper_ids)
-    elif isinstance(paper_ids, list):
-        return [_transform_corpusid_to_paperid(pid) for pid in paper_ids]
-    else:
-        return paper_ids
-
-
-def make_corpus_id_wrapper(td: ToolDef, paper_id_param_name: str):
-    """Wraps a tool to auto-detect corpus IDs and transform them to CorpusId:integer format.
-
-    Args:
-        td: The ToolDef to modify
-        paper_id_param_name: The name of the parameter containing paper ID(s) to transform
-    """
-    origtool = td.tool
-
-    @functools.wraps(origtool)
-    async def wrapper(*args, **kwargs):
-        # Transform paper IDs if the parameter is present
-        if paper_id_param_name in kwargs:
-            kwargs[paper_id_param_name] = _transform_corpusids_to_paperids(
-                kwargs[paper_id_param_name]
-            )
-
-        return await origtool(*args, **kwargs)
-
-    return wrapper
-
-
 def make_retry_wrapper(
     td: ToolDef,
     max_retries: int = 10,
@@ -650,15 +605,6 @@ async def async_make_asta_s2_mcp_tools(
 
         # Retry if we get rate-limited by S2 API
         td.tool = make_retry_wrapper(td)
-
-        # LLMs get confused about corpusid vs paperid, so we auto-convert for them
-        # get_paper_batch - ids
-        # snippet_search - paper_ids
-        # all others - paper_id
-        for possible_paperid_param in ["paper_id", "paper_ids", "ids"]:
-            if possible_paperid_param in td.parameters.properties:
-                td.tool = make_corpus_id_wrapper(td, possible_paperid_param)
-                break
 
         paper_fields_arg_name: str | None = None
         if "fields" in td.parameters.properties:
