@@ -203,9 +203,7 @@ def smolagents_coder(
 
         general_instruction_prompt = (
             tools_usage_prompt
-            + """Remember that you also have a final_answer(answer: str) tool that you must use to return your final answer.  The value passed to final_answer tool should be a string formatted according to the task instructions.  E.g., if a task asks you to submit code (as opposed to running code to return a result), then the string passed to `final_answer` should contain the code formatted as specified in the task instructions.
-
-Your task is as follows:"""
+            + """Remember that you have a `final_answer(answer: str)` tool that you must use to return your final answer and mark the task as completed.  The value passed to final_answer tool should be a string formatted according to the task instructions."""
         )
 
         # Augment the user prompt with tool instructions
