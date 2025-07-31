@@ -14,6 +14,7 @@ import anyio
 import anyio.lowlevel
 import mcp.types as types
 from anyio.streams.memory import MemoryObjectReceiveStream, MemoryObjectSendStream
+from inspect_ai.model import ContentText
 from inspect_ai.tool import Tool, ToolDef
 from inspect_ai.util import SandboxEnvironment, SandboxEnvironmentSpec
 from mcp.server import Server
@@ -413,12 +414,52 @@ class SandboxToolManager:
         async def call_tool(
             name: str, arguments: dict[str, Any]
         ) -> list[types.TextContent]:
+            """Call the tool and return the result wrapped as TextContent.  The
+            text of this TextContent is *always* a json-encoded value that
+            should be deserialized by the client with `json.loads(...)`.
+
+            Due to the variety of things tools can return, we attempt some
+            transformations to obtain json-structured values for use in code;
+            for example, if the tool returns a json-encoded ContentText, the
+            code function will return the deserialized value rather than the
+            text as a string.  The tool can return a plain string (not
+            ContentText) to avoid having its output transformed in any way.
+            """
             if name not in tools_dict:
                 raise ValueError(f"Tool {name} not found")
 
             tool = tools_dict[name].as_tool()
             result = await tool(**arguments)
-            return [types.TextContent(type="text", text=json.dumps(result))]
+
+            # ContentText is returned by tools based on MCP servers; often
+            # those are actually returning JSON but it gets wrapped as
+            # ContentText automatically by the framework
+            if isinstance(result, ContentText):
+                try:
+                    result = json.loads(result.text)
+                except json.JSONDecodeError:
+                    result = result.text
+            elif isinstance(result, list) and all(
+                isinstance(x, ContentText) for x in result
+            ):
+                json_decodes = []
+                for item in result:
+                    try:
+                        json_decodes.append(json.loads(item.text))
+                    except json.JSONDecodeError:
+                        json_decodes = None
+                        break
+                if json_decodes is None:
+                    result = [item.text for item in result]
+                else:
+                    result = json_decodes
+
+                if len(result) == 1:
+                    result = result[0]
+
+            return [
+                types.TextContent(type="text", text=json.dumps(result, default=str))
+            ]
 
         return app
 
