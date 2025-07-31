@@ -88,7 +88,7 @@ def get_average_recalls(
     )
 
 
-@patch("astabench.ai2.tools.paper_finder_ai2i.find_papers")
+@patch("astabench.tools.paper_finder_ai2i.find_papers")
 def test_paper_finder_end_to_end(mock_find_papers, mock_paper_finder_response) -> None:
     """Test paper finder end-to-end with mocked find_papers function."""
     # Mock the find_papers function to return our test response
@@ -108,7 +108,7 @@ def test_paper_finder_end_to_end(mock_find_papers, mock_paper_finder_response) -
     mock_find_papers.assert_called()
 
 
-@patch("astabench.ai2.tools.paper_finder_ai2i.find_papers")
+@patch("astabench.tools.paper_finder_ai2i.find_papers")
 def test_paper_finder_litqa2(mock_find_papers, mock_paper_finder_response) -> None:
     """Test paper finder litqa2 with mocked find_papers function."""
     # Mock the find_papers function to return our test response
