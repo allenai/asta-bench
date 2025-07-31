@@ -99,6 +99,7 @@ def get_inserted_before_per_dataset_type(dataset_type: str) -> str:
         inserted_before = str(PF_INSERTED_BEFORE)
     return inserted_before
 
+
 def take_top_results(output: ExpectedAgentOutput) -> ExpectedAgentOutput:
     # we only keep the top MAX_RESULTS_TO_CONSIDER results as to prevent brute force
     final_set = output.results[:MAX_RESULTS_TO_CONSIDER]
@@ -122,7 +123,11 @@ async def check_verified(
     verified_list = []
     unverified_list = []
     for result in output.results:
-        if papers_dates and papers_dates[result.paper_id] and papers_dates[result.paper_id] < inserted_before:
+        if (
+            papers_dates
+            and papers_dates[result.paper_id]
+            and papers_dates[result.paper_id] < inserted_before
+        ):
             verified_list.append(result.query_id)
         else:
             unverified_list.append(result.query_id)
