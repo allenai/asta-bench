@@ -120,22 +120,27 @@ async def check_verified(
     inserted_before = get_inserted_before_per_dataset_type(query_type)
     inserted_before = date(*[int(s) for s in inserted_before.split("-")])
 
-    verified_list = []
-    unverified_list = []
+    valid_corpusids_and_dates = []
+    valid_corpusids_not_dates = []
+    invalid_corpusids = []
     for result in output.results:
-        if (
-            papers_dates
-            and papers_dates[result.paper_id]
-            and papers_dates[result.paper_id] < inserted_before
+        if not papers_dates or result.paper_id not in papers_dates:
+            invalid_corpusids.append(result.paper_id)
+        elif (
+            not papers_dates[result.paper_id]
+            or not papers_dates[result.paper_id] < inserted_before
         ):
-            verified_list.append(result.query_id)
+            valid_corpusids_not_dates.append(result.paper_id)
         else:
-            unverified_list.append(result.query_id)
+            valid_corpusids_and_dates.append(result.paper_id)
 
     return {
-        "verified_count": len(verified_list),
-        "unverified_count": len(unverified_list),
-        "unverified_ids": unverified_list,
+        "valid_corpusids_and_dates_count": len(valid_corpusids_and_dates),
+        "valid_corpusids_and_dates": valid_corpusids_and_dates,
+        "valid_corpusids_not_dates_count": len(valid_corpusids_not_dates),
+        "valid_corpusids_not_dates": valid_corpusids_not_dates,
+        "invalid_corpusids_count": len(invalid_corpusids),
+        "invalid_corpusids": invalid_corpusids,
     }
 
 
