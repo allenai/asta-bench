@@ -20,7 +20,8 @@ AUTONORA_RESULTS_SUBDIR = "experiments_json/"
 def autoasta_cached_solver() -> Solver:
     async def solve(state: TaskState, generate: Generate) -> TaskState:
         dataset_name = state.metadata["dataset_name"]
-        model = "gpt-4-1"
+#       model = "gpt-4-1"
+        model = "claude-sonnet-4-20250514"    # new default model for Panda
         answer_json = await run_task(
             state.sample_id, state.input_text, dataset_name, model
         )
