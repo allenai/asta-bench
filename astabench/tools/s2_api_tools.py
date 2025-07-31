@@ -697,22 +697,21 @@ async def async_make_asta_s2_mcp_tools(
             )
 
         # Add publication date filtering for tools that support it
-        if (
-            insertion_date is not None
-            and "publication_date_range" in td.parameters.properties
-        ):
-            publication_date_filter = _format_publication_before(insertion_date)
-            arg_overrides = {"publication_date_range": publication_date_filter}
-            if td.name == "snippet_search":
-                # `snippet_search` is special... it does not allow any other
-                # filter to be combined with the `paper_ids` filter, including
-                # `publication_date_range`, so we must remove the `paper_ids`
-                # filter if `publication_date_range` is overridden.
-                arg_overrides["paper_ids"] = ""
-            td.tool = make_override_wrapper(
-                td,
-                arg_overrides=arg_overrides,
-            )
+        if insertion_date is not None:
+            if "inserted_before" in td.parameters.properties:
+                td.tool = make_override_wrapper(
+                    td,
+                    arg_overrides={"inserted_before": insertion_date},
+                )
+            elif "publication_date_range" in td.parameters.properties:
+                td.tool = make_override_wrapper(
+                    td,
+                    arg_overrides={
+                        "publication_date_range": _format_publication_before(
+                            insertion_date
+                        )
+                    },
+                )
 
         new_tools.append(td.as_tool())
 
