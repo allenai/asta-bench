@@ -36,7 +36,7 @@ splits:
           - data
       - name: core_bench_validation
         path: astabench/core_bench_validation
-        primary_metric: 'evaluate_task_questions/accuracy'
+        primary_metric: 'score_with_stderr/accuracy'
         tags:
           - code
       - name: ds1000_validation
@@ -101,7 +101,7 @@ splits:
           - data
       - name: core_bench_test
         path: astabench/core_bench_test
-        primary_metric: 'evaluate_task_questions/accuracy'
+        primary_metric: 'score_with_stderr/accuracy'
         tags:
           - code
       - name: ds1000_test
