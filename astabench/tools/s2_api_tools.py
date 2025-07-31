@@ -2,6 +2,7 @@ import asyncio
 import concurrent.futures
 import functools
 import inspect
+import itertools
 import json
 import logging
 import os
@@ -9,6 +10,7 @@ from contextlib import asynccontextmanager
 from datetime import datetime
 from typing import Any, Collection, Literal
 
+import anyio
 import httpx
 from inspect_ai.tool import ContentText, Tool, ToolDef, ToolError, ToolSource
 from inspect_ai.tool._mcp._mcp import MCPServerImpl
@@ -430,6 +432,22 @@ def _remove_arg_description_block(
     return "\n".join(lines[:arg_to_remove_start_idx] + lines[end_idx:])
 
 
+def _unravel_exception_group(error: Exception) -> list[Exception]:
+    """Bubbles up all nested ExceptionGroups into a single list of exceptions.
+    If a non-ExceptionGroup exception is given, returns a list containing just
+    that exception."""
+    if isinstance(error, BaseExceptionGroup):
+        return list(
+            itertools.chain.from_iterable(
+                _unravel_exception_group(e) for e in error.exceptions
+            )
+        )
+    elif isinstance(error, Exception):
+        return [error]
+    else:
+        raise TypeError(f"Expected Exception or BaseExceptionGroup, got {type(error)}")
+
+
 def _is_retryable_error(error: Exception) -> bool:
     """Check if an error is retryable (429, 529, or 504 HTTP status codes).
 
@@ -444,18 +462,21 @@ def _is_retryable_error(error: Exception) -> bool:
     """
     retryable_codes = {429, 529, 504}
 
-    http_error = None
-    if isinstance(error, BaseExceptionGroup):
-        # Look for HTTPStatusError in the exception group
-        for sub_exc in error.exceptions:
-            if isinstance(sub_exc, httpx.HTTPStatusError):
-                http_error = sub_exc
-                break
-    elif isinstance(error, httpx.HTTPStatusError):
-        http_error = error
-
-    if http_error and hasattr(http_error, "response"):
-        return http_error.response.status_code in retryable_codes
+    # In practice there is always just one exception, but it might be wrapped
+    # deeply in a nested group
+    for base_error in _unravel_exception_group(error):
+        if isinstance(base_error, httpx.HTTPStatusError) and hasattr(
+            base_error, "response"
+        ):
+            return base_error.response.status_code in retryable_codes
+        elif isinstance(base_error, anyio.BrokenResourceError):
+            # 429s sometimes manifest as BrokenResourceError due to the
+            # internal MCP client async task (post_writer) dying from it; it
+            # doesn't happen consistently for some reason, though.
+            # Unfortunately this means a BrokenResourceError has a chance to be
+            # caused by a code that we normally wouldn't want to retry, so we
+            # have to make a blind assumption here.
+            return True
 
     return False
 
@@ -540,19 +561,25 @@ def make_retry_wrapper(
             try:
                 return await origtool(*args, **kwargs)
             except Exception as e:
+                err_shortstring = "+".join(
+                    [str(x) for x in _unravel_exception_group(e)]
+                )
+
                 if not _is_retryable_error(e):
+                    logger.exception(
+                        f"Failed with non-retryable error {err_shortstring}"
+                    )
                     raise
 
                 if attempt >= max_retries:
-                    logger.warning(
-                        f"Tool {td.name} failed after {max_retries} retries with retryable error: {e}"
-                    )
-                    raise
+                    msg = f"Tool {td.name} failed after {max_retries} retries with retryable error: {err_shortstring}"
+                    logger.warning(msg)
+                    raise ToolError(msg) from e
 
                 delay = min(max_delay, base_delay * (backoff_multiplier**attempt))
 
                 logger.warning(
-                    f"Tool {td.name} attempt {attempt + 1} failed with retryable error: {e}. "
+                    f"Tool {td.name} attempt {attempt + 1} failed with retryable error: {err_shortstring}. "
                     f"Retrying in {delay:.1f} seconds..."
                 )
 
