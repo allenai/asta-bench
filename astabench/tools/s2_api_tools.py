@@ -548,7 +548,7 @@ def make_retry_wrapper(
 
     Args:
         td: The ToolDef to modify
-        max_retries: Maximum number of retry attempts (default: 3)
+        max_retries: Maximum number of retry attempts (default: 10)
         backoff_multiplier: Multiplier for exponential backoff (default: 2.0)
         base_delay: Base delay in seconds (default: 1.0)
         max_delay: Maximum delay in seconds (default: 60.0)
