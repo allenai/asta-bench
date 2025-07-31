@@ -4,15 +4,15 @@ from unittest import skip
 from unittest.mock import patch
 
 import pytest
-from pathlib import Path
-from inspect_ai.solver import SolverSpec
 from inspect_ai import eval as inspect_ai_eval
 
-import astabench.evals.paper_finder.task
 from astabench.evals.paper_finder.paper_finder_utils import (
     litqa2_query_ids_in_vespa_fulltext,
 )
-from astabench.evals.paper_finder.task import paper_finder_validation
+from astabench.evals.paper_finder.task import (
+    paper_finder_validation,
+    paper_finder_litqa2,
+)
 from astabench.solvers.search.paper_finder import ai2i_paper_finder
 
 
@@ -95,17 +95,9 @@ def test_paper_finder_end_to_end(mock_find_papers, mock_paper_finder_response) -
     mock_find_papers.return_value = mock_paper_finder_response
 
     log = inspect_ai_eval(
-        tasks=astabench.evals.paper_finder.task.paper_finder_validation(
-            with_search_tools=False
-        ),
+        tasks=paper_finder_validation(with_search_tools=False),
         model="openai/gpt-4o-mini",
-        solver=SolverSpec(
-            str(
-                Path(__file__).parent.parent.parent
-                / "astabench/ai2/solvers/asta_product/paper_finder.py@ai2i_paper_finder"
-            ),
-            args={"base_url": "http://localhost/mock"},
-        ),
+        solver=ai2i_paper_finder("http://localhost/mock"),
         # arbitrary validation set samples from each type
         sample_id=["semantic_110"],
     )
@@ -123,17 +115,9 @@ def test_paper_finder_litqa2(mock_find_papers, mock_paper_finder_response) -> No
     mock_find_papers.return_value = mock_paper_finder_response
 
     log = inspect_ai_eval(
-        tasks=astabench.evals.paper_finder.task.paper_finder_litqa2(
-            with_search_tools=False
-        ),
+        tasks=paper_finder_litqa2(with_search_tools=False),
         model="openai/gpt-4o-mini",
-        solver=SolverSpec(
-            str(
-                Path(__file__).parent.parent.parent
-                / "astabench/ai2/solvers/asta_product/paper_finder.py@ai2i_paper_finder"
-            ),
-            args={"base_url": "http://localhost/mock"},
-        ),
+        solver=ai2i_paper_finder(os.getenv("PAPER_FINDER_URL")),
         max_samples=1,
     )
 
