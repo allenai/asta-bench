@@ -9,7 +9,7 @@ splits:
         primary_metric: 'score_tables/mean'
         tags:
           - lit
-      - name: ScholarQABench2
+      - name: ScholarQA_CS2
         path: astabench/sqa_dev
         primary_metric: 'global_avg/mean'
         tags:
@@ -79,7 +79,7 @@ splits:
         primary_metric: 'score_paper_finder/recall_at_30'
         tags:
           - lit
-      - name: ScholarQABench2
+      - name: ScholarQA_CS2
         path: astabench/sqa_test
         primary_metric: 'global_avg/mean'
         tags:
