@@ -8,7 +8,7 @@ import logging
 from contextlib import asynccontextmanager
 from pathlib import Path
 from textwrap import dedent
-from typing import Any
+from typing import Any, cast
 
 import anyio
 import anyio.lowlevel
@@ -19,6 +19,7 @@ from inspect_ai.tool import Tool, ToolDef
 from inspect_ai.util import SandboxEnvironment, SandboxEnvironmentSpec
 from mcp.server import Server
 from mcp.shared.message import SessionMessage
+from pydantic import JsonValue
 
 logger = logging.getLogger(__name__)
 
@@ -431,34 +432,42 @@ class SandboxToolManager:
             tool = tools_dict[name].as_tool()
             result = await tool(**arguments)
 
+            jsonable_result: JsonValue
+
             # ContentText is returned by tools based on MCP servers; often
             # those are actually returning JSON but it gets wrapped as
             # ContentText automatically by the framework
             if isinstance(result, ContentText):
                 try:
-                    result = json.loads(result.text)
+                    jsonable_result = json.loads(result.text)
                 except json.JSONDecodeError:
-                    result = result.text
+                    jsonable_result = result.text
             elif isinstance(result, list) and all(
                 isinstance(x, ContentText) for x in result
             ):
-                json_decodes = []
-                for item in result:
+                json_decodes: list[JsonValue] | None = []
+                for item in cast(list[ContentText], result):
                     try:
-                        json_decodes.append(json.loads(item.text))
+                        json_decodes.append(json.loads(item.text))  # type: ignore
                     except json.JSONDecodeError:
                         json_decodes = None
                         break
                 if json_decodes is None:
-                    result = [item.text for item in result]
+                    jsonable_result = [
+                        item.text for item in cast(list[ContentText], result)
+                    ]
                 else:
-                    result = json_decodes
+                    jsonable_result = json_decodes
 
-                if len(result) == 1:
-                    result = result[0]
+                if len(jsonable_result) == 1:
+                    jsonable_result = jsonable_result[0]
+            else:
+                jsonable_result = result  # type: ignore
 
             return [
-                types.TextContent(type="text", text=json.dumps(result, default=str))
+                types.TextContent(
+                    type="text", text=json.dumps(jsonable_result, default=str)
+                )
             ]
 
         return app
