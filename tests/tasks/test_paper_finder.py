@@ -88,6 +88,12 @@ def get_average_recalls(
     )
 
 
+@pytest.mark.skipif(
+    not os.getenv("S2_API_KEY")
+    or not os.getenv("OPENAI_API_KEY")
+    or os.getenv("OPENAI_API_KEY").startswith("Fake"),
+    reason="S2_API_KEY or OPENAI_API_KEY is missing or invalid.",
+)
 @patch("astabench.tools.paper_finder_ai2i.find_papers")
 def test_paper_finder_end_to_end(mock_find_papers, mock_paper_finder_response) -> None:
     """Test paper finder end-to-end with mocked find_papers function."""
@@ -108,6 +114,12 @@ def test_paper_finder_end_to_end(mock_find_papers, mock_paper_finder_response) -
     mock_find_papers.assert_called()
 
 
+@pytest.mark.skipif(
+    not os.getenv("S2_API_KEY")
+    or not os.getenv("OPENAI_API_KEY")
+    or os.getenv("OPENAI_API_KEY").startswith("Fake"),
+    reason="S2_API_KEY or OPENAI_API_KEY is missing or invalid.",
+)
 @patch("astabench.tools.paper_finder_ai2i.find_papers")
 def test_paper_finder_litqa2(mock_find_papers, mock_paper_finder_response) -> None:
     """Test paper finder litqa2 with mocked find_papers function."""
