@@ -23,16 +23,16 @@ logger = logging.getLogger(__name__)
 
 
 class InternalTimeout(RuntimeError):
-    """Raised when we get a TimeoutError while calling an MCP tool.  The server
-    shouldn't actually raise these (preferring instead to provide a reasonable
-    tool response explaining the timeout), so these errors mean an internal
-    inspect_ai infra operation timed out.  Usually this is when getting the
-    inspect-tool-support version, which has a hard-coded timeout of 5 seconds.
-    If the TimeoutError itself were allowed to bubble up, InspectAI would try
-    to score the sample anyway, which almost never what we want.  Instead, we
-    convert it to a RuntimeError which will be treated as serious; either the
-    whole eval will abort or the sample will be retried, depending on
-    configuration."""
+    """Raised when we get a TimeoutError while calling an MCP tool.  The
+    sandboxed mcp server shouldn't raise TimeoutError directly (preferring
+    instead to provide a reasonable tool response explaining the timeout), so
+    these errors mean an internal inspect_ai infra operation timed out.
+    Usually this is when getting the inspect-tool-support version, which has
+    a hard-coded timeout of 5 seconds. If the TimeoutError itself were allowed
+    to bubble up, InspectAI would try to score the sample anyway, which almost
+    never what we want.  Instead, we convert it to a RuntimeError which will be
+    treated as serious; either the whole eval will abort or the sample will be
+    retried, depending on configuration."""
 
 
 @contextlib.contextmanager
