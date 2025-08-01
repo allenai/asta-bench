@@ -120,7 +120,138 @@ class InspectAiSandboxExecutor:
             return result, cell_output, self.final_answer
         except Exception as e:
             logger.exception(f"Error executing code in sandbox:")
+
+            # Enhanced debugging information
+            logger.error(
+                f"Code action that failed: {code_action[:200]}{'...' if len(code_action) > 200 else ''}"
+            )
+            logger.error(f"Final answer state: {self.final_answer}")
+
+            # Check if this is a timeout-related error
+            if isinstance(e, (TimeoutError, asyncio.TimeoutError)):
+                logger.error(
+                    "This appears to be a timeout error - the sandbox operation took too long"
+                )
+            elif "TimeoutError" in str(e) or "CancelledError" in str(e):
+                logger.error(
+                    "This appears to be a timeout or cancellation error in the async chain"
+                )
+
+            # Get Docker container debugging information
+            await self._log_docker_debug_info()
+
+            if isinstance(e, (TimeoutError, asyncio.TimeoutError)):
+                raise RuntimeError("Internal sandbox timeout. Abort!") from e
             raise e
+
+    async def _log_docker_debug_info(self):
+        """Log comprehensive Docker debugging information"""
+        try:
+            # Get all running Docker containers
+            from inspect_ai.util._subprocess import subprocess
+
+            logger.error("=== Docker Debug Information ===")
+
+            # List all running containers
+            try:
+                result = await subprocess(
+                    [
+                        "docker",
+                        "ps",
+                        "--format",
+                        "table {{.ID}}\\t{{.Names}}\\t{{.Image}}\\t{{.Status}}\\t{{.Ports}}",
+                    ]
+                )
+                if result.success:
+                    logger.error(f"All running Docker containers:\n{result.stdout}")
+                else:
+                    logger.error(f"Failed to get running containers: {result.stderr}")
+            except Exception as ex:
+                logger.error(f"Error running 'docker ps': {ex}")
+
+            # Get our specific sandbox container info
+            try:
+                from inspect_ai.util._sandbox.context import sandbox_connections
+
+                connections = await sandbox_connections()
+                logger.error(
+                    f"Available sandbox connections: {list(connections.keys())}"
+                )
+
+                for name, connection in connections.items():
+                    logger.error(f"Sandbox '{name}' connection: {connection}")
+                    if hasattr(connection, "container") and connection.container:
+                        container_name = connection.container
+                        logger.error(
+                            f"Expected container for sandbox '{name}': {container_name}"
+                        )
+
+                        # Check if this specific container is running
+                        try:
+                            inspect_result = await subprocess(
+                                [
+                                    "docker",
+                                    "inspect",
+                                    container_name,
+                                    "--format",
+                                    "{{.State.Status}} {{.State.ExitCode}} {{.State.Error}}",
+                                ]
+                            )
+                            if inspect_result.success:
+                                logger.error(
+                                    f"Container '{container_name}' state: {inspect_result.stdout.strip()}"
+                                )
+                            else:
+                                logger.error(
+                                    f"Container '{container_name}' not found or error: {inspect_result.stderr}"
+                                )
+                        except Exception as ex:
+                            logger.error(
+                                f"Error inspecting container '{container_name}': {ex}"
+                            )
+
+                        # Get container logs
+                        try:
+                            logs_result = await subprocess(
+                                ["docker", "logs", "--tail", "50", container_name]
+                            )
+                            if logs_result.success:
+                                logger.error(
+                                    f"Recent logs for container '{container_name}':\n{logs_result.stdout}"
+                                )
+                            else:
+                                logger.error(
+                                    f"Failed to get logs for container '{container_name}': {logs_result.stderr}"
+                                )
+                        except Exception as ex:
+                            logger.error(
+                                f"Error getting logs for container '{container_name}': {ex}"
+                            )
+
+            except Exception as ex:
+                logger.error(f"Error getting sandbox connection info: {ex}")
+
+            # Check Docker daemon status
+            try:
+                docker_info = await subprocess(
+                    [
+                        "docker",
+                        "info",
+                        "--format",
+                        "{{.ServerVersion}} {{.Containers}} {{.ContainersRunning}}",
+                    ]
+                )
+                if docker_info.success:
+                    logger.error(f"Docker daemon info: {docker_info.stdout.strip()}")
+                else:
+                    logger.error(f"Docker daemon not accessible: {docker_info.stderr}")
+            except Exception as ex:
+                logger.error(f"Error checking Docker daemon: {ex}")
+
+            logger.error("=== End Docker Debug Information ===")
+
+        except Exception as ex:
+            logger.error(f"Failed to gather Docker debug information: {ex}")
 
     def __call__(
         self, code_action: str, additional_args: Optional[Dict] = None
