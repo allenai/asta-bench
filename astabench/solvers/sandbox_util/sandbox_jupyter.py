@@ -216,6 +216,10 @@ class SandboxJupyter:
                     )
                     continue
                 raise e
+            except TimeoutError as e:
+                raise InternalTimeout(
+                    "An internal sandbox MCP operation timed out while initializing Jupyter tools. "
+                ) from e
 
         for tool in jupyter_tools:
             name = ToolDef(tool).name
