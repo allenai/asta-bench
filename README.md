@@ -8,9 +8,13 @@ AstaBench builds on top of the [InspectAI](https://inspect.ai-safety-institute.o
 
 ## Quickstart
 
-Install (`uv` is optional but recommended):
+This quickstart will walk you through a basic workflow for running the AstaBench suite with one of the built-in solvers, using the Docker-based setup.  It only requires a working (sudoless) Docker setup on your machine, and will automatically create a containerized `uv` setup for python.
+
+Install:
 ```bash
-uv pip install astabench
+git clone https://github.com/allenai/asta-bench.git
+cd asta-bench
+make shell SOLVER=react
 ```
 
 Set up API keys.  For the demo task, you only need the key for the `--model` you're using, but for the full suite you also need `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, and `S2_API_KEY`; see [Environment variables](#environment-variables) for details.
@@ -20,7 +24,7 @@ export ANTHROPIC_API_KEY=<your-anthropic-key>
 export S2_API_KEY=<your-semantic-scholar-key>
 ```
 
-To quickly test that things are installed correctly, use `inspect eval` to run a single demo task with a solver that just generates a response directly with an LLM:
+To quickly test that things are set up correctly, use `inspect eval` to run a single demo task with a solver that just generates a response directly with an LLM:
 ```bash
 uv run inspect eval --solver generate --model openai/gpt-4.1-nano astabench/arithmetic_demo
 ```
@@ -29,7 +33,7 @@ Use `astabench eval` to run the full suite of evals with a solver that uses the 
 ```bash
 uv run astabench eval --solver astabench/solvers/react/basic_agent.py@instantiated_basic_agent --model openai/gpt-4.1 --split validation --limit 1 --log-dir=logs/my-first-astabench-experiment/
 ```
-Note: when you do experiments with the full suite (without `--limit 1`), it is recommended to carefully choose parallelism settings based on your system's resources, as it can be quite expensive and there are known deadlocking issues for certain solvers/tasks depending on your number of CPUs.  See [Parallelism and system requirements](#parallelism-and-system-requirements) for details.
+Note: when you do experiments with the full suite (without `--limit 1`), it is recommended to carefully choose parallelism settings based on your system's resources.  See [Parallelism and system requirements](#parallelism) for details.
 
 When the `astabench eval` command finishes, you should see scores printed for the various tasks, as well as instructions on how to generate the score and cost summary for the run you just did, e.g.:
 ```bash
@@ -38,7 +42,7 @@ uv run astabench score logs/my-first-astabench-experiment/
 
 If you were doing a real run with a new solver on the full suite, you would be able to bundle your log directory and submit it to the AstaBench leaderboard at this point.  See [Submitting to the Leaderboard](#submitting-to-the-leaderboard) for details on how to do this.
 
-
+You have now run your first AstaBench evaluation!  For more details on how to run the full suite, view results, and submit to the leaderboard, see the [Usage](#usage) section below.
 
 ## Setup
 
@@ -46,13 +50,18 @@ Start by cloning the repository:
 
 ```bash
 git clone https://github.com/allenai/asta-bench.git
+cd asta-bench
 ```
 
-To set up the general environment, install `uv` and run `uv sync`. Alternatively start a shell
-inside a docker container with `make shell`.
+We provide a Dockerfile to produce a consistent environment, but you can also install without Docker if you prefer (you will still need Docker on your system if using tasks that require sandboxed code execution, however).
 
-To set up an environment for a specific solver, run `solvers/<solver>/setup.sh`. Alternatively, 
-run `make shell SOLVER=<solver>`.
+With Docker:
+- To set up the general environment start a shell inside a docker container with `make shell`.
+- To set up an environment for a specific solver, run `make shell SOLVER=<solver>`, where `<solver>` is the name of a [`solvers/`](solvers/) subdirectory, e.g., `react` or `sqa`.
+
+Without Docker:
+- To set up the general environment, [install `uv`](https://docs.astral.sh/uv/getting-started/installation/) (`curl -LsSf https://astral.sh/uv/install.sh | sh`) and run `uv sync`.
+- To set up an environment for a specific solver, run `solvers/<solver>/setup.sh`.
 
 See the scripts in `solvers/<solver>/demo.sh` for example commands to run each of the solvers. 
 
@@ -156,16 +165,28 @@ Note to Ai2 internal users: Steps 2 and 3 may be run centrally, e.g. to re-score
 For bulk runs of already scored results, it is possible to run:
 `cat filenames_to_publish.txt | xargs astabench lb publish`
 
-### Parallelism and system requirements
+### Parallelism
 
-It is crucial to ensure that parallelism is correctly configured; there are different concurrency limits for different resource types, and for some tasks, the default Inspect configuration combined with the default Astabench tools may lead to a deadlock or slowdown.  The relevant parameters are (assuming you want to run `N` samples in parallel):
+It is crucial to ensure that parallelism is correctly configured; we expect that the defaults are reasonable for most systems when running with AstaBench tasks, tools, and solvers, but  may lead to deadlocks if using a custom solver and may be suboptimal depending on your system.  This section covers tips for setting concurrency options and working around known issues. 
 
-- `--max-samples` / `--max-sandboxes`: The maximum number of samples to run in parallel and the number of sandboxes that can exist in parallel, respectively.  Since AstaBench uses 1 sandbox per sample, these effectively control the same thing in practice (limited by whichever is lower).  They should be `N`.
-    - Note: If any hanging/deadlocks are encountered, we recommend setting `N` to be less than the number of CPU cores on the system; there is known potential for deadlocks due to complications of `asyncio`'s internal `ThreadPool` limiting parallelism based on the CPU count (the impact of which depends on which `asyncio` operations an agent uses internally).
+As a rule of thumb:
+- set `--max-samples` no greater than the number of CPU cores on your system
+    - For literature tasks with fast llms, it should be no greater than roughly `--max-samples=8`, which is empirically what we found to saturate the default `S2_API_KEY` rate limit of roughly 4 requests per second for MCP tools.
+- set `INSPECT_DOCKER_CLI_CONCURRENCY` to at least double the value of `--max-samples`.  If you see an warning log like `Retrying docker compose command` or if an eval appears to be stuck (producing no output for a long time), you probably need to reduce parallelism further.
+
+Relevant concurrency parameters (the guidelines here assume you want to run `N` samples in parallel):
+
+- `--max-samples` / `--max-sandboxes`: The maximum number of samples to run in parallel and the number of sandboxes that can exist in parallel, respectively.  AstaBench coding tasks use 1 sandbox per sample, and in that case these effectively control the same thing (limited by whichever is lower).  They should be `N`.
+    - For custom solvers that use `asyncio.to_thread` to run synchronous code asynchronously; note that `to_thread` internally uses a `ThreadPool` with a size proportional to the number of CPUs, and other asyncio operations (such as resolving DNS info for LLM calls) may also use the same pool.  Thus, it is possible to have deadlocks if your long-running `to_thread` operations fill up the pool; this is why we suggest setting `--max-samples` no greater than the number of CPU cores.  Whenever possible, try to implement your solver using a custom `ThreadPool` instead of `to_thread`.
 - `--max-connections`: The maximum number of concurrent connections to the model provider.  This should ideally be at least `N` to get full parallelism benefits, but could be set differently depending on the model provider's rate limits.
-- `--max-subprocesses`: The maximum number of subprocesses that can be spawned.  For agents using `SandboxToolManager` to call Inspect tools via code, this should be at least `N+1` and ideally `2*N` to avoid a risk of deadlocks, as it requires one subprocess to run code and one to maintain the sandbox connection (per sample).
+- `INSPECT_DOCKER_CLI_CONCURRENCY`: Things that communicate with a sandbox count against this (e.g. python code calls and any `sandbox.exec`).  For agents using `SandboxToolManager` to call Inspect tools via code, this should be at least `N+1` and ideally `2*N` to avoid a risk of deadlocks, as a code call will use one subprocess to invoke the code in the sandbox while simultaneously making short-lived calls in the background to facilitate tool-calling from the code to the host.
+    - You may see a `Retrying docker compose command` or `internal sandbox MCP operation timed out` error, and often it means this is too high.  While not strictly a concurrency issue, a large amount of simultaneous work can slow down internal operations and trigger timeouts that are currently not configurable.
+- `--max-subprocesses`: Sandbox communication used to count against this but now counts against `INSPECT_DOCKER_CLI_CONCURRENCY` instead.  This param should no longer matter unless the agent uses subprocesses directly, in which case it should be set to at least `N` to make full use of parallelism (similar to `--max-sandboxes`, it would become the limiting factor otherwise).
 
-**System requirements:** These vary based on the specific agent being used, but the eval framework itself may use as much as 10 GB of memory internally when running on the full suite, and some instances of coding tasks (esp. SUPER) may involve running commands in the sandbox that use 20-30 GB of memory.  Most of our internal experiments were run on a machine with 64 GB of memory and 8 physical CPU cores, with N=8 parallel samples; we found that using less memory often resulted in out-of-memory failures.
+
+### System requirements
+
+The requirements vary based on the specific agent being used, but the eval framework itself may use as much as 10 GB of memory internally when running on the full suite, and some instances of coding tasks (esp. SUPER and E2E) may involve running commands in the sandbox that use 20-30 GB of memory.  Most of our internal experiments were run on a machine with 128 GB of memory and 8 physical CPU cores (16 vCPU), with N=8 parallel samples; we found that using less memory often resulted in out-of-memory failures.
 
 ## Adding a Benchmark
 
