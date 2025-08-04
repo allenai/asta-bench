@@ -6,6 +6,40 @@ AstaBench provides a set of standard evals for evaluating AI agents on tasks tha
 
 AstaBench builds on top of the [InspectAI](https://inspect.ai-safety-institute.org.uk/) framework, which provides a flexible and extensible framework for running evaluations of AI systems.  While the instructions in this README aim to be self-contained with respect to common AstaBench uses, we recommend reading the [InspectAI documentation](https://inspect.aisi.org.uk/) for more complete details on its additional features and usage options.
 
+## Quickstart
+
+Install (`uv` is optional but recommended):
+```bash
+uv pip install astabench
+```
+
+Set up API keys.  For the demo task, you only need the key for the `--model` you're using, but for the full suite you also need `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, and `S2_API_KEY`; see [Environment variables](#environment-variables) for details.
+```bash
+export OPENAI_API_KEY=<your-openai-key>
+export ANTHROPIC_API_KEY=<your-anthropic-key>
+export S2_API_KEY=<your-semantic-scholar-key>
+```
+
+To quickly test that things are installed correctly, use `inspect eval` to run a single demo task with a solver that just generates a response directly with an LLM:
+```bash
+uv run inspect eval --solver generate --model openai/gpt-4.1-nano astabench/arithmetic_demo
+```
+
+Use `astabench eval` to run the full suite of evals with a solver that uses the ReAct framework, but just one sample per task to keep it relatively cheap (`--limit 1`):
+```bash
+uv run astabench eval --solver astabench/solvers/react/basic_agent.py@instantiated_basic_agent --model openai/gpt-4.1 --split validation --limit 1 --log-dir=logs/my-first-astabench-experiment/
+```
+Note: when you do experiments with the full suite (without `--limit 1`), it is recommended to carefully choose parallelism settings based on your system's resources, as it can be quite expensive and there are known deadlocking issues for certain solvers/tasks depending on your number of CPUs.  See [Parallelism and system requirements](#parallelism-and-system-requirements) for details.
+
+When the `astabench eval` command finishes, you should see scores printed for the various tasks, as well as instructions on how to generate the score and cost summary for the run you just did, e.g.:
+```bash
+uv run astabench score logs/my-first-astabench-experiment/
+```
+
+If you were doing a real run with a new solver on the full suite, you would be able to bundle your log directory and submit it to the AstaBench leaderboard at this point.  See [Submitting to the Leaderboard](#submitting-to-the-leaderboard) for details on how to do this.
+
+
+
 ## Setup
 
 Start by cloning the repository:
