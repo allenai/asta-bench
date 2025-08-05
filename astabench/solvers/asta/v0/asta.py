@@ -2,7 +2,6 @@
 
 import copy
 import difflib
-import json
 import os
 import uuid
 from logging import getLogger
@@ -12,16 +11,20 @@ from huggingface_hub import hf_hub_download
 from inspect_ai.model import ChatMessage, ChatMessageAssistant, execute_tools, get_model
 from inspect_ai.solver import Generate, Solver, TaskState, solver
 from inspect_ai.tool import Tool, ToolCall, ToolDef, ToolError, tool
+from pydantic import BaseModel
 
 from astabench.constants import ASTA_SOLVER_DATA_REPO, ASTA_SOLVER_DATA_REVISION
-from astabench.solvers.arxivdigestables.asta_table_agent import tables_solver
-from astabench.solvers.code_agent.agent import code_agent
-from astabench.solvers.datavoyager.agent import datavoyager_solver
-from astabench.solvers.react.basic_agent import instantiated_basic_agent
-from astabench.solvers.search.paper_finder import ai2i_paper_finder
-from astabench.solvers.sqa.sqa import sqa_solver
 
 logger = getLogger(__name__)
+
+
+class RoutingFewshotInput(BaseModel):
+    """Model for validation input data from HuggingFace."""
+
+    task_name: str
+    input: str
+    canary: str
+
 
 TASK_TYPES = {
     "sqa",
@@ -116,12 +119,8 @@ def solver_handoff_tool(
     return tdef.as_tool()
 
 
-def rank_task_type_from_input(task_input: str) -> list[tuple[str, int | float]]:
-    """Classify the task type based on the input text and return a list of task
-    types with their similarity scores to the validation set (from most to
-    least similar)."""
-
-    # load validation inputs fewshot file
+def load_validation_inputs() -> list[RoutingFewshotInput]:
+    """Load validation inputs from HuggingFace."""
     local_path = hf_hub_download(
         repo_id=ASTA_SOLVER_DATA_REPO,
         filename="asta/v0/val_base_inputs.json",
@@ -130,7 +129,23 @@ def rank_task_type_from_input(task_input: str) -> list[tuple[str, int | float]]:
     )
 
     with open(local_path, "r", encoding="utf-8") as f:
-        example_inputs = [json.loads(line) for line in f]
+        return [RoutingFewshotInput.model_validate_json(line) for line in f]
+
+
+def rank_task_type_from_input(
+    task_input: str, example_inputs: list[RoutingFewshotInput]
+) -> list[tuple[str, int | float]]:
+    """Classify the task type based on the input text and return a list of task
+    types with their similarity scores to the validation set (from most to
+    least similar).
+
+    Args:
+        task_input: The input text to classify
+        example_inputs: List of validation inputs to compare against
+
+    Returns:
+        List of (task_type, score) tuples sorted by score descending
+    """
 
     def trimtext(text: str, length: int = 400) -> str:
         if len(text) > length:
@@ -143,11 +158,11 @@ def rank_task_type_from_input(task_input: str) -> list[tuple[str, int | float]]:
         seq = difflib.SequenceMatcher(
             None,
             task_input,
-            trimtext(example_input["input"]),
+            trimtext(example_input.input),
             autojunk=False,
         )
         score = seq.find_longest_match()[2]
-        tt = task_name_to_task_type(example_input["task_name"])
+        tt = task_name_to_task_type(example_input.task_name)
         scores[tt] = max(score, scores.get(tt, -1))
 
     sorted_scores = sorted(scores.items(), key=lambda x: x[1], reverse=True)
@@ -167,6 +182,14 @@ def fewshot_textsim_router() -> Solver:
     """
 
     async def solve(state: TaskState, generate: Generate) -> TaskState:
+        # Import solvers here to avoid dependency issues when just importing the module
+        from astabench.solvers.arxivdigestables.asta_table_agent import tables_solver
+        from astabench.solvers.code_agent.agent import code_agent
+        from astabench.solvers.datavoyager.agent import datavoyager_solver
+        from astabench.solvers.react.basic_agent import instantiated_basic_agent
+        from astabench.solvers.search.paper_finder import ai2i_paper_finder
+        from astabench.solvers.sqa.sqa import sqa_solver
+
         logger.info("Starting sample %s", state.sample_id)
 
         # Since task solvers aren't designed to work together, we want to
@@ -226,7 +249,11 @@ def fewshot_textsim_router() -> Solver:
         )
 
         try:
-            task_type_scores = rank_task_type_from_input(state.input_text)
+            # Load validation inputs once
+            validation_inputs = load_validation_inputs()
+            task_type_scores = rank_task_type_from_input(
+                state.input_text, validation_inputs
+            )
 
             # Since multiple things will map to 'other'
             used_other = False
