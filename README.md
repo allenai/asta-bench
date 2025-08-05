@@ -6,6 +6,29 @@ AstaBench provides a set of standard evals for evaluating AI agents on tasks tha
 
 AstaBench builds on top of the [InspectAI](https://inspect.ai-safety-institute.org.uk/) framework, which provides a flexible and extensible framework for running evaluations of AI systems.  While the instructions in this README aim to be self-contained with respect to common AstaBench uses, we recommend reading the [InspectAI documentation](https://inspect.aisi.org.uk/) for more complete details on its additional features and usage options.
 
+## Table of Contents
+
+- [Quickstart](#quickstart)
+- [Setup](#setup)
+  - [Environment variables](#environment-variables)
+- [Usage](#usage)
+  - [Run the full suite of evals](#run-the-full-suite-of-evals)
+  - [Run a single task](#run-a-single-task) 
+  - [Viewing results](#viewing-results)
+  - [Scoring Results](#scoring-results)
+  - [Submitting to the Leaderboard](#submitting-to-the-leaderboard)
+  - [Parallelism](#parallelism)
+  - [System requirements](#system-requirements)
+- [Available Tasks](#available-tasks)
+- [Available Agents](#available-agents)
+- [Adding a Benchmark](#adding-a-benchmark)
+- [Adding an Agent (Solver)](#adding-an-agent-solver)
+- [Troubleshooting](#troubleshooting)
+- [Running Tests](#running-tests)
+- [Custom sandboxes](#custom-sandboxes)
+- [Running evaluations with dvc](#running-evaluations-with-dvc)
+- [Terminology](#terminology)
+
 ## Quickstart
 
 This quickstart will walk you through a basic workflow for running the AstaBench suite with one of the built-in solvers, using the Docker-based setup.  It only requires a working (sudoless) Docker setup on your machine, and will automatically create a containerized `uv` setup for python.
