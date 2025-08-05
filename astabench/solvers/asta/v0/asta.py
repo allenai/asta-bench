@@ -6,23 +6,23 @@ import json
 import os
 import uuid
 from logging import getLogger
-from pathlib import Path
 from typing import Callable
 
-from astabench.solvers.arxivdigestables.asta_table_agent import tables_solver
-from astabench.solvers.code_agent.agent import code_agent
-from astabench.solvers.datavoyager.agent import datavoyager_solver
-from astabench.solvers.react.basic_agent import instantiated_basic_agent
-from astabench.solvers.sqa.sqa import sqa_solver
+from huggingface_hub import hf_hub_download
 from inspect_ai.model import ChatMessage, ChatMessageAssistant, execute_tools, get_model
 from inspect_ai.solver import Generate, Solver, TaskState, solver
 from inspect_ai.tool import Tool, ToolCall, ToolDef, ToolError, tool
 
+from astabench.constants import ASTA_SOLVER_DATA_REPO, ASTA_SOLVER_DATA_REVISION
+from astabench.solvers.arxivdigestables.asta_table_agent import tables_solver
+from astabench.solvers.code_agent.agent import code_agent
+from astabench.solvers.datavoyager.agent import datavoyager_solver
+from astabench.solvers.react.basic_agent import instantiated_basic_agent
 from astabench.solvers.search.paper_finder import ai2i_paper_finder
+from astabench.solvers.sqa.sqa import sqa_solver
 
 logger = getLogger(__name__)
 
-VAL_BASE_INPUTS_FILE = Path(__file__).parent / "val_base_inputs.json"
 TASK_TYPES = {
     "sqa",
     "arxivdigestables",
@@ -69,7 +69,13 @@ def solver_handoff_tool(
         description (str | None): The description of the tool.  Default is f"Hand off control to the {sub_solver.__name__} solver"
         history_modifier_fn (Callable[[list[ChatMessage]], list[ChatMessage]] | None): A function that modifies the message history before handing off.  This is useful for stripping out messages that are not relevant to the new solver or adding messages to inject relevant state information.  Default is None, which means no modification.
     """
-    name = name if name is not None else f"handoff_to_{sub_solver.__name__}"
+    name = name
+    if name is None:
+        if not hasattr(sub_solver, "__name__"):
+            raise ValueError(
+                "sub_solver missing a __name__ attribute to use as the tool name; was it not decorated with @solver?"
+            )
+        name = f"handoff_to_{sub_solver.__name__}"
 
     async def run_tool(handoff_message: str | None = None) -> str:
         # make a copy of the state
@@ -114,7 +120,16 @@ def rank_task_type_from_input(task_input: str) -> list[tuple[str, int | float]]:
     """Classify the task type based on the input text and return a list of task
     types with their similarity scores to the validation set (from most to
     least similar)."""
-    with open(VAL_BASE_INPUTS_FILE, "r") as f:
+
+    # load validation inputs fewshot file
+    local_path = hf_hub_download(
+        repo_id=ASTA_SOLVER_DATA_REPO,
+        filename="asta/v0/val_base_inputs.json",
+        repo_type="dataset",
+        revision=ASTA_SOLVER_DATA_REVISION,
+    )
+
+    with open(local_path, "r", encoding="utf-8") as f:
         example_inputs = [json.loads(line) for line in f]
 
     def trimtext(text: str, length: int = 400) -> str:
@@ -123,7 +138,7 @@ def rank_task_type_from_input(task_input: str) -> list[tuple[str, int | float]]:
         return text
 
     task_input = trimtext(task_input)
-    scores = dict()
+    scores: dict[str, float | int] = dict()
     for example_input in example_inputs:
         seq = difflib.SequenceMatcher(
             None,
@@ -175,17 +190,28 @@ def fewshot_textsim_router() -> Solver:
             )
             return task_type_tools[name]
 
+        if "MABOOL_URL" not in os.environ:
+            raise KeyError(
+                "Cannot initialize paper-finder sub-solver: MABOOL_URL environment variable is not set."
+            )
         mkhandoff(
             "paper_finder",
             ai2i_paper_finder(
-                base_url=os.getenv("MABOOL_URL"),
+                base_url=os.environ["MABOOL_URL"],
             ),
         )
 
         mkhandoff("arxivdigestables", tables_solver(model="openai/gpt-4.1-2025-04-14"))
         mkhandoff("discoverybench", datavoyager_solver())
         mkhandoff("sqa", sqa_solver(completion_model="claude-4.0"))
-        mkhandoff("super", code_agent(max_tries=100, json_output=True, model_override=get_model("openai/gpt-4.1-2025-04-14")))
+        mkhandoff(
+            "super",
+            code_agent(
+                max_tries=100,
+                json_output=True,
+                model_override=get_model("openai/gpt-4.1-2025-04-14"),
+            ),
+        )
 
         # TODO: Consider configuring a larger toolset or different model for
         # this agent based on prelim experiments
