@@ -228,7 +228,7 @@ def fewshot_textsim_router() -> Solver:
             ),
         )
 
-        mkhandoff("arxivdigestables", tables_solver(model="openai/gpt-4.1-2025-04-14"))
+        mkhandoff("arxivdigestables", tables_solver(model="openai/o3-2025-04-16"))
         mkhandoff("discoverybench", datavoyager_solver())
         mkhandoff("sqa", sqa_solver(completion_model="claude-4.0"))
         mkhandoff(
