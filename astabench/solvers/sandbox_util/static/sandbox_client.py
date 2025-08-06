@@ -19,8 +19,8 @@ logger = getLogger(__name__)
 
 @asynccontextmanager
 async def file_rpc_client(
-    input_file: str = "conn_in",
-    output_file: str = "conn_out",
+    input_file: str = "/opt/astabench/tools/conn_in",
+    output_file: str = "/opt/astabench/tools/conn_out",
     encoding: str = "utf-8",
     encoding_error_handler: str = "strict",
 ):
@@ -132,7 +132,10 @@ async def file_rpc_client(
 
 
 @asynccontextmanager
-async def mcp_session(input_file: str = "conn_in", output_file: str = "conn_out"):
+async def mcp_session(
+    input_file: str = "/opt/astabench/tools/conn_in",
+    output_file: str = "/opt/astabench/tools/conn_out",
+):
     """
     Helper for creating a session with the file-based RPC client.
     """
