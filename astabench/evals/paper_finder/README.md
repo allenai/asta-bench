@@ -42,6 +42,7 @@ The expected agent output should be a structured one set in the state.output.com
    1. MUST be taken verbatim from the paper.
    2. MUST be the minimal snippet capturing the evidence. 
 
+These requirements are also described in the [task instructions](https://github.com/allenai/asta-bench/blob/main/astabench/evals/paper_finder/task.py#L41) given to the agent.
 
 ## Detailed Dataset Description
 PaperFindingBench is designed to be **challenging** (including things that our system currently does not perform well on) and **realistic** (based to the extent possible on real-world queries and information needs).
