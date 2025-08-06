@@ -85,6 +85,6 @@ We balance recall@k not by precision, but by nDCG, as it provides a more relevan
 
 To provide a single unified score for the entire dataset, we average the individual query scores, overall queries regardless of their type.
 
-## Train/dev Split
+## Test/Dev Split
 
-The benchmark is not meant as a training set; we include only a test set and a dev set, where the dev part is substantially smaller than the test set.
+The benchmark's purpose is to evaluate agents, thus we include a test set and a dev set, where the dev part is substantially smaller than the test set.
