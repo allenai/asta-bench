@@ -1,9 +1,49 @@
 
-# Paper Finding Task
+# Paper Finding Bench
 
-## Dataset Description
-PaperFindingBench is a subset of our own internal evaluation for our literature-search agent (PaperFinder), which focuses on challenging queries (the internal evaluation also mixes in a bunch of easier queries, to ensure stability as a product and avoid regressions).
+PaperFindingBench assesses an agent’s ability to locate sets of papers based on a natural-language description, which may involve both content and metadata (such as the author or publication year).
 
+## Format
+
+### Input to agent
+
+```json
+{
+  "input": {
+    "query_id": "29",
+    "query": "visual question answering papers using Earth Mover's Distance (EMD) as an evaluation metric"
+  }
+}
+
+```
+
+### Expected agent's output
+
+The expected agent output should be a structured one set in the state.output.completion in the following format,
+
+```json
+{
+  "output": {
+    "query_id": "29",
+    "results": [
+      {
+        "paper_id": "173990882",
+        "markdown_evidence": "In particular, we used Earth Mover Distance (EMD) (Rubner et al., 2000) to compare the highly-attended objects in the VQA process to the objects highlighted by human judges"
+      }
+    ]
+  }
+}
+```
+
+### IMPORTANT NOTES:
+1. Results should be ordered by most relevant first (order matters!).
+2. We expect and encourage paper_id to be a SemanticScholar CorpusID.
+3. The markdown_evidence:
+   1. MUST be taken verbatim from the paper.
+   2. MUST be the minimal snippet capturing the evidence. 
+
+
+## Detailed Dataset Description
 PaperFindingBench is designed to be **challenging** (including things that our system currently does not perform well on) and **realistic** (based to the extent possible on real-world queries and information needs).
 
 It also aims to be **broad and diverse** in two axes:
@@ -36,7 +76,7 @@ We use two different scoring metrics.
 
 For the **navigational and metadata queries**, for which the gold-set is known, we use F1 over the result-set to score individual queries. 
 
-For the **semantic queries**, which are based on LLM judgement, we can compute precision, but not recall. One potential metric would be simply the number of returned documents that are LLM-judged to be relevant, however, this number is unbounded and harder to integrate with other scores in AstaBench. We thus opted to compute recall over an **estimated** set size for each query (that is, we divide by an estimated set size and not a definitive one), to bound the numbers between 0 and 1. The estimated set size is determined by running multiple variations of PaperFinder with very lenient threshold, taking the union of the resulting set, and then multiplying it by a factor that ranges from 2 to 10 to estimate an upper bound and allow room for additional papers (smaller initial sets are less reliable and are multiplied by a larger number). Note that in extreme cases, this may result in a recall number larger than 1. We bound this by considering the retrieval-adjusted metric of $recall@k$ where we set $k$ to be the estimated set size (this corresponds to the established $recall@R$ metric, but we compute $estimated-recall@estimated$). Computing recall@k fulfills two purposes: it bounds the score in 1, and also discourages submission of “junk” results.
+For the **semantic queries**, which are based on LLM judgement, we can compute precision, but not recall. One potential metric would be simply the number of returned documents that are LLM-judged to be relevant, however, this number is unbounded and harder to integrate with other scores in AstaBench. We thus opted to compute recall over an **estimated** set size for each query (that is, we divide by an estimated set size and not a definitive one), to bound the numbers between 0 and 1. The estimated set size is determined by running multiple variations of our internal agent (PaperFinder) with very lenient threshold, taking the union of the resulting set, and then multiplying it by a factor that ranges from 2 to 10 to estimate an upper bound and allow room for additional papers (smaller initial sets are less reliable and are multiplied by a larger number). Note that in extreme cases, this may result in a recall number larger than 1. We bound this by considering the retrieval-adjusted metric of $recall@k$ where we set $k$ to be the estimated set size (this corresponds to the established $recall@R$ metric, but we compute $estimated-recall@estimated$). Computing recall@k fulfills two purposes: it bounds the score in 1, and also discourages submission of “junk” results.
 
 We balance recall@k not by precision, but by nDCG, as it provides a more relevant signal (favoring ranking relevant documents over irrelevant ones). The combination of nDCG and recall@estimated makes precision mostly redundant. To provide a single score for each individual query, we combine the recall and nDCG numbers using an harmonic mean (F1 over estimated-recall and nDCG).
 
@@ -47,7 +87,3 @@ To provide a single unified score for the entire dataset, we average the individ
 ## Train/dev Split
 
 The benchmark is not meant as a training set; we include only a test set and a dev set, where the dev part is substantially smaller than the test set.
-
-## Format
-
-TODO
