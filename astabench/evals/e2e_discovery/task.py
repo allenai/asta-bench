@@ -1236,9 +1236,7 @@ async def _getLLMResponseJSON(
             cls = (
                 ChatMessageAssistant
                 if msg["role"] == "assistant"
-                else ChatMessageSystem
-                if msg["role"] == "system"
-                else ChatMessageUser
+                else ChatMessageSystem if msg["role"] == "system" else ChatMessageUser
             )
             inspect_messages.append(cls(content=msg["content"]))
         # Not using max_tokens or temperature; they weren't used in the
