@@ -183,6 +183,9 @@ def fewshot_textsim_router() -> Solver:
 
     async def solve(state: TaskState, generate: Generate) -> TaskState:
         # Import solvers here to avoid dependency issues when just importing the module
+        from astabench.evals.e2e_discovery.solvers.autoasta.autoasta_cached import (
+            autoasta_cached_solver,
+        )
         from astabench.solvers.arxivdigestables.asta_table_agent import tables_solver
         from astabench.solvers.code_agent.agent import code_agent
         from astabench.solvers.datavoyager.agent import datavoyager_solver
@@ -234,6 +237,11 @@ def fewshot_textsim_router() -> Solver:
                 json_output=True,
                 model_override=get_model("openai/gpt-4.1-2025-04-14"),
             ),
+        )
+        mkhandoff(
+            "e2e_discovery",
+            # No get_model here; the model name is formatted to a cache path
+            autoasta_cached_solver(model="claude-sonnet-4-20250514"),
         )
 
         # TODO: Consider configuring a larger toolset or different model for
