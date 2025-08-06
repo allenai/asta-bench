@@ -110,7 +110,7 @@ def solver_handoff_tool(
         description=(
             description
             if description is not None
-            else f"Hand off control to the {solver.__name__} solver"
+            else f"Hand off control to the {sub_solver.__name__} solver"
         ),
         parameters={
             "handoff_message": "Any additional message or information to give to the agent.  Note that it already has access to the message history, so can typically be left blank.",
