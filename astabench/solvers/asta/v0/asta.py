@@ -224,6 +224,7 @@ def fewshot_textsim_router() -> Solver:
             "paper_finder",
             ai2i_paper_finder(
                 base_url=os.environ["MABOOL_URL"],
+                read_results_from_cache=True,
             ),
         )
 
