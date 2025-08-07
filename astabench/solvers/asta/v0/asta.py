@@ -5,6 +5,7 @@ import difflib
 import os
 import uuid
 from logging import getLogger
+from pathlib import Path
 from typing import Callable
 
 from huggingface_hub import hf_hub_download
