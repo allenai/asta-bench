@@ -183,6 +183,7 @@ def fewshot_textsim_router() -> Solver:
 
     async def solve(state: TaskState, generate: Generate) -> TaskState:
         # Import solvers here to avoid dependency issues when just importing the module
+        import astabench.solvers.datavoyager.agent
         from astabench.evals.e2e_discovery.solvers.autoasta.autoasta_cached import (
             autoasta_cached_solver,
         )
@@ -229,7 +230,19 @@ def fewshot_textsim_router() -> Solver:
         )
 
         mkhandoff("arxivdigestables", tables_solver(model="openai/o3-2025-04-16"))
-        mkhandoff("discoverybench", datavoyager_solver())
+        mkhandoff(
+            "discoverybench",
+            datavoyager_solver(
+                config_file=(
+                    Path(astabench.solvers.datavoyager.agent.__file__).parent
+                    / "dv_core"
+                    / "config"
+                    / "datavoyager_modal_deployment_magentic_one_config_20250617_o3.yaml"
+                )
+                .resolve()
+                .as_posix()
+            ),
+        )
         mkhandoff("sqa", sqa_solver(completion_model="claude-4.0"))
         mkhandoff(
             "super",
