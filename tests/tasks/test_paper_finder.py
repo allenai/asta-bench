@@ -155,3 +155,20 @@ def test_paper_finder_end_to_end_no_mocks() -> None:
 
     print(log)
     assert log[0].results is not None
+
+
+@skip("for local running/debugging")
+@pytest.mark.skipif(
+    not os.getenv("S2_API_KEY") or not os.getenv("PAPER_FINDER_URL"),
+    reason="S2_API_KEY or PAPER_FINDER_URL is missing.",
+)
+def test_paper_finder_end_to_end_litqa2_full_no_mocks() -> None:
+    """Test paper finder end-to-end without mocks."""
+    log = inspect_ai_eval(
+        tasks=paper_finder_litqa2(with_search_tools=False),
+        model="openai/gpt-4o-mini",
+        solver=ai2i_paper_finder(os.getenv("PAPER_FINDER_URL")),
+        max_samples=25,
+    )
+
+    print(get_average_recalls({sample.id: sample.scores["score_paper_finder"].metadata for sample in log[0].samples}))
