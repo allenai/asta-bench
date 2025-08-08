@@ -51,7 +51,7 @@ sentences_schema = ResponseSchema(
 async def extract_citations(scorer_model, sentence: str) -> List[str]:
     model = get_model(scorer_model)
     prompt = "Extract all inline citations from the following text. Keep the inline citations wrapped in parentheses or square brackets, as they appear in the text. Return your result in JSON format with a single key `citations` which is a list of strings."
-    config = GenerateConfig(response_schema=citations_schema, temperature=0.5)
+    config = GenerateConfig(response_schema=citations_schema, temperature=0.5,reasoning_tokens=20000)
     resp = await model.generate(
         prompt + "\n" + sentence,
         config=config,
@@ -64,7 +64,7 @@ async def extract_citations(scorer_model, sentence: str) -> List[str]:
 async def split_sentences(scorer_model, text: str) -> List[str]:
     model = get_model(scorer_model)
     prompt = "Split the following text into sentences. Make sure to preserve the inline citations.Return your result in JSON format with a single key `sentences` which is a list of strings."
-    config = GenerateConfig(response_schema=sentences_schema, temperature=0.5)
+    config = GenerateConfig(response_schema=sentences_schema, temperature=0.5,reasoning_tokens=20000)
     resp = await model.generate(
         prompt + "\n" + text,
         config=config,

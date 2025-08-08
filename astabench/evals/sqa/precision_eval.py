@@ -108,6 +108,7 @@ class PrecisionEval:
         config = GenerateConfig(
             response_schema=answer_precision_json_schema,
             temperature=self.temperature,
+            reasoning_tokens=20000,
         )
         result, parsed, num_retries = await generate_with_retry(
             self.model, prompt, config

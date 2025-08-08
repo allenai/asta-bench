@@ -84,6 +84,7 @@ class CitationEval:
             response_schema=citation_eval_json_schema,
             temperature=self.temperature,
             top_p=self.top_p,
+            reasoning_tokens=20000,
         )
         result, parsed, num_retries = await generate_with_retry(
             self.grader_model, prompt, config
@@ -104,6 +105,7 @@ class CitationEval:
             response_schema=precision_json_schema,
             temperature=self.temperature,
             top_p=self.top_p,
+            reasoning_tokens=20000,
         )
         result, parsed, num_retries = await generate_with_retry(
             self.grader_model, prompt, config
@@ -180,6 +182,7 @@ class CitationEval:
             response_schema=assess_citation_group_schema,
             temperature=self.temperature,
             top_p=self.top_p,
+            reasoning_tokens=20000,
         )
         result, out, num_retries = await generate_with_retry(
             self.grader_model, prompt, config, desired_schema=AssessCitationGroup

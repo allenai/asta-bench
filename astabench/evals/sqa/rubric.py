@@ -189,6 +189,7 @@ class RubricCorpusQaGenericMetric:
                 response_schema=score_json_schema,
                 temperature=self.temperature,
                 top_p=self.top_p,
+                reasoning_tokens=20000,
             ),
         )
         info["assessment"] = obj
@@ -227,6 +228,7 @@ class RubricCorpusQaGenericMetric:
                 response_schema=score_json_schema,
                 temperature=self.temperature,
                 top_p=self.top_p,
+                reasoning_tokens=20000,
             ),
         )
         if not obj:
@@ -238,6 +240,7 @@ class RubricCorpusQaGenericMetric:
             response_schema=claims_json_schema,
             temperature=self.temperature,
             top_p=self.top_p,
+            reasoning_tokens=20000,
         )
         resp, extracted_json, num_retries = await generate_with_retry(
             self.model,
@@ -460,6 +463,7 @@ Split the response into individual claims, citations, and excerpts from the cita
                 response_schema=response_criteria_scores_schema,
                 temperature=self.temperature,
                 top_p=self.top_p,
+                reasoning_tokens=20000,
             ),
         )
         info["system_prompt"] = system_prompt
