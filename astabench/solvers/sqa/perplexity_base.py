@@ -93,8 +93,6 @@ def perplexity_solver(
         if search_before_date_filter is not None:
             extra_body["search_before_date_filter"] = search_before_date_filter
 
-    print('extra body:', extra_body)
-
     chainlist = []
     if prompt_template is not None:
         # Override Sample.input user message
