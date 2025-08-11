@@ -5,6 +5,7 @@ import functools
 import logging
 from typing import Callable, Literal, Sequence
 
+from inspect_ai.model import get_model
 from inspect_ai.solver import Generate, Solver, TaskState, chain, solver
 from inspect_ai.tool import Tool, ToolDef
 from smolagents import CodeAgent
@@ -159,6 +160,27 @@ def smolagents_coder(
     if tool_list and sandbox_type != "inspect":
         raise ValueError("Tool list is only supported in Inspect sandbox")
 
+    prune_stop_sequences = False
+    inspect_model = get_model()
+
+    is_o_series = False
+    try:
+        if hasattr(inspect_model.api, "is_o_series") and callable(
+            inspect_model.api.is_o_series
+        ):
+            is_o_series = inspect_model.api.is_o_series()
+    except Exception as e:
+        logger.warning(
+            "Could not determine if model is O-series due to API error: %s", e
+        )
+
+    if "gpt-5" in inspect_model.name or is_o_series:
+        logger.info(
+            "Detected GPT-5 or O-series model '%s'; stop sequences will be ignored",
+            inspect_model.name,
+        )
+        prune_stop_sequences = True
+
     async def agent_inner(state: TaskState, generate: Generate) -> TaskState:
         # Smolagents is a sync library, and inspect's bridge() only adapts the
         # AsyncOpenAI client.  So, we have async agent_inner code that calls
@@ -172,9 +194,11 @@ def smolagents_coder(
         # - To call the sync smolagents agent, we run it in a separate thread
         #   so it doesn't block the UI
         loop = asyncio.get_running_loop()
+
         model = AsyncOpenAIModel(
             loop,
             model_id="inspect",
+            prune_stop_sequences=prune_stop_sequences,
         )
 
         agent = CodeAgent(
