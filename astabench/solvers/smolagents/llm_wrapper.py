@@ -27,6 +27,7 @@ class AsyncOpenAIModel(Model):
         # override the `inspect_ai` model settings.  It also causes issues for
         # Anthropic reasoning mode, which needs `max_tokens > reasoning tokens`
         max_tokens=None,
+        prune_stop_sequences: bool = False,
         **kwargs,
     ):
         super().__init__(max_tokens=max_tokens, **kwargs)
@@ -44,6 +45,7 @@ class AsyncOpenAIModel(Model):
         )
         self.custom_role_conversions = custom_role_conversions
         self.loop = async_loop
+        self.prune_stop_sequences = prune_stop_sequences
 
     async def acall(
         self,
@@ -63,6 +65,9 @@ class AsyncOpenAIModel(Model):
                 custom_role_conversions=self.custom_role_conversions,
                 **kwargs,
             )
+
+            if "stop" in completion_kwargs and self.prune_stop_sequences:
+                del completion_kwargs["stop"]
 
             response = await self.client.chat.completions.create(**completion_kwargs)
             self._last_input_token_count = response.usage.prompt_tokens
