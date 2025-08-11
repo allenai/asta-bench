@@ -14,7 +14,7 @@ splits:
         primary_metric: 'global_avg/mean'
         tags:
           - lit
-      - name: LitQA2_FT
+      - name: LitQA2_FullText
         path: astabench/litqa2_validation
         primary_metric: 'is_correct/accuracy'
         tags:
@@ -24,7 +24,7 @@ splits:
         primary_metric: 'score_paper_finder/adjusted_f1_micro_avg'
         tags:
           - lit
-      - name: LitQA2_FT_Search
+      - name: LitQA2_FullText_Search
         path: astabench/paper_finder_litqa2_validation
         primary_metric: 'score_paper_finder/recall_at_30'
         tags:
@@ -61,10 +61,10 @@ splits:
           - code
     macro_average_weight_adjustments:
       - tag: lit
-        task: LitQA2_FT
+        task: LitQA2_FullText
         weight: 0.5
       - tag: lit
-        task: LitQA2_FT_Search
+        task: LitQA2_FullText_Search
         weight: 0.5
 
   - name: test
@@ -74,7 +74,7 @@ splits:
         primary_metric: 'score_paper_finder/adjusted_f1_micro_avg'
         tags:
           - lit
-      - name: LitQA2_FT_Search
+      - name: LitQA2_FullText_Search
         path: astabench/paper_finder_litqa2_test
         primary_metric: 'score_paper_finder/recall_at_30'
         tags:
@@ -89,7 +89,7 @@ splits:
         primary_metric: 'score_tables/mean'
         tags:
           - lit
-      - name: LitQA2_FT
+      - name: LitQA2_FullText
         path: astabench/litqa2_test
         primary_metric: 'is_correct/accuracy'
         tags:
@@ -126,8 +126,8 @@ splits:
           - code
     macro_average_weight_adjustments:
       - tag: lit
-        task: litqa2_test
+        task: LitQA2_FullText
         weight: 0.5
       - tag: lit
-        task: paper_finder_litqa2_test
+        task: LitQA2_FullText_Search
         weight: 0.5
