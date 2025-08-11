@@ -162,14 +162,17 @@ def smolagents_coder(
 
     prune_stop_sequences = False
     inspect_model = get_model()
-    if "gpt-5" in inspect_model.name or (
-        hasattr(inspect_model.api, "is_o_series") and inspect_model.api.is_o_series()
+
     is_o_series = False
     try:
-        if hasattr(inspect_model.api, "is_o_series") and callable(inspect_model.api.is_o_series):
+        if hasattr(inspect_model.api, "is_o_series") and callable(
+            inspect_model.api.is_o_series
+        ):
             is_o_series = inspect_model.api.is_o_series()
     except Exception as e:
-        logger.warning("Could not determine if model is O-series due to API error: %s", e)
+        logger.warning(
+            "Could not determine if model is O-series due to API error: %s", e
+        )
 
     if "gpt-5" in inspect_model.name or is_o_series:
         logger.info(
