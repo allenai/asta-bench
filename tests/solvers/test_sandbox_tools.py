@@ -56,15 +56,22 @@ def custom_code_solver() -> Solver:
 
     code = dedent(
         """
+        import os
         import inspect
+        import json
         from mcp_tools import calculator, final_answer, weird_signature_tool
+
+        # Ensure that tools continue to work no matter where we are, since they
+        # depend on reading/writing files at certain paths
+        os.makedirs("new-dir", exist_ok=True)
+        os.chdir("new-dir")
 
         # Make sure we can call weird_signature_tool without default args
         weird_signature_tool(query="test", no_type_no_default="no default")
 
         res = calculator(op="+", num1=1, num2=2)
         print("Calculator result:", res)
-        final_answer({"answer": res, "weird_signature": str(inspect.signature(weird_signature_tool)).replace(" ", "")})
+        final_answer(json.dumps({"answer": res, "weird_signature": str(inspect.signature(weird_signature_tool)).replace(" ", "")}))
         """
     )
 
@@ -93,7 +100,7 @@ def custom_code_solver() -> Solver:
         # print("RPC data out:", await sandbox().read_file("conn_out"))
 
         if await manager.has_final_answer():
-            state.output.completion = json.dumps(await manager.get_final_answer())
+            state.output.completion = await manager.get_final_answer()
 
         print(time.perf_counter(), "Cleaning up tool environment...")
 

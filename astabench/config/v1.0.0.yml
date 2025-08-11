@@ -36,7 +36,7 @@ splits:
           - data
       - name: core_bench_validation
         path: astabench/core_bench_validation
-        primary_metric: 'evaluate_task_questions/accuracy'
+        primary_metric: 'score_with_stderr/accuracy'
         tags:
           - code
       - name: ds1000_validation
@@ -56,7 +56,7 @@ splits:
           - discovery
       - name: super_validation
         path: astabench/super_validation
-        primary_metric: 'check_super_auto/astabench/entrypoints'
+        primary_metric: 'entrypoint/mean'
         tags:
           - code
     macro_average_weight_adjustments:
@@ -101,7 +101,7 @@ splits:
           - data
       - name: core_bench_test
         path: astabench/core_bench_test
-        primary_metric: 'evaluate_task_questions/accuracy'
+        primary_metric: 'score_with_stderr/accuracy'
         tags:
           - code
       - name: ds1000_test
@@ -121,7 +121,7 @@ splits:
           - discovery
       - name: super_test
         path: astabench/super_test
-        primary_metric: 'check_super_execution/astabench/outcome_accuracy'
+        primary_metric: 'output_match/mean'
         tags:
           - code
     macro_average_weight_adjustments:
