@@ -240,6 +240,7 @@ def core_bench(
     max_retries: int = 5,
     backoff_factor: int = 1,
     split: Literal["train", "test"] = "test",
+    sample_limit: int | None = None,
 ) -> Task:
     """The CORE-bench eval from inspect_evals, using our astabench-oriented
     defaults for the task settings."""
@@ -252,13 +253,14 @@ def core_bench(
     def score_with_stderr():
         return evaluate_task_questions()
 
+    effective_limit = sample_limit if sample_limit is not None else limit
     dset = read_core_bench_dataset(
         difficulty=difficulty,
         field=field,
         language=language,
         capsule_ids=capsule_ids,
         exclude_capsule_ids=exclude_capsule_ids,
-        limit=limit,
+        limit=effective_limit,
         filter_out_gpu=filter_out_gpu,
         shuffle=shuffle,
         max_retries=max_retries,
@@ -301,8 +303,15 @@ def core_bench_validation() -> Task:
     return core_bench(split="train")
 
 
+@task
+def core_bench_micro() -> Task:
+    """The CORE-bench eval from inspect_evals (micro split for verification)."""
+    return core_bench(split="train", sample_limit=3)
+
+
 __all__ = [
     "core_bench",
     "core_bench_test",
     "core_bench_validation",
+    "core_bench_micro",
 ]

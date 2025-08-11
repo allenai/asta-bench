@@ -6,7 +6,7 @@ from agenteval.cli import cli as ae_cli
 from agenteval.cli import eval_command, score_command
 
 DEFAULT_CONFIG = "v1.0.0"
-SPLIT_NAMES = ["validation", "test"]
+SPLIT_NAMES = ["validation", "test", "micro"]
 
 
 def get_config_path(config_name):
@@ -26,3 +26,7 @@ for cmd in (eval_command, score_command):
 
 # Export the CLI
 cli = ae_cli
+
+if __name__ == "__main__":
+    # If this script is run directly, invoke the CLI
+    cli()

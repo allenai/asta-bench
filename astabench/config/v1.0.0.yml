@@ -131,3 +131,63 @@ splits:
       - tag: lit
         task: paper_finder_litqa2_test
         weight: 0.5
+
+  - name: micro
+    tasks:
+      - name: arxivdigestables_micro
+        path: astabench/arxivdigestables_micro
+        primary_metric: 'score_tables/mean'
+        tags:
+          - lit
+      - name: sqa_micro
+        path: astabench/sqa_micro
+        primary_metric: 'global_avg/mean'
+        tags:
+          - lit
+      - name: litqa2_micro
+        path: astabench/litqa2_micro
+        primary_metric: 'is_correct/accuracy'
+        tags:
+          - lit
+      - name: paper_finder_micro
+        path: astabench/paper_finder_micro
+        primary_metric: 'score_paper_finder/adjusted_f1_micro_avg'
+        tags:
+          - lit
+      - name: paper_finder_litqa2_micro
+        path: astabench/paper_finder_litqa2_micro
+        primary_metric: 'score_paper_finder/recall_at_30'
+        tags:
+          - lit
+#      - name: discoverybench_micro
+#        path: astabench/discoverybench_micro
+#        primary_metric: 'score_discoverybench/mean'
+#        tags:
+#          - data
+#      - name: core_bench_micro
+#        path: astabench/core_bench_micro
+#        primary_metric: 'score_with_stderr/accuracy'
+#        tags:
+#          - code
+#      - name: ds1000_micro
+#        path: astabench/ds1000_micro
+#        primary_metric: 'ds1000_scorer/accuracy'
+#        tags:
+#          - code
+#      - name: e2e_discovery_micro
+#        path: astabench/e2e_discovery_micro
+#        primary_metric: 'score_rubric/accuracy'
+#        tags:
+#          - discovery
+#      - name: super_micro
+#        path: astabench/super_micro
+#        primary_metric: 'entrypoint/mean'
+#        tags:
+#          - code
+    macro_average_weight_adjustments:
+      - tag: lit
+        task: litqa2_micro
+        weight: 0.5
+      - tag: lit
+        task: paper_finder_litqa2_micro
+        weight: 0.5

@@ -165,7 +165,7 @@ def load_discoverybench_hf(split: Literal["test", "validation"] = "test"):
 
 
 @task
-def discoverybench(split: Literal["test", "validation"] = "test") -> Task:
+def discoverybench(split: Literal["test", "validation"] = "test", sample_limit: int | None = None) -> Task:
     """
     An example of input and (hidden from user) scorer_Criteria can be seen under data.json
     The expected agent output should be a structured one set in the TaskState store dictionary in the following format
@@ -182,6 +182,8 @@ def discoverybench(split: Literal["test", "validation"] = "test") -> Task:
     """
 
     raw_data = load_discoverybench_hf(split=split)
+    if sample_limit is not None:
+        raw_data = raw_data[:sample_limit]
     dataset = MemoryDataset(samples=[json_to_sample(x, split=split) for x in raw_data])
 
     return Task(
@@ -217,8 +219,17 @@ def discoverybench_validation() -> Task:
     return discoverybench(split="validation")
 
 
+@task
+def discoverybench_micro() -> Task:
+    """
+    A micro task for DiscoveryBench, using the validation split with sample limit.
+    """
+    return discoverybench(split="validation", sample_limit=3)
+
+
 __all__ = [
     "discoverybench",
     "discoverybench_test",
     "discoverybench_validation",
+    "discoverybench_micro",
 ]

@@ -441,3 +441,9 @@ def super_validation() -> Task:
 def super_test() -> Task:
     """Runs the super task on the test ("Expert") split."""
     return super(split="Expert")
+
+
+@task
+def super_micro() -> Task:
+    """Runs the super task with minimal samples for verification."""
+    return super(split="Expert", sample_limit=3)

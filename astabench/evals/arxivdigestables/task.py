@@ -217,6 +217,7 @@ def arxivdigestables(
     with_snippet_search_tool: bool = True,
     with_table_editor_tool: bool = False,
     split: Literal["test", "val"] = "test",
+    sample_limit: int | None = None,
 ) -> Task:
     """
     ArxivDIGESTables task, using paper titles and abstracts
@@ -237,6 +238,8 @@ def arxivdigestables(
         json.loads(line)
         for line in Path(cached_file).read_text(encoding="utf-8").splitlines()
     ]
+    if sample_limit is not None:
+        instances = instances[:sample_limit]
 
     # Load unrolled tables (for evaluation) from json file
     hf_file_path = "tasks/arxivdigestables/unrolled_tables.json"
@@ -324,8 +327,27 @@ def arxivdigestables_validation(
     )
 
 
+@task
+def arxivdigestables_micro(
+    *args,
+    **kwargs,
+) -> Task:
+    """ArxivDIGESTables eval (micro split for verification)."""
+    kwargs.pop("split", None)
+    kwargs.pop("sample_limit", None)
+    # Disable search tools for demo compatibility
+    kwargs["with_snippet_search_tool"] = False
+    return arxivdigestables(
+        *args,
+        **kwargs,
+        split="val",
+        sample_limit=3,
+    )
+
+
 __all__ = [
     "arxivdigestables",
     "arxivdigestables_test",
     "arxivdigestables_validation",
+    "arxivdigestables_micro",
 ]

@@ -548,3 +548,8 @@ def sqa_dev() -> Task:
 @task
 def sqa_test() -> Task:
     return sqa(split="test")
+
+
+@task
+def sqa_micro() -> Task:
+    return sqa(split="dev", limit=3, with_search_tools=False)

@@ -1,3 +1,3 @@
-from .task import litqa2, litqa2_inspect, litqa2_test, litqa2_validation
+from .task import litqa2, litqa2_inspect, litqa2_test, litqa2_validation, litqa2_micro
 
-__all__ = ["litqa2", "litqa2_inspect", "litqa2_validation", "litqa2_test"]
+__all__ = ["litqa2", "litqa2_inspect", "litqa2_validation", "litqa2_test", "litqa2_micro"]

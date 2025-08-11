@@ -59,7 +59,7 @@ TEST_HARD_DATASET_JSON_FILE = "tasks/e2e_discovery/test_hard_jun_2025.json"
 
 
 def _create_e2e_discovery_task(
-    split: str, dataset_file: str, dataset_name: str
+    split: str, dataset_file: str, dataset_name: str, sample_limit: int | None = None
 ) -> Task:
     """Helper function to create e2e_discovery tasks with common configuration."""
     timestamp = datetime.datetime.now().strftime("%m-%d-%Y_%H.%M")
@@ -67,6 +67,8 @@ def _create_e2e_discovery_task(
     print_and_log(f"(Score details can be viewed in {results_dir})")
 
     raw_data = get_hf_file_contents(dataset_file, repo_id=HF_DATASET_DIR)
+    if sample_limit is not None:
+        raw_data = raw_data[:sample_limit]
     dataset = MemoryDataset(
         samples=[json_to_sample(x, results_dir, dataset_name) for x in raw_data]
     )
@@ -118,6 +120,12 @@ def e2e_discovery_validation():
 
 
 @task
+def e2e_discovery_micro():
+    """Task for the E2E Discovery micro set (validation with sample limit)."""
+    return _create_e2e_discovery_task("validation", DEV_DATASET_JSON_FILE, "may-2025", sample_limit=3)
+
+
+@task
 def e2e_discovery_test():
     """Task for the E2E Discovery test set."""
     return _create_e2e_discovery_task("test", TEST_DATASET_JSON_FILE, "may-2025")
@@ -137,6 +145,15 @@ def e2e_discovery_hard_test():
     return _create_e2e_discovery_task(
         "test", TEST_HARD_DATASET_JSON_FILE, "jun-2025-harpa"
     )
+
+
+__all__ = [
+    "e2e_discovery_validation",
+    "e2e_discovery_test",
+    "e2e_discovery_hard_validation",
+    "e2e_discovery_hard_test",
+    "e2e_discovery_micro",
+]
 
 
 # ======================================================================

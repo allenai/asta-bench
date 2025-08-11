@@ -22,7 +22,7 @@ SPLIT_IDS_FILE = Path(__file__).parent / "ds1000_splits.json"
 
 
 @task
-def ds1000(split: Literal["validation", "test", "all"] = "all") -> Task:
+def ds1000(split: Literal["validation", "test", "all"] = "all", sample_limit: int | None = None) -> Task:
     """The DS-1000 eval from inspect_evals, using our astabench-oriented
     defaults for the task settings.
 
@@ -67,6 +67,9 @@ def ds1000(split: Literal["validation", "test", "all"] = "all") -> Task:
             raise ValueError(
                 f"Sample {sample.id} was not found in the validation or test splits."
             )
+    
+    if sample_limit is not None:
+        new_dataset = new_dataset[:sample_limit]
 
     if select_ids:
         raise ValueError(f"{split} IDs {select_ids} were not found in the dataset.")
@@ -103,3 +106,17 @@ def ds1000_validation() -> Task:
 def ds1000_test() -> Task:
     """ds1000 but just the test samples"""
     return ds1000(split="test")
+
+
+@task
+def ds1000_micro() -> Task:
+    """ds1000 micro split for verification"""
+    return ds1000(split="validation", sample_limit=3)
+
+
+__all__ = [
+    "ds1000",
+    "ds1000_validation",
+    "ds1000_test",
+    "ds1000_micro",
+]

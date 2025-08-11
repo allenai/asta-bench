@@ -143,6 +143,7 @@ def load_paper_finder_bench(
     chosen_split: Literal[
         "validation", "test", "litqa2", "litqa2_test", "litqa2_validation"
     ],
+    sample_limit: int | None = None,
 ) -> MemoryDataset:
     if chosen_split not in [
         "validation",
@@ -177,6 +178,9 @@ def load_paper_finder_bench(
         qids = litqa2_query_ids_in_vespa_fulltext[sub_split]
         samples = [s for s in samples if s.id in qids]
 
+    if sample_limit is not None:
+        samples = samples[:sample_limit]
+
     return MemoryDataset(samples)
 
 
@@ -190,6 +194,7 @@ def paper_finder(
     ] = "test",
     with_search_tools: bool = True,
     with_native_search_tools: bool = False,
+    sample_limit: int | None = None,
 ):
     """
     An example of input and (hidden from user) scorer_criteria can be seen under data.json
@@ -207,7 +212,7 @@ def paper_finder(
             ]
         }
     """
-    dataset = load_paper_finder_bench(chosen_split)
+    dataset = load_paper_finder_bench(chosen_split, sample_limit=sample_limit)
     tool_setups = []
     inserted_before = get_inserted_before_per_dataset_type(chosen_split)
     if with_search_tools:
@@ -258,3 +263,27 @@ def paper_finder_litqa2_test(with_search_tools: bool = True):
 @task
 def paper_finder_litqa2_validation(with_search_tools: bool = True):
     return paper_finder("litqa2_validation", with_search_tools=with_search_tools)
+
+
+@task
+def paper_finder_micro(with_search_tools: bool = False):
+    """Paper finder eval (micro split for verification)."""
+    return paper_finder("validation", with_search_tools=with_search_tools, sample_limit=3)
+
+
+@task
+def paper_finder_litqa2_micro(with_search_tools: bool = False):
+    """Paper finder litqa2 eval (micro split for verification)."""
+    return paper_finder("litqa2_validation", with_search_tools=with_search_tools, sample_limit=3)
+
+
+__all__ = [
+    "paper_finder",
+    "paper_finder_validation",
+    "paper_finder_test",
+    "paper_finder_litqa2",
+    "paper_finder_litqa2_test",
+    "paper_finder_litqa2_validation",
+    "paper_finder_micro",
+    "paper_finder_litqa2_micro",
+]

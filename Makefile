@@ -66,7 +66,7 @@ build-image:
 # Interactive shell in container
 # -----------------------------------------------------------------------------
 shell: build-image
-	@docker run --rm -it --name $(CONTAINER_NAME) \
+	docker run --rm -it --name $(CONTAINER_NAME) \
 		$(LOCAL_MOUNTS) \
 		-v astabench-home:/root/.astabench \
 		$(ENV_ARGS) -p 7575:7575 \

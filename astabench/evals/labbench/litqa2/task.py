@@ -220,6 +220,7 @@ def litqa2_inspect(
     with_search_tools: bool = True,
     with_native_search_tools: bool = False,
     split: Literal["dev", "test", "all"] = "all",
+    sample_limit: int | None = None,
 ):
     """LitQA2 task from LAB-bench.
 
@@ -237,6 +238,8 @@ def litqa2_inspect(
     """
     # Get LAB-bench litqa2 data
     data = load_litqa2(split=split)
+    if sample_limit is not None:
+        data = data[:sample_limit]
 
     # Note: we need to shuffle in json_to_sample instead of using
     # `dataset.shuffle_choices` because `shuffle_choices` only remaps the
@@ -306,3 +309,13 @@ def litqa2_test(*litqa_args, **litqa_kwargs):
     litqa_kwargs["split"] = "test"
 
     return litqa2(*litqa_args, **litqa_kwargs)
+
+
+@task
+def litqa2_micro(*litqa_args, **litqa_kwargs):
+    """LitQA2 micro split for verification."""
+    kwargs_copy = dict(litqa_kwargs)
+    kwargs_copy["split"] = "dev"
+    kwargs_copy["sample_limit"] = 3
+    kwargs_copy["with_search_tools"] = False
+    return litqa2(*litqa_args, **kwargs_copy)
