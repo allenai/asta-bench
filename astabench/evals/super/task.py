@@ -429,15 +429,15 @@ def super(split: str = "Expert", sample_limit: int | None = None) -> Task:
 
 
 @task
-def super_validation() -> Task:
+def super_validation(limit: int = 50) -> Task:
     """Runs the super task on the validation ("Auto") split."""
     # There are hundreds of samples in "Auto", so we limit it for validation by
     # default; they can only be evaluated if the solver returns trajectory data
     # in the scorer's format
-    return super(split="Auto", sample_limit=50)
+    return super(split="Auto", sample_limit=limit if limit > 0 else None)
 
 
 @task
-def super_test() -> Task:
+def super_test(limit: int = 0) -> Task:
     """Runs the super task on the test ("Expert") split."""
-    return super(split="Expert")
+    return super(split="Expert", sample_limit=limit if limit > 0 else None)

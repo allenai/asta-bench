@@ -287,18 +287,18 @@ def core_bench(
 
 
 @task
-def core_bench_test() -> Task:
+def core_bench_test(**kwargs) -> Task:
     """The CORE-bench eval from inspect_evals (test split), using our
     astabench-oriented defaults for the task settings."""
-    return core_bench(split="test")
+    return core_bench(split="test", **kwargs)
 
 
 @task
-def core_bench_validation() -> Task:
+def core_bench_validation(**kwargs) -> Task:
     """The CORE-bench eval from inspect_evals (train split, which we use as
     a 'dev' split), using our astabench-oriented defaults for the task
     settings."""
-    return core_bench(split="train")
+    return core_bench(split="train", **kwargs)
 
 
 __all__ = [

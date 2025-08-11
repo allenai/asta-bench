@@ -541,10 +541,10 @@ def sqa(
 
 
 @task
-def sqa_dev() -> Task:
-    return sqa(split="dev")
+def sqa_dev(**kwargs) -> Task:
+    return sqa(split="dev", **kwargs)
 
 
 @task
-def sqa_test() -> Task:
-    return sqa(split="test")
+def sqa_test(**kwargs) -> Task:
+    return sqa(split="test", **kwargs)
