@@ -16,6 +16,7 @@ COST_DECIMALS = 4  # Decimal places for cost columns
 AGENT_MACROS = {
     "ReAct": r"\agentReAct",
     "Smolagents": r"\agentSmolagents",
+    "Asta Code": r"\agentAstaCode",
     "Asta-v0": r"\agentAsta",
 }
 
@@ -87,7 +88,11 @@ def get_agent_model_from_name(agent_name: str) -> Tuple[str, str]:
     """Extract agent type and model from agent name like 'ReAct-GPT-4.1'."""
     if agent_name == "Asta-v0":
         return "Asta-v0", "mixture"
-    parts = agent_name.split("-", 1)
+    if "Asta Code" in agent_name:
+        parts = ("Asta Code", agent_name[len("Asta Code ") :])
+    else:
+        parts = agent_name.split("-", 1)
+
     if len(parts) != 2:
         raise ValueError(f"Cannot parse agent name: {agent_name}")
     return parts[0], parts[1]
@@ -373,7 +378,7 @@ def main():
         ):
             agent_dirs.append(dir_path)
 
-    # Sort for consistent ordering
+    # Sort for consistent ordering (with Asta-v0 at the end)
     agent_dirs.sort(key=lambda x: x.name if "Asta-v0" not in x.name else "zzz" + x.name)
 
     # Load all data
