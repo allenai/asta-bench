@@ -16,9 +16,7 @@ POLL_INTERVAL = 2  # seconds
 async def submit_query(session: aiohttp.ClientSession, query: str) -> str:
     """Submit a query to OpenScholar and return task_id."""
     url = f"{API_BASE_URL}/query_open_scholar"
-    payload = {
-        "query": query, "feedback_toggle": True
-    }
+    payload = {"query": query, "feedback_toggle": True}
 
     async with session.post(url, json=payload) as response:
         response.raise_for_status()

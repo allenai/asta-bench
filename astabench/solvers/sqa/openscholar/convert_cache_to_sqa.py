@@ -10,7 +10,12 @@ from typing import Dict, Any
 
 from astabench.types.sqa import SQAResponseWithUsage, Citation, SQASectionWithTable
 
-USAGE_KEY_MAPPING = {"prompt_tokens": "input", "completion_tokens": "output", "total_tokens": "total"}
+USAGE_KEY_MAPPING = {
+    "prompt_tokens": "input",
+    "completion_tokens": "output",
+    "total_tokens": "total",
+}
+
 
 def convert_citation(citation_data: Dict[str, Any]) -> Citation:
     """Convert cache citation format to Citation model."""
@@ -34,7 +39,9 @@ def convert_cache_entry(cache_entry: Dict[str, Any]) -> SQAResponseWithUsage:
     task_result = cache_entry.get("task_result", {})
     iterations = task_result.get("iterations", [])
     usage = task_result.get("usage", {})
-    usage = {USAGE_KEY_MAPPING[k]:v for k,v in usage.items() if k in USAGE_KEY_MAPPING}
+    usage = {
+        USAGE_KEY_MAPPING[k]: v for k, v in usage.items() if k in USAGE_KEY_MAPPING
+    }
 
     if iterations:
         last_iteration = iterations[-1]
@@ -46,7 +53,10 @@ def convert_cache_entry(cache_entry: Dict[str, Any]) -> SQAResponseWithUsage:
 
         # Create a single section with the text and citations
         section = SQASectionWithTable(
-            title=None, text=text, citations=citations, table=None  # No title in cache format
+            title=None,
+            text=text,
+            citations=citations,
+            table=None,  # No title in cache format
         )
         sections.append(section)
 
