@@ -17,7 +17,7 @@ async def submit_query(session: aiohttp.ClientSession, query: str) -> str:
     """Submit a query to OpenScholar and return task_id."""
     url = f"{API_BASE_URL}/query_open_scholar"
     payload = {
-        "query": query,
+        "query": query, "feedback_toggle": True
     }
 
     async with session.post(url, json=payload) as response:
