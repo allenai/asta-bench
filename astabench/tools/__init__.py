@@ -26,7 +26,7 @@ from .submission import get_submission_manager, submit_tool
 
 
 class ToolsetConfig(BaseModel):
-    """Configuration for standardized tool creation across AstaBench agents.
+    """Configuration for standardized Asta tools creation.
 
     This class provides a consistent way to configure optional tools that can be
     enabled/disabled via CLI flags. Tasks may provide their own tools in state.tools
