@@ -2,7 +2,7 @@ This document is targeted at Ai2 internal devs who are creating new evaluations 
 
 ### Adding a Benchmark
 
-InspectAI has [extensive documentation](https://inspect.aisi.org.uk/tasks.html) on how to implement task code; this section covers additional considerations when adding a task to AstaBench.  Tasks that don't depend on AstaBench internal utils can be added to [`inspect_evals`](https://github.com/UKGovernmentBEIS/inspect_evals) instead.
+InspectAI has [extensive documentation](https://inspect.aisi.org.uk/tasks.html) on how to implement task code; this section covers additional considerations when adding a task to AstaBench to ensure compatibility with suite expectations.
 
 To add a new task to AstaBench, you should implement it as an InspectAI task.  In general, the new task should go in a new directory in [`astabench/evals`](/astabench/evals), unless it is a direct extension or variation of an existing task (e.g., a new set of annotated data with the same format/scoring as the original task).
 
