@@ -1,4 +1,4 @@
-This document is targeted at AI2 internal devs who are creating new evaluations or agents for AstaBench.
+This document is targeted at Ai2 internal devs who are creating new evaluations or agents for AstaBench.
 
 ### Adding a Benchmark
 
