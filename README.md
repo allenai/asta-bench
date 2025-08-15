@@ -47,25 +47,20 @@ export ANTHROPIC_API_KEY=<your-anthropic-key>
 export S2_API_KEY=<your-semantic-scholar-key>
 ```
 
-To quickly test that things are set up correctly, use `inspect eval` to run a single demo task with a solver that just generates a response directly with an LLM:
+First, test that Inspect works on our demo task (the built-in `generate` solver just queries the LLM directly):
 ```bash
 uv run inspect eval --solver generate --model openai/gpt-4.1-nano astabench/arithmetic_demo
 ```
 
-Use `astabench eval` to run the full suite of evals with a solver that uses the ReAct framework, but just one sample per task to keep it relatively cheap (`--limit 1`):
+Next, run the AstaBench evals suite (using the `astabench` CLI now) with just one sample per task to keep it relatively cheap (`--limit 1`), and a solver that uses the ReAct framework:
 ```bash
 uv run astabench eval --solver astabench/solvers/react/basic_agent.py@instantiated_basic_agent --model openai/gpt-4.1 --split validation --limit 1 --log-dir=logs/my-first-astabench-experiment/
 ```
-Note: when you do experiments with the full suite (without `--limit 1`), it is recommended to carefully choose parallelism settings based on your system's resources.  See [Parallelism and system requirements](#parallelism) for details.
+When the `astabench eval` command finishes, you should see scores printed for the various tasks, as well as instructions on how to generate the score and cost summary for the run you just did (e.g., `uv run astabench score logs/my-first-astabench-experiment/`).
 
-When the `astabench eval` command finishes, you should see scores printed for the various tasks, as well as instructions on how to generate the score and cost summary for the run you just did, e.g.:
-```bash
-uv run astabench score logs/my-first-astabench-experiment/
-```
+When you are ready to run the full suite, remove the `--limit 1` and carefully choose parallelism settings based on your system's resources (see [Parallelism and system requirements](#parallelism)).
 
-If you were doing a real run with a new solver on the full suite, you would be able to bundle your log directory and submit it to the AstaBench leaderboard at this point.  See [Submitting to the Leaderboard](#submitting-to-the-leaderboard) for details on how to do this.
-
-You have now run your first AstaBench evaluation!  For more details on how to run the full suite, view results, and submit to the leaderboard, see the [Usage](#usage) section below.
+For more usage details, including how to view results and submit to the leaderboard, see [Usage](#usage).
 
 ## Setup
 
