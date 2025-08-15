@@ -31,7 +31,7 @@ AstaBench builds on top of the [InspectAI](https://inspect.ai-safety-institute.o
 
 ## Quickstart
 
-This quickstart will walk you through a basic workflow for running the AstaBench suite with one of the built-in solvers, using the Docker-based setup.  It only requires a working (sudoless) Docker setup on your machine, and will automatically create a containerized `uv` setup for python.
+Follow these steps to run the AstaBench suite with our ReAct agent. This quickstart requires a working (sudoless) Docker setup on your machine, but you can also run AstaBench undockerized (see [Setup](#Setup)).
 
 Install:
 ```bash
