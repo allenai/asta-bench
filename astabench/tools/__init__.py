@@ -34,6 +34,10 @@ class ToolsetConfig(BaseModel):
     with task tools using merge_tools_with_state.
 
     Usage in a solver:
+    ```python
+        from astabench.tools import ToolsetConfig
+        from astabench.solvers.util import merge_tools_with_state
+
         @solver
         def my_agent(max_steps=10, **tool_options):
             # Parse CLI flags into config
@@ -45,6 +49,7 @@ class ToolsetConfig(BaseModel):
                 merge_tools_with_state(tools),
                 # ... rest of solver logic
             )
+    ```
 
     CLI usage:
         inspect eval --solver my_agent -S with_report_editor=1 -S with_s2_corpus_tools=1
