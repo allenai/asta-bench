@@ -40,7 +40,6 @@ After creating the task, **be sure to register it** in [`astabench/evals/_regist
 Tasks in the official `astabench eval` set will additionally need to be added to the latest `astabench/config/v*.yml` file; this requires establishing a single "primary" metric for the task, and creating separate task definitions for `validation` and `test` splits (necessary because there is no way to pass task-arguments to the underlying `inspect eval-set`).
 
 For an example of a custom eval, see `astabench/evals/demo/arithmetic` in this repo or other InspectAI evals in [`inspect_evals`](https://github.com/UKGovernmentBEIS/inspect_evals).
-
 The directory includes examples of a simple eval (`astabench/evals/demo/arithmetic/task.py`), an eval that checks tool calls (`astabench/evals/demo/arithmetic/task_with_tools.py`), and an eval that checks a stylistic rubric (`astabench/evals/demo/arithmetic/task_with_rubric.py`).
 
 For more complex tasks that require a custom scorer, check the [Inspect documentation](https://inspect.ai-safety-institute.org.uk/scorers.html).
