@@ -1,5 +1,5 @@
 from agenteval.leaderboard.models import LeaderboardSubmission
-from agenteval.repairs import Intervention, LbSubmissionWithDetails, CONVERSION_INTERVENTION_KIND, EDIT_INTERVENTION_KIND
+from agenteval.interventions import Intervention, LbSubmissionWithDetails, CONVERSION_INTERVENTION_KIND, EDIT_INTERVENTION_KIND
 
 
 EXPECTED_SUBMITTERS = {"Ai2", "Elicit", "SciSpace"}

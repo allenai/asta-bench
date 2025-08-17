@@ -15,8 +15,8 @@ def get_config_path(config_name):
         return os.path.abspath(path)
 
 
-def add_astabench_repair_registry(ctx, param, value):
-    return tuple(set(value).union({"astabench:astabench.repairs"}))
+def add_astabench_interventions_registry(ctx, param, value):
+    return tuple(set(value).union({"astabench:astabench.interventions"}))
 
 
 for cmd in (eval_command, score_command):
@@ -30,7 +30,7 @@ for cmd in (eval_command, score_command):
 
 for param in edit_command.params:
     if isinstance(param, click.Option) and param.name == "registry":
-        param.callback = add_astabench_repair_registry
+        param.callback = add_astabench_interventions_registry
 
 
 # Export the CLI
