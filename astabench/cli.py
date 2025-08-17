@@ -3,7 +3,7 @@ import os
 
 import click
 from agenteval.cli import cli as ae_cli
-from agenteval.cli import eval_command, score_command, repair_command
+from agenteval.cli import eval_command, score_command, edit_command
 
 DEFAULT_CONFIG = "v1.0.0-dev1"
 SPLIT_NAMES = ["validation", "test"]
@@ -28,7 +28,7 @@ for cmd in (eval_command, score_command):
         elif isinstance(param, click.Option) and param.name == "split":
             param.type = click.Choice(SPLIT_NAMES, case_sensitive=False)
 
-for param in repair_command.params:
+for param in edit_command.params:
     if isinstance(param, click.Option) and param.name == "registry":
         param.callback = add_astabench_repair_registry
 
