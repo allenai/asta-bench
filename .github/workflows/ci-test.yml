@@ -71,7 +71,7 @@ jobs:
       - name: Build sandbox Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./astabench/solvers/sandbox_util/
+          context: ./astabench/util/sandbox/
           tags: astabench-sandbox:latest
           cache-from: type=gha,scope=astabench-sandbox
           cache-to: type=gha,mode=max,scope=astabench-sandbox

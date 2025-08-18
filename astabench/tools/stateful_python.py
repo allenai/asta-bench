@@ -5,8 +5,8 @@ from contextvars import ContextVar
 from inspect_ai.tool import tool
 from inspect_ai.util import sandbox
 
-from astabench.solvers.sandbox_util import SandboxJupyter
-from astabench.solvers.sandbox_util.static.sandbox_types import (
+from astabench.util.sandbox import SandboxJupyter
+from astabench.util.sandbox.static.sandbox_types import (
     JUPYTER_HISTORY_FILE,
     CellHistoryItem,
 )

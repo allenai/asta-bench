@@ -15,7 +15,7 @@ from inspect_ai.solver import Generate, Solver, TaskState, solver
 from inspect_ai.tool import ToolDef, ToolParams, tool
 from inspect_ai.util import JSONSchema, sandbox
 
-from astabench.solvers.sandbox_util import SandboxToolManager
+from astabench.util.sandbox import SandboxToolManager
 from astabench.tools import calculator
 
 logger = logging.getLogger(__name__)
