@@ -5,7 +5,7 @@ import click
 from agenteval.cli import cli as ae_cli
 from agenteval.cli import eval_command, score_command
 
-DEFAULT_CONFIG = "v1.0.0-dev1"
+DEFAULT_CONFIG = "v1.0.0"
 SPLIT_NAMES = ["validation", "test"]
 
 
