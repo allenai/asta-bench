@@ -1,4 +1,4 @@
-.PHONY: shell format mypy flake test build-image test-expensive
+.PHONY: shell format mypy flake test build-image test-expensive tag
 
 # allow passing extra pytest args, e.g. make test-expensive PYTEST_ARGS="-k EVAL_NAME"
 PYTEST_ARGS ?=
@@ -127,3 +127,9 @@ endif
 test-expensive:
 	@$(TEST_RUN) uv run --no-sync --extra dev --extra inspect_evals --extra smolagents \
 		-m pytest $(PYTEST_ARGS) -vv -o addopts= -m expensive /astabench/tests
+
+tag:
+	@VERSION=$$(grep '^version = ' pyproject.toml | sed 's/version = "\(.*\)"/\1/'); \
+	echo "Creating and pushing tag v$$VERSION"; \
+	git tag "v$$VERSION" && \
+	git push origin "v$$VERSION"

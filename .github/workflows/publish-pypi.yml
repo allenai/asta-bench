@@ -1,0 +1,61 @@
+name: Publish to PyPI
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to publish (e.g., 1.0.0)'
+        required: true
+        type: string
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
+      contents: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: v${{ inputs.version }}
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+      
+      - name: Verify version matches pyproject.toml
+        run: |
+          PYPROJECT_VERSION=$(grep '^version = ' pyproject.toml | sed 's/version = "\(.*\)"/\1/')
+          INPUT_VERSION="${{ inputs.version }}"
+          if [ "$PYPROJECT_VERSION" != "$INPUT_VERSION" ]; then
+            echo "pyproject.toml has version '$PYPROJECT_VERSION' at git tag v'$INPUT_VERSION'"
+            echo "Use 'make tag' to ensure the versions match"
+            exit 1
+          fi
+
+      - name: Build package
+        run: |
+          uv build
+      
+      - name: Verify build
+        run: |
+          ls -la dist/
+          echo "Built packages:"
+          ls dist/
+      
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_TOKEN }}
+          print-hash: true
+      
