@@ -1,0 +1,68 @@
+name: Publish knowledge-storm to PyPI
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to publish (e.g., 0.1.0)'
+        required: true
+        type: string
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
+      contents: read
+    
+    steps:
+      - name: Checkout knowledge-storm repository
+        uses: actions/checkout@v4
+        with:
+          repository: 'gituser768/storm'
+          ref: 'dh-fix-youcom'
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install build tools
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install build twine
+      
+      - name: Replace setup.py
+        run: |
+          echo "Replacing setup.py with custom template..."
+          # Copy our custom setup.py from the workflow directory
+          curl -s "https://raw.githubusercontent.com/${{ github.repository }}/main/.github/workflows/knowledge-storm-setup.py" -o setup.py
+          # Replace version placeholder
+          sed -i 's/PLACEHOLDER_VERSION/${{ inputs.version }}/' setup.py
+          echo "Custom setup.py:"
+          cat setup.py
+      
+      - name: Install package dependencies
+        run: |
+          # Install the package in editable mode to resolve dependencies
+          python -m pip install -e .
+      
+      - name: Build package
+        run: |
+          python -m build
+      
+      - name: Verify build
+        run: |
+          ls -la dist/
+          echo "Built packages:"
+          ls dist/
+          # Check package contents
+          python -m twine check dist/*
+      
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.PYPI_TOKEN }}
+          print-hash: true
