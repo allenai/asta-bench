@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "astabench"
-version = "0.0.1"
+version = "0.0.2"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -24,8 +24,10 @@ dependencies = [
     "httpx~=0.28.1",
     "h2~=4.2.0",
     "pandas",
-     "inspect_evals[core_bench] @ git+https://github.com/UKGovernmentBEIS/inspect_evals.git@c2bec9ebee7a5995512bf5ff67a2e82afe4d12e1#egg=inspect_evals",
-    "anthropic>=0.52.0"
+    "scipy",
+    "anthropic>=0.52.0",
+    "platformdirs",
+    "numpy"
 ]
 
 [project.optional-dependencies]
@@ -62,7 +64,8 @@ futurehouse = [
     "futurehouse-client==0.3.19",
 ]
 storm = [
-      "knowledge-storm @ git+https://github.com/gituser768/storm.git@dh-fix-youcom",
+      # This will be added to agent-baselines
+      # "knowledge-storm @ git+https://github.com/gituser768/storm.git@dh-fix-youcom",
 ]
 super = [
       "websocket-client~=1.7.0",
@@ -78,11 +81,8 @@ inspect = "inspect_ai._cli.main:main"
 astabench = "astabench.evals._registry"
 
 [tool.setuptools.packages.find]
-where = ["."]
-include = [
-    "astabench",
-    "astabench.*",
-]
+where = [".", "inspect_evals/src"]
+include = ["astabench*", "inspect_evals", "inspect_evals.core_bench"]
 
 [tool.uv]
 conflicts = [
@@ -129,6 +129,12 @@ disable = [
 
 [tool.setuptools.package-data]
 "astabench" = ["config/*.yml", "evals/inspect_eval_wrappers/ds1000_splits.json", "util/sandbox/sandbox_compose.yaml", "util/sandbox/Dockerfile", "util/sandbox/*.txt", "solvers/datavoyager/dv_core/config/*.yaml", "solvers/code_agent/*.yaml", "evals/demo/code_execution/*.yaml"]
+"inspect_evals.core_bench" = [
+    "*.json",
+    "*.yaml",
+    "Dockerfile",
+    "*.md",
+]
 
 [tool.uv.sources]
 knowledge-storm = { git = "https://github.com/gituser768/storm", branch = "dh-fix-youcom" }
