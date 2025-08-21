@@ -45,33 +45,6 @@ dev = [
 azure = [
     "azure-ai-inference"
 ]
-sqa = [
-    "ai2-scholar-qa==0.7.0",
-]
-smolagents = [
-    "smolagents==1.17.0",
-]
-datavoyager = [
-    "autogen-agentchat==0.6.4",
-    "autogen-ext[openai, diskcache, azure, anthropic]==0.6.4",
-    "ipython~=8.18",
-    "matplotlib==3.10.0",
-    "nest_asyncio==1.6.0",
-    "pyyaml==6.0.2",
-    "termcolor==2.5.0",
-]
-futurehouse = [
-    "futurehouse-client==0.3.19",
-]
-storm = [
-      # This will be added to agent-baselines
-      # "knowledge-storm @ git+https://github.com/gituser768/storm.git@dh-fix-youcom",
-]
-super = [
-      "websocket-client~=1.7.0",
-      "nbconvert~=7.16.1",
-      "ipython~=8.18.1",
-]
 
 [project.scripts]
 astabench = "astabench.cli:cli"
