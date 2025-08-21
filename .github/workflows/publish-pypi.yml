@@ -2,11 +2,6 @@ name: Publish to PyPI
 
 on:
   workflow_dispatch:
-    inputs:
-      version:
-        description: 'Version to publish (e.g., 1.0.0)'
-        required: true
-        type: string
 
 jobs:
   publish:
@@ -17,31 +12,38 @@ jobs:
       contents: write
     
     steps:
+      - name: Extract version from tag
+        id: get_version
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/v}
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Extracted version: $VERSION"
+      
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          ref: v${{ inputs.version }}
           fetch-depth: 0
+          submodules: true
       
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       
-      - name: Install uv
-        uses: astral-sh/setup-uv@v4
-        with:
-          enable-cache: true
-      
       - name: Verify version matches pyproject.toml
         run: |
           PYPROJECT_VERSION=$(grep '^version = ' pyproject.toml | sed 's/version = "\(.*\)"/\1/')
-          INPUT_VERSION="${{ inputs.version }}"
+          INPUT_VERSION="${{ steps.get_version.outputs.version }}"
           if [ "$PYPROJECT_VERSION" != "$INPUT_VERSION" ]; then
             echo "pyproject.toml has version '$PYPROJECT_VERSION' at git tag v'$INPUT_VERSION'"
             echo "Use 'make tag' to ensure the versions match"
             exit 1
           fi
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: false
 
       - name: Build package
         run: |
@@ -56,6 +58,5 @@ jobs:
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          password: ${{ secrets.PYPI_TOKEN }}
           print-hash: true
       
