@@ -374,7 +374,9 @@ class SandboxToolManager:
         # the compose file
         return SandboxEnvironmentSpec(
             type="docker",
-            config=(resources.files("astabench.util.sandbox") / "sandbox_compose.yaml").as_posix(),
+            config=(
+                resources.files("astabench.util.sandbox") / "sandbox_compose.yaml"
+            ).as_posix(),
         )
 
     async def init_conn_file(
