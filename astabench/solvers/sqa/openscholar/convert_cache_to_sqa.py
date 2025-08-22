@@ -3,12 +3,18 @@
 Script to convert openscholar_cache.json format to SQAResponse format.
 Each case_id key should correspond to a SQAResponse value.
 """
-import sys
 import json
+import sys
 from pathlib import Path
 from typing import Dict, Any
 
-from astabench.types.sqa import SQAResponse, SQASection, Citation
+from astabench.types.sqa import SQAResponseWithUsage, Citation, SQASectionWithTable
+
+USAGE_KEY_MAPPING = {
+    "prompt_tokens": "input",
+    "completion_tokens": "output",
+    "total_tokens": "total",
+}
 
 
 def convert_citation(citation_data: Dict[str, Any]) -> Citation:
@@ -25,13 +31,17 @@ def convert_citation(citation_data: Dict[str, Any]) -> Citation:
     )
 
 
-def convert_cache_entry(cache_entry: Dict[str, Any]) -> SQAResponse:
+def convert_cache_entry(cache_entry: Dict[str, Any]) -> SQAResponseWithUsage:
     """Convert a single cache entry to SQAResponse format."""
     sections = []
 
     # Extract the text and citations from the last iteration
     task_result = cache_entry.get("task_result", {})
     iterations = task_result.get("iterations", [])
+    usage = task_result.get("usage", {})
+    usage = {
+        USAGE_KEY_MAPPING[k]: v for k, v in usage.items() if k in USAGE_KEY_MAPPING
+    }
 
     if iterations:
         last_iteration = iterations[-1]
@@ -42,12 +52,15 @@ def convert_cache_entry(cache_entry: Dict[str, Any]) -> SQAResponse:
         citations = [convert_citation(cit) for cit in citations_data]
 
         # Create a single section with the text and citations
-        section = SQASection(
-            title=None, text=text, citations=citations  # No title in cache format
+        section = SQASectionWithTable(
+            title=None,
+            text=text,
+            citations=citations,
+            table=None,  # No title in cache format
         )
         sections.append(section)
 
-    return SQAResponse(sections=sections)
+    return SQAResponseWithUsage(sections=sections, tokens=usage)
 
 
 def main():
