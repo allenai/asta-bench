@@ -55,7 +55,7 @@ astabench = "astabench.evals._registry"
 
 [tool.setuptools.packages.find]
 where = [".", "inspect_evals/src"]
-include = ["astabench*", "inspect_evals", "inspect_evals.core_bench"]
+include = ["astabench*", "inspect_evals", "inspect_evals.core_bench", "inspect_evals.ds1000"]
 
 [tool.uv]
 conflicts = [
