@@ -29,7 +29,8 @@ from astabench.evals.paper_finder.paper_finder_utils import (
     get_model_json_output,
     litqa2_query_ids_in_vespa_fulltext,
     take_top_results,
-    check_verified, litqa2_ids_mapping,
+    check_verified,
+    litqa2_ids_mapping,
 )
 from astabench.evals.utils import not_implemented_solver
 from astabench.tools import make_asta_s2_mcp_tools, make_native_search_tools
@@ -168,11 +169,11 @@ def load_paper_finder_bench(
             entry = {
                 "input": {
                     "query_id": litqa2_ids_mapping[row["id"]]["query_id"],
-                    "query": row["question"]
+                    "query": row["question"],
                 },
                 "scorer_criteria": {
                     "corpus_ids": litqa2_ids_mapping[row["id"]]["corpus_ids"]
-                }
+                },
             }
             samples.append(json_to_sample(entry))
     else:
