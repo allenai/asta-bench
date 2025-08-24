@@ -241,7 +241,7 @@ async def update_references(query_id: str, judgements: dict[str, str]):
 
 
 litqa2_query_ids_in_vespa_fulltext = {
-    "dev": [
+    "validation": [
         "litqa2_2",
         "litqa2_11",
         "litqa2_17",
