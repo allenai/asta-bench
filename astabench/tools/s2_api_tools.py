@@ -569,7 +569,9 @@ def make_retry_wrapper(
                     [str(x) for x in _unravel_exception_group(e)]
                 )
 
-                if isinstance(e, ToolError):
+                if any(
+                    isinstance(err, ToolError) for err in _unravel_exception_group(e)
+                ):
                     # ToolErrors are not retryable and usually mean the LLM did
                     # a bad request. These will be shown to the LLM and show up
                     # in Inspect logs, so we needn't spam the console logs with

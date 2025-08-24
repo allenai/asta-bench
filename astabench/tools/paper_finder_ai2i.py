@@ -69,6 +69,8 @@ async def find_papers(
         httpx.HTTPStatusError: For API errors
         ValueError: For invalid responses
     """
+    base_url = base_url.rstrip("/")
+
     async with httpx.AsyncClient(http2=True) as client:
         try:
             resp = await client.post(
