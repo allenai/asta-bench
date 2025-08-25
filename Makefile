@@ -91,7 +91,7 @@ format:
 	docker run --rm \
 		-v $$(pwd):/astabench \
 		$(ASTABENCH_TAG) \
-		sh -c "pip install --no-cache-dir black && black ."
+		sh -c "pip install --no-cache-dir black && black --exclude '(inspect_evals|\.venv)' ."
 
 ifneq ($(IS_CI),true)
 mypy: build-image
