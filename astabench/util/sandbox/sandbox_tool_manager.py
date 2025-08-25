@@ -7,6 +7,7 @@ import json
 import logging
 from contextlib import asynccontextmanager
 from pathlib import Path
+from importlib import resources
 from textwrap import dedent
 from typing import Any, cast
 
@@ -373,7 +374,9 @@ class SandboxToolManager:
         # the compose file
         return SandboxEnvironmentSpec(
             type="docker",
-            config=(Path(__file__).parent / "sandbox_compose.yaml").as_posix(),
+            config=(
+                resources.files("astabench.util.sandbox") / "sandbox_compose.yaml"
+            ).as_posix(),
         )
 
     async def init_conn_file(

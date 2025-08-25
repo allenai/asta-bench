@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "astabench"
-version = "0.0.2"
+version = "0.1.5"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "inspect_ai==0.3.114",
-    "agent-eval==0.1.36",
+    "agent-eval==0.1.42",
     "openai>=1.78.0", # required by inspect
     "pydantic>=2.11.4", # required by inspect
     "litellm",
@@ -45,33 +45,6 @@ dev = [
 azure = [
     "azure-ai-inference"
 ]
-sqa = [
-    "ai2-scholar-qa==0.7.0",
-]
-smolagents = [
-    "smolagents==1.17.0",
-]
-datavoyager = [
-    "autogen-agentchat==0.6.4",
-    "autogen-ext[openai, diskcache, azure, anthropic]==0.6.4",
-    "ipython~=8.18",
-    "matplotlib==3.10.0",
-    "nest_asyncio==1.6.0",
-    "pyyaml==6.0.2",
-    "termcolor==2.5.0",
-]
-futurehouse = [
-    "futurehouse-client==0.3.19",
-]
-storm = [
-      # This will be added to agent-baselines
-      # "knowledge-storm @ git+https://github.com/gituser768/storm.git@dh-fix-youcom",
-]
-super = [
-      "websocket-client~=1.7.0",
-      "nbconvert~=7.16.1",
-      "ipython~=8.18.1",
-]
 
 [project.scripts]
 astabench = "astabench.cli:cli"
@@ -82,7 +55,7 @@ astabench = "astabench.evals._registry"
 
 [tool.setuptools.packages.find]
 where = [".", "inspect_evals/src"]
-include = ["astabench*", "inspect_evals", "inspect_evals.core_bench"]
+include = ["astabench*", "inspect_evals", "inspect_evals.core_bench", "inspect_evals.ds1000"]
 
 [tool.uv]
 conflicts = [

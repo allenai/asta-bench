@@ -1,11 +1,9 @@
 services:
   default: 
     image: astabench-sandbox
-    x-local: true
     init: true
     command: tail -f /dev/null
     cpus: 2.0
-    mem_limit: 48G
     network_mode: none
     working_dir: /workspace
     environment:

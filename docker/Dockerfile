@@ -31,10 +31,15 @@ ENV PATH="/root/.cargo/bin:$PATH"
 WORKDIR /astabench
 COPY pyproject.toml /astabench/
 RUN mkdir -p /astabench/astabench
+
+# Sync before copy for caching
 RUN uv sync --extra dev
 
 COPY docker/bashrc /root/.bashrc
 COPY . /astabench
+
+# Sync after copy to register `inspect_evals` and `astabench` tasks/tools/cli
+RUN uv sync --extra dev
 
 
 # Images for running specific solvers

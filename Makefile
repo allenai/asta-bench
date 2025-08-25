@@ -117,7 +117,7 @@ test: build-image
 endif
 
 test:
-	@$(TEST_RUN) uv run --no-sync --extra dev --extra inspect_evals --extra smolagents \
+	@$(TEST_RUN) uv run --no-sync --extra dev \
 		-m pytest $(PYTEST_ARGS) -vv /astabench/tests
 
 ifneq ($(IS_CI),true)
@@ -125,7 +125,7 @@ test-expensive: build-image
 endif
 
 test-expensive:
-	@$(TEST_RUN) uv run --no-sync --extra dev --extra inspect_evals --extra smolagents \
+	@$(TEST_RUN) uv run --no-sync --extra dev \
 		-m pytest $(PYTEST_ARGS) -vv -o addopts= -m expensive /astabench/tests
 
 tag:
