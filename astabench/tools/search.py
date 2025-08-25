@@ -15,7 +15,7 @@ from inspect_ai.tool import ToolError
 
 logger = logging.getLogger(__name__)
 
-S2_API_KEY = os.getenv("S2_API_KEY", "")
+ASTA_TOOL_KEY = os.getenv("ASTA_TOOL_KEY", "")
 S2_API_BASE_URL = "https://api.semanticscholar.org/graph/v1/"
 METADATA_FIELDS = "title,abstract,corpusId,authors,year,venue,citationCount,referenceCount,influentialCitationCount"
 DEFAULT_RESULTS_LIMIT = 20
@@ -100,7 +100,7 @@ async def _query_s2_api(
     request = httpx.Request(
         method=method.upper(),
         url=url,
-        headers={"x-api-key": S2_API_KEY},
+        headers={"x-api-key": ASTA_TOOL_KEY},
         params=params,
         json=payload,
     )

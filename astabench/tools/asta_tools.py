@@ -732,7 +732,7 @@ async def async_make_asta_mcp_tools(
     return new_tools
 
 
-def make_asta_s2_mcp_tools(insertion_date: str | None = None) -> list[Tool]:
+def make_asta_mcp_tools(insertion_date: str | None = None) -> list[Tool]:
     coro = async_make_asta_mcp_tools(insertion_date=insertion_date)
     # Run in separate thread since it's async
     fut = concurrent.futures.ThreadPoolExecutor().submit(asyncio.run, coro)
