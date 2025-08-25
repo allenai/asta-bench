@@ -726,7 +726,7 @@ async def async_make_asta_mcp_tools(
 
     if len(include_tools - found_tools) > 0:
         raise ValueError(
-            f"Missing expected tools in S2 MCP: {include_tools - found_tools}"
+            f"Missing expected tools in Asta MCP: {include_tools - found_tools}"
         )
 
     return new_tools

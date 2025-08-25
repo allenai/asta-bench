@@ -406,7 +406,7 @@ async def test_make_asta_toolsource_without_api_key():
 
 
 ######################
-# Tests for Asta task-provided S2 tools
+# Tests for Asta task-provided tools
 ######################
 
 
