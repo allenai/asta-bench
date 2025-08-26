@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "astabench"
-version = "0.1.5"
+version = "0.1.6"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -101,7 +101,7 @@ disable = [
 ]
 
 [tool.setuptools.package-data]
-"astabench" = ["config/*.yml", "evals/inspect_eval_wrappers/ds1000_splits.json", "util/sandbox/sandbox_compose.yaml", "util/sandbox/Dockerfile", "util/sandbox/*.txt", "evals/demo/code_execution/*.yaml"]
+"astabench" = ["config/*.yml", "evals/inspect_eval_wrappers/ds1000_splits.json", "util/sandbox/sandbox_compose.yaml", "util/sandbox/Dockerfile", "util/sandbox/*.txt", "evals/demo/code_execution/*.yaml", "evals/demo/arithmetic/data.json"]
 "inspect_evals.core_bench" = [
     "*.json",
     "*.yaml",
