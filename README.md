@@ -35,7 +35,7 @@ Follow these steps to run the AstaBench suite with our ReAct agent. This quickst
 
 Install:
 ```bash
-git clone https://github.com/allenai/asta-bench.git
+git clone --recursive https://github.com/allenai/asta-bench.git
 cd asta-bench
 make shell
 ```
@@ -69,7 +69,7 @@ For more usage details, including how to view results and submit to the leaderbo
 Start by cloning the repository:
 
 ```bash
-git clone https://github.com/allenai/asta-bench.git
+git clone --recursive https://github.com/allenai/asta-bench.git
 cd asta-bench
 ```
 

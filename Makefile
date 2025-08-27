@@ -66,6 +66,7 @@ build-image:
 # Interactive shell in container
 # -----------------------------------------------------------------------------
 shell: build-image
+	@git submodule update --init --recursive
 	@docker run --rm -it --name $(CONTAINER_NAME) \
 		$(LOCAL_MOUNTS) \
 		-v astabench-home:/root/.astabench \
