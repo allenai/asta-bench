@@ -13,7 +13,7 @@ from typing import Any, Awaitable, Callable, Collection, Literal
 import anyio
 import httpx
 from inspect_ai.tool import ContentText, Tool, ToolDef, ToolError, ToolSource
-from inspect_ai.tool._mcp._mcp import MCPServerImpl
+from inspect_ai.tool._mcp._local import MCPServerLocal
 from mcp.client.streamable_http import streamablehttp_client
 
 from .search import (
@@ -46,7 +46,7 @@ def create_server_streamable_http(
     timeout: float = 5,
     sse_read_timeout: float = 60 * 5,
 ) -> ToolSource:
-    return MCPServerImpl(
+    return MCPServerLocal(
         lambda: fixed_streamablehttp_client(url, headers, timeout, sse_read_timeout),
         name=url,
         events=True,
