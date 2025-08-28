@@ -8,9 +8,9 @@ version = "0.1.7"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "inspect_ai==0.3.114",
+    "inspect_ai==0.3.123",
     "agent-eval==0.1.43",
-    "openai>=1.78.0", # required by inspect
+    "openai>=1.99.7", # required by inspect
     "pydantic>=2.11.4", # required by inspect
     "litellm",
     "datasets~=3.2.0",
@@ -65,7 +65,7 @@ conflicts = [
 ]
 override-dependencies = [
     # sqa pins openai to a lower version than inspect requires
-    "openai==1.78.0",
+    "openai==1.99.7",
 
     # STORM pretends to require a lower version, but doesn't actually need it:
     # https://github.com/allenai/asta-bench/issues/31#issuecomment-3045978008
