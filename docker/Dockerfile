@@ -40,26 +40,3 @@ COPY . /astabench
 
 # Sync after copy to register `inspect_evals` and `astabench` tasks/tools/cli
 RUN uv sync --extra dev
-
-
-# Images for running specific solvers
-FROM astabench-base AS react
-RUN solvers/react/setup.sh
-
-FROM astabench-base AS smolagents
-RUN solvers/smolagents/setup.sh
-
-FROM astabench-base AS storm
-RUN solvers/storm/setup.sh
-
-FROM astabench-base AS sqa
-RUN solvers/sqa/setup.sh
-
-FROM astabench-base AS super
-RUN solvers/super/setup.sh
-
-FROM astabench-base AS datavoyager
-RUN solvers/datavoyager/setup.sh
-
-FROM astabench-base AS futurehouse
-RUN solvers/futurehouse/setup.sh

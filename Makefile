@@ -11,12 +11,6 @@ ENV_ARGS :=
 
 # Docker target for running a shell
 TARGET := --target astabench-base
-# Name of solver to build Docker container for
-SOLVER :=
-ifdef SOLVER
-  TARGET := --target $(SOLVER)
-  ASTABENCH_TAG := $(ASTABENCH_TAG)-$(SOLVER)
-endif
 
 # Add each env var only if it's defined
 ifdef OPENAI_API_KEY
@@ -66,6 +60,7 @@ build-image:
 # Interactive shell in container
 # -----------------------------------------------------------------------------
 shell: build-image
+	@git submodule update --init --recursive
 	@docker run --rm -it --name $(CONTAINER_NAME) \
 		$(LOCAL_MOUNTS) \
 		-v astabench-home:/root/.astabench \
