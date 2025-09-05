@@ -192,11 +192,11 @@ stages:
       size: 1972
     - path: scripts/generate_markdown_report.py
       hash: md5
-      md5: 1d9052fe39d724b40af99b57dca33bad
-      size: 21427
+      md5: 76e7dc7b1f20a53da5a9775f29deb6eb
+      size: 22595
       isexec: true
     outs:
     - path: reports/failure_mode_analysis.md
       hash: md5
-      md5: 6dccc2552f1a57da23833585b366698e
-      size: 7733
+      md5: e4e3e26f8b25019065040f20e6512e87
+      size: 7749
