@@ -79,10 +79,10 @@ Here are the failure mode categories to use:
     has_citations = len(claim.get('supporting_refs', [])) > 0 or len(claim.get('non_supporting_refs', [])) > 0
 
     if has_citations:
-        if claim.get('supporting_refs'):
-            prompt += f"  Supporting refs: {claim['supporting_refs']}\n"
-        if claim.get('non_supporting_refs'):
-            prompt += f"  Non-supporting refs: {claim['non_supporting_refs']}\n"
+        # if claim.get('supporting_refs'):
+        #     prompt += f"  Supporting refs: {claim['supporting_refs']}\n"
+        # if claim.get('non_supporting_refs'):
+        #     prompt += f"  Non-supporting refs: {claim['non_supporting_refs']}\n"
         
         # Include snippet sample if available
         snippets = claim.get('cited_snippets', {})

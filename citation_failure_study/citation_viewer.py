@@ -362,9 +362,6 @@ def render_definitions(data: Dict):
                     st.markdown("**Characteristics:**")
                     for char in mode["characteristics"]:
                         st.write(f"• {char}")
-                
-                if "estimated_percentage" in mode:
-                    st.metric("Estimated Percentage", f"{mode['estimated_percentage']}%")
     
     st.divider()
     
