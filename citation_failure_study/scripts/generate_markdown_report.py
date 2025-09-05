@@ -33,17 +33,38 @@ def create_claims_failure_table(claims_df: pd.DataFrame, totals_data: dict) -> p
     Create a pivot table of claim failure rates by system and failure mode.
     Rows: failure modes, Columns: systems
     
-    Note: The claims_df contains a sample of classified claims. We need to scale
-    the percentages based on the actual failure rates from totals_data.
+    Note: The claims_df contains a sample of classified claims. We need to:
+    1. Account for claims without any citations (filtered out before classification)
+    2. Scale the percentages based on the actual failure rates from totals_data.
     """
+    SAMPLE_SIZE_PER_SYSTEM = 50  # We sampled 50 claims per system
+    
     # Group by system and failure_mode to get counts in the sample
     grouped = claims_df.groupby(['system', 'failure_mode']).size().reset_index(name='sample_count')
     
-    # Get counts per system in the sample
-    system_sample_totals = claims_df.groupby('system').size().reset_index(name='sample_total')
+    # Get counts per system in the sample (claims with citations)
+    system_sample_totals = claims_df.groupby('system').size().reset_index(name='claims_with_citations')
+    
+    # Calculate claims without any citations for each system
+    system_sample_totals['without_any_citations'] = SAMPLE_SIZE_PER_SYSTEM - system_sample_totals['claims_with_citations']
+    system_sample_totals['sample_total'] = SAMPLE_SIZE_PER_SYSTEM
+    
+    # Add without_any_citations as a failure mode
+    without_citations_rows = []
+    for _, row in system_sample_totals.iterrows():
+        if row['without_any_citations'] > 0:
+            without_citations_rows.append({
+                'system': row['system'],
+                'failure_mode': 'without_any_citations',
+                'sample_count': row['without_any_citations']
+            })
+    
+    if without_citations_rows:
+        without_citations_df = pd.DataFrame(without_citations_rows)
+        grouped = pd.concat([grouped, without_citations_df], ignore_index=True)
     
     # Merge to get proportions within each system's sample
-    grouped = grouped.merge(system_sample_totals, on='system')
+    grouped = grouped.merge(system_sample_totals[['system', 'sample_total']], on='system')
     grouped['proportion'] = grouped['sample_count'] / grouped['sample_total']
     
     # Get actual failure rates and totals from totals_data
@@ -69,6 +90,27 @@ def create_claims_failure_table(claims_df: pd.DataFrame, totals_data: dict) -> p
     
     # Fill NaN values with 0
     pivot = pivot.fillna(0)
+    
+    # Calculate total column - weighted average based on actual failed claims
+    failure_mode_totals = {}
+    for mode in pivot.index:
+        total_for_mode = 0
+        for system in pivot.columns:
+            if system in grouped[grouped['failure_mode'] == mode]['system'].values:
+                system_data = grouped[(grouped['system'] == system) & (grouped['failure_mode'] == mode)]
+                if not system_data.empty:
+                    # Calculate actual count for this mode in this system
+                    actual_count = system_data['proportion'].values[0] * system_data['failed_claims'].values[0]
+                    total_for_mode += actual_count
+        
+        # Calculate as percentage of all claims
+        total_claims = sum(data['total_claims'] for data in totals_data['systems'].values())
+        failure_mode_totals[mode] = round(total_for_mode / total_claims * 100, 2)
+    
+    pivot['Total'] = pd.Series(failure_mode_totals)
+    
+    # Sort by Total column in descending order
+    pivot = pivot.sort_values('Total', ascending=False)
     
     return pivot
 
@@ -181,7 +223,8 @@ def generate_markdown_report(output_path: str):
         'claim_is_fully_supported': 'Claims that are fully supported (included for completeness)',
         'irrelevant_citation': 'Claims with citations that are not relevant to the assertion',
         'citation_unavailable': 'Claims where the citation content could not be retrieved',
-        'no_citation': 'Claims that lack any citation'
+        'no_citation': 'Claims that lack any citation',
+        'without_any_citations': 'Claims that were made without providing any citations at all'
     }
     
     # Use pandas operations to get unique failure modes
