@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# coding: utf-8
+
 """
 Streamlit-based viewer for citation failure analysis pipeline results.
 """
@@ -248,51 +250,6 @@ def render_system_analysis(data: Dict):
                 fig.update_traces(textposition='outside')
                 fig.update_layout(xaxis_tickangle=-45)
                 st.plotly_chart(fig, use_container_width=True)
-    
-    st.divider()
-    
-    # Comparative analysis across all systems
-    st.subheader("📊 Comparative Analysis Across Systems")
-    
-    # Create a heatmap of systems vs failure modes
-    if "system_analysis" in data["failure_mode_report"]:
-        heatmap_data = []
-        all_modes = set()
-        
-        for system in systems:
-            if system in data["failure_mode_report"]["system_analysis"]:
-                system_modes = data["failure_mode_report"]["system_analysis"][system]
-                if "by_mode" in system_modes:
-                    for mode in system_modes["by_mode"].keys():
-                        all_modes.add(mode)
-        
-        for system in systems:
-            for mode in all_modes:
-                count = 0
-                if system in data["failure_mode_report"]["system_analysis"]:
-                    system_modes = data["failure_mode_report"]["system_analysis"][system]
-                    if "by_mode" in system_modes:
-                        count = system_modes["by_mode"].get(mode, 0)
-                
-                mode_name = data["failure_mode_report"]["failure_mode_distribution"].get(mode, {}).get("name", mode)
-                heatmap_data.append({
-                    "System": system,
-                    "Failure Mode": mode_name,
-                    "Count": count
-                })
-        
-        heatmap_df = pd.DataFrame(heatmap_data)
-        heatmap_pivot = heatmap_df.pivot(index="Failure Mode", columns="System", values="Count").fillna(0)
-        
-        fig = px.imshow(
-            heatmap_pivot,
-            labels=dict(x="System", y="Failure Mode", color="Count"),
-            title="System vs Failure Mode Heatmap",
-            color_continuous_scale="YlOrRd",
-            aspect="auto"
-        )
-        fig.update_layout(xaxis_side="top")
-        st.plotly_chart(fig, use_container_width=True)
 
 def render_unsupported_claims_explorer(data: Dict):
     """Render the unsupported claims explorer page."""
@@ -533,11 +490,6 @@ def render_citations_explorer(data: Dict):
                 
                 st.write(f"**Question:** {citation.get('question', 'N/A')}")
             
-            # Show all non-supporting references if available
-            if "all_non_supporting_refs" in citation and citation["all_non_supporting_refs"]:
-                st.markdown("**All Non-Supporting References for this Claim:**")
-                for ref in citation["all_non_supporting_refs"]:
-                    st.write(f"• {ref}")
 
 def main():
     """Main application function."""

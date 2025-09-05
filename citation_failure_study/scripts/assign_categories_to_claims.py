@@ -315,7 +315,7 @@ def main():
     
     print("\nClassifying claims using Gemini via litellm...")
 
-    claims_to_classify = [c for c in claims_to_classify if all(s == 'No snippet found.' for s in c['cited_snippets'].values())]
+    claims_to_classify = [c for c in claims_to_classify if not all(s == 'No snippet found.' for s in c['cited_snippets'].values())]
     try:
         # Classify claims
         classified_claims = classify_all_claims(claims_to_classify, failure_modes, n_jobs=-1)
