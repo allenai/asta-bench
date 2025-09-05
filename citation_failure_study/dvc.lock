@@ -179,3 +179,24 @@ stages:
       hash: md5
       md5: 6866485f160dce8a4958dd0d5897c3b9
       size: 1634
+  generate_markdown_report:
+    cmd: cd scripts && uv run python generate_markdown_report.py
+    deps:
+    - path: reports/citation_failure_mode_analysis_report.json
+      hash: md5
+      md5: 7ce9ec9e60200b78f30601d81d503e01
+      size: 3481
+    - path: reports/failure_mode_analysis_report.json
+      hash: md5
+      md5: 4cf3b60409018a103b17eb6730d61c8f
+      size: 1972
+    - path: scripts/generate_markdown_report.py
+      hash: md5
+      md5: 1d9052fe39d724b40af99b57dca33bad
+      size: 21427
+      isexec: true
+    outs:
+    - path: reports/failure_mode_analysis.md
+      hash: md5
+      md5: 6dccc2552f1a57da23833585b366698e
+      size: 7733

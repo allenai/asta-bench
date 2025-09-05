@@ -111,3 +111,16 @@ stages:
           cache: false
       - reports/classified_citations_summary.csv:
           cache: false
+
+  generate_markdown_report:
+    desc: "Generate comprehensive markdown report from analysis results"
+    cmd: >-
+      cd scripts &&
+      uv run python generate_markdown_report.py
+    deps:
+      - scripts/generate_markdown_report.py
+      - reports/failure_mode_analysis_report.json
+      - reports/citation_failure_mode_analysis_report.json
+    outs:
+      - reports/failure_mode_analysis.md:
+          cache: false
