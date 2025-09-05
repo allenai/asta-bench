@@ -1,0 +1,113 @@
+# DVC Pipeline for Citation Failure Study
+# Analyzes unsupported claims from scientific QA systems
+
+stages:
+  extract_claims:
+    desc: "Extract all unsupported claims from citation evaluation logs"
+    cmd: >-
+      cd scripts &&
+      uv run --with pandas
+      python extract_unsupported_claims.py
+    deps:
+      - scripts/extract_unsupported_claims.py
+      - ../test_dvc_logs/debug_logs/task_sqa_solver_elicit_citation_eval.csv
+      - ../test_dvc_logs/debug_logs/task_sqa_solver_openai_deep_research_citation_eval.csv
+      - ../test_dvc_logs/debug_logs/task_sqa_solver_perplexity_dr_citation_eval.csv
+      - ../test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.0_citation_eval.csv
+    outs:
+      - data/extracted/unsupported_claims_extracted.json
+      - data/extracted/all_unsupported_claims.json
+
+  categorize_failure_modes:
+    desc: "Analyze sample of claims to identify failure mode categories using LLM"
+    cmd: >-
+      cd scripts &&
+      uv run --with pandas --with litellm --with python-dotenv --with pydantic
+      python categorize_failure_modes.py
+      --sample-size ${sample_size}
+      --stratified
+    deps:
+      - scripts/categorize_failure_modes.py
+      - data/extracted/all_unsupported_claims.json
+    params:
+      - sample_size
+    outs:
+      - data/categories/failure_mode_categories.json
+
+  classify_all_claims:
+    desc: "Classify all unsupported claims using identified failure modes"
+    cmd: >-
+      cd scripts &&
+      uv run --with pandas --with litellm --with python-dotenv --with pydantic --with joblib --with tqdm
+      python assign_categories_to_claims.py
+      --sample ${classify_sample_size}
+      --stratified
+    deps:
+      - scripts/assign_categories_to_claims.py
+      - data/extracted/all_unsupported_claims.json
+      - data/categories/failure_mode_categories.json
+    params:
+      - classify_sample_size
+      - n_jobs
+    outs:
+      - data/classified/classified_unsupported_claims.json:
+          cache: false
+      - reports/failure_mode_analysis_report.json:
+          cache: false
+      - reports/classified_claims_summary.csv:
+          cache: false
+
+  extract_non_supporting_citations:
+    desc: "Extract all non-supporting citations from citation evaluation logs"
+    cmd: >-
+      cd scripts &&
+      uv run --with pandas
+      python extract_non_supporting_citations.py
+    deps:
+      - scripts/extract_non_supporting_citations.py
+      - ../test_dvc_logs/debug_logs/task_sqa_solver_elicit_citation_eval.csv
+      - ../test_dvc_logs/debug_logs/task_sqa_solver_openai_deep_research_citation_eval.csv
+      - ../test_dvc_logs/debug_logs/task_sqa_solver_perplexity_dr_citation_eval.csv
+      - ../test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.0_citation_eval.csv
+    outs:
+      - data/extracted/non_supporting_citations_extracted.json
+      - data/extracted/all_non_supporting_citations.json
+
+  categorize_citation_failure_modes:
+    desc: "Analyze sample of non-supporting citations to identify failure mode categories using LLM"
+    cmd: >-
+      cd scripts &&
+      uv run --with pandas --with litellm --with python-dotenv --with pydantic
+      python categorize_citation_failure_modes.py
+      --sample-size ${citation_sample_size}
+      --stratified
+    deps:
+      - scripts/categorize_citation_failure_modes.py
+      - data/extracted/all_non_supporting_citations.json
+    params:
+      - citation_sample_size
+    outs:
+      - data/categories/citation_failure_mode_categories.json
+
+  classify_non_supporting_citations:
+    desc: "Classify all non-supporting citations using identified failure modes"
+    cmd: >-
+      cd scripts &&
+      uv run --with pandas --with litellm --with python-dotenv --with pydantic --with joblib --with tqdm
+      python classify_non_supporting_citations.py
+      --sample ${classify_citation_sample_size}
+      --stratified
+    deps:
+      - scripts/classify_non_supporting_citations.py
+      - data/extracted/all_non_supporting_citations.json
+      - data/categories/citation_failure_mode_categories.json
+    params:
+      - classify_citation_sample_size
+      - citation_n_jobs
+    outs:
+      - data/classified/classified_non_supporting_citations.json:
+          cache: false
+      - reports/citation_failure_mode_analysis_report.json:
+          cache: false
+      - reports/classified_citations_summary.csv:
+          cache: false

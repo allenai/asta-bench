@@ -1,0 +1,17 @@
+# Parameters for Citation Failure Study Pipeline
+
+# Unsupported Claims Analysis Parameters
+# Stage: categorize_failure_modes
+sample_size: 200                    # Number of claims to sample for failure mode analysis
+
+# Stage: classify_all_claims
+classify_sample_size: 200          # null for all claims, or integer for sampling
+n_jobs: -1                          # Number of parallel jobs (-1 uses all cores)
+
+# Non-Supporting Citations Analysis Parameters
+# Stage: categorize_citation_failure_modes
+citation_sample_size: 200          # Number of citations to sample for failure mode analysis
+
+# Stage: classify_non_supporting_citations
+classify_citation_sample_size: 200 # null for all citations, or integer for sampling
+citation_n_jobs: -1                 # Number of parallel jobs (-1 uses all cores)

@@ -1,0 +1,181 @@
+schema: '2.0'
+stages:
+  extract_claims:
+    cmd: cd scripts && uv run --with pandas python extract_unsupported_claims.py
+    deps:
+    - path: ../test_dvc_logs/debug_logs/task_sqa_solver_elicit_citation_eval.csv
+      hash: md5
+      md5: d76ef432235de34e9508d1327f5604dd
+      size: 100932205
+    - path: 
+        ../test_dvc_logs/debug_logs/task_sqa_solver_openai_deep_research_citation_eval.csv
+      hash: md5
+      md5: 152e59ee8bfda0ccc4fd2bb35dbd44a6
+      size: 128934273
+    - path: ../test_dvc_logs/debug_logs/task_sqa_solver_perplexity_dr_citation_eval.csv
+      hash: md5
+      md5: b80d4fa20bac3e0d5dc9e2ba8fe50588
+      size: 6825224
+    - path: ../test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.0_citation_eval.csv
+      hash: md5
+      md5: f84145ae49872b43ae13f7692d721e1e
+      size: 94445330
+    - path: scripts/extract_unsupported_claims.py
+      hash: md5
+      md5: b3917e68758d6ad51791048f29d92259
+      size: 7222
+      isexec: true
+    outs:
+    - path: data/extracted/all_unsupported_claims.json
+      hash: md5
+      md5: 0149c01824069217e5f47ef5312eccc6
+      size: 9983687
+    - path: data/extracted/unsupported_claims_extracted.json
+      hash: md5
+      md5: 5501eab51a0f8e1ce635b4c196ad3b8d
+      size: 10225505
+  categorize_failure_modes:
+    cmd: cd scripts && uv run --with pandas --with litellm --with python-dotenv --with
+      pydantic python categorize_failure_modes.py --sample-size 200 --stratified
+    deps:
+    - path: data/extracted/all_unsupported_claims.json
+      hash: md5
+      md5: 0149c01824069217e5f47ef5312eccc6
+      size: 9983687
+    - path: scripts/categorize_failure_modes.py
+      hash: md5
+      md5: cd215cfa496ac153decb8cb25b482b0f
+      size: 14311
+      isexec: true
+    params:
+      params.yaml:
+        sample_size: 200
+    outs:
+    - path: data/categories/failure_mode_categories.json
+      hash: md5
+      md5: ce6b6c1b3680779cd40ced9619154704
+      size: 167021
+  classify_all_claims:
+    cmd: cd scripts && uv run --with pandas --with litellm --with python-dotenv --with
+      pydantic --with joblib --with tqdm python assign_categories_to_claims.py --sample
+      200 --stratified
+    deps:
+    - path: data/categories/failure_mode_categories.json
+      hash: md5
+      md5: ce6b6c1b3680779cd40ced9619154704
+      size: 167021
+    - path: data/extracted/all_unsupported_claims.json
+      hash: md5
+      md5: 0149c01824069217e5f47ef5312eccc6
+      size: 9983687
+    - path: scripts/assign_categories_to_claims.py
+      hash: md5
+      md5: 85fcb98e9132d27a3ad0eefeb5a8a40e
+      size: 15860
+      isexec: true
+    params:
+      params.yaml:
+        classify_sample_size: 200
+        n_jobs: -1
+    outs:
+    - path: data/classified/classified_unsupported_claims.json
+      hash: md5
+      md5: 49801d9eeb6e30827374c84ecf57b5a7
+      size: 58369
+    - path: reports/classified_claims_summary.csv
+      hash: md5
+      md5: 60390dc21233010fb722e149a058c981
+      size: 20569
+    - path: reports/failure_mode_analysis_report.json
+      hash: md5
+      md5: fe939e9ec53e2d4c866a37c747cd1e4f
+      size: 1346
+  extract_non_supporting_citations:
+    cmd: cd scripts && uv run --with pandas python extract_non_supporting_citations.py
+    deps:
+    - path: ../test_dvc_logs/debug_logs/task_sqa_solver_elicit_citation_eval.csv
+      hash: md5
+      md5: d76ef432235de34e9508d1327f5604dd
+      size: 100932205
+    - path: 
+        ../test_dvc_logs/debug_logs/task_sqa_solver_openai_deep_research_citation_eval.csv
+      hash: md5
+      md5: 152e59ee8bfda0ccc4fd2bb35dbd44a6
+      size: 128934273
+    - path: ../test_dvc_logs/debug_logs/task_sqa_solver_perplexity_dr_citation_eval.csv
+      hash: md5
+      md5: b80d4fa20bac3e0d5dc9e2ba8fe50588
+      size: 6825224
+    - path: ../test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.0_citation_eval.csv
+      hash: md5
+      md5: f84145ae49872b43ae13f7692d721e1e
+      size: 94445330
+    - path: scripts/extract_non_supporting_citations.py
+      hash: md5
+      md5: 639fecb91cee8a703ad6cd248e3e918f
+      size: 7390
+    outs:
+    - path: data/extracted/all_non_supporting_citations.json
+      hash: md5
+      md5: 33954f5b1e71f321ded3523ef24cecbf
+      size: 7192336
+    - path: data/extracted/non_supporting_citations_extracted.json
+      hash: md5
+      md5: 330d95ba00d78f65dde7cf1ee78aefbc
+      size: 7529940
+  categorize_citation_failure_modes:
+    cmd: cd scripts && uv run --with pandas --with litellm --with python-dotenv --with
+      pydantic python categorize_citation_failure_modes.py --sample-size 200 --stratified
+    deps:
+    - path: data/extracted/all_non_supporting_citations.json
+      hash: md5
+      md5: 33954f5b1e71f321ded3523ef24cecbf
+      size: 7192336
+    - path: scripts/categorize_citation_failure_modes.py
+      hash: md5
+      md5: 8d08aea3aeaa1138dfce1bf0d858a95e
+      size: 15658
+      isexec: true
+    params:
+      params.yaml:
+        citation_sample_size: 200
+    outs:
+    - path: data/categories/citation_failure_mode_categories.json
+      hash: md5
+      md5: 103b9e6bc042252fdb11bf8bd31a9dae
+      size: 186092
+  classify_non_supporting_citations:
+    cmd: cd scripts && uv run --with pandas --with litellm --with python-dotenv --with
+      pydantic --with joblib --with tqdm python classify_non_supporting_citations.py
+      --sample 200 --stratified
+    deps:
+    - path: data/categories/citation_failure_mode_categories.json
+      hash: md5
+      md5: 103b9e6bc042252fdb11bf8bd31a9dae
+      size: 186092
+    - path: data/extracted/all_non_supporting_citations.json
+      hash: md5
+      md5: 33954f5b1e71f321ded3523ef24cecbf
+      size: 7192336
+    - path: scripts/classify_non_supporting_citations.py
+      hash: md5
+      md5: e2daa0caefb7f045a8157c78a347ddc5
+      size: 13671
+      isexec: true
+    params:
+      params.yaml:
+        citation_n_jobs: -1
+        classify_citation_sample_size: 200
+    outs:
+    - path: data/classified/classified_non_supporting_citations.json
+      hash: md5
+      md5: 3183de3cbf16a13f01d7458d98681509
+      size: 306883
+    - path: reports/citation_failure_mode_analysis_report.json
+      hash: md5
+      md5: 7ce9ec9e60200b78f30601d81d503e01
+      size: 3481
+    - path: reports/classified_citations_summary.csv
+      hash: md5
+      md5: 6866485f160dce8a4958dd0d5897c3b9
+      size: 1634

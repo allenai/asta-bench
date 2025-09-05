@@ -1,0 +1,22 @@
+# Configuration file for systems to analyze in the citation failure study
+
+systems:
+  elicit:
+    name: "Elicit"
+    csv_path: "../test_dvc_logs/debug_logs/task_sqa_solver_elicit_citation_eval.csv"
+    description: "Elicit literature review system"
+    
+  openai_deep_research:
+    name: "OpenAI Deep Research"
+    csv_path: "../test_dvc_logs/debug_logs/task_sqa_solver_openai_deep_research_citation_eval.csv"
+    description: "OpenAI's deep research system"
+    
+  perplexity_dr:
+    name: "Perplexity Deep Research"
+    csv_path: "../test_dvc_logs/debug_logs/task_sqa_solver_perplexity_dr_citation_eval.csv"
+    description: "Perplexity's deep research system"
+    
+  claude_4.0:
+    name: "Claude 4.0"
+    csv_path: "../test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.0_citation_eval.csv"
+    description: "Claude 4.0 scientific QA system"
