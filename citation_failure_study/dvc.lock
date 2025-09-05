@@ -182,6 +182,10 @@ stages:
   generate_markdown_report:
     cmd: cd scripts && uv run python generate_markdown_report.py
     deps:
+    - path: data/statistics/totals.json
+      hash: md5
+      md5: 80ca585f50913f61b2325c13c8f71182
+      size: 1390
     - path: reports/citation_failure_mode_analysis_report.json
       hash: md5
       md5: 7ce9ec9e60200b78f30601d81d503e01
@@ -192,11 +196,41 @@ stages:
       size: 1972
     - path: scripts/generate_markdown_report.py
       hash: md5
-      md5: 76e7dc7b1f20a53da5a9775f29deb6eb
-      size: 22595
+      md5: 70382d86da053f15d95f62525f3d0c64
+      size: 27651
       isexec: true
     outs:
     - path: reports/failure_mode_analysis.md
       hash: md5
-      md5: e4e3e26f8b25019065040f20e6512e87
-      size: 7749
+      md5: d2fcccbccc6f9eb6835eda409507e437
+      size: 7882
+  extract_totals:
+    cmd: cd scripts && uv run --with pandas python extract_totals.py
+    deps:
+    - path: ../test_dvc_logs/debug_logs/task_sqa_solver_elicit_citation_eval.csv
+      hash: md5
+      md5: d76ef432235de34e9508d1327f5604dd
+      size: 100932205
+    - path: 
+        ../test_dvc_logs/debug_logs/task_sqa_solver_openai_deep_research_citation_eval.csv
+      hash: md5
+      md5: 152e59ee8bfda0ccc4fd2bb35dbd44a6
+      size: 128934273
+    - path: ../test_dvc_logs/debug_logs/task_sqa_solver_perplexity_dr_citation_eval.csv
+      hash: md5
+      md5: b80d4fa20bac3e0d5dc9e2ba8fe50588
+      size: 6825224
+    - path: ../test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.0_citation_eval.csv
+      hash: md5
+      md5: f84145ae49872b43ae13f7692d721e1e
+      size: 94445330
+    - path: scripts/extract_totals.py
+      hash: md5
+      md5: 18ca9bc7aa02529b0661bb47f954c6d1
+      size: 7055
+      isexec: true
+    outs:
+    - path: data/statistics/totals.json
+      hash: md5
+      md5: 80ca585f50913f61b2325c13c8f71182
+      size: 1390

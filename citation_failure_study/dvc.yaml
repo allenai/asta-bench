@@ -112,6 +112,21 @@ stages:
       - reports/classified_citations_summary.csv:
           cache: false
 
+  extract_totals:
+    desc: "Extract total counts of claims and citations from evaluation logs"
+    cmd: >-
+      cd scripts &&
+      uv run --with pandas
+      python extract_totals.py
+    deps:
+      - scripts/extract_totals.py
+      - ../test_dvc_logs/debug_logs/task_sqa_solver_elicit_citation_eval.csv
+      - ../test_dvc_logs/debug_logs/task_sqa_solver_openai_deep_research_citation_eval.csv
+      - ../test_dvc_logs/debug_logs/task_sqa_solver_perplexity_dr_citation_eval.csv
+      - ../test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.0_citation_eval.csv
+    outs:
+      - data/statistics/totals.json
+
   generate_markdown_report:
     desc: "Generate comprehensive markdown report from analysis results"
     cmd: >-
@@ -121,6 +136,7 @@ stages:
       - scripts/generate_markdown_report.py
       - reports/failure_mode_analysis_report.json
       - reports/citation_failure_mode_analysis_report.json
+      - data/statistics/totals.json
     outs:
       - reports/failure_mode_analysis.md:
           cache: false
