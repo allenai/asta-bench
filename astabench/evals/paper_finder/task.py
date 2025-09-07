@@ -47,7 +47,7 @@ Return your answer as JSON with the following structure, results should be order
         "results": [
             {{
                 "paper_id": "string; the semantic scholar corpus_id of the paper",
-                "markdown_evidence": "string; a markdown-formatted snippet with verbatim text from the paper that supports the relevance of the paper to the query; include all relevant context that will enable a reader to judge the paper's relevance without additional information; include the title and year of the paper at all times"
+                "markdown_evidence": "string; a markdown-formatted snippet with verbatim text from the paper that supports the relevance of the paper to the query; include all relevant context that will allow a reader to judge the paper's relevance without needing to look up additional information; include the title and year of the paper at all times"
             }},
             ...
         ]
