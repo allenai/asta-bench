@@ -38,6 +38,7 @@ from astabench.tools import make_asta_mcp_tools, make_native_search_tools
 logger = logging.getLogger(__name__)
 
 TASK_INSTRUCTIONS = """Find papers relevant to the following query: {query}
+Try to be comprehensive in your search yet efficient and accurate, i.e. find as many perfectly relevant papers as possible, but try to keep efficiency in mind.
 
 Return your answer as JSON with the following structure, results should be ordered by most relevant first:
 ```json
@@ -46,7 +47,7 @@ Return your answer as JSON with the following structure, results should be order
         "results": [
             {{
                 "paper_id": "string; the semantic scholar corpus_id of the paper",
-                "markdown_evidence": "string; a markdown-formatted snippet with verbatim text from the paper that supports the relevance of the paper to the query; the evidence should be concise and limited to the minimum needed to support the paper's relevance"
+                "markdown_evidence": "string; a markdown-formatted snippet with verbatim text from the paper that supports the relevance of the paper to the query; include all relevant context that will enable a reader to judge the paper's relevance without additional information; include the title and year of the paper at all times"
             }},
             ...
         ]
