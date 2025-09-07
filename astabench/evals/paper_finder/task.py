@@ -38,7 +38,7 @@ from astabench.tools import make_asta_mcp_tools, make_native_search_tools
 logger = logging.getLogger(__name__)
 
 TASK_INSTRUCTIONS = """Find papers relevant to the following query: {query}
-Try to be comprehensive in your search yet efficient and accurate, i.e. find as many perfectly relevant papers as possible, but try to keep efficiency in mind.
+Try to be comprehensive in your search yet efficient and accurate, i.e. find as many highly relevant papers as possible, but try to keep efficiency in mind. You may submit up to 100 papers.
 
 Return your answer as JSON with the following structure, results should be ordered by most relevant first:
 ```json
