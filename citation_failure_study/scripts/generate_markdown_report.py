@@ -28,7 +28,7 @@ def load_totals_data(json_path: str) -> dict:
         return json.load(f)
 
 
-def create_claims_failure_table(claims_df: pd.DataFrame, totals_data: dict) -> pd.DataFrame:
+def create_claims_failure_table(claims_df: pd.DataFrame, totals_data: dict, report_data: dict) -> pd.DataFrame:
     """
     Create a pivot table of claim failure rates by system and failure mode.
     Rows: failure modes, Columns: systems
@@ -37,7 +37,10 @@ def create_claims_failure_table(claims_df: pd.DataFrame, totals_data: dict) -> p
     1. Account for claims without any citations (filtered out before classification)
     2. Scale the percentages based on the actual failure rates from totals_data.
     """
-    SAMPLE_SIZE_PER_SYSTEM = 50  # We sampled 50 claims per system
+    # Get sample size from report metadata
+    total_sample_size = report_data['sample_size']
+    num_systems = len(totals_data['systems'])
+    SAMPLE_SIZE_PER_SYSTEM = total_sample_size // num_systems
     
     # Group by system and failure_mode to get counts in the sample
     grouped = claims_df.groupby(['system', 'failure_mode']).size().reset_index(name='sample_count')
@@ -107,10 +110,10 @@ def create_claims_failure_table(claims_df: pd.DataFrame, totals_data: dict) -> p
         total_claims = sum(data['total_claims'] for data in totals_data['systems'].values())
         failure_mode_totals[mode] = round(total_for_mode / total_claims * 100, 2)
     
-    pivot['Total'] = pd.Series(failure_mode_totals)
-    
-    # Sort by Total column in descending order
-    pivot = pivot.sort_values('Total', ascending=False)
+    # pivot['Total'] = pd.Series(failure_mode_totals)
+
+    # # Sort by Total column in descending order
+    # pivot = pivot.sort_values('Total', ascending=False)
     
     return pivot
 
@@ -191,8 +194,12 @@ def generate_markdown_report(output_path: str):
     citations_df = load_citations_data('../reports/classified_citations_summary.csv')
     totals_data = load_totals_data('../data/statistics/totals.json')
     
+    # Load report metadata for sample size info
+    with open('../reports/failure_mode_analysis_report.json', 'r') as f:
+        report_data = json.load(f)
+    
     # Create tables
-    claims_table = create_claims_failure_table(claims_df, totals_data)
+    claims_table = create_claims_failure_table(claims_df, totals_data, report_data)
     citations_table = create_citations_failure_table(citations_df, claims_df, totals_data)
     
     # Generate markdown

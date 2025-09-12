@@ -140,3 +140,21 @@ stages:
     outs:
       - reports/failure_mode_analysis.md:
           cache: false
+
+  generate_failure_mode_charts:
+    desc: "Generate bar charts for claim and citation failure rates"
+    cmd: >-
+      uv run --with matplotlib --with seaborn
+      python create_failure_mode_charts.py
+    deps:
+      - create_failure_mode_charts.py
+      - scripts/generate_markdown_report.py
+      - reports/classified_claims_summary.csv
+      - reports/classified_citations_summary.csv
+      - reports/failure_mode_analysis_report.json
+      - data/statistics/totals.json
+    outs:
+      - reports/claim_failure_rates_chart.png:
+          cache: false
+      - reports/citation_failure_rates_chart.png:
+          cache: false
