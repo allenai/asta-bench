@@ -158,3 +158,18 @@ stages:
           cache: false
       - reports/citation_failure_rates_chart.png:
           cache: false
+
+  extract_openai_failure_examples:
+    desc: "Extract example failures from OpenAI Deep Research and format as markdown"
+    cmd: >-
+      cd scripts &&
+      uv run python extract_openai_failure_examples.py
+    deps:
+      - scripts/extract_openai_failure_examples.py
+      - data/classified/classified_unsupported_claims.json
+      - data/classified/classified_non_supporting_citations.json
+      - data/extracted/all_unsupported_claims.json
+      - data/extracted/all_non_supporting_citations.json
+    outs:
+      - reports/openai_failure_examples.md:
+          cache: false

@@ -239,8 +239,8 @@ stages:
     deps:
     - path: create_failure_mode_charts.py
       hash: md5
-      md5: 506f667fb102824610f6608381f36584
-      size: 4749
+      md5: 686fc0494e827974bd602fb4dcdd753e
+      size: 5951
       isexec: true
     - path: data/statistics/totals.json
       hash: md5
@@ -266,9 +266,37 @@ stages:
     outs:
     - path: reports/citation_failure_rates_chart.png
       hash: md5
-      md5: 4e1d0e6643f00490df159e8222ec5b97
-      size: 102361
+      md5: dce4658eafb2dc7baa6a6ed498b9e52b
+      size: 143211
     - path: reports/claim_failure_rates_chart.png
       hash: md5
-      md5: ccc2b9b6098a18bcb7cbf72fd09ee525
-      size: 80122
+      md5: d7bd83c0fec166a7e8a988d2509ccaa0
+      size: 110571
+  extract_openai_failure_examples:
+    cmd: cd scripts && uv run python extract_openai_failure_examples.py
+    deps:
+    - path: data/classified/classified_non_supporting_citations.json
+      hash: md5
+      md5: 3183de3cbf16a13f01d7458d98681509
+      size: 306883
+    - path: data/classified/classified_unsupported_claims.json
+      hash: md5
+      md5: b4848e1cf2ebb1cd62e8baf08a6da0bd
+      size: 332106
+    - path: data/extracted/all_non_supporting_citations.json
+      hash: md5
+      md5: 33954f5b1e71f321ded3523ef24cecbf
+      size: 7192336
+    - path: data/extracted/all_unsupported_claims.json
+      hash: md5
+      md5: 0149c01824069217e5f47ef5312eccc6
+      size: 9983687
+    - path: scripts/extract_openai_failure_examples.py
+      hash: md5
+      md5: 074829147c7f2ffa65cd62a4c3ec7141
+      size: 13514
+    outs:
+    - path: reports/openai_failure_examples.md
+      hash: md5
+      md5: 96808b2f0583d4526e1e861cc82856d7
+      size: 15945

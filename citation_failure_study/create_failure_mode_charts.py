@@ -24,6 +24,12 @@ from generate_markdown_report import (
 # Set style for better-looking plots
 sns.set_style("whitegrid")
 plt.rcParams['figure.dpi'] = 100
+plt.rcParams['font.size'] = 14
+plt.rcParams['axes.labelsize'] = 16
+plt.rcParams['axes.titlesize'] = 18
+plt.rcParams['xtick.labelsize'] = 14
+plt.rcParams['ytick.labelsize'] = 14
+plt.rcParams['legend.fontsize'] = 14
 
 def create_bar_charts():
     """Generate bar charts for both tables."""
@@ -47,12 +53,12 @@ def create_bar_charts():
     if 'claude_4.0' in citations_table.columns:
         citations_table = citations_table.rename(columns={'claude_4.0': 'SQA'})
     
-    # Define consistent color palette for systems
+    # Define consistent color palette for systems (using cleaned names)
     system_colors = {
         'SQA': '#1f77b4',  # blue
         'elicit': '#ff7f0e',  # orange
-        'openai_deep_research': '#2ca02c',  # green
-        'perplexity_dr': '#d62728',  # red
+        'OpenAI Deep Research': '#2ca02c',  # green
+        'Perplexity DR': '#d62728',  # red
         'Total': '#9467bd'  # purple
     }
     
@@ -67,6 +73,10 @@ def create_bar_charts():
         value_name='Failure Rate (%)'
     )
     
+    # Remove underscores from failure modes and system names
+    claims_melted['failure_mode'] = claims_melted['failure_mode'].str.replace('_', ' ').str.title()
+    claims_melted['System'] = claims_melted['System'].str.replace('_', ' ').str.replace('openai deep research', 'OpenAI Deep Research').str.replace('perplexity dr', 'Perplexity DR')
+    
     # Create bar chart for Table 1
     fig1, ax1 = plt.subplots(figsize=(12, 6))
     
@@ -74,20 +84,26 @@ def create_bar_charts():
     system_order = claims_melted['System'].unique()
     palette = [system_colors.get(sys, '#808080') for sys in system_order]
     
+    # Define the order of failure modes (starting with Without Any Citations)
+    failure_mode_order = ['Without Any Citations', 'Partial Support', 'Irrelevant Citation', 'Citation Unavailable']
+    # Filter to only include modes that exist in the data
+    failure_mode_order = [mode for mode in failure_mode_order if mode in claims_melted['failure_mode'].unique()]
+    
     sns.barplot(
         data=claims_melted, 
         x='failure_mode', 
         y='Failure Rate (%)', 
         hue='System', 
         hue_order=system_order,
+        order=failure_mode_order,
         palette=palette,
         ax=ax1
     )
-    ax1.set_title('Claim Failure Rates by System (%)', fontsize=14, fontweight='bold')
-    ax1.set_xlabel('Failure Mode', fontsize=12)
-    ax1.set_ylabel('Failure Rate (%)', fontsize=12)
-    ax1.set_xticklabels(ax1.get_xticklabels(), rotation=45, ha='right')
-    ax1.legend(title='System', bbox_to_anchor=(1.05, 1), loc='upper left')
+    ax1.set_title('Claim Failure Rates by System', fontweight='bold')
+    ax1.set_xlabel('Failure Mode')
+    ax1.set_ylabel('Failure Rate (%)')
+    ax1.set_xticklabels(ax1.get_xticklabels(), rotation=30, ha='right')
+    ax1.legend(title='System', loc='upper right')
     plt.tight_layout()
     plt.savefig('reports/claim_failure_rates_chart.png', dpi=150, bbox_inches='tight')
     print("Saved: reports/claim_failure_rates_chart.png")
@@ -100,6 +116,10 @@ def create_bar_charts():
         var_name='System', 
         value_name='Failure Rate (%)'
     )
+    
+    # Remove underscores from categories and system names
+    citations_melted['Category'] = citations_melted['Category'].str.replace('_', ' ').str.title()
+    citations_melted['System'] = citations_melted['System'].str.replace('_', ' ').str.replace('openai deep research', 'OpenAI Deep Research').str.replace('perplexity dr', 'Perplexity DR')
     
     # Create bar chart for Table 2
     fig2, ax2 = plt.subplots(figsize=(12, 6))
@@ -117,11 +137,11 @@ def create_bar_charts():
         palette=palette_citations,
         ax=ax2
     )
-    ax2.set_title('Citation Failure Rates by Category (%)', fontsize=14, fontweight='bold')
-    ax2.set_xlabel('Category', fontsize=12)
-    ax2.set_ylabel('Failure Rate (%)', fontsize=12)
-    ax2.set_xticklabels(ax2.get_xticklabels(), rotation=45, ha='right')
-    ax2.legend(title='System', bbox_to_anchor=(1.05, 1), loc='upper left')
+    ax2.set_title('Citation Failure Rates by Category', fontweight='bold')
+    ax2.set_xlabel('Category')
+    ax2.set_ylabel('Failure Rate (%)')
+    ax2.set_xticklabels(ax2.get_xticklabels(), rotation=30, ha='right')
+    ax2.legend(title='System', loc='upper right')
     plt.tight_layout()
     plt.savefig('reports/citation_failure_rates_chart.png', dpi=150, bbox_inches='tight')
     print("Saved: reports/citation_failure_rates_chart.png")
