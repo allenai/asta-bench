@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "astabench"
-version = "0.2.0"
+version = "0.2.1"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -27,7 +27,8 @@ dependencies = [
     "scipy",
     "anthropic>=0.52.0",
     "platformdirs",
-    "numpy"
+    "numpy",
+    "seaborn>=0.13.2",
 ]
 
 [project.optional-dependencies]
