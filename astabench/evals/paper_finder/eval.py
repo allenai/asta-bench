@@ -95,20 +95,10 @@ def count_relevant(
 def get_predefined_judgements(
     output: ExpectedAgentOutput, metric: SpecificPaperScorerCriteria
 ) -> dict[str, str]:
-    def normalize_corpus_id(corpus_id: str) -> str:
-        if not corpus_id:
-            return
-        # agents may return the paper_id syntax CorpusId:XXXXXX instead of the
-        # raw corpus_id string
-        return corpus_id.strip().lower().replace("corpusid:", "")
-
-    # Only normalize corpus id for the comparison, not the key; other fns like
-    # `calc_recall_at_k` may index into judgements using the original paper_id
-    # from the output
     return {
         result.paper_id: (
             Relevance.PERFECT
-            if normalize_corpus_id(result.paper_id) in metric.corpus_ids
+            if result.paper_id in metric.corpus_ids
             else Relevance.NOT_RELEVANT
         )
         for result in output.results
