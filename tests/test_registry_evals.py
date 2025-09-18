@@ -64,6 +64,10 @@ TASKS = [getattr(registry, name) for name in registry.__all__]
 MODEL = "mockllm/model"
 
 
+@pytest.mark.skipif(
+    not os.getenv("HF_TOKEN"),
+    reason="HF_TOKEN environment variable is required for registry tests",
+)
 @pytest.mark.parametrize(
     "score",
     [
