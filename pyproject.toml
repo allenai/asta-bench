@@ -22,6 +22,7 @@ dependencies = [
     "nora_lib-impl~=1.1.0",
     "mcp~=1.10",
     "httpx~=0.28.1",
+    "httpx-sse>=0.4.2", # need at least 0.4.2 for a key SSE decoding fix
     "h2~=4.2.0",
     "pandas",
     "scipy",
