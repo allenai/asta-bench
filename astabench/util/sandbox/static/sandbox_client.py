@@ -16,6 +16,10 @@ from mcp.shared.message import SessionMessage
 
 logger = getLogger(__name__)
 
+# Chunk size for reading from the tail subprocess stdout. Kept reasonably large
+# to minimize syscalls but below typical pipe/socket limits.
+READ_CHUNK_SIZE = 65536
+
 
 @asynccontextmanager
 async def file_rpc_client(
@@ -77,9 +81,8 @@ async def file_rpc_client(
 
                 # Read in chunks to avoid asyncio StreamReader line-size limits
                 buffer = b""
-                read_size = 65536
                 while True:
-                    chunk = await tail_process.stdout.read(read_size)
+                    chunk = await tail_process.stdout.read(READ_CHUNK_SIZE)
                     if not chunk:
                         # No more data; check if process ended
                         if tail_process.returncode is not None:
