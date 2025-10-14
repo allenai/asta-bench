@@ -368,7 +368,12 @@ class TestConstructToolPySignature:
 @tool(name="big_response_tool")
 def big_response_tool():
     async def impl(size: int = 200000) -> str:
-        """Return a large string payload (default 200 KB)."""
+        """
+        Return a large string payload (default 200 KB).
+
+        Args:
+            size: Size of the string in bytes
+        """
         return "A" * size
 
     return impl
