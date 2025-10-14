@@ -91,7 +91,7 @@ async def file_rpc_client(
 
                     # Process complete lines
                     while True:
-                        nl_index = buffer.find(b"\n")
+                        nl_index = buffer.find(b"\n", -len(chunk))
                         if nl_index == -1:
                             break
                         line = buffer[:nl_index]
