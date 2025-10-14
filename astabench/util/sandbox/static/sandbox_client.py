@@ -84,12 +84,8 @@ async def file_rpc_client(
                 while True:
                     chunk = await tail_process.stdout.read(READ_CHUNK_SIZE)
                     if not chunk:
-                        # No more data; check if process ended
-                        if tail_process.returncode is not None:
-                            break
-                        # Yield control briefly and continue
-                        await anyio.lowlevel.checkpoint()
-                        continue
+                        # EOF on stdout: no more data will arrive
+                        break
 
                     buffer += chunk
 
