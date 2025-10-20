@@ -16,6 +16,10 @@ from mcp.shared.message import SessionMessage
 
 logger = getLogger(__name__)
 
+# Chunk size for reading from the tail subprocess stdout. Kept reasonably large
+# to minimize syscalls but below typical pipe/socket limits.
+READ_CHUNK_SIZE = 65536
+
 
 @asynccontextmanager
 async def file_rpc_client(
@@ -75,22 +79,36 @@ async def file_rpc_client(
 
                 reader_ready.set()
 
+                # Read in chunks to avoid asyncio StreamReader line-size limits
+                buffer = b""
                 while True:
-
-                    line = await tail_process.stdout.readline()
-                    if not line:  # EOF
+                    chunk = await tail_process.stdout.read(READ_CHUNK_SIZE)
+                    if not chunk:
+                        # EOF on stdout: no more data will arrive
                         break
 
-                    line_str = line.decode(
-                        encoding, errors=encoding_error_handler
-                    ).strip()
+                    buffer += chunk
 
-                    if line_str:
-                        try:
-                            message = types.JSONRPCMessage.model_validate_json(line_str)
-                            await read_stream_writer.send(SessionMessage(message))
-                        except Exception as exc:
-                            await read_stream_writer.send(exc)
+                    # Process complete lines
+                    while True:
+                        nl_index = buffer.find(b"\n", -len(chunk))
+                        if nl_index == -1:
+                            break
+                        line = buffer[:nl_index]
+                        buffer = buffer[nl_index + 1 :]
+
+                        line_str = line.decode(
+                            encoding, errors=encoding_error_handler
+                        ).strip()
+
+                        if line_str:
+                            try:
+                                message = types.JSONRPCMessage.model_validate_json(
+                                    line_str
+                                )
+                                await read_stream_writer.send(SessionMessage(message))
+                            except Exception as exc:
+                                await read_stream_writer.send(exc)
         except anyio.ClosedResourceError:
             if tail_process and tail_process.returncode is None:
                 tail_process.terminate()

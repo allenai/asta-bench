@@ -4,9 +4,9 @@ import pytest
 
 
 def pytest_collection_modifyitems(config, items):
-    """Automatically skip tests marked with s2_api_request when S2_API_KEY is not set."""
-    if not os.getenv("S2_API_KEY"):
-        skip_s2 = pytest.mark.skip(reason="S2_API_KEY is not set")
+    """Automatically skip tests marked with asta_tool_api_request when ASTA_TOOL_KEY is not set."""
+    if not os.getenv("ASTA_TOOL_KEY"):
+        skip_asta = pytest.mark.skip(reason="ASTA_TOOL_KEY is not set")
         for item in items:
-            if "s2_api_request" in item.keywords:
-                item.add_marker(skip_s2)
+            if "asta_tool_api_request" in item.keywords:
+                item.add_marker(skip_asta)

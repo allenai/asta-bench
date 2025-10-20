@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "astabench"
-version = "0.1.7"
+version = "0.3.1"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -22,6 +22,7 @@ dependencies = [
     "nora_lib-impl~=1.1.0",
     "mcp~=1.10",
     "httpx~=0.28.1",
+    "httpx-sse>=0.4.2", # need at least 0.4.2 for a key SSE decoding fix
     "h2~=4.2.0",
     "pandas",
     "scipy",
@@ -121,5 +122,5 @@ asyncio_default_fixture_loop_scope = "function"
 addopts = "-m \"not expensive\""
 markers = [
   "expensive: mark test as expensive (skipped by default)",
-  "s2_api_request: mark test as requiring S2 API key (auto-skipped when S2_API_KEY not set)"
+  "asta_tool_api_request: mark test as requiring Asta tool key (auto-skipped when ASTA_TOOL_KEY not set)"
 ]

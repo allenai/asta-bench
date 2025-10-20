@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
 
-@pytest.mark.s2_api_request
+@pytest.mark.asta_tool_api_request
 @pytest.mark.asyncio
 async def test_paper_search():
     """Test the paper_search function with real API calls."""
@@ -30,7 +30,7 @@ async def test_paper_search():
     logger.info("Paper Search Results: %s", paper_results)
 
 
-@pytest.mark.s2_api_request
+@pytest.mark.asta_tool_api_request
 @pytest.mark.asyncio
 async def test_snippet_search():
     """Test the snippet_search function with real API calls."""
@@ -50,7 +50,7 @@ async def test_snippet_search():
     logger.info("Snippet Search Results: %s", snippet_results)
 
 
-@pytest.mark.s2_api_request
+@pytest.mark.asta_tool_api_request
 @pytest.mark.asyncio
 async def test_paper_search_inserted_before():
     query = "arxivdigestables"
@@ -72,7 +72,7 @@ async def test_paper_search_inserted_before():
         ), f"Did not expect corpus_id {target_corpus_id} in results before {date}"
 
 
-@pytest.mark.skipif(not os.getenv("S2_API_KEY"), reason="S2_API_KEY is missing.")
+@pytest.mark.skipif(not os.getenv("ASTA_TOOL_KEY"), reason="ASTA_TOOL_KEY is missing.")
 @pytest.mark.asyncio
 async def test_snippet_search_inserted_before():
     query = "In this work, we curate ARXIVDIGESTABLES DECONTEXTEVAL, an automatic evaluation framework"
