@@ -129,7 +129,7 @@ See [agent-baselines](https://github.com/allenai/agent-baselines) for more examp
 
 Use `inspect eval` directly to run a single task. E.g. for the ScholarQA task:
 
-``bash
+```bash
 uv run inspect eval --solver generate --model openai/gpt-4.1 astabench/sqa_dev
 ```
 
