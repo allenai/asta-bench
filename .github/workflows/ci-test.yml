@@ -22,7 +22,8 @@ jobs:
           # thorough enough, uncomment the `apt-get` remove cmds; note that
           # `rm` is much faster when it works so we default to this way
           sudo rm -rf /usr/lib/llvm-*
-          sudo rm -rf /usr/lib/dotnet
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/.ghcup
           sudo rm -rf /usr/local/share/chromium
 
           # Remove large packages via apt
