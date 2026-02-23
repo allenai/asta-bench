@@ -90,3 +90,8 @@ jobs:
           # Generate '-e VAR' for all env vars except '_*'
           ENV_ARGS=$(env | grep -vE '^_' | awk '{print "-e " $1}')
           make test
+
+      - name: Cross-version solve->score smoke (two-phase)
+        timeout-minutes: 10
+        run: |
+          make solve-score-ci

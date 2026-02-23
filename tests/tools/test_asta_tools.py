@@ -16,11 +16,64 @@ from astabench.tools.asta_tools import (
     _filter_response_subfield,
     _remove_arg_description_block,
     async_make_asta_mcp_tools,
+    create_server_streamable_http,
     filter_papers,
     make_asta_toolsource,
 )
 
 logger = logging.getLogger(__name__)
+
+
+def test_create_server_streamable_http_modern_fallback(monkeypatch):
+    modern = MagicMock(name="mcp_server_http", return_value="modern-tool-source")
+    monkeypatch.setattr("astabench.tools.asta_tools.MCPServerImpl", None)
+    monkeypatch.setattr("astabench.tools.asta_tools.mcp_server_http", modern)
+
+    result = create_server_streamable_http(
+        "https://example.org/mcp",
+        headers={"x-api-key": "key"},
+        timeout=7,
+        sse_read_timeout=9,
+    )
+
+    assert result == "modern-tool-source"
+    modern.assert_called_once_with(
+        name="https://example.org/mcp",
+        url="https://example.org/mcp",
+        headers={"x-api-key": "key"},
+        timeout=7,
+        sse_read_timeout=9,
+    )
+
+
+def test_create_server_streamable_http_legacy_impl(monkeypatch):
+    legacy = MagicMock(name="MCPServerImpl", return_value="legacy-tool-source")
+    modern = MagicMock(name="mcp_server_http")
+    monkeypatch.setattr("astabench.tools.asta_tools.MCPServerImpl", legacy)
+    monkeypatch.setattr("astabench.tools.asta_tools.mcp_server_http", modern)
+
+    result = create_server_streamable_http(
+        "https://example.org/mcp",
+        headers={"x-api-key": "key"},
+        timeout=7,
+        sse_read_timeout=9,
+    )
+
+    assert result == "legacy-tool-source"
+    legacy.assert_called_once()
+    _, kwargs = legacy.call_args
+    assert kwargs["name"] == "https://example.org/mcp"
+    assert kwargs["events"] is True
+    assert callable(legacy.call_args.args[0])
+    modern.assert_not_called()
+
+
+def test_create_server_streamable_http_raises_when_no_impl(monkeypatch):
+    monkeypatch.setattr("astabench.tools.asta_tools.MCPServerImpl", None)
+    monkeypatch.setattr("astabench.tools.asta_tools.mcp_server_http", None)
+
+    with pytest.raises(RuntimeError, match="No compatible inspect_ai MCP HTTP"):
+        create_server_streamable_http("https://example.org/mcp")
 
 
 def parse_tool_result(result):

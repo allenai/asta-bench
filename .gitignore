@@ -133,6 +133,7 @@ celerybeat.pid
 # Environments
 .env
 .venv
+solvers/scorer/.venv/
 env/
 venv/
 ENV/
@@ -188,6 +189,7 @@ logs/
 /astabench/evals/sqa/storm/
 /storm/
 uv.lock
+!solvers/scorer/uv.lock
 
 # tmp files written by solvers/evals
 /generation_cache.db
@@ -199,3 +201,5 @@ uv.lock
 # AI docs
 CLAUDE.md
 AGENTS.md
+.claude
+.cq_config

@@ -13,8 +13,19 @@ from typing import Any, Awaitable, Callable, Collection, Literal
 import anyio
 import httpx
 from inspect_ai.tool import ContentText, Tool, ToolDef, ToolError, ToolSource
-from inspect_ai.tool._mcp._mcp import MCPServerImpl
 from mcp.client.streamable_http import streamablehttp_client
+
+try:
+    # inspect_ai<=0.3.114
+    from inspect_ai.tool._mcp._mcp import MCPServerImpl
+except ImportError:  # pragma: no cover - exercised in scorer env on newer Inspect
+    MCPServerImpl = None
+
+try:
+    # inspect_ai>=0.3.137
+    from inspect_ai.tool import mcp_server_http
+except ImportError:  # pragma: no cover - exercised in root env on older Inspect
+    mcp_server_http = None
 
 from .search import (
     DEFAULT_RESULTS_LIMIT,
@@ -46,11 +57,28 @@ def create_server_streamable_http(
     timeout: float = 5,
     sse_read_timeout: float = 60 * 5,
 ) -> ToolSource:
-    return MCPServerImpl(
-        lambda: fixed_streamablehttp_client(url, headers, timeout, sse_read_timeout),
-        name=url,
-        events=True,
-    )
+    if MCPServerImpl is not None:
+        return MCPServerImpl(
+            lambda: fixed_streamablehttp_client(
+                url, headers, timeout, sse_read_timeout
+            ),
+            name=url,
+            events=True,
+        )
+
+    if mcp_server_http is not None:
+        # Modern Inspect MCP helpers already handle both 2- and 3-tuple stream
+        # client results internally (`read, write, *_`), so we can call the
+        # official helper directly without the legacy wrapper above.
+        return mcp_server_http(
+            name=url,
+            url=url,
+            headers=headers,
+            timeout=timeout,
+            sse_read_timeout=sse_read_timeout,
+        )
+
+    raise RuntimeError("No compatible inspect_ai MCP HTTP tool source API found.")
 
 
 def make_asta_toolsource(api_key: str | None = None) -> ToolSource:

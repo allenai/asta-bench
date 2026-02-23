@@ -5,7 +5,7 @@ LABEL name="astabench" \
     org="allenai" \
     description="Benchmark and experimentation framework for scientific agents"
 
-RUN apt-get update && apt-get install -y less git curl cmake clang
+RUN apt-get update && apt-get install -y less git curl cmake clang jq
 
 RUN curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-27.3.1.tgz -o docker.tgz \
     && tar xzvf docker.tgz --strip 1 -C /usr/local/bin docker/docker \
@@ -40,3 +40,6 @@ COPY . /astabench
 
 # Sync after copy to register `inspect_evals` and `astabench` tasks/tools/cli
 RUN uv sync --extra dev
+
+# Materialize frozen scorer env used by two-phase scoring scripts/CI.
+RUN uv sync --project solvers/scorer

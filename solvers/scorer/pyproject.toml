@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "astabench-scorer"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "astabench",
+    # Scorer tracks a newer validated Inspect for broad log compatibility.
+    "inspect_ai==0.3.179",
+]
+
+[tool.uv.sources]
+# Use local astabench code from this repository.
+astabench = { path = "../..", editable = true }
+
+[tool.uv]
+# Override needed because local astabench pins inspect_ai==0.3.114.
+override-dependencies = [
+    "inspect_ai==0.3.179",
+]

@@ -17,6 +17,7 @@ AstaBench builds on top of the [InspectAI](https://inspect.ai-safety-institute.o
   - [Running a single task](#running-a-single-task)
   - [Viewing results](#viewing-results)
   - [Scoring Results](#scoring-results)
+  - [Decoupled Solve->Score (cross-version)](#decoupled-solvescore-cross-version)
   - [Submitting to the Leaderboard](#submitting-to-the-leaderboard)
   - [Parallelism](#parallelism)
 - [Troubleshooting](#troubleshooting)
@@ -155,6 +156,22 @@ View results with `inspect view --host 0.0.0.0` (which launches a server at `htt
 Run `astabench score <log_dir>` to compile aggregate scores and calculate model usage costs. The `log_dir` can be:
 - For full suite runs: the log directory reported at the end of `astabench eval`
 - For single tasks: the directory containing your `.eval` files and `eval_config.json`
+
+### Decoupled Solve->Score (cross-version)
+
+For solver environments that cannot share the same `inspect_ai` version as `astabench`, use:
+
+```bash
+./scripts/eval_then_score.sh -- \
+  --split validation --solver react --model openai/gpt-4.1 --limit 1
+```
+
+This wrapper runs:
+1. `astabench eval --no-score --log-format json` (solve phase)
+2. `inspect score --overwrite` in `solvers/scorer` (frozen scoring phase)
+3. `astabench score <log_dir>` in `solvers/scorer` (aggregation)
+
+The scorer project is pinned independently in [`solvers/scorer/pyproject.toml`](solvers/scorer/pyproject.toml).
 
 ### Submitting to the Leaderboard
 
@@ -370,4 +387,3 @@ We generally follow the InspectAI terminology, but use some terms interchangeabl
 - A "scorer" is a function that takes a task state (after the solver has finished) and a target and returns one or more metrics.
 - A "task" or "benchmark" consists of a dataset (one or more problems) + a scorer
 - A "solver" or "agent" is a function that takes a task state (containing the problem input, possibly metadata/tools), potentially calls tools, and alters the state to indicate its answer (i.e. via `state.output.completion`).  Note: in these docs we generally use "solver" and "agent" interchangeably, despite them having slightly different meanings in InspectAI.
-

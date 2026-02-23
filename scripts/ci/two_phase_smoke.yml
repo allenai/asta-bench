@@ -1,0 +1,13 @@
+name: two-phase-smoke
+version: "0.0.1"
+
+splits:
+  - name: validation
+    tasks:
+      - name: arithmetic_smoke
+        # Use a file-path task to avoid relying on registry wiring in every
+        # solve project.
+        path: scripts/ci/arithmetic_task.py@arithmetic_smoke
+        primary_metric: check_arithmetic/accuracy
+        tags:
+          - ci
