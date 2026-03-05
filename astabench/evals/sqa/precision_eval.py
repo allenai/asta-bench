@@ -68,8 +68,8 @@ def _format_rubric_section(ingredient_criteria: list[str]) -> str:
     items = "\n".join(f"- {c}" for c in ingredient_criteria)
     return (
         f"\nThe following rubric criteria describe content that is definitely relevant "
-        f"to the query. Paragraphs addressing any of these topics should NOT be marked "
-        f"as irrelevant. Other content beyond these criteria may also be relevant.\n"
+        f"to the query. Paragraphs addressing any of these topics should be marked as "
+        f"relevant. Other content beyond these criteria may also be relevant.\n"
         f"{items}\n"
     )
 
