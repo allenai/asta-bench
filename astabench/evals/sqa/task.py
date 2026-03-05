@@ -168,6 +168,7 @@ def score_sqa(
     model: str | Model,
     simplified_eval: bool = False,
     assess_jointly: bool = False,
+    verify_evidence: bool = False,
     temperature: float = 0.5,
     top_p: float = 0.95,
 ) -> Scorer:
@@ -197,7 +198,7 @@ def score_sqa(
         )
         if simplified_eval:
             scores, metadata = await metric.score_output_simplified(
-                answer, assess_jointly
+                answer, assess_jointly, verify_evidence=verify_evidence
             )
         else:
             scores, metadata = await metric.score_output(answer)
@@ -426,12 +427,14 @@ def score_all(
     temperature: float = 0.5,
     top_p: float = 0.95,
     rubric_informed_precision: bool = False,
+    verify_evidence: bool = False,
 ) -> Scorer:
     scorers = [
         score_sqa(
             scorer_model,
             simplified_eval=simplified_eval,
             assess_jointly=assess_jointly,
+            verify_evidence=verify_evidence,
             temperature=temperature,
             top_p=top_p,
         ),
@@ -497,6 +500,7 @@ def sqa(
     aggregate: bool = True,
     excerpt_prompt: bool = True,
     rubric_informed_precision: bool = False,
+    verify_evidence: bool = False,
 ) -> Task:
     if weights is None:
         weights = [0.25, 0.25, 0.25, 0.25]
@@ -528,6 +532,7 @@ def sqa(
             scorer_model,
             simplified_eval=simplified_eval,
             assess_jointly=assess_jointly,
+            verify_evidence=verify_evidence,
             temperature=temperature,
             top_p=top_p,
         ),

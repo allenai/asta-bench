@@ -57,7 +57,7 @@ class ResponseCriteriaScore(BaseModel):
     criteria_idx: int
     reasoning: str
     score: CriteriaScore
-    evidence: str
+    evidence: List[str]
 
 
 class ResponseCriteriaScores(BaseModel):
@@ -67,6 +67,18 @@ class ResponseCriteriaScores(BaseModel):
 response_criteria_scores_schema = ResponseSchema(
     name="response_criteria_scores",
     json_schema=json_schema(ResponseCriteriaScores),
+)
+
+
+class VerificationResponse(BaseModel):
+    verified_evidence: List[str]
+    additional_evidence: List[str]
+    adjusted_score: CriteriaScore
+
+
+verification_response_schema = ResponseSchema(
+    name="verification_response",
+    json_schema=json_schema(VerificationResponse),
 )
 
 
@@ -368,7 +380,90 @@ Split the response into individual claims, citations, and excerpts from the cita
                 score_components[x.name] = assessment
         return score_components, prompt_logs
 
-    async def _assess_properties_jointly(self, response, properties):
+    async def _verify_evidence(
+        self,
+        response: str,
+        scores: List[Dict[str, Any]],
+        properties: List,
+    ) -> Tuple[List[Dict[str, Any]], Dict[str, Any]]:
+        """Verification pass: for each criterion scored >= 1, ask the LLM to
+        validate existing evidence and find any missed passages.
+
+        Returns (updated_scores_list, verification_logs).
+        """
+        has_criterion = [p for p in properties if p.criterion]
+        criterion_by_idx = {i + 1: p for i, p in enumerate(has_criterion)}
+        verification_logs: Dict[str, Any] = {}
+        updated_scores = []
+
+        for score_entry in scores:
+            score_val = score_entry.get("score", 0)
+            if isinstance(score_val, int) and score_val == 0:
+                updated_scores.append(score_entry)
+                continue
+
+            criteria_idx = score_entry["criteria_idx"]
+            prop = criterion_by_idx.get(criteria_idx)
+            if prop is None:
+                updated_scores.append(score_entry)
+                continue
+
+            existing_evidence = score_entry.get("evidence", [])
+            evidence_str = "\n".join(
+                f"{i + 1}. {e}" for i, e in enumerate(existing_evidence)
+            )
+
+            system_prompt = (
+                "You are verifying evidence for a rubric criterion assessment. "
+                "You will be given a response (in <response></response> tags), "
+                "a criterion (in <criterion></criterion> tags), and a list of "
+                "candidate evidence passages already identified.\n\n"
+                "Your job is to:\n"
+                "1. Check each candidate passage — remove any that do NOT actually "
+                "support the criterion (return the valid ones in `verified_evidence`)\n"
+                "2. Find any ADDITIONAL verbatim passages from the response that "
+                "support the criterion but were missed (return in `additional_evidence`)\n"
+                "3. Based on the full set of evidence, confirm or adjust the score "
+                "(0 = unmet, 1 = partially met, 2 = perfectly met) in `adjusted_score`\n\n"
+                "Each evidence passage must be a verbatim excerpt from the response."
+            )
+            user_prompt = (
+                f"<response>{response}</response>\n"
+                f"<criterion>{prop.criterion}</criterion>\n"
+                f"Candidate evidence:\n{evidence_str}"
+            )
+
+            resp, parsed, num_retries = await generate_with_retry(
+                self.model,
+                [
+                    ChatMessageSystem(content=system_prompt),
+                    ChatMessageUser(content=user_prompt),
+                ],
+                GenerateConfig(
+                    response_schema=verification_response_schema,
+                    temperature=self.temperature,
+                    top_p=self.top_p,
+                ),
+            )
+
+            all_evidence = parsed["verified_evidence"] + parsed["additional_evidence"]
+            updated_entry = dict(score_entry)
+            updated_entry["evidence"] = all_evidence
+            updated_entry["score"] = parsed["adjusted_score"]
+            updated_scores.append(updated_entry)
+
+            verification_logs[f"criterion_{criteria_idx}"] = {
+                "original_evidence": existing_evidence,
+                "verified_evidence": parsed["verified_evidence"],
+                "additional_evidence": parsed["additional_evidence"],
+                "original_score": score_entry.get("score"),
+                "adjusted_score": parsed["adjusted_score"],
+                "num_retries": num_retries,
+            }
+
+        return updated_scores, verification_logs
+
+    async def _assess_properties_jointly(self, response, properties, verify_evidence: bool = False):
         info = {
             "step_name": "score_property",
             "timestamp": str(datetime.datetime.now()),
@@ -448,7 +543,7 @@ Split the response into individual claims, citations, and excerpts from the cita
 
         A 0 point answer would explain only one architecture (e.g., only transformers), or describe both but fail to contrast them on the asked criteria.
 
-        Return your result as a JSON object with a single key `scores` whose value is a list of objects, each having keys `criteria_idx`, `reasoning`, `score` and `evidence` from the text supporting the claim."""
+        Return your result as a JSON object with a single key `scores` whose value is a list of objects, each having keys `criteria_idx`, `reasoning`, `score` and `evidence`. The `evidence` field must be a JSON list of strings, where each string is a distinct verbatim passage from the response that supports or relates to the criterion. Include every relevant excerpt as a separate string in the list. If the criterion is not met (score 0), the list should be empty."""
         user_prompt = f"""<question>{self.config.question}</question>\n<response>{response}</response>\nCriteria:\n{criteria}"""
         resp, parsed, num_retries = await generate_with_retry(
             self.model,
@@ -468,12 +563,19 @@ Split the response into individual claims, citations, and excerpts from the cita
         info["top_p"] = self.top_p
         info["num_retries"] = num_retries
 
-        l = parsed["scores"]
-        info["scores"] = l
+        scored_criteria = parsed["scores"]
+
+        if verify_evidence:
+            scored_criteria, verification_logs = await self._verify_evidence(
+                response, scored_criteria, properties
+            )
+            info["verification_logs"] = verification_logs
+
+        info["scores"] = scored_criteria
         score_components = {
-            # idxs are 1-indexed (see call to `enumrate` above)
+            # idxs are 1-indexed (see call to `enumerate` above)
             has_criterion[c["criteria_idx"] - 1].name: c["score"] / 2
-            for c in l
+            for c in scored_criteria
         }
         info["score_components"] = score_components
         prompt_id = str(hash(system_prompt + user_prompt))
@@ -483,7 +585,7 @@ Split the response into individual claims, citations, and excerpts from the cita
         return score_components, prompt_logs
 
     async def score_output_simplified(
-        self, response: str, assess_jointly: bool
+        self, response: str, assess_jointly: bool, verify_evidence: bool = False,
     ) -> Dict[str, Any]:
         """
         Only score based on rubric ingredients
@@ -500,7 +602,7 @@ Split the response into individual claims, citations, and excerpts from the cita
 
         if assess_jointly:
             assessments, prompt_logs = await self._assess_properties_jointly(
-                response, self.config.ingredients
+                response, self.config.ingredients, verify_evidence=verify_evidence
             )
         else:
             assessments, prompt_logs = await self._assess_properties_independently(
