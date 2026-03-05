@@ -136,7 +136,7 @@ def custom_code_solver() -> Solver:
 
         await jupy.cleanup()
 
-        logger.info(f"Finished cleaning up tool environment.")
+        logger.info("Finished cleaning up tool environment.")
 
         results["finished_successfully"] = True
         state.output.completion = json.dumps(results)
@@ -182,7 +182,7 @@ def huge_output_custom_code_solver() -> Solver:
 
         await jupy.cleanup()
 
-        logger.info(f"Finished cleaning up tool environment.")
+        logger.info("Finished cleaning up tool environment.")
 
         results["finished_successfully"] = True
         state.output.completion = json.dumps(results)

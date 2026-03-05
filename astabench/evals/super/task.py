@@ -5,7 +5,6 @@ import re
 from datetime import datetime
 from hashlib import md5
 from json import JSONDecodeError
-from pathlib import Path
 from importlib import resources
 from typing import Dict, List
 

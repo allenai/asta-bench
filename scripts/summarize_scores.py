@@ -2,7 +2,6 @@
 
 import argparse
 import inspect_ai.log
-import os
 import json
 
 Z = 1.96  # for 95% confidence

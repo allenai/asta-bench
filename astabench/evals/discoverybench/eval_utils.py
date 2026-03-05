@@ -1,6 +1,5 @@
 import json
 
-from openai import OpenAI
 
 from astabench.evals.discoverybench.lm_utils import (
     get_response,
@@ -188,7 +187,7 @@ async def ask_dimension_question(
 async def extract_ctx(
     query, hypo, workflow, dataset_meta, llm_used, use_column_metadata=True
 ):
-    extraction_prompt = f"""\
+    extraction_prompt = """\
         Given a set of dataset columns, a ground-truth hypothesis, and the analysis workflow used, your task is to extract three dimensions that define the hypothesis: Context, Variables, and Relations. \
         Here are the definitions for these dimensions:
         - Contexts: Boundary conditions that limit the scope of a hypothesis. E.g., “for men over \
@@ -198,18 +197,18 @@ async def extract_ctx(
 
         Here is the metadata for the task:
         ```json
-        {{
+        {
         "datasets": %s,
         "hypothesis": "%s",
         "workflow": "%s"
-        }}
+        }
         ```
 
         Return your answer as a JSON object in the following format:
         ```json
-        {{
+        {
         "context": a short text description of the context of the hypothesis. Only mention the context, do not repeat the full hypothesis.
-        }}```
+        }```
         """
     datasets_json = prepare_dataset_metadata_json(
         dataset_meta, use_column_metadata=use_column_metadata

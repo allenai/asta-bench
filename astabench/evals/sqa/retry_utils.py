@@ -1,10 +1,7 @@
 import asyncio
-import hashlib
 import json
 import logging
-import sqlite3
-from datetime import datetime, timedelta
-from typing import Any, Dict, Optional, Union, List, Tuple
+from typing import Any, Union, List
 
 from inspect_ai.model import Model, GenerateConfig
 

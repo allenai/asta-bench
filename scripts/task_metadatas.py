@@ -59,7 +59,7 @@ class TaskMetaData(BaseModel):
 
 
 def get_metadatas(score_for_metric_names: bool) -> list[TaskMetaData]:
-    f"""Metadatas for all tasks in the registry.
+    """Metadatas for all tasks in the registry.
 
     For tasks in the validation set, include a sample input.
 

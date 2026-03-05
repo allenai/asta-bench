@@ -2,7 +2,6 @@ import sys
 import inspect_ai.log as ialog
 import pandas as pd
 import json
-from pathlib import Path
 from astabench.evals.sqa.task import format_report
 
 

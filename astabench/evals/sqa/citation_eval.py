@@ -1,13 +1,10 @@
-import json
 from typing import Dict, List, Tuple
 from datetime import datetime
 
 import nltk
 
 from inspect_ai.model import Model, GenerateConfig
-from numpy.f2py.crackfortran import quiet
 
-from astabench.evals.sqa.rubric import extract_json_from_response
 from astabench.evals.sqa.pydantic_models import (
     assess_citation_group_schema,
     citation_eval_json_schema,

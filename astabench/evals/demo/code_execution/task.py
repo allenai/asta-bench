@@ -1,11 +1,9 @@
 import json
 import re
 import warnings
-from dataclasses import dataclass
 from json import JSONDecodeError
 from pathlib import Path
 from importlib import resources
-from typing import Dict, List, Optional
 
 from inspect_ai import Task, task
 from inspect_ai.dataset import Sample, json_dataset

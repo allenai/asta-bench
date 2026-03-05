@@ -1,28 +1,22 @@
 import json
 import logging
 import os
-import re
 import numpy as np
 from dataclasses import dataclass
 from collections import defaultdict
-from datetime import datetime
 from pathlib import Path
 from importlib import resources
-from typing import Dict, List, Any, Union, Tuple, Type
+from typing import List, Tuple
 from datasets import Dataset, DatasetDict, IterableDatasetDict, load_dataset
 from inspect_ai import Task, task
 from inspect_ai.dataset import MemoryDataset, Sample
 from inspect_ai.solver import TaskState
 from inspect_ai.util import sandbox
 from inspect_ai.scorer import (
-    CORRECT,
-    INCORRECT,
     Score,
     Scorer,
     Target,
-    accuracy,
     scorer,
-    stderr,
     Metric,
     metric,
     SampleScore,

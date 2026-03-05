@@ -1,10 +1,9 @@
-from typing import Dict, List, Any
+from typing import Dict, Any
 from datetime import datetime
 
 from inspect_ai.model import Model, GenerateConfig
 
 from astabench.evals.sqa.pydantic_models import answer_precision_json_schema
-from astabench.evals.sqa.rubric import extract_json_from_response
 from astabench.evals.sqa.retry_utils import generate_with_retry
 
 import re

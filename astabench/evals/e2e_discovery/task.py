@@ -6,7 +6,6 @@ import os
 import tempfile
 import textwrap
 import time
-from pathlib import Path
 from importlib import resources
 from typing import Any, Tuple
 

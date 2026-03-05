@@ -1,6 +1,5 @@
 """Test for native provider tools."""
 
-import asyncio
 import os
 from unittest.mock import Mock, patch
 

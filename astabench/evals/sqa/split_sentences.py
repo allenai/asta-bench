@@ -1,15 +1,12 @@
 import re
-from collections import OrderedDict
 from typing import List
 import json
 
 from inspect_ai.model import (
-    ChatMessageSystem,
-    ChatMessageUser,
     GenerateConfig,
     ResponseSchema,
 )
-from inspect_ai.model import Model, get_model
+from inspect_ai.model import get_model
 from inspect_ai.util import json_schema
 
 

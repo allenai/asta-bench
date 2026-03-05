@@ -1,7 +1,7 @@
-from typing import Dict, List, Tuple
+from typing import List
 from pydantic import BaseModel, Field, field_validator
 
-from inspect_ai.model import Model, GenerateConfig, ResponseSchema
+from inspect_ai.model import ResponseSchema
 from inspect_ai.util import json_schema
 
 

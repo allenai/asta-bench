@@ -1,7 +1,6 @@
 import json
 import os
 import shutil
-from pathlib import Path
 from importlib import resources
 from typing import Literal
 

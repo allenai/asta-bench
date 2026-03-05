@@ -179,7 +179,7 @@ def test_super_scoring():
     ), f"trackonly: output_match is not 1.0.  Explanation: {score.explanation}"
     assert (
         score.value["submitted"] == 0
-    ), f"trackonly: `submitted` should be 0, because the answer wasn't explicitly given in output"
+    ), "trackonly: `submitted` should be 0, because the answer wasn't explicitly given in output"
     assert (
         score.value["landmarks"] == 1.0
     ), f"trackonly: `landmarks` is not 1.0.  Explanation: {score.explanation}"
