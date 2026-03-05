@@ -43,7 +43,7 @@ Explicitly consider whether something may be indirectly relevant. For example, i
 Note that subtle differences can make the text irrelevant to the query. For instance, text about scientific survey paper generation is not relevant to a query about automatic paper review generation. Even though they seem related, they are about very different tasks.
 
 Also, useful background in general is relevant. If the question is about an approach to creating liver-related proteins, some information about liver-related proteins could contextualize other parts of the answer. If a paragraph contextualizes another part of the answer, then it is relevant.
-
+{rubric_section}
 Go through the answer and output a list of irrelevant paragraphs. Every single paragraph needs to be considered, one by one. Our goal is to catch all the irrelevant paragraphs, so please be thorough.
 Return your result as a JSON object with a single key `irrelevant_paragraphs` whose value is a list of objects, each having keys `reason`, and `answer_text` as follows:
 {{"irrelevant_paragraphs":[
@@ -61,10 +61,29 @@ Answer: {answer}
 """
 
 
+def _format_rubric_section(ingredient_criteria: list[str]) -> str:
+    """Format rubric ingredient criteria as a prompt section informing the precision evaluator."""
+    if not ingredient_criteria:
+        return ""
+    items = "\n".join(f"- {c}" for c in ingredient_criteria)
+    return (
+        f"\nThe following rubric criteria describe content that is definitely relevant "
+        f"to the query. Paragraphs addressing any of these topics should NOT be marked "
+        f"as irrelevant. Other content beyond these criteria may also be relevant.\n"
+        f"{items}\n"
+    )
+
+
 class PrecisionEval:
-    def __init__(self, model: Model, temperature: float = 0.5):
+    def __init__(
+        self,
+        model: Model,
+        temperature: float = 0.5,
+        ingredient_criteria: list[str] | None = None,
+    ):
         self.model = model
         self.temperature = temperature
+        self.ingredient_criteria = ingredient_criteria or []
 
     @staticmethod
     def map_output_to_precision_score(
@@ -103,7 +122,10 @@ class PrecisionEval:
         return 1 - (len(matching_paragraph_indices) / len(paragraphs)), metadata
 
     async def score_output(self, query: str, answer: str) -> Dict[str, Any]:
-        prompt = PRECICION_EVAL_PROMPT.format(query=query, answer=answer)
+        rubric_section = _format_rubric_section(self.ingredient_criteria)
+        prompt = PRECICION_EVAL_PROMPT.format(
+            query=query, answer=answer, rubric_section=rubric_section,
+        )
         config = GenerateConfig(
             response_schema=answer_precision_json_schema,
             temperature=self.temperature,

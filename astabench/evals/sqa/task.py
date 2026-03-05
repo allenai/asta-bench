@@ -356,7 +356,10 @@ def score_citation(
 
 
 @scorer(metrics={"answer_precision": [mean(), stderr()]})
-def score_precision(model: str | Model) -> Scorer:
+def score_precision(
+    model: str | Model,
+    rubric_informed: bool = False,
+) -> Scorer:
     grader_model = get_model(model)
 
     async def score(state: TaskState, target: Target) -> Score:
@@ -372,7 +375,19 @@ def score_precision(model: str | Model) -> Scorer:
         parsed_output = normalize_agent_response_dict(parsed_output)
         answer = format_report(parsed_output)
         query = state.metadata["initial_prompt"]
-        metric = PrecisionEval(grader_model)
+
+        ingredient_criteria: list[str] = []
+        if rubric_informed:
+            rubric_data = json.loads(target[0])
+            ingredient_criteria = [
+                ing["criterion"]
+                for ing in rubric_data.get("ingredients", [])
+                if ing.get("criterion")
+            ]
+
+        metric = PrecisionEval(
+            grader_model, ingredient_criteria=ingredient_criteria,
+        )
         scores, meta = await metric.score_output(query, answer)
 
         return Score(
@@ -410,6 +425,7 @@ def score_all(
     all_at_once: bool = True,
     temperature: float = 0.5,
     top_p: float = 0.95,
+    rubric_informed_precision: bool = False,
 ) -> Scorer:
     scorers = [
         score_sqa(
@@ -419,7 +435,7 @@ def score_all(
             temperature=temperature,
             top_p=top_p,
         ),
-        score_precision(scorer_model),
+        score_precision(scorer_model, rubric_informed=rubric_informed_precision),
         score_citation(
             scorer_model,
             sentence_wise_cit_eval=sentence_wise_cit_eval,
@@ -480,6 +496,7 @@ def sqa(
     weights=None,
     aggregate: bool = True,
     excerpt_prompt: bool = True,
+    rubric_informed_precision: bool = False,
 ) -> Task:
     if weights is None:
         weights = [0.25, 0.25, 0.25, 0.25]
@@ -514,7 +531,7 @@ def sqa(
             temperature=temperature,
             top_p=top_p,
         ),
-        score_precision(scorer_model),
+        score_precision(scorer_model, rubric_informed=rubric_informed_precision),
         score_citation(
             scorer_model,
             sentence_wise_cit_eval=sentence_wise_cit_eval,
