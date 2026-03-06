@@ -228,6 +228,20 @@ Relevant concurrency parameters (the guidelines here assume you want to run `N` 
 
 ## Troubleshooting
 
+- `Docker compose command '['up', '--detach', '--wait', ...] timed out after 120 seconds` or sandbox startup appears to hang while Docker prints `unpacking to docker.io/library/inspect-...`:
+    - On Docker Engine v29+, fresh installs default to the [containerd image store](https://docs.docker.com/engine/storage/containerd/) (see the [v29.0 release notes](https://docs.docker.com/engine/release-notes/29/)).  In some environments this makes sandbox image unpacking slow enough to exceed InspectAI's current hardcoded compose startup timeout.
+    - One known workaround is to disable it in `~/.config/docker/daemon.json`:
+      ```json
+      {
+        "features": {"containerd-snapshotter": false}
+      }
+      ```
+    - Then reload and restart Docker:
+      ```bash
+      sudo systemctl daemon-reload
+      sudo systemctl restart docker
+      ```
+    - If you cannot change the daemon config, downgrading Docker to v28 or earlier is the other known workaround.
 - `Retrying docker compose command` or `internal sandbox MCP operation timed out` errors:
     - Probably too much [parallelism](#parallelism).
 - `HTTPStatusError: Client error '429 ' for url 'https://asta-tools.allen.ai/mcp/v1'`, possibly with a 504 status code instead of 429
