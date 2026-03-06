@@ -230,17 +230,16 @@ Relevant concurrency parameters (the guidelines here assume you want to run `N` 
 
 - `Docker compose command '['up', '--detach', '--wait', ...] timed out after 120 seconds` or sandbox startup appears to hang while Docker prints `unpacking to docker.io/library/inspect-...`:
     - On Docker Engine v29+, fresh installs default to the [containerd image store](https://docs.docker.com/engine/storage/containerd/) (see the [v29.0 release notes](https://docs.docker.com/engine/release-notes/29/)).  In some environments this makes sandbox image unpacking slow enough to exceed InspectAI's current hardcoded compose startup timeout.
-    - One known workaround is to disable it in `~/.config/docker/daemon.json`:
+    - One known workaround is to disable it in Docker's daemon config:
       ```json
       {
         "features": {"containerd-snapshotter": false}
       }
       ```
-    - Then reload and restart Docker:
-      ```bash
-      sudo systemctl daemon-reload
-      sudo systemctl restart docker
-      ```
+    - Inspect invokes Docker as `docker` (without `sudo`), so the right config path depends on your Docker setup:
+        - For rootful Docker, including the common setup where your user is in the `docker` group and can run `docker` without `sudo`, edit `/etc/docker/daemon.json` and run `sudo systemctl restart docker`.
+        - For rootless Docker, edit `~/.config/docker/daemon.json` and run `systemctl --user restart docker`.
+    - You may be prompted to do `systemctl daemon-reload`. Do that for good measure.
     - If you cannot change the daemon config, downgrading Docker to v28 or earlier is the other known workaround.
 - `Retrying docker compose command` or `internal sandbox MCP operation timed out` errors:
     - Probably too much [parallelism](#parallelism).
