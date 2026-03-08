@@ -16,6 +16,10 @@ QUERY_ATTEMPTS = 3
 pf_model_name_2_litellm_model_name = {
     "models/gemini-2.0-flash": "gemini/gemini-2.0-flash",
     "gemini-2.0-flash": "gemini/gemini-2.0-flash",
+    "models/gemini-3-flash-preview": "gemini/gemini-3-flash-preview",
+    "gemini-3-flash-preview": "gemini/gemini-3-flash-preview",
+    "models/gemini-3.1-pro-preview": "gemini/gemini-3.1-pro-preview",
+    "gemini-3.1-pro-preview": "gemini/gemini-3.1-pro-preview",
     "gpt-4o": "gpt-4o-2024-08-06",
 }
 

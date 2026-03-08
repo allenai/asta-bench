@@ -296,6 +296,9 @@ def main():
     retrieverless_models = [
         "openai/o4-mini",
         "openai/o3",
+        "anthropic/claude-sonnet-4-6-thinking",
+        "google/gemini-3.1-pro-preview",
+        "anthropic/claude-sonnet-4-6",
         "anthropic/claude-sonnet-4-20250514-thinking",
         "google/gemini-2.5-pro-preview-03-25",
         "anthropic/claude-sonnet-4-20250514",

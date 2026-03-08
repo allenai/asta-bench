@@ -36,7 +36,7 @@ logger = logging.getLogger(__name__)
 # viewable at https://huggingface.co/datasets/allenai/asta-bench
 HF_DATASET_DIR = "allenai/asta-bench"
 HF_CACHED_RESULTS_DIR = "allenai/asta-bench-solver-data"
-RUBRIC_SCORING_MODEL = "claude-3-7-sonnet-20250219"
+RUBRIC_SCORING_MODEL = "claude-sonnet-4-6"
 NULL_SCORE = {
     "overall_score": {
         "average_required_all3": 0,
@@ -1219,12 +1219,6 @@ async def _getLLMResponseJSON(
             ],
         }
     ]
-
-    if (model == "claude-3-5-sonnet-20240620") and (maxTokens > 4096):
-        # TODO
-        raise ValueError(
-            f'Requested {maxTokens} tokens with {model} but we haven\'t set up {{"anthropic-beta": "max-tokens-3-5-sonnet-2024-07-15"}}'
-        )
 
     response = None
 
