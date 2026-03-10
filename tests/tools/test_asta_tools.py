@@ -19,8 +19,6 @@ from astabench.tools.asta_tools import (
     create_server_streamable_http,
     filter_papers,
     make_asta_toolsource,
-    make_override_wrapper,
-    make_retry_wrapper,
 )
 
 logger = logging.getLogger(__name__)
@@ -100,44 +98,6 @@ def find_tool_error(exc_group):
             if found:
                 return found
     return None
-
-
-@pytest.mark.asyncio
-async def test_make_retry_wrapper_ignores_stray_positional_args_for_keyword_only_tool():
-    async def keyword_only_tool(*, foo: int, bar: int = 0):
-        return {"foo": foo, "bar": bar}
-
-    tool_def = ToolDef(
-        name="keyword_only_tool",
-        description="keyword-only test tool",
-        tool=keyword_only_tool,
-        parameters={"foo": "foo", "bar": "bar"},
-    )
-
-    wrapped = make_retry_wrapper(tool_def)
-
-    result = await wrapped("ignored_arg1", "ignored_arg2", foo=3, bar=4)
-
-    assert result == {"foo": 3, "bar": 4}
-
-
-@pytest.mark.asyncio
-async def test_make_override_wrapper_ignores_stray_positional_args_for_keyword_only_tool():
-    async def keyword_only_tool(*, foo: int, bar: int = 0):
-        return {"foo": foo, "bar": bar}
-
-    tool_def = ToolDef(
-        name="keyword_only_tool",
-        description="keyword-only test tool",
-        tool=keyword_only_tool,
-        parameters={"foo": "foo", "bar": "bar"},
-    )
-
-    wrapped = make_override_wrapper(tool_def, arg_defaults={"bar": 7})
-
-    result = await wrapped("ignored_arg1", "ignored_arg2", foo=3)
-
-    assert result == {"foo": 3, "bar": 7}
 
 
 @pytest.mark.asta_tool_api_request

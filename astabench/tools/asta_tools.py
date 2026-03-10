@@ -512,33 +512,6 @@ def _is_retryable_error(error: Exception) -> bool:
     return False
 
 
-async def _call_wrapped_tool_compat(
-    origtool: Callable[..., Awaitable[Any]],
-    args: tuple[Any, ...],
-    kwargs: dict[str, Any],
-) -> Any:
-    """Call wrapped tools compatibly across Inspect versions."""
-    try:
-        original_signature = inspect.signature(origtool)
-    except (TypeError, ValueError):
-        return await origtool(*args, **kwargs)
-
-    accepts_positional_args = any(
-        param.kind
-        in (
-            inspect.Parameter.POSITIONAL_ONLY,
-            inspect.Parameter.POSITIONAL_OR_KEYWORD,
-            inspect.Parameter.VAR_POSITIONAL,
-        )
-        for param in original_signature.parameters.values()
-    )
-
-    if args and not accepts_positional_args:
-        return await origtool(**kwargs)
-
-    return await origtool(*args, **kwargs)
-
-
 def make_override_wrapper(
     td: ToolDef,
     arg_defaults: dict[str, Any] | None = None,
@@ -580,7 +553,7 @@ def make_override_wrapper(
         # Overwrite for forced values
         kwargs.update(arg_overrides)
 
-        return await _call_wrapped_tool_compat(origtool, args, kwargs)
+        return await origtool(*args, **kwargs)
 
     # Remove forced values from signature so that the LLM doesn't see them
     original_signature = inspect.signature(origtool)
@@ -618,7 +591,7 @@ def make_retry_wrapper(
     async def wrapper(*args, **kwargs):
         for attempt in range(max_retries + 1):  # +1 for initial attempt
             try:
-                return await _call_wrapped_tool_compat(origtool, args, kwargs)
+                return await origtool(*args, **kwargs)
             except Exception as e:
                 err_shortstring = "+".join(
                     [str(x) for x in _unravel_exception_group(e)]
