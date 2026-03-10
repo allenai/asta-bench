@@ -103,7 +103,29 @@ def find_tool_error(exc_group):
 
 
 @pytest.mark.asyncio
-async def test_make_retry_wrapper_ignores_stray_positional_args_for_keyword_only_tool():
+async def test_make_retry_wrapper_forwards_args_and_kwargs():
+    async def passthrough_tool(*args, foo: int, bar: int = 0):
+        return {"args": list(args), "kwargs": {"foo": foo, "bar": bar}}
+
+    tool_def = ToolDef(
+        name="passthrough_tool",
+        description="passthrough test tool",
+        tool=passthrough_tool,
+        parameters={"foo": "foo", "bar": "bar"},
+    )
+
+    wrapped = make_retry_wrapper(tool_def)
+
+    result = await wrapped("ignored_arg1", "ignored_arg2", foo=3, bar=4)
+
+    assert result == {
+        "args": ["ignored_arg1", "ignored_arg2"],
+        "kwargs": {"foo": 3, "bar": 4},
+    }
+
+
+@pytest.mark.asyncio
+async def test_make_retry_wrapper_raises_if_keyword_only_tool_call_is_still_invalid():
     async def keyword_only_tool(*, foo: int, bar: int = 0):
         return {"foo": foo, "bar": bar}
 
@@ -116,13 +138,34 @@ async def test_make_retry_wrapper_ignores_stray_positional_args_for_keyword_only
 
     wrapped = make_retry_wrapper(tool_def)
 
-    result = await wrapped("ignored_arg1", "ignored_arg2", foo=3, bar=4)
-
-    assert result == {"foo": 3, "bar": 4}
+    with pytest.raises(TypeError, match="takes 0 positional arguments"):
+        await wrapped("ignored_arg1", "ignored_arg2", bar=4)
 
 
 @pytest.mark.asyncio
-async def test_make_override_wrapper_ignores_stray_positional_args_for_keyword_only_tool():
+async def test_make_override_wrapper_forwards_args_and_kwargs():
+    async def passthrough_tool(*args, foo: int, bar: int = 0):
+        return {"args": list(args), "kwargs": {"foo": foo, "bar": bar}}
+
+    tool_def = ToolDef(
+        name="passthrough_tool",
+        description="passthrough test tool",
+        tool=passthrough_tool,
+        parameters={"foo": "foo", "bar": "bar"},
+    )
+
+    wrapped = make_override_wrapper(tool_def, arg_defaults={"bar": 7})
+
+    result = await wrapped("ignored_arg1", "ignored_arg2", foo=3)
+
+    assert result == {
+        "args": ["ignored_arg1", "ignored_arg2"],
+        "kwargs": {"foo": 3, "bar": 7},
+    }
+
+
+@pytest.mark.asyncio
+async def test_make_override_wrapper_raises_if_keyword_only_tool_call_is_still_invalid():
     async def keyword_only_tool(*, foo: int, bar: int = 0):
         return {"foo": foo, "bar": bar}
 
@@ -133,11 +176,10 @@ async def test_make_override_wrapper_ignores_stray_positional_args_for_keyword_o
         parameters={"foo": "foo", "bar": "bar"},
     )
 
-    wrapped = make_override_wrapper(tool_def, arg_defaults={"bar": 7})
+    wrapped = make_override_wrapper(tool_def)
 
-    result = await wrapped("ignored_arg1", "ignored_arg2", foo=3)
-
-    assert result == {"foo": 3, "bar": 7}
+    with pytest.raises(TypeError, match="takes 0 positional arguments"):
+        await wrapped("ignored_arg1", "ignored_arg2", bar=4)
 
 
 @pytest.mark.asta_tool_api_request
