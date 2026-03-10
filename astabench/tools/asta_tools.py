@@ -601,21 +601,6 @@ def make_retry_wrapper(
     async def wrapper(*args, **kwargs):
         for attempt in range(max_retries + 1):  # +1 for initial attempt
             try:
-                if args:
-                    try:
-                        origtool_signature = inspect.signature(origtool)
-                    except (TypeError, ValueError):
-                        origtool_signature = "<unavailable>"
-                    logger.error(
-                        "make_retry_wrapper forwarding positional args to %s for tool %s; "
-                        "signature=%s args=%r kwargs=%r attempt=%s",
-                        getattr(origtool, "__qualname__", repr(origtool)),
-                        td.name,
-                        origtool_signature,
-                        args,
-                        kwargs,
-                        attempt + 1,
-                    )
                 return await origtool(*args, **kwargs)
             except Exception as e:
                 err_shortstring = "+".join(
@@ -638,6 +623,13 @@ def make_retry_wrapper(
                     raise
 
                 if attempt >= max_retries:
+                    logger.exception(
+                        "make_override_wrapper call failed for %s (%s) with args=%r kwargs=%r",
+                        td.name,
+                        getattr(origtool, "__qualname__", repr(origtool)),
+                        args,
+                        kwargs,
+                    )
                     msg = f"Tool {td.name} failed after {max_retries} retries with retryable error: {err_shortstring}"
                     logger.warning(msg)
                     raise ToolError(msg) from e
