@@ -511,6 +511,7 @@ def _is_retryable_error(error: Exception) -> bool:
 
     return False
 
+
 def make_override_wrapper(
     td: ToolDef,
     arg_defaults: dict[str, Any] | None = None,
@@ -551,21 +552,6 @@ def make_override_wrapper(
 
         # Overwrite for forced values
         kwargs.update(arg_overrides)
-
-        if args:
-            try:
-                origtool_signature = inspect.signature(origtool)
-            except (TypeError, ValueError):
-                origtool_signature = "<unavailable>"
-            logger.error(
-                "make_override_wrapper forwarding positional args to %s for tool %s; "
-                "signature=%s args=%r kwargs=%r",
-                getattr(origtool, "__qualname__", repr(origtool)),
-                td.name,
-                origtool_signature,
-                args,
-                kwargs,
-            )
 
         try:
             return await origtool(*args, **kwargs)
