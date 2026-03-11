@@ -138,7 +138,9 @@ def paper_finder_tool(
                 )
                 break
             except Exception as e:
-                logger.error("Exception occurred during paper search: %s", e, exc_info=True)
+                logger.error(
+                    "Exception occurred during paper search: %s", e, exc_info=True
+                )
                 attempts -= 1
                 if attempts == 0:
                     raise e
