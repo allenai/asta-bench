@@ -16,7 +16,10 @@ QUERY_ATTEMPTS = 3
 pf_model_name_2_litellm_model_name = {
     "models/gemini-2.0-flash": "gemini/gemini-2.0-flash",
     "gemini-2.0-flash": "gemini/gemini-2.0-flash",
+    "gemini-2.5-flash": "gemini/gemini-2.5-flash",
+    "gemini-3-flash": "gemini/gemini-3-flash",
     "gpt-4o": "gpt-4o-2024-08-06",
+    "gpt-5-mini": "gpt-5-mini-2025-08-07",
 }
 
 
@@ -71,7 +74,7 @@ async def find_papers(
     """
     base_url = base_url.rstrip("/")
 
-    async with httpx.AsyncClient(http2=True) as client:
+    async with httpx.AsyncClient(http2=True, timeout=timeout) as client:
         try:
             resp = await client.post(
                 f"{base_url}/api/2/rounds",
@@ -105,6 +108,7 @@ async def find_papers(
                 input_tokens=token_breakdown_by_model.get("prompt"),
                 output_tokens=token_breakdown_by_model.get("completion"),
                 total_tokens=token_breakdown_by_model.get("total"),
+                reasoning_tokens=token_breakdown_by_model.get("reasoning"),
             )
             record_model_usage_with_inspect(
                 pf_model_name_2_litellm_model_name.get(pf_model_name, pf_model_name),
@@ -134,7 +138,7 @@ def paper_finder_tool(
                 )
                 break
             except Exception as e:
-                logger.error("Exception occurred during paper search: %s", e)
+                logger.error("Exception occurred during paper search: %s", e, exc_info=True)
                 attempts -= 1
                 if attempts == 0:
                     raise e
