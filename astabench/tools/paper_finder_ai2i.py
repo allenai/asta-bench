@@ -17,7 +17,7 @@ pf_model_name_2_litellm_model_name = {
     "models/gemini-2.0-flash": "gemini/gemini-2.0-flash",
     "gemini-2.0-flash": "gemini/gemini-2.0-flash",
     "gemini-2.5-flash": "gemini/gemini-2.5-flash",
-    "gemini-3-flash": "gemini/gemini-3-flash",
+    "gemini-3-flash": "gemini/gemini-3-flash-preview",
     "gpt-4o": "gpt-4o-2024-08-06",
     "gpt-5-mini": "gpt-5-mini-2025-08-07",
 }
