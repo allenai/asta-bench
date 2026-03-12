@@ -594,13 +594,13 @@ stages:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_storm uv run --extra storm
       --python 3.11 inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir
       dev_dvc_logs/solver_outputs/ --solver astabench/solvers/sqa/storm_solver.py@storm_solver
-      -T split=dev -T scorer_model=google/gemini-2.5-pro --limit=1000 --log-shared
+      -T split=dev -T scorer_model=google/gemini-3-flash-preview --limit=1000 --log-shared
       --no-score; mv "$(ls -t dev_dvc_logs/solver_outputs/*task_sqa_solver_storm.eval
       2>/dev/null | head -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_storm.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-pro
+        scorer_model: google/gemini-3-flash-preview
     outs:
     - path: dev_dvc_logs/solver_outputs/task_sqa_solver_storm.eval
       hash: md5
@@ -644,18 +644,18 @@ stages:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_elicit uv run --extra sqa inspect
       eval astabench/evals/sqa/task.py@sqa --display plain --log-dir dev_dvc_logs/solver_outputs/
       --solver astabench/solvers/sqa/elicit/memorized_solver.py@elicit_solver -T split=dev
-      -T scorer_model=google/gemini-2.5-flash --limit=1000 --log-shared --no-score;
+      -T scorer_model=google/gemini-3-flash-preview --limit=1000 --log-shared --no-score;
       mv "$(ls -t dev_dvc_logs/solver_outputs/*task_sqa_solver_elicit.eval 2>/dev/null
       | head -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_elicit.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-flash
+        scorer_model: google/gemini-3-flash-preview
     outs:
     - path: dev_dvc_logs/solver_outputs/task_sqa_solver_elicit.eval
       hash: md5
-      md5: 8d08ed8249687b3d41a8e06d7533c852
-      size: 4949142
+      md5: 336b302907ace455f3b7457eaaee68b2
+      size: 4445686
   score_all_solvers@anthropic/claude-3-5-sonnet-20240620-test:
     cmd: echo "Scoring";[[ "anthropic/claude-3-5-sonnet-20240620" == */* ]] && mkdir
       -p test_dvc_logs/scored/task_sqa_solver_anthropic/claude-3-5-sonnet-20240620;
@@ -885,13 +885,13 @@ stages:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openai_deep_research uv run
       --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir
       test_dvc_logs/solver_outputs/ --solver astabench/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
-      -T scorer_model=google/gemini-2.5-flash -T split=test -S sys_name_or_path=openai_deep_research  --limit=1000
+      -T scorer_model=google/gemini-3-flash-preview -T split=test -S sys_name_or_path=openai_deep_research  --limit=1000
       --retry-on-error=10 --log-shared --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*openai_deep_research.eval
       2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-flash
+        scorer_model: google/gemini-3-flash-preview
         sqa_solver_version: may-23-2025
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval
@@ -943,7 +943,7 @@ stages:
       sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
       --solver astabench/solvers/sqa/formatted_llm.py@formatted_solver --model openai/o4-mini
       --reasoning-effort high --reasoning-tokens 8192 -M responses_store=false --reasoning-history
-      none -T split=test -T scorer_model=google/gemini-2.5-pro -T excerpt_prompt=False
+      none -T split=test -T scorer_model=google/gemini-3-flash-preview -T excerpt_prompt=False
       --limit=1000 --retry-on-error=10 --log-shared --no-score; [[ "openai/o4-mini"
       == */* ]] && mkdir -p test_dvc_logs/solver_outputs/task_sqa_solver_$(dirname
       "openai/o4-mini"); mv "$(ls -t test_dvc_logs/solver_outputs/*openai/o4-mini.eval
@@ -951,7 +951,7 @@ stages:
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-pro
+        scorer_model: google/gemini-3-flash-preview
         sqa_solver_version: may-23-2025
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_openai/o4-mini.eval
@@ -1017,18 +1017,18 @@ stages:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_elicit uv run --extra sqa inspect
       eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
       --solver astabench/solvers/sqa/elicit/memorized_solver.py@elicit_solver -T split=test
-      -T scorer_model=google/gemini-2.5-flash --limit=1000 --log-shared --no-score;
+      -T scorer_model=google/gemini-3-flash-preview --limit=1000 --log-shared --no-score;
       mv "$(ls -t test_dvc_logs/solver_outputs/*task_sqa_solver_elicit.eval 2>/dev/null
       | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_elicit.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-flash
+        scorer_model: google/gemini-3-flash-preview
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_elicit.eval
       hash: md5
-      md5: 1fc7402e0fd42a53863c6a6f859b9fa8
-      size: 4895087
+      md5: 16c2ebb4e4568a24b97b1742ecb517fc
+      size: 4091878
   score_all_solvers@elicit-test:
     cmd: echo "Scoring";[[ "elicit" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_elicit;
       cp test_dvc_logs/solver_outputs/task_sqa_solver_elicit.eval test_dvc_logs/scored/task_sqa_solver_elicit.eval;
@@ -1208,57 +1208,56 @@ stages:
       md5: 26bbc824e8055613e796a159b16932af
       size: 1171464
   solve_memorized@model0-dev:
-    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_fhouse_crow uv run --extra
-      sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir dev_dvc_logs/solver_outputs/
-      --solver astabench/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
-      -T scorer_model=google/gemini-2.5-pro -T split=dev -S sys_name_or_path=fhouse_crow
-      -S require_snippets=false --limit=1000 --retry-on-error=10 --log-shared --no-score;
-      mv "$(ls -t dev_dvc_logs/solver_outputs/*fhouse_crow.eval 2>/dev/null | head
-      -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval"
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openai_deep_research uv run
+      --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir
+      dev_dvc_logs/solver_outputs/ --solver astabench/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
+      -T scorer_model=google/gemini-3-flash-preview -T split=dev -S sys_name_or_path=openai_deep_research  --limit=1000
+      --retry-on-error=10 --log-shared --no-score; mv "$(ls -t dev_dvc_logs/solver_outputs/*openai_deep_research.eval
+      2>/dev/null | head -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-pro
+        scorer_model: google/gemini-3-flash-preview
         sqa_solver_version: may-23-2025
     outs:
-    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_openai_deep_research.eval
       hash: md5
-      md5: 4ff53a9992d562521979130e3bb36fcf
-      size: 1195651
+      md5: b201f2f7bd9c83f6e3c901805f385d44
+      size: 1195688
   solve_perplexity_dr@test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_perplexity_dr uv run --extra
       sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
       -T with_search_tools=False --model 'perplexity/sonar-deep-research' --solver
       astabench/solvers/sqa/formatted_perplexity.py@formatted_solver -T split=test
-      -T scorer_model=google/gemini-2.5-flash --limit=1000 --log-shared --no-score;
+      -T scorer_model=google/gemini-3-flash-preview --limit=1000 --log-shared --no-score;
       mv "$(ls -t test_dvc_logs/solver_outputs/*task_sqa_solver_perplexity_dr.eval
       2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-flash
+        scorer_model: google/gemini-3-flash-preview
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval
       hash: md5
-      md5: 253e478e5891269aaf0b598a9320fff9
-      size: 1784027
+      md5: c1ba04199b4b8b0b3adefccb02e22956
+      size: 2027391
   solve_perplexity_dr@dev:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_perplexity_dr uv run --extra
       sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir dev_dvc_logs/solver_outputs/
       -T with_search_tools=False --model 'perplexity/sonar-deep-research' --solver
       astabench/solvers/sqa/formatted_perplexity.py@formatted_solver -T split=dev
-      -T scorer_model=google/gemini-2.5-flash --limit=1000 --log-shared --no-score;
+      -T scorer_model=google/gemini-3-flash-preview --limit=1000 --log-shared --no-score;
       mv "$(ls -t dev_dvc_logs/solver_outputs/*task_sqa_solver_perplexity_dr.eval
       2>/dev/null | head -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-flash
+        scorer_model: google/gemini-3-flash-preview
     outs:
     - path: dev_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval
       hash: md5
-      md5: 13761e458ca6d9fd68b66975a2b1c3be
-      size: 1187381
+      md5: 8965cf43f6dc2e9a401b4d286637445d
+      size: 845996
   solve_memorized@model2-dev:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openai_deep_research uv run
       --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir
@@ -2180,18 +2179,18 @@ stages:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_you uv run --extra sqa inspect
       eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
       --solver astabench/solvers/sqa/formatted_youcom.py@formatted_solver -S api_type='research'
-      -T split=test -T scorer_model=google/gemini-2.5-flash --limit=1000 --log-shared
+      -T split=test -T scorer_model=google/gemini-3-flash-preview --limit=1000 --log-shared
       --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*task_sqa_solver_you.eval
       2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_you.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-flash
+        scorer_model: google/gemini-3-flash-preview
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_you.eval
       hash: md5
-      md5: e7be9b73b33e99893b170afb853a21ae
-      size: 1731090
+      md5: d3d528dd45b27e5b9508a0087d978d87
+      size: 1626349
   create_nice_logs@google/gemini-2.5-pro-preview-03-25-test:
     cmd: echo "Creating logs"; [[ "google/gemini-2.5-pro-preview-03-25" == */* ]]
       && mkdir -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname "google/gemini-2.5-pro-preview-03-25");
@@ -2269,13 +2268,13 @@ stages:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_you uv run --extra sqa inspect
       eval astabench/evals/sqa/task.py@sqa --display plain --log-dir dev_dvc_logs/solver_outputs/
       --solver astabench/solvers/sqa/formatted_youcom.py@formatted_solver -S api_type='research'
-      -T split=dev -T scorer_model=google/gemini-2.5-pro --limit=1000 --log-shared
+      -T split=dev -T scorer_model=google/gemini-3-flash-preview --limit=1000 --log-shared
       --no-score; mv "$(ls -t dev_dvc_logs/solver_outputs/*task_sqa_solver_you.eval
       2>/dev/null | head -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_you.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-pro
+        scorer_model: google/gemini-3-flash-preview
     outs:
     - path: dev_dvc_logs/solver_outputs/task_sqa_solver_you.eval
       hash: md5
@@ -2429,18 +2428,18 @@ stages:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_storm uv run --extra storm
       --python 3.11 inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir
       test_dvc_logs/solver_outputs/ --solver astabench/solvers/sqa/storm_solver.py@storm_solver
-      -T split=test -T scorer_model=google/gemini-2.5-flash --limit=1000 --log-shared
+      -T split=test -T scorer_model=google/gemini-3-flash-preview --limit=1000 --log-shared
       --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*task_sqa_solver_storm.eval
       2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_storm.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-flash
+        scorer_model: google/gemini-3-flash-preview
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_storm.eval
       hash: md5
-      md5: 21685170723948d1f8d89cf0ed71666d
-      size: 5802900
+      md5: e9f0f203bcfba80faf017d7545d35ed6
+      size: 4914841
   create_nice_logs@anthropic/claude-sonnet-4-20250514-test:
     cmd: echo "Creating logs"; [[ "anthropic/claude-sonnet-4-20250514" == */* ]] &&
       mkdir -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname "anthropic/claude-sonnet-4-20250514");
@@ -3639,19 +3638,19 @@ stages:
   solve_scispace@test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_scispace uv run inspect eval
       astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
-      --solver astabench/solvers/sqa/scispace/scispace.py@formatted_solver -T scorer_model=google/gemini-2.5-flash
+      --solver astabench/solvers/sqa/scispace/scispace.py@formatted_solver -T scorer_model=google/gemini-3-flash-preview
       -T split=test --limit=1000 --retry-on-error=10 --log-shared --no-score; mv "$(ls
       -t test_dvc_logs/solver_outputs/*scispace.eval 2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_scispace.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-flash
+        scorer_model: google/gemini-3-flash-preview
         sqa_solver_version: may-23-2025
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_scispace.eval
       hash: md5
-      md5: 8726b423e371a6f02ebb8edf044da131
-      size: 13192395
+      md5: e517fa1055570efb347dd6a924e478ae
+      size: 46039197
   log_any_remaining_errors_and_record_scores@sqa_o3_high-test:
     cmd: echo "Collecting errors";[[ "sqa_o3_high" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
       "sqa_o3_high"); mkdir -p test_dvc_logs/scores/task_sqa_solver_$(dirname "sqa_o3_high");
@@ -3708,13 +3707,13 @@ stages:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_fhouse_crow uv run --extra
       futurehouse inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir
       test_dvc_logs/solver_outputs/ --solver astabench/solvers/futurehouse/futurehouse_solver.py
-      -T scorer_model=google/gemini-2.5-flash -T split=test -S max_wait_time=900 -S
-      agent=CROW --limit=1000 --retry-on-error=10 --log-shared --no-score; mv "$(ls
+      -T scorer_model=google/gemini-3-flash-preview -T split=test -S max_wait_time=900
+      -S agent=CROW --limit=1000 --retry-on-error=10 --log-shared --no-score; mv "$(ls
       -t test_dvc_logs/solver_outputs/*fhouse_crow.eval 2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-flash
+        scorer_model: google/gemini-3-flash-preview
         sqa_solver_version: may-23-2025
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_crow.eval
@@ -3725,20 +3724,20 @@ stages:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_fhouse_falcon uv run --extra
       futurehouse inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir
       test_dvc_logs/solver_outputs/ --solver astabench/solvers/futurehouse/futurehouse_solver.py
-      -T scorer_model=google/gemini-2.5-flash -T split=test -S max_wait_time=900 -S
-      agent=FALCON --limit=1000 --retry-on-error=10 --log-shared --no-score; mv "$(ls
-      -t test_dvc_logs/solver_outputs/*fhouse_falcon.eval 2>/dev/null | head -n1)"
-      "test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval"
+      -T scorer_model=google/gemini-3-flash-preview -T split=test -S max_wait_time=900
+      -S agent=FALCON --limit=1000 --retry-on-error=10 --log-shared --no-score; mv
+      "$(ls -t test_dvc_logs/solver_outputs/*fhouse_falcon.eval 2>/dev/null | head
+      -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-flash
+        scorer_model: google/gemini-3-flash-preview
         sqa_solver_version: may-23-2025
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval
       hash: md5
-      md5: 973247fa294552e3807747362ef43b53
-      size: 76892171
+      md5: 1444e580204b243a0ca753f3c13bb97e
+      size: 8435874
   solve_sqa@o3_high-test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_o3_high uv run --extra
       sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
@@ -3760,13 +3759,13 @@ stages:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openscholar uv run --extra
       sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
       --solver astabench/solvers/sqa/openscholar/memorized_solver.py -S path=astabench/solvers/sqa/openscholar/openscholar_cache_test.json
-      -T scorer_model=google/gemini-2.5-flash -T split=test --limit=1000 --retry-on-error=10
+      -T scorer_model=google/gemini-3-flash-preview -T split=test --limit=1000 --retry-on-error=10
       --log-shared --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*openscholar.eval
       2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-flash
+        scorer_model: google/gemini-3-flash-preview
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval
       hash: md5
