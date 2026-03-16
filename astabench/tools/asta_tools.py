@@ -36,6 +36,9 @@ from .search import (
 
 logger = logging.getLogger(__name__)
 
+DEBUG_FORCE_TITLE_MISS_ENV = "ASTABENCH_DEBUG_FORCE_TITLE_MISS"
+DEBUG_FORCE_TITLE_MISS_DEFAULT = "zzzz-codex-force-title-miss-9e4d5b1c"
+
 
 @asynccontextmanager
 async def fixed_streamablehttp_client(
@@ -651,12 +654,26 @@ def _wrap_title_match_not_found_as_empty(tool: ToolDef) -> None:
 
     @functools.wraps(origtool)
     async def _req_wrapper(*args, **kwargs):
+        call_kwargs = dict(kwargs)
+        debug_force_title = os.getenv(DEBUG_FORCE_TITLE_MISS_ENV)
+        if debug_force_title and "title" in call_kwargs:
+            forced_title = (
+                DEBUG_FORCE_TITLE_MISS_DEFAULT
+                if debug_force_title == "1"
+                else debug_force_title
+            )
+            logger.warning(
+                "search_paper_by_title forcing debug title miss: original_title=%r forced_title=%r",
+                call_kwargs.get("title"),
+                forced_title,
+            )
+            call_kwargs["title"] = forced_title
         try:
-            result = await origtool(*args, **kwargs)
+            result = await origtool(*args, **call_kwargs)
             logger.warning(
                 "search_paper_by_title success: args=%r kwargs=%r result=%r",
                 args,
-                kwargs,
+                call_kwargs,
                 result,
             )
             return result
@@ -670,7 +687,7 @@ def _wrap_title_match_not_found_as_empty(tool: ToolDef) -> None:
                 logger.warning(
                     "search_paper_by_title returning empty result for title miss: args=%r kwargs=%r",
                     args,
-                    kwargs,
+                    call_kwargs,
                 )
                 return [ContentText(type="text", text=json.dumps({"data": []}))]
             raise
