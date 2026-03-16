@@ -654,7 +654,7 @@ def _wrap_title_match_not_found_as_empty(tool: ToolDef) -> None:
         try:
             return await origtool(*args, **kwargs)
         except ToolError as exc:
-            logger.info(
+            logger.warning(
                 "search_paper_by_title ToolError details: type=%s attrs=%r",
                 type(exc).__name__,
                 _tool_error_attrs(exc),
