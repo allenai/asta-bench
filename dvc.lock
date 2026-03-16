@@ -816,71 +816,67 @@ stages:
       md5: 10496d398144a7a41e639823823d007f
       size: 1068696
   solve_llm@model4-test:
-    cmd: 
-      INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_anthropic/claude-3-7-sonnet-20250219
-      uv run --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain
-      --log-dir test_dvc_logs/solver_outputs/ --solver astabench/solvers/sqa/formatted_llm.py@formatted_solver
-      --model anthropic/claude-3-7-sonnet-20250219  -T split=test -T scorer_model=google/gemini-2.5-pro
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openai/o3 uv run --project
+      agent-baselines --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display
+      plain --log-dir test_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/formatted_llm.py@formatted_solver
+      --model openai/o3 --reasoning-effort high --reasoning-tokens 8192 -M responses_store=false
+      --reasoning-history none -T split=test -T scorer_model=google/gemini-3-flash-preview
       -T excerpt_prompt=False --limit=1000 --retry-on-error=10 --log-shared --no-score;
-      [[ "anthropic/claude-3-7-sonnet-20250219" == */* ]] && mkdir -p test_dvc_logs/solver_outputs/task_sqa_solver_$(dirname
-      "anthropic/claude-3-7-sonnet-20250219"); mv "$(ls -t test_dvc_logs/solver_outputs/*anthropic/claude-3-7-sonnet-20250219.eval
-      2>/dev/null | head -n1)" 
-      "test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.eval"
+      [[ "openai/o3" == */* ]] && mkdir -p test_dvc_logs/solver_outputs/task_sqa_solver_$(dirname
+      "openai/o3"); mv "$(ls -t test_dvc_logs/solver_outputs/*openai/o3.eval 2>/dev/null
+      | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_openai/o3.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-pro
+        scorer_model: google/gemini-3-flash-preview
         sqa_solver_version: may-23-2025
     outs:
-    - path: 
-        test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-3-7-sonnet-20250219.eval
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_openai/o3.eval
       hash: md5
-      md5: a8fbef7fa3689f6859d79611e64981ed
-      size: 1850390
+      md5: 5857c63cdab2b62a6f907c9a27a811ec
+      size: 17943556
   solve_llm@model1-test:
     cmd: 
-      INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking
-      uv run --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain
-      --log-dir test_dvc_logs/solver_outputs/ --solver astabench/solvers/sqa/formatted_llm.py@formatted_solver
-      --model anthropic/claude-sonnet-4-20250514 --reasoning-tokens 8192 -T split=test
-      -T scorer_model=google/gemini-2.5-pro -T excerpt_prompt=False --limit=1000 --retry-on-error=10
-      --log-shared --no-score; [[ "anthropic/claude-sonnet-4-20250514" == */* ]] &&
-      mkdir -p test_dvc_logs/solver_outputs/task_sqa_solver_$(dirname "anthropic/claude-sonnet-4-20250514");
-      mv "$(ls -t test_dvc_logs/solver_outputs/*anthropic/claude-sonnet-4-20250514-thinking.eval
+      INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_anthropic/claude-sonnet-4-6-thinking
+      uv run --project agent-baselines --extra sqa inspect eval astabench/evals/sqa/task.py@sqa
+      --display plain --log-dir test_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/formatted_llm.py@formatted_solver
+      --model anthropic/claude-sonnet-4-6 --reasoning-tokens 8192 -T split=test -T
+      scorer_model=google/gemini-3-flash-preview -T excerpt_prompt=False --limit=1000
+      --retry-on-error=10 --log-shared --no-score; [[ "anthropic/claude-sonnet-4-6"
+      == */* ]] && mkdir -p test_dvc_logs/solver_outputs/task_sqa_solver_$(dirname
+      "anthropic/claude-sonnet-4-6"); mv "$(ls -t test_dvc_logs/solver_outputs/*anthropic/claude-sonnet-4-6-thinking.eval
       2>/dev/null | head -n1)" 
-      "test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval"
+      "test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-6-thinking.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-pro
+        scorer_model: google/gemini-3-flash-preview
         sqa_solver_version: may-23-2025
     outs:
     - path: 
-        test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-20250514-thinking.eval
+        test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-6-thinking.eval
       hash: md5
-      md5: 16646547ee30427da219b0983ca788de
-      size: 1923240
+      md5: 3107b1f474692f8919a571cee6e6cb3f
+      size: 14844232
   solve_llm@model3-test:
-    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_anthropic/claude-sonnet-4-20250514
-      uv run --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain
-      --log-dir test_dvc_logs/solver_outputs/ --solver astabench/solvers/sqa/formatted_llm.py@formatted_solver
-      --model anthropic/claude-sonnet-4-20250514  -T split=test -T scorer_model=google/gemini-2.5-pro
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_anthropic/claude-sonnet-4-6
+      uv run --project agent-baselines --extra sqa inspect eval astabench/evals/sqa/task.py@sqa
+      --display plain --log-dir test_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/formatted_llm.py@formatted_solver
+      --model anthropic/claude-sonnet-4-6  -T split=test -T scorer_model=google/gemini-3-flash-preview
       -T excerpt_prompt=False --limit=1000 --retry-on-error=10 --log-shared --no-score;
-      [[ "anthropic/claude-sonnet-4-20250514" == */* ]] && mkdir -p test_dvc_logs/solver_outputs/task_sqa_solver_$(dirname
-      "anthropic/claude-sonnet-4-20250514"); mv "$(ls -t test_dvc_logs/solver_outputs/*anthropic/claude-sonnet-4-20250514.eval
-      2>/dev/null | head -n1)" 
-      "test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval"
+      [[ "anthropic/claude-sonnet-4-6" == */* ]] && mkdir -p test_dvc_logs/solver_outputs/task_sqa_solver_$(dirname
+      "anthropic/claude-sonnet-4-6"); mv "$(ls -t test_dvc_logs/solver_outputs/*anthropic/claude-sonnet-4-6.eval
+      2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-6.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-pro
+        scorer_model: google/gemini-3-flash-preview
         sqa_solver_version: may-23-2025
     outs:
-    - path: 
-        test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-20250514.eval
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_anthropic/claude-sonnet-4-6.eval
       hash: md5
-      md5: c509c6bcdd7f0692029d00e3f6187139
-      size: 8161774
+      md5: e521c24cb487f904c7d9aa56e8ab9ff9
+      size: 13576196
   solve_memorized@model0-test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openai_deep_research uv run
       --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir
@@ -917,27 +913,25 @@ stages:
       md5: 1444e580204b243a0ca753f3c13bb97e
       size: 8435874
   solve_llm@model2-test:
-    cmd: 
-      INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_google/gemini-2.5-pro-preview-03-25
-      uv run --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain
-      --log-dir test_dvc_logs/solver_outputs/ --solver astabench/solvers/sqa/formatted_llm.py@formatted_solver
-      --model google/gemini-2.5-pro-preview-03-25  -T split=test -T scorer_model=google/gemini-2.5-pro
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_google/gemini-3.1-pro-preview
+      uv run --project agent-baselines --extra sqa inspect eval astabench/evals/sqa/task.py@sqa
+      --display plain --log-dir test_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/formatted_llm.py@formatted_solver
+      --model google/gemini-3.1-pro-preview  -T split=test -T scorer_model=google/gemini-3-flash-preview
       -T excerpt_prompt=False --limit=1000 --retry-on-error=10 --log-shared --no-score;
-      [[ "google/gemini-2.5-pro-preview-03-25" == */* ]] && mkdir -p test_dvc_logs/solver_outputs/task_sqa_solver_$(dirname
-      "google/gemini-2.5-pro-preview-03-25"); mv "$(ls -t test_dvc_logs/solver_outputs/*google/gemini-2.5-pro-preview-03-25.eval
+      [[ "google/gemini-3.1-pro-preview" == */* ]] && mkdir -p test_dvc_logs/solver_outputs/task_sqa_solver_$(dirname
+      "google/gemini-3.1-pro-preview"); mv "$(ls -t test_dvc_logs/solver_outputs/*google/gemini-3.1-pro-preview.eval
       2>/dev/null | head -n1)" 
-      "test_dvc_logs/solver_outputs/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval"
+      "test_dvc_logs/solver_outputs/task_sqa_solver_google/gemini-3.1-pro-preview.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-pro
+        scorer_model: google/gemini-3-flash-preview
         sqa_solver_version: may-23-2025
     outs:
-    - path: 
-        test_dvc_logs/solver_outputs/task_sqa_solver_google/gemini-2.5-pro-preview-03-25.eval
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_google/gemini-3.1-pro-preview.eval
       hash: md5
-      md5: 8ab9ea1ffa6fc82f71e82a796fae1ab1
-      size: 2603396
+      md5: 9270f1cbd5f606bd646579fe524ae0f4
+      size: 22505579
   solve_llm@model0-test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openai/o4-mini uv run --extra
       sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
@@ -3739,22 +3733,22 @@ stages:
       md5: 1444e580204b243a0ca753f3c13bb97e
       size: 8435874
   solve_sqa@o3_high-test:
-    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_o3_high uv run --extra
-      sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
-      --solver astabench/solvers/sqa/sqa.py@sqa_solver -T split=test -T scorer_model=google/gemini-2.5-flash
-      -S completion_model=o3_high --limit=1000 --retry-on-error=10 --log-shared --no-score;
-      mv "$(ls -t test_dvc_logs/solver_outputs/*o3_high.eval 2>/dev/null | head -n1)"
-      "test_dvc_logs/solver_outputs/task_sqa_solver_sqa_o3_high.eval"
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_o3_high uv run --project
+      agent-baselines --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display
+      plain --log-dir test_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/sqa.py@sqa_solver
+      -T split=test -T scorer_model=google/gemini-3-flash-preview -S completion_model=o3_high
+      --limit=1000 --retry-on-error=10 --log-shared --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*o3_high.eval
+      2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_sqa_o3_high.eval"
     params:
       params.yaml:
         limit: 1000
-        scorer_model: google/gemini-2.5-flash
+        scorer_model: google/gemini-3-flash-preview
         sqa_solver_version: may-23-2025
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_o3_high.eval
       hash: md5
-      md5: 711b54ac018c9dc4f2cc190c3029c42e
-      size: 56666173
+      md5: 36aa067ea0463775e8fb73f44750fbef
+      size: 6508188
   solve_openscholar@test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openscholar uv run --extra
       sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
@@ -3848,3 +3842,37 @@ stages:
       hash: md5
       md5: 86bd8ce6f2e7ceb394d8430ff43a6e37
       size: 1372454
+  solve_sqa@claude-4.6-test:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_claude-4.6 uv run --project
+      agent-baselines --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display
+      plain --log-dir test_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/sqa.py@sqa_solver
+      -T split=test -T scorer_model=google/gemini-3-flash-preview -S completion_model=claude-4.6
+      --limit=1000 --retry-on-error=10 --log-shared --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*claude-4.6.eval
+      2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.6.eval"
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-3-flash-preview
+        sqa_solver_version: may-23-2025
+    outs:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.6.eval
+      hash: md5
+      md5: 88e767e27d8d5a843dc16f5d5744f7d3
+      size: 1576969
+  solve_sqa@gemini-3.1-pro-preview-test:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_gemini-3.1-pro-preview
+      uv run --project agent-baselines --extra sqa inspect eval astabench/evals/sqa/task.py@sqa
+      --display plain --log-dir test_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/sqa.py@sqa_solver
+      -T split=test -T scorer_model=google/gemini-3-flash-preview -S completion_model=gemini-3.1-pro-preview
+      --limit=1000 --retry-on-error=10 --log-shared --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*gemini-3.1-pro-preview.eval
+      2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval"
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-3-flash-preview
+        sqa_solver_version: may-23-2025
+    outs:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      hash: md5
+      md5: 0c00ce90d2d86bd1aadbc1743aea07a9
+      size: 1576951

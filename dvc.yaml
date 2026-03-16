@@ -23,10 +23,10 @@ stages:
     # run the solver then rename the resulting file to have a nice name:
     cmd:
       INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_${item.model}
-      uv run --extra sqa
+      uv run --project agent-baselines --extra sqa
       inspect eval astabench/evals/sqa/task.py@sqa --display plain
       --log-dir ${item.split}_dvc_logs/solver_outputs/
-      --solver astabench/solvers/sqa/sqa.py@sqa_solver
+      --solver agent-baselines/agent_baselines/solvers/sqa/sqa.py@sqa_solver
       -T split=${item.split}
       -T scorer_model=${scorer_model}
       -S completion_model=${item.model}
@@ -50,10 +50,10 @@ stages:
     do:
       cmd:
         INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_elicit
-        uv run --extra sqa
+        uv run --project agent-baselines --extra sqa
         inspect eval astabench/evals/sqa/task.py@sqa --display plain
         --log-dir ${item}_dvc_logs/solver_outputs/
-        --solver astabench/solvers/sqa/elicit/memorized_solver.py@elicit_solver
+        --solver agent-baselines/agent_baselines/solvers/sqa/elicit/memorized_solver.py@elicit_solver
         -T split=${item}
         -T scorer_model=${scorer_model}
         --limit=${limit}
@@ -74,10 +74,10 @@ stages:
     do:
       cmd:
         INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_you
-        uv run --extra sqa
+        uv run --project agent-baselines --extra sqa
         inspect eval astabench/evals/sqa/task.py@sqa --display plain
         --log-dir ${item}_dvc_logs/solver_outputs/
-        --solver astabench/solvers/sqa/formatted_youcom.py@formatted_solver -S api_type='research'
+        --solver agent-baselines/agent_baselines/solvers/sqa/formatted_youcom.py@formatted_solver -S api_type='research'
         -T split=${item}
         -T scorer_model=${scorer_model}
         --limit=${limit}
@@ -98,12 +98,12 @@ stages:
     do:
       cmd:
         INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_perplexity_dr
-        uv run --extra sqa
+        uv run --project agent-baselines --extra sqa
         inspect eval astabench/evals/sqa/task.py@sqa --display plain
         --log-dir ${item}_dvc_logs/solver_outputs/
         -T with_search_tools=False
         --model 'perplexity/sonar-deep-research'
-        --solver astabench/solvers/sqa/formatted_perplexity.py@formatted_solver
+        --solver agent-baselines/agent_baselines/solvers/sqa/formatted_perplexity.py@formatted_solver
         -T split=${item}
         -T scorer_model=${scorer_model}
         --limit=${limit}
@@ -124,10 +124,10 @@ stages:
     do:
       cmd:
         INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_storm
-        uv run --extra storm --python 3.11
+        uv run --project agent-baselines/solvers/storm --python 3.11 --frozen --
         inspect eval astabench/evals/sqa/task.py@sqa --display plain
         --log-dir ${item}_dvc_logs/solver_outputs/
-        --solver astabench/solvers/sqa/storm_solver.py@storm_solver
+        --solver agent-baselines/agent_baselines/solvers/sqa/storm_solver.py@storm_solver
         -T split=${item}
         -T scorer_model=${scorer_model}
         --limit=${limit}
@@ -148,10 +148,10 @@ stages:
     # run the solver then rename the resulting file to have a nice name:
     cmd:
       INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_scispace
-      uv run
+      uv run --project agent-baselines
       inspect eval astabench/evals/sqa/task.py@sqa --display plain
       --log-dir ${item.split}_dvc_logs/solver_outputs/
-      --solver astabench/solvers/sqa/scispace/scispace.py@formatted_solver
+      --solver agent-baselines/agent_baselines/solvers/sqa/scispace/scispace.py@formatted_solver
       -T scorer_model=${scorer_model}
       -T split=${item.split}
       --limit=${limit}
@@ -174,11 +174,11 @@ stages:
     do:
       cmd:
         INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openscholar
-        uv run --extra sqa
+        uv run --project agent-baselines --extra sqa
         inspect eval astabench/evals/sqa/task.py@sqa --display plain
         --log-dir ${item}_dvc_logs/solver_outputs/
-        --solver astabench/solvers/sqa/openscholar/memorized_solver.py
-        -S path=astabench/solvers/sqa/openscholar/openscholar_cache_${item}.json
+        --solver agent-baselines/agent_baselines/solvers/sqa/openscholar/memorized_solver.py
+        -S path=agent-baselines/agent_baselines/solvers/sqa/openscholar/openscholar_cache_${item}.json
         -T scorer_model=${scorer_model}
         -T split=${item}
         --limit=${limit}
@@ -217,10 +217,10 @@ stages:
     # run the solver then rename the resulting file to have a nice name:
     cmd:
       INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_${item.model.llm_name}${item.model.suffix}
-      uv run --extra sqa
+      uv run --project agent-baselines --extra sqa
       inspect eval astabench/evals/sqa/task.py@sqa --display plain
       --log-dir ${item.split}_dvc_logs/solver_outputs/
-      --solver astabench/solvers/sqa/formatted_llm.py@formatted_solver
+      --solver agent-baselines/agent_baselines/solvers/sqa/formatted_llm.py@formatted_solver
       --model ${item.model.llm_name} ${item.model.llm_args}
       -T split=${item.split}
       -T scorer_model=${scorer_model}
@@ -251,10 +251,10 @@ stages:
     # run the solver then rename the resulting file to have a nice name:
     cmd:
       INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_${item.model.name}
-      uv run --extra futurehouse
+      uv run --project agent-baselines --extra futurehouse
       inspect eval astabench/evals/sqa/task.py@sqa --display plain
       --log-dir ${item.split}_dvc_logs/solver_outputs/
-      --solver astabench/solvers/futurehouse/futurehouse_solver.py
+      --solver agent-baselines/agent_baselines/solvers/futurehouse/futurehouse_solver.py
       -T scorer_model=${scorer_model}
       -T split=${item.split}
       -S max_wait_time=900 ${item.model.solver_args}
@@ -281,10 +281,10 @@ stages:
     # run the solver then rename the resulting file to have a nice name:
     cmd:
       INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_${item.model.name}
-      uv run --extra sqa
+      uv run --project agent-baselines --extra sqa
       inspect eval astabench/evals/sqa/task.py@sqa --display plain
       --log-dir ${item.split}_dvc_logs/solver_outputs/
-      --solver astabench/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
+      --solver agent-baselines/agent_baselines/solvers/sqa/general_memorized/memorized_solver.py@formatted_solver
       -T scorer_model=${scorer_model}
       -T split=${item.split}
       -S sys_name_or_path=${item.model.name} ${item.model.solver_args}
