@@ -629,6 +629,22 @@ def make_retry_wrapper(
     return wrapper
 
 
+def _wrap_title_match_not_found_as_empty(tool: ToolDef) -> None:
+    """Convert title-search misses into an empty result"""
+    origtool = tool.tool
+
+    @functools.wraps(origtool)
+    async def _req_wrapper(*args, **kwargs):
+        try:
+            return await origtool(*args, **kwargs)
+        except ToolError as exc:
+            if "title match not found" not in str(exc).lower():
+                raise
+            return [ContentText(type="text", text=json.dumps({"data": []}))]
+
+    tool.tool = _req_wrapper
+
+
 async def async_make_asta_mcp_tools(
     api_key: str | None = None, insertion_date: str | None = None
 ) -> list[Tool]:
@@ -749,6 +765,9 @@ async def async_make_asta_mcp_tools(
                         )
                     },
                 )
+
+        if td.name == "search_paper_by_title":
+            _wrap_title_match_not_found_as_empty(td)
 
         new_tools.append(td.as_tool())
 
