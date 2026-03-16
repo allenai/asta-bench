@@ -629,8 +629,24 @@ def make_retry_wrapper(
     return wrapper
 
 
+def _tool_error_attrs(exc: ToolError) -> dict[str, Any]:
+    """Collect visible non-callable attributes from a ToolError for debugging."""
+    attrs: dict[str, Any] = {}
+    for name in sorted(dir(exc)):
+        if name.startswith("_"):
+            continue
+        try:
+            value = getattr(exc, name)
+        except Exception:  # pragma: no cover - defensive logging path
+            continue
+        if callable(value):
+            continue
+        attrs[name] = value
+    return attrs
+
+
 def _wrap_title_match_not_found_as_empty(tool: ToolDef) -> None:
-    """Convert title-search misses into an empty result"""
+    """Convert title-search misses into an empty result."""
     origtool = tool.tool
 
     @functools.wraps(origtool)
@@ -638,9 +654,14 @@ def _wrap_title_match_not_found_as_empty(tool: ToolDef) -> None:
         try:
             return await origtool(*args, **kwargs)
         except ToolError as exc:
-            if "title match not found" not in str(exc).lower():
-                raise
-            return [ContentText(type="text", text=json.dumps({"data": []}))]
+            logger.info(
+                "search_paper_by_title ToolError details: type=%s attrs=%r",
+                type(exc).__name__,
+                _tool_error_attrs(exc),
+            )
+            if "title match not found" in exc.message.lower():
+                return [ContentText(type="text", text=json.dumps({"data": []}))]
+            raise
 
     tool.tool = _req_wrapper
 
