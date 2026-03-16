@@ -632,8 +632,8 @@ def make_retry_wrapper(
     return wrapper
 
 
-def _tool_error_attrs(exc: ToolError) -> dict[str, Any]:
-    """Collect visible non-callable attributes from a ToolError for debugging."""
+def _exception_attrs(exc: BaseException) -> dict[str, Any]:
+    """Collect visible non-callable attributes from an exception for debugging."""
     attrs: dict[str, Any] = {}
     for name in sorted(dir(exc)):
         if name.startswith("_"):
@@ -677,13 +677,24 @@ def _wrap_title_match_not_found_as_empty(tool: ToolDef) -> None:
                 result,
             )
             return result
-        except ToolError as exc:
+        except Exception as exc:
+            flattened_errors = _unravel_exception_group(exc)
             logger.warning(
-                "search_paper_by_title ToolError details: type=%s attrs=%r",
+                "search_paper_by_title exception details: type=%s attrs=%r flattened=%r",
                 type(exc).__name__,
-                _tool_error_attrs(exc),
+                _exception_attrs(exc),
+                [
+                    {
+                        "type": type(err).__name__,
+                        "attrs": _exception_attrs(err)
+                        if isinstance(err, BaseException)
+                        else repr(err),
+                    }
+                    for err in flattened_errors
+                ],
             )
-            if "title match not found" in exc.message.lower():
+            tool_errors = [err for err in flattened_errors if isinstance(err, ToolError)]
+            if any("title match not found" in err.message.lower() for err in tool_errors):
                 logger.warning(
                     "search_paper_by_title returning empty result for title miss: args=%r kwargs=%r",
                     args,
