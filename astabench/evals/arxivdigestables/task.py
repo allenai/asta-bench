@@ -199,7 +199,11 @@ def setup_snippet_tool() -> Solver:
                         }
                     )
             try:
-                return str(await snippet_tool(query, limit, paper_ids=paper_id_list))
+                return str(
+                    await snippet_tool(
+                        query=query, limit=limit, paper_ids=paper_id_list
+                    )
+                )
             except Exception as e:
                 return json.dumps({"exception": str(e)})
 
