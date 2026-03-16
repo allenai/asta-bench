@@ -639,8 +639,12 @@ def _wrap_title_match_not_found_as_empty(tool: ToolDef) -> None:
             return await origtool(*args, **kwargs)
         except Exception as exc:
             flattened_errors = _unravel_exception_group(exc)
-            tool_errors = [err for err in flattened_errors if isinstance(err, ToolError)]
-            if any("title match not found" in err.message.lower() for err in tool_errors):
+            tool_errors = [
+                err for err in flattened_errors if isinstance(err, ToolError)
+            ]
+            if any(
+                "title match not found" in err.message.lower() for err in tool_errors
+            ):
                 return [ContentText(type="text", text=json.dumps({"data": []}))]
             raise
 
