@@ -652,7 +652,14 @@ def _wrap_title_match_not_found_as_empty(tool: ToolDef) -> None:
     @functools.wraps(origtool)
     async def _req_wrapper(*args, **kwargs):
         try:
-            return await origtool(*args, **kwargs)
+            result = await origtool(*args, **kwargs)
+            logger.warning(
+                "search_paper_by_title success: args=%r kwargs=%r result=%r",
+                args,
+                kwargs,
+                result,
+            )
+            return result
         except ToolError as exc:
             logger.warning(
                 "search_paper_by_title ToolError details: type=%s attrs=%r",
@@ -660,6 +667,11 @@ def _wrap_title_match_not_found_as_empty(tool: ToolDef) -> None:
                 _tool_error_attrs(exc),
             )
             if "title match not found" in exc.message.lower():
+                logger.warning(
+                    "search_paper_by_title returning empty result for title miss: args=%r kwargs=%r",
+                    args,
+                    kwargs,
+                )
                 return [ContentText(type="text", text=json.dumps({"data": []}))]
             raise
 
