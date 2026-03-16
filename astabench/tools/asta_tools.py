@@ -553,7 +553,17 @@ def make_override_wrapper(
         # Overwrite for forced values
         kwargs.update(arg_overrides)
 
-        return await origtool(*args, **kwargs)
+        try:
+            return await origtool(*args, **kwargs)
+        except Exception:
+            logger.exception(
+                "make_override_wrapper call failed for %s (%s) with args=%r kwargs=%r",
+                td.name,
+                getattr(origtool, "__qualname__", repr(origtool)),
+                args,
+                kwargs,
+            )
+            raise
 
     # Remove forced values from signature so that the LLM doesn't see them
     original_signature = inspect.signature(origtool)
@@ -613,6 +623,13 @@ def make_retry_wrapper(
                     raise
 
                 if attempt >= max_retries:
+                    logger.exception(
+                        "make_retry_wrapper call failed for %s (%s) with args=%r kwargs=%r",
+                        td.name,
+                        getattr(origtool, "__qualname__", repr(origtool)),
+                        args,
+                        kwargs,
+                    )
                     msg = f"Tool {td.name} failed after {max_retries} retries with retryable error: {err_shortstring}"
                     logger.warning(msg)
                     raise ToolError(msg) from e
