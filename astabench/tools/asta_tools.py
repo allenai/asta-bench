@@ -36,9 +36,6 @@ from .search import (
 
 logger = logging.getLogger(__name__)
 
-DEBUG_FORCE_TITLE_MISS_ENV = "ASTABENCH_DEBUG_FORCE_TITLE_MISS"
-DEBUG_FORCE_TITLE_MISS_DEFAULT = "zzzz-codex-force-title-miss-9e4d5b1c"
-
 
 @asynccontextmanager
 async def fixed_streamablehttp_client(
@@ -632,74 +629,18 @@ def make_retry_wrapper(
     return wrapper
 
 
-def _exception_attrs(exc: BaseException) -> dict[str, Any]:
-    """Collect visible non-callable attributes from an exception for debugging."""
-    attrs: dict[str, Any] = {}
-    for name in sorted(dir(exc)):
-        if name.startswith("_"):
-            continue
-        try:
-            value = getattr(exc, name)
-        except Exception:  # pragma: no cover - defensive logging path
-            continue
-        if callable(value):
-            continue
-        attrs[name] = value
-    return attrs
-
-
 def _wrap_title_match_not_found_as_empty(tool: ToolDef) -> None:
     """Convert title-search misses into an empty result."""
     origtool = tool.tool
 
     @functools.wraps(origtool)
     async def _req_wrapper(*args, **kwargs):
-        call_kwargs = dict(kwargs)
-        debug_force_title = os.getenv(DEBUG_FORCE_TITLE_MISS_ENV)
-        if debug_force_title and "title" in call_kwargs:
-            forced_title = (
-                DEBUG_FORCE_TITLE_MISS_DEFAULT
-                if debug_force_title == "1"
-                else debug_force_title
-            )
-            logger.warning(
-                "search_paper_by_title forcing debug title miss: original_title=%r forced_title=%r",
-                call_kwargs.get("title"),
-                forced_title,
-            )
-            call_kwargs["title"] = forced_title
         try:
-            result = await origtool(*args, **call_kwargs)
-            logger.warning(
-                "search_paper_by_title success: args=%r kwargs=%r result=%r",
-                args,
-                call_kwargs,
-                result,
-            )
-            return result
+            return await origtool(*args, **kwargs)
         except Exception as exc:
             flattened_errors = _unravel_exception_group(exc)
-            logger.warning(
-                "search_paper_by_title exception details: type=%s attrs=%r flattened=%r",
-                type(exc).__name__,
-                _exception_attrs(exc),
-                [
-                    {
-                        "type": type(err).__name__,
-                        "attrs": _exception_attrs(err)
-                        if isinstance(err, BaseException)
-                        else repr(err),
-                    }
-                    for err in flattened_errors
-                ],
-            )
             tool_errors = [err for err in flattened_errors if isinstance(err, ToolError)]
             if any("title match not found" in err.message.lower() for err in tool_errors):
-                logger.warning(
-                    "search_paper_by_title returning empty result for title miss: args=%r kwargs=%r",
-                    args,
-                    call_kwargs,
-                )
                 return [ContentText(type="text", text=json.dumps({"data": []}))]
             raise
 
