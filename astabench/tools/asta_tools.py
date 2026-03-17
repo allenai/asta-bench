@@ -548,7 +548,8 @@ def make_override_wrapper(
     @functools.wraps(origtool)
     async def wrapper(*args, **kwargs):
         for arg_name, default_value in arg_defaults.items():
-            kwargs.setdefault(arg_name, default_value)
+            if kwargs.get(arg_name, inspect.Parameter.empty) is inspect.Parameter.empty:
+                kwargs[arg_name] = default_value
 
         # Overwrite for forced values
         kwargs.update(arg_overrides)
@@ -560,7 +561,7 @@ def make_override_wrapper(
 
     wrapper.__signature__ = original_signature.replace(  # type: ignore[attr-defined]
         parameters=[
-            p
+            p.replace(default=arg_defaults[p.name]) if p.name in arg_defaults else p
             for p in original_signature.parameters.values()
             if p.name not in arg_overrides
         ]
