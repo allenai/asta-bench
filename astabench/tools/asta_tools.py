@@ -37,11 +37,6 @@ from .search import (
 logger = logging.getLogger(__name__)
 
 
-def _log_tool_param_trace_enabled() -> bool:
-    value = os.getenv("ASTABENCH_LOG_TOOL_PARAMS", "")
-    return value.lower() in {"1", "true", "yes", "on"}
-
-
 @asynccontextmanager
 async def fixed_streamablehttp_client(
     url, headers=None, timeout=5, sse_read_timeout=300
@@ -552,25 +547,12 @@ def make_override_wrapper(
 
     @functools.wraps(origtool)
     async def wrapper(*args, **kwargs):
-        incoming_kwargs = dict(kwargs)
-
         for arg_name, default_value in arg_defaults.items():
             if kwargs.get(arg_name, inspect.Parameter.empty) is inspect.Parameter.empty:
                 kwargs[arg_name] = default_value
 
         # Overwrite for forced values
         kwargs.update(arg_overrides)
-
-        if _log_tool_param_trace_enabled():
-            logger.warning(
-                "Tool parameter trace for %s: args=%r incoming_kwargs=%r effective_kwargs=%r defaults=%r overrides=%r",
-                td.name,
-                args,
-                incoming_kwargs,
-                kwargs,
-                arg_defaults,
-                arg_overrides,
-            )
 
         return await origtool(*args, **kwargs)
 
