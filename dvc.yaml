@@ -317,7 +317,7 @@ stages:
         # sqa solvers:
         - name: sqa_claude-4.6
           is_retrieverless: false
-        - name: sqa_gemini-3.1
+        - name: sqa_gemini-3.1-pro-preview
           is_retrieverless: false
         - name: sqa_o3_high
           is_retrieverless: false
@@ -349,6 +349,7 @@ stages:
       cp ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_${item.model.name}.eval ${item.split}_dvc_logs/scored/task_sqa_solver_${item.model.name}.eval;
       uv run
       inspect score
+      --action overwrite
       --overwrite
       --display plain
       --scorer astabench/evals/sqa/task.py@score_all
@@ -373,7 +374,7 @@ stages:
         - google/gemini-3.1-pro-preview
         - anthropic/claude-sonnet-4-6
         - sqa_claude-4.6
-        - sqa_gemini-3.1
+        - sqa_gemini-3.1-pro-preview
         - sqa_o3_high
         - elicit
         - storm
@@ -407,7 +408,7 @@ stages:
         - google/gemini-3.1-pro-preview
         - anthropic/claude-sonnet-4-6
         - sqa_claude-4.6
-        - sqa_gemini-3.1
+        - sqa_gemini-3.1-pro-preview
         - sqa_o3_high
         - elicit
         - storm
@@ -439,7 +440,7 @@ stages:
         - google/gemini-3.1-pro-preview
         - anthropic/claude-sonnet-4-6
         - sqa_claude-4.6
-        - sqa_gemini-3.1
+        - sqa_gemini-3.1-pro-preview
         - sqa_o3_high
         - elicit
         - storm
