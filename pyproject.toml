@@ -46,6 +46,15 @@ dev = [
 azure = [
     "azure-ai-inference"
 ]
+sqa = [
+    "agent_baselines[sqa]",
+]
+futurehouse = [
+    "agent_baselines[futurehouse]",
+]
+storm = [
+    "agent_baselines[storm]",
+]
 
 [project.scripts]
 astabench = "astabench.cli:cli"
@@ -115,6 +124,7 @@ disable = [
 ]
 
 [tool.uv.sources]
+agent_baselines = { path = "agent-baselines" }
 knowledge-storm = { git = "https://github.com/gituser768/storm", branch = "dh-fix-youcom" }
 
 [tool.pytest.ini_options]
