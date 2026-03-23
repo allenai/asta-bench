@@ -548,7 +548,8 @@ def make_override_wrapper(
     @functools.wraps(origtool)
     async def wrapper(*args, **kwargs):
         for arg_name, default_value in arg_defaults.items():
-            kwargs.setdefault(arg_name, default_value)
+            if kwargs.get(arg_name, inspect.Parameter.empty) is inspect.Parameter.empty:
+                kwargs[arg_name] = default_value
 
         # Overwrite for forced values
         kwargs.update(arg_overrides)
@@ -560,7 +561,7 @@ def make_override_wrapper(
 
     wrapper.__signature__ = original_signature.replace(  # type: ignore[attr-defined]
         parameters=[
-            p
+            p.replace(default=arg_defaults[p.name]) if p.name in arg_defaults else p
             for p in original_signature.parameters.values()
             if p.name not in arg_overrides
         ]
@@ -629,6 +630,28 @@ def make_retry_wrapper(
     return wrapper
 
 
+def _wrap_title_match_not_found_as_empty(tool: ToolDef) -> None:
+    """Convert title-search misses into an empty result."""
+    origtool = tool.tool
+
+    @functools.wraps(origtool)
+    async def _req_wrapper(*args, **kwargs):
+        try:
+            return await origtool(*args, **kwargs)
+        except Exception as exc:
+            flattened_errors = _unravel_exception_group(exc)
+            tool_errors = [
+                err for err in flattened_errors if isinstance(err, ToolError)
+            ]
+            if any(
+                "title match not found" in err.message.lower() for err in tool_errors
+            ):
+                return [ContentText(type="text", text=json.dumps({"data": []}))]
+            raise
+
+    tool.tool = _req_wrapper
+
+
 async def async_make_asta_mcp_tools(
     api_key: str | None = None, insertion_date: str | None = None
 ) -> list[Tool]:
@@ -673,6 +696,8 @@ async def async_make_asta_mcp_tools(
 
         # Retry if we get rate-limited by Asta MCP
         td.tool = make_retry_wrapper(td)
+        combined_arg_defaults: dict[str, Any] = {}
+        combined_arg_overrides: dict[str, Any] = {}
 
         paper_fields_arg_name: str | None = None
         if "fields" in td.parameters.properties:
@@ -680,11 +705,12 @@ async def async_make_asta_mcp_tools(
         elif "paper_fields" in td.parameters.properties:
             paper_fields_arg_name = "paper_fields"
 
-        # The one order-dependent thing below is that we want default args to
-        # be applied before the subfield filters when the tools run, since the
-        # subfield filters check the passed args (and conditionally inject
-        # extra fields).  So, subfield filters should be pushed onto the
-        # wrapper-stack first so they are innermost at runtime.
+        # Ordering invariant: the combined override wrapper must remain
+        # outermost relative to the date/subfield filters, since those filters
+        # inspect the effective kwargs (for example `fields`) and assume any
+        # benchmark-specified defaults/overrides have already been applied.
+        # So, the date/subfield filters are installed first and remain
+        # innermost at runtime.
 
         if td.name == "search_authors_by_name":
             if insertion_date is not None:
@@ -696,10 +722,7 @@ async def async_make_asta_mcp_tools(
                     subfield_name="papers",
                     fields_arg_name="fields",
                 )
-            td.tool = make_override_wrapper(
-                td,
-                arg_defaults={"fields": AUTHOR_FIELDS},
-            )
+            combined_arg_defaults["fields"] = AUTHOR_FIELDS
             paper_fields_arg_name = None
         elif td.name in ["get_paper", "get_paper_batch"]:
             # For get_paper and get_paper_batch apply both top-level filtering
@@ -722,33 +745,29 @@ async def async_make_asta_mcp_tools(
                     fields_arg_name=paper_fields_arg_name,
                 )
 
-            td.tool = make_override_wrapper(
-                td,
-                arg_defaults={paper_fields_arg_name: PAPER_FIELDS},
-            )
+            combined_arg_defaults[paper_fields_arg_name] = PAPER_FIELDS
 
         if "limit" in td.parameters.properties:
-            td.tool = make_override_wrapper(
-                td,
-                arg_defaults={"limit": DEFAULT_RESULTS_LIMIT},
-            )
+            combined_arg_defaults["limit"] = DEFAULT_RESULTS_LIMIT
 
         # Add publication date filtering for tools that support it
         if insertion_date is not None:
             if "inserted_before" in td.parameters.properties:
-                td.tool = make_override_wrapper(
-                    td,
-                    arg_overrides={"inserted_before": insertion_date},
-                )
+                combined_arg_overrides["inserted_before"] = insertion_date
             elif "publication_date_range" in td.parameters.properties:
-                td.tool = make_override_wrapper(
-                    td,
-                    arg_overrides={
-                        "publication_date_range": _format_publication_before(
-                            insertion_date
-                        )
-                    },
+                combined_arg_overrides["publication_date_range"] = (
+                    _format_publication_before(insertion_date)
                 )
+
+        if combined_arg_defaults or combined_arg_overrides:
+            td.tool = make_override_wrapper(
+                td,
+                arg_defaults=combined_arg_defaults,
+                arg_overrides=combined_arg_overrides,
+            )
+
+        if td.name == "search_paper_by_title":
+            _wrap_title_match_not_found_as_empty(td)
 
         new_tools.append(td.as_tool())
 
