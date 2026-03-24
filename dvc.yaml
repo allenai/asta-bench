@@ -39,6 +39,9 @@ stages:
       - limit
       - scorer_model
       - sqa_solver_version
+    deps:
+      - agent-baselines/agent_baselines/solvers/sqa/sqa.py
+      - agent-baselines/agent_baselines/solvers/sqa/sqa_subprocess.py
     outs:
       - ${item.split}_dvc_logs/solver_outputs/task_sqa_solver_sqa_${item.model}.eval
 
