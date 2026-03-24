@@ -2916,8 +2916,8 @@ stages:
     deps:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
       hash: md5
-      md5: 0c00ce90d2d86bd1aadbc1743aea07a9
-      size: 1576951
+      md5: f0704bb08be81e64f61de8bad8869c57
+      size: 6218859
     params:
       params.yaml:
         scorer_model: google/gemini-3-flash-preview
@@ -2925,8 +2925,8 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
       hash: md5
-      md5: 67835012a4e9586b4bc685cc92d1f1ee
-      size: 1614108
+      md5: 509c201daa64d147a1b28a9a8096e968
+      size: 78679963
   score_all_solvers@model10-test:
     cmd: echo "Scoring";[[ "scispace" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_scispace;
       cp test_dvc_logs/solver_outputs/task_sqa_solver_scispace.eval test_dvc_logs/scored/task_sqa_solver_scispace.eval;
@@ -2996,8 +2996,8 @@ stages:
     deps:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_o3_high.eval
       hash: md5
-      md5: 36aa067ea0463775e8fb73f44750fbef
-      size: 6508188
+      md5: b84fd12987ed62bdff79a241f2c180d5
+      size: 11657084
     params:
       params.yaml:
         scorer_model: google/gemini-3-flash-preview
@@ -3005,8 +3005,8 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_sqa_o3_high.eval
       hash: md5
-      md5: c17ca82096f3c4174f2f406a7206100b
-      size: 6837685
+      md5: 08e87f32258505b156084691a4777e57
+      size: 134542173
   score_all_solvers@model16-test:
     cmd: echo "Scoring";[[ "openscholar" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_openscholar;
       cp test_dvc_logs/solver_outputs/task_sqa_solver_openscholar.eval test_dvc_logs/scored/task_sqa_solver_openscholar.eval;
@@ -3066,24 +3066,25 @@ stages:
       md5: 9f23b21841edbbdbaa9e4a67d4404377
       size: 15423266
   score_all_solvers@model7-dev:
-    cmd: echo "Scoring";[[ "sqa_claude-3.7" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7;
-      cp dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-3.7.eval dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval;
-      uv run inspect score --overwrite --display plain --scorer astabench/evals/sqa/task.py@score_all
-      -S scorer_model=google/gemini-2.5-pro -S is_retrieverless=false dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
+    cmd: echo "Scoring";[[ "sqa_o3_high" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_sqa_o3_high;
+      cp dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_o3_high.eval dev_dvc_logs/scored/task_sqa_solver_sqa_o3_high.eval;
+      uv run inspect score --action overwrite --overwrite --display plain --scorer
+      astabench/evals/sqa/task.py@score_all -S scorer_model=google/gemini-3-flash-preview
+      -S is_retrieverless=false dev_dvc_logs/scored/task_sqa_solver_sqa_o3_high.eval
     deps:
-    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-3.7.eval
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_o3_high.eval
       hash: md5
-      md5: f7d2bdc765e3dfdac4098687a48acdb2
-      size: 6977126
+      md5: af8988dccb45671721dead59433ea82d
+      size: 10237840
     params:
       params.yaml:
-        scorer_model: google/gemini-2.5-pro
-        sqa_scorer_version: may-23-2025
+        scorer_model: google/gemini-3-flash-preview
+        sqa_scorer_version: mar-09-2026
     outs:
-    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_o3_high.eval
       hash: md5
-      md5: ae4fbca2e9345d6573b8dad158a696bc
-      size: 17947538
+      md5: a8a477a26e82358281bd4264e2c66d3a
+      size: 129493763
   score_all_solvers@model16-dev:
     cmd: echo "Scoring";[[ "you" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_you;
       cp dev_dvc_logs/solver_outputs/task_sqa_solver_you.eval dev_dvc_logs/scored/task_sqa_solver_you.eval;
@@ -3180,24 +3181,25 @@ stages:
       md5: d555c72e642f5446c964ceec9228a4ce
       size: 7663908
   score_all_solvers@model6-dev:
-    cmd: echo "Scoring";[[ "sqa_claude-3.7" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7;
-      cp dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-3.7.eval dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval;
-      uv run inspect score --overwrite --display plain --scorer astabench/evals/sqa/task.py@score_all
-      -S scorer_model=google/gemini-2.5-pro -S is_retrieverless=false dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
+    cmd: echo "Scoring";[[ "sqa_gemini-3.1-pro-preview" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-3.1-pro-preview;
+      cp dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval; uv run
+      inspect score --action overwrite --overwrite --display plain --scorer astabench/evals/sqa/task.py@score_all
+      -S scorer_model=google/gemini-3-flash-preview -S is_retrieverless=false dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
     deps:
-    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-3.7.eval
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
       hash: md5
-      md5: f7d2bdc765e3dfdac4098687a48acdb2
-      size: 6977126
+      md5: cbed474ff0e51bccf71f70d8d9d5d0c8
+      size: 6467019
     params:
       params.yaml:
-        scorer_model: google/gemini-2.5-pro
-        sqa_scorer_version: may-23-2025
+        scorer_model: google/gemini-3-flash-preview
+        sqa_scorer_version: mar-09-2026
     outs:
-    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_claude-3.7.eval
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
       hash: md5
-      md5: ae4fbca2e9345d6573b8dad158a696bc
-      size: 17947538
+      md5: 4fdbc777c1b48ce65cf7039f2b280cdd
+      size: 88626955
   score_all_solvers@model14-dev:
     cmd: echo "Scoring";[[ "fhouse_falcon" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_fhouse_falcon;
       cp dev_dvc_logs/solver_outputs/task_sqa_solver_fhouse_falcon.eval dev_dvc_logs/scored/task_sqa_solver_fhouse_falcon.eval;
@@ -3246,8 +3248,8 @@ stages:
     deps:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.6.eval
       hash: md5
-      md5: 88e767e27d8d5a843dc16f5d5744f7d3
-      size: 1576969
+      md5: ef3ac8ff8f95d0fc5028e29002f8d46c
+      size: 7482873
     params:
       params.yaml:
         scorer_model: google/gemini-3-flash-preview
@@ -3255,8 +3257,8 @@ stages:
     outs:
     - path: test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.6.eval
       hash: md5
-      md5: 4677c9f160a9eae4cc068a0e83c9aee4
-      size: 1614239
+      md5: 696310ea4b179f4511f0cffb02a86af4
+      size: 103868942
   score_all_solvers@model3-test:
     cmd: echo "Scoring";[[ "google/gemini-3.1-pro-preview" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_google/gemini-3.1-pro-preview;
       cp test_dvc_logs/solver_outputs/task_sqa_solver_google/gemini-3.1-pro-preview.eval
@@ -3655,8 +3657,8 @@ stages:
     deps:
     - path: test_dvc_logs/scored/task_sqa_solver_sqa_o3_high.eval
       hash: md5
-      md5: 711b54ac018c9dc4f2cc190c3029c42e
-      size: 56666173
+      md5: 08e87f32258505b156084691a4777e57
+      size: 134542173
     outs:
     - path: test_dvc_logs/errors/task_sqa_solver_sqa_o3_high.md
       hash: md5
@@ -3664,7 +3666,7 @@ stages:
       size: 63
     - path: test_dvc_logs/scores/task_sqa_solver_sqa_o3_high.md
       hash: md5
-      md5: 8fd06b654672a9a890c1949d71418507
+      md5: 59c6df10258940cad8e0676c0fa662cd
       size: 255
   extract_model_responses@sqa_o3_high-test:
     cmd: echo "Extracting responses"; [[ "sqa_o3_high" == */* ]] && mkdir -p test_dvc_logs/model_responses/task_sqa_solver_$(dirname
@@ -3673,13 +3675,13 @@ stages:
     deps:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_o3_high.eval
       hash: md5
-      md5: 711b54ac018c9dc4f2cc190c3029c42e
-      size: 56666173
+      md5: b84fd12987ed62bdff79a241f2c180d5
+      size: 11657084
     outs:
     - path: test_dvc_logs/model_responses/task_sqa_solver_sqa_o3_high_responses.csv
       hash: md5
-      md5: 3b46e7a92b471a879d146238971303c3
-      size: 17090764
+      md5: c9744f72c4f17b5fdab08c385566bb9c
+      size: 16625320
   score_all_solvers@model18-test:
     cmd: echo "Scoring";[[ "perplexity_dr" == */* ]] && mkdir -p test_dvc_logs/scored/task_sqa_solver_perplexity_dr;
       cp test_dvc_logs/solver_outputs/task_sqa_solver_perplexity_dr.eval test_dvc_logs/scored/task_sqa_solver_perplexity_dr.eval;
@@ -3735,12 +3737,21 @@ stages:
       md5: 1444e580204b243a0ca753f3c13bb97e
       size: 8435874
   solve_sqa@o3_high-test:
-    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_o3_high uv run --extra
-      sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
-      --solver agent-baselines/agent_baselines/solvers/sqa/sqa.py@sqa_solver -T split=test
-      -T scorer_model=google/gemini-3-flash-preview -S completion_model=o3_high --limit=1000
-      --retry-on-error=10 --log-shared --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*o3_high.eval
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_o3_high uv run --project
+      agent-baselines --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display
+      plain --log-dir test_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/sqa.py@sqa_solver
+      -T split=test -T scorer_model=google/gemini-3-flash-preview -S completion_model=o3_high
+      --limit=1000 --retry-on-error=10 --log-shared --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*o3_high.eval
       2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_sqa_o3_high.eval"
+    deps:
+    - path: agent-baselines/agent_baselines/solvers/sqa/sqa.py
+      hash: md5
+      md5: 45aeed65c5f153adcacc3d447ea98238
+      size: 9957
+    - path: agent-baselines/agent_baselines/solvers/sqa/sqa_subprocess.py
+      hash: md5
+      md5: a127d3e76be6bb990bf79d0a610c9266
+      size: 712
     params:
       params.yaml:
         limit: 1000
@@ -3749,8 +3760,8 @@ stages:
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_o3_high.eval
       hash: md5
-      md5: 36aa067ea0463775e8fb73f44750fbef
-      size: 6508188
+      md5: b84fd12987ed62bdff79a241f2c180d5
+      size: 11657084
   solve_openscholar@test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_openscholar uv run --extra
       sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
@@ -3847,12 +3858,21 @@ stages:
       md5: 86bd8ce6f2e7ceb394d8430ff43a6e37
       size: 1372454
   solve_sqa@claude-4.6-test:
-    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_claude-4.6 uv run --extra
-      sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain --log-dir test_dvc_logs/solver_outputs/
-      --solver agent-baselines/agent_baselines/solvers/sqa/sqa.py@sqa_solver -T split=test
-      -T scorer_model=google/gemini-3-flash-preview -S completion_model=claude-4.6
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_claude-4.6 uv run --project
+      agent-baselines --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display
+      plain --log-dir test_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/sqa.py@sqa_solver
+      -T split=test -T scorer_model=google/gemini-3-flash-preview -S completion_model=claude-4.6
       --limit=1000 --retry-on-error=10 --log-shared --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*claude-4.6.eval
       2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.6.eval"
+    deps:
+    - path: agent-baselines/agent_baselines/solvers/sqa/sqa.py
+      hash: md5
+      md5: 45aeed65c5f153adcacc3d447ea98238
+      size: 9957
+    - path: agent-baselines/agent_baselines/solvers/sqa/sqa_subprocess.py
+      hash: md5
+      md5: a127d3e76be6bb990bf79d0a610c9266
+      size: 712
     params:
       params.yaml:
         limit: 1000
@@ -3861,15 +3881,24 @@ stages:
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.6.eval
       hash: md5
-      md5: 88e767e27d8d5a843dc16f5d5744f7d3
-      size: 1576969
+      md5: ef3ac8ff8f95d0fc5028e29002f8d46c
+      size: 7482873
   solve_sqa@gemini-3.1-pro-preview-test:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_gemini-3.1-pro-preview
-      uv run --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display plain
-      --log-dir test_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/sqa.py@sqa_solver
+      uv run --project agent-baselines --extra sqa inspect eval astabench/evals/sqa/task.py@sqa
+      --display plain --log-dir test_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/sqa.py@sqa_solver
       -T split=test -T scorer_model=google/gemini-3-flash-preview -S completion_model=gemini-3.1-pro-preview
       --limit=1000 --retry-on-error=10 --log-shared --no-score; mv "$(ls -t test_dvc_logs/solver_outputs/*gemini-3.1-pro-preview.eval
       2>/dev/null | head -n1)" "test_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval"
+    deps:
+    - path: agent-baselines/agent_baselines/solvers/sqa/sqa.py
+      hash: md5
+      md5: 45aeed65c5f153adcacc3d447ea98238
+      size: 9957
+    - path: agent-baselines/agent_baselines/solvers/sqa/sqa_subprocess.py
+      hash: md5
+      md5: a127d3e76be6bb990bf79d0a610c9266
+      size: 712
     params:
       params.yaml:
         limit: 1000
@@ -3878,8 +3907,8 @@ stages:
     outs:
     - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
       hash: md5
-      md5: 0c00ce90d2d86bd1aadbc1743aea07a9
-      size: 1576951
+      md5: f0704bb08be81e64f61de8bad8869c57
+      size: 6218859
   solve_futurehouse@model0-dev:
     cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_fhouse_crow uv run --project
       agent-baselines --extra futurehouse inspect eval astabench/evals/sqa/task.py@sqa
@@ -3915,3 +3944,431 @@ stages:
       hash: md5
       md5: 2e13a36648af258fdb5bc75d71b00742
       size: 1195707
+  solve_sqa@o3_high-dev:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_o3_high uv run --project
+      agent-baselines --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display
+      plain --log-dir dev_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/sqa.py@sqa_solver
+      -T split=dev -T scorer_model=google/gemini-3-flash-preview -S completion_model=o3_high
+      --limit=1000 --retry-on-error=10 --log-shared --no-score; mv "$(ls -t dev_dvc_logs/solver_outputs/*o3_high.eval
+      2>/dev/null | head -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_o3_high.eval"
+    deps:
+    - path: agent-baselines/agent_baselines/solvers/sqa/sqa.py
+      hash: md5
+      md5: 45aeed65c5f153adcacc3d447ea98238
+      size: 9957
+    - path: agent-baselines/agent_baselines/solvers/sqa/sqa_subprocess.py
+      hash: md5
+      md5: a127d3e76be6bb990bf79d0a610c9266
+      size: 712
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-3-flash-preview
+        sqa_solver_version: may-23-2025
+    outs:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_o3_high.eval
+      hash: md5
+      md5: af8988dccb45671721dead59433ea82d
+      size: 10237840
+  solve_sqa@claude-4.6-dev:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_claude-4.6 uv run --project
+      agent-baselines --extra sqa inspect eval astabench/evals/sqa/task.py@sqa --display
+      plain --log-dir dev_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/sqa.py@sqa_solver
+      -T split=dev -T scorer_model=google/gemini-3-flash-preview -S completion_model=claude-4.6
+      --limit=1000 --retry-on-error=10 --log-shared --no-score; mv "$(ls -t dev_dvc_logs/solver_outputs/*claude-4.6.eval
+      2>/dev/null | head -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.6.eval"
+    deps:
+    - path: agent-baselines/agent_baselines/solvers/sqa/sqa.py
+      hash: md5
+      md5: 45aeed65c5f153adcacc3d447ea98238
+      size: 9957
+    - path: agent-baselines/agent_baselines/solvers/sqa/sqa_subprocess.py
+      hash: md5
+      md5: a127d3e76be6bb990bf79d0a610c9266
+      size: 712
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-3-flash-preview
+        sqa_solver_version: may-23-2025
+    outs:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.6.eval
+      hash: md5
+      md5: 1e9a28fec72a6077240104f2ce1cc1cf
+      size: 7465958
+  score_all_solvers@model5-dev:
+    cmd: echo "Scoring";[[ "sqa_claude-4.6" == */* ]] && mkdir -p dev_dvc_logs/scored/task_sqa_solver_sqa_claude-4.6;
+      cp dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.6.eval dev_dvc_logs/scored/task_sqa_solver_sqa_claude-4.6.eval;
+      uv run inspect score --action overwrite --overwrite --display plain --scorer
+      astabench/evals/sqa/task.py@score_all -S scorer_model=google/gemini-3-flash-preview
+      -S is_retrieverless=false dev_dvc_logs/scored/task_sqa_solver_sqa_claude-4.6.eval
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.6.eval
+      hash: md5
+      md5: 1e9a28fec72a6077240104f2ce1cc1cf
+      size: 7465958
+    params:
+      params.yaml:
+        scorer_model: google/gemini-3-flash-preview
+        sqa_scorer_version: mar-09-2026
+    outs:
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_claude-4.6.eval
+      hash: md5
+      md5: 56b55f652bf08d6a927f1d5b5740b255
+      size: 106144422
+  create_nice_logs@sqa_claude-4.6-dev:
+    cmd: echo "Creating logs"; [[ "sqa_claude-4.6" == */* ]] && mkdir -p dev_dvc_logs/debug_logs/task_sqa_solver_$(dirname
+      "sqa_claude-4.6"); uv run scripts/create_debug_logs.py dev_dvc_logs/scored/
+      task_sqa_solver_sqa_claude-4.6.eval dev_dvc_logs/debug_logs/
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_claude-4.6.eval
+      hash: md5
+      md5: 56b55f652bf08d6a927f1d5b5740b255
+      size: 106144422
+    params:
+      params.yaml:
+        scorer_model: google/gemini-3-flash-preview
+    outs:
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.6_answer_precision_eval.csv
+      hash: md5
+      md5: 8476eab180a144e5d8b9e243b5b6e4f5
+      size: 15194608
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.6_citation_eval.csv
+      hash: md5
+      md5: 0066c1d4998f7e6c2e511bca70887b9d
+      size: 91757785
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.6_rubric_eval.csv
+      hash: md5
+      md5: a870b384bcf04f29fdf3fbb2f080d48f
+      size: 14844789
+  create_nice_logs@sqa_o3_high-dev:
+    cmd: echo "Creating logs"; [[ "sqa_o3_high" == */* ]] && mkdir -p dev_dvc_logs/debug_logs/task_sqa_solver_$(dirname
+      "sqa_o3_high"); uv run scripts/create_debug_logs.py dev_dvc_logs/scored/ task_sqa_solver_sqa_o3_high.eval
+      dev_dvc_logs/debug_logs/
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_o3_high.eval
+      hash: md5
+      md5: a8a477a26e82358281bd4264e2c66d3a
+      size: 129493763
+    params:
+      params.yaml:
+        scorer_model: google/gemini-3-flash-preview
+    outs:
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_o3_high_answer_precision_eval.csv
+      hash: md5
+      md5: ac887eb880a3273d2e5380304046736b
+      size: 20150178
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_o3_high_citation_eval.csv
+      hash: md5
+      md5: f530b493d460dc9a11be8abdf6356024
+      size: 143239090
+    - path: dev_dvc_logs/debug_logs/task_sqa_solver_sqa_o3_high_rubric_eval.csv
+      hash: md5
+      md5: 8be632f12a365cf6840a935576b6577b
+      size: 19154600
+  log_any_remaining_errors_and_record_scores@sqa_o3_high-dev:
+    cmd: echo "Collecting errors";[[ "sqa_o3_high" == */* ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname
+      "sqa_o3_high"); mkdir -p dev_dvc_logs/scores/task_sqa_solver_$(dirname "sqa_o3_high");
+      uv run scripts/log_errors.py dev_dvc_logs/scored/task_sqa_solver_sqa_o3_high.eval
+      dev_dvc_logs/errors/task_sqa_solver_sqa_o3_high.md dev_dvc_logs/scores/task_sqa_solver_sqa_o3_high.md
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_o3_high.eval
+      hash: md5
+      md5: a8a477a26e82358281bd4264e2c66d3a
+      size: 129493763
+    outs:
+    - path: dev_dvc_logs/errors/task_sqa_solver_sqa_o3_high.md
+      hash: md5
+      md5: d51d4f783de486edccf22aea1a28d40d
+      size: 63
+    - path: dev_dvc_logs/scores/task_sqa_solver_sqa_o3_high.md
+      hash: md5
+      md5: 361a16c88aa64c1da7c769091d008b04
+      size: 256
+  solve_sqa@gemini-3.1-pro-preview-dev:
+    cmd: INSPECT_EVAL_LOG_FILE_PATTERN=task_sqa_solver_sqa_gemini-3.1-pro-preview
+      uv run --project agent-baselines --extra sqa inspect eval astabench/evals/sqa/task.py@sqa
+      --display plain --log-dir dev_dvc_logs/solver_outputs/ --solver agent-baselines/agent_baselines/solvers/sqa/sqa.py@sqa_solver
+      -T split=dev -T scorer_model=google/gemini-3-flash-preview -S completion_model=gemini-3.1-pro-preview
+      --limit=1000 --retry-on-error=10 --log-shared --no-score; mv "$(ls -t dev_dvc_logs/solver_outputs/*gemini-3.1-pro-preview.eval
+      2>/dev/null | head -n1)" "dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval"
+    deps:
+    - path: agent-baselines/agent_baselines/solvers/sqa/sqa.py
+      hash: md5
+      md5: 45aeed65c5f153adcacc3d447ea98238
+      size: 9957
+    - path: agent-baselines/agent_baselines/solvers/sqa/sqa_subprocess.py
+      hash: md5
+      md5: a127d3e76be6bb990bf79d0a610c9266
+      size: 712
+    params:
+      params.yaml:
+        limit: 1000
+        scorer_model: google/gemini-3-flash-preview
+        sqa_solver_version: may-23-2025
+    outs:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      hash: md5
+      md5: cbed474ff0e51bccf71f70d8d9d5d0c8
+      size: 6467019
+  log_any_remaining_errors_and_record_scores@sqa_gemini-3.1-pro-preview-test:
+    cmd: echo "Collecting errors";[[ "sqa_gemini-3.1-pro-preview" == */* ]] && mkdir
+      -p test_dvc_logs/errors/task_sqa_solver_$(dirname "sqa_gemini-3.1-pro-preview");
+      mkdir -p test_dvc_logs/scores/task_sqa_solver_$(dirname "sqa_gemini-3.1-pro-preview");
+      uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      test_dvc_logs/errors/task_sqa_solver_sqa_gemini-3.1-pro-preview.md test_dvc_logs/scores/task_sqa_solver_sqa_gemini-3.1-pro-preview.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      hash: md5
+      md5: 509c201daa64d147a1b28a9a8096e968
+      size: 78679963
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_sqa_gemini-3.1-pro-preview.md
+      hash: md5
+      md5: a3bc09c12b07468c5f0d55dfa997996c
+      size: 30307
+    - path: test_dvc_logs/scores/task_sqa_solver_sqa_gemini-3.1-pro-preview.md
+      hash: md5
+      md5: 63bd872fbfe5144f5f03028c2e38f622
+      size: 255
+  extract_model_responses@sqa_gemini-3.1-pro-preview-test:
+    cmd: echo "Extracting responses"; [[ "sqa_gemini-3.1-pro-preview" == */* ]] &&
+      mkdir -p test_dvc_logs/model_responses/task_sqa_solver_$(dirname "sqa_gemini-3.1-pro-preview");
+      uv run scripts/extract_model_responses.py test_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      test_dvc_logs/model_responses/task_sqa_solver_sqa_gemini-3.1-pro-preview_responses.csv
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      hash: md5
+      md5: f0704bb08be81e64f61de8bad8869c57
+      size: 6218859
+    outs:
+    - path: 
+        test_dvc_logs/model_responses/task_sqa_solver_sqa_gemini-3.1-pro-preview_responses.csv
+      hash: md5
+      md5: 340b4f59929ea22254ac228b59163219
+      size: 8492028
+  log_any_remaining_errors_and_record_scores@sqa_claude-4.6-dev:
+    cmd: echo "Collecting errors";[[ "sqa_claude-4.6" == */* ]] && mkdir -p dev_dvc_logs/errors/task_sqa_solver_$(dirname
+      "sqa_claude-4.6"); mkdir -p dev_dvc_logs/scores/task_sqa_solver_$(dirname "sqa_claude-4.6");
+      uv run scripts/log_errors.py dev_dvc_logs/scored/task_sqa_solver_sqa_claude-4.6.eval
+      dev_dvc_logs/errors/task_sqa_solver_sqa_claude-4.6.md dev_dvc_logs/scores/task_sqa_solver_sqa_claude-4.6.md
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_claude-4.6.eval
+      hash: md5
+      md5: 56b55f652bf08d6a927f1d5b5740b255
+      size: 106144422
+    outs:
+    - path: dev_dvc_logs/errors/task_sqa_solver_sqa_claude-4.6.md
+      hash: md5
+      md5: d51d4f783de486edccf22aea1a28d40d
+      size: 63
+    - path: dev_dvc_logs/scores/task_sqa_solver_sqa_claude-4.6.md
+      hash: md5
+      md5: 1325c56a874ce8e4daeaa5e81269b1e4
+      size: 256
+  create_nice_logs@sqa_o3_high-test:
+    cmd: echo "Creating logs"; [[ "sqa_o3_high" == */* ]] && mkdir -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname
+      "sqa_o3_high"); uv run scripts/create_debug_logs.py test_dvc_logs/scored/ task_sqa_solver_sqa_o3_high.eval
+      test_dvc_logs/debug_logs/
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_sqa_o3_high.eval
+      hash: md5
+      md5: 08e87f32258505b156084691a4777e57
+      size: 134542173
+    params:
+      params.yaml:
+        scorer_model: google/gemini-3-flash-preview
+    outs:
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_sqa_o3_high_answer_precision_eval.csv
+      hash: md5
+      md5: d9d7fad75cba22b0e00cad964a82ee09
+      size: 23977952
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_sqa_o3_high_citation_eval.csv
+      hash: md5
+      md5: d027dfeb1e582a083b3aa403a4fdbe0e
+      size: 184361555
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_sqa_o3_high_rubric_eval.csv
+      hash: md5
+      md5: 6277fc48ce5a9d1c6a3a8336f0b8fe2c
+      size: 22253619
+  extract_model_responses@sqa_claude-4.6-dev:
+    cmd: echo "Extracting responses"; [[ "sqa_claude-4.6" == */* ]] && mkdir -p dev_dvc_logs/model_responses/task_sqa_solver_$(dirname
+      "sqa_claude-4.6"); uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.6.eval
+      dev_dvc_logs/model_responses/task_sqa_solver_sqa_claude-4.6_responses.csv
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.6.eval
+      hash: md5
+      md5: 1e9a28fec72a6077240104f2ce1cc1cf
+      size: 7465958
+    outs:
+    - path: dev_dvc_logs/model_responses/task_sqa_solver_sqa_claude-4.6_responses.csv
+      hash: md5
+      md5: 215866cacf7a1a8d777d33e83cdc0d42
+      size: 10190157
+  extract_model_responses@sqa_claude-4.6-test:
+    cmd: echo "Extracting responses"; [[ "sqa_claude-4.6" == */* ]] && mkdir -p test_dvc_logs/model_responses/task_sqa_solver_$(dirname
+      "sqa_claude-4.6"); uv run scripts/extract_model_responses.py test_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.6.eval
+      test_dvc_logs/model_responses/task_sqa_solver_sqa_claude-4.6_responses.csv
+    deps:
+    - path: test_dvc_logs/solver_outputs/task_sqa_solver_sqa_claude-4.6.eval
+      hash: md5
+      md5: ef3ac8ff8f95d0fc5028e29002f8d46c
+      size: 7482873
+    outs:
+    - path: test_dvc_logs/model_responses/task_sqa_solver_sqa_claude-4.6_responses.csv
+      hash: md5
+      md5: 11056e2841066f910c9a20cdbe57c2d6
+      size: 10108274
+  create_nice_logs@sqa_claude-4.6-test:
+    cmd: echo "Creating logs"; [[ "sqa_claude-4.6" == */* ]] && mkdir -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname
+      "sqa_claude-4.6"); uv run scripts/create_debug_logs.py test_dvc_logs/scored/
+      task_sqa_solver_sqa_claude-4.6.eval test_dvc_logs/debug_logs/
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.6.eval
+      hash: md5
+      md5: 696310ea4b179f4511f0cffb02a86af4
+      size: 103868942
+    params:
+      params.yaml:
+        scorer_model: google/gemini-3-flash-preview
+    outs:
+    - path: 
+        test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.6_answer_precision_eval.csv
+      hash: md5
+      md5: a7c482283024eac90b33975e5e833c2f
+      size: 15052564
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.6_citation_eval.csv
+      hash: md5
+      md5: 53d094e655f6e31c4f0e4e1949a2cc1f
+      size: 90802762
+    - path: test_dvc_logs/debug_logs/task_sqa_solver_sqa_claude-4.6_rubric_eval.csv
+      hash: md5
+      md5: 9fea6589050fd031ea658b5f57ab9f4f
+      size: 14660996
+  create_nice_logs@sqa_gemini-3.1-pro-preview-test:
+    cmd: echo "Creating logs"; [[ "sqa_gemini-3.1-pro-preview" == */* ]] && mkdir
+      -p test_dvc_logs/debug_logs/task_sqa_solver_$(dirname "sqa_gemini-3.1-pro-preview");
+      uv run scripts/create_debug_logs.py test_dvc_logs/scored/ task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      test_dvc_logs/debug_logs/
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      hash: md5
+      md5: 509c201daa64d147a1b28a9a8096e968
+      size: 78679963
+    params:
+      params.yaml:
+        scorer_model: google/gemini-3-flash-preview
+    outs:
+    - path: 
+        test_dvc_logs/debug_logs/task_sqa_solver_sqa_gemini-3.1-pro-preview_answer_precision_eval.csv
+      hash: md5
+      md5: 202667a438fa88c60c851f1435d6cc74
+      size: 12993016
+    - path: 
+        test_dvc_logs/debug_logs/task_sqa_solver_sqa_gemini-3.1-pro-preview_citation_eval.csv
+      hash: md5
+      md5: d80c9bde6669317c8e90377d2c9e39bf
+      size: 70733966
+    - path: 
+        test_dvc_logs/debug_logs/task_sqa_solver_sqa_gemini-3.1-pro-preview_rubric_eval.csv
+      hash: md5
+      md5: a323039768948c6620b3bc5c0ddf1562
+      size: 12781983
+  log_any_remaining_errors_and_record_scores@sqa_gemini-3.1-pro-preview-dev:
+    cmd: echo "Collecting errors";[[ "sqa_gemini-3.1-pro-preview" == */* ]] && mkdir
+      -p dev_dvc_logs/errors/task_sqa_solver_$(dirname "sqa_gemini-3.1-pro-preview");
+      mkdir -p dev_dvc_logs/scores/task_sqa_solver_$(dirname "sqa_gemini-3.1-pro-preview");
+      uv run scripts/log_errors.py dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      dev_dvc_logs/errors/task_sqa_solver_sqa_gemini-3.1-pro-preview.md dev_dvc_logs/scores/task_sqa_solver_sqa_gemini-3.1-pro-preview.md
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      hash: md5
+      md5: 4fdbc777c1b48ce65cf7039f2b280cdd
+      size: 88626955
+    outs:
+    - path: dev_dvc_logs/errors/task_sqa_solver_sqa_gemini-3.1-pro-preview.md
+      hash: md5
+      md5: 8724eaf86f64b1311df733a31b2a23f2
+      size: 45811
+    - path: dev_dvc_logs/scores/task_sqa_solver_sqa_gemini-3.1-pro-preview.md
+      hash: md5
+      md5: d813e4e2728ca1c9c63e46ad793fc82b
+      size: 255
+  extract_model_responses@sqa_o3_high-dev:
+    cmd: echo "Extracting responses"; [[ "sqa_o3_high" == */* ]] && mkdir -p dev_dvc_logs/model_responses/task_sqa_solver_$(dirname
+      "sqa_o3_high"); uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_o3_high.eval
+      dev_dvc_logs/model_responses/task_sqa_solver_sqa_o3_high_responses.csv
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_o3_high.eval
+      hash: md5
+      md5: af8988dccb45671721dead59433ea82d
+      size: 10237840
+    outs:
+    - path: dev_dvc_logs/model_responses/task_sqa_solver_sqa_o3_high_responses.csv
+      hash: md5
+      md5: c789e14f0b3ec9e09b189723a27c4203
+      size: 13934544
+  create_nice_logs@sqa_gemini-3.1-pro-preview-dev:
+    cmd: echo "Creating logs"; [[ "sqa_gemini-3.1-pro-preview" == */* ]] && mkdir
+      -p dev_dvc_logs/debug_logs/task_sqa_solver_$(dirname "sqa_gemini-3.1-pro-preview");
+      uv run scripts/create_debug_logs.py dev_dvc_logs/scored/ task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      dev_dvc_logs/debug_logs/
+    deps:
+    - path: dev_dvc_logs/scored/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      hash: md5
+      md5: 4fdbc777c1b48ce65cf7039f2b280cdd
+      size: 88626955
+    params:
+      params.yaml:
+        scorer_model: google/gemini-3-flash-preview
+    outs:
+    - path: 
+        dev_dvc_logs/debug_logs/task_sqa_solver_sqa_gemini-3.1-pro-preview_answer_precision_eval.csv
+      hash: md5
+      md5: 41a0931d5caba776709fa2a8e139999f
+      size: 14292940
+    - path: 
+        dev_dvc_logs/debug_logs/task_sqa_solver_sqa_gemini-3.1-pro-preview_citation_eval.csv
+      hash: md5
+      md5: 2aea34650fcf7c3888592a6b4608484c
+      size: 79977272
+    - path: 
+        dev_dvc_logs/debug_logs/task_sqa_solver_sqa_gemini-3.1-pro-preview_rubric_eval.csv
+      hash: md5
+      md5: 7067909219048d538c53daada5a0c6e3
+      size: 13789837
+  extract_model_responses@sqa_gemini-3.1-pro-preview-dev:
+    cmd: echo "Extracting responses"; [[ "sqa_gemini-3.1-pro-preview" == */* ]] &&
+      mkdir -p dev_dvc_logs/model_responses/task_sqa_solver_$(dirname "sqa_gemini-3.1-pro-preview");
+      uv run scripts/extract_model_responses.py dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      dev_dvc_logs/model_responses/task_sqa_solver_sqa_gemini-3.1-pro-preview_responses.csv
+    deps:
+    - path: dev_dvc_logs/solver_outputs/task_sqa_solver_sqa_gemini-3.1-pro-preview.eval
+      hash: md5
+      md5: cbed474ff0e51bccf71f70d8d9d5d0c8
+      size: 6467019
+    outs:
+    - path: 
+        dev_dvc_logs/model_responses/task_sqa_solver_sqa_gemini-3.1-pro-preview_responses.csv
+      hash: md5
+      md5: 9a275b862ae580682e776e3765906097
+      size: 9171862
+  log_any_remaining_errors_and_record_scores@sqa_claude-4.6-test:
+    cmd: echo "Collecting errors";[[ "sqa_claude-4.6" == */* ]] && mkdir -p test_dvc_logs/errors/task_sqa_solver_$(dirname
+      "sqa_claude-4.6"); mkdir -p test_dvc_logs/scores/task_sqa_solver_$(dirname "sqa_claude-4.6");
+      uv run scripts/log_errors.py test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.6.eval
+      test_dvc_logs/errors/task_sqa_solver_sqa_claude-4.6.md test_dvc_logs/scores/task_sqa_solver_sqa_claude-4.6.md
+    deps:
+    - path: test_dvc_logs/scored/task_sqa_solver_sqa_claude-4.6.eval
+      hash: md5
+      md5: 696310ea4b179f4511f0cffb02a86af4
+      size: 103868942
+    outs:
+    - path: test_dvc_logs/errors/task_sqa_solver_sqa_claude-4.6.md
+      hash: md5
+      md5: 94a1c1680717a158e7f16dfc642bc55c
+      size: 15167
+    - path: test_dvc_logs/scores/task_sqa_solver_sqa_claude-4.6.md
+      hash: md5
+      md5: e597800f5c4eac984aad9a6f16bef594
+      size: 255
