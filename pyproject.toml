@@ -9,10 +9,10 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "inspect_ai==0.3.114",
-    "agent-eval==0.1.44",
+    "agent-eval[leaderboard]==0.1.46",
     "openai>=1.78.0", # required by inspect
     "pydantic>=2.11.4", # required by inspect
-    "litellm==1.75.8",
+    "litellm==1.82.3",
     "datasets~=3.2.0",
     "huggingface_hub",
     "google-genai>=1.16.1",
@@ -28,7 +28,7 @@ dependencies = [
     "scipy",
     "anthropic>=0.52.0",
     "platformdirs",
-    "numpy"
+    "numpy",
 ]
 
 [project.optional-dependencies]
