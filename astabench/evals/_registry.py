@@ -35,6 +35,12 @@ from .paper_finder import (
     paper_finder_test,
     paper_finder_validation,
 )
+from .map_my_cell import (
+    map_my_cell,
+    map_my_cell_find_papers,
+    map_my_cell_match_names,
+    map_my_cell_resolve_canonical,
+)
 from .sqa import sqa, sqa_dev, sqa_test
 from .super import super, super_test, super_validation
 
@@ -75,4 +81,8 @@ __all__ = [
     "e2e_discovery_validation",
     "e2e_discovery_hard_test",
     "e2e_discovery_hard_validation",
+    "map_my_cell",
+    "map_my_cell_find_papers",
+    "map_my_cell_match_names",
+    "map_my_cell_resolve_canonical",
 ]

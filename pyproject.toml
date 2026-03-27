@@ -46,6 +46,9 @@ dev = [
 azure = [
     "azure-ai-inference"
 ]
+sea-ad-agent = [
+    "claude-agent-sdk>=0.1"
+]
 
 [project.scripts]
 astabench = "astabench.cli:cli"
@@ -102,7 +105,7 @@ disable = [
 ]
 
 [tool.setuptools.package-data]
-"astabench" = ["config/*.yml", "evals/inspect_eval_wrappers/ds1000_splits.json", "util/sandbox/sandbox_compose.yaml", "util/sandbox/Dockerfile", "util/sandbox/*.txt", "evals/demo/code_execution/*.yaml", "evals/demo/arithmetic/data.json"]
+"astabench" = ["config/*.yml", "evals/inspect_eval_wrappers/ds1000_splits.json", "util/sandbox/sandbox_compose.yaml", "util/sandbox/Dockerfile", "util/sandbox/*.txt", "evals/demo/code_execution/*.yaml", "evals/demo/arithmetic/data.json", "evals/map_my_cell/data.json"]
 "inspect_evals.core_bench" = [
     "*.json",
     "*.yaml",
