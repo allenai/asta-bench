@@ -1,0 +1,891 @@
+{
+  "version": "0.1.0",
+  "description": "Cell type literature recall benchmark seeded from Gouwens & Tasic MET-type classification. For each cell type, the agent must find papers from the known previous_work citations.",
+  "source": "gouwens_tasic_byCellType.csv \u2014 Gouwens et al. 2020 Cell, integrated morphoelectric and transcriptomic classification",
+  "examples": [
+    {
+      "id": "lamp5_met_1",
+      "cell_type": "Lamp5-MET-1",
+      "ground_truth_papers": [
+        {
+          "citation": "Jiang et al., 2015",
+          "corpusId": "4469544",
+          "title": "Principles of connectivity among morphologically defined cell types in adult neocortex",
+          "year": 2015,
+          "paperId": "667be50b805b2ac510150821c68e9f911cbe0d1b"
+        },
+        {
+          "citation": "Jiang et al., 2013",
+          "corpusId": "52827884",
+          "title": "The organization of two new cortical interneuronal circuits (corrigendum proxy)",
+          "year": 2013,
+          "paperId": "337b0c2b07ec11ca8c8270827cc79e80e32c7c54"
+        },
+        {
+          "citation": "Schuman et al., 2019",
+          "corpusId": "53248468",
+          "title": "Four Unique Interneuron Populations Reside in Neocortical Layer 1",
+          "year": 2019,
+          "paperId": "70ba50776b5fd3e4bfed41386e838ac7bd15a885"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "667be50b805b2ac510150821c68e9f911cbe0d1b",
+        "337b0c2b07ec11ca8c8270827cc79e80e32c7c54",
+        "70ba50776b5fd3e4bfed41386e838ac7bd15a885",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 4
+    },
+    {
+      "id": "lamp5_met_2",
+      "cell_type": "Lamp5-MET-2",
+      "ground_truth_papers": [
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 1
+    },
+    {
+      "id": "pvalb_met_1",
+      "cell_type": "Pvalb-MET-1",
+      "ground_truth_papers": [
+        {
+          "citation": "Markram et al., 2015",
+          "corpusId": "14776593",
+          "title": "Reconstruction and Simulation of Neocortical Microcircuitry",
+          "year": 2015,
+          "paperId": "b913b6e6241003095f7e1e32e79b1e3f14c6407a"
+        },
+        {
+          "citation": "Jiang et al., 2015",
+          "corpusId": "4469544",
+          "title": "Principles of connectivity among morphologically defined cell types in adult neocortex",
+          "year": 2015,
+          "paperId": "667be50b805b2ac510150821c68e9f911cbe0d1b"
+        },
+        {
+          "citation": "Scala et al., 2019",
+          "corpusId": "202565391",
+          "title": "Layer 4 of mouse neocortex differs in cell types and circuit organization between sensory areas",
+          "year": 2019,
+          "paperId": "37f874c21f68b57cf82e9d67a01769a259bbe382"
+        },
+        {
+          "citation": "Bortone et al., 2014",
+          "corpusId": "6992500",
+          "title": "Translaminar inhibitory cells recruited by layer 6 corticothalamic neurons suppress visual cortex",
+          "year": 2014,
+          "paperId": "165016d23097da256ceec1e46c537750eed58039"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "b913b6e6241003095f7e1e32e79b1e3f14c6407a",
+        "667be50b805b2ac510150821c68e9f911cbe0d1b",
+        "37f874c21f68b57cf82e9d67a01769a259bbe382",
+        "165016d23097da256ceec1e46c537750eed58039",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 5
+    },
+    {
+      "id": "pvalb_met_2",
+      "cell_type": "Pvalb-MET-2",
+      "ground_truth_papers": [
+        {
+          "citation": "Markram et al., 2015",
+          "corpusId": "14776593",
+          "title": "Reconstruction and Simulation of Neocortical Microcircuitry",
+          "year": 2015,
+          "paperId": "b913b6e6241003095f7e1e32e79b1e3f14c6407a"
+        },
+        {
+          "citation": "Jiang et al., 2015",
+          "corpusId": "4469544",
+          "title": "Principles of connectivity among morphologically defined cell types in adult neocortex",
+          "year": 2015,
+          "paperId": "667be50b805b2ac510150821c68e9f911cbe0d1b"
+        },
+        {
+          "citation": "Bortone et al., 2014",
+          "corpusId": "6992500",
+          "title": "Translaminar inhibitory cells recruited by layer 6 corticothalamic neurons suppress visual cortex",
+          "year": 2014,
+          "paperId": "165016d23097da256ceec1e46c537750eed58039"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "b913b6e6241003095f7e1e32e79b1e3f14c6407a",
+        "667be50b805b2ac510150821c68e9f911cbe0d1b",
+        "165016d23097da256ceec1e46c537750eed58039",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 4
+    },
+    {
+      "id": "pvalb_met_3",
+      "cell_type": "Pvalb-MET-3",
+      "ground_truth_papers": [
+        {
+          "citation": "Frandolig et al., 2019",
+          "corpusId": "92979610",
+          "title": "The Synaptic Organization of Layer 6 Circuits Reveals Inhibition as a Major Output of a Neocortical Sublamina",
+          "year": 2019,
+          "paperId": "737ce7a75f38e8f49ecd17112bf2d7e56f1be3a4"
+        },
+        {
+          "citation": "Markram et al., 2015",
+          "corpusId": "14776593",
+          "title": "Reconstruction and Simulation of Neocortical Microcircuitry",
+          "year": 2015,
+          "paperId": "b913b6e6241003095f7e1e32e79b1e3f14c6407a"
+        },
+        {
+          "citation": "Jiang et al., 2015",
+          "corpusId": "4469544",
+          "title": "Principles of connectivity among morphologically defined cell types in adult neocortex",
+          "year": 2015,
+          "paperId": "667be50b805b2ac510150821c68e9f911cbe0d1b"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "737ce7a75f38e8f49ecd17112bf2d7e56f1be3a4",
+        "b913b6e6241003095f7e1e32e79b1e3f14c6407a",
+        "667be50b805b2ac510150821c68e9f911cbe0d1b",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 4
+    },
+    {
+      "id": "pvalb_met_4",
+      "cell_type": "Pvalb-MET-4",
+      "ground_truth_papers": [
+        {
+          "citation": "Frandolig et al., 2019",
+          "corpusId": "92979610",
+          "title": "The Synaptic Organization of Layer 6 Circuits Reveals Inhibition as a Major Output of a Neocortical Sublamina",
+          "year": 2019,
+          "paperId": "737ce7a75f38e8f49ecd17112bf2d7e56f1be3a4"
+        },
+        {
+          "citation": "Bortone et al., 2014",
+          "corpusId": "6992500",
+          "title": "Translaminar inhibitory cells recruited by layer 6 corticothalamic neurons suppress visual cortex",
+          "year": 2014,
+          "paperId": "165016d23097da256ceec1e46c537750eed58039"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "737ce7a75f38e8f49ecd17112bf2d7e56f1be3a4",
+        "165016d23097da256ceec1e46c537750eed58039",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 3
+    },
+    {
+      "id": "pvalb_met_5",
+      "cell_type": "Pvalb-MET-5",
+      "ground_truth_papers": [
+        {
+          "citation": "Woodruff and Yuste, 2008",
+          "corpusId": "1743497",
+          "title": "Of Mice and Men, and Chandeliers",
+          "year": 2008,
+          "paperId": "06eb3e99a1567532e9cbc2817989fe49a82968b2"
+        },
+        {
+          "citation": "Taniguchi et al., 2013",
+          "corpusId": "6385084",
+          "title": "The Spatial and Temporal Origin of Chandelier Cells in Mouse Neocortex",
+          "year": 2013,
+          "paperId": "11551339f82a4197a8cec41f27ced074ca8c78ff"
+        },
+        {
+          "citation": "Inan and Anderson, 2014",
+          "corpusId": "20239179",
+          "title": "The chandelier cell, form and function",
+          "year": 2014,
+          "paperId": "04f6196834ca5d2d313fb15d1c5491b32a488748"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "06eb3e99a1567532e9cbc2817989fe49a82968b2",
+        "11551339f82a4197a8cec41f27ced074ca8c78ff",
+        "04f6196834ca5d2d313fb15d1c5491b32a488748",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 4
+    },
+    {
+      "id": "sncg_met_1",
+      "cell_type": "Sncg-MET-1",
+      "ground_truth_papers": [
+        {
+          "citation": "Tasic 2018",
+          "corpusId": "53192908",
+          "title": "Shared and distinct transcriptomic cell types across neocortical areas",
+          "year": 2018,
+          "paperId": "df28d32dda9cc3fbe6e1da6e0a325b4749a03f42"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "df28d32dda9cc3fbe6e1da6e0a325b4749a03f42"
+      ],
+      "n_expected": 1
+    },
+    {
+      "id": "sncg_met_2",
+      "cell_type": "Sncg-MET-2",
+      "ground_truth_papers": [
+        {
+          "citation": "Tasic 2018",
+          "corpusId": "53192908",
+          "title": "Shared and distinct transcriptomic cell types across neocortical areas",
+          "year": 2018,
+          "paperId": "df28d32dda9cc3fbe6e1da6e0a325b4749a03f42"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "df28d32dda9cc3fbe6e1da6e0a325b4749a03f42"
+      ],
+      "n_expected": 1
+    },
+    {
+      "id": "sncg_met_3",
+      "cell_type": "Sncg-MET-3",
+      "ground_truth_papers": [
+        {
+          "citation": "Tasic 2018",
+          "corpusId": "53192908",
+          "title": "Shared and distinct transcriptomic cell types across neocortical areas",
+          "year": 2018,
+          "paperId": "df28d32dda9cc3fbe6e1da6e0a325b4749a03f42"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "df28d32dda9cc3fbe6e1da6e0a325b4749a03f42"
+      ],
+      "n_expected": 1
+    },
+    {
+      "id": "sst_met_1",
+      "cell_type": "Sst-MET-1",
+      "ground_truth_papers": [
+        {
+          "citation": "He et al., 2016",
+          "corpusId": "24205739",
+          "title": "Strategies and Tools for Combinatorial Targeting of GABAergic Neurons in Mouse Cerebral Cortex",
+          "year": 2016,
+          "paperId": "69fab7c48271c32a86db655eb3e7ae0f12010bf1"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "69fab7c48271c32a86db655eb3e7ae0f12010bf1",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 2
+    },
+    {
+      "id": "sst_met_2",
+      "cell_type": "Sst-MET-2",
+      "ground_truth_papers": [
+        {
+          "citation": "Mu\u00f1oz et al., 2017",
+          "corpusId": "7906745",
+          "title": "Layer-specific modulation of neocortical dendritic inhibition during active wakefulness",
+          "year": 2017,
+          "paperId": "083bfadf50bd0b720d748417baa6b85509dd6bba"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "083bfadf50bd0b720d748417baa6b85509dd6bba",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 2
+    },
+    {
+      "id": "sst_met_3",
+      "cell_type": "Sst-MET-3",
+      "ground_truth_papers": [
+        {
+          "citation": "Mu\u00f1oz et al., 2017",
+          "corpusId": "7906745",
+          "title": "Layer-specific modulation of neocortical dendritic inhibition during active wakefulness",
+          "year": 2017,
+          "paperId": "083bfadf50bd0b720d748417baa6b85509dd6bba"
+        },
+        {
+          "citation": "Wang et al., 2004",
+          "corpusId": "8128033",
+          "title": "Anatomical, physiological and molecular properties of Martinotti cells in the somatosensory cortex of the juvenile rat",
+          "year": 2004,
+          "paperId": "3b92ddced26768f8778d68ffaf62cb0488c52865"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "083bfadf50bd0b720d748417baa6b85509dd6bba",
+        "3b92ddced26768f8778d68ffaf62cb0488c52865",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 3
+    },
+    {
+      "id": "sst_met_4",
+      "cell_type": "Sst-MET-4",
+      "ground_truth_papers": [
+        {
+          "citation": "Mu\u00f1oz et al., 2017",
+          "corpusId": "7906745",
+          "title": "Layer-specific modulation of neocortical dendritic inhibition during active wakefulness",
+          "year": 2017,
+          "paperId": "083bfadf50bd0b720d748417baa6b85509dd6bba"
+        },
+        {
+          "citation": "Nigro et al., 2019",
+          "corpusId": "4374430",
+          "title": "Diversity and Connectivity of Layer 5 Somatostatin-Expressing Interneurons in the Mouse Barrel Cortex",
+          "year": 2018,
+          "paperId": "f587144c9781b3912ec6840b8be4b2b7202ba19d"
+        },
+        {
+          "citation": "Wang et al., 2004",
+          "corpusId": "8128033",
+          "title": "Anatomical, physiological and molecular properties of Martinotti cells in the somatosensory cortex of the juvenile rat",
+          "year": 2004,
+          "paperId": "3b92ddced26768f8778d68ffaf62cb0488c52865"
+        },
+        {
+          "citation": "Markram et al., 2015",
+          "corpusId": "14776593",
+          "title": "Reconstruction and Simulation of Neocortical Microcircuitry",
+          "year": 2015,
+          "paperId": "b913b6e6241003095f7e1e32e79b1e3f14c6407a"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "083bfadf50bd0b720d748417baa6b85509dd6bba",
+        "f587144c9781b3912ec6840b8be4b2b7202ba19d",
+        "3b92ddced26768f8778d68ffaf62cb0488c52865",
+        "b913b6e6241003095f7e1e32e79b1e3f14c6407a",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 5
+    },
+    {
+      "id": "sst_met_5",
+      "cell_type": "Sst-MET-5",
+      "ground_truth_papers": [
+        {
+          "citation": "Mu\u00f1oz et al., 2017",
+          "corpusId": "7906745",
+          "title": "Layer-specific modulation of neocortical dendritic inhibition during active wakefulness",
+          "year": 2017,
+          "paperId": "083bfadf50bd0b720d748417baa6b85509dd6bba"
+        },
+        {
+          "citation": "Nigro et al., 2019",
+          "corpusId": "4374430",
+          "title": "Diversity and Connectivity of Layer 5 Somatostatin-Expressing Interneurons in the Mouse Barrel Cortex",
+          "year": 2018,
+          "paperId": "f587144c9781b3912ec6840b8be4b2b7202ba19d"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "083bfadf50bd0b720d748417baa6b85509dd6bba",
+        "f587144c9781b3912ec6840b8be4b2b7202ba19d",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 3
+    },
+    {
+      "id": "sst_met_6",
+      "cell_type": "Sst-MET-6",
+      "ground_truth_papers": [
+        {
+          "citation": "Mu\u00f1oz et al., 2017",
+          "corpusId": "7906745",
+          "title": "Layer-specific modulation of neocortical dendritic inhibition during active wakefulness",
+          "year": 2017,
+          "paperId": "083bfadf50bd0b720d748417baa6b85509dd6bba"
+        },
+        {
+          "citation": "Nigro et al., 2019",
+          "corpusId": "4374430",
+          "title": "Diversity and Connectivity of Layer 5 Somatostatin-Expressing Interneurons in the Mouse Barrel Cortex",
+          "year": 2018,
+          "paperId": "f587144c9781b3912ec6840b8be4b2b7202ba19d"
+        },
+        {
+          "citation": "Hilscher et al., 2017",
+          "corpusId": "15752767",
+          "title": "Chrna2-Martinotti Cells Synchronize Layer 5 Type A Pyramidal Cells via Rebound Excitation",
+          "year": 2017,
+          "paperId": "8422fb29a19786bf4f07f35bb189033d14a8322f"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "083bfadf50bd0b720d748417baa6b85509dd6bba",
+        "f587144c9781b3912ec6840b8be4b2b7202ba19d",
+        "8422fb29a19786bf4f07f35bb189033d14a8322f"
+      ],
+      "n_expected": 3
+    },
+    {
+      "id": "sst_met_7",
+      "cell_type": "Sst-MET-7",
+      "ground_truth_papers": [
+        {
+          "citation": "Mu\u00f1oz et al., 2017",
+          "corpusId": "7906745",
+          "title": "Layer-specific modulation of neocortical dendritic inhibition during active wakefulness",
+          "year": 2017,
+          "paperId": "083bfadf50bd0b720d748417baa6b85509dd6bba"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "083bfadf50bd0b720d748417baa6b85509dd6bba",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 2
+    },
+    {
+      "id": "sst_met_8",
+      "cell_type": "Sst-MET-8",
+      "ground_truth_papers": [
+        {
+          "citation": "Naka et al., 2019",
+          "corpusId": "261298052",
+          "title": "Complementary networks of cortical somatostatin interneurons enforce layer specific control",
+          "year": 2019,
+          "paperId": "f79b41fd28c4f1426c49d6a0b126e25fb1c67237"
+        },
+        {
+          "citation": "Scala et al., 2019",
+          "corpusId": "202565391",
+          "title": "Layer 4 of mouse neocortex differs in cell types and circuit organization between sensory areas",
+          "year": 2019,
+          "paperId": "37f874c21f68b57cf82e9d67a01769a259bbe382"
+        },
+        {
+          "citation": "Mu\u00f1oz et al., 2017",
+          "corpusId": "7906745",
+          "title": "Layer-specific modulation of neocortical dendritic inhibition during active wakefulness",
+          "year": 2017,
+          "paperId": "083bfadf50bd0b720d748417baa6b85509dd6bba"
+        },
+        {
+          "citation": "Ma et al., 2006",
+          "corpusId": "16281417",
+          "title": "Distinct Subtypes of Somatostatin-Containing Neocortical Interneurons Revealed in Transgenic Mice",
+          "year": 2006,
+          "paperId": "0a7085fcd0f77744c8bcaf1c80971be7f0cbd121"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "f79b41fd28c4f1426c49d6a0b126e25fb1c67237",
+        "37f874c21f68b57cf82e9d67a01769a259bbe382",
+        "083bfadf50bd0b720d748417baa6b85509dd6bba",
+        "0a7085fcd0f77744c8bcaf1c80971be7f0cbd121",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 5
+    },
+    {
+      "id": "sst_met_9",
+      "cell_type": "Sst-MET-9",
+      "ground_truth_papers": [
+        {
+          "citation": "Mu\u00f1oz et al., 2017",
+          "corpusId": "7906745",
+          "title": "Layer-specific modulation of neocortical dendritic inhibition during active wakefulness",
+          "year": 2017,
+          "paperId": "083bfadf50bd0b720d748417baa6b85509dd6bba"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "083bfadf50bd0b720d748417baa6b85509dd6bba",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 2
+    },
+    {
+      "id": "sst_met_10",
+      "cell_type": "Sst-MET-10",
+      "ground_truth_papers": [
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 1
+    },
+    {
+      "id": "sst_met_11",
+      "cell_type": "Sst-MET-11",
+      "ground_truth_papers": [
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 1
+    },
+    {
+      "id": "sst_met_12",
+      "cell_type": "Sst-MET-12",
+      "ground_truth_papers": [
+        {
+          "citation": "Nigro et al., 2018",
+          "corpusId": "4374430",
+          "title": "Diversity and Connectivity of Layer 5 Somatostatin-Expressing Interneurons in the Mouse Barrel Cortex",
+          "year": 2018,
+          "paperId": "f587144c9781b3912ec6840b8be4b2b7202ba19d"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "f587144c9781b3912ec6840b8be4b2b7202ba19d",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 2
+    },
+    {
+      "id": "sst_met_13",
+      "cell_type": "Sst-MET-13",
+      "ground_truth_papers": [
+        {
+          "citation": "Naka et al., 2019",
+          "corpusId": "261298052",
+          "title": "Complementary networks of cortical somatostatin interneurons enforce layer specific control",
+          "year": 2019,
+          "paperId": "f79b41fd28c4f1426c49d6a0b126e25fb1c67237"
+        },
+        {
+          "citation": "Scala et al., 2019",
+          "corpusId": "202565391",
+          "title": "Layer 4 of mouse neocortex differs in cell types and circuit organization between sensory areas",
+          "year": 2019,
+          "paperId": "37f874c21f68b57cf82e9d67a01769a259bbe382"
+        },
+        {
+          "citation": "Mu\u00f1oz et al., 2017",
+          "corpusId": "7906745",
+          "title": "Layer-specific modulation of neocortical dendritic inhibition during active wakefulness",
+          "year": 2017,
+          "paperId": "083bfadf50bd0b720d748417baa6b85509dd6bba"
+        },
+        {
+          "citation": "Ma et al., 2006",
+          "corpusId": "16281417",
+          "title": "Distinct Subtypes of Somatostatin-Containing Neocortical Interneurons Revealed in Transgenic Mice",
+          "year": 2006,
+          "paperId": "0a7085fcd0f77744c8bcaf1c80971be7f0cbd121"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "f79b41fd28c4f1426c49d6a0b126e25fb1c67237",
+        "37f874c21f68b57cf82e9d67a01769a259bbe382",
+        "083bfadf50bd0b720d748417baa6b85509dd6bba",
+        "0a7085fcd0f77744c8bcaf1c80971be7f0cbd121",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 5
+    },
+    {
+      "id": "vip_met_1",
+      "cell_type": "Vip-MET-1",
+      "ground_truth_papers": [
+        {
+          "citation": "Pr\u00f6nneke et al., 2015",
+          "corpusId": "8604245",
+          "title": "Characterizing VIP Neurons in the Barrel Cortex of VIPcre/tdTomato Mice Reveals Layer-Specific Differences",
+          "year": 2015,
+          "paperId": "587056952778a47f0c803980e316a18198841ca8"
+        },
+        {
+          "citation": "Peters and Kara, 1985",
+          "corpusId": "20075598",
+          "title": "The neuronal composition of area 17 of rat visual cortex. II. The nonpyramidal cells",
+          "year": 1985,
+          "paperId": "881c60251867a72d0a4bca693039fad0b5c8736b"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "587056952778a47f0c803980e316a18198841ca8",
+        "881c60251867a72d0a4bca693039fad0b5c8736b",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 3
+    },
+    {
+      "id": "vip_met_2",
+      "cell_type": "Vip-MET-2",
+      "ground_truth_papers": [
+        {
+          "citation": "Pr\u00f6nneke et al., 2015",
+          "corpusId": "8604245",
+          "title": "Characterizing VIP Neurons in the Barrel Cortex of VIPcre/tdTomato Mice Reveals Layer-Specific Differences",
+          "year": 2015,
+          "paperId": "587056952778a47f0c803980e316a18198841ca8"
+        },
+        {
+          "citation": "Peters and Kara, 1985",
+          "corpusId": "20075598",
+          "title": "The neuronal composition of area 17 of rat visual cortex. II. The nonpyramidal cells",
+          "year": 1985,
+          "paperId": "881c60251867a72d0a4bca693039fad0b5c8736b"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "587056952778a47f0c803980e316a18198841ca8",
+        "881c60251867a72d0a4bca693039fad0b5c8736b",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 3
+    },
+    {
+      "id": "vip_met_3",
+      "cell_type": "Vip-MET-3",
+      "ground_truth_papers": [
+        {
+          "citation": "Pr\u00f6nneke et al., 2015",
+          "corpusId": "8604245",
+          "title": "Characterizing VIP Neurons in the Barrel Cortex of VIPcre/tdTomato Mice Reveals Layer-Specific Differences",
+          "year": 2015,
+          "paperId": "587056952778a47f0c803980e316a18198841ca8"
+        },
+        {
+          "citation": "Peters and Kara, 1985",
+          "corpusId": "20075598",
+          "title": "The neuronal composition of area 17 of rat visual cortex. II. The nonpyramidal cells",
+          "year": 1985,
+          "paperId": "881c60251867a72d0a4bca693039fad0b5c8736b"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "587056952778a47f0c803980e316a18198841ca8",
+        "881c60251867a72d0a4bca693039fad0b5c8736b",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 3
+    },
+    {
+      "id": "vip_met_4",
+      "cell_type": "Vip-MET-4",
+      "ground_truth_papers": [
+        {
+          "citation": "Pr\u00f6nneke et al., 2015",
+          "corpusId": "8604245",
+          "title": "Characterizing VIP Neurons in the Barrel Cortex of VIPcre/tdTomato Mice Reveals Layer-Specific Differences",
+          "year": 2015,
+          "paperId": "587056952778a47f0c803980e316a18198841ca8"
+        },
+        {
+          "citation": "Peters and Kara, 1985",
+          "corpusId": "20075598",
+          "title": "The neuronal composition of area 17 of rat visual cortex. II. The nonpyramidal cells",
+          "year": 1985,
+          "paperId": "881c60251867a72d0a4bca693039fad0b5c8736b"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "587056952778a47f0c803980e316a18198841ca8",
+        "881c60251867a72d0a4bca693039fad0b5c8736b",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 3
+    },
+    {
+      "id": "vip_met_5",
+      "cell_type": "Vip-MET-5",
+      "ground_truth_papers": [
+        {
+          "citation": "Pr\u00f6nneke et al., 2015",
+          "corpusId": "8604245",
+          "title": "Characterizing VIP Neurons in the Barrel Cortex of VIPcre/tdTomato Mice Reveals Layer-Specific Differences",
+          "year": 2015,
+          "paperId": "587056952778a47f0c803980e316a18198841ca8"
+        },
+        {
+          "citation": "Peters and Kara, 1985",
+          "corpusId": "20075598",
+          "title": "The neuronal composition of area 17 of rat visual cortex. II. The nonpyramidal cells",
+          "year": 1985,
+          "paperId": "881c60251867a72d0a4bca693039fad0b5c8736b"
+        },
+        {
+          "citation": "Gouwens et al., 2019",
+          "corpusId": "6883800",
+          "title": "Classification of electrophysiological and morphological neuron types in the mouse visual cortex",
+          "year": 2019,
+          "paperId": "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+        }
+      ],
+      "ground_truth_paper_ids": [
+        "587056952778a47f0c803980e316a18198841ca8",
+        "881c60251867a72d0a4bca693039fad0b5c8736b",
+        "fccd157b961e9e3bfa5a0d5616b3a3ecb381ce85"
+      ],
+      "n_expected": 3
+    }
+  ]
+}
