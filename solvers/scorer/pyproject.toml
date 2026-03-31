@@ -17,7 +17,8 @@ dependencies = [
 astabench = { path = "../..", editable = true }
 
 [tool.uv]
-# Override needed because local astabench pins inspect_ai==0.3.114.
+# Override needed because local astabench now pins inspect_ai==0.3.143, while
+# the scorer stays on 0.3.179 for broader log-compatibility testing.
 override-dependencies = [
     "inspect_ai==0.3.179",
 ]

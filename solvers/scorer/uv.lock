@@ -261,7 +261,7 @@ wheels = [
 
 [[package]]
 name = "astabench"
-version = "0.3.1"
+version = "0.5.1"
 source = { editable = "../../" }
 dependencies = [
     { name = "agent-eval" },
@@ -303,9 +303,9 @@ requires-dist = [
     { name = "httpx", specifier = "~=0.28.1" },
     { name = "httpx-sse", specifier = ">=0.4.2" },
     { name = "huggingface-hub" },
-    { name = "inspect-ai", specifier = "==0.3.114" },
+    { name = "inspect-ai", specifier = "==0.3.143" },
     { name = "isort", marker = "extra == 'dev'" },
-    { name = "litellm" },
+    { name = "litellm", specifier = "==1.75.8" },
     { name = "mcp", specifier = "~=1.10" },
     { name = "mypy", marker = "extra == 'dev'", specifier = "==1.15" },
     { name = "nltk" },
@@ -3116,8 +3116,8 @@ name = "uvicorn"
 version = "0.41.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "click" },
-    { name = "h11" },
+    { name = "click", marker = "sys_platform != 'emscripten'" },
+    { name = "h11", marker = "sys_platform != 'emscripten'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/32/ce/eeb58ae4ac36fe09e3842eb02e0eb676bf2c53ae062b98f1b2531673efdd/uvicorn-0.41.0.tar.gz", hash = "sha256:09d11cf7008da33113824ee5a1c6422d89fbc2ff476540d69a34c87fab8b571a", size = 82633 }
 wheels = [
@@ -3443,7 +3443,7 @@ name = "zipfile-zstd"
 version = "0.0.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "zstandard" },
+    { name = "zstandard", marker = "python_full_version < '3.14'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/f7/2a/2e0941bc0058d10ab37d8c578b94a19f611f6ae54f124140f2fb451f0932/zipfile-zstd-0.0.4.tar.gz", hash = "sha256:c1498e15b7922a3d1af0ea55df8b11b2af4e8f7e0e80e414e25d66899f7def89", size = 4603 }
 wheels = [

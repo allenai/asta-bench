@@ -10,7 +10,7 @@ This environment is configured in `solvers/scorer/pyproject.toml`.
 - It installs local `astabench` from this repo.
 - It pins `inspect_ai==0.3.179`.
 - It uses a uv override so scoring stays pinned even though local `astabench`
-  depends on `inspect_ai==0.3.114`.
+  depends on `inspect_ai==0.3.143`.
 
 Install deps with:
 
