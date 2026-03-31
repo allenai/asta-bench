@@ -4,15 +4,15 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "astabench"
-version = "0.5.1"
+version = "0.5.2"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "inspect_ai==0.3.143",
-    "agent-eval==0.1.44",
+    "inspect_ai==0.3.114",
+    "agent-eval[leaderboard]==0.1.46",
     "openai>=1.78.0", # required by inspect
     "pydantic>=2.11.4", # required by inspect
-    "litellm==1.75.8",
+    "litellm==1.82.3",
     "datasets~=3.2.0",
     "huggingface_hub",
     "google-genai>=1.16.1",
@@ -28,7 +28,7 @@ dependencies = [
     "scipy",
     "anthropic>=0.52.0",
     "platformdirs",
-    "numpy"
+    "numpy",
 ]
 
 [project.optional-dependencies]
@@ -65,20 +65,14 @@ conflicts = [
     [{extra = "storm"}, {extra = "smolagents"}],
 ]
 override-dependencies = [
-    # Shared root-env stability pins. These are not known hard resolver
-    # conflicts today; they keep the local dev environment on the provider SDK
-    # versions we have validated with inspect_ai==0.3.143. Revisit on the next
-    # Inspect/provider bump.
-    "inspect_ai==0.3.143",
-    "anthropic==0.85.0",
-    "google-genai==1.67.0",
+    # Hard conflict for the shared root env: SQA-related deps still require the
+    # older OpenAI SDK line, so keep the repo-level environment pinned here
+    # until those packages move.
+    "openai==1.78.0",
 
-    # litellm currently requires openai>=1.99.5, so keep the shared root env on
-    # a 2.x SDK even though astabench itself only needs openai>=1.78.0.
-    "openai==2.28.0",
-
-    # Keep the shared env on the same datasets line as astabench. This also
-    # matches the STORM workflow we have been validating locally.
+    # Compatibility pin for the shared root env; this is not a known hard
+    # resolver conflict, but it keeps the STORM workflow on the datasets line
+    # we validate locally.
     "datasets~=3.2.0",
 ]
 
