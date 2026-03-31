@@ -4,7 +4,7 @@ import json
 import logging
 import sqlite3
 from datetime import datetime, timedelta
-from typing import Any, Dict, Optional, Union, List, Tuple
+from typing import Any, Callable, Dict, Optional, Union, List, Tuple
 
 from inspect_ai.model import Model, GenerateConfig
 
@@ -19,6 +19,7 @@ async def generate_with_retry(
     max_retries: int = 20,
     base_delay: float = 2.0,
     desired_schema=None,
+    parsed_validator: Optional[Callable[[Dict[str, Any]], None]] = None,
 ) -> Any:
     """
     Generate response with retry logic and optional JSON parsing.
@@ -57,6 +58,8 @@ async def generate_with_retry(
                 if desired_schema:
                     parsed = desired_schema(**parsed)
                     parsed = parsed.model_dump(mode="json")
+                if parsed_validator:
+                    parsed_validator(parsed)
 
                 return result, parsed, attempt
             else:

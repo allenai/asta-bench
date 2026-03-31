@@ -368,6 +368,47 @@ Split the response into individual claims, citations, and excerpts from the cita
                 score_components[x.name] = assessment
         return score_components, prompt_logs
 
+    @staticmethod
+    def _validate_joint_assessment_payload(
+        parsed: Dict[str, Any], expected_criteria_count: int
+    ) -> None:
+        scores = parsed.get("scores")
+        if not isinstance(scores, list):
+            raise ValueError("Joint rubric scorer output is missing a 'scores' list")
+
+        seen_indices = []
+        for score in scores:
+            if not isinstance(score, dict):
+                raise ValueError(
+                    "Joint rubric scorer output contains a non-object score"
+                )
+            criteria_idx = score.get("criteria_idx")
+            if not isinstance(criteria_idx, int):
+                raise ValueError(
+                    "Joint rubric scorer output contains a non-integer criteria_idx"
+                )
+            if criteria_idx < 1 or criteria_idx > expected_criteria_count:
+                raise ValueError(
+                    f"Joint rubric scorer output contains out-of-range criteria_idx={criteria_idx}"
+                )
+            seen_indices.append(criteria_idx)
+
+        expected_indices = set(range(1, expected_criteria_count + 1))
+        actual_indices = set(seen_indices)
+        if (
+            actual_indices != expected_indices
+            or len(seen_indices) != expected_criteria_count
+        ):
+            missing = sorted(expected_indices - actual_indices)
+            duplicate = sorted(
+                {idx for idx in seen_indices if seen_indices.count(idx) > 1}
+            )
+            raise ValueError(
+                "Joint rubric scorer output did not cover every criterion exactly once. "
+                f"expected={expected_criteria_count} actual={len(seen_indices)} "
+                f"missing={missing} duplicate={duplicate}"
+            )
+
     async def _assess_properties_jointly(self, response, properties):
         info = {
             "step_name": "score_property",
@@ -461,6 +502,10 @@ Split the response into individual claims, citations, and excerpts from the cita
                 temperature=self.temperature,
                 top_p=self.top_p,
             ),
+            desired_schema=ResponseCriteriaScores,
+            parsed_validator=lambda parsed: self._validate_joint_assessment_payload(
+                parsed, len(has_criterion)
+            ),
         )
         info["system_prompt"] = system_prompt
         info["user_prompt"] = user_prompt
@@ -508,7 +553,15 @@ Split the response into individual claims, citations, and excerpts from the cita
             )
         score_components.update(assessments)
 
-        assert set(score_components.keys()) == set(score_weights.keys())
+        if set(score_components.keys()) != set(score_weights.keys()):
+            missing = sorted(set(score_weights.keys()) - set(score_components.keys()))
+            unexpected = sorted(
+                set(score_components.keys()) - set(score_weights.keys())
+            )
+            raise ValueError(
+                "Simplified rubric scoring produced mismatched components. "
+                f"missing={missing} unexpected={unexpected}"
+            )
         ann_score = sum(
             score_weights[key] * score_components[key] for key in score_weights
         )
