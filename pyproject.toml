@@ -12,7 +12,7 @@ dependencies = [
     "agent-eval==0.1.44",
     "openai>=1.78.0", # required by inspect
     "pydantic>=2.11.4", # required by inspect
-    "litellm",
+    "litellm==1.75.8",
     "datasets~=3.2.0",
     "huggingface_hub",
     "google-genai>=1.16.1",
