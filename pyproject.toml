@@ -65,14 +65,11 @@ conflicts = [
     [{extra = "storm"}, {extra = "smolagents"}],
 ]
 override-dependencies = [
-    # Hard conflict for the shared root env: SQA-related deps still require the
-    # older OpenAI SDK line, so keep the repo-level environment pinned here
-    # until those packages move.
+    # sqa pins openai to a lower version than inspect requires
     "openai==1.78.0",
 
-    # Compatibility pin for the shared root env; this is not a known hard
-    # resolver conflict, but it keeps the STORM workflow on the datasets line
-    # we validate locally.
+    # STORM pretends to require a lower version, but doesn't actually need it:
+    # https://github.com/allenai/asta-bench/issues/31#issuecomment-3045978008
     "datasets~=3.2.0",
 ]
 
