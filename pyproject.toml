@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "astabench"
-version = "0.5.2"
+version = "0.5.3"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "inspect_ai==0.3.114",
-    "agent-eval[leaderboard]==0.1.46",
+    "inspect_ai==0.3.203",
+    "agent-eval[leaderboard]==0.1.47",
     "openai>=2.30.0", # provider SDK version validated with the current model set
     "pydantic>=2.11.4", # required by inspect
     "litellm==1.82.3",
