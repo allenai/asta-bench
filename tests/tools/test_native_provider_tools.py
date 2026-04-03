@@ -104,7 +104,7 @@ class TestNativeProviderTools:
         # Mock the model
         mock_model = Mock()
         mock_model.api = Mock(spec=AnthropicAPI)
-        mock_model.api.web_search_tool_param.return_value = {
+        mock_model.api.web_search_tool_params.return_value = {
             "name": "web_search",
             "type": "web_search_20250305",
         }
@@ -128,7 +128,7 @@ class TestNativeProviderTools:
         assert result == [mock_tool]
         mock_web_search.assert_called_once_with({"anthropic": True})
         mock_parse_tool_info.assert_called_once_with(mock_tool)
-        mock_model.api.web_search_tool_param.assert_called_once_with(mock_tool_info)
+        mock_model.api.web_search_tool_params.assert_called_once_with(mock_tool_info)
 
     @patch("astabench.tools.native_provider_tools.get_model")
     def test_anthropic_web_search_tool_not_supported(self, mock_get_model):
@@ -136,7 +136,7 @@ class TestNativeProviderTools:
         # Mock the model
         mock_model = Mock()
         mock_model.api = Mock(spec=AnthropicAPI)
-        mock_model.api.web_search_tool_param.return_value = None  # Tool not supported
+        mock_model.api.web_search_tool_params.return_value = None  # Tool not supported
         mock_model.name = "claude-2"  # Assume this model doesn't support web search
         mock_get_model.return_value = mock_model
 
@@ -205,7 +205,7 @@ class TestNativeProviderTools:
         """Test that Anthropic web search tool properly validates and uses options."""
         mock_model = Mock()
         mock_model.api = Mock(spec=AnthropicAPI)
-        mock_model.api.web_search_tool_param.return_value = {
+        mock_model.api.web_search_tool_params.return_value = {
             "name": "web_search",
             "type": "web_search_20250305",
         }
