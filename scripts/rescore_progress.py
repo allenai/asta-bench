@@ -23,23 +23,52 @@ aggregate completion, but omits per-task score deltas.
 from __future__ import annotations
 
 import argparse
+import json
 import hashlib
 import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
-# Must stay in sync with `find_target_submissions()` in
-# `scripts/rescore_judge_model_submissions.sh`.
-TARGET_LOG_PATTERN = re.compile(
-    r"(sqa-(test|dev)|e2e-discovery(-hard)?-(test|validation))"
-)
+# Must match TARGET_LOG_REGEX in scripts/rescore_judge_model_submissions.sh.
+TARGET_LOG_REGEX = r"(sqa-(test|dev)|e2e-discovery(-hard)?-(test|validation))"
 AGGREGATE_FILES = ("scores.json", "summary_stats.json")
+RESCORE_STATE_FILE = ".rescore-state.json"
 PRIMARY_METRIC_NAMES = ("mean", "accuracy")
 try:
     from inspect_ai.log import read_eval_log as _read_eval_log
 except ImportError:
     _read_eval_log = None
+
+
+def compile_target_log_pattern(
+    target_log_regex: str = TARGET_LOG_REGEX,
+) -> re.Pattern[str]:
+    return re.compile(target_log_regex)
+
+
+def target_logs_for_submission(
+    submission_dir: Path, target_log_pattern: re.Pattern[str] | None = None
+) -> list[Path]:
+    if target_log_pattern is None:
+        target_log_pattern = compile_target_log_pattern()
+    return sorted(
+        path
+        for path in submission_dir.glob("*.eval")
+        if target_log_pattern.search(path.name)
+    )
+
+
+def iter_target_submissions(
+    submissions_root: Path, target_log_pattern: re.Pattern[str] | None = None
+) -> list[Path]:
+    if target_log_pattern is None:
+        target_log_pattern = compile_target_log_pattern()
+    targets: list[Path] = []
+    for path in submissions_root.rglob("*.eval"):
+        if target_log_pattern.search(path.name):
+            targets.append(path.parent)
+    return sorted(set(targets))
 
 
 @dataclass(frozen=True)
@@ -62,6 +91,8 @@ class SubmissionProgress:
     tasks_total: int
     aggregate_complete: bool
     latest_update_ns: int
+    current_log: str | None = None
+    failure_message: str | None = None
     score_deltas: tuple[TaskScoreDelta, ...] = ()
 
     @property
@@ -88,6 +119,11 @@ def parse_args() -> argparse.Namespace:
         choices=("all", "summary"),
         default="all",
         help="Whether to print all status sections or only the summary",
+    )
+    parser.add_argument(
+        "--target-log-regex",
+        default=TARGET_LOG_REGEX,
+        help="Regex used to select target submission logs (default: %(default)s)",
     )
     return parser.parse_args()
 
@@ -125,22 +161,6 @@ def latest_mtime_ns(paths: Iterable[Path]) -> int:
     return latest
 
 
-def target_logs_for_submission(submission_dir: Path) -> list[Path]:
-    return sorted(
-        path
-        for path in submission_dir.glob("*.eval")
-        if TARGET_LOG_PATTERN.search(path.name)
-    )
-
-
-def iter_target_submissions(submissions_root: Path) -> list[Path]:
-    targets: list[Path] = []
-    for path in submissions_root.rglob("*.eval"):
-        if TARGET_LOG_PATTERN.search(path.name):
-            targets.append(path.parent)
-    return sorted(set(targets))
-
-
 def aggregate_rewritten(
     source_submission_dir: Path, output_submission_dir: Path
 ) -> bool:
@@ -154,6 +174,33 @@ def aggregate_rewritten(
             return False
 
     return True
+
+
+def read_submission_state(
+    output_submission_dir: Path,
+) -> tuple[str | None, str | None, str | None]:
+    # State-file protocol written by scripts/rescore_judge_model_submissions.sh:
+    # - verifying: copied output exists; inventory check running
+    # - rescoring: per-log inspect score running; current_log may be set
+    # - aggregating: astabench score running
+    # - failed: an error occurred; failure message may be set
+    state_path = output_submission_dir / RESCORE_STATE_FILE
+    if not state_path.is_file():
+        return (None, None, None)
+
+    try:
+        payload = json.loads(state_path.read_text())
+    except Exception:
+        return (None, None, None)
+
+    stage = payload.get("stage")
+    current_log = payload.get("current_log")
+    message = payload.get("message")
+    return (
+        stage if isinstance(stage, str) else None,
+        current_log if isinstance(current_log, str) else None,
+        message if isinstance(message, str) else None,
+    )
 
 
 def primary_score_value(score_summary: dict[str, object]) -> tuple[str, float] | None:
@@ -220,11 +267,18 @@ def score_delta_for_log(source_log: Path, output_log: Path) -> TaskScoreDelta | 
 
 
 def submission_progress(
-    source_submission_dir: Path, submissions_root: Path, output_root: Path
+    source_submission_dir: Path,
+    submissions_root: Path,
+    output_root: Path,
+    target_log_pattern=None,
 ) -> SubmissionProgress:
+    if target_log_pattern is None:
+        target_log_pattern = compile_target_log_pattern()
     rel_path = source_submission_dir.relative_to(submissions_root).as_posix()
     output_submission_dir = output_root / rel_path
-    target_logs = target_logs_for_submission(source_submission_dir)
+    target_logs = target_logs_for_submission(
+        source_submission_dir, target_log_pattern=target_log_pattern
+    )
     tasks_total = len(target_logs)
 
     if not output_submission_dir.is_dir():
@@ -240,6 +294,9 @@ def submission_progress(
     tasks_completed = 0
     paths_for_latest: list[Path] = []
     score_deltas: list[TaskScoreDelta] = []
+    state_stage, current_log, failure_message = read_submission_state(
+        output_submission_dir
+    )
     for source_log in target_logs:
         output_log = output_submission_dir / source_log.name
         if output_log.exists():
@@ -257,12 +314,26 @@ def submission_progress(
         output_file = output_submission_dir / filename
         if output_file.exists():
             paths_for_latest.append(output_file)
+    state_file = output_submission_dir / RESCORE_STATE_FILE
+    if state_file.exists():
+        paths_for_latest.append(state_file)
 
-    status = (
-        "completed"
-        if tasks_completed == tasks_total and aggregate_complete
-        else "in_progress"
-    )
+    if tasks_completed == tasks_total and aggregate_complete:
+        status = "completed"
+        current_log = None
+        failure_message = None
+    elif state_stage == "failed":
+        status = "failed"
+    elif state_stage == "aggregating":
+        status = "aggregating"
+        current_log = None
+    elif state_stage in {"verifying", "rescoring"}:
+        status = "rescoring"
+    elif tasks_completed == tasks_total and not aggregate_complete:
+        status = "aggregate_pending"
+        current_log = None
+    else:
+        status = "rescoring"
     return SubmissionProgress(
         rel_path=rel_path,
         status=status,
@@ -270,18 +341,31 @@ def submission_progress(
         tasks_total=tasks_total,
         aggregate_complete=aggregate_complete,
         latest_update_ns=latest_mtime_ns(paths_for_latest),
+        current_log=current_log,
+        failure_message=failure_message,
         score_deltas=tuple(score_deltas),
     )
 
 
+def display_status(status: str) -> str:
+    return status.replace("_", " ")
+
+
 def format_progress(progress: SubmissionProgress) -> str:
     aggregate = "done" if progress.aggregate_complete else "pending"
-    return (
+    summary = (
         f"{progress.rel_path}  "
         f"tasks {progress.tasks_completed}/{progress.tasks_total}  "
         f"remaining {progress.tasks_remaining}  "
         f"aggregate {aggregate}"
     )
+    if progress.status != "completed":
+        summary += f"  status {display_status(progress.status)}"
+    if progress.current_log:
+        summary += f"  log {progress.current_log}"
+    if progress.failure_message:
+        summary += f"  error {progress.failure_message}"
+    return summary
 
 
 def format_score_delta(score_delta: TaskScoreDelta) -> str:
@@ -307,20 +391,32 @@ def main() -> None:
     args = parse_args()
     submissions_root = Path(args.submissions_root)
     output_root = Path(args.output_root)
+    target_log_pattern = compile_target_log_pattern(args.target_log_regex)
 
     if not submissions_root.is_dir():
         raise SystemExit(f"error: submissions root not found ({submissions_root})")
 
-    targets = iter_target_submissions(submissions_root)
+    targets = iter_target_submissions(
+        submissions_root, target_log_pattern=target_log_pattern
+    )
     progress = [
         submission_progress(
-            path, submissions_root=submissions_root, output_root=output_root
+            path,
+            submissions_root=submissions_root,
+            output_root=output_root,
+            target_log_pattern=target_log_pattern,
         )
         for path in targets
     ]
 
     completed = [item for item in progress if item.status == "completed"]
-    in_progress = [item for item in progress if item.status == "in_progress"]
+    in_progress = [
+        item for item in progress if item.status in {"rescoring", "aggregating"}
+    ]
+    failed = [item for item in progress if item.status == "failed"]
+    interrupted = [
+        item for item in progress if item.status == "aggregate_pending"
+    ]
     pending = [item for item in progress if item.status == "pending"]
     active = max(in_progress, key=lambda item: item.latest_update_ns, default=None)
 
@@ -334,7 +430,9 @@ def main() -> None:
     )
     print(
         f"Submissions: {len(completed)} completed, "
-        f"{len(in_progress)} in progress, {len(pending)} pending"
+        f"{len(in_progress)} in progress, {len(failed)} failed, "
+        f"{len(interrupted)} interrupted, "
+        f"{len(pending)} pending"
     )
     if active is None:
         print("Current in progress: none")
@@ -348,6 +446,10 @@ def main() -> None:
     print_section("Completed", completed)
     print()
     print_section("In Progress", in_progress)
+    print()
+    print_section("Failed", failed)
+    print()
+    print_section("Interrupted", interrupted)
     print()
     print_section("Pending", pending)
 
