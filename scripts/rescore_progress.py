@@ -14,6 +14,10 @@ The progress model is based on the submissions targeted by
 - a submission is considered in progress when the rescored output directory
   exists but the submission is not yet complete
 - a submission is considered pending when no rescored output directory exists
+
+Requires `inspect_ai` at runtime to extract score deltas from `.eval` logs.
+When `inspect_ai` is unavailable, the script still reports progress counts and
+aggregate completion, but omits per-task score deltas.
 """
 
 from __future__ import annotations
@@ -31,6 +35,23 @@ TARGET_LOG_PATTERN = re.compile(
     r"(sqa-(test|dev)|e2e-discovery(-hard)?-(test|validation))"
 )
 AGGREGATE_FILES = ("scores.json", "summary_stats.json")
+PRIMARY_METRIC_NAMES = ("mean", "accuracy")
+try:
+    from inspect_ai.log import read_eval_log as _read_eval_log
+except ImportError:
+    _read_eval_log = None
+
+
+@dataclass(frozen=True)
+class TaskScoreDelta:
+    task_name: str
+    score_label: str
+    before: float
+    after: float
+
+    @property
+    def delta(self) -> float:
+        return self.after - self.before
 
 
 @dataclass(frozen=True)
@@ -41,6 +62,7 @@ class SubmissionProgress:
     tasks_total: int
     aggregate_complete: bool
     latest_update_ns: int
+    score_deltas: tuple[TaskScoreDelta, ...] = ()
 
     @property
     def tasks_remaining(self) -> int:
@@ -134,6 +156,69 @@ def aggregate_rewritten(
     return True
 
 
+def primary_score_value(score_summary: dict[str, object]) -> tuple[str, float] | None:
+    score_name = score_summary.get("name")
+    metrics = score_summary.get("metrics")
+    if not isinstance(score_name, str) or not isinstance(metrics, dict):
+        return None
+
+    for metric_name in PRIMARY_METRIC_NAMES:
+        metric = metrics.get(metric_name)
+        if isinstance(metric, dict):
+            value = metric.get("value")
+            if isinstance(value, int | float):
+                return (f"{score_name}/{metric_name}", float(value))
+
+    for metric_name, metric in metrics.items():
+        if metric_name == "stderr" or not isinstance(metric, dict):
+            continue
+        value = metric.get("value")
+        if isinstance(value, int | float):
+            return (f"{score_name}/{metric_name}", float(value))
+
+    return None
+
+
+def log_primary_score(path: Path) -> tuple[str, str, float] | None:
+    if _read_eval_log is None:
+        return None
+
+    try:
+        log = _read_eval_log(str(path), header_only=True)
+    except Exception:
+        return None
+
+    if not log.results or not log.results.scores:
+        return None
+
+    primary = primary_score_value(log.results.scores[0].model_dump(mode="json"))
+    if primary is None:
+        return None
+
+    score_label, value = primary
+    task_name = log.eval.task or path.stem
+    return (task_name, score_label, value)
+
+
+def score_delta_for_log(source_log: Path, output_log: Path) -> TaskScoreDelta | None:
+    before = log_primary_score(source_log)
+    after = log_primary_score(output_log)
+    if before is None or after is None:
+        return None
+
+    _, before_label, before_value = before
+    task_name, after_label, after_value = after
+    if before_label != after_label:
+        return None
+
+    return TaskScoreDelta(
+        task_name=task_name,
+        score_label=after_label,
+        before=before_value,
+        after=after_value,
+    )
+
+
 def submission_progress(
     source_submission_dir: Path, submissions_root: Path, output_root: Path
 ) -> SubmissionProgress:
@@ -154,12 +239,16 @@ def submission_progress(
 
     tasks_completed = 0
     paths_for_latest: list[Path] = []
+    score_deltas: list[TaskScoreDelta] = []
     for source_log in target_logs:
         output_log = output_submission_dir / source_log.name
         if output_log.exists():
             paths_for_latest.append(output_log)
         if file_rewritten(source_log, output_log):
             tasks_completed += 1
+            score_delta = score_delta_for_log(source_log, output_log)
+            if score_delta is not None:
+                score_deltas.append(score_delta)
 
     aggregate_complete = aggregate_rewritten(
         source_submission_dir, output_submission_dir
@@ -181,6 +270,7 @@ def submission_progress(
         tasks_total=tasks_total,
         aggregate_complete=aggregate_complete,
         latest_update_ns=latest_mtime_ns(paths_for_latest),
+        score_deltas=tuple(score_deltas),
     )
 
 
@@ -194,6 +284,14 @@ def format_progress(progress: SubmissionProgress) -> str:
     )
 
 
+def format_score_delta(score_delta: TaskScoreDelta) -> str:
+    return (
+        f"{score_delta.task_name} {score_delta.score_label}  "
+        f"{score_delta.before:.6f} -> {score_delta.after:.6f}  "
+        f"({score_delta.delta:+.6f})"
+    )
+
+
 def print_section(title: str, items: list[SubmissionProgress]) -> None:
     print(f"{title} ({len(items)})")
     if not items:
@@ -201,6 +299,8 @@ def print_section(title: str, items: list[SubmissionProgress]) -> None:
         return
     for progress in items:
         print(f"  {format_progress(progress)}")
+        for score_delta in progress.score_deltas:
+            print(f"    {format_score_delta(score_delta)}")
 
 
 def main() -> None:
