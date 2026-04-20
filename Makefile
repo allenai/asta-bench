@@ -105,7 +105,7 @@ endif
 flake:
 	docker run --rm \
 		$(ASTABENCH_TAG) \
-		uv run flake8 astabench/ tests/
+		uv run flake8 astabench/ tests/ scripts/
 
 ifneq ($(IS_CI),true)
 test: build-image

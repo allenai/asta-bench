@@ -8,8 +8,8 @@ version = "0.1.0"
 requires-python = ">=3.11"
 dependencies = [
     "astabench",
-    # Scorer tracks a newer validated Inspect for broad log compatibility.
-    "inspect_ai==0.3.179",
+    # Match the parent astabench pin so scoring and registry loading use the same Inspect.
+    "inspect_ai==0.3.203",
 ]
 
 [tool.uv.sources]
@@ -17,7 +17,7 @@ dependencies = [
 astabench = { path = "../..", editable = true }
 
 [tool.uv]
-# Override needed because local astabench pins inspect_ai==0.3.114.
+# Override needed so the local astabench editable dependency resolves to the scorer pin.
 override-dependencies = [
-    "inspect_ai==0.3.179",
+    "inspect_ai==0.3.203",
 ]
