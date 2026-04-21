@@ -13,7 +13,6 @@ from pathlib import Path
 from typing import Iterable
 
 from inspect_ai.log import read_eval_log
-from agenteval.score import get_normalized_task_name
 
 
 @dataclass(frozen=True)
@@ -62,7 +61,10 @@ def load_eval_log_metadata(submission_dir: Path) -> list[EvalLogMetadata]:
     metadata: list[EvalLogMetadata] = []
     for path in sorted(submission_dir.glob("*.eval")):
         log = read_eval_log(str(path), header_only=True)
-        task_name = get_normalized_task_name(log)
+        # Normalize to agenteval's fallback form (strip package prefix, e.g.
+        # "astabench/paper_finder_test" -> "paper_finder_test"). Two logs with
+        # the same normalized name are considered duplicates for dedup purposes.
+        task_name = log.eval.task.split("/")[-1] if log.eval.task else path.stem
         created = created_string(getattr(log.eval, "created", None))
         metadata.append(EvalLogMetadata(path=path, task_name=task_name, created=created))
     return metadata
