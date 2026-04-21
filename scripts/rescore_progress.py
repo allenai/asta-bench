@@ -100,6 +100,14 @@ class SubmissionProgress:
         return self.tasks_total - self.tasks_completed
 
 
+def resume_action(progress: SubmissionProgress) -> str:
+    if progress.status == "completed":
+        return "skip"
+    if progress.status in {"aggregate_pending", "aggregating"}:
+        return "aggregate"
+    return "full"
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Show progress for ScholarQA/E2E rescoring submissions."
@@ -124,6 +132,10 @@ def parse_args() -> argparse.Namespace:
         "--target-log-regex",
         default=TARGET_LOG_REGEX,
         help="Regex used to select target submission logs (default: %(default)s)",
+    )
+    parser.add_argument(
+        "--submission-rel",
+        help="If set, print JSON status/resume action for one relative submission path and exit",
     )
     return parser.parse_args()
 
@@ -395,6 +407,29 @@ def main() -> None:
 
     if not submissions_root.is_dir():
         raise SystemExit(f"error: submissions root not found ({submissions_root})")
+
+    if args.submission_rel:
+        source_submission_dir = submissions_root / args.submission_rel
+        if not source_submission_dir.is_dir():
+            raise SystemExit(
+                f"error: submission path not found ({source_submission_dir})"
+            )
+        progress = submission_progress(
+            source_submission_dir,
+            submissions_root=submissions_root,
+            output_root=output_root,
+            target_log_pattern=target_log_pattern,
+        )
+        print(
+            json.dumps(
+                {
+                    "rel_path": progress.rel_path,
+                    "status": progress.status,
+                    "action": resume_action(progress),
+                }
+            )
+        )
+        return
 
     targets = iter_target_submissions(
         submissions_root, target_log_pattern=target_log_pattern
