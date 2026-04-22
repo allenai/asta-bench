@@ -41,6 +41,7 @@ RESCORE_TASKS = frozenset(
         "astabench/e2e_discovery_hard_validation",
     }
 )
+RESCORE_TASK_NAMES = frozenset(task_name.split("/", 1)[1] for task_name in RESCORE_TASKS)
 
 
 def nested_scorer_names(value: Any) -> list[str]:
@@ -107,8 +108,16 @@ def alias_missing_scorers(names: list[str]) -> None:
             _registry[registry_key("scorer", name)] = scorer
 
 
+def normalized_task_name(task_name: str | None) -> str | None:
+    if not task_name:
+        return None
+    if "/" in task_name:
+        return task_name.split("/", 1)[1]
+    return task_name
+
+
 def should_rescore(log: Any) -> bool:
-    return bool(log.eval.task and log.eval.task in RESCORE_TASKS)
+    return normalized_task_name(log.eval.task) in RESCORE_TASK_NAMES
 
 
 def preload_scorers(log: Any, log_file: str) -> None:
