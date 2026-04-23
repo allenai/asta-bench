@@ -41,7 +41,9 @@ RESCORE_TASKS = frozenset(
         "astabench/e2e_discovery_hard_validation",
     }
 )
-RESCORE_TASK_NAMES = frozenset(task_name.split("/", 1)[1] for task_name in RESCORE_TASKS)
+RESCORE_TASK_NAMES = frozenset(
+    task_name.split("/", 1)[1] for task_name in RESCORE_TASKS
+)
 
 
 def nested_scorer_names(value: Any) -> list[str]:
@@ -130,6 +132,7 @@ def preload_scorers(log: Any, log_file: str) -> None:
 
     # Importing the registry registers module-level scorers and task entry points.
     import astabench.evals._registry  # noqa: F401
+
     alias_missing_scorers(names)
 
     remaining = unresolved_scorers(names)

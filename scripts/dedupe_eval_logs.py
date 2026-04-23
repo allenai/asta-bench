@@ -66,7 +66,9 @@ def load_eval_log_metadata(submission_dir: Path) -> list[EvalLogMetadata]:
         # the same normalized name are considered duplicates for dedup purposes.
         task_name = log.eval.task.split("/")[-1] if log.eval.task else path.stem
         created = created_string(getattr(log.eval, "created", None))
-        metadata.append(EvalLogMetadata(path=path, task_name=task_name, created=created))
+        metadata.append(
+            EvalLogMetadata(path=path, task_name=task_name, created=created)
+        )
     return metadata
 
 
@@ -141,9 +143,7 @@ def apply_keep_latest(
                 f"== archive: {entry.path} (task {group.task_name}; keeping {group.kept.filename})"
             )
 
-    kept_filenames = {
-        path.name for path in submission_dir.glob("*.eval")
-    }
+    kept_filenames = {path.name for path in submission_dir.glob("*.eval")}
     prune_logs_json(submission_dir, kept_filenames)
     write_manifest(archive_dir, groups)
 
@@ -161,8 +161,7 @@ def main() -> None:
         for group in groups:
             print(
                 f"duplicate task {group.task_name}: kept candidate {group.kept.filename}; "
-                f"duplicates {[entry.filename for entry in group.archived]}"
-                ,
+                f"duplicates {[entry.filename for entry in group.archived]}",
                 file=sys.stderr,
             )
         raise SystemExit(3)

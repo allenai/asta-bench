@@ -449,9 +449,7 @@ def main() -> None:
         item for item in progress if item.status in {"rescoring", "aggregating"}
     ]
     failed = [item for item in progress if item.status == "failed"]
-    interrupted = [
-        item for item in progress if item.status == "aggregate_pending"
-    ]
+    interrupted = [item for item in progress if item.status == "aggregate_pending"]
     pending = [item for item in progress if item.status == "pending"]
     active = max(in_progress, key=lambda item: item.latest_update_ns, default=None)
 
