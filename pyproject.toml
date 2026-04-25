@@ -9,7 +9,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "inspect_ai==0.3.203",
-    "agent-eval[leaderboard]==0.1.47",
+    "agent-eval[leaderboard]==0.1.49",
     "openai>=2.30.0", # provider SDK version validated with the current model set
     "pydantic>=2.11.4", # required by inspect
     "litellm==1.82.3",
