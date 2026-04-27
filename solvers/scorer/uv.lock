@@ -15,7 +15,7 @@ overrides = [{ name = "inspect-ai", specifier = "==0.3.203" }]
 
 [[package]]
 name = "agent-eval"
-version = "0.1.47"
+version = "0.1.49"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -26,9 +26,9 @@ dependencies = [
     { name = "pyarrow" },
     { name = "pydantic" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/da/06/b7c44262ab6d3d018bb4803ff01bfaf8e02e3a2374a52bd76ae181bcc48b/agent_eval-0.1.47.tar.gz", hash = "sha256:48086ca688f82800489ce553ceed226bbe2bfbe758f6c90e1a6bbb276b0d4a74", size = 49475 }
+sdist = { url = "https://files.pythonhosted.org/packages/3b/87/85c15e57cbbc4f4cff9be467239a3d261785c916a0a5165bb3100e316a5b/agent_eval-0.1.49.tar.gz", hash = "sha256:4663aba584072901ce70d8ae1e2854a2d8c752d710b237a27757b49b79bd326d", size = 49537 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/93/17/2ff8ece05b83a336749c720a7a5b6fb8f3070f6a4a3b2ae7e521f02d20d0/agent_eval-0.1.47-py3-none-any.whl", hash = "sha256:aa8ae8842a03c994ae6844c5f82e19488f68eb665ed47834ee765e3c3b257a51", size = 44343 },
+    { url = "https://files.pythonhosted.org/packages/9d/58/c5b328fabea3aac806f6c1430d796c579eac812316ef45d564a79edd2bcb/agent_eval-0.1.49-py3-none-any.whl", hash = "sha256:7dbf1483d12748374b702d93200c7573e5657a0aa8efac7741d2d9464cc1845e", size = 44483 },
 ]
 
 [package.optional-dependencies]
@@ -296,7 +296,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "agent-eval", extras = ["leaderboard"], specifier = "==0.1.47" },
+    { name = "agent-eval", extras = ["leaderboard"], specifier = "==0.1.49" },
     { name = "anthropic", specifier = ">=0.87.0" },
     { name = "autoflake", marker = "extra == 'dev'" },
     { name = "azure-ai-inference", marker = "extra == 'azure'" },
