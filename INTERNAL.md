@@ -142,6 +142,7 @@ Notes:
   - submissions interrupted after per-log scoring but before aggregation are resumed from the aggregation step
   - everything else is rerun from scratch for that submission
 - `--duplicate-task-policy keep-latest` is required for submissions that contain multiple `.eval` logs for the same normalized task; otherwise the default `fail` policy stops the batch at the first such submission. Older duplicates are archived under `<target-rescored-dir>/_duplicate_task_logs_archive/<submission-rel>/`, alongside a `manifest.json` describing the kept vs archived files.
+- SQA needs special handling when changing its judge model. Historical SQA `.eval` logs serialize the nested scorer model params, so preloading current scorer definitions does not automatically replace `gemini-2.5-flash` with the new SQA default. Use an explicit `inspect score --scorer ...` override or edit the `.eval` scorer config for SQA model migrations.
 - This workflow only targets the supported LLM-judged task types (ScholarQA and E2E-Bench); other tasks in the same submissions keep their original scores. The targeted log set is controlled by `TARGET_LOG_REGEX` in `scripts/rescore_judge_model_submissions.sh` and can be overridden with `--target-log-regex <pattern>`.
 - Tasks whose scorers need live Docker sandbox state (for example CORE-Bench, DS-1000, and SUPER) are not rescored from existing logs, because the sandbox state is not preserved after the original eval run.
 
