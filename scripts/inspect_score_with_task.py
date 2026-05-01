@@ -27,6 +27,9 @@ VALIDATED_INSPECT_VERSION = "0.3.203"
 # Tasks whose LLM judge/scorer model changed in recent source updates.
 # Current scope:
 # - SQA scorer_model: gemini-2.5-flash -> gemini-3-flash-preview
+#   Caveat: historical SQA logs serialize the nested scorer model params, so
+#   preloading scorer definitions is not enough to migrate SQA by itself.
+#   Use an explicit --scorer override or edit the .eval scorer config.
 # - E2E rubric model: claude-3.7-sonnet -> claude-sonnet-4-6
 #
 # All other tasks either have unchanged judge models or are deterministic, so
