@@ -29,6 +29,114 @@ Note to Ai2 internal users: Steps 2 and 3 may be run centrally, e.g. to re-score
 For bulk runs of already scored results, it is possible to run:
 `cat filenames_to_publish.txt | xargs astabench lb publish`
 
+### Rescoring Existing Submissions
+
+Sometimes an existing submission needs to be rescored after it has already been downloaded, for example when an LLM-based judge model expires or becomes unavailable, or when the configured judge/scorer model for a task is updated in the source code. In that case, keep the original submissions tree untouched and write rescored output to a separate tree.
+
+This workflow uses the same `solvers/scorer` uv project described in [Decoupled Solve->Score](README.md#decoupled-solvescore-cross-version).
+
+Prerequisites:
+- submissions already downloaded under `<target-dir>` (default: `asta-bench-submissions/`)
+
+#### Downloading Existing Submissions
+
+If you need to pull an existing submissions tree into `<target-dir>` (default: `asta-bench-submissions/`), use a Hugging Face dataset snapshot. This workflow assumes you have access to a Hugging Face dataset repo that stores submissions. For Ai2 internal usage, the submissions repo is `allenai/asta-bench-internal-submissions`; see [Submitting to the leaderboard](#submitting-to-the-leaderboard) for the internal flow. Public leaderboard uploads may not exist in a shared downloadable submissions tree.
+
+To download an entire submissions tree:
+
+```bash
+export HF_TOKEN=<your-huggingface-token>
+
+uv run python - <<'PY'
+from huggingface_hub import snapshot_download
+
+snapshot_download(
+    repo_id="<submissions-repo-id>",
+    repo_type="dataset",
+    local_dir="<target-dir>",
+    token=True,
+)
+PY
+```
+
+To download only specific submission directories, restrict the snapshot with `allow_patterns`:
+
+```bash
+export HF_TOKEN=<your-huggingface-token>
+
+uv run python - <<'PY'
+from huggingface_hub import snapshot_download
+
+SUBMISSIONS = [
+    "1.0.0-dev1/test/username_MyAgent_2025-01-01T00-00-00",
+    "1.0.0-dev1/validation/username_MyOtherAgent_2025-01-02T00-00-00",
+]
+
+snapshot_download(
+    repo_id="<submissions-repo-id>",
+    repo_type="dataset",
+    local_dir="<target-dir>",
+    allow_patterns=[f"{path}/*" for path in SUBMISSIONS],
+    token=True,
+)
+PY
+```
+
+To rescore the currently supported LLM-judged tasks (ScholarQA and E2E-Bench), run:
+
+Using the default directories:
+
+```bash
+./scripts/rescore_judge_model_submissions.sh \
+  --duplicate-task-policy keep-latest
+```
+
+Or with explicit directories:
+
+```bash
+./scripts/rescore_judge_model_submissions.sh \
+  --submissions-root <target-dir> \
+  --output-root <target-rescored-dir> \
+  --duplicate-task-policy keep-latest
+```
+
+Defaults: `<target-dir>` -> `asta-bench-submissions/`, `<target-rescored-dir>` -> `asta-bench-submissions-rescored/`.
+
+Note: `<target-rescored-dir>` must not overlap with `<target-dir>`.
+
+This script:
+1. Finds submissions under `<target-dir>` that contain targeted ScholarQA or E2E-Bench logs
+2. Copies only those submissions into `<target-rescored-dir>`
+3. Re-runs per-log `inspect score --overwrite` only for the targeted tasks
+4. Re-runs `astabench score` for the copied submission directory
+
+Useful companion commands:
+
+```bash
+python scripts/rescore_progress.py \
+  --submissions-root <target-dir> \
+  --output-root <target-rescored-dir>
+python scripts/rescore_progress.py \
+  --submissions-root <target-dir> \
+  --output-root <target-rescored-dir> \
+  --show summary
+./scripts/rescore_judge_model_submissions.sh \
+  --submissions-root <target-dir> \
+  --output-root <target-rescored-dir> \
+  --resume \
+  --duplicate-task-policy keep-latest
+```
+
+Notes:
+- `scripts/rescore_progress.py` shows which submissions are pending, in progress, failed, interrupted, or completed, and prints before/after score deltas for rewritten target logs.
+- `--resume` enables safe retry support:
+  - completed submissions are skipped
+  - submissions interrupted after per-log scoring but before aggregation are resumed from the aggregation step
+  - everything else is rerun from scratch for that submission
+- `--duplicate-task-policy keep-latest` is required for submissions that contain multiple `.eval` logs for the same normalized task; otherwise the default `fail` policy stops the batch at the first such submission. Older duplicates are archived under `<target-rescored-dir>/_duplicate_task_logs_archive/<submission-rel>/`, alongside a `manifest.json` describing the kept vs archived files.
+- This workflow only targets the supported LLM-judged task types (ScholarQA and E2E-Bench); other tasks in the same submissions keep their original scores. The targeted log set is controlled by `TARGET_LOG_REGEX` in `scripts/rescore_judge_model_submissions.sh` and can be overridden with `--target-log-regex <pattern>`.
+- Tasks whose scorers need live Docker sandbox state (for example CORE-Bench, DS-1000, and SUPER) are not rescored from existing logs, because the sandbox state is not preserved after the original eval run.
+
 ### Adding a Benchmark
 
 InspectAI has [extensive documentation](https://inspect.aisi.org.uk/tasks.html) on how to implement task code; this section covers additional considerations when adding a task to AstaBench to ensure compatibility with suite expectations.
@@ -60,5 +168,4 @@ To ensure that general agents can run on the tasks, task samples should always b
 - the input/output chats may be structured (e.g. JSON) as long as they are consumable by a chat LLM
 
 For multiple choice tasks, there is a [`format_multichoice_as_textin`](https://github.com/allenai/astabench/blob/691327e55fd9b43fe2686f28ddee9cfd5fff7ad5/astabench/evals/utils.py) utility that can be used to convert Inspect's `sample.choices` into a pure text format as required (used by e.g. [litqa2](https://github.com/allenai/asta-bench/blob/f507043c159fa6b236a87473b1acdf8ab8b016f1/astabench/evals/labbench/litqa2/task.py#L277)).
-
 
