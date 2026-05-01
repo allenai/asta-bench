@@ -13,6 +13,10 @@
 
 set -euo pipefail
 
+# Template guard: this regex-based log detection is intentionally per-rescore
+# and may miss renamed logs or other LLM-judged tasks. Adapt it before use.
+echo "This script is a template and needs to be adapted to your use case.  Edit and try again"; exit 1
+
 # Edit this regex to change which submission logs are targeted for rescoring.
 TARGET_LOG_REGEX='(sqa-(test|dev)|e2e-discovery(-hard)?-(test|validation))'
 RESCORE_STATE_FILE='.rescore-state.json'

@@ -82,6 +82,14 @@ snapshot_download(
 PY
 ```
 
+`scripts/rescore_judge_model_submissions.sh` is intentionally guarded as a template. By default it exits with:
+
+```text
+This script is a template and needs to be adapted to your use case.  Edit and try again
+```
+
+Before running it, edit the script for the current rescore pass: confirm the target detection logic, update `TARGET_LOG_REGEX` or replace the regex-based selection if needed, and then remove or adapt the template guard.
+
 To rescore the currently supported LLM-judged tasks (ScholarQA and E2E-Bench), run:
 
 Using the default directories:
@@ -168,4 +176,3 @@ To ensure that general agents can run on the tasks, task samples should always b
 - the input/output chats may be structured (e.g. JSON) as long as they are consumable by a chat LLM
 
 For multiple choice tasks, there is a [`format_multichoice_as_textin`](https://github.com/allenai/astabench/blob/691327e55fd9b43fe2686f28ddee9cfd5fff7ad5/astabench/evals/utils.py) utility that can be used to convert Inspect's `sample.choices` into a pure text format as required (used by e.g. [litqa2](https://github.com/allenai/asta-bench/blob/f507043c159fa6b236a87473b1acdf8ab8b016f1/astabench/evals/labbench/litqa2/task.py#L277)).
-
