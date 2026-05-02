@@ -61,7 +61,7 @@ uv run astabench eval --solver react --model openai/gpt-4.1 --split validation -
 ```
 When the `astabench eval` command finishes, you should see scores printed for the various tasks, as well as instructions on how to generate the score and cost summary for the run you just did (e.g., `uv run astabench score logs/my-first-astabench-experiment/`).
 
-The `validation` split is intended for development and smoke testing. When you are ready to run the full suite for final evaluation, switch to `--split test`, remove the `--limit 1`, and carefully choose parallelism settings based on your system's resources (see [Parallelism and system requirements](#parallelism)).
+When you are ready to run the full suite, remove the `--limit 1` and carefully choose parallelism settings based on your system's resources (see [Parallelism and system requirements](#parallelism)).
 
 For more usage details, including how to view results and submit to the leaderboard, see [Usage](#usage).  See many more solvers available in [agent-baselines](https://github.com/allenai/agent-baselines).
 
