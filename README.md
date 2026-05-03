@@ -29,6 +29,7 @@ AstaBench builds on top of the [InspectAI](https://inspect.ai-safety-institute.o
 - [Available Agents](#available-agents)
 - [Running ScholarQA evaluations with dvc](#running-scholarqa-evaluations-with-dvc)
 - [Terminology](#terminology)
+- [Citation](#citation)
 
 ## Quickstart
 
@@ -400,3 +401,27 @@ We generally follow the InspectAI terminology, but use some terms interchangeabl
 - A "scorer" is a function that takes a task state (after the solver has finished) and a target and returns one or more metrics.
 - A "task" or "benchmark" consists of a dataset (one or more problems) + a scorer
 - A "solver" or "agent" is a function that takes a task state (containing the problem input, possibly metadata/tools), potentially calls tools, and alters the state to indicate its answer (i.e. via `state.output.completion`).  Note: in these docs we generally use "solver" and "agent" interchangeably, despite them having slightly different meanings in InspectAI.
+
+## Citation
+
+If you use AstaBench, please cite the [AstaBench paper](https://openreview.net/forum?id=M7TNf5J26u):
+
+```bibtex
+@inproceedings{astabench,
+  title     = {Asta{B}ench: Rigorous Benchmarking of {AI} Agents with a Scientific Research Suite},
+  author    = {Jonathan Bragg and Mike D'Arcy and Nishant Balepur and Dan Bareket and
+               Bhavana Dalvi Mishra and Sergey Feldman and Dany Haddad and Jena D. Hwang and
+               Peter Jansen and Varsha Kishore and Bodhisattwa Prasad Majumder and
+               Aakanksha Naik and Sigal Rahamimov and Kyle Richardson and Amanpreet Singh and
+               Harshit Surana and Aryeh Tiktinsky and Rosni Vasu and Guy Wiener and
+               Chloe Anastasiades and Stefanus Candra and Jason Dunkelberger and
+               Daniel Emery and Rob Evans and Malachi Hamada and Regan Huff and
+               Rodney Kinney and Matt Latzke and Jaron Lochner and Ruben Lozano-Aguilera and
+               Ngoc-Uyen Nguyen and Smita Rao and Amber Tanaka and Brooke Vlahos and
+               Peter Clark and Doug Downey and Yoav Goldberg and Ashish Sabharwal and
+               Daniel S. Weld},
+  booktitle = {The Fourteenth International Conference on Learning Representations},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=M7TNf5J26u},
+}
+```
