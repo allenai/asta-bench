@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 """
 
 DEFAULT_CONTENT_RELEVANCE_CRITERION_NAME = "Relevance Criterion"
-grader_model = get_model("openai/gpt-4o-2024-11-20")
+GRADER_MODEL_NAME = "openai/gpt-4o-2024-11-20"
 
 
 class Relevance(StrEnum):
@@ -168,7 +168,7 @@ async def _llm_judge_relevance_with_criteria(
                 criteria=doc_text
             )
         )
-        judging_futures.append(grader_model.generate(score_prompt))
+        judging_futures.append(get_model(GRADER_MODEL_NAME).generate(score_prompt))
 
     relevance_judgement_results = dict()
     for raw, doc_id in zip(
