@@ -35,6 +35,7 @@ from astabench.evals.paper_finder.paper_finder_utils import (
 )
 from astabench.evals.utils import not_implemented_solver
 from astabench.tools import make_asta_mcp_tools, make_native_search_tools
+from astabench.util.sample import set_insertion_date
 
 logger = logging.getLogger(__name__)
 
@@ -246,6 +247,7 @@ def paper_finder(
     dataset = load_paper_finder_bench(chosen_split)
     tool_setups = []
     inserted_before = get_inserted_before_per_dataset_type(chosen_split)
+    set_insertion_date(dataset, inserted_before)
     if with_search_tools:
         tool_setups.append(
             use_tools(
