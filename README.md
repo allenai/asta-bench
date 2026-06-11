@@ -91,7 +91,7 @@ When running evaluations within the Docker container, make sure to define all th
 
 The following environment variables are used by the suite:
 #### `ASTA_TOOL_KEY`
-Used by the literature search tools. See [here](https://allenai-web-dev.allen.ai/asta/resources/mcp).
+Used by the literature search tools. See [here](https://allenai.org/asta/resources/mcp).
 
 #### `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, and `GOOGLE_API_KEY`
 These keys are required for scoring tasks. Ensure you have active subscriptions or free-tier access for these providers, as rate limits and usage caps may apply.
