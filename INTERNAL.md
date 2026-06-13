@@ -20,14 +20,21 @@ astabench score hf://allenai/asta-bench-internal-submissions/1.0.0-dev1/validati
 # This will write files scores.json and summary_stats.json to a summaries directory in the submissions repo; the scores file is needed in this location to publish results to leaderboard
 
 # Step 3. Publish data to display in the leaderboard UI.
-astabench lb publish hf://allenai/asta-bench-internal-submissions/1.0.0-dev1/validation/username_MyAgent_2025-01-01T00-00-00
+astabench lb publish hf://allenai/asta-bench-internal-submissions/1.0.0-dev1/validation/username_MyAgent_2025-01-01T00-00-00 \
+  --repo-id allenai/asta-bench-internal-results  # destination leaderboard results repo
 # This step expects eval_config.json and submission.json to be available in your submission files and scores.json to be present in the submission summaries directory. It integrates these files for publication to the leaderboard.
 ```
+
+The example above uses the **internal** repos. To submit to the **public** leaderboard, swap both: `allenai/asta-bench-submissions` for Step 1's `--submissions-repo-id` (and the `hf://` paths in Steps 2–3), and `allenai/asta-bench-results` for Step 3's `--repo-id`.
+
+Always pass `--repo-id` explicitly in Step 3. The destination leaderboard results repo (where Step 3 writes the display data) is distinct from the submissions repo (the `hf://` source path), and if `--repo-id` is omitted it silently defaults to `allenai/asta-bench-internal-results`. Unlike Step 1's `--submissions-repo-id` (which falls back to `$SUBMISSIONS_REPO_ID`), this default is hardcoded with no env-var override, so an omitted flag publishes to the internal leaderboard regardless of intent.
+
+**Check your agenteval lib version.** When the schema changes, older versions may produce incompatible submission schemas that fail to appear on the leaderboard.
 
 Note to Ai2 internal users: Steps 2 and 3 may be run centrally, e.g. to re-score with up-to-date costs and make controlled updates to leaderboard display data.
 
 For bulk runs of already scored results, it is possible to run:
-`cat filenames_to_publish.txt | xargs astabench lb publish`
+`cat filenames_to_publish.txt | xargs astabench lb publish --repo-id allenai/asta-bench-internal-results`
 
 ### Rescoring Existing Submissions
 
