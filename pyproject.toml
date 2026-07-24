@@ -9,9 +9,12 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "inspect_ai==0.3.233",
-    "agent-eval[leaderboard]==0.1.51",
+    # NOTE: agent-eval is intentionally NOT a base dependency. It hard-pins
+    # inspect_ai==0.3.203, which would force the solve runtime's Inspect version
+    # down. Scoring pulls it via the `score` extra instead (allenai/gas2own#346).
     "openai>=2.30.0", # provider SDK version validated with the current model set
     "pydantic>=2.11.4", # required by inspect
+    "pyyaml", # astabench.suite_config parses suite .yml files directly
     "litellm==1.88.1",
     "datasets~=3.2.0",
     "huggingface_hub",
@@ -32,6 +35,12 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+# Scoring / leaderboard stack. agent-eval pins inspect_ai==0.3.203, so install
+# this extra only in the (separate) scorer environment — never alongside a
+# solve env that needs a newer Inspect. See solvers/scorer and gas2own#346.
+score = [
+    "agent-eval[leaderboard]==0.1.51",
+]
 dev = [
     "black==24.2.0",
     "isort",

@@ -7,7 +7,9 @@ name = "astabench-scorer"
 version = "0.1.0"
 requires-python = ">=3.11"
 dependencies = [
-    "astabench",
+    # [score] pulls agent-eval (the scorer / leaderboard stack), which is not a
+    # base astabench dependency (gas2own#346).
+    "astabench[score]",
     # Match the parent astabench pin so scoring and registry loading use the same Inspect.
     "inspect_ai==0.3.203",
 ]
