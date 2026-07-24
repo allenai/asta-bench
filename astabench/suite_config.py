@@ -5,7 +5,8 @@ needs to turn a suite ``.yml`` into a list of Inspect task paths. It is kept
 here (rather than imported from ``agenteval``) so the *solve* environment does
 not have to install ``agent-eval`` — which hard-pins ``inspect_ai==0.3.203`` and
 would otherwise drag the solve runtime's Inspect version down (see
-allenai/gas2own#346). Scoring still uses ``agenteval`` via the ``[score]`` extra.
+allenai/gas2own#346). Scoring still uses ``agenteval`` from the dedicated
+``solvers/scorer`` sub-project.
 
 The field layout mirrors ``agenteval.config`` exactly so the ``eval_config.json``
 that ``astabench eval`` writes round-trips through ``agenteval``'s ``EvalConfig``

@@ -7,10 +7,15 @@ name = "astabench-scorer"
 version = "0.1.0"
 requires-python = ">=3.11"
 dependencies = [
-    # [score] pulls agent-eval (the scorer / leaderboard stack), which is not a
-    # base astabench dependency (gas2own#346).
-    "astabench[score]",
-    # Match the parent astabench pin so scoring and registry loading use the same Inspect.
+    "astabench",
+    # agent-eval (the scorer / leaderboard stack) lives here, NOT as an astabench
+    # dependency: it hard-pins inspect_ai==0.3.203, which would drag the solve
+    # runtime's Inspect down and — because uv resolves extras in the base
+    # universe — makes an `astabench[score]` extra unlockable against astabench's
+    # base inspect_ai==0.3.233 pin. Isolating it here is the decouple (gas2own#346).
+    "agent-eval[leaderboard]==0.1.51",
+    # Override astabench's base inspect pin back down to what agent-eval requires,
+    # so scoring and registry loading use the same Inspect. See override below.
     "inspect_ai==0.3.203",
 ]
 

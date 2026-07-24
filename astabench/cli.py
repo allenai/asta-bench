@@ -7,7 +7,8 @@ the scorer, which is pinned by ``agent-eval`` (see allenai/gas2own#346).
 
 Scoring / leaderboard commands (``score``, ``lb``, ``publish-logs``, …) are
 provided by ``agent-eval`` and loaded lazily, so they are only required in an
-environment that installed the ``[score]`` extra.
+environment that installed ``agent-eval`` (the dedicated ``solvers/scorer``
+sub-project, which pins Inspect back to the scorer's version).
 """
 
 import importlib.resources
@@ -301,8 +302,8 @@ def eval_command(
 
 class _AstabenchCLI(click.Group):
     """CLI group that serves ``eval`` natively and defers scoring/leaderboard
-    commands to ``agent-eval`` (lazily imported; only needed when the
-    ``[score]`` extra is installed)."""
+    commands to ``agent-eval`` (lazily imported; only needed in an environment
+    that installed ``agent-eval``, e.g. the ``solvers/scorer`` sub-project)."""
 
     def _agenteval_cli(self):
         from agenteval.cli import cli as ae_cli
@@ -324,8 +325,11 @@ class _AstabenchCLI(click.Group):
             ae_cli = self._agenteval_cli()
         except ModuleNotFoundError as e:
             raise click.ClickException(
-                f"The '{name}' command requires the scoring dependencies. "
-                "Install them with: pip install 'astabench[score]'"
+                f"The '{name}' command requires the scoring stack (agent-eval), "
+                "which is intentionally not an astabench dependency. Run scoring "
+                "from the dedicated scorer environment in solvers/scorer (see "
+                "solvers/scorer/README.md), or install agent-eval alongside "
+                "astabench in an environment pinned to inspect_ai==0.3.203."
             ) from e
         return ae_cli.get_command(ctx, name)
 
