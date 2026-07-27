@@ -9,16 +9,14 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "inspect_ai==0.3.233",
-    # NOTE: agent-eval is intentionally NOT an astabench dependency (base *or*
-    # extra). It hard-pins inspect_ai==0.3.203, which would force the solve
-    # runtime's Inspect version down. Because uv resolves a project's extras in
-    # the same universe as its base deps, an `astabench[score] -> agent-eval`
-    # extra is unlockable against the base `inspect_ai==0.3.233` pin. Scoring
-    # therefore depends on agent-eval directly from the `solvers/scorer`
-    # sub-project (which overrides Inspect back to 0.3.203). See gas2own#346.
+    # Base agent-eval is the inspect-free solve contract (suite config,
+    # EvalConfig, and git reproducibility helpers). Scoring dependencies,
+    # including inspect_ai==0.3.203, live in agent-eval's scoring/leaderboard
+    # extras and are installed only by solvers/scorer. See gas2own#346.
+    "agent-eval==0.1.52",
     "openai>=2.30.0", # provider SDK version validated with the current model set
     "pydantic>=2.11.4", # required by inspect
-    "pyyaml", # astabench.suite_config parses suite .yml files directly
+    "pyyaml", # scripts/task_metadatas.py parses suite .yml files directly
     "litellm==1.88.1",
     "datasets~=3.2.0",
     "huggingface_hub",
@@ -111,6 +109,8 @@ disable = [
 
 [tool.uv.sources]
 knowledge-storm = { git = "https://github.com/gituser768/storm", branch = "dh-fix-youcom" }
+# Temporary stacked-PR source. Remove after agent-eval 0.1.52 is published.
+agent-eval = { git = "https://github.com/allenai/agent-eval.git", rev = "5389fbedc02fab638d9da8e4822e11f3e500b437" }
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

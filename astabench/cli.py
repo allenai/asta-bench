@@ -21,7 +21,8 @@ from datetime import datetime
 
 import click
 
-from astabench.suite_config import load_suite_config
+from agenteval.config import load_suite_config
+from agenteval.io import verify_git_reproducibility
 
 DEFAULT_CONFIG = "v1.0.0"
 SPLIT_NAMES = ["validation", "test"]
@@ -32,75 +33,6 @@ def get_config_path(config_name):
     """Get the path to a config file in the package's config directory."""
     with importlib.resources.path("astabench.config", f"{config_name}.yml") as path:
         return os.path.abspath(path)
-
-
-def verify_git_reproducibility() -> None:
-    """Abort if the working tree isn't in a reproducibly-recorded git state."""
-    try:
-        sha_result = subprocess.run(
-            ["git", "rev-parse", "--short", "HEAD"],
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-        origin_result = subprocess.run(
-            ["git", "remote", "get-url", "origin"],
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-        sha = sha_result.stdout.strip() if sha_result.returncode == 0 else None
-        origin = origin_result.stdout.strip() if origin_result.returncode == 0 else None
-
-        git_dirty = (
-            subprocess.run(
-                ["git", "diff", "--quiet", "--exit-code"],
-                capture_output=True,
-                check=False,
-            ).returncode
-            != 0
-        )
-
-        untracked_result = subprocess.run(
-            ["git", "ls-files", "--others", "--exclude-standard"],
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-        untracked_files = untracked_result.stdout.strip().splitlines()
-        if untracked_files:
-            click.echo(
-                f"Warning: Untracked files present: {', '.join(untracked_files)}. "
-                "For reproducibility, please add, ignore, or remove these files."
-            )
-
-        if git_dirty:
-            raise click.ClickException(
-                f"Git working directory contains uncommitted changes. "
-                f"For reproducibility, Inspect will save: origin={origin}, sha={sha}. "
-                "Please commit your changes or use --ignore-git to bypass this check (not recommended)."
-            )
-
-        if sha:
-            remote_exists = subprocess.run(
-                ["git", "branch", "-r", "--contains", sha],
-                capture_output=True,
-                text=True,
-                check=True,
-            ).stdout.strip()
-            if not remote_exists:
-                raise click.ClickException(
-                    f"Commit {sha} not found on remote '{origin}'. Others won't be able to "
-                    "access this code version. Please push your changes or use --ignore-git "
-                    "to bypass this check (not recommended)."
-                )
-    except (subprocess.SubprocessError, FileNotFoundError) as e:
-        if isinstance(e, click.ClickException):
-            raise
-        raise click.ClickException(
-            f"Unable to verify git status for reproducibility: {e}. "
-            "Use --ignore-git to bypass this check if git is not available."
-        )
 
 
 @click.command(

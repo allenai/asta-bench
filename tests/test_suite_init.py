@@ -8,7 +8,7 @@ import pytest
 from click.testing import CliRunner
 
 from astabench.cli import DEFAULT_CONFIG, eval_command, get_config_path
-from astabench.suite_config import load_suite_config
+from agenteval.config import load_suite_config
 from astabench.evals import _registry
 
 

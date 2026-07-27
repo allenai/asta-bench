@@ -15,24 +15,21 @@ overrides = [{ name = "inspect-ai", specifier = "==0.3.203" }]
 
 [[package]]
 name = "agent-eval"
-version = "0.1.51"
-source = { registry = "https://pypi.org/simple" }
+version = "0.1.52"
+source = { git = "https://github.com/allenai/agent-eval.git?rev=5389fbedc02fab638d9da8e4822e11f3e500b437#5389fbedc02fab638d9da8e4822e11f3e500b437" }
 dependencies = [
     { name = "click" },
     { name = "datasets" },
     { name = "huggingface-hub" },
-    { name = "inspect-ai" },
     { name = "litellm" },
     { name = "pyarrow" },
     { name = "pydantic" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/61/42/96b42ba8e007db663e8f3344eca8f97e18de524aad688a0292b4b64b05a6/agent_eval-0.1.51.tar.gz", hash = "sha256:e833669bbf584abe454b28acaf6f74c6a5292b3f963e1bdc54f67c4d7cdbadcf", size = 50717, upload-time = "2026-06-16T22:36:13.74Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/2b/ad/c4a4a8cbbcc4b9852a633a8d599049c578254887d791b0985c5b55715e2e/agent_eval-0.1.51-py3-none-any.whl", hash = "sha256:3b3687ad94c0e0f838a907215aa51afd462a475f2b8e088eea88ffcffe7367ca", size = 45080, upload-time = "2026-06-16T22:36:12.563Z" },
+    { name = "pyyaml" },
 ]
 
 [package.optional-dependencies]
 leaderboard = [
+    { name = "inspect-ai" },
     { name = "matplotlib" },
     { name = "pandas" },
     { name = "seaborn" },
@@ -271,6 +268,7 @@ name = "astabench"
 version = "0.5.4"
 source = { editable = "../../" }
 dependencies = [
+    { name = "agent-eval" },
     { name = "anthropic" },
     { name = "click" },
     { name = "datasets" },
@@ -296,6 +294,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "agent-eval", git = "https://github.com/allenai/agent-eval.git?rev=5389fbedc02fab638d9da8e4822e11f3e500b437" },
     { name = "anthropic", specifier = ">=0.87.0" },
     { name = "autoflake", marker = "extra == 'dev'" },
     { name = "azure-ai-inference", marker = "extra == 'azure'" },
@@ -342,7 +341,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "agent-eval", extras = ["leaderboard"], specifier = "==0.1.51" },
+    { name = "agent-eval", extras = ["leaderboard"], git = "https://github.com/allenai/agent-eval.git?rev=5389fbedc02fab638d9da8e4822e11f3e500b437" },
     { name = "astabench", editable = "../../" },
     { name = "inspect-ai", specifier = "==0.3.203" },
 ]
