@@ -8,13 +8,15 @@ version = "0.5.4"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    # 0.3.235 (not 0.3.233): inspect_swe 0.2.63 — the newest inspect_swe
-    # compatible with a released inspect_ai (0.2.65+ call an unreleased
-    # sandbox_agent_bridge(checkpointer=) kwarg) — declares inspect-ai>=0.3.235
-    # and uses install_skills/read_skills/model_event_sink (0.3.235). agent-
-    # baselines' inspect-swe solve env overrides inspect_ai>=0.3.235, so this
-    # pin must land >=0.3.235 for that overlay to resolve. See gas2own#346.
-    "inspect_ai==0.3.235",
+    # 0.3.233 is the tightest version carrying both fixes required by the
+    # inspect-swe solve arm: bridged MCP result serialization (0.3.220) and
+    # inline Anthropic system-role messages (0.3.233). agent-baselines caps
+    # inspect_swe below 0.2.60 because newer versions declare a higher
+    # inspect_ai floor (and 0.2.65+ pass the newer `checkpointer` bridge API),
+    # while its uv override would otherwise force them onto incompatible
+    # 0.3.233.
+    # See gas2own#346 and allenai/agent-baselines#31.
+    "inspect_ai==0.3.233",
     # Base agent-eval is the inspect-free solve contract (suite config,
     # EvalConfig, and git reproducibility helpers). Scoring dependencies,
     # including inspect_ai==0.3.203, live in agent-eval's scoring/leaderboard
