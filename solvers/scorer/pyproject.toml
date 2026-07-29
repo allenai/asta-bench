@@ -24,8 +24,6 @@ dependencies = [
 [tool.uv.sources]
 # Use local astabench code from this repository.
 astabench = { path = "../..", editable = true }
-# Temporary stacked-PR source. Remove after agent-eval 0.1.52 is published.
-agent-eval = { git = "https://github.com/allenai/agent-eval.git", rev = "5389fbedc02fab638d9da8e4822e11f3e500b437" }
 
 [tool.uv]
 # Override needed so the local astabench editable dependency resolves to the scorer pin.
