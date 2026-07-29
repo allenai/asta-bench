@@ -11,7 +11,7 @@ dependencies = [
     # Add agent-eval's scorer / leaderboard stack only in this isolated env.
     # Base astabench uses agent-eval's inspect-free contract; this extra adds the
     # frozen scoring Inspect version through the override below (gas2own#346).
-    "agent-eval[leaderboard]==0.1.52",
+    "agent-eval[leaderboard]==0.1.53",
     # Scorer Inspect must be >= every event type the solve arms can emit, or
     # read_eval_log rejects the log. It was 0.3.203, but interrupted samples
     # write an InterruptEvent (added in Inspect 0.3.225), which a 0.3.203 reader
@@ -24,6 +24,8 @@ dependencies = [
 [tool.uv.sources]
 # Use local astabench code from this repository.
 astabench = { path = "../..", editable = true }
+# Temporary stacked-PR source. Remove after agent-eval 0.1.53 is published.
+agent-eval = { git = "https://github.com/allenai/agent-eval.git", rev = "968f6610b6532381c48d03a03eebd7aa345a0644" }
 
 [tool.uv]
 # Override needed so the local astabench editable dependency resolves to the scorer pin.
