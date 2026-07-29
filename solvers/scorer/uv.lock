@@ -28,7 +28,7 @@ wheels = [
 [[package]]
 name = "agent-eval"
 version = "0.1.53"
-source = { git = "https://github.com/allenai/agent-eval.git?rev=968f6610b6532381c48d03a03eebd7aa345a0644#968f6610b6532381c48d03a03eebd7aa345a0644" }
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
     { name = "datasets" },
@@ -37,6 +37,10 @@ dependencies = [
     { name = "pyarrow" },
     { name = "pydantic" },
     { name = "pyyaml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/75/98/43dfd99fa1f8c7b71f5bbe1e1505d5ae3206b9899979a09846755dbb1106/agent_eval-0.1.53.tar.gz", hash = "sha256:49581d9cdd50886299a3e4cf8073771eddf88b3c3e4cd18fcb513d7233951279", size = 51401, upload-time = "2026-07-29T20:38:33.277Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5e/2a/4414f9ba58e37d94aec07fd97e8d66989cb674d8d1a942a92495f27d8e27/agent_eval-0.1.53-py3-none-any.whl", hash = "sha256:4fb73ced33b031ea5dbcf75eb2092ee653d1c5a051cde01cc99f547fad3decfa", size = 45935, upload-time = "2026-07-29T20:38:32.206Z" },
 ]
 
 [package.optional-dependencies]
@@ -306,7 +310,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "agent-eval", git = "https://github.com/allenai/agent-eval.git?rev=968f6610b6532381c48d03a03eebd7aa345a0644" },
+    { name = "agent-eval", specifier = "==0.1.53" },
     { name = "anthropic", specifier = ">=0.87.0" },
     { name = "autoflake", marker = "extra == 'dev'" },
     { name = "azure-ai-inference", marker = "extra == 'azure'" },
@@ -353,7 +357,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "agent-eval", extras = ["leaderboard"], git = "https://github.com/allenai/agent-eval.git?rev=968f6610b6532381c48d03a03eebd7aa345a0644" },
+    { name = "agent-eval", extras = ["leaderboard"], specifier = "==0.1.53" },
     { name = "astabench", editable = "../../" },
     { name = "inspect-ai", specifier = "==0.3.225" },
 ]

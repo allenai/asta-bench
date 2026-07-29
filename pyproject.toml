@@ -117,8 +117,6 @@ disable = [
 
 [tool.uv.sources]
 knowledge-storm = { git = "https://github.com/gituser768/storm", branch = "dh-fix-youcom" }
-# Temporary stacked-PR source. Remove after agent-eval 0.1.53 is published.
-agent-eval = { git = "https://github.com/allenai/agent-eval.git", rev = "968f6610b6532381c48d03a03eebd7aa345a0644" }
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
