@@ -11,7 +11,7 @@ dependencies = [
     # SOLVE-ENVIRONMENT inspect_ai floor. The root astabench package is
     # installed alongside a participant's solver to provide the benchmark
     # tasks. It should declare the oldest inspect_ai API astabench itself needs
-    # and allow each solver to select a newer compatible version. Version
+    # and allow each solver to select a newer compatible 0.3.x version. Version
     # 0.3.233 is the oldest release carrying both fixes required by these
     # tasks: bridged MCP result serialization (0.3.220) and inline Anthropic
     # system-role messages (0.3.233).
@@ -24,10 +24,11 @@ dependencies = [
     # that solver back to an incompatible version and crashed with
     # `sandbox_agent_bridge() got an unexpected keyword argument 'checkpointer'`.
     # This lower bound lets that and other solvers declare their own stricter
-    # requirements. The scorer remains independently pinned; see
-    # solvers/scorer/pyproject.toml.
+    # requirements. The <0.4 ceiling avoids silently accepting a new API line;
+    # compatibility with 0.4 should be evaluated before widening the range.
+    # The scorer remains independently pinned; see solvers/scorer/pyproject.toml.
     # See gas2own#346, gas2own#430, and allenai/agent-baselines#32.
-    "inspect_ai>=0.3.233",
+    "inspect_ai>=0.3.233,<0.4",
     # Base agent-eval is the inspect-free solve contract (suite config,
     # EvalConfig, and git reproducibility helpers). Scoring dependencies,
     # including inspect_ai==0.3.203, live in agent-eval's scoring/leaderboard
