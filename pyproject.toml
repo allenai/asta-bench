@@ -8,32 +8,26 @@ version = "0.5.4"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    # SOLVE ARM inspect_ai floor. This is deliberately the shared floor that
-    # agent-baselines' inspect-swe declares (`inspect_ai>=0.3.249`), so the two
-    # cohere instead of fighting. The current Claude Code and Codex inspect_swe
-    # agents need >=0.3.249 for (a) the Anthropic sandbox bridge to accept a
-    # system-role message in `messages[]` (folded into ChatMessageSystem in
-    # messages_from_anthropic_input; older raised "Unexpected message role:
-    # system") and (b) the newer `checkpointer` bridge API that inspect_swe
-    # >=0.2.65 passes. Both earlier fixes this pin carried are still present at
-    # >=0.3.249: bridged MCP result serialization (0.3.220) and inline
-    # Anthropic system-role messages (0.3.233).
+    # SOLVE-ENVIRONMENT inspect_ai floor. The root astabench package is
+    # installed alongside a participant's solver to provide the benchmark
+    # tasks. It should declare the oldest inspect_ai API astabench itself needs
+    # and allow each solver to select a newer compatible version. Version
+    # 0.3.233 is the oldest release carrying both fixes required by these
+    # tasks: bridged MCP result serialization (0.3.220) and inline Anthropic
+    # system-role messages (0.3.233).
     #
-    # Was ==0.3.233, which sat BELOW agent-baselines' >=0.3.249 floor. When the
-    # eval overlays this package (`uv run --project solvers/inspect-swe --with
-    # asta-bench-private`), the hard `==` pin won over agent-baselines'
-    # override-dependencies and pulled the solve env down to 0.3.233, so
-    # inspect_swe's newer `checkpointer` call crashed with
+    # Why this is not an exact pin: agent-baselines is Ai2's collection of
+    # reference solver integrations. Its inspect-swe integration runs coding
+    # agents such as Claude Code and Codex inside an Inspect sandbox. Current
+    # versions need a newer inspect_ai API (`>=0.3.249`) for the sandbox
+    # `checkpointer` argument. The former exact `==0.3.233` requirement forced
+    # that solver back to an incompatible version and crashed with
     # `sandbox_agent_bridge() got an unexpected keyword argument 'checkpointer'`.
-    # Relaxing this to the shared floor is the fix.
-    #
-    # NOTE: >=0.3.249's Anthropic provider requires anthropic>=0.105 (see the
-    # anthropic floor below); the agent-baselines lock carries that via #32.
-    # The SCORER's inspect_ai pin (solvers/scorer/pyproject.toml, 0.3.225) is
-    # intentionally NOT bumped here — raising it risks changing scoring logic
-    # and is done only reactively when a solve-arm event type can't be read.
-    # See gas2own#346, gas2own#430, allenai/agent-baselines#31 and #32.
-    "inspect_ai>=0.3.249",
+    # This lower bound lets that and other solvers declare their own stricter
+    # requirements. The scorer remains independently pinned; see
+    # solvers/scorer/pyproject.toml.
+    # See gas2own#346, gas2own#430, and allenai/agent-baselines#32.
+    "inspect_ai>=0.3.233",
     # Base agent-eval is the inspect-free solve contract (suite config,
     # EvalConfig, and git reproducibility helpers). Scoring dependencies,
     # including inspect_ai==0.3.203, live in agent-eval's scoring/leaderboard
@@ -56,11 +50,6 @@ dependencies = [
     "h2~=4.2.0",
     "pandas",
     "scipy",
-    # NB: inspect_ai>=0.3.249's Anthropic provider requires anthropic>=0.105 at
-    # runtime. This floor permits it (the resolver picks a recent anthropic),
-    # and the frozen solve-env lock carries it explicitly via
-    # allenai/agent-baselines#32; not pinned tighter here to avoid churning the
-    # scorer env, which shares this dependency.
     "anthropic>=0.87.0",
     "platformdirs",
     "numpy",
