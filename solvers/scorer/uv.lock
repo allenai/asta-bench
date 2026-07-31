@@ -324,7 +324,7 @@ requires-dist = [
     { name = "httpx", specifier = "~=0.28.1" },
     { name = "httpx-sse", specifier = ">=0.4.2" },
     { name = "huggingface-hub" },
-    { name = "inspect-ai", specifier = "==0.3.233" },
+    { name = "inspect-ai", specifier = ">=0.3.233,<0.4" },
     { name = "isort", marker = "extra == 'dev'" },
     { name = "litellm", specifier = "==1.88.1" },
     { name = "mcp", specifier = "~=1.10" },
