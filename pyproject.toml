@@ -51,7 +51,11 @@ dependencies = [
     "h2~=4.2.0",
     "pandas",
     "scipy",
-    "anthropic>=0.87.0",
+    # inspect_ai's Anthropic bridge rejects older SDKs at runtime. Keep the
+    # declared floor aligned with that runtime requirement so frozen eval
+    # environments cannot resolve a combination that installs successfully
+    # and then fails before the first sample.
+    "anthropic>=0.105.0",
     "platformdirs",
     "numpy",
 ]
