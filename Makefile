@@ -25,6 +25,10 @@ ifdef HF_TOKEN
   ENV_ARGS += -e HF_TOKEN
 endif
 
+ifdef S2_API_KEY
+  ENV_ARGS += -e S2_API_KEY
+endif
+
 # Also support .env file if it exists
 ifneq ("$(wildcard .env)","")
   ENV_ARGS += --env-file .env
