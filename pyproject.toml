@@ -33,7 +33,7 @@ dependencies = [
     # EvalConfig, and git reproducibility helpers). Scoring dependencies,
     # including inspect_ai==0.3.203, live in agent-eval's scoring/leaderboard
     # extras and are installed only by solvers/scorer. See gas2own#346.
-    "agent-eval==0.1.53",
+    "agent-eval==0.1.54",
     "openai>=2.30.0", # provider SDK version validated with the current model set
     "pydantic>=2.11.4", # required by inspect
     "pyyaml", # scripts/task_metadatas.py parses suite .yml files directly

@@ -27,7 +27,7 @@ wheels = [
 
 [[package]]
 name = "agent-eval"
-version = "0.1.53"
+version = "0.1.54"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -38,9 +38,9 @@ dependencies = [
     { name = "pydantic" },
     { name = "pyyaml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/75/98/43dfd99fa1f8c7b71f5bbe1e1505d5ae3206b9899979a09846755dbb1106/agent_eval-0.1.53.tar.gz", hash = "sha256:49581d9cdd50886299a3e4cf8073771eddf88b3c3e4cd18fcb513d7233951279", size = 51401, upload-time = "2026-07-29T20:38:33.277Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/62/5c/4fe2c8f40a632f9d98ae0f4108a40df1cdec8a369300bf638045cb7de909/agent_eval-0.1.54.tar.gz", hash = "sha256:4abcd86b2a92e171429dd270ba1fe201fc404bcbdc2c0a8fe1bea95eeaab6f0a", size = 51963, upload-time = "2026-09-03T17:14:41.538Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5e/2a/4414f9ba58e37d94aec07fd97e8d66989cb674d8d1a942a92495f27d8e27/agent_eval-0.1.53-py3-none-any.whl", hash = "sha256:4fb73ced33b031ea5dbcf75eb2092ee653d1c5a051cde01cc99f547fad3decfa", size = 45935, upload-time = "2026-07-29T20:38:32.206Z" },
+    { url = "https://files.pythonhosted.org/packages/e0/2d/08faea0446c37090398d292b9b22ad31688e3b0f66f67475cb243927765b/agent_eval-0.1.54-py3-none-any.whl", hash = "sha256:0eb7065ad04ce858a0ca3e34c560cb9c880cc570cae0bf852f927179e08282aa", size = 46146, upload-time = "2026-09-03T17:14:40.447Z" },
 ]
 
 [package.optional-dependencies]
@@ -310,7 +310,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "agent-eval", specifier = "==0.1.53" },
+    { name = "agent-eval", specifier = "==0.1.54" },
     { name = "anthropic", specifier = ">=0.87.0" },
     { name = "autoflake", marker = "extra == 'dev'" },
     { name = "azure-ai-inference", marker = "extra == 'azure'" },
@@ -357,7 +357,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "agent-eval", extras = ["leaderboard"], specifier = "==0.1.53" },
+    { name = "agent-eval", extras = ["leaderboard"], specifier = "==0.1.54" },
     { name = "astabench", editable = "../../" },
     { name = "inspect-ai", specifier = "==0.3.225" },
 ]
