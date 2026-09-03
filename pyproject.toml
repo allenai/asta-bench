@@ -24,16 +24,17 @@ dependencies = [
     # that solver back to an incompatible version and crashed with
     # `sandbox_agent_bridge() got an unexpected keyword argument 'checkpointer'`.
     # This lower bound lets that and other solvers declare their own stricter
-    # requirements. The <0.4 ceiling avoids silently accepting a new API line;
-    # compatibility with 0.4 should be evaluated before widening the range.
+    # requirements. The temporary <0.3.259 ceiling avoids Inspect releases
+    # that require OpenAI SDK >=3.1 while litellm==1.88.1 requires OpenAI <3.
+    # Restore the <0.4 ceiling once LiteLLM supports OpenAI 3.x.
     # The scorer remains independently pinned; see solvers/scorer/pyproject.toml.
     # See gas2own#346, gas2own#430, and allenai/agent-baselines#32.
-    "inspect_ai>=0.3.233,<0.4",
+    "inspect_ai>=0.3.233,<0.3.259",
     # Base agent-eval is the inspect-free solve contract (suite config,
     # EvalConfig, and git reproducibility helpers). Scoring dependencies,
     # including inspect_ai==0.3.203, live in agent-eval's scoring/leaderboard
     # extras and are installed only by solvers/scorer. See gas2own#346.
-    "agent-eval==0.1.53",
+    "agent-eval==0.1.54",
     "openai>=2.30.0", # provider SDK version validated with the current model set
     "pydantic>=2.11.4", # required by inspect
     "pyyaml", # scripts/task_metadatas.py parses suite .yml files directly
