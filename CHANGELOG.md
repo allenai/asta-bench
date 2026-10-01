@@ -1,6 +1,6 @@
 ## 0.5.5
 
-- bump `agent-eval` to 0.1.55 and `litellm` to 1.98.0 so submission scoring can price `gemini-3.7-flash` (first in the litellm 1.98.0 price map) and calls routed through an `osd-proxy/` model prefix (translated to `gpt-5.6-sol` by agent-eval 0.1.55). As in 0.5.4, both pins move together: agent-eval for the prices, litellm for provider resolution.
+- bump `agent-eval` to 0.1.55 and `litellm` to 1.97.0 so submission scoring can price calls routed through an `osd-proxy/` model prefix. agent-eval 0.1.55 registers the litellm v1.97.0 price map, which includes `gpt-5.6-sol`, and translates `osd-proxy/gpt-5.6-sol` to it. As in 0.5.4, both pins move together: agent-eval for the prices, litellm for provider resolution. litellm 1.97.0 is the newest release that does not unconditionally require `boto3>=1.43.1`, which conflicts with the scorer's `aiobotocore` 2.x stack.
 
 ## 0.5.4
 

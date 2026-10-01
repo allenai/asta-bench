@@ -25,7 +25,7 @@ dependencies = [
     # `sandbox_agent_bridge() got an unexpected keyword argument 'checkpointer'`.
     # This lower bound lets that and other solvers declare their own stricter
     # requirements. The temporary <0.3.259 ceiling avoids Inspect releases
-    # that require OpenAI SDK >=3.1 while litellm==1.98.0 requires OpenAI <3.
+    # that require OpenAI SDK >=3.1 while litellm==1.97.0 requires OpenAI <3.
     # Restore the <0.4 ceiling once LiteLLM supports OpenAI 3.x.
     # The scorer remains independently pinned; see solvers/scorer/pyproject.toml.
     # See gas2own#346, gas2own#430, and allenai/agent-baselines#32.
@@ -38,7 +38,7 @@ dependencies = [
     "openai>=2.30.0", # provider SDK version validated with the current model set
     "pydantic>=2.11.4", # required by inspect
     "pyyaml", # scripts/task_metadatas.py parses suite .yml files directly
-    "litellm==1.98.0",
+    "litellm==1.97.0",
     "datasets~=3.2.0",
     "huggingface_hub",
     "google-genai>=1.70.0",
