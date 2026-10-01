@@ -131,7 +131,7 @@ See [agent-baselines](https://github.com/allenai/agent-baselines) for more examp
 
 Use `inspect eval` directly to run a single task. E.g. for the ScholarQA task:
 
-``bash
+```bash
 uv run inspect eval --solver generate --model openai/gpt-4.1 astabench/sqa_dev
 ```
 
@@ -368,7 +368,7 @@ AstaBench includes a comprehensive suite of evaluation tasks across four main ca
 Tasks that evaluate agents' ability to search, analyze, and synthesize academic literature:
 
 - **PaperFindingBench** (`astabench/paper_finder_{validation,test}`): Find relevant papers for given research queries
-- **ScholarQABench2** (`astabench/sqa_{dev,test}`): Answer scientific questions using literature search
+- **ScholarQA-CS2** (`astabench/sqa_{dev,test}`): Answer scientific questions using literature search
 - **LitQA2-FT** (`astabench/litqa2_{validation,test}`): Answer questions about scientific literature with binary responses
 - **LitQA2-FT-Search** (`astabench/paper_finder_litqa2_{validation,test}`): Find papers relevant to LitQA2 questions
 - **ArxivDIGESTables-Clean** (`astabench/arxivdigestables_{validation,test}`): Create structured tables summarizing information from arXiv papers
