@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "astabench"
-version = "0.5.4"
+version = "0.5.5"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -25,7 +25,7 @@ dependencies = [
     # `sandbox_agent_bridge() got an unexpected keyword argument 'checkpointer'`.
     # This lower bound lets that and other solvers declare their own stricter
     # requirements. The temporary <0.3.259 ceiling avoids Inspect releases
-    # that require OpenAI SDK >=3.1 while litellm==1.88.1 requires OpenAI <3.
+    # that require OpenAI SDK >=3.1 while litellm==1.98.0 requires OpenAI <3.
     # Restore the <0.4 ceiling once LiteLLM supports OpenAI 3.x.
     # The scorer remains independently pinned; see solvers/scorer/pyproject.toml.
     # See gas2own#346, gas2own#430, and allenai/agent-baselines#32.
@@ -34,11 +34,11 @@ dependencies = [
     # EvalConfig, and git reproducibility helpers). Scoring dependencies,
     # including inspect_ai==0.3.203, live in agent-eval's scoring/leaderboard
     # extras and are installed only by solvers/scorer. See gas2own#346.
-    "agent-eval==0.1.54",
+    "agent-eval==0.1.55",
     "openai>=2.30.0", # provider SDK version validated with the current model set
     "pydantic>=2.11.4", # required by inspect
     "pyyaml", # scripts/task_metadatas.py parses suite .yml files directly
-    "litellm==1.88.1",
+    "litellm==1.98.0",
     "datasets~=3.2.0",
     "huggingface_hub",
     "google-genai>=1.70.0",
