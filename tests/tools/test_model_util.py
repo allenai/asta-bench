@@ -39,10 +39,11 @@ def test_known_models():
     # Test OpenAI model
     assert normalize_model_name("gpt-4o") == "openai/gpt-4o"
 
-    # Test Anthropic model
+    # Test Anthropic model. litellm drops retired models from its price map,
+    # which breaks provider lookup; swap in a current model when that happens.
     assert (
-        normalize_model_name("claude-3-opus-20240229")
-        == "anthropic/claude-3-opus-20240229"
+        normalize_model_name("claude-opus-4-7-20260416")
+        == "anthropic/claude-opus-4-7-20260416"
     )
 
 

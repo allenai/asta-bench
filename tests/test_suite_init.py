@@ -5,10 +5,10 @@ import tempfile
 from pathlib import Path
 
 import pytest
-from agenteval.config import load_suite_config
 from click.testing import CliRunner
 
 from astabench.cli import DEFAULT_CONFIG, eval_command, get_config_path
+from agenteval.config import load_suite_config
 from astabench.evals import _registry
 
 

@@ -4,15 +4,41 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "astabench"
-version = "0.5.4"
+version = "0.5.5"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "inspect_ai==0.3.203",
-    "agent-eval[leaderboard]==0.1.51",
+    # SOLVE-ENVIRONMENT inspect_ai floor. The root astabench package is
+    # installed alongside a participant's solver to provide the benchmark
+    # tasks. It should declare the oldest inspect_ai API astabench itself needs
+    # and allow each solver to select a newer compatible 0.3.x version. Version
+    # 0.3.233 is the oldest release carrying both fixes required by these
+    # tasks: bridged MCP result serialization (0.3.220) and inline Anthropic
+    # system-role messages (0.3.233).
+    #
+    # Why this is not an exact pin: agent-baselines is Ai2's collection of
+    # reference solver integrations. Its inspect-swe integration runs coding
+    # agents such as Claude Code and Codex inside an Inspect sandbox. Current
+    # versions need a newer inspect_ai API (`>=0.3.249`) for the sandbox
+    # `checkpointer` argument. The former exact `==0.3.233` requirement forced
+    # that solver back to an incompatible version and crashed with
+    # `sandbox_agent_bridge() got an unexpected keyword argument 'checkpointer'`.
+    # This lower bound lets that and other solvers declare their own stricter
+    # requirements. The temporary <0.3.259 ceiling avoids Inspect releases
+    # that require OpenAI SDK >=3.1 while litellm==1.97.0 requires OpenAI <3.
+    # Restore the <0.4 ceiling once LiteLLM supports OpenAI 3.x.
+    # The scorer remains independently pinned; see solvers/scorer/pyproject.toml.
+    # See gas2own#346, gas2own#430, and allenai/agent-baselines#32.
+    "inspect_ai>=0.3.233,<0.3.259",
+    # Base agent-eval is the inspect-free solve contract (suite config,
+    # EvalConfig, and git reproducibility helpers). Scoring dependencies,
+    # including inspect_ai==0.3.203, live in agent-eval's scoring/leaderboard
+    # extras and are installed only by solvers/scorer. See gas2own#346.
+    "agent-eval==0.1.55",
     "openai>=2.30.0", # provider SDK version validated with the current model set
     "pydantic>=2.11.4", # required by inspect
-    "litellm==1.88.1",
+    "pyyaml", # scripts/task_metadatas.py parses suite .yml files directly
+    "litellm==1.97.0",
     "datasets~=3.2.0",
     "huggingface_hub",
     "google-genai>=1.70.0",

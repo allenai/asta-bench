@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.4
-FROM python:3.11.3 AS astabench-base
+FROM python:3.11.15-bookworm AS astabench-base
 
 LABEL name="astabench" \
     org="allenai" \
