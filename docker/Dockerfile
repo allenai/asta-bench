@@ -5,6 +5,9 @@ LABEL name="astabench" \
     org="allenai" \
     description="Benchmark and experimentation framework for scientific agents"
 
+# python:3.11.3 is based on Debian bullseye, which has moved to archive.debian.org
+RUN sed -i 's|deb.debian.org|archive.debian.org|g' /etc/apt/sources.list
+
 RUN apt-get update && apt-get install -y less git curl cmake clang jq
 
 RUN curl -fsSL https://download.docker.com/linux/static/stable/x86_64/docker-27.3.1.tgz -o docker.tgz \
