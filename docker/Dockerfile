@@ -6,7 +6,11 @@ LABEL name="astabench" \
     description="Benchmark and experimentation framework for scientific agents"
 
 # python:3.11.3 is based on Debian bullseye, which has moved to archive.debian.org
-RUN sed -i 's|deb.debian.org|archive.debian.org|g' /etc/apt/sources.list
+RUN for f in /etc/apt/sources.list /etc/apt/sources.list.d/debian.sources; do \
+        [ -f "$f" ] && sed -i -e 's|deb.debian.org|archive.debian.org|g' \
+                              -e 's|security.debian.org|archive.debian.org|g' "$f"; \
+    done; \
+    echo 'Acquire::Check-Valid-Until "false";' > /etc/apt/apt.conf.d/99archive
 
 RUN apt-get update && apt-get install -y less git curl cmake clang jq
 
