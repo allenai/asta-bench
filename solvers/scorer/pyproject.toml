@@ -7,6 +7,7 @@ name = "astabench-scorer"
 version = "0.1.0"
 requires-python = ">=3.11"
 dependencies = [
+    "pyarrow==26.0.1",
     "astabench",
     # Add agent-eval's scorer / leaderboard stack only in this isolated env.
     # Base astabench uses agent-eval's inspect-free contract; this extra adds the
@@ -28,5 +29,6 @@ astabench = { path = "../..", editable = true }
 [tool.uv]
 # Override needed so the local astabench editable dependency resolves to the scorer pin.
 override-dependencies = [
+    "pyarrow==26.0.1",
     "inspect_ai==0.3.225",
 ]
