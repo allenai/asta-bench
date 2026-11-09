@@ -30,6 +30,7 @@ dependencies = [
     # The scorer remains independently pinned; see solvers/scorer/pyproject.toml.
     # See gas2own#346, gas2own#430, and allenai/agent-baselines#32.
     "inspect_ai>=0.3.233,<0.3.259",
+    "agent-client-protocol<1", # acp 1.0.0 removed acp.helpers, which inspect_ai <=0.3.258 imports
     # Base agent-eval is the inspect-free solve contract (suite config,
     # EvalConfig, and git reproducibility helpers). Scoring dependencies,
     # including inspect_ai==0.3.203, live in agent-eval's scoring/leaderboard
