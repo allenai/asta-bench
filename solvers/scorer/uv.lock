@@ -1,5 +1,5 @@
 version = 1
-revision = 5
+revision = 3
 requires-python = ">=3.11"
 resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'win32'",
@@ -30,7 +30,7 @@ wheels = [
 
 [[package]]
 name = "agent-eval"
-version = "0.1.55"
+version = "0.1.56"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -41,9 +41,9 @@ dependencies = [
     { name = "pydantic" },
     { name = "pyyaml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/25/69/6482ad46c4f6c4ab039bdcce26629d6a9bc957a108bdd863326f8fc1891a/agent_eval-0.1.55.tar.gz", hash = "sha256:a61d8879da8338bcb30a8312f31d47c1bef89fbc90cf8819ead9d5cd44d3f965", size = 51883, upload-time = "2026-10-02T21:13:25.883Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/47/3b/5ceb345805cd5637468d69e9e570adedf609abe1fbe3752e008579891925/agent_eval-0.1.56.tar.gz", hash = "sha256:b02c090251e998094e5116d43a606009da34899daa367ef4e96b5ae84a25b788", size = 53172, upload-time = "2026-11-09T19:33:09.25Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a4/ee/c2e231a97d38b78d144a4c2f680cf69c548cf232d2b5bee15abc55638730/agent_eval-0.1.55-py3-none-any.whl", hash = "sha256:cdfa42dae19acd682cc85209fc0879c26642d194c0f259408c0ff6573ad30f89", size = 46172, upload-time = "2026-10-02T21:13:24.826Z" },
+    { url = "https://files.pythonhosted.org/packages/a9/47/0720ce84f9844bd27a9785a262ed1ef8dbd535402f33fc3aa9dcf14b1640/agent_eval-0.1.56-py3-none-any.whl", hash = "sha256:4ab9547185bde68f22877aa604907f30fab19d43d039b354bb84fd140e72bef7", size = 46598, upload-time = "2026-11-09T19:33:08.203Z" },
 ]
 
 [package.optional-dependencies]
@@ -329,7 +329,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "agent-eval", specifier = "==0.1.55" },
+    { name = "agent-eval", specifier = "==0.1.56" },
     { name = "anthropic", specifier = ">=0.87.0" },
     { name = "autoflake", marker = "extra == 'dev'" },
     { name = "azure-ai-inference", marker = "extra == 'azure'" },
@@ -377,7 +377,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "agent-eval", extras = ["leaderboard"], specifier = "==0.1.55" },
+    { name = "agent-eval", extras = ["leaderboard"], specifier = "==0.1.56" },
     { name = "astabench", editable = "../../" },
     { name = "inspect-ai", specifier = "==0.3.225" },
     { name = "pyarrow", specifier = "==26.0.1" },
@@ -3962,7 +3962,7 @@ name = "zipfile-zstd"
 version = "0.0.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "zstandard" },
+    { name = "zstandard", marker = "python_full_version < '3.14'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/f7/2a/2e0941bc0058d10ab37d8c578b94a19f611f6ae54f124140f2fb451f0932/zipfile-zstd-0.0.4.tar.gz", hash = "sha256:c1498e15b7922a3d1af0ea55df8b11b2af4e8f7e0e80e414e25d66899f7def89", size = 4603, upload-time = "2021-12-08T07:38:16.245Z" }
 wheels = [
