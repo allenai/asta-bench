@@ -30,11 +30,12 @@ dependencies = [
     # The scorer remains independently pinned; see solvers/scorer/pyproject.toml.
     # See gas2own#346, gas2own#430, and allenai/agent-baselines#32.
     "inspect_ai>=0.3.233,<0.3.259",
+    "agent-client-protocol<1", # acp 1.0.0 removed acp.helpers, which inspect_ai <=0.3.258 imports
     # Base agent-eval is the inspect-free solve contract (suite config,
     # EvalConfig, and git reproducibility helpers). Scoring dependencies,
     # including inspect_ai==0.3.203, live in agent-eval's scoring/leaderboard
     # extras and are installed only by solvers/scorer. See gas2own#346.
-    "agent-eval==0.1.55",
+    "agent-eval==0.1.56",
     "openai>=2.30.0", # provider SDK version validated with the current model set
     "pydantic>=2.11.4", # required by inspect
     "pyyaml", # scripts/task_metadatas.py parses suite .yml files directly
