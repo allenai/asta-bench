@@ -152,9 +152,20 @@ def score_paper_finder() -> Scorer:
 
 
 def score_paper_finder_with_all_name(all_name: str) -> Callable:
+    # LitQA2 has a single score group named ``recall_at_30`` and also uses that
+    # name for its primary metric. Asking grouped() to add an all-samples row
+    # with the same label is ambiguous and newer Inspect versions reject it.
+    # Keep the group itself as the primary metric; multi-group Paper Finder
+    # Bench variants still receive their separately named aggregate row.
+    include_all_samples = all_name not in pf_group_score_names.values()
     return scorer(
         metrics=[
-            grouped(mean(), group_key="score_type", all="samples", all_label=all_name),
+            grouped(
+                mean(),
+                group_key="score_type",
+                all="samples" if include_all_samples else False,
+                all_label=all_name,
+            ),
             stderr(),
         ]
     )(score_paper_finder)
